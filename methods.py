@@ -46,23 +46,74 @@ _SPELL = {'三角締め': '三角絞め', 'ヒザ十字固め': '膝十字固め
           'うで十字': '腕ひしぎ十字固め', '腕十字固め': '腕ひしぎ十字固め', '腕十字': '腕ひしぎ十字固め', '腕挫十字固め': '腕ひしぎ十字固め',
           
           'ギロチン': 'ギロチンチョーク', 'チキンウィングアームロック': 'チキンウイングアームロック', 'Vワンアームロック': 'V1アームロック', 'アキレス腱固': 'アキレス腱固め'}
-_SUB_HEAD = re.compile(r'^(?:一本|ギブアップ|タップアウト|タップ|TO|SUB|S(?=[\s(（]|$))\s*[:：]?\s*(.*)$')
-_TECH = re.compile(r'^[ァ-ヶー一-龥々ぁ-ん・\s]*[ァ-ヶー一-龥々ぁ-ん]$|^V1[ァ-ヶー・\s]+$')
+_TECH = re.compile(r'^[ァ-ヶー一-龥々ぁ-んA-Z0-9・\s]*[ァ-ヶー一-龥々ぁ-んA-Z]$')
+
+
+_EN = {'armbar': '腕ひしぎ十字固め', 'arm bar': '腕ひしぎ十字固め', 'sleeper choke': 'RNC', 'front neck lock': 'フロントネックロック',
+       'front headlock': 'フロントヘッドロック', 'guillotine choke': 'ギロチンチョーク', 'ankle lock': 'アンクルホールド',
+       'kneebar': '膝十字固め', 'heel hook': 'ヒールホールド', 'kimura': 'アームロック', 'americana': 'アームロック'}
+_SUB_HEAD = re.compile(r'^(?:一本|1本|ギブアップ|タップアウト|タップ|TO|SUB|S|TS|techsub|submission)(?=[\s(（:：=［\[]|$)\s*[:：=]?\s*(.*)$', re.I)
+
+
+def _clean_body(body):
+    """「一本」などの後ろの部分から、技の名前だけを取り出す。"""
+    tag = ''
+    mm = re.search(r'\s*(\[[^\]]*\]|(?<=[)）])※[^()（）]*)\s*$', body)   # [決勝] や後ろの※注記は後ろに残す
+    if mm:
+        tag, body = ' ' + mm.group(1), body[:mm.start()]
+    for _ in range(4):
+        b0 = body
+        body = body.strip()
+        body = re.sub(r'^[※*=＝\s]+|[※*\s]+$', '', body)
+        body = re.sub(r'(?:本戦|延長R?|\d+R|\d+\s*分\s*[\d.]*\s*秒?|[\d.]+\s*秒|\d+[’\'.:]\d+”?|\bR\b)\s*', '', body)
+        body = re.sub(r'[(（]\s*(?:延長R?|本戦)?\s*[)）]', '', body)
+        body = _outer(body)
+        body = re.sub(r'^[(（]?(?:テクニカル・?サブミッション|バーバルタップアウト|タップアウト|ギブアップ|一本|タップ)[)）]?\s*[:：;/／]?\s*', '', body)
+        body = re.sub(r'^[(（](.*)[)）]$', r'\1', body) if re.fullmatch(r'[(（][^()（）]*[)）]', body) else body
+        body = re.sub(r'による$|により$', '', body)
+        if body == b0:
+            break
+    if re.search(r'[:：]', body):                       # 「アームバー：腕ひしぎ十字固め」→ 後ろ側
+        body = re.split(r'[:：]', body)[-1]
+    body = body.strip()
+    body = _EN.get(body.lower(), body)
+    if re.fullmatch(r'[ァ-ヶー・\s]+', body):
+        body = re.sub(r'[\s・･]+', '', body)
+    body = _SPELL.get(body, body)
+    return body.replace('(', '（').replace(')', '）'), tag
+
+
+def _outer(b):
+    """全体を囲むかっこを1組はずす（中のかっこは残す）。"""
+    if b[:1] not in '(（' or b[-1:] not in ')）':
+        return b
+    depth = 0
+    for i, ch in enumerate(b):
+        depth += ch in '(（'
+        depth -= ch in ')）'
+        if depth == 0 and i < len(b) - 1:
+            return b
+    return b[1:-1].strip()
 
 
 def _sub(t):
     h = _SUB_HEAD.match(t)
-    body = h.group(1) if h else t
-    if h and not body:
-        return '一本'
-    body = body.strip()
+    if h:                                   # 「一本・ギブアップ・タップアウト・TO・S・SUB」→ すべて一本
+        body = h.group(1)
+        if '一本' in body.replace('一本', '', 0)[1:] and body.count('一本') > 1:
+            return None                     # 1つの欄に2試合分が書かれているものは触らない
+        body, tag = _clean_body(body)
+        if not body or body in ('一本', 'ギブアップ', 'タップアウト'):
+            return '一本' + tag
+        if '一本' in body or len(body) > 30:
+            return None
+        return f'一本（{body}）{tag}'
+    # 技の名前だけ → 一本（技の名前）（前についた「1R 3:10」などの時間は取る）
+    body = re.sub(r'^(?:\d+\s*[×x]\s*\d+R\s*)?(?:\d+R\s*)?(?:\d+\s*[:：]\s*\d+|\d+\s*分(?:\s*\d+\s*秒)?)?\s*', '', t.strip())
     if body[:1] in '(（' and body[-1:] in ')）':
         body = body[1:-1].strip()
-    body = re.sub(r'^[※*\s]+', '', body)
-    body = re.sub(r'^(?:一本|ギブアップ|バーバルタップアウト|タップアウト|タップ)\s*[:：]?\s*', '', body)
+    body = re.sub(r'^(?:タップアウト|ギブアップ)\s*[:：]\s*', '', body)
     if not body or not (_TECH.match(body) or body == 'RNC') or any(w in body for w in _NOT_SUB):
-        return None
-    if not h and not any(w in body for w in _SUB_WORDS):
         return None
     body = re.sub(r'[\s・･]+', '', body)
     body = _SPELL.get(body, body)
@@ -79,6 +130,7 @@ ALIAS = [
     # 後ろからの絞め（リアネイキッドチョーク）はすべて RNC。フロントチョーク系は別の技なので変えない
     (r'(?<!フロント)(?<!フロント・)(?<!フロント )(?:チョーク・?スリーパー(?:・?ホールド)?|スリーパー・?ホールド|スリーパー)', 'RNC'),
     (r'裸[絞締]め?', 'RNC'),
+    (r'ヒザ十字(?:固め)?|ひざ十字(?:固め)?', '膝十字固め'),
     (r'リア・?ネイキ[ッ]?[ドト]・?チョーク', 'RNC'),
     (r'バック・?チョーク', 'RNC'),
     (r'(?i)rear[- ]?naked[- ]?choke|\bR\.N\.C\.?', 'RNC'),
