@@ -201,6 +201,28 @@ def main():
             fp.write(page)
         urls.append(f'e/{eid}.html')
 
+    # Wikipediaの通算戦績（wiki_fetch.py が取り込んだもの）
+    os.makedirs(os.path.join(OUT, 'w'), exist_ok=True)
+    wrec = {r['fighter_id']: r for r in read_tsv(os.path.join(DATA, 'wiki', 'records.tsv'))}
+    wb = collections.defaultdict(list)
+    for r in read_tsv(os.path.join(DATA, 'wiki', 'bouts.tsv')):
+        wb[r['fighter_id']].append(r)
+    wextra = {}
+    for fid, r in wrec.items():
+        if fid not in fout:
+            continue
+        have = set()
+        for e, b, side in e_by.get(fid, []):
+            o = b['fighter2'] if side == 1 else b['fighter1']
+            have.add((e['date'], norm(o)))
+        dates = {e['date'] for e, b, side in e_by.get(fid, [])}
+        x = [[w['date'], w['result'], w['opponent'], w['method'], w['event']] for w in wb.get(fid, [])
+             if (w['date'], norm(w['opponent'])) not in have and w['date'] not in dates]
+        wextra[fid] = x
+        with open(os.path.join(OUT, 'w', f'{fid}.json'), 'w', encoding='utf-8') as fp:
+            json.dump({'t': r['wiki_title'], 'u': r['source_url'],
+                       'rec': [int(r['wins']), int(r['losses']), int(r['draws']), int(r['no_contests'])], 'x': x}, fp, ensure_ascii=False, separators=(',', ':'))
+
     # 選手ごとの静的ページ
     for fid, _v in fout.items():
         name = _v[0]
@@ -218,13 +240,23 @@ def main():
             ok2 = '2' if side == 1 else '1'
             oid = b.get(f'fighter{ok2}_id'); on = html.escape(b[f'fighter{ok2}'])
             opp = f'<a class="u nb" href="{oid}.html">{on}</a>' if oid and oid in fout else f'<span class="nb">{on}</span>'
-            rows.append(f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
-                        f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}</td><td class="num">{html.escape(rt(b))}</td></tr>')
+            rows.append((e['date'], f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
+                        f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
+        note = '※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません'
+        if fid in wrec:
+            r0 = wrec[fid]
+            rec = f'通算 {r0["wins"]}勝{r0["losses"]}敗{r0["draws"]}分' + (f'{r0["no_contests"]}無効試合' if r0['no_contests'] not in ('0', '') else '')
+            note = f'通算戦績はWikipedia「<a class="u" href="{html.escape(r0["source_url"])}">{html.escape(r0["wiki_title"])}</a>」の戦績表によります（海外の試合を含む）。印のついた試合はWikipediaからの記録です。'
+            RS = {'win': ('w', '勝'), 'loss': ('l', '負'), 'draw': ('o', '分'), 'nc': ('o', '無効')}
+            for x in wextra.get(fid, []):
+                c, t = RS.get(x[1], ('o', '—'))
+                rows.append((x[0], f'<tr><td><span class="rs {c}">{t}</span></td><td><span class="nb">{html.escape(x[2])}</span></td><td>{html.escape(x[4])}<span class="unc">Wikipedia</span></td>'
+                                   f'<td class="num">{html.escape(x[0])}</td><td>{html.escape(x[3])}</td><td class="num"></td></tr>'))
         page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../') + static_header('../') +
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#fighters">選手</a></p>'
-                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}（収録{len(lst)}試合）</p><p class="sub" style="font-size:13px;color:var(--fg3)">※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません</p></div></div>'
-                f'<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></main>'
+                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}</p><p class="sub" style="font-size:13px;color:var(--fg3)">{note}</p></div></div>'
+                f'<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>{"".join(h for d, h in sorted(rows, key=lambda t: t[0], reverse=True))}</tbody></table></div></main>'
                 + foot(site, len(ev_list), n_b))
         with open(os.path.join(OUT, 'f', f'{fid}.html'), 'w', encoding='utf-8') as fp:
             fp.write(page)

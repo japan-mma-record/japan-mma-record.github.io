@@ -31,6 +31,10 @@ jobs:
       - name: 公式サイトから新しい結果を取り込む
         run: python3 fetch.py
         continue-on-error: true
+      - name: Wikipediaから通算戦績を取り込む（毎月1日、まだ無いとき、または[wiki]と書いた更新のとき）
+        run: |
+          if [ "$(date -u +%d)" = "01" ] || [ ! -f data/wiki/records.tsv ] || echo "${{ github.event.head_commit.message }}" | grep -q "\[wiki\]"; then python3 wiki_fetch.py; fi
+        continue-on-error: true
       - name: 定期的な生存記録（60日間なにも変化がないと自動実行が止まるのを防ぐ）
         run: |
           d=$(date -u +%d)

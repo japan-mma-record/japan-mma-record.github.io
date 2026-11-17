@@ -107,15 +107,29 @@ function vFighter(id){
     const opp = side===1 ? [b[3],b[4]] : [b[1],b[2]];
     let r='<span class="rs o">—</span>';
     if(b[5]===side){w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){nc++; r='<span class="rs o">無効</span>';}
-    return `<tr><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${esc(b[6])}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
+    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${esc(b[6])}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
   const nm = f[0] || f[1];
   const span = list.length ? `${list[list.length-1][0][1].slice(0,4)}年〜${list[0][0][1].slice(0,4)}年` : '';
   const st = '';
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#fighters">選手</a></p>
     <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}</p></div>
-    <div class="kpis"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div>
-    <p class="sub" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません</p>
-    <div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>${rows}</tbody></table></div></main>`;
+    <div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div>
+    <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません</p>
+    <div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
+}
+function enhanceFighter(id){
+  fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
+    if(!w || location.hash!=='#f-'+id) return;
+    const k=document.getElementById('fk'), n=document.getElementById('fnote'), tb=document.getElementById('fb'); if(!k||!tb) return;
+    const [W,L,Dr,NC]=w.rec;
+    k.innerHTML=`<div><p class="k">通算 勝</p><p class="v r">${W}</p></div><div><p class="k">敗</p><p class="v">${L}</p></div><div><p class="k">分</p><p class="v">${Dr}</p></div>${NC?`<div><p class="k">無効</p><p class="v">${NC}</p></div>`:''}`;
+    n.innerHTML=`通算戦績はWikipedia「<a class="u" href="${esc(w.u)}" target="_blank" rel="noopener">${esc(w.t)}</a>」の戦績表によります（海外の試合を含む全${W+L+Dr+NC}試合）。印のついた試合はWikipediaからの記録です。`;
+    const rs={win:'<span class="rs w">勝</span>',loss:'<span class="rs l">負</span>',draw:'<span class="rs o">分</span>',nc:'<span class="rs o">無効</span>'};
+    let h='';
+    w.x.forEach(x=>{ h+=`<tr data-d="${esc(x[0])}"><td>${rs[x[1]]||'—'}</td><td><span class="nb">${esc(x[2])}</span></td><td>${esc(x[4])}<span class="unc">Wikipedia</span></td><td class="num">${esc((x[0]||'').replace(/-/g,'.'))}</td><td>${esc(x[3])}</td><td class="num"></td></tr>`; });
+    tb.insertAdjacentHTML('beforeend',h);
+    [...tb.querySelectorAll('tr')].sort((a,b)=>(b.dataset.d||'').localeCompare(a.dataset.d||'')).forEach(tr=>tb.appendChild(tr));
+  }).catch(()=>{});
 }
 let evYear = null;
 function vEvents(){
@@ -218,6 +232,7 @@ function route(){
   else html = notFound();
   if(h.startsWith('e-')) nav='events'; if(h.startsWith('f-')) nav='fighters';
   $('#view').innerHTML = html;
+  if(h.startsWith('f-')) enhanceFighter(h.slice(2));
   document.querySelectorAll('[data-nav]').forEach(a=>{ if(a.dataset.nav===nav) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
   window.scrollTo(0,0);
 }
