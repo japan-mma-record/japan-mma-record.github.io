@@ -13,6 +13,7 @@ Pythonの標準機能だけで動きます（追加のインストールは不�
   data/site.json … サイトの住所など。
 """
 import csv, json, os, re, shutil, html, datetime, collections, urllib.parse
+import methods
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, 'data')
@@ -67,6 +68,8 @@ def load():
             if str(b.get('match_no')) == str(f['match_no']) and f['field'] in b:
                 b[f['field']] = f['value']
     for k in bouts:
+        for b in bouts[k]:
+            b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
         bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
     return site, promos, events, bouts, fighters
 
@@ -216,7 +219,7 @@ def main():
             o = b['fighter2'] if side == 1 else b['fighter1']
             have.add((e['date'], norm(o)))
         dates = {e['date'] for e, b, side in e_by.get(fid, [])}
-        x = [[w['date'], w['result'], w['opponent'], w['method'], w['event']] for w in wb.get(fid, [])
+        x = [[w['date'], w['result'], w['opponent'], methods.tidy(w['method']), w['event']] for w in wb.get(fid, [])
              if (w['date'], norm(w['opponent'])) not in have and w['date'] not in dates]
         wextra[fid] = x
         with open(os.path.join(OUT, 'w', f'{fid}.json'), 'w', encoding='utf-8') as fp:
