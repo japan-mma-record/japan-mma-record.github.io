@@ -3071,3 +3071,9 @@
 4 https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=intitle%3AADCC&srlimit=60&format=json 2119
 5 https://adcc-official.com/ 262126
 6 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88&srlimit=100&format=json 101769
+1 https://digitsu.com/events/2001-adcc-world-championship 130593
+2 https://en.wikipedia.org/w/index.php?title=2022_ADCC_World_Championship&action=raw 23658
+3 https://en.wikipedia.org/w/index.php?title=2024_ADCC_World_Championship&action=raw 24288
+4 https://en.wikipedia.org/w/index.php?title=2026_ADCC_World_Championship&action=raw 3186
+5 https://digitsu.com/events/2024-adcc-world-championship 140653
+6 https://digitsu.com/events/2026-adcc-world-championship 186394
