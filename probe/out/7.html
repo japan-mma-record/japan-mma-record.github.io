@@ -1,0 +1,312 @@
+<!DOCTYPE html><html prefix="http://ogp.me/ns#"><head><meta charset="UTF-8">
+<title>「GFC」の記事 - ゴング格闘技</title>
+<link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="/favicon/favicon-192x192.png?v=1" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=1" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon/favicon-48x48.png?v=1" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png?v=1" sizes="16x16">
+<link rel="canonical" href="https://gonkaku.jp/search/articles">
+<link rel="alternate" href="https://gonkaku.jp/feed" type="application/rss+xml" title="RSS">
+<meta property="fb:app_id" content="605712313279317">
+<meta property="og:title" content="「GFC」の記事">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://gonkaku.jp/packs/static/images/og_image-15894cead874a0e992cf.jpg">
+<meta property="og:url" content="https://gonkaku.jp/search/articles?word=GFC">
+<meta property="og:site_name" content="ゴング格闘技 - GONKAKU">
+<meta property="og:locale" content="ja_JP">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="X-UA-Compatible" content="IE=edge"><link href="/manifest.json" rel="manifest" /><link rel="stylesheet" href="https://gonkaku.jp/packs/css/web-73aebef6.css" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6538RWyzQQWFGqg1xdKPa-owG9iPJxtRPKmC-0JV1XV5T5NfxjPO0tYE2V4tnwrhlK0-p_GSjbQeamp4boE6yg" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-2V329YSCT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2V329YSCT0');
+</script>
+<script>window.pbjs = window.pbjs || {};
+window.pbjs.que = window.pbjs.que || [];</script><script async="async" src="https://flux-cdn.com/client/00637/gonkaku_00714.min.js"></script><script>window.googletag = window.googletag || {};
+window.googletag.cmd = window.googletag.cmd || [];</script><script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script>googletag.cmd.push(function () {
+  var interstitial = googletag.defineOutOfPageSlot("/22614819838,22669671226/00637/00714/PC/interstitial", googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+  googletag.setConfig({singleRequest: true});
+  googletag.enableServices();
+  googletag.display(interstitial);
+});</script><script>window.fluxtag = {
+  failSafeTimeout: 3000,
+  isFn: function (object) {
+    var _t = 'Function';
+    var toString = Object.prototype.toString;
+    return toString.call(object) === '[object ' + _t + ']';
+  },
+  renderAds: function (lines, failSafeTimeout) {
+    googletag.cmd.push(function () {
+      var failSafeTimeout = failSafeTimeout || window.fluxtag.failSafeTimeout;
+      var bidRequestTimeout = (failSafeTimeout - 500) > 0 ? failSafeTimeout - 500 : failSafeTimeout;
+      var refreshLines = [];
+      var params = (function () {
+        // GAMを呼び出したかを確認にするフラグ
+        var readyBids = {
+          google: false,
+          prebid: false,
+        };
+        var definedSlots = [];
+        var adsInfo = {
+          gpt: {
+            slots: [],
+            displayDivIds: [],
+          },
+          pb: {
+            divIds: []
+          }
+        };
+
+        googletag.pubads().getSlots().forEach(function (slot) {
+          // 既にdefineSlotされていた場合
+          definedSlots[slot.getSlotElementId()] = slot;
+        });
+
+        lines.forEach(function (line) {
+          var divId = line.divId;
+
+          adsInfo.pb.divIds.push(divId);
+
+          refreshLines.push({
+            code: line.gpt.unitPath,
+            id: divId
+          });
+
+          if (definedSlots[divId]) {
+            adsInfo.gpt.slots.push(definedSlots[divId]);
+          } else {
+            var slot = googletag.defineSlot(line.gpt.unitPath, line.gpt.sizes, divId)
+                .addService(googletag.pubads());
+
+            if (line.gpt.sizeMapping && line.gpt.sizeMapping.length > 0) {
+              var sizeMapping = googletag.sizeMapping();
+              line.gpt.sizeMapping.forEach(function (size) {
+                sizeMapping.addSize(size[0], size[1]);
+              });
+              slot.defineSizeMapping(sizeMapping.build());
+            }
+            if (line.gpt.keyValues && line.gpt.keyValues.length > 0) {
+              line.gpt.keyValues.forEach(function (param) {
+                slot.setTargeting(param.key, param.value);
+              });
+            }
+            adsInfo.gpt.slots.push(slot);
+            adsInfo.gpt.displayDivIds.push(divId);
+          }
+        });
+        // Prebid、APSでオークション後に起動する関数 (GAMコール、広告Display)
+        var adServerSend = function () {
+          if (!readyBids.prebid) {
+            return;
+          }
+          if (!readyBids.google) {
+            readyBids.google = true;
+            adsInfo.gpt.displayDivIds.forEach(function (divId) {
+              googletag.display(divId);
+            });
+            if (!!(pbjs.setTargetingForGPTAsync) && fluxtag.isFn(pbjs.setTargetingForGPTAsync)) {
+              pbjs.que.push(function () {
+                pbjs.setTargetingForGPTAsync(adsInfo.pb.divIds);
+              });
+            }
+            googletag.pubads().refresh(adsInfo.gpt.slots);
+          }
+        };
+        // Prebidオークション後に起動する関数
+        var pbCallback = function () {
+          readyBids.prebid = true;
+          adServerSend();
+        };
+        // もしtimeout以内にPrebidが動作できなかった場合、最終的にGAMをコール
+        setTimeout(function () {
+          readyBids.prebid = true;
+          adServerSend();
+        }, failSafeTimeout);
+
+        return {
+          prebid: {
+            callback: pbCallback,
+          }
+        };
+      })();
+
+      if (!!(window.pbFlux) && window.pbFlux.refresh && fluxtag.isFn(window.pbFlux.refresh)) {
+        // Prebid呼び出し
+        pbjs.que.push(function () {
+          window.pbFlux.refresh({
+            lines: refreshLines,
+            callback: params.prebid.callback,
+            timeout: bidRequestTimeout
+          });
+        });
+      } else {
+        params.prebid.callback();
+      }
+    });
+  }
+};
+
+// Prebid のオークション後に fluxtag.renderAds が refresh するまで、GPT 自身には読み込ませない
+googletag.cmd.push(function () {
+  googletag.setConfig({singleRequest: true});
+  googletag.setConfig({disableInitialLoad: true});
+  googletag.enableServices();
+});</script><script async="" src="https://cdn.gmossp-sp.jp/js/async/g947154/gc.js"></script><div class="gmossp_core_g947154"><script>window.Gmossp=window.Gmossp||{};window.Gmossp.events=window.Gmossp.events||[];
+window.Gmossp.events.push({
+  sid: "g947154",
+});</script></div></head><body><div id="main-view"><header id="global-header"><a class="logo-area" href="/"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/header_logo-5ed6511181423990d525.png" /></a><nav class="menu-items"><ul><li><a href="/news">NEWS</a></li><li><a><a href="/special">SPECIAL</a></a></li><li><a><a href="/events">SCHEDULE &amp; RESULT</a></a></li><li><a><a href="/movies">MOVIE</a></a></li></ul></nav><div class="menu-buttons"><ul><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="twitter" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><button id="header-search-button"><i class="fas fa-search"></i></button></li></ul></div></header><div id="mobile-navigation"><ul><li><a href="/news">ニュース</a></li><li><a href="/special">スペシャル</a></li><li><a href="/events">大会日程 &amp; 試合結果</a></li><li><a href="/movies">ムービー</a></li></ul></div><div id="wrapper"><div class="two-column" id="content"><div id="main"><div class="module-page-title"><h1>「GFC」の記事一覧 (155件)</h1></div><nav class="module-horizontal-list"><ul><li><a href="/search/articles?word=GFC">ARTICLE</a></li><li><a href="/search/events?word=GFC">EVENT</a></li></ul></nav><div class="search-query-area"><form action="/search" accept-charset="UTF-8" method="get"><input value="articles" autocomplete="off" type="hidden" name="search[type]" id="search_type" /><input placeholder="キーワードを入力..." value="GFC" type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></form></div><div id="/00637/00714/PC/big_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_01",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="search-content-area"><ul class="news-article-list item-no-margin"><li><article class="article-news-item small type-news"><a href="/articles/25389/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/389/small/eye-catch-1794420445.jpg?1794420445"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.11.12</div></div><div class="article-title">【ZFN】木下憂朔が、佐藤天、阿部大治下したジャン・ユンソンと対戦。河名マスト、ケイト・ロータスも参戦＝12月19日（土）</div><div class="article-outline">　2026年12月19日（土）、韓国・仁川広域市 永宗区インスパイアアリーナで開催されるZFNのビッグマッチ『ZFN 05』で、木下憂朔（日本）vs.ジャン・ユンソン（韓国）のウェルター級戦（5分3R）が追加発表された。同大会には、河名マスト（ロータス世田谷）とケイト・ロータス（フリー）の参戦が発表されたばかり。
+▼ウェルター級 5分3R木下憂朔（日本）ジャン・ユンソン（韓国）8勝2敗
+
+　木下は</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/25315/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/315/small/eye-catch-1793836740.jpg?1793836740"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.11.04</div></div><div class="article-title">【修斗】北斗旗＆修斗世界王者“覇王”岩﨑大河が参戦、ミドル級新世代の高橋宙斗と対戦。GFC王者・駐日米軍海兵隊のHENRYvs.荘司英寿、新人王準決勝戦、漆田直輝＆大和が兄弟参戦、全12カード出揃う＝11月29日（日）後楽園</div><div class="article-outline">　2026年11月29日（日）東京・後楽園ホールで開催される『プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2026 Vol.7』（U-NEXT配信）の追加カードが発表され、全12カードが出揃った。
+　同大会のメインは世界ウェルター級新王者決定戦デソウザ・マルセル（同級世界1位／日本／総合格闘技道場STF）vs.マコア・クーパー（同級世界2位／米国／Tribe Of Jud</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/24998/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/998/small/eye-catch-1790814374.jpg?1790814374"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.10.01</div></div><div class="article-title">【DEEP JEWELS】フェザー級王者・東よう子が「引退試合」で連勝中の樹季相手に防衛戦。キム・ソユルが階級を下げて須田萌里と対戦。アトム級で古瀬美月vs.大井すず。仕切り直しの海咲イルカvs.月井隼南も＝11月23日（月・祝）『DEEP JEWELS 55』</div><div class="article-outline">　2026年11月23日（月・祝）東京・ニューピアホールで昼夜で開催されるDEEP。昼（11時30分）の『DEEP TOKYO IMPACT 2026 5th ROUND』に続き、夜（17時）『DEEP JEWELS 55』のカードが発表された。チケットは10月1日から発売開始。
+東よう子がフェザー級王座防衛戦で引退。2連勝中の樹季が挑戦
+▼DEEP JEWELS フェザー級タイトルマッチ 5分3</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/24978/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/978/small/eye-catch-1790589010.jpg?1790589010"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.09.28</div></div><div class="article-title">【JCK】村田夏南子がジョージアのバギシビリを肩固めで絞め落とす一本勝ち「もう一度あの舞台に戻る。まだまだ強くなる」</div><div class="article-outline">　2026年9月5日（土）中国山西省呂梁市のJCKインターナショナル・ファイティングセンターにて『JCK KINGS 016』（YouTubeメンバーシップ配信）が開催され、村田夏南子（リバーサルジム新宿Me,We）が出場。ソフィア・バギシビリ（ジョージア）と対戦した。
+
+【写真】試合直前のバックステージで魅津希と動きの確認をする村田。JCKは、UFC PIのような巨大なトレーニングセンターを併設</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/24777/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/777/small/eye-catch-1788525663.jpg?1788525663"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.09.04</div></div><div class="article-title">【JCK】村田夏南子「目標はぶれずに『またUFCに戻って戦う』」ジョージアのバギシビリに初回一本勝ち！ 青柳克明、和田教良も出場＝9月5日（土）中国</div><div class="article-outline">　2026年9月5日（土）中国山西省呂梁市のJCKインターナショナル・ファイティングセンターで開催される『JCK KINGS 016』（YouTubeメンバーシップ配信）に村田夏南子（リバーサルジム新宿Me,We）、台湾からMe,Weで出稽古していた青柳克明（BLAST MMA）、和田教良（GAIO GYM）が出場する。4日、同地にて前日計量およびフェイスオフが行われた。
+【写真】セコンドには山崎</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/24370/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/370/small/eye-catch-1784587525.jpg?1784587525"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.07.21</div></div><div class="article-title">【修斗】2年ぶり復帰の渡辺彩華が高本を極めて王座防衛！ 岩﨑が荒井をTKOで世界ミドル級王者に。関口が中池に競り勝つ、ジェイクムラタが判定勝ち、中村未来がテクニカル一本勝ち</div><div class="article-outline">　2026年7月20日（月・祝）東京・後楽園ホールにて『プロ修斗 公式戦 2026 Vol.5』（ツイキャス配信）が開催された（※写真追加あり）。
+▼世界女子スーパーアトム級チャンピオンシップ 5分5R〇渡辺彩華（王者・初防衛戦／AACC/IDEA ASAKUSA）[3R 2分41秒 リアネイキドチョーク]×高本千代（挑戦者・同級1位／高本道場）※渡辺が王座防衛
+
+　世界女子スーパーアトム級女王“</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/24134/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/134/small/eye-catch-1782291597.jpg?1782291597"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.06.24</div></div><div class="article-title">【修斗】バンタム級で元世界王者・関口祐冬と3連勝中の19歳・中池武寛が激突。スソンvs.ジェイクムラタ、今年4戦目の人見礼王が志願の出陣でライダーHIROと対戦＝7月20日（月・祝）後楽園</div><div class="article-outline">　2026年7月20日（月・祝）東京・後楽園ホールで開催されるサステイン主催『プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2026 Vol.5』では、約2年ぶりに復活する女王・渡辺彩華が、インフィニティリーグを制した“JDチャレンジャー”高本千代を相手に初防衛戦を行う「世界女子スーパーアトム級チャンピオンシップ」と、岡見勇信の返上により空位となった「世界ミドル級王座」を“</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/24104/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/104/small/eye-catch-1782041471.jpg?1782041471"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.06.21</div></div><div class="article-title">【DEEP】 栗山葵の左に退かないマフムードが組み打撃とTDで競り勝ち、Street★Bob洸助＆小川道的が接戦制す。『DEEP西日本バンタム級GP』1回戦はMG眞介がみやび下す、大空斗が谷岡にリベンジ、寺崎指名の切嶋がカットでTKO勝ち、前薗が木下をRNCに極める！ フェルナンドが3年ぶり白星、渡辺真央がプロ初勝利</div><div class="article-outline">　2026年6月21日（日）に大阪・錦秀会 住吉区民センター大ホール『DEEP OSAKA IMPACT 2026 3rd ROUND』（DEEP YouTubeメンバーシップ配信）が開催された。
+
+『DEEP西日本バンタム級GP』開幕戦出場の8選手全員が計量をクリア。1回戦の組み合わせは、大会当日に抽選で決定。なお、フライ級で杉映都（reversal gym osaka anne）が59.00k</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/24094/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/094/small/eye-catch-1781956098.jpg?1781956098"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.06.20</div></div><div class="article-title">【DEEP】 栗山葵「ストライカー対決が楽しみ」vs.UAEW＆ONEFF出場のサラ・マフムード「フィリピン代表として戦う」、『DEEP西日本バンタム級GP』開幕戦の8選手も計量クリア！＝6月21日（日）大阪</div><div class="article-outline">　2026年6月21日（日）に大阪・錦秀会 住吉区民センター大ホールで開催される『DEEP OSAKA IMPACT 2026 3rd ROUND』（DEEP YouTubeメンバーシップ配信）の前日計量が20日、同地にて行われた。
+
+『DEEP西日本バンタム級GP』開幕戦出場の8選手全員が計量をクリア。1回戦の組み合わせは、大会当日に抽選で決定される。なお、フライ級で杉映都（reversal g</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23934/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/934/small/eye-catch-1780503288.jpg?1780503288"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.06.04</div></div><div class="article-title">【DEEP】「DEEP西日本バンタム級GP 2026」を堂園悠が欠場でMG眞介が出場。一回戦カードは大会当日に抽選会で決定＝6月21日（日）大阪</div><div class="article-outline">　2026年6月21日（日）に大阪・錦秀会 住吉区民センター大ホールで開催される『DEEP OSAKA IMPACT 2026 3rd ROUND』の出場選手が変更となった。
+　堂園悠（修和館）が怪我で欠場。5月31日のDEEP浜松大会のメインで内山拓真にKO勝ちしたMG眞介（reversal gym osaka anne）が「DEEP WEST JAPAN BANTAMWEIHT GP 2026</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/23841/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/841/small/eye-catch-1779626102.jpg?1779626102"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.05.24</div></div><div class="article-title">【DEEP JEWELS】中井りんが奥富夕夏にフルマークの判定勝ちでフライ級王座防衛、イ・イェジが竹林愛留とのタフファイトでスプリット判定勝ち、ののかがソユルに辛勝、桐生祐子が月井隼南に逆転TKO勝ち、彩綺が三日月KO再起、大井すずが3連勝、山吹マリンがアマ4戦全勝、あきぴ3連勝ならず、村松美直が判定勝ち</div><div class="article-outline">　2026年5月24日（日）東京・ニューピアホールで『DEEP TOKYO IMPACT 2026 3rd ROUND』と昼夜興行で行われる夜大会『DEEP JEWELS 53』（U-NEXT／DEEP YouTubeメンバーシップ配信）が開催された。
+
+　指定席が全席完売で当日立見券のみとなった昼夜大会の大トリを飾ったは、DEEP JEWELSフライ級女王の中井りんと、挑戦者・奥富夕夏の3Rの王</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23834/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/834/small/eye-catch-1779543304.jpg?1779543304"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.05.23</div></div><div class="article-title">【DEEP JEWELS】フライ級王座戦・中井りん「正義を証明する」vs.奥富夕夏「過去最強の自分で迎える」、竹林愛留「ブッ倒す」vs.イ・イェジ「強い試合を」、ののかvs.キム・ソユル、桐生祐子「MMAの厳しさを」vs.月井隼南「意地とプライドを」、彩綺は再計量パス、大井すず、山吹マリン、あきぴも＝5月24日（日）ニューピアホール</div><div class="article-outline">　2026年5月24日（日）東京・ニューピアホールで『DEEP TOKYO IMPACT 2026 3rd ROUND』と昼夜興行で開催される夜大会『DEEP JEWELS 53』（U-NEXT／DEEP YouTubeメンバーシップ配信）の前日計量が23日、都内にて行われた。再計量選手も含め、全選手が計量をパス（※試合速報はこちら）。
+
+　指定席が全席完売で当日立見券のみとなった昼夜大会の大トリ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23800/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/800/small/eye-catch-1779195631.jpg?1779195631"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.05.19</div></div><div class="article-title">【DEEP JEWELS】日本マット復帰の中井りんがメインで“どすこい”奥富夕夏と対戦、セミは「伊澤星花チャレンジ」竹林愛留vs. イ・イェジ、ののかvs.キム・ソユルの国際戦、桐生祐子vs.月井隼南、大井すずvs.古林礼名、山吹マリン＆あきぴが連続参戦＝全試合順発表</div><div class="article-outline">　2026年5月24日（日）東京・ニューピアホールで昼夜興行で開催される夜大会の『DEEP JEWELS 53』の全14試合（オープニングファイト2試合）の試合順が発表された（昼大会『DEEP TOKYO IMPACT 2026 3rd ROUND』全試合）。なお、第5試合でSAAYA（フリー）と対戦予定だった坂本瑠華（江口道場）が練習中の怪我により欠場。代わって渡辺真央（POLARGYMOSAK</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23441/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/441/small/eye-catch-1775620911.jpg?1775620911"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.04.08</div></div><div class="article-title">【ONE】手塚裕之がONEライト級MMAでケイド・ルオトロと対戦「あんたの柔術は俺の喧嘩に通用しねぇ」初ボーナスなるか＝5月15日（金）ルンピニー</div><div class="article-outline">　2026年5月15日（金）タイ・バンコクのルンピニースタジアムで開催される『ONE Friday Fights 154＆THE INNER CIRCLE』（U-NEXT配信）で、手塚裕之（TGFC）が、現ONEライト級サブミッション・グラップリング世界王者のケイド・ルオトロ（米国）とMMA（5分3R）で対戦することが発表された。
+▼ONEライト級（※77.1kg）MMA 5分3R手塚裕之（日本）</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23433/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/433/small/eye-catch-1775490421.jpg?1775490421"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.04.07</div></div><div class="article-title">【DEEP JEWELS】フライ級王者・中井りんに奥富夕夏が挑戦。「伊澤星花チャレンジ」竹林愛留が大島沙緒里を破ったイ・イェジと対戦。新星ののかが8連勝中キム・ソユルに挑む。大井すずvs.古林礼名、山吹マリン＆あきぴが連続参戦＝5月24日（日）ニューピア</div><div class="article-outline">　2026年5月24日（日）、東京・ニューピアホールにて『DAYS Presents DEEP JEWELS 53』の開催が決定。
+「DEEP JEWELSフライ級タイトルマッチ」として、王者の中井りん（修斗道場四国）が、相撲とMMAの融合で勝率を上げている奥富夕夏（リバーサルジム新宿ME,WE）の挑戦を受ける5分3R戦など、一挙、13カードが発表された。
+▼DEEP JEWELS フライ級（56</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/23355/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/355/small/eye-catch-1774789460.jpg?1774789460"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.03.29</div></div><div class="article-title">【修斗】エフェヴィガ雄志がキャプテン☆アフリカをパウンドアウトで世界ライト級新王者に。青野ひかるが5R組み続けて女子アトム級王者に。フライ級・中村vs.関口はドロー、高岡が杉本に3R一本勝ち、中野が杉野を1R TKO、中池が26秒TKO勝ち、インフィニティリーグで高本が村上に競り勝ち優勝</div><div class="article-outline">　2026年3月29日（日）東京・後楽園ホールで『プロ修斗公式戦 2026 Vol.2』が開催された。翌日の『Lemino修斗 vol.4』に続く修斗2連戦。
+
+
+　メインは「世界ライト級選手権試合」王者・キャプテン☆アフリカvs.挑戦者・エフェヴィガ雄志。セミは「世界女子アトム級王座決定戦」中村未来vs.青野ひかるのW世界王座戦が並ぶ。
+　さらに、注目のフライ級で、関口祐冬vs.中村優作、高岡宏</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23346/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/346/small/eye-catch-1774682314.jpg?1774682314"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.03.28</div></div><div class="article-title">【修斗】世界ライト級王座戦・キャプテン「集大成、全力で戦う」vs.エフェヴィガ「最高に強い自分見せられる」。女子アトム級王座決定戦・中村「もう絶対やりたくないと思わせる」vs.青野「修斗のチャンピオンになる」。フライ級・関口vs.中村、高岡vs.杉本、IL優勝戦・高本vs.村上も＝3月29日（日）後楽園</div><div class="article-outline">　2026年3月29日（日）東京・後楽園ホールで『プロ修斗公式戦 2026 Vol.2』が開催される（※試合速報はこちら）。
+
+　28日14時より都内にて前日計量が行われ、全選手が計量をパスした。
+
+
+　メインは「世界ライト級選手権試合」王者・キャプテン☆アフリカvs.挑戦者・エフェヴィガ雄志。セミは「世界女子アトム級王座決定戦」中村未来vs.青野ひかるのW世界王座戦が並ぶ。
+　さらに、注目のフラ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23209/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/209/small/eye-catch-1773163761.jpg?1773163761"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.03.11</div></div><div class="article-title">【修斗】岡見勇信がベルト返上で「世界ミドル級王座決定トーナメント」開催、岩﨑大河vs.ヘンリー、荒井勇ニvs.沙門。片山智絵vs.erikaは中止に＝3月29日（日）後楽園</div><div class="article-outline">　2026年3月29日（日）東京・後楽園ホールで開催される『プロフェッショナル修斗公式戦 2026 Vol.2』の追加カードが発表されている（※3月30日『Lemino修斗.4』カードはこちら）。
+　W世界戦を中心に9カードが発表されていた同大会で「世界ミドル級チャンピオン決定トーナメント」の開催が決定した。第6代世界ミドル級チャンピオン・岡見勇信（EXFIGHT）が2月末日で同王座を返上。新たな</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/23059/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/059/small/eye-catch-1771830649.jpg?1771830649"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.02.23</div></div><div class="article-title">【DEEP】海飛が関鉄矢に判定勝ち「いつかシェイドゥラエフと」、JTT山田が神田にリベンジ「倉本さん勝って同門対決を」、三井が黒井を初回TKOで4連続KO勝ち、火の鳥が中務を極める、諏訪部が黒岡に逆転一本勝ち、御代川が吉田との接戦制す、石坂が坂野をTKOで4連勝、弥十朗がウラケンにスプリット判定勝ち、西山がよしずみ下す</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』が開催された。昼夜2大会ともにチケットは指定席は完売で立ち見券のみ当日販売。U-NEXT、DEEP/DEEP JEWELSメンバーシップでライブ配信。
+DEEP </div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23055/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/055/small/eye-catch-1771764105.jpg?1771764105"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.02.22</div></div><div class="article-title">【DEEP】海飛「ドツキあい」vs.関鉄矢「倒し合い楽しみ」、再戦の神田コウヤ「リベンジ戦へようこそ」vs.山田聖真「濃い15分にしてやる」、三井俊希「バッチバッチの試合に」vs.黒井海成「フィニッシュする」、御代川敏志vs.吉田悠太郎、中務修良vs.火の鳥、ウラケンvs.山崎弥十朗も＝2月23日（月・祝）ニューピア</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』が開催される。22日の前日計量では、DEEP TOKYO IMPACTの全選手が計量をパスした。なお、昼夜2大会ともにチケットは指定席は完売で立ち見券のみ当日販売</div></div></a></article></li><li><article class="article-news-item small type-interview"><a href="/articles/22994/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/994/small/eye-catch-1771152661.jpg?1771152661"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">インタビュー</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.02.15</div></div><div class="article-title">【MMA】80人が一斉練習！ 岡見勇信の新ジム『TEAM THUNDER』でロバート・ ウィテカーがセミナー。岡見「一つひとつの動きに意図がある」×ウィテカー「努力は省略できない」</div><div class="article-outline">　2026年2月10日、東京都板橋区の岡見勇信の新ジム『TEAM THUNDER』にて、元UFC世界ミドル級王者にして、現9位のロバート・ ウィテカー（豪州）がMMAセミナーを行った。
+　今回のセミナーは、Netflixの『フィジカル:100 アジア』に日本チームのリーダーとして参加した岡見と豪州チームのリーダーとして参加したウィテカーとの交流がきっかけだったという。
+
+「『フィジカル:100 ア</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22573/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/573/small/eye-catch-1766838320.jpg?1766838320"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.12.27</div></div><div class="article-title">【DEEP】ライト級・神田コウヤvs.山田聖真、フェザー級で海飛vs.関鉄矢のストライカー対決、三井俊希vs.黒井海成、フライ級・斎藤璃貴vs.御代川敏志、中務修良、山崎弥十朗も出場＝2月23日（月・祝）ニューピア</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』の開催が決定。下記カードが発表された。
+DEEP TOKYO IMPACT 2026 1st ROUND 決定カード
+▼DEEPライト級 5分3R神田コウヤ（TH</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22128/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/128/small/eye-catch-1762336240.jpg?1762336240"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.11.05</div></div><div class="article-title">【RIZIN】朝倉未来が王者シェイドゥラエフに大晦日に挑戦！6大タイトルマッチ＋斎藤裕vs.YA-MANのワンマッチが決定</div><div class="article-outline">　2025年12月31日のRIZIN大晦日さいたまスーパーアリーナ大会『師走の超強者祭り』で、フェザー級タイトルマッチ（5分3R）王者ラジャブアリ・シェイドゥラエフ（キルギス）vs. 挑戦者・朝倉未来（ジャパントップチーム）が決定した。11月5日18時30分からの会見では下記7カードが発表。6階級のタイトルマッチと斎藤裕vs.YA-MANのワンマッチが行われる。
+
+▼RIZINフェザー級（66.0</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21953/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/953/small/eye-catch-1760623712.jpg?1760623712"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.10.16</div></div><div class="article-title">【ZFN】河名マスト、連勝なるか。ユン・チャンミンとドローのパク・チャンスと対戦＝11月15日（土）『ZFN 03』</div><div class="article-outline">　2025年11月15日（土）、韓国・高麗大学校 ファジョンタイガードームで開催される『ZFN 03』に河名マスト（ロータス世田谷）が参戦。Double GFCフェザー＆ライト級王者のパク・チャンス（韓国）と対戦することが発表された。
+▼フェザー級 5分3Rパク・チャンス（韓国）8勝2敗1分河名マスト（日本）11勝5敗
+
+　河名は、2017年U-23世界選手権グレコローマン59kg級初代世界王者。</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21623/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/623/small/eye-catch-1757327177.jpg?1757327177"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.09.08</div></div><div class="article-title">【GLADIATOR】4連勝中の後藤丈季が韓国のストライカー・クォン・ジフと対戦、外岡真徳の弟子・薬剤師ファイター天野武徳がプロデビューで国際戦＝9月21日（日）大阪</div><div class="article-outline">　2025年9月21日（日）に大阪府豊中市176BOXで開催される『GLADIATOR 032』の追加カード「国際戦＋PROGRESルール」が発表された。
+　4連勝中の後藤丈季が初の国際戦で韓国のクォン・ジフと対戦。また、抑えられない武道愛・天野武徳がキム・ジギョンとデビュー戦対決に臨む。
+▼GLADIATORウェルター級 5分3R後藤丈季（kyotoSEIKENKAI）クォン・ジフ（TEAM M</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21234/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/234/small/eye-catch-1754022941.jpg?1754022941"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.08.01</div></div><div class="article-title">【RIZIN】ライト王者・サトシに堀江圭功が挑戦、矢地祐介が日拳出身・芳賀ビラル海と対戦。ヘビー級で金田一孝介vs.セネガル相撲バンビロールも＝9月28日『RIZIN.51』名古屋大会追加8カード発表</div><div class="article-outline">　2025年8月1日（金）13時より『RIZIN.51』(9月28日 愛知・IGアリーナ）の追加対戦カード発表記者会見が行われた。
+　すでに、フェザー級王者ラジャブアリ・シェイドゥラエフ（キルギス）vs.挑戦者ビクター・コレスニックの「RIZINフェザー級（66kg）タイトルマッチ」のほか、「RIZIN WORLD GP 2025 ヘビー級（120kg）トーナメント決勝」「RIZIN WORLD </div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/21177/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/177/small/eye-catch-1753621081.jpg?1753621081"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.07.27</div></div><div class="article-title">【RIZIN】朝倉未来がクレベルにスプリット判定勝ちでリベンジ、野村がパトリッキーに判定勝ちで9月名古屋でサトシに挑戦、YA-MANがTKO勝ちで金原が引退。井上が福田下し王座防衛。安藤が一本勝ち、上田がTKO負けで準決勝敗退。フライ級GPで元谷がヒロヤに完勝、扇久保がトーレスに競り勝つ、伊藤がズールーに打ち勝ち、ガジャマトフが征矢をTKO、神龍がギロチン極める</div><div class="article-outline">　2025年7月27日（日）さいたまスーパーアリーナにて『超RIZIN.4 真夏の喧嘩祭り』が開催された。メインイベントの第15試合は、フェザー級前王者のクレベル・コイケ（ボンサイ柔術）と、前戦で鈴木千裕に3R TKO勝ちした朝倉未来（ジャパントップチーム）が対戦。
+【写真】『超RIZIN.4』スタジアムバージョンのさいたまスーパーアリーナ会場
+　セミのライト級では、元Bellatorライト級王者</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/21127/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/127/small/eye-catch-1753188664.jpg?1753188664"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.07.22</div></div><div class="article-title">【Ultimate Shooting】修斗vs.米軍は修斗が勝利！ キャプテン☆アフリカがバロンをKO！ TOMAがウォーレンに延長判定勝ち、タイボンが剣・ホカフウ・モヤキにKO勝利＝佐山聡氏 考案 実戦市街地型格闘技</div><div class="article-outline">　2025年7月20日（日）沖縄コンベンションセンター展示棟にて、XBP株式会社主催の『Ultimate Shooting』（アルティメットシューティング）が開催された。
+“総合格闘技の父”・初代タイガーマスク佐山聡が考案した打撃特化型の新競技「アルティメットシューティング」は、「全局面打撃特化」をコンセプトとした最新の実戦市街地型格闘技。立ち技、崩れ、密着など、あらゆる体勢・距離での“3D打撃”</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/20966/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/966/small/eye-catch-1751622838.jpg?1751622838"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.07.04</div></div><div class="article-title">【RIZIN】安藤達也が連続参戦でヤン・ジヨンと対戦！ ヘビー級GP準決勝は“蹴撃対決”上田幹雄vs.ソルダトキン、スダリオ下したアウグストvs.KSWサモチュク＝7月27日（日）『超RIZIN.4』</div><div class="article-outline">　2025年7月27日（日）『超RIZIN.4 真夏の喧嘩祭り』（さいたまスーパーアリーナ）の追加対戦カードが発表された。
+「フライ級トーナメント」に続き、「RIZIN WORLD GP 2025 ヘビー級トーナメント」準決勝2試合の組み合わせのほか、バンタム級で、ヤン・ジヨン（韓国）vs.安藤達也（日本）が決定している。
+▼RIZINバンタム級（61.0kg）5分3Rヤン・ジヨン（韓国）安藤達也</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/20952/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/952/small/eye-catch-1751427869.jpg?1751427869"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.07.02</div></div><div class="article-title">【ROAD FC】原口伸がROAD FC 2連勝！ テイクダウンからギロチンプレッシャーでコントロール、最後はキムラで極める</div><div class="article-outline">『ROAD TO UFC』で敗れた日本人選手が韓国で再起を果たし、再び「UFCへの道」を進んでいる。日本で実績のある選手を踏み台にしようとする韓国勢を相手に河名マストはZFNで、原口伸はROAD FCで勝ち名乗りを受けている。その2選手の試合を紹介したい。
+
+　2025年6月28日（土）、韓国・ソウルのチャンチュン体育館にて『ROAD FC 73』が開催され、日本の原口伸（BRAVE）がROAD </div></div></a></article></li></ul><div id="/00637/00714/PC/big_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_02",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="module-paginate">  <nav class="pagination" role="navigation" aria-label="pager">
+    
+    
+        <span class="page current">
+  1
+</span>
+
+        <span class="page">
+  <a rel="next" href="/search/articles?page=2&amp;word=GFC">2</a>
+</span>
+
+        <span class="page">
+  <a href="/search/articles?page=3&amp;word=GFC">3</a>
+</span>
+
+        <span class="page gap">...</span>
+
+      <span class="next">
+  <a rel="next" href="/search/articles?page=2&amp;word=GFC">></a>
+</span>
+
+      <span class="last">
+  <a href="/search/articles?page=6&amp;word=GFC">最後</a>
+</span>
+
+  </nav>
+</div></div></div><div id="side"><div id="/00637/00714/PC/side_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_01",
+      sizes: [[300,250]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="sidebar-contents"><h2>RANKING</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="ranking rank-1">1</div><div class="article-image rank-1"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="ranking rank-2">2</div><div class="article-image rank-2"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-report"><a href="/articles/20105/outline"><div class="ranking rank-3">3</div><div class="article-image rank-3"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/105/small/eye-catch-1744012423.jpg?1744012423"></span></div><div class="article-content"><div class="category-label">レポート</div><div class="article-title">【GLADIATOR】34歳・神田T-800周一、16歳の超新星ルキヤに一本勝ち。ライト級・小森が未知のガンドルフィを完封、ダギースレンが岩倉に判定勝ち、転向2戦目でヅッキーニョスが八木に判定勝ち、ウェルター級大道vs.マックスは裁定預かり、フライ級今井が和田に判定勝ち、久保がパクに競り勝つ</div></div></a></article><article class="sidebar-article type-column"><a href="/articles/22296/outline"><div class="ranking rank-4">4</div><div class="article-image rank-4"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/296/small/eye-catch-1763866044.jpg?1763866044"></span></div><div class="article-content"><div class="category-label">コラム</div><div class="article-title">【UFC】堀口恭司、9年ぶり復帰のUFCで11位ウランベコフに一本勝ちの進化とは？ 「危ない場面は全然、無い」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/23834/outline"><div class="ranking rank-5">5</div><div class="article-image rank-5"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/834/small/eye-catch-1779543304.jpg?1779543304"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP JEWELS】フライ級王座戦・中井りん「正義を証明する」vs.奥富夕夏「過去最強の自分で迎える」、竹林愛留「ブッ倒す」vs.イ・イェジ「強い試合を」、ののかvs.キム・ソユル、桐生祐子「MMAの厳しさを」vs.月井隼南「意地とプライドを」、彩綺は再計量パス、大井すず、山吹マリン、あきぴも＝5月24日（日）ニューピアホール</div></div></a></article></div></div><div class="sidebar-contents"><h2>LATEST</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25448/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/448/small/eye-catch-1794905852.jpg?1794905852"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【K-1】1年ぶり復帰予定だった元王者オウヤン・フェンが全治2週間の怪我で欠場、齋藤絋也はスクランブル出場の杉若怜と対戦</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25446/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/446/small/eye-catch-1794885645.jpg?1794885645"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】武尊がONEの殿堂入りに続きアンバサダーに就任「次の時代を引っ張っていくスーパースターが生まれることを楽しみにしながら、陰ながら支えていきたい」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25445/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/445/small/eye-catch-1794882112.jpg?1794882112"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】王者パシオ「準備は万端」vs.山北渓人「まずは自分がONEのチャンピオンになりたい」、那須川龍心「自分にとってはリスクしかない対戦」vs.永井雷智「すべてをひっくり返してやる」</div></div></a></article></div></div><div id="/00637/00714/PC/side_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_02",
+      sizes: [[300,250],[300,600]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div></div><footer id="global-footer"><button id="scroll-top-button"><div class="text"><span>トップへ戻る</span><div class="icon"><i class="fa fa-angle-up"></i></div></div></button><div class="footer-main"><div class="footer-inner"><div class="footer-logo"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/footer_logo-e7375d0cdca0d60eab9a.png" /></div><ul class="sns-links"><li><a class="x" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="facebook" target="_blank" href="https://www.facebook.com/gong.kakutogi/"><i class="fab fa-facebook-f"></i></a></li></ul><ul class="footer-links"><li><a href="/about">ABOUT</a></li><li><a href="/contacts">お問い合わせ</a></li><li><a href="/policy/terms">利用規約</a></li><li><a href="/policy/privacy">プライバシーポリシー</a></li></ul><div class="copyright">© 2026 GONG KAKUTOGI. All Rights Reserved.</div></div></div></footer></div><div class="modal" id="search-modal"><div class="modal-inner"><div class="close-button" id="close-search-modal-button"><span>✕</span></div><div class="modal-content"><h2>どんな情報をお探しですか？</h2><form action="/search" accept-charset="UTF-8" method="get"><div class="select-wrapper"><div class="custom-select"><select name="search[type]" id="search_type"><option value="article">ニュース・インタビュー</option>
+<option value="event">格闘技イベント</option></select></div></div><div class="input-wrapper"><input placeholder="キーワードを入力..." type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></div></form></div></div></div><div id="drawer-overlay"></div><script src="https://gonkaku.jp/packs/js/runtime-0fe523daf1eefb208515.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/457-94e4ee5d100544804fad.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/279-ac13d8c56b4ccc513f7a.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/web-c9ade425642b4c792a7f.js" defer="defer"></script><div class="ad_overlay"><div id="/00637/00714/PC/all_foot_overlay_01" class="flux-ad ad_overlay__inner"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/all_foot_overlay_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/all_foot_overlay_01",
+      sizes: [[728,90],[970,90]],
+      sizemapping: [[[767,0],[[728,90],[970,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

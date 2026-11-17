@@ -1,0 +1,253 @@
+<!DOCTYPE html><html prefix="http://ogp.me/ns#"><head><meta charset="UTF-8">
+<title>「桜井マッハ」の記事 - ゴング格闘技</title>
+<link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="/favicon/favicon-192x192.png?v=1" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=1" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon/favicon-48x48.png?v=1" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png?v=1" sizes="16x16">
+<link rel="canonical" href="https://gonkaku.jp/search/articles">
+<link rel="alternate" href="https://gonkaku.jp/feed" type="application/rss+xml" title="RSS">
+<meta property="fb:app_id" content="605712313279317">
+<meta property="og:title" content="「桜井マッハ」の記事">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://gonkaku.jp/packs/static/images/og_image-15894cead874a0e992cf.jpg">
+<meta property="og:url" content="https://gonkaku.jp/search/articles?word=%E6%A1%9C%E4%BA%95%E3%83%9E%E3%83%83%E3%83%8F">
+<meta property="og:site_name" content="ゴング格闘技 - GONKAKU">
+<meta property="og:locale" content="ja_JP">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="X-UA-Compatible" content="IE=edge"><link href="/manifest.json" rel="manifest" /><link rel="stylesheet" href="https://gonkaku.jp/packs/css/web-73aebef6.css" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hAX3kREIqGrzyAk1kn6V0aL5FGI_acJw5CMJDz3nu_mFcS-F1NHRafTSUq89QKKsTjLZiMVyZOST58W__O9Qbg" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-2V329YSCT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2V329YSCT0');
+</script>
+<script>window.pbjs = window.pbjs || {};
+window.pbjs.que = window.pbjs.que || [];</script><script async="async" src="https://flux-cdn.com/client/00637/gonkaku_00714.min.js"></script><script>window.googletag = window.googletag || {};
+window.googletag.cmd = window.googletag.cmd || [];</script><script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script>googletag.cmd.push(function () {
+  var interstitial = googletag.defineOutOfPageSlot("/22614819838,22669671226/00637/00714/PC/interstitial", googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+  googletag.setConfig({singleRequest: true});
+  googletag.enableServices();
+  googletag.display(interstitial);
+});</script><script>window.fluxtag = {
+  failSafeTimeout: 3000,
+  isFn: function (object) {
+    var _t = 'Function';
+    var toString = Object.prototype.toString;
+    return toString.call(object) === '[object ' + _t + ']';
+  },
+  renderAds: function (lines, failSafeTimeout) {
+    googletag.cmd.push(function () {
+      var failSafeTimeout = failSafeTimeout || window.fluxtag.failSafeTimeout;
+      var bidRequestTimeout = (failSafeTimeout - 500) > 0 ? failSafeTimeout - 500 : failSafeTimeout;
+      var refreshLines = [];
+      var params = (function () {
+        // GAMを呼び出したかを確認にするフラグ
+        var readyBids = {
+          google: false,
+          prebid: false,
+        };
+        var definedSlots = [];
+        var adsInfo = {
+          gpt: {
+            slots: [],
+            displayDivIds: [],
+          },
+          pb: {
+            divIds: []
+          }
+        };
+
+        googletag.pubads().getSlots().forEach(function (slot) {
+          // 既にdefineSlotされていた場合
+          definedSlots[slot.getSlotElementId()] = slot;
+        });
+
+        lines.forEach(function (line) {
+          var divId = line.divId;
+
+          adsInfo.pb.divIds.push(divId);
+
+          refreshLines.push({
+            code: line.gpt.unitPath,
+            id: divId
+          });
+
+          if (definedSlots[divId]) {
+            adsInfo.gpt.slots.push(definedSlots[divId]);
+          } else {
+            var slot = googletag.defineSlot(line.gpt.unitPath, line.gpt.sizes, divId)
+                .addService(googletag.pubads());
+
+            if (line.gpt.sizeMapping && line.gpt.sizeMapping.length > 0) {
+              var sizeMapping = googletag.sizeMapping();
+              line.gpt.sizeMapping.forEach(function (size) {
+                sizeMapping.addSize(size[0], size[1]);
+              });
+              slot.defineSizeMapping(sizeMapping.build());
+            }
+            if (line.gpt.keyValues && line.gpt.keyValues.length > 0) {
+              line.gpt.keyValues.forEach(function (param) {
+                slot.setTargeting(param.key, param.value);
+              });
+            }
+            adsInfo.gpt.slots.push(slot);
+            adsInfo.gpt.displayDivIds.push(divId);
+          }
+        });
+        // Prebid、APSでオークション後に起動する関数 (GAMコール、広告Display)
+        var adServerSend = function () {
+          if (!readyBids.prebid) {
+            return;
+          }
+          if (!readyBids.google) {
+            readyBids.google = true;
+            adsInfo.gpt.displayDivIds.forEach(function (divId) {
+              googletag.display(divId);
+            });
+            if (!!(pbjs.setTargetingForGPTAsync) && fluxtag.isFn(pbjs.setTargetingForGPTAsync)) {
+              pbjs.que.push(function () {
+                pbjs.setTargetingForGPTAsync(adsInfo.pb.divIds);
+              });
+            }
+            googletag.pubads().refresh(adsInfo.gpt.slots);
+          }
+        };
+        // Prebidオークション後に起動する関数
+        var pbCallback = function () {
+          readyBids.prebid = true;
+          adServerSend();
+        };
+        // もしtimeout以内にPrebidが動作できなかった場合、最終的にGAMをコール
+        setTimeout(function () {
+          readyBids.prebid = true;
+          adServerSend();
+        }, failSafeTimeout);
+
+        return {
+          prebid: {
+            callback: pbCallback,
+          }
+        };
+      })();
+
+      if (!!(window.pbFlux) && window.pbFlux.refresh && fluxtag.isFn(window.pbFlux.refresh)) {
+        // Prebid呼び出し
+        pbjs.que.push(function () {
+          window.pbFlux.refresh({
+            lines: refreshLines,
+            callback: params.prebid.callback,
+            timeout: bidRequestTimeout
+          });
+        });
+      } else {
+        params.prebid.callback();
+      }
+    });
+  }
+};
+
+// Prebid のオークション後に fluxtag.renderAds が refresh するまで、GPT 自身には読み込ませない
+googletag.cmd.push(function () {
+  googletag.setConfig({singleRequest: true});
+  googletag.setConfig({disableInitialLoad: true});
+  googletag.enableServices();
+});</script><script async="" src="https://cdn.gmossp-sp.jp/js/async/g947154/gc.js"></script><div class="gmossp_core_g947154"><script>window.Gmossp=window.Gmossp||{};window.Gmossp.events=window.Gmossp.events||[];
+window.Gmossp.events.push({
+  sid: "g947154",
+});</script></div></head><body><div id="main-view"><header id="global-header"><a class="logo-area" href="/"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/header_logo-5ed6511181423990d525.png" /></a><nav class="menu-items"><ul><li><a href="/news">NEWS</a></li><li><a><a href="/special">SPECIAL</a></a></li><li><a><a href="/events">SCHEDULE &amp; RESULT</a></a></li><li><a><a href="/movies">MOVIE</a></a></li></ul></nav><div class="menu-buttons"><ul><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="twitter" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><button id="header-search-button"><i class="fas fa-search"></i></button></li></ul></div></header><div id="mobile-navigation"><ul><li><a href="/news">ニュース</a></li><li><a href="/special">スペシャル</a></li><li><a href="/events">大会日程 &amp; 試合結果</a></li><li><a href="/movies">ムービー</a></li></ul></div><div id="wrapper"><div class="two-column" id="content"><div id="main"><div class="module-page-title"><h1>「桜井マッハ」の記事一覧 (12件)</h1></div><nav class="module-horizontal-list"><ul><li><a href="/search/articles?word=%E6%A1%9C%E4%BA%95%E3%83%9E%E3%83%83%E3%83%8F">ARTICLE</a></li><li><a href="/search/events?word=%E6%A1%9C%E4%BA%95%E3%83%9E%E3%83%83%E3%83%8F">EVENT</a></li></ul></nav><div class="search-query-area"><form action="/search" accept-charset="UTF-8" method="get"><input value="articles" autocomplete="off" type="hidden" name="search[type]" id="search_type" /><input placeholder="キーワードを入力..." value="桜井マッハ" type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></form></div><div id="/00637/00714/PC/big_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_01",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="search-content-area"><ul class="news-article-list item-no-margin"><li><article class="article-news-item small type-report"><a href="/articles/17090/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/090/small/eye-catch-1715949310.jpg?1715949310"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.05.17</div></div><div class="article-title">【格闘代理戦争】中村京一郎がトミー矢野の寝技を断ち切り優勝。朝倉未来推薦の秋元がヤマニハに2R TKO勝ち！ ギレルメが右ハイ効かせて一本勝ち！ 帰国・平本蓮がセコンドの向坂がTKO負け</div><div class="article-outline">　2024年5月17日（金）19時からABEMA『格闘代理戦争 THE MAX』決勝戦（ABEMA配信）が行われた。
+『格闘代理戦争 THE MAX 決勝戦』速報
+2024年5月17日（金）19時～ABEMA配信
+▼メインイベント トーナメント決勝戦 フェザー級（65.7kg）3分3R〇中村京一郎（EXFIGHT）岡見勇信＆中村倫也推薦　65.45kg[判定3-0] ※29-28×2, 30-27</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/17077/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/077/small/eye-catch-1715849295.jpg?1715849295"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.05.16</div></div><div class="article-title">【格闘代理戦争】前日計量！ 決勝戦・中村京一郎「新しい扉を開けた」vs.トミー矢野「テイクダウンしてTKOか一本で勝つ」</div><div class="article-outline">　2024年5月17日（金）19時からABEMA『格闘代理戦争 THE MAX』決勝戦が行われる。同大会の前日計量が16日14時30分から、都内にて行われた。メインイベントの中村京一郎とトミー矢野は、ともに計量をパス。トーナメント決勝に向け、意気込みを語った。
+
+『格闘代理戦争 THE MAX 決勝戦』
+2024年5月17日（金）19時～ABEMA配信
+▼メインイベント トーナメント決勝戦 フェザ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/17028/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/028/small/eye-catch-1715346679.jpg?1715346679"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.05.10</div></div><div class="article-title">【格闘代理戦争】朝倉未来推薦・無敗の秋元強真の相手はクレベル推薦ヒロ・ヤマニハに！「私のレベルじゃない」、朝倉未来は「僕の予想では半々」</div><div class="article-outline">　2024年5月17日（金）19時からABEMA『格闘代理戦争 THE MAX』決勝戦が行われる。同大会の決勝以外のカードが、10日の同番組にて、発表された。
+
+　第4試合にて、クレベル・コイケ推薦のヒロ・ヤマニハ（ボンサイ柔術）が、朝倉未来推薦の秋元強真（ジャパントップチーム）と62.5kg契約で対戦することが決定。また、メインイベントでは3カ月で3試合のタフな連戦に臨むトミー矢野（イゴール・タ</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/15498/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/015/498/small/eye-catch-1700887190.jpg?1700887190"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2023.11.25</div></div><div class="article-title">【修斗】日本に王座奪還ならず、田村ヒビキが左でダウンを奪うもペルペトゥオの下からのペダラーダにダウン、パウンドでTKO負け</div><div class="article-outline">2023年11月24日（日本時間25日朝8時～）ブラジル・リオデジャネイロのアッパーアリーナにて『Shooto Brasil 120』（UFC Fight Pass配信）が開催された。
+　前日計量では、修斗世界ウェルター級王者のエルナニ・ペルペトゥオ（ブラジル／ノヴァウニオン）は77.0kg、挑戦者で現環太平洋ウェルター級王者で世界同級1位の田村ヒビキ（日本／カルペディム福岡）が76.9kgでパス</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/15478/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/015/478/small/eye-catch-1700792437.jpg?1700792437"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2023.11.24</div></div><div class="article-title">【修斗】田村ヒビキが計量パス「最初に見たチャンピオンベルトが修斗のベルト。勝って日本に持ち帰ります」＝11.24『Shooto Brasil』</div><div class="article-outline">　2023年11月24日（日本時間25日朝8時～）ブラジル・リオデジャネイロのアッパーアリーナにて開催される『Shooto Brasil 120』（UFC Fight Pass配信）の前日計量が23日（同24日）同地にて行われ、「修斗世界ウェルター級選手権試合」（5分5R）の両者が計量をパスした。
+　修斗世界ウェルター級王者のエルナニ・ペルペトゥオ（ブラジル／ノヴァウニオン）は77.0kg、挑戦者</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/15129/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/015/129/small/eye-catch-1697600373.jpg?1697600373"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2023.10.18</div></div><div class="article-title">【修斗】田村ヒビキが世界ウェルター級王者ペルペトゥオにブラジルで挑戦！ アウェイでベルト日本奪還なるか＝11.23『Shooto Brasil』</div><div class="article-outline">　2023年11月23日（日本時間24日）ブラジル・リオデジャネイロのアッパーアリーナで開催される『Shooto Brasil 120』にて「修斗世界ウェルター級選手権試合」（5分5R）として、王者・エルナニ・ペルペトゥオ（ブラジル）に、現環太平洋ウェルター級王者で世界同級1位の田村ヒビキ（カルペディム福岡）が挑戦することが分かった。
+　2022年5月の修斗TORAOでのソーキとの再戦で環太平洋の</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/8627/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/008/627/small/eye-catch-1636192656.jpg?1636192656"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2021.11.06</div></div><div class="article-title">【VTJ】平良達郎がチリ王者ムアイアドに一本勝ち「UFC王者目指す！」、宇野薫が敗れる、西川大和が一本勝ちで青木真也に対戦要求！ 青木も受託。佐藤将光が圧勝、宇佐美が連勝</div><div class="article-outline">　2021年11月6日（土）東京新木場のUSEN STUDIO COASTにて「VTJ2021」が開催された。
+VTJ 2021 試合リポート
+2021年11月6日（土）USEN STUDIO COAST16:30
+▼第6試合 58.5kg契約 5分3R○平良達郎（THEパラエストラ沖縄）58.5kg[1R 4分12秒 リアネイキドチョーク]×アルフレド・ムアイアド（チリ・BLACKHOUSE S</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/8353/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/008/353/small/eye-catch-1633858701.jpg?1633858701"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2021.10.10</div></div><div class="article-title">【VTJ】“ミスターVTJ”宇野薫が、新GLADIATORフェザー級王者・原口央と対戦＝11月6日（土）新木場</div><div class="article-outline">　2021年11月6日（土）東京・新木場のUSEN STUDIO COASTにて、5年2カ月ぶりに復活する「VTJ」の第1弾カードが発表された。
+“グレイシー一族最強の男”と言われたヒクソン・グレイシーの初来日、中井祐樹とジェラルド・ゴルドーの伝説の一戦など、1994年から2回に渡る無差別級トーナメント「VALE TUDO JAPAN オープン」を経て“世界の強豪を迎え撃つ”という新たなコンセプト</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/6324/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/006/324/small/eye-catch-1614682291.jpg?1614682291"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2021.03.02</div></div><div class="article-title">【GRACHAN】4月25日（日）大田区PIOにて「GRACHAN×BRAVE FIGHT」開催、岸本篤史vs.笹川JPほか15カード発表</div><div class="article-outline">　2021年4月25日（日）大田区産業プラザPIOにて、毎年恒例の「GRACHAN×BRAVE FIGHT」の開催が決定した。
+　GRACHAN岩﨑ヒロユキ代表とGRACHAN相談役に名を連ねる宮田和幸BRAVE GYM代表が、「選手育成」のために開催する同大会からは、過去にRIZINで活躍中の武田光司、芦田崇宏も出場している。
+　今大会では、ライト級（5分2R）で岸本篤史（BRAVE）と笹川JP</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/5144/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/005/144/small/eye-catch-1603344475.jpg?1603344475"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2020.10.22</div></div><div class="article-title">【ZST】今成正和vs.岩本健汰が激突！ 女子8人トーナメント、道衣ありMMAも！＝11月22日（日）GEN</div><div class="article-outline">　2020年11月22日、GENスポーツパレスにてZSTの昼夜大会が決定。13時30分からの昼大会で「BATTLE HAZARD 08」、18時開始の夜大会で「ZST.69」が行われることが発表された。有観客ながら新型コロナウイルス対応のため、VIP 30席、S 130席のみの販売で、両大会はPIA LIVE STREAMにて有料配信される。
+　会見で勝村周一朗プロデューサーは、昼大会の「BATT</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/408/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/000/408/small/1551558918.jpg?1551559794"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2019.03.03</div></div><div class="article-title">【BRAVE FIGHT×GRACHAN】柔道出身AYAと高森惟舞が対戦！ グラップリングで竿本樹生vs所英男も＝3月10日（日）「BRAVE FIGHT 18×GRACHAN 39」大田区</div><div class="article-outline">3月10日（日）、大田区産業プラザPIOで開催される「BRAVE FIGHT 18×GRACHAN39」追加＆変更カードが発表された（※対戦カードおよび試合順は下部【関連大会】参照）。
+女子58kg以下契約試合では、MMA2勝無敗のAYA（BRAVE）が、MMA1勝2敗の高森惟舞（BURST）と対戦する。
+
+AYAは柔道出身で国体で優勝経験を持ち、2018年9月の「GRACHAN 36」でROAD</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/42/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/000/042/small/DSC_8621.jpg?1545976314"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2018.12.28</div></div><div class="article-title">【格闘代理戦争】古瀬美月「一生懸命やるということ」＝『格闘代理戦争3rdシーズン』決勝戦</div><div class="article-outline">12月29日（土）、AbemaTVで放送される『格闘代理戦争3rdシーズン』の決勝戦に出場する古瀬美月（青木真也推薦）と平田樹（桜井&quot;マッハ&quot;速人推薦）が28日正午、都内にて前日計量に臨み、規定の体重をともにクリア。計量後、決勝の両者に話を聞いた。
+DEEP JEWELSで2勝4敗の戦績も、仮面女子の川村虹花に勝利し、リング上で「見捨てないでください」とその想いを吐露した古瀬美月。その言葉に魅かれ</div></div></a></article></li></ul><div id="/00637/00714/PC/big_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_02",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div><div id="side"><div id="/00637/00714/PC/side_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_01",
+      sizes: [[300,250]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="sidebar-contents"><h2>RANKING</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="ranking rank-1">1</div><div class="article-image rank-1"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="ranking rank-2">2</div><div class="article-image rank-2"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-report"><a href="/articles/20105/outline"><div class="ranking rank-3">3</div><div class="article-image rank-3"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/105/small/eye-catch-1744012423.jpg?1744012423"></span></div><div class="article-content"><div class="category-label">レポート</div><div class="article-title">【GLADIATOR】34歳・神田T-800周一、16歳の超新星ルキヤに一本勝ち。ライト級・小森が未知のガンドルフィを完封、ダギースレンが岩倉に判定勝ち、転向2戦目でヅッキーニョスが八木に判定勝ち、ウェルター級大道vs.マックスは裁定預かり、フライ級今井が和田に判定勝ち、久保がパクに競り勝つ</div></div></a></article><article class="sidebar-article type-column"><a href="/articles/22296/outline"><div class="ranking rank-4">4</div><div class="article-image rank-4"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/296/small/eye-catch-1763866044.jpg?1763866044"></span></div><div class="article-content"><div class="category-label">コラム</div><div class="article-title">【UFC】堀口恭司、9年ぶり復帰のUFCで11位ウランベコフに一本勝ちの進化とは？ 「危ない場面は全然、無い」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/23834/outline"><div class="ranking rank-5">5</div><div class="article-image rank-5"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/834/small/eye-catch-1779543304.jpg?1779543304"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP JEWELS】フライ級王座戦・中井りん「正義を証明する」vs.奥富夕夏「過去最強の自分で迎える」、竹林愛留「ブッ倒す」vs.イ・イェジ「強い試合を」、ののかvs.キム・ソユル、桐生祐子「MMAの厳しさを」vs.月井隼南「意地とプライドを」、彩綺は再計量パス、大井すず、山吹マリン、あきぴも＝5月24日（日）ニューピアホール</div></div></a></article></div></div><div class="sidebar-contents"><h2>LATEST</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25448/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/448/small/eye-catch-1794905852.jpg?1794905852"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【K-1】1年ぶり復帰予定だった元王者オウヤン・フェンが全治2週間の怪我で欠場、齋藤絋也はスクランブル出場の杉若怜と対戦</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25446/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/446/small/eye-catch-1794885645.jpg?1794885645"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】武尊がONEの殿堂入りに続きアンバサダーに就任「次の時代を引っ張っていくスーパースターが生まれることを楽しみにしながら、陰ながら支えていきたい」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25445/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/445/small/eye-catch-1794882112.jpg?1794882112"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】王者パシオ「準備は万端」vs.山北渓人「まずは自分がONEのチャンピオンになりたい」、那須川龍心「自分にとってはリスクしかない対戦」vs.永井雷智「すべてをひっくり返してやる」</div></div></a></article></div></div><div id="/00637/00714/PC/side_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_02",
+      sizes: [[300,250],[300,600]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div></div><footer id="global-footer"><button id="scroll-top-button"><div class="text"><span>トップへ戻る</span><div class="icon"><i class="fa fa-angle-up"></i></div></div></button><div class="footer-main"><div class="footer-inner"><div class="footer-logo"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/footer_logo-e7375d0cdca0d60eab9a.png" /></div><ul class="sns-links"><li><a class="x" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="facebook" target="_blank" href="https://www.facebook.com/gong.kakutogi/"><i class="fab fa-facebook-f"></i></a></li></ul><ul class="footer-links"><li><a href="/about">ABOUT</a></li><li><a href="/contacts">お問い合わせ</a></li><li><a href="/policy/terms">利用規約</a></li><li><a href="/policy/privacy">プライバシーポリシー</a></li></ul><div class="copyright">© 2026 GONG KAKUTOGI. All Rights Reserved.</div></div></div></footer></div><div class="modal" id="search-modal"><div class="modal-inner"><div class="close-button" id="close-search-modal-button"><span>✕</span></div><div class="modal-content"><h2>どんな情報をお探しですか？</h2><form action="/search" accept-charset="UTF-8" method="get"><div class="select-wrapper"><div class="custom-select"><select name="search[type]" id="search_type"><option value="article">ニュース・インタビュー</option>
+<option value="event">格闘技イベント</option></select></div></div><div class="input-wrapper"><input placeholder="キーワードを入力..." type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></div></form></div></div></div><div id="drawer-overlay"></div><script src="https://gonkaku.jp/packs/js/runtime-0fe523daf1eefb208515.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/457-94e4ee5d100544804fad.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/279-ac13d8c56b4ccc513f7a.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/web-c9ade425642b4c792a7f.js" defer="defer"></script><div class="ad_overlay"><div id="/00637/00714/PC/all_foot_overlay_01" class="flux-ad ad_overlay__inner"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/all_foot_overlay_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/all_foot_overlay_01",
+      sizes: [[728,90],[970,90]],
+      sizemapping: [[[767,0],[[728,90],[970,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

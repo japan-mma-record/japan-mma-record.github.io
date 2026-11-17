@@ -1,0 +1,303 @@
+<!DOCTYPE html><html prefix="http://ogp.me/ns#"><head><meta charset="UTF-8">
+<title>「キングダム」の記事 - ゴング格闘技</title>
+<link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="/favicon/favicon-192x192.png?v=1" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=1" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon/favicon-48x48.png?v=1" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png?v=1" sizes="16x16">
+<link rel="canonical" href="https://gonkaku.jp/search/articles">
+<link rel="alternate" href="https://gonkaku.jp/feed" type="application/rss+xml" title="RSS">
+<meta property="fb:app_id" content="605712313279317">
+<meta property="og:title" content="「キングダム」の記事">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://gonkaku.jp/packs/static/images/og_image-15894cead874a0e992cf.jpg">
+<meta property="og:url" content="https://gonkaku.jp/search/articles?word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">
+<meta property="og:site_name" content="ゴング格闘技 - GONKAKU">
+<meta property="og:locale" content="ja_JP">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="X-UA-Compatible" content="IE=edge"><link href="/manifest.json" rel="manifest" /><link rel="stylesheet" href="https://gonkaku.jp/packs/css/web-73aebef6.css" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="D_c5vOWrC183lEZUHUmhany-EvSndyiWr9DVy6eRDmFeS-8vxivvnLxu2Ldl5CEd90EuTZ9kSvGkGnreeyotLQ" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-2V329YSCT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2V329YSCT0');
+</script>
+<script>window.pbjs = window.pbjs || {};
+window.pbjs.que = window.pbjs.que || [];</script><script async="async" src="https://flux-cdn.com/client/00637/gonkaku_00714.min.js"></script><script>window.googletag = window.googletag || {};
+window.googletag.cmd = window.googletag.cmd || [];</script><script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script>googletag.cmd.push(function () {
+  var interstitial = googletag.defineOutOfPageSlot("/22614819838,22669671226/00637/00714/PC/interstitial", googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+  googletag.setConfig({singleRequest: true});
+  googletag.enableServices();
+  googletag.display(interstitial);
+});</script><script>window.fluxtag = {
+  failSafeTimeout: 3000,
+  isFn: function (object) {
+    var _t = 'Function';
+    var toString = Object.prototype.toString;
+    return toString.call(object) === '[object ' + _t + ']';
+  },
+  renderAds: function (lines, failSafeTimeout) {
+    googletag.cmd.push(function () {
+      var failSafeTimeout = failSafeTimeout || window.fluxtag.failSafeTimeout;
+      var bidRequestTimeout = (failSafeTimeout - 500) > 0 ? failSafeTimeout - 500 : failSafeTimeout;
+      var refreshLines = [];
+      var params = (function () {
+        // GAMを呼び出したかを確認にするフラグ
+        var readyBids = {
+          google: false,
+          prebid: false,
+        };
+        var definedSlots = [];
+        var adsInfo = {
+          gpt: {
+            slots: [],
+            displayDivIds: [],
+          },
+          pb: {
+            divIds: []
+          }
+        };
+
+        googletag.pubads().getSlots().forEach(function (slot) {
+          // 既にdefineSlotされていた場合
+          definedSlots[slot.getSlotElementId()] = slot;
+        });
+
+        lines.forEach(function (line) {
+          var divId = line.divId;
+
+          adsInfo.pb.divIds.push(divId);
+
+          refreshLines.push({
+            code: line.gpt.unitPath,
+            id: divId
+          });
+
+          if (definedSlots[divId]) {
+            adsInfo.gpt.slots.push(definedSlots[divId]);
+          } else {
+            var slot = googletag.defineSlot(line.gpt.unitPath, line.gpt.sizes, divId)
+                .addService(googletag.pubads());
+
+            if (line.gpt.sizeMapping && line.gpt.sizeMapping.length > 0) {
+              var sizeMapping = googletag.sizeMapping();
+              line.gpt.sizeMapping.forEach(function (size) {
+                sizeMapping.addSize(size[0], size[1]);
+              });
+              slot.defineSizeMapping(sizeMapping.build());
+            }
+            if (line.gpt.keyValues && line.gpt.keyValues.length > 0) {
+              line.gpt.keyValues.forEach(function (param) {
+                slot.setTargeting(param.key, param.value);
+              });
+            }
+            adsInfo.gpt.slots.push(slot);
+            adsInfo.gpt.displayDivIds.push(divId);
+          }
+        });
+        // Prebid、APSでオークション後に起動する関数 (GAMコール、広告Display)
+        var adServerSend = function () {
+          if (!readyBids.prebid) {
+            return;
+          }
+          if (!readyBids.google) {
+            readyBids.google = true;
+            adsInfo.gpt.displayDivIds.forEach(function (divId) {
+              googletag.display(divId);
+            });
+            if (!!(pbjs.setTargetingForGPTAsync) && fluxtag.isFn(pbjs.setTargetingForGPTAsync)) {
+              pbjs.que.push(function () {
+                pbjs.setTargetingForGPTAsync(adsInfo.pb.divIds);
+              });
+            }
+            googletag.pubads().refresh(adsInfo.gpt.slots);
+          }
+        };
+        // Prebidオークション後に起動する関数
+        var pbCallback = function () {
+          readyBids.prebid = true;
+          adServerSend();
+        };
+        // もしtimeout以内にPrebidが動作できなかった場合、最終的にGAMをコール
+        setTimeout(function () {
+          readyBids.prebid = true;
+          adServerSend();
+        }, failSafeTimeout);
+
+        return {
+          prebid: {
+            callback: pbCallback,
+          }
+        };
+      })();
+
+      if (!!(window.pbFlux) && window.pbFlux.refresh && fluxtag.isFn(window.pbFlux.refresh)) {
+        // Prebid呼び出し
+        pbjs.que.push(function () {
+          window.pbFlux.refresh({
+            lines: refreshLines,
+            callback: params.prebid.callback,
+            timeout: bidRequestTimeout
+          });
+        });
+      } else {
+        params.prebid.callback();
+      }
+    });
+  }
+};
+
+// Prebid のオークション後に fluxtag.renderAds が refresh するまで、GPT 自身には読み込ませない
+googletag.cmd.push(function () {
+  googletag.setConfig({singleRequest: true});
+  googletag.setConfig({disableInitialLoad: true});
+  googletag.enableServices();
+});</script><script async="" src="https://cdn.gmossp-sp.jp/js/async/g947154/gc.js"></script><div class="gmossp_core_g947154"><script>window.Gmossp=window.Gmossp||{};window.Gmossp.events=window.Gmossp.events||[];
+window.Gmossp.events.push({
+  sid: "g947154",
+});</script></div></head><body><div id="main-view"><header id="global-header"><a class="logo-area" href="/"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/header_logo-5ed6511181423990d525.png" /></a><nav class="menu-items"><ul><li><a href="/news">NEWS</a></li><li><a><a href="/special">SPECIAL</a></a></li><li><a><a href="/events">SCHEDULE &amp; RESULT</a></a></li><li><a><a href="/movies">MOVIE</a></a></li></ul></nav><div class="menu-buttons"><ul><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="twitter" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><button id="header-search-button"><i class="fas fa-search"></i></button></li></ul></div></header><div id="mobile-navigation"><ul><li><a href="/news">ニュース</a></li><li><a href="/special">スペシャル</a></li><li><a href="/events">大会日程 &amp; 試合結果</a></li><li><a href="/movies">ムービー</a></li></ul></div><div id="wrapper"><div class="two-column" id="content"><div id="main"><div class="module-page-title"><h1>「キングダム」の記事一覧 (102件)</h1></div><nav class="module-horizontal-list"><ul><li><a href="/search/articles?word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">ARTICLE</a></li><li><a href="/search/events?word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">EVENT</a></li></ul></nav><div class="search-query-area"><form action="/search" accept-charset="UTF-8" method="get"><input value="articles" autocomplete="off" type="hidden" name="search[type]" id="search_type" /><input placeholder="キーワードを入力..." value="キングダム" type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></form></div><div id="/00637/00714/PC/big_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_01",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="search-content-area"><ul class="news-article-list item-no-margin"><li><article class="article-news-item small type-news"><a href="/articles/25041/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/041/small/eye-catch-1791188497.jpg?1791188497"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.10.05</div></div><div class="article-title">【NEW GATE】「北海道から世界へ！」第3回大会で北海道vs.韓国2対2対抗戦、柴﨑裕斗＆斉藤力毅がコリアンファイターを迎え撃つ</div><div class="article-outline">　昨年11月に「北海道から世界へ」を合言葉にスタートした次世代型キックボクシングイベント「NEW GATE（ニュー・ゲート）」が、2026年11月23日（月・祝）に第3回大会『NEW GATE“3rd IMPACT”」を北海道・札幌のシャトレーゼガトーキングダムサッポロにて開催する。
+「北海道vs.韓国2vs.2対抗戦」として、北海道からは「アイアン・フィスト」柴﨑裕斗（北海道札幌市/シャムエボル</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/24215/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/024/215/small/eye-catch-1783067645.jpg?1783067645"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.07.03</div></div><div class="article-title">【NEW GATE】メインは斉藤力毅が怒涛の連打で2R TKO勝利、試合は熱戦に次ぐ熱戦に、姫野ひなの、ambitious、ラウンドモデル、DJ＆ダンサーが盛り上げる</div><div class="article-outline">NEW GATE“2nd IMPACT”2026年6月28日（日）北海道・サッポロ・イーワン・スタジアム
+　昨年11月、「北海道から世界へ！」を掲げてスタートしたNEW GATE。旗揚げ大会『1st IMPACT』は札幌市のコンカリーニョに満員の250人の観客を集め、2回目となる今大会はキャパを大幅に増やし、430人もの観客を集めて大盛況となった。
+　NEW GATEでは、北海道のキックボクシング</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/23953/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/953/small/eye-catch-1780670564.jpg?1780670564"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">ムエタイ</div></div><div class="publish-date">2026.06.05</div></div><div class="article-title">【ONE FF】大田拓真がダウンを奪われONEで初の連敗に、エン・ペンジェーがジャオスアヤイに完封勝利、メインでヨードレックペットがタフファイトを制して3連勝</div><div class="article-outline">ONE Friday Fights157＆The Inner Circle2026年6月5日(金)タイ・ルンピニースタジアム※U-NEXTにてLIVE配信
+▼メインイベント ONEフライ級（-61.2kg）ムエタイ 3分3R〇ヨードレックペット・オー・アトチャリア（タイ）判定3-0×ソー・ミン・ミン（ミャンマー）
+“ザ・デストロイヤー”ことヨードレックペットはラジャダムナンスタジアムでライト級（2</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23924/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/924/small/eye-catch-1780380241.jpg?1780380241"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">ムエタイ</div></div><div class="publish-date">2026.06.02</div></div><div class="article-title">【ONE FF】フィリピン在住のMMAファイター折居大河がマヨルガとONE2戦目、大田拓真が6度目の参戦、ジャオスアヤイvs.エン・ペンジェー、ヨードレックペットも出場</div><div class="article-outline">　2026年6月5日（金）タイ・ルンピニースタジアム『ONE Friday Fights157＆The Inner Circle』（U-NEXT配信）に、今週は日本人選手2名が出場する。
+『The Inner Circle』の第1試合（全体の第1試合）で、折居大河（JB Dream Fitness Gym）がフリアン・マヨルガ（米国/Team Mehdi Zatout）とONEバンタム級（-65.</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23579/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/579/small/eye-catch-1776913219.jpg?1776913219"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.04.23</div></div><div class="article-title">【RISE】ラウンドガール歴8年の絶対的アイコン＝桜りんを含む「R-1SE Force 2026」のメンバーを発表、4・26後楽園大会より始動</div><div class="article-outline">　2026年4月26日(日)東京・後楽園ホール『RISE 197』より、RISEのラウンドガールユニット「R-1SE Force 2026」が始動する。
+　今年の「R-1SE Force」のメンバーは、2025年メンバーから選りすぐりの人気メンバー継続6名で構成。
+　セラは4年目となり、2024・2025とRISEの年間表彰式でベストラウンドガール賞を受賞している「R-1SE Force」のエース</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23328/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/328/small/eye-catch-1774523766.jpg?1774523766"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.03.26</div></div><div class="article-title">【RISE】嫉妬の嵐に巻き込まれた白鳥大珠「しっかりと勝って俺が全部奪ってやろうと思う」、元ONE世界王者カピタンは「ファンの皆さんに喜んでいただける様な試合にしたい」</div><div class="article-outline">　2026年3月28日（土）東京・両国国技館『RISE ELDORADO 2026』（ABEMA PPVでLIVE配信）の前々日会見が、26日（木）都内にて行われた。
+　第5試合のSuperFight! -66kg契約3分3R延長1Rで対戦する、RISEスーパーライト級王者・白鳥大珠（TEAM TEPPEN）と元ONEバンタム級キックボクシング世界王者カピタン・ペッティンディーアカデミー（タイ/ペ</div></div></a></article></li><li><article class="article-news-item small type-interview"><a href="/articles/23308/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/308/small/eye-catch-1774322702.jpg?1774322702"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">インタビュー</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.03.24</div></div><div class="article-title">【RISE】白鳥大珠「“モテキング”を目指しているけど、やっぱり格闘技で一番が本当に格好良い、そこは揺らいでない」＝3月28日（土）両国</div><div class="article-outline">　2026年3月28日（土）東京・両国国技館で開催される『RISE ELDORADO 2026』にて、「-60kg契約」（3分3R延長1R）でカピタン・ペッティンディーアカデミー（タイ/ペッティンディーアカデミー）と対戦する、RISEスーパーライト級王者・白鳥大珠（TEAM TEPPEN）のインタビューが主催者より届いた。
+
+　RISE二階級制覇王者の白鳥が、元ONEバンタム級キックボクシング世界</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/23173/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/173/small/eye-catch-1772879911.jpg?1772879911"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.03.07</div></div><div class="article-title">【RIZIN】秋元強真が日本人初のミックス越え、2R TKO！ グスタボが桜庭をTKO、木村ドクターストップで高木がTKO勝ち、ライト級の武田がコレスニックを攻めだるま勝利、大島がケイトに判定勝ち、伊藤がモタを左ハイ＆左STでTKO、鹿志村が所を66秒アナコンダ葬、ギョンピョのヒジに矢地が出血TKO負け、佐藤がLFAスウィーニーに一本勝ち、覚醒ララミーが征矢をTKO</div><div class="article-outline">　2026年3月7日（土）東京・有明アリーナにて2026年のRIZIN開幕戦となる『RIZIN.52』（U-NEXT配信）が開催された。前日計量は全選手がパス。なお、今大会から新判定システムが採用された。
+▼RIZINフェザー級（-66.0kg） 5分3R　※試合見どころ〇秋元強真（JAPAN TOP TEAM）12勝1敗[2R 0分37秒 TKO] ※左ストレート→サッカーキック×パッチー・ミッ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22960/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/960/small/eye-catch-1770879789.jpg?1770879789"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.02.12</div></div><div class="article-title">【RISE】元ONE世界王者を迎え撃つ白鳥大珠「ここ倒してONEにもアピール」、30歳を迎えて「格闘技もそうだし男としても、女性から見ても全部一番になりたい」</div><div class="article-outline">　2026年3月28日（土）東京・両国国技館『RISE ELDORADO 2026』の追加対戦カード発表記者会見が、2月12日（木）都内にて行われた。
+　Super Fight！の-60kg契約3分3R延長1Rで、RISEスーパーライト級王者・白鳥大珠（TEAM TEPPEN）vs.元ONEバンタム級キックボクシング世界王者カピタン・ペッティンディーアカデミー（タイ/ペッティンディーアカデミー）の</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22875/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/875/small/eye-catch-1770095982.jpg?1770095982"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.02.03</div></div><div class="article-title">【RISE】元ラストアイドル人気メンバーのハートを射止めた男・白鳥大珠がモテ男ナンバーワンの座へ挑む、モテるためのコツとは何か</div><div class="article-outline">　2026年2月11日（水）夜10時より、ABEMAで配信されるオリジナル恋愛リアリティーショー『ラブパワーキングダム2』（全8話）に出演が決まった、RISEスーパーライト級王者・白鳥大珠（TEAM TEPPEN）がモテるためのコツや過去の恋愛などを語った。
+『ラブパワーキングダム』シリーズは、モテを自認し、“爆モテ”人生を送る美男美女16名の恋愛強者たちがハイクラスな男女の駆け引きを行い、No.</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22812/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/812/small/eye-catch-1769571541.jpg?1769571541"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">キックボクシング</div></div><div class="publish-date">2026.01.28</div></div><div class="article-title">【RISE】白鳥大珠が“モテキング”を目指して、美男美女16名による「モテNo.1頂上決戦」に参加</div><div class="article-outline">　RISEスーパーライト級王者の白鳥大珠（TEAM TEPPEN）が、ABEMAの人気恋愛リアリティーショー『ラブパワーキングダム2』に参加することが発表された。
+『ラブパワーキングダム』シリーズは、モテを自認し、“爆モテ”人生を送る美男美女16名の恋愛強者たちがハイクラスな男女の駆け引きを行い、No.1モテ男＆モテ女を決定する恋愛リアリティーショー。参加者たちには、最もモテている人から最もモテて</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22766/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/766/small/eye-catch-1769144331.jpg?1769144331"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.01.23</div></div><div class="article-title">【RIZIN】ケイト・ロータスを迎え撃つ大島沙緒里「本物の格闘家は私です。実力もビジュアルも負けていません」、木村柊也「激しい試合をして勝つ」対する高木凌「彼には何もさせずに勝つ」＝全選手コメント</div><div class="article-outline">　2026年1月23日（金）13時より『RIZIN.52』（3月7日・有明アリーナ）の追加対戦カード発表記者会見が行われた。すでに4カードが発表済みの2026年RIZIN開幕戦に、下記6カードが追加され、各選手が会見で意気込みを語った。
+▼RIZINバンタム級（-61kg）5分3Rカルシャガ・ダウトベック（カザフスタン）18勝3敗1NC福田龍彌（MIBURO）26勝9敗1分
+
+　ダウトベックは、2</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21827/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/827/small/eye-catch-1759461164.jpg?1759461164"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.10.03</div></div><div class="article-title">【RIZIN】松嶋こよみがRIZIN初参戦、ケラモフとフェザー級で激突「効果測定される」（榊原CEO）。キャプテン☆アフリカvs.キ・ウォンビン、金太郎vs.リ・ユンフォンも＝11月3日（月・祝）神戸</div><div class="article-outline">　2025年11月3日（月・祝）に神戸・GLION ARENA KOBEで開催される『RIZIN LANDMARK 12 in KOBE』の「追加対戦カード発表インスタライブ」が10月3日（金）12時からRIZIN公式インスタグラムにて配信。榊原信行CEOが、下記本戦3カードおよびOPファイト1試合を発表した。
+▼RIZINフェザー級（66.0kg）5分3Rヴガール・ケラモフ（アゼルバイジャン）2</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/21723/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/723/small/eye-catch-1758520629.jpg?1758520629"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.09.21</div></div><div class="article-title">【GLADIATOR】ダウン奪われた中川晧貴がイ・フィジェをギロチンチョークに極める、ライト級ヅッキーニョスが荒井銀二との接戦制す、OFGキックで荒尾祐太がハンセン玲雄に完封勝ち、フライ級・岩崎圭吾がパク・ファランにスプリット判定勝ち、フェザー級・國頭武が石田拓穂に2R TKO勝ち</div><div class="article-outline">　2025年9月21日（日）大阪府豊中市176BOXにて『GLADIATOR 032』（THE1TV配信）が開催された。
+
+　6月8日の『GLADIATOR 031』以来、3カ月ぶりの大会。フェザー級でタイトル挑戦を目指す中川晧貴（総合格闘技道場Reliable）が、アヴリヨホン・ハミドフの代役（※ビザが下りず欠場）のイ・フィジェ（韓国）と68㎏契約で対戦。なお、20日の前日計量では、後藤丈季と対</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21316/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/316/small/eye-catch-1754737126.jpg?1754737126"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.08.09</div></div><div class="article-title">【GRACHAN】「夏の3連戦！」8.10有明に続き、8.31福岡で徳弘拓馬vs.野尻定由、グラップリングで野瀬翔平vs.石橋佳大。9.14大阪でヘビー級王座戦・荒東にベ・ドンヒョンが挑戦、林RICE陽太がウェルター級転向で青木忠秀と対戦</div><div class="article-outline">　2025年8月10日（日）『GRACHAN75』（有明・TFTホール500）に続き、8月31日（日）に『GRACHAN76』がアクロス福岡イベントホールにて、さらに、9月14日（日）大阪・176BOXにて『GRACHAN 77』の開催が発表された。
+
+　CARPE DIEM FUKUOKA/FIGGSグラップリングが「協力」する8月31日の『GRACHAN76』では、福岡大会らしく、マスタージャ</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/20383/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/383/small/eye-catch-1746515038.jpg?1746515038"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.05.06</div></div><div class="article-title">【PANCRASE】ネオブラ・ライト級で張豊が優勝。フェザー級でトミー矢野が一本勝ち、バンタム級でボンサイ柔術の佐藤が一本勝ち、ストロー級で渋井が決勝進出、フライ級で本川が準決勝進出</div><div class="article-outline">　2025年5月6日(火/祝) 東京・品川インターシティホールにて『PANCRASE BLOOD.6』（U-NEXT配信）が開催された。
+　2月にネオブラ史上最多の全33試合が行われた『PANCRASE BLOOD.5』に続く、今大会では、第20試合のライト級決勝戦をメインに、ストロー級、フライ級、バンタム級、フェザー級の2回戦などのほかにワンマッチ7試合も組まれた。
+ネオブラッドトーナメント ラ</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/19623/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/623/small/eye-catch-1739270150.jpg?1739270150"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.02.11</div></div><div class="article-title">【PANCRASE】ネオブラ参戦のトミー矢野が初回一本勝ち！ 森昴星がウェルター級優勝、平田旭がミドル級優勝、ボンサイ柔術・氏原魁星、佐藤ゆうじが一本勝ち、レスラー柴山鷹成が判定勝ち、沢木純也が1R TKO勝ち＝『PANCRASE BLOOD.5』</div><div class="article-outline">　2025年2月11日（火/祝) 12時から『PANCRASE BLOOD.5』（U-NEXT配信）東京・品川インターシティホール大会にて「第31回ネオブラッドトーナメント」が開催された。
+　全33試合、ネオブラ史上最多の参戦選手が揃うなか、前日計量でタカリンダマン、前川慧、今井洋希が体重超過で前川の試合は中止に。タカリンダマンと今井の試合はキャッチウェイトでワンマッチとして行われた。
+
+　各階級</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19619/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/619/small/eye-catch-1739186466.jpg?1739186466"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.02.10</div></div><div class="article-title">【PANCRASE】史上最大規模の『PANCRASE BLOOD.5』開催、体重超過で2試合がワンマッチへ変更＆1試合中止に＝2月11日(火・祝) 品川</div><div class="article-outline">　2025年2月11日（火/祝) 12時から『PANCRASE BLOOD.5』（U-NEXT配信）東京・品川インターシティホール大会にて「第31回ネオブラッドトーナメント」が開催される。前日計量でタカリンダマン、前川慧、今井洋希が体重超過で前川の試合は中止に。タカリンダマンと今井の試合はキャッチウェイトでワンマッチとして行われる。ほか選手は計量をパス。いよいよ史上最大規模のネオブラが幕を開ける。</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19396/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/396/small/eye-catch-1737018201.jpg?1737018201"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.01.16</div></div><div class="article-title">【PANCRASE】矢野トミーがネオブラに出場！ 16名参加のフェザー級で参戦＝2月11日（火/祝) 『PANCRASE BLOOD.5』</div><div class="article-outline">　2025年2月11日（火/祝) 『PANCRASE BLOOD.5』東京・品川インターシティホール大会でで行われる「第31回ネオブラッドトーナメント」フェザー級で、関翔渚が欠場。新たに矢野トミー（フリー）の出場が発表された。フライ級、バンタム級と並ぶ16名参加の激戦区のフェザー級で参戦。BLOOM FCなどMMA4連勝中の柿原昇太（MMA RANGERS GYM）と1回戦で対戦する。
+　矢野は、</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19387/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/387/small/eye-catch-1737016673.jpg?1737016673"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.01.15</div></div><div class="article-title">【PANCRASE】「第31回ネオブラッドトーナメント」最終参戦選手および組み合わせ発表、ワンマッチ5試合も決定＝2月11日(火/祝) 品川</div><div class="article-outline">　2025年2月11日（火/祝）『PANCRASE BLOOD.5』（東京・品川インターシティホール）で実施の「第31回ネオブラッドトーナメント」最終参戦選手および組み合わせが以下の通り、発表された。ほかワンマッチ5試合も決定している。
+ネオブラッドトーナメント参戦選手
+▼ストロー級
+1: 渋井 宏行 （THE BLACKBELT JAPAN）2: 田畑 翔太 (K-PLACE) 3: 氏原 魁星</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19326/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/326/small/eye-catch-1736246731.jpg?1736246731"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.01.07</div></div><div class="article-title">【PANCRASE】王座戦ドラッグテストで三宅輝砂、平田直樹がともに陰性。過去最多！「第31回ネオブラッドトーナメント」参戦全選手発表＝2月11日(火・祝）品川</div><div class="article-outline">　PANCRASEが2019年7月21日の『PANCRASE 307』大会から、米国の「Sports Medicine Research &amp;amp;amp; Testing Laboratory」にて行っているドラッグテストで、2024年12月15日(日)に東京・ニューピアホールで開催された『PANCRASE 351』の王座戦の結果は、三宅輝砂 （ZOOMER）、平田直樹（トライフォース柔術アカデ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19158/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/158/small/eye-catch-1734672170.jpg?1734672170"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.12.20</div></div><div class="article-title">【PANCRASE】過去最多選手がネオブラ参戦！ バンタム級は14名の激戦区に＝2月11日『PANCRASE BLOOD.5』品川</div><div class="article-outline">　2025年2月11日（火・祝）東京・品川インターシティホールにて開催の『PANCRASE BLOOD.5 第31回ネオブラッドトーナメント 』の第一次参戦選手が下記の通り、発表された。
+　31年の歴史を誇るPANCRASEの新人王決定戦、ネオブラッドトーナメントが2025年も2月から始動する。過去最多の選手が参戦予定で、優勝までの道のりは、これまで以上に厳しくなる激戦のネオブラ。新たなスター誕生</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/18575/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/575/small/eye-catch-1729382996.jpg?1729382996"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.10.20</div></div><div class="article-title">【PFL】ガヌーが2年10カ月振りMMA復帰でフェレイラをパウンドアウト！ サイボーグが5つ目のベルト獲得、エブレンがBellatorミドル王座防衛、AJ.マッキー敗れる！ スタッツが3R一本勝ち</div><div class="article-outline">　2024年10月19日（日本時間20日AM2時半）、サウジアラビア・リヤドのキングダムアリーナにて『PFL Super Fights: Battle of the Giants NGannou vs. Ferreira』（U-NEXT配信）が開催された。同大会は、サウジアラビア総合娯楽庁の政府一大プロジェクト「リヤドシーズン」の一環として行われた。
+▼PFLヘビー級スーパーファイト選手権試合 5</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18571/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/571/small/eye-catch-1729335012.jpg?1729335012"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.10.19</div></div><div class="article-title">【PFL】AJ.マッキー「彼が何をしてくるかなんて考えない」×6連勝ポール・ヒューズ「俺には殺戮本能がある」</div><div class="article-outline">　2024年10月19日（日本時間20日AM2時半）、サウジアラビア・リヤドのキングダムアリーナで開催される『PFL Super Fights: Battle of the Giants NGannou vs. Ferreira』（U-NEXT配信）に向け、18日に会見・計量が行われた。
+
+　ヘビー級スーパーファイト世界王座戦に臨むフランシス・ガヌー（256.8lbs/116.48kg）とヘナン・</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18570/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/570/small/eye-catch-1729333351.jpg?1729333351"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.10.19</div></div><div class="article-title">【PFL】ATTの誰もが認める王者ジョニー・エブレン「“もし”ではなく、現実がすべて」×エドワーズ「ミスをしなければ……」＝10.19 リヤド</div><div class="article-outline">　2024年10月19日（日本時間20日）、サウジアラビア・リヤドのキングダムアリーナで開催される『PFL Super Fights: Battle of the Giants NGannou vs. Ferreira』（U-NEXT配信）に向け、18日に会見・計量が行われた。
+
+　ヘビー級スーパーファイト世界王座戦に臨むフランシス・ガヌー（256.8lbs/116.48kg）とヘナン・フェレイラ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18552/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/552/small/eye-catch-1729238237.jpg?1729238237"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.10.18</div></div><div class="article-title">【PFL】世界“最凶”女王は？ サイボーグ「ここで20年間の戦いに終止符を打つ」×パチェコ「伝説になるには伝説を倒す必要がある」</div><div class="article-outline">　2024年10月19日（日本時間20日）、サウジアラビア・リヤドのキングダムアリーナで開催される『PFL Super Fights: Battle of the Giants NGannou vs. Ferreira』（U-NEXT配信）に向け、18日、会見が行われ、王座戦に臨むフランシス・ガヌーとヘナン・フェレイラらメインカード出場選手たちがフェイスオフと意気込みを語った。
+▼PFL女子フェザ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18551/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/551/small/eye-catch-1729237259.jpg?1729237259"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.10.18</div></div><div class="article-title">【PFL】いよいよ今週末激突！ ボクシングからMMA復帰のガヌー「準備はできている」×フェレイラ「2人とも完全なファイター」、PFL2024決勝も11月サウジアラビア開催に</div><div class="article-outline">　2024年10月19日（日本時間20日）、サウジアラビア・リヤドのキングダムアリーナで開催される『PFL Super Fights: Battle of the Giants NGannou vs. Ferreira』（U-NEXT配信）に向け、18日、会見が行われ、王座戦に臨むフランシス・ガヌーとヘナン・フェレイラらメインカード出場選手たちがフェイスオフと意気込みを語った。
+【写真】日曜日、A</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18205/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/205/small/eye-catch-1726191806.jpg?1726191806"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.09.13</div></div><div class="article-title">【PFL】サウジアラビア大会にガヌー、サイボーグに続き、AJ.マッキーも参戦。6連勝中のポール・ヒューズと対戦＝10月19日</div><div class="article-outline">　2024年10月19日（日本時間20日）に開催される『PFL PPV Super Fight：Battle of the Giants』（U-NEXT配信）のメインカードに、AJ.マッキー（米国）vs.ポール・ヒューズ（アイルランド）のライト級戦が追加された。
+▼ライト級 5分3RAJ.マッキー（米国）22勝1敗ポール・ヒューズ（アイルランド）12勝1敗
+
+　MMA22勝1敗のマッキーは、元Be</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/17433/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/433/small/eye-catch-1719105034.jpg?1719105034"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.06.23</div></div><div class="article-title">【UFC】ウィテカーが7連勝中のアリスケロフを初回KO！ ヴォルコフがパブロビッチ下しUFC4連勝。シャラ・マゴメドフがUFC2連勝で13戦無敗に。ハクパラストが4連勝、リマがナイモフに一本勝ち、ギョンホが2連敗、『RTU 2023』バンタム級決勝はイ・チャンホが優勝</div><div class="article-outline">　2024年6月22日（日本時間23日）サウジアラビア・リヤドのキングダム・アリーナにて『UFC Fight Night: Whittaker vs. Aliskerov』（U-NEXT配信）が開催された。
+　前日計量では、出場全選手がパス。メインイベントはロバート・ウィテカー（豪州）と対戦予定だったハムザト・チマエフが欠場により、ダゲスタン出身のコンバットサンボ世界王者イクラム・アリスケロフ（ロ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/17428/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/428/small/eye-catch-1719058270.jpg?1719058270"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.06.22</div></div><div class="article-title">【UFC】メインはウィテカーvs.欠場チマエフとの対戦戦後7連勝中のアリスケロフ、『ROAD TO UFC 2023』バンタム級決勝戦も＝22日（土）25時・サウジアラビア</div><div class="article-outline">　2024年6月22日（日本時間23日）サウジアラビア・リヤドのキングダム・アリーナにて『UFC Fight Night: Whittaker vs. Aliskerov』（U-NEXT配信）が開催される。
+　前日計量では、出場全選手がパス。メインイベントはロバート・ウィテカー（豪州）と対戦予定だったハムザト・チマエフが欠場により、ダゲスタン出身のコンバットサンボ世界王者イクラム・アリスケロフ（ロ</div></div></a></article></li></ul><div id="/00637/00714/PC/big_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_02",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="module-paginate">  <nav class="pagination" role="navigation" aria-label="pager">
+    
+    
+        <span class="page current">
+  1
+</span>
+
+        <span class="page">
+  <a rel="next" href="/search/articles?page=2&amp;word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">2</a>
+</span>
+
+        <span class="page">
+  <a href="/search/articles?page=3&amp;word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">3</a>
+</span>
+
+        <span class="page">
+  <a href="/search/articles?page=4&amp;word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">4</a>
+</span>
+
+      <span class="next">
+  <a rel="next" href="/search/articles?page=2&amp;word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">></a>
+</span>
+
+      <span class="last">
+  <a href="/search/articles?page=4&amp;word=%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0">最後</a>
+</span>
+
+  </nav>
+</div></div></div><div id="side"><div id="/00637/00714/PC/side_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_01",
+      sizes: [[300,250]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="sidebar-contents"><h2>RANKING</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="ranking rank-1">1</div><div class="article-image rank-1"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="ranking rank-2">2</div><div class="article-image rank-2"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-report"><a href="/articles/20105/outline"><div class="ranking rank-3">3</div><div class="article-image rank-3"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/105/small/eye-catch-1744012423.jpg?1744012423"></span></div><div class="article-content"><div class="category-label">レポート</div><div class="article-title">【GLADIATOR】34歳・神田T-800周一、16歳の超新星ルキヤに一本勝ち。ライト級・小森が未知のガンドルフィを完封、ダギースレンが岩倉に判定勝ち、転向2戦目でヅッキーニョスが八木に判定勝ち、ウェルター級大道vs.マックスは裁定預かり、フライ級今井が和田に判定勝ち、久保がパクに競り勝つ</div></div></a></article><article class="sidebar-article type-column"><a href="/articles/22296/outline"><div class="ranking rank-4">4</div><div class="article-image rank-4"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/296/small/eye-catch-1763866044.jpg?1763866044"></span></div><div class="article-content"><div class="category-label">コラム</div><div class="article-title">【UFC】堀口恭司、9年ぶり復帰のUFCで11位ウランベコフに一本勝ちの進化とは？ 「危ない場面は全然、無い」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/23834/outline"><div class="ranking rank-5">5</div><div class="article-image rank-5"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/834/small/eye-catch-1779543304.jpg?1779543304"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP JEWELS】フライ級王座戦・中井りん「正義を証明する」vs.奥富夕夏「過去最強の自分で迎える」、竹林愛留「ブッ倒す」vs.イ・イェジ「強い試合を」、ののかvs.キム・ソユル、桐生祐子「MMAの厳しさを」vs.月井隼南「意地とプライドを」、彩綺は再計量パス、大井すず、山吹マリン、あきぴも＝5月24日（日）ニューピアホール</div></div></a></article></div></div><div class="sidebar-contents"><h2>LATEST</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25448/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/448/small/eye-catch-1794905852.jpg?1794905852"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【K-1】1年ぶり復帰予定だった元王者オウヤン・フェンが全治2週間の怪我で欠場、齋藤絋也はスクランブル出場の杉若怜と対戦</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25446/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/446/small/eye-catch-1794885645.jpg?1794885645"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】武尊がONEの殿堂入りに続きアンバサダーに就任「次の時代を引っ張っていくスーパースターが生まれることを楽しみにしながら、陰ながら支えていきたい」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25445/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/445/small/eye-catch-1794882112.jpg?1794882112"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】王者パシオ「準備は万端」vs.山北渓人「まずは自分がONEのチャンピオンになりたい」、那須川龍心「自分にとってはリスクしかない対戦」vs.永井雷智「すべてをひっくり返してやる」</div></div></a></article></div></div><div id="/00637/00714/PC/side_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_02",
+      sizes: [[300,250],[300,600]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div></div><footer id="global-footer"><button id="scroll-top-button"><div class="text"><span>トップへ戻る</span><div class="icon"><i class="fa fa-angle-up"></i></div></div></button><div class="footer-main"><div class="footer-inner"><div class="footer-logo"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/footer_logo-e7375d0cdca0d60eab9a.png" /></div><ul class="sns-links"><li><a class="x" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="facebook" target="_blank" href="https://www.facebook.com/gong.kakutogi/"><i class="fab fa-facebook-f"></i></a></li></ul><ul class="footer-links"><li><a href="/about">ABOUT</a></li><li><a href="/contacts">お問い合わせ</a></li><li><a href="/policy/terms">利用規約</a></li><li><a href="/policy/privacy">プライバシーポリシー</a></li></ul><div class="copyright">© 2026 GONG KAKUTOGI. All Rights Reserved.</div></div></div></footer></div><div class="modal" id="search-modal"><div class="modal-inner"><div class="close-button" id="close-search-modal-button"><span>✕</span></div><div class="modal-content"><h2>どんな情報をお探しですか？</h2><form action="/search" accept-charset="UTF-8" method="get"><div class="select-wrapper"><div class="custom-select"><select name="search[type]" id="search_type"><option value="article">ニュース・インタビュー</option>
+<option value="event">格闘技イベント</option></select></div></div><div class="input-wrapper"><input placeholder="キーワードを入力..." type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></div></form></div></div></div><div id="drawer-overlay"></div><script src="https://gonkaku.jp/packs/js/runtime-0fe523daf1eefb208515.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/457-94e4ee5d100544804fad.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/279-ac13d8c56b4ccc513f7a.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/web-c9ade425642b4c792a7f.js" defer="defer"></script><div class="ad_overlay"><div id="/00637/00714/PC/all_foot_overlay_01" class="flux-ad ad_overlay__inner"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/all_foot_overlay_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/all_foot_overlay_01",
+      sizes: [[728,90],[970,90]],
+      sizemapping: [[[767,0],[[728,90],[970,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>

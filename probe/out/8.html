@@ -1,0 +1,284 @@
+<!DOCTYPE html><html prefix="http://ogp.me/ns#"><head><meta charset="UTF-8">
+<title>「MCCS」の記事 - ゴング格闘技</title>
+<link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="/favicon/favicon-192x192.png?v=1" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=1" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon/favicon-48x48.png?v=1" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png?v=1" sizes="16x16">
+<link rel="canonical" href="https://gonkaku.jp/search/articles">
+<link rel="alternate" href="https://gonkaku.jp/feed" type="application/rss+xml" title="RSS">
+<meta property="fb:app_id" content="605712313279317">
+<meta property="og:title" content="「MCCS」の記事">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://gonkaku.jp/packs/static/images/og_image-15894cead874a0e992cf.jpg">
+<meta property="og:url" content="https://gonkaku.jp/search/articles?word=MCCS">
+<meta property="og:site_name" content="ゴング格闘技 - GONKAKU">
+<meta property="og:locale" content="ja_JP">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="X-UA-Compatible" content="IE=edge"><link href="/manifest.json" rel="manifest" /><link rel="stylesheet" href="https://gonkaku.jp/packs/css/web-73aebef6.css" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="UnOv7RIfEKipujpmgHx_ZHzzNPqQ_123r6sDwh6_FfTuFYaFJrv1G641qeQCXixPf4XGJpPvkpf-1OhIC3NmxQ" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-2V329YSCT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2V329YSCT0');
+</script>
+<script>window.pbjs = window.pbjs || {};
+window.pbjs.que = window.pbjs.que || [];</script><script async="async" src="https://flux-cdn.com/client/00637/gonkaku_00714.min.js"></script><script>window.googletag = window.googletag || {};
+window.googletag.cmd = window.googletag.cmd || [];</script><script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script>googletag.cmd.push(function () {
+  var interstitial = googletag.defineOutOfPageSlot("/22614819838,22669671226/00637/00714/PC/interstitial", googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+  googletag.setConfig({singleRequest: true});
+  googletag.enableServices();
+  googletag.display(interstitial);
+});</script><script>window.fluxtag = {
+  failSafeTimeout: 3000,
+  isFn: function (object) {
+    var _t = 'Function';
+    var toString = Object.prototype.toString;
+    return toString.call(object) === '[object ' + _t + ']';
+  },
+  renderAds: function (lines, failSafeTimeout) {
+    googletag.cmd.push(function () {
+      var failSafeTimeout = failSafeTimeout || window.fluxtag.failSafeTimeout;
+      var bidRequestTimeout = (failSafeTimeout - 500) > 0 ? failSafeTimeout - 500 : failSafeTimeout;
+      var refreshLines = [];
+      var params = (function () {
+        // GAMを呼び出したかを確認にするフラグ
+        var readyBids = {
+          google: false,
+          prebid: false,
+        };
+        var definedSlots = [];
+        var adsInfo = {
+          gpt: {
+            slots: [],
+            displayDivIds: [],
+          },
+          pb: {
+            divIds: []
+          }
+        };
+
+        googletag.pubads().getSlots().forEach(function (slot) {
+          // 既にdefineSlotされていた場合
+          definedSlots[slot.getSlotElementId()] = slot;
+        });
+
+        lines.forEach(function (line) {
+          var divId = line.divId;
+
+          adsInfo.pb.divIds.push(divId);
+
+          refreshLines.push({
+            code: line.gpt.unitPath,
+            id: divId
+          });
+
+          if (definedSlots[divId]) {
+            adsInfo.gpt.slots.push(definedSlots[divId]);
+          } else {
+            var slot = googletag.defineSlot(line.gpt.unitPath, line.gpt.sizes, divId)
+                .addService(googletag.pubads());
+
+            if (line.gpt.sizeMapping && line.gpt.sizeMapping.length > 0) {
+              var sizeMapping = googletag.sizeMapping();
+              line.gpt.sizeMapping.forEach(function (size) {
+                sizeMapping.addSize(size[0], size[1]);
+              });
+              slot.defineSizeMapping(sizeMapping.build());
+            }
+            if (line.gpt.keyValues && line.gpt.keyValues.length > 0) {
+              line.gpt.keyValues.forEach(function (param) {
+                slot.setTargeting(param.key, param.value);
+              });
+            }
+            adsInfo.gpt.slots.push(slot);
+            adsInfo.gpt.displayDivIds.push(divId);
+          }
+        });
+        // Prebid、APSでオークション後に起動する関数 (GAMコール、広告Display)
+        var adServerSend = function () {
+          if (!readyBids.prebid) {
+            return;
+          }
+          if (!readyBids.google) {
+            readyBids.google = true;
+            adsInfo.gpt.displayDivIds.forEach(function (divId) {
+              googletag.display(divId);
+            });
+            if (!!(pbjs.setTargetingForGPTAsync) && fluxtag.isFn(pbjs.setTargetingForGPTAsync)) {
+              pbjs.que.push(function () {
+                pbjs.setTargetingForGPTAsync(adsInfo.pb.divIds);
+              });
+            }
+            googletag.pubads().refresh(adsInfo.gpt.slots);
+          }
+        };
+        // Prebidオークション後に起動する関数
+        var pbCallback = function () {
+          readyBids.prebid = true;
+          adServerSend();
+        };
+        // もしtimeout以内にPrebidが動作できなかった場合、最終的にGAMをコール
+        setTimeout(function () {
+          readyBids.prebid = true;
+          adServerSend();
+        }, failSafeTimeout);
+
+        return {
+          prebid: {
+            callback: pbCallback,
+          }
+        };
+      })();
+
+      if (!!(window.pbFlux) && window.pbFlux.refresh && fluxtag.isFn(window.pbFlux.refresh)) {
+        // Prebid呼び出し
+        pbjs.que.push(function () {
+          window.pbFlux.refresh({
+            lines: refreshLines,
+            callback: params.prebid.callback,
+            timeout: bidRequestTimeout
+          });
+        });
+      } else {
+        params.prebid.callback();
+      }
+    });
+  }
+};
+
+// Prebid のオークション後に fluxtag.renderAds が refresh するまで、GPT 自身には読み込ませない
+googletag.cmd.push(function () {
+  googletag.setConfig({singleRequest: true});
+  googletag.setConfig({disableInitialLoad: true});
+  googletag.enableServices();
+});</script><script async="" src="https://cdn.gmossp-sp.jp/js/async/g947154/gc.js"></script><div class="gmossp_core_g947154"><script>window.Gmossp=window.Gmossp||{};window.Gmossp.events=window.Gmossp.events||[];
+window.Gmossp.events.push({
+  sid: "g947154",
+});</script></div></head><body><div id="main-view"><header id="global-header"><a class="logo-area" href="/"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/header_logo-5ed6511181423990d525.png" /></a><nav class="menu-items"><ul><li><a href="/news">NEWS</a></li><li><a><a href="/special">SPECIAL</a></a></li><li><a><a href="/events">SCHEDULE &amp; RESULT</a></a></li><li><a><a href="/movies">MOVIE</a></a></li></ul></nav><div class="menu-buttons"><ul><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="twitter" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><button id="header-search-button"><i class="fas fa-search"></i></button></li></ul></div></header><div id="mobile-navigation"><ul><li><a href="/news">ニュース</a></li><li><a href="/special">スペシャル</a></li><li><a href="/events">大会日程 &amp; 試合結果</a></li><li><a href="/movies">ムービー</a></li></ul></div><div id="wrapper"><div class="two-column" id="content"><div id="main"><div class="module-page-title"><h1>「MCCS」の記事一覧 (27件)</h1></div><nav class="module-horizontal-list"><ul><li><a href="/search/articles?word=MCCS">ARTICLE</a></li><li><a href="/search/events?word=MCCS">EVENT</a></li></ul></nav><div class="search-query-area"><form action="/search" accept-charset="UTF-8" method="get"><input value="articles" autocomplete="off" type="hidden" name="search[type]" id="search_type" /><input placeholder="キーワードを入力..." value="MCCS" type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></form></div><div id="/00637/00714/PC/big_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_01",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="search-content-area"><ul class="news-article-list item-no-margin"><li><article class="article-news-item small type-report"><a href="/articles/23059/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/059/small/eye-catch-1771830649.jpg?1771830649"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.02.23</div></div><div class="article-title">【DEEP】海飛が関鉄矢に判定勝ち「いつかシェイドゥラエフと」、JTT山田が神田にリベンジ「倉本さん勝って同門対決を」、三井が黒井を初回TKOで4連続KO勝ち、火の鳥が中務を極める、諏訪部が黒岡に逆転一本勝ち、御代川が吉田との接戦制す、石坂が坂野をTKOで4連勝、弥十朗がウラケンにスプリット判定勝ち、西山がよしずみ下す</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』が開催された。昼夜2大会ともにチケットは指定席は完売で立ち見券のみ当日販売。U-NEXT、DEEP/DEEP JEWELSメンバーシップでライブ配信。
+DEEP </div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/23055/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/055/small/eye-catch-1771764105.jpg?1771764105"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2026.02.22</div></div><div class="article-title">【DEEP】海飛「ドツキあい」vs.関鉄矢「倒し合い楽しみ」、再戦の神田コウヤ「リベンジ戦へようこそ」vs.山田聖真「濃い15分にしてやる」、三井俊希「バッチバッチの試合に」vs.黒井海成「フィニッシュする」、御代川敏志vs.吉田悠太郎、中務修良vs.火の鳥、ウラケンvs.山崎弥十朗も＝2月23日（月・祝）ニューピア</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』が開催される。22日の前日計量では、DEEP TOKYO IMPACTの全選手が計量をパスした。なお、昼夜2大会ともにチケットは指定席は完売で立ち見券のみ当日販売</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/22573/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/573/small/eye-catch-1766838320.jpg?1766838320"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.12.27</div></div><div class="article-title">【DEEP】ライト級・神田コウヤvs.山田聖真、フェザー級で海飛vs.関鉄矢のストライカー対決、三井俊希vs.黒井海成、フライ級・斎藤璃貴vs.御代川敏志、中務修良、山崎弥十朗も出場＝2月23日（月・祝）ニューピア</div><div class="article-outline">　2026年2月23日（月・祝）、東京・ニューピアホールにて、昼大会『SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND』と、夜大会『DAYS Presents DEEP JEWELS 52』の開催が決定。下記カードが発表された。
+DEEP TOKYO IMPACT 2026 1st ROUND 決定カード
+▼DEEPライト級 5分3R神田コウヤ（TH</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/22546/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/546/small/eye-catch-1766556819.jpg?1766556819"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.12.24</div></div><div class="article-title">【Fighting NEXUS】“第二の朝倉兄弟”となるか!? 賢民の兄・千春がアポロ中山と熱闘判定勝ちでフェザー級王者・横山武司への挑戦権獲得。森昴星が趙大貴を再びRNC葬で悠太とのウェルター級王座決定戦へ</div><div class="article-outline">　2025年12月21日（日）東京・GENスポーツパレスにて『Fighting NEXUS vol.42』が開催された。
+　メインイベントのフェザー級戦では、BreakingDownで朝倉未来が推す賢民の兄で、朝倉兄弟同様に地下格闘技出身兄弟としてNEXUSでMMAプロデビューした千春（聖民）が、KNOCKOUTでも活躍のアポロ中山と、フェザー級王者・横山武司への挑戦権をかけて対戦した。
+▼第8試</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/21984/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/984/small/eye-catch-1760872771.jpg?1760872771"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.10.19</div></div><div class="article-title">【Lemino修斗】シンバートルが衝撃の80秒、一本勝ち！ 野瀬を絞め落とす。西條がバトルを完封、シモンが宮城に組み勝ち5連勝、畠山がニシダに競り勝つ、平良vs.梅木はドロー、砂辺光久の修斗初参戦は一本勝ち</div><div class="article-outline">　2025年10月19日（日）、17時から沖縄ミュージックタウン音市場にて『Lemino修斗.2』（Leminoプレミアム配信）が開催された。
+
+
+　9月に東京・後楽園ホールで開催された『Lemino 修斗.1』に続く沖縄大会では、国際戦3試合に加え、宮城友一vs.シモン・スズキのフライ級ランキング戦、ストロー級で畠山隆称の再起戦、砂辺光久の修斗初参戦など、さまざまなテーマのカードがラインナップさ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21939/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/939/small/eye-catch-1760522932.jpg?1760522932"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.10.15</div></div><div class="article-title">【DEEP】元Krush王者・寧仁太アリがMMAデビューで“猪木の秘蔵っ子”中谷優我と対戦。赤沢幸典のMMA復帰戦の相手は3連勝中のGutsに＝11月23日（日）ニューピア</div><div class="article-outline">　2025年11月23日（日）、東京・ニューピアホールで開催される『DEEP TOKYO IMPACT 5th ROUND』の追加対戦カードが発表。DEEPメガトン級（5分3R）として、赤沢幸典（フリー）が、3連勝中のGuts（リバーサルジム立川ALPHA）と対戦。また、元Krushウェルター級王者アニンタ（寧仁太）・アリのMMAデビュー戦も決定した。
+▼DEEPメガトン級（5分3R）赤沢幸典（フ</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/21874/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/021/874/small/eye-catch-1759907784.jpg?1759907784"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.10.08</div></div><div class="article-title">【DEEP】崖っぷちの阿部大治と2連勝中の小林ゆたかが激突。フライ級で御代川敏志vs.斎藤璃貴、神酒龍一vs.マサト・ナカムラ。ドーピング検査ありで赤沢幸典のMMA復帰戦の相手を公募＝11月23日（日）ニューピア</div><div class="article-outline">　2025年11月23日（日）、東京・ニューピアホールにて昼夜で開催されるDEEPの昼大会『DEEP TOKYO IMPACT 2025 5th ROUND』の12カードが発表された（※夜大会『DEEP JEWELS 51』）。また、同大会に赤沢幸典（フリー）が参戦。試合前後のドーピング検査実施の上で、24年5月のベンツ戦の1R TKO勝ち以来のMMA復帰戦に臨む。
+▼DEEP ウェルター級 5分</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/20819/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/819/small/eye-catch-1750243537.jpg?1750243537"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.06.18</div></div><div class="article-title">【DEEP】フライ級で原虎徹vs.松岡疾人が追加。フライ級＆メガトン級王座決定戦も組まれた同大会チケットは2カ月前に完売のため、立見券を準備中＝8月17日（日）後楽園</div><div class="article-outline">　2025年8月17日（日）東京・後楽園ホールで開催される『宗明建設 Presents DEEP 126 IMPACT～フェザー級GP2025決勝～』の追加カードが発表された。
+　また、フェザー級GP決勝、フライ級＆メガトン級王座決定戦などが行われる同大会のチケットが開催2カ月前に完売したため、DEEPでは現在「立見券を準備中」としている。
+▼DEEPフライ級 5分2R原 虎徹（CAVE) MMA</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/20237/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/237/small/eye-catch-1745142003.jpg?1745142003"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2025.04.20</div></div><div class="article-title">【DEEP】八尋大輝が松岡疾人を70秒 TKO！『格闘代理戦争』出身の草野ガブリエルが吉田陸との死闘を制す。中西哲夫が廣瀬裕斗にマスト判定3者で勝利。脇田仁が一本勝ち、体重超過ののかがマユミGSBをTKOもノーコンテストに。元RISE福井は永井に判定負け</div><div class="article-outline">　2025年4月29日（日）愛知県・刈谷市産業振興センターあいおいホールにて『DEEP NAGOYA IMPACT 2025 1st ROUND』（DEEPメンバーシップ配信）が開催された。前日計量ではののかとアモリンの2選手が体重超過。試合は規定の減点とノーコンテストルールにて実施されている。
+
+『DEEP NAGOYA IMPACT 2025 1st ROUND』速報
+▼第19試合 DEEP </div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/19173/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/173/small/eye-catch-1734845116.jpg?1734845116"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.12.22</div></div><div class="article-title">【DEEP】須田萌里が上瀬あかりとの20歳対決を腕十字で制す、鹿志村がRYUKIをチョーク葬、三村が劉獅に1R TKO勝ち、飴山が松場から2度ダウン奪いパウンドTKO勝ち＝DEEP OSAKA IMPACT 2024 4th ROUND</div><div class="article-outline">　2024年12月22日（日）12時半から大阪・梅田ステラホールにて『DEEP OSAKA IMPACT 2024 4th ROUND』が開催された。試合は夜大会の『DEEP OSAKA IMPACT 2024 5th ROUND』ともに、ツイキャスPPV、DEEP/DEEP JEWELSメンバーシップにて生配信。（※後ほど写真・コメント追記あり）
+▼DEEPJEWELSアトム級 5分3R〇須田萌</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/19168/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/019/168/small/eye-catch-1734771373.jpg?1734771373"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.12.21</div></div><div class="article-title">【DEEP】5年ぶり再戦、20歳対決の須田萌里vs.上瀬あかり、鹿志村vs.RYUKI、三村vs.劉獅、松場「冬のせいにして」vs.飴山「極上の松場崩しで」＝DEEP OSAKA IMPACT 2024 4th ROUND 計量</div><div class="article-outline">　2024年12月22日（日）12時半から大阪・梅田ステラホールで開催される『DEEP OSAKA IMPACT 2024 4th ROUND』の前日計量が21日、同地にて行われた。試合は夜大会の『DEEP OSAKA IMPACT 2024 5th ROUND』ともに、ツイキャスPPV、DEEP/DEEP JEWELSメンバーシップにて生配信される。
+▼DEEPJEWELSアトム級 5分3R須田</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18740/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/740/small/eye-catch-1730893973.jpg?1730893973"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.11.06</div></div><div class="article-title">【DEEP】松田亜莉紗が9カ月振り復帰、須田萌里vs.上瀬あかり、鹿志村vs.RYUKI、三村vs.劉獅、松場vs.飴山、元Krush王者・吉岡ビギンがMMAデビューほか昼夜16カード発表＝12月22日（日）大阪</div><div class="article-outline">　2024年12月22日（日）大阪・梅田ステラホールにて『DEEP OSAKA IMPACT 2024 4th/5th ROUND』の開催が決定。下記16カードが発表された。
+DEEP OSAKA IMPACT 2024 4th ROUND 決定カード
+2024年12月22日（日）梅田ステラホールOPEN/12:00 START/12:30※OPファイトは12:20開始予定
+▼DEEPバンタム級 </div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/18163/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/163/small/eye-catch-1725780937.jpg?1725780937"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.09.08</div></div><div class="article-title">【DEEP】魚井フルスイング、左の蹴りで梶本下し、2年10カ月ぶり白星掴む。原が渋谷を左クロスでKO、濱口がナカムラをドミネート、ダウン奪う松岡が安永にスプリット判定勝ち、水野が4連勝、湯浅が59秒腕十字勝ち、J太郎がダウンも一本勝ち</div><div class="article-outline">　2024年9月8日（日）東京・ニューピアホールにて『宗明建設 Presents DEEP 120 IMPACT』（U-NEXT、DEEPメンバーシップ配信）が開催された。前日計量は全選手が計量をパス。コメントは下記の通り。
+▼メインイベント（第12試合）DEEPバンタム級 5分3R〇魚井フルスイング（和術慧舟會HEARTS）61.40kg[判定3-0] ※30-27×3×梶本保希（パラエストラ八</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/18152/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/152/small/eye-catch-1725708897.jpg?1725708897"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.09.07</div></div><div class="article-title">【DEEP】魚井フルスイング「いまの格闘技界、しょーもないことで盛り下がっているから」vs.梶本保希「バチバチに殴り合う」、渋谷カズキ「勝って福田チャンプに」vs.原虎徹「フィニュシュする」、マサト・ナカムラvs.濱口奏琉、松岡疾人vs.安永吏成も＝9月8日（日）ニューピア</div><div class="article-outline">　2024年9月8日（日）東京・ニューピアホールにて開催される『宗明建設 Presents DEEP 120 IMPACT』（U-NEXT、DEEPメンバーシップ配信）の前日計量が7日（土）、都内にて行われ、全選手が計量をパスした。
+▼メインイベント（第12試合）DEEPバンタム級 5分3R魚井フルスイング（和術慧舟會HEARTS）61.40kg梶本保希（パラエストラ八王子）61.50kg
+
+　3</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/18084/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/018/084/small/eye-catch-1725106357.jpg?1725106357"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.08.31</div></div><div class="article-title">【DEEP】雨中の決戦、5年半ぶり復帰の長谷川賢がSAINTに判定勝ち、海飛が西谷大成を極める、プロデビューの安井飛馬が劉獅に判定勝ち、窪田が日比野に一本勝ち、漆間が朝比奈を初回TKO、空手女王・月井隼南が“土木ネキ”坂本にチョーク極める！</div><div class="article-outline">　2024年8月31日（土）東京・お台場青海R区画野外特設ステージにて『DEEPサマーフェスティバル2024 in お台場』（U-NEXT配信／DEEPメンバーシップ配信）が雨中の屋外で開催された。氷上のようにマットが滑るなか、通常とは異なる戦略が求められる戦いが繰り広げられた。
+
+・バトルフット（バン仲村プロデュースの新感覚サッカー）10:00 開始・ラウンドガールオーディション 13:00 開</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/17637/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/637/small/eye-catch-1721143162.jpg?1721143162"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.07.17</div></div><div class="article-title">【DEEP】ヒジあり梅野源治戦から魚井フルスイングがMMA復帰、パラ八・梶本保希と激突、フライ級で渋谷カズキvs.原虎徹、マサト・ナカムラvs.濱口奏琉、3連勝中の松岡疾人vs.安永吏成も＝9月8日（日）ニューピア</div><div class="article-outline">　2024年9月8日（日）東京・ニューピアホールにて『宗明建設 Presents DEEP 120 IMPACT』の開催が決定。下記14カードが発表された。
+　現在のところ、5分3Rは2試合。DEEPバンタム級で魚井フルスイング（和術慧舟會 HEARTS）vs.梶本保希（パラエストラ八王子）と、EEPフライ級で、渋谷カズキ（高本道場）と原虎徹（CAVE）が対戦する。
+▼DEEPバンタム級 5分3R</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/17334/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/017/334/small/eye-catch-1718191879.jpg?1718191879"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.06.12</div></div><div class="article-title">【DEEP】長谷川賢が復帰、SAINTとメガトン級戦。フェザー級・海飛vs.西谷大成、劉獅vs.安井飛馬、バンタム級・窪田泰斗vs.日比野&quot;エビ中&quot;、坂本瑠華vs.月井隼南も＝8月31日（土）お台場</div><div class="article-outline">　2024年8月31日（土）東京・お台場青海R区画 野外特設ステージにて開催（※雨天の場合は9月1日に順延）の『DAYS Presents DEEPサマーフェスティバル2024 in お台場』の公式戦8カードおよび、イベント概要が6月12日、発表された。
+　なお、サマーフェスティバルのイベント内では、万智の出場が内定している「格闘技関係者による歌合戦」をはじめ、バン仲村プロデュースの3対3の5分間</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/16944/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/016/944/small/eye-catch-1714582391.jpg?1714582391"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.05.02</div></div><div class="article-title">【DEEP】5.3 元谷友貴vs.平松翔、5.26昼 石塚晃一vs.原口央、夜JEWELSで中井りんvs.HIMEに変更。5.12 浜松に漆間將生、6.2 大阪に青野ひかるとMANAが出場</div><div class="article-outline">　2024年5月3日（金）の『DEEP 119 IMPACT』後楽園ホール大会で元谷友貴と「DEEPバンタム級王座決定戦」で対戦予定だった福田龍彌が負傷欠場。代わりに、5月26日（日）ニューピアホール昼大会で石塚晃一と対戦予定だった平松翔が64kg契約で元谷と対戦。石司の新たな相手が63kg契約で原口央に決定した。
+（C）ROAD FC
+　5月26日・夜大会となる『DEEP JEWELS 45』で</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/16705/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/016/705/small/eye-catch-1712407615.jpg?1712407615"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2024.04.06</div></div><div class="article-title">【DEEP】1部でフライ級・中西哲生vs.松岡疾人、ストロー級・多湖力翔vs.鶴斗、2部バンタム級で吉田陸vs.切嶋龍輝、富松恵美vs.マユミGSBのMMA戦も＝4月7日（日）名古屋大会・全選手計量パス</div><div class="article-outline">　2024年4月7日（日）ホテルプラザ勝川で開催される『DEEP NAGOYA IMPACT 2024 公武堂ファイト 1st ROUND/2nd ROUND』の前日計量が6日、同地にて行われ、全選手がパスした。
+
+　12時30分開始の「1st ROUND」のメインでは、DEEPフライ級（5分2R）として、GLADIATOR・DEEP名古屋・PFCで3連勝中の中西哲生（エキポセロ）と、12月の沖縄</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/15387/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/015/387/small/eye-catch-1699703634.jpg?1699703634"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2023.11.11</div></div><div class="article-title">【DEEP】元谷友貴がCOROに2R TKO勝ち「年末お願いします」、泉武志が北岡越えで5連勝、雅駿介が組みヒザで窪田泰斗に完封勝利、しなしがちびさいに判定勝ちで2連勝、力也がTKO勝ち、鹿志村が一本勝ち、JTT佐々木が外ヒールで3年ぶり一本勝ち</div><div class="article-outline">　2023年11月11日（土）東京・後楽園ホールにて『skyticket Presents DEEP 116 IMPACT』が行われた。
+『skyticket Presents DEEP 116 IMPACT』速報
+▼DEEPバンタム級 5分3R〇元谷友貴（アメリカン・トップチーム）61.6kg[2R 4分09秒 TKO] ※バックマウントから鉄槌×CORO（K-Clann）61.5kg
+
+　DE</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/14806/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/014/806/small/eye-catch-1694770107.jpg?1694770107"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2023.09.15</div></div><div class="article-title">【DEEP】ATT所属の元谷友貴が2年9カ月振りDEEP参戦、元暫定王者のCOROと対戦。3連勝中の北岡悟が4連勝中の泉武志と激突！＝11月11日（土）後楽園</div><div class="article-outline">　2023年11月11日（土）東京・後楽園ホールにて『skyticket Presents DEEP 116 IMPACT』の開催が決定。
+　米国フロリダのアメリカントップチームの所属となった元谷友貴（ATT）が2年9カ月振りにDEEP参戦、元バンタム級暫定王者のCORO（K-Clann）と対戦することが発表された。また、ライト級で3連勝中の北岡悟が、4連勝中の泉武志と激突する3回戦など、計5カー</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/12095/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/012/095/small/eye-catch-1668255555.jpg?1668255555"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2022.11.12</div></div><div class="article-title">【DEEP】石司がCOROを破り、バンタム級新王者に！ メガトン級暫王座戦は酒井が戴冠、ミクロ級王座戦は大島が古瀬に秒殺一本勝ち、ライト級で江藤が北岡との接戦制す</div><div class="article-outline">　2022年11月12日（土）に東京・後楽園ホールで『DEEP 110 IMPACT』が開催された（※選手名から見どころ記事）。
+
+▼第9試合 DEEPバンタム級タイトルマッチ 5分3R×CORO（K-Clann）王者　60.95kg[判定0-5] ※27-30×5〇石司晃一（フリー）挑戦者　61.05kg※石司が新王者に
+　DEEPバンタム級タイトルマッチ（5分3R）として、暫定王者・CORO（</div></div></a></article></li><li><article class="article-news-item small type-news"><a href="/articles/11736/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/011/736/small/eye-catch-1664933174.jpg?1664933174"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">ニュース</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2022.10.05</div></div><div class="article-title">【DEEP】バンタム級で米国武者修行帰りの鹿志村仁之助が、3連勝中の雅駿介と対戦＝11月12日（土）『DEEP 110』後楽園</div><div class="article-outline">　2022年11月12日（土）東京・後楽園ホールで開催される「skyticket Presents DEEP 110 IMPACT」の追加カードが発表された。
+
+▼DEEP バンタム級 5分2R雅 駿介（CAVE）MMA4勝2敗鹿志村仁之助（セロ・ロンゴ・ファイトチーム）MMA4勝2敗
+
+　雅は元ムエタイオープンライト級王者＆スック・ワンキントーンライト級王者＆WMC日本ライト級王者。2021年2</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/10881/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/010/881/small/eye-catch-1656764063.jpg?1656764063"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2022.07.02</div></div><div class="article-title">【RIZIN】平本蓮が自分を貫きMMA初白星を掴む。大島沙緒里が山本美憂にスプリット判定勝ち、砂辺光久、敗れる。山本空良がアグォン越え、緊急参戦の昇侍がヤン・ジヨンに失神一本負け</div><div class="article-outline">　2022年7月2日（土）沖縄アリーナにて『RIZIN.36』が開催された。当初メインイベントに予定されていたバンタム級の朝倉海（トライフォース赤坂）vs.ヤン・ジヨン（韓国）の国際戦は、朝倉が右拳骨折により欠場。ジヨンは第9試合で緊急参戦の昇侍と対戦した。
+　朝倉の欠場に伴い、「RIZIN STREAM PASS」でのPPVが先着5万人を上限に無料配信された。※選手名からインタビュー
+[next</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/10538/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/010/538/small/eye-catch-1653804461.jpg?1653804461"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2022.05.29</div></div><div class="article-title">【DEEP】フライ級GPへ、駒杵崇大がTAKERに1R 一本勝ち、加藤瑠偉が96秒TKO勝ち。熊谷麻理奈がゆりなに競り勝つ＝3rd ROUND</div><div class="article-outline">DEEP TOKYO IMPACT 2022 3rd ROUND
+2022年5月29日（日）12時～東京・新宿FACESPWN・ニコニコ生放送にてLIVE配信
+▼第13試合 DEEPフライ級 5分2R〇駒杵崇大（FIGHT BASE 都立大）57.10kg[1R 2分17秒 リアネイキドチョーク]×TARKER（ALIVE 沖縄/SHIMAZILIANS）56.80kg
+
+　駒杵は、Fightin</div></div></a></article></li><li><article class="article-news-item small type-interview"><a href="/articles/10537/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/010/537/small/eye-catch-1653787646.jpg?1653787646"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">インタビュー</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2022.05.29</div></div><div class="article-title">【DEEP】柔道エリート駒杵嵩大「自分という存在を分かってもらいたい」×RIZINからDEEPへTAKER「沖縄からでも強いところを見せる」</div><div class="article-outline">　2022年5月29日（日）12時から、東京・新宿FACEにて『DEEP TOKYO IMPACT 2022 3rd ROUND』が開催される（SPWN・ニコニコ生放送にて配信）。
+　メインイベントでは、GP開催が予定されるフライ級（56.7kg ※王座戦以外は57.2kg）（5分2R）で、駒杵嵩大（FIGHT BASE都立大）とTARKER（ALIVE 沖縄/SHIMAZILIANS）が対戦する</div></div></a></article></li><li><article class="article-news-item small type-report"><a href="/articles/8733/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/008/733/small/eye-catch-1637410642.jpg?1637410642"></span></div><div class="article-body"><div class="attribute-area"><div class="attribute-labels"><div class="attribute-label type">レポート</div><div class="attribute-label category">MMA</div></div><div class="publish-date">2021.11.20</div></div><div class="article-title">【RIZIN】RENAが山本美憂にヒザ蹴りTKO勝ち！ 皇治が祖根からダウン奪う判定勝利でシバターに直接対決を要求、砂辺vs.前田は熱闘に、オロゴンが北村に一本勝ち、ベイノアが大逆転TKO勝利！ 大原は渡慶次を衝撃KO、越智が判定勝ち、地元にっせーが指笛応援の中、接戦制す！</div><div class="article-outline">　2021年11月20日（土）午後2時から、沖縄アリーナにて『Yogibo presents RIZIN.32』が行われた（「なぜRENAのヒザ蹴りは山本美憂に当たったのか？」）。元新日本プロレスでボディビルダーの北村克哉は、ボビー・オロゴンに2R リアネイキドチョークで一本負けした。
+『Yogibo presents RIZIN.32』速報
+2021年11月20日（土）沖縄アリーナ 午後2時開始</div></div></a></article></li></ul><div id="/00637/00714/PC/big_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/big_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/big_02",
+      sizes: [[300,250],[336,280],[320,180],[728,90]],
+      sizemapping: [[[767,0],[[300,250],[336,280],[320,180],[728,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div><div id="side"><div id="/00637/00714/PC/side_01" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_01",
+      sizes: [[300,250]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div><div class="sidebar-contents"><h2>RANKING</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="ranking rank-1">1</div><div class="article-image rank-1"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="ranking rank-2">2</div><div class="article-image rank-2"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-report"><a href="/articles/20105/outline"><div class="ranking rank-3">3</div><div class="article-image rank-3"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/020/105/small/eye-catch-1744012423.jpg?1744012423"></span></div><div class="article-content"><div class="category-label">レポート</div><div class="article-title">【GLADIATOR】34歳・神田T-800周一、16歳の超新星ルキヤに一本勝ち。ライト級・小森が未知のガンドルフィを完封、ダギースレンが岩倉に判定勝ち、転向2戦目でヅッキーニョスが八木に判定勝ち、ウェルター級大道vs.マックスは裁定預かり、フライ級今井が和田に判定勝ち、久保がパクに競り勝つ</div></div></a></article><article class="sidebar-article type-column"><a href="/articles/22296/outline"><div class="ranking rank-4">4</div><div class="article-image rank-4"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/022/296/small/eye-catch-1763866044.jpg?1763866044"></span></div><div class="article-content"><div class="category-label">コラム</div><div class="article-title">【UFC】堀口恭司、9年ぶり復帰のUFCで11位ウランベコフに一本勝ちの進化とは？ 「危ない場面は全然、無い」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/23834/outline"><div class="ranking rank-5">5</div><div class="article-image rank-5"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/023/834/small/eye-catch-1779543304.jpg?1779543304"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP JEWELS】フライ級王座戦・中井りん「正義を証明する」vs.奥富夕夏「過去最強の自分で迎える」、竹林愛留「ブッ倒す」vs.イ・イェジ「強い試合を」、ののかvs.キム・ソユル、桐生祐子「MMAの厳しさを」vs.月井隼南「意地とプライドを」、彩綺は再計量パス、大井すず、山吹マリン、あきぴも＝5月24日（日）ニューピアホール</div></div></a></article></div></div><div class="sidebar-contents"><h2>LATEST</h2><div class="content-list"><article class="sidebar-article type-news"><a href="/articles/25449/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/449/small/eye-catch-1794941287.jpg?1794941287"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【DEEP】知名昴海が怪我で欠場、新井丈とのストロー級王座戦は2027年に延期。カンジvs.胸毛ニキが追加。大阪大会でSAAYAと土木ネキがキックルールで対戦＝12月13日（日）ニューピア</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25448/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/448/small/eye-catch-1794905852.jpg?1794905852"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【K-1】1年ぶり復帰予定だった元王者オウヤン・フェンが全治2週間の怪我で欠場、齋藤絋也はスクランブル出場の杉若怜と対戦</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25447/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/447/small/eye-catch-1794904491.jpg?1794904491"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】GUMPがハイドレーションを通過できず規定時間外テストを続行中、麻火佑太郎は規定時間外でパスしキャッチウェイト戦を交渉。メインのパシオと山北渓人は無事クリアし明日のタイトルマッチへ</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25446/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/446/small/eye-catch-1794885645.jpg?1794885645"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】武尊がONEの殿堂入りに続きアンバサダーに就任「次の時代を引っ張っていくスーパースターが生まれることを楽しみにしながら、陰ながら支えていきたい」</div></div></a></article><article class="sidebar-article type-news"><a href="/articles/25445/outline"><div class="article-image"><span class="image-bg lazyload" data-bg="https://r2.gonkaku.jp/articles/eye_catches/000/025/445/small/eye-catch-1794882112.jpg?1794882112"></span></div><div class="article-content"><div class="category-label">ニュース</div><div class="article-title">【ONE】王者パシオ「準備は万端」vs.山北渓人「まずは自分がONEのチャンピオンになりたい」、那須川龍心「自分にとってはリスクしかない対戦」vs.永井雷智「すべてをひっくり返してやる」</div></div></a></article></div></div><div id="/00637/00714/PC/side_02" class="flux-ad"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/side_02",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/side_02",
+      sizes: [[300,250],[300,600]],
+      sizemapping: [[[767,0],[300,250]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div></div></div><footer id="global-footer"><button id="scroll-top-button"><div class="text"><span>トップへ戻る</span><div class="icon"><i class="fa fa-angle-up"></i></div></div></button><div class="footer-main"><div class="footer-inner"><div class="footer-logo"><img alt="ゴング格闘技" src="https://gonkaku.jp/packs/static/images/logo/footer_logo-e7375d0cdca0d60eab9a.png" /></div><ul class="sns-links"><li><a class="x" target="_blank" href="https://twitter.com/gong_kakutogi"><i class="fab fa-x-twitter"></i></a></li><li><a class="instagram" target="_blank" href="https://www.instagram.com/gongkakutogi/"><i class="fab fa-instagram"></i></a></li><li><a class="youtube" target="_blank" href="https://www.youtube.com/@gonkaku"><i class="fab fa-youtube"></i></a></li><li><a class="facebook" target="_blank" href="https://www.facebook.com/gong.kakutogi/"><i class="fab fa-facebook-f"></i></a></li></ul><ul class="footer-links"><li><a href="/about">ABOUT</a></li><li><a href="/contacts">お問い合わせ</a></li><li><a href="/policy/terms">利用規約</a></li><li><a href="/policy/privacy">プライバシーポリシー</a></li></ul><div class="copyright">© 2026 GONG KAKUTOGI. All Rights Reserved.</div></div></div></footer></div><div class="modal" id="search-modal"><div class="modal-inner"><div class="close-button" id="close-search-modal-button"><span>✕</span></div><div class="modal-content"><h2>どんな情報をお探しですか？</h2><form action="/search" accept-charset="UTF-8" method="get"><div class="select-wrapper"><div class="custom-select"><select name="search[type]" id="search_type"><option value="article">ニュース・インタビュー</option>
+<option value="event">格闘技イベント</option></select></div></div><div class="input-wrapper"><input placeholder="キーワードを入力..." type="text" name="search[word]" id="search_word" /><button type="submit"><i class="fas fa-search"></i></button></div></form></div></div></div><div id="drawer-overlay"></div><script src="https://gonkaku.jp/packs/js/runtime-0fe523daf1eefb208515.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/457-94e4ee5d100544804fad.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/279-ac13d8c56b4ccc513f7a.js" defer="defer"></script>
+<script src="https://gonkaku.jp/packs/js/web-c9ade425642b4c792a7f.js" defer="defer"></script><div class="ad_overlay"><div id="/00637/00714/PC/all_foot_overlay_01" class="flux-ad ad_overlay__inner"><script>
+(function () {
+  var lines = [{
+    divId: "/00637/00714/PC/all_foot_overlay_01",
+    gpt: {
+      unitPath: "/22614819838,22669671226/00637/00714/PC/all_foot_overlay_01",
+      sizes: [[728,90],[970,90]],
+      sizemapping: [[[767,0],[[728,90],[970,90]]],[[0,0],[]]]
+    }
+  }];
+  window.fluxtag.renderAds(lines, window.fluxtag.failSafeTimeout);
+})();
+</script>
+</div></div><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>
