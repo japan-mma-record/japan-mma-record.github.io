@@ -3301,3 +3301,9 @@
 21 https://adcombat.com/adcc-events/adcc-asian-championship-2013-results/ 84169
 22 https://adcombat.com/wp-content/uploads/2019/04/ADCC-Worlds-2019-bracket-66kg.webp 125638
 23 https://adcombat.com/wp-content/uploads/2019/04/ADCC-Worlds-2019-bracket-W-60kg.webp 70123
+1 https://www.quintet-fight.com/eventinfo/quintet6/ 107651
+2 https://www.quintet-fight.com/eventinfo/quintet5/ 103030
+3 https://www.quintet-fight.com/eventinfo/quintet-4/ 65347
+4 https://www.quintet-fight.com/eventinfo/20210713_fn7/ 65059
+5 https://www.quintet-fight.com/eventinfo/20210312_fn6/ 69896
+6 https://www.quintet-fight.com/eventinfo/20201027_fn5/ 124050
