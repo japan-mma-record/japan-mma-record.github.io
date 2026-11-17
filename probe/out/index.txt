@@ -2709,3 +2709,17 @@
 1 https://mmaplanet.jp/80057 96241
 2 https://mmaplanet.jp/73709 97412
 3 https://mmaplanet.jp/53067 86047
+1 https://mmaplanet.jp/?s=TTF+Challenge06 66650
+2 https://mmaplanet.jp/?s=TTF+Challenge+06 87747
+3 https://mmaplanet.jp/?s=TTF+Challenge03 68509
+4 https://mmaplanet.jp/?s=Brave+Fight13 66636
+5 https://mmaplanet.jp/?s=Brave+Fight38 66636
+6 https://mmaplanet.jp/?s=Brave+Fight40 66636
+7 https://mmaplanet.jp/?s=GLEAT+MMA 68387
+8 https://mmaplanet.jp/?s=Ver.Mega 66599
+9 https://mmaplanet.jp/?s=%E6%BF%80%E7%AA%81%E7%A5%AD 66687
+10 https://mmaplanet.jp/?s=Next+Japan 86758
+11 https://mmaplanet.jp/?s=Mach+Matsuri 66629
+12 https://mmaplanet.jp/?s=%E3%83%9E%E3%83%83%E3%83%8F%E7%A5%AD%E3%82%8A 79283
+13 https://mmaplanet.jp/?s=Inoki+Ism 66608
+14 https://mmaplanet.jp/?s=Genome 66585
