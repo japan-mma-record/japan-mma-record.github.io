@@ -1,0 +1,12 @@
+   <script src='https://challenges.cloudflare.com/turnstile/v0/api.js' async defer></script>
+   <div id='turnstile-container' style='display: grid;place-items: center;height: 100vh;'>
+   <script>
+     window.onload = () => {
+       turnstile.render('#turnstile-container', {
+         sitekey: '0x4AAAAAABgkVJpURHhzHtUx',
+         callback: function(token) {
+           window.location.href = 'https://www.rssing.com/request.php?c='+encodeURIComponent(token)+'&req=cftc&u='+encodeURIComponent(window.location.href);
+         }
+       });
+     };
+   </script>
