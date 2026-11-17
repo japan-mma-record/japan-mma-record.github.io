@@ -43,3 +43,28 @@
 26 https://battle-news.com/?s=GLADIATOR 159704
 27 https://www.tenkaichi-fight.com/ 
 28 https://brave-fight.com/ 
+1 https://gbring.com/sokuho/result/result.htm 38876
+2 https://battle-news.com/tag/gladiator 261313
+3 https://battle-news.com/tag/gladiator/page/2 142258
+4 https://battle-news.com/tag/gladiator/page/3 120514
+5 https://battle-news.com/tag/gladiator/page/4 120514
+6 https://battle-news.com/?s=ZST 161005
+7 https://battle-news.com/?s=NEXUS 161748
+8 https://battle-news.com/?s=WARDOG 147136
+9 https://battle-news.com/?s=%E3%83%91%E3%82%A6%E3%83%B3%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%83%91%E3%82%A6%E3%83%B3%E3%83%89 121909
+10 https://battle-news.com/?s=KROSS 133137
+11 https://battle-news.com/?s=HEAT 170682
+12 https://efight.jp/?s=GLADIATOR 67890
+13 https://efight.jp/?s=NEXUS 67981
+14 https://efight.jp/?s=WARDOG 67828
+15 https://efight.jp/page/2?s=ZST 67942
+16 https://efight.jp/page/3?s=ZST 68227
+17 https://efight.jp/?s=%E3%83%91%E3%82%A6%E3%83%B3%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%83%91%E3%82%A6%E3%83%B3%E3%83%89 68334
+18 https://efight.jp/?s=KROSS%C3%97OVER 68097
+19 https://efight.jp/?s=ATOYS 57664
+20 https://www.boutreview.com/data/ 239
+21 https://www.zst.jp/ 
+22 https://zst-mma.com/ 
+23 https://www.rings.co.jp/zst/ 2814
+24 https://gladiator-official.com/ 
+25 https://www.mmagladiator.com/ 
