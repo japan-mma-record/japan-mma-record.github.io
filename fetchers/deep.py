@@ -18,15 +18,18 @@ def parse(lines, url):
     lines = [l for l in lines if l]
     if not lines:
         return None, []
-    name = lines[0]
-    date = venue = ''
-    for l in lines[:8]:
-        m = re.match(r'^(\d{4})年(\d{1,2})月(\d{1,2})日(?:[（(][^）)]*[）)])?\s*(.*)$', l)
+    if '【試合結果】' not in lines:
+        return None, []
+    top = lines.index('【試合結果】')
+    name = date = venue = ''
+    for k in range(top - 1, max(-1, top - 6), -1):
+        m = re.match(r'^(\d{4})年(\d{1,2})月(\d{1,2})日(?:[（(][^）)]*[）)])?\s*(.*)$', lines[k])
         if m:
             date = f'{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}'
             venue = m.group(4).strip()
+            name = lines[k - 1] if k else ''
             break
-    if not date or '【試合結果】' not in lines:
+    if not date:
         return None, []
     ls = lines[lines.index('【試合結果】') + 1:]
     bouts, i = [], 0
@@ -64,7 +67,7 @@ def run(limit=20, dry=False):
     idx = fetch(LIST)
     seen, pages = set(), []
     for u in links(idx, LIST):
-        if re.match(r'^https?://(www\.)?deep2001\.com/[^/?#]+/?$', u) and not re.search(r'/(result|news|schedule|champion|fighter|pamphlet|ticket|contact|past-event|category|tag)/?$', u):
+        if re.match(r'^https?://(www\.)?deep2001\.com/[^/?#.]+/?$', u) and re.search(r'deep|jewels|impact|kobudo|fight', u.rsplit('/', 2)[-2] if u.endswith('/') else u.rsplit('/', 1)[-1]) and not re.search(r'/(result|news|schedule|champ|champion|fighters?|panf|pamphlet|ticket|contact|future|past-[a-z-]+|category|tag|feed|wp-json)/?$', u):
             if u not in seen:
                 seen.add(u); pages.append(u)
     added = 0

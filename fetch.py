@@ -6,7 +6,7 @@
 import os, sys, traceback, importlib
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fetchers'))
-SOURCES = ['pancrase', 'deep']   # 取り込み元を増やすときは fetchers/ にファイルを足してここに名前を書く
+SOURCES = ['pancrase', 'deep', 'shooto', 'rizin']   # 取り込み元を増やすときは fetchers/ にファイルを足してここに名前を書く
 
 total, failed = 0, []
 for name in SOURCES:
