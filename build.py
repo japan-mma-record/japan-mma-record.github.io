@@ -354,7 +354,7 @@ def main():
             rows.append((e['date'], f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
                         f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
-        note = '※日本で開かれた大会・日本の団体の大会と、UFC・ONEでの試合の戦績です。そのほかの海外の大会での試合は含みません'
+        note = '※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません'
         if fid in wrec:
             r0 = wrec[fid]
             rec = f'通算 {r0["wins"]}勝{r0["losses"]}敗{r0["draws"]}分' + (f'{r0["no_contests"]}無効試合' if r0['no_contests'] not in ('0', '') else '')
