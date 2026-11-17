@@ -12,7 +12,7 @@ Pythonの標準機能だけで動きます（追加のインストールは不�
   data/promotions.tsv … 団体の表示名。
   data/site.json … サイトの住所など。
 """
-import csv, json, os, re, shutil, html, datetime, collections
+import csv, json, os, re, shutil, html, datetime, collections, urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, 'data')
@@ -189,7 +189,7 @@ def main():
                         f'<td>{fl(a)}</td><td><span class="def">{"def." if res == "WIN" else "vs"}</span> {fl(c)}{unc}</td>'
                         f'<td>{html.escape(b.get("method") or "")}</td><td class="num">{html.escape(rt(b))}</td><td>{html.escape(b.get("weight") or "")}</td></tr>')
         srcs = [s for s in (e.get('sources') or '').split(' ') if s]
-        src_html = '　'.join(f'<a href="{html.escape(s)}" rel="noopener">{html.escape(re.sub("^https?://", "", s)[:70])}</a>' if s.startswith('http') else html.escape(s) for s in srcs)
+        src_html = '　'.join(f'<a href="{html.escape(s)}" rel="noopener">{html.escape(re.sub("^https?://", "", urllib.parse.unquote(s))[:70])}</a>' if s.startswith('http') else html.escape(s) for s in srcs)
         pn = pname(promos, e['promotion'])
         title = f'{e["name"]}（{e["date"]}）｜日本MMA戦績録'
         page = (head(site, title, f'{pn} {e["name"]} {e["date"]} の全試合結果（{len(bouts[eid])}試合）', f'e/{eid}.html', '../') + static_header('../') +
