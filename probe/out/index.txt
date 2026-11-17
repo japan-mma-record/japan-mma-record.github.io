@@ -2657,3 +2657,28 @@
 38 https://mmaplanet.jp/?s=King%20of%20Kings 85444
 39 https://mmaplanet.jp/?s=EXFIGHT05 68176
 40 https://mmaplanet.jp/?s=EXFIGHT07 70327
+1 https://pancrase.co.jp/data/result/2013/0721.html 343
+2 https://pancrase.co.jp/data/result/2013/0721.pdf 342
+3 https://pancrase.co.jp/data/result/2013/0721/0721.pdf 347
+4 https://pancrase.co.jp/data/result/2013/0721/chance.pdf 349
+5 https://pancrase.co.jp/data/result/2014/0713.html 343
+6 https://pancrase.co.jp/data/result/2014/0713.pdf 342
+7 https://pancrase.co.jp/data/result/2014/0713/0713.pdf 347
+8 https://pancrase.co.jp/data/result/2014/0713/chance.pdf 349
+9 https://pancrase.co.jp/data/result/2013/ 5544
+10 https://pancrase.co.jp/data/result/2014/ 5432
+11 https://jmmaf.jp/ 
+12 https://www.jmmaf.jp/ 
+13 https://www.jmmaf.org/ 26843
+14 https://www.brave-gym.com/ 
+15 https://bravegym.jp/ 19268
+16 https://www.tribelate.com/ 
+17 https://tribelate.jp/ 
+18 https://www.kingdom-ehrgeiz.com/ 
+19 https://kingdom-ehrgeiz.jp/ 
+20 https://www.office-legas.com/ 
+21 https://r-blood.com/ 101386
+22 https://www.gfc-okinawa.com/ 
+23 https://gfc-mma.com/ 
+24 https://www.shooto.jp/result/ 236
+25 https://www.shooto-mma.com/result/ 146295

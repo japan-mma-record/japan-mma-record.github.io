@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) - JMMAF GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRCJ6LYR00"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SRCJ6LYR00');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JMMAF | Japan Mixed Martial Arts Federation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ===== Brand tokens ===== */
+    --accent: #172446;          /* 差し色（メイン） */
+    --accent-light: #8CA3E8;    /* 暗背景用の明度補正トーン */
+    --flag-red: #BC002D;        /* 日本国旗の赤（JIS Z 8102 規格値） */
+    --ink: #111318;
+    --ink-sub: #4b4f58;
+    --bg: #ffffff;
+    --bg-gray: #f4f5f7;
+    --line: #e3e5ea;
+    --display: 'Anton', 'Oswald', sans-serif;
+    --caps: 'Oswald', sans-serif;
+    --body: 'Noto Sans JP', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.7;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* ================= Header ================= */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(6px);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  .logo{display:flex;align-items:center;}
+  .logo-img{height:42px;width:auto;display:block;}
+  nav ul{display:flex;list-style:none;gap:28px;align-items:center;}
+  nav a{
+    font-family:var(--caps);font-size:12.5px;letter-spacing:.1em;font-weight:500;
+    text-transform:uppercase;padding:6px 0;position:relative;color:var(--ink);
+    transition:color .2s;
+  }
+  nav a:hover{color:var(--accent);}
+  nav a.current::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent);
+  }
+  nav a.ext-link{display:inline-flex;align-items:center;gap:5px;}
+  nav a.ext-link svg{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:2.4;flex-shrink:0;}
+  .sns{display:flex;gap:10px;}
+  .sns a{
+    width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;transition:.2s;
+  }
+  .sns a:hover{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .sns svg{width:14px;height:14px;fill:currentColor;}
+  .menu-btn{display:none;background:none;border:none;font-family:var(--caps);font-size:13px;letter-spacing:.12em;cursor:pointer;}
+
+  /* ================= Language switch ================= */
+  .lang-switch{
+    display:flex;align-items:center;gap:7px;font-family:var(--caps);
+    font-size:12px;letter-spacing:.06em;margin-left:22px;
+    background:none;border:none;cursor:pointer;padding:3px 1px;
+  }
+  .lang-switch .lbl-ja,.lang-switch .lbl-en{color:var(--ink-sub);transition:color .2s,font-weight .2s;}
+  .lang-switch.lang-is-ja .lbl-ja{color:var(--ink);font-weight:700;}
+  .lang-switch.lang-is-en .lbl-en{color:var(--ink);font-weight:700;}
+  .lang-switch:hover .lbl-ja,.lang-switch:hover .lbl-en{color:var(--accent);}
+  .lang-switch .lang-sep{color:var(--line);font-weight:400;}
+  @media (max-width:960px){
+    .lang-switch{margin-left:0;margin-right:12px;}
+  }
+
+  /* ================= Hero ================= */
+  .hero{
+    position:relative;color:#fff;background:#05070d;overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background:linear-gradient(90deg, rgba(4,6,12,.96) 0%, rgba(9,14,30,.80) 45%, rgba(23,36,70,.4) 100%);
+    background-color:#05070d;
+  }
+  .hero-inner{position:relative;padding:120px 0 130px;max-width:720px;}
+  .hero h1{
+    font-family:var(--display);
+    font-size:clamp(48px, 7.2vw, 88px);
+    line-height:1.02;letter-spacing:.015em;text-transform:uppercase;
+    font-weight:400;
+  }
+  .hero h1 .accent{color:var(--flag-red);}
+  .hero p{
+    margin-top:28px;font-size:15.5px;color:#d6dae4;max-width:480px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:14px;
+    font-family:var(--caps);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+    padding:15px 26px;border:1.5px solid currentColor;transition:.25s;
+  }
+  .btn .arrow{transition:transform .25s;}
+  .btn:hover .arrow{transform:translateX(5px);}
+  .hero .btn{color:#fff;margin-top:40px;}
+  .hero .btn:hover{background:#fff;color:var(--accent);}
+
+  /* ================= Pillars ================= */
+  .pillars{background:var(--bg-gray);padding:80px 0;}
+  .pillars-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);
+  }
+  .pillar{
+    padding:8px 30px;border-left:1px solid var(--line);
+    display:flex;flex-direction:column;
+  }
+  .pillar:first-child{border-left:none;padding-left:0;}
+  .pillar .icon{width:44px;height:44px;color:var(--flag-red);margin-bottom:22px;}
+  .pillar .icon svg{width:100%;height:100%;fill:currentColor;}
+  .pillar .icon svg.icon-stroke{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;}
+  .pillar h3{
+    font-family:var(--display);font-weight:400;font-size:19px;
+    letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px;
+  }
+  .pillar p{font-size:13.5px;color:var(--ink-sub);flex:1;}
+  .pillar .more{
+    margin-top:22px;align-self:flex-end;color:var(--ink);font-size:18px;transition:.2s;
+  }
+  .pillar .more:hover{color:var(--accent);transform:translateX(4px);}
+
+  /* ================= Section head ================= */
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:38px;}
+  .section-head h2{
+    font-family:var(--display);font-weight:400;font-size:clamp(30px,3.6vw,42px);
+    letter-spacing:.03em;text-transform:uppercase;line-height:1;
+  }
+  .view-all{
+    font-family:var(--caps);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);display:inline-flex;align-items:center;gap:10px;font-weight:600;
+  }
+  .view-all:hover .arrow{transform:translateX(5px);}
+  .view-all .arrow{transition:transform .25s;}
+
+  /* ================= News ================= */
+  .news{padding:90px 0;}
+  .news-featured{
+    display:flex;gap:52px;align-items:stretch;
+    border:1px solid var(--line);
+  }
+  .news-featured-img{
+    flex:0 0 400px;aspect-ratio:4/3;align-self:center;overflow:hidden;background:var(--bg-gray);
+    display:flex;align-items:center;justify-content:center;
+  }
+  /* 横長KV・縦長フライヤーどちらも切れずに収まるよう contain で表示 */
+  .news-featured-img img{width:100%;height:100%;object-fit:contain;transition:transform .5s;}
+  .news-featured:hover .news-featured-img img{transform:scale(1.03);}
+  .news-featured-body{
+    flex:1;display:flex;flex-direction:column;justify-content:center;
+    padding:44px 44px 44px 0;min-width:0;
+  }
+  .news-date{font-family:var(--caps);font-size:12px;letter-spacing:.08em;color:var(--ink-sub);}
+  .news-featured-title{
+    font-size:22px;font-weight:700;line-height:1.65;margin-top:14px;
+  }
+  .news-featured-desc{font-size:14px;color:var(--ink-sub);margin-top:16px;line-height:1.8;}
+  .news-foot{display:flex;align-items:center;justify-content:space-between;margin-top:28px;}
+  .tag{
+    font-size:11px;color:var(--accent);border:1px solid var(--accent);
+    padding:3px 10px;letter-spacing:.06em;
+  }
+  .news-foot .arrow{color:var(--ink);transition:.2s;}
+  .news-featured:hover .news-foot .arrow{color:var(--accent);transform:translateX(4px);}
+
+  /* ================= Upcoming event ================= */
+  .event{
+    position:relative;color:#fff;background:#05070d;overflow:hidden;
+  }
+  .event-bg{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(90deg, rgba(4,6,12,.95) 0%, rgba(23,36,70,.72) 55%, rgba(23,36,70,.45) 100%),
+      url('https://images.unsplash.com/photo-1680022702604-292f21514497?auto=format&fit=crop&w=1800&q=70') center/cover no-repeat;
+    background-color:#05070d;
+  }
+  .event-inner{position:relative;padding:80px 0;}
+  .event .label{
+    font-family:var(--caps);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--accent-light);font-weight:600;
+  }
+  .event h2{
+    font-family:var(--display);font-weight:400;font-size:clamp(38px,5vw,58px);
+    letter-spacing:.03em;text-transform:uppercase;line-height:1.05;margin-top:10px;
+  }
+  .event .meta{margin-top:14px;font-size:15px;color:#d6dae4;}
+  .event .meta strong{font-family:var(--caps);font-size:20px;font-weight:600;letter-spacing:.04em;margin-right:14px;color:#fff;}
+  .event .btn{color:#fff;margin-top:34px;background:transparent;}
+  .event .btn:hover{background:#fff;color:var(--accent);}
+
+  .arrow{display:inline-block;}
+
+  /* ================= Responsive ================= */
+  @media (max-width: 960px){
+    nav{display:none;}
+    nav.mobile-open{
+      display:block;position:absolute;top:76px;left:0;right:0;
+      background:#fff;border-bottom:1px solid var(--line);
+      box-shadow:0 16px 24px rgba(0,0,0,.1);
+      max-height:calc(100vh - 76px);overflow-y:auto;
+    }
+    nav.mobile-open ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;}
+    nav.mobile-open li{width:100%;}
+    nav.mobile-open a{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);}
+    .menu-btn{display:block;}
+    .news-featured-img{flex-basis:300px;}
+    .news-featured-body{padding:32px 32px 32px 0;}
+  }
+  @media (max-width: 600px){
+    .hero-inner{padding:80px 0 90px;}
+    .pillars-grid{grid-template-columns:1fr;}
+    .pillar{border-left:none;padding-left:0;}
+    .news-featured{flex-direction:column;gap:0;}
+    .news-featured-img{flex-basis:auto;width:100%;aspect-ratio:4/3;}
+    .news-featured-body{padding:24px 24px 28px;flex:0 0 auto;}
+    .section-head{flex-direction:column;align-items:flex-start;gap:14px;}
+    .sns{display:none;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none!important;animation:none!important;}
+  }
+
+  /* ================= Footer ================= */
+  .site-footer{background:#05070d;color:#c9cee0;}
+  .footer-inner{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:48px;
+    padding:64px 0 48px;align-items:start;
+  }
+  .footer-brand .footer-logo{height:34px;width:auto;filter:brightness(0) invert(1);margin-bottom:18px;}
+  .footer-org{font-size:13px;line-height:1.9;color:#8b91a3;}
+  .footer-col h4{
+    font-family:var(--caps);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:#8b91a3;margin-bottom:18px;font-weight:600;
+  }
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:12px;}
+  .footer-col a{font-size:13.5px;color:#d6dae4;transition:color .2s;}
+  .footer-col a:hover{color:#fff;}
+  .footer-sns{align-self:start;}
+  .footer-sns a{border-color:rgba(255,255,255,.28);color:#d6dae4;}
+  .footer-sns a:hover{background:var(--accent-light);border-color:var(--accent-light);color:#05070d;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);}
+  .footer-bottom .wrap{
+    padding:22px 24px;display:flex;justify-content:space-between;align-items:center;
+    flex-wrap:wrap;gap:10px;
+  }
+  .footer-bottom p{font-size:11.5px;color:#6d7387;font-family:var(--caps);letter-spacing:.04em;}
+  .footer-legal{display:flex;gap:20px;}
+  .footer-legal a{font-size:11.5px;color:#8b91a3;}
+  .footer-legal a:hover{color:#fff;}
+
+  @media (max-width: 960px){
+    .footer-inner{grid-template-columns:1fr 1fr;row-gap:36px;}
+    .footer-sns{order:5;}
+  }
+  @media (max-width: 600px){
+    .footer-inner{grid-template-columns:1fr;padding:48px 0 36px;}
+    .footer-bottom .wrap{flex-direction:column;align-items:flex-start;}
+  }
+
+  /* ===== Header: 6項目化に伴う中間幅の調整 ===== */
+  nav a{white-space:nowrap;}
+  @media (min-width:961px) and (max-width:1140px){
+    nav ul{gap:18px;}
+    .header-inner > .sns{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a href="http://jmmaf.org/" class="logo" aria-label="JMMAF ホーム" data-en-aria="JMMAF Home">
+      <img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/44b83165d2bf06bf7eda3818acfcbc34aa8a871c/jmmaf_logo.png" alt="JMMAF Japan Mixed Martial Arts Federation" class="logo-img">
+    </a>
+    <nav aria-label="メインナビゲーション" data-en-aria="Main navigation">
+      <ul>
+        <li><a href="http://jmmaf.org/" class="current">Home</a></li>
+        <li><a href="about-jmmaf.html">About JMMAF</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="https://immaf.org" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="About IMMAF（外部サイトが新しいタブで開きます）" data-en-aria="About IMMAF (opens in a new tab)">About IMMAF<svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="sns" aria-label="SNSリンク" data-en-aria="Social media links">
+      <a href="https://www.instagram.com/jmmafed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2m0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6m8.4-11.1a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg></a>
+      <a href="https://www.youtube.com/@JMMAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg></a>
+      <a href="https://x.com/JapanMMAFed" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9zm-1.1 18h1.7L7.5 3.8H5.7z"/></svg></a>
+    </div>
+    <button class="lang-switch lang-is-ja" id="langToggle" aria-label="Switch language / 言語を切り替え" type="button">
+      <span class="lbl-ja">JA</span><span class="lang-sep">/</span><span class="lbl-en">EN</span>
+    </button>
+    <button class="menu-btn" aria-label="メニュー" data-en-aria="Menu">Menu</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="スポットライトに照らされたアリーナ" data-en-aria="Dark blue gradient background"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <h1>Uniting Japan,<br>Elevating <span class="accent">MMA.</span></h1>
+      <p data-en="Through MMA, we promote the growth and healthy development of the sport, building a bridge between athletes and society.">MMAを通じて、競技の発展と健全な普及を推進し、アスリートと社会をつなぐ架け橋となる。</p>
+      <a class="btn" href="about-jmmaf.html">About JMMAF <span class="arrow">&#10142;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="icon"><svg class="icon-stroke" viewBox="0 0 256 256" stroke-width="14"><path d="M236.7,121.8,212,134.1,180,72.9l25-12.5a7.9,7.9,0,0,1,10.6,3.4l24.6,47.1A8,8,0,0,1,236.7,121.8Z"/><path d="M44,133.1,19.3,120.7a7.9,7.9,0,0,1-3.5-10.8L40.4,62.8A8,8,0,0,1,51,59.3L76,71.8Z"/><path d="M212,134.1l-12,18.8-36.8,36.8a8.5,8.5,0,0,1-7.6,2.1l-58-14.5a8,8,0,0,1-2.9-1.5L44,133.1"/><path d="M200,152.9l-44-32-12.8,9.6a32.1,32.1,0,0,1-38.4,0l-5.4-4.1a8.1,8.1,0,0,1-.9-12.1l39.2-39.1a7.9,7.9,0,0,1,5.6-2.3H180"/><path d="M76.6,71.8l47.3-15a8,8,0,0,1,5.5.4L164,72.9"/></svg></div>
+        <h3>Our Mission</h3>
+        <p data-en="Through the healthy development and promotion of MMA, we aim to support athletes' growth and contribute to society.">MMAの健全な発展と普及を通じて、アスリートの成長と社会貢献を目指します。</p>
+        <a class="more" href="about-jmmaf.html" aria-label="ミッション詳細へ" data-en-aria="Learn more about our mission">&#10142;</a>
+      </div>
+      <div class="pillar">
+        <div class="icon"><svg class="icon-stroke" viewBox="0 0 24 24" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg></div>
+        <h3>IMMAF Member</h3>
+        <p data-en="JMMAF is an official member federation of IMMAF (International Mixed Martial Arts Federation), operating in accordance with international standards.">JMMAFはIMMAF（国際総合格闘技連盟）の正式加盟団体として、国際基準に準拠した活動を行っています。</p>
+        <a class="more" href="about-jmmaf.html" aria-label="IMMAF加盟について詳細へ" data-en-aria="Learn more about our IMMAF membership">&#10142;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Latest News</h2>
+      <a class="view-all" href="news.html">View All News <span class="arrow">&#10142;</span></a>
+    </div>
+    <div id="cms-news">
+      <p style="padding:20px; color:var(--ink-sub);">Loading news...</p>
+    </div>
+  </div>
+</section>
+
+<section class="event" id="event">
+  <div class="event-bg" role="img" aria-label="照明の落ちた格闘技会場" data-en-aria="Dimly lit MMA arena"></div>
+  <div class="wrap">
+    <div class="event-inner" id="cms-event">
+      <p style="color:#fff;">Loading event...</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/44b83165d2bf06bf7eda3818acfcbc34aa8a871c/jmmaf_logo.png" alt="JMMAF" class="footer-logo">
+      <p class="footer-org" data-en="Japan Mixed Martial Arts Federation<br>(General Incorporated Association)">一般社団法人 日本アマチュアMMA連盟<br>Japan Mixed Martial Arts Federation</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="http://jmmaf.org/">Home</a></li>
+        <li><a href="about-jmmaf.html">About JMMAF</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@jmmaf.org">info@jmmaf.org</a></li>
+      </ul>
+    </div>
+    <div class="sns footer-sns" aria-label="SNSリンク">
+      <a href="https://www.instagram.com/jmmafed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2m0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6m8.4-11.1a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg></a>
+      <a href="https://www.youtube.com/@JMMAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg></a>
+      <a href="https://x.com/JapanMMAFed" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9zm-1.1 18h1.7L7.5 3.8H5.7z"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <p>&copy; 2026 Japan Mixed Martial Arts Federation. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="mailto:info@jmmaf.org" data-en="Contact">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ================= MENU SCRIPT ================= */
+(function(){
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.querySelector('header nav');
+  if(!btn || !nav) return;
+  function closeMenu(){
+    nav.classList.remove('mobile-open');
+    btn.setAttribute('aria-expanded','false');
+    btn.textContent = 'Menu';
+  }
+  function openMenu(){
+    nav.classList.add('mobile-open');
+    btn.setAttribute('aria-expanded','true');
+    btn.textContent = 'Close';
+  }
+  btn.setAttribute('aria-expanded','false');
+  btn.addEventListener('click', function(){
+    nav.classList.contains('mobile-open') ? closeMenu() : openMenu();
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('a')){ closeMenu(); }
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1200){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+})();
+
+/* ================= microCMS INTEGRATION ================= */
+(function(){
+  // ここをご自身の情報に書き換えてください
+  const serviceName = 'jmmaf'; 
+  const apiKey = 'ohj0cBdAmQJR37imP9FlSUMzAaKo4WZBjYrO'; 
+
+  const headers = { 'X-MICROCMS-API-KEY': apiKey };
+
+  // 1. ニュースの取得 (最新の1件)
+  fetch(`https://${serviceName}.microcms.io/api/v1/news?limit=1`, { headers })
+    .then(res => {
+      if(!res.ok) throw new Error('Network response was not ok');
+      return res.json();
+    })
+    .then(data => {
+      const container = document.getElementById('cms-news');
+      if (!data.contents || data.contents.length === 0) {
+        container.innerHTML = '<p style="padding:20px; color:var(--ink-sub);">ニュースがありません。</p>';
+        return;
+      }
+      const item = data.contents[0];
+      
+      // 日付の整形 (2026-07-08T12:00:00.000Z -> 2026.07.08)
+      const rawDate = new Date(item.date || item.publishedAt);
+      const formattedDate = `${rawDate.getFullYear()}.${String(rawDate.getMonth() + 1).padStart(2, '0')}.${String(rawDate.getDate()).padStart(2, '0')}`;
+      
+      const imageUrl = item.image ? item.image.url : 'https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/main/2026_JMMAF_shinagawa_flyer.jpg';
+      const category = item.category || 'お知らせ';
+
+      container.innerHTML = `
+        <a class="news-featured" href="${item.url || 'news.html'}">
+          <div class="news-featured-img">
+            <img src="${imageUrl}" alt="${item.title}" loading="lazy">
+          </div>
+          <div class="news-featured-body">
+            <div class="news-date">${formattedDate}</div>
+            <div class="news-featured-title">${item.title}</div>
+            <p class="news-featured-desc">詳細情報はクリックしてご確認ください。</p>
+            <div class="news-foot"><span class="tag">${category}</span><span class="arrow">&#10142;</span></div>
+          </div>
+        </a>
+      `;
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('cms-news').innerHTML = '<p style="padding:20px; color:var(--flag-red);">データの読み込みに失敗しました。</p>';
+    });
+
+  // 2. イベントの取得 (最新の1件)
+  fetch(`https://${serviceName}.microcms.io/api/v1/event?limit=1`, { headers })
+    .then(res => {
+      if(!res.ok) throw new Error('Network response was not ok');
+      return res.json();
+    })
+    .then(data => {
+      const container = document.getElementById('cms-event');
+      if (!data.contents || data.contents.length === 0) {
+        container.innerHTML = '<p style="color:#fff;">予定されているイベントはありません。</p>';
+        return;
+      }
+      const item = data.contents[0];
+      const detailUrl = item.url || 'events.html';
+
+      container.innerHTML = `
+        <div class="label">Upcoming Event</div>
+        <h2>${item.title}</h2>
+        <p class="meta">${item.meta}</p>
+        <a class="btn" href="${detailUrl}">View Event Details <span class="arrow">&#10142;</span></a>
+      `;
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('cms-event').innerHTML = '<p style="color:var(--flag-red);">イベントデータの読み込みに失敗しました。</p>';
+    });
+})();
+
+/* ================= LANGUAGE TOGGLE ================= */
+(function(){
+  const btn = document.getElementById('langToggle');
+  if(!btn) return;
+  let lang = 'ja';
+  const jaCache = new WeakMap();
+  const jaAttrCache = new WeakMap();
+  const jaAltCache = new WeakMap();
+
+  function apply(){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if(!jaCache.has(el)) jaCache.set(el, el.innerHTML);
+      el.innerHTML = lang === 'en' ? el.getAttribute('data-en') : jaCache.get(el);
+    });
+    document.querySelectorAll('[data-en-aria]').forEach(el => {
+      if(!jaAttrCache.has(el)) jaAttrCache.set(el, el.getAttribute('aria-label'));
+      el.setAttribute('aria-label', lang === 'en' ? el.getAttribute('data-en-aria') : jaAttrCache.get(el));
+    });
+    document.querySelectorAll('[data-en-alt]').forEach(el => {
+      if(!jaAltCache.has(el)) jaAltCache.set(el, el.getAttribute('alt'));
+      el.setAttribute('alt', lang === 'en' ? el.getAttribute('data-en-alt') : jaAltCache.get(el));
+    });
+    btn.classList.toggle('lang-is-ja', lang === 'ja');
+    btn.classList.toggle('lang-is-en', lang === 'en');
+  }
+
+  btn.addEventListener('click', function(){
+    lang = lang === 'ja' ? 'en' : 'ja';
+    apply();
+  });
+})();
+</script>
+
+</body>
+</html>
