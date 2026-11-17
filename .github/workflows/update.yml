@@ -29,7 +29,6 @@ jobs:
       - name: 取り込みプログラムの自己チェック
         run: python3 fetchers/test_all.py
       - name: 公式サイトから新しい結果を取り込む
-        if: github.event_name != 'push'
         run: python3 fetch.py
         continue-on-error: true
       - name: 定期的な生存記録（60日間なにも変化がないと自動実行が止まるのを防ぐ）
