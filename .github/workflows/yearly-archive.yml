@@ -1,0 +1,30 @@
+# 毎年1月1日に、その時点の全データを「リリース」として固めて保存する。
+# Zenodo（CERNが運営する公的なデータ保管庫）と連携しておくと、
+# リリースのたびに自動で永久保存され、変わらない住所（DOI）が付く。
+name: 年に1回のデータ保存
+
+on:
+  schedule:
+    - cron: '0 3 1 1 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: データをまとめる
+        run: |
+          tag="data-$(date -u +%Y-%m-%d)"
+          echo "TAG=$tag" >> $GITHUB_ENV
+          zip -r "japan-mma-record-$tag.zip" data README.md HANDOVER.md LICENSE-DATA.md
+      - name: リリースとして公開する
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$TAG" "japan-mma-record-$TAG.zip" \
+            --title "日本MMA戦績録 データ $TAG" \
+            --notes "日本MMA戦績録の全データ（$TAG 時点）。大会・試合・選手の記録と出典。"
