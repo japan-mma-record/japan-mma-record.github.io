@@ -3445,3 +3445,16 @@
 10 https://digitsu.com/events/2025-adcc-asia-oceania-championship 21
 11 https://btbrasil.livedoor.biz/archives/55656433.html 97835
 12 https://btbrasil.livedoor.biz/archives/55488097.html 93257
+1 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20KSW%20events 96
+2 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20Cage%20Warriors%20events 106
+3 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20LFA%20events 96
+4 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20ACA%20events 96
+5 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20Oktagon%20MMA%20events 104
+6 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20Brave%20CF%20events 101
+7 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Absolute%20Championship%20Akhmat 56571
+8 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=KSW%20%28organization%29 96
+9 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Cage%20Warriors 96475
+10 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Legacy%20Fighting%20Alliance 147229
+11 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Oktagon%20MMA 274
+12 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Brave%20Combat%20Federation 274
+13 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=List%20of%20ACB%20events 274
