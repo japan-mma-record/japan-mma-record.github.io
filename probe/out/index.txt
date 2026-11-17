@@ -1,0 +1,3 @@
+1 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=intitle%3A%E7%9F%B3%E4%BA%95%E5%A4%A7%E8%BC%94&format=json&srlimit=20 71
+2 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22%E7%9F%B3%E4%BA%95%E5%A4%A7%E8%BC%94%22%20WEC&format=json&srlimit=20 1689
+3 https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=WEC%2010 12999
