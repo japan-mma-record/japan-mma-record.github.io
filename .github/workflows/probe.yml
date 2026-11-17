@@ -1,7 +1,7 @@
-name: probe
+name: probe-rules
 on:
   push:
-    branches: [probe]
+    branches: [probe-rules]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
