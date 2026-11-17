@@ -3313,3 +3313,9 @@
 4 https://www.quintet-fight.com/eventinfo/fn3/ 119599
 5 https://www.quintet-fight.com/eventinfo/20190331_amateur/ 64025
 6 https://www.quintet-fight.com/eventinfo/20190317_amateur/ 63980
+1 https://www.quintet-fight.com/eventinfo/20190303_amateur/ 63995
+2 https://www.quintet-fight.com/eventinfo/20190302_amateur/ 63992
+3 https://www.quintet-fight.com/eventinfo/20190217_amateur/ 64013
+4 https://www.quintet-fight.com/eventinfo/20190216_amateur/ 64028
+5 https://www.quintet-fight.com/eventinfo/20190210_amateur/ 63982
+6 https://www.quintet-fight.com/eventinfo/quintet-fight-night2-in-tokyo/ 116258
