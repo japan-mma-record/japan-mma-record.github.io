@@ -43,6 +43,10 @@ def load():
     for r in read_tsv(os.path.join(DATA, 'core', 'bouts.tsv')):
         bouts[r['event_id']].append(r)
     fighters = {r['fighter_id']: r['name'] for r in read_tsv(os.path.join(DATA, 'core', 'fighters.tsv'))}
+    renamed = {}
+    for r in read_tsv(os.path.join(DATA, 'names.tsv')):   # 選手名の訂正・日本語表記（出典つき）
+        if r.get('fighter_id') in fighters and r.get('name'):
+            fighters[r['fighter_id']] = renamed[r['fighter_id']] = r['name']
 
     # 自動取り込み分：同じ団体・同じ日の大会が core にあれば core を優先
     have = {(e['promotion'], e['date']) for e in events.values()}
@@ -119,6 +123,11 @@ def load():
             b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
         bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
     merge_fighters(events, bouts, fighters)
+    for bl in bouts.values():
+        for b in bl:
+            for k in ('1', '2'):
+                if b.get(f'fighter{k}_id') in renamed:
+                    b[f'fighter{k}'] = renamed[b[f'fighter{k}_id']]
     return site, promos, events, bouts, fighters
 
 
