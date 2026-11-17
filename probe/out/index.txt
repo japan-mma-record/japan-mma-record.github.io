@@ -3086,3 +3086,5 @@
 221 https://shooto-mma.com/result/?id=97 27927
 222 https://shooto-mma.com/result/?id=98 41056
 223 https://shooto-mma.com/result/?id=99 43990
+1 https://shooto-mma.com/result/?id=266 38159
+2 https://www.shooto-mma.com/result/?id=266 38159
