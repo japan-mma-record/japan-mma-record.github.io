@@ -12,7 +12,7 @@ Pythonの標準機能だけで動きます（追加のインストールは不�
   data/promotions.tsv … 団体の表示名。
   data/site.json … サイトの住所など。
 """
-import csv, json, os, re, shutil, html, datetime, collections, urllib.parse
+import csv, json, os, re, shutil, html, datetime, collections, urllib.parse, unicodedata
 import methods
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -118,7 +118,62 @@ def load():
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
             b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
         bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
+    merge_fighters(events, bouts, fighters)
     return site, promos, events, bouts, fighters
+
+
+MERGED = {}   # 消えた選手番号 → まとめ先の選手番号（Wikipediaの記録の付け替えに使う）
+
+
+def merge_fighters(events, bouts, fighters):
+    """同じ選手が2つの番号に分かれているものをまとめ、番号のない名前を選手につなぐ。
+    推測で別人をまとめないよう、次のときだけまとめる：
+      ・名前が4文字以上（「アキラ」「豪」のようなリングネームは別人の可能性があるので除く）
+      ・同じ日に両方の番号が試合をしていない
+      ・同じ団体で試合をしていて、活動した年が重なるか5年以内に続いている"""
+    dates = collections.defaultdict(set)
+    proms = collections.defaultdict(set)
+    for eid, bl in bouts.items():
+        d = (events.get(eid) or {}).get('date', '')
+        pr = (events.get(eid) or {}).get('promotion', '')
+        for b in bl:
+            for k in ('1', '2'):
+                if b.get(f'fighter{k}_id'):
+                    dates[b[f'fighter{k}_id']].add(d)
+                    proms[b[f'fighter{k}_id']].add(pr)
+    def key(n):
+        return re.sub(r'[\s・･=＝.．　]', '', unicodedata.normalize('NFKC', n or '')).lower()
+    groups = collections.defaultdict(list)
+    for fid, n in fighters.items():
+        if dates.get(fid):
+            groups[key(n)].append(fid)
+    for k, ids in groups.items():
+        if len(ids) < 2 or len(k) < 4 or re.match(r'(?:キム|イ|パク|チェ|チョン|カン|リー|リ|ユン|ハン)[・･]', fighters[ids[0]]):
+            continue   # 同じ名前の多い韓国・中国系の名前はまとめない
+        ids.sort(key=lambda i: -len(dates[i]))
+        main = ids[0]
+        for o in ids[1:]:
+            a, b = dates[main], dates[o]
+            if a & b or not (proms[main] & proms[o]):
+                continue
+            ya = [int(x[:4]) for x in a if x[:4].isdigit()]; yb = [int(x[:4]) for x in b if x[:4].isdigit()]
+            if not ya or not yb or min(yb) > max(ya) + 5 or min(ya) > max(yb) + 5:
+                continue
+            MERGED[o] = main
+            dates[main] |= b
+            proms[main] |= proms[o]
+    uniq = {k: ids[0] for k, ids in groups.items() if len(k) >= 4 and len({MERGED.get(i, i) for i in ids}) == 1}
+    for eid, bl in bouts.items():
+        pr = (events.get(eid) or {}).get('promotion', '')
+        for b in bl:
+            for k in ('1', '2'):
+                f = b.get(f'fighter{k}_id')
+                if f in MERGED:
+                    b[f'fighter{k}_id'] = MERGED[f]
+                elif not f:
+                    hit = uniq.get(key(b.get(f'fighter{k}')))
+                    if hit and pr in proms[MERGED.get(hit, hit)]:   # 同じ団体に出ている同じ名前の選手だけにつなぐ
+                        b[f'fighter{k}_id'] = MERGED.get(hit, hit)
 
 
 def pname(promos, p):
@@ -254,10 +309,13 @@ def main():
 
     # Wikipediaの通算戦績（wiki_fetch.py が取り込んだもの）
     os.makedirs(os.path.join(OUT, 'w'), exist_ok=True)
-    wrec = {r['fighter_id']: r for r in read_tsv(os.path.join(DATA, 'wiki', 'records.tsv'))}
+    wrec = {}
+    for r in read_tsv(os.path.join(DATA, 'wiki', 'records.tsv')):
+        r['fighter_id'] = MERGED.get(r['fighter_id'], r['fighter_id'])
+        wrec.setdefault(r['fighter_id'], r)
     wb = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'wiki', 'bouts.tsv')):
-        wb[r['fighter_id']].append(r)
+        wb[MERGED.get(r['fighter_id'], r['fighter_id'])].append(r)
     wextra = {}
     for fid, r in wrec.items():
         if fid not in fout:
@@ -296,7 +354,7 @@ def main():
             rows.append((e['date'], f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
                         f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
-        note = '※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません'
+        note = '※日本で開かれた大会・日本の団体の大会と、UFC・ONEでの試合の戦績です。そのほかの海外の大会での試合は含みません'
         if fid in wrec:
             r0 = wrec[fid]
             rec = f'通算 {r0["wins"]}勝{r0["losses"]}敗{r0["draws"]}分' + (f'{r0["no_contests"]}無効試合' if r0['no_contests'] not in ('0', '') else '')
