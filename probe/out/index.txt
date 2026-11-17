@@ -2682,3 +2682,8 @@
 23 https://gfc-mma.com/ 
 24 https://www.shooto.jp/result/ 236
 25 https://www.shooto-mma.com/result/ 146295
+1 https://r-blood.com/resilience06/ 89183
+2 https://r-blood.com/resilience07/ 89311
+3 https://r-blood.com/resilience08/ 79279
+4 https://www.jmmaf.org/results.html 29212
+5 https://www.jmmaf.org/events.html 21290

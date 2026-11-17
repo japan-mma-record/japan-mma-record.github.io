@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRCJ6LYR00"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SRCJ6LYR00');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results | JMMAF | Japan Mixed Martial Arts Federation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ===== Brand tokens（トップページと共通） ===== */
+    --accent: #172446;
+    --accent-light: #8CA3E8;
+    --flag-red: #BC002D;
+    --ink: #111318;
+    --ink-sub: #4b4f58;
+    --bg: #ffffff;
+    --bg-gray: #f4f5f7;
+    --line: #e3e5ea;
+    --display: 'Anton', 'Oswald', sans-serif;
+    --caps: 'Oswald', sans-serif;
+    --body: 'Noto Sans JP', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.7;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* ================= Header（トップページと共通） ================= */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(6px);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  .logo{display:flex;align-items:center;}
+  .logo-img{height:42px;width:auto;display:block;}
+  nav ul{display:flex;list-style:none;gap:28px;align-items:center;}
+  nav a{
+    font-family:var(--caps);font-size:12.5px;letter-spacing:.1em;font-weight:500;
+    text-transform:uppercase;padding:6px 0;position:relative;color:var(--ink);
+    transition:color .2s;
+  }
+  nav a:hover{color:var(--accent);}
+  nav a.current::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent);
+  }
+  nav a.ext-link{display:inline-flex;align-items:center;gap:5px;}
+  nav a.ext-link svg{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:2.4;flex-shrink:0;}
+  .sns{display:flex;gap:10px;}
+  .sns a{
+    width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;transition:.2s;
+  }
+  .sns a:hover{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .sns svg{width:14px;height:14px;fill:currentColor;}
+  .menu-btn{display:none;background:none;border:none;font-family:var(--caps);font-size:13px;letter-spacing:.12em;cursor:pointer;}
+
+  /* ================= Language switch ================= */
+  .lang-switch{
+    display:flex;align-items:center;gap:7px;font-family:var(--caps);
+    font-size:12px;letter-spacing:.06em;margin-left:22px;
+    background:none;border:none;cursor:pointer;padding:3px 1px;
+  }
+  .lang-switch .lbl-ja,.lang-switch .lbl-en{color:var(--ink-sub);transition:color .2s,font-weight .2s;}
+  .lang-switch.lang-is-ja .lbl-ja{color:var(--ink);font-weight:700;}
+  .lang-switch.lang-is-en .lbl-en{color:var(--ink);font-weight:700;}
+  .lang-switch:hover .lbl-ja,.lang-switch:hover .lbl-en{color:var(--accent);}
+  .lang-switch .lang-sep{color:var(--line);font-weight:400;}
+  @media (max-width:960px){
+    .lang-switch{margin-left:0;margin-right:12px;}
+  }
+
+  .arrow{display:inline-block;transition:transform .25s;}
+
+  /* ================= Page hero ================= */
+  .page-hero{
+    position:relative;color:#fff;background:
+      radial-gradient(ellipse at 15% 0%, rgba(140,163,232,.16), transparent 55%),
+      linear-gradient(160deg, #05070d 0%, var(--accent) 130%);
+    overflow:hidden;
+  }
+  .page-hero-inner{position:relative;padding:64px 0 40px;}
+  .page-hero h1{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(42px,6vw,64px);letter-spacing:.03em;text-transform:uppercase;line-height:1;
+  }
+  .page-hero .crumb{margin-top:14px;font-family:var(--caps);font-size:12px;color:#c9cee0;}
+  .quicknav{
+    display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;
+    border-top:1px solid rgba(255,255,255,.18);padding-top:20px;
+  }
+  .quicknav a{
+    font-family:var(--caps);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:#d6dae4;display:inline-flex;align-items:center;gap:8px;
+  }
+  .quicknav a:hover{color:#fff;}
+  .quicknav a:hover .arrow{transform:translateX(4px);}
+
+  /* ================= Section shell ================= */
+  section.events-block{padding:76px 0;}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:38px;gap:16px;flex-wrap:wrap;}
+  .section-head h2{
+    font-family:var(--display);font-weight:400;font-size:clamp(28px,3.4vw,38px);
+    letter-spacing:.03em;text-transform:uppercase;line-height:1;
+  }
+  .section-head .count{font-family:var(--caps);font-size:12.5px;color:var(--ink-sub);letter-spacing:.06em;}
+
+  /* ================= Event grid & poster card ================= */
+  .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+  .event-grid.solo{grid-template-columns:minmax(0,320px);}
+  .event-card{display:block;}
+  .poster{
+    position:relative;aspect-ratio:4/3;overflow:hidden;
+    background:linear-gradient(155deg, var(--accent) 0%, #05070d 78%);
+    color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;
+    transition:transform .3s;
+  }
+  .poster.poster-photo{aspect-ratio:16/9;padding:0;background:#ddddd8;}
+  .poster.poster-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .poster.red{background:linear-gradient(155deg, var(--flag-red) 0%, #05070d 78%);}
+  .poster::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 82% 6%, rgba(255,255,255,.16), transparent 60%);
+  }
+  .poster::after{
+    content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.14);pointer-events:none;
+  }
+  .event-card:hover .poster{transform:translateY(-4px);}
+  .poster .year{
+    position:absolute;top:10px;left:14px;font-family:var(--display);font-weight:400;
+    font-size:46px;color:rgba(255,255,255,.16);line-height:1;letter-spacing:.02em;
+  }
+  .poster .status{
+    position:absolute;top:14px;right:14px;font-family:var(--caps);font-size:10px;
+    letter-spacing:.1em;text-transform:uppercase;color:#fff;
+    background:rgba(255,255,255,.14);padding:4px 9px;border:1px solid rgba(255,255,255,.35);
+  }
+  .poster .name{
+    position:relative;z-index:1;font-family:var(--display);font-weight:400;
+    font-size:19px;line-height:1.2;text-transform:uppercase;letter-spacing:.01em;
+  }
+  .event-meta{margin-top:14px;}
+  .event-meta .date{font-family:var(--caps);font-size:12px;color:var(--ink-sub);letter-spacing:.04em;}
+  .event-meta .title{
+    margin-top:6px;font-size:14.5px;font-weight:700;line-height:1.6;
+  }
+  .event-card:hover .event-meta .title{color:var(--accent);}
+  .event-meta .place{margin-top:4px;font-size:12.5px;color:var(--ink-sub);}
+
+
+  .poster.poster-photo .status{z-index:2;background:var(--flag-red);border-color:var(--flag-red);font-weight:600;}
+  .empty-note{font-size:14px;color:var(--ink-sub);padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  @media (prefers-reduced-motion: reduce){ *{transition:none!important;} }
+
+  /* ================= Responsive ================= */
+  @media (max-width: 960px){
+    nav{display:none;}
+    nav.mobile-open{
+      display:block;position:absolute;top:76px;left:0;right:0;
+      background:#fff;border-bottom:1px solid var(--line);
+      box-shadow:0 16px 24px rgba(0,0,0,.1);
+      max-height:calc(100vh - 76px);overflow-y:auto;
+    }
+    nav.mobile-open ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;}
+    nav.mobile-open li{width:100%;}
+    nav.mobile-open a{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);}
+    .menu-btn{display:block;}
+    .event-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width: 600px){
+    .event-grid{grid-template-columns:1fr;}
+    .sns{display:none;}
+    .quicknav{gap:18px 22px;}
+    .section-head{flex-direction:column;align-items:flex-start;gap:10px;}
+  }
+  /* ================= Footer ================= */
+  .site-footer{background:#05070d;color:#c9cee0;}
+  .footer-inner{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:48px;
+    padding:64px 0 48px;align-items:start;
+  }
+  .footer-brand .footer-logo{height:34px;width:auto;filter:brightness(0) invert(1);margin-bottom:18px;}
+  .footer-org{font-size:13px;line-height:1.9;color:#8b91a3;}
+  .footer-col h4{
+    font-family:var(--caps);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:#8b91a3;margin-bottom:18px;font-weight:600;
+  }
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:12px;}
+  .footer-col a{font-size:13.5px;color:#d6dae4;transition:color .2s;}
+  .footer-col a:hover{color:#fff;}
+  .footer-sns{align-self:start;}
+  .footer-sns a{border-color:rgba(255,255,255,.28);color:#d6dae4;}
+  .footer-sns a:hover{background:var(--accent-light);border-color:var(--accent-light);color:#05070d;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);}
+  .footer-bottom .wrap{
+    padding:22px 24px;display:flex;justify-content:space-between;align-items:center;
+    flex-wrap:wrap;gap:10px;
+  }
+  .footer-bottom p{font-size:11.5px;color:#6d7387;font-family:var(--caps);letter-spacing:.04em;}
+  .footer-legal{display:flex;gap:20px;}
+  .footer-legal a{font-size:11.5px;color:#8b91a3;}
+  .footer-legal a:hover{color:#fff;}
+
+  @media (max-width: 960px){
+    .footer-inner{grid-template-columns:1fr 1fr;row-gap:36px;}
+    .footer-sns{order:5;}
+  }
+  @media (max-width: 600px){
+    .footer-inner{grid-template-columns:1fr;padding:48px 0 36px;}
+    .footer-bottom .wrap{flex-direction:column;align-items:flex-start;}
+  }
+
+
+  /* ================= Results list ================= */
+  .rs-list{display:flex;flex-direction:column;gap:40px;}
+  .rs-event{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:28px 36px;border:1px solid var(--line);padding:28px;scroll-margin-top:96px;}
+  .rs-ev-img{display:block;aspect-ratio:16/9;overflow:hidden;background:#ddddd8;}
+  .rs-ev-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+  .rs-ev-img:hover img{transform:scale(1.03);}
+  .rs-ev-body{display:flex;flex-direction:column;justify-content:center;}
+  .rs-ev-body .date{font-family:var(--caps);font-size:12px;color:var(--ink-sub);letter-spacing:.04em;}
+  .rs-ev-body h3{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.15;letter-spacing:.02em;text-transform:uppercase;margin-top:6px;}
+  .rs-ev-body .place{margin-top:6px;font-size:13px;color:var(--ink-sub);}
+  .rs-ev-meta{display:flex;align-items:center;gap:12px;margin-top:14px;}
+  .rs-badge{font-family:var(--caps);font-size:10.5px;font-weight:600;letter-spacing:.08em;color:var(--flag-red);border:1px solid var(--flag-red);padding:2px 9px;}
+  .rs-count{font-family:var(--caps);font-size:12px;color:var(--ink-sub);letter-spacing:.04em;}
+  .rs-btn{align-self:flex-start;margin-top:20px;display:inline-flex;align-items:center;gap:8px;font-family:var(--caps);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:12px 22px;transition:background .2s;}
+  .rs-btn:hover{background:#0e1a37;}
+  .rs-table-wrap{grid-column:1 / -1;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .rs-table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px;}
+  .rs-table th{background:var(--accent);color:#fff;font-family:var(--caps);font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:10px 14px;}
+  .rs-table td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:middle;}
+  .rs-table td:first-child{font-size:13px;color:var(--ink-sub);white-space:nowrap;}
+  .rs-table td:nth-child(2) b{color:var(--flag-red);font-weight:700;}
+  .rs-table td.sub{color:var(--ink-sub);font-size:13px;}
+  .rs-table td:last-child{font-family:var(--caps);font-size:13px;letter-spacing:.02em;}
+  .rs-table tr.nc td:nth-child(2) b{color:var(--ink-sub);font-weight:500;}
+  .rs-table .flag{margin-right:6px;}
+  @media (max-width:960px){
+    .rs-event{grid-template-columns:1fr;padding:20px;}
+    .rs-ev-img{max-width:560px;}
+  }
+  @media (max-width:600px){
+    .rs-event{padding:16px;gap:18px;}
+    .rs-btn{align-self:stretch;justify-content:center;}
+    .rs-table{min-width:0;font-size:13px;}
+    .rs-table thead{display:none;}
+    .rs-table tr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-bottom:1px solid var(--line);}
+    .rs-table td{padding:0;border:none;}
+    .rs-table td:first-child{grid-column:1 / -1;font-size:11.5px;}
+    .rs-table td:nth-child(3){grid-column:1;font-size:12px;}
+    .rs-table td:last-child{grid-column:2;grid-row:2 / span 2;align-self:center;text-align:right;font-size:12px;max-width:11em;}
+  }
+
+  /* ===== Header: 6項目化に伴う中間幅の調整 ===== */
+  nav a{white-space:nowrap;}
+  @media (min-width:961px) and (max-width:1140px){
+    nav ul{gap:18px;}
+    .header-inner > .sns{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap header-inner">
+    <a href="http://jmmaf.org/" class="logo" aria-label="JMMAF ホーム" data-en-aria="JMMAF Home">
+      <img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/44b83165d2bf06bf7eda3818acfcbc34aa8a871c/jmmaf_logo.png" alt="JMMAF Japan Mixed Martial Arts Federation" class="logo-img">
+    </a>
+    <nav aria-label="メインナビゲーション" data-en-aria="Main navigation">
+      <ul>
+        <li><a href="http://jmmaf.org/">Home</a></li>
+        <li><a href="about-jmmaf.html">About JMMAF</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="results.html" class="current">Results</a></li>
+        <li><a href="https://immaf.org" target="_blank" rel="noopener noreferrer" class="ext-link" aria-label="About IMMAF（外部サイトが新しいタブで開きます）" data-en-aria="About IMMAF (opens in a new tab)">About IMMAF<svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="sns" aria-label="SNSリンク" data-en-aria="Social media links">
+      <a href="https://www.instagram.com/jmmafed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2m0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6m8.4-11.1a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg></a>
+      <a href="https://www.youtube.com/@JMMAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg></a>
+      <a href="https://x.com/JapanMMAFed" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9zm-1.1 18h1.7L7.5 3.8H5.7z"/></svg></a>
+    </div>
+    <button class="lang-switch lang-is-ja" id="langToggle" aria-label="Switch language / 言語を切り替え" type="button">
+      <span class="lbl-ja">JA</span><span class="lang-sep">/</span><span class="lbl-en">EN</span>
+    </button>
+    <button class="menu-btn" aria-label="メニュー" data-en-aria="Menu">Menu</button>
+  </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <h1>Results</h1>
+    <p class="crumb"><a href="http://jmmaf.org/" style="color:inherit;">Home</a> / Results</p>
+    <nav class="quicknav" aria-label="大会結果ナビゲーション" data-en-aria="Results navigation">
+      <a href="#all-japan-2026">ALL JAPAN 2026 <span class="arrow">&#10142;</span></a>
+      <a href="#one-match-2026">ONE MATCH 2026 <span class="arrow">&#10142;</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ================= RESULTS LIST =================
+  新しい大会を追加するときは、<article class="rs-event"> … </article> を1つコピーして一番上に貼り、
+  id・日付・大会名・会場・画像・リンク・表の行を書き換えてください。ヒーローの quicknav にも1行追加します。
+================================================== -->
+<section class="events-block" id="results-list">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Event Results</h2>
+      <span class="count" data-en="2 events">全2件</span>
+    </div>
+    <div class="rs-list">
+    <!-- ===== JMMAF ALL JAPAN CHAMPIONSHIPS OF AMATEUR MMA 2026 ===== -->
+    <article class="rs-event" id="all-japan-2026">
+      <a class="rs-ev-img" href="all-japan-championships-2026.html#results"><img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/main/1004_JMMAF.jpg" alt="JMMAF ALL JAPAN CHAMPIONSHIPS OF AMATEUR MMA 2026" loading="lazy"></a>
+      <div class="rs-ev-body">
+        <div class="date">2026.10.04 (SUN)</div>
+        <h3>JMMAF ALL JAPAN CHAMPIONSHIPS OF AMATEUR MMA 2026</h3>
+        <div class="place" data-en="New Pier Hall / Tokyo">ニューピアホール / 東京</div>
+        <div class="rs-ev-meta"><span class="rs-badge" data-en="Tournament">トーナメント</span><span class="rs-count" data-en="8 brackets · 24 bouts">8カテゴリー・24試合</span></div>
+        <a class="rs-btn" href="all-japan-championships-2026.html#results" data-en="View brackets &#10142;">トーナメント結果を見る &#10142;</a>
+      </div>
+      <div class="rs-table-wrap">
+        <table class="rs-table">
+          <thead><tr><th data-en="Category">カテゴリー</th><th data-en="Champion">優勝</th><th data-en="Team">所属</th><th data-en="Final">決勝</th></tr></thead>
+          <tbody>
+            <tr class="nc"><td data-en="Flyweight">フライ級</td><td><b data-en="No champion">該当者なし</b></td><td class="sub"></td><td data-en="No Contest (accidental headbutt)">ノーコンテスト（偶発的バッティング）</td></tr><tr><td data-en="Bantamweight Main">バンタム級 メイン</td><td><b data-en="Takuma Takagi">高木逞</b></td><td class="sub">和術慧舟會HEARTS</td><td data-en="Decision 3-0">判定 3-0</td></tr><tr><td data-en="Bantamweight Open A">バンタム級 オープンA</td><td><b data-en="Shotaro Kotoda">琴田祥太朗</b></td><td class="sub">パラエストラ札幌</td><td data-en="Decision 3-0">判定 3-0</td></tr><tr><td data-en="Bantamweight Open B">バンタム級 オープンB</td><td><b data-en="Jukiya Yamaguchi">山口樹希弥</b></td><td class="sub">TRIBE TOKYO M.M.A</td><td data-en="2R 1:41, Rear-Naked Choke">2R 1:41 リアネイキッドチョーク</td></tr><tr><td data-en="Featherweight Main">フェザー級 メイン</td><td><b data-en="Yunosuke Shinozaki">篠崎祐之助</b></td><td class="sub">OOTA DOJO</td><td data-en="Decision 2-1">判定 2-1</td></tr><tr><td data-en="Featherweight Open">フェザー級 オープン</td><td><b data-en="Yuya Kashiwagi">柏木祐哉</b></td><td class="sub">OOTA DOJO</td><td data-en="Decision 3-0">判定 3-0</td></tr><tr><td data-en="Lightweight">ライト級</td><td><b data-en="Musashi Tanimura">谷村武佐士</b></td><td class="sub">禅道会 パラエストラ八王子 TEAMTIGER</td><td data-en="1R 2:19, TKO">1R 2:19 TKO</td></tr><tr><td data-en="Welterweight">ウェルター級</td><td><b data-en="Oyuntsetseg Dulguun">ドルゴン・オユンツエツエグ</b></td><td class="sub">UNITED GYM CHIBA</td><td data-en="Decision 3-0">判定 3-0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- ===== Tokyo International One Match 2026 ===== -->
+    <article class="rs-event" id="one-match-2026">
+      <a class="rs-ev-img" href="tokyo-international-one-match-2026.html#results"><img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/44b83165d2bf06bf7eda3818acfcbc34aa8a871c/logo.jpg" alt="Tokyo International One Match 2026" loading="lazy"></a>
+      <div class="rs-ev-body">
+        <div class="date">2026.08.09 (SUN)</div>
+        <h3>Tokyo International One Match 2026</h3>
+        <div class="place" data-en="Shinagawa Intercity Hall / Tokyo">品川インターシティホール / 東京</div>
+        <div class="rs-ev-meta"><span class="rs-badge" data-en="One Match">ワンマッチ</span><span class="rs-count" data-en="6 bouts">全6試合</span></div>
+        <a class="rs-btn" href="tokyo-international-one-match-2026.html#results" data-en="View results &#10142;">試合結果を見る &#10142;</a>
+      </div>
+      <div class="rs-table-wrap">
+        <table class="rs-table">
+          <thead><tr><th data-en="Bout">試合</th><th data-en="Winner">勝者</th><th data-en="Opponent">敗者</th><th data-en="Result">決着</th></tr></thead>
+          <tbody>
+            <tr><td data-en="Bout 1 — 58.9kg Catchweight">第1試合 58.9kg キャッチウェイト</td><td><span class="flag">🇯🇵</span><b data-en="Mao Takada">高田 真音</b></td><td class="sub"><span class="flag">🇹🇼</span><span data-en="Hao Hsiang Yang">ヤン・ハオシャン</span></td><td data-en="Decision 3-0">判定3-0</td></tr><tr><td data-en="Bout 2 — Bantamweight">第2試合 バンタム級</td><td><span class="flag">🇷🇺</span><b data-en="Tuvet-ool Kuder-Mergen">トゥベト＝オール・クデル＝メルゲン</b></td><td class="sub"><span class="flag">🇯🇵</span><span data-en="Yuto Kimoto">木本 由人</span></td><td data-en="3R 0:50, TKO">3R 0:50、TKO</td></tr><tr><td data-en="Bout 3 — Bantamweight">第3試合 バンタム級</td><td><span class="flag">🇯🇵</span><b data-en="Jin Mukaiyama">向山 仁</b></td><td class="sub"><span class="flag">🇸🇪</span><span data-en="Alan Zangana">アラン・ザンガナ</span></td><td data-en="Decision 3-0">判定3-0</td></tr><tr><td data-en="Bout 4 — Bantamweight">第4試合 バンタム級</td><td><span class="flag">🇷🇺</span><b data-en="Ochur Byrynnay">オチュル・ビリナイ</b></td><td class="sub"><span class="flag">🇯🇵</span><span data-en="Keigo Matsumoto">松本 佳剛</span></td><td data-en="2R 0:39, TKO/Ground strikes">2R 0:39、TKO/グラウンドパンチ</td></tr><tr><td data-en="Bout 5 — Featherweight">第5試合 フェザー級</td><td><span class="flag">🇹🇼</span><b data-en="Boxun Lin">リン・ボシュン</b></td><td class="sub"><span class="flag">🇯🇵</span><span data-en="Haku Nishijima">西嶋 珀</span></td><td data-en="Decision 3-0">判定3-0</td></tr><tr><td data-en="Bout 6 — Featherweight">第6試合 フェザー級</td><td><span class="flag">🇯🇵</span><b data-en="Kaito Hamana">浜名 海歩</b></td><td class="sub"><span class="flag">🇹🇯</span><span data-en="Navruz Kahorov">ナヴルズ・カホロフ</span></td><td data-en="Decision 2-1">判定2-1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="https://raw.githubusercontent.com/kseijilow-cmyk/my-html-images/44b83165d2bf06bf7eda3818acfcbc34aa8a871c/jmmaf_logo.png" alt="JMMAF" class="footer-logo">
+      <p class="footer-org" data-en="Japan Mixed Martial Arts Federation<br>(General Incorporated Association)">一般社団法人 日本アマチュアMMA連盟<br>Japan Mixed Martial Arts Federation</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="http://jmmaf.org/">Home</a></li>
+        <li><a href="about-jmmaf.html">About JMMAF</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@jmmaf.org">info@jmmaf.org</a></li>
+      </ul>
+    </div>
+    <div class="sns footer-sns" aria-label="SNSリンク" data-en-aria="Social media links">
+      <a href="https://www.instagram.com/jmmafed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2m0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6m8.4-11.1a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg></a>
+      <a href="https://www.youtube.com/@JMMAF" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg></a>
+      <a href="https://x.com/JapanMMAFed" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9zm-1.1 18h1.7L7.5 3.8H5.7z"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <p>&copy; 2026 Japan Mixed Martial Arts Federation. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="mailto:info@jmmaf.org" data-en="Contact">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.querySelector('header nav');
+  if(!btn || !nav) return;
+  function closeMenu(){
+    nav.classList.remove('mobile-open');
+    btn.setAttribute('aria-expanded','false');
+    btn.textContent = 'Menu';
+  }
+  function openMenu(){
+    nav.classList.add('mobile-open');
+    btn.setAttribute('aria-expanded','true');
+    btn.textContent = 'Close';
+  }
+  btn.setAttribute('aria-expanded','false');
+  btn.addEventListener('click', function(){
+    nav.classList.contains('mobile-open') ? closeMenu() : openMenu();
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('a')){ closeMenu(); }
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1200){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+})();
+
+/* ================= LANGUAGE TOGGLE ================= */
+(function(){
+  const btn = document.getElementById('langToggle');
+  if(!btn) return;
+  let lang = 'ja';
+  const jaCache = new WeakMap();
+  const jaAttrCache = new WeakMap();
+  const jaAltCache = new WeakMap();
+
+  function apply(){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if(!jaCache.has(el)) jaCache.set(el, el.innerHTML);
+      el.innerHTML = lang === 'en' ? el.getAttribute('data-en') : jaCache.get(el);
+    });
+    document.querySelectorAll('[data-en-aria]').forEach(el => {
+      if(!jaAttrCache.has(el)) jaAttrCache.set(el, el.getAttribute('aria-label'));
+      el.setAttribute('aria-label', lang === 'en' ? el.getAttribute('data-en-aria') : jaAttrCache.get(el));
+    });
+    document.querySelectorAll('[data-en-alt]').forEach(el => {
+      if(!jaAltCache.has(el)) jaAltCache.set(el, el.getAttribute('alt'));
+      el.setAttribute('alt', lang === 'en' ? el.getAttribute('data-en-alt') : jaAltCache.get(el));
+    });
+    btn.classList.toggle('lang-is-ja', lang === 'ja');
+    btn.classList.toggle('lang-is-en', lang === 'en');
+  }
+
+  btn.addEventListener('click', function(){
+    lang = lang === 'ja' ? 'en' : 'ja';
+    apply();
+  });
+})();
+</script>
+
+</body>
+</html>
