@@ -2937,3 +2937,9 @@
 32 https://en.wikipedia.org/w/index.php?title=Bellator_237&action=raw&redirect=yes 3185
 33 https://en.wikipedia.org/w/api.php?action=parse&page=Bellator_237&prop=wikitext&format=json&redirects=1 397
 34 https://ja.wikipedia.org/w/api.php?action=parse&page=BELLATOR_JAPAN&prop=wikitext&format=json&redirects=1 12112
+1 https://en.wikipedia.org/w/index.php?title=ADCC_Submission_Fighting_World_Championship&action=raw 208105
+2 https://ja.wikipedia.org/w/index.php?title=%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88&action=raw 68390
+3 https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=ADCC+Submission+World+Championship&srlimit=60&format=json 27638
+4 https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=intitle%3AADCC&srlimit=60&format=json 2119
+5 https://adcc-official.com/ 262126
+6 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88&srlimit=100&format=json 101769
