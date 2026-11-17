@@ -223,7 +223,7 @@ def main():
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
         page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../') + static_header('../') +
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#fighters">選手</a></p>'
-                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}（収録{len(lst)}試合）</p></div></div>'
+                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}（収録{len(lst)}試合）</p><p class="sub" style="font-size:13px;color:var(--fg3)">※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません</p></div></div>'
                 f'<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div></main>'
                 + foot(site, len(ev_list), n_b))
         with open(os.path.join(OUT, 'f', f'{fid}.html'), 'w', encoding='utf-8') as fp:
