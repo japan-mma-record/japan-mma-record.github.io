@@ -134,6 +134,13 @@ ALIAS = [
     (r'リア・?ネイキ[ッ]?[ドト]・?チョーク', 'RNC'),
     (r'バック・?チョーク', 'RNC'),
     (r'(?i)rear[- ]?naked[- ]?choke|\bR\.N\.C\.?', 'RNC'),
+    # 打撃の呼び名
+    (r'グランド', 'グラウンド'),
+    (r'ヒザ蹴り|ひざ蹴り|ヒザ蹴|膝蹴(?!り)', '膝蹴り'),
+    (r'スタンド(?:で|状態で|状態の)?の?パンチ', 'スタンドのパンチ'),
+    (r'グラウンド(?:で|状態で|状態の)?の?パンチ|パウンド', 'グラウンドのパンチ'),
+    (r'(?:セコンド(?:から|より)?の?)?タオル(?:の)?投入|セコンドのタオル', 'セコンドのタオル'),
+    (r'(?i)\bno ?contest\b|ノー・コンテスト', 'ノーコンテスト'),
 ]
 
 
@@ -150,8 +157,86 @@ def _alias(m):
     return m
 
 
+_JUNK = r'[\s※*＊:：;/／→=、,]+'
+
+
+def _paren(body):
+    """中身を（ ）でくくる形にする。中身が空なら空。"""
+    body = re.sub(r'^' + _JUNK + r'|' + _JUNK + r'$', '', body.strip())
+    body = _outer(body).strip()
+    body = re.sub(r'^' + _JUNK + r'|' + _JUNK + r'$', '', body)
+    body = body.replace('(', '（').replace(')', '）').replace(':', '：')
+    return f'（{body}）' if body else ''
+
+
+def _draw(t):
+    """引き分け → 「引き分け」「引き分け（時間切れ）」「引き分け（判定1-1）」"""
+    if not re.search(r'ドロー|引き?分け?|(?i:\bdraw\b)', t) or re.search(r'一本|KO|無効|ノーコンテスト|反則|失格|勝', t):
+        return None
+    timeout = '時間切れ' in t
+    judged = '判定' in t
+    rest = re.sub(r'(?i)ドロー|引き?分け?|時間切れ|判定|\bdraw\b|[※*()（）\[\]:：、,\s]', ' ', t).strip()
+    if not rest:
+        return '引き分け（時間切れ）' if timeout else ('引き分け（判定）' if judged else '引き分け')
+    mm = re.match(r'^(\d)\s*[' + _DASH + r']\s*(\d)(?!\d)\s*(.*)$', rest)
+    if not mm or timeout and not judged:
+        return None
+    sc = _scores(mm.group(3))
+    if sc is None:
+        return None
+    return f'引き分け（判定{mm.group(1)}-{mm.group(2)}' + ('・' + '・'.join(sc) if sc else '') + '）'
+
+
+def _nc(t):
+    """無効試合 → 「ノーコンテスト」「ノーコンテスト（理由）」"""
+    mm = re.match(r'^(?:無効試合|ノーコンテスト|NC\b)\s*(.*)$', t)
+    if not mm:
+        return None
+    return 'ノーコンテスト' + _paren(mm.group(1))
+
+
+def _strike(kind, body):
+    body = re.sub(r'(?<=パンチ)連打|(?<=膝蹴り)連打', '', body)
+    body = re.sub(r'(?:に|で)?よる$|により$|のため$', '', _outer(body.strip()).strip())
+    return kind + _paren(body)
+
+
+def _tko(t):
+    """TKO → 「TKO」「TKO（レフェリーストップ）」「TKO（グラウンドのパンチ）」"""
+    if re.match(r'^TKO', t):
+        body = t[3:]
+    elif re.match(r'^(?:レフェリーストップ|レフリーストップ|ドクターストップ)', t) and '判定' not in t:
+        body = t
+    else:
+        return None
+    body = re.sub(r'(?:による)?\s*→?\s*TKO(?:勝ち)?$|TKO', '', body)
+    body = body.replace('レフリー', 'レフェリー')
+    if body.count('（') + body.count('(') > 2 or len(body) > 40:
+        return 'TKO' + _paren(body) if re.match(r'^\s*[(（]', body) else None
+    # 「レフェリーストップ」と原因が両方書いてあれば、原因だけを残す
+    inner = _outer(re.sub(r'^' + _JUNK, '', body.strip()))
+    cause = re.sub(r'[(（]?レフェリーストップ[)）]?\s*(?:[:：/／→]|で|による)?', ' ', inner)
+    cause = re.sub(r'\s*[(（]\s*[)）]\s*', ' ', cause)
+    cause = re.sub(r'^\s*(?:で|による)|(?:で|による)\s*$', '', cause.strip())
+    if cause.strip(' ※*:：/／→') == '' and 'レフェリーストップ' in inner:
+        return 'TKO（レフェリーストップ）'
+    return _strike('TKO', cause if 'レフェリーストップ' in inner else inner)
+
+
+def _ko(t):
+    mm = re.match(r'^KO(?![a-zA-Z])\s*(.*)$', t)
+    if not mm or re.search(r'\d', mm.group(1)):
+        return None
+    return _strike('KO', mm.group(1))
+
+
 def tidy(m):
     m = _alias((m or '').strip())
+    t = unicodedata.normalize('NFKC', m)
+    for f in (_nc, _draw, _tko, _ko):
+        r = f(t)
+        if r:
+            return r
     m = re.sub(r'^1本', '一本', m)
     m = re.sub(r'^(.+?)\s*[(（](?:タップアウト|ギブアップ|タップ)[)）]$', r'一本 \1', m)
     m = re.sub(r'^(?i:submission)\s*,\s*', '一本 ', m)
