@@ -1005,3 +1005,6 @@
 14 https://www.bing.com/search?q=GLADIATOR%20026%20%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C 122769
 15 https://html.duckduckgo.com/html/?q=%E5%A4%A9%E4%B8%8B%E4%B8%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%88%20%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C%20%E6%B2%96%E7%B8%84%20MMA 14306
 16 https://www.bing.com/search?q=%E5%A4%A9%E4%B8%8B%E4%B8%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%88%20%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C%20%E6%B2%96%E7%B8%84%20MMA 125864
+1 https://mmaplanet.jp/190192 99757
+2 https://mmaplanet.jp/162349 101931
+3 https://gonkaku.jp/articles/14944?page=2 40784
