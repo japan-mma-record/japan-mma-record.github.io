@@ -179,7 +179,10 @@ def _draw(t):
     if not rest:
         return '引き分け（時間切れ）' if timeout else ('引き分け（判定）' if judged else '引き分け')
     mm = re.match(r'^(\d)\s*[' + _DASH + r']\s*(\d)(?!\d)\s*(.*)$', rest)
-    if not mm or timeout and not judged:
+    if not mm:
+        sc = None if timeout else _scores(rest)
+        return f'引き分け（判定・' + '・'.join(sc) + '）' if sc else None
+    if timeout and not judged:
         return None
     sc = _scores(mm.group(3))
     if sc is None:
