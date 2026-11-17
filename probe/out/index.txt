@@ -2099,3 +2099,9 @@
 1 https://www.boutreview.com/3/reports/item_76048.html 175037
 1 https://www.boutreview.com/3/reports/item_29406.html 164884
 2 https://www.boutreview.com/3/news/item_29406.html 164884
+1 https://efight.jp/result-20210310_516696 82574
+2 https://efight.jp/result-20210609_552429 86141
+3 https://efight.jp/result-20211207_770880 79342
+4 https://efight.jp/result-20220309_954546 80310
+5 https://efight.jp/result-20230819_1408075 81061
+6 https://efight.jp/result-20260122_1681617 83059
