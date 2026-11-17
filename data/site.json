@@ -8,9 +8,9 @@
  ],
  "world_promotions": [
   "ufc",
+  "one",
   "pfl",
   "bellator",
-  "one",
   "ksw",
   "cage_warriors",
   "lfa",
@@ -20,6 +20,9 @@
   "wec"
  ],
  "first_promotions": [
-  "rizin"
+  "rizin",
+  "shooto",
+  "deep",
+  "pancrase"
  ]
 }
