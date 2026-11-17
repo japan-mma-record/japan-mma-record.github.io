@@ -2943,3 +2943,11 @@
 4 https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=intitle%3AADCC&srlimit=60&format=json 2119
 5 https://adcc-official.com/ 262126
 6 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88&srlimit=100&format=json 101769
+1 https://en.wikipedia.org/wiki/Craig_Jones_Invitational 371745
+2 https://jitsmagazine.com/craig-jones-invitational-2024-live-results-play-by-play-analysis-highlights-more 16
+3 https://jitsmagazine.com/craig-jones-invitational-2025-cji-2-live-results-play-by-play-analysis-highlights-more 16
+4 https://bjjdoc.com/?p=26581 342236
+5 https://bjjdoc.com/?p=27937 339813
+6 https://www.bjjee.com/articles/craig-jones-confirms-cji-3-is-cancelled-as-ufc-bjj-reshapes-the-professional-grappling-market/ 161603
+7 https://www.flograppling.com/articles/14510065-craig-jones-invitational-2-updates-results-from-day-1-in-las-vegas 415028
+8 https://www.mmamania.com/2025/8/31/cji-2-day-2-live-results 142539
