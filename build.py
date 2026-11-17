@@ -36,6 +36,8 @@ def load():
     site = json.load(open(os.path.join(DATA, 'site.json'), encoding='utf-8'))
     promos = {r['promotion']: r for r in read_tsv(os.path.join(DATA, 'promotions.tsv'))}
     events = {r['event_id']: r for r in read_tsv(os.path.join(DATA, 'core', 'events.tsv'))}
+    for r in events.values():
+        r['name'] = methods.event_name(r.get('name'))
     bouts = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'core', 'bouts.tsv')):
         bouts[r['event_id']].append(r)
@@ -53,6 +55,7 @@ def load():
     for e in auto_ev:
         if (e['promotion'], e['date']) in have:
             continue
+        e['name'] = methods.event_name(e.get('name'))
         events[e['event_id']] = e
         for b in auto_b.get(e['event_id'], []):
             for k in ('1', '2'):

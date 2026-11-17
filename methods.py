@@ -260,6 +260,25 @@ def tidy(m):
     return out + ('（' + '・'.join(sc) + '）' if sc else '')
 
 
+
+# 大会名：「Gladiator - Gladiator 7」のような、団体名が二重になった書き方を直す
+_UPPER = {'zst': 'ZST', 'heat': 'HEAT', 'gladiator': 'GLADIATOR', 'dream': 'DREAM', 'deep': 'DEEP', 'rizin': 'RIZIN',
+          'pride': 'PRIDE', 'grachan': 'GRACHAN', 'nexus': 'NEXUS', 'isshin': 'ISSHIN', 'ikusa': 'IKUSA', 'sengoku': 'SENGOKU'}
+
+
+def event_name(n):
+    n = (n or '').strip()
+    m = re.match(r'^(.+?) - (.+)$', n)
+    if m and m.group(2).lower().replace(' ', '').startswith(m.group(1).lower().replace(' ', '')):
+        n = m.group(2)
+    w = n.split(' ', 1)
+    if w and w[0].lower() in _UPPER:
+        n = _UPPER[w[0].lower()] + (' ' + w[1] if len(w) > 1 else '')
+    m = re.fullmatch(r'(DREAM|PRIDE|RIZIN) (\d+)', n)      # 正式な表記は「DREAM.17」のように点でつなぐ
+    if m:
+        n = f'{m.group(1)}.{m.group(2)}'
+    return n
+
 if __name__ == '__main__':
     for x in ['判定3-0', '判定（3-0）', '判定 3-0', '判定3－0', '判定(3-0)', '判定 3-0(梅田20-19 鶴和20-19 小池20-19)',
               '判定3-0 （30-28/30-28/30-28）', '判定0-3 (20-17 x3)', '判定:3-0 30-27 30-27 29-28', '判定3-0 ※30-27、30-27、30-27',
