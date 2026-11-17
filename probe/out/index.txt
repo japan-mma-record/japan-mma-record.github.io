@@ -2741,3 +2741,13 @@
 16 https://gonkaku.jp/events/DpJAjDQRwm 65350
 17 https://gonkaku.jp/articles/24304 38150
 18 https://gonkaku.jp/articles/21902/outline 55408
+1 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=UFC%20%E6%97%A5%E6%9C%AC%E4%BA%BA%E9%81%B8%E6%89%8B%20%E4%B8%80%E8%A6%A7&srlimit=50&format=json 52738
+2 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=intitle%3AUFC%20%E6%97%A5%E6%9C%AC%E4%BA%BA&srlimit=50&format=json 8016
+3 https://ja.wikipedia.org/w/api.php?action=parse&page=UFC&prop=wikitext&format=json 174179
+4 https://ja.wikipedia.org/w/api.php?action=parse&page=UFC%E3%81%AE%E5%A4%A7%E4%BC%9A%E4%B8%80%E8%A6%A7&prop=wikitext&format=json 256899
+5 https://ja.wikipedia.org/w/api.php?action=parse&page=UFC_144&prop=wikitext&format=json 14097
+6 https://jp.ufc.com/event/ufc-144 174940
+7 https://jp.ufc.com/athlete/kyoji-horiguchi 117212
+8 https://jp.ufc.com/athletes/all?filters%5B0%5D=location%3AJP 91770
+9 https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22UFC%22%20%E7%B7%8F%E5%90%88%E6%A0%BC%E9%97%98%E5%AE%B6%20%E6%97%A5%E6%9C%AC&srlimit=500&srnamespace=0&format=json 531583
+10 https://ja.wikipedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:%E6%97%A5%E6%9C%AC%E3%81%AE%E7%B7%8F%E5%90%88%E6%A0%BC%E9%97%98%E5%AE%B6&cmlimit=500&format=json 31700
