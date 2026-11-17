@@ -1,7 +1,7 @@
-name: probe-ufc
+name: probe-one
 on:
   push:
-    branches: [probe-ufc]
+    branches: [probe-one]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
