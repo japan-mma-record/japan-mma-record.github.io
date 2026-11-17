@@ -115,6 +115,7 @@ def load():
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
+            b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
         bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
     return site, promos, events, bouts, fighters
 

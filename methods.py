@@ -292,6 +292,63 @@ def clean_sources(src):
         keep.append(OVERSEAS)
     return ' '.join(keep)
 
+
+# 階級：「フェザー級」「女子アトム級」「65kg契約」の形にそろえる。特別なルール名は「・」のあとに残す
+_CLASSES = ('スーパーヘビー', 'ライトヘビー', 'クルーザー', 'ヘビー', 'ミドル', 'スーパーウェルター', 'ウェルター', 'スーパーライト', 'ライト',
+            'スーパーフェザー', 'フェザー', 'スーパーバンタム', 'バンタム', 'スーパーフライ', 'ライトフライ', 'フライ', 'ストロー',
+            'スーパーアトム', 'アトム', 'ミニマム', 'ミクロ', 'メガトン', '無差別', 'ピン')
+_PROMO = r'DEEP ?JEWELS|DEEP|JEWELS|修斗|パンクラス|ZST|MMA|RIZIN|GRACHAN|HEAT|DREAM|SRC|SENGOKU|戦極|HERO\'S|PRIDE|GLADIATOR|NEXUS'
+_ROUTINE = re.compile(r'^(?:' + _PROMO + r'|MMAルール|総合格闘技ルール|総合ルール|総合格闘技|総合|RIZIN ?MMAルール|ZSTルール|DEEPルール|修斗ルール|パンクラスルール|プロ|プロ修斗公式戦|'
+                      r'シングルマッチ|ワンマッチ|\d+分\s*\d+\s*(?:R|ラウンド)(?:\s*[(（]延長\s*\d+\s*R[)）])?|\d+分×?\d+R|,)$', re.I)
+
+
+def weight(w):
+    t = unicodedata.normalize('NFKC', w or '').strip()
+    if not t or '記載なし' in t:
+        return ''
+    t = re.sub(r'\[[^\]]*\]', ' ', t)                                     # [-70.0Kg] など
+    t = re.sub(r'[(（]\s*-?[\d.]+\s*kg(?:以下|未満)?\s*[)）]', ' ', t, flags=re.I)   # (70.3kg) など
+    t = re.sub(r'(\d+)\s*分\s*(\d+)\s*(R|ラウンド)', r'\1分\2\3', t)
+    t = re.sub(r'(?i)RIZIN ?MMAルール\s*[:：]?\s*(?:\d+分\d+R)?', ' ', t)
+    t = re.sub(r'[(（][^()（）]*[)）]', lambda m: m.group(0).replace(' ', '\x01').replace('・', '\x02'), t)   # かっこの中は区切らない
+    t = re.sub(r'(\d+\s*分\s*\d+\s*R)', r' \1 ', t)
+    t = re.sub(r'(?i)RIZIN ?MMAルール\s*[:：]?\s*\d+\s*分\s*\d+\s*R', ' ', t)
+    parts = [x.strip() for x in re.split(r'[・/／;；、,]|\s{1,}(?=\S)', t) if x.strip()]
+    wt, rule = '', []
+    for x in parts:
+        x = re.sub(r'\(延長\d+R\)', '', x).strip()
+        if _ROUTINE.match(x) or not x:
+            continue
+        m = re.search(r'(女子)?(?:' + _PROMO + r')?\s*(女子)?(' + '|'.join(_CLASSES) + r')級(?:戦|契約)?', x)
+        if m and not wt:
+            wt = (m.group(1) or m.group(2) or '') + m.group(3) + '級'
+            rest = (x[:m.start()] + x[m.end():]).strip(' （）()')
+            rest = re.sub(r'-?[\d.]+\s*kg(?:以下|未満)?(?:契約)?', '', rest, flags=re.I).strip()
+            rest = re.sub(r'^(?:' + _PROMO + r')', '', rest).strip()
+            if rest and not _ROUTINE.match(rest) and not re.fullmatch(r'\d+分\d+R', rest):
+                rule.append(rest)
+            continue
+        m = re.search(r'(?:契約体重\s*)?(\d+(?:\.\d+)?)\s*lb', x, re.I)
+        if m and wt in ('', '契約体重'):
+            wt = f'{round(float(m.group(1)) * 0.45359237, 1):g}kg契約'
+            continue
+        m = re.search(r'-?\s*(\d+(?:\.\d+)?)\s*kg(?:以下|未満)?(契約|級)?', x, re.I)
+        if m and wt in ('', '契約体重') and re.fullmatch(r'(?:' + _PROMO + r')?[-\s\d.kgKG以下未満契約級戦]*', x):
+            wt = f'{float(m.group(1)):g}kg' + ('契約' if m.group(2) == '契約' or '契約' in x else '')
+            continue
+        if x in ('メガトン', '無差別', '無差別契約'):
+            wt = wt or (x[:-2] if x.endswith('契約') else x) + '級'
+            continue
+        if x in ('契約体重', 'キャッチウェイト', '契約'):
+            wt = wt or '契約体重'
+            continue
+        rule.append(x)
+    rule = [x.replace('\x01', ' ').replace('\x02', '・') for x in rule]
+    out = wt
+    if rule:
+        out = (out + '・' if out else '') + '・'.join(dict.fromkeys(rule))
+    return out
+
 if __name__ == '__main__':
     for x in ['判定3-0', '判定（3-0）', '判定 3-0', '判定3－0', '判定(3-0)', '判定 3-0(梅田20-19 鶴和20-19 小池20-19)',
               '判定3-0 （30-28/30-28/30-28）', '判定0-3 (20-17 x3)', '判定:3-0 30-27 30-27 29-28', '判定3-0 ※30-27、30-27、30-27',
