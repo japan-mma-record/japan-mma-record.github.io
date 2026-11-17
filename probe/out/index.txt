@@ -68,3 +68,19 @@
 23 https://www.rings.co.jp/zst/ 2814
 24 https://gladiator-official.com/ 
 25 https://www.mmagladiator.com/ 
+1 https://www.tapology.com/fightcenter/events/96898-gladiator-020xxwardog41-in-osaka 615768
+2 https://www.tapology.com/fightcenter/events/48098-fighting-nexus-vol-11 610750
+3 https://www.tapology.com/fightcenter/events/106824-pfc-31-nexus-sprout-north-3 415747
+4 https://www.tapology.com/fightcenter/events/26012-zst-42-swat 527518
+5 https://pedia.3rd-in.co.jp/wiki/Fighting%20NEXUS%E7%8E%8B%E8%80%85%E4%B8%80%E8%A6%A7 43888
+6 https://battle-news.com/tag/wardog 137291
+7 https://battle-news.com/tag/zst 120487
+8 https://battle-news.com/tag/nexus 120489
+9 https://battle-news.com/tag/heat 120488
+10 https://battle-news.com/tag/kross%c3%97over 120499
+11 https://battle-news.com/tag/the-outsider 120496
+12 https://ja.wikipedia.org/wiki/ZST 163852
+13 https://ja.wikipedia.org/wiki/Fighting_NEXUS 145552
+14 https://ja.wikipedia.org/wiki/GLADIATOR_(%E6%A0%BC%E9%97%98%E6%8A%80%E5%A4%A7%E4%BC%9A) 45214
+15 https://ja.wikipedia.org/wiki/THE_OUTSIDER 170766
+16 https://ja.wikipedia.org/wiki/HEAT_(%E6%A0%BC%E9%97%98%E6%8A%80%E5%A4%A7%E4%BC%9A) 45362
