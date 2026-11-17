@@ -1,12 +1,4 @@
-https://btbrasil.livedoor.biz/archives/55851879.html
-https://btbrasil.livedoor.biz/archives/55865782.html
-https://btbrasil.livedoor.biz/archives/55862884.html
-https://btbrasil.livedoor.biz/archives/55860397.html
-https://www.flograppling.com/articles/16009759-2026-adcc-asia-oceania-trials-recap-8-qualify-in-australia
-https://flograppling.com/articles/11522989-must-watch-matches-from-2023-adcc-asia-oceania-trials-in-singapore
-https://www.flograppling.com/articles/7844928-the-final-batch-of-adcc-bound-trials-champs-asia-oceania-trials-results
-https://digitsu.com/events/2022-adcc-asia-oceania-trial
-https://digitsu.com/events/2023-adcc-asia-oceania-championship
-https://digitsu.com/events/2025-adcc-asia-oceania-championship
-https://btbrasil.livedoor.biz/archives/55656433.html
-https://btbrasil.livedoor.biz/archives/55488097.html
+https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=List_of_Bellator_MMA_events|List_of_Professional_Fighters_League_events|List_of_World_Series_of_Fighting_events|List_of_PFL_events
+https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=2009_in_Bellator_MMA|2010_in_Bellator_MMA|2011_in_Bellator_MMA|2012_in_Bellator_MMA|2013_in_Bellator_MMA|2014_in_Bellator_MMA|2015_in_Bellator_MMA|2016_in_Bellator_MMA|2017_in_Bellator_MMA|2018_in_Bellator_MMA|2019_in_Bellator_MMA|2020_in_Bellator_MMA|2021_in_Bellator_MMA|2022_in_Bellator_MMA|2023_in_Bellator_MMA|2024_in_Bellator_MMA|2025_in_Bellator_MMA
+https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=2018_in_Professional_Fighters_League|2018_in_PFL|2019_in_Professional_Fighters_League|2019_in_PFL|2020_in_Professional_Fighters_League|2020_in_PFL|2021_in_Professional_Fighters_League|2021_in_PFL|2022_in_Professional_Fighters_League|2022_in_PFL|2023_in_Professional_Fighters_League|2023_in_PFL|2024_in_Professional_Fighters_League|2024_in_PFL|2025_in_Professional_Fighters_League|2025_in_PFL|2026_in_Professional_Fighters_League|2026_in_PFL
+https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=2012_in_World_Series_of_Fighting|2013_in_World_Series_of_Fighting|2014_in_World_Series_of_Fighting|2015_in_World_Series_of_Fighting|2016_in_World_Series_of_Fighting|2017_in_World_Series_of_Fighting

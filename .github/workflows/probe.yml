@@ -1,7 +1,7 @@
-name: probe
+name: probe-bpfl
 on:
   push:
-    branches: [probe]
+    branches: [probe-bpfl]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
