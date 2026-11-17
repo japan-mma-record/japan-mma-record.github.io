@@ -13,7 +13,7 @@ jobs:
       - run: |
           rm -rf probe/out; mkdir -p probe/out
           nl -ba -w1 -s' ' probe/urls.txt > /tmp/list.txt
-          cat /tmp/list.txt | xargs -P 6 -L 1 sh -c 'curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0)" --retry 2 --max-time 60 "$1" -o "probe/out/$0.html" || echo "fail $1"; sleep 1'
+          cat /tmp/list.txt | xargs -P 2 -L 1 sh -c 'curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0)" --retry 2 --max-time 60 "$1" -o "probe/out/$0.html" || echo "fail $1"; sleep 3'
           while read i u; do echo "$i $u $(wc -c < probe/out/$i.html 2>/dev/null || echo 0)" >> probe/out/index.txt; done < /tmp/list.txt
           git config user.name bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add probe/out; git commit -q -m "probe results [skip ci]"; git push
