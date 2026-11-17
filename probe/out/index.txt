@@ -80,3 +80,16 @@
 44 https://en.wikipedia.org/w/index.php?action=raw&title=2005_in_WEC 15433
 45 https://en.wikipedia.org/w/index.php?action=raw&title=2006_in_WEC 19171
 46 https://ja.wikipedia.org/w/index.php?action=raw&title=WEC%E3%81%AE%E5%A4%A7%E4%BC%9A%E4%B8%80%E8%A6%A7 29850
+1 https://ja.wikipedia.org/w/index.php?action=raw&title=%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5 23236
+2 https://ja.wikipedia.org/w/index.php?action=raw&title=%E5%89%8D%E7%94%B0%E5%90%89%E6%9C%97 20742
+3 https://ja.wikipedia.org/w/index.php?action=raw&title=%E9%AB%99%E8%B0%B7%E8%A3%95%E4%B9%8B 3186
+4 https://ja.wikipedia.org/w/index.php?action=raw&title=%E9%AB%98%E8%B0%B7%E8%A3%95%E4%B9%8B 21807
+5 https://ja.wikipedia.org/w/index.php?action=raw&title=%E5%A4%A7%E6%B2%A2%E3%82%B1%E3%83%B3%E3%82%B8 12870
+6 https://ja.wikipedia.org/w/index.php?action=raw&title=%E4%B8%89%E6%B5%A6%E5%BA%83%E5%85%89 13986
+7 https://ja.wikipedia.org/w/index.php?action=raw&title=%E7%94%B0%E6%9D%91%E5%BD%B0%E6%95%8F 11333
+8 https://ja.wikipedia.org/w/index.php?action=raw&title=%E5%AE%87%E8%89%AF%E5%81%A5%E5%90%BE 95
+9 https://ja.wikipedia.org/w/index.php?action=raw&title=%E7%9F%B3%E4%BA%95%E5%A4%A7%E8%BC%94 3186
+10 https://ja.wikipedia.org/w/index.php?action=raw&title=WEC_52 6652
+11 https://ja.wikipedia.org/w/index.php?action=raw&title=WEC_40 5485
+12 https://ja.wikipedia.org/w/index.php?action=raw&title=WEC_34 3186
+13 https://ja.wikipedia.org/w/index.php?action=raw&title=WEC_35 3186
