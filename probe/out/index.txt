@@ -469,3 +469,11 @@
 43 https://efight.jp/result-20210208_510426/2/ 84782
 44 https://efight.jp/result-20210418_528101/2/ 76487
 45 https://efight.jp/result-20210628_579967/2/ 80505
+1 https://efight.jp/result-20210628_579967/3/ 80011
+2 https://efight.jp/result-20210928_648225/2/ 78644
+3 https://efight.jp/result-20220927_1303351/2/ 79323
+4 https://efight.jp/result-20230612_1387252/2/ 79700
+5 https://efight.jp/result-20230612_1387252/3/ 80909
+6 https://efight.jp/result-20230612_1387252/4/ 81745
+7 https://efight.jp/result-20230612_1387252/5/ 83190
+8 https://efight.jp/result-20230612_1387252/6/ 77782
