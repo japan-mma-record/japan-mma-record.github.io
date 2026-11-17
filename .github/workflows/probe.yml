@@ -1,7 +1,7 @@
-name: probe
+name: probe-oneall
 on:
   push:
-    branches: [probe]
+    branches: [probe-oneall]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p probe/out; i=0
+          rm -rf probe/out; mkdir -p probe/out; i=0
           while read u; do i=$((i+1)); curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0)" --max-time 60 "$u" -o "probe/out/$i.html" || echo "fail $u"; echo "$i $u $(wc -c < probe/out/$i.html)" >> probe/out/index.txt; sleep 2; done < probe/urls.txt
           git config user.name bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add probe/out; git commit -m "probe results [skip ci]"; git push
+          git add probe/out; git commit -m "probe results [skip ci]"; git push origin HEAD:probe-oneall
