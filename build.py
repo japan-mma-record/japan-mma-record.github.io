@@ -112,6 +112,34 @@ def load():
             if not main.get('venue'):
                 main['venue'] = o.get('venue', '')
             events.pop(o['event_id'], None)
+    # 同じ団体・同じ名前で、日付が3日以内の大会（2日間開催など）は1つにまとめる（初日の日付にする）
+    byname = collections.defaultdict(list)
+    for e in events.values():
+        if bouts.get(e['event_id']):
+            byname[(e['promotion'], e['name'])].append(e)
+    for evs in byname.values():
+        if len(evs) < 2:
+            continue
+        evs.sort(key=lambda e: e['date'])
+        main = evs[0]
+        for o in evs[1:]:
+            try:
+                gap = (datetime.date.fromisoformat(o['date']) - datetime.date.fromisoformat(main['date'])).days
+            except ValueError:
+                continue
+            if gap > 3:
+                main = o
+                continue
+            n0 = len(bouts[main['event_id']])
+            for i, x in enumerate(bouts.pop(o['event_id'], [])):
+                x['event_id'] = main['event_id']
+                if str(x.get('match_no') or '').isdigit():
+                    x['match_no'] = str(n0 + i + 1)
+                bouts[main['event_id']].append(x)
+            for t in (o.get('sources') or '').split():
+                if t not in (main.get('sources') or '').split():
+                    main['sources'] = ((main.get('sources') or '') + ' ' + t).strip()
+            events.pop(o['event_id'], None)
     # 柔術・グラップリング・エキシビションだけの大会は載せない（MMAの記録なので）
     gp = set(site.get('grappling_promotions') or [])   # QUINTET などグラップリングの団体は、そのまま載せる
     for k in list(bouts):
