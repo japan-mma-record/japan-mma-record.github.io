@@ -86,12 +86,12 @@ def load():
         def src(e):
             return {t for t in (e.get('sources') or '').split() if t.startswith('http')}
         def jname(e):   # 日本の資料の名前（「ROMAN - …」のような海外式の名前でないもの）を優先
-            return (not methods.headline(e['name']), bool(re.search(r'[ぁ-んァ-ヶ一-龥]', e['name'])), ' - ' not in e['name'], len(src(e)))
+            return (not methods.headline(e['name']), len(e['name'].strip()) > 4, bool(re.search(r'[ぁ-んァ-ヶ一-龥]', e['name'])), ' - ' not in e['name'], len(src(e)))
         main = max(evs, key=jname)
         for o in evs:
             if o is main:
                 continue
-            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']):
+            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']) and len(o['name'].strip()) > 4:
                 continue
             main_id = main['event_id']
             have = {frozenset((norm(x['fighter1']), norm(x['fighter2']))) for x in bouts[main_id]}
