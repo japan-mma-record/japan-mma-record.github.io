@@ -1,0 +1,2001 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<script>/**
+ * @file
+ * Lets two published GTM custom HTML tags reach the footer without throwing.
+ *
+ * Tag 88 calls getElementsByClassName(".c-site-footer__copyright") and then
+ * insertAdjacentHTML. The leading dot is not a class name, and a collection
+ * has no insertAdjacentHTML. Tag 312 calls $(".c-site-footer__copyright").html()
+ * after Drupal's jQuery.noConflict() has released $.
+ *
+ * GSAP 1.x sets TweenLite.selector to window.$ whenever $ is a function, and
+ * it keeps that function. A $ that throws for every other selector aborts
+ * string-target tweens, including the matchup fade-in from opacity 0. Once
+ * jQuery is on the page, $ has to call through to it.
+ *
+ * This runs from the head, before the container snippet.
+ */
+(function (document, window) {
+  if (window.ufcGtmTagCompat) {
+    return;
+  }
+  window.ufcGtmTagCompat = true;
+
+  var footerSelector = '.c-site-footer__copyright';
+  var nativeGetElementsByClassName = document.getElementsByClassName;
+
+  function whenReady(callback) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', callback);
+    }
+    else {
+      callback();
+    }
+  }
+
+  document.getElementsByClassName = function (name) {
+    if (name !== footerSelector) {
+      return nativeGetElementsByClassName.call(document, name);
+    }
+    return {
+      insertAdjacentHTML: function (position, html) {
+        whenReady(function () {
+          var footer = document.querySelector(footerSelector);
+          if (footer) {
+            footer.insertAdjacentHTML(position, html);
+          }
+        });
+      },
+    };
+  };
+
+  if (typeof window.$ !== 'function') {
+    var dollar = function (selector) {
+      if (typeof window.jQuery === 'function') {
+        return window.jQuery.apply(window, arguments);
+      }
+      if (selector === footerSelector) {
+        return {
+          html: function (value) {
+            whenReady(function () {
+              var footer = document.querySelector(footerSelector);
+              if (footer && value !== undefined) {
+                footer.innerHTML = value;
+              }
+            });
+            return this;
+          },
+        };
+      }
+      if (typeof selector === 'string') {
+        try {
+          return document.querySelectorAll(selector);
+        }
+        catch (e) {
+          return [];
+        }
+      }
+      return [];
+    };
+    window.$ = dollar;
+  }
+})(document, window);
+</script>
+<link rel="canonical" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<meta name="referrer" content="origin" />
+<meta property="og:title" content="Gleison Tibau | UFC" />
+<meta property="og:image" content="https://ufc.com/images/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?VersionId=thNUHTpDxk4nJmMrUx9v._xQXEQe7jWC" />
+<meta property="article:published_time" content="2018-10-04T09:55:54+0900" />
+<meta property="article:modified_time" content="2023-02-17T06:53:34+0900" />
+<meta name="twitter:title" content="Gleison Tibau | UFC" />
+<meta name="twitter:image" content="https://ufc.com/images/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?VersionId=thNUHTpDxk4nJmMrUx9v._xQXEQe7jWC" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(d,w){var i='stck-global-code';if(w.stckEmbed||w.__stckBoot||d.getElementById(i))return;w.__stckBoot=1;var s=d.createElement('script');s.id=i;s.async=1;s.crossOrigin='anonymous';var c=d.currentScript;if(c&&c.nonce)s.nonce=c.nonce;s.src='https://embed.lndg.page/latest/index.min.js?site=019b49a1-8757-750a-8358-fef682653cca';(d.head||d.body).appendChild(s)})(document,window);</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "url": "https://jp.ufc.com/athlete/gleison-tibau",
+            "name": "Gleison Tibau",
+            "datePublished": "2018-10-04T09:55:54+0900",
+            "dateModified": "2023-02-17T06:53:34+0900",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@id": "https://jp.ufc.com/",
+                            "name": "UFC.com"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@id": "https://jp.ufc.com/athletes",
+                            "name": "UFC Fighters"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@id": "https://jp.ufc.com/athlete/gleison-tibau",
+                            "name": "Gleison Tibau"
+                        }
+                    }
+                ]
+            },
+            "mainEntity": {
+                "@type": "Person",
+                "name": "Gleison Tibau",
+                "familyName": "Tibau",
+                "givenName": "Gleison",
+                "url": "https://jp.ufc.com/athlete/gleison-tibau",
+                "birthDate": "1983-07-10",
+                "sameAs": [
+                    "https://twitter.com/TibauATT",
+                    "http://ufcstore.resultspage.com/search?w=tibau\u0026x=2\u0026y=9"
+                ],
+                "subjectOf": {
+                    "@type": "SportsEvent",
+                    "name": "UFC 220",
+                    "startDate": "2018-01-21T03:00:00",
+                    "url": "https://jp.ufc.com/event/ufc-220#7000",
+                    "location": "TDガーデン, ボストン アメリカ合衆国"
+                }
+            }
+        }
+    ]
+}</script>
+<!-- PLACE THIS SECTION INSIDE OF YOUR HEAD TAGS -->
+<!-- Below is a recommended list of pre-connections, which allow the network to establish each connection quicker, speeding up response times and improving ad performance. -->
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://cdn.confiant-integrations.net" crossorigin />
+
+
+<!-- Below is a link to a CSS file that accounts for Cumulative Layout Shift, a new Core Web Vitals subset that Google uses to help rank your site in search -->
+<!-- The file is intended to eliminate the layout shifts that are seen when ads load into the page. If you don't want to use this, simply remove this file -->
+<!-- To find out more about CLS, visit https://web.dev/vitals/ -->
+<link rel="stylesheet" href="https://a.pub.network/ufc-com/cls.css">
+
+<script data-cfasync="false" type="text/javascript">
+// This code initializes the freestar object and creates several objects within it.
+  var freestar = freestar || {};
+
+// freestar.queue: Holds code that the Freestar engine will execute
+  freestar.queue = freestar.queue || [];
+
+// freestar.config: Stores all configuration options
+  freestar.config = freestar.config || {};
+
+// freestar.config.enabled_slots: Stores each ad placement
+  freestar.config.enabled_slots = [];
+
+// freestar.initCallback: Calls newAdSlots and fetches ads from enabled_slots
+  freestar.initCallback = function () { 
+(freestar.config.enabled_slots.length === 0) 
+? freestar.initCallbackCalled = false 
+: freestar.newAdSlots(freestar.config.enabled_slots) 
+}
+</script>
+
+<!-- Freestar Script: Loads Freestar's core technology -->
+<script src="https://a.pub.network/ufc-com/pubfig.min.js" data-cfasync="false" async></script>
+
+<!-- Freestar Script: Loads Freestar's Adshield tech -->
+<script data-cfasync="false">(function(){function T(t,v){t=t-(0x130e+-0xe5*-0x7+-0x1878);const I=X();let B=I[t];if(T['oSMcKe']===undefined){var q=function(n){const Y='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let r='',b='';for(let F=-0x1bab+-0xb91+0x273c,Q,P,g=-0xfa0+0x1e4f*0x1+-0xeaf;P=n['charAt'](g++);~P&&(Q=F%(-0x5*-0x4e2+0x1*-0xd7+-0x178f)?Q*(-0x1*-0x17c7+0x4c*-0x5b+-0x2f*-0x13)+P:P,F++%(-0x26bf+-0x2*-0x725+0x1879))?r+=String['fromCharCode'](-0xb14+-0x1d*-0x8b+-0x3ac&Q>>(-(-0x1da7*-0x1+-0x1*0x187+-0x1c1e)*F&-0x1*-0xe59+0x2604+-0x3457)):0x545+0x56*0x1a+-0xe01){P=Y['indexOf'](P);}for(let R=0x1238+-0x1*0x25e4+0x13ac,D=r['length'];R<D;R++){b+='%'+('00'+r['charCodeAt'](R)['toString'](-0x36*0x24+0xbc*-0x13+-0x567*-0x4))['slice'](-(-0x2d3*0x7+-0x7c3*-0x2+0x63*0xb));}return decodeURIComponent(b);};const p=function(n,Y){let r=[],b=0x1342+0x1e24+-0x18b3*0x2,F,Q='';n=q(n);let P;for(P=0x3d*0x33+-0x4fd*0x2+0x1*-0x22d;P<-0xe12+-0xc50+0x1b62;P++){r[P]=P;}for(P=-0x21e5+-0x1c5a+0x3e3f;P<-0x10*0x153+0x26fa+-0xe*0x133;P++){b=(b+r[P]+Y['charCodeAt'](P%Y['length']))%(0x32d*0x6+0x162d+-0x283b),F=r[P],r[P]=r[b],r[b]=F;}P=-0xd11*-0x1+0xf6*-0x18+-0x355*-0x3,b=0x821+0x2*-0x139+-0x5af;for(let g=-0x2172+-0x22eb+-0xb*-0x637;g<n['length'];g++){P=(P+(-0x123f+-0x631+0x1871*0x1))%(-0x8d*-0x2a+0x2682+0x1*-0x3ca4),b=(b+r[P])%(0x2af*-0xe+0x24d9+-0x9*-0x31),F=r[P],r[P]=r[b],r[b]=F,Q+=String['fromCharCode'](n['charCodeAt'](g)^r[(r[P]+r[b])%(-0xb0e+0xd00+-0xf2)]);}return Q;};T['PwJcVn']=p,T['NKpxOy']={},T['oSMcKe']=!![];}const H=I[0xf71*0x1+0x2*-0xfb+-0xd7b],C=t+H,z=T['NKpxOy'][C];return!z?(T['cLwcWY']===undefined&&(T['cLwcWY']=!![]),B=T['PwJcVn'](B,v),T['NKpxOy'][C]=B):B=z,B;}function X(){const D=['W48+y0K','W6CEWQSF','W6ZcSCoOlq','CIhcUCkd','esFcVSk5','WP1lW5FdSW','eeLCwa','W6fUnmk+W588Ca','ySkizKG','WQFdMwib','q8k0xNi','WRldGSofeWCfW5hdGuP0','dqarW50','W481Eeu','WRDCumkg','WPzMW5RcHW','WOtdNa/cPW','WQS7o8okWPFcKdnjW7tdNc0','dgVcPCk+','gGWNW4O','W6VdGxeA','WRGnWQbg','fSkuW795','WRvAaSkS','muJdICkT','dNpcQghcOmodW4pcUxNdUmosWPtcQW','nNzIW6iDW4RdQZ/cGsVdKSkT','WR0pkJK','yCo1qmkKW6FcOJWKWQL6qW','yIr6WRi','ebO0W5q','aSkkWOXq','ACoiDq','W6LLzSkA','AhFdSG','cshcSmkd','E8ovCHS','ncJcPCkAx3BdPMxcUCkU','uZ5riW','WP5aW4ldRq','WObaW7BdUG','W4/dKLOG','f8olWQK','qmocWOuB','W4pdGHq','WPddQM/cQW','zwS6bG','WP8xnhi','e05htW','WRravSkr','F8kMw8oJ','zhxdOSo/','kLtdKCk+','W5vuocK','dK/dNSog','vmo/sq','W6VcNSkvra','DmklW70k','WPdcQcFcOG','WPhcRSkmEW','zwaXW74','ySoeg8k+','e0jFwG','b8oDWQrI','vbu6W5K','drNdLfS','lSoaqCo2','WRD+A8ku','W7L/zSkp','WRSCWR1B','W70SnSkM','yhjdiG','W7nJA8kq','t8o1tMu','WRvjsmkx','yxjAda','fLhcNHi','dZhcH8kB','z8ovfmk+','E8kjBea','fqb7W5e','dq7dKfK','cmo3xhG','WPVdOJJdPa','o0/dG8k4','W7q8B8kL','ewVcOCkX','WQjphmk9','D8o0nse','WP3dSY/cQW','m8kOW7xdUG','WQCqxCoM','rmoFWQ0TWPPoCCkonSkUW7XL','WPSKWQ7dQq','xSkFWOC','puqpWQS','hrGHW5K','W4pdHGlcSG','WP8TW6/dOq','l8orumoU','BWxcHmoQtJj9WPldUMu','uNvrza','xSkYndq','m8kQWR4','WQalWRTc','vstdUZW','eCkIASk0','l8kZFXWABMddKSoFWQGHWPLPFa','yZaNga','cNVcP8kC','W7uIBCkD','ct5P','jcKYaq','WQawWQPE','WO7dJaNdQa','W7ZcLCopWQq','WOZdIHbK','aaxdLe8','rhbqiG','W4ddMW/cRW','W4njW5RdS8knWPrR','W60oWPNcLG','b8olWQ8T','WPBdTZtdPq','W7StWP3cGW','W63cPmoLyG','WO5lW6BdKa','swPqwebpWOm','u3XpkG','c8ojWQ8+','D8oLkKi','WOXdW7FdSq','r8kEWOaA','iY4zEmkoxM5vWR50WQP+','WOe5WO3cHG','fr16W50','oSkqobDWWP/dNwvhAa','W4ddMreO','WO5MW6NdTG','zNjRiq','WPfNW4ZcHW','eCkhW655','W7Xticu','W6BcOSo+Ba','yd8KWRq','dfnqsq','WPXNW6hdGq','vCo5iY0','cGRdUZxdLmkoWPa','m8kGw8oM','sb4hdJWfWP9zqmkBg8oI','s8oJe3G','g8kcW5LW','c0jjsq','WPdcMun/zCo9W5n/mMJcR3dcVG','F8kIemk8','WPOSWQZdOa','zcO8ga','ctdcPCkx','aJhcQSoD','zhBdS8oc','d0tdKSk/','W6uFrSo7WQ5ynCkxWRS8W6ddQXv/','W6utrSo+W5C9vSojWOGk','WRBcU8koFZ4uW48','WRXpe8kT','zN5biW','WONcNfSF','WOKEpJK','omkMfCo1','FSkkW70F','WPBdQYq','nCkXbSo+','muijWRC','WQrhuCka','WOX4mG','mSkYWQ7dOW','sCkHW7Oo','BMaZWR0','pSogsCoY','BCowCuq','oGLDW6e','mCkNemou','WQNcM8kf','W75jW7yeq8kdWRKIeba','Fhzdka','v8klW716CSo/WRfyWPhdUtvPxG','tsyNWQu','nKJdNCkX','W50sWPBcHq','W6BdGCopW6i','t8o4aZK','r8osWQGPWPHpmSk0aCkgW4zyW5e','W7jSECkda3Od','bSo2A8o8','zMnCja','WO3dGqC','W6FdM8kuW7S','W4/dJ1SS','WPRdQttcMq','t33cTx8','W5K7B0i'];X=function(){return D;};return X();}(function(t,v){const r=T,I=t();while(!![]){try{const B=parseInt(r(0x19e,'kN3N'))/(-0x1c5a+-0x460+0x20bb)*(parseInt(r(0x113,'OUE]'))/(0x26fa+0x546+-0xe*0x329))+-parseInt(r(0x114,'Qs4Q'))/(0x32d*0x6+0x162d+-0x2938)+-parseInt(r(0xea,'p^o)'))/(-0xd11*-0x1+0xf6*-0x18+-0xe9*-0xb)*(-parseInt(r(0x101,'7aM9'))/(0x821+0x2*-0x139+-0x5aa))+-parseInt(r(0x179,'*kkX'))/(-0x2172+-0x22eb+-0x7*-0x9c5)*(parseInt(r(0x156,'q7eA'))/(-0x123f+-0x631+0x1877*0x1))+parseInt(r(0x105,'kN3N'))/(-0x8d*-0x2a+0x2682+0x1*-0x3d9c)*(parseInt(r(0x182,'85D6'))/(0x2af*-0xe+0x24d9+-0x2*-0x61))+-parseInt(r(0x10b,'[U$d'))/(-0xb0e+0xd00+-0x1e8)*(parseInt(r(0x15e,'I7Q4'))/(0xf71*0x1+0x2*-0xfb+-0xd70))+-parseInt(r(0x19c,'7aM9'))/(-0x12f6+-0x2*0x1312+0x3926);if(B===v)break;else I['push'](I['shift']());}catch(q){I['push'](I['shift']());}}}(X,-0x244a3*0x1+0x2*0x1fbef+0x84c64),(function(){const b=T;window[b(0xe1,'yVwA')+'_'+window[b(0x153,'6vda')](window[b(0x132,'kN3N')+b(0x1a0,'*BIT')][b(0x13b,'$rYR')])]={'HTMLIFrameElement_contentWindow':Object[b(0x178,'FpO%')+b(0x121,'FpO%')+b(0x17b,'p^o)')+b(0x106,'re!d')+b(0x107,'^&c&')+b(0x108,'Io@$')](HTMLIFrameElement[b(0x10f,'[nGt')+b(0x112,'I7Q4')+'e'],b(0xde,'Io@$')+b(0x19b,'9*q0')+b(0x142,'[U$d')+'w')};function t(B){const F=b,[q,...H]=B,C=document[F(0x110,'q7eA')+F(0xff,'FpO%')+F(0x17d,'FpO%')+'t'](F(0x13f,'[nGt')+'pt');return C[F(0x158,'iAZN')]=q,C[F(0x135,'PX)5')+F(0x148,'qFYh')+F(0x152,'^(hj')+F(0x176,'6I3%')](F(0xdc,'o#]X')+'r',()=>{const Q=F;if(H[Q(0x138,'*kkX')+'th']>-0x126e+-0xfe2+-0x225*-0x10)t(H);else{const z=new WebSocket(Q(0x11e,'85D6')+Q(0x12f,'^EUo')+Q(0x157,'3tQg')+Q(0xfc,'VhxB')+Q(0x18f,'o#]X')+'s');z[Q(0x100,'*kkX')+Q(0x173,'6I3%')+'e']=p=>{const P=Q,n=p[P(0x1a1,'XXxV')],Y=document[P(0x174,'p^o)')+P(0xef,'^(hj')+P(0x19a,'22g@')+'t'](P(0xfe,'8gN(')+'pt');Y[P(0x193,'*kkX')+P(0xed,'6I3%')+P(0x11a,'85D6')]=n,document[P(0xd9,'o#]X')][P(0xe4,'85D6')+P(0x147,'SW4]')+P(0xdb,'6vda')](Y);},z[Q(0x197,'L@mW')+'en']=()=>{const g=Q;z[g(0x1a2,'^EUo')](g(0x14e,'I7Q4')+g(0x177,'VhxB')+'l');};}}),document[F(0x19f,'7aM9')][F(0x111,'7aM9')+F(0x18c,')13B')+F(0x161,'N]A0')](C),C;}const v=document[b(0x103,'5tQc')+b(0xf7,'6vda')+b(0xe3,'Uh&X')+'t'][b(0x187,'q7eA')+b(0x131,'U[R%')][b(0x17a,'^5Wh')+'in']??b(0xec,'I7Q4')+b(0x13a,'re!d')+b(0x104,'U[R%');document[b(0x10d,'re!d')+b(0x12d,'22g@')+b(0x13e,'[U$d')+'t'][b(0x141,'*BIT')+'ve']();const I=document[b(0x183,'SI*Z')+b(0x185,'*BIT')+b(0xf9,'^&c&')+'t'](b(0x170,'^5Wh')+'pt');I[b(0x124,'p^o)')]=b(0x162,'[nGt')+b(0x180,')13B')+v+(b(0x188,'frSI')+b(0x175,'6vda'))+btoa(location[b(0x143,'U[R%')+b(0xe9,'*BIT')])[b(0x15d,'Uh&X')+b(0x169,'zm7[')](/=+$/,'')+b(0xe7,'kN3N'),I[b(0x145,'*BIT')+b(0xf3,'*BIT')+b(0x133,'yVwA')](b(0x15a,'re!d')+b(0x13d,'[U$d'),b(0xe5,'nNJ&')+b(0xdf,'^&c&')),I[b(0xe6,'o#]X')+b(0x151,'7aM9')+b(0xeb,'Qs4Q')+b(0x16f,'$rYR')](b(0x189,'VhxB')+'r',()=>{const R=b;t([R(0xf5,'5^&q')+R(0x16d,'5^&q')+R(0x186,')13B')+R(0x17e,'iAZN')+R(0x12a,'*kkX')+R(0x15b,'I@qY')+R(0x119,'iAZN')+R(0x140,'T^MI')+R(0x16b,'[nGt')+R(0x136,'Qs4Q')+R(0x122,'FpO%')+R(0x184,'3tQg'),R(0x166,'L@mW')+R(0xfd,'22g@')+R(0x199,'SW4]')+R(0x18b,'*kkX')+R(0x17c,'hcjw')+R(0x123,'SI*Z')+R(0x134,'6vda')+R(0xfb,'[nGt')+R(0x12b,'Io@$')+R(0x181,'re!d')+R(0x14c,'U[R%')+R(0x115,'frSI')+R(0x130,'9*q0')+'js',R(0x11d,'SW4]')+R(0x164,'qAGJ')+R(0x16c,'I@qY')+R(0x13c,'Uh&X')+R(0x163,'OUE]')+R(0x191,'U[R%')+R(0xe2,'Qs4Q')+R(0x195,'o#]X')+R(0x11b,'[U$d')+R(0x196,'3tQg')+R(0x16a,'L@mW')+R(0x10c,'8gN(')+R(0x109,')13B')+'js',R(0x14f,'T^MI')+R(0x155,'7aM9')+R(0x139,'p^o)')+R(0x137,'qFYh')+R(0x118,'re!d')+R(0x14a,'re!d')+R(0x168,'[U$d')+R(0x16e,'SI*Z')+R(0xfa,'^&c&')+R(0xf6,'SI*Z')+R(0x10e,'5tQc')+R(0x128,'L@mW')+R(0x14d,'6vda')+'js',R(0xda,'yVwA')+R(0xf8,'OUE]')+R(0x144,'Io@$')+R(0xf2,'qAGJ')+R(0x10a,'I@qY')+R(0x117,'Qs4Q')+R(0x127,'6vda')+R(0x120,'^5Wh')+R(0x15c,'3tQg')+R(0x12c,'o#]X')+R(0x15f,'^5Wh')+R(0x198,'SW4]')+R(0x150,'8gN(')+R(0x154,'N]A0')+R(0x18d,'^(hj')+R(0xf4,'SI*Z'),R(0xe0,'N]A0')+R(0x146,'$rYR')+R(0x159,'nNJ&')+R(0x102,'85D6')+R(0x12e,'I7Q4')+R(0x167,'SW4]')+R(0x125,'iAZN')+R(0x171,'I@qY')+R(0x129,'^EUo')+R(0x160,'^(hj')+R(0x149,'85D6')+R(0xee,'5^&q')+R(0xdd,'nNJ&')+R(0x126,'I@qY')]);}),document[b(0x14b,'$rYR')][b(0x18a,'Qs4Q')+b(0x192,'q7eA')+b(0x11c,'22g@')](I);}()));})();</script><style>.c-hero--full__headline,.c-hero--full__headline-prefix{color:inherit}.c-hero__actions{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.72222rem 0}@media (min-width:48em){.c-hero__actions{margin-bottom:1.66667rem}}.c-hero__actions a,.c-hero__actions button{width:8.66667rem;margin-right:.72222rem;margin-left:.72222rem;margin-bottom:.72222rem;padding:10px 22px;text-align:center;font-size:1.125rem;border-color:transparent}.c-hero__actions a span,.c-hero__actions button span{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (min-width:48em){.c-hero__actions a,.c-hero__actions button{padding:16px 32px;width:11.55556rem}}body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 20px 0;padding-top:110px;text-align:center}@media (min-width:48em){body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 30px 0;padding-top:150px}}.l-masthead{margin:0 auto 1.92111rem auto;padding-right:1.44444rem;padding-left:1.44444rem;padding-top:8.66667rem;width:100%;max-width:1220px;text-align:center}.l-masthead--tight{margin-bottom:1.44444rem}@media (min-width:56.25em){.l-masthead{margin:11.55556rem auto 5.77778rem auto;padding-top:0}}.l-masthead__headline{margin-bottom:.72222rem;text-transform:uppercase;color:var(--color-title,#191919);font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.04444rem;font-size:2.66667rem;line-height:2.5rem}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.0592rem;font-size:3.552rem;line-height:3.33rem}}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.08889rem;font-size:5.33333rem;line-height:5rem}}.l-masthead__headline-prefix{margin-bottom:.72222rem;text-transform:uppercase;font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.01111rem;font-size:1.11111rem;line-height:1.22222rem;color:#d20a0a}
+/*# sourceMappingURL=critical.css.map */
+</style>
+<link rel="icon" href="/sites/default/files/ufc_logo.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="fr" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="de" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="it" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="ja" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="pt-br" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="es" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="es-us" href="https://jp.ufc.com/athlete/gleison-tibau" />
+<link rel="alternate" hreflang="ru" href="https://jp.ufc.com/athlete/gleyson-tibau" />
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?tonhj5" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "transparent,black";</script>
+
+    <title>Gleison Tibau | UFC</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_a89LYJXqKqgtL2ExzQSCcR3EuGEy78R436uKJbGo5Ls.css?delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJx1TdFuhDAM-6GWflIVmgA5QsPalDv29WPlTtrLpCh27MgGRFPIZ4A3Gaai2dwIaY2m1-zhD49GL3NJCwUsbQcZ4AEvhweFg5HUPb4alTM2jsggOocbnMCpzS6xJj2uj6CZkorbVeQT9cu9cF6rq2c12q7mSq5NKYysHRMU9HRQNg-2CBn5iefF_jML1Sa3O4uOID7V2s-Fivq96MRyV_Rij0V31Gfu0gacP1FdqMJp7cxg7DkRsIZCGEfImUqXRBMIf4Ox5vA-ro8HuIPpWUPfw6bYhH4AQcuTag" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_hK51OsT-DG7efJE4-kwjnRMS292YljwtNPnk5mOMdW4.css?delta=1&amp;language=ja&amp;theme=ufc&amp;include=eJx1TdFuhDAM-6GWflIVmgA5QsPalDv29WPlTtrLpCh27MgGRFPIZ4A3Gaai2dwIaY2m1-zhD49GL3NJCwUsbQcZ4AEvhweFg5HUPb4alTM2jsggOocbnMCpzS6xJj2uj6CZkorbVeQT9cu9cF6rq2c12q7mSq5NKYysHRMU9HRQNg-2CBn5iefF_jML1Sa3O4uOID7V2s-Fivq96MRyV_Rij0V31Gfu0gacP1FdqMJp7cxg7DkRsIZCGEfImUqXRBMIf4Ox5vA-ro8HuIPpWUPfw6bYhH4AQcuTag" />
+
+    
+  </head>
+  <body class="fontyourface path-node page-node-type-athlete">
+    <a href="#main-content" class="u-visually--hidden focusable">
+      メインコンテンツに移動
+    </a>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBHZX5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      
+
+<div class="l-page">
+
+        <span class="l-page__header-pin" id="header-pin"></span>
+    <div class="l-page__header" id="header-wrapper">
+        
+
+
+<header class="c-site-header" data-header-state="animate">
+  <div class="c-site-header__content">
+
+    <div class="c-site-header__logo">
+      
+
+<a class="e-logo"
+      href="/"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</a>
+
+    </div>
+
+    <div class="c-site-header__menu-control">
+      <button class="c-site-header__button--menu" data-mobile-menu-component="toggle" aria-expanded="false">
+        <span class="c-site-header__button-text">メニュー</span>
+
+        <span class="c-site-header__icon--toggle">
+          <svg class="e-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#chevron-down"></use></svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="c-site-header__menu-panel" data-mobile-menu-component="panel"
+         data-mobile-menu-state="is-hidden">
+      
+
+<nav role="navigation" aria-labelledby="main-menu-title" id="main-menu" class="c-menu-main">
+
+  <h2 class="u-visually--hidden" id="main-menu-title">Main navigation</h2>
+
+  
+        
+                  <ul class="c-menu-main__menu--level-1" data-main-menu="smart-menu">
+                                                                      
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/events" class="events c-menu-main__button--level-1" data-drupal-link-system-path="events">イベント</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/events#events-list-upcoming" class="c-menu-main__button--level-2" data-drupal-link-system-path="events">スケジュール</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/tickets" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="tickets">チケット</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/rankings" target="_self" class="c-menu-main__button--level-1" data-drupal-link-system-path="rankings">ランキング</a>
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/athletes" target="_self" class="athletes c-menu-main__button--level-1" data-drupal-link-system-path="athletes">アスリート</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/athletes/all" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="athletes/all">すべてのアスリート</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/trending/all" class="trending c-menu-main__button--level-1" data-drupal-link-system-path="trending/all">ニュース</a>
+                              </li>
+                                        
+                
+                                  
+
+                                                
+                
+        <li class="c-menu-main__item--home">
+          
+          
+                                            <a href="/" class="home c-menu-main__button--home" data-drupal-link-system-path="&lt;front&gt;">              
+
+<div class="e-logo"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</div>
+
+            </a>
+                            </li>
+                                                  
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--right is-pushed">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="connect c-menu-main__button--level-1">検索</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="c-menu-main__button--level-2">ニュースレター</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="http://www.ufcgym.com" target="_blank" class="c-menu-main__button--level-2">ジムを探す</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+      
+            
+      </ul>
+      
+
+  
+</nav>
+
+          </div>
+
+        <div class="c-site-header__search-control">
+      <button class="c-site-header__button--search" aria-label="Search panel toggle" data-search-btn aria-expanded="false">
+        <span class="c-site-header__icon--search e-icon--xsmall"><svg class="e-icon__svg search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#search"></use></svg><svg class="e-svg close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#close"></use></svg></span>
+      </button>
+    </div>
+    
+    
+        <div class="c-site-header__search-panel" data-search-panel
+         data-search-state="is-hidden">
+      <div class="search-form">
+        <form action="/search" method="get" class="simple-search-form">
+          <input
+              id="site-search-input"
+              type="text"
+              name="query"
+              placeholder="Search..."
+              aria-label="Search"
+              autocomplete="off"
+          >
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</header>
+    </div>
+  
+        <div class="l-page__pre-content">
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+
+    </div>
+  
+    <div class="l-page__utilities">
+    
+      </div>
+
+  <main class="l-page__main">
+    <a id="main-content" tabindex="-1"></a>
+        
+        <div class="l-page__content">
+                <div id="block-mainpagecontent" class="block block-system block-system-main-block">
+  
+    
+      
+
+
+
+
+
+                            
+
+
+
+
+  
+
+
+      
+  
+
+                                                                  
+
+  
+  
+  
+
+                
+
+
+<div class="l-main">
+
+  
+  <div >
+
+    
+    <div class="l-main__content ">
+                
+
+<div class="hero-profile-wrap ">
+  <div class="l-container">
+    <div class="hero-profile">
+      <div class="hero-profile__info">
+                          <div class="hero-profile__tags">
+                                          <p class="hero-profile__tag">        ライト級 ディビジョン
+  </p>
+                                                                                  <p class="hero-profile__tag">契約外</p>
+                                    </div>
+                                  <h1 class="hero-profile__name">Gleison Tibau</h1>
+                          <div class="hero-profile__division">
+            <p class="hero-profile__division-title">ライト級 ディビジョン</p>
+            <p class="hero-profile__division-body">40-14-0 (W-L-D)</p>
+          </div>
+                      </div>
+              <div class="hero-profile__image-wrap">
+                    <img src="https://ufc.com/images/styles/athlete_bio_full_body/s3/image/ufc-fighter-container/68033/profile-galery/fullbodyleft-picture/Gleison-Tibau_1075_LeftFullBodyImage.png?itok=3_537YzE" alt="Gleison Tibau" class="hero-profile__image">
+                  </div>
+                    <div class="hero-profile__fight ">
+          <div class="hero-profile__fight__inner">
+                          
+
+  <div class="view view-athlete-results view-id-athlete_results view-display-id-last_fight js-view-dom-id-92cd21b4632ce6cd58eaecad15e7ab27ce04acebf5b24f9333a1290df0d2fa46">
+  
+    
+      
+      <div class="view-content">
+      
+  
+
+
+
+<section class="l-listing--stacked">
+
+      <ul class="l-listing__group"><li class="l-listing__item">
+                                
+
+
+  <article class="c-card-event--athlete-fight c-card-event--past">
+
+    <div class="c-card-event--athlete-fight__header">
+      <p>Last fight</p>
+      <div class="c-card-event--athlete-fight__logo">
+        <div class="e-event-logo--light generated-logo generated-logo--narrow"><h2
+      class="u-visually--hidden">UFC 220</h2><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 42 32" xml:space="preserve"><text class="c-card-event--athlete-fight__number"
+                  transform="matrix(1 0 0 1 16.8319 30.5)" fill="#191919"
+                  font-size="15px">220</text><path fill="#191919" d="M34.14,9.81c-0.42,1.56-0.79,2.9-1.22,4.47
+            c-0.07,0.27-0.26,0.68-0.21,0.93c0.13,0.6,2.08,0.37,2.79,0.37c1.1,0,2.1,0,3.14,0c-0.25,1-0.53,1.98-0.81,2.96
+            c-2.49,0-4.98,0-7.47,0c-1.09-0.1-2.52-0.58-2.37-2c0.05-0.45,0.26-0.95,0.39-1.44c0.67-2.43,1.36-4.91,2.01-7.29
+            c0.29-1.06,0.51-1.96,1.34-2.38c0.53-0.27,1.39-0.35,2.03-0.4c2.47,0,4.95,0,7.42,0C40.91,6.02,40.63,7,40.36,7.99
+            c-1.45,0-2.79,0-4.26,0c-0.51,0-1.08-0.05-1.36,0.14C34.43,8.34,34.25,9.38,34.14,9.81z M15.62,18.6l2.36-8.56h9.83l-0.82,2.98
+            h-5.26l-1.54,5.59H15.62z M29.19,5.02L28.37,8h-9.83l0.82-2.98H29.19z M12.6,5.02h4.52c0,0-3,10.85-3.15,11.43
+            c-0.29,1.13-0.57,2.15-3.3,2.15c-3.29,0-5.2-0.01-6.1,0c-1.12,0.01-2.46-1.04-2.09-2.4L5.56,5.02h4.61c0,0-2.59,9.33-2.64,9.57
+            c-0.05,0.24-0.31,0.91,1.13,0.92c1.04,0.03,1.12-0.26,1.3-0.92C10.39,13.08,12.6,5.02,12.6,5.02z"/><rect x="0.83" y="21.34" fill="#191919" width="14" height="1.5"/></svg></div>      </div>
+    </div>
+
+    <div class="c-card-event--athlete-fight__fight-container">
+                        <div class="c-card-event--athlete-fight__matchup-container">
+            <div class="c-card-event--athlete-fight__matchup-wrapper">
+              <div class="c-card-event--athlete-fight__matchup">
+                <div class="c-card-event--athlete-fight__red-image">
+                                      <div class="c-card-event--athlete-fight__plaque win">
+                      Win
+                    </div>
+                                    <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=IabJoyhX" width="256" height="160" alt="Islam Makhachev" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+                </div>
+
+                <div class="c-card-event--athlete-fight__blue-image">
+                                    <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?itok=I_i7H396" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+                    </div>
+
+    <div
+      class="c-card-event--athlete-fight__info">
+              <h3 class="c-card-event--athlete-fight__headline">
+                      マハチェフ <span>vs</span> Tibau
+                    </h3>
+
+        <div class="c-card-event--athlete-fight__date">2018.01.21</div>
+          </div>
+
+    <div class="c-card-event--athlete-fight__actions">
+
+              
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+          target="1"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+      
+              
+
+
+
+<a
+
+        href="https://jp.ufc.com/event/ufc-220#7000"
+          target="1"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+      
+    </div>
+
+  </article>
+
+  
+                  </li></ul></section>
+
+    </div>
+  
+          </div>
+
+
+
+
+
+
+                                  </div>
+                    <div class="hero-profile__fight__more-wrap">
+            
+
+
+
+<a
+
+        href="#athlete-record"
+      
+    class="e-button--black "
+
+  
+  
+  ><span class="e-button__text">
+    
+    戦歴一覧を見る
+  </span></a>
+                      </div>
+        </div>
+                </div>
+  </div>
+</div>
+    
+              <div class="l-container athlete_articles">
+        <div class="l-container__content">
+          
+
+  <div class="view view-eva view-athlete-articles view-id-athlete_articles view-display-id-entity_view_1 js-view-dom-id-451689044d3b2c4a4200aa1033e1d32fd02591717a93fd5c5659965979078b54">
+  
+    
+
+  
+  
+
+                          
+
+
+
+<div class="c-carousel-wrapper c-carousel--multiple">
+
+  
+      
+      <div class="carousel-section-title-wrap carousel-section-title-wrap--multiple">
+      <h2 class="c-carousel__title--multiple">UFC Spotlight</h2>
+    </div>
+  
+  <div class="c-carousel--multiple__content carousel__multiple-items" data-carousel="multiple-items"
+    >
+                      <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/48586" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/48586"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/ufc168_weighin_web/ufc168_weighin_web-ufc168_weighin_028.jpg?itok=yF4M-v_f 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/photo_galleries/ufc168_weighin_web/ufc168_weighin_web-ufc168_weighin_028.jpg?itok=D6eu4rAS 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/ufc168_weighin_web/ufc168_weighin_web-ufc168_weighin_028.jpg?itok=yF4M-v_f" alt="LAS VEGAS, NV - DECEMBER 27:  (L-R) Opponents Gleison Tibau and Michael Johnson face off during the UFC 168 weigh-in at the MGM Grand Garden Arena on December 27, 2013 in Las Vegas, Nevada. (Photo by Josh Hedges/Zuffa LLC/Zuffa LLC via Getty Images)" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">01:18</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            ノックアウト・オブ・ザ・ウィーク：マイケル・ジョンソン vs グレイソン・チバウ
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/47888" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/47888"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/fx8-07-Tibau_Cholish/fx8-07-Tibau_Cholish_05.jpg?itok=S3SzDBNm 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/photo_galleries/fx8-07-Tibau_Cholish/fx8-07-Tibau_Cholish_05.jpg?itok=zvwjWSJl 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/fx8-07-Tibau_Cholish/fx8-07-Tibau_Cholish_05.jpg?itok=S3SzDBNm" alt="JARAGUA DO SUL, BRAZIL - MAY 18: Gleison Tibau reacts after defeating John Cholish in their lightweight bout during the UFC on FX event on May 18, 2013 at Arena Jaragua in Jaragua do Sul, Santa Catarina, Brazil. (Photo by Josh Hedges/Zuffa LLC/Zuffa LLC v" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">01:07</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            サブミッション・オブ・ザ・ウィーク：グレイソン・チバウ vs. ジョン・チョリシュ
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/47154" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/47154"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0038.JPG?itok=P8su6vDz 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0038.JPG?itok=-KpX4d4j 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0038.JPG?itok=P8su6vDz" alt="BRASILIA, BRAZIL - SEPTEMBER 12:  (L-R) Opponents Gleison Tibau of Brazil and Piotr Hallmann of Poland face off during the UFC Fight Night weigh-in at the Nilson Nelson Gymnasium on September 12, 2014 in Brasilia, Brazil. (Photo by Josh Hedges/Zuffa LLC/Z" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">05:04</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFNブラジリア：計量でのグレイソン・チバウ
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/47153" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/47153"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0037.JPG?itok=V3_iZM7g 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0037.JPG?itok=60l8rV-R 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/photo_galleries/Bigfoot_vs_Arlovski2/UFN_BRS_WEIGHIN-0037.JPG?itok=V3_iZM7g" alt="BRASILIA, BRAZIL - SEPTEMBER 12:  Gleison Tibau of Brazil poses on the scale after weighing in during the UFC Fight Night weigh-in at the Nilson Nelson Gymnasium on September 12, 2014 in Brasilia, Brazil. (Photo by Josh Hedges/Zuffa LLC/Zuffa LLC via Gett" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">02:18</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFNブラジリア：公式計量に完全密着
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/36567" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/36567"    data-video-meta-type="vod" data-locale="ja">
+
+    
+  <div class="c-card__media">
+          <i class="video-lock-icon"></i>
+                  
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC® 139 プレリムファイト: グレイソン･チバウ vs. ハファエル･ドス･アンジョス
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/45028" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/45028"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/migrated_images/2B0A9B8B-1422-0E8C-9AF0D92F29815454.jpg?itok=23IYtcjR 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/migrated_images/2B0A9B8B-1422-0E8C-9AF0D92F29815454.jpg?itok=YbA5DLY8 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/migrated_images/2B0A9B8B-1422-0E8C-9AF0D92F29815454.jpg?itok=23IYtcjR" alt="UFC Fight Night Aaron Simpson vs Tom Lawlor" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC 139: 無料Facebookファイト
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/36561" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/36561"    data-video-meta-type="vod" data-locale="ja">
+
+    
+  <div class="c-card__media">
+          <i class="video-lock-icon"></i>
+                  
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            ハファエル･ドス･アンジョス: チバウ戦への備えは万全
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/44612" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/44612"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/130/Photos/130_EventPhotos/03_Tibau_Oliveira/01_Tibau_Oliveira.jpg?itok=DRMyHfH3 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/130/Photos/130_EventPhotos/03_Tibau_Oliveira/01_Tibau_Oliveira.jpg?itok=umb-t1Pd 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/130/Photos/130_EventPhotos/03_Tibau_Oliveira/01_Tibau_Oliveira.jpg?itok=DRMyHfH3" alt="UFC 130: Tibau vs. Oliveira" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC 130:グレイソン・チバウ、試合後インタビュー
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/44609" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/44609"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/130/Photos/130_weighins/59_UFC130_QnA_Weighins.jpg?itok=FVRh0v2A 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/130/Photos/130_weighins/59_UFC130_QnA_Weighins.jpg?itok=TcrNmqTU 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/130/Photos/130_weighins/59_UFC130_QnA_Weighins.jpg?itok=FVRh0v2A" alt="UFC 130 Weigh-ins: Rampage Jackson vs. Matt Hamill" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">20:00</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC 130 公開計量アーカイブ
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/44604" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/44604"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/migrated_images/01406015-1422-0E8C-9A6ED8B947A3CB65.jpg?itok=4ig4xT9q 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/migrated_images/01406015-1422-0E8C-9A6ED8B947A3CB65.jpg?itok=6sMWNl68 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/migrated_images/01406015-1422-0E8C-9A6ED8B947A3CB65.jpg?itok=4ig4xT9q" alt="The Ultimate Fighter Finale Melvin Guillard vs Gleison Tibau" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small">02:46</span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC 130: 無料オンライン・ファイト、プレビュー
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/44508" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/44508"    >
+
+    
+  <div class="c-card__media">
+                  
+              <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/128/photos/128_Weighins/17_128weighins.jpg?itok=MZHHCzIf 1x" media="(min-width: 1024px)" type="image/jpeg" width="280" height="356"/>
+              <source srcset="https://ufc.com/images/styles/card_advance_small_175x220/s3/image/128/photos/128_Weighins/17_128weighins.jpg?itok=ypyxm-Qx 1x" type="image/jpeg" width="175" height="220"/>
+                  <img loading="eager" width="280" height="356" src="https://ufc.com/images/styles/card_advance_small_280x356/s3/image/128/photos/128_Weighins/17_128weighins.jpg?itok=MZHHCzIf" alt="UFC 128 Weigh-ins: Gleison Tibau" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+
+      
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC 128: グレイソン・チバウ、試合後インタビュー
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                            <div class="c-carousel__item">
+                            
+
+
+
+<a href="/video/36387" class="c-card c-card--advance c-card--small" data-modal-callback="/ajax/modal/node/36387"    data-video-meta-type="vod" data-locale="ja">
+
+    
+  <div class="c-card__media">
+          <i class="video-lock-icon"></i>
+                  
+                                      <div class="c-card__icon-big">
+            <svg class="e-icon__svg"><title>Play</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#play"></use></svg>
+          </div>
+                        <div class="c-card__icon">
+                      <svg class="e-icon__svg"><title>Video</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#video"></use></svg>
+                    <span class="e-p--small"></span>
+        </div>
+          
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                    <h3 class="e-t3">
+            UFC® 128 プレリム: カート・ペリグリーノ vs グレイソン・チバウ
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+
+              </div>
+                                </div>
+
+    
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    
+            
+          <div id="athlete-record" class="athlete-record">
+                  <div class="l-container l-listing__title-wrap">
+            <div class="l-container__content">
+              <h2 class="l-listing__title">
+                athlete record
+              </h2>
+            </div>
+          </div>
+                        
+                          <div class="l-container">
+            
+
+  <div class="view view-eva view-athlete-results view-id-athlete_results view-display-id-entity_view_1 js-view-dom-id-b44a53b3756d8ebb77aefa165c0d1858d750da4ba245cbb73be8ce006a4d729f">
+  
+  
+
+  
+
+  <div data-drupal-views-infinite-scroll-content-wrapper class="views-infinite-scroll-content-wrapper clearfix">
+      
+
+
+
+<section class="l-listing--stacked">
+
+      <ul class="l-listing__group"><li class="l-listing__item">
+                                
+
+
+<article class="c-card-event--athlete-results">
+
+    
+  <div class="c-card-event--athlete-results__fight-container">
+              <div class="c-card-event--athlete-results__matchup-container">
+        <div class="c-card-event--athlete-results__matchup-wrapper">
+          <div class="c-card-event--athlete-results__matchup">
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__red-image win">
+                              <div class="c-card-event--athlete-results__plaque win">
+                  Win
+                </div>
+                            <a href="https://jp.ufc.com/athlete/islam-makhachev">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=IabJoyhX" width="256" height="160" alt="Islam Makhachev" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__blue-image loss">
+                            <a href="https://jp.ufc.com/athlete/gleison-tibau">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?itok=I_i7H396" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+  <div
+      class="c-card-event--athlete-results__info">
+          <h3 class="c-card-event--athlete-results__headline">
+                  <a href="https://jp.ufc.com/athlete/islam-makhachev">マハチェフ</a>
+          <span>vs</span>
+          <a href="https://jp.ufc.com/athlete/gleison-tibau">Tibau</a>
+                </h3>
+
+      <div class="c-card-event--athlete-results__date">2018.01.21</div>
+
+      
+      
+                    <div class="c-card-event--athlete-results__results">
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">ラウンド</div>
+              <div class="c-card-event--athlete-results__result-text">1</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">タイム</div>
+              <div class="c-card-event--athlete-results__result-text">12:01</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">メソッド</div>
+              <div class="c-card-event--athlete-results__result-text">KO/TKO</div>
+            </div>
+                  </div>
+            </div>
+
+  <div class="c-card-event--athlete-results__actions">
+          
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+          target="1"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+    
+          
+
+
+
+<a
+
+        href="https://jp.ufc.com/event/ufc-220#7000"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+      </div>
+</article>
+
+
+
+                  </li><li class="l-listing__item">
+                                
+
+
+<article class="c-card-event--athlete-results">
+
+    
+  <div class="c-card-event--athlete-results__fight-container">
+              <div class="c-card-event--athlete-results__matchup-container">
+        <div class="c-card-event--athlete-results__matchup-wrapper">
+          <div class="c-card-event--athlete-results__matchup">
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__red-image win">
+                              <div class="c-card-event--athlete-results__plaque win">
+                  Win
+                </div>
+                            <a href="https://jp.ufc.com/athlete/gleison-tibau">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?itok=I_i7H396" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__blue-image loss">
+                            <a href="https://jp.ufc.com/athlete/abel-trujillo">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2021-08/AbelTrujillo_Headshot.png?itok=b9ntGBsd" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+  <div
+      class="c-card-event--athlete-results__info">
+          <h3 class="c-card-event--athlete-results__headline">
+                  <a href="https://jp.ufc.com/athlete/gleison-tibau">Tibau</a>
+          <span>vs</span>
+          <a href="https://jp.ufc.com/athlete/abel-trujillo">Trujillo</a>
+                </h3>
+
+      <div class="c-card-event--athlete-results__date">2015.11.08</div>
+
+      
+      
+                    <div class="c-card-event--athlete-results__results">
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">ラウンド</div>
+              <div class="c-card-event--athlete-results__result-text">1</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">タイム</div>
+              <div class="c-card-event--athlete-results__result-text">01:46</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">メソッド</div>
+              <div class="c-card-event--athlete-results__result-text">サブミッション</div>
+            </div>
+                  </div>
+            </div>
+
+  <div class="c-card-event--athlete-results__actions">
+          
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+          target="1"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+    
+          
+
+
+
+<a
+
+        href="https://jp.ufc.com/event/ufc-fuaitonaito#5676"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+      </div>
+</article>
+
+
+
+                  </li><li class="l-listing__item">
+                                
+
+
+<article class="c-card-event--athlete-results">
+
+    
+  <div class="c-card-event--athlete-results__fight-container">
+              <div class="c-card-event--athlete-results__matchup-container">
+        <div class="c-card-event--athlete-results__matchup-wrapper">
+          <div class="c-card-event--athlete-results__matchup">
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__red-image win">
+                              <div class="c-card-event--athlete-results__plaque win">
+                  Win
+                </div>
+                            <a href="https://jp.ufc.com/athlete/tony-ferguson">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2024-08/FERGUSON_TONY_08-03.png?itok=x6vxnt6R" width="256" height="160" alt="Tony Ferguson" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+
+            <div class="c-card-event--athlete-results__image c-card-event--athlete-results__blue-image loss">
+                            <a href="https://jp.ufc.com/athlete/gleison-tibau">
+                <div>
+  
+      <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/image/ufc-fighter-container/68033/profile-galery/profile-picture/GleisonTibau_Headshot2012.png?itok=I_i7H396" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+
+
+
+
+</div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+  <div
+      class="c-card-event--athlete-results__info">
+          <h3 class="c-card-event--athlete-results__headline">
+                  <a href="https://jp.ufc.com/athlete/tony-ferguson">ファーガソン</a>
+          <span>vs</span>
+          <a href="https://jp.ufc.com/athlete/gleison-tibau">Tibau</a>
+                </h3>
+
+      <div class="c-card-event--athlete-results__date">2015.03.01</div>
+
+      
+      
+                    <div class="c-card-event--athlete-results__results">
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">ラウンド</div>
+              <div class="c-card-event--athlete-results__result-text">1</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">タイム</div>
+              <div class="c-card-event--athlete-results__result-text">00:02:37</div>
+            </div>
+          
+                      <div class="c-card-event--athlete-results__result">
+              <div class="c-card-event--athlete-results__result-label">メソッド</div>
+              <div class="c-card-event--athlete-results__result-text">サブミッション</div>
+            </div>
+                  </div>
+            </div>
+
+  <div class="c-card-event--athlete-results__actions">
+          
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+          target="1"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+    
+          
+
+
+
+<a
+
+        href="https://jp.ufc.com/event/ufc-184#5242"
+      
+    class="e-button--arrow-right "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+      </div>
+</article>
+
+
+
+                  </li></ul></section>
+</div>
+
+
+
+
+
+  
+  
+<ul class="js-pager__items pager" data-drupal-views-infinite-scroll-pager>
+  <li class="pager__item">
+    <a class="button" href="?page=1" title="Load more items" rel="next">もっと読み込む</a>
+  </li>
+</ul>
+
+
+  
+  
+
+  
+  </div>
+
+
+
+
+
+
+          </div>
+              </div>
+    
+                            <div class="l-container--ufc-black faq-athlete">
+      <div class="l-container__content">
+        <div
+          class="faq-athlete__wrap ">
+          <div>
+                                    <div class="faq-athlete__tabs">
+              
+
+<section  class="c-tabs c-tabs--athlete" aria-multiselectable="false">
+  <ul class="c-tabs__nav c-tabs__nav--n-1" role="tablist">
+
+          <li class="c-tabs__nav-item is-active" role="presentation">
+        <button role="tab" aria-setsize="3" aria-posinset="1" aria-controls="tab-panel-1" aria-selected="1" tabindex="" class="btn c-tabs__nav-btn">
+          選手情報
+        </button>
+      </li>
+      </ul>
+    <div class="c-tabs__panes">
+          <div class="c-tabs__pane is-current" id="tab-panel-1" role="tabpanel" aria-labelledby="tab-label-1" tabindex="-1">
+        <div class="c-tabs__pane-body">
+                
+
+
+  <div class="c-bio c-bio--athlete">
+        <div class="c-bio__content">
+                      <div class="c-bio__info">
+          <div class="c-bio__info-details">
+                          <div class="c-bio__row--1col">
+                <div class="c-bio__field">
+                  <div class="c-bio__label">Status</div>
+                  <div class="c-bio__text">契約外</div>
+                </div>
+              </div>
+                                      <div class="c-bio__row--1col">
+
+                                  <div
+                    class="c-bio__field c-bio__field--border-bottom-small-screens">
+                    <div class="c-bio__label">出身地</div>
+                    <div class="c-bio__text">Mossoró, RN, ブラジル</div>
+                  </div>
+                
+              </div>
+            
+            
+            
+                          <div class="c-bio__row--3col">
+
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">年齢</div>
+                    <div class="c-bio__text">
+            <div class="field field--name-age field--type-integer field--label-hidden field__item">39</div>
+      </div>
+                  </div>
+                
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">身長</div>
+                    <div class="c-bio__text">69.00</div>
+                  </div>
+                
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">体重</div>
+                    <div class="c-bio__text">70 kg</div>
+                  </div>
+                
+              </div>
+            
+                          <div class="c-bio__row--3col">
+
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">オクタゴンデビュー</div>
+                    <div class="c-bio__text">2006.11.18</div>
+                  </div>
+                
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">リーチ</div>
+                    <div class="c-bio__text">71.00</div>
+                  </div>
+                
+                                  <div class="c-bio__field">
+                    <div class="c-bio__label">レッグリーチ</div>
+                    <div class="c-bio__text">39.00</div>
+                  </div>
+                
+              </div>
+                      </div>
+        </div>
+      
+          </div>
+  </div>
+
+      
+        </div>
+      </div>
+      </div>
+</section>
+            </div>
+          </div>
+                  </div>
+      </div>
+    </div>
+
+        
+              <div class="l-container--ufc-black">
+        <div class="l-container__content">
+          <div class="athlete-shop">
+          
+
+
+<a href="http://ufcstore.resultspage.com/search?w=tibau&amp;x=2&amp;y=9" class="c-card c-card--advance"    >
+
+    
+  <div class="c-card__media">
+                    <img src="https://ufc.com/images/styles/mat_590_x_380/s3/2020-12/UFCSTORE-GENERIC.jpg?h=046a0d15&amp;itok=j3BKPYFM"/>
+
+                
+        
+        
+
+  </div> 
+        <div class="c-card__allinfo">
+
+      
+              <div class="c-card__headline">
+                      <div class="c-card__headline__image">
+                <img src="/themes/custom/ufc/assets/img/ufc-store-logo.png"/>
+
+            </div>
+                    <h3 class="e-t3">
+                                Shop the latest apparel from the official UFC store.          
+          </h3>
+        </div>
+      
+    </div>
+  
+  
+  
+</a>
+
+  
+  </div>
+        </div>
+      </div>
+    
+
+      </div>
+
+  </div>
+
+  
+</div>
+
+
+  </div>
+
+
+          </div>
+
+        
+    
+          <div class="l-page__footer">
+        
+
+<footer class="c-site-footer" role="contentinfo">
+  <div class="c-site-footer__main">
+    <a class="c-site-footer__logo" href="/">
+      <svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use>
+      </svg>
+    </a>
+    
+<div id="block-ufc-localization">
+  
+    
+      
+
+<div class="ufc-block-localization__title e-t6">
+  <div class="block-ufc-localization-title">Japanese</div>
+  <svg>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#triangle-down"></use>
+  </svg>
+
+</div>
+
+<div class="ufc-block-localization__links" aria-hidden="true">
+  <ul class="links"><li><a href="https://www.ufc.com/language/switch/en">English</a></li><li><a href="https://kr.ufc.com">Korea</a></li><li><a href="https://www.ufcespanol.com">Latin America</a></li><li><a href="https://us.ufcespanol.com">USA Espanol</a></li><li><a href="https://www.ufc.com/language/switch/fr">フランス</a></li><li><a href="https://www.ufc.com.br">ブラジル</a></li><li><a href="https://ufc.ru">ロシア連邦</a></li><li><a href="http://ufc.cn">中国</a></li></ul>
+</div>
+  </div>
+
+    <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer" class="c-menu-footer">
+            
+  <h2 class="u-visually--hidden" id="block-footer-menu">Footer</h2>
+
+  
+                          <ul class="c-menu-footer__menu--level-1">
+                            <li class="c-menu-footer__item--level-1">
+          <a href="/faq" target="_self" class="c-menu-footer__link--level-1">ヘルプ</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-1">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-1">法的事項</a>
+                                            <ul class="c-menu-footer__menu--level-2">
+                            <li class="c-menu-footer__item--level-2">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-2">利用規約</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-2">
+          <a href="/privacy-policy" target="_self" class="c-menu-footer__link--level-2">個人情報保護方針</a>
+                  </li>
+            </ul>
+      
+                  </li>
+            </ul>
+      
+
+  
+</nav>
+
+  </div>
+  <div class="c-site-footer__copyright">
+    
+  </div>
+</footer>
+      </div>
+      </main>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/27378","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kYGugyAMRX9IxieRKlXrkBJa3NzXPwX33pKXJQbvPc2lbQDvlSHuFi5xGzNH7XoY7k75-JL90G6RryXFp3Z-Q7uRR-4C7FzUeZKBN8y75YgDhy5xCNbnkiDcTm0Cxbt0sovielwo2JVxsD1x-xdVjlL1ANkb3DCqAZ0DKpqRplm_FTNKCb9VLoKhmilwD8EMIp92aW7GzCZlHim0Sep8xmdOnh-xohUovrs0gLGYk1aXYGpY6ByRWTH_-RnBX16hb00f2GvG6MVwUlrpVfMOvNiM3vUQY4u4unACEQtFZ870AiWufV3gAcIF7GWO9AL_qxmnM7URPsTW87ayL8fK1ThY4OkmVPsWF6c4Ujy2cDLk8yErNW9qGv0BAHPmYQ","theme":"ufc","theme_token":null},"ajaxTrustedUrl":[],"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":true,"back_to_top_prevent_in_admin":true,"back_to_top_button_type":"text","back_to_top_button_text":"Back to top"},"accountSettings":{"apiUrl":"https:\/\/ufc.api.onvesper.com","realm":"dce.ufc","app":"dice-id","apiKey":"39d5cb34-799c-4967-8038-fc240bf2984b","loginText":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","ctaText":"Continue watching","ctaLink":"\/account\/login","createAccount":"\/account\/signup","heartbeatApiUrl":"https:\/\/ufc.api.onvesper.com\/prod","hideAccountIcon":true,"hideAddressFields":false,"errorTextGeneral":"There was a problem while loading content. Please try again.","errorTextEntitlement":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","entitlementCtaText":"Upgrade licence","entitlementCtaLink":"\/account\/signup","settings":{"videoPreviewInfo":"videoPreviewInfo"}},"ufcLiveStatsApi":{"baseUrl":"https:\/\/d29dxerjsp82wz.cloudfront.net\/api\/v3"},"contentLocalization":"ja","cacheableGlobalsTimestamp":1794954305,"breakpoints":{"ufc.images.mobile":"","ufc.images.tablet":"(min-width: 700px)","ufc.images.desktop":"(min-width: 1024px)","ufc.images.extra-large":"(min-width: 1440px)"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:b44a53b3756d8ebb77aefa165c0d1858d750da4ba245cbb73be8ce006a4d729f":{"view_name":"athlete_results","view_display_id":"entity_view_1","view_args":"27378\/27378","view_path":"\/node\/27378","view_base_path":null,"view_dom_id":"b44a53b3756d8ebb77aefa165c0d1858d750da4ba245cbb73be8ce006a4d729f","pager_element":0},"views_dom_id:92cd21b4632ce6cd58eaecad15e7ab27ce04acebf5b24f9333a1290df0d2fa46":{"view_name":"athlete_results","view_display_id":"last_fight","view_args":"27378\/27378","view_path":"\/node\/27378","view_base_path":null,"view_dom_id":"92cd21b4632ce6cd58eaecad15e7ab27ce04acebf5b24f9333a1290df0d2fa46","pager_element":0}}},"viewsAjaxGet":{"athlete_results":"athlete_results"},"disableAnimationsUrlParam":"disableAnimations","disableAnimations":false,"user":{"uid":0,"permissionsHash":"2debcf4fc9b389060fb51611b5f94c566ef01446f01a2612e35e6a8f5af6a6f0"}}</script>
+<script src="/sites/default/files/js/js_56uwfPcaCjv9o-28sldn_v3_GOz3EvMEpP-sq2TpMNs.js?scope=footer&amp;delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJxNjVGOwyAMBS8UliMhE0zilNgIO0nb028FqXYlf8wb69mQkgnwy8MNP7kJ2xRhfgSTz1T_j8OmUzrRn5RQpiPPPh5mwtp5hiaHYulhKRKhuG2sCvFDXWpSk1zc1Y58uB1opAoLdlAydFnEsP3lFSHd2SCOkxdGa8hJnVSjnd69HyCpb5hCBOZRCZmW1SqoejhslUZvMBKeTsJLA2zwDAua_8LtiTPx53nQuUkpvlv3tW7YX-vWe60"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_ZPVHCZGpZ-QxDfW4Bbhl25Ribd2TiKZKZ3HjqJZMpXs.js?scope=footer&amp;delta=2&amp;language=ja&amp;theme=ufc&amp;include=eJxNjVGOwyAMBS8UliMhE0zilNgIO0nb028FqXYlf8wb69mQkgnwy8MNP7kJ2xRhfgSTz1T_j8OmUzrRn5RQpiPPPh5mwtp5hiaHYulhKRKhuG2sCvFDXWpSk1zc1Y58uB1opAoLdlAydFnEsP3lFSHd2SCOkxdGa8hJnVSjnd69HyCpb5hCBOZRCZmW1SqoejhslUZvMBKeTsJLA2zwDAua_8LtiTPx53nQuUkpvlv3tW7YX-vWe60"></script>
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" defer async></script>
+<script src="//www.youtube.com/iframe_api" defer async></script>
+<script src="/sites/default/files/js/js_YS7NSExakUOSBf8-5o52_nN5KBgbcGStbW1o73jY8IQ.js?scope=footer&amp;delta=5&amp;language=ja&amp;theme=ufc&amp;include=eJxNjVGOwyAMBS8UliMhE0zilNgIO0nb028FqXYlf8wb69mQkgnwy8MNP7kJ2xRhfgSTz1T_j8OmUzrRn5RQpiPPPh5mwtp5hiaHYulhKRKhuG2sCvFDXWpSk1zc1Y58uB1opAoLdlAydFnEsP3lFSHd2SCOkxdGa8hJnVSjnd69HyCpb5hCBOZRCZmW1SqoejhslUZvMBKeTsJLA2zwDAua_8LtiTPx53nQuUkpvlv3tW7YX-vWe60"></script>
+<script src="https://c.webtrends-optimize.com/acs/accounts/621766de-7d8c-4bb7-ac4b-ef606c76cbb8/js/wt.js" defer async></script>
+<script src="/sites/default/files/js/js_gbivOP0nxxIChM-VGNO_9G3lgMU0RwYAlf70NBp01Ow.js?scope=footer&amp;delta=7&amp;language=ja&amp;theme=ufc&amp;include=eJxNjVGOwyAMBS8UliMhE0zilNgIO0nb028FqXYlf8wb69mQkgnwy8MNP7kJ2xRhfgSTz1T_j8OmUzrRn5RQpiPPPh5mwtp5hiaHYulhKRKhuG2sCvFDXWpSk1zc1Y58uB1opAoLdlAydFnEsP3lFSHd2SCOkxdGa8hJnVSjnd69HyCpb5hCBOZRCZmW1SqoejhslUZvMBKeTsJLA2zwDAua_8LtiTPx53nQuUkpvlv3tW7YX-vWe60"></script>
+
+  </body>
+</html>
