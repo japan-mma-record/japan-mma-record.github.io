@@ -2922,7 +2922,7 @@ e04918	heat	2018-05-27	HEAT42		https://heatofficial.com/schedule/268/
 e03485	gladiator	2018-06-03	Gladiator - Gladiator x Demolition, Vol. 1		https://mmaplanet.jp/80057
 e04396	deep	2018-06-09	Abema TV Presents DEEP JEWELS 20	新宿FACE	https://www.deep2001.com/deep-jewels-20/
 e01509	pound_4_pound_fighting_championship	2018-06-10	PFC函館大会2018		https://www.facebook.com/p4pfc/posts/1893410564014449/ Sherdog
-e03488	cma_mma	2018-06-16	CRAZY KING 10 & CMA KAISER 5	新宿フェイス	https://www.boutreview.com/3/reports/item_8149.html Sherdog
+e05167	cma_mma	2018-06-16	CMA MMA - Crazy King 10 / CMA Kaiser 5		https://www.boutreview.com/3/reports/item_8149.html
 e00908	shooto	2018-06-17	プロフェッショナル修斗 in OSAKA 2018		https://shooto-mma.com/result/?id=57
 e03489	deep	2018-06-30	DEEP 84 IMPACT	ディファ有明	https://www.deep2001.com/deep-84-impact/
 e00326	pancrase	2018-07-01	PANCRASE 297（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2018/0701.html
@@ -2943,8 +2943,8 @@ e03498	rizin	2018-08-12	RWEDDINGS presents RIZIN.12		https://jp.rizinff.com/_ct/
 e05144	zst	2018-08-13	ZST.61		https://efight.jp/result-20180814_301634
 e01510	atoys_challenge_fight	2018-08-26	ACF 8.26 大阪 ドーンセンター		https://www.boutreview.com/3/reports/item_10857.html
 e03500	atoys_challenge_fight	2018-08-26	ACF 36th ガールズファイト	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_10857.html Sherdog
-e03501	atoys_challenge_fight	2018-08-26	ACF 37th 武士正100試合記念大会	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_10857.html Sherdog
 e04167	deep	2018-08-26	カーエイド Presents DEEP 85 IMPACT	後楽園ホール	https://www.deep2001.com/deep-85-impact/
+e05156	atoys_challenge_fight	2018-08-26	ACF 37th - A-Toys Challenge Fight 37		https://www.boutreview.com/3/reports/item_10857.html
 e01511	rings	2018-09-02	THE OUTSIDER 第52戦 10周年 九州大会		https://ja.wikipedia.org/wiki/吉永啓之輔 https://ja.wikipedia.org/wiki/RYOGA https://ja.wikipedia.org/wiki/大井洋一 Sherdog
 e04876	gladiator	2018-09-02	GLADIATOR×DEMOLITION vol.2		https://efight.jp/result-20180902_303805
 e00329	pancrase	2018-09-09	PANCRASE 299（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2018/0909.html
@@ -3009,11 +3009,12 @@ e04531	grachan	2019-03-10	BRAVE FIGHT 18×GRACHAN39	大田区産業プラザPIO	
 e04407	deep	2019-03-16	DEEP TOKYO IMPACT 2019	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2019-2/
 e00334	pancrase	2019-03-17	PANCRASE 303（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0317.html
 e00923	shooto	2019-03-24	SHOOTO 30th ANNIVERSARY TOUR 第2戦 Supported by ONE Championship		https://shooto-mma.com/result/?id=71
-e01522	one	2019-03-31	ONE Championship: A NEW ERA -新時代-	両国国技館	https://battle-news.com/?p=48501 Sherdog
+e01522	one	2019-03-31	ONE Championship: A NEW ERA -新時代-		https://battle-news.com/?p=48501
+e05182	one	2019-03-31	One Championship - A New Era		https://www.boutreview.com/3/reports/item_21448.html
 e00924	shooto	2019-04-07	FORCE 11		https://shooto-mma.com/result/?id=149
 e01523	deep	2019-04-07	KDC八王子超人祭り！2019	東京・八王子市富士森体育館	https://www.boutreview.com/3/reports/item_22001.html Sherdog
-e03536	atoys_challenge_fight	2019-04-07	ACF 40th ～ガールズファイト3～ 4.7 大阪 ドーンセンター		https://www.boutreview.com/3/reports/item_21899.html Sherdog
-e03538	pound_4_pound_fighting_championship	2019-04-07	PFC 4.7 札幌 コンカリーニョ		https://www.boutreview.com/3/reports/item_22055.html Sherdog
+e05153	atoys_challenge_fight	2019-04-07	ACF 40th - Girls' Fight 3		https://www.boutreview.com/3/reports/item_21899.html
+e05188	pound_4_pound_fighting_championship	2019-04-07	P4P FC 20 - Pound For Pound FC 20 / Stones.1		https://www.boutreview.com/3/reports/item_22055.html
 e00335	pancrase	2019-04-14	PANCRASE 304（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0414.html
 e01524	ryuta_sakurai	2019-04-14	R-BLOOD主催 総合格闘技大会 Resilience 01	水戸 M-SPOまちなかスポーツにぎわい一番アリーナ	https://www.boutreview.com/3/reports/item_22398.html Sherdog
 e04877	gladiator	2019-04-14	GLADIATOR 009 in OSAKA		https://efight.jp/result-20190416_329148
@@ -3022,11 +3023,12 @@ e03541	deep	2019-04-28	DEEP CAGE IMPACT 2019 in 大阪	旭区民センター	htt
 e04977	nexus	2019-04-28	Fighting NEXUS vol.16 2019.04.28(sun) in SHINJUKU FACE		https://fighting-nexus.net/event.php?id=result-94
 e01525	wardog_cage_fight	2019-04-29	WARDOG CAGE FIGHT 4.29 大阪 世界館		https://www.boutreview.com/3/reports/item_23129.html
 e05102	wardog_cage_fight	2019-04-29	WCF - Wardog Cage Fight 21		https://mmaplanet.jp/90343
-e01526	atoys_challenge_fight	2019-05-05	ACF 5.5 大阪 ドーンセンター		https://www.boutreview.com/3/reports/item_23371.html Sherdog
+e01526	atoys_challenge_fight	2019-05-05	ACF 5.5 大阪 ドーンセンター		https://www.boutreview.com/3/reports/item_23371.html
+e05155	atoys_challenge_fight	2019-05-05	ACF 41st - A-Toys Challenge Fight 41		https://www.boutreview.com/3/reports/item_23371.html
 e00925	shooto	2019-05-06	SHOOTO 30th ANNIVERSARY TOUR 30周年記念大会 第1部 Supported by ONE Championship		https://shooto-mma.com/result/?id=72
 e00926	shooto	2019-05-06	SHOOTO 30th ANNIVERSARY TOUR 30周年記念大会 第2部 Supported by ONE Championship		https://shooto-mma.com/result/?id=81
-e03543	zst	2019-05-11	ZST.64（昼大会）	東京・新宿FACE	https://www.boutreview.com/3/reports/item_23729.html Sherdog
-e03544	zst	2019-05-11	ZST.65（夜大会）	東京・新宿FACE	https://www.boutreview.com/3/reports/item_23729.html Sherdog
+e05221	zst	2019-05-11	Zst - Zst 64		https://www.boutreview.com/3/reports/item_23729.html
+e05222	zst	2019-05-11	Zst - Zst 65		https://www.boutreview.com/3/reports/item_23729.html
 e00927	shooto	2019-05-12	BORDER-season11-「The2nd」		https://shooto-mma.com/result/?id=83
 e03545	deep	2019-05-12	DEEP 89 IMPACT	ニューピアホール	https://www.deep2001.com/deep-89-impact/
 e00336	pancrase	2019-05-26	PANCRASE 305（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0526.html
@@ -3036,37 +3038,40 @@ e03547	rizin	2019-06-02	RIZIN.16		https://jp.rizinff.com/_ct/17268641
 e00928	shooto	2019-06-08	SHOOTO GIG TOKYO Vol.27 Supported by ONE Championship		https://shooto-mma.com/result/?id=73
 e01528	deep	2019-06-09	DEEP JEWELS 24		https://www.deep2001.com/deep-jewels-24/
 e04398	deep	2019-06-09	skyticket Presents DEEP JEWELS 24	新宿FACE	https://www.deep2001.com/deep-jewels-24/
-e00929	shooto	2019-06-16	プロフェッショナル修斗公式戦福岡大会「闘裸男24 Direction of the Cage3」		https://j-shooto.com/?p=24459 Sherdog
+e00929	shooto	2019-06-16	プロフェッショナル修斗公式戦福岡大会「闘裸男24 Direction of the Cage3」		https://j-shooto.com/?p=24459
 e04171	deep	2019-06-29	DEEP 90 IMPACT	後楽園ホール	https://www.deep2001.com/deep-90-impact/
 e00337	pancrase	2019-06-30	PANCRASE 306（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0630.html
 e00930	shooto	2019-06-30	SHOOTO 30th ANNIVERSARY TOUR 第5戦 Supported by ONE Championship		https://shooto-mma.com/result/?id=82
 e04878	gladiator	2019-07-07	最初は負けて今回は勝った。GRANDベルトを懸けて3回目をやろう		https://efight.jp/result-20190709_343101
 e04886	global_fightingsports_game	2019-07-07	GFG 2 - Global Fightingsports Game 2		https://mmaplanet.jp/93993
 e04942	krossxover	2019-07-07	KROSS×OVER 7 ～KICK SPECIAL(仮・10月13日開催予定)～		https://krossover.jp/?p=212
-e03553	wardog_cage_fight	2019-07-14	WARDOG CAGE FIGHT 7.14 大阪 世界館		https://www.boutreview.com/3/reports/item_26955.html Sherdog
 e04978	nexus	2019-07-14	Fighting NEXUS vol.17 ✖ wave10 2019.07.14(sun) in SHINJUKU FACE		https://fighting-nexus.net/event.php?id=result-95
+e05217	wardog_cage_fight	2019-07-14	WCF - Wardog Cage Fight 22: Triple Title Match		https://www.boutreview.com/3/reports/item_26955.html
 e00338	pancrase	2019-07-15	PANCRASE大阪大会（大阪・城東KADO－YAがもよんホール）	大阪・城東KADO－YAがもよんホール	https://pancrase.co.jp/data/result/2019/0715.html
 e00931	shooto	2019-07-15	SHOOTO 30th ANNIVERSARY TOUR 第6戦 Supported by ONE Championship		https://shooto-mma.com/result/?id=74
 e01529	pancrase	2019-07-15	PANCRASE大阪大会（城東KADO-YAがもよんホール）		https://battle-news.com/?p=51301
 e00339	pancrase	2019-07-21	PANCRASE 307（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0721.html
-e03555	pound_4_pound_fighting_championship	2019-07-28	PFC 7.28 札幌コンカリーニョ		https://www.boutreview.com/3/reports/item_27748.html Sherdog
 e03556	rizin	2019-07-28	RIZIN.17		https://jp.rizinff.com/_ct/17274221
 e04916	heat	2019-07-28	HEAT45		https://heatofficial.com/schedule/262/
-e03557	zst	2019-08-13	SWAT!170	東京・豊洲PIT	https://www.boutreview.com/3/reports/item_28323.html Sherdog
-e03558	zst	2019-08-13	ZST.66	東京・豊洲PIT	https://www.boutreview.com/3/reports/item_28323.html Sherdog
+e05189	pound_4_pound_fighting_championship	2019-07-28	P4P FC 21 - Pound For Pound FC 21 / Stones.2		https://www.boutreview.com/3/reports/item_27748.html
+e05223	zst	2019-08-13	Zst - Swat! 170		https://www.boutreview.com/3/reports/item_28323.html
+e05224	zst	2019-08-13	Zst - Zst 66		https://www.boutreview.com/3/reports/item_28323.html
 e03559	rizin	2019-08-18	GOOD SPEED presents RIZIN.18		https://jp.rizinff.com/_ct/17292041
 e00340	pancrase	2019-09-01	Road to ONE:CENTURY（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0901.html
-e01530	atoys_challenge_fight	2019-09-01	ACF 9.1 大阪 世界館		https://www.boutreview.com/3/reports/item_29150.html Sherdog
+e01530	atoys_challenge_fight	2019-09-01	ACF 9.1 大阪 世界館		https://www.boutreview.com/3/reports/item_29150.html
 e03560	deep	2019-09-01	DEEP TOKYO IMPACT 2019	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2019/ Sherdog
 e03562	one	2019-09-01	ONE Japan Series 01（ONE JS01 Road to Century）		https://mmaplanet.jp/95397 Sherdog
 e04399	deep	2019-09-01	skyticket Presents DEEP JEWELS 25	新宿FACE	https://www.deep2001.com/deep-jewels-25/
-e01531	tenkaichi_fight	2019-09-08	ワイルドシーサーグループ「TENKAICHI 95」	沖縄 ミュージックタウン音市場	https://www.boutreview.com/3/reports/item_29406.html Sherdog
+e05154	atoys_challenge_fight	2019-09-01	ACF 43rd - A-Toys Challenge Fight 43		https://www.boutreview.com/3/reports/item_29150.html
+e01531	tenkaichi_fight	2019-09-08	ワイルドシーサーグループ「TENKAICHI 95」	沖縄 ミュージックタウン音市場	https://www.boutreview.com/3/reports/item_29406.html
 e04400	deep	2019-09-08	skyticket Presents DEEP 91 IMPACT	ニューピアホール	https://www.deep2001.com/deep-91-impact/
+e05210	tenkaichi_fight	2019-09-08	Tenkaichi Fight - Tenkaichi 95		https://www.boutreview.com/3/reports/item_29406.html
 e01532	chakuriki	2019-09-11	Chakuriki 4 - Strike vs. Grapple	東京・新宿FACE	https://efight.jp/result-20190911_353251 Sherdog
 e03565	deep	2019-09-15	DEEP HAMAMATSU IMPACT 2019	静岡・アクトシティ浜松	https://www.mmaofficials.jp/20190915_deep/ Sherdog
 e00932	shooto	2019-09-22	SHOOTO 30th ANNIVERSARY TOUR 第7戦 Supported by ONE Championship		https://shooto-mma.com/result/?id=75
-e00933	shooto	2019-09-22	BORDER-season11-「The3rd」		https://shooto-mma.com/result/?id=84 Sherdog
+e00933	shooto	2019-09-22	BORDER-season11-「The3rd」		https://shooto-mma.com/result/?id=84
 e04979	nexus	2019-09-22	Fighting NEXUS “SUBLIME GUYS FIGHT” 2019.09.22(Sun) in espoir ISANUMA		https://fighting-nexus.net/event.php?id=result-378
+e05207	shooto	2019-09-22	Shooto - Border: Season 11 - The 3rd		https://www.boutreview.com/3/reports/item_29928.html
 e00341	pancrase	2019-09-23	PANCRASE札幌大会（北海道・コンカリーニョ）	北海道・コンカリーニョ	https://pancrase.co.jp/data/result/2019/0923.html
 e00342	pancrase	2019-09-29	PANCRASE 308（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0929.html
 e01533	pound_4_pound_fighting_championship	2019-09-29	PFC 9.29 札幌 コンカリーニョ		https://www.boutreview.com/3/reports/item_30426.html
@@ -3078,8 +3083,9 @@ e01535	kingdom	2019-10-06	キングダムエルガイツ生誕20周年記念大�
 e01536	one	2019-10-12	ONE: CENTURY PART I	両国国技館	https://efight.jp/result-20191013_362174 Sherdog
 e03568	rizin	2019-10-12	RIZIN.19		https://jp.rizinff.com/_ct/17301435
 e01537	one	2019-10-13	ONE: CENTURY PART I		https://efight.jp/result-20191013_362174
-e01538	one	2019-10-13	ONE: CENTURY PART II	東京・両国国技館	https://efight.jp/result-20191013_362451 Sherdog
+e01538	one	2019-10-13	ONE: CENTURY PART II		https://efight.jp/result-20191013_362451
 e03569	krossxover	2019-10-13	KROSSxOVER - KROSSxOVER 7		https://ja.wikipedia.org/wiki/%E8%90%A9%E5%8E%9F%E4%BA%AC%E5%B9%B3 Sherdog
+e05183	one	2019-10-13	One Championship - Century - Part 2		https://www.boutreview.com/3/reports/item_31144.html
 e03571	rings	2019-10-19	Rings Holland - Nieuwegein		Sherdog
 e00343	pancrase	2019-10-20	PANCRASE 309（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/1020.html
 e00935	shooto	2019-10-20	SHOOTO GIG TOKYO Vol.28 Supported by ONE Championship		https://shooto-mma.com/result/?id=76
@@ -3087,20 +3093,22 @@ e04533	grachan	2019-10-20	GRACHAN41 × 1MC 横須賀大会	神奈川歯科大学
 e03573	deep	2019-10-22	skyticket Presents DEEP JEWELS 26	後楽園ホール	https://www.deep2001.com/deep-jewels-26/
 e04401	deep	2019-10-22	skyticket Presents DEEP 92 IMPACT	後楽園ホール	https://www.deep2001.com/deep-92-impact/
 e03575	rings	2019-10-27	THE OUTSIDER 第54戦 九州覚醒トーナメント	宗像ユリックス	https://ja.wikipedia.org/wiki/樋口武大 Sherdog
-e03576	wardog_cage_fight	2019-10-27	WARDOG CAGE FIGHT 23	大阪・世界館	https://www.boutreview.com/3/reports/item_31905.html Sherdog
-e00936	shooto	2019-11-03	沖縄大会 THE SHOOTO OKINAWA vol.２		https://shooto-mma.com/result/?id=85 Sherdog
+e05218	wardog_cage_fight	2019-10-27	WCF - Wardog Cage Fight 23		https://www.boutreview.com/3/reports/item_31905.html
+e00936	shooto	2019-11-03	沖縄大会 THE SHOOTO OKINAWA vol.２		https://shooto-mma.com/result/?id=85
 e03577	atoys_challenge_fight	2019-11-03	ACF 11.3 大阪沖縄会館		https://www.boutreview.com/3/reports/item_32357.html Sherdog
+e05208	shooto	2019-11-03	Shooto - The Shooto Okinawa Vol. 2		https://www.boutreview.com/3/reports/item_32361.html
 e01539	krossxover	2019-11-04	KROSS×OVER 11.4 埼玉県県民活動総合センター		https://www.boutreview.com/3/reports/item_32603.html
 e01744	rings	2019-11-04	THE OUTSIDER 第53戦 第1回東北トーナメント	白河市中央体育館	https://www.tapology.com/fightcenter/events/62911-the-outsider-53 Sherdog
 e00344	pancrase	2019-11-10	PANCRASE 310（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/1110.html
-e00937	shooto	2019-11-10	プロフェッショナル修斗公式戦広島大会 闘裸男25		https://shooto-mma.com/result/?id=104 Sherdog
+e00937	shooto	2019-11-10	プロフェッショナル修斗公式戦広島大会 闘裸男25		https://shooto-mma.com/result/?id=104
+e05206	shooto	2019-11-10	Shooto - Torao 25		https://www.boutreview.com/3/reports/item_32671.html
 e00345	pancrase	2019-11-17	DEEP & PANCRASE大阪大会（大阪・大阪国際交流センター 大ホール）	大阪・大阪国際交流センター 大ホール	https://pancrase.co.jp/data/result/2019/1117.html
 e00938	shooto	2019-11-24	SHOOTO 30th ANNIVERSARY TOUR FINAL Supported by ONE Championship		https://shooto-mma.com/result/?id=77
 e00939	shooto	2019-11-24	越後風神祭り７		https://shooto-mma.com/result/?id=87
 e01540	legion_japan	2019-11-24	LEGION☆JAPAN 002	鹿児島オロシティーホール	https://www.boutreview.com/3/reports/item_34522.html Sherdog
 e03579	deep	2019-11-24	Deep - Nagoya Impact: Kobudo Fight 25		https://ja.wikipedia.org/wiki/TATSUMI_(格闘家) https://ja.wikipedia.org/wiki/三宅輝砂 https://ja.wikipedia.org/wiki/久保健太 Sherdog
 e04980	nexus	2019-11-24	Fighting NEXUS vol.18 2019.11.24(sun) in GEN SPORTS PALACE		https://fighting-nexus.net/event.php?id=result-199
-e03582	brave_fight	2019-11-30	BRAVE FIGHT（2019年12月1日開催）	埼玉・三郷BRAVEジム	https://www.boutreview.com/3/reports/item_33726.html Sherdog
+e05161	brave_fight	2019-11-30	Brave - Brave Fight 21		https://www.boutreview.com/3/reports/item_33726.html
 e01541	chakuriki	2019-12-01	国際チャクリキ協会 Dream Gate 10	福岡・飯塚第1体育館	https://www.boutreview.com/3/reports/item_33920.html Sherdog
 e05146	zst	2019-12-01	今回は所選手の教え子と試合をさせていただきとても光栄です。長野選手といい試合をして昔のZSTを超えていきたいです		https://efight.jp/result-20191201_376678
 e00346	pancrase	2019-12-08	PANCRASE 311（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/1208.html
@@ -3109,9 +3117,9 @@ e00940	shooto	2019-12-15	プロフェッショナル修斗公式戦香川大会�
 e04402	deep	2019-12-15	DEEP 93 IMPACT	大田区総合体育館	https://www.deep2001.com/deep-93-impact/
 e00941	shooto	2019-12-22	SHOOTO GIG TOKYO Vol.29 Supported by ONE Championship		https://shooto-mma.com/result/?id=78
 e03588	deep	2019-12-22	skyticket Presents DEEP JEWELS 27	大阪阿倍野区民センター大ホール	https://www.deep2001.com/deep-jewels-27/ Sherdog
-e03589	pound_4_pound_fighting_championship	2019-12-22	PFC 12.22 札幌コンカリーニョ		https://www.boutreview.com/3/reports/item_34834.html Sherdog
 e04532	grachan	2019-12-22	GRACHAN42 × GLADIATOR011	東京・大田区産業プラザPIO	https://grachan.jp/grachan42xgladiator011-2/
-e03590	bellator	2019-12-29	BELLATOR JAPAN	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17328412 Sherdog
+e05190	pound_4_pound_fighting_championship	2019-12-22	P4P FC - PFC Yarennoka! 2019		https://www.boutreview.com/3/reports/item_34834.html
+e05157	bellator	2019-12-29	Bellator 237 - Fedor vs. Rampage		https://www.boutreview.com/3/reports/item_35017.html
 e03591	rizin	2019-12-31	RIZIN.20		https://jp.rizinff.com/_ct/17328443
 e00942	shooto	2020-01-19	BORDER-season12-「The1st」		https://shooto-mma.com/result/?id=98
 e04915	heat	2020-01-19	HEAT46		https://heatofficial.com/schedule/259/
@@ -3132,11 +3140,11 @@ e03601	deep	2020-02-24	DEEP JEWELSアマチュア	ニューピアホール	https
 e04405	deep	2020-02-24	skyticket Presents DEEP JEWELS 28	ニューピアホール	https://www.deep2001.com/deep-jewels-28/
 e03603	grachan	2020-03-01	GRACHAN44×BRAVE FIGHT22	東京・大田区産業プラザPIO	https://grachan.jp/%e3%80%8cgrachan44xbrave-fight22%e3%80%8d/
 e04403	deep	2020-03-01	skyticket Presents DEEP 94 IMPACT	後楽園ホール	https://www.deep2001.com/deep-94-impact/
-e01544	pound_4_pound_fighting_championship	2020-03-08	PFC 3.8 札幌コンカリーニョ		https://www.boutreview.com/3/reports/item_38043.html Sherdog
-e05046	pound_4_pound_fighting_championship	2020-03-08	P4P FC 23 - Pound For Pound FC 23 / Stones.4		https://mmaplanet.jp/101910
+e01544	pound_4_pound_fighting_championship	2020-03-08	PFC 3.8 札幌コンカリーニョ		https://www.boutreview.com/3/reports/item_38043.html
+e05046	pound_4_pound_fighting_championship	2020-03-08	P4P FC 23 - Pound For Pound FC 23 / Stones.4		https://www.boutreview.com/3/reports/item_38043.html
 e00945	shooto	2020-03-21	MOBSTYLES 20th ANNIVERSARY TOUR FIGHT＆MOSH Vol.2 Supported by ONE Championship		https://shooto-mma.com/result/?id=99
-e03604	shooto	2020-04-17	Shooto - Road to ONE: 2nd Abema		https://www.boutreview.com/3/reports/item_39117.html Sherdog
-e03605	chakuriki	2020-05-17	CHAKURIKI 6 ～Branko Cikatic Memorial～		https://www.boutreview.com/3/reports/item_39563.html Sherdog
+e03604	shooto	2020-04-17	Shooto - Road to ONE: 2nd Abema		https://www.boutreview.com/3/reports/item_39117.html
+e05163	chakuriki	2020-05-17	Chakuriki 6 - Branko Cikatic Memorial		https://www.boutreview.com/3/reports/item_39563.html
 e00946	shooto	2020-05-31	PROFESSIONAL SHOOTO 2020 Vol.3 ABEMAテレビマッチ Supported by ONE Championship		https://shooto-mma.com/result/?id=92
 e05079	tribe_tokyo_fight	2020-06-27	もっとやれたかな		https://efight.jp/result-20200628_443994
 e00947	shooto	2020-07-12	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2020 Vol.4 in OSAKA Supported by ONE Championship		https://shooto-mma.com/result/?id=100
@@ -3196,7 +3204,7 @@ e00956	shooto	2021-01-31	《第1部》PROFESSIONAL SHOOTO 2021開幕戦 Supporte
 e00957	shooto	2021-01-31	《第2部》PROFESSIONAL SHOOTO 2021開幕戦 Supported by ONE Championship		https://shooto-mma.com/result/?id=108
 e04879	gladiator	2021-02-07	グラジエーター		https://efight.jp/result-20210208_510426
 e03640	deep	2021-02-21	DEEP 100 IMPACT ～20th Anniversary～	東京ドームシティホール	https://www.deep2001.com/deep-100-impact/
-e03641	shooto	2021-02-22	Shooto - Road to ONE: 4th Young Guns		https://www.boutreview.com/3/reports/item_49635.html Sherdog
+e03641	shooto	2021-02-22	Shooto - Road to ONE: 4th Young Guns		https://www.boutreview.com/3/reports/item_49635.html
 e03642	krossxover	2021-03-06	KROSS×OVER 3.7 GENスポーツパレス		https://www.boutreview.com/3/reports/item_50615.html Sherdog
 e01550	deep	2021-03-07	DEEP JEWELS 32		https://www.deep2001.com/deep-jewels-32/
 e04414	deep	2021-03-07	skyticket Presents DEEP JEWELS 32	後楽園ホール	https://www.deep2001.com/deep-jewels-32/
@@ -3219,8 +3227,10 @@ e04415	deep	2021-05-05	DEEP 101 IMPACT	後楽園ホール	https://www.deep2001.c
 e03653	fighting_dreamers	2021-05-15	格闘DREAMERS 最終戦		https://efight.jp/result-20210515_532131 Sherdog
 e00960	shooto	2021-05-16	PROFESSIONAL SHOOTO 2021 Vol.3 Supported by ONE Championship		https://shooto-mma.com/result/?id=110
 e00355	pancrase	2021-05-30	PANCRASE 321（東京・USEN STUDIO COAST）	東京・USEN STUDIO COAST	https://pancrase.co.jp/data/result/2021/0530.html
-e01552	chakuriki	2021-05-30	CHAKURIKI 10 Bright Future	大阪・世界館	https://www.boutreview.com/3/reports/item_54908.html Sherdog
-e01553	krossxover	2021-06-05	KROSS×OVER 6.6 新宿フェイス		https://www.boutreview.com/3/reports/item_55106.html Sherdog
+e01552	chakuriki	2021-05-30	CHAKURIKI 10 Bright Future	大阪・世界館	https://www.boutreview.com/3/reports/item_54908.html
+e05164	chakuriki	2021-05-30	Chakuriki 10 - Bright Future		https://www.boutreview.com/3/reports/item_54908.html
+e01553	krossxover	2021-06-05	KROSS×OVER 6.6 新宿フェイス		https://www.boutreview.com/3/reports/item_55106.html
+e05175	krossxover	2021-06-05	押忍！ 自分は新極真上がりでキックはまだ数年という感じなんですけど、これから頑張ってチャンピオン目指して行きます		https://efight.jp/result-20210609_552429
 e01554	atoys_challenge_fight	2021-06-06	ACF 6.6 大阪 176BOX		https://www.boutreview.com/3/reports/item_55083.html
 e04835	atoys_challenge_fight	2021-06-06	ACF 60th - A-Toys Challenge Fight 60		https://miruhon.net/174947
 e01555	rizin	2021-06-13	Yogibo presents RIZIN.28	東京ドーム	https://jp.rizinff.com/_ct/17459632
@@ -3266,7 +3276,7 @@ e04881	gladiator	2021-09-26	精神的にめっちゃ疲れました。あんな�
 e00967	shooto	2021-10-02	SHOOTO GIG TOKYO Vol.31 Supported by ONE Championship		https://shooto-mma.com/result/?id=119
 e04582	rizin	2021-10-02	+WEED presents RIZIN LANDMARK vol.1		https://jp.rizinff.com/_ct/17485193
 e01564	krossxover	2021-10-03	KROSS×OVER 10.3 新宿フェイス		https://www.boutreview.com/3/reports/item_61434.html
-e03677	shooto	2021-10-05	Shooto - Road to ONE: 5th Sexyama Edition		https://www.boutreview.com/3/reports/item_61461.html Sherdog
+e03677	shooto	2021-10-05	Shooto - Road to ONE: 5th Sexyama Edition		https://www.boutreview.com/3/reports/item_61461.html
 e00359	pancrase	2021-10-17	PANCRASE 324（東京・USEN STUDIO COAST）	東京・USEN STUDIO COAST	https://pancrase.co.jp/data/result/2021/1017.html
 e03679	deep	2021-10-17	DEEP TOKYO IMPACT 2021 1st ROUND	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2021-1st-round/
 e03680	deep	2021-10-17	DEEP TOKYO IMPACT 2021 2nd ROUND	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2021-2nd-round/
@@ -3280,19 +3290,21 @@ e03685	rizin	2021-10-24	Yogibo presents RIZIN.31	ぴあアリーナMM	https://jp
 e05106	wardog_cage_fight	2021-10-24	WCF - Wardog Cage Fight 34		https://www.boutreview.com/3/reports/item_62571.html
 e03686	ldh_martial_arts	2021-10-30	EXFIGHT02		https://mmaplanet.jp/123152 Sherdog
 e00968	shooto	2021-11-06	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2021 Vol.7 Supported by ONE Championship		https://shooto-mma.com/result/?id=121
-e00969	shooto	2021-11-06	VTJ 2021		https://shooto-mma.com/result/?id=122 Sherdog
+e00969	shooto	2021-11-06	VTJ 2021		https://shooto-mma.com/result/?id=122
 e00970	shooto	2021-11-07	FORCE GIG 01		https://shooto-mma.com/result/?id=124
 e00971	shooto	2021-11-07	FORCE 14		https://shooto-mma.com/result/?id=125
 e04986	nexus	2021-11-07	MARRION APPAREL presents Fighting NEXUS vol.24＠寄居町MAJIC BOX on 2021.11.07(sun)		https://fighting-nexus.net/event.php?id=result-899
 e00972	shooto	2021-11-14	THE SHOOTO OKINAWA vol.５		https://shooto-mma.com/result/?id=126
 e03689	rizin	2021-11-20	Yogibo presents RIZIN.32	沖縄・沖縄アリーナ	https://jp.rizinff.com/_ct/17497524
-e01566	bout	2021-11-21	ノースエリア格闘技イベント BOUT 43	北海道恵庭市総合体育館アリーナ	https://www.boutreview.com/3/reports/item_64174.html Sherdog
+e01566	bout	2021-11-21	ノースエリア格闘技イベント BOUT 43	北海道恵庭市総合体育館アリーナ	https://www.boutreview.com/3/reports/item_64174.html
 e03691	deep	2021-11-21	DEEP OSAKA IMPACT 2021 2nd ROUND（2部）	大阪・コレガスタジオ	https://www.boutreview.com/3/reports/item_63984.html Sherdog
 e04413	deep	2021-11-21	DEEP OSAKA IMPACT 2021	コレガスタジオ	https://www.deep2001.com/deep-osaka-impact-2021-3/ Sherdog
+e05160	bout	2021-11-21	Bout - Bout 43		https://www.boutreview.com/3/reports/item_64174.html
 e01567	atoys_challenge_fight	2021-11-28	ACF 11.28 滋賀 ハーティーセンター秦荘		https://www.boutreview.com/3/reports/item_64386.html
 e03692	rizin	2021-11-28	RIZIN TRIGGER 1st	神戸ワールド記念ホール	https://jp.rizinff.com/_ct/17498791
 e04838	atoys_challenge_fight	2021-11-28	ACF 65th - Heroes 2021		https://miruhon.net/193399
-e01568	krossxover	2021-12-04	KROSS×OVER 12.5 新宿フェイス		https://www.boutreview.com/3/reports/item_64668.html Sherdog
+e01568	krossxover	2021-12-04	KROSS×OVER 12.5 新宿フェイス		https://www.boutreview.com/3/reports/item_64668.html
+e05176	krossxover	2021-12-04	恐怖でいっぱい		https://efight.jp/result-20211207_770880
 e00973	shooto	2021-12-05	闘裸男26		https://shooto-mma.com/result/?id=127
 e00974	shooto	2021-12-05	闘裸男GIG03		https://shooto-mma.com/result/?id=128
 e01569	deep	2021-12-11	DEEP JEWELS 35	ニューピアホール	https://www.deep2001.com/deep-jewels-35/
@@ -3306,22 +3318,25 @@ e03697	grachan	2021-12-19	GRACHAN 52	千葉・幕張ベイパークアリーナ	
 e03698	ldh_martial_arts	2021-12-19	EXFIGHT03		https://mmaplanet.jp/125020 Sherdog
 e04987	nexus	2021-12-19	MARRION APPAREL presents Fighting NEXUS vol.25 in GEN SPORTS PALACE / 2021.12.19(Sun)		https://fighting-nexus.net/event.php?id=result-950
 e01570	chakuriki	2021-12-26	国際チャクリキ協会 Dream Gate 11	福岡・飯塚市第一体育館	https://www.boutreview.com/3/reports/item_65721.html Sherdog
-e01571	pound_4_pound_fighting_championship	2021-12-26	PFC 12.26 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_65674.html Sherdog
+e01571	pound_4_pound_fighting_championship	2021-12-26	PFC 12.26 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_65674.html
+e05191	pound_4_pound_fighting_championship	2021-12-26	P4P FC - PFC Yarennoka! 2021		https://www.boutreview.com/3/reports/item_65674.html
 e01572	rizin	2021-12-31	Yogibo presents RIZIN.33	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17508021
 e00976	shooto	2022-01-16	PROFESSIONAL SHOOTO 2022 開幕戦		https://shooto-mma.com/result/?id=129
 e01573	deep	2022-01-23	石渡伸太郎引退興行「漢塾～継承～」	東京・ニューピアホール	https://www.boutreview.com/3/reports/item_66599.html Sherdog
-e03701	gladiator	2022-01-23	Gladiator - Gladiator 016 in Osaka		https://mmaplanet.jp/126169 https://mmaplanet.jp/126176 https://mmaplanet.jp/126183 https://mmaplanet.jp/126185 https://mmaplanet.jp/126187 Sherdog
-e03702	wardog_cage_fight	2022-01-30	WARDOG CAGE FIGHT 35	大阪・世界館	https://www.boutreview.com/3/reports/item_66973.html Sherdog
-e03703	wardog_cage_fight	2022-01-30	WARDOG CAGE FIGHT 36	大阪・世界館	https://www.boutreview.com/3/reports/item_66973.html Sherdog
+e03701	gladiator	2022-01-23	Gladiator - Gladiator 016 in Osaka		https://www.boutreview.com/3/reports/item_66737.html
+e05219	wardog_cage_fight	2022-01-30	WCF - Wardog Cage Fight 35		https://www.boutreview.com/3/reports/item_66973.html
+e05220	wardog_cage_fight	2022-01-30	WCF - Wardog Cage Fight 36		https://www.boutreview.com/3/reports/item_66973.html
 e04988	nexus	2022-02-13	Ohana Paint presents Fighting NEXUS vol.26 in GEN SPORTS PALACE / 2022.02.13(Sun)		https://fighting-nexus.net/event.php?id=result-1014
 e03705	rizin	2022-02-23	SPASHAN HPS presents RIZIN TRIGGER 2nd	静岡・エコパアリーナ	https://jp.rizinff.com/_ct/17520846
 e04418	deep	2022-02-26	skyticket Presents DEEP 106 IMPACT	後楽園ホール	https://www.deep2001.com/deep-106-impact/
 e01574	atoys_challenge_fight	2022-02-27	ACF 2.27 大阪 すみのえ舞昆ホール		https://www.boutreview.com/3/reports/item_68769.html
 e04968	ldh_martial_arts	2022-02-27	LDH Martial Arts - ExFight 4		https://mmaplanet.jp/127816
-e01575	krossxover	2022-03-03	KROSS×OVER 3.6 GENスポーツパレス		https://www.boutreview.com/3/reports/item_69010.html Sherdog
-e01576	pound_4_pound_fighting_championship	2022-03-06	PFC.25	札幌・PODアリーナ	https://www.boutreview.com/3/news/item_68992.html Sherdog
+e01575	krossxover	2022-03-03	KROSS×OVER 3.6 GENスポーツパレス		https://www.boutreview.com/3/reports/item_69010.html
+e05177	krossxover	2022-03-03	KROSS×OVER		https://efight.jp/result-20220309_954546
+e01576	pound_4_pound_fighting_championship	2022-03-06	PFC.25		https://www.boutreview.com/3/news/item_68992.html
 e03708	deep	2022-03-06	DEEP NAGOYA IMPACT（2022年3月6日 ホテルプラザ勝川）	愛知・ホテルプラザ勝川	https://efight.jp/result-20220309_954778 Sherdog
 e03710	rizin	2022-03-06	+WEED presents RIZIN LANDMARK vol.2	非公開	https://jp.rizinff.com/_ct/17522386
+e05192	pound_4_pound_fighting_championship	2022-03-06	P4P FC 25 - Pound For Pound FC 25		https://www.boutreview.com/3/news/item_68992.html
 e03711	grachan	2022-03-11	GRACHAN53×BRAVE FIGHT26	東京・大田区産業プラザPIO	https://grachan.jp/grachan53xbrave-fight26-%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e01577	deep	2022-03-12	DEEP JEWELS 36	ニューピアホール	https://www.deep2001.com/deep-jewels-36/
 e03712	deep	2022-03-12	DEEP TOKYO IMPACT 2022 1st ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2022-1st-round/
@@ -3344,10 +3359,10 @@ e04936	krossxover	2022-04-17	月曜から夜更かし		https://efight.jp/result-
 e03719	grasp_the_future_cage	2022-04-23	GFC - MCCS Fight Night 2022		https://ja.wikipedia.org/wiki/熊澤伸哉 https://ja.wikipedia.org/wiki/鹿志村仁之介 Sherdog
 e00980	shooto	2022-04-24	FORCE GIG 02		https://shooto-mma.com/result/?id=140
 e00981	shooto	2022-04-24	FORCE 15		https://shooto-mma.com/result/?id=142
-e03720	ldh_martial_arts	2022-04-24	POUND STORM		https://efight.jp/result-20220425_1014935 Sherdog
 e05107	wardog_cage_fight	2022-04-24	WCF - Wardog Cage Fight 37		https://www.boutreview.com/3/reports/item_71907.html
+e05178	ldh_martial_arts	2022-04-24	LDH Martial Arts - Pound Storm		https://www.boutreview.com/3/reports/item_71748.html
 e00363	pancrase	2022-04-29	PANCRASE 327（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2022/0429.html
-e03722	gladiator	2022-05-01	Gladiator - Gladiator 017 in Osaka		https://mmaplanet.jp/130487 https://mmaplanet.jp/130496 https://mmaplanet.jp/130498 https://mmaplanet.jp/130501 https://mmaplanet.jp/130503 https://mmaplanet.jp/130505 Sherdog
+e03722	gladiator	2022-05-01	Gladiator - Gladiator 017 in Osaka		https://www.boutreview.com/3/reports/item_72274.html
 e03723	rizin	2022-05-05	+WEED presents RIZIN LANDMARK vol.3	都内某所	https://jp.rizinff.com/_ct/17538454
 e04912	heat	2022-05-07	格闘技をやってきて良かった		https://efight.jp/result-20220507_1039931
 e04419	deep	2022-05-08	DEEP 107 IMPACT	後楽園ホール	https://www.deep2001.com/deep-107-impact/ Sherdog
@@ -3365,7 +3380,7 @@ e04421	deep	2022-05-29	宗明建設 Presents DEEP TOKYO IMPACT 2022 3rd ROUND	�
 e04422	deep	2022-05-29	DEEP TOKYO IMPACT 2022 4th ROUND	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2022-4th-round/
 e00985	shooto	2022-06-05	北海道大会		https://shooto-mma.com/result/?id=141
 e01583	grachan	2022-06-26	GRACHAN CHALLENGE　6月関東	埼玉・三郷BRAVEジム	https://grachan.jp/grachan-challenge%e3%80%806%e6%9c%88%e9%96%a2%e6%9d%b1%e3%80%80%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
-e03734	gladiator	2022-06-26	Gladiator - Gladiator 018 in Osaka		https://mmaplanet.jp/132644 Sherdog
+e03734	gladiator	2022-06-26	Gladiator - Gladiator 018 in Osaka		https://www.boutreview.com/3/reports/item_75043.html
 e03735	rizin	2022-07-02	湘南美容クリニック presents RIZIN.36	沖縄アリーナ	https://jp.rizinff.com/_ct/17552126
 e00986	shooto	2022-07-03	PROFESSIONAL SHOOTO 2022 Vol.4 in OSAKA		https://shooto-mma.com/result/?id=136
 e01584	shooto	2022-07-03	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2022 Vol.4 in OSAKA		https://shooto-mma.com/result/?id=136
@@ -3373,7 +3388,7 @@ e03736	deep	2022-07-10	DEEP 108 IMPACT	TOKYO DOME CITY HALL	https://www.deep2001
 e00987	shooto	2022-07-17	PROFESSIONAL SHOOTO 2022 Vol.5		https://shooto-mma.com/result/?id=132
 e01585	krossxover	2022-07-17	KROSS×OVER 7.17 GENスポーツパレス		https://www.boutreview.com/3/reports/item_75923.html
 e00365	pancrase	2022-07-18	PANCRASE 328（東京・ベルサール高田馬場）	東京・ベルサール高田馬場	https://pancrase.co.jp/data/result/2022/0718.html
-e03737	bout	2022-07-18	BOUT45	新札幌・ホテルエミシア 3F パレスホール	https://efight.jp/result-20220725_1262802 Sherdog
+e05159	bout	2022-07-18	Bout - Bout 45		https://www.boutreview.com/3/reports/item_76048.html
 e03738	deep	2022-07-24	DEEP NAGOYA IMPACT 2022公武堂ファイト	ホテルプラザ勝川	https://www.deep2001.com/deep-nagoya-impact-2022%e5%85%ac%e6%ad%a6%e5%a0%82%e3%83%95%e3%82%a1%e3%82%a4%e3%83%88/
 e05108	wardog_cage_fight	2022-07-24	WCF - Wardog Cage Fight 38		https://www.boutreview.com/3/reports/item_76198.html
 e05109	wardog_cage_fight	2022-07-24	WCF - Wardog Cage Fight 39		https://www.boutreview.com/3/reports/item_76198.html
@@ -3386,21 +3401,23 @@ e03743	ldh_martial_arts	2022-08-07	EXFIGHT05		https://mmaplanet.jp/134137 Sherdo
 e04990	nexus	2022-08-07	KikuNiku presents Fighting NEXUS vol.28 in GEN SPORTS PALACE 2022.08.07(Sun)		https://fighting-nexus.net/event.php?id=result-1208
 e03745	chakuriki	2022-08-14	日本骨髄バンクチャリティCHAKURIKI 16 白鷺祭	兵庫県立武道館	https://www.boutreview.com/3/news/item_77414.html Sherdog
 e00988	shooto	2022-08-21	越後風神祭り9		https://shooto-mma.com/result/?id=147 Sherdog
-e01588	krossxover	2022-08-21	KROSS×OVER 新潟 2022（万代島多目的広場 大かま）	新潟 万代島多目的広場 大かま	https://www.boutreview.com/3/reports/item_78129.html Sherdog
+e01588	krossxover	2022-08-21	KROSS×OVER 新潟 2022（万代島多目的広場 大かま）	新潟 万代島多目的広場 大かま	https://www.boutreview.com/3/reports/item_78129.html
 e03746	deep	2022-08-21	DEEP 109 IMPACT	後楽園ホール	https://www.deep2001.com/deep-109-impact/
+e05173	krossxover	2022-08-21	KROSSxOVER - Niigata 2022: Extra Edition		https://www.boutreview.com/3/reports/item_78129.html
 e01589	atoys_challenge_fight	2022-08-28	PEACE2（ACF 78th）	大阪・176box	https://efight.jp/result-20220903_1294889/ Sherdog
 e03747	atoys_challenge_fight	2022-08-28	PEACE（ACF 77th）	大阪・176box	https://efight.jp/result-20220901_1294805/3/ Sherdog
 e03749	deep	2022-08-28	DEEP OSAKA IMPACT 2022 2nd ROUND	コレガスタジオ	https://www.deep2001.com/deep-osaka-impact-2022-2nd-round/
 e03750	deep	2022-08-28	DEEP OSAKA IMPACT 2022 3rd ROUND	コレガスタジオ	https://www.deep2001.com/deep-osaka-impact-2022-3rd-round/
 e03751	grachan	2022-08-28	D-SPIRAL27×GRACHAN56.5		https://grachan.jp/d-spiral27xgrachan56-5%e5%85%ac%e5%bc%8f%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/
-e03752	legion_japan	2022-08-28	LEGION☆JAPAN 2022～百花繚乱～	鹿児島・オロシティーホール	https://www.boutreview.com/3/reports/item_78298.html Sherdog
+e05181	legion_japan	2022-08-28	Legion Japan 2022 - Hyakka Ryoran		https://www.boutreview.com/3/reports/item_78298.html
 e03753	grachan	2022-09-04	GRACHAN 57	千葉・幕張ベイパークアリーナ	https://grachan.jp/grachan-57-%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e00366	pancrase	2022-09-11	PANCRASE 329（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2022/0911.html
 e00989	shooto	2022-09-11	FORCE 16		https://shooto-mma.com/result/?id=146
 e03754	deep	2022-09-11	skyticket Presents DEEP JEWELS 38	ニューピアホール	https://www.deep2001.com/deep-jewels-38/ Sherdog
 e03755	deep	2022-09-11	DEEP TOKYO IMPACT 2022 5th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-5th-round/
 e00990	shooto	2022-09-19	PROFESSIONAL SHOOTO 2022 Vol.6		https://shooto-mma.com/result/?id=133
-e01590	chakuriki	2022-09-24	日本骨髄バンクチャリティ CHAKURIKI 17 しこちゅう格闘まつり		https://www.boutreview.com/3/reports/item_79764.html Sherdog
+e01590	chakuriki	2022-09-24	日本骨髄バンクチャリティ CHAKURIKI 17 しこちゅう格闘まつり		https://www.boutreview.com/3/reports/item_79764.html
+e05165	chakuriki	2022-09-24	Chakuriki 17 - Shikochu Fighting Festival		https://www.boutreview.com/3/reports/item_79764.html
 e01591	rizin	2022-09-25	The Battle Cats presents 超RIZIN / 湘南美容クリニック presents RIZIN.38	さいたまスーパーアリーナ	https://jp.rizinff.com/_amp/_ct/17573018 https://jp.rizinff.com/_ct/17573018
 e03756	deep	2022-09-25	DEEP HAMAMATSU IMPACT 2022	アクトシティ浜松展示イベントホール	https://www.deep2001.com/deep-hamamatsu-impact-2022/
 e04882	gladiator	2022-09-25	グラジエーター		https://efight.jp/result-20220927_1303351
@@ -3409,21 +3426,24 @@ e00367	pancrase	2022-10-10	NEO BLOOD! 2（東京・品川インターシティ�
 e00991	shooto	2022-10-15	SHOOTO GIG TOKYO Vol.33		https://shooto-mma.com/result/?id=138
 e01592	grachan	2022-10-16	GRACHANチャレンジ（BFファイト）	三郷ブレイブジム	https://grachan.jp/grachan%e3%83%81%e3%83%a3%e3%83%ac%e3%83%b3%e3%82%b8%ef%bc%88bf%e3%83%95%e3%82%a1%e3%82%a4%e3%83%88%ef%bc%89-%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e01593	krossxover	2022-10-16	KROSS×OVER 10.16 新宿フェイス		https://www.boutreview.com/3/reports/item_80951.html
-e01594	pound_4_pound_fighting_championship	2022-10-16	PFC 10.16 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_80902.html Sherdog
+e01594	pound_4_pound_fighting_championship	2022-10-16	PFC 10.16 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_80902.html
 e04938	krossxover	2022-10-16	BreakingDown番外編		https://efight.jp/result-20221018_1309784
+e05193	pound_4_pound_fighting_championship	2022-10-16	P4P FC 27 - Pound For Pound FC 27		https://www.boutreview.com/3/reports/item_80902.html
 e03759	rizin	2022-10-23	湘南美容クリニック presents RIZIN.39	マリンメッセ福岡 Ａ館	https://jp.rizinff.com/_amp/_ct/17579359
 e05110	wardog_cage_fight	2022-10-23	WCF - Wardog Cage Fight 40		https://www.boutreview.com/3/reports/item_81216.html
 e01595	shooto	2022-10-30	第28回全日本アマチュア修斗選手権大会	小田原アリーナ・サブアリーナ	https://j-shooto.com/2022/11/02/post-32572/
 e03761	deep	2022-10-30	DEEP OKINAWA IMPACT 2022	ミュージックタウン音市場	https://www.deep2001.com/deep-okinawa-impact-2022/
 e03762	ldh_martial_arts	2022-10-30	EXFIGHT06		https://mmaplanet.jp/136667 Sherdog
 e00992	shooto	2022-11-06	THE SHOOTO OKINAWA vol.7		https://shooto-mma.com/result/?id=148
-e01596	topking	2022-11-06	TOPKINGジム設立10周年記念大会 孤児・遺児チャリティーイベントKING 10	兵庫・明石キャッスルプラザホテル	https://www.boutreview.com/3/reports/item_82140.html Sherdog
+e01596	topking	2022-11-06	TOPKINGジム設立10周年記念大会 孤児・遺児チャリティーイベントKING 10	兵庫・明石キャッスルプラザホテル	https://www.boutreview.com/3/reports/item_82140.html
 e03763	rizin	2022-11-06	ANGEL CHAMPAGNE presents RIZIN LANDMARK 4 in NAGOYA	ドルフィンズアリーナ（愛知県体育館）	https://jp.rizinff.com/_ct/17582838
+e05212	topking	2022-11-06	TOPKING - 10th Anniversary Charity Event: KING 10		https://www.boutreview.com/3/reports/item_82140.html
 e04992	nexus	2022-11-07	株式会社ブシドー presents Fighting NEXUS vol.29 in KORAKUEN HALL 2022.11.07(Mon)		https://fighting-nexus.net/event.php?id=result-1311
 e04424	deep	2022-11-12	skyticket Presents DEEP 110 IMPACT	後楽園ホール	https://www.deep2001.com/deep-110-impact/
 e01597	impact_japan	2022-11-20	Impact 28 - Tokyo Martial Arts Fest 2022	王子BASEMENT MONSTER	https://miruhon.net/226242 Sherdog
-e01598	pound_4_pound_fighting_championship	2022-11-20	PFC 11.20 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_82805.html Sherdog
+e01598	pound_4_pound_fighting_championship	2022-11-20	PFC 11.20 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_82805.html
 e03766	deep	2022-11-20	DEEP NAGOYA IMPACT公武堂ファイト	ホテルプラザ勝川	https://www.deep2001.com/deep-nagoya-impact%e5%85%ac%e6%ad%a6%e5%a0%82%e3%83%95%e3%82%a1%e3%82%a4%e3%83%88/
+e05194	pound_4_pound_fighting_championship	2022-11-20	P4P FC 28 - Pound For Pound FC 28		https://www.boutreview.com/3/reports/item_82805.html
 e03769	deep	2022-11-23	DEEP TOKYO IMPACT 2022 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-6th-round/
 e04486	deep	2022-11-23	skyticket Presents DEEP JEWELS 39	ニューピアホール	https://www.deep2001.com/deep-jewels-39/
 e00993	shooto	2022-11-27	PROFESSIONAL SHOOTO 2022 Vol.7		https://shooto-mma.com/result/?id=134
@@ -3471,7 +3491,7 @@ e04427	deep	2023-03-25	DEEP TOKYO IMPACT 2023 2ND ROUND	ニューピアホール
 e00370	pancrase	2023-03-26	PANCRASE 331（東京・ニューピアホール(DAY TIME)）	東京・ニューピアホール(DAY TIME)	https://pancrase.co.jp/data/result/2023/0326.html
 e00371	pancrase	2023-03-26	PANCRASE 332（東京・ニューピアホール(NIGHT TIME)）	東京・ニューピアホール(NIGHT TIME)	https://pancrase.co.jp/data/result/2023/0326n.html
 e00999	shooto	2023-03-26	越後風神祭り10		https://shooto-mma.com/result/?id=174
-e03788	gladiator	2023-03-26	Gladiator - Gladiator 021 in Osaka		https://mmaplanet.jp/142703 https://mmaplanet.jp/142745 https://mmaplanet.jp/142752 https://mmaplanet.jp/142760 https://mmaplanet.jp/142762 Sherdog
+e03788	gladiator	2023-03-26	Gladiator - Gladiator 021 in Osaka		https://www.boutreview.com/3/reports/item_89027.html
 e03789	rizin	2023-04-01	RIZIN.41	丸善インテックアリーナ大阪（大阪市中央体育館）	https://jp.rizinff.com/_ct/17618497
 e03790	deep	2023-04-02	DEEP OSAKA IMPACT 2023 1st ROUND	住吉区民センターホール大ホール	https://www.deep2001.com/deep-osaka-impact-2023-1st/
 e01000	shooto	2023-04-09	SHOOTO GIG TOKYO Vol.34		https://shooto-mma.com/result/?id=157
@@ -3487,18 +3507,19 @@ e05111	wardog_cage_fight	2023-04-23	WCF - Wardog Cage Fight 42		https://www.bout
 e04585	rizin	2023-04-29	FEDELTA presents RIZIN LANDMARK 5 in YOYOGI	代々木第一体育館	https://jp.rizinff.com/_ct/17625256
 e00372	pancrase	2023-04-30	PANCRASE 333（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2023/0430.html
 e03796	rizin	2023-05-06	RIZIN.42	有明アリーナ	https://jp.rizinff.com/_ct/17626748
-e03798	chakuriki	2023-05-07	CHAKURIKI 18 ファイテング・スピリット・アゲイン	新宿フェイス	https://www.boutreview.com/3/reports/item_90980.html Sherdog
 e03799	deep	2023-05-07	DEEP 113 IMPACT		https://www.deep2001.com/deep-113-impact/ Sherdog
 e03800	deep	2023-05-07	DEEP TOKYO IMPACT 2023 3rd ROUND	後楽園ホール	https://www.deep2001.com/deep-tokyo-impact-2023-3rd-round/
 e04839	atoys_challenge_fight	2023-05-07	ACF 88th - Japan-Korea Battle		https://miruhon.net/238454
+e05166	chakuriki	2023-05-07	Chakuriki 18 - Fighting Spirit Again		https://www.boutreview.com/3/reports/item_90980.html
 e01614	grachan	2023-05-14	GRACHAN 61	東京・大田区産業プラザPIO	https://grachan.jp/grachan-61-%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e03801	style_fight_challenge	2023-05-14	STYLE F.C.2	北海道旭川市啓明地区センター	https://www.boutreview.com/3/reports/item_91369.html Sherdog
 e01003	shooto	2023-05-21	Colors（カラーズ）		https://shooto-mma.com/result/?id=159
 e01004	shooto	2023-05-21	PROFESSIONAL SHOOTO 2023 Vol.3		https://shooto-mma.com/result/?id=173
 e04994	nexus	2023-05-21	株式会社ライフイン24group presents Fighting NEXUS vol.31 in GEN SPORTS PALACE 2023.05.21(Sun)		https://fighting-nexus.net/event.php?id=result-1495
-e01005	shooto	2023-05-28	TORAO29		https://shooto-mma.com/result/?id=160 Sherdog
+e01005	shooto	2023-05-28	TORAO29		https://shooto-mma.com/result/?id=160
 e03803	deep	2023-05-28	DEEP JEWELS 41	ニューピアホール	https://www.deep2001.com/deep-jewels-41/
 e03804	deep	2023-05-28	DEEP TOKYO IMPACT 2023 4th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2023-4th-round/
+e05209	shooto	2023-05-28	Shooto - Torao 29		https://www.boutreview.com/3/reports/item_92000.html
 e00373	pancrase	2023-06-04	PANCRASE 334（東京・ニューピアホール）	東京・ニューピアホール	https://pancrase.co.jp/data/result/2023/0604.html
 e04840	atoys_challenge_fight	2023-06-04	ACF 89th - Featherweight Champion Carnival		https://miruhon.net/240550
 e01615	krossxover	2023-06-11	KROSS×OVER & Level-G 6.11 GENスポーツパレス		https://www.boutreview.com/3/reports/item_92804.html
@@ -3509,23 +3530,24 @@ e03807	rizin	2023-06-24	RIZIN.43	真駒内セキスイハイムアイスアリ�
 e04428	deep	2023-07-02	skyticket Presents DEEP 114 IMPACT	後楽園ホール	https://www.deep2001.com/deep-114-impact/
 e00374	pancrase	2023-07-09	PANCRASE 335（東京・ニューピアホール(DAY TIME)）	東京・ニューピアホール(DAY TIME)	https://pancrase.co.jp/data/result/2023/0709day.html
 e00375	pancrase	2023-07-09	PANCRASE 336（東京・ニューピアホール(NIGHT TIME)）	東京・ニューピアホール(NIGHT TIME)	https://pancrase.co.jp/data/result/2023/0709night.html
-e03809	legion_japan	2023-07-16	LEGION☆JAPAN 2023 ～獅子吼II～	鹿児島・オロシティーホール	https://www.boutreview.com/3/reports/item_95022.html Sherdog
+e05179	legion_japan	2023-07-16	Legion Japan 2023 - Shishiku 2		https://www.boutreview.com/3/reports/item_95022.html
 e01007	shooto	2023-07-23	PROFESSIONAL SHOOTO 2023 Vol.5		https://shooto-mma.com/result/?id=162
 e01616	deep	2023-07-23	DEEP X NARIAGARI	ニューピアホール	https://www.deep2001.com/deep-x-nariagari/
 e01617	grachan	2023-07-23	GRACHANチャレンジ大阪大会		https://grachan.jp/grachan62%ef%bc%86grachan%e3%83%81%e3%83%a3%e3%83%ac%e3%83%b3%e3%82%b8%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e03810	grachan	2023-07-23	GRACHAN62	大阪・176BOX	https://grachan.jp/grachan62%e3%80%80%e5%89%8d%e6%97%a5%e8%a8%88%e9%87%8f%ef%bc%86%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
-e03812	pound_4_pound_fighting_championship	2023-07-23	PFC 7.23 札幌 PODアリーナ		https://www.boutreview.com/3/reports/item_95054.html Sherdog
 e04995	nexus	2023-07-23	Fighting NEXUS “SUBLIME GUYS FIGHT in KAWAGOE 2023		https://fighting-nexus.net/event.php?id=result-1581
 e05112	wardog_cage_fight	2023-07-23	WCF - Wardog Cage Fight 43		https://www.boutreview.com/3/reports/item_95035.html
+e05195	pound_4_pound_fighting_championship	2023-07-23	P4P FC 30 - Pound For Pound FC 30		https://www.boutreview.com/3/reports/item_95054.html
 e03814	bellator	2023-07-29	BELLATOR MMA x RIZIN 2	さいたまスーパーアリーナ	https://en.wikipedia.org/wiki/2023_in_Rizin_Fighting_Federation Sherdog
 e03815	deep	2023-07-30	DEEP OSAKA IMPACT 2023 2nd ROUND	錦秀会 住吉区民センター大ホール	https://www.deep2001.com/deep-osaka-impact-2023-2nd-round/
 e04586	rizin	2023-07-30	のむシリカ presents 超RIZIN.2 powered by U-NEXT	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17645070
-e03817	gleat_mma	2023-08-04	GLEAT VER.MEGA	両国国技館	https://www.boutreview.com/3/reports/item_95485.html Sherdog
+e05169	gleat_mma	2023-08-04	Gleat MMA - Ver.Mega		https://www.boutreview.com/3/reports/item_95485.html
 e01618	grachan	2023-08-06	GRACHAN63	東京・TFTホール1000	https://grachan.jp/grachan63_result/
 e04429	deep	2023-08-06	DEEP NAGOYA IMPACT 2023 公武堂ファイト 3rd ROUND	ホテルプラザ勝川	https://www.deep2001.com/deep-nagoya-impact-2023-%e5%85%ac%e6%ad%a6%e5%a0%82%e3%83%95%e3%82%a1%e3%82%a4%e3%83%88/
 e04430	deep	2023-08-06	DEEP NAGOYA IMPACT 2023 公武堂ファイト 4th ROUND	ホテルプラザ勝川	https://www.deep2001.com/deep-nagoya-impact-2023-%e5%85%ac%e6%ad%a6%e5%a0%82%e3%83%95%e3%82%a1%e3%82%a4%e3%83%88/
 e01619	krossxover	2023-08-13	KROSS×OVER 8.13 大田区産業プラザPiO		https://www.boutreview.com/3/reports/item_96019.html Sherdog
-e01620	angels_fighting_championship	2023-08-19	CVC Presents HEAT 52 × AFC 27	東京・ニューピアホール	https://www.boutreview.com/3/reports/item_96145.html Sherdog
+e01620	angels_fighting_championship	2023-08-19	CVC Presents HEAT 52 × AFC 27	東京・ニューピアホール	https://www.boutreview.com/3/reports/item_96145.html
+e05152	angels_fighting_championship	2023-08-19	AFC 27 / Heat 52 - Angel's Fighting Championship 27 / Heat 52		https://www.boutreview.com/3/reports/item_96145.html
 e01008	shooto	2023-08-20	広島大会「TORAO30」		https://shooto-mma.com/result/?id=163
 e01009	shooto	2023-08-20	広島大会「TORAO		https://shooto-mma.com/result/?id=175
 e01621	impact_japan	2023-08-20	Impact 39 - Tokyo Martial Arts Fest 2023	王子ベースメントモンスター	https://miruhon.net/245239 Sherdog
@@ -3554,8 +3576,9 @@ e01627	shooto	2023-10-15	第29回全日本アマチュア修斗選手権大会	�
 e04540	grachan	2023-10-15	GRACHAN65 旗揚げ15周年記念大会	東京・TFTホール1000	https://grachan.jp/grachan65_result/
 e04997	nexus	2023-10-15	Fighting NEXUS“BAYSIDE BATTLE in YOKOSUKA 2023” 2023.10.15(sun)		https://fighting-nexus.net/event.php?id=result-1716
 e01013	shooto	2023-10-21	SHOOTO GIG TOKYO Vol.35		https://shooto-mma.com/result/?id=167
-e01628	krossxover	2023-10-22	KROSS×OVER 10.22 新宿フェイス		https://www.boutreview.com/3/reports/item_99142.html Sherdog
+e01628	krossxover	2023-10-22	KROSS×OVER 10.22 新宿フェイス		https://www.boutreview.com/3/reports/item_99142.html
 e05086	wardog_cage_fight	2023-10-22	WCF - Wardog Cage Fight 44		https://mmaplanet.jp/155808
+e05174	krossxover	2023-10-22	KROSSxOVER - KROSSxOVER 23		https://www.boutreview.com/3/reports/item_99142.html
 e00378	pancrase	2023-11-03	NEO BLOOD! 6（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2023/1103.html
 e04587	rizin	2023-11-04	RIZIN LANDMARK 7 in Azerbaijan		https://jp.rizinff.com/_ct/17664842
 e03834	deep	2023-11-11	DEEP 116 IMPACT		https://www.deep2001.com/deep-116-impact/ Sherdog
@@ -3563,10 +3586,11 @@ e00379	pancrase	2023-11-12	PANCRASE 338（東京・ニューピアホール）	�
 e00380	pancrase	2023-11-12	PANCRASE 339（東京・ニューピアホール）	東京・ニューピアホール	https://pancrase.co.jp/data/result/2023/1112night.html
 e01014	shooto	2023-11-12	THE SHOOTO OKINAWA vol.9		https://shooto-mma.com/result/?id=168
 e01015	shooto	2023-11-19	後楽園大会 PROFESSIONAL SHOOTO 2023 Vol.7		https://shooto-mma.com/result/?id=169
-e01629	bloom_fighting_championship	2023-11-19	BLOOM FC 11.19 福岡 西鉄ホール		https://www.boutreview.com/3/reports/item_100704.html Sherdog
+e01629	bloom_fighting_championship	2023-11-19	BLOOM FC 11.19 福岡 西鉄ホール		https://www.boutreview.com/3/reports/item_100704.html
 e01630	pound_4_pound_fighting_championship	2023-11-19	PFC.31＆Nexus SPROUT North.3（第1部 SPROUT North.3）		https://p4pfc.com/post/pfc-31-sprout3-match-result/
 e04887	global_fightingsports_game	2023-11-19	GFG 3 - Global Fightingsports Game 3		https://www.boutreview.com/3/reports/item_100854.html
 e05053	pound_4_pound_fighting_championship	2023-11-19	P4P FC 31 - Pound For Pound FC 31		https://www.boutreview.com/3/news/item_100860.html
+e05158	bloom_fighting_championship	2023-11-19	Bloom FC 1 - Bloom Fighting Championship 1		https://www.boutreview.com/3/reports/item_100891.html
 e04434	deep	2023-11-23	skyticket Presents DEEP JEWELS 43	ニューピアホール	https://www.deep2001.com/deep-jewels-43/
 e04435	deep	2023-11-23	宗明建設Presents DEEP TOKYO IMPACT 2023 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2023-6th-round/
 e01631	atoys_challenge_fight	2023-11-26	ACF 11.26 滋賀 ハーティーセンター秦荘		https://www.boutreview.com/3/reports/item_100942.html Sherdog
@@ -3592,8 +3616,9 @@ e04948	krossxover	2023-12-17	第3代 ライト級 王座決定トーナメント
 e00381	pancrase	2023-12-24	PANCRASE 340（神奈川・横浜武道館）	神奈川・横浜武道館	https://pancrase.co.jp/data/result/2023/1224.html
 e03848	rizin	2023-12-31	にゃんこ大戦争 presents RIZIN.45	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17676735
 e04844	atoys_challenge_fight	2024-01-14	ACF 99th - A-Toys Challenge Fight 99		https://miruhon.net/254496
-e01636	top_brights	2024-01-21	TOP BRIGHTS.1	オープンハウスアリーナ太田	https://www.boutreview.com/3/reports/item_103156.html Sherdog
+e01636	top_brights	2024-01-21	TOP BRIGHTS.1	オープンハウスアリーナ太田	https://www.boutreview.com/3/reports/item_103156.html
 e05087	wardog_cage_fight	2024-01-21	WCF - Wardog Cage Fight 45	大阪・弁天町 世界館	https://mmaplanet.jp/162349 Sherdog
+e05211	top_brights	2024-01-21	TB 1 - Top Brights 1		https://www.boutreview.com/3/reports/item_103156.html
 e01020	shooto	2024-01-28	PROFESSIONAL SHOOTO 2024 Vol.1 - 2部		https://shooto-mma.com/result/?id=178
 e01021	shooto	2024-01-28	PROFESSIONAL SHOOTO 2024 Vol.1 - 1部		https://shooto-mma.com/result/?id=199
 e01637	one	2024-01-28	ONE 165: Superlek vs. Takeru	有明アリーナ	https://efight.jp/result-20240128_1461184
@@ -3603,16 +3628,18 @@ e03851	grachan	2024-02-04	GRACHAN 67	大阪・176BOX	https://grachan.jp/grachan6
 e03852	gladiator	2024-02-16	Gladiator - Challenger Series 01		https://www.boutreview.com/3/reports/item_104451.html
 e00382	pancrase	2024-02-18	PANCRASE BLOOD.1（大阪・住吉区民センター 大ホール）	大阪・住吉区民センター 大ホール	https://pancrase.co.jp/data/result/2024/0218.html
 e04999	nexus	2024-02-18	株式会社ライフイン24group presents Fighting NEXUS vol.34 in GARDEN 新木場 FACTORY		https://fighting-nexus.net/event.php?id=result-1975
-e01639	chakuriki	2024-02-21	CHAKURIKI 19 ノブ ハヤシ引退記念大会	後楽園ホール	https://www.boutreview.com/3/reports/item_104978.html Sherdog
-e03854	legion_japan	2024-02-23	レギオン☆ジャパン獅子吼 III	鹿児島 オロシティホール	https://www.boutreview.com/3/reports/item_105303.html Sherdog
+e01639	chakuriki	2024-02-21	CHAKURIKI 19 ノブ ハヤシ引退記念大会	後楽園ホール	https://www.boutreview.com/3/reports/item_104978.html
+e05162	chakuriki	2024-02-21	Chakuriki 19 - Nobuki Hayashi Retirement Commemoration Tournament		https://www.boutreview.com/3/reports/item_104978.html
+e05180	legion_japan	2024-02-23	Legion Japan 2024 - Shishiku 3		https://www.boutreview.com/3/reports/item_105303.html
 e03855	rizin	2024-02-24	RIZIN LANDMARK 8 in SAGA	SAGAアリーナ	https://jp.rizinff.com/_ct/17685725
 e00383	pancrase	2024-02-25	PANCRASE BLOOD.2（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2024/0225.html
 e01022	shooto	2024-03-02	修斗Live!Tokyo		https://shooto-mma.com/result/?id=200
 e01640	impact_japan	2024-03-03	Impact 44 - The Ultimate	王子BASEMENT MONSTER	https://miruhon.net/257507 Sherdog
 e01641	krossxover	2024-03-03	KROSS×OVER 3.3 東京 GENスポーツパレス		https://www.boutreview.com/3/reports/item_105318.html
-e01642	pound_4_pound_fighting_championship	2024-03-03	PFC 3.3 北海道 PODアリーナ		https://www.boutreview.com/3/reports/item_105385.html Sherdog
-e03856	gladiator	2024-03-03	Gladiator - Gladiator 025 in Osaka		https://mmaplanet.jp/165231 https://mmaplanet.jp/165234 https://mmaplanet.jp/165236 https://mmaplanet.jp/165238 https://mmaplanet.jp/165306 https://mmaplanet.jp/165309 Sherdog
+e01642	pound_4_pound_fighting_championship	2024-03-03	PFC 3.3 北海道 PODアリーナ		https://www.boutreview.com/3/reports/item_105385.html
+e03856	gladiator	2024-03-03	Gladiator - Gladiator 025 in Osaka		https://www.boutreview.com/3/reports/item_105222.html
 e04949	krossxover	2024-03-03	KROSS×OVER.25		https://krossover.jp/?p=1636
+e05184	pound_4_pound_fighting_championship	2024-03-03	P4P FC 32 - Pound For Pound FC 32		https://www.boutreview.com/3/reports/item_105385.html
 e04437	deep	2024-03-09	skyticket Presents DEEP 118 IMPACT	後楽園ホール	https://www.deep2001.com/skyticket-presents-deep-118-impact/
 e03859	grachan	2024-03-10	GRACHAN 68×BRAVE Fight 31	東京・大田区産業プラザPIO	https://grachan.jp/grachan68-result/
 e05000	nexus	2024-03-10	株式会社高千穂建設 presents Fighting NEXUS 狼煙～Ready To Go in NAGANO 2024		https://fighting-nexus.net/event.php?id=result-2005
@@ -3643,10 +3670,10 @@ e00385	pancrase	2024-04-29	PANCRASE 342（東京・立川ステージガーデ�
 e01027	shooto	2024-04-29	新潟・新潟LOT		https://shooto-mma.com/result/?id=183
 e01648	rizin	2024-04-29	Yogibo presents RIZIN.46	有明アリーナ	https://jp.rizinff.com/_ct/17697063
 e03875	deep	2024-05-03	DEEP 119 IMPACT	後楽園ホール	https://www.deep2001.com/deep-119-impact/
-e03876	gladiator	2024-05-05	Gladiator - Gladiator 026 in Osaka		https://mmaplanet.jp/170577 https://mmaplanet.jp/170586 https://mmaplanet.jp/170588 https://mmaplanet.jp/170612 https://mmaplanet.jp/170642 https://mmaplanet.jp/170673 Sherdog
+e03876	gladiator	2024-05-05	Gladiator - Gladiator 026 in Osaka		https://www.boutreview.com/3/reports/item_108519.html
 e01649	deep	2024-05-12	DEEP CAGE IMPACT 2024 in HAMAMATSU	アクトシティ浜松展示イベントホール	https://www.deep2001.com/deep-cage-impact-2024-in-hamamatsu/
 e05001	nexus	2024-05-12	Fighting NEXUS vol.35 in GEN SPORTS PALACE		https://fighting-nexus.net/event.php?id=result-2110
-e03878	fighting_agent_war	2024-05-17	格闘代理戦争 -THE MAX- 決勝	東京都内 非公開のスタジオ	https://www.boutreview.com/3/reports/item_108841.html Sherdog
+e05168	fighting_agent_war	2024-05-17	Fighting Agent War - The Max: Final Round		https://www.boutreview.com/3/reports/item_108841.html
 e01028	shooto	2024-05-19	【第1部】PROFESSIONAL SHOOTO 2024 Vol.4		https://shooto-mma.com/result/?id=184
 e01029	shooto	2024-05-19	【第2部】修斗×YFU 7対7 日中対抗戦		https://shooto-mma.com/result/?id=204
 e00386	pancrase	2024-05-25	PANCRASE 343（東京・ニューピアホール）	東京・ニューピアホール	https://pancrase.co.jp/data/result/2024/0525.html
@@ -3664,9 +3691,10 @@ e00387	pancrase	2024-06-30	PANCRASE 344（東京・ニューピアホール(DAY 
 e00388	pancrase	2024-06-30	PANCRASE 345（東京・ニューピアホール(NIGHT TIME)）	東京・ニューピアホール(NIGHT TIME)	https://pancrase.co.jp/data/result/2024/0630n.html
 e01651	knuckles_japan	2024-06-30	Knuckle's 16 - Guranmesse		https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%AD%E3%83%A0%E3%83%BB%E3%83%AC%E3%83%BB%E3%83%90%E3%83%B3%E3%83%8A https://ja.wikipedia.org/wiki/ANIMAL%E2%98%86KOJI Sherdog
 e01652	krossxover	2024-07-07	KROSS×OVER 7.7 新宿フェイス		https://www.boutreview.com/3/reports/item_111540.html
-e01653	pound_4_pound_fighting_championship	2024-07-07	PFC 7.7 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_111553.html Sherdog
+e01653	pound_4_pound_fighting_championship	2024-07-07	PFC 7.7 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_111553.html
 e04860	gladiator	2024-07-07	BODYMAKER presents GLADIATOR027		https://battle-news.com/?p=118224
 e04951	krossxover	2024-07-07	KROSS×OVER-Extra.5-		https://krossover.jp/?p=2849
+e05185	pound_4_pound_fighting_championship	2024-07-07	P4P FC 33 - Pound For Pound FC 33		https://www.boutreview.com/3/reports/item_111553.html
 e03888	gladiator	2024-07-12	Gladiator - Challenger Series 02		https://www.boutreview.com/3/reports/item_111571.html
 e01031	shooto	2024-07-14	プロフェッショナル修斗公式戦広島大会 TORAO33		https://shooto-mma.com/result/?id=207
 e01654	atoys_challenge_fight	2024-07-14	ACF 7.14 大阪 176BOX		https://www.boutreview.com/3/reports/item_111816.html Sherdog
@@ -3674,7 +3702,8 @@ e03889	deep	2024-07-14	DEEP 120 IMPACT	後楽園ホール	https://www.deep2001.c
 e00389	pancrase	2024-07-21	PANCRASE 346（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2024/0721.html
 e01032	shooto	2024-07-21	PROFESSIONAL SHOOTO 2024 Vol.5		https://shooto-mma.com/result/?id=188
 e03890	grasp_the_future_cage	2024-07-21	GFC10th Anniversary Match & ROMAN ZERO	くくる糸満	https://gonkaku.jp/articles/17777 Sherdog
-e01655	krossxover	2024-07-27	KROSS×OVER 7.27 東京 大田区産業プラザPiO		https://www.boutreview.com/3/reports/item_112479.html Sherdog
+e01655	krossxover	2024-07-27	KROSS×OVER 7.27 東京 大田区産業プラザPiO		https://www.boutreview.com/3/reports/item_112479.html
+e05171	krossxover	2024-07-27	KROSSxOVER - KROSSxOVER 27		https://www.boutreview.com/3/reports/item_112479.html
 e00390	pancrase	2024-07-28	PANCRASE BLOOD.3（大阪・住吉区民センター 大ホール）	大阪・住吉区民センター 大ホール	https://pancrase.co.jp/data/result/2024/0728.html
 e01033	shooto	2024-07-28	PROFESSIONAL SHOOTO 2024 Vol.6 in OSAKA 第1部		https://shooto-mma.com/result/?id=202
 e01034	shooto	2024-07-28	PROFESSIONAL SHOOTO 2024 Vol.6 in OSAKA 第2部		https://shooto-mma.com/result/?id=206
@@ -3682,7 +3711,7 @@ e01656	rizin	2024-07-28	Yogibo presents 超RIZIN.3	さいたまスーパーア�
 e03891	wardog_cage_fight	2024-07-28	WCF - Wardog Cage Fight 48	大阪・世界館	https://fighters-spirits.com/magazine/archives/36162 Sherdog
 e03892	wardog_cage_fight	2024-07-28	WCF - Wardog Cage Fight 49	大阪・世界館	https://fighters-spirits.com/magazine/archives/36224 Sherdog
 e01035	shooto	2024-08-03	COLORS Produce by SHOOTO Vol.3		https://shooto-mma.com/result/?id=205
-e03893	tribe_tokyo_fight	2024-08-16	TTF CHALLENGE vol.10	東京・練馬Coconeriホール	https://www.boutreview.com/3/reports/item_113063.html Sherdog
+e05213	tribe_tokyo_fight	2024-08-16	Tribe Tokyo Fight - TTF Challenge 10		https://www.boutreview.com/3/reports/item_113063.html
 e01657	grachan	2024-08-18	GRACHAN70	大阪・176BOX	https://grachan.jp/grachan70-result/
 e01658	grachan	2024-08-18	GRACHANチャレンジ	大阪・176BOX	https://grachan.jp/grachan70-challenge-result/
 e00391	pancrase	2024-08-25	PANCRASE BLOOD.4（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2024/0825.html
@@ -3693,7 +3722,7 @@ e05003	nexus	2024-08-25	Fighting NEXUS vol.36～初代ミドル級王者決定�
 e03896	deep	2024-08-31	DEEPサマーフェスティバル2024 inお台場	お台場青海R区画 野外特設ステージ	https://www.deep2001.com/deep%e3%82%b5%e3%83%9e%e3%83%bc%e3%83%95%e3%82%a7%e3%82%b9%e3%83%86%e3%82%a3%e3%83%90%e3%83%ab2024-in%e3%81%8a%e5%8f%b0%e5%a0%b4/
 e01036	shooto	2024-09-01	越後風神祭り13		https://shooto-mma.com/result/?id=211
 e03897	ryuta_sakurai	2024-09-07	Ryuta Sakurai - Resilience 06		https://www.tapology.com/fightcenter/events/118669-resilience-06 Sherdog
-e01037	shooto	2024-09-08	香川・高松シンボルタワー展示場		https://shooto-mma.com/result/?id=191 Sherdog
+e01037	shooto	2024-09-08	香川・高松シンボルタワー展示場		https://shooto-mma.com/result/?id=191
 e03898	deep	2024-09-08	DEEP TOKYO IMPACT 2024 4th ROUND		https://www.deep2001.com/deep-tokyo-impact-2024-4th-round/ Sherdog
 e04441	deep	2024-09-08	DAYS Presents DEEP JEWELS 46	ニューピアホール	https://www.deep2001.com/deep-jewels-46/
 e01661	grachan	2024-09-15	GRACHANチャレンジ		https://grachan.jp/grachanchallenge-result20240915/
@@ -3707,16 +3736,17 @@ e04588	rizin	2024-09-29	Yogibo presents RIZIN.48	さいたまスーパーアリ�
 e05056	poundout	2024-10-05	本当は一本・KOで勝ちたかったんですけど次回に持ち越しで。来年はガンガン試合するので応援よろしくお願いします		https://efight.jp/result-20241006_1542231
 e01662	deep	2024-10-06	DEEP HAMAMATSU IMPACT 2024		https://www.deep2001.com/deep-hamamatsu-impact-2024/ Sherdog
 e01663	krossxover	2024-10-06	KROSS×OVER 10.6 新宿フェイス		https://www.boutreview.com/3/reports/item_116110.html
-e01664	pound_4_pound_fighting_championship	2024-10-06	PFC 10.6 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_116158.html Sherdog
+e01664	pound_4_pound_fighting_championship	2024-10-06	PFC 10.6 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_116158.html
 e01665	shooto	2024-10-06	第30回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2024/10/12/post-41213/
-e03905	gladiator	2024-10-06	Gladiator - Gladiator 028 in Osaka		https://mmaplanet.jp/182894 https://mmaplanet.jp/182898 https://mmaplanet.jp/182919 https://mmaplanet.jp/182923 https://mmaplanet.jp/182936 https://mmaplanet.jp/182940 Sherdog
-e03906	roots_of_martial_arts_network	2024-10-14	でらゲーPresents ROMAN ONE	東京都内のジム（無観客配信）	https://www.boutreview.com/3/reports/item_116358.html Sherdog
+e03905	gladiator	2024-10-06	Gladiator - Gladiator 028 in Osaka		https://www.boutreview.com/3/reports/item_116141.html
+e05186	pound_4_pound_fighting_championship	2024-10-06	P4P FC 34 - Pound For Pound FC 34		https://www.boutreview.com/3/reports/item_116158.html
+e05197	roots_of_martial_arts_network	2024-10-14	ROMAN - Roots of Martial Arts Network 1		https://www.boutreview.com/3/reports/item_116358.html
 e01040	shooto	2024-10-20	SHOOTO GIG TOKYO Vol.37		https://shooto-mma.com/result/?id=193
 e05014	nexus	2024-10-20	Fighting NEXUS “BAYSIDE BATTLE in YOKOSUKA 2024” in 神奈川歯科大学アリーナ		https://fighting-nexus.net/event.php?id=result-2345
-e03908	angels_fighting_championship	2024-10-26	Gooner Presents HEAT 55	名古屋国際会議場 イベントホール	https://www.boutreview.com/3/reports/item_117151.html Sherdog
+e05151	angels_fighting_championship	2024-10-26	AFC 34 / Heat 55 - Angel's Fighting Championship 34 / Heat 55		https://www.boutreview.com/3/reports/item_117151.html
 e03909	bloom_fighting_championship	2024-10-27	BLOOM FC 10.27 アクロス福岡		https://www.boutreview.com/3/reports/item_117137.html Sherdog
-e03910	wardog_cage_fight	2024-10-27	WARDOG CAGE FIGHT 50 1stRound	大阪・世界館	https://efight.jp/result-20241030_1549952 Sherdog
-e03911	wardog_cage_fight	2024-10-27	WARDOG CAGE FIGHT 50 2ndRound	大阪・世界館	https://efight.jp/result-20241030_1549952 Sherdog
+e05215	wardog_cage_fight	2024-10-27	WCF - Wardog Cage Fight 50: 1st Round		https://www.boutreview.com/3/reports/item_117005.html
+e05216	wardog_cage_fight	2024-10-27	WCF - Wardog Cage Fight 50: 2nd Round		https://www.boutreview.com/3/reports/item_117005.html
 e03912	breakthrough_combat	2024-10-30	Breakthrough Combat 01	東京都内（非公開）	https://www.boutreview.com/3/reports/item_117040.html Sherdog
 e01666	rizin	2024-11-02	RIZIN甲子園 第3回トライアウト（準々決勝・準決勝）	都内某所	https://jp.rizinff.com/_ct/17730779
 e03913	global_fightingsports_game	2024-11-03	GFG04 Global Fightingsports Game 4	青森県五所川原市	https://mmaplanet.jp/184749 Sherdog
@@ -3724,19 +3754,20 @@ e01667	legion_japan	2024-11-04	LEGION☆JAPAN 獅子吼 IV	鹿児島 オロシ�
 e03914	deep	2024-11-04	DEEP 122 IMPACT	後楽園ホール	https://www.deep2001.com/deep-122-impact/
 e00393	pancrase	2024-11-10	PANCRASE 348（東京・ニューピアホール(DAY TIME)）	東京・ニューピアホール(DAY TIME)	https://pancrase.co.jp/data/result/2024/1110d.html
 e00394	pancrase	2024-11-10	PANCRASE 349（東京・ニューピアホール(NIGHT TIME)）	東京・ニューピアホール(NIGHT TIME)	https://pancrase.co.jp/data/result/2024/1110n.html
-e01041	shooto	2024-11-10	沖縄・コザミュージックタウン音市場		https://shooto-mma.com/result/?id=194 Sherdog
+e01041	shooto	2024-11-10	沖縄・コザミュージックタウン音市場		https://shooto-mma.com/result/?id=194
 e04952	krossxover	2024-11-10	KROSSxOVER - Cage 4		https://krossover.jp/?p=3151
-e01042	shooto	2024-11-17	山口・KDDI維新ホール		https://shooto-mma.com/result/?id=215 Sherdog
+e01042	shooto	2024-11-17	山口・KDDI維新ホール		https://shooto-mma.com/result/?id=215
 e03916	rizin	2024-11-17	RIZIN LANDMARK 10 in NAGOYA	ポートメッセなごや 第1展示館	https://jp.rizinff.com/_ct/17733287
 e03918	deep	2024-11-23	DEEP TOKYO IMPACT 2024 5th ROUND		https://www.deep2001.com/deep-tokyo-impact-2024-5th-round/ Sherdog
 e04442	deep	2024-11-23	DAYS Presents DEEP JEWELS 47	ニューピアホール	https://www.deep2001.com/deep-jewels-47/
 e04846	atoys_challenge_fight	2024-11-24	ACF 108th - Heroes 2024		https://miruhon.net/275324
 e05015	nexus	2024-11-28	Fighting NEXUS vol.37 in 後楽園ホール		https://fighting-nexus.net/event.php?id=result-2448
 e01043	shooto	2024-11-30	PROFESSIONAL SHOOTO 2024 Vol.8		https://shooto-mma.com/result/?id=212
-e01668	pound_4_pound_fighting_championship	2024-12-08	PFC 12.8 札幌 PODアリーナ		https://www.boutreview.com/3/reports/item_118982.html Sherdog
+e01668	pound_4_pound_fighting_championship	2024-12-08	PFC 12.8 札幌 PODアリーナ		https://www.boutreview.com/3/reports/item_118982.html
 e03924	next_japan	2024-12-08	Next Japan - Gekitotsu Festival 2024		Sherdog
 e04443	deep	2024-12-08	宗明建設Presents DEEP 123 IMPACT	ニューピアホール	https://www.deep2001.com/deep-123-impact/
 e04444	deep	2024-12-08	SOUMEI Presents DEEP TOKYO IMPACT 2024 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2024-6th-round/
+e05187	pound_4_pound_fighting_championship	2024-12-08	P4P FC 35 - Pound For Pound FC 35		https://www.boutreview.com/3/reports/item_118982.html
 e01669	krossxover	2024-12-14	KROSS×OVER 12.14 GENスポーツパレス		https://www.boutreview.com/3/reports/item_119310.html
 e01746	grasp_the_future_cage	2024-12-14	GFC - MCCS Fight Night 2024	沖縄（米軍施設）	https://www.tapology.com/fightcenter/events/121964-mccs-fight-night-2024 Sherdog
 e00395	pancrase	2024-12-15	PANCRASE 350（東京・ニューピアホール(DAY TIME)）	東京・ニューピアホール(DAY TIME)	https://pancrase.co.jp/data/result/2024/1215d.html
@@ -3749,12 +3780,12 @@ e03927	deep	2024-12-22	DEEP OSAKA IMPACT 2024 5th ROUND	梅田ステラホール
 e03928	grachan	2024-12-22	GRACHAN Presents: HELIOS	東京・TFTホール100	https://grachan.jp/helios-result/
 e05016	nexus	2024-12-22	NEXUS MANIA 2024 in GEN SPORTS PALACE		https://fighting-nexus.net/event.php?id=result-2524
 e03930	breakthrough_combat	2024-12-25	Breakthrough Combat 02	東京都内（非公開）	https://www.boutreview.com/3/reports/item_119791.html Sherdog
-e03931	shoot_boxing	2024-12-26	SHOOT BOXING BATTLE SUMMIT GROUND ZERO TOKYO 2024	東京・TDCホール	https://efight.jp/result-20241226_1569128 Sherdog
+e05203	shoot_boxing	2024-12-26	Shoot Boxing - Battle Summit: Ground Zero Tokyo 2024		https://www.boutreview.com/3/reports/item_119702.html
 e01045	shooto	2024-12-29	PROFESSIONAL SHOOTO 2024 FINAL in OSAKA		https://shooto-mma.com/result/?id=214
 e01671	rizin	2024-12-31	RIZIN DECADE / 雷神番外地		https://jp.rizinff.com/_ct/17741870
 e04589	rizin	2024-12-31	RIZIN DECADE / Yogibo presents RIZIN.49 / 雷神番外地	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17741895 https://jp.rizinff.com/_ct/17741870
 e04847	atoys_challenge_fight	2024-12-31	ACF 110th - A-Toys Challenge Fight 110		https://miruhon.net/277740
-e03934	gladiator	2025-01-12	Gladiator - Gladiator 029 in Osaka		https://mmaplanet.jp/190192 https://mmaplanet.jp/190194 https://mmaplanet.jp/190196 https://mmaplanet.jp/190252 https://mmaplanet.jp/190254 https://mmaplanet.jp/190256 Sherdog
+e03934	gladiator	2025-01-12	Gladiator - Gladiator 029 in Osaka		https://www.boutreview.com/3/reports/item_120404.html
 e01046	shooto	2025-01-19	PROFESSIONAL SHOOTO 2025 開幕戦		https://shooto-mma.com/result/?id=216
 e03935	wardog_cage_fight	2025-01-26	WCF - Wardog Cage Fight 51: 1st Round	大阪・弁天町世界館	https://fighters-spirits.com/magazine/archives/38949 Sherdog
 e03936	wardog_cage_fight	2025-01-26	WCF - Wardog Cage Fight 51: 2nd Round	大阪・弁天町世界館	https://fighters-spirits.com/magazine/archives/38952 Sherdog
@@ -3762,7 +3793,7 @@ e01672	grachan	2025-02-02	GRACHANチャレンジ		https://grachan.jp/grachanchal
 e01673	pound_4_pound_fighting_championship	2025-02-02	アマチュアPFC STONES＆ROOKIES（2025.2.2）		https://www.p4pfc.com/post/2025-2-2-pfc-stones%EF%BC%86rookies-match-result
 e01674	tribelate	2025-02-02	TRIBELATE vol.57		https://efight.jp/result-20250205_1581393 https://efight.jp/result-20250205_1581393/2 https://efight.jp/result-20250205_1581393/3
 e03937	grachan	2025-02-02	GRACHAN72	大阪・176BOX	https://grachan.jp/grachan72-result/
-e00397	pancrase	2025-02-11	PANCRASE BLOOD.5（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2025/0211.html https://www.pancrase.co.jp/data/result/2025/0211.html Sherdog
+e00397	pancrase	2025-02-11	PANCRASE BLOOD.5（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2025/0211.html
 e03939	breakthrough_combat	2025-02-26	Breakthrough Combat 03	東京都内（非公開）	https://www.boutreview.com/3/reports/item_122488.html Sherdog
 e03940	grachan	2025-03-02	GRACHAN73×BRAVE FIGHT35		https://grachan.jp/grachan73-bravefight35-result/
 e05017	nexus	2025-03-02	Fighting NEXUS vol.38 in GEN SPORTS PALACE		https://fighting-nexus.net/event.php?id=result-2592
@@ -3779,11 +3810,11 @@ e04446	deep	2025-03-23	SOUMEI Presents DEEP TOKYO IMPACT 2025 1st ROUND	ニュ�
 e05038	one	2025-03-23	ビルマ軍兵士10人と戦い、全員に勝てたら自由の身にしてやろう		https://efight.jp/result-20250323_1594405
 e03946	rizin	2025-03-30	RIZIN.50	あなぶきアリーナ香川	https://jp.rizinff.com/_ct/17757793
 e01678	krossxover	2025-04-06	KROSS×OVER 4.6 新宿フェイス		https://www.boutreview.com/3/reports/item_124343.html
-e01679	pound_4_pound_fighting_championship	2025-04-06	PFC 4.6 札幌 PODアリーナ		https://www.boutreview.com/3/reports/item_124330.html Sherdog
+e01679	pound_4_pound_fighting_championship	2025-04-06	PFC 4.6 札幌 PODアリーナ		https://www.boutreview.com/3/reports/item_124330.html
 e03947	deep	2025-04-06	DEEP OSAKA IMPACT 2025 1st ROUND	錦秀会 住吉区民センター大ホール	https://www.deep2001.com/deep-osaka-impact-2025-1st-round/
 e04861	gladiator	2025-04-06	BODYMAKERpresentsGLADIATOR 030		https://battle-news.com/?p=130606
 e04955	krossxover	2025-04-06	6/15 KROSS×OVER CAGE.6アマチュア大会エントリー受付		https://krossover.jp/?p=3411
-e05048	pound_4_pound_fighting_championship	2025-04-06	P4P FC 36 - Pound For Pound FC 36		https://mmaplanet.jp/196353 https://mmaplanet.jp/196364 https://mmaplanet.jp/196377
+e05048	pound_4_pound_fighting_championship	2025-04-06	P4P FC 36 - Pound For Pound FC 36		https://www.boutreview.com/3/reports/item_124330.html
 e01049	shooto	2025-04-13	BORDER2025「The1st」		https://shooto-mma.com/result/?id=230
 e03949	deep	2025-04-13	DEEP TOKYO IMPACT 2025 2nd ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-2nd-round/
 e04466	deep	2025-04-13	DEEPフューチャーキングトーナメント2024	ニューピアホール	https://www.deep2001.com/deep%e3%83%95%e3%83%a5%e3%83%bc%e3%83%81%e3%83%a3%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%83%88%e3%83%bc%e3%83%8a%e3%83%a1%e3%83%b3%e3%83%882024/
@@ -3793,9 +3824,9 @@ e04849	bloom_fighting_championship	2025-04-26	Bloom FC 4 - Bloom Fighting Champi
 e00399	pancrase	2025-04-27	PANCRASE 353（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2025/0427.html
 e01051	shooto	2025-04-27	越後風神祭り14		https://shooto-mma.com/result/?id=234 Sherdog
 e01680	deep	2025-04-27	DEEP HAMAMATSU IMPACT 2025 1st ROUND	アクトシティ浜松展示イベントホール	https://www.deep2001.com/deep-hamamatsu-impact-2025-1st-round/
-e03953	roots_of_martial_arts_network	2025-04-27	ROMAN II	GENスポーツパレス	https://www.boutreview.com/3/reports/item_125498.html Sherdog
 e03954	wardog_cage_fight	2025-04-27	WCF - Wardog Cage Fight 52: 1st Round	大阪・世界館	https://fighters-spirits.com/magazine/archives/40454 Sherdog
 e03955	wardog_cage_fight	2025-04-27	WCF - Wardog Cage Fight 52: 2nd Round	大阪・世界館	https://fighters-spirits.com/magazine/archives/40460 Sherdog
+e05198	roots_of_martial_arts_network	2025-04-27	ROMAN - Roots of Martial Arts Network 2		https://www.boutreview.com/3/reports/item_125498.html
 e01681	rizin	2025-05-04	RIZIN男祭り	東京ドーム	https://jp.rizinff.com/_ct/17764390
 e03956	deep	2025-05-05	DEEP 125 IMPACT	後楽園ホール	https://www.deep2001.com/deep-125-impact/
 e00400	pancrase	2025-05-06	PANCRASE BLOOD.6（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2025/0506.html
@@ -3843,14 +3874,15 @@ e04468	deep	2025-08-17	宗明建設Presents DEEP 126 IMPACT	後楽園ホール	h
 e01060	shooto	2025-08-31	越後風神祭り15		https://shooto-mma.com/result/?id=240
 e03978	grachan	2025-08-31	GRACHAN76		https://grachan.jp/grachan76-result/
 e01061	shooto	2025-09-02	Lemino修斗１		https://shooto-mma.com/result/?id=242
-e01062	shooto	2025-09-07	BORDER2025「The2nd」		https://shooto-mma.com/result/?id=241 Sherdog
+e01062	shooto	2025-09-07	BORDER2025「The2nd」		https://shooto-mma.com/result/?id=241
 e01747	grasp_the_future_cage	2025-09-07	GFC - Grasp The Future Cage 22	沖縄	https://www.tapology.com/fightcenter/events/140299-gfc-vol-22 Sherdog
 e04469	deep	2025-09-07	SOUMEI Presents DEEP TOKYO IMPACT 2025 4th ROUND～DEEP VS YFU～	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-4th-round/
 e04470	deep	2025-09-07	DAYS Presents DEEP JEWELS 50	ニューピアホール	https://www.deep2001.com/deep-jewels-50/
 e04929	k1	2025-09-07	HERO’S		https://efight.jp/result-20250907_1643785
+e05205	shooto	2025-09-07	Shooto - Border 2025: The 2nd		https://www.boutreview.com/3/reports/item_132914.html
 e03983	grachan	2025-09-14	GRACHAN77		https://grachan.jp/grachan77-result/
-e03985	tribe_tokyo_fight	2025-09-14	TTF CHALLENGE 11	東京・練馬Coconeriホール	https://www.boutreview.com/3/reports/item_133141.html Sherdog
 e05023	nexus	2025-09-14	Fighting NEXUS vol.40 in GEN SPORTS PALACE 2025.09.14(Sun)		https://fighting-nexus.net/event.php?id=result-3085
+e05214	tribe_tokyo_fight	2025-09-14	Tribe Tokyo Fight - TTF Challenge 11		https://www.boutreview.com/3/reports/item_133141.html
 e04471	deep	2025-09-15	宗明建設Presents DEEP 127 IMPACT	後楽園ホール	https://www.deep2001.com/deep-127-impact/
 e04913	heat	2025-09-20	岡見勇信さんを超えて日本を代表する選手に		https://efight.jp/result-20250921_1648022
 e01063	shooto	2025-09-21	【第1部】PROFESSIONAL SHOOTO 2025 Vol.7		https://shooto-mma.com/result/?id=222
@@ -3868,10 +3900,10 @@ e04959	krossxover	2025-09-28	KROSSxOVER - KROSSxOVER 32		https://krossover.jp/?p
 e01690	deep	2025-10-05	DEEP HAMAMATSU IMPACT 2025 2nd ROUND	アクトシティ浜松	https://www.deep2001.com/deep-hamamatsu-impact-2025-2nd-round/
 e01691	shooto	2025-10-05	第31回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2025/10/06/post-45001/
 e01065	shooto	2025-10-11	SHOOTO GIG TOKYO Vol.39		https://shooto-mma.com/result/?id=223
-e03992	roots_of_martial_arts_network	2025-10-11	ROMAN 3	GENスポーツパレス	https://gonkaku.jp/articles/21902/outline Sherdog
-e01066	shooto	2025-10-19	Lemino修斗.2		https://shooto-mma.com/result/?id=243 Sherdog
+e05199	roots_of_martial_arts_network	2025-10-11	ROMAN - Roots of Martial Arts Network 3		https://www.boutreview.com/3/reports/item_134812.html
+e01066	shooto	2025-10-19	Lemino修斗.2		https://shooto-mma.com/result/?id=243
 e05024	nexus	2025-10-19	Fighting NEXUS “BAYSIDE BATTLE in YOKOSUKA 2025” in 神奈川歯科大学アリーナ 2025.10.19(Sun)		https://fighting-nexus.net/event.php?id=result-3149
-e01067	shooto	2025-10-26	FORCE 22		https://shooto-mma.com/result/?id=244 Sherdog
+e01067	shooto	2025-10-26	FORCE 22		https://shooto-mma.com/result/?id=244
 e03994	wardog_cage_fight	2025-10-26	WCF - Wardog Cage Fight 54: 1st Round	大阪・世界館	https://fighters-spirits.com/magazine/archives/44883 Sherdog
 e03995	wardog_cage_fight	2025-10-26	WCF - Wardog Cage Fight 54: 2nd Round	大阪・世界館	https://fighters-spirits.com/magazine/archives/44887 Sherdog
 e04472	deep	2025-11-02	宗明建設Presents DEEP 128 IMPACT	後楽園ホール	https://www.deep2001.com/deep-128-impact/
@@ -3891,7 +3923,7 @@ e01069	shooto	2025-11-22	PROFESSIONAL SHOOTO 2025 Vol.10 in OSAKA		https://shoot
 e05025	nexus	2025-11-22	Fighting NEXUS vol.41 in 後楽園ホール 2025.11.22(Sat)		https://fighting-nexus.net/event.php?id=result-3226
 e04473	deep	2025-11-23	DAYS Presents DEEP JEWELS 51	ニューピアホール	https://www.deep2001.com/deep-jewels-51/
 e04474	deep	2025-11-23	SOUMEI Presents DEEP TOKYO IMPACT 2025 5th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-5th-round/
-e04006	shoot_boxing	2025-11-24	SHOOT BOXING 40th Anniversary S-cup×GZT 2025	東京・国立代々木競技場第二体育館	https://efight.jp/result-20251124_1666660 Sherdog
+e05204	shoot_boxing	2025-11-24	Shoot Boxing - 40th Anniversary: S-Cup x GZT 2025		https://www.boutreview.com/3/reports/item_137445.html
 e01694	atoys_challenge_fight	2025-11-30	格闘技のおもちゃ箱ACF118 ～HEROES2025～	滋賀・ハーティーセンター秦荘	https://ameblo.jp/keimei-nakanoshima/entry-12949088751.html Sherdog
 e01695	global_fightingsports_game	2025-11-30	GFG05 Global Fightingsports Game 5	青森県五所川原市	https://mmaplanet.jp/215050 Sherdog
 e04864	gladiator	2025-11-30	BODYMAKERpresents GLADIATOR 033		https://battle-news.com/?p=139813
@@ -3899,8 +3931,8 @@ e01070	shooto	2025-12-07	株式会社大熊警備隊presentsプロフェッシ�
 e01696	krossxover	2025-12-07	KROSS×OVER 12.7 新宿フェイス		https://www.boutreview.com/3/reports/item_138277.html
 e04009	deep	2025-12-07	DEEP OSAKA IMPACT 2025 5th ROUND	錦秀会 住吉区民センター大ホール	https://www.deep2001.com/deep-osaka-impact-2025-5th-round/
 e04961	krossxover	2025-12-07	KROSS× OVER.32		https://krossover.jp/?p=3781
-e05049	pound_4_pound_fighting_championship	2025-12-07	P4P FC 39 - Pound For Pound FC 39		https://mmaplanet.jp/215375 https://mmaplanet.jp/215377 https://mmaplanet.jp/215381 https://www.boutreview.com/3/reports/item_138141.html Sherdog
-e04011	roots_of_martial_arts_network	2025-12-13	VT:R ZERO ‒ Vale Tudo Resurgence ZERO	東京都内（無観客）	https://www.boutreview.com/3/news/item_138584.html Sherdog
+e05049	pound_4_pound_fighting_championship	2025-12-07	P4P FC 39 - Pound For Pound FC 39		https://www.boutreview.com/3/reports/item_138141.html
+e05200	roots_of_martial_arts_network	2025-12-13	ROMAN - Vale Tudo: Resurgence Zero		https://www.boutreview.com/3/news/item_138584.html
 e01697	atoys_challenge_fight	2025-12-14	ACF 12.14 大阪市西区民センター		https://www.boutreview.com/3/reports/item_138524.html
 e01698	krossxover	2025-12-14	KROSS×OVER 12.14 GENスポーツパレス		https://www.boutreview.com/3/reports/item_138772.html
 e04475	deep	2025-12-14	SOUMEI Presents DEEP TOKYO IMPACT 2025 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-6th-round/
@@ -3912,7 +3944,8 @@ e04542	grachan	2025-12-21	GRACHAN79 × HELIOSⅡ (GRACHAN79)		https://grachan.jp
 e04543	grachan	2025-12-21	GRACHAN79 × HELIOSⅡ (HELIOS II)		https://grachan.jp/grachan78-herios02-result/
 e05026	nexus	2025-12-21	FightingNEXUS vol.42 in GEN SPORTS PALACE 2025.12.21(Sun)		https://fighting-nexus.net/event.php?id=fighting-nexus-vol-42
 e04592	rizin	2025-12-31	Yogibo presents RIZIN師走の超強者祭り	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17813426
-e01699	poundout	2026-01-17	POUNDOUT 3	千葉・TKPガーデンシティホール千葉	https://efight.jp/result-20260122_1681617 Sherdog
+e01699	poundout	2026-01-17	POUNDOUT 3	千葉・TKPガーデンシティホール千葉	https://efight.jp/result-20260122_1681617
+e05196	poundout	2026-01-17	POUNDOUT		https://efight.jp/result-20260122_1681617
 e01071	shooto	2026-01-18	【第1部】COLORS Produce by SHOOTO Vol.6		https://shooto-mma.com/result/?id=247
 e01072	shooto	2026-01-18	【第2部】PROFESSIONAL SHOOTO 2026 Vol.1		https://shooto-mma.com/result/?id=249
 e01700	bloom_fighting_championship	2026-01-18	BLOOM FC 1.18 福岡 Rangers Gym		https://www.boutreview.com/3/reports/item_140215.html
@@ -3938,20 +3971,21 @@ e04030	deep	2026-03-08	DEEP OSAKA IMPACT 2026 1st ROUND	錦秀会 住吉区民�
 e04031	deep	2026-03-08	DEEP OSAKA IMPACT 2026 2nd ROUND	錦秀会 住吉区民センター大ホール	https://www.deep2001.com/deep-osaka-impact-2026-2nd-round/
 e05027	nexus	2026-03-08	Fighting NEXUS vol.43 in GEN SPORTS PALACE 2026.03.08(Sun)		https://fighting-nexus.net/event.php?id=fighting-nexus-vol-43
 e00411	pancrase	2026-03-14	PANCRASE 361（神奈川・横浜武道館）	神奈川・横浜武道館	https://pancrase.co.jp/data/result/2026/0314.html
-e04033	roots_of_martial_arts_network	2026-03-15	みつ葉グループ presents ROMAN 4	GENスポーツパレス	https://www.boutreview.com/3/reports/item_142607.html Sherdog
+e05201	roots_of_martial_arts_network	2026-03-15	ROMAN - Roots of Martial Arts Network 4		https://www.boutreview.com/3/reports/item_142607.html
 e04034	deep	2026-03-20	DEEP 130 IMPACT	後楽園ホール	https://www.deep2001.com/deep-130-impact/
 e01704	atoys_challenge_fight	2026-03-22	ACF 3.22 大阪沖縄会館		https://www.boutreview.com/3/reports/item_143099.html Sherdog
 e01075	shooto	2026-03-29	PROFESSIONAL SHOOTO 2026 Vol.2		https://shooto-mma.com/result/?id=251
-e01705	pound_4_pound_fighting_championship	2026-03-29	PFC 3.29 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_143582.html Sherdog
+e01705	pound_4_pound_fighting_championship	2026-03-29	PFC 3.29 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_143582.html
 e01750	grasp_the_future_cage	2026-03-29	GFC - Grasp The Future Cage 24	沖縄	https://www.tapology.com/fightcenter/events/141560-grasp-the-future-cage-24 Sherdog
 e04035	brave_fight	2026-03-29	Brave - Brave Fight 40		https://www.tapology.com/fightcenter/events/141559-brave-fight-40 Sherdog
-e05050	pound_4_pound_fighting_championship	2026-03-29	P4P FC 40 - Pound For Pound FC 40		https://mmaplanet.jp/224152
+e05050	pound_4_pound_fighting_championship	2026-03-29	P4P FC 40 - Pound For Pound FC 40		https://www.boutreview.com/3/reports/item_143582.html
 e01076	shooto	2026-03-30	Lemino修斗.4		https://shooto-mma.com/result/?id=262
 e01077	shooto	2026-04-05	越後風神祭り16【第1部】		https://shooto-mma.com/result/?id=263 https://shooto-mma.com/result/?id=282 Sherdog
 e01078	shooto	2026-04-05	越後風神祭り16【第2部】		https://shooto-mma.com/result/?id=282
 e01079	shooto	2026-04-11	SHOOTO GIG TOKYO Vol.41		https://shooto-mma.com/result/?id=252
-e01706	k1	2026-04-11	K-1 GENKI 2026（第2部）	東京・国立代々木競技場第二体育館	https://www.boutreview.com/3/reports/item_144085.html https://www.boutreview.com/3/reports/item_144069.html Sherdog
+e01706	k1	2026-04-11	K-1 GENKI 2026（第2部）		https://www.boutreview.com/3/reports/item_144085.html
 e04038	heat	2026-04-11	Heat - Heat 58		https://heatofficial.com/schedule/946/
+e05170	k1	2026-04-11	K-1 - Genki 2026		https://www.boutreview.com/3/reports/item_144085.html
 e04040	rizin	2026-04-12	大和開発 presents RIZIN LANDMARK 13 in FUKUOKA		https://jp.rizinff.com/_ct/17833713
 e01080	shooto	2026-04-19	Lemino修斗.5		https://shooto-mma.com/result/?id=264
 e01707	krossxover	2026-04-19	KROSS×OVER 4.19 新宿フェイス		https://www.boutreview.com/3/reports/item_144729.html
@@ -3985,18 +4019,20 @@ e04051	knuckles_japan	2026-06-07	Knuckle's 17 - Guranmesse		Sherdog
 e05029	nexus	2026-06-07	株式会社TOMUSHI presents NEXUS YAKUMO ～神前試合～ 2026 in だんだんとまとアリーナ		https://fighting-nexus.net/event.php?id=result-3517
 e04053	deep	2026-06-14	DEEP NAGOYA IMPACT 2026 2nd ROUND	刈谷市産業振興センターあいおいホール	https://www.deep2001.com/deep-nagoya-impact-2026-2nd-round/
 e01713	pound_4_pound_fighting_championship	2026-06-15	G-FIGHT.45 / アマチュアPFC STONES＆ROOKIES		https://www.p4pfc.com/post/g-fight-45-stones%EF%BC%86rookies%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C
-e01714	krossxover	2026-06-21	KROSS×OVER 6.21 GENスポーツパレス		https://www.boutreview.com/3/reports/item_147856.html Sherdog
+e01714	krossxover	2026-06-21	KROSS×OVER 6.21 GENスポーツパレス		https://www.boutreview.com/3/reports/item_147856.html
 e04054	deep	2026-06-21	DEEP OSAKA IMPACT 2026 3rd ROUND	錦秀会 住吉区民センター大ホール	https://www.deep2001.com/deep-osaka-impact-2026-3rd-round/
+e05172	krossxover	2026-06-21	KROSSxOVER - Cage 9		https://www.boutreview.com/3/reports/item_147856.html
 e05030	nexus	2026-06-27	FightingNEXUS vol.44 in GEN SPORTS PALACE 2026.06.27(Sat)		https://fighting-nexus.net/event.php?id=fightingnexus-vol-44
 e00414	pancrase	2026-06-28	PANCRASE 363（東京・ニューピアホール）	東京・ニューピアホール	https://pancrase.co.jp/data/result/2026/0628.html
 e01088	shooto	2026-06-28	プロフェッショナル修斗公式戦福岡大会「Lemino修斗TORAO」		https://shooto-mma.com/result/?id=299
-e04056	gladiator	2026-06-28	Gladiator - Gladiator 035 in Osaka: 10th Anniversary		https://mmaplanet.jp/232005 https://mmaplanet.jp/232017 https://mmaplanet.jp/232040 Sherdog
+e04056	gladiator	2026-06-28	Gladiator - Gladiator 035 in Osaka: 10th Anniversary		https://www.boutreview.com/3/reports/item_148192.html
 e05031	nexus	2026-07-03	クラウドWi-Fi presents NEXUS MANIA 2026 2stROUND in 後楽園ホール 2026.07.03(Fri)		https://fighting-nexus.net/event.php?id=result-3588
 e01715	krossxover	2026-07-05	KROSS×OVER 7.5 新宿フェイス		https://www.boutreview.com/3/reports/item_148553.html
 e04462	deep	2026-07-05	宗明建設Presents DEEP 132 IMPACT	ニューピアホール	https://www.deep2001.com/deep-132-impact/
 e01089	shooto	2026-07-12	プロフェッショナル修斗公式戦広島大会『TORAO39』		https://shooto-mma.com/result/?id=268
-e01716	roots_of_martial_arts_network	2026-07-12	ROMAN5	大田区産業プラザPIO	https://gonkaku.jp/articles/24304 Sherdog
+e01716	roots_of_martial_arts_network	2026-07-12	ROMAN5	大田区産業プラザPIO	https://gonkaku.jp/articles/24304
 e01717	ryuta_sakurai	2026-07-12	RESILIENCE08	水戸リリーアリーナ	https://r-blood.com/wp-content/uploads/2026/07/RESILIENCE08%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C.pdf Sherdog
+e05202	roots_of_martial_arts_network	2026-07-12	ROMAN - Roots of Martial Arts Network 5		https://www.boutreview.com/3/reports/item_148694.html
 e01090	shooto	2026-07-13	プロフェッショナル修斗公式戦後楽園大会 『Lemino修斗.7』		https://shooto-mma.com/result/?id=285
 e04060	rizin	2026-07-18	abc presents RIZIN LANDMARK 15 in HIROSHIMA	広島グリーンアリーナ	https://jp.rizinff.com/_ct/17853329
 e05032	nexus	2026-07-19	Fighting NEXUS 狼煙～Ready To Go in NAGANO 2026		https://fighting-nexus.net/event.php?id=nexus-noroshi-2026
@@ -4008,9 +4044,9 @@ e01718	grachan	2026-07-26	GRACHANチャレンジ	大阪・176BOX	https://grachan
 e01719	krossxover	2026-07-26	KROSS×OVER 7.26 GENスポーツパレス		https://www.boutreview.com/3/reports/item_149837.html
 e04063	grachan	2026-07-26	GRACHAN83		https://grachan.jp/grachan83-result/
 e04965	krossxover	2026-07-26	宿命 24〜syukumei〜		https://krossover.jp/?p=4158
-e01092	shooto	2026-08-02	プロフェッショナル修斗公式戦『Lemino修斗~POUND OUT~』		https://shooto-mma.com/result/?id=286 Sherdog
-e01720	pound_4_pound_fighting_championship	2026-08-02	PFC 8.2 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_150072.html Sherdog
-e05051	pound_4_pound_fighting_championship	2026-08-02	P4P FC 41 - Pound For Pound FC 41		https://mmaplanet.jp/234731 https://mmaplanet.jp/234737 https://mmaplanet.jp/234742 https://mmaplanet.jp/234751
+e01092	shooto	2026-08-02	プロフェッショナル修斗公式戦『Lemino修斗~POUND OUT~』		https://shooto-mma.com/result/?id=286
+e01720	pound_4_pound_fighting_championship	2026-08-02	PFC 8.2 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_150072.html
+e05051	pound_4_pound_fighting_championship	2026-08-02	P4P FC 41 - Pound For Pound FC 41		https://www.boutreview.com/3/reports/item_150072.html
 e05041	one	2026-08-08	ONE		https://efight.jp/result-20260808_1731610
 e00417	pancrase	2026-08-09	PANCRASE BLOOD.12（東京・品川インターシティホール）	東京・品川インターシティホール	https://pancrase.co.jp/data/result/2026/0809.html
 e04065	wardog_cage_fight	2026-08-09	WCF - Wardog Cage Fight 58		https://data-mma.com/schedule/WARDOG58 Sherdog
