@@ -349,6 +349,18 @@ def weight(w):
         out = (out + '・' if out else '') + '・'.join(dict.fromkeys(rule))
     return out
 
+
+def headline(n):
+    """記事の見出しが大会名として入ってしまったものか（文章のような名前）。"""
+    n = n or ''
+    hira = len(re.findall('[ぁ-ん]', n))
+    m = re.match(r'^【[^】]*】(.*)$', n)
+    if m and len(re.findall('[ぁ-ん]', m.group(1))) > len(m.group(1)) * 0.2:
+        return True
+    return bool(re.search(r'(?:した|たい|ない|れる|せる|った|ます|だ|か|ろよ|ろう|よう)[！!？?。…]*$', n)
+                or ('、' in n and hira > len(n) * 0.2)
+                or (not re.search(r'[A-Za-zＡ-Ｚａ-ｚ]', n) and hira > len(n) * 0.3 and len(n) > 8))
+
 if __name__ == '__main__':
     for x in ['判定3-0', '判定（3-0）', '判定 3-0', '判定3－0', '判定(3-0)', '判定 3-0(梅田20-19 鶴和20-19 小池20-19)',
               '判定3-0 （30-28/30-28/30-28）', '判定0-3 (20-17 x3)', '判定:3-0 30-27 30-27 29-28', '判定3-0 ※30-27、30-27、30-27',

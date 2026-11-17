@@ -86,12 +86,12 @@ def load():
         def src(e):
             return {t for t in (e.get('sources') or '').split() if t.startswith('http')}
         def jname(e):   # 日本の資料の名前（「ROMAN - …」のような海外式の名前でないもの）を優先
-            return (bool(re.search(r'[ぁ-んァ-ヶ一-龥]', e['name'])), ' - ' not in e['name'], len(src(e)))
+            return (not methods.headline(e['name']), bool(re.search(r'[ぁ-んァ-ヶ一-龥]', e['name'])), ' - ' not in e['name'], len(src(e)))
         main = max(evs, key=jname)
         for o in evs:
             if o is main:
                 continue
-            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name']:
+            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']):
                 continue
             main_id = main['event_id']
             have = {frozenset((norm(x['fighter1']), norm(x['fighter2']))) for x in bouts[main_id]}
@@ -280,6 +280,28 @@ def main():
     ev = sorted((e for e in events.values() if bouts.get(e['event_id'])), key=lambda e: (e['date'], e['event_id']))
     ev_list = [[e['event_id'], e['date'], e['promotion'], e['name'], e.get('venue', ''),
                 [s for s in (e.get('sources') or '').split(' ') if s], len(bouts[e['event_id']])] for e in ev]
+    # 世界の団体・グラップリングの大会には、出場した日本人選手の名前を添える（一覧で見つけやすくするため）
+    abroad = set(site.get('world_promotions') or []) | set(site.get('grappling_promotions') or [])
+    in_jp = set()
+    for e in ev:
+        if e['promotion'] not in abroad:
+            for b in bouts[e['event_id']]:
+                in_jp.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
+    def is_jp(fid, n):
+        if re.search(r'[ぁ-ん一-龥々]', n or '') and not re.match(r'(?:キム|イ|パク|チェ|チョン|カン|リー|リ|ソン|ワン|チャン|ジャン|リウ|リュウ)[・･]', n):
+            return True
+        return bool(fid and fid in in_jp and re.fullmatch(r'[A-Z0-9.\-"“” ]{2,}', n or ''))
+    for row, e in zip(ev_list, ev):
+        if e['promotion'] in abroad:
+            names = []
+            for b in bouts[e['event_id']]:
+                for k in ('1', '2'):
+                    n = b[f'fighter{k}']
+                    if is_jp(b.get(f'fighter{k}_id'), n) and n not in names:
+                        names.append(n)
+            row.append(names)
+        else:
+            row.append([])
     # 団体公式のYouTube動画（data/videos.tsv：promotion, date, fighter1, fighter2, url, title, channel）
     vids = {}
     for r in read_tsv(os.path.join(DATA, 'videos.tsv')):
