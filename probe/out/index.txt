@@ -1044,3 +1044,35 @@
 34 https://gonkaku.jp/articles/15616?page=15 37657
 35 https://gonkaku.jp/articles/15616?page=16 36510
 36 https://gonkaku.jp/articles/15616?page=17 36293
+1 https://gonkaku.jp/articles/23074?page=2 50594
+2 https://gonkaku.jp/articles/23074?page=3 43003
+3 https://gonkaku.jp/articles/23074?page=4 43157
+4 https://gonkaku.jp/articles/23074?page=5 38457
+5 https://gonkaku.jp/articles/23074?page=6 37897
+6 https://gonkaku.jp/articles/23074?page=7 38468
+7 https://gonkaku.jp/articles/23074?page=8 39074
+8 https://gonkaku.jp/articles/23074?page=9 38489
+9 https://gonkaku.jp/articles/23074?page=10 38099
+10 https://gonkaku.jp/articles/23074?page=11 37899
+11 https://gonkaku.jp/articles/23074?page=12 38189
+12 https://gonkaku.jp/articles/23074?page=13 38184
+13 https://gonkaku.jp/articles/23074?page=14 39355
+14 https://gonkaku.jp/articles/23074?page=15 38768
+15 https://gonkaku.jp/articles/23074?page=16 38042
+16 https://gonkaku.jp/articles/23074?page=17 37908
+17 https://gonkaku.jp/articles/23074?page=18 37925
+18 https://gonkaku.jp/articles/23074?page=19 38806
+19 https://gladiator-osaka.com/ 
+20 https://gladiator-japan.com/ 
+21 https://gladiator.co.jp/ 
+22 https://gladiator-fc.jp/ 
+23 https://wardog-cf.com/ 
+24 https://wardogcf.com/ 
+25 https://wardog-osaka.com/ 
+26 https://wardog.co.jp/ 
+27 https://pfc-hakodate.com/ 
+28 https://pfcmma.jp/ 
+29 https://pound4pound.co.jp/ 
+30 https://acf-japan.com/ 
+31 https://a-toys.jp/ 
+32 https://atoys.co.jp/ 
