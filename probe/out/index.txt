@@ -2706,3 +2706,6 @@
 6 https://mmaplanet.jp/?s=Kingdom+Ehrgeiz 66650
 7 https://mmaplanet.jp/?s=ROFC 67879
 8 https://mmaplanet.jp/?s=MMA+License 
+1 https://mmaplanet.jp/80057 96241
+2 https://mmaplanet.jp/73709 97412
+3 https://mmaplanet.jp/53067 86047
