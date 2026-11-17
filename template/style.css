@@ -180,3 +180,5 @@ footer.ft .wrap{padding-block:26px 40px;display:flex;flex-wrap:wrap;justify-cont
 footer.ft b{font-family:var(--f-disp);font-weight:400;font-size:16px;color:var(--fg)}
 
 h2.sec{font-size:18px;margin:28px 0 8px;letter-spacing:.04em}
+a.vid{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:3px;background:#c4161c;color:#fff;font-size:11px;font-weight:700;text-decoration:none;white-space:nowrap}
+a.vid:hover{opacity:.85}

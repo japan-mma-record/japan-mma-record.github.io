@@ -22,7 +22,7 @@ function winnerLine(b){
 }
 function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
-function rtag(b){ return b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : ''; }
+function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
 function buildIndex(){

@@ -280,6 +280,16 @@ def main():
     ev = sorted((e for e in events.values() if bouts.get(e['event_id'])), key=lambda e: (e['date'], e['event_id']))
     ev_list = [[e['event_id'], e['date'], e['promotion'], e['name'], e.get('venue', ''),
                 [s for s in (e.get('sources') or '').split(' ') if s], len(bouts[e['event_id']])] for e in ev]
+    # 団体公式のYouTube動画（data/videos.tsv：promotion, date, fighter1, fighter2, url, title, channel）
+    vids = {}
+    for r in read_tsv(os.path.join(DATA, 'videos.tsv')):
+        u = r.get('url') or ''
+        if not re.match(r'https://(www\.)?(youtube\.com|youtu\.be)/', u):
+            continue
+        vids[(r.get('date', ''), frozenset((norm(r.get('fighter1')), norm(r.get('fighter2')))))] = u
+    for e in ev:
+        for b in bouts[e['event_id']]:
+            b['video'] = vids.get((e['date'], frozenset((norm(b['fighter1']), norm(b['fighter2'])))), '')
     bout_out = {}
     used = set()
     for e in ev:
@@ -288,7 +298,7 @@ def main():
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or ''])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or ''])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
@@ -348,6 +358,8 @@ def main():
                 return f'<a class="u nb" href="../f/{fid}.html">{n}</a>' if fid and fid in fout else f'<span class="nb">{n}</span>'
             unc = '<span class="unc">未確定</span>' if b.get('note') == 'uncertain' else ''
             rtag = f'<span class="unc">{html.escape(b["rule"])}・戦績に数えない</span>' if b.get('rule') else ''
+            if b.get('video'):
+                rtag += f' <a class="vid" href="{html.escape(b["video"])}" target="_blank" rel="noopener">▶ 公式動画</a>'
             rows.append(f'<tr><td class="num">{html.escape(str(b.get("match_no") or ""))}</td><td><span class="rs {"w" if res == "WIN" else "o"}">{res}</span></td>'
                         f'<td>{fl(a)}</td><td><span class="def">{"def." if res == "WIN" else "vs"}</span> {fl(c)}{unc}</td>'
                         f'<td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td><td>{html.escape(b.get("weight") or "")}</td></tr>')
