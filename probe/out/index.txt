@@ -1076,3 +1076,43 @@
 30 https://acf-japan.com/ 
 31 https://a-toys.jp/ 
 32 https://atoys.co.jp/ 
+1 https://mmaplanet.jp/?s=Gladiator003 86641
+2 https://mmaplanet.jp/?s=Gladiator012 85734
+3 https://mmaplanet.jp/?s=Gladiator016 87053
+4 https://mmaplanet.jp/?s=Gladiator017 86689
+5 https://mmaplanet.jp/?s=Gladiator018 87313
+6 https://mmaplanet.jp/?s=Gladiator021 86809
+7 https://mmaplanet.jp/?s=Gladiator023 87135
+8 https://mmaplanet.jp/?s=Gladiator024 86470
+9 https://mmaplanet.jp/?s=Gladiator025 86627
+10 https://mmaplanet.jp/?s=Gladiator026 86278
+11 https://mmaplanet.jp/?s=Gladiator028 86398
+12 https://mmaplanet.jp/?s=Gladiator029 87052
+13 https://mmaplanet.jp/?s=Gladiator034 82480
+14 https://mmaplanet.jp/?s=Gladiator035 85840
+15 https://mmaplanet.jp/?s=PFC19 66578
+16 https://mmaplanet.jp/?s=PFC20 66578
+17 https://mmaplanet.jp/?s=PFC21 68321
+18 https://mmaplanet.jp/?s=PFC22 71149
+19 https://mmaplanet.jp/?s=PFC23 74397
+20 https://mmaplanet.jp/?s=PFC25 66578
+21 https://mmaplanet.jp/?s=PFC26 66578
+22 https://mmaplanet.jp/?s=PFC27 66578
+23 https://mmaplanet.jp/?s=PFC28 66578
+24 https://mmaplanet.jp/?s=PFC29 72510
+25 https://mmaplanet.jp/?s=PFC30 74033
+26 https://mmaplanet.jp/?s=PFC31 80169
+27 https://mmaplanet.jp/?s=PFC32 72173
+28 https://mmaplanet.jp/?s=PFC33 70336
+29 https://mmaplanet.jp/?s=PFC34 68593
+30 https://mmaplanet.jp/?s=PFC35 66578
+31 https://mmaplanet.jp/?s=PFC36 72359
+32 https://mmaplanet.jp/?s=PFC37 70504
+33 https://mmaplanet.jp/?s=PFC38 68420
+34 https://mmaplanet.jp/?s=PFC39 78005
+35 https://mmaplanet.jp/?s=PFC40 78709
+36 https://mmaplanet.jp/?s=PFC41 82199
+37 https://mmaplanet.jp/?s=PFC42 79375
+38 https://mmaplanet.jp/?s=Wardog21 66599
+39 https://mmaplanet.jp/?s=Wardog22 68563
+40 https://mmaplanet.jp/?s=Wardog23 66599
