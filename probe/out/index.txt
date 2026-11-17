@@ -917,3 +917,17 @@
 28 https://gonkaku.jp/search?search%5Btype%5D=article&search%5Bword%5D=TTF 62338
 29 https://gonkaku.jp/search?search%5Btype%5D=article&search%5Bword%5D=Pound%20for%20Pound 60765
 30 https://gonkaku.jp/search?search%5Btype%5D=article&search%5Bword%5D=Pound%20for%20Pound&page=2 60765
+1 https://www.krossover.jp/ 267212
+2 https://www.krossover.jp/result/ 196
+3 https://heatofficial.com/result/ 70598
+4 https://heatofficial.com/ 86420
+5 https://mmaplanet.jp/?s=WARDOG 87357
+6 https://mmaplanet.jp/?s=GLADIATOR 86200
+7 https://mmaplanet.jp/?s=PFC 85608
+8 https://mmaplanet.jp/?s=ACF 85825
+9 https://mmaplanet.jp/?s=KROSS%C3%97OVER 68536
+10 https://mmaplanet.jp/169507 96365
+11 https://mmaplanet.jp/tag/wardog 73110
+12 https://mmaplanet.jp/tag/gladiator 87556
+13 https://miruhon.net/158961 151741
+14 https://miruhon.net/?s=ACF 195184
