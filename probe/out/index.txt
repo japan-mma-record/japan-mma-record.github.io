@@ -15,3 +15,31 @@
 4 https://ja.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=%E6%9C%9D%E5%80%89%E6%9C%AA%E6%9D%A5 98523
 5 https://ja.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=%E6%A1%9C%E5%BA%AD%E5%92%8C%E5%BF%97 139000
 6 https://ja.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&redirects=1&titles=%E9%9D%92%E6%9C%A8%E7%9C%9F%E4%B9%9F 141708
+1 http://www.zst.jp/ 1410
+2 https://zst.jp/ 49326
+3 http://www.zst.jp/result/ 1410
+4 https://gbring.com/sokuho/result/result2012_10/ 199
+5 https://gbring.com/sokuho/result/ 199
+6 https://gbring.com/ 25255
+7 https://efight.jp/?s=ZST 68211
+8 https://www.boutreview.com/ 174
+9 https://gladiator-mma.com/ 21027
+10 https://www.gladiator-mma.jp/ 440405
+11 http://gladiator-mma.jp/ 352727
+12 https://nexus-mma.com/ 
+13 https://www.nexus-fight.com/ 
+14 https://wardog-mma.com/ 
+15 http://www.wardog.jp/ 31441
+16 https://pound4pound.jp/ 
+17 https://p4p-fc.com/ 
+18 https://krossxover.com/ 
+19 https://www.krossxover.jp/ 
+20 https://www.atoys.jp/ 
+21 https://heat-official.com/ 952688
+22 http://www.heat-fight.com/ 
+23 https://www.rings.co.jp/ 207
+24 https://www.shooto-mma.com/result/ 146295
+25 https://www.shooto.jp/ 239
+26 https://battle-news.com/?s=GLADIATOR 159704
+27 https://www.tenkaichi-fight.com/ 
+28 https://brave-fight.com/ 
