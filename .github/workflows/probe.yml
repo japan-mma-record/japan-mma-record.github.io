@@ -1,7 +1,7 @@
-name: probe
+name: probe-euro
 on:
   push:
-    branches: [probe]
+    branches: [probe-euro]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
