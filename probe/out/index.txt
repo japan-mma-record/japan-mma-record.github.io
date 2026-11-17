@@ -178,3 +178,17 @@
 30 https://fighting-nexus.net/event.php?id=kawagoe2026 60115
 31 https://fighting-nexus.net/event.php?id=nexus45 26362
 32 https://fighting-nexus.net/event.php?id=bayside-battle-yokosuka-2026 74324
+1 https://efight.jp/result?2015&03 141188
+2 https://efight.jp/result?2013&02 141764
+3 https://efight.jp/result?2018&05 144778
+4 https://battle-news.com/?p=94603 157496
+5 https://battle-news.com/?p=94670 140919
+6 https://battle-news.com/?p=118224 168457
+7 https://battle-news.com/?p=130606 169606
+8 https://battle-news.com/?p=133042 179559
+9 https://battle-news.com/?p=136632 163545
+10 https://battle-news.com/?p=139813 162895
+11 https://battle-news.com/?p=149626 158019
+12 https://battle-news.com/tag/gladiator/page/2 142258
+13 https://battle-news.com/tag/wardog/page/2 120511
+14 https://gonkaku.jp/articles/12964 41933
