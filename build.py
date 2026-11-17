@@ -213,6 +213,13 @@ def merge_fighters(events, bouts, fighters):
                         b[f'fighter{k}_id'] = MERGED.get(hit, hit)
 
 
+def team_html(ts):
+    if not ts:
+        return ''
+    rows = ''.join(f'<tr><td>{html.escape(t[0])}</td><td>{html.escape(t[1])}</td><td>{html.escape(t[2])}</td></tr>' for t in ts)
+    return f'<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>{rows}</tbody></table></div>'
+
+
 def pname(promos, p):
     r = promos.get(p)
     return r['name'] if r and r.get('name') else p.replace('_', ' ').upper()
@@ -287,6 +294,18 @@ def main():
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
     meta = {'built': site['built'], 'plabel': {p: pname(promos, p) for p in {e['promotion'] for e in ev}},
             'listed': [p for p, r in promos.items() if r.get('main')]}
+    # 団体戦のチームとメンバー（data/teams.tsv）
+    teams = collections.defaultdict(list)
+    by_dn = {}
+    for e in ev:
+        by_dn.setdefault((e['date'], methods.event_name(e['name'])), e['event_id'])
+        by_dn.setdefault(('', methods.event_name(e['name'])), e['event_id'])
+    for r in read_tsv(os.path.join(DATA, 'teams.tsv')):
+        nm = methods.event_name(r.get('event_name_ja'))
+        eid = by_dn.get((r.get('date', ''), nm)) or by_dn.get(('', nm))
+        if eid:
+            teams[eid].append([r.get('team', ''), r.get('members', ''), r.get('result', '')])
+    meta['teams'] = teams
     upcoming = []
     up_path = os.path.join(DATA, 'upcoming.json')
     if os.path.exists(up_path):
@@ -339,6 +358,7 @@ def main():
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#p-{e["promotion"].replace("_", "-")}">{html.escape(pn)}</a></p>'
                 f'<div class="ph"><div><span class="badge">{html.escape(pn)}</span><h1>{html.escape(e["name"])}</h1><p class="sub">{html.escape(e["date"])}　{html.escape(e.get("venue") or "")}</p></div></div>'
                 f'<div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+                + team_html(teams.get(eid)) +
                 f'<p class="src">出典：{src_html}</p></main>' + foot(site, len(ev_list), n_b))
         with open(os.path.join(OUT, 'e', f'{eid}.html'), 'w', encoding='utf-8') as fp:
             fp.write(page)

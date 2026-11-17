@@ -178,3 +178,5 @@ tr:hover td{background:var(--hover)}
 footer.ft{margin-top:72px;border-top:1px solid var(--line)}
 footer.ft .wrap{padding-block:26px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--fg3)}
 footer.ft b{font-family:var(--f-disp);font-weight:400;font-size:16px;color:var(--fg)}
+
+h2.sec{font-size:18px;margin:28px 0 8px;letter-spacing:.04em}

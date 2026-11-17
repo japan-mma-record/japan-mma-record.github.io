@@ -20,6 +20,8 @@ function winnerLine(b){
   const t = b[5]==='d' ? '引き分け' : b[5]==='nc' ? '無効試合' : '勝敗不明';
   return `${esc(b[2])}<span class="def">　vs　</span>${esc(b[4])}<span class="def">　${t}</span>${u}`;
 }
+function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
+  return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
 function rtag(b){ return b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : ''; }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
@@ -98,7 +100,7 @@ function vEvent(k){
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div>
     <div class="kpis"><div><p class="k">試合</p><p class="v">${mb.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>
     <div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>${rows}</tbody></table></div>
-    <p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
+    ${teamTbl(k)}<p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
 }
 function vFighter(id){
   const f = D.fighters[id]; if(!f) return notFound(); buildIndex();
