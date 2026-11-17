@@ -234,7 +234,8 @@ def _ko(t):
 
 
 def tidy(m):
-    m = _alias((m or '').strip())
+    m = re.sub(r'<!--.*?(?:-->|$)', '', m or '', flags=re.S)   # Wikipediaの注釈コメントは載せない
+    m = _alias(m.strip())
     t = unicodedata.normalize('NFKC', m)
     for f in (_nc, _draw, _tko, _ko):
         r = f(t)
@@ -278,6 +279,18 @@ def event_name(n):
     if m:
         n = f'{m.group(1)}.{m.group(2)}'
     return n
+
+
+# 出典：海外の記録サイトの名前・住所は載せず、「海外の記録サイト」とだけ書く
+OVERSEAS = '海外の記録サイト'
+
+
+def clean_sources(src):
+    toks = [t for t in (src or '').split(' ') if t]
+    keep = [t for t in toks if not re.search(r'(?i)sherdog|tapology', t) and t != OVERSEAS]
+    if len(keep) < len(toks) or OVERSEAS in toks:
+        keep.append(OVERSEAS)
+    return ' '.join(keep)
 
 if __name__ == '__main__':
     for x in ['判定3-0', '判定（3-0）', '判定 3-0', '判定3－0', '判定(3-0)', '判定 3-0(梅田20-19 鶴和20-19 小池20-19)',

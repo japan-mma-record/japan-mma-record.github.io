@@ -33,7 +33,8 @@ def norm(s):
 
 
 def plain(s):
-    s = re.sub(r'<br\s*/?>', ' ', s or '')
+    s = re.sub(r'<!--.*?(?:-->|$)', '', s or '', flags=re.S)
+    s = re.sub(r'<br\s*/?>', ' ', s)
     s = re.sub(r'<ref[^>]*>.*?</ref>|<ref[^>]*/>', '', s, flags=re.S)
     s = re.sub(r'\{\{仮リンク\|([^|}]*)\|[^}]*\}\}', r'\1', s)
     s = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]*)\]\]', r'\1', s)

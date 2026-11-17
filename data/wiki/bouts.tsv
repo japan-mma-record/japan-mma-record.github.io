@@ -117,7 +117,7 @@ f00003	1996-07-22	loss	高橋義生	15分終了 判定（ポイント0-1）	PANC
 f00003	1996-09-07	loss	ガイ・メッツァー	20分終了 判定0-3	PANCRASE TOUR 1996 TRUTH
 f00003	1996-10-08	win	セーム・シュルト	0:51 アンクルホールド	PANCRASE TOUR 1996 TRUTH
 f00003	1996-10-22	draw	伊藤崇文	10分終了 判定0-0	PANCRASE TOUR 1996 TRUTH
-f00003	1996-12-15	win	ジャック・マクグローリン	0:51 リバースバイパーホールド<!--変形肩固め-->	PANCRASE TOUR 1996 TRUTH
+f00003	1996-12-15	win	ジャック・マクグローリン	0:51 リバースバイパーホールド	PANCRASE TOUR 1996 TRUTH
 f00003	1997-01-17	win	キム・ジョンワン	1:47 アンクルホールド	PANCRASE 1997 ALIVE TOUR
 f00003	1997-02-22	win	ポール・レイゼンビー	12:39 TKO（ポイントアウト）	PANCRASE 1997 ALIVE TOUR
 f00003	1997-03-22	win	山宮恵一郎	10分終了 判定（ポイント1-0）	PANCRASE 1997 ALIVE TOUR
@@ -450,12 +450,12 @@ f00032	1998-05-12	loss	山宮恵一郎	10分+延長R 1:35 TKO（膝蹴り）	PAN
 f00032	1998-06-21	win	石井大輔	10分+延長3分終了 判定3-0	PANCRASE 1998 ADVANCE TOUR
 f00032	1998-11-29	win	渡辺大介	10分+延長3分終了 判定3-0	PANCRASE 1998 ADVANCE TOUR
 f00032	1999-01-19	win	稲垣克臣	10分終了 判定2-0	PANCRASE 1999 BREAKTHROUGH TOUR
-f00032	1999-02-11	draw	渋谷修身	10分+延長3分終了 判定0-0<!--ロストポイントなし-->	PANCRASE 1999 BREAKTHROUGH TOUR
+f00032	1999-02-11	draw	渋谷修身	10分+延長3分終了 判定0-0	PANCRASE 1999 BREAKTHROUGH TOUR
 f00032	1999-03-09	loss	セーム・シュルト	1:45 肩固め	PANCRASE 1999 BREAKTHROUGH TOUR
 f00032	1999-05-23	win	石井大輔	10分終了 判定3-0	PANCRASE 1999 BREAKTHROUGH TOUR
-f00032	1999-06-11	draw	柳澤龍志	10分+延長3分終了 判定0-1<!--ロストポイントなし-->	PANCRASE 1999 BREAKTHROUGH TOUR
+f00032	1999-06-11	draw	柳澤龍志	10分+延長3分終了 判定0-1	PANCRASE 1999 BREAKTHROUGH TOUR
 f00032	1999-07-06	loss	菊田早苗	10分+延長3分終了 判定0-3	PANCRASE 1999 BREAKTHROUGH TOUR
-f00032	1999-08-01	draw	クリス・ライトル	10分+延長3分終了 判定0-0<!--ロストポイントなし-->	PANCRASE 1999 BREAKTHROUGH TOUR
+f00032	1999-08-01	draw	クリス・ライトル	10分+延長3分終了 判定0-0	PANCRASE 1999 BREAKTHROUGH TOUR
 f00032	1999-09-04	win	渡辺大介	10分終了 判定3-0	PANCRASE 1999 BREAKTHROUGH TOUR
 f00032	1999-11-28	draw	ショーニー・カーター	15分終了 時間切れ	PANCRASE 1999 BREAKTHROUGH TOUR 【パンクラチオンマッチ】
 f00032	2001-08-25	win	柴田寛	2R 1:22 アンクルホールド	PANCRASE 2001 PROOF TOUR
@@ -613,7 +613,7 @@ f00037	1995-04-07	win	ジョン・ダウディ	1R 2:02 TKO（パンチ連打）	
 f00037	1995-07-23	win	ジョン・レンフロー	7:25 アームバー	パンクラス 1995 EYES OF BEAST
 f00037	1995-09-01	loss	船木誠勝	6:46 アキレス腱固め	パンクラス 1995 EYES OF BEAST
 f00037	1995-11-04	draw	柳澤龍志	10分終了 判定0-0	パンクラス 1995 EYES OF BEAST
-f00037	1995-12-14	nc	鈴木みのる	7:15 無効試合<!--（ドクターストップ）-->	パンクラス 1995 EYES OF BEAST
+f00037	1995-12-14	nc	鈴木みのる	7:15 無効試合	パンクラス 1995 EYES OF BEAST
 f00037	1996-01-28	win	グレゴリー・スミット	10分終了 判定（ポイント2-0）	PANCRASE TOUR 1996 TRUTH
 f00037	1996-03-02	loss	バス・ルッテン	19:16 アンクルホールド	PANCRASE TOUR 1996 TRUTH
 f00037	1996-04-07	win	冨宅飛駈	10分終了 判定3-0	PANCRASE TOUR 1996 TRUTH 【ランキングトーナメント 1回戦】
@@ -654,7 +654,7 @@ f00037	2001-09-24	loss	ヒカルド・アローナ	3R（10分/5分/5分）終了
 f00037	2002-09-29	win	山本憲尚	3R（10分/5分/5分）終了 判定3-0	PRIDE.22
 f00037	2002-12-23	loss	アントニオ・ホジェリオ・ノゲイラ	3R（10分/5分/5分）終了 判定1-2	PRIDE.24
 f00037	2003-12-06	win	ダニエル・バーグマン	2R 1:46 TKO（パンチ連打）	European Vale Tudo 1: Genesis
-f00040	1996-01-28	win	伊藤崇文	2:21 TKO（レフェリーストップ<!--フロントチョーク-->）	PANCRASE TOUR 1996 TRUTH
+f00040	1996-01-28	win	伊藤崇文	2:21 TKO（レフェリーストップ）	PANCRASE TOUR 1996 TRUTH
 f00040	1996-03-02	win	渋谷修身	10分終了 判定（ポイント1-0）	PANCRASE TOUR 1996 TRUTH
 f00040	1996-05-16	draw	國奥麒樹真	10分終了 判定0-1	PANCRASE TOUR 1996 TRUTH
 f00040	1996-06-25	win	鈴木みのる	15分終了 判定（ポイント1-0）	PANCRASE TOUR 1996 TRUTH
@@ -1088,7 +1088,7 @@ f00064	1998-11-29	win	長谷川悟史	2:43 腕ひしぎ十字固め	PANCRASE 199
 f00064	1999-01-19	win	渡辺大介	3:18 腕ひしぎ十字固め	PANCRASE 1999 BREAKTHROUGH TOUR
 f00064	1999-02-11	win	石井大輔	10分終了 判定2-0	PANCRASE 1999 BREAKTHROUGH TOUR
 f00064	1999-03-09	win	窪田幸生	10分終了 判定3-0	PANCRASE 1999 BREAKTHROUGH TOUR
-f00064	1999-04-08	draw	山崎進	15分終了 時間切れ<!--判定なし-->	大道塾「格闘空手 DREAM1999 THE WARS 5」
+f00064	1999-04-08	draw	山崎進	15分終了 時間切れ	大道塾「格闘空手 DREAM1999 THE WARS 5」
 f00064	1999-05-23	draw	渋谷修身	10分+延長3分終了 判定0-0	PANCRASE 1999 BREAKTHROUGH TOUR
 f00064	1999-06-11	loss	ジェイソン・デルーシア	10分終了 判定0-3	PANCRASE 1999 BREAKTHROUGH TOUR
 f00064	1999-08-01	win	渡辺大介	4:28 三角絞め	PANCRASE 1999 BREAKTHROUGH TOUR 【ネオブラッド・トーナメント 準決勝】
@@ -1170,7 +1170,7 @@ f00064	2012-12-31	win	ボア・ブラトブズ	1R 3:18 ヒールホールド	INO
 f00064	2013-04-13	loss	ソン・ヘソク	3R 0:55 TKO（スタンドパンチ連打）	ROAD FC 11
 f00064	2013-10-12	win	キム・フン	1R KO（右フック）	ROAD FC 13
 f00064	2013-12-31	win	澤田敦士	1R 3:47 TKO（サッカーボールキック）	IGF INOKI BOM-BA-YE 2013
-f00064	2014-04-05	win	ヨーラン・ウルフ	1R 2:26 裏アキレス腱固め<!--IGF公式記録-->	INOKI GENOME FIGHT 1
+f00064	2014-04-05	win	ヨーラン・ウルフ	1R 2:26 裏アキレス腱固め	INOKI GENOME FIGHT 1
 f00064	2014-05-31	loss	パク・ジョンギョ	1R 4:42 KO（左ストレート）	ROAD FC 15
 f00064	2014-08-23	loss	鈴川真一	2R 0:59 TKO（タオル投入）	INOKI GENOME FIGHT 2
 f00064	2015-04-11	loss	オリィ・トンプソン	5分2R終了 判定0-3	INOKI GENOME FIGHT 3 【IGF WORLD GP 2015 1回戦】
@@ -1579,7 +1579,7 @@ f00105	1997-04-18	win	デイブ・メネー	15分1R終了 判定2-1	Extreme Chal
 f00105	1998-02-14	win	トッド・テイラー	チョークスリーパー	Combat Fighting
 f00105	1998-03-06	win	ショーン・ブロックモール	1R 6:04 サイドチョーク	Indiana Martial Arts Challenge 1 【ウェルター級トーナメント 1回戦】
 f00105	1998-03-06	win	ジェームス・クリンガーマン	15分1R終了 判定	Indiana Martial Arts Challenge 1 【ウェルター級トーナメント 決勝】
-f00105	1998-03-26	win	ジェシー・ジョーンズ	1R 2:59 ギブアップ<!--Frustration-->	Extreme Challenge 16
+f00105	1998-03-26	win	ジェシー・ジョーンズ	1R 2:59 ギブアップ	Extreme Challenge 16
 f00105	1998-06-05	win	クリス・デイヴィス	チョークスリーパー	Tropicana D'Cache Club Fights
 f00105	1998-08-22	draw	デイブ・メネー	20分1R終了 引き分け	Extreme Challenge 20
 f00105	1998-10-21	win	ロバート・マスコ	5分3R終了 判定	Extreme Brawl 1
@@ -1894,7 +1894,7 @@ f00126	2001-12-16	win	西良典	5分2R終了 判定	Kushima's Fight 1
 f00126	2002-01-27	loss	渋谷修身	2R 0:46 ヒールホールド	PANCRASE 2002 SPIRIT TOUR
 f00126	2002-05-12	win	鶴巻伸洋	5分2R終了 判定40-35	ORG the 2nd
 f00126	2002-06-09	loss	窪田幸生	5分2R終了 判定0-3	DEEP2001 5th IMPACT in DIFFER ARIAKE 【ミドル級1DAYトーナメント 1回戦】
-f00126	2002-09-08	win	佐藤光芳	5分2R終了 判定3-0	DEMOLITION<!--旗揚げ戦-->
+f00126	2002-09-08	win	佐藤光芳	5分2R終了 判定3-0	DEMOLITION
 f00126	2002-10-13	win	中村大介	5分2R終了 判定3-0	DEMOLITION
 f00126	2002-10-20	win	デミトリウス・ジョウラコス	5分2R終了 判定3-0	THE BEST Vol.3
 f00126	2003-01-31	win	ガリ・スロソ	1R 1:45 チョークスリーパー	TPI Fighting Championship 11
@@ -2000,9 +2000,9 @@ f00135	2011-05-28	loss	ジェシー・テイラー	1R 1:57 リアネイキドチ
 f00135	2011-07-24	loss	ウィ・スンベ	2R 3:58 TKO（膝蹴り）	ROAD FC 003: Explosion
 f00135	2011-12-03	loss	大山峻護	1R 3:40 TKO（膝蹴り）	ROAD FC 005: Night of Champions 【ミドル級王座決定トーナメント 1回戦】
 f00135	2012-06-16	win	ソン・ヘソク	1R 4:57 KO（パンチ連打）	ROAD FC 008: Bitter Rivals
-f00135	2012-12-31	loss	メルヴィン・マヌーフ	1R 0:50 TKO（ボディへの膝蹴り）<!--DREAM公式記録-->	DREAM.18 & GLORY 4 〜大晦日 SPECIAL 2012〜
+f00135	2012-12-31	loss	メルヴィン・マヌーフ	1R 0:50 TKO（ボディへの膝蹴り）	DREAM.18 & GLORY 4 〜大晦日 SPECIAL 2012〜
 f00137	1996-03-30	loss	桜井隆多	3分2R終了 判定	ザ・トーナメント・オブ・J '96 【1回戦】
-f00137	1996-10-11	loss	デビッド・パルヒ	1R 0:55 TKO（タオル投入<!--マウントパンチ-->）	SuperBrawl 2 【ミドル級トーナメント 1回戦】
+f00137	1996-10-11	loss	デビッド・パルヒ	1R 0:55 TKO（タオル投入）	SuperBrawl 2 【ミドル級トーナメント 1回戦】
 f00137	1997-04-06	win	ダニエル・コニアン	1R 0:44 TKO（パンチ連打）	修斗
 f00137	1999-07-16	loss	佐藤耕平	1R 4:05 TKO（パンチ連打）	III 修斗 the Renaxis 1999
 f00137	1999-11-19	loss	山本喧一	1R 4:15 膝十字固め	UFC 23: Ultimate Japan 2 【ミドル級トーナメント 決勝】
@@ -2072,7 +2072,7 @@ f00139	2008-11-01	win	横田一則	3R終了 判定3-0	戦極 〜第六陣〜 【
 f00139	2009-01-04	win	五味隆典	1R 1:41 アキレス腱固め	戦極の乱2009 【戦極ライト級チャンピオンシップ】
 f00139	2009-06-07	win	坂口征夫	1R 1:26 アキレス腱固め	PANCRASE 2009 CHANGING TOUR
 f00139	2009-08-02	loss	廣田瑞人	4R 2:50 TKO（グラウンドの膝蹴り）	戦極 〜第九陣〜 【戦極ライト級チャンピオンシップ】
-f00139	2009-11-07	loss	ホルヘ・マスヴィダル	2R 3:23 TKO（パウンド）<!--SRC公式記録-->	戦極 〜第十一陣〜
+f00139	2009-11-07	loss	ホルヘ・マスヴィダル	2R 3:23 TKO（パウンド）	戦極 〜第十一陣〜
 f00139	2010-06-05	win	ジョージ・ホドリゲス	5分3R終了 判定3-0	PANCRASE 2010 PASSION TOUR
 f00139	2010-10-03	win	弘中邦佳	2R 4:22 フロントチョーク	PANCRASE 2010 PASSION TOUR
 f00139	2011-04-22	win	中尾受太郎	5分3R終了 判定3-0	DEEP 53 IMPACT 〜小路晃引退興行〜
@@ -2502,7 +2502,7 @@ f00169	2010-03-07	win	ディエゴ・ゴンザレス	5分3R終了 判定3-0	SRC1
 f00169	2010-08-22	loss	ジャダンバ・ナラントンガラグ	5分3R終了 判定0-3	SRC14
 f00169	2012-02-18	loss	中村大介	5分3R終了 判定0-3	DEEP 57 IMPACT 〜12年目の現実〜
 f00169	2012-05-04	loss	マイケル・チャンドラー	1R 0:56 TKO（パウンド）	Bellator 67
-f00169	2013-04-26	loss	"奥野""轟天""泰舗"	2R 2:07 TKO（左フック）<!--DEEP公式記録-->	DEEP 62 IMPACT
+f00169	2013-04-26	loss	"奥野""轟天""泰舗"	2R 2:07 TKO（左フック）	DEEP 62 IMPACT
 f00169	2013-11-24	draw	岡野裕城	5分3R終了 判定1-1	DEEP CAGE IMPACT 2013 in TDC HALL
 f00169	2014-05-01	win	エドゥアルド・ギャルボン	3R 4:58 肩固め	The Hill Fighters 1
 f00169	2014-07-12	win	アンドレ・ジ・ジェズス	5分3R終了 判定2-1	The Hill Fighters 2
@@ -2541,7 +2541,7 @@ f00178	1997-01-19	loss	マイケル・パチョリック	1R 1:26 ギブアップ
 f00178	1998-09-18	loss	佐々木有生	5分2R終了 判定0-3	修斗 下北沢修斗劇場 第1弾 Shooter's Dream
 f00178	1999-01-27	loss	桜井隆多	1R 0:54 TKO（カット）	修斗 下北沢修斗劇場 第2弾 Shooter's Soul
 f00178	1999-08-25	loss	竹内出	5分2R終了 判定0-3	修斗 SHOOTO GIG '99
-f00178	2001-08-25	loss	渡辺大介	2R 0:17 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2001 PROOF TOUR
+f00178	2001-08-25	loss	渡辺大介	2R 0:17 KO（パウンド）	PANCRASE 2001 PROOF TOUR
 f00178	2002-05-15	loss	久松勇二	5分2R終了 判定35-40	ORG the 2nd
 f00178	2003-01-26	loss	中村大介	1R 2:06 腕ひしぎ十字固め	DEMOLITION 030126
 f00178	2003-06-29	loss	花田和弘	1R 2:53 TKO（カット）	DEMOLITION 030629
@@ -2612,7 +2612,7 @@ f00183	2005-11-04	draw	ポール・ロドリゲス	5分3R終了 判定0-1	PANCRA
 f00183	2006-01-26	loss	石毛大蔵	5分3R終了 判定0-2	PANCRASE 2006 BLOW TOUR
 f00183	2006-07-28	loss	カーロス・コンディット	3R 1:01 TKO（ドクターストップ：口唇負傷）	PANCRASE 2006 BLOW TOUR
 f00183	2006-10-25	win	キム・インソク	1R 2:31 KO（右フック）	PANCRASE 2006 BLOW TOUR
-f00183	2006-12-10	win	野沢洋之	1R 4:53 KO（右フック）<!--パンクラス公式記録-->	PANCRASE 2006 BLOW TOUR
+f00183	2006-12-10	win	野沢洋之	1R 4:53 KO（右フック）	PANCRASE 2006 BLOW TOUR
 f00183	2007-05-30	loss	井上克也	2R 2:45 KO（左ストレート）	PANCRASE 2007 RISING TOUR 【ウェルター級王座次期挑戦者決定戦】
 f00183	2007-08-25	win	クリス・エイド	3R 0:44 KO（左フック）	BodogFight: Vancouver
 f00183	2007-12-09	win	カレン・ダラベドヤン	5分3R終了 判定3-0	PFP: Ring of Fire
@@ -2651,7 +2651,7 @@ f00185	2004-11-03	win	勝村周一朗	1R 0:38 ギロチンチョーク	ZST-GP2 �
 f00185	2004-11-20	loss	ダリウス・スクリアウディス	5分2R終了 判定0-3	Shooto Lithuania: Bushido」
 f00185	2005-01-23	loss	大石真丈	延長R終了 判定1-2	ZST-GP2 ファイナルステージ 【フェザー級トーナメント 準決勝】
 f00185	2005-04-07	win	エリカス・ペトライティス	判定	Shooto Lithuania: Chaosas
-f00185	2005-07-06	win	アレッシャンドリ・フランカ・ノゲイラ	延長R 0:08 TKO（右バックブロー）<!--HERO'S公式記録-->	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
+f00185	2005-07-06	win	アレッシャンドリ・フランカ・ノゲイラ	延長R 0:08 TKO（右バックブロー）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
 f00185	2005-09-07	loss	宇野薫	5分2R終了 判定0-3	HERO'S 2005 ミドル級世界最強王者決定トーナメント準決勝 【ミドル級トーナメント 準々決勝】
 f00185	2005-10-12	win	ガブリエル・リムレイ	1R 1:12 三角絞め	K-1 WORLD MAX 2005 〜世界王者対抗戦〜
 f00185	2005-12-31	draw	ホイス・グレイシー	10分2R終了 時間切れ	K-1 PREMIUM 2005 Dynamite!!
@@ -2672,7 +2672,7 @@ f00185	2008-09-23	loss	山本篤	2R（10分/5分）終了 判定0-3	DREAM.6 ミ�
 f00185	2008-12-31	loss	中村大介	1R 2:43 腕ひしぎ十字固め	Dynamite!! 〜勇気のチカラ2008〜
 f00185	2009-04-05	loss	DJ.taiki	2R（10分/5分）終了 判定0-3	DREAM.8 ウェルター級グランプリ2009 開幕戦 【フェザー級グランプリ 1回戦】
 f00185	2009-05-26	win	エイブル・カラム	2R 1:38 チョークスリーパー	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【フェザー級グランプリ 2回戦】
-f00185	2009-10-06	loss	高谷裕之	2R 0:32 KO（パウンド）<!--DREAM公式記録-->	DREAM.11 フェザー級グランプリ2009 決勝戦 【フェザー級グランプリ 準決勝】
+f00185	2009-10-06	loss	高谷裕之	2R 0:32 KO（パウンド）	DREAM.11 フェザー級グランプリ2009 決勝戦 【フェザー級グランプリ 準決勝】
 f00185	2009-12-31	win	キム・ジョンマン	5分3R終了 判定3-0	Dynamite!! 〜勇気のチカラ2009〜
 f00185	2010-05-29	loss	"西浦""ウィッキー""聡生"	1R 2:51 TKO（右フック→パウンド）	DREAM.14
 f00185	2010-09-25	loss	ヨアキム・ハンセン	1R 2:48 三角絞め	DREAM.16
@@ -2681,8 +2681,8 @@ f00185	2011-05-29	win	前田吉朗	2R 0:43 TKO（タオル投入）	DREAM JAPAN 
 f00185	2011-05-29	win	山本篤	2R（10分/5分）終了 判定2-1	DREAM JAPAN GP -2011バンタム級日本トーナメント- 【バンタム級日本トーナメント 準決勝】
 f00185	2011-07-16	win	今成正和	2R（10分/5分）終了 判定3-0	【バンタム級日本トーナメント 決勝】
 f00185	2011-09-24	loss	アントニオ・バヌエロス	5分3R終了 判定1-2	DREAM.17 【バンタム級世界トーナメント 1回戦】
-f00185	2011-12-31	loss	ユサップ・サーデュラエフ	1R 0:42 TKO（バスター）<!--DREAM公式記録-->	元気ですか!! 大晦日!! 2011 【バンタム級世界トーナメント リザーブマッチ】
-f00185	2012-12-24	win	佐藤ルミナ	1R 0:39 KO（パウンド）<!--VTJ公式記録-->	VTJ 1st
+f00185	2011-12-31	loss	ユサップ・サーデュラエフ	1R 0:42 TKO（バスター）	元気ですか!! 大晦日!! 2011 【バンタム級世界トーナメント リザーブマッチ】
+f00185	2012-12-24	win	佐藤ルミナ	1R 0:39 KO（パウンド）	VTJ 1st
 f00185	2013-06-22	win	テイラー・マコーストン	2R 2:34 ヒールホールド	VTJ 2nd
 f00185	2013-10-05	loss	ウィル・カンプザーノ	5分3R終了 判定1-2	VTJ 3rd
 f00185	2014-07-13	loss	ビクター・ヘンリー	2R 3:52 TKO（右フック→パウンド）	GRANDSLAM -Way of the Cage-
@@ -2815,7 +2815,7 @@ f00199	2008-12-22	win	北田俊亮	2R 2:51 TKO（バックマウントパンチ�
 f00199	2009-08-23	loss	大塚隆史	5分3R終了 判定0-5	DEEP 43 IMPACT 【DEEPフェザー級タイトルマッチ】
 f00199	2011-10-15	win	山崎剛	5分2R終了 判定3-0	GRABAKA LIVE! 1st CAGE ATTACK
 f00201	2002-05-11	loss	KEI山宮	1R 3:51 TKO（スタンドパンチ連打）	PANCRASE 2002 SPIRIT TOUR
-f00201	2002-09-08	loss	小島正也	5分2R終了 判定0-3	DEMOLITION<!--旗揚げ戦-->
+f00201	2002-09-08	loss	小島正也	5分2R終了 判定0-3	DEMOLITION
 f00201	2003-01-26	loss	石川英司	5分2R終了 判定0-3	PANCRASE 2003 HYBRID TOUR
 f00201	2003-02-09	win	似田貝旭	2R 1:31 ヒールホールド	DEMOLITION
 f00201	2003-05-01	loss	井上克也	5分2R終了 判定0-3	DEMOLITION
@@ -3171,7 +3171,7 @@ f00237	2008-07-05	loss	パトリック・コーテ	5分3R終了 判定1-2	UFC 86
 f00237	2009-04-01	win	マット・ホーウィッチ	5分3R終了 判定3-0	UFC Fight Night: Condit vs. Kampmann
 f00237	2009-08-08	win	ケンドール・グローブ	5分3R終了 判定3-0	UFC 101: Declaration
 f00237	2010-03-27	win	マット・ブラウン	2R 3:30 チョークスリーパー	UFC 111: St-Pierre vs. Hardy
-f00237	2010-08-07	loss	マット・ヒューズ	1R 3:15 変形アナコンダチョーク<!--デーブ・シュルツ・フロントヘッドロック-->	UFC 117: Silva vs. Sonnen
+f00237	2010-08-07	loss	マット・ヒューズ	1R 3:15 変形アナコンダチョーク	UFC 117: Silva vs. Sonnen
 f00237	2010-12-11	win	TJ・グラント	5分3R終了 判定3-0	UFC 124: St-Pierre vs. Koscheck 2
 f00237	2011-03-19	loss	マイク・パイル	5分3R終了 判定0-3	UFC 128: Shogun vs. Jones
 f00239	2002-11-30	loss	鈴木みのる	1R 1:48 チョークスリーパー	パンクラス PANCRASE 2002 SPIRIT TOUR
@@ -3341,7 +3341,7 @@ f00271	2003-08-31	win	國奥麒樹真	5分3R終了 判定3-0	PANCRASE 2003 HYBRI
 f00271	2004-10-14	win	"桜井""マッハ""速人"	2R 1:02 腕ひしぎ十字固め	PRIDE 武士道 -其の伍-
 f00271	2005-05-22	loss	郷野聡寛	2R（10分/5分）終了 判定0-3	PRIDE 武士道 -其の七-
 f00271	2005-08-05	loss	メルヴィン・マヌーフ	1R 9:12 TKO（パウンド）	【ライトヘビー級トーナメント 準々決勝】
-f00272	1997-03-22	loss	クリストファー・ヘイズマン	1R 2:47 ギブアップ<!--Chin to the Eye-->	Caged Combat 1: Australian Ultimate Fighting
+f00272	1997-03-22	loss	クリストファー・ヘイズマン	1R 2:47 ギブアップ	Caged Combat 1: Australian Ultimate Fighting
 f00272	1997-03-22	win	マチュー・ロッカ	1R 0:41 TKO（パンチ連打）	Caged Combat 1: Australian Ultimate Fighting
 f00272	1997-10-14	loss	田村潔司	10:11 ストレートアームバー	リングス Battle Genesis Vol.2
 f00272	1997-11-16	win	ケビン・マッコナキー	1R TKO	Australia Vale Tudo 【ヘビー級トーナメント 1回戦】
@@ -3597,11 +3597,11 @@ f00300	2003-05-01	win	金井一朗	5分2R終了 判定3-0	DEMOLITION
 f00300	2003-12-27	win	港太郎	5分2R終了 判定3-0	DEMOLITION
 f00300	2004-02-06	loss	石川英司	5分2R終了 判定0-2	PANCRASE 2004 BRAVE TOUR
 f00300	2004-04-23	win	金井一朗	5分2R終了 判定2-0	PANCRASE 2004 BRAVE TOUR
-f00300	2004-06-22	win	佐藤光留	1R 3:53 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2004 BRAVE TOUR
+f00300	2004-06-22	win	佐藤光留	1R 3:53 KO（パウンド）	PANCRASE 2004 BRAVE TOUR
 f00300	2004-09-24	win	和田拓也	5分3R終了 判定3-0	PANCRASE 2004 BRAVE TOUR
 f00300	2004-11-07	win	北岡悟	5分3R終了 判定3-0	PANCRASE 2004 BRAVE TOUR
-f00300	2005-02-04	win	ヒース・シムズ	1R 4:40 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2005 SPIRAL TOUR 【ウェルター級王者決定トーナメント 1回戦】
-f00300	2005-05-01	win	アライケンジ	2R 4:30 TKO（パンチ）<!--パンクラス公式記録-->	PANCRASE 2005 SPIRAL TOUR 【ウェルター級キング・オブ・パンクラス タイトルマッチ】
+f00300	2005-02-04	win	ヒース・シムズ	1R 4:40 KO（パウンド）	PANCRASE 2005 SPIRAL TOUR 【ウェルター級王者決定トーナメント 1回戦】
+f00300	2005-05-01	win	アライケンジ	2R 4:30 TKO（パンチ）	PANCRASE 2005 SPIRAL TOUR 【ウェルター級キング・オブ・パンクラス タイトルマッチ】
 f00300	2005-05-01	win	北岡悟	不戦勝	PANCRASE 2005 SPIRAL TOUR 【ウェルター級王者決定トーナメント 決勝】
 f00300	2005-07-06	loss	菊地昭	1R 1:41 TKO（バックマウントパンチ）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦
 f00300	2005-12-11	win	花澤大介13	5分3R終了 判定2-0	D.O.G IV
@@ -3664,7 +3664,7 @@ f00322	2024-05-12	win	磯部鉄心	延長R5分00秒 判定2-1	Fighting NEXUS vol
 f00329	2004-07-25	loss	コブス・ハイサマン	1R 0:12 KO（右フック）	PANCRASE 2004 BRAVE TOUR
 f00329	2004-11-07	win	柳澤龍志	5分3R終了 判定3-0	PANCRASE 2004 BRAVE TOUR
 f00329	2005-03-06	win	セハク	1R 4:25 KO（ボディへの膝蹴り）	PANCRASE 2005 SPIRAL TOUR
-f00329	2005-05-01	win	オー・ジン・チョル	1R 1:44 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2005 SPIRAL TOUR
+f00329	2005-05-01	win	オー・ジン・チョル	1R 1:44 KO（パウンド）	PANCRASE 2005 SPIRAL TOUR
 f00329	2005-11-04	loss	ポアイ菅沼	1R 3:12 三角絞め	PANCRASE 2005 SPIRAL TOUR
 f00329	2006-04-09	win	杉浦貴	1R 3:25 KO（踏みつけ）	PANCRASE 2006 BLOW TOUR
 f00329	2006-10-28	win	セルゲイ・シュメトフ	1R 3:39 ギブアップ（パウンド）	"MARS 05 ""MARCHING ON"""
@@ -3686,7 +3686,7 @@ f00329	2012-02-18	loss	レヴァン・ラズマゼ	1R 3:16 腕ひしぎ十字固
 f00330	2004-03-20	loss	Ho Sub Yoon	反則（打撃）	Neo Fight 3
 f00330	2004-06-12	loss	デニス・カーン	1R 1:06 TKO	Spirit MC 4: Revolution
 f00330	2004-07-25	win	野地竜太	1R 0:12 KO（右フック）	PANCRASE 2004 BRAVE TOUR
-f00336	2004-07-25	win	米谷利展	1R 0:15 KO（スタンドパンチ連打）<!--パンクラス公式記録-->	PANCRASE 2004 BRAVE TOUR
+f00336	2004-07-25	win	米谷利展	1R 0:15 KO（スタンドパンチ連打）	PANCRASE 2004 BRAVE TOUR
 f00336	2004-11-26	loss	折橋謙	2R 4:02 TKO（棄権）	PANCRASE 2004 BRAVE TOUR
 f00336	2005-02-12	win	石井淳	1R 0:56 KO（右フック）	DEEP 18th IMPACT
 f00336	2005-07-09	loss	ジヴァニウド・サンターナ	5分1R終了 判定0-3	WXF: X-Impact World Championships 【1回戦】
@@ -3960,9 +3960,9 @@ f00368	2010-12-05	draw	川村亮	5分3R終了 判定1-0	PANCRASE 2010 PASSION TO
 f00368	2011-02-25	loss	田澤和久	2R 0:54 チョークスリーパー	DEEP 52 IMPACT 【DEEPメガトン級王者決定戦】
 f00368	2012-03-11	loss	第3代・アニマル安西	5分2R終了 判定0-3	PANCRASE 2012 PROGRESS TOUR
 f00368	2012-08-05	win	高橋義生	1R 4:59 KO（左フック）	PANCRASE 2012 PROGRESS TOUR
-f00368	2012-10-27	win	菊田早苗	1R 0:35 TKO（サッカーボールキック）<!--DEEP公式記録-->	GRABAKA LIVE! 2
+f00368	2012-10-27	win	菊田早苗	1R 0:35 TKO（サッカーボールキック）	GRABAKA LIVE! 2
 f00368	2012-12-22	loss	高瀬大樹	2R 1:33 フロントチョーク	DEEP HALEO IMPACT 〜三崎和雄引退セレモニー〜
-f00368	2013-06-15	loss	桜井隆多	1R 1:04 TKO（左フック）<!--DEEP公式記録-->	DEEP CAGE IMPACT 2013 in KORAKUEN HALL
+f00368	2013-06-15	loss	桜井隆多	1R 1:04 TKO（左フック）	DEEP CAGE IMPACT 2013 in KORAKUEN HALL
 f00368	2013-11-24	loss	中村和裕	3R 2:49 肩固め	DEEP CAGE IMPACT 2013 in TDC HALL
 f00368	2014-12-06	win	大山峻護	2R 1:03 TKO（タオル投入）	PANCRASE 263
 f00368	2015-09-12	loss	アラン・ボドウ	1R 2:35 TKO（パウンド）	GRANDSLAM 3 -Way of the Cage-
@@ -4120,8 +4120,8 @@ f00398	2002-10-05	win	張替美佳	1R 3:06 チョークスリーパー	"SMACKGIR
 f00398	2002-11-09	loss	金子真理	5分3R終了 判定0-3	"SMACKGIRL ""JAPAN CUP 2002 エピソードII"" 【ミドル級トーナメント 準決勝】"
 f00398	2003-04-02	loss	辻結花	1R 4:37 腕ひしぎ十字固め	SMACKGIRL Third Season-II
 f00398	2003-06-04	win	真	2R 1:58 KO（膝蹴り）	SMACKGIRL Third Season-IV
-f00398	2004-04-18	loss	吉田正子	2R 1:23 腕ひしぎ三角固め	CROSS SECTION<!--第1回大会-->
-f00398	2004-09-04	loss	真武和恵	2R 4:01 腕ひしぎ十字固め	CROSS SECTION<!--第2回大会-->
+f00398	2004-04-18	loss	吉田正子	2R 1:23 腕ひしぎ三角固め	CROSS SECTION
+f00398	2004-09-04	loss	真武和恵	2R 4:01 腕ひしぎ十字固め	CROSS SECTION
 f00398	2005-06-05	win	バッカス羽鳥	2R 1:08 TKO（タオル投入：スタンドパンチ）	PANCRASE 2005 SPIRAL TOUR
 f00398	2005-07-10	win	瀧本美咲	3分3R終了 判定3-0	PANCRASE 2005 SPIRAL TOUR
 f00398	2005-08-17	win	小八ヶ代真紀	5分2R終了 判定3-0	SMACKGIRL 2005 〜Dynamic!!〜
@@ -4187,14 +4187,14 @@ f00403	2002-03-02	loss	しなしさとこ	1R 4:32 腕ひしぎ十字固め	SMACK
 f00403	2002-05-06	win	大島椿	2R 2:58 腕ひしぎ十字固め	SMACKGIRL 〜GOLDEN GATE 2002〜
 f00403	2003-03-29	win	片桐美紀	10分1R終了 判定3-0	ARKADIA 【禅道会提供 昇段マッチ（リアルファイティングルール）】
 f00403	2003-07-06	loss	しなしさとこ	1R 2:03 腕ひしぎ十字固め	SMACKGIRL Third Season-V
-f00403	2004-02-08	win	筒井千尋	1R 2:13 腕ひしぎ十字固め	Love Impact<!--旗揚げ大会-->
-f00403	2004-06-06	win	松川敬子	1R 4:28 腕ひしぎ十字固め	Love Impact<!--第2回大会-->
+f00403	2004-02-08	win	筒井千尋	1R 2:13 腕ひしぎ十字固め	Love Impact
+f00403	2004-06-06	win	松川敬子	1R 4:28 腕ひしぎ十字固め	Love Impact
 f00403	2004-10-24	win	MIKU	1R 4:45 腕ひしぎ十字固め	club DEEP 7th in 富山 -野蛮人祭り-
-f00403	2004-12-12	loss	松本裕美	5分2R終了 判定0-3	CROSS SECTION<!--第3回大会-->
+f00403	2004-12-12	loss	松本裕美	5分2R終了 判定0-3	CROSS SECTION
 f00403	2005-07-10	loss	WINDY智美	3分3R終了 判定0-3	PANCRASE 2005 SPIRAL TOUR
 f00403	2005-12-17	win	MIKU	1R 3:08 腕ひしぎ十字固め	G-SHOOTO JAPAN 03
 f00403	2006-02-17	loss	藤井惠	2R 4:36 三角絞め	修斗 SHOOTO The Victory of The Truth
-f00403	2006-03-11	draw	吉田正子	5分2R終了 判定0-1	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】<!--抽選によりトーナメント脱落-->
+f00403	2006-03-11	draw	吉田正子	5分2R終了 判定0-1	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】
 f00403	2006-05-06	draw	ゆうこ	5分2R終了 判定0-1	G-SHOOTO JAPAN 05
 f00403	2006-06-11	win	村浪真穂	1R 2:04 腕ひしぎ十字固め	G-SHOOTO plus 06
 f00403	2006-08-12	draw	中村さくら	5分2R終了 判定0-1	club DEEP 白馬 モンスターチャレンジ 2
@@ -4615,14 +4615,14 @@ f00445	2009-06-07	win	内藤征弥	5分2R終了 判定3-0	PANCRASE 2009 CHANGING
 f00445	2009-09-23	loss	ファビオ・シウバ	1R 2:28 TKO（タオル投入）	戦極 〜第十陣〜
 f00445	2009-12-06	win	井上俊介	5分3R終了 判定2-0	PANCRASE 2009 CHANGING TOUR 【ライトヘビー級キング・オブ・パンクラス タイトルマッチ】
 f00445	2010-06-20	win	入江秀忠	2R 3:00 TKO（スタンドパンチ連打）	SRC13
-f00445	2010-09-05	loss	桜木裕司	1R 3:55 KO（スタンドパンチ連打）<!--パンクラス公式記録-->	PANCRASE 2010 PASSION TOUR
+f00445	2010-09-05	loss	桜木裕司	1R 3:55 KO（スタンドパンチ連打）	PANCRASE 2010 PASSION TOUR
 f00445	2010-12-05	draw	桜木裕司	5分3R終了 判定0-1	PANCRASE 2010 PASSION TOUR 【ライトヘビー級キング・オブ・パンクラス タイトルマッチ】
 f00445	2011-06-05	draw	一慶	5分2R終了 判定0-1	PANCRASE 2011 IMPRESSIVE TOUR
 f00445	2012-01-28	win	一慶	2R 2:18 KO（右膝蹴り）	PANCRASE 2012 PROGRESS TOUR 【ミドル級K.O.P.決定1DAYトーナメント 決勝】
 f00445	2012-01-28	win	久松勇二	5分2R終了 判定3-0	PANCRASE 2012 PROGRESS TOUR 【ミドル級K.O.P.決定1DAYトーナメント 1回戦】
-f00445	2012-06-02	win	大山峻護	1R 4:19 TKO（サッカーボールキック）<!--パンクラス公式記録-->	PANCRASE 2012 PROGRESS TOUR 【ミドル級キング・オブ・パンクラス タイトルマッチ】
+f00445	2012-06-02	win	大山峻護	1R 4:19 TKO（サッカーボールキック）	PANCRASE 2012 PROGRESS TOUR 【ミドル級キング・オブ・パンクラス タイトルマッチ】
 f00445	2012-10-06	loss	メルヴィン・マヌーフ	1R 4:40 KO（右フック）	ONE FC 6: Rise of Kings
-f00445	2013-06-22	loss	イ・ドルヒ	5分3R終了 判定1-2<!-- SHERDOGの記述を基準に判定結果をSplitとしましたが、0-3としているサイトもありました。-->	ROAD FC 12
+f00445	2013-06-22	loss	イ・ドルヒ	5分3R終了 判定1-2	ROAD FC 12
 f00445	2013-09-29	win	高橋義生	1R 1:43 TKO（パウンド）	PANCRASE 252
 f00445	2014-06-29	loss	安西信昌	1R 2:52 TKO（右フック→パウンド）	PANCRASE 259 【ミドル級キング・オブ・パンクラス タイトルマッチ】
 f00445	2015-12-13	win	ジバゴ・フランシスコ	3分3R終了 判定3-0	PANCRASE 273
@@ -4656,7 +4656,7 @@ f00456	2008-05-19	loss	菊野克紀	5分2R終了 判定0-3	DEEP 35 IMPACT
 f00456	2008-07-17	win	MIKE	5分2R終了 判定2-0	DEEP M-1チャレンジ5 in JAPAN
 f00456	2008-08-17	loss	松本晃市郎	2R 1:32 TKO（右アッパー）	DEEP 37 IMPACT
 f00456	2008-12-10	win	ISE	5分2R終了 判定3-0	DEEP 39 IMPACT
-f00456	2009-01-04	loss	マキシモ・ブランコ	1R 0:38 TKO（踏みつけ）<!--SRC公式記録-->	戦極の乱2009
+f00456	2009-01-04	loss	マキシモ・ブランコ	1R 0:38 TKO（踏みつけ）	戦極の乱2009
 f00456	2012-12-08	loss	梅田恒介	5分2R終了 判定0-3	DEEP CAGE IMPACT 2012 in TOKYO 〜OVER AGAIN〜
 f00456	2015-07-20	win	ヂエゴ	2R 3:57 TKO（パウンド）	火の国格闘伝説 LEGEND 6 【ウェルター級MMAトーナメント 凖決勝】
 f00457	2006-07-30	win	中条実	1R 2:22 KO（バスター）	DEMOLITION
@@ -4833,7 +4833,7 @@ f00489	2005-10-23	loss	ズール	1R 1:31 TKO（グラウンドの膝蹴り）	PR
 f00489	2006-07-01	loss	ロバート・ベリー	1R 1:06 TKO（パウンド）	Cage Rage 17: Ultimate Challenge
 f00489	2006-08-27	win	小椋誠志	1R 1:37 チョークスリーパー	パンクラス PANCRASE 2006 BLOW TOUR
 f00489	2006-09-30	loss	ムスタファ・アルターク	1R 0:56 TKO（打撃）	Cage Rage 18: Battleground
-f00489	2007-03-23	win	キム・ジフン	1R 4:58 TKO（右フック）<!--HEAT公式記録-->	HEAT 3rd. in ZEPP NAGOYA
+f00489	2007-03-23	win	キム・ジフン	1R 4:58 TKO（右フック）	HEAT 3rd. in ZEPP NAGOYA
 f00489	2007-04-13	loss	クリスチアーノ上西	1R 4:00 KO（左ハイキック）	DEEP 29 IMPACT
 f00489	2008-12-14	win	濱田順平	1R 0:52 KO（パウンド）	HEAT8 【総合ルール ヘビー級トーナメント 1回戦】
 f00489	2009-03-28	win	野地竜太	1R 1:14 KO（右フック→パウンド）	HEAT9 【総合ルール ヘビー級トーナメント 準決勝】
@@ -4993,7 +4993,7 @@ f00503	2023-02-18	win	栗山葵	2R 4:31 リアネイキッドチョーク	DEEP J
 f00503	2024-05-26	win	HIME	3R 1:33 ギロチンチョーク	DEEP JEWELS 45
 f00503	2024-11-23	win	"鈴木""BOSS""遥"	1R 3:32 TKO（左フック→パウンド）	DEEP JEWELS 47
 f00503	2026-05-24	win	奥富夕夏	5分3R終了 判定5-0	DEEP JEWELS 53 【DEEP JEWELSフライ級タイトルマッチ】
-f00507	2007-05-06	win	荒牧拓	2R 4:48 TKO（サッカーボールキック）<!--パンクラス公式記録-->	PANCRASE 2007 RISING TOUR 【ネオブラッド・トーナメント ライト級 準決勝】
+f00507	2007-05-06	win	荒牧拓	2R 4:48 TKO（サッカーボールキック）	PANCRASE 2007 RISING TOUR 【ネオブラッド・トーナメント ライト級 準決勝】
 f00507	2007-07-27	loss	五十里祐一	5分2R終了 判定0-3	PANCRASE 2007 RISING TOUR 【ネオブラッド・トーナメント ライト級 決勝】
 f00507	2007-10-28	win	梅田恒介	1R 1:11 TKO（パンチ連打）	club DEEP in Zepp Sendai
 f00507	2007-12-12	win	吉田幸治	2R 2:04 TKO（右フック）	DEEP 33 IMPACT
@@ -5018,7 +5018,7 @@ f00513	2006-10-25	loss	藤原大地	1R 0:39 膝十字固め	PANCRASE 2006 BLOW T
 f00513	2007-02-28	draw	柳澤雅樹	5分2R終了 判定0-1	PANCRASE 2007 RISING TOUR
 f00513	2007-04-08	loss	宮城友一	5分2R終了 判定0-3	PANCRASE REAL 2007 【ネオブラッド・トーナメント フェザー級 1回戦】
 f00513	2007-05-30	win	山澤勇紀	5分2R終了 判定3-0	PANCRASE 2007 RISING TOUR
-f00513	2007-10-14	win	曹竜也	1R 0:30 KO（右フック→パウンド）<!--パンクラス公式記録-->	PANCRASE 2007 RISING TOUR
+f00513	2007-10-14	win	曹竜也	1R 0:30 KO（右フック→パウンド）	PANCRASE 2007 RISING TOUR
 f00513	2007-11-28	win	村山トモキ	5分2R終了 判定3-0	PANCRASE 2007 RISING TOUR
 f00513	2008-03-26	win	裕希斗	5分2R終了 判定2-0	PANCRASE 2008 SHINING TOUR
 f00520	2004-06-05	loss	ナザロフ・アルダック	1R 2:29 TKO（パンチ連打）	FEFoMP: Mayor Cup 2004
@@ -5278,7 +5278,7 @@ f00571	2005-08-05	win	ジェニウソン・タヴァレス	1R TKO（パウンド
 f00571	2006-02-26	win	イド・パリエンテ	5分3R終了 判定3-0	K-1 Slovakia
 f00571	2007-01-27	win	クリス・サヴィン	1R 1:13 TKO	Intense Fighting
 f00571	2007-06-09	loss	デビッド・バロン	1R 4:58 KO	Xtreme Gladiators 3
-f00571	2007-09-05	loss	前田吉朗	1R 3:38 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2007 RISING TOUR
+f00571	2007-09-05	loss	前田吉朗	1R 3:38 KO（パウンド）	PANCRASE 2007 RISING TOUR
 f00571	2007-10-25	win	モーシェ・カイツ	3R終了 判定	Desert Combat 5
 f00571	2008-02-11	loss	廣田瑞人	2R 0:08 KO（スタンドパンチ連打）	CAGE FORCE EX -eastern bound-
 f00571	2008-11-20	win	ダン・フロスト	1R KO	GP Tornado
@@ -5323,7 +5323,7 @@ f00588	2007-05-13	win	笹野勇一	1R 4:17 フロントチョーク	MULTIPLEX 20
 f00588	2007-08-19	win	西村広和	1R 4:42 TKO（パウンド）	DEMOLITION
 f00588	2007-12-01	win	荒川裕志	5分2R終了 判定3-0	CAGE FORCE 05
 f00588	2008-01-30	win	山澤勇紀	1R 0:28 KO（右ハイキック）	PANCRASE 2008 SHINING TOUR
-f00588	2008-06-01	win	柳澤雅樹	1R 0:41 KO（パウンド）<!--パンクラス公式記録-->	PANCRASE 2008 SHINING TOUR
+f00588	2008-06-01	win	柳澤雅樹	1R 0:41 KO（パウンド）	PANCRASE 2008 SHINING TOUR
 f00588	2008-08-27	win	今泉堅太郎	1R 2:09 TKO（ドクターストップ）	PANCRASE 2008 SHINING TOUR
 f00588	2008-12-07	loss	井上学	2R 4:44 チョークスリーパー	PANCRASE 2008 SHINING TOUR 【バンタム級キング・オブ・パンクラス決定戦】
 f00588	2009-03-20	loss	ニック・デニス	1R 2:36 TKO（タオル投入）	戦極 〜第七陣〜 【フェザー級グランプリ2009 1回戦】
@@ -5336,8 +5336,8 @@ f00588	2012-03-11	nc	沼倉雄太	ノーコンテスト（反則）	PANCRASE 201
 f00588	2012-07-01	loss	山内慎人	1R 1:15 TKO（左ストレート→パウンド）	PANCRASE 2012 PROGRESS TOUR
 f00589	2006-10-20	loss	吉田正子	1R 3:35 腕ひしぎ十字固め	G-SHOOTO Special 02
 f00589	2007-01-26	loss	兼谷絵里	2R 3:46 チョークスリーパー	修斗 BATTLE MIX TOKYO 01
-f00589	2007-03-11	win	伊藤めぐみ	5分2R終了 判定3-0	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜<!--昼の部--> 【The Next Cinderella Tournament 2007 ライト級 1回戦】
-f00589	2007-05-19	win	奥村ユカ	5分2R終了 判定3-0	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜<!--昼の部--> 【The Next Cinderella Tournament 2007 ライト級 準決勝】
+f00589	2007-03-11	win	伊藤めぐみ	5分2R終了 判定3-0	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜 【The Next Cinderella Tournament 2007 ライト級 1回戦】
+f00589	2007-05-19	win	奥村ユカ	5分2R終了 判定3-0	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜 【The Next Cinderella Tournament 2007 ライト級 準決勝】
 f00589	2007-09-06	loss	V.V Mei	5分2R終了 判定1-2	SMACKGIRL 2007 〜女王たちの一番熱い夏〜 【The Next Cinderella Tournament 2007 ライト級 決勝】
 f00589	2008-01-30	loss	WINDY智美	2R終了時 TKO（棄権）	PANCRASE 2008 SHINING TOUR
 f00589	2011-09-11	win	セリーナ	5分2R終了 判定3-0	JEWELS 16th RING
@@ -5639,16 +5639,16 @@ f00628	2023-11-05	win	メイジャー・オーバーロール	5分3R終了 判�
 f00628	2023-12-09	loss	ソン・ヨンジェ	1R 1:46 KO（パンチ）	AFC29 【AFCフェザー級暫定タイトルマッチ】
 f00628	2024-07-06	win	クアン・ヴァン・ミン	2R 0:28 反則	HEAT54×AFC32
 f00632	2008-08-27	nc	八島勇気	1R 0:56 ノーコンテスト（バッティング）	PANCRASE 2008 SHINING TOUR
-f00632	2008-10-01	win	AB	1R 0:22 KO（バスター）<!--パンクラス公式記録-->	PANCRASE 2008 SHINING TOUR
+f00632	2008-10-01	win	AB	1R 0:22 KO（バスター）	PANCRASE 2008 SHINING TOUR
 f00632	2008-12-07	loss	花澤大介13	2R 1:19 肩固め	PANCRASE 2008 SHINING TOUR
-f00632	2009-01-04	win	井上誠午	1R 0:38 TKO（踏みつけ）<!--SRC公式記録-->	戦極の乱2009
+f00632	2009-01-04	win	井上誠午	1R 0:38 TKO（踏みつけ）	戦極の乱2009
 f00632	2009-04-05	draw	大石幸史	5分2R終了 判定1-1	PANCRASE 2009 CHANGING TOUR
 f00632	2009-05-02	loss	毛利昭彦	1R 4:20 反則（サッカーボールキック）	戦極 〜第八陣〜
 f00632	2009-08-08	win	井上克也	2R 4:38 TKO（右フック→パウンド）	PANCRASE 2009 CHANGING TOUR 【ライト級キング・オブ・パンクラス タイトルマッチ】
 f00632	2009-09-23	win	山田哲也	2R 1:12 TKO（パウンド）	戦極 〜第十陣〜
 f00632	2010-03-07	win	アームバー・キム	1R 1:10 KO（左ハイキック）	SRC12
 f00632	2010-06-20	win	ホドリゴ・ダム	2R 0:45 TKO（右ストレート→パウンド）	SRC13
-f00632	2010-10-30	win	國奥麒樹真	1R 4:26 TKO（右フック→パウンド）<!--SRC公式記録-->	SRC15
+f00632	2010-10-30	win	國奥麒樹真	1R 4:26 TKO（右フック→パウンド）	SRC15
 f00632	2010-12-30	win	パーキー	5分3R終了 判定3-0	戦極 Soul of Fight
 f00632	2011-09-10	loss	パット・ヒーリー	2R 4:24 リアネイキドチョーク	Strikeforce: Barnett vs. Kharitonov
 f00632	2012-04-21	loss	マーカス・ブリメージ	5分3R終了 判定1-2	UFC 145: Jones vs. Evans
@@ -5792,7 +5792,7 @@ f00679	2011-07-17	draw	清水俊一	5分2R終了 時間切れ	ZST BATTLE HAZARD 
 f00679	2011-11-05	loss	田村彰敏	5分3R終了 判定0-3	SHOOTO the SHOOT 2011
 f00679	2012-01-22	win	ジョン・ヨンサム	2R 4:34 TKO（パウンド）	RINGS BATTLE GENESIS vol.9
 f00679	2012-03-10	loss	矢地祐介	5分3R終了 判定0-3	修斗
-f00679	2012-09-30	win	阿部裕幸	1R 4:12 KO（左ストレート→パウンド）<!--修斗公式記録-->	修斗
+f00679	2012-09-30	win	阿部裕幸	1R 4:12 KO（左ストレート→パウンド）	修斗
 f00679	2012-10-27	loss	中村好史	5分3R終了 判定0-2	SHOOTO GIG TOKYO Vol.12
 f00679	2013-01-20	win	里本一也	2R 3:44 TKO（ドクターストップ）	修斗
 f00679	2013-10-05	loss	"西浦""ウィッキー""聡生"	5分3R終了 判定1-2	VTJ 3rd
@@ -5800,7 +5800,7 @@ f00679	2014-01-13	win	ジャングル伊藤	5分3R終了 判定3-0	修斗
 f00679	2014-05-05	draw	くわい“D”郁矢	5分2R終了 判定1-0	修斗
 f00679	2014-07-20	win	村田俊	1R 3:34 TKO（ドクターストップ）	GRACHAN 14 × マッハ祭り
 f00679	2014-10-04	loss	三上譲治	1R 2:01 KO（右フック）	VTJ 6th
-f00679	2014-11-30	win	咲田ケイジ	3R 4:15 TKO<!--（）-->	GRACHAN 15 【GRACHAN MMA初代フェザー級王者決定戦】
+f00679	2014-11-30	win	咲田ケイジ	3R 4:15 TKO	GRACHAN 15 【GRACHAN MMA初代フェザー級王者決定戦】
 f00679	2015-01-25	win	美木航	5分3R終了 判定3-0	修斗 2015年 開幕戦
 f00679	2015-07-26	win	宇野薫	2R 4:03 KO（左フック）	修斗
 f00679	2015-09-19	draw	原井徹	5分3R終了 判定0-1	GRACHAN 19 × BOM IX.5 【GRACHAN MMAフェザー級タイトルマッチ】
@@ -5808,7 +5808,7 @@ f00679	2016-05-22	draw	手塚基伸	5分2R終了 判定1-0	GRACHAN 23 × 1MC. vo
 f00679	2016-08-07	win	ハッカムノーイ・エスジム	5分2R終了 判定3-0	GRACHAN 24 × 1MC. vol.2
 f00679	2016-10-10	win	原井徹	1R 2:37 TKO（右フック→パウンド）	GRACHAN 25 × BFC. vol.2 【GRACHAN フェザー級タイトルマッチ】
 f00679	2017-02-26	win	大道翔貴	5分2R終了 判定3-0	GRACHAN 28 × BRAVE FIGHT 14
-f00679	2017-05-14	loss	阪本洋平	2R 0:46 KO<!--（）-->	GRACHAN 29 × One more chance 「1MC vol.3」 【GRACHAN フェザー級タイトルマッチ】
+f00679	2017-05-14	loss	阪本洋平	2R 0:46 KO	GRACHAN 29 × One more chance 「1MC vol.3」 【GRACHAN フェザー級タイトルマッチ】
 f00679	2017-10-15	win	鍵山雄介	5分2R終了 判定2-1	GRACHAN 31
 f00679	2018-05-27	win	飯田健夫	5分2R終了 判定3-0	GRACHAN 35 × vol.6
 f00679	2019-06-29	loss	横山恭典	5分2R終了 判定0-3	DEEP 90 IMPACT
@@ -5819,7 +5819,7 @@ f00695	2011-08-07	win	田中章仁	1R 4:12 TKO（パウンド）	PANCRASE 2011 I
 f00695	2012-03-11	win	桜木裕司	5分2R終了 判定3-0	PANCRASE 2012 PROGRESS TOUR
 f00695	2012-11-10	win	イ・ハングン	1R 4:36 TKO（サッカボールキック）	PANCRASE 2012 PROGRESS TOUR
 f00695	2013-05-18	win	久松勇二	5分2R終了 判定3-0	PANCRASE 247
-f00695	2013-09-29	win	ウィル・ノーランド	1R 2:30 KO（スタンドパンチ連打）<!--パンクラス公式記録-->	PANCRASE 252
+f00695	2013-09-29	win	ウィル・ノーランド	1R 2:30 KO（スタンドパンチ連打）	PANCRASE 252
 f00695	2014-06-29	win	川村亮	1R 2:52 TKO（右フック→パウンド）	PANCRASE 259 【ミドル級キング・オブ・パンクラス タイトルマッチ】
 f00695	2014-08-23	loss	アルベルト・ミナ	1R 4:17 TKO（右アッパー→パウンド）	UFC Fight Night: Bisping vs. Le
 f00695	2015-09-27	win	ロジャー・ザパタ	3R 0:47 TKO（左手の負傷）	UFC Fight Night: Barnett vs. Nelson
@@ -5938,7 +5938,7 @@ f00727	2013-10-05	loss	松本光史	5分3R終了 判定0-3	VTJ 3rd
 f00727	2014-02-23	win	星野大介	5分3R終了 判定2-1	VTJ 4th
 f00727	2014-12-21	win	チョモランマ1/2	5分3R終了 判定	HEAT 34
 f00727	2015-03-22	win	上野藤士	1R 3:13 TKO（パウンド）	HEAT 35
-f00727	2015-08-07	loss	フランク・カマチョ	1R <!--0:00--> KO<!--（）-->	PXC 49
+f00727	2015-08-07	loss	フランク・カマチョ	1R  KO	PXC 49
 f00727	2015-09-19	win	渡辺和幸	1R 1:37 アームロック	GRACHAN 19 【GRACHAN初代ライト級王座決定トーナメント 1回戦】
 f00727	2016-05-22	loss	阪本洋平	1R 1:02 TKO（パウンド）	GRACHAN 23×1MC. vol.1 【GRACHAN初代ライト級王座決定戦】
 f00727	2016-09-25	loss	岸本泰昭	2R 終了時 TKO（ドクターストップ）	HEAT 38
@@ -6039,14 +6039,14 @@ f00759	2010-12-05	win	高橋克典	1R 3:33 TKO（パウンド）	PANCRASE 2010 P
 f00759	2011-02-06	win	太田純一	1R 2:55 TKO（パウンド）	PANCRASE 2011 IMPRESSIVE TOUR
 f00759	2011-05-03	win	AB	5分3R終了 判定3-0	PANCRASE 2011 IMPRESSIVE TOUR 【ライト級GP 2011トーナメント 1回戦】
 f00759	2011-08-07	win	岡澤弘太	5分3R終了 判定3-0	PANCRASE 2011 IMPRESSIVE TOUR 【ライト級GP 2011トーナメント 準決勝】
-f00759	2011-12-03	loss	ISAO	1R 4:14 KO（スタンドパンチ連打）<!--パンクラス公式記録-->	PANCRASE 2011 IMPRESSIVE TOUR 【ライト級GP 2011トーナメント 決勝】
+f00759	2011-12-03	loss	ISAO	1R 4:14 KO（スタンドパンチ連打）	PANCRASE 2011 IMPRESSIVE TOUR 【ライト級GP 2011トーナメント 決勝】
 f00759	2012-04-01	win	チョ・ジョンヒョン	1R 4:51 腕ひしぎ十字固め	PANCRASE 2012 PROGRESS TOUR
 f00759	2012-08-05	win	URAKEN	5分3R終了 判定3-0	PANCRASE 2012 PROGRESS TOUR
 f00759	2013-03-03	win	クリスチャーノ・マルセロ	5分3R終了 判定3-0	UFC on Fuel TV 8: Silva vs. Stann
 f00759	2013-07-06	loss	ノーマン・パーク	5分3R終了 判定0-3	UFC 162: Silva vs. Weidman
 f00759	2014-03-01	loss	ナム・ウィチョル	5分3R終了 判定1-2	UFC Fight Night: Kim vs. Hathaway
 f00759	2014-09-20	loss	ジョニー・ケース	2R 2:34 ギロチンチョーク	UFC Fight Night: Hunt vs. Nelson
-f00759	2015-03-15	win	児山佳宏	1R 1:38 TKO（左ストレート→パウンド）<!--パンクラス公式記録-->	PANCRASE 265
+f00759	2015-03-15	win	児山佳宏	1R 1:38 TKO（左ストレート→パウンド）	PANCRASE 265
 f00759	2015-05-31	win	J.J.アンブローズ	5分3R終了 判定3-0	PANCRASE 267
 f00759	2015-11-01	win	北岡悟	4R 1:24 KO（左ストレート→パウンド）	PANCRASE 271 【ライト級キング・オブ・パンクラス決定戦】
 f00759	2016-04-24	win	アクバル・アレオラ	1R 4:59 TKO（パウンド）	PANCRASE 277
@@ -6069,10 +6069,10 @@ f00780	2008-05-03	win	室伏カツヤ	2R 0:46 TKO（左瞼カット）	"""修斗
 f00780	2008-06-21	win	ATCHアナーキー	2R 3:26 腕ひしぎ十字固め	修斗 SHOOTING DISCO 5 アース ウィンド アンド ファイター 〜大地と風と戦士〜
 f00780	2008-09-28	loss	ランバー・ソムデートM16	5分3R終了 判定0-3	"""修斗伝承 03"" ROAD TO 20th ANNIVERSARY"
 f00780	2009-03-20	draw	春崎武裕	5分3R終了 判定1-1	"""修斗伝承 06"" ROAD TO 20th ANNIVERSARY"
-f00780	2009-06-06	win	室伏シンヤ	3R 4:09 KO（パウンド）<!--修斗公式記録-->	修斗 SHOOTING DISCO 9 〜スーパーマン〜
+f00780	2009-06-06	win	室伏シンヤ	3R 4:09 KO（パウンド）	修斗 SHOOTING DISCO 9 〜スーパーマン〜
 f00780	2009-08-09	win	ジェシー・タイタノ	5分3R終了 判定3-0	修斗 SHOOTO GIG SAITAMA 01 〜斗うことの誇り。
 f00780	2009-11-23	loss	ランバー・ソムデートM16	5分3R終了 判定0-3	修斗 REVOLUTIONARY EXCHANGES 3 【修斗世界フライ級王座決定戦】
-f00780	2010-03-28	win	生駒純司	3R 3:31 KO（パウンド）<!--修斗公式記録-->	修斗 BORDER -season 2- 「波動」
+f00780	2010-03-28	win	生駒純司	3R 3:31 KO（パウンド）	修斗 BORDER -season 2- 「波動」
 f00780	2010-07-04	win	赤木敏倫	5分3R終了 判定2-0	修斗 SHOOTO GIG SAITAMA 02 〜斗うことの誇り。
 f00780	2010-09-05	loss	砂辺光久	3R 2:32 KO（バスター）	パンクラス PANCRASE 2010 PASSION TOUR 【フライ級王座次期挑戦者決定戦】
 f00780	2011-04-29	loss	正城ユウキ	5分3R終了 判定0-3	修斗伝承 2011
@@ -6120,7 +6120,7 @@ f00784	2010-10-03	loss	北岡悟	2R 4:22 フロントチョーク	パンクラ�
 f00784	2010-11-21	win	西方清信	1R 1:52 チョークスリーパー	DEMOLITION WEST II in YAMAGUCHI
 f00784	2011-04-29	win	中蔵隆志	5分3R終了 判定2-0	修斗伝承 2011
 f00784	2011-07-18	win	朴光哲	5分3R終了 判定3-0	修斗 SHOOTOR'S LEGACY 03 【修斗世界ライト級王座決定戦】
-f00784	2012-05-18	win	ジョヴァニ・ジニス	1R 4:05 KO（パウンド）<!--修斗公式記録-->	修斗 【修斗世界ライト級タイトルマッチ】
+f00784	2012-05-18	win	ジョヴァニ・ジニス	1R 4:05 KO（パウンド）	修斗 【修斗世界ライト級タイトルマッチ】
 f00784	2012-12-24	win	カーロ・プラター	5分3R終了 判定3-0	VTJ 1st
 f00784	2013-09-29	win	児山佳宏	4R 3:42 腕ひしぎ十字固め	修斗 2013年第4戦 【修斗世界ライト級タイトルマッチ】
 f00784	2014-03-30	loss	ISAO	3R 3:58 TKO（サッカーボールキック）	PANCRASE 257
@@ -6225,8 +6225,8 @@ f00832	2015-08-09	win	宇都木正和	5分3R終了 判定3-0	PANCRASE 269 【ラ
 f00832	2015-11-01	loss	砂辺光久	5分5R終了 判定1-2	PANCRASE 271 【ストロー級キング・オブ・パンクラス決定戦】
 f00832	2016-06-26	loss	小島壮太	2R 4:59 フロントチョーク	DEEP 76 IMPACT 【DEEPストロー級初代王者決定GP 1回戦】
 f00832	2017-03-18	draw	村元友太郎	5分2R終了 判定1-0	DEEP 78 IMPACT
-f00834	2007-03-11	win	齋藤安奈	1R 4:53 チョークスリーパー	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜<!--昼の部--> 【The Next Cinderella Tournament 2007 ライト級 1回戦】
-f00834	2007-05-19	win	石岡沙織	2R 1:24 膝十字固め	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜<!--昼の部--> 【The Next Cinderella Tournament 2007 ライト級 準決勝】
+f00834	2007-03-11	win	齋藤安奈	1R 4:53 チョークスリーパー	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜 【The Next Cinderella Tournament 2007 ライト級 1回戦】
+f00834	2007-05-19	win	石岡沙織	2R 1:24 膝十字固め	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜 【The Next Cinderella Tournament 2007 ライト級 準決勝】
 f00834	2007-09-06	win	富松恵美	5分2R終了 判定2-1	SMACKGIRL 2007 〜女王たちの一番熱い夏〜 【The Next Cinderella Tournament 2007 ライト級 決勝】
 f00834	2007-12-26	loss	藤野恵実	5分2R終了 判定1-2	SMACKGIRL 7th ANNIVERSARY 〜Starting Over〜
 f00834	2008-11-08	loss	辻結花	3分3R終了 判定0-3	VALKYRIE 01 CAGE FORCE-EX
@@ -6356,12 +6356,12 @@ f00856	2023-10-15	draw	岸本篤史	5分2R終了 判定1-0	Grachan 65
 f00856	2024-05-26	win	能登崇	5分3R終了 判定3-0	Grachan 69
 f00856	2024-12-22	loss	林RICE陽太	5分3R終了 判定1-2	GRACHAN Presents: HELIOS 【GRACHANライト級タイトルマッチ】
 f00856	2025-03-02	loss	芳賀ビラル海	5分2R終了 判定0-3	GRACHAN 73 BRAVE FIGHT 35
-f00878	2007-03-25	draw	湯浅友和	5分2R終了 判定1-1<!--抽選により湯浅が2回戦進出-->	修斗 SHOOTO GIG CENTRAL Vol.12 【2007年度新人王決定トーナメント ミドル級 1回戦】
+f00878	2007-03-25	draw	湯浅友和	5分2R終了 判定1-1	修斗 SHOOTO GIG CENTRAL Vol.12 【2007年度新人王決定トーナメント ミドル級 1回戦】
 f00878	2007-08-11	win	"""brother""YASSHI"	2R 3:07 リアネイキドチョーク	HEAT 4 〜MEGA BATTLE HEAT from NAGOYA〜
 f00878	2007-10-08	win	佐藤拓也	1R 1:11 スリーパーホールド	修斗 SHOOTO GIG CENTRAL Vol.13 & KAKUMEI NAGOYA 1
 f00878	2008-03-16	win	堂垣善史	1R 3:38 TKO（レフェリーストップ：右眼窩底骨折の疑い）	修斗 SHOOTO GIG CENTRAL Vol.14
-f00878	2008-08-03	draw	佐藤洋一郎	5分2R終了 判定0-0<!--マスト判定3-0で決勝進出-->	修斗 SHOOTO GIG CENTRAL Vol.15 【2008年度新人王決定トーナメント ミドル級 準決勝】
-f00878	2008-12-13	draw	佐藤拓也	5分2R終了 判定0-0	<!--延長5分1R終了 判定0-3--> 修斗 THE ROOKIE TOURNAMENT 2008 FINAL 【2008年度新人王決定トーナメント ミドル級 決勝】
+f00878	2008-08-03	draw	佐藤洋一郎	5分2R終了 判定0-0	修斗 SHOOTO GIG CENTRAL Vol.15 【2008年度新人王決定トーナメント ミドル級 準決勝】
+f00878	2008-12-13	draw	佐藤拓也	5分2R終了 判定0-0	 修斗 THE ROOKIE TOURNAMENT 2008 FINAL 【2008年度新人王決定トーナメント ミドル級 決勝】
 f00878	2009-04-12	win	杉浦博純	5分2R終了 判定2-0	修斗 SHOOTO GIG CENTRAL Vol.17
 f00878	2009-08-30	draw	"奥野""轟天""泰舗"	5分2R終了 判定0-0	修斗 SHOOTO GIG CENTRAL Vol.18
 f00878	2009-10-25	win	高木健太	5分2R終了 判定3-0	修斗 SHOOTO GIG CENTRAL Vol.19
@@ -6457,10 +6457,10 @@ f00886	2011-09-04	win	ソン・ギュソク	1R 0:11 KO（右フック）	PANCRAS
 f00886	2011-12-03	win	デニス・カーン	1R 3:40 TKO（膝蹴り）	ROAD FC 5: Night of Champions 【ミドル級王座決定トーナメント 1回戦】
 f00886	2012-02-05	win	キム・ジョンデ	1R 1:44 ヒールフック	ROAD FC 6: The Final Four 【ミドル級王座決定トーナメント 準決勝】
 f00886	2012-02-05	win	ソン・ヘソック	1R 2:19 ギブアップ（パウンド）	ROAD FC 6: The Final Four 【ミドル級王座決定トーナメント 決勝】
-f00886	2012-06-02	loss	川村亮	1R 4:19 TKO（サッカーボールキック）<!--パンクラス公式記録-->	PANCRASE 2012 PROGRESS TOUR
+f00886	2012-06-02	loss	川村亮	1R 4:19 TKO（サッカーボールキック）	PANCRASE 2012 PROGRESS TOUR
 f00886	2012-09-23	loss	アシフ・タギエフ	1R 4:44 TKO（跳び膝蹴り→パウンド）	RINGS vol.2 〜CONQUISITO 探索〜
 f00886	2012-11-24	loss	イ・ウンス	1R 2:48 KO（スタンドパンチ連打）	ROAD FC 10: Monson vs. Kang 【ROAD FCミドル級タイトルマッチ】
-f00886	2013-09-29	loss	ジョーダン・カリー	1R終了時 TKO（肩固め）<!--パンクラス公式記録-->	PANCRASE 252
+f00886	2013-09-29	loss	ジョーダン・カリー	1R終了時 TKO（肩固め）	PANCRASE 252
 f00886	2014-03-30	win	孔韓冬	1R 3:26 ヒールホールド	PANCRASE 257
 f00886	2014-08-10	loss	一慶	2R 1:01 KO（右フック）	PANCRASE 260
 f00886	2014-12-06	loss	桜木裕司	2R 1:03 TKO（タオル投入）	PANCRASE 263
@@ -6501,7 +6501,7 @@ f00891	2015-03-22	loss	ネルソン・カルヴァロ	1R 4:11 TKO（パウンド
 f00891	2015-05-31	win	窪田幸生	2R 1:55 TKO（パウンド）	PANCRASE 267
 f00891	2015-08-09	win	佐藤天	1R 2:27 KO（右ストレート）	PANCRASE 269
 f00891	2016-01-31	loss	ビスラン・エトレシェフ	2R 3:40 チョークスリーパー	PANCRASE 275
-f00891	2016-04-16	loss	ソン・ケナン	1R KO<!-- 試合時間不明 -->	Superstar Fight 2: China vs. Japan
+f00891	2016-04-16	loss	ソン・ケナン	1R KO	Superstar Fight 2: China vs. Japan
 f00891	2016-07-24	win	手塚裕之	2R 0:25 TKO（ドクターストップ：カット）	PANCRASE 279
 f00891	2016-11-13	loss	阿部大治	5分3R終了 判定0-3	PANCRASE 282
 f00891	2017-04-29	loss	ペ・ミョンホ	1R 3:04 アームバー	AFC 03
@@ -6604,9 +6604,9 @@ f00906	2024-12-08	loss	青井人	2R 2:26 TKO（サッカーボールキック→
 f00906	2025-03-15	loss	水野新太	1R 4:20 TKO（パウンド）	DEEP 124 IMPACT 【DEEPフェザー級グランプリ1回戦】
 f00906	2025-07-27	win	直樹	5分3R終了 判定3-0	超RIZIN.4 真夏の喧嘩祭り
 f00906	2025-11-24	win	イモト・ボルケーノ	1R 0:31 KO（左フック）	～SHOOT BOXING 40th Anniversary～S-cup×GZT 2025
-f00922	2007-03-11	loss	高林恭子	5分2R終了 判定0-3	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜<!--昼の部-->
+f00922	2007-03-11	loss	高林恭子	5分2R終了 判定0-3	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 開幕戦〜
 f00922	2007-04-28	win	YOKO	5分2R終了 判定3-0	SMACKGIRL 2007 〜絶対女王は大正浪漫を舞ひ奏で〜 【The Next Cinderella Tournament 2007 ライト級 1回戦】
-f00922	2007-05-19	loss	V一	2R 1:24 膝十字固め	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜<!--昼の部--> 【The Next Cinderella Tournament 2007 ライト級 準決勝】
+f00922	2007-05-19	loss	V一	2R 1:24 膝十字固め	SMACKGIRL-F 2007 〜The Next Cinderella Tournament 2007 2nd Stage〜 【The Next Cinderella Tournament 2007 ライト級 準決勝】
 f00922	2007-09-06	win	吉田正子	5分2R終了 判定3-0	SMACKGIRL 2007 〜女王たちの一番熱い夏〜
 f00922	2007-11-25	win	有賀美由紀	5分2R終了 判定3-0	格闘王国 LIVE 2007 【リアルファイティングルール特別試合】
 f00922	2007-12-26	win	トリーシャ・プーヴィ	1R 4:18 腕ひしぎ十字固め	SMACKGIRL 7th ANNIVERSARY 〜Starting Over〜
@@ -6857,7 +6857,7 @@ f00984	2009-10-30	loss	ヴィラミー・シケリム	1R 2:05 TKO（ドクター
 f00984	2010-07-19	win	ヤニ・ラックス	3R 1:30 TKO（ドクターストップ：鼻のカット）	修斗 The Way of SHOOTO 04 〜Like a Tiger, Like a Dragon〜
 f00984	2011-05-28	win	小知和晋	5分3R終了 判定3-0	修斗 SHOOTO GIG TOKYO VOL.6
 f00984	2011-09-23	loss	児山佳宏	5分3R終了 判定1-2	修斗 SHOOTOR’S LEGACY 04 〜東北地方太平洋沖地震支援チャリティー〜 【修斗環太平洋ウェルター級チャンピオンシップ】
-f00984	2012-12-01	loss	ISAO	1R 0:16 TKO（左ストレート→パウンド）<!--パンクラス公式記録-->	PANCRASE 2012 PROGRESS TOUR
+f00984	2012-12-01	loss	ISAO	1R 0:16 TKO（左ストレート→パウンド）	PANCRASE 2012 PROGRESS TOUR
 f00984	2013-03-16	loss	榊真嗣	5分3R終了 判定1-2	修斗 2013年第2戦
 f00984	2014-05-25	win	鈴木淑徳	5分3R終了 判定2-0	修斗 闘裸男13th
 f00984	2015-06-21	win	武田飛翔	1R 4:56 スリーパーホールド	修斗 闘裸男15 〜DIRECTION OF THE CAGE〜
@@ -7309,11 +7309,11 @@ f01147	2008-04-05	win	美木航	5分3R終了 判定3-0	CAGE FORCE 06
 f01147	2008-09-27	win	カン・ボムチャン	1R 3:25 TKO（パウンド）	CAGE FORCE 08
 f01147	2009-02-28	win	鹿又智成	5分3R終了 判定3-0	CAGE FORCE EX -eastern bound-
 f01147	2009-09-12	loss	弘中邦佳	1R 4:27 KO（左フック→パウンド）	CAGE FORCE 【CAGE FORCEライト級王座決定戦】
-f01147	2009-11-23	win	加藤鉄史	2R 1:22 KO（左フック→パウンド）<!--修斗公式記録-->	修斗 REVOLUTIONARY EXCHANGES 3
+f01147	2009-11-23	win	加藤鉄史	2R 1:22 KO（左フック→パウンド）	修斗 REVOLUTIONARY EXCHANGES 3
 f01147	2010-01-23	win	ウエタユウ	5分3R終了 判定3-0	修斗 The Way of SHOOTO 〜Like a Tiger, Like a Dragon〜
 f01147	2010-05-30	loss	朴光哲	5分3R終了 判定0-3	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
 f01147	2010-11-19	loss	アダム・リン	5分3R終了 判定0-3	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜
-f01147	2011-01-10	win	佐々木信治	1R 1:20 KO（左アッパー→パウンド）<!--修斗公式記録-->	修斗 SHOOTOR'S LEGACY 01 【修斗環太平洋ウェルター級チャンピオン決定戦】
+f01147	2011-01-10	win	佐々木信治	1R 1:20 KO（左アッパー→パウンド）	修斗 SHOOTOR'S LEGACY 01 【修斗環太平洋ウェルター級チャンピオン決定戦】
 f01147	2011-09-23	win	冨樫健一郎	5分3R終了 判定2-1	修斗 SHOOTOR'S LEGACY 04 【修斗環太平洋ウェルター級チャンピオンシップ】
 f01147	2012-04-28	win	トラヴィス・ペルチンスキー	5分3R終了 判定2-0	CFX 33: Minnesota vs. Japan
 f01147	2013-09-29	loss	弘中邦佳	4R 3:42 腕ひしぎ十字固め	修斗 2013年第4戦 【修斗世界ウェルター級チャンピオンシップ】
@@ -7322,7 +7322,7 @@ f01147	2014-02-23	loss	小谷直之	5分3R終了 判定0-3	VTJ 4th
 f01147	2014-05-11	win	中村晃司	3分3R終了 判定3-0	PANCRASE 258
 f01147	2014-08-10	win	伊藤崇文	3分3R終了 判定3-0	PANCRASE 260
 f01147	2014-12-06	win	太田駿平	3分3R終了 判定3-0	PANCRASE 263
-f01147	2015-03-15	loss	徳留一樹	1R 1:38 TKO（左ストレート→パウンド）<!--パンクラス公式記録-->	PANCRASE 265
+f01147	2015-03-15	loss	徳留一樹	1R 1:38 TKO（左ストレート→パウンド）	PANCRASE 265
 f01147	2015-07-26	win	山崎悠輝	5分3R終了 判定3-0	PANCRASE大阪大会
 f01147	2015-11-23	loss	クセイン・ハリエフ	1R リアネイキドチョーク	WSOF GC 1: China 1
 f01147	2016-02-07	loss	カミル・レボウスキー	1R 4:15 KO（右アッパー）	WSOF GC 2: Japan 1
@@ -7537,7 +7537,7 @@ f01187	2010-10-30	loss	Yasubei榎本	5分3R終了 判定0-3	SRC15 【ウェル�
 f01187	2010-12-30	win	長南亮	1R 0:19 KO（右フック）	戦極 Soul of Fight
 f01187	2011-12-16	loss	白井祐矢	5分3R終了 判定0-3	DEEP 56 IMPACT
 f01187	2012-12-08	loss	岩瀬茂俊	5分3R終了 判定0-3	DEEP CAGE IMPACT 2012 in TOKYO 1st ROUND
-f01187	2013-04-26	win	郷野聡寛	2R 2:07 TKO（左フック）<!--DEEP公式記録-->	DEEP 62 IMPACT
+f01187	2013-04-26	win	郷野聡寛	2R 2:07 TKO（左フック）	DEEP 62 IMPACT
 f01187	2014-04-29	loss	悠太	3R 0:26 TKO（タオル投入）	DEEP 66 IMPACT 【DEEPウェルター級王者決定戦】
 f01187	2014-12-06	loss	アキラ	2R 0:34 テクニカル判定1-2	PANCRASE 263 【ワールドスラムトーナメント ライト級 準決勝】
 f01187	2015-04-26	loss	久米鷹介	5分3R終了 判定0-3	PANCRASE 266
@@ -7663,7 +7663,7 @@ f01225	2013-04-05	loss	青木真也	2R 2:01 リアネイキドチョーク	ONE F
 f01225	2013-09-13	loss	ヴィシール・コロッサ	5分3R終了 判定0-3	ONE FC 10: Champions and Warriors
 f01225	2014-03-14	win	アルナウド・ルポン	1R 4:07 KO（右ボディブロー→パウンド）	ONE FC 14: War of Nations
 f01225	2014-05-02	loss	エドゥアルド・フォラヤン	5分3R終了 判定0-3	ONE FC 15: Rise of Heroes
-f01225	2015-05-31	win	牛久絢太郎	2R 4:49 TKO（グラウンドの肘打ち）<!--パンクラス公式記録-->	PANCRASE 267
+f01225	2015-05-31	win	牛久絢太郎	2R 4:49 TKO（グラウンドの肘打ち）	PANCRASE 267
 f01225	2015-11-13	win	メイジャー・オーバーロール	2R 1:19 TKO（スタンドパンチ連打）	ONE Championship 32: Pride of Lions
 f01225	2016-02-20	win	ヴィンセント・ラトゥール	2R 4:04 TKO（パウンド）	ONE Championship 39: Tribe of Warriors
 f01225	2016-05-06	loss	ジャダンバ・ナラントンガラグ	3R 1:27 ヴォンフルーチョーク	ONE Championship 42: Ascent to Power
@@ -7786,7 +7786,7 @@ f01250	2022-12-25	win	Ryo	5分3R終了 判定3-0	PANCRASE 330
 f01256	2005-07-14	loss	菅原雅顕	5分2R終了 判定0-3	修斗 下北沢修斗劇場 第12弾 〜Shooter's Summer〜
 f01256	2005-10-28	win	松藤裕晴	2R 1:56 スリーパーホールド	修斗 下北沢修斗劇場 第13弾 〜Soulful Fight〜
 f01256	2006-03-03	loss	正城ユウキ	5分2R終了 判定0-3	修斗 下北沢修斗劇場 第14弾 〜'06 巣立ち〜
-f01256	2006-07-30	draw	井上英	5分2R終了 判定0-1	修斗 下北沢修斗劇場 第15弾 〜シューティングスター〜 【新人王決定トーナメント バンタム級 2回戦<!--抽選により準決勝進出-->】
+f01256	2006-07-30	draw	井上英	5分2R終了 判定0-1	修斗 下北沢修斗劇場 第15弾 〜シューティングスター〜 【新人王決定トーナメント バンタム級 2回戦】
 f01256	2006-10-01	win	"塩田""GOZO""歩"	5分2R終了 判定2-0	修斗 下北沢修斗劇場 第16弾 〜燃えろいい男〜 【新人王決定トーナメント バンタム級 準決勝】
 f01256	2006-11-30	win	森卓也	5分2R終了 判定2-0	修斗 【新人王決定トーナメント バンタム級 決勝】
 f01256	2007-06-30	win	塙真一	5分2R終了 判定3-0	修斗
@@ -7963,7 +7963,7 @@ f01307	2015-12-04	loss	アレクサンダー・ヴォルカノフスキー	4R 3:
 f01307	2016-01-31	win	ロドルフォ・ルビオ	5分3R終了 判定3-0	PANCRASE 275
 f01307	2016-04-24	loss	クレベル・コイケ	3R 0:37 リアネイキッドチョーク	PANCRASE 277
 f01307	2016-09-11	win	山﨑悠輝	5分3R終了 判定2-1	PANCRASE 280
-f01307	2016-12-29	win	マリオ・シスムンド	1R 0:19 KO（左跳び膝蹴り→パウンド）<!--RIZIN公式記録-->	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 2nd ROUND
+f01307	2016-12-29	win	マリオ・シスムンド	1R 0:19 KO（左跳び膝蹴り→パウンド）	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 2nd ROUND
 f01307	2017-04-16	win	ダロン・クルックシャンク	1R 5:12 KO（右フック）	RIZIN 2017 in YOKOHAMA -SAKURA-
 f01307	2017-07-30	win	北岡悟	2R 4:48 TKO（スタンドパンチ連打）	RIZIN FIGHTING WORLD GRAND-PRIX 2017 1st ROUND -夏の陣-
 f01307	2017-12-31	win	五味隆典	1R 2:36 三角絞め	RIZIN FIGHTING WORLD GRAND-PRIX 2017 Final ROUND
@@ -8412,7 +8412,7 @@ f01443	2011-02-25	win	中西良行	3R 3:48 腕ひしぎ十字固め	DEEP 52 IMPA
 f01443	2011-08-26	win	柴田勝頼	2R 3:04 TKO（パウンド）	DEEP 55 IMPACT 【DEEPミドル級王者査定試合】
 f01443	2012-10-19	loss	中村和裕	5分3R終了 判定2-0	DEEP 60 IMPACT
 f01443	2012-12-22	win	金原弘光	3R 0:46 肩固め	DEEP HALEO IMPACT 〜三崎和雄引退セレモニー〜
-f01443	2013-06-15	win	桜木裕司	1R 1:04 TKO（左フック）<!--DEEP公式記録-->	DEEP CAGE IMPACT 2013 in KORAKUEN HALL
+f01443	2013-06-15	win	桜木裕司	1R 1:04 TKO（左フック）	DEEP CAGE IMPACT 2013 in KORAKUEN HALL
 f01443	2013-12-07	loss	マメッド・ハリドヴ	1R 2:03 三角絞め	KSW 25: Khalidov vs. Sakurai
 f01443	2014-10-26	loss	中西良行	5分3R終了 判定3-0	DEEP 69 IMPACT TDCホール 【DEEPミドル級次期王者挑戦者決定戦】
 f01443	2015-02-28	loss	長谷川賢	1R 4:12 アームロック	DEEP 71 IMPACT
@@ -8507,9 +8507,9 @@ f01472	2015-10-11	loss	住村竜市朗	5分3R終了 判定0-3	DEEP CAGE IMPACT 2
 f01472	2017-12-24	win	近藤有己	2R 0:57 TKO（パンチ）	PANCRASE vs DEEP 大阪大会
 f01472	2018-10-08	loss	渡辺良知	5分3R終了 判定0-3	DEEP CAGE IMPACT 2018 in OSAKA
 f01472	2019-11-17	loss	嶋田伊吹	2R 3:20 TKO（ドクターストップ：左目の負傷）	DEEP & PANCRASE 大阪大会
-f01478	2004-09-04	win	菊川夏子	5分2R終了 判定3-0	CROSS SECTION<!--第2回大会-->
+f01478	2004-09-04	win	菊川夏子	5分2R終了 判定3-0	CROSS SECTION
 f01478	2004-11-04	win	HARI	2R 4:28 チョークスリーパー	SMACKGIRL 2004 〜近藤有希引退記念興行〜
-f01478	2004-12-12	win	杉本由美子	5分2R終了 判定3-0	CROSS SECTION<!--第3回大会-->
+f01478	2004-12-12	win	杉本由美子	5分2R終了 判定3-0	CROSS SECTION
 f01478	2005-04-29	win	バッカス羽鳥	5分2R終了 判定3-0	SMACKGIRL-F 2005 〜今年もやるぞ! スマックF祭り〜 【The Next Cinderella Tournament 2005 -59kg級 1回戦】
 f01478	2005-07-10	win	YUKAЯI	5分2R終了 判定3-0	SMACKGIRL-F 2005 〜Next Cinderella Tournament 2005 2nd stage〜 【The Next Cinderella Tournament 2005 -59kg級 準決勝】
 f01478	2005-08-17	loss	赤野仁美	1R 1:19 腕ひしぎ十字固め	SMACKGIRL 2005 〜Dynamic!!〜 【The Next Cinderella Tournament 2005 -59kg級 決勝】
@@ -9295,7 +9295,7 @@ f02028	1993-11-25	draw	水野栄二	3分4R終了 判定1-1	修斗
 f02028	1996-01-20	win	ルタ☆ユージ	2R 2:15 腕ひしぎ十字固め	修斗
 f02028	1996-03-05	win	荒野真司	2R 1:42 腕ひしぎ十字固め	修斗
 f02028	1996-05-07	win	倉持昌和	3分3R終了 判定2-1	修斗
-f02028	1996-07-28	win	小島直人	3分3R終了 判定2-0	修斗<!--Free Fight Kawasaki-->
+f02028	1996-07-28	win	小島直人	3分3R終了 判定2-0	修斗
 f02028	1997-01-18	draw	"桜井""マッハ""速人"	3分3R終了 判定0-1	修斗 I Reconquista 〜聖地奪還〜
 f02028	1997-10-12	draw	宇野薫	5分2R終了 判定1-1	修斗 IV Reconquista
 f02028	1998-04-10	win	伊藤武則	5分3R終了 判定2-0	修斗 SHOOTO GIG '98
@@ -9360,11 +9360,11 @@ f02051	2007-09-22	loss	門脇英基	1R 4:09 門脇スペシャル	修斗 BACK TO
 f02051	2008-05-03	loss	田村彰敏	3R 2:37 スリーパーホールド	"""修斗伝承 01"" ROAD TO 20th ANNIVERSARY"
 f02051	2008-11-29	loss	日沖発	1R 3:32 TKO（マウントパンチ）	"""修斗伝承 04"" ROAD TO 20th ANNIVERSARY"
 f02051	2009-05-10	loss	リオン武	1R 4:41 TKO（パウンド）	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"" 【修斗世界ライト級チャンピオンシップ】"
-f02051	2009-10-30	win	コリー・グラント	1R 3:20 KO（膝蹴り→パウンド）<!--修斗公式記録-->	VALE TUDO JAPAN 09
-f02051	2010-05-30	win	松根良太	2R 0:21 KO（膝蹴り→パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
+f02051	2009-10-30	win	コリー・グラント	1R 3:20 KO（膝蹴り→パウンド）	VALE TUDO JAPAN 09
+f02051	2010-05-30	win	松根良太	2R 0:21 KO（膝蹴り→パウンド）	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
 f02051	2011-07-18	loss	上田将勝	1R 4:23 KO（左ミドルキック）	修斗 SHOOTOR’S LEGACY 03
 f02051	2011-11-05	loss	ニコ・ファレイゼン	1R 4:17 KO（右ストレート）	SHOOT the SHOOTO 2011
-f02051	2012-12-24	loss	所英男	1R 0:39 KO（パウンド）<!--VTJ公式記録-->	VTJ 1st
+f02051	2012-12-24	loss	所英男	1R 0:39 KO（パウンド）	VTJ 1st
 f02053	1995-01-21	win	茂田信吾	1R 1:10 TKO（パンチ連打）	修斗 VALE-TUDO ACCESS III
 f02053	1995-04-20	win	レネ・ローゼ	1R 6:41 スリーパーホールド	VALE TUDO JAPAN OPEN 1995
 f02053	1995-07-29	win	エド・デ・クライフ	1R 1:40 腕ひしぎ十字固め	修斗
@@ -9506,7 +9506,7 @@ f02086	2001-08-26	draw	ラリー・パパドポロス	5分3R終了 判定1-0	修
 f02086	2002-01-12	win	ランス・ギブソン	5分3R終了 判定3-0	修斗 【修斗ライトヘビー級王座決定戦】
 f02086	2002-06-29	win	ロナルド・ジューン	5分3R終了 判定2-0	修斗 TREASURE HUNT 07
 f02086	2002-12-08	win	長南亮	5分3R終了 判定2-1	DEEP2001 7th IMPACT in DIFFER ARIAKE
-f02086	2003-05-09	win	イーゲン井上	1R 0:27 TKO（右フック→パウンド）<!--修斗公式記録-->	SuperBrawl 29 【】
+f02086	2003-05-09	win	イーゲン井上	1R 0:27 TKO（右フック→パウンド）	SuperBrawl 29 【】
 f02086	2003-09-15	draw	上山龍紀	5分3R終了 判定1-0	DEEP 12th IMPACT in OHTAKU 【DEEPミドル級タイトルマッチ】
 f02086	2003-12-05	win	"シャノン・""ザ・キャノン""・リッチ"	1R 1:02 三角絞め	SuperBrawl 32 【SuperBrawlミドル級タイトルマッチ】
 f02086	2004-07-09	draw	ダスティン・デニス	5分3R終了 判定1-0	Shooto Hawaii: Soljah Fight Night 【修斗世界ライトヘビー級タイトルマッチ】
@@ -9531,7 +9531,7 @@ f02094	2001-11-02	win	ジョー・ドークセン	1R 0:56 アンクルホール�
 f02094	2002-03-09	win	マルコス・ダ・シウバ	2R 0:56 ギブアップ（パンチ連打）	SuperBrawl 23 【SuperBrawlミドル級タイトルマッチ】
 f02094	2002-07-13	win	マルタイン・デ・ヨング	1R 2:46 KO（ハイキック）	SuperBrawl 25 【SuperBrawlミドル級タイトルマッチ】
 f02094	2003-02-08	win	内藤征弥	5分2R終了 判定3-0	SuperBrawl 28 【SuperBrawlミドル級タイトルマッチ】
-f02094	2003-05-09	loss	須田匡昇	1R 0:27 TKO（右フック→パウンド）<!--修斗公式記録-->	SuperBrawl 29 【】
+f02094	2003-05-09	loss	須田匡昇	1R 0:27 TKO（右フック→パウンド）	SuperBrawl 29 【】
 f02094	2003-12-05	loss	"ジェイソン・""メイヘム""・ミラー"	2R終了時 TKO（タオル投入）	SuperBrawl 32
 f02094	2008-05-16	win	ハンス・マレロ	3R終了時 TKO（棄権）	X-1: Legends
 f02100	1996-07-07	loss	スベトラーナ・グンダレンコ	1R 1:17 ネックロック	LLPW: ULTIMATE CHALLENGE L-1【準決勝】
@@ -9599,8 +9599,8 @@ f02109	2008-03-15	win	門馬秀貴	1R 4:12 TKO（左フック→パウンド）	
 f02109	2008-05-03	loss	デイビッド・バロン	1R 4:50 フロントスリーパーホールド	"""修斗伝承 01"" ROAD TO 20th ANNIVERSARY"
 f02109	2008-09-23	win	弘中邦佳	2R（10分/5分）終了 判定3-0	DREAM.6 ミドル級グランプリ2008 決勝戦
 f02109	2008-12-31	win	柴田勝頼	1R 7:01 TKO（マウントパンチ）	Dynamite!! 〜勇気のチカラ2008〜
-f02109	2009-04-05	win	青木真也	1R 0:27 KO（パウンド）<!--DREAM公式記録-->	DREAM.8 ウェルター級グランプリ2009 開幕戦 【ウェルター級グランプリ 1回戦】
-f02109	2009-07-20	loss	マリウス・ザロムスキー	1R 4:03 KO（左ハイキック→パウンド）<!--DREAM公式記録-->	DREAM.10 ウェルター級グランプリ2009 決勝戦 【ウェルター級グランプリ 準決勝】
+f02109	2009-04-05	win	青木真也	1R 0:27 KO（パウンド）	DREAM.8 ウェルター級グランプリ2009 開幕戦 【ウェルター級グランプリ 1回戦】
+f02109	2009-07-20	loss	マリウス・ザロムスキー	1R 4:03 KO（左ハイキック→パウンド）	DREAM.10 ウェルター級グランプリ2009 決勝戦 【ウェルター級グランプリ 準決勝】
 f02109	2009-12-31	loss	郷野聡寛	2R 3:56 腕ひしぎ十字固め	Dynamite!! 〜勇気のチカラ2009〜
 f02109	2010-05-29	loss	ニック・ディアス	1R 3:54 腕ひしぎ十字固め	DREAM.14
 f02109	2010-12-31	loss	ジェイソン・ハイ	5分3R終了 判定1-2	Dynamite!! 〜勇気のチカラ2010〜
@@ -9657,12 +9657,12 @@ f02110	2011-09-24	loss	リオン武	1R 4:18 KO（右ハイキック）	DREAM.17
 f02110	2012-09-30	loss	石渡伸太郎	5分3R終了 判定0-3	修斗
 f02110	2013-03-16	win	キム・キュハ	1R 4:10 スリーパーホールド	修斗 2013年第2戦
 f02110	2013-06-22	win	アンソニー・アヴィラ	3R 1:53 リアネイキドチョーク	VTJ 2nd
-f02110	2013-10-05	win	ダニエル・ロメロ	2R 2:23 ネックロック<!--VTJ公式記録-->	VTJ 3rd
+f02110	2013-10-05	win	ダニエル・ロメロ	2R 2:23 ネックロック	VTJ 3rd
 f02110	2014-02-23	win	ジェシー・ブロック	5分3R終了 判定3-0	VTJ 4th
 f02110	2014-05-04	win	土屋大喜	5分3R終了 判定3-0	修斗 2014年第4戦
 f02110	2014-10-04	win	ラージャ・シッペン	2R 4:33 リアネイキドチョーク	VTJ 6th
 f02110	2015-01-25	loss	中村好史	5分3R終了 判定0-3	修斗 2015年開幕戦 【修斗環太平洋ライト級チャンピオン決定戦】
-f02110	2015-07-26	loss	大澤茂樹	2R 4:03 KO（左ストレート→パウンド）<!--修斗公式記録-->	修斗
+f02110	2015-07-26	loss	大澤茂樹	2R 4:03 KO（左ストレート→パウンド）	修斗
 f02110	2016-04-23	win	ファン・チョンホ	2R 0:31 スリーパーホールド	修斗 MOBSTYLES Presents FIGHT & MOSH
 f02110	2017-04-23	loss	斎藤裕	5分5R終了 判定0-3	修斗 舞浜アンフィシアター大会 【修斗世界フェザー級チャンピオンシップ】
 f02110	2019-05-06	loss	デュアン・ヴァン・ヘルフォート	5分3R終了 判定0-3	修斗 30周年記念大会 第2部
@@ -9794,14 +9794,14 @@ f02150	2001-12-16	win	戸井田カツヤ	5分3R終了 判定3-0	修斗 SHOOTO TO
 f02150	2002-07-19	loss	阿部裕幸	1R 4:37 KO（左フック）	修斗 TREASURE HUNT 08
 f02150	2002-12-14	win	阿部裕幸	1R 3:53 スリーパーホールド	修斗 【修斗ライト級チャンピオンシップ】
 f02150	2003-08-10	draw	ステファン・パーリング	5分3R終了 判定1-1	修斗 世界三大チャンピオンシップ 【修斗世界ライト級チャンピオンシップ】
-f02150	2003-12-14	win	佐藤ルミナ	1R 0:41 フロントネックロック<!--修斗公式記録-->	修斗
+f02150	2003-12-14	win	佐藤ルミナ	1R 0:41 フロントネックロック	修斗
 f02150	2004-12-14	win	門脇英基	1R 3:34 フロントスリーパーホールド	修斗 15th Anniversary
 f02150	2005-03-11	win	ジョン・ホーキ	5分3R終了 判定3-0	修斗 【修斗世界ライト級チャンピオンシップ】
-f02150	2005-07-06	loss	所英男	延長R 0:08 TKO（右バックブロー）<!--HERO'S公式記録-->	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
+f02150	2005-07-06	loss	所英男	延長R 0:08 TKO（右バックブロー）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
 f02150	2006-08-05	loss	朴光哲	5分2R終了 判定0-3	
 f02150	2007-07-16	win	勝村周一朗	2R 1:55 KO（右フック）	HERO'S 2007 ミドル級世界王者決定トーナメント開幕戦
 f02150	2008-06-01	loss	ジョゼ・アルド	2R 3:22 TKO（パウンド）	WEC 34: Faber vs. Pulver
-f02150	2009-10-30	loss	リオン武	4R 2:58 KO（左ストレート→パウンド）<!--VTJ公式記録-->	VALE TUDO JAPAN 09
+f02150	2009-10-30	loss	リオン武	4R 2:58 KO（左ストレート→パウンド）	VALE TUDO JAPAN 09
 f02150	2012-03-24	win	パヤソ・ロコ	1R 2:15 （負傷）	DDT: Duelo de Titas
 f02150	2013-05-19	draw	ディージュアン・オーウェンズ	5分3R終了 判定0-0	Inka FC 21: Private 【Inka FCフェザー級タイトルマッチ】
 f02150	2013-08-24	win	ディージュアン・オーウェンズ	4R 0:00 KO（ヘッドキック）	Inka FC 23: Pequeno vs. Owens 【Inka FCフェザー級タイトルマッチ】
@@ -10026,7 +10026,7 @@ f02176	2008-03-05	win	ドゥエイン・ラドウィック	1R 2:28 TKO（ドク�
 f02176	2008-08-24	win	ハン・スーファン	5分3R終了 判定3-0	戦極 〜第四陣〜
 f02176	2008-11-01	loss	セルゲイ・ゴリアエフ	5分3R終了 判定1-2	戦極 〜第六陣〜
 f02176	2009-01-04	loss	北岡悟	1R 1:41 アキレス腱固め	戦極の乱2009 【戦極ライト級タイトルマッチ】
-f02176	2009-05-10	win	中蔵隆志	2R 4:42 TKO（パウンド）<!--修斗公式記録-->	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"""
+f02176	2009-05-10	win	中蔵隆志	2R 4:42 TKO（パウンド）	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"""
 f02176	2009-10-30	win	トニー・ハービー	5分5R終了 判定3-0	VALE TUDO JAPAN 09
 f02176	2010-03-31	loss	ケニー・フロリアン	3R 2:52 チョークスリーパー	UFC Fight Night: Florian vs. Gomi
 f02176	2010-08-01	win	タイソン・グリフィン	1R 1:04 KO（右フック→パウンド）	UFC Live: Jones vs. Matyushenko
@@ -10066,13 +10066,13 @@ f02192	2007-07-16	loss	アレッシャンドリ・フランカ・ノゲイラ	2R
 f02192	2009-05-24	win	山城裕之	1R 2:56 ツイスター	ZST.20
 f02192	2009-11-23	win	田澤聡	1R 3:54 ニンジャチョーク	修斗 REVOLUTIONARY EXCHANGES 3
 f02192	2010-03-22	win	上田将勝	2R 3:39 ニンジャチョーク	修斗 The Way of SHOOTO 02 〜Like a Tiger, Like a Dragon〜 【修斗世界フェザー級チャンピオンシップ】
-f02192	2010-09-23	loss	ダレン・ウエノヤマ	2R 3:53 KO（パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 05 〜Like a Tiger, Like a Dragon〜
-f02192	2011-04-29	loss	岡嵜康悦	2R 2:24 KO（右ストレート→パウンド）<!--修斗公式記録-->	修斗伝承 2011 【修斗世界フェザー級チャンピオンシップ】
+f02192	2010-09-23	loss	ダレン・ウエノヤマ	2R 3:53 KO（パウンド）	修斗 The Way of SHOOTO 05 〜Like a Tiger, Like a Dragon〜
+f02192	2011-04-29	loss	岡嵜康悦	2R 2:24 KO（右ストレート→パウンド）	修斗伝承 2011 【修斗世界フェザー級チャンピオンシップ】
 f02194	1998-08-29	win	アンドリュー・ケアー	2R 2:22 腕ひしぎ十字固め	THE GCM 出島バーリトゥード
 f02194	1999-05-29	win	高山義幸	5分2R終了 判定3-0	"修斗 the Renaxis 1999 ""10 Years Anniversary"""
 f02194	1999-09-05	draw	大石真丈	5分2R終了 判定1-0	IV 修斗 the Renaxis 1999
 f02194	2000-05-22	win	野中公人	5分2R終了 判定3-0	修斗 R.E.A.D. 〜2000 SHOOTO〜
-f02194	2000-09-15	loss	ステファン・パーリング	2R 2:23 TKO（右フック）<!--修斗公式記録-->	修斗 R.E.A.D. 〜2000 SHOOTO〜
+f02194	2000-09-15	loss	ステファン・パーリング	2R 2:23 TKO（右フック）	修斗 R.E.A.D. 〜2000 SHOOTO〜
 f02194	2001-11-25	win	井上和浩	1R 4:00 TKO（ドクターストップ）	修斗 SHOOTO TO THE TOP
 f02194	2002-03-15	draw	バレット・ヨシダ	5分3R終了 判定1-1	修斗 TREASURE HUNT 05
 f02194	2002-07-19	win	アレッシャンドリ・フランカ・ノゲイラ	1R 4:37 KO（左フック）	修斗 TREASURE HUNT 06
@@ -10089,16 +10089,16 @@ f02194	2006-04-22	loss	ブラッド・ピケット	5分3R終了 判定0-3	Cage R
 f02194	2006-05-12	win	ディビッド・パディーリャ	1R 3:15 腕ひしぎ十字固め	修斗 SHOOTO The DEVILOCK
 f02194	2006-07-08	loss	"ファブリシオ・""ピットブル""・モンテイロ"	2R 1:52 アンクルホールド	club DEEP 東京
 f02194	2006-08-26	draw	松下直揮	5分2R終了 時間切れ	PRIDE 武士道 -其の十二-
-f02194	2007-02-17	loss	リオン武	1R 4:05 TKO（右ストレート）<!--修斗公式記録-->	修斗 BACK TO OUR ROOTS 1
+f02194	2007-02-17	loss	リオン武	1R 4:05 TKO（右ストレート）	修斗 BACK TO OUR ROOTS 1
 f02194	2007-08-25	loss	サミ・アジズ	1R 2:31 TKO（パウンド）	BodogFight: Vancouver
 f02194	2007-10-09	loss	今成正和	3R 4:32 アンクルホールド	DEEP 32 IMPACT
 f02194	2009-11-28	loss	アルチョム・ダムコフスキー	5分2R終了 判定0-3	Bushido FC: Legends 【ライト級トーナメント 1回戦】
 f02194	2011-07-10	win	坪井淳浩	5分2R終了 判定3-0	DEEP CAGE IMPACT 2011 in Nagoya
-f02194	2012-09-30	loss	大澤茂樹	1R 4:12 KO（左ストレート→パウンド）<!--修斗公式記録-->	修斗
+f02194	2012-09-30	loss	大澤茂樹	1R 4:12 KO（左ストレート→パウンド）	修斗
 f02196	1997-04-04	win	アダム・フィッシャー	1R 3:39 チョークスリーパー	HOOKnSHOOT: Lightweight Championship 【ライト級トーナメント 準決勝】
 f02196	1997-04-04	win	ショーン・クルタス	1R 3:29 TKO（タオル投入）	HOOKnSHOOT: Lightweight Championship 【ライト級トーナメント 決勝】
 f02196	1997-04-04	win	デュエイン・ブレッシンガー	1R 2:37 腕ひしぎ十字固め	HOOKnSHOOT: Lightweight Championship 【ライト級トーナメント 1回戦】
-f02196	1997-04-05	win	ティム・ウィルズ	1R 1:06 ギブアップ<!--Bad Position-->	HOOKnSHOOT: Absolute Fighting Championship 1 【HnSライト級王座決定戦】
+f02196	1997-04-05	win	ティム・ウィルズ	1R 1:06 ギブアップ	HOOKnSHOOT: Absolute Fighting Championship 1 【HnSライト級王座決定戦】
 f02196	1997-04-18	loss	ショーニー・カーター	15分1R終了 判定1-2	Extreme Challenge 5 【ライト級トーナメント 決勝】
 f02196	1997-04-18	win	ラバーン・クラーク	1R 5:51 三角絞め	Extreme Challenge 5 【ライト級トーナメント 1回戦】
 f02196	1998-02-27	loss	ジェシー・ジョーンズ	1R 5:45 腕ひしぎ十字固め	Extreme Challenge 15
@@ -10281,7 +10281,7 @@ f02198	2007-12-29	loss	ジョルジュ・サンピエール	2R 4:54 腕ひしぎ
 f02198	2008-06-07	loss	チアゴ・アウベス	2R 1:02 TKO（跳び膝蹴り→パウンド）	UFC 85: Bedlam
 f02198	2009-05-23	win	マット・セラ	5分3R終了 判定3-0	UFC 98: Evans vs. Machida
 f02198	2010-04-10	win	ヘンゾ・グレイシー	3R 4:40 TKO（スタンドパンチ連打）	UFC 112: Invincible
-f02198	2010-08-07	win	ヒカルド・アルメイダ	1R 3:15 変形アナコンダチョーク<!--デーブ・シュルツ・フロントヘッドロック-->	UFC 117: Silva vs. Sonnen
+f02198	2010-08-07	win	ヒカルド・アルメイダ	1R 3:15 変形アナコンダチョーク	UFC 117: Silva vs. Sonnen
 f02198	2010-11-20	loss	BJ・ペン	1R 0:21 KO（右ストレート→パウンド）	UFC 123: Rampage vs. Machida
 f02198	2011-09-24	loss	ジョシュ・コスチェック	1R 4:59 KO（パウンド）	UFC 135: Jones vs. Rampage
 f02204	1998-10-28	win	トーマス・ヴェラスケス	1R 1:02 腕ひしぎ十字固め	WVF: Jacksonville Vale Tudo 1
@@ -10591,7 +10591,7 @@ f02243	2004-06-27	win	ダニエル・リマ	5分3R終了 判定3-0	修斗 SHOOTO
 f02243	2004-11-12	win	今泉堅太郎	5分3R終了 判定2-1	修斗 WANNA SHOOTO 2004 【修斗世界フェザー級チャンピオンシップ】
 f02243	2006-07-21	draw	水垣偉弥	5分3R終了 判定0-1	修斗
 f02243	2006-10-14	win	ダーヴィド・レイエナス	1R 4:09 スリーパーホールド	修斗
-f02243	2010-05-30	loss	佐藤ルミナ	2R 0:21 KO（右膝蹴り→パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
+f02243	2010-05-30	loss	佐藤ルミナ	2R 0:21 KO（右膝蹴り→パウンド）	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
 f02243	2015-10-03	win	カナ・ハヤット	1R 3:31 腕ひしぎ十字固め	VTJ in OKINAWA
 f02247	2000-11-12	win	大内敬	1R 4:10 スリーパーホールド	修斗 R.E.A.D. 〜2000 SHOOTO〜
 f02247	2001-01-19	win	飛田拓人	5分2R終了 判定3-0	修斗 SHOOTO TO THE TOP
@@ -10656,8 +10656,8 @@ f02250	2008-09-28	loss	正城ユウキ	3R 3:39 フロントスリーパーホー
 f02250	2008-11-08	win	清水清隆	1R 3:06 TKO（ドクターストップ）	CAGE FORCE EX -eastern bound-
 f02250	2009-09-22	win	神酒龍一	5分3R終了 判定3-0	修斗 REVOLUTIONARY EXCHANGES 2
 f02250	2010-05-30	win	神酒龍一	5分3R終了 判定3-0	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜 【修斗世界バンタム級王座決定戦】
-f02250	2010-11-19	win	森卓也	1R 4:49 KO（パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜
-f02250	2011-07-18	win	正城ユウキ	2R 0:24 KO（左ハイキック→パウンド）<!--修斗公式記録-->	修斗 SHOOTOR'S LEGACY 03 【修斗世界バンタム級チャンピオンシップ】
+f02250	2010-11-19	win	森卓也	1R 4:49 KO（パウンド）	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜
+f02250	2011-07-18	win	正城ユウキ	2R 0:24 KO（左ハイキック→パウンド）	修斗 SHOOTOR'S LEGACY 03 【修斗世界バンタム級チャンピオンシップ】
 f02250	2012-03-03	loss	ジョセフ・ベナビデス	2R 0:11 TKO（右フック→パウンド）	UFC on FX 2: Alves vs. Kampmann 【フライ級王座決定トーナメント 準決勝】
 f02250	2012-11-10	loss	ジョン・リネカー	5分3R終了 判定0-3	UFC on Fuel TV 6: Franklin vs. Le
 f02250	2013-05-31	win	レイ・ドーヨーゲン	5分3R終了 判定2-1	ONE FC 9: Rise to Power
@@ -10692,18 +10692,18 @@ f02256	2001-12-15	nc	ジョシュ・トムソン	2R 2:00 無効試合（ロー�
 f02256	2002-05-05	loss	ステファン・パーリング	1R 0:30 TKO（ドクターストップ：額カット）	修斗 TREASURE HUNT 06
 f02256	2002-09-16	win	勝田哲夫	1R 2:45 TKO（パウンド）	修斗 TREASURE HUNT 10
 f02256	2003-05-09	win	ジェフ・カラン	5分3R終了 判定3-0	SuperBrawl 29
-f02256	2003-09-05	win	ケイレブ・ミッチェル	1R 0:40 TKO（右フック）<!--修斗公式記録-->	修斗
+f02256	2003-09-05	win	ケイレブ・ミッチェル	1R 0:40 TKO（右フック）	修斗
 f02256	2004-04-07	win	トニー・バレント	1R 0:58 チョークスリーパー	K-1 WORLD MAX 2004 〜世界一決定トーナメント開幕戦〜
 f02256	2004-07-07	win	安廣一哉	2R 2:40 腕ひしぎ十字固め	K-1 WORLD MAX 2004 〜世界一決定トーナメント開幕戦〜 【ミックスルール】
 f02256	2004-10-13	win	ジャダンバ・ナラントンガラグ	1R 1:55 KO（右ストレート→パウンド）	K-1 WORLD MAX 2004 〜世界王者対抗戦
 f02256	2005-07-06	win	イアン・シャファー	3R 1:23 TKO（パウンド）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦
 f02256	2005-09-07	win	ホイラー・グレイシー	2R 0:38 KO（右フック）	HERO'S 2005 ミドル級世界最強王者決定トーナメント準決勝 【ミドル級トーナメント 準々決勝】
 f02256	2005-09-07	win	宇野薫	2R 4:04 TKO（ドクターストップ：左眉尻カット）	HERO'S 2005 ミドル級世界最強王者決定トーナメント準決勝 【ミドル級トーナメント 準決勝】
-f02256	2005-12-31	win	須藤元気	1R 4:39 KO（右フック→パウンド）<!--K-1公式記録-->	K-1 PREMIUM 2005 Dynamite!! 【ミドル級トーナメント 決勝】
+f02256	2005-12-31	win	須藤元気	1R 4:39 KO（右フック→パウンド）	K-1 PREMIUM 2005 Dynamite!! 【ミドル級トーナメント 決勝】
 f02256	2006-05-03	win	宮田和幸	1R 0:04 KO（左跳び膝蹴り）	HERO'S 2006 ミドル級世界最強王者決定トーナメント開幕戦
-f02256	2006-12-31	win	イストバン・マヨロシュ	1R 3:46 KO（スタンドパンチ連打）<!--K-1公式記録-->	K-1 PREMIUM 2006 Dynamite!!
+f02256	2006-12-31	win	イストバン・マヨロシュ	1R 3:46 KO（スタンドパンチ連打）	K-1 PREMIUM 2006 Dynamite!!
 f02256	2007-09-17	win	ビビアーノ・フェルナンデス	5分3R終了 判定3-0	HERO'S 2007 ミドル級世界王者決定トーナメント決勝戦
-f02256	2007-12-31	win	ハニ・ヤヒーラ	2R 3:11 KO（スタンドパンチ連打）<!--K-1公式記録-->	K-1 PREMIUM 2007 Dynamite!!
+f02256	2007-12-31	win	ハニ・ヤヒーラ	2R 3:11 KO（スタンドパンチ連打）	K-1 PREMIUM 2007 Dynamite!!
 f02256	2009-05-26	loss	ジョー・ウォーレン	2R（10分/5分）終了 判定1-2	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【フェザー級グランプリ 2回戦】
 f02256	2009-12-31	loss	金原正徳	5分3R終了 判定0-3	Dynamite!! 〜勇気のチカラ2009〜
 f02256	2010-05-29	win	キコ・ロペス	1R 1:41 KO（右フック→パウンド）	DREAM.14
@@ -10851,7 +10851,7 @@ f02277	2008-11-22	draw	森卓也	5分3R終了 判定1-1	修斗 SHOOTO GIG NORTH 
 f02277	2009-03-08	win	北原史寛	5分2R終了 判定2-0	修斗 BORDER -season 1- 「勃発」
 f02277	2009-04-10	loss	神酒龍一	5分3R終了 判定0-3	修斗 SHOOTING DISCO 8 〜We are Tarzan!〜
 f02277	2009-10-04	loss	GoZo	2R 3:49 腕ひしぎ十字固め	修斗 BORDER -season 1- 「激突」
-f02277	2010-03-28	loss	田原しんぺー	3R 3:31 KO（パウンド）<!--修斗公式記録-->	修斗 BORDER -season 2- 「波動」
+f02277	2010-03-28	loss	田原しんぺー	3R 3:31 KO（パウンド）	修斗 BORDER -season 2- 「波動」
 f02277	2010-09-26	draw	ATCHアナーキー	5分3R終了 判定1-1	修斗 SHOOTO GIG WEST 12
 f02277	2010-12-26	win	"増田""BULL""徹平"	1R 2:12 三角絞め	修斗 BORDER -season 2- 「不動」
 f02277	2011-04-03	draw	ヒートたけし	5分3R終了 判定1-0	修斗 BORDER -season 3- 「春雷」
@@ -10875,7 +10875,7 @@ f02279	2006-04-02	win	ポール・ロドリゲス	1R 2:29 フロントチョー�
 f02279	2006-06-04	win	マーカス・アウレリオ	2R（10分/5分）終了 判定3-0	PRIDE 武士道 -其の十一-
 f02279	2006-08-26	win	クリスチャーノ・マルセロ	2R（10分/5分）終了 判定3-0	PRIDE 武士道 -其の十二-
 f02279	2006-11-05	win	デビッド・ベルクヘーデン	2R（10分/5分）終了 判定3-0	PRIDE 武士道 -其の十三-
-f02279	2006-12-31	loss	五味隆典	1R 1:14 KO（左ストレート→パウンド）<!--PRIDE公式記録-->	PRIDE 男祭り 2006 -FUMETSU-
+f02279	2006-12-31	loss	五味隆典	1R 1:14 KO（左ストレート→パウンド）	PRIDE 男祭り 2006 -FUMETSU-
 f02279	2007-12-31	win	ギルバート・メレンデス	2R（10分/5分）終了 判定3-0	やれんのか! 大晦日! 2007
 f02279	2008-03-15	win	チョン・ブギョン	2R（10分/5分）終了 判定3-0	DREAM.1 ライト級グランプリ2008 開幕戦 【ライト級グランプリ 1回戦】
 f02279	2008-05-11	loss	宇野薫	2R 1:39 チョークスリーパー	DREAM.3 ライト級グランプリ2008 2nd ROUND 【ライト級グランプリ 2回戦】
@@ -10937,7 +10937,7 @@ f02314	2004-10-03	win	オリヴィエラ・エリス	1R 2:24 スリーパーホ�
 f02314	2004-11-12	win	八隅孝平	2R 3:25 フロントスリーパーホールド	修斗 WANNA SHOOTO 2004
 f02314	2005-03-12	win	ヤクート・メティン	1R 3:28 腕ひしぎ十字固め	Shooto Sweden: Second Impact 【修斗欧州ウェルター級王座決定戦】
 f02314	2005-04-23	loss	川尻達也	1R 4:42 TKO（パウンド）	修斗 in 福岡 玄海沖地震被災地チャリティイベント
-f02314	2005-07-06	loss	高谷裕之	1R 1:56 KO（左フック）<!--HERO'S公式記録-->	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
+f02314	2005-07-06	loss	高谷裕之	1R 1:56 KO（左フック）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
 f02314	2005-10-01	loss	アレッシャンドリ・イジドロ	1R 2:58 フロントチョーク	Cage Warriors: Strike Force 3 【CWFCライト級王座決定戦】
 f02314	2006-11-18	win	ジョン・マーロウ	5分3R終了 判定2-1	Ironheart Crown 11: Apocalypse
 f02314	2007-07-15	loss	中蔵隆志	1R 2:54 ヒールホールド	修斗 BACK TO OUR ROOTS 04
@@ -11104,7 +11104,7 @@ f02338	2007-07-15	win	ヤニ・ラックス	1R 2:54 アキレス腱固め	修斗
 f02338	2007-11-08	win	遠藤雄介	5分3R終了 判定3-0	修斗 BACK TO OUR ROOTS 06 【修斗環太平洋ウェルター級チャンピオンシップ】
 f02338	2008-05-03	win	天突頑丈	5分3R終了 判定3-0	"""修斗伝承 01"" ROAD TO 20th ANNIVERSARY 【修斗世界ウェルター級王座決定戦】"
 f02338	2008-11-29	win	ベンディ・カシミール	1R 4:58 スリーパーホールド	"""修斗伝承 04"" ROAD TO 20th ANNIVERSARY"
-f02338	2009-05-10	loss	五味隆典	2R 4:42 TKO（パウンド）<!--修斗公式記録-->	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"""
+f02338	2009-05-10	loss	五味隆典	2R 4:42 TKO（パウンド）	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"""
 f02338	2011-04-29	loss	弘中邦佳	5分3R終了 判定0-2	修斗伝承 2011
 f02342	2002-11-15	draw	鹿又智成	5分2R終了 判定0-0	修斗
 f02342	2003-05-30	win	橋本平馬	5分2R終了 判定3-0	修斗 Shootor's Dream II 【新人王トーナメント ウェルター級 2回戦】
@@ -11127,7 +11127,7 @@ f02342	2011-10-29	loss	チェ・ドゥホ	3R 0:15 KO（跳び膝蹴り）	DEEP C
 f02346	1999-11-06	win	マーカス・ペルトネン	1R 1:38 TKO	FinnFight 3
 f02346	2000-12-02	loss	ヤニ・ラックス	1R 9:25 チョークスリーパー	FinnFight 4
 f02346	2001-11-24	win	オロフ・インゲル	判定	FinnFight 5
-f02346	2002-08-31	draw	ラフロス・ラロス	5分2R終了 時間切れ<!--判定なし-->	Cage Wars 3 - Hells Kitchen
+f02346	2002-08-31	draw	ラフロス・ラロス	5分2R終了 時間切れ	Cage Wars 3 - Hells Kitchen
 f02346	2002-10-19	win	サミ・ハイパ	1R 4:00 ギブアップ	Shooto Finland: The First Time
 f02346	2002-12-14	win	タクミ	5分3R終了 判定2-0	修斗
 f02346	2003-03-18	win	佐藤ルミナ	1R 2:09 TKO（パウンド）	修斗
@@ -11175,7 +11175,7 @@ f02358	2003-05-30	loss	リオン武	5分2R終了 判定0-3	修斗 下北沢修�
 f02358	2003-11-25	loss	山田啓介	5分2R終了 判定0-2	修斗
 f02358	2004-03-28	win	松下剛士	5分2R終了 判定2-0	修斗 SHOOTO GIG CENTRAL Vol.5
 f02358	2004-10-17	win	藤岡正義	5分2R終了 判定2-0	修斗 & KAKUMEI KICKBOXING 【新人王トーナメント ライト級 準決勝】
-f02358	2004-11-12	loss	リオン武	2R 4:58 TKO（右ストレート）<!--修斗公式記録-->	修斗 WANNA SHOOTO 2004 【新人王トーナメント ライト級 決勝】
+f02358	2004-11-12	loss	リオン武	2R 4:58 TKO（右ストレート）	修斗 WANNA SHOOTO 2004 【新人王トーナメント ライト級 決勝】
 f02358	2005-04-23	win	溝口なおすけ	2R 2:38 チキンウィングアームロック	修斗 in 福岡 玄海沖地震被災地チャリティイベント
 f02358	2005-09-23	loss	田村彰敏	2R 4:51 スリーパーホールド	修斗
 f02358	2006-02-04	win	浅野倫久	5分2R終了 判定3-0	MARS in 有明
@@ -11206,7 +11206,7 @@ f02362	2005-11-06	draw	ダニエル・リマ	5分3R終了 判定1-0	修斗
 f02362	2005-12-11	loss	DJ.taiki	5分2R終了 判定0-3	D.O.G. IV
 f02362	2006-02-17	win	植松直哉	5分3R終了 判定2-0	修斗 SHOOTO The Victory of the Truth
 f02362	2006-07-21	loss	外薗晶敏	5分3R終了 判定0-3	修斗 【修斗世界フェザー級王座決定戦】
-f02362	2006-11-10	win	水垣偉弥	2R 0:59 TKO（膝蹴り）<!--修斗公式記録-->	修斗
+f02362	2006-11-10	win	水垣偉弥	2R 0:59 TKO（膝蹴り）	修斗
 f02362	2007-05-18	loss	マルコ・ロウロ	5分3R終了 判定0-2	修斗 BACK TO OUR ROOTS 03
 f02362	2007-09-22	loss	ダニエル・リマ	5分3R終了 判定1-2	修斗 BACK TO OUR ROOTS 05
 f02362	2007-12-01	win	パンチィー山内	5分2R終了 判定3-0	CAGE FORCE 05
@@ -11273,7 +11273,7 @@ f02368	2003-05-30	win	碓氷早矢手	5分2R終了 判定3-0	修斗 Shootor's Dr
 f02368	2003-10-31	win	菅谷正徳	1R 3:04 TKO（カット）	修斗 下北沢修斗劇場 第7弾 〜若大将は誰だ!〜
 f02368	2004-03-22	win	鈴木洋平	1R 2:40 TKO（パウンド）	修斗
 f02368	2004-07-16	win	山田啓介	5分2R終了 判定3-0	修斗 【新人王トーナメント ライト級 準決勝】
-f02368	2004-11-12	win	碓氷早矢手	2R 4:58 TKO（右ストレート）<!--修斗公式記録-->	修斗 WANNA SHOOTO 2004 【新人王トーナメント ライト級 決勝】
+f02368	2004-11-12	win	碓氷早矢手	2R 4:58 TKO（右ストレート）	修斗 WANNA SHOOTO 2004 【新人王トーナメント ライト級 決勝】
 f02368	2005-03-11	win	風田陣	2R 4:17 スリーパーホールド	修斗
 f02368	2005-08-20	loss	アントニオ・カルバーリョ	5分3R終了 判定0-2	修斗 ALIVE ROAD
 f02368	2005-11-06	win	田村彰敏	5分3R終了 判定2-0	修斗
@@ -11281,18 +11281,18 @@ f02368	2006-02-17	win	石川真	5分3R終了 判定3-0	修斗 SHOOTO The Victory
 f02368	2006-05-12	win	アントニオ・カルバーリョ	1R 3:06 TKO（パウンド）	修斗 SHOOTO The DEVILOCK 【修斗世界ライト級王座決定戦】
 f02368	2006-07-21	win	コール・ミラー	5分3R終了 判定3-0	修斗
 f02368	2006-10-14	win	ナーヴィド・ヨウセフィ	2R 4:35 スリーパーホールド	修斗
-f02368	2007-02-17	win	阿部裕幸	1R 4:05 TKO（右ストレート）<!--修斗公式記録-->	修斗 BACK TO OUR ROOTS 1
+f02368	2007-02-17	win	阿部裕幸	1R 4:05 TKO（右ストレート）	修斗 BACK TO OUR ROOTS 1
 f02368	2007-05-18	loss	田村彰敏	5分3R終了 判定0-3	修斗 BACK TO OUR ROOTS 3 【修斗世界ライト級チャンピオンシップ】
 f02368	2007-07-15	win	マーク・ドゥンカン	1R 3:16 スリーパーホールド	修斗 BACK TO OUR ROOTS 4
 f02368	2007-11-08	win	戸井田カツヤ	5分3R終了 判定3-0	修斗 BACK TO OUR ROOTS 06 【修斗環太平洋ライト級王座決定戦】
 f02368	2008-05-03	loss	セバント・ヤング	5分2R終了 判定0-3	"""修斗伝承 01"" ROAD TO 20th ANNIVERSARY"
 f02368	2008-11-29	win	門脇英基	5分3R終了 判定3-0	"""修斗伝承 04"" ROAD TO 20th ANNIVERSARY 【修斗世界ライト級チャンピオンシップ】"
 f02368	2009-05-10	win	佐藤ルミナ	1R 4:41 TKO（パウンド）	"""修斗伝承 ROAD TO 20th ANNIVERSARY FINAL"" 【修斗世界ライト級チャンピオンシップ】"
-f02368	2009-10-30	win	アレッシャンドリ・フランカ・ノゲイラ	4R 2:58 KO（パウンド）<!--VTJ公式記録-->	VALE TUDO JAPAN 09
+f02368	2009-10-30	win	アレッシャンドリ・フランカ・ノゲイラ	4R 2:58 KO（パウンド）	VALE TUDO JAPAN 09
 f02368	2010-01-23	win	ジェラルド・ロバート	3R 4:11 腕ひしぎ十字固め	修斗 The Way of SHOOTO 〜Like a Tiger, Like a Dragon〜
 f02368	2010-05-30	loss	日沖発	5分3R終了 判定1-2	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜 【修斗世界ライト級チャンピオンシップ】
 f02368	2010-09-25	loss	宮田和幸	2R（10分/5分）終了 判定0-3	DREAM.16
-f02368	2011-04-29	win	土屋大喜	2R 4:27 KO（右ストレート→パウンド）<!--修斗公式記録-->	修斗伝承 2011
+f02368	2011-04-29	win	土屋大喜	2R 4:27 KO（右ストレート→パウンド）	修斗伝承 2011
 f02368	2011-05-29	win	松本晃市郎	1R 6:51 TKO（右フック→パウンド）	DREAM JAPAN GP -2011バンタム級日本トーナメント-
 f02368	2011-09-24	win	宇野薫	1R 4:18 KO（右ハイキック）	DREAM.17
 f02368	2011-12-31	loss	高谷裕之	5分5R終了 判定0-3	元気ですか!! 大晦日!! 2011 【DREAMフェザー級タイトルマッチ】
@@ -11460,7 +11460,7 @@ f02397	2006-03-03	win	神酒龍一	5分2R終了 判定3-0	修斗 下北沢修斗
 f02397	2006-05-28	win	大河内衛	5分2R終了 判定3-0	修斗
 f02397	2006-09-08	win	岡田剛史	5分2R終了 判定3-0	修斗
 f02397	2006-11-10	loss	菅原雅顕	5分2R終了 判定0-2	修斗
-f02397	2007-03-04	win	"塩田""GOZO""歩"	2R 0:45 TKO（右ストレート）<!--修斗公式記録-->	修斗 下北沢修斗劇場 第17弾 〜男はつよいよ〜
+f02397	2007-03-04	win	"塩田""GOZO""歩"	2R 0:45 TKO（右ストレート）	修斗 下北沢修斗劇場 第17弾 〜男はつよいよ〜
 f02397	2007-07-15	win	阿部マサトシ	2R 3:33 フロントスリーパーホールド	修斗 BACK TO OUR ROOTS 04
 f02397	2007-10-20	win	生駒純司	5分2R終了 判定3-0	修斗 SHOOTING DISCO 3 〜エブリバディー・ファイトナウ〜
 f02397	2008-02-23	loss	マモル	5分3R終了 判定0-3	修斗 SHOOTING DISCO 4 〜ボーン・イン・ザ☆ファイティング〜
@@ -11469,7 +11469,7 @@ f02397	2009-03-20	loss	BJ	3R 0:38 スリーパーホールド	"""修斗伝承 06
 f02397	2009-09-22	win	KODO	5分3R終了 判定2-0	修斗 REVOLUTIONARY EXCHANGES 2
 f02397	2010-03-22	win	ジェシー・タイタノ	5分3R終了 判定3-0	修斗 The Way of SHOOTO 02 〜Like a Tiger, Like a Dragon〜
 f02397	2011-04-29	win	田原しんぺー	5分3R終了 判定3-0	修斗伝承 2011
-f02397	2011-07-18	loss	漆谷康宏	2R 0:24 KO（左ハイキック→パウンド）<!--修斗公式記録-->	修斗 SHOOTOR'S LEGACY 03 【修斗世界バンタム級タイトルマッチ】
+f02397	2011-07-18	loss	漆谷康宏	2R 0:24 KO（左ハイキック→パウンド）	修斗 SHOOTOR'S LEGACY 03 【修斗世界バンタム級タイトルマッチ】
 f02397	2012-03-10	loss	猿丸ジュンジ	5分3R終了 判定1-2	修斗
 f02397	2012-07-16	win	阿部博之	5分3R終了 判定3-0	修斗
 f02397	2012-11-11	win	オニボウズ	5分3R終了 判定2-0	修斗
@@ -11484,7 +11484,7 @@ f02400	2003-10-25	win	大場裕司	5分2R終了 判定3-0	DEMOLITION
 f02400	2004-03-04	win	橋本平馬	5分2R終了 判定3-0	修斗 【新人王トーナメント ウェルター級 1回戦】
 f02400	2004-07-06	win	服部謙一	5分2R終了 判定3-0	修斗 【新人王トーナメント ウェルター級 準決勝】
 f02400	2004-11-12	win	内村世己	1R 1:42 TKO（パウンド）	修斗 WANNA SHOOTO 2004 【新人王トーナメント ウェルター級 決勝】
-f02400	2005-02-06	win	岡田孔明	1R 1:04 KO（右フック）<!--修斗公式記録-->	修斗 下北沢修斗劇場 第10弾 〜本物は誰だ!〜
+f02400	2005-02-06	win	岡田孔明	1R 1:04 KO（右フック）	修斗 下北沢修斗劇場 第10弾 〜本物は誰だ!〜
 f02400	2005-12-17	loss	天突頑丈	5分3R終了 判定0-3	修斗
 f02400	2006-02-04	win	ファン・ジュウドン	5分2R終了 判定3-0	MARS in 有明
 f02400	2006-04-01	win	吉田幸治	5分3R終了 判定3-0	D.O.G V
@@ -11553,9 +11553,9 @@ f02409	2006-06-03	win	田中寛之	5分2R終了 判定2-0	修斗 GIG WEST 5
 f02409	2006-11-04	win	田澤聡	5分3R終了 判定3-0	修斗 GIG WEST 6
 f02409	2007-05-18	win	山本篤	5分3R終了 判定2-0	修斗 BACK TO OUR ROOTS 03
 f02409	2008-03-28	loss	上田将勝	5分3R終了 判定0-3	修斗 BACK TO OUR ROOTS 08 【修斗世界フェザー級王座決定戦】
-f02409	2009-10-18	win	扇久保博正	2R 2:08 KO（右フック→パウンド）<!--修斗公式記録-->	修斗 SHOOTO GIG TOKYO 3 【修斗環太平洋フェザー級王座決定戦】
+f02409	2009-10-18	win	扇久保博正	2R 2:08 KO（右フック→パウンド）	修斗 SHOOTO GIG TOKYO 3 【修斗環太平洋フェザー級王座決定戦】
 f02409	2010-07-19	win	徹肌ィ郎	5分3R終了 判定3-0	修斗 The Way of SHOOTO 04 〜Like a Tiger, Like a Dragon〜 【修斗環太平洋フェザー級チャンピオンシップ】
-f02409	2011-04-29	win	勝村周一朗	2R 2:24 KO（右ストレート→パウンド）<!--修斗公式記録-->	修斗伝承 2011 【修斗世界フェザー級チャンピオンシップ】
+f02409	2011-04-29	win	勝村周一朗	2R 2:24 KO（右ストレート→パウンド）	修斗伝承 2011 【修斗世界フェザー級チャンピオンシップ】
 f02409	2012-05-18	loss	扇久保博正	3R 3:32 スリーパーホールド	修斗 【修斗世界フェザー級チャンピオンシップ】
 f02409	2013-05-31	loss	ビビアーノ・フェルナンデス	5分5R終了 判定0-3	ONE FC 9: Rise to Power 【ONE FC世界バンタム級暫定王座決定戦】
 f02409	2013-12-06	win	ジョシュア・アルバレス	2R 3:13 リアネイキドチョーク	ONE FC 13: Moment of Truth
@@ -11607,7 +11607,7 @@ f02424	2008-09-28	loss	石渡伸太郎	1R 4:08 TKO（右フック）	"""修斗�
 f02424	2009-10-30	loss	ティト・ジョーンズ	5分3R終了 判定0-3	VALE TUDO JAPAN 09
 f02424	2010-04-04	win	太田拓己	5分2R終了 判定2-0	修斗 GRAPPLINGMAN 10 闘裸男 岡山大会
 f02424	2010-07-19	win	マテウス・ラーデスマキ	1R 4:08 KO（パウンド）	修斗 The Way of SHOOTO 04 〜Like a Tiger, Like a Dragon〜
-f02424	2010-11-19	win	クォン・ベ・ヨン	1R 1:03 KO（パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜
+f02424	2010-11-19	win	クォン・ベ・ヨン	1R 1:03 KO（パウンド）	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜
 f02424	2011-11-05	draw	美木航	5分3R終了 判定1-1	SHOOT the SHOOTO 2011 【サバイバートーナメント 1回戦】
 f02425	2003-10-12	win	谷崎智仁	1R 0:33 TKO（パンチ連打）	キングダム・エルガイツ 東京大会 -tomorrow-
 f02425	2003-12-13	win	大森健太	1R 7:44 三角絞め	キングダム・エルガイツ 東京大会 -飛翔-
@@ -11902,7 +11902,7 @@ f02455	2008-07-21	win	宇野薫	2R（10分/5分）終了 判定3-0	DREAM.5 ラ�
 f02455	2008-09-23	win	トッド・ムーア	1R 1:10 裸絞め	DREAM.6 ミドル級グランプリ2008 決勝戦
 f02455	2008-12-31	win	エディ・アルバレス	1R 1:32 ヒールホールド	Dynamite!! 〜勇気のチカラ2008〜
 f02455	2009-03-08	win	デイビッド・ガードナー	1R 5:58 チョークスリーパー	DREAM.7 フェザー級グランプリ2009 開幕戦
-f02455	2009-04-05	loss	"桜井""マッハ""速人"	1R 0:27 KO（パウンド）<!--DREAM公式記録-->	DREAM.8 ウェルター級グランプリ2009 開幕戦 【ウェルター級グランプリ 1回戦】
+f02455	2009-04-05	loss	"桜井""マッハ""速人"	1R 0:27 KO（パウンド）	DREAM.8 ウェルター級グランプリ2009 開幕戦 【ウェルター級グランプリ 1回戦】
 f02455	2009-07-20	win	"ビトー・""シャオリン""・ヒベイロ"	2R（10分/5分）終了 判定3-0	DREAM.10 ウェルター級グランプリ2009 決勝戦
 f02455	2009-10-06	win	ヨアキム・ハンセン	2R 4:56 腕ひしぎ十字固め	DREAM.11 フェザー級グランプリ2009 決勝戦 【DREAMライト級タイトルマッチ】
 f02455	2009-12-31	win	廣田瑞人	1R 2:17 ハンマーロック	Dynamite!! 〜勇気のチカラ2009〜
@@ -11912,7 +11912,7 @@ f02455	2010-09-25	win	マーカス・アウレリオ	2R（10分/5分）終了 �
 f02455	2010-10-25	win	ヨックタイ・シスオー	1R 1:00 アームロック	DEEP 50 IMPACT 〜10年目の奇跡〜
 f02455	2011-04-09	win	ライル・ビアボーム	1R 1:33 ネッククランク	Strikeforce: Diaz vs. Daley
 f02455	2011-05-29	win	リッチ・クレメンティ	2R 2:17 フェイスロック	DREAM JAPAN GP -2011バンタム級日本トーナメント-
-f02455	2011-09-24	win	ロブ・マックロー	1R 4:57 裸絞め<!--DREAM公式記録-->	DREAM.17
+f02455	2011-09-24	win	ロブ・マックロー	1R 4:57 裸絞め	DREAM.17
 f02455	2011-12-31	win	北岡悟	5分5R終了 判定3-0	元気ですか!! 大晦日!! 2011 【DREAMライト級タイトルマッチ】
 f02455	2012-04-20	loss	エディ・アルバレス	1R 2:14 TKO（右アッパー→パウンド）	Bellator 66
 f02455	2012-10-06	win	アルナウド・ルポン	1R 1:25 三角絞め	ONE FC 6: Rise of Kings
@@ -11973,11 +11973,11 @@ f02457	2018-02-11	loss	ロス・ピアソン	5分3R終了 判定0-3	UFC 221: Rom
 f02457	2018-12-02	loss	クリストス・ジアゴス	5分3R終了 判定0-3	UFC Fight Night: dos Santos vs. Tuivasa
 f02457	2019-07-28	loss	ホベルト・サトシ・ソウザ	1R 3:05 KO（右フック→パウンド）	RIZIN.17
 f02459	2005-02-06	loss	西岡裕	5分2R終了 判定0-3	修斗 下北沢修斗劇場第10弾 〜本物は誰だ!〜 【新人王決定トーナメント ライト級 1回戦】
-f02459	2005-05-29	loss	ウィッキー聡生	2R 3:57 TKO（右ストレート）<!--修斗公式記録-->	修斗
+f02459	2005-05-29	loss	ウィッキー聡生	2R 3:57 TKO（右ストレート）	修斗
 f02459	2005-10-28	win	藤岡正義	5分2R終了 判定3-0	修斗 下北沢修斗劇場 第13弾 〜Soulful Fight〜
 f02459	2006-03-03	draw	粕谷さかえ	5分2R終了 判定0-0	修斗 下北沢修斗劇場 第14弾 〜'06 巣立ち〜
 f02459	2006-05-28	win	富山浩宇	2R 3:24 腕ひしぎ十字固め	修斗 【新人王決定トーナメント ライト級 1回戦】
-f02459	2006-07-21	loss	石澤大介	2R 4:26 TKO（右フック）<!--修斗公式記録-->	修斗 【新人王決定トーナメント ライト級 準決勝】
+f02459	2006-07-21	loss	石澤大介	2R 4:26 TKO（右フック）	修斗 【新人王決定トーナメント ライト級 準決勝】
 f02459	2006-11-10	draw	山田啓介	5分2R終了 判定0-0	修斗
 f02459	2007-08-05	draw	石渡伸太郎	5分2R終了 判定0-1	修斗 SHOOTING DISCO 2 〜今夜はヒートアップ〜
 f02459	2007-10-20	win	井上雄史	5分2R終了 判定3-0	修斗 SHOOTING DISCO 3 〜エブリバディー ファイト ナウ〜
@@ -12002,7 +12002,7 @@ f02459	2014-03-22	win	TAISHO	5分3R終了 判定2-0	DEEP 65 IMPACT
 f02460	2005-02-06	win	山下悟史	5分2R終了 判定3-0	修斗 下北沢修斗劇場 第10弾 〜本物は誰だ!〜 【新人王決定トーナメント フェザー級 1回戦】
 f02460	2005-06-03	win	矢作尚紀	5分2R終了 判定3-0	修斗 下北沢修斗劇場 第11弾 〜後楽園へ行こう!〜
 f02460	2005-09-23	win	"加藤""JET""シン"	5分2R終了 判定2-0	修斗 【新人王決定トーナメント フェザー級 準々決勝】
-f02460	2005-11-06	win	松本輝之	1R 0:13 TKO（右ストレート）<!--修斗公式記録-->	修斗 【新人王決定トーナメント フェザー級 準決勝】
+f02460	2005-11-06	win	松本輝之	1R 0:13 TKO（右ストレート）	修斗 【新人王決定トーナメント フェザー級 準決勝】
 f02460	2005-12-17	win	徹肌ィ郎	5分2R終了 判定3-0	修斗 【新人王決定トーナメント フェザー級 決勝】
 f02460	2006-05-12	win	亘理崇麿	1R 3:49 TKO（パウンド）	修斗 SHOOTO The DEVILOCK
 f02460	2006-07-21	draw	松根良太	5分3R終了 判定1-0	修斗
@@ -12131,7 +12131,7 @@ f02476	2008-05-11	loss	メルヴィン・マヌーフ	1R 4:08 TKO（パウンド
 f02476	2010-06-19	loss	デニス・カーン	1R 1:49 肩固め	W-1 MMA 5: Judgment Day
 f02476	2015-11-29	loss	坂下裕介	1R 1:40 TKO（マウントパンチ）	HEAT36
 f02478	2004-10-03	win	佐藤武士	1R 0:39 KO（パンチ）	CLUB DEEP 長南祭り
-f02478	2005-05-29	win	中村浩士	2R 3:57 TKO（右ストレート）<!--修斗公式記録-->	修斗
+f02478	2005-05-29	win	中村浩士	2R 3:57 TKO（右ストレート）	修斗
 f02478	2005-11-06	loss	粕谷さかえ	5分2R終了 判定0-2	修斗
 f02478	2006-03-03	win	谷口智則	5分2R終了 判定2-0	修斗 下北沢修斗劇場第14弾 〜'06 巣立ち〜 【新人王決定トーナメント ライト級 1回戦】
 f02478	2006-07-30	win	井上雄史	5分2R終了 判定3-0	修斗 下北沢修斗劇場第15弾 〜シューティングスター〜 【新人王決定トーナメント ライト級 準決勝】
@@ -12185,7 +12185,7 @@ f02486	2005-11-11	draw	古舘由紀	5分2R終了 判定0-0	G-SHOOTO Plus 04
 f02486	2005-11-29	win	KM-MAKI	1R 2:43 腕ひしぎ十字固め	SMACKGIRL 2005 〜最軽量記念日〜
 f02486	2005-12-17	win	永易加代	5分2R終了 判定3-0	G-SHOOTO JAPAN 03
 f02486	2006-02-03	win	"斎藤""edge""あゆみ"	5分2R終了 判定2-1	FF2 Gi-Feminino2006×SmackGirl-F
-f02486	2006-03-11	draw	瀧本美咲	5分2R終了 判定1-0	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】<!--抽選により準決勝進出-->
+f02486	2006-03-11	draw	瀧本美咲	5分2R終了 判定1-0	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】
 f02486	2006-05-06	win	村浪真穂	5分2R終了 判定3-0	G-SHOOTO JAPAN 05 【G-SHOOTO ストロー級プラストーナメント 準決勝】
 f02486	2006-06-11	win	玉田育子	5分2R終了 判定2-0	G-SHOOTO plus 06 【G-SHOOTO ストロー級プラストーナメント 決勝】
 f02486	2006-09-15	win	兼谷絵里	5分2R終了 判定3-0	SMACKGIRL 2006 〜群女割拠〜
@@ -12203,7 +12203,7 @@ f02486	2008-02-14	win	小寺麻美	5分2R終了 判定3-0	SMACKGIRL WORLD ReMix 
 f02486	2008-11-16	loss	瀧本美咲	5分2R終了 判定0-3	JEWELS 旗揚げ戦
 f02486	2009-02-04	win	小澤深岬	1R 0:54 TKO（ドクターストップ）	JEWELS 2nd RING
 f02486	2009-05-24	win	茂木康子	5分2R終了 判定2-1	修斗 SPIRIT 2009
-f02486	2009-10-24	loss	エレナ・リード	3R 2:35 TKO（グラウンドパンチ）	Extreme Beatdown 5<!--【Extreme Beatdown 115ポンド級王座決定戦】-->
+f02486	2009-10-24	loss	エレナ・リード	3R 2:35 TKO（グラウンドパンチ）	Extreme Beatdown 5
 f02486	2010-02-11	loss	WINDY智美	3分3R終了 判定0-3	VALKYRIE 04
 f02486	2010-04-24	loss	ミシェル・ウォーターソン	1R 4:17 TKO（パンチ）	Crowbar MMA: Spring Brawl
 f02486	2013-06-22	loss	セリーナ	1R 4:02 リアネイキドチョーク	Road FC 12
@@ -12215,8 +12215,8 @@ f02486	2015-02-21	loss	SARAMI	5分2R終了 判定0-3	DEEP JEWELS 7 【DEEP JEWEL
 f02487	2005-07-12	win	村浪真穂	5分2R終了 判定2-1	G-SHOOTO Plus 02
 f02487	2005-09-16	loss	古舘由紀	5分2R終了 判定1-2	G-SHOOTO Plus 03
 f02487	2005-10-15	loss	吉田正子	5分2R終了 判定1-2	SMACKGIRL-F 2005 〜下北実験リーグ Round1〜
-f02487	2006-03-11	draw	兼谷絵里	5分2R終了 判定1-0<!--抽選で準決勝進出-->	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】
-f02487	2006-05-06	draw	永易加代	5分2R終了 判定0-0<!--抽選で決勝進出-->	G-SHOOTO JAPAN 05 【G-SHOOTO ストロー級プラストーナメント 準決勝】
+f02487	2006-03-11	draw	兼谷絵里	5分2R終了 判定1-0	G-SHOOTO JAPAN 04 【G-SHOOTO ストロー級プラストーナメント 1回戦】
+f02487	2006-05-06	draw	永易加代	5分2R終了 判定0-0	G-SHOOTO JAPAN 05 【G-SHOOTO ストロー級プラストーナメント 準決勝】
 f02487	2006-06-11	loss	吉田正子	5分2R終了 判定0-2	G-SHOOTO plus 06 【G-SHOOTO ストロー級プラストーナメント 決勝】
 f02487	2006-09-15	loss	Edge	5分2R終了 判定0-3	SMACKGIRL 2006 〜群女割拠〜
 f02487	2006-11-29	win	関友紀子	5分2R終了 判定3-0	SMACKGIRL 2006 〜極女伝説〜
@@ -12260,12 +12260,12 @@ f02493	2008-07-13	win	鬼頭潤	1R 2:49 チョークスリーパー	HEAT7 【HEA
 f02493	2008-10-26	loss	ザビアー・ルーカス	5分3R終了 判定0-2	修斗 SHOOTO GIG CENTRAL Vol.16 【修斗環太平洋ミドル級王座決定戦】
 f02493	2008-12-14	loss	ジャスティン・ホルダス	5分2R終了 判定0-3	HEAT8 【HEAT総合ルール ウェルター級トーナメント 準決勝】
 f02493	2009-07-18	win	増ブッチ博	2R+延長R 3:31 チョークスリーパー	HEAT10
-f02493	2009-09-20	loss	佐藤洋一郎	2R 2:16 KO（スタンドパンチ連打）<!--修斗公式記録-->	修斗 SHOOTING DISCO 10 〜TWIST & SHOOTO〜
+f02493	2009-09-20	loss	佐藤洋一郎	2R 2:16 KO（スタンドパンチ連打）	修斗 SHOOTING DISCO 10 〜TWIST & SHOOTO〜
 f02493	2010-03-14	win	クォン・アソル	5分3R終了 判定2-1	HEAT13 【HEAT総合ルール ウェルター級暫定王座決定戦】
 f02493	2010-07-18	win	ジャスティン・ホルダス	5分3R終了 判定3-0	HEAT14 【HEAT総合ルール ウェルター級王座決定戦】
 f02493	2010-09-20	loss	ロナルド・ジューン	5分3R終了 判定0-3	HEAT15
 f02493	2011-03-13	loss	クォン・アソル	2R 3:02 KO（膝蹴り）	HEAT17 【HEAT総合ルール ウェルター級タイトルマッチ】
-f02496	2005-05-08	win	椎木努	1R 3:13 TKO（パンチ連打）<!--修斗公式記録-->	修斗&キック 総額100万円争奪 東西対抗戦
+f02496	2005-05-08	win	椎木努	1R 3:13 TKO（パンチ連打）	修斗&キック 総額100万円争奪 東西対抗戦
 f02496	2005-07-30	loss	田村彰敏	5分2R終了 判定0-2	修斗
 f02496	2005-11-29	win	富山浩宇	5分2R終了 判定3-0	修斗
 f02496	2006-03-24	win	中尾享太郎	5分2R終了 判定3-0	修斗
@@ -12304,7 +12304,7 @@ f02505	2003-03-03	win	照井和瑛	5分2R終了 判定3-0	SMACKGIRL Third Season
 f02505	2003-05-07	loss	唯我	1R 4:27 袈裟固め	SMACKGIRL Third Season-III
 f02505	2003-07-06	win	菊川夏子	5分2R終了 判定3-0	SMACKGIRL Third Season-V
 f02505	2003-08-30	win	篠原光	5分2R終了 判定3-0	女子格闘技Gals 2
-f02505	2004-04-18	loss	ロクサン・モダフェリ	5分2R終了 判定0-3	CROSS SECTION<!--第1回大会-->
+f02505	2004-04-18	loss	ロクサン・モダフェリ	5分2R終了 判定0-3	CROSS SECTION
 f02505	2004-06-19	win	菊川夏子	1R 1:13 TKO（パンチ連打）	SMACKGIRL 2004 〜GO WEST〜
 f02505	2004-08-05	loss	AKINO	5分2R終了 判定1-2	SMACKGIRL 2004 〜聖地凱旋〜
 f02505	2004-12-19	loss	伊藤薫	1R 3:45 腕ひしぎ十字固め	SMACKGIRL 2004 〜WORLD ReMix〜 【リザーブマッチ】
@@ -12508,7 +12508,7 @@ f02548	2007-12-08	win	金山康宏	2R 3:35 スリーパーホールド	修斗 �
 f02548	2008-07-18	win	田中ヒロユキ	1R 1:35 TKO（パウンド）	"""修斗伝承 02"" ROAD TO 20th ANNIVERSARY"
 f02548	2008-11-29	draw	田澤聡	5分3R終了 判定0-1	"""修斗伝承 04"" ROAD TO 20th ANNIVERSARY"
 f02548	2009-03-20	win	徹肌ィ郎	5分3R終了 判定3-0	"""修斗伝承 06"" ROAD TO 20th ANNIVERSARY"
-f02548	2009-10-18	loss	岡嵜康悦	2R 2:08 KO（右フック→パウンド）<!--修斗公式記録-->	修斗 SHOOTO GIG TOKYO 3 【修斗環太平洋フェザー級チャンピオン決定戦】
+f02548	2009-10-18	loss	岡嵜康悦	2R 2:08 KO（右フック→パウンド）	修斗 SHOOTO GIG TOKYO 3 【修斗環太平洋フェザー級チャンピオン決定戦】
 f02548	2010-05-30	loss	エドゥアルド・ダンタス	3R 1:21 スリーパーホールド	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
 f02548	2010-09-23	win	田澤聡	5分3R終了 判定3-0	修斗 The Way of SHOOTO 05 〜Like a Tiger, Like a Dragon〜
 f02548	2011-04-03	win	松本輝之	5分3R終了 判定2-0	修斗 BORDER -season 3- 「春雷」 【修斗環太平洋フェザー級チャンピオン決定戦】
@@ -12738,7 +12738,7 @@ f02590	2008-06-28	win	フアン・テッサリ	2R 2:33 スリーパーホール�
 f02590	2008-11-29	win	ルイス・アルベルト・ノゲイラ	2R 1:41 腕ひしぎ十字固め	Shooto Brazil 9 【修斗南米大陸フェザー級王座決定戦】
 f02590	2009-04-24	win		5分3R終了 判定3-0	WFC 1: Pozil
 f02590	2009-07-19	loss	上田将勝	5分3R終了 判定0-3	"修斗 REVOLUTIONARY EXCHANGES 1 ""UNDEFEATED"" 【修斗世界フェザー級チャンピオンシップ】"
-f02590	2009-11-26	win	カルロス・ホベルト・ベタオン	2R 0:46 KO（パンチ連打）<!--修斗公式記録-->	Shooto Brazil 14
+f02590	2009-11-26	win	カルロス・ホベルト・ベタオン	2R 0:46 KO（パンチ連打）	Shooto Brazil 14
 f02590	2010-05-30	win	サムエル・ド・ソウザ	1R 0:20 腕ひしぎ十字固め	Shooto Brazil 20 【修斗南米大陸フェザー級チャンピオンシップ】
 f02590	2010-05-30	win	扇久保博正	3R 1:21 スリーパーホールド	修斗 The Way of SHOOTO 03 〜Like a Tiger, Like a Dragon〜
 f02590	2011-09-24	win	ウィルソン・ヘイス	2R 1:02 KO（跳び膝蹴り→パウンド）	Bellator 51 【バンタム級トーナメント 1回戦】
@@ -12798,7 +12798,7 @@ f02594	2022-04-22	loss	グスタボ・バラート	5分3R終了 判定0-3	ONE Ch
 f02594	2024-02-17	loss	マンスール・マラチエフ	5分3R終了 判定0-3	ONE Fight Night 19
 f02595	2008-02-23	win	西野英紀	2R 2:54 KO（右フック）	修斗 SHOOTING DISCO 4 〜ボーン イン ザ ☆ ファイティング〜 【新人王決定トーナメント ライト級 1回戦】
 f02595	2008-07-18	loss	直撃我聞	5分2R終了 判定0-2	"""修斗伝承 02"" ROAD TO 20th ANNIVERSARY 【新人王決定トーナメント ライト級 2回戦】"
-f02595	2008-10-05	win	松本大輔	1R 4:57 TKO（膝蹴り）<!--修斗公式記録-->	修斗 SHOOTING DISCO 6 〜栄冠は君に輝く〜
+f02595	2008-10-05	win	松本大輔	1R 4:57 TKO（膝蹴り）	修斗 SHOOTING DISCO 6 〜栄冠は君に輝く〜
 f02595	2009-01-31	win	小林正俊	5分2R終了 判定3-0	修斗 SHOOTING DISCO 7 〜YOUNG MAN〜
 f02595	2009-03-27	loss	ジャスティン・クルーズ	1R 1:34 チョークスリーパー	PXC 17: Fearless
 f02595	2009-06-06	win	石渡伸太郎	1R 0:20 KO（右フック→パウンド）	修斗 SHOOTING DISCO 9 〜スーパーマン〜
@@ -12806,8 +12806,8 @@ f02595	2009-07-19	win	伊藤一宏	5分2R終了 判定3-0	"修斗 EVOLUTIONARY E
 f02595	2010-01-23	win	門脇英基	5分3R終了 判定3-0	修斗 The Way of SHOOTO 〜Like a Tiger, Like a Dragon〜 【修斗環太平洋ライト級チャンピオン決定戦】
 f02595	2010-07-19	win	田村一聖	5分3R終了 判定2-0	修斗 The Way of SHOOTO 04 〜Like a Tiger, Like a Dragon〜 【修斗環太平洋ライト級チャンピオンシップ】
 f02595	2010-11-19	win	グスタヴォ・ファルシローリ	5分3R終了 判定3-0	修斗 The Way of SHOOTO 06 〜Like a Tiger, Like a Dragon〜 【修斗環太平洋ライト級チャンピオンシップ】
-f02595	2011-01-10	win	トニー・ハービー	1R 4:25 KO（マウントパンチ）<!--修斗公式記録-->	修斗 SHOOTOR'S LEGACY 01
-f02595	2011-04-29	loss	リオン武	2R 4:27 KO（右ストレート→パウンド）<!--修斗公式記録-->	修斗伝承 2011
+f02595	2011-01-10	win	トニー・ハービー	1R 4:25 KO（マウントパンチ）	修斗 SHOOTOR'S LEGACY 01
+f02595	2011-04-29	loss	リオン武	2R 4:27 KO（右ストレート→パウンド）	修斗伝承 2011
 f02595	2013-07-27	win	中村好史	5分3R終了 判定3-0	修斗 2013年第3戦
 f02595	2014-03-16	loss	高橋遼伍	2R 3:27 TKO（左腕の負傷）	修斗 2014年第2戦
 f02595	2014-05-04	loss	宇野薫	5分3R終了 判定0-3	修斗 2014年第4戦
@@ -12887,7 +12887,7 @@ f02605	2011-12-02	win	ロバート・ワシントン	2R 2:41 ギロチンチョ�
 f02605	2012-03-09	loss	ロバート・エマーソン	3R 4:29 リアネイキドチョーク	TPF 12: Second Coming
 f02605	2013-01-17	win	マイク・ガイモン	2R 0:48 KO（パンチ）	Bellator 85
 f02611	2008-07-18	win	近野淳平	2R 3:41 スリーパーホールド	修斗 【新人王決定トーナメント ウェルター級 1回戦】
-f02611	2008-10-13	win	里本一也	1R 1:05 TKO（スラム）<!--修斗公式記録-->	修斗 【新人王決定トーナメント ウェルター級 準決勝】
+f02611	2008-10-13	win	里本一也	1R 1:05 TKO（スラム）	修斗 【新人王決定トーナメント ウェルター級 準決勝】
 f02611	2008-12-13	win	田村ヒビキ	5分2R終了 判定3-0	修斗 【新人王決定トーナメント ウェルター級 決勝】
 f02611	2009-04-10	win	ガイ・デルモ	5分2R終了 判定2-0	修斗 SHOOTING DISCO 8
 f02611	2009-08-02	win	安藤晃司	5分2R終了 判定3-0	戦極 〜第九陣〜 【戦極G!杯 ライト級 決勝】
@@ -13190,7 +13190,7 @@ f02682	2008-03-29	win	アンソニー・フィゲロア	1R 1:27 フロントチ�
 f02682	2008-06-15	loss	所英男	2R（10分/5分）終了 判定0-3	DREAM.4 ミドル級グランプリ2008 2nd ROUND
 f02682	2008-11-21	win	ブラッド・ロシュター	5分3R終了 判定3-0	Strikeforce: Destruction
 f02682	2010-04-17	loss	宮下トモヤ	2R 1:10 フロントチョーク	DEEP 47 IMPACT
-f02682	2010-09-23	win	勝村周一朗	2R 3:53 KO（パウンド）<!--修斗公式記録-->	修斗 The Way of SHOOTO 05 〜Like a Tiger, Like a Dragon〜
+f02682	2010-09-23	win	勝村周一朗	2R 3:53 KO（パウンド）	修斗 The Way of SHOOTO 05 〜Like a Tiger, Like a Dragon〜
 f02682	2011-11-12	win	"山本""KID""徳郁"	5分3R終了 判定3-0	UFC on FOX 1: Velasquez vs. dos Santos
 f02682	2012-10-05	win	フィル・ハリス	2R 3:38 リアネイキドチョーク	UFC on FX 5: Browne vs. Bigfoot
 f02682	2013-04-20	loss	ジョセフ・ベナビデス	2R 4:50 KO（左ボディブロー）	UFC on FOX 7: Henderson vs. Melendez
@@ -14505,7 +14505,7 @@ f03677	1996-10-22	win	マウロ・ベルナルド	1R 1:40 前腕チョーク	Uni
 f03677	1997-02-14	win	ジョー・チャールズ	1R 4:42 前腕チョーク	World Fighting Federation
 f03677	1997-03-03	loss	カーロス・バヘット	1R 7:47 三角絞め	Universal Vale Tudo Fighting 6 【準決勝】
 f03677	1997-03-03	win	ジュシアール・イポリト	1R 0:05 KO（パンチ連打）	Universal Vale Tudo Fighting 6 【1回戦】
-f03677	1997-07-27	loss	マーク・ケアー	1R 1:38 ギブアップ<!--Chin to the Eye-->	UFC 14: Showdown 【ヘビー級トーナメント 決勝】
+f03677	1997-07-27	loss	マーク・ケアー	1R 1:38 ギブアップ	UFC 14: Showdown 【ヘビー級トーナメント 決勝】
 f03677	1997-07-27	win	ブライアン・ジョンストン	1R 2:10 TKO（パウンド）	UFC 14: Showdown 【ヘビー級トーナメント 準決勝】
 f03677	2001-10-27	win	ブレット・ホッグ	1R 0:27 V1アームロック	RSF 5: New Blood Conflict
 f03677	2002-02-09	win	エリック・ペレ	2R 1:10 TKO（タオル投入）	KOTC 12: Cold Blood 【KOTC世界スーパーヘビー級王座決定戦】
@@ -14552,7 +14552,7 @@ f03691	2005-10-15	win	内藤晶子	1R 2:52 腕ひしぎ十字固め	SMACKGIRL-F 
 f03691	2006-02-04	win	有賀美由紀	2R 1:44 ヒールホールド	MARS in 有明
 f03691	2006-04-22	win	キャミー・ホステットラー	2R 4:19 腕ひしぎ十字固め	SMACKGIRL 2006 〜女王凱旋〜 【SMACKGIRLライト級タイトルマッチ】
 f03691	2006-06-30	win	WINDY智美	1R 4:19 チョークスリーパー	SMACKGIRL 2006 〜頂女決戦〜
-f03691	2007-04-28	win	トリーシャ・プーヴィ	1R 4:10 TKO（パウンド）	SMACKGIRL 2007 〜絶対女王は大正浪漫を舞ひ奏で〜<!--【SGS特別ルール】-->
+f03691	2007-04-28	win	トリーシャ・プーヴィ	1R 4:10 TKO（パウンド）	SMACKGIRL 2007 〜絶対女王は大正浪漫を舞ひ奏で〜
 f03691	2007-09-06	win	アンナ・ミッシェル・タバレス	1R 4:47 KO（スタンドパンチ）	SMACKGIRL 2007 〜女王たちの一番熱い夏〜
 f03691	2007-12-26	win	ハム・ソヒ	5分3R終了 判定3-0	SMACKGIRL 7th ANNIVERSARY 〜Starting Over〜 【SMACKGIRLライト級タイトルマッチ】
 f03691	2008-11-08	win	V一	3分3R終了 判定3-0	VALKYRIE 01 CAGE FORCE-EX
@@ -14604,8 +14604,8 @@ f03707	2004-03-14	win	ドルゴルスレン・スミヤバザル	1R終了時 TKO
 f03707	2004-05-22	loss	藤田和之	1R 2:15 ギブアップ（サッカーボールキック）	ROMANEX 格闘技世界一決定戦
 f03707	2005-03-26	win	キム・ミンス	1R 1:12 KO（右ストレート）	HERO'S
 f03707	2005-07-06	win	アラン・カラエフ	1R 3:44 KO（左ストレート）	HERO'S 2005 ミドル級世界最強王者決定トーナメント開幕戦
-f03707	2005-11-05	win	キム・ジョンワン	1R 0:08 KO（右膝蹴り）<!--HERO'S公式記録-->	HERO'S 2005 in SEOUL
-f03707	2007-12-31	win	ボビー・オロゴン	1R 4:10 KO（マウントパンチ）<!--K-1公式記録-->	K-1 PREMIUM 2007 Dynamite!!
+f03707	2005-11-05	win	キム・ジョンワン	1R 0:08 KO（右膝蹴り）	HERO'S 2005 in SEOUL
+f03707	2007-12-31	win	ボビー・オロゴン	1R 4:10 KO（マウントパンチ）	K-1 PREMIUM 2007 Dynamite!!
 f03707	2008-02-23	loss	"ヤン・""ザ・ジャイアント""・ノルキヤ"	1R 0:55 TKO（スタンドパンチ連打）	Strikeforce: At The Dome
 f03707	2008-12-31	win	キン肉万太郎	1R 5:22 TKO（スタンドパンチ連打）	Dynamite!! 〜勇気のチカラ2008〜
 f03707	2009-05-26	loss	ミノワマン	1R 1:15 アキレス腱固め	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【スーパーハルクトーナメント 1回戦】
@@ -14641,8 +14641,8 @@ f03709	2002-02-03	loss	ドレイク森松	2R 2:11 フロントチョーク	SMACK
 f03709	2002-03-02	loss	辻結花	1R 0:00 TKO（タオル投入：体調不良）	SMACKGIRL 〜God Bless You!〜
 f03709	2003-08-30	loss	たま☆ちゃん	5分2R終了 判定0-3	女子格闘技Gals 2
 f03709	2003-11-10	loss	ロクサン・モダフェリ	1R 1:58 腕ひしぎ十字固め	SMACKGIRL Third Season-VII
-f03709	2004-06-06	win	増山ともえ	1R 2:35 キャメルクラッチ	Love Impact<!--第2回大会-->
-f03709	2004-08-29	win	川田由美子	1R 2:50 V1アームロック	Love Impact<!--第3回大会-->
+f03709	2004-06-06	win	増山ともえ	1R 2:35 キャメルクラッチ	Love Impact
+f03709	2004-08-29	win	川田由美子	1R 2:50 V1アームロック	Love Impact
 f03709	2005-04-25	loss	たま☆ちゃん	2R 腕ひしぎ十字固め	TRIBELATE vol.6 -Hybrid Club Fight-
 f03709	2005-05-15	loss	MIKU	1R 1:44 腕ひしぎ十字固め	club DEEP 富山 -野蛮人祭り2-
 f03709	2005-11-29	loss	せり	5分2R終了 判定0-3	SMACKGIRL 2005 〜最軽量記念日〜
@@ -14854,7 +14854,7 @@ f03917	2014-04-05	loss	ボブ・アームストロング	1R 2:00 KO（右フッ�
 f03917	2014-08-23	win	ミノワマン	2R 0:59 TKO（タオル投入）	INOKI GENOME FIGHT 2
 f03917	2014-12-31	loss	クリス・バーネット	1R 1:57 TKO（パウンド）	INOKI BOM-BA-YE 2014
 f03917	2015-04-11	win	ジン・イックテ	1R 0:18 TKO（左フック→パウンド）	INOKI GENOME FIGHT 3 【IGF WORLD GP 2015 リザーブマッチ】
-f03917	2015-12-31	loss	クリス・バーネット	1R 1:44 KO（パウンド）<!--IGF公式記録-->	INOKI BOM-BA-YE 2015
+f03917	2015-12-31	loss	クリス・バーネット	1R 1:44 KO（パウンド）	INOKI BOM-BA-YE 2015
 f03936	2010-11-23	win	宇賀神貴洋	1R 0:44 腕ひしぎ十字固め	キングダムエルガイツ A・R・T・2010 オールジャパン・リアルファイティング・トーナメント
 f03936	2011-02-25	win	NORI	1R 1:15 アームロック	DEEP 52 IMPACT
 f03936	2011-06-05	win	中村護	1R 1:09 TKO（パンチ連打）	DEEP TOKYO IMPACT 2
@@ -14960,7 +14960,7 @@ f04054	2018-12-31	win	山本アーセン	2R 3:23 アームロック	RIZIN.14
 f04055	2025-04-27	win	中里 謙太	0:55 TKO	ROMAN Ⅱ 【ROMAN COMBAT (DŌGI MMA)】
 f04055	2025-05-31	loss	井上 悠司	1R 0分54秒 TKO ※パウンド	GRACHAN 74
 f04055	2025-10-11	loss	ハシモト・ブランドン	1:20 TKO	ROMAN3 【ROMAN COMBAT (DŌGI MMA)】
-f04074	2016-12-29	win	ニキータ・サプン	1R 2:47 KO（パウンド）<!--RIZIN公式記録-->	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 2nd ROUND
+f04074	2016-12-29	win	ニキータ・サプン	1R 2:47 KO（パウンド）	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 2nd ROUND
 f04074	2016-12-31	win	カウイカ・オリージョ	2R 0:37 ニンジャチョーク	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント FINAL ROUND
 f04074	2017-04-16	win	フランチェスコ・ギリオッティ	1R 1:07 TKO（左ストレート→パウンド）	RIZIN 2017 in YOKOHAMA -SAKURA-
 f04074	2017-10-15	win	藤田大和	5分3R終了 判定3-0	RIZIN FIGHTING WORLD GRAND-PRIX 2017 1st ROUND -秋の陣-
@@ -15056,7 +15056,7 @@ f04213	2024-12-31	loss	エドポロキング	1R 3:22 TKO（スタンドパンチ
 f04213	2025-07-27	win	稲田将	2R 2:28 TKO（グラウンドでの肘打ち）	超RIZIN.4 真夏の喧嘩祭り
 f04213	2025-11-03	win	MAX吉田	1R 1:10 TKO（グラウンドでの肘打ち）	RIZIN LANDMARK 12
 f04213	2026-06-06	win	酒井リョウ	1R 1:16 TKO（右ストレート→パウンド）	RIZIN LANDMARK 14
-f04214	2015-12-31	loss	山本勇気	1R 0:26 KO（膝蹴り→パウンド）<!--IGF公式記録-->	INOKI BOM-BA-YE 2015
+f04214	2015-12-31	loss	山本勇気	1R 0:26 KO（膝蹴り→パウンド）	INOKI BOM-BA-YE 2015
 f04214	2016-03-06	loss	鋼入りの戸田	1R 反則負け	Fighting NEXUS vol.5
 f04214	2021-10-02	loss	鈴木博昭	1R 1:42 TKO（左膝蹴り→パウンド）	RIZIN LANDMARK vol.1
 f04214	2021-11-28	loss	グラント・ボグダノフ	1R 1:07 リアネイキッドチョーク	RIZIN TRIGGER 1st
@@ -15941,7 +15941,7 @@ f04652	1999-01-08	loss	ペドロ・ヒーゾ	15分1R終了 判定1-2	UFC 18: Roa
 f04652	1999-04-29	loss	高田延彦	2R 1:44 ヒールホールド	PRIDE.5
 f04652	1999-10-21	win	ヒカルド・モラエス	10分2R終了 判定4-0	PRIDE.8
 f04652	2000-01-30	win	佐竹雅昭	1R 1:14 ネックロック	PRIDE GRANDPRIX 2000 開幕戦 【1回戦】
-f04652	2000-05-01	win	イゴール・ボブチャンチン	<!--15分1R終了-->延長R 3:09 ギブアップ（グラウンドの膝蹴り）	PRIDE GRANDPRIX 2000 決勝戦 【決勝】
+f04652	2000-05-01	win	イゴール・ボブチャンチン	延長R 3:09 ギブアップ（グラウンドの膝蹴り）	PRIDE GRANDPRIX 2000 決勝戦 【決勝】
 f04652	2000-05-01	win	小路晃	15分1R終了 判定3-0	PRIDE GRANDPRIX 2000 決勝戦 【2回戦】
 f04652	2000-05-01	win	藤田和之	1R 0:02 TKO（タオル投入）	PRIDE GRANDPRIX 2000 決勝戦 【準決勝】
 f04652	2001-03-25	win	アラン・ゴエス	1R 1:19 TKO（グラウンドの膝蹴り）	PRIDE.13
@@ -15974,7 +15974,7 @@ f04660	2006-03-15	win	大山峻護	1R 2:51 TKO（カット）	HERO'S 2006
 f04660	2006-07-01	win	イアン・フリーマン	1R 0:17 KO（スタンドパンチ連打）	Cage Rage 17: Ultimate Challenge 【Cage Rage世界ライトヘビー級タイトルマッチ】
 f04660	2006-08-05	win	クラウスレイ・グレイシー	1R 9:12 TKO（パウンド）	【ライトヘビー級トーナメント 準々決勝】
 f04660	2006-10-09	loss	秋山成勲	1R 1:58 腕ひしぎ十字固め	【ライトヘビー級トーナメント 決勝】
-f04660	2006-10-09	win	大山峻護	1R 1:04 KO（スタンドパンチ連打）<!--HERO'S公式記録-->	【ライトヘビー級トーナメント 準決勝】
+f04660	2006-10-09	win	大山峻護	1R 1:04 KO（スタンドパンチ連打）	【ライトヘビー級トーナメント 準決勝】
 f04660	2007-03-12	win	高橋義生	1R 2:36 TKO（右フック→パウンド）	HERO'S 2007 開幕戦 〜名古屋初上陸〜
 f04660	2007-06-02	loss	ユン・ドンシク	2R 1:17 腕ひしぎ十字固め	Dynamite!! USA
 f04660	2007-07-16	win	ベルナール・アッカ	1R 2:13 KO（スタンドパンチ連打）	HERO'S 2007 ミドル級世界王者決定トーナメント開幕戦
@@ -15992,7 +15992,7 @@ f04660	2011-03-05	loss	ティム・ケネディ	1R 3:41 チョークスリーパ
 f04660	2012-03-31	nc	中西良行	1R 2:08 ノーコンテスト（両者負傷）	ONE FC 3: War of the Lions
 f04660	2012-09-15	win	キム・ジェヨン	5分3R終了 判定2-1	ROAD FC 009: Beatdown
 f04660	2012-10-06	win	川村亮	1R 4:40 KO（右フック）	ONE FC 6: Rise of Kings
-f04660	2012-12-31	win	デニス・カーン	1R 0:50 TKO（ボディへの膝蹴り）<!--DREAM公式記録-->	DREAM.18 & GLORY 4 〜大晦日 SPECIAL 2012〜
+f04660	2012-12-31	win	デニス・カーン	1R 0:50 TKO（ボディへの膝蹴り）	DREAM.18 & GLORY 4 〜大晦日 SPECIAL 2012〜
 f04660	2013-04-05	loss	ブロック・ラーソン	5分3R終了 判定0-3	ONE FC 8: Kings and Champions
 f04660	2013-06-08	loss	マメッド・ハリドヴ	1R 2:09 ギロチンチョーク	KSW 23: Khalidov vs. Manhoef
 f04660	2014-04-27	win	エヴァンゲリスタ・サイボーグ	1R 0:46 TKO（パンチ連打）	Gringo Super Fight 10 【GSFウェルター級王座決定戦】
@@ -16245,11 +16245,11 @@ f04685	2006-07-01	loss	ヴァンダレイ・シウバ	1R 9:21 TKO（タオル投
 f04685	2006-12-31	win	エルダリ・クルタニーゼ	1R 2:08 ギブアップ（パウンド）	PRIDE 男祭り 2006 -FUMETSU-
 f04685	2007-04-08	loss	ジェフ・モンソン	1R 6:37 スリーパーホールド	PRIDE.34
 f04685	2008-03-05	win	ピーター・グラハム	1R 1:23 ノースサウスチョーク	戦極 〜第一陣〜
-f04685	2008-06-08	loss	トラビス・ビュー	1R 1:24 TKO（右ストレート→パウンド）<!--SRC公式記録-->	戦極 〜第三陣〜
+f04685	2008-06-08	loss	トラビス・ビュー	1R 1:24 TKO（右ストレート→パウンド）	戦極 〜第三陣〜
 f04685	2009-08-02	loss	ブラゴイ・アレクサンドル・イワノフ	5分3R終了 判定1-2	戦極 〜第九陣〜
 f04685	2009-12-31	loss	アリスター・オーフレイム	1R 1:15 KO（左膝蹴り）	Dynamite!! 〜勇気のチカラ2009〜
 f04685	2013-12-31	loss	石井慧	5分3R終了 判定0-3	INOKI BOM-BA-YE 2013 【IGFチャンピオンシップ】
-f04685	2016-04-17	loss	イリー・プロハースカ	1R 3:18 KO（右フック）<!--RIZIN公式記録-->	RIZIN.1
+f04685	2016-04-17	loss	イリー・プロハースカ	1R 3:18 KO（右フック）	RIZIN.1
 f04685	2016-09-25	loss	バルト	5分2R終了 判定0-3	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 開幕戦
 f04685	2017-11-11	loss	アオルコロ	1R 2:01 TKO	ROAD FC 044
 f04685	2017-12-23	loss	イ・サンス	1R 3:59 TKO	HEAT41
@@ -16425,7 +16425,7 @@ f04732	2000-03-05	win	レネ・ローゼ	1R 3:20 反則	2H2H 1
 f04732	2000-04-29	win	ラマザン・メジドフ	1R 4:55 TKO（カット）	IAFC: Pankration World Championship 2000
 f04732	2000-06-04	win	ウィリー・ピータース	1R 0:48 チョークスリーパー	PRIDE.9
 f04732	2000-10-31	win	トム・エリクソン	1R 6:17 チョークスリーパー	PRIDE.11
-f04732	2000-12-09	win	エンセン井上	1R 4:31 TKO（グラウンドの膝蹴り）<!--タイムは公式サイトに準拠-->	PRIDE.12
+f04732	2000-12-09	win	エンセン井上	1R 4:31 TKO（グラウンドの膝蹴り）	PRIDE.12
 f04732	2001-03-25	win	ソボレフ・デニス	1R 0:22 V1アームロック	PRIDE.13
 f04732	2001-05-27	loss	ビクトー・ベウフォート	3R（10分/5分/5分）終了 判定0-3	PRIDE.14
 f04732	2001-07-29	win	マーク・ケアー	2R 4:56 TKO（グラウンドの膝蹴り）	PRIDE.15
@@ -17194,11 +17194,11 @@ f04949	2003-06-08	win	ヒース・ヒーリング	1R 3:17 TKO（左ミドルキ�
 f04949	2003-08-10	win	イゴール・ボブチャンチン	1R 1:29 KO（左ハイキック）	PRIDE GRANDPRIX 2003 開幕戦
 f04949	2003-10-05	win	ドス・カラスJr	1R 0:46 KO（左ハイキック）	PRIDE 武士道
 f04949	2003-11-09	loss	アントニオ・ホドリゴ・ノゲイラ	2R 1:45 腕ひしぎ十字固め	PRIDE GRANDPRIX 2003 決勝戦 【PRIDE世界ヘビー級暫定王者決定戦】
-f04949	2004-02-01	win	ロン・ウォーターマン	1R 1:37 KO（サッカーボールキック）<!--PRIDE公式記録-->	PRIDE.27 TRIUMPHAL RETURN
+f04949	2004-02-01	win	ロン・ウォーターマン	1R 1:37 KO（サッカーボールキック）	PRIDE.27 TRIUMPHAL RETURN
 f04949	2004-02-15	win	山本宜久	1R 2:12 TKO（スタンドパンチ連打）	PRIDE 武士道 -其の弐-
 f04949	2004-04-25	loss	ケビン・ランデルマン	1R 1:57 KO（左フック→パウンド）	PRIDE GRANDPRIX 2004 開幕戦 【ヘビー級グランプリ 1回戦】
 f04949	2004-05-23	win	金原弘光	2R（10分/5分）終了 判定3-0	PRIDE 武士道 -其の参-
-f04949	2004-07-19	win	大山峻護	1R 1:00 KO（スタンドパンチ連打）<!--PRIDE公式記録-->	PRIDE 武士道 -其の四-
+f04949	2004-07-19	win	大山峻護	1R 1:00 KO（スタンドパンチ連打）	PRIDE 武士道 -其の四-
 f04949	2004-08-15	win	エメリヤーエンコ・アレキサンダー	1R 2:09 KO（左ハイキック→パウンド）	PRIDE GRANDPRIX 2004 決勝戦
 f04949	2004-10-31	win	ジョシュ・バーネット	1R 0:46 ギブアップ（肩の負傷）	PRIDE.28
 f04949	2004-12-31	win	ケビン・ランデルマン	1R 0:41 フロントチョーク	PRIDE 男祭り 2004 -SADAME-
@@ -17207,7 +17207,7 @@ f04949	2005-06-26	win	イブラヒム・マゴメドフ	1R 3:53 TKO（左ミド�
 f04949	2005-08-28	loss	エメリヤーエンコ・ヒョードル	3R（10分/5分/5分）終了 判定0-3	PRIDE GRANDPRIX 2005 決勝戦 【PRIDE世界ヘビー級タイトルマッチ】
 f04949	2005-10-23	win	ジョシュ・バーネット	3R（10分/5分/5分）終了 判定3-0	PRIDE.30 STARTING OVER
 f04949	2005-12-31	loss	マーク・ハント	3R（10分/5分/5分）終了 判定1-2	PRIDE 男祭り 2005 頂-ITADAKI-
-f04949	2006-05-05	win	美濃輪育久	1R 1:10 TKO（パウンド）<!--PRIDE公式記録-->	PRIDE 無差別級グランプリ 2006 開幕戦 【無差別級グランプリ 1回戦】
+f04949	2006-05-05	win	美濃輪育久	1R 1:10 TKO（パウンド）	PRIDE 無差別級グランプリ 2006 開幕戦 【無差別級グランプリ 1回戦】
 f04949	2006-07-01	win	吉田秀彦	1R 7:38 TKO（タオル投入）	PRIDE 無差別級グランプリ 2006 2nd ROUND 【無差別級グランプリ 2回戦】
 f04949	2006-09-10	win	ジョシュ・バーネット	1R 7:32 ギブアップ（パウンド）	PRIDE 無差別級グランプリ 2006 決勝戦 【無差別級グランプリ 決勝】
 f04949	2006-09-10	win	ヴァンダレイ・シウバ	1R 5:22 KO（左ハイキック）	PRIDE 無差別級グランプリ 2006 決勝戦 【無差別級グランプリ 準決勝】
@@ -17216,7 +17216,7 @@ f04949	2007-04-21	loss	ガブリエル・ゴンザーガ	1R 4:51 KO（右ハイ�
 f04949	2007-09-08	loss	シーク・コンゴ	5分3R終了 判定0-3	UFC 75: Champion vs. Champion
 f04949	2008-03-15	win	水野竜也	1R 0:55 TKO（パウンド）	DREAM.1 ライト級グランプリ2008 開幕戦
 f04949	2008-09-23	nc	アリスター・オーフレイム	1R 6:09 ノーコンテスト（ローブロー）	DREAM.6 ミドル級グランプリ2008 決勝戦
-f04949	2008-12-31	win	チェ・ホンマン	1R 6:32 KO（左ローキック）<!--DREAM公式記録-->	Dynamite!! 〜勇気のチカラ2008〜
+f04949	2008-12-31	win	チェ・ホンマン	1R 6:32 KO（左ローキック）	Dynamite!! 〜勇気のチカラ2008〜
 f04949	2009-06-13	win	ムスタファ・アルターク	1R 3:06 TKO（スタンドパンチ連打）	UFC 99: The Comeback
 f04949	2009-09-19	loss	ジュニオール・ドス・サントス	3R 2:00 ギブアップ（右アッパー）	UFC 103: Franklin vs. Belfort
 f04949	2010-02-20	win	アンソニー・ペロシュ	2R終了時 TKO（ドクターストップ）	UFC 110: Nogueira vs. Velasquez
@@ -17279,7 +17279,7 @@ f05018	2003-11-10	win	今澤利恵	5分2R終了 判定2-1	SMACKGIRL Third Season
 f05018	2004-03-20	loss	大室奈緒子	5分2R終了 判定0-3	SMACKGIRL F 〜Next Cinderella Tournament 2nd stage & SG-F7〜
 f05018	2004-05-16	win	浜田真里江	1R 0:36 腕ひしぎ十字固め	SMACKGIRL F 〜5月病をブッ飛ばせ! 夏も近いぞスマックF祭〜
 f05018	2004-06-19	win	バッカス羽鳥	1R 0:25 腕ひしぎ十字固め	SMACKGIRL 2004 〜GO WEST〜
-f05018	2004-09-04	win	高橋まり	2R 2:09 アームロック	CROSS SECTION<!--第2回大会-->
+f05018	2004-09-04	win	高橋まり	2R 2:09 アームロック	CROSS SECTION
 f05018	2005-04-30	win	舞	5分2R終了 判定2-1	SMACKGIRL 2005 〜COOL FIGHTER LAST STAND〜 【ライト級王座次期挑戦者決定トーナメント 1回戦】
 f05018	2005-06-28	win	15	5分2R終了 判定2-1	SMACKGIRL 2005 〜Road to Dynamic!!〜 【ライト級王座次期挑戦者決定トーナメント 準決勝】
 f05018	2005-06-28	win	"斎藤""edge""あゆみ"	5分2R終了 判定3-0	SMACKGIRL 2005 〜Road to Dynamic!!〜 【ライト級王座次期挑戦者決定トーナメント 決勝】
@@ -17398,7 +17398,7 @@ f05206	2006-12-31	loss	マウリシオ・ショーグン	3R（10分/5分/5分）
 f05206	2007-09-22	loss	リョート・マチダ	5分3R終了 判定0-3	UFC 76
 f05206	2008-05-24	loss	ソクジュ	1R終了時 TKO（脚の負傷）	UFC 84
 f05206	2008-09-28	win	ポール・カフーン	5分3R終了 判定3-0	戦極 〜第五陣〜 【ミドル級グランプリシリーズ2008 1回戦】
-f05206	2008-11-01	loss	ジョルジ・サンチアゴ	3R 0:49 KO（右ストレート→パウンド）<!--SRC公式記録-->	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 決勝】
+f05206	2008-11-01	loss	ジョルジ・サンチアゴ	3R 0:49 KO（右ストレート→パウンド）	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 決勝】
 f05206	2008-11-01	win	佐々木有生	5分3R終了 判定3-0	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 準決勝】
 f05206	2009-08-02	loss	三崎和雄	1R 3:03 フロントチョーク	戦極 〜第九陣〜 【戦極ミドル級チャンピオンシップ挑戦者決定戦】
 f05206	2010-04-25	win	吉田秀彦	5分3R終了 判定3-0	吉田秀彦引退興行 〜ASTRA〜
@@ -17785,7 +17785,7 @@ f05384	2006-02-03	loss	クリスチャン・ウェリッシュ	1R 2:11 チョー
 f05384	2006-09-09	loss	クシシュトフ・ソシンスキー	1R 3:47 TKO（パンチ連打）	IFL: Portland
 f05384	2007-02-10	loss	トム・ブラックレッジ	1R 0:40 KO（ハイキック）	Cage Rage 20: Born 2 Fight
 f05386	2003-12-31	win	マウリシオ・ダ・シルバ	1R 0:13 TKO（タオル投入）	K-1 PREMIUM 2003 Dynamite!!
-f05386	2004-05-22	loss	ゲーリー・グッドリッジ	1R 1:22 KO（左フック→パウンド）<!--K-1公式記録-->	ROMANEX 格闘技世界一決定戦
+f05386	2004-05-22	loss	ゲーリー・グッドリッジ	1R 1:22 KO（左フック→パウンド）	ROMANEX 格闘技世界一決定戦
 f05386	2004-12-31	win	"クリストフ・ミドゥ・""ザ・フェニックス"""	1R 1:11 ネックロック	K-1 PREMIUM 2004 Dynamite!!
 f05386	2005-11-05	win	チェ・ムベ	5分2R終了 判定3-0	HERO'S 2005 in SEOUL
 f05388	2003-12-31	win	ダビド・ハハレイシビリ	2R 1:13 ギブアップ（パウンド）	K-1 PREMIUM 2003 Dynamite!!
@@ -17822,7 +17822,7 @@ f05391	2001-10-07	win	ポール・カフーン	5分2R終了 判定（ポイン�
 f05391	2001-10-07	win	モイス・リンボン	1R 4:48 TKO（左足首負傷）	2H2H 3: Hotter Than Hot 【決勝】
 f05391	2002-01-11	loss	チャック・リデル	5分3R終了 判定0-3	UFC 35: Throwdown
 f05391	2002-05-10	loss	フィル・バローニ	1R 2:55 TKO（マウントパンチ）	UFC 37: High Impact
-f05391	2002-10-13	win	ポール・カフーン	1R 1:03 膝十字固め<!--Hip Lock-->	2H2H 5: Simply the Best 5
+f05391	2002-10-13	win	ポール・カフーン	1R 1:03 膝十字固め	2H2H 5: Simply the Best 5
 f05391	2002-11-15	win	ジュリアン・ゴンザレス	1R 1:38 チョークスリーパー	M-1 MFC: Russia vs. The World 4
 f05391	2003-10-10	win	岡見勇信	1R 4:44 TKO（パウンド）	M-1 MFC: Russia vs. The World 6
 f05391	2003-12-31	win	ディン・トーマス	1R 4:23 TKO（パウンド）	INOKI BOM-BA-YE 2003 馬鹿になれ夢を持て
@@ -17948,7 +17948,7 @@ f05467	2008-09-28	loss	カルロス・トヨタ	判定0-3	club DEEP
 f05467	2008-12-14	loss	キム・ジフン	判定0-3	GRACHAN
 f05467	2014-02-11	loss	森川修次	判定0-3	GRACHAN 12
 f05467	2014-04-05	loss	増田裕介	判定0-3	INOKI GENOME FIGHT 1
-f05482	2004-07-07	loss	"山本""KID""徳郁"	2R 0:58 腕ひしぎ十字固め	K-1 WORLD MAX 2004 〜世界一決定トーナメント決勝戦〜 【ミックスルール<!--1, 3R：K-1ルール／2, 4R：ROMANEXルール-->】
+f05482	2004-07-07	loss	"山本""KID""徳郁"	2R 0:58 腕ひしぎ十字固め	K-1 WORLD MAX 2004 〜世界一決定トーナメント決勝戦〜 【ミックスルール】
 f05482	2006-08-05	loss	ハニ・ヤヒーラ	1R 1:08 チョークスリーパー	【ミドル級トーナメント 準々決勝】
 f05482	2007-03-12	loss	所英男	1R 1:08 腕ひしぎ十字固め	HERO'S 2007 開幕戦 〜名古屋初上陸〜
 f05483	2000-09-16	win	ジョン・ジェンセン	1R 1:50 膝十字固め	KOTC 5: Cage Wars
@@ -17973,7 +17973,7 @@ f05483	2008-12-27	loss	岡見勇信	5分3R終了 判定0-3	UFC 92: The Ultimate 
 f05483	2009-12-04	loss	ターレス・レイチ	5分3R終了 判定0-3	MFC 23: Unstoppable
 f05483	2012-04-28	win	ロドニー・ムーア	3R ヒールフック	Cage Contender 13: Lister vs. Moore
 f05483	2015-01-17	win	マイケル・クナップ	1R 4:21 ヒールフック	Fightor 1: Lister vs. Knaap
-f05508	2004-08-29	loss	篠原光	1R 2:50 V1アームロック	Love Impact<!--第3回大会-->
+f05508	2004-08-29	loss	篠原光	1R 2:50 V1アームロック	Love Impact
 f05509	2004-08-29	draw	ファング鈴木	5分2R終了 判定1-1	Love Impact
 f05509	2005-07-18	win	清水里香	1R 0:44 アームバー	WORLD OYAZI BATTLE -SAMURAI RETURN!-
 f05509	2005-09-03	win	太田佳保	1R 0:21 腕ひしぎ十字固め	SPIRITUAL ROAD 2005
@@ -18079,7 +18079,7 @@ f05614	2004-12-18	loss	石井淳	2R 0:30 KO	DEEP 17th IMPACT
 f05624	2004-12-31	win	シリル・アビディ	3分3R終了 判定3-0	K-1 PREMIUM 2004 Dynamite!!
 f05624	2005-12-31	win	曙	5分3R終了 判定3-0	K-1 PREMIUM 2005 Dynamite!!
 f05624	2006-12-31	loss	チェ・ホンマン	1R 0:16 TKO（パウンド）	K-1 PREMIUM 2006 Dynamite!!
-f05624	2007-12-31	loss	ボブ・サップ	1R 4:10 KO（マウントパンチ）<!--K-1公式記録-->	K-1 PREMIUM 2007 Dynamite!!
+f05624	2007-12-31	loss	ボブ・サップ	1R 4:10 KO（マウントパンチ）	K-1 PREMIUM 2007 Dynamite!!
 f05624	2021-11-20	win	北村克哉	2R 2:34 リアネイキッドチョーク	RIZIN.32
 f05628	2004-12-31	loss	藤田和之	1R 1:07 KO（右フック）	K-1 PREMIUM 2004 Dynamite!!
 f05631	2004-12-31	win	吉田秀彦	3R（10分/5分/5分）終了 判定3-0	PRIDE 男祭り 2004 -SADAME-
@@ -18452,7 +18452,7 @@ f05736	2004-05-22	win	デイブ・リーバス	2R 1:10 チョーク	PXC 2: Chaos
 f05736	2004-09-25	loss	ファビオ・ホーランダ	1R 3:00 チキンウィングアームロック	TKO 17: Revenge
 f05736	2005-04-09	win	ハリス・サリエント	3R 2:15 チョークスリーパー	SuperBrawl 39: Destiny 【SuperBrawlライト級王座決定戦】
 f05736	2005-07-03	loss	"杉江""アマゾン""大輔"	1R 1:42 三角絞め	修斗 SHOOTO GIG CENTRAL Vol.8
-f05736	2006-05-03	win	所英男	1R 0:43 TKO（右膝蹴り）<!--HERO'S公式記録-->	HERO'S 2006 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
+f05736	2006-05-03	win	所英男	1R 0:43 TKO（右膝蹴り）	HERO'S 2006 ミドル級世界最強王者決定トーナメント開幕戦 【ミドル級トーナメント 1回戦】
 f05736	2006-08-05	loss	宇野薫	2R 3:30 チョークスリーパー	【ミドル級トーナメント 準々決勝】
 f05736	2006-12-16	loss	ホドリゴ・ダム	2R 2:11 チョークスリーパー	BodogFight: Clash of the Nations
 f05736	2007-03-12	loss	宮田和幸	1R 3:38 変形チョークスリーパー	HERO'S 2007 開幕戦 〜名古屋初上陸〜
@@ -18626,7 +18626,7 @@ f05779	2010-04-11	loss	石川英司	5分3R終了 判定0-3	CAGE FORCE
 f05779	2010-08-22	loss	佐藤拓也	5分3R終了 判定0-3	SRC14 【ウェルター級グランプリシリーズ2010 リザーブマッチ】
 f05779	2011-08-26	win	北崎鎮	2R 3:36 チョークスリーパー	DEEP 55 IMPACT
 f05780	2000-04-09	loss	アンドレイ・アルロフスキー	1R 1:18 TKO（スタンドの打撃）	M-1 MFC: European Championship 2000 【ヘビー級 決勝】
-f05780	2000-04-09	win	ジェナディ・マツィゴラ<!--Gennadiy Matsigora-->	1R 1:56 フロントチョーク	M-1 MFC: European Championship 2000 【ヘビー級 1回戦】
+f05780	2000-04-09	win	ジェナディ・マツィゴラ	1R 1:56 フロントチョーク	M-1 MFC: European Championship 2000 【ヘビー級 1回戦】
 f05780	2000-11-11	win	ヘルマン・ファン・トール	KO	M-1 MFC: World Championship 2000
 f05780	2001-04-22	loss	ヨープ・カステル	肩固め	MillenniumSports: Veni Vidi Vici
 f05780	2001-05-30	loss	ヴォルク・アターエフ	1R 0:10 KO（ハイキック）	BARS: Moscow vs. St. Petersburg
@@ -19268,7 +19268,7 @@ f06134	2006-02-10	win	ブラッド・モリス	3R 2:59 KO（ハイキック）	K
 f06134	2006-04-29	win	イム・ジュンス	1R 1:56 フロントチョーク	MARS WORLD FIGHTING GP in SEOUL
 f06134	2006-08-26	win	"アンソニー・""辰治""・ネツラー"	1R 1:03 KO（左フック）	MARS in 両国国技館 〜NEW DEAL〜
 f06134	2007-04-15	win	IRO関	1R 0:46 TKO（パウンド）	"MARS 07 ""TORNADO RETURNS"""
-f06134	2008-05-18	loss	"中尾""KISS""芳広"	2R 0:46 TKO（右フック→パウンド）<!--SRC公式記録-->	戦極 〜第二陣〜
+f06134	2008-05-18	loss	"中尾""KISS""芳広"	2R 0:46 TKO（右フック→パウンド）	戦極 〜第二陣〜
 f06134	2009-03-20	win	ジェームス・トンプソン	1R 4:33 KO（左ストレート）	戦極 〜第七陣〜
 f06134	2009-09-23	loss	アントニオ・シウバ	1R 3:51 肩固め	戦極 〜第十陣〜
 f06134	2009-11-07	loss	デイブ・ハーマン	1R 2:25 KO（グラウンドの踵落とし）	戦極 〜第十一陣〜
@@ -19364,7 +19364,7 @@ f06143	2010-05-07	loss	ピート・スプラット	3R 0:42 TKO（パンチ連打
 f06143	2010-06-11	loss	ジョン・コロシ	1R 0:42 チョークスリーパー	Hoosier FC 4: Showdown at the Steel Yard
 f06146	2006-09-10	loss	ヒカルド・モラエス	1R 8:08 TKO（タオル投入）	PRIDE 無差別級グランプリ 2006 決勝戦
 f06146	2007-10-28	win	山本宜久	1R 1:03 TKO（パウンド）	HERO'S KOREA 2007
-f06146	2008-06-15	loss	アリスター・オーフレイム	1R 0:36 TKO（スタンドパンチ連打）<!--DREAM公式記録-->	DREAM.4 ミドル級グランプリ2008 2nd ROUND
+f06146	2008-06-15	loss	アリスター・オーフレイム	1R 0:36 TKO（スタンドパンチ連打）	DREAM.4 ミドル級グランプリ2008 2nd ROUND
 f06152	2004-11-06	loss	マンディ・スチュアート	1R 0:49 三角絞め	HOOKnSHOOT: Evolution
 f06152	2005-02-18	win	ロザンヌ・ブラックバーン	3分3R終了 判定3-0	National Fighting Challenge 2
 f06152	2005-11-19	loss	モーリー・ヘイゼル	1R 三角絞め	HOOKnSHOOT: 2005 Women's Grand Prix 【準決勝】
@@ -19504,7 +19504,7 @@ f06235	2008-12-31	win	坂口征夫	1R 3:52 KO（右アッパー→パウンド�
 f06235	2010-12-31	win	古木克明	5分3R終了 判定3-0	Dynamite!! 〜勇気のチカラ2010〜
 f06237	2006-12-31	win	ボビー・オロゴン	1R 0:16 TKO（パウンド）	K-1 PREMIUM 2006 Dynamite!!
 f06237	2007-12-31	loss	エメリヤーエンコ・ヒョードル	1R 1:54 腕ひしぎ十字固め	やれんのか! 大晦日! 2007
-f06237	2008-12-31	loss	ミルコ・クロコップ	1R 6:32 KO（左ローキック）<!--DREAM公式記録-->	Dynamite!! 〜勇気のチカラ2008〜
+f06237	2008-12-31	loss	ミルコ・クロコップ	1R 6:32 KO（左ローキック）	Dynamite!! 〜勇気のチカラ2008〜
 f06237	2009-05-26	win	ホセ・カンセコ	1R 1:17 ギブアップ（パウンド）	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【スーパーハルクトーナメント 1回戦】
 f06237	2009-10-06	loss	ミノワマン	2R 1:27 踵固め	DREAM.11 フェザー級グランプリ2009 決勝戦 【スーパーハルクトーナメント 準決勝】
 f06237	2015-07-25	loss	カルロス・トヨタ	1R 1:29 KO（右フック）	ROAD FC 024 in Japan
@@ -19626,7 +19626,7 @@ f06258	2007-12-28	win	ジェシー・ヴェイウム	1R 3:25 TKO	IFO: Fireworks 
 f06258	2008-04-11	win	クリス・タッチシェラー	5分3R終了 判定3-0	YAMMA Pit Fighting 1 【ヘビー級トーナメント 決勝】
 f06258	2008-04-11	win	マルセロ・ペレイラ	5分1R終了 判定3-0	YAMMA Pit Fighting 1 【ヘビー級トーナメント 1回戦】
 f06258	2008-04-11	win	リコ・ロドリゲス	5分1R終了 判定3-0	YAMMA Pit Fighting 1 【ヘビー級トーナメント 準決勝】
-f06258	2008-06-08	win	藤田和之	1R 1:24 TKO（右ストレート→パウンド）<!--SRC公式記録-->	戦極 〜第三陣〜
+f06258	2008-06-08	win	藤田和之	1R 1:24 TKO（右ストレート→パウンド）	戦極 〜第三陣〜
 f06258	2008-09-28	loss	キング・モー	1R 2:11 TKO（パウンド）	戦極 〜第五陣〜
 f06258	2009-05-02	loss	スタニスラブ・ネドコフ	3R 0:42 TKO（右ストレート→パウンド）	戦極 〜第八陣〜
 f06258	2009-05-30	win	クリス・バーデン	1R 0:41 ギブアップ（パウンド）	Extreme Challenge 127
@@ -19649,10 +19649,10 @@ f06259	2007-12-29	loss	リョート・マチダ	2R 4:20 肩固め	UFC 79: Nemesi
 f06259	2008-05-24	win	中村和裕	1R終了時 TKO（脚の負傷）	UFC 84: Ill Will
 f06259	2008-10-18	loss	ルイス・カーニ	2R 4:15 TKO（右フック→パウンド）	UFC 89: Bisping vs. Leben
 f06259	2009-01-24	loss	レナート・ババル	2R 2:37 アナコンダチョーク	Affliction: Day of Reckoning
-f06259	2009-05-26	win	"ヤン・""ザ・ジャイアント""・ノルキヤ"	1R 2:29 KO（パウンド）<!--DREAM公式記録-->	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【スーパーハルクトーナメント 1回戦】
+f06259	2009-05-26	win	"ヤン・""ザ・ジャイアント""・ノルキヤ"	1R 2:29 KO（パウンド）	DREAM.9 フェザー級グランプリ2009 2nd ROUND 【スーパーハルクトーナメント 1回戦】
 f06259	2009-10-06	win	ボブ・サップ	1R 1:31 TKO（パウンド）	DREAM.11 フェザー級グランプリ2009 決勝戦 【スーパーハルクトーナメント 準決勝】
 f06259	2009-11-07	loss	ゲガール・ムサシ	2R 3:43 TKO（パウンド）	Strikeforce: Fedor vs. Rogers
-f06259	2009-12-31	loss	ミノワマン	3R 3:29 KO（左フック）<!--DREAM公式記録-->	Dynamite!! 〜勇気のチカラ2009〜 【スーパーハルクトーナメント 決勝】
+f06259	2009-12-31	loss	ミノワマン	3R 3:29 KO（左フック）	Dynamite!! 〜勇気のチカラ2009〜 【スーパーハルクトーナメント 決勝】
 f06259	2010-05-14	win	デイブ・ハーマン	2R 失格（グラウンドの膝蹴り）	ADFC: Battle of the Champions 【無差別級グランプリ 1回戦】
 f06259	2010-07-10	win	ホアキム・フェレイラ	1R 1:20 TKO（パンチ連打）	Impact FC 1: The Uprising Brisbane
 f06259	2010-09-11	loss	ヒューストン・アレクサンダー	2R 1:31 TKO（パウンド）	Shark Fights 13: Jardine vs. Prangley
@@ -20352,7 +20352,7 @@ f06701	2007-11-16	win	トレヴァー・プラングリー	1R 2:31 KO（ボデ�
 f06701	2008-05-18	win	佐々木有生	3R 2:10 腕ひしぎ十字固め	戦極 〜第二陣〜
 f06701	2008-09-28	win	ローガン・クラーク	2R 3:35 肩固め	戦極 〜第五陣〜 【ミドル級グランプリシリーズ2008 1回戦】
 f06701	2008-11-01	win	シアー・バハドゥルザダ	1R 1:10 ヒールホールド	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 準決勝】
-f06701	2008-11-01	win	中村和裕	3R 0:49 KO（右ストレート→パウンド）<!--SRC公式記録-->	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 決勝】
+f06701	2008-11-01	win	中村和裕	3R 0:49 KO（右ストレート→パウンド）	戦極 〜第六陣〜 【ミドル級グランプリシリーズ2008 決勝】
 f06701	2009-01-04	win	三崎和雄	5R 3:26 チョークスリーパー	戦極の乱2009 【戦極ミドル級チャンピオンシップ】
 f06701	2009-11-07	loss	マメッド・ハリドヴ	1R 1:45 TKO（パウンド）	戦極 〜第十一陣〜
 f06701	2010-03-07	win	マメッド・ハリドヴ	5分5R終了 判定3-0	SRC12 【SRCミドル級チャンピオンシップ】
@@ -20395,7 +20395,7 @@ f06719	2008-11-01	win	ハン・スーファン	5分3R終了 判定3-0	戦極 〜
 f06719	2009-04-03	win	ニック・アガラー	1R 1:19 TKO（パウンド）	Bellator 1 【ライト級トーナメント 1回戦】
 f06719	2009-05-01	loss	トビー・イマダ	3R 3:22 三角絞め	Bellator 5 【ライト級トーナメント 準決勝】
 f06719	2009-06-19	win	エリック・レイノルズ	3R 3:33 チョークスリーパー	Bellator 12
-f06719	2009-11-07	win	北岡悟	2R 3:23 TKO（パウンド）<!--SRC公式記録-->	戦極 〜第十一陣〜
+f06719	2009-11-07	win	北岡悟	2R 3:23 TKO（パウンド）	戦極 〜第十一陣〜
 f06719	2010-02-04	loss	ルイス・パロミーノ	5分3R終了 判定1-2	G-Force Fights: Bad Blood 3
 f06719	2010-04-25	win	小谷直之	5分3R終了 判定2-1	吉田秀彦引退興行 〜ASTRA〜
 f06719	2010-09-11	loss	ポール・デイリー	5分3R終了 判定0-3	Shark Fights 13: Jardine vs. Prangley
@@ -20536,7 +20536,7 @@ f06830	2008-12-28	win	上嶋佑紀	1R 0:47 変形スリーパーホールド	DEE
 f06830	2008-12-28	win	小林博幸	1R 0:53 ヒールホールド	DEEPフューチャーキングトーナメント2008 【バンタム級 準決勝】
 f06830	2008-12-28	win	板谷一樹	1R 0:31 腕ひしぎ十字固め	DEEPフューチャーキングトーナメント2008 【バンタム級 2回戦】
 f06830	2009-03-14	loss	岡元飛竜	5分2R終了 判定0-3	club DEEP TOKYO in 1st RING
-f06830	2009-08-02	win	沼尻健	1R 3:25 KO（左フック）<!--SRC公式記録-->	戦極 〜第九陣〜 【戦極G!杯 バンタム級 決勝】
+f06830	2009-08-02	win	沼尻健	1R 3:25 KO（左フック）	戦極 〜第九陣〜 【戦極G!杯 バンタム級 決勝】
 f06830	2009-09-23	loss	ソ・ジェヒョン	5分2R終了 判定0-3	戦極 〜第十陣〜
 f06830	2010-04-25	loss	村田卓実	5分2R終了 判定0-3	吉田秀彦引退興行 〜ASTRA〜
 f06830	2010-06-06	win	吉武伸洋	1R 0:24 ヒールホールド	DEEP CAGE IMPACT 2010 in OSAKA
@@ -20625,7 +20625,7 @@ f06849	2014-09-05	win	ダスティン・ジャコビー	2R 1:13 TKO（パウン�
 f06849	2014-11-15	win	ジョー・ヴェデポ	3R 0:39 TKO（パウンド）	Bellator 131: Tito vs. Bonnar
 f06849	2015-02-27	win	シーク・コンゴ	5分3R終了 判定2-1	Bellator 134: The British Invasion
 f06849	2015-09-19	win	リントン・ヴァッセル	5分3R終了 判定3-0	Bellator 142: Dynamite 1 【ライトヘビー級トーナメント 1回戦】
-f06849	2015-12-29	win	ブレット・マクダーミット	1R 9:09 TKO（スタンドパンチ連打）<!--RIZIN公式記録-->	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 1回戦】
+f06849	2015-12-29	win	ブレット・マクダーミット	1R 9:09 TKO（スタンドパンチ連打）	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 1回戦】
 f06849	2015-12-31	win	イリー・プロハースカ	1R 5:09 KO（右フック）	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 決勝】
 f06849	2015-12-31	win	テオドラス・オークストリス	2R（10分/5分）終了 判定5-0	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 準決勝】
 f06849	2016-05-14	loss	フィル・デイヴィス	5分3R終了 判定0-3	Bellator 154: Davis vs. King Mo
@@ -20957,7 +20957,7 @@ f07074	2008-05-10	loss	チェ・ミルズ	1R終了時 TKO（ドクタースト�
 f07074	2008-11-08	win	イェルゼイ・クブスキ	1R 0:50 TKO（マウントパンチ）	Bushido Lithuania: Hero's 2008
 f07074	2009-04-05	win	池本誠知	2R（10分/5分）終了 判定3-0	DREAM.8 ウェルター級グランプリ2009 開幕戦 【ウェルター級グランプリ 1回戦】
 f07074	2009-07-20	win	ジェイソン・ハイ	1R 2:22 KO（右ハイキック）	DREAM.10 ウェルター級グランプリ2009 決勝戦 【ウェルター級グランプリ 決勝】
-f07074	2009-07-20	win	"桜井""マッハ""速人"	1R 4:03 KO（左ハイキック→パウンド）<!--DREAM公式記録-->	DREAM.10 ウェルター級グランプリ2009 決勝戦 【ウェルター級グランプリ 準決勝】
+f07074	2009-07-20	win	"桜井""マッハ""速人"	1R 4:03 KO（左ハイキック→パウンド）	DREAM.10 ウェルター級グランプリ2009 決勝戦 【ウェルター級グランプリ 準決勝】
 f07074	2009-10-25	win	ペ・ミョンホ	1R 0:19 KO（左ハイキック）	DREAM.12
 f07074	2010-01-30	loss	ニック・ディアス	1R 4:38 TKO（右フック）	Strikeforce: Miami 【Strikeforce世界ウェルター級王座決定戦】
 f07074	2010-06-16	loss	エヴァンゲリスタ・サイボーグ	1R 2:38 TKO（パウンド）	Strikeforce: Los Angeles
@@ -22553,7 +22553,7 @@ f09015	2024-06-09	loss	"""ブラックパンサー""ベイノア"	5分3R終了 �
 f09015	2025-05-31	nc	大原樹理	ノーコンテスト（ケースの体重超過）	RIZIN WORLD SERIES in KOREA
 f09015	2026-07-18	win	天弥	1R 3:14 TKO（右アッパー→パウンド）	RIZIN LANDMARK 15
 f09019	2007-11-24	loss	ケイトリン・ヤング	1R 0:30 KO（ハイキック）	HOOKnSHOOT: Bodog Fight Women's Tournament 【女子バンタム級トーナメント 準決勝】
-f09019	2007-11-24	win	ジャン・フィニー	3分4R終了 <!--レフェリー-->判定	HOOKnSHOOT: Bodog Fight Women's Tournament 【女子バンタム級トーナメント 1回戦】
+f09019	2007-11-24	win	ジャン・フィニー	3分4R終了 判定	HOOKnSHOOT: Bodog Fight Women's Tournament 【女子バンタム級トーナメント 1回戦】
 f09019	2008-06-27	win	エレーナ・マックスウェル	3分3R終了 判定3-0	Strikeforce: Melendez vs. Thomson
 f09019	2008-11-29	win	ジェイミー・リン	1R 2:21 TKO（パンチ）	CageSport MMA
 f09019	2009-01-31	win	ジェシカ・ベドナーク	1R 1:22 TKO（パンチ）	Freestyle Cage Fighting 27
@@ -22830,7 +22830,7 @@ f09472	2011-05-07	loss	アレクサンドル・グリンチュク	1R 2:19 ギロ
 f09472	2012-11-10	win	ヘンドリック・オシュマン	1R 1:17 TKO（パンチ連打）	Bushido Lithuania: Hero's Lithuania 2012
 f09472	2015-04-18	win	クシシュトフ・ピエトラシュエク	1R 2:12 ギロチンチョーク	Bushido Lithuania: Hero's 2015
 f09472	2015-11-14	win	アレクサンドル・グレベンキン	5分3R終了 判定3-0	Bushido Lithuania: Bushido Heroes
-f09472	2015-12-29	win	ブルーノ・カッペローザ	1R 3:32 TKO（右フック）<!--RIZIN公式記録-->	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 1回戦】
+f09472	2015-12-29	win	ブルーノ・カッペローザ	1R 3:32 TKO（右フック）	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 1回戦】
 f09472	2015-12-31	loss	キング・モー	2R（10分/5分）終了 判定0-5	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS 【ヘビー級トーナメント 準決勝】
 f09472	2016-04-17	win	シング・心・ジャディブ	3R（10分/5分/5分）終了 判定3-0	RIZIN.1
 f09472	2016-09-25	loss	シモン・バヨル	5分2R終了 判定0-3	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 開幕戦 【無差別級トーナメント 1回戦】
@@ -22924,7 +22924,7 @@ f09476	2025-10-04	win	カリル・ラウントリー・ジュニア	3R 3:04 KO�
 f09476	2026-04-11	loss	カーロス・アルバーグ	1R 3:45 KO（左フック→パウンド）	UFC 327: Procházka vs. Ulberg 【UFC世界ライトヘビー級王座決定戦】
 f09482	2015-12-31	loss	ギャビ・ガルシア	1R 2:36 TKO（バックブロー→パウンド）	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS
 f09482	2017-07-30	loss	KINGレイナ	5分3R終了 判定0-3	RIZIN FIGHTING WORLD GRAND-PRIX 2017 1st ROUND -夏の陣-
-f09484	2015-12-31	win	長島☆自演乙☆雄一郎	1R 5:29 KO（スタンドパンチ連打）<!--RIZIN公式記録-->	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS
+f09484	2015-12-31	win	長島☆自演乙☆雄一郎	1R 5:29 KO（スタンドパンチ連打）	RIZIN FIGHTING WORLD GRAND-PRIX 2015 さいたま3DAYS
 f09484	2016-09-25	loss	ダロン・クルックシャンク	1R 4:10 リアネイキドチョーク	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 開幕戦
 f09484	2016-12-29	loss	宮田和幸	1R 4:39 腕ひしぎ十字固め	RIZIN FIGHTING WORLD GRAND-PRIX 2016 無差別級トーナメント 2nd ROUND
 f09484	2017-05-27	win	マサロ・グランダー	3R 腕ひしぎ十字固め	World Fighting League MMA

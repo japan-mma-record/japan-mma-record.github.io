@@ -38,6 +38,7 @@ def load():
     events = {r['event_id']: r for r in read_tsv(os.path.join(DATA, 'core', 'events.tsv'))}
     for r in events.values():
         r['name'] = methods.event_name(r.get('name'))
+        r['sources'] = methods.clean_sources(r.get('sources'))
     bouts = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'core', 'bouts.tsv')):
         bouts[r['event_id']].append(r)
@@ -56,6 +57,7 @@ def load():
         if (e['promotion'], e['date']) in have:
             continue
         e['name'] = methods.event_name(e.get('name'))
+        e['sources'] = methods.clean_sources(e.get('sources'))
         events[e['event_id']] = e
         for b in auto_b.get(e['event_id'], []):
             for k in ('1', '2'):
