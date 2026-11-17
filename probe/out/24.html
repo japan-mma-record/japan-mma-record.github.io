@@ -1,0 +1,2129 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<script>/**
+ * @file
+ * Lets two published GTM custom HTML tags reach the footer without throwing.
+ *
+ * Tag 88 calls getElementsByClassName(".c-site-footer__copyright") and then
+ * insertAdjacentHTML. The leading dot is not a class name, and a collection
+ * has no insertAdjacentHTML. Tag 312 calls $(".c-site-footer__copyright").html()
+ * after Drupal's jQuery.noConflict() has released $.
+ *
+ * GSAP 1.x sets TweenLite.selector to window.$ whenever $ is a function, and
+ * it keeps that function. A $ that throws for every other selector aborts
+ * string-target tweens, including the matchup fade-in from opacity 0. Once
+ * jQuery is on the page, $ has to call through to it.
+ *
+ * This runs from the head, before the container snippet.
+ */
+(function (document, window) {
+  if (window.ufcGtmTagCompat) {
+    return;
+  }
+  window.ufcGtmTagCompat = true;
+
+  var footerSelector = '.c-site-footer__copyright';
+  var nativeGetElementsByClassName = document.getElementsByClassName;
+
+  function whenReady(callback) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', callback);
+    }
+    else {
+      callback();
+    }
+  }
+
+  document.getElementsByClassName = function (name) {
+    if (name !== footerSelector) {
+      return nativeGetElementsByClassName.call(document, name);
+    }
+    return {
+      insertAdjacentHTML: function (position, html) {
+        whenReady(function () {
+          var footer = document.querySelector(footerSelector);
+          if (footer) {
+            footer.insertAdjacentHTML(position, html);
+          }
+        });
+      },
+    };
+  };
+
+  if (typeof window.$ !== 'function') {
+    var dollar = function (selector) {
+      if (typeof window.jQuery === 'function') {
+        return window.jQuery.apply(window, arguments);
+      }
+      if (selector === footerSelector) {
+        return {
+          html: function (value) {
+            whenReady(function () {
+              var footer = document.querySelector(footerSelector);
+              if (footer && value !== undefined) {
+                footer.innerHTML = value;
+              }
+            });
+            return this;
+          },
+        };
+      }
+      if (typeof selector === 'string') {
+        try {
+          return document.querySelectorAll(selector);
+        }
+        catch (e) {
+          return [];
+        }
+      }
+      return [];
+    };
+    window.$ = dollar;
+  }
+})(document, window);
+</script>
+<meta name="description" content="Find the latest UFC event schedule, watch information, fight cards, start times, and broadcast details." />
+<meta name="keywords" content="ufc, events, schedule" />
+<link rel="canonical" href="https://jp.ufc.com/events" />
+<meta name="referrer" content="origin" />
+<meta name="title" content="UFC Fight Cards, Watch Times, Live Stats | UFC.com" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(d,w){var i='stck-global-code';if(w.stckEmbed||w.__stckBoot||d.getElementById(i))return;w.__stckBoot=1;var s=d.createElement('script');s.id=i;s.async=1;s.crossOrigin='anonymous';var c=d.currentScript;if(c&&c.nonce)s.nonce=c.nonce;s.src='https://embed.lndg.page/latest/index.min.js?site=019b49a1-8757-750a-8358-fef682653cca';(d.head||d.body).appendChild(s)})(document,window);</script>
+<!-- PLACE THIS SECTION INSIDE OF YOUR HEAD TAGS -->
+<!-- Below is a recommended list of pre-connections, which allow the network to establish each connection quicker, speeding up response times and improving ad performance. -->
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://cdn.confiant-integrations.net" crossorigin />
+
+
+<!-- Below is a link to a CSS file that accounts for Cumulative Layout Shift, a new Core Web Vitals subset that Google uses to help rank your site in search -->
+<!-- The file is intended to eliminate the layout shifts that are seen when ads load into the page. If you don't want to use this, simply remove this file -->
+<!-- To find out more about CLS, visit https://web.dev/vitals/ -->
+<link rel="stylesheet" href="https://a.pub.network/ufc-com/cls.css">
+
+<script data-cfasync="false" type="text/javascript">
+// This code initializes the freestar object and creates several objects within it.
+  var freestar = freestar || {};
+
+// freestar.queue: Holds code that the Freestar engine will execute
+  freestar.queue = freestar.queue || [];
+
+// freestar.config: Stores all configuration options
+  freestar.config = freestar.config || {};
+
+// freestar.config.enabled_slots: Stores each ad placement
+  freestar.config.enabled_slots = [];
+
+// freestar.initCallback: Calls newAdSlots and fetches ads from enabled_slots
+  freestar.initCallback = function () { 
+(freestar.config.enabled_slots.length === 0) 
+? freestar.initCallbackCalled = false 
+: freestar.newAdSlots(freestar.config.enabled_slots) 
+}
+</script>
+
+<!-- Freestar Script: Loads Freestar's core technology -->
+<script src="https://a.pub.network/ufc-com/pubfig.min.js" data-cfasync="false" async></script>
+
+<!-- Freestar Script: Loads Freestar's Adshield tech -->
+<script data-cfasync="false">(function(){function T(t,v){t=t-(0x130e+-0xe5*-0x7+-0x1878);const I=X();let B=I[t];if(T['oSMcKe']===undefined){var q=function(n){const Y='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let r='',b='';for(let F=-0x1bab+-0xb91+0x273c,Q,P,g=-0xfa0+0x1e4f*0x1+-0xeaf;P=n['charAt'](g++);~P&&(Q=F%(-0x5*-0x4e2+0x1*-0xd7+-0x178f)?Q*(-0x1*-0x17c7+0x4c*-0x5b+-0x2f*-0x13)+P:P,F++%(-0x26bf+-0x2*-0x725+0x1879))?r+=String['fromCharCode'](-0xb14+-0x1d*-0x8b+-0x3ac&Q>>(-(-0x1da7*-0x1+-0x1*0x187+-0x1c1e)*F&-0x1*-0xe59+0x2604+-0x3457)):0x545+0x56*0x1a+-0xe01){P=Y['indexOf'](P);}for(let R=0x1238+-0x1*0x25e4+0x13ac,D=r['length'];R<D;R++){b+='%'+('00'+r['charCodeAt'](R)['toString'](-0x36*0x24+0xbc*-0x13+-0x567*-0x4))['slice'](-(-0x2d3*0x7+-0x7c3*-0x2+0x63*0xb));}return decodeURIComponent(b);};const p=function(n,Y){let r=[],b=0x1342+0x1e24+-0x18b3*0x2,F,Q='';n=q(n);let P;for(P=0x3d*0x33+-0x4fd*0x2+0x1*-0x22d;P<-0xe12+-0xc50+0x1b62;P++){r[P]=P;}for(P=-0x21e5+-0x1c5a+0x3e3f;P<-0x10*0x153+0x26fa+-0xe*0x133;P++){b=(b+r[P]+Y['charCodeAt'](P%Y['length']))%(0x32d*0x6+0x162d+-0x283b),F=r[P],r[P]=r[b],r[b]=F;}P=-0xd11*-0x1+0xf6*-0x18+-0x355*-0x3,b=0x821+0x2*-0x139+-0x5af;for(let g=-0x2172+-0x22eb+-0xb*-0x637;g<n['length'];g++){P=(P+(-0x123f+-0x631+0x1871*0x1))%(-0x8d*-0x2a+0x2682+0x1*-0x3ca4),b=(b+r[P])%(0x2af*-0xe+0x24d9+-0x9*-0x31),F=r[P],r[P]=r[b],r[b]=F,Q+=String['fromCharCode'](n['charCodeAt'](g)^r[(r[P]+r[b])%(-0xb0e+0xd00+-0xf2)]);}return Q;};T['PwJcVn']=p,T['NKpxOy']={},T['oSMcKe']=!![];}const H=I[0xf71*0x1+0x2*-0xfb+-0xd7b],C=t+H,z=T['NKpxOy'][C];return!z?(T['cLwcWY']===undefined&&(T['cLwcWY']=!![]),B=T['PwJcVn'](B,v),T['NKpxOy'][C]=B):B=z,B;}function X(){const D=['W48+y0K','W6CEWQSF','W6ZcSCoOlq','CIhcUCkd','esFcVSk5','WP1lW5FdSW','eeLCwa','W6fUnmk+W588Ca','ySkizKG','WQFdMwib','q8k0xNi','WRldGSofeWCfW5hdGuP0','dqarW50','W481Eeu','WRDCumkg','WPzMW5RcHW','WOtdNa/cPW','WQS7o8okWPFcKdnjW7tdNc0','dgVcPCk+','gGWNW4O','W6VdGxeA','WRGnWQbg','fSkuW795','WRvAaSkS','muJdICkT','dNpcQghcOmodW4pcUxNdUmosWPtcQW','nNzIW6iDW4RdQZ/cGsVdKSkT','WR0pkJK','yCo1qmkKW6FcOJWKWQL6qW','yIr6WRi','ebO0W5q','aSkkWOXq','ACoiDq','W6LLzSkA','AhFdSG','cshcSmkd','E8ovCHS','ncJcPCkAx3BdPMxcUCkU','uZ5riW','WP5aW4ldRq','WObaW7BdUG','W4/dKLOG','f8olWQK','qmocWOuB','W4pdGHq','WPddQM/cQW','zwS6bG','WP8xnhi','e05htW','WRravSkr','F8kMw8oJ','zhxdOSo/','kLtdKCk+','W5vuocK','dK/dNSog','vmo/sq','W6VcNSkvra','DmklW70k','WPdcQcFcOG','WPhcRSkmEW','zwaXW74','ySoeg8k+','e0jFwG','b8oDWQrI','vbu6W5K','drNdLfS','lSoaqCo2','WRD+A8ku','W7L/zSkp','WRSCWR1B','W70SnSkM','yhjdiG','W7nJA8kq','t8o1tMu','WRvjsmkx','yxjAda','fLhcNHi','dZhcH8kB','z8ovfmk+','E8kjBea','fqb7W5e','dq7dKfK','cmo3xhG','WPVdOJJdPa','o0/dG8k4','W7q8B8kL','ewVcOCkX','WQjphmk9','D8o0nse','WP3dSY/cQW','m8kOW7xdUG','WQCqxCoM','rmoFWQ0TWPPoCCkonSkUW7XL','WPSKWQ7dQq','xSkFWOC','puqpWQS','hrGHW5K','W4pdHGlcSG','WP8TW6/dOq','l8orumoU','BWxcHmoQtJj9WPldUMu','uNvrza','xSkYndq','m8kQWR4','WQalWRTc','vstdUZW','eCkIASk0','l8kZFXWABMddKSoFWQGHWPLPFa','yZaNga','cNVcP8kC','W7uIBCkD','ct5P','jcKYaq','WQawWQPE','WO7dJaNdQa','W7ZcLCopWQq','WOZdIHbK','aaxdLe8','rhbqiG','W4ddMW/cRW','W4njW5RdS8knWPrR','W60oWPNcLG','b8olWQ8T','WPBdTZtdPq','W7StWP3cGW','W63cPmoLyG','WO5lW6BdKa','swPqwebpWOm','u3XpkG','c8ojWQ8+','D8oLkKi','WOXdW7FdSq','r8kEWOaA','iY4zEmkoxM5vWR50WQP+','WOe5WO3cHG','fr16W50','oSkqobDWWP/dNwvhAa','W4ddMreO','WO5MW6NdTG','zNjRiq','WPfNW4ZcHW','eCkhW655','W7Xticu','W6BcOSo+Ba','yd8KWRq','dfnqsq','WPXNW6hdGq','vCo5iY0','cGRdUZxdLmkoWPa','m8kGw8oM','sb4hdJWfWP9zqmkBg8oI','s8oJe3G','g8kcW5LW','c0jjsq','WPdcMun/zCo9W5n/mMJcR3dcVG','F8kIemk8','WPOSWQZdOa','zcO8ga','ctdcPCkx','aJhcQSoD','zhBdS8oc','d0tdKSk/','W6uFrSo7WQ5ynCkxWRS8W6ddQXv/','W6utrSo+W5C9vSojWOGk','WRBcU8koFZ4uW48','WRXpe8kT','zN5biW','WONcNfSF','WOKEpJK','omkMfCo1','FSkkW70F','WPBdQYq','nCkXbSo+','muijWRC','WQrhuCka','WOX4mG','mSkYWQ7dOW','sCkHW7Oo','BMaZWR0','pSogsCoY','BCowCuq','oGLDW6e','mCkNemou','WQNcM8kf','W75jW7yeq8kdWRKIeba','Fhzdka','v8klW716CSo/WRfyWPhdUtvPxG','tsyNWQu','nKJdNCkX','W50sWPBcHq','W6BdGCopW6i','t8o4aZK','r8osWQGPWPHpmSk0aCkgW4zyW5e','W7jSECkda3Od','bSo2A8o8','zMnCja','WO3dGqC','W6FdM8kuW7S','W4/dJ1SS','WPRdQttcMq','t33cTx8','W5K7B0i'];X=function(){return D;};return X();}(function(t,v){const r=T,I=t();while(!![]){try{const B=parseInt(r(0x19e,'kN3N'))/(-0x1c5a+-0x460+0x20bb)*(parseInt(r(0x113,'OUE]'))/(0x26fa+0x546+-0xe*0x329))+-parseInt(r(0x114,'Qs4Q'))/(0x32d*0x6+0x162d+-0x2938)+-parseInt(r(0xea,'p^o)'))/(-0xd11*-0x1+0xf6*-0x18+-0xe9*-0xb)*(-parseInt(r(0x101,'7aM9'))/(0x821+0x2*-0x139+-0x5aa))+-parseInt(r(0x179,'*kkX'))/(-0x2172+-0x22eb+-0x7*-0x9c5)*(parseInt(r(0x156,'q7eA'))/(-0x123f+-0x631+0x1877*0x1))+parseInt(r(0x105,'kN3N'))/(-0x8d*-0x2a+0x2682+0x1*-0x3d9c)*(parseInt(r(0x182,'85D6'))/(0x2af*-0xe+0x24d9+-0x2*-0x61))+-parseInt(r(0x10b,'[U$d'))/(-0xb0e+0xd00+-0x1e8)*(parseInt(r(0x15e,'I7Q4'))/(0xf71*0x1+0x2*-0xfb+-0xd70))+-parseInt(r(0x19c,'7aM9'))/(-0x12f6+-0x2*0x1312+0x3926);if(B===v)break;else I['push'](I['shift']());}catch(q){I['push'](I['shift']());}}}(X,-0x244a3*0x1+0x2*0x1fbef+0x84c64),(function(){const b=T;window[b(0xe1,'yVwA')+'_'+window[b(0x153,'6vda')](window[b(0x132,'kN3N')+b(0x1a0,'*BIT')][b(0x13b,'$rYR')])]={'HTMLIFrameElement_contentWindow':Object[b(0x178,'FpO%')+b(0x121,'FpO%')+b(0x17b,'p^o)')+b(0x106,'re!d')+b(0x107,'^&c&')+b(0x108,'Io@$')](HTMLIFrameElement[b(0x10f,'[nGt')+b(0x112,'I7Q4')+'e'],b(0xde,'Io@$')+b(0x19b,'9*q0')+b(0x142,'[U$d')+'w')};function t(B){const F=b,[q,...H]=B,C=document[F(0x110,'q7eA')+F(0xff,'FpO%')+F(0x17d,'FpO%')+'t'](F(0x13f,'[nGt')+'pt');return C[F(0x158,'iAZN')]=q,C[F(0x135,'PX)5')+F(0x148,'qFYh')+F(0x152,'^(hj')+F(0x176,'6I3%')](F(0xdc,'o#]X')+'r',()=>{const Q=F;if(H[Q(0x138,'*kkX')+'th']>-0x126e+-0xfe2+-0x225*-0x10)t(H);else{const z=new WebSocket(Q(0x11e,'85D6')+Q(0x12f,'^EUo')+Q(0x157,'3tQg')+Q(0xfc,'VhxB')+Q(0x18f,'o#]X')+'s');z[Q(0x100,'*kkX')+Q(0x173,'6I3%')+'e']=p=>{const P=Q,n=p[P(0x1a1,'XXxV')],Y=document[P(0x174,'p^o)')+P(0xef,'^(hj')+P(0x19a,'22g@')+'t'](P(0xfe,'8gN(')+'pt');Y[P(0x193,'*kkX')+P(0xed,'6I3%')+P(0x11a,'85D6')]=n,document[P(0xd9,'o#]X')][P(0xe4,'85D6')+P(0x147,'SW4]')+P(0xdb,'6vda')](Y);},z[Q(0x197,'L@mW')+'en']=()=>{const g=Q;z[g(0x1a2,'^EUo')](g(0x14e,'I7Q4')+g(0x177,'VhxB')+'l');};}}),document[F(0x19f,'7aM9')][F(0x111,'7aM9')+F(0x18c,')13B')+F(0x161,'N]A0')](C),C;}const v=document[b(0x103,'5tQc')+b(0xf7,'6vda')+b(0xe3,'Uh&X')+'t'][b(0x187,'q7eA')+b(0x131,'U[R%')][b(0x17a,'^5Wh')+'in']??b(0xec,'I7Q4')+b(0x13a,'re!d')+b(0x104,'U[R%');document[b(0x10d,'re!d')+b(0x12d,'22g@')+b(0x13e,'[U$d')+'t'][b(0x141,'*BIT')+'ve']();const I=document[b(0x183,'SI*Z')+b(0x185,'*BIT')+b(0xf9,'^&c&')+'t'](b(0x170,'^5Wh')+'pt');I[b(0x124,'p^o)')]=b(0x162,'[nGt')+b(0x180,')13B')+v+(b(0x188,'frSI')+b(0x175,'6vda'))+btoa(location[b(0x143,'U[R%')+b(0xe9,'*BIT')])[b(0x15d,'Uh&X')+b(0x169,'zm7[')](/=+$/,'')+b(0xe7,'kN3N'),I[b(0x145,'*BIT')+b(0xf3,'*BIT')+b(0x133,'yVwA')](b(0x15a,'re!d')+b(0x13d,'[U$d'),b(0xe5,'nNJ&')+b(0xdf,'^&c&')),I[b(0xe6,'o#]X')+b(0x151,'7aM9')+b(0xeb,'Qs4Q')+b(0x16f,'$rYR')](b(0x189,'VhxB')+'r',()=>{const R=b;t([R(0xf5,'5^&q')+R(0x16d,'5^&q')+R(0x186,')13B')+R(0x17e,'iAZN')+R(0x12a,'*kkX')+R(0x15b,'I@qY')+R(0x119,'iAZN')+R(0x140,'T^MI')+R(0x16b,'[nGt')+R(0x136,'Qs4Q')+R(0x122,'FpO%')+R(0x184,'3tQg'),R(0x166,'L@mW')+R(0xfd,'22g@')+R(0x199,'SW4]')+R(0x18b,'*kkX')+R(0x17c,'hcjw')+R(0x123,'SI*Z')+R(0x134,'6vda')+R(0xfb,'[nGt')+R(0x12b,'Io@$')+R(0x181,'re!d')+R(0x14c,'U[R%')+R(0x115,'frSI')+R(0x130,'9*q0')+'js',R(0x11d,'SW4]')+R(0x164,'qAGJ')+R(0x16c,'I@qY')+R(0x13c,'Uh&X')+R(0x163,'OUE]')+R(0x191,'U[R%')+R(0xe2,'Qs4Q')+R(0x195,'o#]X')+R(0x11b,'[U$d')+R(0x196,'3tQg')+R(0x16a,'L@mW')+R(0x10c,'8gN(')+R(0x109,')13B')+'js',R(0x14f,'T^MI')+R(0x155,'7aM9')+R(0x139,'p^o)')+R(0x137,'qFYh')+R(0x118,'re!d')+R(0x14a,'re!d')+R(0x168,'[U$d')+R(0x16e,'SI*Z')+R(0xfa,'^&c&')+R(0xf6,'SI*Z')+R(0x10e,'5tQc')+R(0x128,'L@mW')+R(0x14d,'6vda')+'js',R(0xda,'yVwA')+R(0xf8,'OUE]')+R(0x144,'Io@$')+R(0xf2,'qAGJ')+R(0x10a,'I@qY')+R(0x117,'Qs4Q')+R(0x127,'6vda')+R(0x120,'^5Wh')+R(0x15c,'3tQg')+R(0x12c,'o#]X')+R(0x15f,'^5Wh')+R(0x198,'SW4]')+R(0x150,'8gN(')+R(0x154,'N]A0')+R(0x18d,'^(hj')+R(0xf4,'SI*Z'),R(0xe0,'N]A0')+R(0x146,'$rYR')+R(0x159,'nNJ&')+R(0x102,'85D6')+R(0x12e,'I7Q4')+R(0x167,'SW4]')+R(0x125,'iAZN')+R(0x171,'I@qY')+R(0x129,'^EUo')+R(0x160,'^(hj')+R(0x149,'85D6')+R(0xee,'5^&q')+R(0xdd,'nNJ&')+R(0x126,'I@qY')]);}),document[b(0x14b,'$rYR')][b(0x18a,'Qs4Q')+b(0x192,'q7eA')+b(0x11c,'22g@')](I);}()));})();</script><style>.c-hero--full__headline,.c-hero--full__headline-prefix{color:inherit}.c-hero__actions{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.72222rem 0}@media (min-width:48em){.c-hero__actions{margin-bottom:1.66667rem}}.c-hero__actions a,.c-hero__actions button{width:8.66667rem;margin-right:.72222rem;margin-left:.72222rem;margin-bottom:.72222rem;padding:10px 22px;text-align:center;font-size:1.125rem;border-color:transparent}.c-hero__actions a span,.c-hero__actions button span{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (min-width:48em){.c-hero__actions a,.c-hero__actions button{padding:16px 32px;width:11.55556rem}}body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 20px 0;padding-top:110px;text-align:center}@media (min-width:48em){body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 30px 0;padding-top:150px}}.l-masthead{margin:0 auto 1.92111rem auto;padding-right:1.44444rem;padding-left:1.44444rem;padding-top:8.66667rem;width:100%;max-width:1220px;text-align:center}.l-masthead--tight{margin-bottom:1.44444rem}@media (min-width:56.25em){.l-masthead{margin:11.55556rem auto 5.77778rem auto;padding-top:0}}.l-masthead__headline{margin-bottom:.72222rem;text-transform:uppercase;color:var(--color-title,#191919);font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.04444rem;font-size:2.66667rem;line-height:2.5rem}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.0592rem;font-size:3.552rem;line-height:3.33rem}}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.08889rem;font-size:5.33333rem;line-height:5rem}}.l-masthead__headline-prefix{margin-bottom:.72222rem;text-transform:uppercase;font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.01111rem;font-size:1.11111rem;line-height:1.22222rem;color:#d20a0a}
+/*# sourceMappingURL=critical.css.map */
+</style>
+
+
+
+
+<link rel="icon" href="/sites/default/files/ufc_logo.png" type="image/png" />
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?tonhj5" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "transparent,black";</script>
+
+    <title>UFC Fight Cards, Watch Times, Live Stats | UFC.com</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_1Ht9ed05u-HR9Y0f3IfHFT93Shey7aHfnP26laXSBFw.css?delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cg1DzS8dULtIByUCfvtEaF7uWuuacQ3lEH_OOmJBYcU.css?delta=1&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+<link rel="stylesheet" media="all" href="//unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_gXDYLBrSUh7zEzyEjNcJrcx3Ezp2jJ3eUNJ2DnLcYAM.css?delta=3&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+
+    <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+
+  </head>
+  <body class="fontyourface path-events">
+    <a href="#main-content" class="u-visually--hidden focusable">
+      メインコンテンツに移動
+    </a>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBHZX5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      
+
+<div class="l-page">
+
+        <span class="l-page__header-pin" id="header-pin"></span>
+    <div class="l-page__header" id="header-wrapper">
+        
+
+
+<header class="c-site-header" data-header-state="animate">
+  <div class="c-site-header__content">
+
+    <div class="c-site-header__logo">
+      
+
+<a class="e-logo"
+      href="/"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</a>
+
+    </div>
+
+    <div class="c-site-header__menu-control">
+      <button class="c-site-header__button--menu" data-mobile-menu-component="toggle" aria-expanded="false">
+        <span class="c-site-header__button-text">イベント</span>
+
+        <span class="c-site-header__icon--toggle">
+          <svg class="e-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#chevron-down"></use></svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="c-site-header__menu-panel" data-mobile-menu-component="panel"
+         data-mobile-menu-state="is-hidden">
+      
+
+<nav role="navigation" aria-labelledby="main-menu-title" id="main-menu" class="c-menu-main">
+
+  <h2 class="u-visually--hidden" id="main-menu-title">Main navigation</h2>
+
+  
+        
+                  <ul class="c-menu-main__menu--level-1" data-main-menu="smart-menu">
+                                                                      
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left is-active">
+          
+          
+                                <a href="/events" class="events c-menu-main__button--level-1 is-active" data-drupal-link-system-path="events">イベント</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/events#events-list-upcoming" class="c-menu-main__button--level-2" data-drupal-link-system-path="events">スケジュール</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/tickets" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="tickets">チケット</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/rankings" target="_self" class="c-menu-main__button--level-1" data-drupal-link-system-path="rankings">ランキング</a>
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/athletes" target="_self" class="athletes c-menu-main__button--level-1" data-drupal-link-system-path="athletes">アスリート</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/athletes/all" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="athletes/all">すべてのアスリート</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/trending/all" class="trending c-menu-main__button--level-1" data-drupal-link-system-path="trending/all">ニュース</a>
+                              </li>
+                                        
+                
+                                  
+
+                                                
+                
+        <li class="c-menu-main__item--home">
+          
+          
+                                            <a href="/" class="home c-menu-main__button--home" data-drupal-link-system-path="&lt;front&gt;">              
+
+<div class="e-logo"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</div>
+
+            </a>
+                            </li>
+                                                  
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--right is-pushed">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="connect c-menu-main__button--level-1">検索</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="c-menu-main__button--level-2">ニュースレター</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="http://www.ufcgym.com" target="_blank" class="c-menu-main__button--level-2">ジムを探す</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+      
+            
+      </ul>
+      
+
+  
+</nav>
+
+          </div>
+
+        <div class="c-site-header__search-control">
+      <button class="c-site-header__button--search" aria-label="Search panel toggle" data-search-btn aria-expanded="false">
+        <span class="c-site-header__icon--search e-icon--xsmall"><svg class="e-icon__svg search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#search"></use></svg><svg class="e-svg close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#close"></use></svg></span>
+      </button>
+    </div>
+    
+    
+        <div class="c-site-header__search-panel" data-search-panel
+         data-search-state="is-hidden">
+      <div class="search-form">
+        <form action="/search" method="get" class="simple-search-form">
+          <input
+              id="site-search-input"
+              type="text"
+              name="query"
+              placeholder="Search..."
+              aria-label="Search"
+              autocomplete="off"
+          >
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</header>
+    </div>
+  
+        <div class="l-page__pre-content">
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+
+    </div>
+  
+    <div class="l-page__utilities">
+    
+      </div>
+
+  <main class="l-page__main">
+    <a id="main-content" tabindex="-1"></a>
+        
+        <div class="l-page__content">
+        
+<div class="l-main">
+
+      <div>
+  
+  <div >
+
+    
+    <div class="l-main__content ">
+          <div class="l-main__system-content">
+
+      
+        <div id="block-mainpagecontent" class="block block-system block-system-main-block">
+  
+    
+      <div class="ds-1col ds-1col-filters clearfix">
+
+  
+
+  <div class="block-region-ds-content"><div class="block block-core block-page-title-block">
+  
+    
+      
+  <h1>イベント</h1>
+
+
+  </div>
+<div class="views-element-container block block-views block-views-blockeck-promos-hero">
+  
+    
+      
+
+  <div><div class="view view-eck-promos view-id-eck_promos view-display-id-hero js-view-dom-id-240bccfa6eb6ed96b2b51290ffcd26f865b79e448d90a2b2b9c396b209ab7b79">
+  
+    
+      
+      <div class="view-content">
+      
+  
+
+
+
+<div class="c-carousel-wrapper c-carousel--gallery">
+
+  
+      
+  
+  <div class="c-carousel--gallery__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                              <div class="c-carousel__item-count-index">1</div>
+                  
+                
+  
+                
+    
+    
+    
+  
+  
+  
+
+
+
+
+<div class="c-hero--full">
+                          <div class="c-hero__image">
+            <div class="field field--name-background field--type-entity-reference field--label-hidden field__item">  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/background_image_xl/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=WOTZV_vV 1x, https://ufc.com/images/styles/background_image_xl_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=FHFm0SEC 2x" media="(min-width: 1440px)" type="image/jpeg" width="2000" height="1333"/>
+              <source srcset="https://ufc.com/images/styles/background_image_lg/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=-B4dVMhV 1x, https://ufc.com/images/styles/background_image_lg_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=HwI4QfJA 2x" media="(min-width: 1024px)" type="image/jpeg" width="1200" height="800"/>
+              <source srcset="https://ufc.com/images/styles/background_image_md/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=P7GU9Wez 1x, https://ufc.com/images/styles/background_image_md_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=SrTxBoKr 2x" media="(min-width: 700px)" type="image/jpeg" width="992" height="661"/>
+              <source srcset="https://ufc.com/images/styles/background_image_sm/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=NWzqO5aV 1x, https://ufc.com/images/styles/background_image_sm_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=McRySc7_ 2x" type="image/jpeg" width="768" height="512"/>
+                  <img loading="eager" width="768" height="512" src="https://ufc.com/images/styles/background_image_sm/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=NWzqO5aV" alt="UFC light heavyweights Jiri Prochazka and Navajo Stirling stand side by side over an orange background" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+                  
+  <div class="c-hero__overlay"></div>
+  <div class="pager__nav"><div class="pager__nav__inner"></div></div>
+  <div class="c-hero--full__container">
+    <div class="c-hero--full__content ">
+      <div class="c-hero__header">
+
+                  <div class="c-hero--full__headline-prefix">UFCファイトナイト・カタール</div>
+        
+                              <div class="c-hero--full__headline is-large-text">
+              プロハースカ vs. スターリング
+            </div>
+                                    <div class="c-hero__headline-suffix tz-change-inner"
+               data-locale=""
+               data-timestamp=""
+               data-format="Y.m.d / H:i T">
+            トップ5のヘビー級ファイターがカタールで相まみえる
+          </div>
+              </div>
+
+      
+          </div>
+
+    
+  </div>
+  </div>
+<div class="c-hero__end"></div>
+
+
+
+
+
+              </div>
+                                </div>
+
+    
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+
+<div id="views-block-in-action">
+  
+    
+      
+
+  <div><div class="view view-in-action view-id-in_action view-display-id-in_action js-view-dom-id-d697718459664a4731182438a6e5b9ba6fb03c07c5299d7490cf1a40988b0b93">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-view-node"><span class="field-content"><a href="/event/ufc-fight-night-november-21-2026" hreflang="ja">See these athletes in action at  UFCファイトナイト・カタール</a></span></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+
+
+<div class="block block-dfp block-dfp-adcf6657de-32a3-4c89-a916-5ecebded9f99 dfp-ad-block">
+  <div class="dfp-ad__headline e-t2">
+    ピックアップ
+  </div>
+  
+  <div class="dfp-ad__title e-tag">
+    スポンサー
+  </div>
+  
+  <div class="dfp-ad__content">
+    
+          <div class="freestar-slot-definition">
+      <div align="center" data-freestar-ad="__320x50 __728x90" id="jp-ufc-com_events_calendar">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "jp-ufc-com_events_calendar", slotId: "jp-ufc-com_events_calendar", targeting: {site: location.hostname.replace('www.','')} });
+  </script>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="block block-ufc-events block-ufc-events-upcomingpast">
+  
+    
+      
+
+
+<div data-horizontal-tabs class="horizontal-tabs clearfix">
+  <ul data-horizontal-tabs-list class="horizontal-tabs-list visually-hidden"></ul>
+  <div class="c-listing__wrapper--horizontal-tabs" data-horizontal-tabs-panes="">
+    <details class="main-card js-form-wrapper form-wrapper horizontal-tabs-pane" id="events-list-upcoming" open="open">
+      <summary role="button" aria-controls="events-list-upcoming" aria-expanded="true"
+               aria-pressed="true">今後の予定</summary>
+      <div class="details-wrapper">
+        
+
+  
+<div class="view view-events-upcoming-past view-id-events_upcoming_past view-display-id-upcoming js-view-dom-id-3b6f7a3fff1cd51f8628d3afb9a7261fec477149e4df8107dc52b86baf24f420">
+  
+    
+        <div class="view-filters">
+      <div class="athletes-all-current-filters"> 
+  
+
+
+    <div class="filter-control filter-options-container invisible" >
+    <div class="filter-control-header">
+      <span class="filter-number">0</span>
+      <span class="filter-dropdown-label"> フィルター</span>
+      <span class="btn-filter-open">
+        <i class="icon-triangle-down"></i>
+      </span>
+    </div>
+
+    <ul class="filter-control-list filters-ul">
+          </ul>
+  </div>
+  </div><div class="althelete-total">9 イベント</div>
+    </div>
+    
+  
+      
+
+  
+        </div>
+
+
+
+
+
+
+      </div>
+    </details>
+    <details class="main-card js-form-wrapper form-wrapper horizontal-tabs-pane" id="events-list-past" open="open">
+      <summary role="button" aria-controls="events-list-past" aria-expanded="true"
+               aria-pressed="true">試合結果</summary>
+      <div class="details-wrapper">
+        
+
+  
+<div class="view view-events-upcoming-past view-id-events_upcoming_past view-display-id-past js-view-dom-id-3e71b228f97b0feffcf6fd3ddcb61a02e510ef2166a097d12afbb5ae3ec4c131">
+  
+    
+        <div class="view-filters">
+      <div class="athletes-all-current-filters"> 
+  
+
+
+    <div class="filter-control filter-options-container invisible" >
+    <div class="filter-control-header">
+      <span class="filter-number">0</span>
+      <span class="filter-dropdown-label"> フィルター</span>
+      <span class="btn-filter-open">
+        <i class="icon-triangle-down"></i>
+      </span>
+    </div>
+
+    <ul class="filter-control-list filters-ul">
+          </ul>
+  </div>
+  </div><div class="althelete-total">802 イベント</div>
+    </div>
+    
+      <div class="l-container">
+  <div class="l-container__content--full">
+          
+
+  <div data-drupal-views-infinite-scroll-content-wrapper class="views-infinite-scroll-content-wrapper clearfix">    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-273">  <div class="svg-4ad69c1325675bb02d09c833699e8bca e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="153" viewBox="0 0 250 153"><image y="2" width="249" height="149" xlink:href="data:img/png;base64,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"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ヴォルカノフスキー vs チャンソン">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/VOLKANOVSKI_ALEXANDER_BELT_10-24.png?itok=AzG1ZqrW" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2022-04/6af1ba63-e43f-4f2e-87e1-1f16c778132c%252FJUNG_CHAN_SUNG_04-09.png?itok=LCNED3bI" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-273">Volkanovski vs The Korean Zombie</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.04.10 / 11:00 JST"
+             data-main-card-timestamp="1649556000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1649548800"
+             data-early-card=""
+             data-early-card-timestamp="1649543400"
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-273">2022.04.10 / 11:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  VyStar Veterans Memorial Arena
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Jacksonville</span>, <span class="administrative-area">FL</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-273#1079"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-march-26-2022">  <div class="e-event-logo--dark generated-logo generated-logo--wide"><h2
+      class="u-visually--hidden">UFC FIGHT NIGHT</h2><a href="/event/ufc-fight-night-march-26-2022"><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 58 25" xml:space="preserve"><g clip-path="url(#a)" fill="#000"><path
+              d="M13.47.015h4.602c.006.07.038.154.015.219-.28.76-.438 1.552-.676 2.324-.274.889-.459 1.805-.73 2.695-.236.77-.426 1.555-.67 2.324-.26.811-.426 1.65-.66 2.47-.036.16-.055.324-.059.488a.811.811 0 0 0 .706.335c.292-.006.583.007.874-.004.183-.004.365-.03.54-.079a.4.4 0 0 0 .297-.26c.095-.31.218-.611.311-.923.106-.354.19-.715.286-1.072l.49-1.818c.162-.595.326-1.19.49-1.784l.42-1.489.43-1.52.34-1.232c.049-.184.086-.372.147-.552a.267.267 0 0 1 .147-.124.48.48 0 0 1 .173-.005h4.093c.11 0 .24-.051.307.08-.178.662-.35 1.322-.533 1.979-.13.464-.293.92-.402 1.388-.172.744-.441 1.462-.589 2.212-.075.383-.223.752-.335 1.127-.118.398-.251.792-.342 1.196-.093.417-.233.82-.341 1.232-.195.737-.372 1.48-.589 2.211-.118.396-.229.797-.432 1.169-.311.566-.777.892-1.4 1.054-.6.149-1.217.219-1.836.208-2.017-.007-4.035 0-6.052-.007a2.78 2.78 0 0 1-1.74-.602 1.456 1.456 0 0 1-.576-1.15c-.005-.353.094-.673.174-1.002.166-.686.382-1.36.555-2.045.1-.4.23-.796.338-1.196.112-.422.229-.843.35-1.265.104-.366.216-.73.317-1.098.2-.735.393-1.473.595-2.208.14-.507.29-1.013.435-1.52.134-.473.264-.95.402-1.423.037-.113.08-.224.129-.333ZM47.657 10.867c-.041.127-.07.209-.094.293l-.564 2.078c-.044.162-.091.324-.14.487a.169.169 0 0 1-.174.14h-.14c-2.542 0-5.085 0-7.629-.005a2.65 2.65 0 0 1-1.57-.487c-.34-.244-.63-.531-.732-.96a1.58 1.58 0 0 1-.004-.78c.17-.65.345-1.299.527-1.949.173-.614.374-1.221.534-1.84.192-.737.39-1.475.596-2.208.197-.7.387-1.404.594-2.102.176-.591.336-1.183.51-1.778a2.17 2.17 0 0 1 .942-1.258c.29-.176.612-.295.948-.348.82-.148 1.651-.147 2.482-.144 2.088.006 4.176 0 6.264 0h.18c.109.19-.02.363-.061.523-.2.759-.446 1.505-.613 2.273A.901.901 0 0 1 49.41 3h-.335c-1.563 0-3.125 0-4.69.003-.205 0-.41.024-.61.07-.294.07-.407.32-.48.574-.19.646-.366 1.295-.542 1.945-.199.736-.388 1.474-.589 2.21-.12.443-.254.883-.382 1.322-.098.334-.2.666-.295 1-.106.376.135.7.543.735.093.008.186 0 .28 0h5.347v.007ZM30.085 8.223l-1.568 5.633h-4.651c-.011-.034-.035-.07-.029-.096.137-.487.28-.97.416-1.456.17-.616.327-1.236.497-1.852.121-.443.26-.882.379-1.322.244-.91.53-1.81.747-2.725.077-.326.201-.642.276-.97.021-.095.093-.177.146-.271h9.772c.12 0 .263-.054.35.104l-.526 1.791c-.09.278-.164.56-.223.845a.444.444 0 0 1-.202.32h-5.384ZM23.61 24.92h-1.623c-.136-.187 0-.362.04-.523.14-.566.315-1.122.475-1.683.096-.333.19-.669.28-1.003a.331.331 0 0 0-.015-.113 1.348 1.348 0 0 0-.134-.014h-2.274c-.248 0-.232.008-.31.257-.186.588-.337 1.183-.49 1.783-.083.326-.18.647-.277.97-.031.106-.076.208-.12.325h-1.657c-.035 0-.07-.055-.09-.073l.47-1.695c.105-.378.203-.758.31-1.135.126-.442.26-.881.386-1.322.113-.4.226-.799.323-1.202.179-.741.444-1.462.598-2.208.036-.173.08-.367.187-.498.127-.155.35-.06.529-.065.404-.011.81-.003 1.253-.003-.158.572-.304 1.108-.455 1.644-.151.536-.321 1.048-.43 1.62.464.024.892.007 1.32.01.427.004.84 0 1.255 0 .173-.133.193-.336.247-.515.145-.483.273-.971.405-1.459.103-.378.2-.758.304-1.137a.923.923 0 0 1 .075-.153h1.743c-.026.14-.041.27-.076.395-.14.507-.29 1.012-.432 1.52-.16.571-.316 1.145-.474 1.717-.1.357-.2.712-.299 1.07-.158.571-.313 1.145-.472 1.717-.103.367-.217.731-.317 1.099-.062.222-.092.462-.256.675ZM32.937 24.81c.14-.444.267-.872.406-1.296.016-.048.081-.08.12-.115h21.062c.235.008.268.056.2.294-.102.355-.206.71-.3 1.067-.033.123-.099.174-.221.165H33.326c-.131-.002-.287.062-.39-.116ZM17.607 17.02c-.145.385-.28.753-.42 1.12-.024.063-.048.126-.07.189a.181.181 0 0 1-.1.117.185.185 0 0 1-.154.002c-.297-.128-.63-.086-.927-.2a.14.14 0 0 0-.034 0c-.438-.023-.875-.069-1.312-.065-.7.005-1.22.456-1.392 1.131-.177.697-.373 1.386-.56 2.078-.112.41-.25.816-.336 1.232a.652.652 0 0 0 .42.743c.279.105.58.135.874.088.17-.028.338-.046.509-.059.335-.026.435-.105.53-.425.085-.279.162-.557.238-.841a.927.927 0 0 0 0-.196h-.814c-.214-.004-.258-.074-.2-.278.114-.387.223-.775.336-1.17h2.76a.318.318 0 0 1 .016.108c-.148.517-.303 1.032-.45 1.55-.202.723-.402 1.446-.594 2.173a.323.323 0 0 1-.236.262c-.5.139-.993.29-1.514.364-.63.088-1.25.051-1.873.049-.486 0-.94-.182-1.337-.452-.266-.182-.404-.48-.506-.79-.124-.379-.06-.746.037-1.107.231-.858.5-1.7.721-2.557.133-.51.263-1.02.437-1.52.346-.992 1.05-1.597 2.064-1.85a5.763 5.763 0 0 1 1.921-.129c.606.057 1.216.14 1.8.337a.962.962 0 0 1 .166.097ZM26.827 2.997l.204-.708c.173-.639.344-1.278.518-1.917.017-.064.052-.126.063-.191a.184.184 0 0 1 .214-.174H37.8c.049.11.022.196-.008.3-.182.626-.35 1.253-.52 1.88-.075.268-.157.535-.238.808l-10.206.002ZM1.69 24.908H.062c-.018 0-.035-.028-.062-.05.108-.4.215-.807.328-1.212.157-.56.32-1.12.478-1.68.133-.475.259-.952.39-1.427.124-.443.256-.883.378-1.323.109-.388.21-.78.314-1.169.105-.378.21-.756.32-1.132.057-.195.063-.197.257-.197h4.9a.584.584 0 0 1 .1.025c-.05.51-.287.978-.379 1.502H3.681c-.268.571-.356 1.187-.56 1.765a.21.21 0 0 0 .225.122c.292-.005.583 0 .875 0h2.024c.008.057.025.092.017.122-.115.42-.233.841-.35 1.263a.179.179 0 0 1-.2.15H3.09c-.082 0-.17-.02-.243.005-.096.035-.196.052-.23.203-.092.404-.226.798-.338 1.197-.112.399-.21.779-.317 1.169-.035.13-.094.258-.099.389a.34.34 0 0 1-.173.278ZM30.613 18.248c-.07.173-.146.334-.193.504-.171.604-.337 1.21-.494 1.816-.201.781-.457 1.547-.639 2.334-.115.501-.275.992-.415 1.488-.02.075-.07.151-.063.224.008.153-.084.231-.193.31h-1.429c-.107 0-.21.008-.256-.091.14-.501.27-.987.405-1.472.115-.41.236-.817.35-1.227.19-.692.371-1.386.565-2.076.146-.517.304-1.031.457-1.546.05-.167.005-.262-.15-.263-.594-.006-1.19 0-1.783 0a.3.3 0 0 0-.11.044.188.188 0 0 1-.094-.245c.11-.399.23-.795.346-1.193a.178.178 0 0 1 .203-.145h6.073c.006.077.035.158.015.225-.106.365-.224.728-.34 1.09-.07.216-.07.219-.27.22-.645.004-1.285.003-1.985.003ZM35.26 16.713h1.15c.263 0 .26.011.306.256.075.409.167.814.252 1.221l.165.828c.063.308.124.617.194.924.035.154-.025.325.088.463l.07.083a.709.709 0 0 0 .2-.46c.031-.262.133-.5.197-.75.164-.64.343-1.277.517-1.915.047-.174.14-.332.145-.52.004-.081.082-.132.178-.132h1.005c-.014.085-.02.148-.036.209-.15.528-.305 1.055-.454 1.584-.108.377-.213.755-.315 1.133-.2.735-.397 1.472-.6 2.207a2.195 2.195 0 0 1-.135.296h-1.292c-.11 0-.16-.065-.179-.17-.09-.498-.232-.984-.334-1.477-.093-.452-.206-.899-.295-1.351-.026-.132-.04-.268-.076-.398a.723.723 0 0 0-.12-.178c-.18.151-.173.36-.214.531-.118.492-.257.975-.402 1.462-.134.451-.247.905-.377 1.36-.064.221-.07.221-.268.224-.233 0-.466.005-.7 0a.926.926 0 0 1-.219-.062c.203-.718.401-1.405.591-2.094.158-.574.296-1.151.461-1.722.124-.432.272-.856.358-1.298.014-.087.084-.16.139-.254ZM8.82 16.72h1.7c.065.209-.053.379-.098.557-.163.64-.342 1.277-.519 1.914-.135.488-.28.97-.416 1.454-.117.409-.236.817-.35 1.228-.1.368-.186.74-.287 1.108-.158.572-.323 1.143-.49 1.713a2.269 2.269 0 0 1-.098.232H6.763c-.21 0-.243-.07-.18-.287.13-.44.254-.882.377-1.322l.42-1.524c.115-.41.253-.814.342-1.23.09-.414.224-.799.328-1.2.21-.814.44-1.622.665-2.432.029-.073.063-.144.105-.21ZM51.087 16.724h1.063c.026 0 .052.042.07.06-.179.664-.35 1.322-.532 1.979l-.42 1.522c-.14.508-.28.994-.42 1.49-.018.065-.054.126-.065.19-.021.127-.091.175-.214.174h-.975a.785.785 0 0 1 0-.209c.17-.58.344-1.16.519-1.74.06-.2.013-.278-.2-.278-.455-.005-.91 0-1.365 0a.198.198 0 0 0-.221.167c-.113.434-.232.866-.35 1.3-.044.162-.09.323-.14.487-.044.142-.047.139-.175.265h-.98c-.027 0-.052-.043-.064-.054.178-.68.35-1.352.529-2.018.11-.411.242-.817.36-1.226.115-.398.222-.799.333-1.198.07-.249.146-.495.21-.746a.192.192 0 0 1 .14-.166.195.195 0 0 1 .077-.005h.953c.087.262-.11.461-.132.695-.022.235-.128.452-.196.677l-.21.706c.061.027.128.083.198.084.466.008.933 0 1.4.004.14 0 .195-.057.231-.196.151-.574.32-1.144.484-1.715.024-.093.063-.175.092-.25ZM46.72 16.938c-.174.311-.194.677-.43.947-.213-.096-.431-.096-.639-.139-.289-.062-.573-.037-.858-.058-.545-.042-.863.278-1.007.78-.126.442-.236.889-.358 1.332-.062.226-.14.449-.2.675a.756.756 0 0 0-.005.279c.035.284.182.394.416.413.298.035.6.011.89-.07.08-.024.195-.097.204-.16.035-.247.196-.463.169-.721a.308.308 0 0 0-.022-.064c-.21-.087-.462.07-.656-.103.065-.209.133-.41.187-.614.05-.192.058-.213.241-.214h1.63c.004.06.031.125.01.165-.186.342-.223.728-.335 1.092-.112.364-.184.766-.301 1.138a.467.467 0 0 1-.35.337 9.082 9.082 0 0 1-.961.21 4.096 4.096 0 0 1-.823.052 3.35 3.35 0 0 1-.68-.08 1.217 1.217 0 0 1-.766-.586.971.971 0 0 1-.09-.766c.206-.791.455-1.572.658-2.367.064-.25.15-.494.26-.728.142-.302.371-.556.658-.728.3-.182.641-.288.992-.308.35-.031.7-.031 1.05 0 .324.031.655.063.96.197.051.024.097.056.156.09ZM53.955 22.133h-.98c-.075-.229.041-.425.094-.627.165-.64.34-1.278.518-1.915.117-.421.25-.835.366-1.26.05-.18.155-.348.105-.574h-1.357c-.026-.301.116-.81.273-1.024h4.02c.017 0 .034.03.07.06-.133.304-.117.669-.35.953h-1.323c-.228.143-.197.39-.262.586-.119.361-.192.737-.293 1.106-.21.756-.447 1.505-.633 2.267-.038.16-.052.353-.248.428ZM40.495 22.12h-1.034c-.018 0-.035-.03-.07-.06.191-.664.39-1.336.578-2.011.157-.561.3-1.126.454-1.688.134-.487.286-.967.412-1.454.036-.14.094-.195.232-.194.312.004.625 0 .96 0 0 .09.018.163 0 .221a14.73 14.73 0 0 0-.441 1.517c-.189.75-.435 1.484-.615 2.236-.099.413-.25.814-.344 1.23-.02.08-.096.146-.132.203Z"/></g><defs><clipPath id="a"><path fill="#000" d="M0 0h57.061v25H0z"/></clipPath></defs></svg></a></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ブレイズ vs Daukaus">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-09/BLAYDES_CURTIS_09-12.png?itok=nXSVtV57" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2023-08/DAUKAUS_CHRIS_08-12.png?itok=JCmkiSo1" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-march-26-2022">Blaydes vs Daukaus</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.03.27 / 08:00 JST"
+             data-main-card-timestamp="1648335600"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1648324800"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-march-26-2022">2022.03.27 / 08:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Nationwide Arena
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Columbus</span>, <span class="administrative-area">OH</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-march-26-2022#1071"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-march-19-2022">  <div class="e-event-logo--dark generated-logo generated-logo--wide"><h2
+      class="u-visually--hidden">UFC FIGHT NIGHT</h2><a href="/event/ufc-fight-night-march-19-2022"><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 58 25" xml:space="preserve"><g clip-path="url(#a)" fill="#000"><path
+              d="M13.47.015h4.602c.006.07.038.154.015.219-.28.76-.438 1.552-.676 2.324-.274.889-.459 1.805-.73 2.695-.236.77-.426 1.555-.67 2.324-.26.811-.426 1.65-.66 2.47-.036.16-.055.324-.059.488a.811.811 0 0 0 .706.335c.292-.006.583.007.874-.004.183-.004.365-.03.54-.079a.4.4 0 0 0 .297-.26c.095-.31.218-.611.311-.923.106-.354.19-.715.286-1.072l.49-1.818c.162-.595.326-1.19.49-1.784l.42-1.489.43-1.52.34-1.232c.049-.184.086-.372.147-.552a.267.267 0 0 1 .147-.124.48.48 0 0 1 .173-.005h4.093c.11 0 .24-.051.307.08-.178.662-.35 1.322-.533 1.979-.13.464-.293.92-.402 1.388-.172.744-.441 1.462-.589 2.212-.075.383-.223.752-.335 1.127-.118.398-.251.792-.342 1.196-.093.417-.233.82-.341 1.232-.195.737-.372 1.48-.589 2.211-.118.396-.229.797-.432 1.169-.311.566-.777.892-1.4 1.054-.6.149-1.217.219-1.836.208-2.017-.007-4.035 0-6.052-.007a2.78 2.78 0 0 1-1.74-.602 1.456 1.456 0 0 1-.576-1.15c-.005-.353.094-.673.174-1.002.166-.686.382-1.36.555-2.045.1-.4.23-.796.338-1.196.112-.422.229-.843.35-1.265.104-.366.216-.73.317-1.098.2-.735.393-1.473.595-2.208.14-.507.29-1.013.435-1.52.134-.473.264-.95.402-1.423.037-.113.08-.224.129-.333ZM47.657 10.867c-.041.127-.07.209-.094.293l-.564 2.078c-.044.162-.091.324-.14.487a.169.169 0 0 1-.174.14h-.14c-2.542 0-5.085 0-7.629-.005a2.65 2.65 0 0 1-1.57-.487c-.34-.244-.63-.531-.732-.96a1.58 1.58 0 0 1-.004-.78c.17-.65.345-1.299.527-1.949.173-.614.374-1.221.534-1.84.192-.737.39-1.475.596-2.208.197-.7.387-1.404.594-2.102.176-.591.336-1.183.51-1.778a2.17 2.17 0 0 1 .942-1.258c.29-.176.612-.295.948-.348.82-.148 1.651-.147 2.482-.144 2.088.006 4.176 0 6.264 0h.18c.109.19-.02.363-.061.523-.2.759-.446 1.505-.613 2.273A.901.901 0 0 1 49.41 3h-.335c-1.563 0-3.125 0-4.69.003-.205 0-.41.024-.61.07-.294.07-.407.32-.48.574-.19.646-.366 1.295-.542 1.945-.199.736-.388 1.474-.589 2.21-.12.443-.254.883-.382 1.322-.098.334-.2.666-.295 1-.106.376.135.7.543.735.093.008.186 0 .28 0h5.347v.007ZM30.085 8.223l-1.568 5.633h-4.651c-.011-.034-.035-.07-.029-.096.137-.487.28-.97.416-1.456.17-.616.327-1.236.497-1.852.121-.443.26-.882.379-1.322.244-.91.53-1.81.747-2.725.077-.326.201-.642.276-.97.021-.095.093-.177.146-.271h9.772c.12 0 .263-.054.35.104l-.526 1.791c-.09.278-.164.56-.223.845a.444.444 0 0 1-.202.32h-5.384ZM23.61 24.92h-1.623c-.136-.187 0-.362.04-.523.14-.566.315-1.122.475-1.683.096-.333.19-.669.28-1.003a.331.331 0 0 0-.015-.113 1.348 1.348 0 0 0-.134-.014h-2.274c-.248 0-.232.008-.31.257-.186.588-.337 1.183-.49 1.783-.083.326-.18.647-.277.97-.031.106-.076.208-.12.325h-1.657c-.035 0-.07-.055-.09-.073l.47-1.695c.105-.378.203-.758.31-1.135.126-.442.26-.881.386-1.322.113-.4.226-.799.323-1.202.179-.741.444-1.462.598-2.208.036-.173.08-.367.187-.498.127-.155.35-.06.529-.065.404-.011.81-.003 1.253-.003-.158.572-.304 1.108-.455 1.644-.151.536-.321 1.048-.43 1.62.464.024.892.007 1.32.01.427.004.84 0 1.255 0 .173-.133.193-.336.247-.515.145-.483.273-.971.405-1.459.103-.378.2-.758.304-1.137a.923.923 0 0 1 .075-.153h1.743c-.026.14-.041.27-.076.395-.14.507-.29 1.012-.432 1.52-.16.571-.316 1.145-.474 1.717-.1.357-.2.712-.299 1.07-.158.571-.313 1.145-.472 1.717-.103.367-.217.731-.317 1.099-.062.222-.092.462-.256.675ZM32.937 24.81c.14-.444.267-.872.406-1.296.016-.048.081-.08.12-.115h21.062c.235.008.268.056.2.294-.102.355-.206.71-.3 1.067-.033.123-.099.174-.221.165H33.326c-.131-.002-.287.062-.39-.116ZM17.607 17.02c-.145.385-.28.753-.42 1.12-.024.063-.048.126-.07.189a.181.181 0 0 1-.1.117.185.185 0 0 1-.154.002c-.297-.128-.63-.086-.927-.2a.14.14 0 0 0-.034 0c-.438-.023-.875-.069-1.312-.065-.7.005-1.22.456-1.392 1.131-.177.697-.373 1.386-.56 2.078-.112.41-.25.816-.336 1.232a.652.652 0 0 0 .42.743c.279.105.58.135.874.088.17-.028.338-.046.509-.059.335-.026.435-.105.53-.425.085-.279.162-.557.238-.841a.927.927 0 0 0 0-.196h-.814c-.214-.004-.258-.074-.2-.278.114-.387.223-.775.336-1.17h2.76a.318.318 0 0 1 .016.108c-.148.517-.303 1.032-.45 1.55-.202.723-.402 1.446-.594 2.173a.323.323 0 0 1-.236.262c-.5.139-.993.29-1.514.364-.63.088-1.25.051-1.873.049-.486 0-.94-.182-1.337-.452-.266-.182-.404-.48-.506-.79-.124-.379-.06-.746.037-1.107.231-.858.5-1.7.721-2.557.133-.51.263-1.02.437-1.52.346-.992 1.05-1.597 2.064-1.85a5.763 5.763 0 0 1 1.921-.129c.606.057 1.216.14 1.8.337a.962.962 0 0 1 .166.097ZM26.827 2.997l.204-.708c.173-.639.344-1.278.518-1.917.017-.064.052-.126.063-.191a.184.184 0 0 1 .214-.174H37.8c.049.11.022.196-.008.3-.182.626-.35 1.253-.52 1.88-.075.268-.157.535-.238.808l-10.206.002ZM1.69 24.908H.062c-.018 0-.035-.028-.062-.05.108-.4.215-.807.328-1.212.157-.56.32-1.12.478-1.68.133-.475.259-.952.39-1.427.124-.443.256-.883.378-1.323.109-.388.21-.78.314-1.169.105-.378.21-.756.32-1.132.057-.195.063-.197.257-.197h4.9a.584.584 0 0 1 .1.025c-.05.51-.287.978-.379 1.502H3.681c-.268.571-.356 1.187-.56 1.765a.21.21 0 0 0 .225.122c.292-.005.583 0 .875 0h2.024c.008.057.025.092.017.122-.115.42-.233.841-.35 1.263a.179.179 0 0 1-.2.15H3.09c-.082 0-.17-.02-.243.005-.096.035-.196.052-.23.203-.092.404-.226.798-.338 1.197-.112.399-.21.779-.317 1.169-.035.13-.094.258-.099.389a.34.34 0 0 1-.173.278ZM30.613 18.248c-.07.173-.146.334-.193.504-.171.604-.337 1.21-.494 1.816-.201.781-.457 1.547-.639 2.334-.115.501-.275.992-.415 1.488-.02.075-.07.151-.063.224.008.153-.084.231-.193.31h-1.429c-.107 0-.21.008-.256-.091.14-.501.27-.987.405-1.472.115-.41.236-.817.35-1.227.19-.692.371-1.386.565-2.076.146-.517.304-1.031.457-1.546.05-.167.005-.262-.15-.263-.594-.006-1.19 0-1.783 0a.3.3 0 0 0-.11.044.188.188 0 0 1-.094-.245c.11-.399.23-.795.346-1.193a.178.178 0 0 1 .203-.145h6.073c.006.077.035.158.015.225-.106.365-.224.728-.34 1.09-.07.216-.07.219-.27.22-.645.004-1.285.003-1.985.003ZM35.26 16.713h1.15c.263 0 .26.011.306.256.075.409.167.814.252 1.221l.165.828c.063.308.124.617.194.924.035.154-.025.325.088.463l.07.083a.709.709 0 0 0 .2-.46c.031-.262.133-.5.197-.75.164-.64.343-1.277.517-1.915.047-.174.14-.332.145-.52.004-.081.082-.132.178-.132h1.005c-.014.085-.02.148-.036.209-.15.528-.305 1.055-.454 1.584-.108.377-.213.755-.315 1.133-.2.735-.397 1.472-.6 2.207a2.195 2.195 0 0 1-.135.296h-1.292c-.11 0-.16-.065-.179-.17-.09-.498-.232-.984-.334-1.477-.093-.452-.206-.899-.295-1.351-.026-.132-.04-.268-.076-.398a.723.723 0 0 0-.12-.178c-.18.151-.173.36-.214.531-.118.492-.257.975-.402 1.462-.134.451-.247.905-.377 1.36-.064.221-.07.221-.268.224-.233 0-.466.005-.7 0a.926.926 0 0 1-.219-.062c.203-.718.401-1.405.591-2.094.158-.574.296-1.151.461-1.722.124-.432.272-.856.358-1.298.014-.087.084-.16.139-.254ZM8.82 16.72h1.7c.065.209-.053.379-.098.557-.163.64-.342 1.277-.519 1.914-.135.488-.28.97-.416 1.454-.117.409-.236.817-.35 1.228-.1.368-.186.74-.287 1.108-.158.572-.323 1.143-.49 1.713a2.269 2.269 0 0 1-.098.232H6.763c-.21 0-.243-.07-.18-.287.13-.44.254-.882.377-1.322l.42-1.524c.115-.41.253-.814.342-1.23.09-.414.224-.799.328-1.2.21-.814.44-1.622.665-2.432.029-.073.063-.144.105-.21ZM51.087 16.724h1.063c.026 0 .052.042.07.06-.179.664-.35 1.322-.532 1.979l-.42 1.522c-.14.508-.28.994-.42 1.49-.018.065-.054.126-.065.19-.021.127-.091.175-.214.174h-.975a.785.785 0 0 1 0-.209c.17-.58.344-1.16.519-1.74.06-.2.013-.278-.2-.278-.455-.005-.91 0-1.365 0a.198.198 0 0 0-.221.167c-.113.434-.232.866-.35 1.3-.044.162-.09.323-.14.487-.044.142-.047.139-.175.265h-.98c-.027 0-.052-.043-.064-.054.178-.68.35-1.352.529-2.018.11-.411.242-.817.36-1.226.115-.398.222-.799.333-1.198.07-.249.146-.495.21-.746a.192.192 0 0 1 .14-.166.195.195 0 0 1 .077-.005h.953c.087.262-.11.461-.132.695-.022.235-.128.452-.196.677l-.21.706c.061.027.128.083.198.084.466.008.933 0 1.4.004.14 0 .195-.057.231-.196.151-.574.32-1.144.484-1.715.024-.093.063-.175.092-.25ZM46.72 16.938c-.174.311-.194.677-.43.947-.213-.096-.431-.096-.639-.139-.289-.062-.573-.037-.858-.058-.545-.042-.863.278-1.007.78-.126.442-.236.889-.358 1.332-.062.226-.14.449-.2.675a.756.756 0 0 0-.005.279c.035.284.182.394.416.413.298.035.6.011.89-.07.08-.024.195-.097.204-.16.035-.247.196-.463.169-.721a.308.308 0 0 0-.022-.064c-.21-.087-.462.07-.656-.103.065-.209.133-.41.187-.614.05-.192.058-.213.241-.214h1.63c.004.06.031.125.01.165-.186.342-.223.728-.335 1.092-.112.364-.184.766-.301 1.138a.467.467 0 0 1-.35.337 9.082 9.082 0 0 1-.961.21 4.096 4.096 0 0 1-.823.052 3.35 3.35 0 0 1-.68-.08 1.217 1.217 0 0 1-.766-.586.971.971 0 0 1-.09-.766c.206-.791.455-1.572.658-2.367.064-.25.15-.494.26-.728.142-.302.371-.556.658-.728.3-.182.641-.288.992-.308.35-.031.7-.031 1.05 0 .324.031.655.063.96.197.051.024.097.056.156.09ZM53.955 22.133h-.98c-.075-.229.041-.425.094-.627.165-.64.34-1.278.518-1.915.117-.421.25-.835.366-1.26.05-.18.155-.348.105-.574h-1.357c-.026-.301.116-.81.273-1.024h4.02c.017 0 .034.03.07.06-.133.304-.117.669-.35.953h-1.323c-.228.143-.197.39-.262.586-.119.361-.192.737-.293 1.106-.21.756-.447 1.505-.633 2.267-.038.16-.052.353-.248.428ZM40.495 22.12h-1.034c-.018 0-.035-.03-.07-.06.191-.664.39-1.336.578-2.011.157-.561.3-1.126.454-1.688.134-.487.286-.967.412-1.454.036-.14.094-.195.232-.194.312.004.625 0 .96 0 0 .09.018.163 0 .221a14.73 14.73 0 0 0-.441 1.517c-.189.75-.435 1.484-.615 2.236-.099.413-.25.814-.344 1.23-.02.08-.096.146-.132.203Z"/></g><defs><clipPath id="a"><path fill="#000" d="M0 0h57.061v25H0z"/></clipPath></defs></svg></a></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ヴォルコフ vs アスピナル">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/VOLKOV_ALEXANDER_10-24.png?itok=PC_feOUf" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2023-11/ASPINALL_TOM_11-11.png?itok=PXyT2D8N" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-march-19-2022">Volkov vs Aspinall</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.03.20 / 05:00 JST"
+             data-main-card-timestamp="1647720000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1647711000"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-march-19-2022">2022.03.20 / 05:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  The O2
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">London</span><br>
+<span class="country">United Kingdom</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-march-19-2022#1076"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-march-12-2022">  <div class="e-event-logo--dark generated-logo generated-logo--wide"><h2
+      class="u-visually--hidden">UFC FIGHT NIGHT</h2><a href="/event/ufc-fight-night-march-12-2022"><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 58 25" xml:space="preserve"><g clip-path="url(#a)" fill="#000"><path
+              d="M13.47.015h4.602c.006.07.038.154.015.219-.28.76-.438 1.552-.676 2.324-.274.889-.459 1.805-.73 2.695-.236.77-.426 1.555-.67 2.324-.26.811-.426 1.65-.66 2.47-.036.16-.055.324-.059.488a.811.811 0 0 0 .706.335c.292-.006.583.007.874-.004.183-.004.365-.03.54-.079a.4.4 0 0 0 .297-.26c.095-.31.218-.611.311-.923.106-.354.19-.715.286-1.072l.49-1.818c.162-.595.326-1.19.49-1.784l.42-1.489.43-1.52.34-1.232c.049-.184.086-.372.147-.552a.267.267 0 0 1 .147-.124.48.48 0 0 1 .173-.005h4.093c.11 0 .24-.051.307.08-.178.662-.35 1.322-.533 1.979-.13.464-.293.92-.402 1.388-.172.744-.441 1.462-.589 2.212-.075.383-.223.752-.335 1.127-.118.398-.251.792-.342 1.196-.093.417-.233.82-.341 1.232-.195.737-.372 1.48-.589 2.211-.118.396-.229.797-.432 1.169-.311.566-.777.892-1.4 1.054-.6.149-1.217.219-1.836.208-2.017-.007-4.035 0-6.052-.007a2.78 2.78 0 0 1-1.74-.602 1.456 1.456 0 0 1-.576-1.15c-.005-.353.094-.673.174-1.002.166-.686.382-1.36.555-2.045.1-.4.23-.796.338-1.196.112-.422.229-.843.35-1.265.104-.366.216-.73.317-1.098.2-.735.393-1.473.595-2.208.14-.507.29-1.013.435-1.52.134-.473.264-.95.402-1.423.037-.113.08-.224.129-.333ZM47.657 10.867c-.041.127-.07.209-.094.293l-.564 2.078c-.044.162-.091.324-.14.487a.169.169 0 0 1-.174.14h-.14c-2.542 0-5.085 0-7.629-.005a2.65 2.65 0 0 1-1.57-.487c-.34-.244-.63-.531-.732-.96a1.58 1.58 0 0 1-.004-.78c.17-.65.345-1.299.527-1.949.173-.614.374-1.221.534-1.84.192-.737.39-1.475.596-2.208.197-.7.387-1.404.594-2.102.176-.591.336-1.183.51-1.778a2.17 2.17 0 0 1 .942-1.258c.29-.176.612-.295.948-.348.82-.148 1.651-.147 2.482-.144 2.088.006 4.176 0 6.264 0h.18c.109.19-.02.363-.061.523-.2.759-.446 1.505-.613 2.273A.901.901 0 0 1 49.41 3h-.335c-1.563 0-3.125 0-4.69.003-.205 0-.41.024-.61.07-.294.07-.407.32-.48.574-.19.646-.366 1.295-.542 1.945-.199.736-.388 1.474-.589 2.21-.12.443-.254.883-.382 1.322-.098.334-.2.666-.295 1-.106.376.135.7.543.735.093.008.186 0 .28 0h5.347v.007ZM30.085 8.223l-1.568 5.633h-4.651c-.011-.034-.035-.07-.029-.096.137-.487.28-.97.416-1.456.17-.616.327-1.236.497-1.852.121-.443.26-.882.379-1.322.244-.91.53-1.81.747-2.725.077-.326.201-.642.276-.97.021-.095.093-.177.146-.271h9.772c.12 0 .263-.054.35.104l-.526 1.791c-.09.278-.164.56-.223.845a.444.444 0 0 1-.202.32h-5.384ZM23.61 24.92h-1.623c-.136-.187 0-.362.04-.523.14-.566.315-1.122.475-1.683.096-.333.19-.669.28-1.003a.331.331 0 0 0-.015-.113 1.348 1.348 0 0 0-.134-.014h-2.274c-.248 0-.232.008-.31.257-.186.588-.337 1.183-.49 1.783-.083.326-.18.647-.277.97-.031.106-.076.208-.12.325h-1.657c-.035 0-.07-.055-.09-.073l.47-1.695c.105-.378.203-.758.31-1.135.126-.442.26-.881.386-1.322.113-.4.226-.799.323-1.202.179-.741.444-1.462.598-2.208.036-.173.08-.367.187-.498.127-.155.35-.06.529-.065.404-.011.81-.003 1.253-.003-.158.572-.304 1.108-.455 1.644-.151.536-.321 1.048-.43 1.62.464.024.892.007 1.32.01.427.004.84 0 1.255 0 .173-.133.193-.336.247-.515.145-.483.273-.971.405-1.459.103-.378.2-.758.304-1.137a.923.923 0 0 1 .075-.153h1.743c-.026.14-.041.27-.076.395-.14.507-.29 1.012-.432 1.52-.16.571-.316 1.145-.474 1.717-.1.357-.2.712-.299 1.07-.158.571-.313 1.145-.472 1.717-.103.367-.217.731-.317 1.099-.062.222-.092.462-.256.675ZM32.937 24.81c.14-.444.267-.872.406-1.296.016-.048.081-.08.12-.115h21.062c.235.008.268.056.2.294-.102.355-.206.71-.3 1.067-.033.123-.099.174-.221.165H33.326c-.131-.002-.287.062-.39-.116ZM17.607 17.02c-.145.385-.28.753-.42 1.12-.024.063-.048.126-.07.189a.181.181 0 0 1-.1.117.185.185 0 0 1-.154.002c-.297-.128-.63-.086-.927-.2a.14.14 0 0 0-.034 0c-.438-.023-.875-.069-1.312-.065-.7.005-1.22.456-1.392 1.131-.177.697-.373 1.386-.56 2.078-.112.41-.25.816-.336 1.232a.652.652 0 0 0 .42.743c.279.105.58.135.874.088.17-.028.338-.046.509-.059.335-.026.435-.105.53-.425.085-.279.162-.557.238-.841a.927.927 0 0 0 0-.196h-.814c-.214-.004-.258-.074-.2-.278.114-.387.223-.775.336-1.17h2.76a.318.318 0 0 1 .016.108c-.148.517-.303 1.032-.45 1.55-.202.723-.402 1.446-.594 2.173a.323.323 0 0 1-.236.262c-.5.139-.993.29-1.514.364-.63.088-1.25.051-1.873.049-.486 0-.94-.182-1.337-.452-.266-.182-.404-.48-.506-.79-.124-.379-.06-.746.037-1.107.231-.858.5-1.7.721-2.557.133-.51.263-1.02.437-1.52.346-.992 1.05-1.597 2.064-1.85a5.763 5.763 0 0 1 1.921-.129c.606.057 1.216.14 1.8.337a.962.962 0 0 1 .166.097ZM26.827 2.997l.204-.708c.173-.639.344-1.278.518-1.917.017-.064.052-.126.063-.191a.184.184 0 0 1 .214-.174H37.8c.049.11.022.196-.008.3-.182.626-.35 1.253-.52 1.88-.075.268-.157.535-.238.808l-10.206.002ZM1.69 24.908H.062c-.018 0-.035-.028-.062-.05.108-.4.215-.807.328-1.212.157-.56.32-1.12.478-1.68.133-.475.259-.952.39-1.427.124-.443.256-.883.378-1.323.109-.388.21-.78.314-1.169.105-.378.21-.756.32-1.132.057-.195.063-.197.257-.197h4.9a.584.584 0 0 1 .1.025c-.05.51-.287.978-.379 1.502H3.681c-.268.571-.356 1.187-.56 1.765a.21.21 0 0 0 .225.122c.292-.005.583 0 .875 0h2.024c.008.057.025.092.017.122-.115.42-.233.841-.35 1.263a.179.179 0 0 1-.2.15H3.09c-.082 0-.17-.02-.243.005-.096.035-.196.052-.23.203-.092.404-.226.798-.338 1.197-.112.399-.21.779-.317 1.169-.035.13-.094.258-.099.389a.34.34 0 0 1-.173.278ZM30.613 18.248c-.07.173-.146.334-.193.504-.171.604-.337 1.21-.494 1.816-.201.781-.457 1.547-.639 2.334-.115.501-.275.992-.415 1.488-.02.075-.07.151-.063.224.008.153-.084.231-.193.31h-1.429c-.107 0-.21.008-.256-.091.14-.501.27-.987.405-1.472.115-.41.236-.817.35-1.227.19-.692.371-1.386.565-2.076.146-.517.304-1.031.457-1.546.05-.167.005-.262-.15-.263-.594-.006-1.19 0-1.783 0a.3.3 0 0 0-.11.044.188.188 0 0 1-.094-.245c.11-.399.23-.795.346-1.193a.178.178 0 0 1 .203-.145h6.073c.006.077.035.158.015.225-.106.365-.224.728-.34 1.09-.07.216-.07.219-.27.22-.645.004-1.285.003-1.985.003ZM35.26 16.713h1.15c.263 0 .26.011.306.256.075.409.167.814.252 1.221l.165.828c.063.308.124.617.194.924.035.154-.025.325.088.463l.07.083a.709.709 0 0 0 .2-.46c.031-.262.133-.5.197-.75.164-.64.343-1.277.517-1.915.047-.174.14-.332.145-.52.004-.081.082-.132.178-.132h1.005c-.014.085-.02.148-.036.209-.15.528-.305 1.055-.454 1.584-.108.377-.213.755-.315 1.133-.2.735-.397 1.472-.6 2.207a2.195 2.195 0 0 1-.135.296h-1.292c-.11 0-.16-.065-.179-.17-.09-.498-.232-.984-.334-1.477-.093-.452-.206-.899-.295-1.351-.026-.132-.04-.268-.076-.398a.723.723 0 0 0-.12-.178c-.18.151-.173.36-.214.531-.118.492-.257.975-.402 1.462-.134.451-.247.905-.377 1.36-.064.221-.07.221-.268.224-.233 0-.466.005-.7 0a.926.926 0 0 1-.219-.062c.203-.718.401-1.405.591-2.094.158-.574.296-1.151.461-1.722.124-.432.272-.856.358-1.298.014-.087.084-.16.139-.254ZM8.82 16.72h1.7c.065.209-.053.379-.098.557-.163.64-.342 1.277-.519 1.914-.135.488-.28.97-.416 1.454-.117.409-.236.817-.35 1.228-.1.368-.186.74-.287 1.108-.158.572-.323 1.143-.49 1.713a2.269 2.269 0 0 1-.098.232H6.763c-.21 0-.243-.07-.18-.287.13-.44.254-.882.377-1.322l.42-1.524c.115-.41.253-.814.342-1.23.09-.414.224-.799.328-1.2.21-.814.44-1.622.665-2.432.029-.073.063-.144.105-.21ZM51.087 16.724h1.063c.026 0 .052.042.07.06-.179.664-.35 1.322-.532 1.979l-.42 1.522c-.14.508-.28.994-.42 1.49-.018.065-.054.126-.065.19-.021.127-.091.175-.214.174h-.975a.785.785 0 0 1 0-.209c.17-.58.344-1.16.519-1.74.06-.2.013-.278-.2-.278-.455-.005-.91 0-1.365 0a.198.198 0 0 0-.221.167c-.113.434-.232.866-.35 1.3-.044.162-.09.323-.14.487-.044.142-.047.139-.175.265h-.98c-.027 0-.052-.043-.064-.054.178-.68.35-1.352.529-2.018.11-.411.242-.817.36-1.226.115-.398.222-.799.333-1.198.07-.249.146-.495.21-.746a.192.192 0 0 1 .14-.166.195.195 0 0 1 .077-.005h.953c.087.262-.11.461-.132.695-.022.235-.128.452-.196.677l-.21.706c.061.027.128.083.198.084.466.008.933 0 1.4.004.14 0 .195-.057.231-.196.151-.574.32-1.144.484-1.715.024-.093.063-.175.092-.25ZM46.72 16.938c-.174.311-.194.677-.43.947-.213-.096-.431-.096-.639-.139-.289-.062-.573-.037-.858-.058-.545-.042-.863.278-1.007.78-.126.442-.236.889-.358 1.332-.062.226-.14.449-.2.675a.756.756 0 0 0-.005.279c.035.284.182.394.416.413.298.035.6.011.89-.07.08-.024.195-.097.204-.16.035-.247.196-.463.169-.721a.308.308 0 0 0-.022-.064c-.21-.087-.462.07-.656-.103.065-.209.133-.41.187-.614.05-.192.058-.213.241-.214h1.63c.004.06.031.125.01.165-.186.342-.223.728-.335 1.092-.112.364-.184.766-.301 1.138a.467.467 0 0 1-.35.337 9.082 9.082 0 0 1-.961.21 4.096 4.096 0 0 1-.823.052 3.35 3.35 0 0 1-.68-.08 1.217 1.217 0 0 1-.766-.586.971.971 0 0 1-.09-.766c.206-.791.455-1.572.658-2.367.064-.25.15-.494.26-.728.142-.302.371-.556.658-.728.3-.182.641-.288.992-.308.35-.031.7-.031 1.05 0 .324.031.655.063.96.197.051.024.097.056.156.09ZM53.955 22.133h-.98c-.075-.229.041-.425.094-.627.165-.64.34-1.278.518-1.915.117-.421.25-.835.366-1.26.05-.18.155-.348.105-.574h-1.357c-.026-.301.116-.81.273-1.024h4.02c.017 0 .034.03.07.06-.133.304-.117.669-.35.953h-1.323c-.228.143-.197.39-.262.586-.119.361-.192.737-.293 1.106-.21.756-.447 1.505-.633 2.267-.038.16-.052.353-.248.428ZM40.495 22.12h-1.034c-.018 0-.035-.03-.07-.06.191-.664.39-1.336.578-2.011.157-.561.3-1.126.454-1.688.134-.487.286-.967.412-1.454.036-.14.094-.195.232-.194.312.004.625 0 .96 0 0 .09.018.163 0 .221a14.73 14.73 0 0 0-.441 1.517c-.189.75-.435 1.484-.615 2.236-.099.413-.25.814-.344 1.23-.02.08-.096.146-.132.203Z"/></g><defs><clipPath id="a"><path fill="#000" d="M0 0h57.061v25H0z"/></clipPath></defs></svg></a></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="Santos vs アンカラエフ">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2022-08/SANTOS_THIAGO_08-06.png?itok=6zzq4KsV" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-07/ANKALAEV_MAGOMED_07-25.png?itok=zxk6XxCC" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-march-12-2022">Santos vs Ankalaev</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.03.13 / 09:00 JST"
+             data-main-card-timestamp="1647129600"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1647118800"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-march-12-2022">2022.03.13 / 09:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-march-12-2022#1073"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-272">  <div class="svg-554fe915a1067ed0170eac2b3761247c e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250" viewBox="0 0 250 250"><image y="50" width="250" height="149" xlink:href="data:img/png;base64,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"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="コビントン vs マスヴィダル">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-01/5/COVINGTON_COLBY_12-14.png?itok=-150eyST" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2023-04/MASVIDAL_JORGE_04-08.png?itok=9lyUcl7l" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-272">Covington vs Masvidal</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.03.06 / 12:00 JST"
+             data-main-card-timestamp="1646535600"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1646528400"
+             data-early-card=""
+             data-early-card-timestamp="1646521200"
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-272">2022.03.06 / 12:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  T-Mobile Arena
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-272#1070"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-february-26-2022">  <div class="e-event-logo--dark generated-logo generated-logo--wide"><h2
+      class="u-visually--hidden">UFC FIGHT NIGHT</h2><a href="/event/ufc-fight-night-february-26-2022"><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 58 25" xml:space="preserve"><g clip-path="url(#a)" fill="#000"><path
+              d="M13.47.015h4.602c.006.07.038.154.015.219-.28.76-.438 1.552-.676 2.324-.274.889-.459 1.805-.73 2.695-.236.77-.426 1.555-.67 2.324-.26.811-.426 1.65-.66 2.47-.036.16-.055.324-.059.488a.811.811 0 0 0 .706.335c.292-.006.583.007.874-.004.183-.004.365-.03.54-.079a.4.4 0 0 0 .297-.26c.095-.31.218-.611.311-.923.106-.354.19-.715.286-1.072l.49-1.818c.162-.595.326-1.19.49-1.784l.42-1.489.43-1.52.34-1.232c.049-.184.086-.372.147-.552a.267.267 0 0 1 .147-.124.48.48 0 0 1 .173-.005h4.093c.11 0 .24-.051.307.08-.178.662-.35 1.322-.533 1.979-.13.464-.293.92-.402 1.388-.172.744-.441 1.462-.589 2.212-.075.383-.223.752-.335 1.127-.118.398-.251.792-.342 1.196-.093.417-.233.82-.341 1.232-.195.737-.372 1.48-.589 2.211-.118.396-.229.797-.432 1.169-.311.566-.777.892-1.4 1.054-.6.149-1.217.219-1.836.208-2.017-.007-4.035 0-6.052-.007a2.78 2.78 0 0 1-1.74-.602 1.456 1.456 0 0 1-.576-1.15c-.005-.353.094-.673.174-1.002.166-.686.382-1.36.555-2.045.1-.4.23-.796.338-1.196.112-.422.229-.843.35-1.265.104-.366.216-.73.317-1.098.2-.735.393-1.473.595-2.208.14-.507.29-1.013.435-1.52.134-.473.264-.95.402-1.423.037-.113.08-.224.129-.333ZM47.657 10.867c-.041.127-.07.209-.094.293l-.564 2.078c-.044.162-.091.324-.14.487a.169.169 0 0 1-.174.14h-.14c-2.542 0-5.085 0-7.629-.005a2.65 2.65 0 0 1-1.57-.487c-.34-.244-.63-.531-.732-.96a1.58 1.58 0 0 1-.004-.78c.17-.65.345-1.299.527-1.949.173-.614.374-1.221.534-1.84.192-.737.39-1.475.596-2.208.197-.7.387-1.404.594-2.102.176-.591.336-1.183.51-1.778a2.17 2.17 0 0 1 .942-1.258c.29-.176.612-.295.948-.348.82-.148 1.651-.147 2.482-.144 2.088.006 4.176 0 6.264 0h.18c.109.19-.02.363-.061.523-.2.759-.446 1.505-.613 2.273A.901.901 0 0 1 49.41 3h-.335c-1.563 0-3.125 0-4.69.003-.205 0-.41.024-.61.07-.294.07-.407.32-.48.574-.19.646-.366 1.295-.542 1.945-.199.736-.388 1.474-.589 2.21-.12.443-.254.883-.382 1.322-.098.334-.2.666-.295 1-.106.376.135.7.543.735.093.008.186 0 .28 0h5.347v.007ZM30.085 8.223l-1.568 5.633h-4.651c-.011-.034-.035-.07-.029-.096.137-.487.28-.97.416-1.456.17-.616.327-1.236.497-1.852.121-.443.26-.882.379-1.322.244-.91.53-1.81.747-2.725.077-.326.201-.642.276-.97.021-.095.093-.177.146-.271h9.772c.12 0 .263-.054.35.104l-.526 1.791c-.09.278-.164.56-.223.845a.444.444 0 0 1-.202.32h-5.384ZM23.61 24.92h-1.623c-.136-.187 0-.362.04-.523.14-.566.315-1.122.475-1.683.096-.333.19-.669.28-1.003a.331.331 0 0 0-.015-.113 1.348 1.348 0 0 0-.134-.014h-2.274c-.248 0-.232.008-.31.257-.186.588-.337 1.183-.49 1.783-.083.326-.18.647-.277.97-.031.106-.076.208-.12.325h-1.657c-.035 0-.07-.055-.09-.073l.47-1.695c.105-.378.203-.758.31-1.135.126-.442.26-.881.386-1.322.113-.4.226-.799.323-1.202.179-.741.444-1.462.598-2.208.036-.173.08-.367.187-.498.127-.155.35-.06.529-.065.404-.011.81-.003 1.253-.003-.158.572-.304 1.108-.455 1.644-.151.536-.321 1.048-.43 1.62.464.024.892.007 1.32.01.427.004.84 0 1.255 0 .173-.133.193-.336.247-.515.145-.483.273-.971.405-1.459.103-.378.2-.758.304-1.137a.923.923 0 0 1 .075-.153h1.743c-.026.14-.041.27-.076.395-.14.507-.29 1.012-.432 1.52-.16.571-.316 1.145-.474 1.717-.1.357-.2.712-.299 1.07-.158.571-.313 1.145-.472 1.717-.103.367-.217.731-.317 1.099-.062.222-.092.462-.256.675ZM32.937 24.81c.14-.444.267-.872.406-1.296.016-.048.081-.08.12-.115h21.062c.235.008.268.056.2.294-.102.355-.206.71-.3 1.067-.033.123-.099.174-.221.165H33.326c-.131-.002-.287.062-.39-.116ZM17.607 17.02c-.145.385-.28.753-.42 1.12-.024.063-.048.126-.07.189a.181.181 0 0 1-.1.117.185.185 0 0 1-.154.002c-.297-.128-.63-.086-.927-.2a.14.14 0 0 0-.034 0c-.438-.023-.875-.069-1.312-.065-.7.005-1.22.456-1.392 1.131-.177.697-.373 1.386-.56 2.078-.112.41-.25.816-.336 1.232a.652.652 0 0 0 .42.743c.279.105.58.135.874.088.17-.028.338-.046.509-.059.335-.026.435-.105.53-.425.085-.279.162-.557.238-.841a.927.927 0 0 0 0-.196h-.814c-.214-.004-.258-.074-.2-.278.114-.387.223-.775.336-1.17h2.76a.318.318 0 0 1 .016.108c-.148.517-.303 1.032-.45 1.55-.202.723-.402 1.446-.594 2.173a.323.323 0 0 1-.236.262c-.5.139-.993.29-1.514.364-.63.088-1.25.051-1.873.049-.486 0-.94-.182-1.337-.452-.266-.182-.404-.48-.506-.79-.124-.379-.06-.746.037-1.107.231-.858.5-1.7.721-2.557.133-.51.263-1.02.437-1.52.346-.992 1.05-1.597 2.064-1.85a5.763 5.763 0 0 1 1.921-.129c.606.057 1.216.14 1.8.337a.962.962 0 0 1 .166.097ZM26.827 2.997l.204-.708c.173-.639.344-1.278.518-1.917.017-.064.052-.126.063-.191a.184.184 0 0 1 .214-.174H37.8c.049.11.022.196-.008.3-.182.626-.35 1.253-.52 1.88-.075.268-.157.535-.238.808l-10.206.002ZM1.69 24.908H.062c-.018 0-.035-.028-.062-.05.108-.4.215-.807.328-1.212.157-.56.32-1.12.478-1.68.133-.475.259-.952.39-1.427.124-.443.256-.883.378-1.323.109-.388.21-.78.314-1.169.105-.378.21-.756.32-1.132.057-.195.063-.197.257-.197h4.9a.584.584 0 0 1 .1.025c-.05.51-.287.978-.379 1.502H3.681c-.268.571-.356 1.187-.56 1.765a.21.21 0 0 0 .225.122c.292-.005.583 0 .875 0h2.024c.008.057.025.092.017.122-.115.42-.233.841-.35 1.263a.179.179 0 0 1-.2.15H3.09c-.082 0-.17-.02-.243.005-.096.035-.196.052-.23.203-.092.404-.226.798-.338 1.197-.112.399-.21.779-.317 1.169-.035.13-.094.258-.099.389a.34.34 0 0 1-.173.278ZM30.613 18.248c-.07.173-.146.334-.193.504-.171.604-.337 1.21-.494 1.816-.201.781-.457 1.547-.639 2.334-.115.501-.275.992-.415 1.488-.02.075-.07.151-.063.224.008.153-.084.231-.193.31h-1.429c-.107 0-.21.008-.256-.091.14-.501.27-.987.405-1.472.115-.41.236-.817.35-1.227.19-.692.371-1.386.565-2.076.146-.517.304-1.031.457-1.546.05-.167.005-.262-.15-.263-.594-.006-1.19 0-1.783 0a.3.3 0 0 0-.11.044.188.188 0 0 1-.094-.245c.11-.399.23-.795.346-1.193a.178.178 0 0 1 .203-.145h6.073c.006.077.035.158.015.225-.106.365-.224.728-.34 1.09-.07.216-.07.219-.27.22-.645.004-1.285.003-1.985.003ZM35.26 16.713h1.15c.263 0 .26.011.306.256.075.409.167.814.252 1.221l.165.828c.063.308.124.617.194.924.035.154-.025.325.088.463l.07.083a.709.709 0 0 0 .2-.46c.031-.262.133-.5.197-.75.164-.64.343-1.277.517-1.915.047-.174.14-.332.145-.52.004-.081.082-.132.178-.132h1.005c-.014.085-.02.148-.036.209-.15.528-.305 1.055-.454 1.584-.108.377-.213.755-.315 1.133-.2.735-.397 1.472-.6 2.207a2.195 2.195 0 0 1-.135.296h-1.292c-.11 0-.16-.065-.179-.17-.09-.498-.232-.984-.334-1.477-.093-.452-.206-.899-.295-1.351-.026-.132-.04-.268-.076-.398a.723.723 0 0 0-.12-.178c-.18.151-.173.36-.214.531-.118.492-.257.975-.402 1.462-.134.451-.247.905-.377 1.36-.064.221-.07.221-.268.224-.233 0-.466.005-.7 0a.926.926 0 0 1-.219-.062c.203-.718.401-1.405.591-2.094.158-.574.296-1.151.461-1.722.124-.432.272-.856.358-1.298.014-.087.084-.16.139-.254ZM8.82 16.72h1.7c.065.209-.053.379-.098.557-.163.64-.342 1.277-.519 1.914-.135.488-.28.97-.416 1.454-.117.409-.236.817-.35 1.228-.1.368-.186.74-.287 1.108-.158.572-.323 1.143-.49 1.713a2.269 2.269 0 0 1-.098.232H6.763c-.21 0-.243-.07-.18-.287.13-.44.254-.882.377-1.322l.42-1.524c.115-.41.253-.814.342-1.23.09-.414.224-.799.328-1.2.21-.814.44-1.622.665-2.432.029-.073.063-.144.105-.21ZM51.087 16.724h1.063c.026 0 .052.042.07.06-.179.664-.35 1.322-.532 1.979l-.42 1.522c-.14.508-.28.994-.42 1.49-.018.065-.054.126-.065.19-.021.127-.091.175-.214.174h-.975a.785.785 0 0 1 0-.209c.17-.58.344-1.16.519-1.74.06-.2.013-.278-.2-.278-.455-.005-.91 0-1.365 0a.198.198 0 0 0-.221.167c-.113.434-.232.866-.35 1.3-.044.162-.09.323-.14.487-.044.142-.047.139-.175.265h-.98c-.027 0-.052-.043-.064-.054.178-.68.35-1.352.529-2.018.11-.411.242-.817.36-1.226.115-.398.222-.799.333-1.198.07-.249.146-.495.21-.746a.192.192 0 0 1 .14-.166.195.195 0 0 1 .077-.005h.953c.087.262-.11.461-.132.695-.022.235-.128.452-.196.677l-.21.706c.061.027.128.083.198.084.466.008.933 0 1.4.004.14 0 .195-.057.231-.196.151-.574.32-1.144.484-1.715.024-.093.063-.175.092-.25ZM46.72 16.938c-.174.311-.194.677-.43.947-.213-.096-.431-.096-.639-.139-.289-.062-.573-.037-.858-.058-.545-.042-.863.278-1.007.78-.126.442-.236.889-.358 1.332-.062.226-.14.449-.2.675a.756.756 0 0 0-.005.279c.035.284.182.394.416.413.298.035.6.011.89-.07.08-.024.195-.097.204-.16.035-.247.196-.463.169-.721a.308.308 0 0 0-.022-.064c-.21-.087-.462.07-.656-.103.065-.209.133-.41.187-.614.05-.192.058-.213.241-.214h1.63c.004.06.031.125.01.165-.186.342-.223.728-.335 1.092-.112.364-.184.766-.301 1.138a.467.467 0 0 1-.35.337 9.082 9.082 0 0 1-.961.21 4.096 4.096 0 0 1-.823.052 3.35 3.35 0 0 1-.68-.08 1.217 1.217 0 0 1-.766-.586.971.971 0 0 1-.09-.766c.206-.791.455-1.572.658-2.367.064-.25.15-.494.26-.728.142-.302.371-.556.658-.728.3-.182.641-.288.992-.308.35-.031.7-.031 1.05 0 .324.031.655.063.96.197.051.024.097.056.156.09ZM53.955 22.133h-.98c-.075-.229.041-.425.094-.627.165-.64.34-1.278.518-1.915.117-.421.25-.835.366-1.26.05-.18.155-.348.105-.574h-1.357c-.026-.301.116-.81.273-1.024h4.02c.017 0 .034.03.07.06-.133.304-.117.669-.35.953h-1.323c-.228.143-.197.39-.262.586-.119.361-.192.737-.293 1.106-.21.756-.447 1.505-.633 2.267-.038.16-.052.353-.248.428ZM40.495 22.12h-1.034c-.018 0-.035-.03-.07-.06.191-.664.39-1.336.578-2.011.157-.561.3-1.126.454-1.688.134-.487.286-.967.412-1.454.036-.14.094-.195.232-.194.312.004.625 0 .96 0 0 .09.018.163 0 .221a14.73 14.73 0 0 0-.441 1.517c-.189.75-.435 1.484-.615 2.236-.099.413-.25.814-.344 1.23-.02.08-.096.146-.132.203Z"/></g><defs><clipPath id="a"><path fill="#000" d="M0 0h57.061v25H0z"/></clipPath></defs></svg></a></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="マハチェフ vs グリーン">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=IabJoyhX" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/GREEN_KING_10-03.png?itok=EYLBf3I0" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-february-26-2022">Makhachev vs Green</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.02.27 / 09:00 JST"
+             data-main-card-timestamp="1645920000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1645909200"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-february-26-2022">2022.02.27 / 09:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-february-26-2022#1075"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-february-19-2022">  <div class="e-event-logo--dark generated-logo generated-logo--wide"><h2
+      class="u-visually--hidden">UFC FIGHT NIGHT</h2><a href="/event/ufc-fight-night-february-19-2022"><svg class="ufc-title-svg" aria-hidden="true"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px" y="0px"
+             viewBox="0 0 58 25" xml:space="preserve"><g clip-path="url(#a)" fill="#000"><path
+              d="M13.47.015h4.602c.006.07.038.154.015.219-.28.76-.438 1.552-.676 2.324-.274.889-.459 1.805-.73 2.695-.236.77-.426 1.555-.67 2.324-.26.811-.426 1.65-.66 2.47-.036.16-.055.324-.059.488a.811.811 0 0 0 .706.335c.292-.006.583.007.874-.004.183-.004.365-.03.54-.079a.4.4 0 0 0 .297-.26c.095-.31.218-.611.311-.923.106-.354.19-.715.286-1.072l.49-1.818c.162-.595.326-1.19.49-1.784l.42-1.489.43-1.52.34-1.232c.049-.184.086-.372.147-.552a.267.267 0 0 1 .147-.124.48.48 0 0 1 .173-.005h4.093c.11 0 .24-.051.307.08-.178.662-.35 1.322-.533 1.979-.13.464-.293.92-.402 1.388-.172.744-.441 1.462-.589 2.212-.075.383-.223.752-.335 1.127-.118.398-.251.792-.342 1.196-.093.417-.233.82-.341 1.232-.195.737-.372 1.48-.589 2.211-.118.396-.229.797-.432 1.169-.311.566-.777.892-1.4 1.054-.6.149-1.217.219-1.836.208-2.017-.007-4.035 0-6.052-.007a2.78 2.78 0 0 1-1.74-.602 1.456 1.456 0 0 1-.576-1.15c-.005-.353.094-.673.174-1.002.166-.686.382-1.36.555-2.045.1-.4.23-.796.338-1.196.112-.422.229-.843.35-1.265.104-.366.216-.73.317-1.098.2-.735.393-1.473.595-2.208.14-.507.29-1.013.435-1.52.134-.473.264-.95.402-1.423.037-.113.08-.224.129-.333ZM47.657 10.867c-.041.127-.07.209-.094.293l-.564 2.078c-.044.162-.091.324-.14.487a.169.169 0 0 1-.174.14h-.14c-2.542 0-5.085 0-7.629-.005a2.65 2.65 0 0 1-1.57-.487c-.34-.244-.63-.531-.732-.96a1.58 1.58 0 0 1-.004-.78c.17-.65.345-1.299.527-1.949.173-.614.374-1.221.534-1.84.192-.737.39-1.475.596-2.208.197-.7.387-1.404.594-2.102.176-.591.336-1.183.51-1.778a2.17 2.17 0 0 1 .942-1.258c.29-.176.612-.295.948-.348.82-.148 1.651-.147 2.482-.144 2.088.006 4.176 0 6.264 0h.18c.109.19-.02.363-.061.523-.2.759-.446 1.505-.613 2.273A.901.901 0 0 1 49.41 3h-.335c-1.563 0-3.125 0-4.69.003-.205 0-.41.024-.61.07-.294.07-.407.32-.48.574-.19.646-.366 1.295-.542 1.945-.199.736-.388 1.474-.589 2.21-.12.443-.254.883-.382 1.322-.098.334-.2.666-.295 1-.106.376.135.7.543.735.093.008.186 0 .28 0h5.347v.007ZM30.085 8.223l-1.568 5.633h-4.651c-.011-.034-.035-.07-.029-.096.137-.487.28-.97.416-1.456.17-.616.327-1.236.497-1.852.121-.443.26-.882.379-1.322.244-.91.53-1.81.747-2.725.077-.326.201-.642.276-.97.021-.095.093-.177.146-.271h9.772c.12 0 .263-.054.35.104l-.526 1.791c-.09.278-.164.56-.223.845a.444.444 0 0 1-.202.32h-5.384ZM23.61 24.92h-1.623c-.136-.187 0-.362.04-.523.14-.566.315-1.122.475-1.683.096-.333.19-.669.28-1.003a.331.331 0 0 0-.015-.113 1.348 1.348 0 0 0-.134-.014h-2.274c-.248 0-.232.008-.31.257-.186.588-.337 1.183-.49 1.783-.083.326-.18.647-.277.97-.031.106-.076.208-.12.325h-1.657c-.035 0-.07-.055-.09-.073l.47-1.695c.105-.378.203-.758.31-1.135.126-.442.26-.881.386-1.322.113-.4.226-.799.323-1.202.179-.741.444-1.462.598-2.208.036-.173.08-.367.187-.498.127-.155.35-.06.529-.065.404-.011.81-.003 1.253-.003-.158.572-.304 1.108-.455 1.644-.151.536-.321 1.048-.43 1.62.464.024.892.007 1.32.01.427.004.84 0 1.255 0 .173-.133.193-.336.247-.515.145-.483.273-.971.405-1.459.103-.378.2-.758.304-1.137a.923.923 0 0 1 .075-.153h1.743c-.026.14-.041.27-.076.395-.14.507-.29 1.012-.432 1.52-.16.571-.316 1.145-.474 1.717-.1.357-.2.712-.299 1.07-.158.571-.313 1.145-.472 1.717-.103.367-.217.731-.317 1.099-.062.222-.092.462-.256.675ZM32.937 24.81c.14-.444.267-.872.406-1.296.016-.048.081-.08.12-.115h21.062c.235.008.268.056.2.294-.102.355-.206.71-.3 1.067-.033.123-.099.174-.221.165H33.326c-.131-.002-.287.062-.39-.116ZM17.607 17.02c-.145.385-.28.753-.42 1.12-.024.063-.048.126-.07.189a.181.181 0 0 1-.1.117.185.185 0 0 1-.154.002c-.297-.128-.63-.086-.927-.2a.14.14 0 0 0-.034 0c-.438-.023-.875-.069-1.312-.065-.7.005-1.22.456-1.392 1.131-.177.697-.373 1.386-.56 2.078-.112.41-.25.816-.336 1.232a.652.652 0 0 0 .42.743c.279.105.58.135.874.088.17-.028.338-.046.509-.059.335-.026.435-.105.53-.425.085-.279.162-.557.238-.841a.927.927 0 0 0 0-.196h-.814c-.214-.004-.258-.074-.2-.278.114-.387.223-.775.336-1.17h2.76a.318.318 0 0 1 .016.108c-.148.517-.303 1.032-.45 1.55-.202.723-.402 1.446-.594 2.173a.323.323 0 0 1-.236.262c-.5.139-.993.29-1.514.364-.63.088-1.25.051-1.873.049-.486 0-.94-.182-1.337-.452-.266-.182-.404-.48-.506-.79-.124-.379-.06-.746.037-1.107.231-.858.5-1.7.721-2.557.133-.51.263-1.02.437-1.52.346-.992 1.05-1.597 2.064-1.85a5.763 5.763 0 0 1 1.921-.129c.606.057 1.216.14 1.8.337a.962.962 0 0 1 .166.097ZM26.827 2.997l.204-.708c.173-.639.344-1.278.518-1.917.017-.064.052-.126.063-.191a.184.184 0 0 1 .214-.174H37.8c.049.11.022.196-.008.3-.182.626-.35 1.253-.52 1.88-.075.268-.157.535-.238.808l-10.206.002ZM1.69 24.908H.062c-.018 0-.035-.028-.062-.05.108-.4.215-.807.328-1.212.157-.56.32-1.12.478-1.68.133-.475.259-.952.39-1.427.124-.443.256-.883.378-1.323.109-.388.21-.78.314-1.169.105-.378.21-.756.32-1.132.057-.195.063-.197.257-.197h4.9a.584.584 0 0 1 .1.025c-.05.51-.287.978-.379 1.502H3.681c-.268.571-.356 1.187-.56 1.765a.21.21 0 0 0 .225.122c.292-.005.583 0 .875 0h2.024c.008.057.025.092.017.122-.115.42-.233.841-.35 1.263a.179.179 0 0 1-.2.15H3.09c-.082 0-.17-.02-.243.005-.096.035-.196.052-.23.203-.092.404-.226.798-.338 1.197-.112.399-.21.779-.317 1.169-.035.13-.094.258-.099.389a.34.34 0 0 1-.173.278ZM30.613 18.248c-.07.173-.146.334-.193.504-.171.604-.337 1.21-.494 1.816-.201.781-.457 1.547-.639 2.334-.115.501-.275.992-.415 1.488-.02.075-.07.151-.063.224.008.153-.084.231-.193.31h-1.429c-.107 0-.21.008-.256-.091.14-.501.27-.987.405-1.472.115-.41.236-.817.35-1.227.19-.692.371-1.386.565-2.076.146-.517.304-1.031.457-1.546.05-.167.005-.262-.15-.263-.594-.006-1.19 0-1.783 0a.3.3 0 0 0-.11.044.188.188 0 0 1-.094-.245c.11-.399.23-.795.346-1.193a.178.178 0 0 1 .203-.145h6.073c.006.077.035.158.015.225-.106.365-.224.728-.34 1.09-.07.216-.07.219-.27.22-.645.004-1.285.003-1.985.003ZM35.26 16.713h1.15c.263 0 .26.011.306.256.075.409.167.814.252 1.221l.165.828c.063.308.124.617.194.924.035.154-.025.325.088.463l.07.083a.709.709 0 0 0 .2-.46c.031-.262.133-.5.197-.75.164-.64.343-1.277.517-1.915.047-.174.14-.332.145-.52.004-.081.082-.132.178-.132h1.005c-.014.085-.02.148-.036.209-.15.528-.305 1.055-.454 1.584-.108.377-.213.755-.315 1.133-.2.735-.397 1.472-.6 2.207a2.195 2.195 0 0 1-.135.296h-1.292c-.11 0-.16-.065-.179-.17-.09-.498-.232-.984-.334-1.477-.093-.452-.206-.899-.295-1.351-.026-.132-.04-.268-.076-.398a.723.723 0 0 0-.12-.178c-.18.151-.173.36-.214.531-.118.492-.257.975-.402 1.462-.134.451-.247.905-.377 1.36-.064.221-.07.221-.268.224-.233 0-.466.005-.7 0a.926.926 0 0 1-.219-.062c.203-.718.401-1.405.591-2.094.158-.574.296-1.151.461-1.722.124-.432.272-.856.358-1.298.014-.087.084-.16.139-.254ZM8.82 16.72h1.7c.065.209-.053.379-.098.557-.163.64-.342 1.277-.519 1.914-.135.488-.28.97-.416 1.454-.117.409-.236.817-.35 1.228-.1.368-.186.74-.287 1.108-.158.572-.323 1.143-.49 1.713a2.269 2.269 0 0 1-.098.232H6.763c-.21 0-.243-.07-.18-.287.13-.44.254-.882.377-1.322l.42-1.524c.115-.41.253-.814.342-1.23.09-.414.224-.799.328-1.2.21-.814.44-1.622.665-2.432.029-.073.063-.144.105-.21ZM51.087 16.724h1.063c.026 0 .052.042.07.06-.179.664-.35 1.322-.532 1.979l-.42 1.522c-.14.508-.28.994-.42 1.49-.018.065-.054.126-.065.19-.021.127-.091.175-.214.174h-.975a.785.785 0 0 1 0-.209c.17-.58.344-1.16.519-1.74.06-.2.013-.278-.2-.278-.455-.005-.91 0-1.365 0a.198.198 0 0 0-.221.167c-.113.434-.232.866-.35 1.3-.044.162-.09.323-.14.487-.044.142-.047.139-.175.265h-.98c-.027 0-.052-.043-.064-.054.178-.68.35-1.352.529-2.018.11-.411.242-.817.36-1.226.115-.398.222-.799.333-1.198.07-.249.146-.495.21-.746a.192.192 0 0 1 .14-.166.195.195 0 0 1 .077-.005h.953c.087.262-.11.461-.132.695-.022.235-.128.452-.196.677l-.21.706c.061.027.128.083.198.084.466.008.933 0 1.4.004.14 0 .195-.057.231-.196.151-.574.32-1.144.484-1.715.024-.093.063-.175.092-.25ZM46.72 16.938c-.174.311-.194.677-.43.947-.213-.096-.431-.096-.639-.139-.289-.062-.573-.037-.858-.058-.545-.042-.863.278-1.007.78-.126.442-.236.889-.358 1.332-.062.226-.14.449-.2.675a.756.756 0 0 0-.005.279c.035.284.182.394.416.413.298.035.6.011.89-.07.08-.024.195-.097.204-.16.035-.247.196-.463.169-.721a.308.308 0 0 0-.022-.064c-.21-.087-.462.07-.656-.103.065-.209.133-.41.187-.614.05-.192.058-.213.241-.214h1.63c.004.06.031.125.01.165-.186.342-.223.728-.335 1.092-.112.364-.184.766-.301 1.138a.467.467 0 0 1-.35.337 9.082 9.082 0 0 1-.961.21 4.096 4.096 0 0 1-.823.052 3.35 3.35 0 0 1-.68-.08 1.217 1.217 0 0 1-.766-.586.971.971 0 0 1-.09-.766c.206-.791.455-1.572.658-2.367.064-.25.15-.494.26-.728.142-.302.371-.556.658-.728.3-.182.641-.288.992-.308.35-.031.7-.031 1.05 0 .324.031.655.063.96.197.051.024.097.056.156.09ZM53.955 22.133h-.98c-.075-.229.041-.425.094-.627.165-.64.34-1.278.518-1.915.117-.421.25-.835.366-1.26.05-.18.155-.348.105-.574h-1.357c-.026-.301.116-.81.273-1.024h4.02c.017 0 .034.03.07.06-.133.304-.117.669-.35.953h-1.323c-.228.143-.197.39-.262.586-.119.361-.192.737-.293 1.106-.21.756-.447 1.505-.633 2.267-.038.16-.052.353-.248.428ZM40.495 22.12h-1.034c-.018 0-.035-.03-.07-.06.191-.664.39-1.336.578-2.011.157-.561.3-1.126.454-1.688.134-.487.286-.967.412-1.454.036-.14.094-.195.232-.194.312.004.625 0 .96 0 0 .09.018.163 0 .221a14.73 14.73 0 0 0-.441 1.517c-.189.75-.435 1.484-.615 2.236-.099.413-.25.814-.344 1.23-.02.08-.096.146-.132.203Z"/></g><defs><clipPath id="a"><path fill="#000" d="M0 0h57.061v25H0z"/></clipPath></defs></svg></a></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ウォルケル vs ヒル">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-11/WALKER_JOHNNY_11-07.png?itok=uiOWSiBI" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-06/HILL_JAMAHAL_06-21.png?itok=LEtPTo2j" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-february-19-2022">Walker vs Hill</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.02.20 / 09:00 JST"
+             data-main-card-timestamp="1645315200"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1645304400"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-february-19-2022">2022.02.20 / 09:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-february-19-2022#1074"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-271">  <div class="svg-9413a9f2731f81acc10a8a604f1bcc44 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250" viewBox="0 0 250 250"><image y="50" width="250" height="149" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACVCAYAAABxTueyAAAVDElEQVR4nO2de9QXxXnHPyBeQAVXNLrel3hHKcZ4jQqCaDyJMTa251RrEpukNp7m0qg9jY31kottYtMT26a1PdYYk8ZTExttm1YUUfAuilRUouKoKIMaGUEEUZH+sfvSH/D+fu/M7Oyzu+9vPue858D7zrPznN9vvzuzM888zwhqIEmzbYHlwFaC3Z5utLrVxzBJsyeAgwP704tLjVZXuBgkaXYAsKgif5rKaiAxWr0T4mJJmm0JHAr8FjAB+CCwC5ACY4BtgS2B7YAtQvQphB5VU8cnIivyd4HZPoZJmu2BrMgB/sfD5pTgXjSfO8uKvPh+fw84FTgW2DqEYw1jZl1CP1m4v/uMVm962kr7uhyY52En7WcTuN3XMEmzg4HLgDOBEaEcaii31SX0jwr3N7OErbSvtxut3ncxSNJsa/JZUr/hPPNJ0mwE8KfAFcjOKutiPXC7uNCTNMuA/YS79ZkKk6TZFsBJgX0ZCp+H0kfI3yH7ieeNVk+7GBQivw74TDUuNZJHjFa/GVlDx9JTzNeAxzxtjwCSgL7YcJuHjfSsown4fE7fpb9EDsXnVIfQpReNZrpOhTuQ9nWh0eplD7t+XIhzmvkkaXYacGFFvjSZmSAs9CTNRgHTJfuk3Pu59OzD2dckzXYFJlXgS5NZB8yybZyk2Wjgh9W501jeBO4D+RH9GGCscJ9eQk/SbAfg6MC+DIXPWkI/rrbfb7Ra4dD+PGCPqpxpMLOMVu+BvNClb8oFRqtlnrbTkf181gBzPezitL0HSZqNBP6kQl+azIbPSVro0otGPgs2A0j7Osdo9baLQXET9+OI7jLzmQHsVZUjDWfD/S8m9CTNxgOHS/VXUEbo0iOlj6+HATuFdqThLAcecWj/qaocaTjPGq2eG/iP5Ig+A9kIpNXAPT6GSZodCOwZ1p0h8RF6P07bXQOKPl6ZJ81mo1mPpNClb8rZJeKgpX1dYrR60sOuH4Vu/UBM0mwS+YGUfmSjdYzhLPQy22qN9zVJs+3JD2H0Gy4zn35cv4BBDnGJCL2mJ6tv2Os2wNSwrgyJz7R9GlDXWYW6eNxotdShfT9GDALca7Ra1fkLqRF9hlA/AzjHQXdwHDA6pDND8D5wh4ddP45W1qfVkjQbQ/5d9iObDRxSQo+n1brzkNHKeNj142jlMkubyvA8W27DZkKvfOpXPFmPr7qfTSizrSY9Ujr7Wpyqu6ACX5rOHIe20t/jMuAW4AnyLcC3hPvvZLNDXBLveFOQfbI6xUF3kqTZbuSphCRxFrrRah3wywp8GU5ILqj+Avh914AnSSSm7tIr2K5x0J1IjwJvAA8J9znsSdJsL+BAoe4M8AdNFjnICL3xJ8A6kH4o3VGMzpGwSH6PPzdarRTsz4tKhV48WQ+qso9B8Ho/L+LGpXcHyqwlRLojuVDptY0rTdUjelsSK0Iehz8+oC82lJl9RAahWKiUynngvR4kTdVCb3xixQ6kp+1PGa1eFO6zHzgKGCfUV5n1IFEqE7rwk3WAYb2tFrFC8oHdmhlZlSP6UcAOFV5/MHyzyYxFPm48Cr0aJIXemu+wSqFLj5C+iRUhn3lIlthZi1vwR8SCJM12JM/cK0GZ9SBxqhR640+AdSDt61yj1WrhPvuBk5AL6y6zHiROJR9KkmYJcGQV1+5BmW0OaaG3YkumhUgu/rZm2g7VhcBKPlnBP7EiSZrtB+wT1Juh8Tl/Ph7YvgJfmsxKo9Vyh/aScRBR6LQgsWIH0r4uNVo97mF3E/1XX+3zwLU2DZM0m4hcSueFjufia6eqUbdNEWaN31Yr6sn349lql5lP3FbrQXChF+Vo25BYkSTNtiLP1CKJz00yDdgytCMN5ymj1RKH9pJCb90aSxUjelsSK0I+SkpWIV2PX01v6RlSE3BJAjkaOKFCXzrxXg+qk+EgdB/hDCDt6zyj1esedv2YTcZllnYCsE1VjmzC3U0/kjoYQYVeJFacEvKaFpSZRkm/nzv7WlM9+bpZC9zt0D5Gww1B6BH9eOSerOCfWJEkzXYBJod1Z0h83s/7MXf7HKPVGof2kg/s1i3EQXihtyWxIsgLaAXwgIddPwrd5f18D2Bihb50UmY9qFZCC73xW1UdSPt650AJW1uKevLSuwJNwGXUjKO5BcGEnqTZ7sAhoa5nie9ptTqqkPo8lOqoJ183rgFFMZuMBSFHdOkp5hvAg562k4GdA/pig4/Q+7FIg8u0fQvycGsJ3qcl2WQGI6TQpW/KWSUSK0o/lJ42Wj3vYRe31XpzBJBU5cgmPFhiPah2ggi9psSKbTqt5hP2uhPy9eTrZj1uuyhxW82SUCP6h4EdA13LFt/38zqqkPrcJCchW0++CbgGFMWFOEtCCV16irmoRGLFE5GNG38HuMvDrh+31axnaUma7QAcXaEvnbS+0EYoobdhBXsAaQHda7TyqcPVj0J3GTWnI5fzoPWFNkp/UMJP1gHKCF169uET9lpHPfm6WYlbQFHcVnMgxBNxGvKJFV3ioDeQpNkEYEJYd4YkbqvZMcsxoCieP3cgRIYZ6SnmPSUSK0qP5suA//Wwk/5M/xX4nnCfm/KKbcMkzQ5CLufBk47n4htJG4Xepm21mUar9S4GNdWTv8lotVlN7QYTV9sdKTV1T9LsAGDvQL7Y4ruttiXtyCYjXU/+PeBOwf5CEPfPHSn7ji49Qmqjlc9UGPK98+1COjME62nHsdT721D2d4Ai58FUoe6814OaRtuE3qbTavONVq952LWp8EUdHAeMFurL9Vx8Y/EWepJmWyP3ZB2gzE3Zhm21vYADK/ClF23bOorbah6UGdE/QjsSK5Kk2c7AYWHdGZI2bKu9Djwq3GdZ4kKcB2WELj1CPmK0+o2n7cnIxo2vAu73sJP+TGe2qX5Ykma7AYcKdbfUaLVQqK/KKSP0uK3WnTuNVu+6GLSwnnwdSI7mbftseuIl9CTNUmBSYF+GwnfaPoJ2xOLXUU++TKrsOojbap74jujSZ8/fBO7ztJ0E7BLQFxt8Zh/Ss47H21Q/TDjngXd24abiK3Tpm9I1DroTaV8XG62e87Brw6yjTg4Hxgv15Vtoo7E4C72mxIp3lbA9NZQTlvhsq7WtnnwdSC5UDosgmU58RvTDgJ1COzIEW/kYJWm2J3I1uQbw2ZKpo578PYL9hUBycBl2BS19bq46EhZ+uRCtNUXhvWuRFdC7wGwPO+nP9C6j1VrhPr1J0mwseeprKc4t6q0PG3xOr9VxVnoPYEGSZv9Ivj+9jFxUmzIW+AB5OuezgX2kHCy4z2j1poddfD/vzXRkcx6MAx5K0uyfyafxS8nj3uvkhTJZaJ2EXlNixQ3dA1+vqW9bfLK9Hkz+IJOkbUKvI63WGOArxU8TmAx4C911WjuNMGfYhys+ApK+iV80Wi0S7rMs/Zg/rxPfBCYbcBV6v3/gvXgNmO9h16YTgOIkabY/8q9gTcM5gcmmuAq9HyuH2HKbRzaZOurJt0roxHsOAnxn1kIvVr2zsh0OY3zCSU9Avp582+qHTa3bgZrxPrXZicuI/qGynQ1z2vB+/oDR6g3hPssifby4afgmMNkIF6HvXrazYczDRivrLKYdxG21oen3+y5IBKOL0IdFSp2KuNnVoKZ68m0Uet3713UT5DtzEfrLITochqwDfuxhJz1tXw7ME+4zBP183/kmMNkMF6E/TJ4aOLIxP/c87lnHCcA21g+7t24HasQ5gUk3rIVehN/dEqLTYcR7wOWuRsUJwJPCu9OTtp1WG+D6uh2okWCvWq776N8k36KJ5FxltHrKw6419eTrxmg1h/YVmAhFsIezk9CNVguAb4fqvOXcD1zqaSsdBPKE0eol4T5D8gVgRd1OCOObwGRQfI5wXgr8NJQDLWUhcLrR6h1Pe+lttVaO5gMUN/wn6a+dn6A7JM5CL8I8zwGuJI/a6TduBY7zDWKoqZ58W9/PN2C0uos8krD1lU0tqVfokIvdaHUxeZz2EyEdajDPAGcZrU43WpWZRkrXk38bmCvYX2UYreaR53X/B/JtzeGKbwKTrpTKvmK0mkueZfV3yPO6DbcRfilwHflW2IFGq58FuKb0ttqwqR8GYLRaYbQ6n7x01dWUOKPdYHwTmHQlaPWSopLGyeRpfw4ij/xKQvZRAWvIz/u+CjwHLCZ/B3/UaPVM6M6SNHse2VLTFxitvi/YnyhFOewTyA+/HApMBCYgm0IsNBcbra4MecHKyxQlabYVebnisVX3ZclacnGvlR7pimIS0vXkXxlOI7otSZqNI7/v2pjo8VWj1eq6nYhEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIpDeVH1ONDH+K47d7kJdP2hPYrfj3VsAOwNbAaOAN8qIEq8hTQv2avJxVvyV+FGeD0JM0OwTYt0ZfIrIsNFo962qUpNko8nTVR/P/iR4OAbb19GM98BBwI/AjlyKQSZrdT57gpC6uMlp9a9NfJml2BPYVUB81Wk0L69bmjOr4998gX1QgUh8zAGuhJ2l2JvB54Dj8RT0YI4Cjip/LkjS7DLjaaNWzfkCSZrsgn2RzU+7p8vtTgXGW13gwkC89GQmQpNkY4HiJDiONYA3db9JufJw8311IkW/KOPIB56YiM1EvpFNmb8oq4L4uf3PxTSRD70BerSnk71GR/uAuo9XbdTvRg98mT/zYixkSjvRg9mB5/Yt03sdYXqPXwyIoA0KXzkwaqRefnOHSC2bnJWk26NS8WPyrW+jdPsPp2CemDFZEcSii0PsTH6HXkcr7/C6/PxTYVdKRQeg25XYptyVWWGNkkmZ7kefIjvQHS4xWi+p2wpIpXX5f96Lxc0arxV3+5jJoBq3G0ouR1L+oEZFF7OYKwF5dfl/3PTvoSJyk2cHkcQQ2PBuyiOJQjES+smekXnyni7WUyy4KNHT+fxvygg110q1opctoLloPbxTwQeAFyU4jtbEemOVpu7Lj30vIK9o8V/y8DLxCXu3mdWA18E7R3yggBQ4H/hA41qHPtwZZrNqXPMAmJBOBnSzbvkb3z7CR03aIIbARS5I0O4y82s4Cl+i1Ta6xBXnBR9vtp/lGqw/59GVLkmb7AY8BYyxNPmm0umWQ64wGlgPbWFzjHWBHo9Vb1o6WZNTQTSIRMFrND3CNdUma3Ym90CvdYy7CeX+CvcivH0zkBSdgJ3KAeyVFDu0uRBdpJ/s4tL2jKicK/hw40rLtEuDLPf7e2PdziEKPyGO7kPYu/usJQ5Kk2ZHAJQ4mnzFarezx9yj0SASct5/uCV0jvMOPMcANwBaWJlcbrWb3uN5ewMGW19LA45ZtgxGFHpHkEw5tf1WZF3AVsL9l218DfzZEG5d9/ZlGK/Eowyj0iCRnO7T9ryocSNLsVOCLls3XAZ+2qC/fyLDXTqLQIyIkaXYieYIKG14wWj1VgQ/jgWsdTL5jtOq5Z19sGdqG5K7HPiFFUKLQI5VTiOH7DiY/rciVfyIP3rFhPvBNi3ZHY59kYp7R6nXLtkGJQo9I8F1gsmXb9cB1oR1I0uzT5OfcbVgLnGN5hLTRq+0DRKFHKiVJs68CX3MwucEnl90QPuwN/J2DyTeMVk9Ytm1s2GsnUeiRykjS7HLy1FC2vAVcFtiHkcCPge0tTeZi+ZpRvPMfYXndFcADlm2DE0NgI8EpMsD8APiSo+mFRisV2J0LsA/SWUUeGGN7Um8G9udFZhmt1lm2DU4UeiQoxcLbdcA5jqa/AK4J7MskYLN0zD34muODxmXa/t8ObYMTT69FglFEnN0InOZoOg+YYrRaHdCXrYGHydNO2fAro9XHHK4/gvx4ru0q/t5Gqxdtrx+aOKJHgpCk2c7Af2J/SGSAxcAnQoq84NvYi3w58DnH6x+KvcifqlPkEIUeCUCSZvuTT00nOJouBqYarXRgf6bittL/RaPVMsduWrHaPkBcdY+UIkmzY8nPjbuK/CXgJKPVS4H9GQdcj/1r6c+MVv/m0VXjw147iUKPeJOk2afIz4yPdzR9GjjGaPV8cKfgb+meVHJTlgJ/7NpBkmbbkpemsuFtYI5rH6GJU/eIM8VC1NfJ34NdmQ+cYrR6LaxXG+rDuaz2f85otdyjqxPJK8XaMMfiUEzlRKFHnCiysF4LnOVhPhc4rYoyyUma7Ybb9tw1RivfKbXLsdTa388hCj3iQJJmuwK/JK986srNwNlV1HwrZhj/AuxoabIYuLBEl6c6tK39/RziO3rEkiIL7EP4ifzvgd+tsLDj+divgr8PfNZotcqnoyTNJpCnnLZhidHqSZ9+QhNH9MiQJGl2Bm7ZUju5xGjlEp3mRJJmBwDfczC5ymjlWjK6E5dttW6FHsSJQo90pZgSfwO4wsN8HfAFo1XwI6cDdKRrHm1pshD4i5LdtibstZMo9MigJGm2Hfl+tO0Z7k7WAGcararM+wa5aD9s2fZd8jPma307K8pDTbds/j4VZrF1JQo9shlJmu1Lvug20cN8GfnK+rywXm1MkmZHARc7mFxutHqsZLfHAttZtn3At6JNFcTFuMhGJGn2UfLDID4iXwAcJSDy7cin7Lbpmh8E/jJA160Ke+0kjugRYMP7+EXAlfgNAP8BnOW7mu3IVdivfK8hn7KHOAveqrDXTuKIHhkI6bwR+Cv87om/Bs6QEHmSZh8DznMwucho9UyAfj8AHGbZfDn50dvGEEf0PidJsx2Au4FJnpdYRJ6Z5ZIkzVxtFxit/t22cXEU1iVd8x3AD12d6oLLtP12hyw1IkShR07BX+QABwKXetp+xbH9NcAulm1XAOcGrIriEvbaqGk7xKl7xG2kCo11QEmSZucCZzhc+0uhjsAWCSZbGSgzQBR6xGWkCskSo9Uim4ZJmmXkySZtudlodYOfW4MyGdjZsu3jRqulAfsOQhR6H5Ok2URg95q6typNVCSbdEnX/CrwR75OdcFltb1R22oDRKH3N3VO220FcRH2SR4gD7sNfda9lWGvnUSh9zd1TdvXYxEemqTZZOByh+v+yGh1q7dXg/swljwizobVwL0h+w9FFHqfUiSQmFJT948MVWyw8O8n2GdyeRH3VXwbpmG/OzW7TCx9lUSh9y/HA9vU1LfNqvR3cAvD/azRaqWnP71obdhrJ1Ho/YvLAlNoego9SbNpwFcdrvcDo9Xsci51pbVhr538H5FwiND//k9dAAAAAElFTkSuQmCC"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="アデサニヤ vs ウィテカー">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-03/ADESANYA_ISRAEL_03-28.png?itok=yv-c3xXi" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-07/WHITTAKER_ROBERT_07-11.png?itok=RWaRdfBi" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-271">Adesanya vs Whittaker</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2022.02.13 / 12:00 JST"
+             data-main-card-timestamp="1644721200"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1644714000"
+             data-early-card=""
+             data-early-card-timestamp="1644706800"
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-271">2022.02.13 / 12:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Toyota Center
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Houston</span>, <span class="administrative-area">TX</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-271#1069"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+</div>
+
+
+
+
+
+      </div>
+</div>
+  
+      
+<ul class="js-pager__items pager" data-drupal-views-infinite-scroll-pager>
+  <li class="pager__item">
+    <a class="button" href="?page=26" title="Load more items" rel="next">もっと読み込む</a>
+  </li>
+</ul>
+
+  
+        </div>
+
+
+
+
+
+
+      </div>
+    </details>
+  </div>
+</div>
+
+  </div>
+
+
+<div class="block block-dfp block-dfp-ad90cf719f-f9ab-4922-8a5f-a456f8355f38 dfp-ad-block">
+  <div class="dfp-ad__headline e-t2">
+    ピックアップ
+  </div>
+  
+  <div class="dfp-ad__title e-tag">
+    スポンサー
+  </div>
+  
+  <div class="dfp-ad__content">
+    
+          <div class="freestar-slot-definition">
+      <!-- Tag ID: ufc-com_event_landing_banner -->
+<div align="center" data-freestar-ad="__280x280 __1440x360" id="jp-ufc-com_event_landing_banner">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "jp-ufc-com_event_landing_banner", slotId: "jp-ufc-com_event_landing_banner", targeting: {site: location.hostname.replace('www.','')} });
+  </script>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="views-element-container block block-views block-views-blockeck-promos-brand-voice">
+  
+    
+      
+
+  <div><div class="view view-eck-promos view-id-eck_promos view-display-id-brand_voice js-view-dom-id-f8f9d877e009fb931e615d6daa5d2af274cad6d5fd88f98d1637fa80750a324c">
+  
+    
+      
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+<div class="views-element-container block block-views block-views-blockcontent-footer-new-block-2">
+  
+    
+      
+
+  <div><div class="view view-content-footer-new view-id-content_footer_new view-display-id-block_2 js-view-dom-id-8d2ce7858d8c9e746d815dedfb9df9eba0b28aad0750c4989da3b010ae9b99e7">
+  
+    
+      
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+  <aside class="l-page_filters">
+    
+
+<div class="facet-filter-top-nav">
+  <div class="facet-filter__inner">
+    <span class="facet-tnav-label">Filter <span class="facet-tnav-label--white"> 524 Athletes </span></span>
+  </div>
+  <div class="facet-filter__close">
+    
+  
+    
+  <span class="e-icon"><svg class="e-icon__svg"
+                          aria-hidden="true"
+        ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#close"></use></svg></span>
+  </div>
+</div>
+<div class="facets-blks-wrp">
+  <div class="filter-shade"></div>
+  <div class="sidebar-first-inner-wrp">
+      </div>
+  <div class="c-facets-abutton">
+    
+
+
+
+<a
+
+    
+    class="e-button--small "
+
+  
+  
+  ><span class="e-button__text">
+    
+    Apply
+  </span></a>
+  </div>
+</div>
+  </aside>
+
+</div>
+
+  </div>
+
+
+    </div>
+
+      </div>
+
+  </div>
+
+      </div>
+  
+</div>
+    </div>
+
+        
+    
+          <div class="l-page__footer">
+        
+
+<footer class="c-site-footer" role="contentinfo">
+  <div class="c-site-footer__main">
+    <a class="c-site-footer__logo" href="/">
+      <svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use>
+      </svg>
+    </a>
+    
+<div id="block-ufc-localization">
+  
+    
+      
+
+<div class="ufc-block-localization__title e-t6">
+  <div class="block-ufc-localization-title">Japanese</div>
+  <svg>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#triangle-down"></use>
+  </svg>
+
+</div>
+
+<div class="ufc-block-localization__links" aria-hidden="true">
+  <ul class="links"><li><a href="https://www.ufc.com/language/switch/en">English</a></li><li><a href="https://kr.ufc.com">Korea</a></li><li><a href="https://www.ufcespanol.com">Latin America</a></li><li><a href="https://us.ufcespanol.com">USA Espanol</a></li><li><a href="https://www.ufc.com/language/switch/fr">フランス</a></li><li><a href="https://www.ufc.com.br">ブラジル</a></li><li><a href="https://ufc.ru">ロシア連邦</a></li><li><a href="http://ufc.cn">中国</a></li></ul>
+</div>
+  </div>
+
+    <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer" class="c-menu-footer">
+            
+  <h2 class="u-visually--hidden" id="block-footer-menu">Footer</h2>
+
+  
+                          <ul class="c-menu-footer__menu--level-1">
+                            <li class="c-menu-footer__item--level-1">
+          <a href="/faq" target="_self" class="c-menu-footer__link--level-1">ヘルプ</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-1">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-1">法的事項</a>
+                                            <ul class="c-menu-footer__menu--level-2">
+                            <li class="c-menu-footer__item--level-2">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-2">利用規約</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-2">
+          <a href="/privacy-policy" target="_self" class="c-menu-footer__link--level-2">個人情報保護方針</a>
+                  </li>
+            </ul>
+      
+                  </li>
+            </ul>
+      
+
+  
+</nav>
+
+  </div>
+  <div class="c-site-footer__copyright">
+    
+  </div>
+</footer>
+      </div>
+      </main>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"events","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja","currentQuery":{"page":"25"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kQGOhCAMRS8kcpG9A6lQFAepocUZ9_TLgGYn2WxC4L_fUNoCzglBOjVcYvSZkgwT2IcRqmvXH9qs_G9I8CWDO1AfwSENPmB0Zs5Udo0RN0wyLpTDd00P0QhMPEQ4qYhxgS0dmE9NCS3FYacYtctlhzi-tYohPXjgkwW3-ijjULzVUxGhxE1byE7hUV-5kQpjbOBDFMyqItoeniNNEJVl_sS104KZmghJgZVAqVGrQblMu6Nnt2pTRW0QOu0w97q4DmCCrHzILJcjqDxRLeOXFwR3cZtGFQYc64zOTJBSj5nWFOt-fIWe0fgwL7IDs4Yiba5wV2oiWYiXoS-oOVf4G804v28dAZ-s2z5u5ErEbhlY4WVmFH2Lyw_Jh1SbMGzz-7Oaq25XdfcHek7qJw","theme":"ufc","theme_token":null},"ajaxTrustedUrl":[],"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":true,"back_to_top_prevent_in_admin":true,"back_to_top_button_type":"text","back_to_top_button_text":"Back to top"},"accountSettings":{"apiUrl":"https:\/\/ufc.api.onvesper.com","realm":"dce.ufc","app":"dice-id","apiKey":"39d5cb34-799c-4967-8038-fc240bf2984b","loginText":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","ctaText":"Continue watching","ctaLink":"\/account\/login","createAccount":"\/account\/signup","heartbeatApiUrl":"https:\/\/ufc.api.onvesper.com\/prod","hideAccountIcon":true,"hideAddressFields":false,"errorTextGeneral":"There was a problem while loading content. Please try again.","errorTextEntitlement":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","entitlementCtaText":"Upgrade licence","entitlementCtaLink":"\/account\/signup","settings":{"videoPreviewInfo":"videoPreviewInfo"}},"ufcLiveStatsApi":{"baseUrl":"https:\/\/d29dxerjsp82wz.cloudfront.net\/api\/v3"},"contentLocalization":"ja","cacheableGlobalsTimestamp":1794959093,"breakpoints":{"ufc.images.mobile":"","ufc.images.tablet":"(min-width: 700px)","ufc.images.desktop":"(min-width: 1024px)","ufc.images.extra-large":"(min-width: 1440px)"},"widthBreakpoint":1,"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:3e71b228f97b0feffcf6fd3ddcb61a02e510ef2166a097d12afbb5ae3ec4c131":{"view_name":"events_upcoming_past","view_display_id":"past","view_args":"","view_path":"\/events","view_base_path":null,"view_dom_id":"3e71b228f97b0feffcf6fd3ddcb61a02e510ef2166a097d12afbb5ae3ec4c131","pager_element":0},"views_dom_id:3b6f7a3fff1cd51f8628d3afb9a7261fec477149e4df8107dc52b86baf24f420":{"view_name":"events_upcoming_past","view_display_id":"upcoming","view_args":"","view_path":"\/events","view_base_path":null,"view_dom_id":"3b6f7a3fff1cd51f8628d3afb9a7261fec477149e4df8107dc52b86baf24f420","pager_element":0}}},"viewsAjaxGet":{"events_upcoming_past":"events_upcoming_past"},"disableAnimationsUrlParam":"disableAnimations","disableAnimations":false,"user":{"uid":0,"permissionsHash":"2debcf4fc9b389060fb51611b5f94c566ef01446f01a2612e35e6a8f5af6a6f0"}}</script>
+<script src="/sites/default/files/js/js_3lwO-FEebKbGsloZSgrMq5bf2PBAR6hSPNQGEiJ_NXY.js?scope=footer&amp;delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_kgy_uVzkvnKNOsqmei_cx4Fxdnx010Xd7lhdmnvc-O4.js?scope=footer&amp;delta=2&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" defer async></script>
+<script src="//www.youtube.com/iframe_api" defer async></script>
+<script src="/sites/default/files/js/js_3mOFEIPPa0tRqWzihqO4wLJsxBt3b-2oC1koDvbMf_0.js?scope=footer&amp;delta=5&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="//unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/sites/default/files/js/js_kk2vCC3hbGq0mB1_rgYock7xB7Zxytc9d0OXFSy7SYU.js?scope=footer&amp;delta=7&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+
+  </body>
+</html>

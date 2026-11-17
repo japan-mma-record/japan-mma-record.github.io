@@ -1,0 +1,2106 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<script>/**
+ * @file
+ * Lets two published GTM custom HTML tags reach the footer without throwing.
+ *
+ * Tag 88 calls getElementsByClassName(".c-site-footer__copyright") and then
+ * insertAdjacentHTML. The leading dot is not a class name, and a collection
+ * has no insertAdjacentHTML. Tag 312 calls $(".c-site-footer__copyright").html()
+ * after Drupal's jQuery.noConflict() has released $.
+ *
+ * GSAP 1.x sets TweenLite.selector to window.$ whenever $ is a function, and
+ * it keeps that function. A $ that throws for every other selector aborts
+ * string-target tweens, including the matchup fade-in from opacity 0. Once
+ * jQuery is on the page, $ has to call through to it.
+ *
+ * This runs from the head, before the container snippet.
+ */
+(function (document, window) {
+  if (window.ufcGtmTagCompat) {
+    return;
+  }
+  window.ufcGtmTagCompat = true;
+
+  var footerSelector = '.c-site-footer__copyright';
+  var nativeGetElementsByClassName = document.getElementsByClassName;
+
+  function whenReady(callback) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', callback);
+    }
+    else {
+      callback();
+    }
+  }
+
+  document.getElementsByClassName = function (name) {
+    if (name !== footerSelector) {
+      return nativeGetElementsByClassName.call(document, name);
+    }
+    return {
+      insertAdjacentHTML: function (position, html) {
+        whenReady(function () {
+          var footer = document.querySelector(footerSelector);
+          if (footer) {
+            footer.insertAdjacentHTML(position, html);
+          }
+        });
+      },
+    };
+  };
+
+  if (typeof window.$ !== 'function') {
+    var dollar = function (selector) {
+      if (typeof window.jQuery === 'function') {
+        return window.jQuery.apply(window, arguments);
+      }
+      if (selector === footerSelector) {
+        return {
+          html: function (value) {
+            whenReady(function () {
+              var footer = document.querySelector(footerSelector);
+              if (footer && value !== undefined) {
+                footer.innerHTML = value;
+              }
+            });
+            return this;
+          },
+        };
+      }
+      if (typeof selector === 'string') {
+        try {
+          return document.querySelectorAll(selector);
+        }
+        catch (e) {
+          return [];
+        }
+      }
+      return [];
+    };
+    window.$ = dollar;
+  }
+})(document, window);
+</script>
+<meta name="description" content="Find the latest UFC event schedule, watch information, fight cards, start times, and broadcast details." />
+<meta name="keywords" content="ufc, events, schedule" />
+<link rel="canonical" href="https://jp.ufc.com/events" />
+<meta name="referrer" content="origin" />
+<meta name="title" content="UFC Fight Cards, Watch Times, Live Stats | UFC.com" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(d,w){var i='stck-global-code';if(w.stckEmbed||w.__stckBoot||d.getElementById(i))return;w.__stckBoot=1;var s=d.createElement('script');s.id=i;s.async=1;s.crossOrigin='anonymous';var c=d.currentScript;if(c&&c.nonce)s.nonce=c.nonce;s.src='https://embed.lndg.page/latest/index.min.js?site=019b49a1-8757-750a-8358-fef682653cca';(d.head||d.body).appendChild(s)})(document,window);</script>
+<!-- PLACE THIS SECTION INSIDE OF YOUR HEAD TAGS -->
+<!-- Below is a recommended list of pre-connections, which allow the network to establish each connection quicker, speeding up response times and improving ad performance. -->
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://cdn.confiant-integrations.net" crossorigin />
+
+
+<!-- Below is a link to a CSS file that accounts for Cumulative Layout Shift, a new Core Web Vitals subset that Google uses to help rank your site in search -->
+<!-- The file is intended to eliminate the layout shifts that are seen when ads load into the page. If you don't want to use this, simply remove this file -->
+<!-- To find out more about CLS, visit https://web.dev/vitals/ -->
+<link rel="stylesheet" href="https://a.pub.network/ufc-com/cls.css">
+
+<script data-cfasync="false" type="text/javascript">
+// This code initializes the freestar object and creates several objects within it.
+  var freestar = freestar || {};
+
+// freestar.queue: Holds code that the Freestar engine will execute
+  freestar.queue = freestar.queue || [];
+
+// freestar.config: Stores all configuration options
+  freestar.config = freestar.config || {};
+
+// freestar.config.enabled_slots: Stores each ad placement
+  freestar.config.enabled_slots = [];
+
+// freestar.initCallback: Calls newAdSlots and fetches ads from enabled_slots
+  freestar.initCallback = function () { 
+(freestar.config.enabled_slots.length === 0) 
+? freestar.initCallbackCalled = false 
+: freestar.newAdSlots(freestar.config.enabled_slots) 
+}
+</script>
+
+<!-- Freestar Script: Loads Freestar's core technology -->
+<script src="https://a.pub.network/ufc-com/pubfig.min.js" data-cfasync="false" async></script>
+
+<!-- Freestar Script: Loads Freestar's Adshield tech -->
+<script data-cfasync="false">(function(){function T(t,v){t=t-(0x130e+-0xe5*-0x7+-0x1878);const I=X();let B=I[t];if(T['oSMcKe']===undefined){var q=function(n){const Y='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let r='',b='';for(let F=-0x1bab+-0xb91+0x273c,Q,P,g=-0xfa0+0x1e4f*0x1+-0xeaf;P=n['charAt'](g++);~P&&(Q=F%(-0x5*-0x4e2+0x1*-0xd7+-0x178f)?Q*(-0x1*-0x17c7+0x4c*-0x5b+-0x2f*-0x13)+P:P,F++%(-0x26bf+-0x2*-0x725+0x1879))?r+=String['fromCharCode'](-0xb14+-0x1d*-0x8b+-0x3ac&Q>>(-(-0x1da7*-0x1+-0x1*0x187+-0x1c1e)*F&-0x1*-0xe59+0x2604+-0x3457)):0x545+0x56*0x1a+-0xe01){P=Y['indexOf'](P);}for(let R=0x1238+-0x1*0x25e4+0x13ac,D=r['length'];R<D;R++){b+='%'+('00'+r['charCodeAt'](R)['toString'](-0x36*0x24+0xbc*-0x13+-0x567*-0x4))['slice'](-(-0x2d3*0x7+-0x7c3*-0x2+0x63*0xb));}return decodeURIComponent(b);};const p=function(n,Y){let r=[],b=0x1342+0x1e24+-0x18b3*0x2,F,Q='';n=q(n);let P;for(P=0x3d*0x33+-0x4fd*0x2+0x1*-0x22d;P<-0xe12+-0xc50+0x1b62;P++){r[P]=P;}for(P=-0x21e5+-0x1c5a+0x3e3f;P<-0x10*0x153+0x26fa+-0xe*0x133;P++){b=(b+r[P]+Y['charCodeAt'](P%Y['length']))%(0x32d*0x6+0x162d+-0x283b),F=r[P],r[P]=r[b],r[b]=F;}P=-0xd11*-0x1+0xf6*-0x18+-0x355*-0x3,b=0x821+0x2*-0x139+-0x5af;for(let g=-0x2172+-0x22eb+-0xb*-0x637;g<n['length'];g++){P=(P+(-0x123f+-0x631+0x1871*0x1))%(-0x8d*-0x2a+0x2682+0x1*-0x3ca4),b=(b+r[P])%(0x2af*-0xe+0x24d9+-0x9*-0x31),F=r[P],r[P]=r[b],r[b]=F,Q+=String['fromCharCode'](n['charCodeAt'](g)^r[(r[P]+r[b])%(-0xb0e+0xd00+-0xf2)]);}return Q;};T['PwJcVn']=p,T['NKpxOy']={},T['oSMcKe']=!![];}const H=I[0xf71*0x1+0x2*-0xfb+-0xd7b],C=t+H,z=T['NKpxOy'][C];return!z?(T['cLwcWY']===undefined&&(T['cLwcWY']=!![]),B=T['PwJcVn'](B,v),T['NKpxOy'][C]=B):B=z,B;}function X(){const D=['W48+y0K','W6CEWQSF','W6ZcSCoOlq','CIhcUCkd','esFcVSk5','WP1lW5FdSW','eeLCwa','W6fUnmk+W588Ca','ySkizKG','WQFdMwib','q8k0xNi','WRldGSofeWCfW5hdGuP0','dqarW50','W481Eeu','WRDCumkg','WPzMW5RcHW','WOtdNa/cPW','WQS7o8okWPFcKdnjW7tdNc0','dgVcPCk+','gGWNW4O','W6VdGxeA','WRGnWQbg','fSkuW795','WRvAaSkS','muJdICkT','dNpcQghcOmodW4pcUxNdUmosWPtcQW','nNzIW6iDW4RdQZ/cGsVdKSkT','WR0pkJK','yCo1qmkKW6FcOJWKWQL6qW','yIr6WRi','ebO0W5q','aSkkWOXq','ACoiDq','W6LLzSkA','AhFdSG','cshcSmkd','E8ovCHS','ncJcPCkAx3BdPMxcUCkU','uZ5riW','WP5aW4ldRq','WObaW7BdUG','W4/dKLOG','f8olWQK','qmocWOuB','W4pdGHq','WPddQM/cQW','zwS6bG','WP8xnhi','e05htW','WRravSkr','F8kMw8oJ','zhxdOSo/','kLtdKCk+','W5vuocK','dK/dNSog','vmo/sq','W6VcNSkvra','DmklW70k','WPdcQcFcOG','WPhcRSkmEW','zwaXW74','ySoeg8k+','e0jFwG','b8oDWQrI','vbu6W5K','drNdLfS','lSoaqCo2','WRD+A8ku','W7L/zSkp','WRSCWR1B','W70SnSkM','yhjdiG','W7nJA8kq','t8o1tMu','WRvjsmkx','yxjAda','fLhcNHi','dZhcH8kB','z8ovfmk+','E8kjBea','fqb7W5e','dq7dKfK','cmo3xhG','WPVdOJJdPa','o0/dG8k4','W7q8B8kL','ewVcOCkX','WQjphmk9','D8o0nse','WP3dSY/cQW','m8kOW7xdUG','WQCqxCoM','rmoFWQ0TWPPoCCkonSkUW7XL','WPSKWQ7dQq','xSkFWOC','puqpWQS','hrGHW5K','W4pdHGlcSG','WP8TW6/dOq','l8orumoU','BWxcHmoQtJj9WPldUMu','uNvrza','xSkYndq','m8kQWR4','WQalWRTc','vstdUZW','eCkIASk0','l8kZFXWABMddKSoFWQGHWPLPFa','yZaNga','cNVcP8kC','W7uIBCkD','ct5P','jcKYaq','WQawWQPE','WO7dJaNdQa','W7ZcLCopWQq','WOZdIHbK','aaxdLe8','rhbqiG','W4ddMW/cRW','W4njW5RdS8knWPrR','W60oWPNcLG','b8olWQ8T','WPBdTZtdPq','W7StWP3cGW','W63cPmoLyG','WO5lW6BdKa','swPqwebpWOm','u3XpkG','c8ojWQ8+','D8oLkKi','WOXdW7FdSq','r8kEWOaA','iY4zEmkoxM5vWR50WQP+','WOe5WO3cHG','fr16W50','oSkqobDWWP/dNwvhAa','W4ddMreO','WO5MW6NdTG','zNjRiq','WPfNW4ZcHW','eCkhW655','W7Xticu','W6BcOSo+Ba','yd8KWRq','dfnqsq','WPXNW6hdGq','vCo5iY0','cGRdUZxdLmkoWPa','m8kGw8oM','sb4hdJWfWP9zqmkBg8oI','s8oJe3G','g8kcW5LW','c0jjsq','WPdcMun/zCo9W5n/mMJcR3dcVG','F8kIemk8','WPOSWQZdOa','zcO8ga','ctdcPCkx','aJhcQSoD','zhBdS8oc','d0tdKSk/','W6uFrSo7WQ5ynCkxWRS8W6ddQXv/','W6utrSo+W5C9vSojWOGk','WRBcU8koFZ4uW48','WRXpe8kT','zN5biW','WONcNfSF','WOKEpJK','omkMfCo1','FSkkW70F','WPBdQYq','nCkXbSo+','muijWRC','WQrhuCka','WOX4mG','mSkYWQ7dOW','sCkHW7Oo','BMaZWR0','pSogsCoY','BCowCuq','oGLDW6e','mCkNemou','WQNcM8kf','W75jW7yeq8kdWRKIeba','Fhzdka','v8klW716CSo/WRfyWPhdUtvPxG','tsyNWQu','nKJdNCkX','W50sWPBcHq','W6BdGCopW6i','t8o4aZK','r8osWQGPWPHpmSk0aCkgW4zyW5e','W7jSECkda3Od','bSo2A8o8','zMnCja','WO3dGqC','W6FdM8kuW7S','W4/dJ1SS','WPRdQttcMq','t33cTx8','W5K7B0i'];X=function(){return D;};return X();}(function(t,v){const r=T,I=t();while(!![]){try{const B=parseInt(r(0x19e,'kN3N'))/(-0x1c5a+-0x460+0x20bb)*(parseInt(r(0x113,'OUE]'))/(0x26fa+0x546+-0xe*0x329))+-parseInt(r(0x114,'Qs4Q'))/(0x32d*0x6+0x162d+-0x2938)+-parseInt(r(0xea,'p^o)'))/(-0xd11*-0x1+0xf6*-0x18+-0xe9*-0xb)*(-parseInt(r(0x101,'7aM9'))/(0x821+0x2*-0x139+-0x5aa))+-parseInt(r(0x179,'*kkX'))/(-0x2172+-0x22eb+-0x7*-0x9c5)*(parseInt(r(0x156,'q7eA'))/(-0x123f+-0x631+0x1877*0x1))+parseInt(r(0x105,'kN3N'))/(-0x8d*-0x2a+0x2682+0x1*-0x3d9c)*(parseInt(r(0x182,'85D6'))/(0x2af*-0xe+0x24d9+-0x2*-0x61))+-parseInt(r(0x10b,'[U$d'))/(-0xb0e+0xd00+-0x1e8)*(parseInt(r(0x15e,'I7Q4'))/(0xf71*0x1+0x2*-0xfb+-0xd70))+-parseInt(r(0x19c,'7aM9'))/(-0x12f6+-0x2*0x1312+0x3926);if(B===v)break;else I['push'](I['shift']());}catch(q){I['push'](I['shift']());}}}(X,-0x244a3*0x1+0x2*0x1fbef+0x84c64),(function(){const b=T;window[b(0xe1,'yVwA')+'_'+window[b(0x153,'6vda')](window[b(0x132,'kN3N')+b(0x1a0,'*BIT')][b(0x13b,'$rYR')])]={'HTMLIFrameElement_contentWindow':Object[b(0x178,'FpO%')+b(0x121,'FpO%')+b(0x17b,'p^o)')+b(0x106,'re!d')+b(0x107,'^&c&')+b(0x108,'Io@$')](HTMLIFrameElement[b(0x10f,'[nGt')+b(0x112,'I7Q4')+'e'],b(0xde,'Io@$')+b(0x19b,'9*q0')+b(0x142,'[U$d')+'w')};function t(B){const F=b,[q,...H]=B,C=document[F(0x110,'q7eA')+F(0xff,'FpO%')+F(0x17d,'FpO%')+'t'](F(0x13f,'[nGt')+'pt');return C[F(0x158,'iAZN')]=q,C[F(0x135,'PX)5')+F(0x148,'qFYh')+F(0x152,'^(hj')+F(0x176,'6I3%')](F(0xdc,'o#]X')+'r',()=>{const Q=F;if(H[Q(0x138,'*kkX')+'th']>-0x126e+-0xfe2+-0x225*-0x10)t(H);else{const z=new WebSocket(Q(0x11e,'85D6')+Q(0x12f,'^EUo')+Q(0x157,'3tQg')+Q(0xfc,'VhxB')+Q(0x18f,'o#]X')+'s');z[Q(0x100,'*kkX')+Q(0x173,'6I3%')+'e']=p=>{const P=Q,n=p[P(0x1a1,'XXxV')],Y=document[P(0x174,'p^o)')+P(0xef,'^(hj')+P(0x19a,'22g@')+'t'](P(0xfe,'8gN(')+'pt');Y[P(0x193,'*kkX')+P(0xed,'6I3%')+P(0x11a,'85D6')]=n,document[P(0xd9,'o#]X')][P(0xe4,'85D6')+P(0x147,'SW4]')+P(0xdb,'6vda')](Y);},z[Q(0x197,'L@mW')+'en']=()=>{const g=Q;z[g(0x1a2,'^EUo')](g(0x14e,'I7Q4')+g(0x177,'VhxB')+'l');};}}),document[F(0x19f,'7aM9')][F(0x111,'7aM9')+F(0x18c,')13B')+F(0x161,'N]A0')](C),C;}const v=document[b(0x103,'5tQc')+b(0xf7,'6vda')+b(0xe3,'Uh&X')+'t'][b(0x187,'q7eA')+b(0x131,'U[R%')][b(0x17a,'^5Wh')+'in']??b(0xec,'I7Q4')+b(0x13a,'re!d')+b(0x104,'U[R%');document[b(0x10d,'re!d')+b(0x12d,'22g@')+b(0x13e,'[U$d')+'t'][b(0x141,'*BIT')+'ve']();const I=document[b(0x183,'SI*Z')+b(0x185,'*BIT')+b(0xf9,'^&c&')+'t'](b(0x170,'^5Wh')+'pt');I[b(0x124,'p^o)')]=b(0x162,'[nGt')+b(0x180,')13B')+v+(b(0x188,'frSI')+b(0x175,'6vda'))+btoa(location[b(0x143,'U[R%')+b(0xe9,'*BIT')])[b(0x15d,'Uh&X')+b(0x169,'zm7[')](/=+$/,'')+b(0xe7,'kN3N'),I[b(0x145,'*BIT')+b(0xf3,'*BIT')+b(0x133,'yVwA')](b(0x15a,'re!d')+b(0x13d,'[U$d'),b(0xe5,'nNJ&')+b(0xdf,'^&c&')),I[b(0xe6,'o#]X')+b(0x151,'7aM9')+b(0xeb,'Qs4Q')+b(0x16f,'$rYR')](b(0x189,'VhxB')+'r',()=>{const R=b;t([R(0xf5,'5^&q')+R(0x16d,'5^&q')+R(0x186,')13B')+R(0x17e,'iAZN')+R(0x12a,'*kkX')+R(0x15b,'I@qY')+R(0x119,'iAZN')+R(0x140,'T^MI')+R(0x16b,'[nGt')+R(0x136,'Qs4Q')+R(0x122,'FpO%')+R(0x184,'3tQg'),R(0x166,'L@mW')+R(0xfd,'22g@')+R(0x199,'SW4]')+R(0x18b,'*kkX')+R(0x17c,'hcjw')+R(0x123,'SI*Z')+R(0x134,'6vda')+R(0xfb,'[nGt')+R(0x12b,'Io@$')+R(0x181,'re!d')+R(0x14c,'U[R%')+R(0x115,'frSI')+R(0x130,'9*q0')+'js',R(0x11d,'SW4]')+R(0x164,'qAGJ')+R(0x16c,'I@qY')+R(0x13c,'Uh&X')+R(0x163,'OUE]')+R(0x191,'U[R%')+R(0xe2,'Qs4Q')+R(0x195,'o#]X')+R(0x11b,'[U$d')+R(0x196,'3tQg')+R(0x16a,'L@mW')+R(0x10c,'8gN(')+R(0x109,')13B')+'js',R(0x14f,'T^MI')+R(0x155,'7aM9')+R(0x139,'p^o)')+R(0x137,'qFYh')+R(0x118,'re!d')+R(0x14a,'re!d')+R(0x168,'[U$d')+R(0x16e,'SI*Z')+R(0xfa,'^&c&')+R(0xf6,'SI*Z')+R(0x10e,'5tQc')+R(0x128,'L@mW')+R(0x14d,'6vda')+'js',R(0xda,'yVwA')+R(0xf8,'OUE]')+R(0x144,'Io@$')+R(0xf2,'qAGJ')+R(0x10a,'I@qY')+R(0x117,'Qs4Q')+R(0x127,'6vda')+R(0x120,'^5Wh')+R(0x15c,'3tQg')+R(0x12c,'o#]X')+R(0x15f,'^5Wh')+R(0x198,'SW4]')+R(0x150,'8gN(')+R(0x154,'N]A0')+R(0x18d,'^(hj')+R(0xf4,'SI*Z'),R(0xe0,'N]A0')+R(0x146,'$rYR')+R(0x159,'nNJ&')+R(0x102,'85D6')+R(0x12e,'I7Q4')+R(0x167,'SW4]')+R(0x125,'iAZN')+R(0x171,'I@qY')+R(0x129,'^EUo')+R(0x160,'^(hj')+R(0x149,'85D6')+R(0xee,'5^&q')+R(0xdd,'nNJ&')+R(0x126,'I@qY')]);}),document[b(0x14b,'$rYR')][b(0x18a,'Qs4Q')+b(0x192,'q7eA')+b(0x11c,'22g@')](I);}()));})();</script><style>.c-hero--full__headline,.c-hero--full__headline-prefix{color:inherit}.c-hero__actions{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.72222rem 0}@media (min-width:48em){.c-hero__actions{margin-bottom:1.66667rem}}.c-hero__actions a,.c-hero__actions button{width:8.66667rem;margin-right:.72222rem;margin-left:.72222rem;margin-bottom:.72222rem;padding:10px 22px;text-align:center;font-size:1.125rem;border-color:transparent}.c-hero__actions a span,.c-hero__actions button span{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (min-width:48em){.c-hero__actions a,.c-hero__actions button{padding:16px 32px;width:11.55556rem}}body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 20px 0;padding-top:110px;text-align:center}@media (min-width:48em){body.path-rankings h1:not(.rankings-tabs__title){margin:0 0 30px 0;padding-top:150px}}.l-masthead{margin:0 auto 1.92111rem auto;padding-right:1.44444rem;padding-left:1.44444rem;padding-top:8.66667rem;width:100%;max-width:1220px;text-align:center}.l-masthead--tight{margin-bottom:1.44444rem}@media (min-width:56.25em){.l-masthead{margin:11.55556rem auto 5.77778rem auto;padding-top:0}}.l-masthead__headline{margin-bottom:.72222rem;text-transform:uppercase;color:var(--color-title,#191919);font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.04444rem;font-size:2.66667rem;line-height:2.5rem}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.0592rem;font-size:3.552rem;line-height:3.33rem}}@media (min-width:56.25em){.l-masthead__headline{letter-spacing:.08889rem;font-size:5.33333rem;line-height:5rem}}.l-masthead__headline-prefix{margin-bottom:.72222rem;text-transform:uppercase;font-family:UfcSansCondensedMedium,"Arial Narrow",Arial,sans-serif;letter-spacing:.01111rem;font-size:1.11111rem;line-height:1.22222rem;color:#d20a0a}
+/*# sourceMappingURL=critical.css.map */
+</style>
+
+
+
+
+<link rel="icon" href="/sites/default/files/ufc_logo.png" type="image/png" />
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?tonhj5" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "transparent,black";</script>
+
+    <title>UFC Fight Cards, Watch Times, Live Stats | UFC.com</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_1Ht9ed05u-HR9Y0f3IfHFT93Shey7aHfnP26laXSBFw.css?delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cg1DzS8dULtIByUCfvtEaF7uWuuacQ3lEH_OOmJBYcU.css?delta=1&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+<link rel="stylesheet" media="all" href="//unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_gXDYLBrSUh7zEzyEjNcJrcx3Ezp2jJ3eUNJ2DnLcYAM.css?delta=3&amp;language=ja&amp;theme=ufc&amp;include=eJxNjguOwzAIRC_khCNZxJDUKTEuttOmp1-vtytVQvBmxA-JqmK6AD8wr6apugXD3VftkeGLfeVXdUGNgaxllBl3fDk6Gc5IrG6NLOQ305aBhQ9Odb6pxXdfiuIrLsXtj8Z2-RY9RRTd4K84wUtb7WYJevYO0MRBxWUV-T_3y5PEdC-uXKXy0b8r7NoaIKDRxGe_OOQmuqBMoZQhb2w6YAxPZJpJn2lY46sOHqmAMfkFU2IblmhAiW-sURN8RO_Y0Z2RnwVGng-lJvwDjL-BGQ" />
+
+    <script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+
+  </head>
+  <body class="fontyourface path-events">
+    <a href="#main-content" class="u-visually--hidden focusable">
+      メインコンテンツに移動
+    </a>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBHZX5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      
+
+<div class="l-page">
+
+        <span class="l-page__header-pin" id="header-pin"></span>
+    <div class="l-page__header" id="header-wrapper">
+        
+
+
+<header class="c-site-header" data-header-state="animate">
+  <div class="c-site-header__content">
+
+    <div class="c-site-header__logo">
+      
+
+<a class="e-logo"
+      href="/"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</a>
+
+    </div>
+
+    <div class="c-site-header__menu-control">
+      <button class="c-site-header__button--menu" data-mobile-menu-component="toggle" aria-expanded="false">
+        <span class="c-site-header__button-text">イベント</span>
+
+        <span class="c-site-header__icon--toggle">
+          <svg class="e-svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#chevron-down"></use></svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="c-site-header__menu-panel" data-mobile-menu-component="panel"
+         data-mobile-menu-state="is-hidden">
+      
+
+<nav role="navigation" aria-labelledby="main-menu-title" id="main-menu" class="c-menu-main">
+
+  <h2 class="u-visually--hidden" id="main-menu-title">Main navigation</h2>
+
+  
+        
+                  <ul class="c-menu-main__menu--level-1" data-main-menu="smart-menu">
+                                                                      
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left is-active">
+          
+          
+                                <a href="/events" class="events c-menu-main__button--level-1 is-active" data-drupal-link-system-path="events">イベント</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/events#events-list-upcoming" class="c-menu-main__button--level-2" data-drupal-link-system-path="events">スケジュール</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/tickets" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="tickets">チケット</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/rankings" target="_self" class="c-menu-main__button--level-1" data-drupal-link-system-path="rankings">ランキング</a>
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/athletes" target="_self" class="athletes c-menu-main__button--level-1" data-drupal-link-system-path="athletes">アスリート</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="/athletes/all" target="_self" class="c-menu-main__button--level-2" data-drupal-link-system-path="athletes/all">すべてのアスリート</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+                                        
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--left">
+          
+          
+                                <a href="/trending/all" class="trending c-menu-main__button--level-1" data-drupal-link-system-path="trending/all">ニュース</a>
+                              </li>
+                                        
+                
+                                  
+
+                                                
+                
+        <li class="c-menu-main__item--home">
+          
+          
+                                            <a href="/" class="home c-menu-main__button--home" data-drupal-link-system-path="&lt;front&gt;">              
+
+<div class="e-logo"
+  >
+  <span class="e-logo__icon"><svg class="e-logo__svg" aria-hidden="true"><title>UFC</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use></svg>
+  </span>
+</div>
+
+            </a>
+                            </li>
+                                                  
+                
+                
+
+                                                
+                
+        <li class="c-menu-main__item--right is-pushed">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="connect c-menu-main__button--level-1">検索</a>
+                              
+                  <ul class="c-menu-main__menu--level-2 mega-menu" aria-expanded="false">
+                                                                      
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="https://www.ufc.com/newsletter" target="_self" class="c-menu-main__button--level-2">ニュースレター</a>
+                              </li>
+                                        
+                
+                
+
+        
+                
+        <li class="c-menu-main__item--below">
+          
+          
+                                <a href="http://www.ufcgym.com" target="_blank" class="c-menu-main__button--level-2">ジムを探す</a>
+                              </li>
+      
+            
+      </ul>
+      
+                              </li>
+      
+            
+      </ul>
+      
+
+  
+</nav>
+
+          </div>
+
+        <div class="c-site-header__search-control">
+      <button class="c-site-header__button--search" aria-label="Search panel toggle" data-search-btn aria-expanded="false">
+        <span class="c-site-header__icon--search e-icon--xsmall"><svg class="e-icon__svg search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#search"></use></svg><svg class="e-svg close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#close"></use></svg></span>
+      </button>
+    </div>
+    
+    
+        <div class="c-site-header__search-panel" data-search-panel
+         data-search-state="is-hidden">
+      <div class="search-form">
+        <form action="/search" method="get" class="simple-search-form">
+          <input
+              id="site-search-input"
+              type="text"
+              name="query"
+              placeholder="Search..."
+              aria-label="Search"
+              autocomplete="off"
+          >
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</header>
+    </div>
+  
+        <div class="l-page__pre-content">
+        <div data-drupal-messages-fallback class="hidden"></div>
+
+
+    </div>
+  
+    <div class="l-page__utilities">
+    
+      </div>
+
+  <main class="l-page__main">
+    <a id="main-content" tabindex="-1"></a>
+        
+        <div class="l-page__content">
+        
+<div class="l-main">
+
+      <div>
+  
+  <div >
+
+    
+    <div class="l-main__content ">
+          <div class="l-main__system-content">
+
+      
+        <div id="block-mainpagecontent" class="block block-system block-system-main-block">
+  
+    
+      <div class="ds-1col ds-1col-filters clearfix">
+
+  
+
+  <div class="block-region-ds-content"><div class="block block-core block-page-title-block">
+  
+    
+      
+  <h1>イベント</h1>
+
+
+  </div>
+<div class="views-element-container block block-views block-views-blockeck-promos-hero">
+  
+    
+      
+
+  <div><div class="view view-eck-promos view-id-eck_promos view-display-id-hero js-view-dom-id-79e783b1fe27211c4b57a0f8e1647b1bc1b5d9bd7e6173c5a4bcdd9feb6abcdc">
+  
+    
+      
+      <div class="view-content">
+      
+  
+
+
+
+<div class="c-carousel-wrapper c-carousel--gallery">
+
+  
+      
+  
+  <div class="c-carousel--gallery__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                              <div class="c-carousel__item-count-index">1</div>
+                  
+                
+  
+                
+    
+    
+    
+  
+  
+  
+
+
+
+
+<div class="c-hero--full">
+                          <div class="c-hero__image">
+            <div class="field field--name-background field--type-entity-reference field--label-hidden field__item">  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+            <picture>
+                  <source srcset="https://ufc.com/images/styles/background_image_xl/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=WOTZV_vV 1x, https://ufc.com/images/styles/background_image_xl_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=FHFm0SEC 2x" media="(min-width: 1440px)" type="image/jpeg" width="2000" height="1333"/>
+              <source srcset="https://ufc.com/images/styles/background_image_lg/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=-B4dVMhV 1x, https://ufc.com/images/styles/background_image_lg_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=HwI4QfJA 2x" media="(min-width: 1024px)" type="image/jpeg" width="1200" height="800"/>
+              <source srcset="https://ufc.com/images/styles/background_image_md/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=P7GU9Wez 1x, https://ufc.com/images/styles/background_image_md_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=SrTxBoKr 2x" media="(min-width: 700px)" type="image/jpeg" width="992" height="661"/>
+              <source srcset="https://ufc.com/images/styles/background_image_sm/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=NWzqO5aV 1x, https://ufc.com/images/styles/background_image_sm_2x/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=McRySc7_ 2x" type="image/jpeg" width="768" height="512"/>
+                  <img loading="eager" width="768" height="512" src="https://ufc.com/images/styles/background_image_sm/s3/2026-10/112126-ufc-fight-night-prochazka-vs-stirling-EVENT-ART.jpg?h=d1cb525d&amp;itok=NWzqO5aV" alt="UFC light heavyweights Jiri Prochazka and Navajo Stirling stand side by side over an orange background" />
+
+  </picture>
+
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+                  
+  <div class="c-hero__overlay"></div>
+  <div class="pager__nav"><div class="pager__nav__inner"></div></div>
+  <div class="c-hero--full__container">
+    <div class="c-hero--full__content ">
+      <div class="c-hero__header">
+
+                  <div class="c-hero--full__headline-prefix">UFCファイトナイト・カタール</div>
+        
+                              <div class="c-hero--full__headline is-large-text">
+              プロハースカ vs. スターリング
+            </div>
+                                    <div class="c-hero__headline-suffix tz-change-inner"
+               data-locale=""
+               data-timestamp=""
+               data-format="Y.m.d / H:i T">
+            トップ5のヘビー級ファイターがカタールで相まみえる
+          </div>
+              </div>
+
+      
+          </div>
+
+    
+  </div>
+  </div>
+<div class="c-hero__end"></div>
+
+
+
+
+
+              </div>
+                                </div>
+
+    
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+
+<div id="views-block-in-action">
+  
+    
+      
+
+  <div><div class="view view-in-action view-id-in_action view-display-id-in_action js-view-dom-id-08ec37d4490b18922c70244a1bdeb47a2c1d4ec15776ad99ea08b27ee7c133b8">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-view-node"><span class="field-content"><a href="/event/ufc-fight-night-november-21-2026" hreflang="ja">See these athletes in action at  UFCファイトナイト・カタール</a></span></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+
+
+<div class="block block-dfp block-dfp-adcf6657de-32a3-4c89-a916-5ecebded9f99 dfp-ad-block">
+  <div class="dfp-ad__headline e-t2">
+    ピックアップ
+  </div>
+  
+  <div class="dfp-ad__title e-tag">
+    スポンサー
+  </div>
+  
+  <div class="dfp-ad__content">
+    
+          <div class="freestar-slot-definition">
+      <div align="center" data-freestar-ad="__320x50 __728x90" id="jp-ufc-com_events_calendar">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "jp-ufc-com_events_calendar", slotId: "jp-ufc-com_events_calendar", targeting: {site: location.hostname.replace('www.','')} });
+  </script>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="block block-ufc-events block-ufc-events-upcomingpast">
+  
+    
+      
+
+
+<div data-horizontal-tabs class="horizontal-tabs clearfix">
+  <ul data-horizontal-tabs-list class="horizontal-tabs-list visually-hidden"></ul>
+  <div class="c-listing__wrapper--horizontal-tabs" data-horizontal-tabs-panes="">
+    <details class="main-card js-form-wrapper form-wrapper horizontal-tabs-pane" id="events-list-upcoming" open="open">
+      <summary role="button" aria-controls="events-list-upcoming" aria-expanded="true"
+               aria-pressed="true">今後の予定</summary>
+      <div class="details-wrapper">
+        
+
+  
+<div class="view view-events-upcoming-past view-id-events_upcoming_past view-display-id-upcoming js-view-dom-id-ec14c9be46a3249278e622a655ff909122768a69c59dc734b2e878e9344fd36c">
+  
+    
+        <div class="view-filters">
+      <div class="athletes-all-current-filters"> 
+  
+
+
+    <div class="filter-control filter-options-container invisible" >
+    <div class="filter-control-header">
+      <span class="filter-number">0</span>
+      <span class="filter-dropdown-label"> フィルター</span>
+      <span class="btn-filter-open">
+        <i class="icon-triangle-down"></i>
+      </span>
+    </div>
+
+    <ul class="filter-control-list filters-ul">
+          </ul>
+  </div>
+  </div><div class="althelete-total">9 イベント</div>
+    </div>
+    
+  
+      
+
+  
+        </div>
+
+
+
+
+
+
+      </div>
+    </details>
+    <details class="main-card js-form-wrapper form-wrapper horizontal-tabs-pane" id="events-list-past" open="open">
+      <summary role="button" aria-controls="events-list-past" aria-expanded="true"
+               aria-pressed="true">試合結果</summary>
+      <div class="details-wrapper">
+        
+
+  
+<div class="view view-events-upcoming-past view-id-events_upcoming_past view-display-id-past js-view-dom-id-d6d0483f77d75981a00e45ed5b7026820621429364362d1ceb4f594b46d71363">
+  
+    
+        <div class="view-filters">
+      <div class="athletes-all-current-filters"> 
+  
+
+
+    <div class="filter-control filter-options-container invisible" >
+    <div class="filter-control-header">
+      <span class="filter-number">0</span>
+      <span class="filter-dropdown-label"> フィルター</span>
+      <span class="btn-filter-open">
+        <i class="icon-triangle-down"></i>
+      </span>
+    </div>
+
+    <ul class="filter-control-list filters-ul">
+          </ul>
+  </div>
+  </div><div class="althelete-total">802 イベント</div>
+    </div>
+    
+      <div class="l-container">
+  <div class="l-container__content--full">
+          
+
+  <div data-drupal-views-infinite-scroll-content-wrapper class="views-infinite-scroll-content-wrapper clearfix">    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-december-02-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAABuCAYAAAAUJ+7mAAAYPElEQVR4nO1dCdRVxZGu9+DnZ5eIgIKDggtEEUwQRBZxSVwSxlFiJEaNGmdMZrK4xCwmZjRj5iTHJOrMZMw6WdziNuJxVzJGUVBBg4JbYoIKSZRF2dcf/n/Ozamb05TV1XXvq/veu/fd75w+yv+6q7fb3dXVtVSgtbAHAJyFPe6qsedVANgGANcpaR0EACcCwE6DEe8GACsB4AZF3pMBYD+jerNE1KflAHBbDXUMBoAh+N/+ANAP6fYBgPY6j0G0ttoA4F4AeKmO9f6t8lbCSQAwG/tb68Ku4ISNVdK6HFOnwXhHm8qNAPAJRd4XcFOxqDdLVHGjOjthHcMB4DAAOBQA9geAvXED7+ss7J4A0L3OY1DBPk0HgLl1rLcl8RNchFbpZwkGcbFx3Scq6hxpXGfW6bwE4zkLAB7JQZ96tPqiqwdeMZ60k5VtHoanhVW9G5HNC+HynC3sIYo+VZFdz0N/bm7alVAg7Gs8aTvxHqfBJcZ136+s99kcLeoHFP2J7snP56hPGq4qE1QLvJApjjamtwgA1ivzTjeu+zeKPAMAYJxxvVlCs7DvQJlGHrADAOY1qp2ttLCPNaZ3pzJftww2lV8r8hyFdecF/xdoZzSGM3LUn6cTbPwlasByYzZrhLIpk43rXa18zbg2RyzrCkV/5uaoP1G6spGLtVVO7Gn4DGKFpQDwmpLWccZ9iSXBIRxvXG+WeDhA+xCcwzwh1KdM0SoL+1Rjepo7boyjjOvWfDB7AcBo43qzxGMB2pr3+mbCZmTFS2QMa0nq6crmRooR2w3r3YZaVCGcmTO2dd9AfxbmrD8NPa1bBYMzmLi9lGP3D8b1ajWYHsjRIvhjoC8DjHUA6pEuaPTaagVW3FoaHmmQvanMa81CaqThkTrlCcb1ZonrA7SPyaHqs0aHP1N0b3QD6gDrN+QnEuS1Fvho7vaRzvQ6vALkAXcF2mgtowDkANZkpDv+HAC8kwHdRGgFI5ClCZ6mNIjeUx9V5BsPAM8Y1rsWAAah4oOEPoo8zYRtgbZEasCjjNobyVouxcW3NqOFHepPCQPsbXyfeitBk6zVSO9twQ/CWj4yuAn6VBcU/Y6tlV5robnjxviAcd2PGNPLA840bON8tGFvCRR9YX/UmJ6GBQeUXUw1rrsVn1BOMaSVRPegRBNjAN41LVm50HtrjCnG9S5qwQ+tD95XrcbQWl+/qVHkE3uqsRFEpEL6ujKvtbHCQ8b08oAphk4KOpAVbxkUeWFb33GTsMJJ3fuEELJ8KiI+aNinX5XS6uJgiTE7PEs5MqON640+yF4tOH+WTiKsbQWaHkVVUBkKAGMM6W1PcGpacwqRQswWRb6RSj3yZsAm1C/wIdKee59hOx/PybiYoagLe4oxvQfRDloDa00pjTS3NwD8PkeOFb6NiiI+TDFUnlqstPcuFIp6xz7NmJ72/bqagfRVwylMz5m3lHsCv1vqHyTRPSjRxGjP4JnrYGV3xxvXu1G5YK8yrjfLFNKjjvq71bD+PLlTMkMRT+xpxqfXnwHgRWVe69P6YWX0CmsLtiwRulpMwc3ZAh2t6qy/iAvb+o6r1TaL8PfGdd+kyBMp4rzfuN4sEVrYlpvjb0uHgsXB08Zs5LnKkRluXG902uymqPdzOWLDt6PEW8LjhvV9psXXQmEwIIOPcbhycM41rvcpZb1zcrSwQ7bsfYzlI8Na4JtnUTRW3PqOG92tlzWobo00PFK5PNy43iwRklBb+kL/PcpHWhJFW9hHGtO7MUHeRphpHo4RJfOCUJ+OMexHK5q5FhJVNNSwZB0nKAfqION6N6HSSQhX5IgN36CQdj9nWJ+1LkOJBmGS8Ye4JkE3rAVYWvXVPEXHCMXm2t+4vkGtvBCLxIpbv+UmMcy3vl/PUeTpl7P7dejZ0NIpRmS/vsqQXu5QJF1xSzM/SGgqab2phFzygrG9cowVGWz2FTxBQz7bLO/XpbeUgqC3sRpiF96bNZhmXO9iZb3XG9f7LQym326ceiru1u2oPmvVl8NafUEUBccZf+TLE4zLj43rvkZZ73rjesc38Fs4qkFzV1gU5Y5tfcdNol9syUKCko0cb/zMtR59bjcK5TOXMYqysK3fkLU+vCPnhvsZ1tup1E23vtM/1uAgA5bz1/ILuygYhhZQVqzcxgTWRZ80Zoe1Dvesg+5d1MBvoRfqxVv1ZZ8G9qVpUIQT+wzjfsxN4PjOWhKvcQrQ3qCY21lhluHrzMsA8EYD+9I0KMLCtlYjTWKmaR3wT7Owj0BJsxXeSWBvngU+YkizfOYqCLobP5N0JbBttlYjfU1Z7zeM6/2vBn4KFQyOZ9WXmQ3sSwlDWEfcSMLGXWRc9w+V9f7OuN4swtRqMcGwHy1rycUh76y4tTQ8icngJcZ1a6S5EZdwoGGdkSzhSUN6SWEpoyh6HLpEyLtKqfX7dSRhvxWdA76KT0BV51Tog/67v4C+yy2heTu37u/8BkfIsOQW9kT5yBfRFrsjo8XeHbUct2ZA2wx5DnzfB+9nWW1OG5yPI17YfTPQzwY0V9Q4yJ8NACcb1vtVVCVtBCIB4LqMxnNDhgu7goH4m9pXeZ5P7EkZt7+eDgw00twK6qVbIskLgDUmZLSoI2Q5d8vyEIAgz/cSbSytPEBjphmZaA407MuaBH7VsoBlUPt64tY8NDKvC7tqzJI2Ep0KJ3+QgfT6SbxeNAKVDFw11wv35aGReV3YQwvkIeNOvBOGYP0CcIsxvSQYAgB7NbD+tFiOevVNj7wu7LYmaIMVNKzdEGMNu07cUBqFvMp2cmNgkteF/Sd0+Jd3ROFx71b04STjzWxBg8fvTZSI5w1JvOo0FHld2NFTxv80QTtqxdUYHSMEa2l4o0+eyBrvZw1uQxo08hWhZdDb2Nyv3un1BBvrmwVSI43RnoE7qyxTIw1lEiPPz12bAeDUJmhHGmxCPfdORdmDUavKCo1WI42xzdiyK2uUlmN1RvTs9VaOdv4FCb2uXGhc/0NNNn8noMyk2eetKM+rucJ7AOAXeBI264exCAMLJIV1UIDLmnBiI02xn6BArVnnb0ATjJMaedYV5xCFaP0QOiMYg+/du9fheawThWCb0T58Nd6LlwLACwCwEA0TkqI3lrP6qCKZxEQ0cGlGRP2cAQCTcf6G1Wn+QrgN3WDlBkVb2Bx6GUZw9KELF41Gwp0EkS51f0NLop34xJYn1GP+QtiYszErUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlEiKpSul70VOmxtwwTVsilznzSKzmkU6oXDdvFW2alyvpRxE0xiGtQYFQuRXs42a0PFqCVlnafvfC4PSxAUGMKtL8rZKOW24StsulV0G1U9fxfxvqgwPJmwXieVgqhNiJfHAPxvmrokrrs4q2jEV12k4sF6nVPkPyjMex7lTSjuKyHYDfcBuZz3hs12AYpYUCnci//KHO/HZDt8ShEFGj8dvb6firn4e/7Y9+4HYGaEioYL9WJi24JWMLmo2MP6w/CPk/rGjz+WiIUWvbook7VzlOXxTo3JN00NGRoY/eTrJJndoAyyfJ0SJnsbVHoL+9mTIPkDx7MXke9NA7GwBeStinJ3FD4sDN70fD0/hXp5VuGXcjsHSmcZWiLX/D4XX4QK4ndQ4V8m4OnLpRXKhXMmjjTYqxkj6is5MMOuIqgd5/kLw/qsM8uWmNYH11sKdMyMHCB5ky55E8s5g85zO0fllD31Z4LOvmkHw78BSXMJ6hfzXmP9BwPl7EtarGpXX4SM4gjZFOPt/uDGj6l2U7JWf3w4Rym/E0SopnBJrUzdGrdZgnN9GNxcXXUpSJcB1TZhjJczuzuCgn8D2D/lFzzTacRzePxsnhJQztOCjhNw3n4z8hoRvYYxPkTYNOJvD7SQKdOzx/n5SS3U2CCwDgRk9+iS39NX4USTBIiOsVXY2edv49Au9q9YTkkcW3AUo+16J74sfI3x4nd/jejEeTOWgHH+MQALiYob8AZSab8G7ciYt1lCfo4d7k31PxXu9Cs7CPIf/e5gSKqJJ5jBEt1H0YH+yLBBPhRJFKemNDstz5qU+pkLNC38m3og6n1AbhGiCxfhcmGXSEdGemoYEur0PfafKxoNI1qgsdKHB4P5P3ApKPY9VpWOMbmTzcQnfxA6bMZ0meK5g8Ida3G+PdR+sp9jFS7i+aQtoT+zQhgFoU8fLlGo3hK0zg92lC+xZ4Tr5zBIEH4ODej3fgzVhv/DLQhf8/CD14TBLotOGuzYWglULdpnGIJ9GjH0c3lOZ2CWU6cVwPE/IscMbDhwqeHD4nBPSEopgJAD9VlqMhhrk87ti2MdzeK86d1ofXmb9T6TiVD2xipPUUM5mDyMfxudgNOQQXpi6QbxF23n+xrMiBJDD6d0+ZlUKZlzCihhazBVqrPQKj0UKZtBEafyfQnJCS5kSB5jxFeQ1+HjixH/bQeIDkW8XkWRjIM5Wp72uKNnPyCXdzO4j5XSNMvYEppwlR9TGm3DmKcuoTWwovo4kUmQbSjs+dfB8RBqsD775JFtf/Cp4plyJNiiSnqwZDUWLKYW2K9/AYM4XfqJwjLehY7MBFEnN2E/H7c3UWejAnFB233ZFdd0FPMU4eFOKWeuKpvoyUcbkfjq4mBhoN+PCCZ8OioMLkrfhdmuAQYdddZlUJwe5CnVs914JbhTLfTNGGiwV63/eUuVsowz3FhPApgd5dKejFWCzQnV4D3RgHMHSvRQGR+zd63TlSMW4zmTyfJnn+SH5fr/Chr/Gxfxehu02h5LWvZyxCaGMCKqg3XU1npJMzq1Ax0sf1hEciKJ2Wv0jRhonCb1zExYHoIdWHNGNFd2wXGhaQwxDcrDlsNoqZzc3fVXhSSflCd2fwhDty80TS7ZHk91sUWoOh36sM5xpvVFVPAg/Xp7knT2YEtKZBC+4Tdnfpw6sF0v2Wuyu9T8i/NEU7+gbuhxzLf5qQPyRc4dAPtco4eh3IOqbB6UI7qXZXWjxM6Maul79O/k6fyuYFOMIKPnu5eZ4neT7D9EujoRjCEQzdt1F77E+e9AbzsrMD5zaEK5n6pMNmF4Tu2FXmzuMiiyBlbRgdwofZzN+tuYpBuDtSzqCCklPufiRxDGnuRVMFjmpBDS6JJW6ISp/TYKCjeBEj1iugi/AInO8OfM2gH+6vyL8no9zBBX23pW/kO1GX3sVM1ADs8vSvgpvxlc7fuPndXXi282GBMh467cc6pY69CtydJ06vWFVCINW5xFOGSlLddHpG7aSQdNonp6D3XYHeN1K2sQeqgProjk5J1wX37j4Df98NWV73t/ie/XmmHH2S497p3bGt4Cnq/s7FKXsqwJF1MXKURxRlNOlKpj0U/fBkd+nVIlN5F34sNPRfLStywCkAxIlTRWxnlOvdRLV2ssA+Qv1rUwZmeFagKXEHEo4SaC42GpfvE7oduKBj3EN+vxT/fgf5+zqGo3yU5FlPnh05fWz6NNqP2Vy45Ere3+OJDBo9e77jSas936VGOHkiU+6i5FPhx3Kh4++1rMjBE0KdM5j8Hxfy1yv06XlCG9LEge4p0NtYQ8gb7t4Wp++mpElB392fIL9/mvwes//0W7ublOvD3Fep6vCXFJvgKUweejpSs8fzmTIX4jz19qQq8/rAKcBw4Li1g5JMgnTH3p/Rk42xDLXNrNFPEBDsZD6SCMcJbbg5gzZykHSfo3vkvQnpSWFz53ne0DWQTnpO0p8Uf8e8u1NJLr3vDkeZCjXy4KTh9Huleaie/hZGyj8f44LF7+e9kF13NSeprIE7ZX8UkHP0YQ4/TaRTTlf+BVSwMgHdWblTqJIwdcMO+/BhoU76QcRYJpQZJdRVTdF2qvwfwzowvZS+lHJyJSm7xuxQg3OUrKerz7/ZY147hpT5DpNnrPM7p5vu025zMY0pR9/Fqf2B5pXjbIbuLEU57jqhuZfvAunElu4CM1CUnzRwfk9U/LjB87t08nHS7QPxlODwFrKFHD7kyA+06I7PNVS/eYxxYPoQqKRYi2kBKbtF4Dn6zut7F5+LQjbAzZJuwCuZN2/KbawkcoHjmXp835kLamDSgSahMcYw9gealxaOO9JwRVw5jlNNjdUZnTjSIlgilOM2ms8K+anTBhdpje/HM7SuruNpXctzxzUC3StqoBujOz4DunR9rOc/B/pJN68RTB76zHUT+X278ilqIylH2fsvMHXT5zwOfyFltOq/D5JyWwIORRJhbEYfprRjSQYUb3vUSKmxvZukeMZU5VCTfL7VpM3IOtUi4HpOaEtaKbuLExi6PldSPs8qcTqF5P8yk4feQ18kv2s4EE5t+HKSh6oJbw9cJwHv1pRuyLIMUChKJemm2p1fyejD/LpQ52VCuR8w+Sv4zOAr42PROT1mTfo5Q2vPDMZIskE/MeV8jhJobjMKLM95K+kv5PdZ4m1hrgzcKeZeI7sx3EI8Z8ejFdxETBNwHLk7e5SmkLrpQtOodXKcpKRuHGM6U+6rinLvgu+OLbn+qQXSic3pAMfgNNzG4fsih1eFE5b6ztKCa7skE5jrcA2ad+wuFGDN98xLRw13LXoCuphTg5TdBR2LRfjO7MNsj2HMfKK33cYstqeIVVinR9f7HK2ZI2ITyhtiHMMIFR9X0Pk4+Xencu647ymVdif3AQ1DVolDp2Ovm0TpooqT7JNs9wyYhnKuZyT9X4l9WYX3M9fNaxfeY04VynF61JK7qNuR5U+CcYJnmPlKVUQO0gYkySK0GMyYUoYskW7zLGxqBjyZWVw0TxeOj8/MVotHySb3CaZcyPXQEHzidHFnYJOLQe/u642Mcv6KMwW2zcpIgELSiKL6xTFeFsqkMT2U7vi+j1S6q49L0YZvCfTSqpF2D2jmJXE+4QPnqC/Eevb3tIeact7M5KELB1D7L4kjxw145XSvPl9x6HFKQquZeik4B5ySvCfGYUy51Pdr7sSWFD6yWthSnZxkdV9Br3lVSmWLfxR+u4/520jGPDDGCmFDkiCxzGnHfprwRv18DZ5dXKxCVz87kDvbrriLrkeZy4GOA/1NjFO/JUjXzcOdYm/gNxFZd01BGUsPXCCAHOZ2lFbPR04lVgk9EutwnSb0R+n8dqTRPeAZN8ZaRqrPfT8UA5Ab2IJ/78a4C6sJksKHz463Vjwp1Mnt/JwiRJxuT9kWycUvZTMh4AQhTRsOFehpVRE5SLr319RAt0SOILGjKu+IKdBX0Ijq9DwtcB4o4/RPKdowRKDnC5cibUZp7nqS3/aQH24J1MbZTZzufYkCQlIjzUrv+lyhTp9KIDW2d1MiZXnEWQK925j8vvthF7JuaZ6PHhJoSkI9Ce3C89nOwHNUiQKBmtS5SSMASIP7hTrPYuhxj/9x0jiI4yCdap9i8p8s5Nc4j6foyUSXcBdgUmP+GGcI7TSTtpZobgwI2KmOyKD1lYDhP6dkIrkgShxlMECvy+Ml9Fohv6SE48PRAr00bpViSC6mLNRISzQpXKn48cLbdCSpfC2DLhzhCXoGaPHDKZn4NMoAXRpdrFTf64XvlJLk8Q+Ovy4XnMFBjDTumKVXAY2FEgfO+Z6LNA4eKUZhlMkswiqX2BVx2GhNoIFdFrakxGDmy5ggjR/ukBO/76FK32IU+Ln33U7cvPbDd+aBAVrcIA4Vnto2EM0lLZL6UNfgUIGFf61GSXuMz2cYMKLEuzE7zcKWgsll4bQQAppbvruq5h49wujqwJ2+Upt/k+L02lMIt7O1hsgcoeCAFqCqniWyxXVJqQ8X7mJrMmpqu8ePVJx8p430JGeZNngUeK4X6qCB4TS4UKBXy4aatYNHKahDmezTtjQupz8pNCQrNvxYoc6Q7ar0NJQ0rUGnDLQcF4q3DxM1MU6duEEmheS3Pa3BSjtjZ+wmCzVSzkNImbJLibmsgYFnrs8ZfAQcJFvqfwuU3Q19QNU6kH9GVphzMs+dvpwjvDilUSGVnBZ2BSKHSjhOoMkJA9NggXKMy2STLksyR91RcjrGiX8do4KnUFqprIQeaLXjq/OXgfLrUBHly8hWjk1gbdaBT0iRIOK/8f34HnRTG7M6XR4d9SlMm+N2p1EjjYMx0Ht5FSNKpnm+A7Q39rWTU7hJiv7o7JKro4QtKjjGGj31XSZ6NCp9cDa5nahAYo0eaHZpUecIdFm0H57kvZnNogtZ6Lcx5M/TyH67+ABZ2PczH230PLeHZ8EsZGiGcADqoe8g+aoouU77hn20E6aItvNZA/Xgvvjkx8UHL5ENIpmJa2rsBwD8P6drlQ78YrQ3AAAAAElFTkSuQmCC"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ダリウシュ vs ツァルキャン">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-04/DARIUSH_BENEIL_05-02.png?itok=XYi5-RxO" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-09/TSARUKYAN_ARMAN_09-19.png?itok=ykUeahf7" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-december-02-2023">ダリウシュ vs ツァルキヤン</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.12.03 / 09:00 JST"
+             data-main-card-timestamp="1701561600"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1701550800"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-december-02-2023">2023.12.03 / 09:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Moody Center
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Austin</span>, <span class="administrative-area">TX</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-december-02-2023#1181"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-november-18-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAABuCAYAAAAUJ+7mAAAYPElEQVR4nO1dCdRVxZGu9+DnZ5eIgIKDggtEEUwQRBZxSVwSxlFiJEaNGmdMZrK4xCwmZjRj5iTHJOrMZMw6WdziNuJxVzJGUVBBg4JbYoIKSZRF2dcf/n/Ozamb05TV1XXvq/veu/fd75w+yv+6q7fb3dXVtVSgtbAHAJyFPe6qsedVANgGANcpaR0EACcCwE6DEe8GACsB4AZF3pMBYD+jerNE1KflAHBbDXUMBoAh+N/+ANAP6fYBgPY6j0G0ttoA4F4AeKmO9f6t8lbCSQAwG/tb68Ku4ISNVdK6HFOnwXhHm8qNAPAJRd4XcFOxqDdLVHGjOjthHcMB4DAAOBQA9geAvXED7+ss7J4A0L3OY1DBPk0HgLl1rLcl8RNchFbpZwkGcbFx3Scq6hxpXGfW6bwE4zkLAB7JQZ96tPqiqwdeMZ60k5VtHoanhVW9G5HNC+HynC3sIYo+VZFdz0N/bm7alVAg7Gs8aTvxHqfBJcZ136+s99kcLeoHFP2J7snP56hPGq4qE1QLvJApjjamtwgA1ivzTjeu+zeKPAMAYJxxvVlCs7DvQJlGHrADAOY1qp2ttLCPNaZ3pzJftww2lV8r8hyFdecF/xdoZzSGM3LUn6cTbPwlasByYzZrhLIpk43rXa18zbg2RyzrCkV/5uaoP1G6spGLtVVO7Gn4DGKFpQDwmpLWccZ9iSXBIRxvXG+WeDhA+xCcwzwh1KdM0SoL+1Rjepo7boyjjOvWfDB7AcBo43qzxGMB2pr3+mbCZmTFS2QMa0nq6crmRooR2w3r3YZaVCGcmTO2dd9AfxbmrD8NPa1bBYMzmLi9lGP3D8b1ajWYHsjRIvhjoC8DjHUA6pEuaPTaagVW3FoaHmmQvanMa81CaqThkTrlCcb1ZonrA7SPyaHqs0aHP1N0b3QD6gDrN+QnEuS1Fvho7vaRzvQ6vALkAXcF2mgtowDkANZkpDv+HAC8kwHdRGgFI5ClCZ6mNIjeUx9V5BsPAM8Y1rsWAAah4oOEPoo8zYRtgbZEasCjjNobyVouxcW3NqOFHepPCQPsbXyfeitBk6zVSO9twQ/CWj4yuAn6VBcU/Y6tlV5robnjxviAcd2PGNPLA840bON8tGFvCRR9YX/UmJ6GBQeUXUw1rrsVn1BOMaSVRPegRBNjAN41LVm50HtrjCnG9S5qwQ+tD95XrcbQWl+/qVHkE3uqsRFEpEL6ujKvtbHCQ8b08oAphk4KOpAVbxkUeWFb33GTsMJJ3fuEELJ8KiI+aNinX5XS6uJgiTE7PEs5MqON640+yF4tOH+WTiKsbQWaHkVVUBkKAGMM6W1PcGpacwqRQswWRb6RSj3yZsAm1C/wIdKee59hOx/PybiYoagLe4oxvQfRDloDa00pjTS3NwD8PkeOFb6NiiI+TDFUnlqstPcuFIp6xz7NmJ72/bqagfRVwylMz5m3lHsCv1vqHyTRPSjRxGjP4JnrYGV3xxvXu1G5YK8yrjfLFNKjjvq71bD+PLlTMkMRT+xpxqfXnwHgRWVe69P6YWX0CmsLtiwRulpMwc3ZAh2t6qy/iAvb+o6r1TaL8PfGdd+kyBMp4rzfuN4sEVrYlpvjb0uHgsXB08Zs5LnKkRluXG902uymqPdzOWLDt6PEW8LjhvV9psXXQmEwIIOPcbhycM41rvcpZb1zcrSwQ7bsfYzlI8Na4JtnUTRW3PqOG92tlzWobo00PFK5PNy43iwRklBb+kL/PcpHWhJFW9hHGtO7MUHeRphpHo4RJfOCUJ+OMexHK5q5FhJVNNSwZB0nKAfqION6N6HSSQhX5IgN36CQdj9nWJ+1LkOJBmGS8Ye4JkE3rAVYWvXVPEXHCMXm2t+4vkGtvBCLxIpbv+UmMcy3vl/PUeTpl7P7dejZ0NIpRmS/vsqQXu5QJF1xSzM/SGgqab2phFzygrG9cowVGWz2FTxBQz7bLO/XpbeUgqC3sRpiF96bNZhmXO9iZb3XG9f7LQym326ceiru1u2oPmvVl8NafUEUBccZf+TLE4zLj43rvkZZ73rjesc38Fs4qkFzV1gU5Y5tfcdNol9syUKCko0cb/zMtR59bjcK5TOXMYqysK3fkLU+vCPnhvsZ1tup1E23vtM/1uAgA5bz1/ILuygYhhZQVqzcxgTWRZ80Zoe1Dvesg+5d1MBvoRfqxVv1ZZ8G9qVpUIQT+wzjfsxN4PjOWhKvcQrQ3qCY21lhluHrzMsA8EYD+9I0KMLCtlYjTWKmaR3wT7Owj0BJsxXeSWBvngU+YkizfOYqCLobP5N0JbBttlYjfU1Z7zeM6/2vBn4KFQyOZ9WXmQ3sSwlDWEfcSMLGXWRc9w+V9f7OuN4swtRqMcGwHy1rycUh76y4tTQ8icngJcZ1a6S5EZdwoGGdkSzhSUN6SWEpoyh6HLpEyLtKqfX7dSRhvxWdA76KT0BV51Tog/67v4C+yy2heTu37u/8BkfIsOQW9kT5yBfRFrsjo8XeHbUct2ZA2wx5DnzfB+9nWW1OG5yPI17YfTPQzwY0V9Q4yJ8NACcb1vtVVCVtBCIB4LqMxnNDhgu7goH4m9pXeZ5P7EkZt7+eDgw00twK6qVbIskLgDUmZLSoI2Q5d8vyEIAgz/cSbSytPEBjphmZaA407MuaBH7VsoBlUPt64tY8NDKvC7tqzJI2Ep0KJ3+QgfT6SbxeNAKVDFw11wv35aGReV3YQwvkIeNOvBOGYP0CcIsxvSQYAgB7NbD+tFiOevVNj7wu7LYmaIMVNKzdEGMNu07cUBqFvMp2cmNgkteF/Sd0+Jd3ROFx71b04STjzWxBg8fvTZSI5w1JvOo0FHld2NFTxv80QTtqxdUYHSMEa2l4o0+eyBrvZw1uQxo08hWhZdDb2Nyv3un1BBvrmwVSI43RnoE7qyxTIw1lEiPPz12bAeDUJmhHGmxCPfdORdmDUavKCo1WI42xzdiyK2uUlmN1RvTs9VaOdv4FCb2uXGhc/0NNNn8noMyk2eetKM+rucJ7AOAXeBI264exCAMLJIV1UIDLmnBiI02xn6BArVnnb0ATjJMaedYV5xCFaP0QOiMYg+/du9fheawThWCb0T58Nd6LlwLACwCwEA0TkqI3lrP6qCKZxEQ0cGlGRP2cAQCTcf6G1Wn+QrgN3WDlBkVb2Bx6GUZw9KELF41Gwp0EkS51f0NLop34xJYn1GP+QtiYszErUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlEiKpSul70VOmxtwwTVsilznzSKzmkU6oXDdvFW2alyvpRxE0xiGtQYFQuRXs42a0PFqCVlnafvfC4PSxAUGMKtL8rZKOW24StsulV0G1U9fxfxvqgwPJmwXieVgqhNiJfHAPxvmrokrrs4q2jEV12k4sF6nVPkPyjMex7lTSjuKyHYDfcBuZz3hs12AYpYUCnci//KHO/HZDt8ShEFGj8dvb6firn4e/7Y9+4HYGaEioYL9WJi24JWMLmo2MP6w/CPk/rGjz+WiIUWvbook7VzlOXxTo3JN00NGRoY/eTrJJndoAyyfJ0SJnsbVHoL+9mTIPkDx7MXke9NA7GwBeStinJ3FD4sDN70fD0/hXp5VuGXcjsHSmcZWiLX/D4XX4QK4ndQ4V8m4OnLpRXKhXMmjjTYqxkj6is5MMOuIqgd5/kLw/qsM8uWmNYH11sKdMyMHCB5ky55E8s5g85zO0fllD31Z4LOvmkHw78BSXMJ6hfzXmP9BwPl7EtarGpXX4SM4gjZFOPt/uDGj6l2U7JWf3w4Rym/E0SopnBJrUzdGrdZgnN9GNxcXXUpSJcB1TZhjJczuzuCgn8D2D/lFzzTacRzePxsnhJQztOCjhNw3n4z8hoRvYYxPkTYNOJvD7SQKdOzx/n5SS3U2CCwDgRk9+iS39NX4USTBIiOsVXY2edv49Au9q9YTkkcW3AUo+16J74sfI3x4nd/jejEeTOWgHH+MQALiYob8AZSab8G7ciYt1lCfo4d7k31PxXu9Cs7CPIf/e5gSKqJJ5jBEt1H0YH+yLBBPhRJFKemNDstz5qU+pkLNC38m3og6n1AbhGiCxfhcmGXSEdGemoYEur0PfafKxoNI1qgsdKHB4P5P3ApKPY9VpWOMbmTzcQnfxA6bMZ0meK5g8Ida3G+PdR+sp9jFS7i+aQtoT+zQhgFoU8fLlGo3hK0zg92lC+xZ4Tr5zBIEH4ODej3fgzVhv/DLQhf8/CD14TBLotOGuzYWglULdpnGIJ9GjH0c3lOZ2CWU6cVwPE/IscMbDhwqeHD4nBPSEopgJAD9VlqMhhrk87ti2MdzeK86d1ofXmb9T6TiVD2xipPUUM5mDyMfxudgNOQQXpi6QbxF23n+xrMiBJDD6d0+ZlUKZlzCihhazBVqrPQKj0UKZtBEafyfQnJCS5kSB5jxFeQ1+HjixH/bQeIDkW8XkWRjIM5Wp72uKNnPyCXdzO4j5XSNMvYEppwlR9TGm3DmKcuoTWwovo4kUmQbSjs+dfB8RBqsD775JFtf/Cp4plyJNiiSnqwZDUWLKYW2K9/AYM4XfqJwjLehY7MBFEnN2E/H7c3UWejAnFB233ZFdd0FPMU4eFOKWeuKpvoyUcbkfjq4mBhoN+PCCZ8OioMLkrfhdmuAQYdddZlUJwe5CnVs914JbhTLfTNGGiwV63/eUuVsowz3FhPApgd5dKejFWCzQnV4D3RgHMHSvRQGR+zd63TlSMW4zmTyfJnn+SH5fr/Chr/Gxfxehu02h5LWvZyxCaGMCKqg3XU1npJMzq1Ax0sf1hEciKJ2Wv0jRhonCb1zExYHoIdWHNGNFd2wXGhaQwxDcrDlsNoqZzc3fVXhSSflCd2fwhDty80TS7ZHk91sUWoOh36sM5xpvVFVPAg/Xp7knT2YEtKZBC+4Tdnfpw6sF0v2Wuyu9T8i/NEU7+gbuhxzLf5qQPyRc4dAPtco4eh3IOqbB6UI7qXZXWjxM6Maul79O/k6fyuYFOMIKPnu5eZ4neT7D9EujoRjCEQzdt1F77E+e9AbzsrMD5zaEK5n6pMNmF4Tu2FXmzuMiiyBlbRgdwofZzN+tuYpBuDtSzqCCklPufiRxDGnuRVMFjmpBDS6JJW6ISp/TYKCjeBEj1iugi/AInO8OfM2gH+6vyL8no9zBBX23pW/kO1GX3sVM1ADs8vSvgpvxlc7fuPndXXi282GBMh467cc6pY69CtydJ06vWFVCINW5xFOGSlLddHpG7aSQdNonp6D3XYHeN1K2sQeqgProjk5J1wX37j4Df98NWV73t/ie/XmmHH2S497p3bGt4Cnq/s7FKXsqwJF1MXKURxRlNOlKpj0U/fBkd+nVIlN5F34sNPRfLStywCkAxIlTRWxnlOvdRLV2ssA+Qv1rUwZmeFagKXEHEo4SaC42GpfvE7oduKBj3EN+vxT/fgf5+zqGo3yU5FlPnh05fWz6NNqP2Vy45Ere3+OJDBo9e77jSas936VGOHkiU+6i5FPhx3Kh4++1rMjBE0KdM5j8Hxfy1yv06XlCG9LEge4p0NtYQ8gb7t4Wp++mpElB392fIL9/mvwes//0W7ublOvD3Fep6vCXFJvgKUweejpSs8fzmTIX4jz19qQq8/rAKcBw4Li1g5JMgnTH3p/Rk42xDLXNrNFPEBDsZD6SCMcJbbg5gzZykHSfo3vkvQnpSWFz53ne0DWQTnpO0p8Uf8e8u1NJLr3vDkeZCjXy4KTh9Huleaie/hZGyj8f44LF7+e9kF13NSeprIE7ZX8UkHP0YQ4/TaRTTlf+BVSwMgHdWblTqJIwdcMO+/BhoU76QcRYJpQZJdRVTdF2qvwfwzowvZS+lHJyJSm7xuxQg3OUrKerz7/ZY147hpT5DpNnrPM7p5vu025zMY0pR9/Fqf2B5pXjbIbuLEU57jqhuZfvAunElu4CM1CUnzRwfk9U/LjB87t08nHS7QPxlODwFrKFHD7kyA+06I7PNVS/eYxxYPoQqKRYi2kBKbtF4Dn6zut7F5+LQjbAzZJuwCuZN2/KbawkcoHjmXp835kLamDSgSahMcYw9gealxaOO9JwRVw5jlNNjdUZnTjSIlgilOM2ms8K+anTBhdpje/HM7SuruNpXctzxzUC3StqoBujOz4DunR9rOc/B/pJN68RTB76zHUT+X278ilqIylH2fsvMHXT5zwOfyFltOq/D5JyWwIORRJhbEYfprRjSQYUb3vUSKmxvZukeMZU5VCTfL7VpM3IOtUi4HpOaEtaKbuLExi6PldSPs8qcTqF5P8yk4feQ18kv2s4EE5t+HKSh6oJbw9cJwHv1pRuyLIMUChKJemm2p1fyejD/LpQ52VCuR8w+Sv4zOAr42PROT1mTfo5Q2vPDMZIskE/MeV8jhJobjMKLM95K+kv5PdZ4m1hrgzcKeZeI7sx3EI8Z8ejFdxETBNwHLk7e5SmkLrpQtOodXKcpKRuHGM6U+6rinLvgu+OLbn+qQXSic3pAMfgNNzG4fsih1eFE5b6ztKCa7skE5jrcA2ad+wuFGDN98xLRw13LXoCuphTg5TdBR2LRfjO7MNsj2HMfKK33cYstqeIVVinR9f7HK2ZI2ITyhtiHMMIFR9X0Pk4+Xencu647ymVdif3AQ1DVolDp2Ovm0TpooqT7JNs9wyYhnKuZyT9X4l9WYX3M9fNaxfeY04VynF61JK7qNuR5U+CcYJnmPlKVUQO0gYkySK0GMyYUoYskW7zLGxqBjyZWVw0TxeOj8/MVotHySb3CaZcyPXQEHzidHFnYJOLQe/u642Mcv6KMwW2zcpIgELSiKL6xTFeFsqkMT2U7vi+j1S6q49L0YZvCfTSqpF2D2jmJXE+4QPnqC/Eevb3tIeact7M5KELB1D7L4kjxw145XSvPl9x6HFKQquZeik4B5ySvCfGYUy51Pdr7sSWFD6yWthSnZxkdV9Br3lVSmWLfxR+u4/520jGPDDGCmFDkiCxzGnHfprwRv18DZ5dXKxCVz87kDvbrriLrkeZy4GOA/1NjFO/JUjXzcOdYm/gNxFZd01BGUsPXCCAHOZ2lFbPR04lVgk9EutwnSb0R+n8dqTRPeAZN8ZaRqrPfT8UA5Ab2IJ/78a4C6sJksKHz463Vjwp1Mnt/JwiRJxuT9kWycUvZTMh4AQhTRsOFehpVRE5SLr319RAt0SOILGjKu+IKdBX0Ijq9DwtcB4o4/RPKdowRKDnC5cibUZp7nqS3/aQH24J1MbZTZzufYkCQlIjzUrv+lyhTp9KIDW2d1MiZXnEWQK925j8vvthF7JuaZ6PHhJoSkI9Ce3C89nOwHNUiQKBmtS5SSMASIP7hTrPYuhxj/9x0jiI4yCdap9i8p8s5Nc4j6foyUSXcBdgUmP+GGcI7TSTtpZobgwI2KmOyKD1lYDhP6dkIrkgShxlMECvy+Ml9Fohv6SE48PRAr00bpViSC6mLNRISzQpXKn48cLbdCSpfC2DLhzhCXoGaPHDKZn4NMoAXRpdrFTf64XvlJLk8Q+Ovy4XnMFBjDTumKVXAY2FEgfO+Z6LNA4eKUZhlMkswiqX2BVx2GhNoIFdFrakxGDmy5ggjR/ukBO/76FK32IU+Ln33U7cvPbDd+aBAVrcIA4Vnto2EM0lLZL6UNfgUIGFf61GSXuMz2cYMKLEuzE7zcKWgsll4bQQAppbvruq5h49wujqwJ2+Upt/k+L02lMIt7O1hsgcoeCAFqCqniWyxXVJqQ8X7mJrMmpqu8ePVJx8p430JGeZNngUeK4X6qCB4TS4UKBXy4aatYNHKahDmezTtjQupz8pNCQrNvxYoc6Q7ar0NJQ0rUGnDLQcF4q3DxM1MU6duEEmheS3Pa3BSjtjZ+wmCzVSzkNImbJLibmsgYFnrs8ZfAQcJFvqfwuU3Q19QNU6kH9GVphzMs+dvpwjvDilUSGVnBZ2BSKHSjhOoMkJA9NggXKMy2STLksyR91RcjrGiX8do4KnUFqprIQeaLXjq/OXgfLrUBHly8hWjk1gbdaBT0iRIOK/8f34HnRTG7M6XR4d9SlMm+N2p1EjjYMx0Ht5FSNKpnm+A7Q39rWTU7hJiv7o7JKro4QtKjjGGj31XSZ6NCp9cDa5nahAYo0eaHZpUecIdFm0H57kvZnNogtZ6Lcx5M/TyH67+ABZ2PczH230PLeHZ8EsZGiGcADqoe8g+aoouU77hn20E6aItvNZA/Xgvvjkx8UHL5ENIpmJa2rsBwD8P6drlQ78YrQ3AAAAAElFTkSuQmCC"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="アレン vs クレイグ">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/ALLEN_BRENDAN_10-10.png?itok=7CmV_HHr" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-09/CRAIG_PAUL_09-06.png?itok=4vppe1VU" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-november-18-2023">アレン vs クレイグ</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.11.19 / 07:00 JST"
+             data-main-card-timestamp="1700344800"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1700334000"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-november-18-2023">2023.11.19 / 07:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-november-18-2023#1172"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-295">  <div class="svg-58184cc5689f3cbb3987a2c96d7fc552 e-event-logo--dark"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 774.32 465.64"><defs><style>.svg-58184cc5689f3cbb3987a2c96d7fc552 .cls-1, .svg-58184cc5689f3cbb3987a2c96d7fc552 .cls-2 {fill: #010000;}
+.svg-58184cc5689f3cbb3987a2c96d7fc552 .cls-2 {fill-rule: evenodd;}</style></defs><g><path class="cls-1" d="M315.23,387.77l48.97-15.43c5.39-1.96,8.81-4.9,10.28-10.04l4.41-16.65c2.94-9.79-.25-14.2-11.51-14.2h-14.45c-11.02,0-16.41,4.41-19.34,14.2l-2.69,10.28h-29.14l3.43-12.24c6.12-22.28,19.83-36,48.48-36h26.45c24.73,0,34.77,13.71,28.4,36l-5.39,19.1c-4.9,17.63-15.92,27.91-34.04,33.55l-49.22,15.43c-5.39,1.71-8.57,4.9-10.04,9.79l-4.65,17.63h78.6l-6.86,24.98h-107.99l12-43.1c4.9-17.63,16.16-27.92,34.28-33.3Z"/><path class="cls-1" d="M413.42,429.4l1.96-7.1h28.89l-1.47,5.38c-2.94,9.55,.49,13.96,11.51,13.96h20.32c11.02,0,16.65-4.41,20.08-16.41l5.14-19.1h-44.57c-22.77,0-31.59-13.47-25.22-37.22l6.12-22.04c6.86-24.73,20.32-38.44,49.22-38.44h32.08c24.98,0,34.77,13.71,27.91,38.44l-22.28,80.07c-6.86,24.73-20.08,38.44-49.22,38.44h-32.08c-24.73,0-34.53-13.71-28.4-36Zm57.05-46.28h35.75l9.55-34.28c3.43-12,.24-16.65-11.02-16.65h-20.08c-11.02,0-16.65,4.41-19.83,16.65l-5.14,17.87c-3.43,12.25-.24,16.41,10.77,16.41Z"/><path class="cls-1" d="M591.2,441.64h22.77c11.02,0,16.65-4.41,20.08-16.41l5.14-18.36c3.19-12,.25-16.41-10.77-16.41h-61.71l22.28-80.56h98.68l-6.86,24.98h-69.79l-9.06,32.57h41.63c22.77,0,31.34,13.71,24.98,37.46l-6.12,22.04c-6.86,24.98-20.08,38.69-48.97,38.69l-34.77-.24c-22.28,0-31.83-13.47-26.2-36l2.45-8.32h28.89l-1.71,6.61c-2.45,9.55,.49,13.96,9.06,13.96Z"/></g><g><g><polygon class="cls-1" points="529.58 56.62 340.42 56.62 356.12 0 545.28 0 529.58 56.62"/><polygon class="cls-1" points="401.4 152.26 503.05 152.26 518.75 95.64 329.59 95.64 284.75 257.36 372.25 257.36 401.4 152.26"/></g><path class="cls-2" d="M615.93,198.82c-2.3-1.3-3.72-3.03-4.3-5.22-.15-.65-.23-1.31-.19-2,.03-.6,.13-1.24,.3-1.88l34.27-123.56c.99-3.6,2.72-6.06,5.22-7.44,2.49-1.38,6.77-2.11,12.91-2.11h94.47L774.32,0h-132.46c-24.14,0-40.96,2.86-50.77,8.3-9.8,5.43-16.59,15.08-20.51,29.26l-48.89,176.19c-.76,2.62-1.15,5.23-1.29,7.71-.15,2.72,.15,5.28,.75,7.85,2.26,8.59,7.85,15.39,16.89,20.52,8.9,4.98,20.07,7.54,33.34,7.54h138.67l15.7-56.62h-101.35c-3.38,0-6.22-.65-8.48-1.91Z"/><path class="cls-2" d="M93.17,0L33.9,213.74c-.76,2.62-1.15,5.23-1.29,7.71-.15,2.72,.15,5.28,.75,7.85,2.26,8.59,7.85,15.39,16.89,20.52,8.9,4.98,20.07,7.54,33.34,7.54l98.63-.02c24.14,0,40.96-2.86,50.77-8.3,9.8-5.43,16.59-15.08,20.51-29.26L314.48,0h-87.5s-53.03,191.19-53.03,191.19c-1,3.6-2.72,6.06-5.22,7.44-2.49,1.38-6.77,2.11-12.91,2.11h-15.06c-3.38,0-6.22-.65-8.48-1.92-2.3-1.3-3.72-3.03-4.3-5.22-.15-.65-.23-1.31-.19-2,.03-.6,.13-1.24,.3-1.87L180.68,0H93.17Z"/></g><polygon class="cls-1" points="276.09 308.65 7.85 308.67 0 336.97 268.25 336.95 276.09 308.65"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="プロハースカ vs ペレイラ">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-04/PROCHAZKA_JIRI_04-11.png?itok=UXRq9ipK" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-10/PEREIRA_ALEX_10-04.png?itok=kLCGhqNq" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-295">プロハースカ vs ペレイラ</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.11.12 / 12:00 JST"
+             data-main-card-timestamp="1699758000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1699750800"
+             data-early-card=""
+             data-early-card-timestamp="1699743600"
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-295">2023.11.12 / 12:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Madison Square Garden
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">New York</span>, <span class="administrative-area">NY</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-295#1164"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-november-04-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,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"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="アウメイダ vs ルイス">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-02/ALMEIDA_JAILTON_02-07.png?itok=nmIRhCK0" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-06/LEWIS_DERRICK_06-14.png?itok=3qz55Duv" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-november-04-2023">アウメイダ vs ルイス</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.11.05 / 10:00 JST"
+             data-main-card-timestamp="1699146000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1699135200"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-november-04-2023">2023.11.05 / 10:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Ibirapuera Arena
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">São Paulo</span><br>
+<span class="country">Brazil</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-november-04-2023#1171"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-294">  <div class="svg-f7a5031d75ba2256e5399a2e43e667b1 e-event-logo--dark"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 789.77 474.68"><defs><style>.svg-f7a5031d75ba2256e5399a2e43e667b1 .cls-1, .svg-f7a5031d75ba2256e5399a2e43e667b1 .cls-2 {fill: #010000;}
+.svg-f7a5031d75ba2256e5399a2e43e667b1 .cls-2 {fill-rule: evenodd;}</style></defs><g><path class="cls-1" d="M318.32,395.5l49.95-15.73c5.49-2,8.99-4.99,10.49-10.24l4.5-16.98c3-9.99-.25-14.48-11.74-14.48h-14.74c-11.24,0-16.73,4.49-19.73,14.48l-2.75,10.49h-29.72l3.5-12.49c6.24-22.73,20.23-36.71,49.45-36.71h26.97c25.22,0,35.47,13.99,28.97,36.71l-5.49,19.48c-4.99,17.98-16.23,28.47-34.72,34.21l-50.2,15.74c-5.49,1.75-8.74,4.99-10.24,9.99l-4.75,17.98h80.17l-6.99,25.47h-110.14l12.24-43.96c4.99-17.98,16.48-28.47,34.97-33.97Z"/><path class="cls-1" d="M418.47,437.96l2-7.24h29.47l-1.5,5.49c-3,9.74,.5,14.24,11.74,14.24h20.73c11.24,0,16.98-4.5,20.48-16.74l5.25-19.48h-45.46c-23.23,0-32.22-13.74-25.72-37.96l6.24-22.48c6.99-25.22,20.73-39.21,50.2-39.21h32.72c25.47,0,35.47,13.98,28.47,39.21l-22.73,81.67c-6.99,25.22-20.48,39.21-50.2,39.21h-32.72c-25.22,0-35.21-13.99-28.97-36.71Zm58.19-47.2h36.46l9.74-34.97c3.5-12.24,.25-16.98-11.24-16.98h-20.48c-11.24,0-16.98,4.49-20.23,16.98l-5.25,18.23c-3.5,12.49-.25,16.74,10.99,16.74Z"/><path class="cls-1" d="M661.98,418.23h16.98l-6.49,23.48h-16.98l-8.74,31.72h-29.47l8.74-31.72h-74.67l6.49-23.48,92.66-101.9h39.96l-28.47,101.9Zm-29.22,0c6.74-23.48,13.74-46.95,20.98-70.43l-63.69,70.43h42.71Z"/></g><g><g><polygon class="cls-1" points="540.15 57.75 347.21 57.75 363.22 0 556.16 0 540.15 57.75"/><polygon class="cls-1" points="409.4 155.3 513.09 155.3 529.1 97.55 336.17 97.55 290.43 262.49 379.68 262.49 409.4 155.3"/></g><path class="cls-2" d="M628.22,202.79c-2.35-1.33-3.8-3.09-4.38-5.32-.16-.67-.24-1.33-.2-2.04,.03-.61,.13-1.26,.31-1.91l34.96-126.03c1.01-3.68,2.78-6.18,5.32-7.59,2.54-1.41,6.91-2.15,13.17-2.15h96.36L789.77,0h-135.11c-24.62,0-41.78,2.92-51.78,8.46-10,5.54-16.93,15.38-20.92,29.84l-49.86,179.7c-.77,2.67-1.17,5.34-1.31,7.86-.16,2.77,.16,5.38,.77,8.01,2.31,8.76,8,15.69,17.23,20.93,9.08,5.08,20.47,7.69,34.01,7.69h141.43l16.02-57.75h-103.37c-3.45,0-6.34-.66-8.65-1.95Z"/><path class="cls-2" d="M95.03,0L34.57,218.01c-.77,2.67-1.17,5.34-1.31,7.86-.15,2.77,.16,5.38,.77,8.01,2.31,8.76,8,15.69,17.23,20.93,9.08,5.08,20.47,7.69,34.01,7.69l100.6-.02c24.62,0,41.78-2.92,51.78-8.46,10-5.54,16.93-15.38,20.92-29.84L320.75,0h-89.25s-54.09,195-54.09,195c-1.02,3.68-2.78,6.18-5.32,7.59-2.54,1.41-6.91,2.15-13.17,2.15h-15.36c-3.44,0-6.34-.66-8.65-1.95-2.35-1.33-3.8-3.09-4.38-5.32-.16-.67-.23-1.33-.19-2.04,.03-.61,.13-1.26,.31-1.91L184.28,0H95.03Z"/></g><polygon class="cls-1" points="279.76 314.81 8.01 314.83 0 343.69 271.76 343.68 279.76 314.81"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="マハチェフ vs ヴォルカノフスキー">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=IabJoyhX" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/VOLKANOVSKI_ALEXANDER_BELT_10-24.png?itok=AzG1ZqrW" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-294">マカチェフ vs ボルカノフスキー2</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.10.22 / 03:00 JST"
+             data-main-card-timestamp="1697911200"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1697896800"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-294">2023.10.22 / 03:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Etihad Arena
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="administrative-area">Abu Dhabi</span><br>
+<span class="country">United Arab Emirates</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-294#1151"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-october-14-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAABuCAYAAAAUJ+7mAAAYPElEQVR4nO1dCdRVxZGu9+DnZ5eIgIKDggtEEUwQRBZxSVwSxlFiJEaNGmdMZrK4xCwmZjRj5iTHJOrMZMw6WdziNuJxVzJGUVBBg4JbYoIKSZRF2dcf/n/Ozamb05TV1XXvq/veu/fd75w+yv+6q7fb3dXVtVSgtbAHAJyFPe6qsedVANgGANcpaR0EACcCwE6DEe8GACsB4AZF3pMBYD+jerNE1KflAHBbDXUMBoAh+N/+ANAP6fYBgPY6j0G0ttoA4F4AeKmO9f6t8lbCSQAwG/tb68Ku4ISNVdK6HFOnwXhHm8qNAPAJRd4XcFOxqDdLVHGjOjthHcMB4DAAOBQA9geAvXED7+ss7J4A0L3OY1DBPk0HgLl1rLcl8RNchFbpZwkGcbFx3Scq6hxpXGfW6bwE4zkLAB7JQZ96tPqiqwdeMZ60k5VtHoanhVW9G5HNC+HynC3sIYo+VZFdz0N/bm7alVAg7Gs8aTvxHqfBJcZ136+s99kcLeoHFP2J7snP56hPGq4qE1QLvJApjjamtwgA1ivzTjeu+zeKPAMAYJxxvVlCs7DvQJlGHrADAOY1qp2ttLCPNaZ3pzJftww2lV8r8hyFdecF/xdoZzSGM3LUn6cTbPwlasByYzZrhLIpk43rXa18zbg2RyzrCkV/5uaoP1G6spGLtVVO7Gn4DGKFpQDwmpLWccZ9iSXBIRxvXG+WeDhA+xCcwzwh1KdM0SoL+1Rjepo7boyjjOvWfDB7AcBo43qzxGMB2pr3+mbCZmTFS2QMa0nq6crmRooR2w3r3YZaVCGcmTO2dd9AfxbmrD8NPa1bBYMzmLi9lGP3D8b1ajWYHsjRIvhjoC8DjHUA6pEuaPTaagVW3FoaHmmQvanMa81CaqThkTrlCcb1ZonrA7SPyaHqs0aHP1N0b3QD6gDrN+QnEuS1Fvho7vaRzvQ6vALkAXcF2mgtowDkANZkpDv+HAC8kwHdRGgFI5ClCZ6mNIjeUx9V5BsPAM8Y1rsWAAah4oOEPoo8zYRtgbZEasCjjNobyVouxcW3NqOFHepPCQPsbXyfeitBk6zVSO9twQ/CWj4yuAn6VBcU/Y6tlV5robnjxviAcd2PGNPLA840bON8tGFvCRR9YX/UmJ6GBQeUXUw1rrsVn1BOMaSVRPegRBNjAN41LVm50HtrjCnG9S5qwQ+tD95XrcbQWl+/qVHkE3uqsRFEpEL6ujKvtbHCQ8b08oAphk4KOpAVbxkUeWFb33GTsMJJ3fuEELJ8KiI+aNinX5XS6uJgiTE7PEs5MqON640+yF4tOH+WTiKsbQWaHkVVUBkKAGMM6W1PcGpacwqRQswWRb6RSj3yZsAm1C/wIdKee59hOx/PybiYoagLe4oxvQfRDloDa00pjTS3NwD8PkeOFb6NiiI+TDFUnlqstPcuFIp6xz7NmJ72/bqagfRVwylMz5m3lHsCv1vqHyTRPSjRxGjP4JnrYGV3xxvXu1G5YK8yrjfLFNKjjvq71bD+PLlTMkMRT+xpxqfXnwHgRWVe69P6YWX0CmsLtiwRulpMwc3ZAh2t6qy/iAvb+o6r1TaL8PfGdd+kyBMp4rzfuN4sEVrYlpvjb0uHgsXB08Zs5LnKkRluXG902uymqPdzOWLDt6PEW8LjhvV9psXXQmEwIIOPcbhycM41rvcpZb1zcrSwQ7bsfYzlI8Na4JtnUTRW3PqOG92tlzWobo00PFK5PNy43iwRklBb+kL/PcpHWhJFW9hHGtO7MUHeRphpHo4RJfOCUJ+OMexHK5q5FhJVNNSwZB0nKAfqION6N6HSSQhX5IgN36CQdj9nWJ+1LkOJBmGS8Ye4JkE3rAVYWvXVPEXHCMXm2t+4vkGtvBCLxIpbv+UmMcy3vl/PUeTpl7P7dejZ0NIpRmS/vsqQXu5QJF1xSzM/SGgqab2phFzygrG9cowVGWz2FTxBQz7bLO/XpbeUgqC3sRpiF96bNZhmXO9iZb3XG9f7LQym326ceiru1u2oPmvVl8NafUEUBccZf+TLE4zLj43rvkZZ73rjesc38Fs4qkFzV1gU5Y5tfcdNol9syUKCko0cb/zMtR59bjcK5TOXMYqysK3fkLU+vCPnhvsZ1tup1E23vtM/1uAgA5bz1/ILuygYhhZQVqzcxgTWRZ80Zoe1Dvesg+5d1MBvoRfqxVv1ZZ8G9qVpUIQT+wzjfsxN4PjOWhKvcQrQ3qCY21lhluHrzMsA8EYD+9I0KMLCtlYjTWKmaR3wT7Owj0BJsxXeSWBvngU+YkizfOYqCLobP5N0JbBttlYjfU1Z7zeM6/2vBn4KFQyOZ9WXmQ3sSwlDWEfcSMLGXWRc9w+V9f7OuN4swtRqMcGwHy1rycUh76y4tTQ8icngJcZ1a6S5EZdwoGGdkSzhSUN6SWEpoyh6HLpEyLtKqfX7dSRhvxWdA76KT0BV51Tog/67v4C+yy2heTu37u/8BkfIsOQW9kT5yBfRFrsjo8XeHbUct2ZA2wx5DnzfB+9nWW1OG5yPI17YfTPQzwY0V9Q4yJ8NACcb1vtVVCVtBCIB4LqMxnNDhgu7goH4m9pXeZ5P7EkZt7+eDgw00twK6qVbIskLgDUmZLSoI2Q5d8vyEIAgz/cSbSytPEBjphmZaA407MuaBH7VsoBlUPt64tY8NDKvC7tqzJI2Ep0KJ3+QgfT6SbxeNAKVDFw11wv35aGReV3YQwvkIeNOvBOGYP0CcIsxvSQYAgB7NbD+tFiOevVNj7wu7LYmaIMVNKzdEGMNu07cUBqFvMp2cmNgkteF/Sd0+Jd3ROFx71b04STjzWxBg8fvTZSI5w1JvOo0FHld2NFTxv80QTtqxdUYHSMEa2l4o0+eyBrvZw1uQxo08hWhZdDb2Nyv3un1BBvrmwVSI43RnoE7qyxTIw1lEiPPz12bAeDUJmhHGmxCPfdORdmDUavKCo1WI42xzdiyK2uUlmN1RvTs9VaOdv4FCb2uXGhc/0NNNn8noMyk2eetKM+rucJ7AOAXeBI264exCAMLJIV1UIDLmnBiI02xn6BArVnnb0ATjJMaedYV5xCFaP0QOiMYg+/du9fheawThWCb0T58Nd6LlwLACwCwEA0TkqI3lrP6qCKZxEQ0cGlGRP2cAQCTcf6G1Wn+QrgN3WDlBkVb2Bx6GUZw9KELF41Gwp0EkS51f0NLop34xJYn1GP+QtiYszErUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlSpQoUaJEiRIlEiKpSul70VOmxtwwTVsilznzSKzmkU6oXDdvFW2alyvpRxE0xiGtQYFQuRXs42a0PFqCVlnafvfC4PSxAUGMKtL8rZKOW24StsulV0G1U9fxfxvqgwPJmwXieVgqhNiJfHAPxvmrokrrs4q2jEV12k4sF6nVPkPyjMex7lTSjuKyHYDfcBuZz3hs12AYpYUCnci//KHO/HZDt8ShEFGj8dvb6firn4e/7Y9+4HYGaEioYL9WJi24JWMLmo2MP6w/CPk/rGjz+WiIUWvbook7VzlOXxTo3JN00NGRoY/eTrJJndoAyyfJ0SJnsbVHoL+9mTIPkDx7MXke9NA7GwBeStinJ3FD4sDN70fD0/hXp5VuGXcjsHSmcZWiLX/D4XX4QK4ndQ4V8m4OnLpRXKhXMmjjTYqxkj6is5MMOuIqgd5/kLw/qsM8uWmNYH11sKdMyMHCB5ky55E8s5g85zO0fllD31Z4LOvmkHw78BSXMJ6hfzXmP9BwPl7EtarGpXX4SM4gjZFOPt/uDGj6l2U7JWf3w4Rym/E0SopnBJrUzdGrdZgnN9GNxcXXUpSJcB1TZhjJczuzuCgn8D2D/lFzzTacRzePxsnhJQztOCjhNw3n4z8hoRvYYxPkTYNOJvD7SQKdOzx/n5SS3U2CCwDgRk9+iS39NX4USTBIiOsVXY2edv49Au9q9YTkkcW3AUo+16J74sfI3x4nd/jejEeTOWgHH+MQALiYob8AZSab8G7ciYt1lCfo4d7k31PxXu9Cs7CPIf/e5gSKqJJ5jBEt1H0YH+yLBBPhRJFKemNDstz5qU+pkLNC38m3og6n1AbhGiCxfhcmGXSEdGemoYEur0PfafKxoNI1qgsdKHB4P5P3ApKPY9VpWOMbmTzcQnfxA6bMZ0meK5g8Ida3G+PdR+sp9jFS7i+aQtoT+zQhgFoU8fLlGo3hK0zg92lC+xZ4Tr5zBIEH4ODej3fgzVhv/DLQhf8/CD14TBLotOGuzYWglULdpnGIJ9GjH0c3lOZ2CWU6cVwPE/IscMbDhwqeHD4nBPSEopgJAD9VlqMhhrk87ti2MdzeK86d1ofXmb9T6TiVD2xipPUUM5mDyMfxudgNOQQXpi6QbxF23n+xrMiBJDD6d0+ZlUKZlzCihhazBVqrPQKj0UKZtBEafyfQnJCS5kSB5jxFeQ1+HjixH/bQeIDkW8XkWRjIM5Wp72uKNnPyCXdzO4j5XSNMvYEppwlR9TGm3DmKcuoTWwovo4kUmQbSjs+dfB8RBqsD775JFtf/Cp4plyJNiiSnqwZDUWLKYW2K9/AYM4XfqJwjLehY7MBFEnN2E/H7c3UWejAnFB233ZFdd0FPMU4eFOKWeuKpvoyUcbkfjq4mBhoN+PCCZ8OioMLkrfhdmuAQYdddZlUJwe5CnVs914JbhTLfTNGGiwV63/eUuVsowz3FhPApgd5dKejFWCzQnV4D3RgHMHSvRQGR+zd63TlSMW4zmTyfJnn+SH5fr/Chr/Gxfxehu02h5LWvZyxCaGMCKqg3XU1npJMzq1Ax0sf1hEciKJ2Wv0jRhonCb1zExYHoIdWHNGNFd2wXGhaQwxDcrDlsNoqZzc3fVXhSSflCd2fwhDty80TS7ZHk91sUWoOh36sM5xpvVFVPAg/Xp7knT2YEtKZBC+4Tdnfpw6sF0v2Wuyu9T8i/NEU7+gbuhxzLf5qQPyRc4dAPtco4eh3IOqbB6UI7qXZXWjxM6Maul79O/k6fyuYFOMIKPnu5eZ4neT7D9EujoRjCEQzdt1F77E+e9AbzsrMD5zaEK5n6pMNmF4Tu2FXmzuMiiyBlbRgdwofZzN+tuYpBuDtSzqCCklPufiRxDGnuRVMFjmpBDS6JJW6ISp/TYKCjeBEj1iugi/AInO8OfM2gH+6vyL8no9zBBX23pW/kO1GX3sVM1ADs8vSvgpvxlc7fuPndXXi282GBMh467cc6pY69CtydJ06vWFVCINW5xFOGSlLddHpG7aSQdNonp6D3XYHeN1K2sQeqgProjk5J1wX37j4Df98NWV73t/ie/XmmHH2S497p3bGt4Cnq/s7FKXsqwJF1MXKURxRlNOlKpj0U/fBkd+nVIlN5F34sNPRfLStywCkAxIlTRWxnlOvdRLV2ssA+Qv1rUwZmeFagKXEHEo4SaC42GpfvE7oduKBj3EN+vxT/fgf5+zqGo3yU5FlPnh05fWz6NNqP2Vy45Ere3+OJDBo9e77jSas936VGOHkiU+6i5FPhx3Kh4++1rMjBE0KdM5j8Hxfy1yv06XlCG9LEge4p0NtYQ8gb7t4Wp++mpElB392fIL9/mvwes//0W7ublOvD3Fep6vCXFJvgKUweejpSs8fzmTIX4jz19qQq8/rAKcBw4Li1g5JMgnTH3p/Rk42xDLXNrNFPEBDsZD6SCMcJbbg5gzZykHSfo3vkvQnpSWFz53ne0DWQTnpO0p8Uf8e8u1NJLr3vDkeZCjXy4KTh9Huleaie/hZGyj8f44LF7+e9kF13NSeprIE7ZX8UkHP0YQ4/TaRTTlf+BVSwMgHdWblTqJIwdcMO+/BhoU76QcRYJpQZJdRVTdF2qvwfwzowvZS+lHJyJSm7xuxQg3OUrKerz7/ZY147hpT5DpNnrPM7p5vu025zMY0pR9/Fqf2B5pXjbIbuLEU57jqhuZfvAunElu4CM1CUnzRwfk9U/LjB87t08nHS7QPxlODwFrKFHD7kyA+06I7PNVS/eYxxYPoQqKRYi2kBKbtF4Dn6zut7F5+LQjbAzZJuwCuZN2/KbawkcoHjmXp835kLamDSgSahMcYw9gealxaOO9JwRVw5jlNNjdUZnTjSIlgilOM2ms8K+anTBhdpje/HM7SuruNpXctzxzUC3StqoBujOz4DunR9rOc/B/pJN68RTB76zHUT+X278ilqIylH2fsvMHXT5zwOfyFltOq/D5JyWwIORRJhbEYfprRjSQYUb3vUSKmxvZukeMZU5VCTfL7VpM3IOtUi4HpOaEtaKbuLExi6PldSPs8qcTqF5P8yk4feQ18kv2s4EE5t+HKSh6oJbw9cJwHv1pRuyLIMUChKJemm2p1fyejD/LpQ52VCuR8w+Sv4zOAr42PROT1mTfo5Q2vPDMZIskE/MeV8jhJobjMKLM95K+kv5PdZ4m1hrgzcKeZeI7sx3EI8Z8ejFdxETBNwHLk7e5SmkLrpQtOodXKcpKRuHGM6U+6rinLvgu+OLbn+qQXSic3pAMfgNNzG4fsih1eFE5b6ztKCa7skE5jrcA2ad+wuFGDN98xLRw13LXoCuphTg5TdBR2LRfjO7MNsj2HMfKK33cYstqeIVVinR9f7HK2ZI2ITyhtiHMMIFR9X0Pk4+Xencu647ymVdif3AQ1DVolDp2Ovm0TpooqT7JNs9wyYhnKuZyT9X4l9WYX3M9fNaxfeY04VynF61JK7qNuR5U+CcYJnmPlKVUQO0gYkySK0GMyYUoYskW7zLGxqBjyZWVw0TxeOj8/MVotHySb3CaZcyPXQEHzidHFnYJOLQe/u642Mcv6KMwW2zcpIgELSiKL6xTFeFsqkMT2U7vi+j1S6q49L0YZvCfTSqpF2D2jmJXE+4QPnqC/Eevb3tIeact7M5KELB1D7L4kjxw145XSvPl9x6HFKQquZeik4B5ySvCfGYUy51Pdr7sSWFD6yWthSnZxkdV9Br3lVSmWLfxR+u4/520jGPDDGCmFDkiCxzGnHfprwRv18DZ5dXKxCVz87kDvbrriLrkeZy4GOA/1NjFO/JUjXzcOdYm/gNxFZd01BGUsPXCCAHOZ2lFbPR04lVgk9EutwnSb0R+n8dqTRPeAZN8ZaRqrPfT8UA5Ab2IJ/78a4C6sJksKHz463Vjwp1Mnt/JwiRJxuT9kWycUvZTMh4AQhTRsOFehpVRE5SLr319RAt0SOILGjKu+IKdBX0Ijq9DwtcB4o4/RPKdowRKDnC5cibUZp7nqS3/aQH24J1MbZTZzufYkCQlIjzUrv+lyhTp9KIDW2d1MiZXnEWQK925j8vvthF7JuaZ6PHhJoSkI9Ce3C89nOwHNUiQKBmtS5SSMASIP7hTrPYuhxj/9x0jiI4yCdap9i8p8s5Nc4j6foyUSXcBdgUmP+GGcI7TSTtpZobgwI2KmOyKD1lYDhP6dkIrkgShxlMECvy+Ml9Fohv6SE48PRAr00bpViSC6mLNRISzQpXKn48cLbdCSpfC2DLhzhCXoGaPHDKZn4NMoAXRpdrFTf64XvlJLk8Q+Ovy4XnMFBjDTumKVXAY2FEgfO+Z6LNA4eKUZhlMkswiqX2BVx2GhNoIFdFrakxGDmy5ggjR/ukBO/76FK32IU+Ln33U7cvPbDd+aBAVrcIA4Vnto2EM0lLZL6UNfgUIGFf61GSXuMz2cYMKLEuzE7zcKWgsll4bQQAppbvruq5h49wujqwJ2+Upt/k+L02lMIt7O1hsgcoeCAFqCqniWyxXVJqQ8X7mJrMmpqu8ePVJx8p430JGeZNngUeK4X6qCB4TS4UKBXy4aatYNHKahDmezTtjQupz8pNCQrNvxYoc6Q7ar0NJQ0rUGnDLQcF4q3DxM1MU6duEEmheS3Pa3BSjtjZ+wmCzVSzkNImbJLibmsgYFnrs8ZfAQcJFvqfwuU3Q19QNU6kH9GVphzMs+dvpwjvDilUSGVnBZ2BSKHSjhOoMkJA9NggXKMy2STLksyR91RcjrGiX8do4KnUFqprIQeaLXjq/OXgfLrUBHly8hWjk1gbdaBT0iRIOK/8f34HnRTG7M6XR4d9SlMm+N2p1EjjYMx0Ht5FSNKpnm+A7Q39rWTU7hJiv7o7JKro4QtKjjGGj31XSZ6NCp9cDa5nahAYo0eaHZpUecIdFm0H57kvZnNogtZ6Lcx5M/TyH67+ABZ2PczH230PLeHZ8EsZGiGcADqoe8g+aoouU77hn20E6aItvNZA/Xgvvjkx8UHL5ENIpmJa2rsBwD8P6drlQ78YrQ3AAAAAElFTkSuQmCC"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ユサフ vs バハボーザ">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2025-05/YUSUFF_SODIQ_05-17.png?itok=EhZw7AJE" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-08/BARBOZA_EDSON_08-15.png?itok=WZPTlIo9" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-october-14-2023">ユサフ vs バルボーザ</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.10.15 / 08:00 JST"
+             data-main-card-timestamp="1697324400"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1697313600"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-october-14-2023">2023.10.15 / 08:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-october-14-2023#1179"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-october-07-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,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"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="ドーソン vs グリーン">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/DAWSON_GRANT_10-24.png?itok=NfgZp_sD" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-10/GREEN_KING_10-03.png?itok=EYLBf3I0" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-october-07-2023">ドーソン vs グリーン</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.10.08 / 08:00 JST"
+             data-main-card-timestamp="1696719600"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1696708800"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-october-07-2023">2023.10.08 / 08:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-october-07-2023#1178"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+    <div class="l-listing__item views-row">
+
+
+
+
+        
+
+                  
+    
+
+
+
+
+
+<article class="c-card-event--result">
+    <div class="c-card-event--result__header">
+      <div class="c-card-event--result__logo">
+                        <a href="/event/ufc-fight-night-september-23-2023">  <div class="svg-5799d3e565962d48a10bef1d863e7631 e-event-logo--dark"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="114" viewBox="0 0 250 114"><image x="2" y="2" width="246" height="110" xlink:href="data:img/png;base64,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"/></svg></div></a>
+                    </div>
+    </div>
+
+    <div class="c-card-event__fight-container">
+          <div class="c-card-event__narrow-fight">
+          
+
+
+<div class="c-carousel-wrapper c-carousel--white-bg">
+
+  
+      
+  
+  <div class="c-carousel--white-bg__content carousel__inline" data-carousel="inline"
+    >
+                      <div class="c-carousel__item">
+                            <div class="fight-card-tickets" data-fight-card="main" data-fight-card-name="Main Card" data-fight-label="フィジエフ vs ガムロット">
+
+  <article class="c-card--red-blue">
+    <div class="field field--name-red-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-06/FIZIEV_RAFAEL_06-27.png?itok=yRroI9R7" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+
+    <div class="field field--name-blue-corner field--type-entity-reference field--label-hidden field__item">
+      <div  class="layout__region layout__region--content">
+        <div class="field field--name-image field--type-entity-reference field--label-hidden field__item">
+          <img src="https://ufc.com/images/styles/event_results_athlete_headshot/s3/2026-08/GAMROT_MATEUSZ_08-08.png?itok=J4c_l0VS" width="256" height="160" loading="lazy" class="image-style-event-results-athlete-headshot" />
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+              </div>
+                                </div>
+
+    
+  </div>
+        </div>
+      </div>
+
+    <div class="c-card-event--result__info">
+              <h3 class="c-card-event--result__headline"><a href="/event/ufc-fight-night-september-23-2023">フィジエフ vs ガムロット</a></h3>
+
+        <div class="c-card-event--result__date tz-change-data"
+             data-locale="ja"
+             data-format="Y.m.d / H:i T"
+             data-main-card="2023.09.24 / 08:00 JST"
+             data-main-card-timestamp="1695510000"
+             data-prelims-card=""
+             data-prelims-card-timestamp="1695499200"
+             data-early-card=""
+             data-early-card-timestamp=""
+             data-card-event-title="メインカード" >
+          <a href="/event/ufc-fight-night-september-23-2023">2023.09.24 / 08:00 JST / メインカード</a>
+                  </div>
+
+        
+                  <div class="e-p--small c-card-event--result__location">
+            <div class="field field--name-venue field--type-entity-reference field--label-hidden field__item"><div class="taxonomy-term taxonomy-term--type-venue taxonomy-term--view-mode-default ds-1col clearfix">
+
+  
+
+  <div>
+    
+            <div class="field field--name-taxonomy-term-title field--type-ds field--label-hidden field__item"><h5>
+  Meta APEX
+</h5>
+</div>
+      
+            <div class="field field--name-location field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="locality">Las Vegas</span>, <span class="administrative-area">NV</span><br>
+<span class="country">United States</span></p></div>
+      
+  </div>
+
+</div>
+
+</div>
+      </div>
+        
+        
+                  </div>
+
+  <div class="c-card-event--result__actions">
+
+      
+
+
+
+<a
+
+        href="/event/ufc-fight-night-september-23-2023#1170"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合結果を見る
+  </span></a>
+  
+      
+
+
+
+<a
+
+        href="//ufcfightpass.com"
+      
+    class="e-button--white "
+
+  
+  
+  ><span class="e-button__text">
+    
+    試合映像を見る
+  </span></a>
+  
+  </div>
+
+</article>
+
+
+
+</div>
+</div>
+
+
+
+
+
+      </div>
+</div>
+  
+      
+<ul class="js-pager__items pager" data-drupal-views-infinite-scroll-pager>
+  <li class="pager__item">
+    <a class="button" href="?page=17" title="Load more items" rel="next">もっと読み込む</a>
+  </li>
+</ul>
+
+  
+        </div>
+
+
+
+
+
+
+      </div>
+    </details>
+  </div>
+</div>
+
+  </div>
+
+
+<div class="block block-dfp block-dfp-ad90cf719f-f9ab-4922-8a5f-a456f8355f38 dfp-ad-block">
+  <div class="dfp-ad__headline e-t2">
+    ピックアップ
+  </div>
+  
+  <div class="dfp-ad__title e-tag">
+    スポンサー
+  </div>
+  
+  <div class="dfp-ad__content">
+    
+          <div class="freestar-slot-definition">
+      <!-- Tag ID: ufc-com_event_landing_banner -->
+<div align="center" data-freestar-ad="__280x280 __1440x360" id="jp-ufc-com_event_landing_banner">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "jp-ufc-com_event_landing_banner", slotId: "jp-ufc-com_event_landing_banner", targeting: {site: location.hostname.replace('www.','')} });
+  </script>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="views-element-container block block-views block-views-blockeck-promos-brand-voice">
+  
+    
+      
+
+  <div><div class="view view-eck-promos view-id-eck_promos view-display-id-brand_voice js-view-dom-id-a6e4b34325243fd20ef8f125675b3e155fcff0788a4c0a09b5a9295b39c4d244">
+  
+    
+      
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+<div class="views-element-container block block-views block-views-blockcontent-footer-new-block-2">
+  
+    
+      
+
+  <div><div class="view view-content-footer-new view-id-content_footer_new view-display-id-block_2 js-view-dom-id-59be6fbd113cc115687805f0717072672f8873b851013982bcc15a41c6d47385">
+  
+    
+      
+  
+          </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+  <aside class="l-page_filters">
+    
+
+<div class="facet-filter-top-nav">
+  <div class="facet-filter__inner">
+    <span class="facet-tnav-label">Filter <span class="facet-tnav-label--white"> 524 Athletes </span></span>
+  </div>
+  <div class="facet-filter__close">
+    
+  
+    
+  <span class="e-icon"><svg class="e-icon__svg"
+                          aria-hidden="true"
+        ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#close"></use></svg></span>
+  </div>
+</div>
+<div class="facets-blks-wrp">
+  <div class="filter-shade"></div>
+  <div class="sidebar-first-inner-wrp">
+      </div>
+  <div class="c-facets-abutton">
+    
+
+
+
+<a
+
+    
+    class="e-button--small "
+
+  
+  
+  ><span class="e-button__text">
+    
+    Apply
+  </span></a>
+  </div>
+</div>
+  </aside>
+
+</div>
+
+  </div>
+
+
+    </div>
+
+      </div>
+
+  </div>
+
+      </div>
+  
+</div>
+    </div>
+
+        
+    
+          <div class="l-page__footer">
+        
+
+<footer class="c-site-footer" role="contentinfo">
+  <div class="c-site-footer__main">
+    <a class="c-site-footer__logo" href="/">
+      <svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#ufc-logo"></use>
+      </svg>
+    </a>
+    
+<div id="block-ufc-localization">
+  
+    
+      
+
+<div class="ufc-block-localization__title e-t6">
+  <div class="block-ufc-localization-title">Japanese</div>
+  <svg>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/themes/custom/ufc/assets/svg/sprite-ui.svg#triangle-down"></use>
+  </svg>
+
+</div>
+
+<div class="ufc-block-localization__links" aria-hidden="true">
+  <ul class="links"><li><a href="https://www.ufc.com/language/switch/en">English</a></li><li><a href="https://kr.ufc.com">Korea</a></li><li><a href="https://www.ufcespanol.com">Latin America</a></li><li><a href="https://us.ufcespanol.com">USA Espanol</a></li><li><a href="https://www.ufc.com/language/switch/fr">フランス</a></li><li><a href="https://www.ufc.com.br">ブラジル</a></li><li><a href="https://ufc.ru">ロシア連邦</a></li><li><a href="http://ufc.cn">中国</a></li></ul>
+</div>
+  </div>
+
+    <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer" class="c-menu-footer">
+            
+  <h2 class="u-visually--hidden" id="block-footer-menu">Footer</h2>
+
+  
+                          <ul class="c-menu-footer__menu--level-1">
+                            <li class="c-menu-footer__item--level-1">
+          <a href="/faq" target="_self" class="c-menu-footer__link--level-1">ヘルプ</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-1">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-1">法的事項</a>
+                                            <ul class="c-menu-footer__menu--level-2">
+                            <li class="c-menu-footer__item--level-2">
+          <a href="/terms" target="_self" class="c-menu-footer__link--level-2">利用規約</a>
+                  </li>
+                      <li class="c-menu-footer__item--level-2">
+          <a href="/privacy-policy" target="_self" class="c-menu-footer__link--level-2">個人情報保護方針</a>
+                  </li>
+            </ul>
+      
+                  </li>
+            </ul>
+      
+
+  
+</nav>
+
+  </div>
+  <div class="c-site-footer__copyright">
+    
+  </div>
+</footer>
+      </div>
+      </main>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"events","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja","currentQuery":{"page":"16"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJx1kQGOhCAMRS8kcpG9A6lQFAepocUZ9_TLgGYn2WxC4L_fUNoCzglBOjVcYvSZkgwT2IcRqmvXH9qs_G9I8CWDO1AfwSENPmB0Zs5Udo0RN0wyLpTDd00P0QhMPEQ4qYhxgS0dmE9NCS3FYacYtctlhzi-tYohPXjgkwW3-ijjULzVUxGhxE1byE7hUV-5kQpjbOBDFMyqItoeniNNEJVl_sS104KZmghJgZVAqVGrQblMu6Nnt2pTRW0QOu0w97q4DmCCrHzILJcjqDxRLeOXFwR3cZtGFQYc64zOTJBSj5nWFOt-fIWe0fgwL7IDs4Yiba5wV2oiWYiXoS-oOVf4G804v28dAZ-s2z5u5ErEbhlY4WVmFH2Lyw_Jh1SbMGzz-7Oaq25XdfcHek7qJw","theme":"ufc","theme_token":null},"ajaxTrustedUrl":[],"back_to_top":{"back_to_top_button_trigger":100,"back_to_top_prevent_on_mobile":true,"back_to_top_prevent_in_admin":true,"back_to_top_button_type":"text","back_to_top_button_text":"Back to top"},"accountSettings":{"apiUrl":"https:\/\/ufc.api.onvesper.com","realm":"dce.ufc","app":"dice-id","apiKey":"39d5cb34-799c-4967-8038-fc240bf2984b","loginText":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","ctaText":"Continue watching","ctaLink":"\/account\/login","createAccount":"\/account\/signup","heartbeatApiUrl":"https:\/\/ufc.api.onvesper.com\/prod","hideAccountIcon":true,"hideAddressFields":false,"errorTextGeneral":"There was a problem while loading content. Please try again.","errorTextEntitlement":"Unlock MORE of your inner combat sports fan with UFC Fight Pass! Fighting is what we live for. And no one brings you MORE live fights, new shows, and events across multiple combat sports from around the world. With a never-ending supply of fighting in every discipline, there`s always something new to watch. Leave it to the world`s authority in MMA to bring you the Ultimate 24\/7 platform for MORE combat sports, UFC Fight Pass!","entitlementCtaText":"Upgrade licence","entitlementCtaLink":"\/account\/signup","settings":{"videoPreviewInfo":"videoPreviewInfo"}},"ufcLiveStatsApi":{"baseUrl":"https:\/\/d29dxerjsp82wz.cloudfront.net\/api\/v3"},"contentLocalization":"ja","cacheableGlobalsTimestamp":1794959093,"breakpoints":{"ufc.images.mobile":"","ufc.images.tablet":"(min-width: 700px)","ufc.images.desktop":"(min-width: 1024px)","ufc.images.extra-large":"(min-width: 1440px)"},"widthBreakpoint":1,"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:d6d0483f77d75981a00e45ed5b7026820621429364362d1ceb4f594b46d71363":{"view_name":"events_upcoming_past","view_display_id":"past","view_args":"","view_path":"\/events","view_base_path":null,"view_dom_id":"d6d0483f77d75981a00e45ed5b7026820621429364362d1ceb4f594b46d71363","pager_element":0},"views_dom_id:ec14c9be46a3249278e622a655ff909122768a69c59dc734b2e878e9344fd36c":{"view_name":"events_upcoming_past","view_display_id":"upcoming","view_args":"","view_path":"\/events","view_base_path":null,"view_dom_id":"ec14c9be46a3249278e622a655ff909122768a69c59dc734b2e878e9344fd36c","pager_element":0}}},"viewsAjaxGet":{"events_upcoming_past":"events_upcoming_past"},"disableAnimationsUrlParam":"disableAnimations","disableAnimations":false,"user":{"uid":0,"permissionsHash":"2debcf4fc9b389060fb51611b5f94c566ef01446f01a2612e35e6a8f5af6a6f0"}}</script>
+<script src="/sites/default/files/js/js_3lwO-FEebKbGsloZSgrMq5bf2PBAR6hSPNQGEiJ_NXY.js?scope=footer&amp;delta=0&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_kgy_uVzkvnKNOsqmei_cx4Fxdnx010Xd7lhdmnvc-O4.js?scope=footer&amp;delta=2&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" defer async></script>
+<script src="//www.youtube.com/iframe_api" defer async></script>
+<script src="/sites/default/files/js/js_3mOFEIPPa0tRqWzihqO4wLJsxBt3b-2oC1koDvbMf_0.js?scope=footer&amp;delta=5&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+<script src="//unpkg.com/aos@next/dist/aos.js"></script>
+<script src="/sites/default/files/js/js_kk2vCC3hbGq0mB1_rgYock7xB7Zxytc9d0OXFSy7SYU.js?scope=footer&amp;delta=7&amp;language=ja&amp;theme=ufc&amp;include=eJxNjwFuwyAMRS8UykV2B2TAJE4pjrBJt52-CBJtEhL_P2P7AzEqQ_mxcIlHqlx08RCeTrmfw_7TbpclnmhPishLIszRrZXbYTHjC4s-Nq702ydAdgpelpaC9U2Vy9QBajR49qe35SaYh0mUFavpFsMsr5k9ZLPP3g0rD5GpPMXEykfkdxmoL2_mBTTdASsOIT2oh2oSVdGLKJrE3Df9-Q0hXv5O7SCKrRidh1JmzY3cYuf1RXOiS7RueoCIhabj_6DEZTkJ3-Jgh2-3otpbXJxKotJ3OwmVc7aDmpuaST91dKAZ"></script>
+
+  </body>
+</html>
