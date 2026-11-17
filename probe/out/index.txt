@@ -84,3 +84,25 @@
 14 https://ja.wikipedia.org/wiki/GLADIATOR_(%E6%A0%BC%E9%97%98%E6%8A%80%E5%A4%A7%E4%BC%9A) 45214
 15 https://ja.wikipedia.org/wiki/THE_OUTSIDER 170766
 16 https://ja.wikipedia.org/wiki/HEAT_(%E6%A0%BC%E9%97%98%E6%8A%80%E5%A4%A7%E4%BC%9A) 45362
+1 https://fighting-nexus.net/ 297223
+2 https://fighting-nexus.net/result/ 467817
+3 https://fighting-nexus.net/results/ 2814
+4 https://fighting-nexus.net/event/ 2814
+5 https://fighting-nexus.net/sitemap.xml 2814
+6 https://fighting-nexus.net/wp-sitemap.xml 2814
+7 https://efight.jp/result 148093
+8 https://efight.jp/result/page/2 147990
+9 https://efight.jp/result-20140928_66179 78212
+10 https://gonkaku.jp/articles/12964 41933
+11 https://gonkaku.jp/?s=NEXUS 42734
+12 https://www.tapology.com/fightcenter/promotions/501-gladiator-japan 1368702
+13 https://www.tapology.com/fightcenter/promotions/237-zst-zst 800530
+14 https://www.tapology.com/fightcenter/promotions/1947-pound-for-pound-fighting-championship-pfpfc 746919
+15 https://www.tapology.com/fightcenter/promotions/1081-fighting-nexus-fn 1100707
+16 https://zst.jp/2907 
+17 http://zst.jp/ 1410
+18 https://www.boutreview.com/3/news/item_105062.html 165412
+19 https://pfc-mma.com/ 
+20 https://www.pfc-nagoya.com/ 
+21 https://krossxover.jp/ 
+22 https://www.kross-over.com/ 
