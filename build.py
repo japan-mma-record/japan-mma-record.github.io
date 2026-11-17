@@ -109,8 +109,9 @@ def load():
                 main['venue'] = o.get('venue', '')
             events.pop(o['event_id'], None)
     # 柔術・グラップリング・エキシビションだけの大会は載せない（MMAの記録なので）
+    gp = set(site.get('grappling_promotions') or [])   # QUINTET などグラップリングの団体は、そのまま載せる
     for k in list(bouts):
-        if bouts[k] and all(b.get('rule') for b in bouts[k]):
+        if bouts[k] and all(b.get('rule') for b in bouts[k]) and (events.get(k) or {}).get('promotion') not in gp:
             del bouts[k]
     for k in bouts:
         for b in bouts[k]:
