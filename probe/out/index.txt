@@ -2156,3 +2156,4 @@
 30 https://mmaplanet.jp/?s=%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C+JML&paged=2 90628
 31 https://mmaplanet.jp/?s=%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C+Grabaka 70859
 32 https://mmaplanet.jp/?s=%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C+Grabaka&paged=2 90636
+1 https://www.boutreview.com/3/reports/item_33726.html 164618
