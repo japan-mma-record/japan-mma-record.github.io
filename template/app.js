@@ -20,6 +20,7 @@ function winnerLine(b){
   const t = b[5]==='d' ? '引き分け' : b[5]==='nc' ? '無効試合' : '勝敗不明';
   return `${esc(b[2])}<span class="def">　vs　</span>${esc(b[4])}<span class="def">　${t}</span>${u}`;
 }
+function rtag(b){ return b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : ''; }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
 function buildIndex(){
@@ -87,15 +88,15 @@ function promoStats(){
 function vEvent(k){
   const e = D.events.find(x=>x[0]===k); if(!e) return notFound();
   const bs = D.bouts[k] || [];
-  const ko = bs.filter(b=>/^T?KO/.test(b[6])).length, sub = bs.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = bs.filter(b=>/^判定/.test(b[6])).length;
+  const mb = bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定/.test(b[6])).length;
   const rows = bs.map(b=>{
     let A=[b[1],b[2]], B=[b[3],b[4]], r='<span class="rs o">—</span>';
     if(b[5]===2){ [A,B]=[B,A]; }
     if(b[5]===1||b[5]===2) r='<span class="rs w">WIN</span>'; else if(b[5]==='d') r='<span class="rs o">引分</span>'; else if(b[5]==='nc') r='<span class="rs o">無効</span>';
-    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}</td><td class="num">${esc(rt(b))}</td><td>${esc(b[9])}</td></tr>`; }).join('');
+    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}${rtag(b)}</td><td class="num">${esc(rt(b))}</td><td>${esc(b[9])}</td></tr>`; }).join('');
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div>
-    <div class="kpis"><div><p class="k">試合</p><p class="v">${bs.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>
+    <div class="kpis"><div><p class="k">試合</p><p class="v">${mb.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>
     <div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>${rows}</tbody></table></div>
     <p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
 }
@@ -106,8 +107,9 @@ function vFighter(id){
   const rows = list.map(([e,b,side])=>{ pr.add(e[2]);
     const opp = side===1 ? [b[3],b[4]] : [b[1],b[2]];
     let r='<span class="rs o">—</span>';
-    if(b[5]===side){w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){nc++; r='<span class="rs o">無効</span>';}
-    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${esc(b[6])}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
+    const cnt = !b[11];
+    if(b[5]===side){cnt&&w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){cnt&&l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){cnt&&d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){cnt&&nc++; r='<span class="rs o">無効</span>';}
+    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${esc(b[6])}${rtag(b)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
   const nm = f[0] || f[1];
   const span = list.length ? `${list[list.length-1][0][1].slice(0,4)}年〜${list[0][0][1].slice(0,4)}年` : '';
   const st = '';

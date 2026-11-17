@@ -72,6 +72,46 @@ def load():
         for b in bouts.get(f['event_id'], []):
             if str(b.get('match_no')) == str(f['match_no']) and f['field'] in b:
                 b[f['field']] = f['value']
+    # 同じ団体・同じ日の大会で、出典が同じもの、または「海外の記録サイト」だけが出典のものは、1つの大会にまとめる（同じ試合は重ねない）
+    byday = collections.defaultdict(list)
+    for e in events.values():
+        byday[(e['promotion'], e['date'])].append(e)
+    for evs in byday.values():
+        if len(evs) < 2:
+            continue
+        def src(e):
+            return {t for t in (e.get('sources') or '').split() if t.startswith('http')}
+        def jname(e):   # 日本の資料の名前（「ROMAN - …」のような海外式の名前でないもの）を優先
+            return (bool(re.search(r'[ぁ-んァ-ヶ一-龥]', e['name'])), ' - ' not in e['name'], len(src(e)))
+        main = max(evs, key=jname)
+        for o in evs:
+            if o is main:
+                continue
+            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name']:
+                continue
+            main_id = main['event_id']
+            have = {frozenset((norm(x['fighter1']), norm(x['fighter2']))) for x in bouts[main_id]}
+            have |= {frozenset((x.get('fighter1_id'), x.get('fighter2_id'))) for x in bouts[main_id] if x.get('fighter1_id') and x.get('fighter2_id')}
+            for x in bouts.pop(o['event_id'], []):
+                k1 = frozenset((norm(x['fighter1']), norm(x['fighter2'])))
+                k2 = frozenset((x.get('fighter1_id'), x.get('fighter2_id')))
+                if k1 in have or (x.get('fighter1_id') and x.get('fighter2_id') and k2 in have):
+                    continue
+                x['event_id'] = main_id
+                bouts[main_id].append(x)
+                have.add(k1)
+            toks = (main.get('sources') or '').split()
+            for t in (o.get('sources') or '').split():
+                if t not in toks:
+                    toks.append(t)
+            main['sources'] = ' '.join(toks)
+            if not main.get('venue'):
+                main['venue'] = o.get('venue', '')
+            events.pop(o['event_id'], None)
+    # 柔術・グラップリング・エキシビションだけの大会は載せない（MMAの記録なので）
+    for k in list(bouts):
+        if bouts[k] and all(b.get('rule') for b in bouts[k]):
+            del bouts[k]
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
@@ -147,7 +187,7 @@ def main():
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or ''])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
@@ -193,9 +233,10 @@ def main():
                 n = html.escape(b[f'fighter{k}'])
                 return f'<a class="u nb" href="../f/{fid}.html">{n}</a>' if fid and fid in fout else f'<span class="nb">{n}</span>'
             unc = '<span class="unc">未確定</span>' if b.get('note') == 'uncertain' else ''
+            rtag = f'<span class="unc">{html.escape(b["rule"])}・戦績に数えない</span>' if b.get('rule') else ''
             rows.append(f'<tr><td class="num">{html.escape(str(b.get("match_no") or ""))}</td><td><span class="rs {"w" if res == "WIN" else "o"}">{res}</span></td>'
                         f'<td>{fl(a)}</td><td><span class="def">{"def." if res == "WIN" else "vs"}</span> {fl(c)}{unc}</td>'
-                        f'<td>{html.escape(b.get("method") or "")}</td><td class="num">{html.escape(rt(b))}</td><td>{html.escape(b.get("weight") or "")}</td></tr>')
+                        f'<td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td><td>{html.escape(b.get("weight") or "")}</td></tr>')
         srcs = [s for s in (e.get('sources') or '').split(' ') if s]
         src_html = '　'.join(f'<a href="{html.escape(s)}" rel="noopener">{html.escape(re.sub("^https?://", "", urllib.parse.unquote(s))[:70])}</a>' if s.startswith('http') else html.escape(s) for s in srcs)
         pn = pname(promos, e['promotion'])
@@ -240,16 +281,18 @@ def main():
         for e, b, side in lst:
             win = b.get('winner') or ''
             ok = 'o'
-            if win == str(side): w += 1; r = '勝'; ok = 'w'
-            elif win in ('1', '2'): l += 1; r = '負'; ok = 'l'
-            elif win == 'draw': d += 1; r = '分'
-            elif win == 'nc': nc += 1; r = '無効'
+            c1 = 0 if b.get('rule') else 1          # 柔術・グラップリング・エキシビションは戦績に数えない
+            if win == str(side): w += c1; r = '勝'; ok = 'w'
+            elif win in ('1', '2'): l += c1; r = '負'; ok = 'l'
+            elif win == 'draw': d += c1; r = '分'
+            elif win == 'nc': nc += c1; r = '無効'
             else: r = '—'
+            rtag = f'<span class="unc">{html.escape(b["rule"])}・戦績に数えない</span>' if b.get('rule') else ''
             ok2 = '2' if side == 1 else '1'
             oid = b.get(f'fighter{ok2}_id'); on = html.escape(b[f'fighter{ok2}'])
             opp = f'<a class="u nb" href="{oid}.html">{on}</a>' if oid and oid in fout else f'<span class="nb">{on}</span>'
             rows.append((e['date'], f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
-                        f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
+                        f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
         note = '※日本で開かれた大会と日本の団体の大会の試合だけの戦績です。海外の大会での試合は含みません'
         if fid in wrec:
