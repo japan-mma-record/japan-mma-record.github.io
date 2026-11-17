@@ -2097,3 +2097,5 @@
 35 https://www.boutreview.com/3/?s=%E7%9D%80%E5%BF%83 148321
 36 https://www.boutreview.com/3/?s=BOUT%20%E7%B5%90%E6%9E%9C 177646
 1 https://www.boutreview.com/3/reports/item_76048.html 175037
+1 https://www.boutreview.com/3/reports/item_29406.html 164884
+2 https://www.boutreview.com/3/news/item_29406.html 164884
