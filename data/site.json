@@ -2,8 +2,24 @@
  "base_url": "https://japan-mma-record.github.io/",
  "custom_domain": "",
  "grappling_promotions": [
+  "quintet",
   "adcc",
-  "cji",
-  "quintet"
+  "cji"
+ ],
+ "world_promotions": [
+  "ufc",
+  "pfl",
+  "bellator",
+  "one",
+  "ksw",
+  "cage_warriors",
+  "lfa",
+  "oktagon",
+  "aca",
+  "brave_cf",
+  "wec"
+ ],
+ "first_promotions": [
+  "rizin"
  ]
 }

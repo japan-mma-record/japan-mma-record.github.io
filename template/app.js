@@ -148,9 +148,16 @@ function vEvents(){
     <div class="list">${out}</div></main>`;
 }
 function vPromotions(){
-  const P = promoStats().sort((a,b)=>b.n-a.n);
-  return `<main class="wrap"><div class="sh"><h1>団体</h1><span class="aside" style="font-weight:500">${P.length}団体</span></div>
-    <div class="pgrid">${P.map(p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会・${fmt(p.bo)}試合</span></a>`).join('')}</div></main>`;
+  const all = promoStats(), by = Object.fromEntries(all.map(p=>[p.k,p]));
+  const W = (D.meta.world||[]).filter(k=>by[k]), G = (D.meta.grappling||[]).filter(k=>by[k]), F = (D.meta.first||[]).filter(k=>by[k]);
+  const other = new Set([...W,...G,...F]);
+  const JP = [...F.map(k=>by[k]), ...all.filter(p=>!other.has(p.k)).sort((a,b)=>b.n-a.n)];
+  const card = p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会・${fmt(p.bo)}試合</span></a>`;
+  const sec = (t,arr,note)=> arr.length ? `<h2 class="sec">${t}</h2>${note?`<p class="sub" style="font-size:13px;margin:0 0 10px">${note}</p>`:''}<div class="pgrid">${arr.map(card).join('')}</div>` : '';
+  return `<main class="wrap"><div class="sh"><h1>団体</h1><span class="aside" style="font-weight:500">${all.length}団体</span></div>
+    ${sec('日本の団体', JP)}
+    ${sec('世界の主要団体', W.map(k=>by[k]), '日本人選手が出た試合と、日本で開かれた大会の試合です')}
+    ${sec('グラップリング', G.map(k=>by[k]), 'MMAの戦績には数えません')}</main>`;
 }
 function vPromotion(key){
   const p = Object.keys(D.meta.plabel).find(k=>k.replace(/_/g,'-')===key); if(!p) return notFound();

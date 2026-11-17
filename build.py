@@ -293,7 +293,8 @@ def main():
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
     meta = {'built': site['built'], 'plabel': {p: pname(promos, p) for p in {e['promotion'] for e in ev}},
-            'listed': [p for p, r in promos.items() if r.get('main')]}
+            'listed': [p for p, r in promos.items() if r.get('main')],
+            'world': site.get('world_promotions') or [], 'grappling': site.get('grappling_promotions') or [], 'first': site.get('first_promotions') or []}
     # 団体戦のチームとメンバー（data/teams.tsv）
     teams = collections.defaultdict(list)
     by_dn = {}
