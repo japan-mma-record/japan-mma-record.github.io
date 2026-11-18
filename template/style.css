@@ -229,3 +229,6 @@ ul.bres .mn{display:inline-block;min-width:6.2em;font-size:12px;font-family:var(
 @media (max-width:640px){.kbox{align-items:flex-start}}
 .kboxes{display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-end}
 .kbox[hidden],[hidden]{display:none!important}
+#cchips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+#cchips a{padding:4px 10px;border:1px solid var(--line2);font-size:13px}
+#cchips a[aria-current="true"]{background:var(--red,#e0301e);border-color:var(--red,#e0301e);color:#fff}

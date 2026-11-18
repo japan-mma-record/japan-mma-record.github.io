@@ -393,7 +393,7 @@ def head(site, title, desc, path, css_prefix=''):
 def static_header(pre):
     return f'''<header class="top"><div class="wrap">
 <a class="logo" href="{pre}index.html"><b>日本MMA戦績録</b><span>JAPAN MMA RECORD</span></a>
-<nav class="main" aria-label="メニュー"><a class="lnk" href="{pre}index.html#events">大会</a><a class="lnk" href="{pre}index.html#fighters">選手</a><a class="lnk" href="{pre}index.html#promotions">団体</a><a class="lnk" href="{pre}index.html#upcoming">今後の予定</a><a class="lnk" href="{pre}index.html#about">このサイトについて</a></nav>
+<nav class="main" aria-label="メニュー"><a class="lnk" href="{pre}index.html#events">大会</a><a class="lnk" href="{pre}index.html#fighters">選手</a><a class="lnk" href="{pre}index.html#promotions">団体</a><a class="lnk" href="{pre}index.html#champions">歴代王者</a><a class="lnk" href="{pre}index.html#upcoming">今後の予定</a><a class="lnk" href="{pre}index.html#about">このサイトについて</a></nav>
 <form class="hsearch" role="search" action="{pre}index.html" method="get"><label for="hq" style="position:absolute;left:-9999px">選手名・大会名で検索</label><input id="hq" name="q" type="search" placeholder="選手名・大会名で検索"><button type="submit">検索</button></form>
 </div></header>'''
 
@@ -475,6 +475,31 @@ def main():
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
+    # 歴代王者（タイトルマッチ・王座決定戦の勝者を、団体と階級ごとに古い順にたどる）
+    champs = collections.defaultdict(list)
+    for e in sorted(ev, key=lambda x: x['date']):
+        for b in bouts[e['event_id']]:
+            lab = b.get('title') or title_of(b.get('weight'))
+            if not lab or not re.search(r'タイトルマッチ|王座決定戦|王座統一|防衛戦', lab) or re.search(r'挑戦者|トーナメント', lab):
+                continue
+            w = WIN.get(b.get('winner') or '', '')
+            if w not in (1, 2):
+                continue
+            interim = '暫定' in lab
+            div = re.sub(r'[（(]?(初代|第\d+代|暫定|世界)?(王座決定戦|タイトルマッチ|王座統一戦|防衛戦)[）)]?$', '', lab).replace('暫定', '').strip() or lab
+            champs[(e['promotion'], div)].append([e['date'], e['event_id'], b.get(f'fighter{w}_id') or '', b[f'fighter{w}'], b.get(f'fighter{3-w}_id') or '', b[f'fighter{3-w}'], 1 if interim else 0, lab])
+    champ_out = []
+    for (pr, div), rows in champs.items():
+        line = []; cur = None
+        for r in rows:
+            if r[6]:   # 暫定王者はその行だけ記す
+                line.append({'d': r[0], 'e': r[1], 'f': r[2], 'n': r[3], 'o': r[5], 'i': 1, 'def': 0}); continue
+            if cur and norm(cur['n']) == norm(r[3]):
+                cur['def'] += 1; continue
+            cur = {'d': r[0], 'e': r[1], 'f': r[2], 'n': r[3], 'o': r[5], 'i': 0, 'def': 0}; line.append(cur)
+        champ_out.append([pr, div, [[c['d'], c['e'], c['f'], c['n'], c['o'], c['i'], c['def']] for c in line]])
+    champ_out.sort(key=lambda x: (x[0], x[1]))
+    write_json('champs.json', champ_out)
     meta = {'built': site['built'], 'plabel': {p: pname(promos, p) for p in {e['promotion'] for e in ev}},
             'listed': [p for p, r in promos.items() if r.get('main')],
             'world': site.get('world_promotions') or [], 'grappling': site.get('grappling_promotions') or [], 'bjj': site.get('bjj_promotions') or [], 'standup': site.get('standup_promotions') or [], 'amateur': site.get('amateur_promotions') or [], 'first': site.get('first_promotions') or []}

@@ -334,6 +334,18 @@ function vUpcoming(){
       ${u.c.length?`<ol>${u.c.map(c=>`<li><strong>${esc(c[0])}</strong><span>vs</span><strong>${esc(c[1])}</strong>${c[2]?`<span>${esc(c[2])}</span>`:''}</li>`).join('')}</ol>`:'<p class="note" style="padding:0 18px 14px;margin:12px 0 0">対戦カードは未発表です。</p>'}
       ${u.src&&u.src.length?`<p class="src" style="margin:0;padding:0 18px 14px">出典：${u.src.slice(0,3).map(s=>`<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\//,'').slice(0,60))}</a>`).join('　')}</p>`:''}</section>`).join('')}</main>`;
 }
+let CH=null;
+function vChamps(pk){
+  if(!CH){ fetch('data/champs.json').then(r=>r.json()).then(j=>{ CH=j; route(); }); return `<main class="wrap"><p class="loading">読み込んでいます…</p></main>`; }
+  const ps=[...new Set(CH.map(x=>x[0]))]; const order=[...(D.meta.first||[]),...(D.meta.world||[]),...(D.meta.standup||[])];
+  ps.sort((a,b)=>{ const i=order.indexOf(a), j=order.indexOf(b); return (i<0?99:i)-(j<0?99:j)||pl(a).localeCompare(pl(b),'ja'); });
+  const cur=pk||ps[0];
+  const chips=`<div class="chips" id="cchips">${ps.map(p=>`<a class="lnk" href="#c-${esc(p)}" aria-current="${p===cur}">${esc(pl(p))}</a>`).join('')}</div>`;
+  const divs=CH.filter(x=>x[0]===cur);
+  const body=divs.map(([p,div,line])=>{ let n=0; return `<h2 class="sec">${esc(div)}</h2><div class="tbl"><table><thead><tr><th class="num">代</th><th>王者</th><th class="num">獲得日</th><th>相手</th><th>大会</th><th class="num">防衛</th></tr></thead><tbody>${line.map(c=>{ const ord=c[5]?'暫定':`${++n}`; const e=D.events.find(x=>x[0]===c[1]);
+    return `<tr><td class="num">${ord}</td><td>${flink(c[2],c[3])}</td><td class="num">${esc(c[0].replace(/-/g,'.'))}</td><td>${esc(c[4])}</td><td>${e?`<a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a>`:''}</td><td class="num">${c[5]?'':c[6]}</td></tr>`; }).join('')}</tbody></table></div>`; }).join('');
+  return `<main class="wrap"><div class="sh"><h1>歴代王者</h1></div><p class="sub" style="font-size:13px">このサイトに記録があるタイトルマッチ・王座決定戦の勝者を、古い順に並べたものです。記録が欠けている時期は、代や防衛回数が実際と違うことがあります。</p>${chips}${body||'<p class="sub">記録がありません。</p>'}</main>`;
+}
 function vAbout(){
   return `<main class="wrap"><div class="sh"><h1>このサイトについて</h1></div><div class="prose">
     <p>日本MMA戦績録は、1989年の修斗から現在まで、日本で行われた総合格闘技（MMA）の大会と試合の記録をまとめたデータベースです。無料で誰でも見ることができます。</p>
@@ -374,6 +386,7 @@ function route(){
   else if(h==='promotions'){ html = vPromotions(); nav='promotions'; }
   else if(h==='upcoming'){ html = vUpcoming(); nav='upcoming'; }
   else if(h==='about'){ html = vAbout(); nav='about'; }
+  else if(h==='champions'||h.startsWith('c-')){ html = vChamps(h.startsWith('c-')?h.slice(2):''); nav='champions'; }
   else if(h==='search'){ html = query ? vSearch() : vFighters(); }
   else html = notFound();
   if(h.startsWith('e-')) nav='events'; if(h.startsWith('f-')) nav='fighters';
