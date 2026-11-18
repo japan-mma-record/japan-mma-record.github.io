@@ -96,6 +96,14 @@ def load():
         for b in bouts[k]:
             k0 = (e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2']))), norm((b.get('weight') or '').split('・')[0]))
             b['mat'] = mats.get(k0 + (str(b.get('match_no') or ''),)) or mats.get(k0, '')
+    # 会場が空の大会を補う（data/venues.tsv：event_id, promotion, date, name, venue, source_url）
+    for r in read_tsv(os.path.join(DATA, 'venues.tsv')):
+        e = events.get(r.get('event_id'))
+        if e and not (e.get('venue') or '').strip() and (r.get('venue') or '').strip():
+            e['venue'] = r['venue'].strip()
+            u = (r.get('source_url') or '').strip()
+            if u and u not in (e.get('sources') or '').split():
+                e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
     # 個別の訂正
     for f in read_tsv(os.path.join(DATA, 'fixes.tsv')):
         for b in bouts.get(f['event_id'], []):
