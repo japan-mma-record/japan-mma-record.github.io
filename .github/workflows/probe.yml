@@ -1,0 +1,22 @@
+name: probe-sherdog
+on:
+  push:
+    branches: [probe-sherdog]
+    paths: ['probe/ids.txt']
+permissions:
+  contents: write
+concurrency:
+  group: probe-sherdog
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          rm -rf probe/out probe/out.tar.gz probe/index.txt; mkdir -p probe/out
+          P=$(cat probe/parallel.txt 2>/dev/null || echo 3)
+          cat probe/ids.txt | xargs -P "$P" -I{} sh -c 'r=$(curl -sSL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" -H "Accept-Language: en-US,en;q=0.9" --compressed --retry 2 --max-time 90 -w "%{http_code} %{url_effective}" "https://www.sherdog.com/fighter/x-{}" -o "probe/out/{}.html"); echo "{} $r $(wc -c < probe/out/{}.html 2>/dev/null || echo 0)" >> probe/index.txt; sleep 1'
+          tar czf probe/out.tar.gz -C probe out; rm -rf probe/out
+          git config user.name bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A probe; git commit -q -m "probe results [skip ci]"; git push
