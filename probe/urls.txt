@@ -1,8 +1,7 @@
-https://asjjf.org/main/eventResults/1778
-https://asjjf.org/main/eventResults/367
-https://asjjf.org/main/eventInfo/2286
-https://ibjjf.com/events/calendar
-https://ibjjf.com/events/championships
-https://matchlog.bjjhub.biz/tournament/2000
-https://matchlog.bjjhub.biz/tournament/1500
-https://ibjjf.com/events/3108/results
+https://dumau.asjjf.org/main/eventResults/367
+https://www.asjjf.org/main/eventResults/1333
+https://asjjf.org/main/eventResults/1333
+https://www.asjjf.org/main/eventResults/1778
+https://asjjf.org/main/eventInfo/2120
+https://sjjjf.org/results
+https://www.sjjjf.org/
