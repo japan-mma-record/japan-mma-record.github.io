@@ -145,6 +145,19 @@ def load():
     for k in list(bouts):
         if bouts[k] and all(b.get('rule') for b in bouts[k]) and (events.get(k) or {}).get('promotion') not in gp:
             del bouts[k]
+    # 空欄だったラウンド・時間・階級を、資料で確かめた値で埋める（data/fills.tsv：promotion, date, fighter1_ja, fighter2_ja, field, value）
+    fills = {}
+    for f in read_tsv(os.path.join(DATA, 'fills.tsv')):
+        fills[(f['promotion'], f['date'], frozenset((norm(f['fighter1_ja']), norm(f['fighter2_ja']))), f['field'])] = f['value']
+    if fills:
+        for k in bouts:
+            e = events.get(k) or {}
+            for b in bouts[k]:
+                pair = frozenset((norm(b['fighter1']), norm(b['fighter2'])))
+                for fld in ('round', 'time', 'weight'):
+                    v = fills.get((e.get('promotion'), e.get('date'), pair, fld))
+                    if v and not (b.get(fld) or '').strip():
+                        b[fld] = v
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）

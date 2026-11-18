@@ -302,10 +302,22 @@ _ROUTINE = re.compile(r'^(?:' + _PROMO + r'|MMAルール|総合格闘技ルー�
                       r'シングルマッチ|ワンマッチ|\d+分\s*\d+\s*(?:R|ラウンド)(?:\s*[(（]延長\s*\d+\s*R[)）])?|\d+分×?\d+R|,)$', re.I)
 
 
+_EN_W = [('Super Heavyweight', 'スーパーヘビー級'), ('Light Heavyweight', 'ライトヘビー級'), ('Heavyweight', 'ヘビー級'), ('Middleweight', 'ミドル級'),
+         ('Welterweight', 'ウェルター級'), ('Lightweight', 'ライト級'), ('Featherweight', 'フェザー級'), ('Bantamweight', 'バンタム級'),
+         ('Flyweight', 'フライ級'), ('Strawweight', 'ストロー級'), ('Atomweight', 'アトム級'), ('Minimumweight', 'ミニマム級'), ('Openweight', '無差別級'), ('Catchweight', '契約')]
+
+
 def weight(w):
     t = unicodedata.normalize('NFKC', w or '').strip()
     if not t or '記載なし' in t:
         return ''
+    t = re.sub(r"(?i)women'?s\s+", '女子', t)
+    for en, ja in _EN_W:
+        t = re.sub(r'(?i)(?<![A-Za-z])' + en + r'(?![A-Za-z])', ja, t)
+    t = re.sub(r'無差別級\s*[(（]無差別級[)）]', '無差別級', t)
+    t = re.sub(r'^男子\s*', '', t)
+    t = re.sub(r'(kg)\s*[(（]契約体重[)）]', r'\1契約', t, flags=re.I).replace('キロ', 'kg')
+    t = re.sub(r'(級)\s+-?[\d.]+\s*kg$', r'\1', t, flags=re.I)
     t = re.sub(r'\[[^\]]*\]', ' ', t)                                     # [-70.0Kg] など
     t = re.sub(r'[(（]\s*-?[\d.]+\s*kg(?:以下|未満)?\s*[)）]', ' ', t, flags=re.I)   # (70.3kg) など
     t = re.sub(r'(\d+)\s*分\s*(\d+)\s*(R|ラウンド)', r'\1分\2\3', t)
