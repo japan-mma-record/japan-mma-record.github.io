@@ -12,7 +12,7 @@ Pythonの標準機能だけで動きます（追加のインストールは不�
   data/promotions.tsv … 団体の表示名。
   data/site.json … サイトの住所など。
 """
-import csv, json, os, re, shutil, html, datetime, collections, urllib.parse, unicodedata
+import csv, json, os, re, shutil, html, datetime, collections, urllib.parse, unicodedata, hashlib
 import methods
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -141,7 +141,7 @@ def load():
                     main['sources'] = ((main.get('sources') or '') + ' ' + t).strip()
             events.pop(o['event_id'], None)
     # 柔術・グラップリング・エキシビションだけの大会は載せない（MMAの記録なので）
-    gp = set(site.get('grappling_promotions') or [])   # QUINTET などグラップリングの団体は、そのまま載せる
+    gp = set(site.get('grappling_promotions') or []) | set(site.get('bjj_promotions') or [])   # QUINTET などグラップリングの団体は、そのまま載せる
     for k in list(bouts):
         if bouts[k] and all(b.get('rule') for b in bouts[k]) and (events.get(k) or {}).get('promotion') not in gp:
             del bouts[k]
@@ -156,9 +156,26 @@ def load():
             for k in ('1', '2'):
                 if b.get(f'fighter{k}_id') in renamed:
                     b[f'fighter{k}'] = renamed[b[f'fighter{k}_id']]
+    # 柔術などの表彰台（data/podium.tsv：promotion, date, event_name_ja, division, place, name_ja, name_en, team, source_url）
+    global PODIUM
+    PODIUM = collections.defaultdict(list)
+    key2id = {(e['promotion'], e['date'], methods.event_name(e['name'])): k for k, e in events.items()}
+    for r in read_tsv(os.path.join(DATA, 'podium.tsv')):
+        pr, d, nm = r.get('promotion') or 'jbjjf', r.get('date', ''), methods.event_name(r.get('event_name_ja'))
+        k = key2id.get((pr, d, nm))
+        if not k:
+            k = 'j' + hashlib.md5(f'{pr}|{d}|{nm}'.encode()).hexdigest()[:8]
+            events[k] = {'event_id': k, 'promotion': pr, 'date': d, 'name': nm, 'venue': r.get('venue', ''), 'sources': ''}
+            key2id[(pr, d, nm)] = k
+        e = events[k]
+        u = r.get('source_url') or ''
+        if u and u not in (e.get('sources') or '').split():
+            e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
+        PODIUM[k].append([r.get('division', ''), r.get('place', ''), r.get('name_ja') or r.get('name_en', ''), r.get('team', '')])
     return site, promos, events, bouts, fighters
 
 
+PODIUM = {}
 MERGED = {}   # 消えた選手番号 → まとめ先の選手番号（Wikipediaの記録の付け替えに使う）
 
 
@@ -211,6 +228,14 @@ def merge_fighters(events, bouts, fighters):
                     hit = uniq.get(key(b.get(f'fighter{k}')))
                     if hit and pr in proms[MERGED.get(hit, hit)]:   # 同じ団体に出ている同じ名前の選手だけにつなぐ
                         b[f'fighter{k}_id'] = MERGED.get(hit, hit)
+
+
+def podium_html(ps):
+    if not ps:
+        return ''
+    PL = {'1': '優勝', '2': '準優勝', '3': '3位'}
+    rows = ''.join(f'<tr><td>{html.escape(p[0])}</td><td>{PL.get(str(p[1]), html.escape(str(p[1])))}</td><td>{html.escape(p[2])}</td><td>{html.escape(p[3])}</td></tr>' for p in ps)
+    return f'<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>{rows}</tbody></table></div>'
 
 
 def team_html(ts):
@@ -277,11 +302,13 @@ def main():
     os.makedirs(os.path.join(OUT, 'e'))
     os.makedirs(os.path.join(OUT, 'f'))
 
-    ev = sorted((e for e in events.values() if bouts.get(e['event_id'])), key=lambda e: (e['date'], e['event_id']))
+    ev = sorted((e for e in events.values() if bouts.get(e['event_id']) or PODIUM.get(e['event_id'])), key=lambda e: (e['date'], e['event_id']))
+    for e in ev:
+        bouts.setdefault(e['event_id'], [])
     ev_list = [[e['event_id'], e['date'], e['promotion'], e['name'], e.get('venue', ''),
                 [s for s in (e.get('sources') or '').split(' ') if s], len(bouts[e['event_id']])] for e in ev]
     # 世界の団体・グラップリングの大会には、出場した日本人選手の名前を添える（一覧で見つけやすくするため）
-    abroad = set(site.get('world_promotions') or []) | set(site.get('grappling_promotions') or [])
+    abroad = set(site.get('world_promotions') or []) | set(site.get('grappling_promotions') or []) | set(site.get('bjj_promotions') or [])
     in_jp = set()
     for e in ev:
         if e['promotion'] not in abroad:
@@ -326,7 +353,7 @@ def main():
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
     meta = {'built': site['built'], 'plabel': {p: pname(promos, p) for p in {e['promotion'] for e in ev}},
             'listed': [p for p, r in promos.items() if r.get('main')],
-            'world': site.get('world_promotions') or [], 'grappling': site.get('grappling_promotions') or [], 'first': site.get('first_promotions') or []}
+            'world': site.get('world_promotions') or [], 'grappling': site.get('grappling_promotions') or [], 'bjj': site.get('bjj_promotions') or [], 'first': site.get('first_promotions') or []}
     # 団体戦のチームとメンバー（data/teams.tsv）
     teams = collections.defaultdict(list)
     by_dn = {}
@@ -347,6 +374,11 @@ def main():
     write_json('events.json', ev_list)
     write_json('bouts.json', bout_out)
     write_json('fighters.json', fout)
+    meta['pd'] = sorted(k for k in PODIUM if k in {e['event_id'] for e in ev})
+    os.makedirs(os.path.join(OUT, 'pd'), exist_ok=True)
+    for k in meta['pd']:
+        with open(os.path.join(OUT, 'pd', f'{k}.json'), 'w', encoding='utf-8') as fp:
+            json.dump(PODIUM[k], fp, ensure_ascii=False, separators=(',', ':'))
     write_json('meta.json', meta)
     write_json('upcoming.json', upcoming)
 
@@ -393,7 +425,7 @@ def main():
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#p-{e["promotion"].replace("_", "-")}">{html.escape(pn)}</a></p>'
                 f'<div class="ph"><div><span class="badge">{html.escape(pn)}</span><h1>{html.escape(e["name"])}</h1><p class="sub">{html.escape(e["date"])}　{html.escape(e.get("venue") or "")}</p></div></div>'
                 f'<div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
-                + team_html(teams.get(eid)) +
+                + team_html(teams.get(eid)) + podium_html(PODIUM.get(eid)) +
                 f'<p class="src">出典：{src_html}</p></main>' + foot(site, len(ev_list), n_b))
         with open(os.path.join(OUT, 'e', f'{eid}.html'), 'w', encoding='utf-8') as fp:
             fp.write(page)

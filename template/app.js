@@ -20,6 +20,10 @@ function winnerLine(b){
   const t = b[5]==='d' ? '引き分け' : b[5]==='nc' ? '無効試合' : '勝敗不明';
   return `${esc(b[2])}<span class="def">　vs　</span>${esc(b[4])}<span class="def">　${t}</span>${u}`;
 }
+function loadPodium(k){ if(!(D.meta.pd||[]).includes(k)) return;
+  fetch('pd/'+encodeURIComponent(k)+'.json').then(r=>r.ok?r.json():null).then(ps=>{ const b=document.getElementById('pdbox'); if(!ps||!b) return;
+    const PL={'1':'優勝','2':'準優勝','3':'3位'};
+    b.innerHTML=`<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>${ps.map(p=>`<tr><td>${esc(p[0])}</td><td>${PL[p[1]]||esc(p[1])}</td><td>${esc(p[2])}</td><td>${esc(p[3])}</td></tr>`).join('')}</tbody></table></div>`; }); }
 function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
 function jpn(e){ return (e[7]&&e[7].length) ? `<span class="jp">（${e[7].map(esc).join('、')}）</span>` : ''; }
@@ -101,7 +105,7 @@ function vEvent(k){
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div>
     <div class="kpis"><div><p class="k">試合</p><p class="v">${mb.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>
     <div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>${rows}</tbody></table></div>
-    ${teamTbl(k)}<p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
+    ${teamTbl(k)}<div id="pdbox"></div><p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
 }
 function vFighter(id){
   const f = D.fighters[id]; if(!f) return notFound(); buildIndex();
@@ -150,15 +154,16 @@ function vEvents(){
 }
 function vPromotions(){
   const all = promoStats(), by = Object.fromEntries(all.map(p=>[p.k,p]));
-  const W = (D.meta.world||[]).filter(k=>by[k]), G = (D.meta.grappling||[]).filter(k=>by[k]), F = (D.meta.first||[]).filter(k=>by[k]);
-  const other = new Set([...W,...G,...F]);
+  const W = (D.meta.world||[]).filter(k=>by[k]), G = (D.meta.grappling||[]).filter(k=>by[k]), F = (D.meta.first||[]).filter(k=>by[k]), B = (D.meta.bjj||[]).filter(k=>by[k]);
+  const other = new Set([...W,...G,...F,...B]);
   const JP = [...F.map(k=>by[k]), ...all.filter(p=>!other.has(p.k)).sort((a,b)=>b.n-a.n)];
   const card = p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会・${fmt(p.bo)}試合</span></a>`;
   const sec = (t,arr,note)=> arr.length ? `<h2 class="sec">${t}</h2>${note?`<p class="sub" style="font-size:13px;margin:0 0 10px">${note}</p>`:''}<div class="pgrid">${arr.map(card).join('')}</div>` : '';
   return `<main class="wrap"><div class="sh"><h1>団体</h1><span class="aside" style="font-weight:500">${all.length}団体</span></div>
     ${sec('日本の団体', JP)}
     ${sec('世界の主要団体', W.map(k=>by[k]), '日本人選手が出た試合と、日本で開かれた大会の試合です')}
-    ${sec('グラップリング', G.map(k=>by[k]), 'MMAの戦績には数えません')}</main>`;
+    ${sec('グラップリング', G.map(k=>by[k]), 'MMAの戦績には数えません')}
+    ${sec('ブラジリアン柔術', B.map(k=>by[k]), '大人の部の入賞者と、トーナメント表が残っている大会の試合です。MMAの戦績には数えません')}</main>`;
 }
 function vPromotion(key){
   const p = Object.keys(D.meta.plabel).find(k=>k.replace(/_/g,'-')===key); if(!p) return notFound();
@@ -245,6 +250,7 @@ function route(){
   if(h.startsWith('e-')) nav='events'; if(h.startsWith('f-')) nav='fighters';
   $('#view').innerHTML = html;
   if(h.startsWith('f-')) enhanceFighter(h.slice(2));
+  if(h.startsWith('e-')) loadPodium(h.slice(2));
   document.querySelectorAll('[data-nav]').forEach(a=>{ if(a.dataset.nav===nav) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
   window.scrollTo(0,0);
 }
