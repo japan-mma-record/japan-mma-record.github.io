@@ -1,9 +1,12 @@
-YTDLP https://www.youtube.com/channel/UCymXmunl-HbqsXCcOSEZRqA/videos
-YTDLP https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA/videos
-YTDLP https://www.youtube.com/channel/UCw4RZz4S3ZdRyPfLBFVhYTw/videos
-YTDLP https://www.youtube.com/channel/UCPErofWfcNXis2f_sSDNSHg/videos
-YTDLP https://www.youtube.com/channel/UCUxFWK2IxAfFmp89UCAuhag/videos
-YTDLP https://www.youtube.com/channel/UCceNz215-iDAqgN3ujGiRRA/videos
-YTDLP https://www.youtube.com/channel/UCAQjjjdT32Pm5EjLQ0tbINA/videos
-YTDLP ytsearch40:KROSS×OVER クロスオーバー MMA 公式 試合
-YTDLP https://www.youtube.com/channel/UCiormkBf3jm6mfb7k0yPbKA/videos
+YTDLP https://www.youtube.com/@ufc/videos
+YTDLP ytsearch15:Bellator MMA full fight
+YTDLP ytsearch15:PFL MMA full fight
+YTDLP ytsearch15:LFA Legacy Fighting Alliance full fight
+YTDLP ytsearch15:KSW free fight
+YTDLP ytsearch15:Cage Warriors full fight
+YTDLP ytsearch15:ADCC full match official
+YTDLP ytsearch15:CJI Craig Jones Invitational full match
+YTDLP ytsearch15:KROSS×OVER 総合格闘技 試合
+YTDLP ytsearch15:UFC Fight Pass free fight Japanese
+YTDLP https://www.youtube.com/@DEEPMMA/videos
+YTDLP https://www.youtube.com/@j-shootochannel8365/videos
