@@ -581,13 +581,14 @@ def main():
         for e, b, side in lst:
             win = b.get('winner') or ''
             ok = 'o'
-            c1 = 0 if b.get('rule') else 1          # 柔術・グラップリング・エキシビションは戦績に数えない
+            ama = e.get('promotion') in (site.get('amateur_promotions') or [])
+            c1 = 0 if (b.get('rule') or ama) else 1          # 柔術・グラップリング・エキシビション・アマチュアは戦績に数えない
             if win == str(side): w += c1; r = '勝'; ok = 'w'
             elif win in ('1', '2'): l += c1; r = '負'; ok = 'l'
             elif win == 'draw': d += c1; r = '分'
             elif win == 'nc': nc += c1; r = '無効'
             else: r = '—'
-            rtag = f'<span class="unc">{html.escape(b["rule"])}・戦績に数えない</span>' if b.get('rule') else ''
+            rtag = f'<span class="unc">{html.escape(b["rule"] or "アマチュア")}・戦績に数えない</span>' if (b.get('rule') or ama) else ''
             ok2 = '2' if side == 1 else '1'
             oid = b.get(f'fighter{ok2}_id'); on = html.escape(b[f'fighter{ok2}'])
             opp = f'<a class="u nb" href="{oid}.html">{on}</a>' if oid and oid in fout else f'<span class="nb">{on}</span>'

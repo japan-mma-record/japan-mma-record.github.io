@@ -39,7 +39,7 @@ function evn(e){ const n=e[3]||'', v=vshort(e[4]); if(!v||(D.meta.world||[]).inc
   if(n.includes(v)||/[（(][^（）()]*[）)]$/.test(n)&&v.slice(0,2)&&n.includes(v.slice(0,2))) return n; return `${n}（${v}）`; }
 function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
-function rtag(b,e){ return (b[11] && !(e&&(D.meta.standup||[]).includes(e[2])) ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
+function rtag(b,e){ const ama=e&&(D.meta.amateur||[]).includes(e[2]); return ((b[11]||ama) && !(e&&(D.meta.standup||[]).includes(e[2])) ? `<span class="unc">${esc(b[11]||'アマチュア')}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
 function buildIndex(){
@@ -236,9 +236,9 @@ function vFighter(id){
   const rows = list.map(([e,b,side])=>{ pr.add(e[2]);
     const opp = side===1 ? [b[3],b[4]] : [b[1],b[2]];
     let r='<span class="rs o">—</span>';
-    const cnt = !b[11];
+    const ama=(D.meta.amateur||[]).includes(e[2]); const cnt = !b[11] && !ama;
     if(b[5]===side){cnt&&w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){cnt&&l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){cnt&&d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){cnt&&nc++; r='<span class="rs o">無効</span>';}
-    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(evn(e))}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${ttag(b)}${esc(b[6])}${rtag(b)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
+    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(evn(e))}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${ttag(b)}${esc(b[6])}${rtag(b,e)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
   const tl = list.filter(([e,b])=>b[13]).slice().reverse();
   const tbox = tl.length ? `<h2 class="sec">タイトル戦（${tl.length}）</h2><div class="tbl"><table><thead><tr><th>結果</th><th>試合</th><th>対戦相手</th><th>大会</th><th class="num">日付</th></tr></thead><tbody>${tl.map(([e,b,side])=>{ const opp = side===1?[b[3],b[4]]:[b[1],b[2]]; const r = b[5]===side?'<span class="rs w">勝</span>':(b[5]===1||b[5]===2)?'<span class="rs l">負</span>':'<span class="rs o">分</span>';
     return `<tr><td>${r}</td><td>${ttag(b)}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(evn(e))}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td></tr>`; }).join('')}</tbody></table></div><h2 class="sec">全試合</h2>` : '';
