@@ -1,30 +1,15 @@
-YTDLP ytsearch20:パンクラス 公式 試合 フルファイト
-YTDLP ytsearch20:修斗 公式 試合映像
-YTDLP ytsearch20:DEEP JEWELS 試合 公式
-YTDLP ytsearch20:POWERGATE パワーゲート 試合
-YTDLP ytsearch20:WARDOG ケージファイト 試合
-YTDLP ytsearch20:TRIBELATE トライブレイト 試合
-YTDLP ytsearch20:天下一FIGHT 試合
-YTDLP ytsearch20:ACCEL 総合格闘技 試合
-YTDLP ytsearch20:POUND FOR POUND 総合格闘技 試合
-YTDLP ytsearch20:KINGDOM 総合格闘技 九州 試合
-YTDLP ytsearch20:ATOYS CHALLENGE FIGHT 試合
-YTDLP ytsearch20:BRAVE FIGHT 総合格闘技 試合
-YTDLP ytsearch20:DEMOLITION 総合格闘技 試合
-YTDLP ytsearch20:BATTLE CODE 総合格闘技 試合
-YTDLP ytsearch20:RISING ON FIGHTING CHAMPIONSHIP 試合
-YTDLP ytsearch20:GCM CAGE FORCE 試合
-YTDLP ytsearch20:CHAKURIKI 着力 試合
-YTDLP ytsearch20:TRIBE TOKYO FIGHT 試合
-YTDLP ytsearch20:RINGS リングス 公式 試合
-YTDLP ytsearch20:MARS 総合格闘技 試合
-YTDLP ytsearch20:IGF 猪木 総合格闘技 試合
-YTDLP ytsearch20:ADCC official full match Japan
-YTDLP ytsearch20:JEWELS 女子総合格闘技 試合
-YTDLP ytsearch20:SMACKGIRL 試合
-YTDLP ytsearch20:Bloom FC 総合格闘技 試合
-YTDLP ytsearch20:legion japan 総合格闘技
-YTDLP ytsearch20:BOUT 総合格闘技 公式
-YTDLP ytsearch20:GRANDSLAM MMA 試合
-YTDLP ytsearch20:ROOTS 総合格闘技 試合
-YTDLP ytsearch20:Kushima's Fight 試合
+YTDLP https://www.youtube.com/channel/UCicc_7Z5Epi_j80T-AsFQDQ/videos
+YTDLP https://www.youtube.com/channel/UC1rdbK0IKaf2tdV1fYJqB4w/videos
+YTDLP https://www.youtube.com/channel/UCTvNW_9RBrtI6tS6bcrnMVA/videos
+YTDLP https://www.youtube.com/channel/UCaOOyPREL_2KSbu8_bldA-g/videos
+YTDLP https://www.youtube.com/channel/UCbv6bea1sKG5cVZo_piGjbg/videos
+YTDLP https://www.youtube.com/channel/UCmpJ_1mRIPEQvGdjV32Gjkw/videos
+YTDLP https://www.youtube.com/channel/UCAMmADefKqIMaR3VwEoIMRA/videos
+YTDLP https://www.youtube.com/channel/UCPnp9PVvfNF_GEEz53goy5w/videos
+YTDLP https://www.youtube.com/channel/UC7evCVAHzSslIQQNQhOiApQ/videos
+YTDLP https://www.youtube.com/channel/UCcRfno_maqNA-abXa63mH_g/videos
+YTDLP https://www.youtube.com/channel/UCS4S38uzlxcAC4xMgGie9wQ/videos
+YTDLP https://www.youtube.com/channel/UCxEHyM9HmGN2-kS8gnuP8-g/videos
+YTDLP https://www.youtube.com/channel/UCpc7OIAj9mrdRyjWeS86NLg/videos
+YTDLP ytsearch20:TRIBELATE MMA
+YTDLP ytsearch20:アトイズ チャレンジファイト
