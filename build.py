@@ -28,6 +28,19 @@ def read_tsv(path):
         return list(csv.DictReader(fp, delimiter='\t'))
 
 
+def title_of(w):
+    """階級の欄に書かれたタイトルマッチなどの文字を取り出す（titles.tsv にないもの用）。"""
+    for x in (w or '').split('・'):
+        if re.search(r'タイトルマッチ|王座|挑戦者決定|選手権試合|GP決勝|グランプリ決勝|トーナメント決勝|防衛戦', x) and len(x) <= 40:
+            x = re.sub(r'\s*\d+分\d*R?.*$|\s*\d+分1本勝負.*$', '', x).strip()
+            x = re.sub(r'^(?:アマチュア)?(?:キック|ボクシング|MMA)\s*[(（]', '', x).strip(' )）')
+            cls = (w or '').split('・')[0]
+            if '級' not in x and re.search(r'級$|kg契約$', cls) and not re.search(r'トーナメント|昇格', x):
+                x = cls + x
+            return x
+    return ''
+
+
 def norm(s):
     return re.sub(r'[\s・･　]', '', s or '')
 
@@ -160,6 +173,15 @@ def load():
         elif k in bouts:
             pair = frozenset((norm(x['fighter1']), norm(x['fighter2'])))
             bouts[k] = [b for b in bouts[k] if frozenset((norm(b['fighter1']), norm(b['fighter2']))) != pair]
+    # タイトルマッチ・王座決定戦・次期挑戦者決定戦など（data/titles.tsv：promotion, date, fighter1_ja, fighter2_ja, label, source_url）
+    titles = {}
+    for t in read_tsv(os.path.join(DATA, 'titles.tsv')):
+        if (t.get('label') or '').strip():
+            titles[(t['date'], frozenset((norm(t['fighter1_ja']), norm(t['fighter2_ja']))))] = t['label'].strip()
+    for k in bouts:
+        e = events.get(k) or {}
+        for b in bouts[k]:
+            b['title'] = titles.get((e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2'])))), '')
     # 空欄だったラウンド・時間・階級を、資料で確かめた値で埋める（data/fills.tsv：promotion, date, fighter1_ja, fighter2_ja, field, value）
     fills = {}
     for f in read_tsv(os.path.join(DATA, 'fills.tsv')):
@@ -379,7 +401,7 @@ def main():
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or ''])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight'))])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
