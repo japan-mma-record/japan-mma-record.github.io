@@ -1,5 +1,7 @@
-https://ibjjf.com/events/results
-https://asjjf.org/
-https://sjjjf.org/
-https://asjjf.org/main/eventResults
-https://www.ibjjfdb.com/ChampionshipResults/2306/PublicResults
+https://ibjjf.com/events/2684/results
+https://ibjjf.com/events/135/results
+https://ibjjf.com/events/2929/results
+https://ibjjf.com/events/2928/results
+https://asjjf.org/main/eventResultsBySeason/454
+https://dumau.asjjf.org/results/eventsListBySeason/7
+https://matchlog.bjjhub.biz/
