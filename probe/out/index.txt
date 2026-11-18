@@ -1,0 +1,16 @@
+1 https://www.mnews.jp/results/org/deep 374764
+2 https://www.mnews.jp/results/org/gladiator 12500
+3 https://www.mnews.jp/results/org/pancrase 526882
+4 https://www.mnews.jp/results/org/shooto 322847
+5 https://www.mnews.jp/results/org/zst 12500
+6 https://www.mnews.jp/results/org/heat 12500
+7 https://www.mnews.jp/results/org/grachan 12500
+8 https://www.mnews.jp/results/org/wardog 12500
+9 https://www.mnews.jp/results/org/tenkaichi 12500
+10 https://www.mnews.jp/results/org/battle-code 12500
+11 https://www.mnews.jp/results/org/outsider 12500
+12 https://www.mnews.jp/results/org/rings 12500
+13 https://www.mnews.jp/results/org/kingdom 12500
+14 https://www.mnews.jp/results/org/brave-fight 12500
+15 https://www.mnews.jp/results/org/pfc 12500
+16 https://www.mnews.jp/results/org/jmmaf 12500
