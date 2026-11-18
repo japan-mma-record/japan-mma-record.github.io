@@ -8,7 +8,7 @@ const MARKS = {1989:'修斗 旗揚げ',1993:'パンクラス 旗揚げ',1997:'PR
 function pl(p){ return (D.meta && D.meta.plabel[p]) || p; }
 function pkey(p){ return 'p-' + p.replace(/_/g,'-'); }
 function dshort(d){ return d ? d.slice(5).replace('-','.') : ''; }
-function dlong(d){ if(!d) return ''; const [y,m,dd]=d.split('-'); const w='日月火水木金土'[new Date(+y,+m-1,+dd).getDay()]; return `${y}年${+m}月${+dd}日（${w}）`; }
+function dlong(d){ if(!d) return ''; if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return /^\d{4}$/.test(d) ? `${d}年（日付不明）` : d; const [y,m,dd]=d.split('-'); const w='日月火水木金土'[new Date(+y,+m-1,+dd).getDay()]; return `${y}年${+m}月${+dd}日（${w}）`; }
 function fname(id, fallback){ const f = id && D.fighters[id]; return f ? (f[0] || f[1]) : (fallback || ''); }
 function flink(id, name){ return id && D.fighters[id] ? `<a class="u nb" href="#f-${esc(id)}">${esc(name)}</a>` : `<span class="nb">${esc(name)}</span>`; }
 function mainBout(k){ const bs = D.bouts[k] || []; return bs.length ? bs[bs.length-1] : null; }
@@ -147,7 +147,7 @@ function vEvents(){
   const ev = D.events.filter(e=>e[1].startsWith(evYear)).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const m=+e[1].slice(5,7); if(m!==cur){ cur=m; out+=`<p class="mo">${m}月</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].slice(5).replace('-','.'))}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   return `<main class="wrap"><div class="sh"><h1>大会</h1><span class="aside" style="font-weight:500">${esc(evYear)}年　${ev.length}大会</span></div>
     <div class="chips" id="ychips">${years.map(y=>`<button type="button" data-y="${y}" aria-pressed="${y===evYear}">${y}</button>`).join('')}</div>
     <div class="list">${out}</div></main>`;
@@ -170,7 +170,7 @@ function vPromotion(key){
   const ev = D.events.filter(e=>e[2]===p).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const y=e[1].slice(0,4); if(y!==cur){ cur=y; out+=`<p class="mo">${y}</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].slice(5).replace('-','.'))}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   const nb = ev.reduce((s,e)=>s+e[6],0);
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#promotions">団体</a></p>
     <div class="ph"><div><h1>${esc(pl(p))}</h1><p class="sub">${esc(ev.length?ev[ev.length-1][1].slice(0,4)+'年〜'+ev[0][1].slice(0,4)+'年':'')}</p></div>
