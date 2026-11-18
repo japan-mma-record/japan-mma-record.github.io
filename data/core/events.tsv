@@ -753,7 +753,7 @@ e00130	pancrase	2004-03-29	PANCRASE 2004 BRAVE TOUR（後楽園ホール）	後�
 e05547	ufc	2004-04-02	UFC 47: It's On	Mandalay Bay Events Center, Las Vegas United States	https://jp.ufc.com/event/ufc-47 https://ja.wikipedia.org/wiki/%E9%A0%88%E8%97%A4%E5%85%83%E6%B0%97 https://en.wikipedia.org/wiki/UFC_47
 e02039	rings	2004-04-04	Rings Holland - World's Greatest		https://en.wikipedia.org/wiki/Sander_Thonhauser 海外の記録サイト
 e00617	shooto	2004-04-05	Capital Punishment2	トーロン・キッサハリ	http://hirashima-igs.com/shooto/2004/040405.htm
-e04743	k1	2004-04-07	K-1 WORLD MAX2004～世界一決定トーナメント開幕戦～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_04/0407_k1.htm
+e04743	k1_max	2004-04-07	K-1 WORLD MAX2004～世界一決定トーナメント開幕戦～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_04/0407_k1.htm
 e04713	gcm	2004-04-08	DEMOLITION	東京・北沢タウンホール	https://www.boutreview.com/fightsspiral/DEMOLITION_04_04_08.html
 e00618	shooto	2004-04-11	プロフェッショナル修斗公式戦	大阪府立体育館第2競技場	http://hirashima-igs.com/shooto/2004/040411.htm
 e00619	shooto	2004-04-16	下北沢修斗劇場第8弾	北沢タウンホール	http://hirashima-igs.com/shooto/2004/040416.htm
@@ -796,8 +796,8 @@ e00622	shooto	2004-07-04	下北沢修斗劇場第9弾	北沢タウンホール	h
 e01177	zst	2004-07-04	BATTLE HAZARD 01		https://gbring.com/sokuho/result/result2004_07/0704_zst.htm
 e02055	zst	2004-07-04	ZST - Battle Hazard 1		https://www.boutreview.com/fightsspiral/ZST_BATTLE_HAZARD_01.html
 e04238	zst	2004-07-04	ZST BATTLE HAZARD 01	Zepp Tokyo	https://www.boutreview.com/fightsspiral/ZST_BATTLE_HAZARD_01.html
-e04745	k1	2004-07-07	K-1 WORLD MAX 2004 ～世界一決定トーナメント～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_07/0707_k-1max.htm
-e08022	k1	2004-07-07	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦		https://en.wikipedia.org/wiki/K-1_World_MAX_2004_World_Tournament_final
+e04745	k1_max	2004-07-07	K-1 WORLD MAX 2004 ～世界一決定トーナメント～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_07/0707_k-1max.htm
+e08022	k1_max	2004-07-07	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦		https://en.wikipedia.org/wiki/K-1_World_MAX_2004_World_Tournament_final
 e00623	shooto	2004-07-09	SOLJAH FIGHT NIGHT	ブレイズデル・アリーナ	http://hirashima-igs.com/shooto/2004/040709.htm
 e01178	shooto	2004-07-09	プロ修斗公式戦「SOLJAH FIGHT NIGHT」（米国ハワイ・海外の修斗認定大会）	米国ハワイ州ブレイズデルアリーナ	https://gbring.com/sokuho/result/result2004_07/0711_shooto.htm
 e04688	gcm	2004-07-11	GCM「DEMOLITTION 040711」	東京・東京FMホール	https://gbring.com/sokuho/result/result2004_07/0711_demolittion.htm
@@ -835,7 +835,7 @@ e04781	red_zone	2004-10-03	RED ZONE 9	大阪・天保山BAYSIDE Jenny	https://ww
 e01185	kingdom	2004-10-06	"キングダム・エルガイツ ""リトルステージ and ビッグマッチ"""	東京・渋谷Club ATOM	http://www.boutreview.com/data/reports/041006kingdom.html 海外の記録サイト
 e07588	ksw	2004-10-07	KSW 2	Hotel Marriott（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2004_in_Konfrontacja_Sztuk_Walki
 e00139	pancrase	2004-10-12	PANCRASE 2004 BRAVE TOUR（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/2004/1012.html
-e04746	k1	2004-10-13	K-1 WORLD MAX 2004～世界王者対抗戦～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_10/1013_k-1.htm
+e04746	k1_max	2004-10-13	K-1 WORLD MAX 2004～世界王者対抗戦～	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2004_10/1013_k-1.htm
 e04202	pride	2004-10-14	PRIDE 武士道 其の伍	大阪城ホール	https://www.boutreview.com/fightsspiral/pride_bushido_5.html
 e04692	gcm	2004-10-15	GCM「DEMOLITTION 041015」	東京・北沢タウンホール	https://gbring.com/sokuho/result/result2004_10/1015_demolittion.htm
 e00627	shooto	2004-10-17	プロフェッショナル修斗公式戦	大阪府立体育館第2競技場	http://hirashima-igs.com/shooto/2004/041017.htm
@@ -890,7 +890,7 @@ e01192	shooto	2005-02-11	G-Shooto - Plus 01		https://ja.wikipedia.org/wiki/%E7%A
 e04113	deep	2005-02-12	Kohno Yujiro Group Presents DEEP 18th IMPACT	東京・後楽園ホール	https://www.boutreview.com/data/reports/050212deep18.html
 e04782	red_zone	2005-02-13	RED ZONE 10	大阪・天保山BAYSIDE Jenny	https://www.boutreview.com/fightsspiral/REDZONE_10.html
 e04205	pride	2005-02-20	PRIDE.29	さいたまスーパーアリーナ	https://www.boutreview.com/fightsspiral/pride29.html
-e04741	k1	2005-02-23	K-1 WORLD MAX2005 日本代表決定トーナメント	東京・有明コロシアム	https://gbring.com/sokuho/result/result2005_02/0223_k-1.htm
+e04741	k1_max	2005-02-23	K-1 WORLD MAX2005 日本代表決定トーナメント	東京・有明コロシアム	https://gbring.com/sokuho/result/result2005_02/0223_k-1.htm
 e00144	pancrase	2005-02-27	PANCRASE 2005 SPIRAL TOUR（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2005/0227.html
 e01193	kushimas_fight	2005-02-27	Kushima's Fight 8	NCC&スタジオ	https://www.boutreview.com/fightsspiral//kushimas_fight_8.html https://www.boutreview.com/fightsspiral/kushimas_fight_8.html
 e02101	gladiator	2005-02-27	GLADIATOR - Deep Challenger		海外の記録サイト
@@ -1008,7 +1008,7 @@ e00154	pancrase	2005-10-02	PANCRASE 2005 SPIRAL TOUR（横浜文化体育館）	
 e06762	ufc	2005-10-03	UFC Ultimate Fight Night 2	The Joint - Hard Rock Hotel & Casino,	https://en.wikipedia.org/wiki/UFC_Ultimate_Fight_Night_2 https://jp.ufc.com/event/ufcr-fight-nighttm-2
 e06761	ufc	2005-10-07	UFC 55: Fury	Mohegan Sun Arena,	https://en.wikipedia.org/wiki/UFC_55 https://jp.ufc.com/event/ufcr-55
 e01205	trial	2005-10-08	OYAZI BATTLE OSAKA	大阪・アゼリア大正ホール	https://www.boutreview.com/data/reports05/051008oyazi-battle.html 海外の記録サイト
-e04742	k1	2005-10-12	K-1 WORLD MAX 2005～世界王者対抗戦	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2005_10/1012_k-1max.htm
+e04742	k1_max	2005-10-12	K-1 WORLD MAX 2005～世界王者対抗戦	東京・国立代々木競技場第一体育館	https://gbring.com/sokuho/result/result2005_10/1012_k-1max.htm
 e05897	wec	2005-10-14	WEC 17: Halloween Fury 4	タチ・パレス・ホテル（カリフォルニア州レムーア）	https://en.wikipedia.org/wiki/WEC_17
 e01206	smackgirl	2005-10-15	SMACKGIRL-F 2005 ～下北実験リーグ Round1～	東京・北沢タウンホール	https://gbring.com/sokuho/result/result2005_10/1015_smack.htm
 e02159	rings	2005-10-15	Rings Ireland - Reborn		https://en.wikipedia.org/wiki/Neil_Seery 海外の記録サイト
@@ -2172,7 +2172,7 @@ e02727	heat	2010-11-06	HEAT 16		海外の記録サイト
 e02728	grachan	2010-11-07	GRACHAN5	東京・ディファ有明	https://grachan.jp/grachan5/
 e02729	tenkaichi_fight	2010-11-07	TF - Tenkaichi Super Fight 3		海外の記録サイト
 e05302	zst	2010-11-07	SWAT!-GX7		https://gbring.com/sokuho/result/result2010_11/1107_zst.htm 海外の記録サイト
-e02731	k1	2010-11-08	K-1 WORLD MAX 2010 -70kg World Championship Tournament FINAL（MMAは石井慧vs柴田勝頼の1試合のみ、他はK-1ルール）	両国国技館	https://ja.wikipedia.org/wiki/K-1_WORLD_MAX_2010_-70kg_World_Championship_Tournament_FINAL 海外の記録サイト
+e02731	k1_max	2010-11-08	K-1 WORLD MAX 2010 -70kg World Championship Tournament FINAL（MMAは石井慧vs柴田勝頼の1試合のみ、他はK-1ルール）	両国国技館	https://ja.wikipedia.org/wiki/K-1_WORLD_MAX_2010_-70kg_World_Championship_Tournament_FINAL 海外の記録サイト
 e05932	wec	2010-11-11	WEC 52: Faber vs. Mizugaki	ザ・パール（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_52 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5
 e05508	ufc	2010-11-13	UFC 122: Marquardt vs. Okami	König Pilsener Arena, Oberhausen ドイツ	https://jp.ufc.com/event/ufcr-122 https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_122
 e00742	shooto	2010-11-19	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2010_11/1119_shooto.htm 海外の記録サイト
@@ -6856,7 +6856,7 @@ e06051	one	2025-09-06	ONE Fight Night 35	ルンピニー・スタジアム	https
 e06241	ufc	2025-09-06	UFCファイトナイト・パリ: イマボフ vs. ボハーリョ	アコー・アリーナ, パリ フランス	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Imavov_vs._Borralho https://jp.ufc.com/event/ufc-fight-night-september-06-2025
 e01062	shooto	2025-09-07	BORDER2025「The2nd」		https://shooto-mma.com/result/?id=241
 e01747	grasp_the_future_cage	2025-09-07	GFC - Grasp The Future Cage 22	沖縄	海外の記録サイト
-e03982	k1	2025-09-07	K-1 WORLD MAX 2025～-70kg世界最強決定トーナメント・開幕戦～	東京・国立代々木競技場 第二体育館	https://efight.jp/result-20250907_1643785
+e03982	k1_max	2025-09-07	K-1 WORLD MAX 2025～-70kg世界最強決定トーナメント・開幕戦～	東京・国立代々木競技場 第二体育館	https://efight.jp/result-20250907_1643785
 e04469	deep	2025-09-07	SOUMEI Presents DEEP TOKYO IMPACT 2025 4th ROUND～DEEP VS YFU～	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-4th-round/
 e04470	deep	2025-09-07	DAYS Presents DEEP JEWELS 50	ニューピアホール	https://www.deep2001.com/deep-jewels-50/
 e04929	k1	2025-09-07	HERO’S		https://efight.jp/result-20250907_1643785

@@ -145,6 +145,12 @@ def load():
     for k in list(bouts):
         if bouts[k] and all(b.get('rule') for b in bouts[k]) and (events.get(k) or {}).get('promotion') not in gp:
             del bouts[k]
+    # 立ち技の団体（K-1・SHOOT BOXINGなど）の大会で、MMAルールの試合があったものは名前に（MMAルールあり）と付ける
+    su = set(site.get('standup_promotions') or [])
+    for k, bl in bouts.items():
+        e = events.get(k)
+        if e and e.get('promotion') in su and any(not (b.get('rule') or '').strip() for b in bl) and 'MMAルールあり' not in e['name']:
+            e['name'] = re.sub(r'（MMAは[^（）]*）', '', e['name']).strip() + '（MMAルールあり）'
     # 載せない大会・試合（data/exclude.tsv：event_id, fighter1, fighter2, reason。選手名が空なら大会ごと）…未成年の試合など
     for x in read_tsv(os.path.join(DATA, 'exclude.tsv')):
         k = x['event_id']
