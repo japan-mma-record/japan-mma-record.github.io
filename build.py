@@ -94,6 +94,7 @@ def load():
                     fid = links.get((e.get('date'), norm(b[f'fighter{n}'])))
                     if fid and not b.get(f'fighter{n}_id'):
                         b[f'fighter{n}_id'] = fid
+                        fighters.setdefault(fid, b[f'fighter{n}'].replace('　', '').replace(' ', ''))   # 記録のない選手は新しく作る
     # 柔術の試合番号（マット番号つき、data/bjj_mats.tsv：date, fighter1, fighter2, label 例「MAT2-33・準々決勝」）
     mats = {}
     for r in read_tsv(os.path.join(DATA, 'bjj_mats.tsv')):
