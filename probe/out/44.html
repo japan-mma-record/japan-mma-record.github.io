@@ -11,22 +11,22 @@
 
 
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8c51996690ccd0d6918","applicationID":"311541416","transactionName":"cllYRUFaDloBRBwDQlRYQkIcVgpXCUZaCVpCXl9BbEcHRRFaRxU=","queueTime":1,"applicationTime":154,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8c51996690ccd0d6918","applicationID":"311541416","transactionName":"cllYRUFaDloBRBwDQlRYQkIcVgpXCUZaCVpCXl9BbEcHRRFaRxU=","queueTime":2,"applicationTime":187,"agent":""}</script>
 <script type="text/javascript">(window.NREUM||(NREUM={})).init={"ajax":{"deny_list":["bam.nr-data.net"]},"feature_flags":["rum_v2"]};(window.NREUM||(NREUM={})).loader_config={"licenseKey":"NRJS-8c51996690ccd0d6918","applicationID":"311541416","browserID":"311542241"};;/*! For license information please see nr-loader-rum-1.324.1.min.js.LICENSE.txt */
 (()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zuv39xzZ8AH/HwpVrtkixvcBuOFo2ydcFzMtXjx+3Iwr5g++inX+6YDH7J/8fOCAtBetz8aDyaYCRkGy2nnG/w=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <meta content='International Brazilian Jiu-Jitsu Federation' name='description'>
 <meta content='championships, results' name='keywords'>
-<meta content='Campeonato Brasileiro 2010 - 2a Semana' property='og:title'>
+<meta content='San Francisco International Open 2012' property='og:title'>
 <meta content='website' property='og:type'>
-<meta content='https://ibjjf.com/events/44/results' property='og:url'>
+<meta content='https://ibjjf.com/events/104/results' property='og:url'>
 <meta content='https://ibjjf.com/packs/media/images/ibjjf/logo-ibjjf-horizontal-WHITE-5052f98303bf969a21192eabba044849.svg' itemprop='image' property='og:image'>
 <meta content='International Brazilian Jiu-Jitsu Federation' property='og:description'>
-<meta content='Campeonato Brasileiro 2010 - 2a Semana' property='og:site_name'>
+<meta content='San Francisco International Open 2012' property='og:site_name'>
 <meta content='summary_large_image' name='twitter:card'>
 <meta content='@ibjjf' name='twitter:site'>
-<meta content='Campeonato Brasileiro 2010 - 2a Semana' name='twitter:title'>
+<meta content='San Francisco International Open 2012' name='twitter:title'>
 <meta content='International Brazilian Jiu-Jitsu Federation' name='twitter:description'>
 <meta content='@ibjjf' name='twitter:creator'>
 <meta content='https://ibjjf.com/packs/media/images/ibjjf/logo-ibjjf-horizontal-WHITE-5052f98303bf969a21192eabba044849.svg' name='twitter:image:src'>
@@ -36,9 +36,9 @@
   window.DpMessengerOptions = { showLauncherButton: true }
 </script>
 
-<title>Campeonato Brasileiro 2010 - 2a Semana | IBJJF</title>
+<title>San Francisco International Open 2012 | IBJJF</title>
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="IT0D347zCZ52wFeHXw4S286myXBMGW4s84u1SXXNFdPywoUGCuvLUfTCr9gVCg2HvuDi4x2f55sEKSYgxmDeig" />
+<meta name="csrf-token" content="zxgx1oc1e3fusAFH6Dgefi1Sdr34fnu9h4g_G-oodTIpTHOxhekffcLcbPdVDh_psaOVKP3hxbqxO85Db_8o8Q" />
 <link rel="stylesheet" media="all" href="/packs/css/ibjjf-440ec5cd.css" />
 </head>
 <body class='events championship-results'>
@@ -324,7 +324,7 @@ Rules
 
 </div>
 <div class='col-12 page-title mt-0'>
-<h3 class='title-section text-center'>Campeonato Brasileiro 2010 - 2a Semana</h3>
+<h3 class='title-section text-center'>San Francisco International Open 2012</h3>
 <p class='results-status text-center is-partial'>
 <span class='label'>Partial result</span>
 </p>
@@ -338,61 +338,6 @@ Rules
 <div class='title'>Results of academies</div>
 </div>
 <div class='col-sm-12 academy'>
-<div class='category mt-4 mb-3'>2010</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='name'>CheckMat</td>
-<td class='points'>28</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='name'>Atos Jiu-Jitsu</td>
-<td class='points'>27</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='name'>Alliance JJ</td>
-<td class='points'>26</td>
-</tr>
-<tr>
-<td class='place'>4</td>
-<td class='name'>Alliance International </td>
-<td class='points'>22</td>
-</tr>
-<tr>
-<td class='place'>5</td>
-<td class='name'>Gracie Barra Rio de Janeiro</td>
-<td class='points'>21</td>
-</tr>
-<tr>
-<td class='place'>6</td>
-<td class='name'>Barbosa JJ e MMA </td>
-<td class='points'>13</td>
-</tr>
-<tr>
-<td class='place'>7</td>
-<td class='name'>Nova União</td>
-<td class='points'>10</td>
-</tr>
-<tr>
-<td class='place'>8</td>
-<td class='name'>Rilion Gracie</td>
-<td class='points'>9</td>
-</tr>
-<tr>
-<td class='place'>9</td>
-<td class='name'>Striker JJ</td>
-<td class='points'>9</td>
-</tr>
-<tr>
-<td class='place'>10</td>
-<td class='name'>Team JL Queiroz BJJ</td>
-<td class='points'>9</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
@@ -405,299 +350,1060 @@ Rules
 </div>
 </div>
 <div class='col-sm-12 athletes'>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Rooster (55.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Juvenile / Blue / Light Feather (125.00lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Bruno da Silva Malfacine</div>
-<div class='academy-name'>Alliance JJ</div>
+<div class='athlete-name'>Bobby Castle</div>
+<div class='academy-name'>Paulo Guillobel Brazilian Jiu- Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Felipe Pinto da Costa e Silva</div>
-<div class='academy-name'>Muzio BJJ</div>
+<div class='athlete-name'>Robert Sukhovitsky</div>
+<div class='academy-name'>Alliance San Francisco</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Ivaniel Cavalcante de Oliveira</div>
-<div class='academy-name'>Top Brother</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Leandro Luiz da Silva</div>
-<div class='academy-name'>CheckMat Brasil</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Light Feather (61.50kg)</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Guilherme Mendes </div>
-<div class='academy-name'>Atos Jiu-Jitsu</div>
-</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Gabriel Afonso dos Santos Moraes</div>
-<div class='academy-name'>Associação Monteiro</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Bernardo Pitel</div>
+<div class='athlete-name'>Justin Rebolloso (repetido 37987)</div>
 <div class='academy-name'>Nova União</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Laercio L Fernandes</div>
-<div class='academy-name'>MXT Academy BJJ</div>
+<div class='athlete-name'>Stewart Jones</div>
+<div class='academy-name'>CheckMat USA</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Feather (67.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Juvenile / Blue / Feather (136.00lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rafael Mendes </div>
-<div class='academy-name'>Atos Jiu-Jitsu</div>
+<div class='athlete-name'>Richard Wing Fu Wong</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rubens Charles Maciel</div>
-<div class='academy-name'>Alliance JJ</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Cicero Barbosa da Costa</div>
-<div class='academy-name'>Barbosa JJ e MMA </div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Theodoro Gabriel Canal Almeida</div>
-<div class='academy-name'>GF Team</div>
+<div class='athlete-name'>Nicholas Vincenzio Sabatino</div>
+<div class='academy-name'>United Brazilian Jiu-Jitsu</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Light (73.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Juvenile / Blue / Medium Heavy (169.00lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Gilbert Alexander Pontes Burns</div>
-<div class='academy-name'>Atos Jiu-Jitsu</div>
-</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Jonathan W. Torres</div>
-<div class='academy-name'>Lloyd Irvin Martial Arts</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Augusto Lopes Mendes</div>
-<div class='academy-name'>Soul Fighters BJJ Barra da Tijuca</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Vitor Henrique Silva Oliveira</div>
-<div class='academy-name'>GF Team</div>
+<div class='athlete-name'>Tyler  Turner</div>
+<div class='academy-name'>Gracie Fighter</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Middle (79.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Juvenile / Blue / Open Class</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Murilo S. de Santana</div>
-<div class='academy-name'>Barbosa JJ e MMA </div>
+<div class='athlete-name'>Tyler  Turner</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Rooster (122.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Bryan Lopez</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Light Feather (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jose Paz</div>
+<div class='academy-name'>Ralph Gracie</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Tiago Gomes Dias Alves</div>
-<div class='academy-name'>Barbosa JJ e MMA </div>
+<div class='athlete-name'>Kartik Dadwal</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Luis Gustavo Campos Lima</div>
+<div class='athlete-name'>Alfred Buntan Calayag</div>
+<div class='academy-name'>Alliance San Francisco</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sangyoon Lee</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James  Mendoza</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Arshag Khatchikian</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Benjamin Herhold</div>
 <div class='academy-name'>CheckMat</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Victor Del Corso Bomfim</div>
-<div class='academy-name'>Gordo Jiu-Jitsu </div>
+<div class='athlete-name'>Christopher Jordon Fletcher</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Medium Heavy (85.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Adult / White / Light (162.60lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Tarsis Carvalho Humphreys</div>
-<div class='academy-name'>Alliance International </div>
+<div class='athlete-name'>Sao Yang</div>
+<div class='academy-name'>Crosley Gracie Academy</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Nivaldo de Oliveira Lima</div>
+<div class='athlete-name'>ethan jackura</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Cole Rogers</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nathaniel A. Douglass</div>
+<div class='academy-name'>Ricardo Barros Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Peter Westcott</div>
+<div class='academy-name'>Carley Gracie Jiu-jitsu Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Noel Castro</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andre Tell</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Joseph Earle Ochoa</div>
+<div class='academy-name'>CheckMat International</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aaron Dorondo</div>
+<div class='academy-name'>Serao Mixed Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Plamen Ivanov</div>
+<div class='academy-name'>Carley Gracie Jiu-jitsu Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Joseph Hayden  Anderson</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>samuel  bracamonte</div>
+<div class='academy-name'>Serao Mixed Martial Arts</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daniel Joseph Chadwin</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jesus Rodriguez</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rob Messick</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu - Santa Cruz</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jed Herrington</div>
+<div class='academy-name'>Gracie Humaita Canadá </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / White / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>patrick bialoglovski</div>
+<div class='academy-name'>CheckMat International</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Amir Lacy Lacy</div>
 <div class='academy-name'>CheckMat</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Eduardo Telles Moreira</div>
-<div class='academy-name'>Brasa JJ</div>
+<div class='athlete-name'>Jacob Lacy</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Rooster (122.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>M. Woolf Barnato</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>antione green-gibson (REPETIDO 163056)</div>
+<div class='academy-name'>Cassio Werneck BJJ</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rodrigo Fajardo</div>
+<div class='athlete-name'>Abel Almanza Santos</div>
+<div class='academy-name'>Alliance Atlanta</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>David Herrera Junior</div>
+<div class='academy-name'>Vianna Brothers Brazilian Jiu-Jitsu Academy</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Light Feather (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Robert  Morales</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jeremy Stephen Louis Montes</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Cory Flanagan</div>
+<div class='academy-name'>Atos Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Gabriel Felipe Spiegel Anjo</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Edwin Najmi</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jeremy James Portilla</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adil Naghiyev</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christopher Joshua Smith</div>
+<div class='academy-name'>Alliance Los Angeles</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Douglas Wayne Ashford Jr.</div>
+<div class='academy-name'>Alliance </div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Emre Demirors</div>
+<div class='academy-name'>Brazil 021 School of Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>RYAN GAGNE</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Wesley  Leong</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Cooper Garrett Cardinale</div>
+<div class='academy-name'>Nova União</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>David Ziegler</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Benjamin Silva IV</div>
+<div class='academy-name'>Serao Mixed Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rehan Muttalib (repetido 143263)</div>
+<div class='academy-name'>Alliance </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Vasili Nikolaev</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Richard  Flores (repetido 145211)</div>
+<div class='academy-name'>Crosley Gracie Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>William Hu</div>
+<div class='academy-name'>Cassio Werneck BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jonathan David Greek</div>
+<div class='academy-name'>Clark Gracie Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Pablo Mesples</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu - Santa Cruz</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Bryan Manuel Torres</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Frederick Michael Persons Jr</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Ahmed Yosan Richard Thomas White</div>
+<div class='academy-name'>SBG Montana</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Azarias Raphael Castro</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Danny Chavez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Russell Friedrich (repetido 156381)</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Ryan Craig Walsh</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Alberto Ruiz</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jason Wayne Montgomery</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Russell Friedrich (repetido 156381)</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Douglas Wayne Ashford Jr.</div>
+<div class='academy-name'>Alliance </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Cooper Garrett Cardinale</div>
+<div class='academy-name'>Nova União</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Edwin Najmi</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Light Feather (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Henry Iribe</div>
+<div class='academy-name'>Atos Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Luis Federico Orrantia Valdivieso</div>
+<div class='academy-name'>Gracie Barra Pasadena</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Francis Valledor Tejano</div>
+<div class='academy-name'>Alliance Los Angeles</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Isaac Nolan Doederlein</div>
+<div class='academy-name'>Alliance Los Angeles</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jacob Robert Sandoval</div>
+<div class='academy-name'>Alliance </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Matthew Bruce Park</div>
+<div class='academy-name'>Stephan Goyne Bay Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Royce Eaton Chen</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Bryan Christopher Marugg</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Garrett Matthew Beck</div>
+<div class='academy-name'>Drysdale BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Hooman Ahmadi</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Keith Fukumae</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brian John Morizi</div>
+<div class='academy-name'>Atos Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nicholas Gudgeon</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>anthony vidal</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jon Chiu</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Manuel Diaz</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael-Justin Carbullido</div>
+<div class='academy-name'>Atos Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adam Geoffrey Dunkel</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brad Alan Pearson</div>
+<div class='academy-name'>Team Lloyd Irvin</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Cody Hinojosa</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brian John Morizi</div>
+<div class='academy-name'>Atos Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Isaac Nolan Doederlein</div>
+<div class='academy-name'>Alliance Los Angeles</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brad Alan Pearson</div>
+<div class='academy-name'>Team Lloyd Irvin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jon Chiu</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Brown / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael C W Huang</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Zachary James Adamson</div>
+<div class='academy-name'>Lovato Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aldrin Soedarto</div>
+<div class='academy-name'>Renzo Gracie Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rafael Barbosa Carvalho da Costa</div>
 <div class='academy-name'>Gracie Barra Rio de Janeiro</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Heavy (91.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Adult / Brown / Middle (175.60lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Alexandro Ceconi de Souza</div>
-<div class='academy-name'>Rilion Gracie</div>
+<div class='athlete-name'>Tanner Wade Rice</div>
+<div class='academy-name'>Alliance Los Angeles</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Leonardo Pires Nogueira</div>
-<div class='academy-name'>Alliance JJ</div>
+<div class='athlete-name'>Nathan Albrecht Mendelsohn</div>
+<div class='academy-name'>Coalition 95 </div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Bernardo Augusto Rocha de Faria</div>
-<div class='academy-name'>Alliance JJ</div>
+<div class='athlete-name'>Sean Douglas Roberts</div>
+<div class='academy-name'>Sektor BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Brown / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark S Tse</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Walnan Presto Constantino</div>
+<div class='academy-name'>Universidade da Luta de Goiás </div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rafael Lovato Jr.</div>
+<div class='athlete-name'>Mark Zachary Bursztyn</div>
+<div class='academy-name'>Gracie Barra Encinitas </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Brown / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sean Douglas Roberts</div>
+<div class='academy-name'>Sektor BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nathan Albrecht Mendelsohn</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark S Tse</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Zachary James Adamson</div>
 <div class='academy-name'>Lovato Jiu-Jitsu</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Super Heavy (97.50kg)</div>
+<div class='category mt-4 mb-3'>Male / Adult / Black / Feather (149.00lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Thiago G. T. de Oliveira Marques</div>
-<div class='academy-name'>Nova União</div>
+<div class='athlete-name'>Osvaldo Augusto Honorio Moizinho</div>
+<div class='academy-name'>Gracie Fighter</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Paulo Tarcisio Pessoa Jardim</div>
-<div class='academy-name'>CheckMat</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Felipe Jose Abrahão Pacces</div>
-<div class='academy-name'>Alliance SP</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Thiago Reinaldo de Souza</div>
-<div class='academy-name'>Equipe Behring </div>
+<div class='athlete-name'>Samir José Chantre Dahás</div>
+<div class='academy-name'>Gracie Fighter</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Male / Adult / Black / Ultra Heavy</div>
+<div class='category mt-4 mb-3'>Male / Adult / Black / Light (162.60lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rodrigo Henrique Cavaca</div>
-<div class='academy-name'>CheckMat</div>
+<div class='athlete-name'>Alessandro Ferreira da Silva</div>
+<div class='academy-name'>Gracie Fighter</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Igor Silva</div>
-<div class='academy-name'>Muzio BJJ</div>
+<div class='athlete-name'>Matthew Stephen Darcy</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Antonio Carlos Alexandre Peinado</div>
-<div class='academy-name'>Alliance JJ</div>
+<div class='athlete-name'>Daniel J. Covel</div>
+<div class='academy-name'>Alliance Marcelo Garcia</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Josué Gomes B. Junior</div>
-<div class='academy-name'>Alliance SP</div>
+<div class='athlete-name'>Steven Soren Riis Rosenberg</div>
+<div class='academy-name'>Nova União</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Black / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Vitor Henrique Silva Oliveira</div>
+<div class='academy-name'>GF Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Marcos Alejandro Torregrosa</div>
+<div class='academy-name'>Team Lloyd Irvin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>John D Carlquist</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Adult / Black / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Marcel Fortuna</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Richard Puopolo</div>
+<div class='academy-name'>Lovato Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Leonardo de Paiva Machado de Santana</div>
+<div class='academy-name'>Brazilian Top Team</div>
 </td>
 </tr>
 </tbody>
@@ -708,157 +1414,2186 @@ Rules
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Bernardo Augusto Rocha de Faria</div>
-<div class='academy-name'>Alliance JJ</div>
+<div class='athlete-name'>Vitor Henrique Silva Oliveira</div>
+<div class='academy-name'>GF Team</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rafael Lovato Jr.</div>
+<div class='athlete-name'>Samir José Chantre Dahás</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Richard Puopolo</div>
 <div class='academy-name'>Lovato Jiu-Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Rodrigo Henrique Cavaca</div>
-<div class='academy-name'>CheckMat</div>
-</td>
-</tr>
-<tr>
-<td class='place'>3</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Tarsis Carvalho Humphreys</div>
-<div class='academy-name'>Alliance International </div>
+<div class='athlete-name'>Osvaldo Augusto Honorio Moizinho</div>
+<div class='academy-name'>Gracie Fighter</div>
 </td>
 </tr>
 </tbody>
 </table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Rooster (46.50kg)</div>
+<div class='category mt-4 mb-3'>Female / Adult / White / Light Feather (114.00lb)</div>
 <table class='table'>
 <tbody>
 <tr>
 <td class='place'>1</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Thaizar Alburquerque dos Santos</div>
-<div class='academy-name'>GF Team</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Feather (56.50kg)</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Bianca Andrade Barreto</div>
-<div class='academy-name'>Gracie Barra Rio de Janeiro</div>
+<div class='athlete-name'>Ellen S Park</div>
+<div class='academy-name'>Gracie Humaita</div>
 </td>
 </tr>
 <tr>
 <td class='place'>2</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Vanessa Maria Silva de Oliveira</div>
-<div class='academy-name'>Gracie Barra João Pessoa-PB</div>
+<div class='athlete-name'>Michelle Nee</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Ana Michelle Tavares Dantas</div>
+<div class='athlete-name'>Justine Johnson</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu - Santa Cruz</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / White / Feather (125.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Akiko A Hayata</div>
+<div class='academy-name'>Renzo Gracie LA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Georgena Staley</div>
 <div class='academy-name'>Gracie Humaita</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Marina Soares de Araujo Ribeiro</div>
-<div class='academy-name'>CheckMat</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Light (61.50kg)</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Barbara Gomes dos Santos</div>
-<div class='academy-name'>Team JL Queiroz BJJ</div>
-</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Lauriane Clarice dos Santos Mendes</div>
-<div class='academy-name'>Academia CM System</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Medium Heavy (71.50kg)</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Fernanda Mazzelli Almeida Maio</div>
-<div class='academy-name'>Striker JJ</div>
-</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Polyana Lago Barbosa</div>
-<div class='academy-name'>Alliance SP</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Ultra Heavy</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Luzia Carmem Santana P. Fernandes</div>
-<div class='academy-name'>Gracie Barra Rio de Janeiro</div>
-</td>
-</tr>
-</tbody>
-</table>
-<div class='category mt-4 mb-3'>Female / Adult / Black / Open Class</div>
-<table class='table'>
-<tbody>
-<tr>
-<td class='place'>1</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Luzia Carmem Santana P. Fernandes</div>
-<div class='academy-name'>Gracie Barra Rio de Janeiro</div>
-</td>
-</tr>
-<tr>
-<td class='place'>2</td>
-<td class='athlete-academy'>
-<div class='athlete-name'>Luanna Alzuguir Marton Moraes</div>
-<div class='academy-name'>Alliance International </div>
+<div class='athlete-name'>Jacqueline Uribe</div>
+<div class='academy-name'>Heroes Martial Arts</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Marina Soares de Araujo Ribeiro</div>
+<div class='athlete-name'>Trang Mai Pham</div>
+<div class='academy-name'>Ralph Gracie Dublin</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / White / Light (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Giannina Balestrini</div>
+<div class='academy-name'>Charles Gracie Jiu-Jitsu Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Judy Burgess</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Lauren Ashley Borja</div>
+<div class='academy-name'>Brazilian Top Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Virginia Castro</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / White / Middle (147.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>ximena alegria</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Marian Hunting</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jenny Ordonez</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Vanessa Audette Gauthier</div>
+<div class='academy-name'>Alliance San Francisco</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / White / Medium Heavy (158.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Yolanda Conforti</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Light Feather (114.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Claudia Diaz</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Josephine Ann Collette</div>
+<div class='academy-name'>Alliance San Francisco</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christina Lynn Winograd</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Maria Cecilia Z S Rebaño</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Feather (125.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Laura Anderson</div>
+<div class='academy-name'>Gracie Barra Fullerton</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Judith Joan Marie Gomes</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Elizabeth Bonani</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jessie Chen (Repetido 71344)</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Light (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Danielle Renee Alvarez</div>
+<div class='academy-name'>Nova União</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Middle (147.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sarah Johnel Black</div>
+<div class='academy-name'>DDR Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Candace Elizabeth Phillips</div>
+<div class='academy-name'>Gracie Morumbi</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Medium Heavy (158.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Athena Simona Herrera</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Danielle Renee Alvarez</div>
+<div class='academy-name'>Nova União</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sarah Johnel Black</div>
+<div class='academy-name'>DDR Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Athena Simona Herrera</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Laura Anderson</div>
+<div class='academy-name'>Gracie Barra Fullerton</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Purple / Feather (125.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nikki Marie Inacio</div>
+<div class='academy-name'>Gracie Barra Corona</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christie Marie Sullivan</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kristen Marie Davidson</div>
+<div class='academy-name'>Brazilian Top Team Int.</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tasawan Bugarin</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Purple / Light (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Angelica Cabral Firme Galvao</div>
+<div class='academy-name'>Atos JJ Rio Claro</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Amanda Yuki Grummon </div>
+<div class='academy-name'>Gracie Barra America</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Purple / Middle (147.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jill Marie Baker</div>
+<div class='academy-name'>Jean Jacques Machado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Purple / Medium Heavy (158.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Maia Nicole Matalon</div>
+<div class='academy-name'>Ralph Gracie Jiu-Jitsu Berkeley</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brooke Lee Goldsworthy</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Female / Adult / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Maia Nicole Matalon</div>
+<div class='academy-name'>Ralph Gracie Jiu-Jitsu Berkeley</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Angelica Cabral Firme Galvao</div>
+<div class='academy-name'>Atos JJ Rio Claro</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brooke Lee Goldsworthy</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jill Marie Baker</div>
+<div class='academy-name'>Jean Jacques Machado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Rooster (122.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kingston Ho-king Fung</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Light Feather (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Orozco</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kenneth Ogami</div>
+<div class='academy-name'>Gracie Barra Pasadena</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>igor galvao</div>
+<div class='academy-name'>AB Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Timothy Ip</div>
+<div class='academy-name'>Faito Tamashi Combat Club</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jayson Pizarro</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jesse Herrick</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Santiago Castillo Garcia</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brian Farid</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Ruben A Tumbaga</div>
+<div class='academy-name'>Stephan Goyne Bay Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Josh  Kretschmann</div>
+<div class='academy-name'>Cia Paulista USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jose  Palacios</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Dameon Engblom</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Blackner Jake</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Eric McEwen</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Chris Kempton</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>David A. Sands</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adam Kyle Schembs</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Douglass Diffenderfer</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andy lujan</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mariano Capacillo</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / White / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jae Hong An</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Carree Todd</div>
+<div class='academy-name'>Cyclone Martial Arts USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Danny Nguyen Tran</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Richeson (DUPLICATED 477663)</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Brian Anthony Lee</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Ryan Frederick Raley (repetido 115360)</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Augusto Da Silva Basilio</div>
+<div class='academy-name'>AB Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew James Fonseca</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Felipe Mendoza</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Richard Selmar Bothun</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Mack</div>
+<div class='academy-name'>Gracie Humaita Phoenix</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>gene morris</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Yao Wang</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adam Richard Nadow</div>
+<div class='academy-name'>Brazilian Top Team Long Beach</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>William Min Kang</div>
+<div class='academy-name'>Ralph Gracie Jiu-Jitsu Berkeley</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Colin Paterson</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Vincent Mancini</div>
+<div class='academy-name'>Stephan Goyne Bay Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sharif Khaleel</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jobair Ahamad Maghmom</div>
+<div class='academy-name'>Jean Jacques Machado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Josef Justin De La Vega</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rene  Novoa</div>
+<div class='academy-name'>Gracie Barra Rohnert Park</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daniel  Brito</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Alfonso Joel Washington Jr.</div>
+<div class='academy-name'>Team Lloyd Irvin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nayjo Burnett</div>
+<div class='academy-name'>Team Andre Cia Paulista</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daniel  Brito</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Alfonso Joel Washington Jr.</div>
+<div class='academy-name'>Team Lloyd Irvin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Josef Justin De La Vega</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Light Feather (136.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tracey Sato</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Gilberto Guzman</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Darren Kim Ng</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Keith Trader</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark Pagaduan</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Howard Loaisiga</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kyung Sup Yoon</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jonathan Gil</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Gregory Michael Seitz</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>George Tan</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Robert Arnold</div>
+<div class='academy-name'>AB Team</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Hector Ramos</div>
+<div class='academy-name'>Gracie Barra Northridge</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kevin Snorf</div>
+<div class='academy-name'>Kaijin Martial Arts</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Jordan Krider</div>
+<div class='academy-name'>Gracie Barra Encinitas </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Viquez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Will Macalua Valencia</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Joseph Montano</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aaron Gonzales</div>
+<div class='academy-name'>Alliance </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Konstantin N Skachkov</div>
+<div class='academy-name'>Ralph Gracie Dublin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>William Rahn</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Eric Anthony Patt</div>
+<div class='academy-name'>Carlson Gracie Team</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Eric Anthony Patt</div>
+<div class='academy-name'>Carlson Gracie Team</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>William Rahn</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Viquez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Brown / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daryl Jay Fort</div>
+<div class='academy-name'>Clark Gracie Team</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Brown / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tryfon Constantine Stathopoulos</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew Pak Wong</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Brown / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tryfon Constantine Stathopoulos</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew Pak Wong</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Black / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Armand Auguste Debruge</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Matt Jason Baker</div>
+<div class='academy-name'>Jean Jacques Machado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tyson Kamp</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Black / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sérgio Luiz Linhares e Silva</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Black / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thiago Rogério dos Santos Silva</div>
+<div class='academy-name'>Brazil 021 School of Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 1 / Black / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Armand Auguste Debruge</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thiago Rogério dos Santos Silva</div>
+<div class='academy-name'>Brazil 021 School of Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sérgio Luiz Linhares e Silva</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tyson Kamp</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Alex Gurevich</div>
+<div class='academy-name'>Mikyo Riggs Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Scott Murtishaw</div>
+<div class='academy-name'>SBG International (SBGI)</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mike Lee</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Randy Lacy</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark Danner</div>
+<div class='academy-name'>Gracie Barra New Mexico</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>DAVID CLERE</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Carlos Ernesto Hernandez Alvarado</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Darrin Neil Tinsley</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Joshua Michael Hochman</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>gary patterson</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Wilson Tom</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daniel Powers Manriques</div>
+<div class='academy-name'>Tinguinha BJJ Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Tilden Moschetti</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>girod st. martin</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>MARCUS SOUZA</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / White / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Robert Cunliffe</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Ian Brown</div>
+<div class='academy-name'>Gracie Humaita Canadá </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Shawn Philips Fabits</div>
+<div class='academy-name'>Tinguinha BJJ Academy</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rafael Garcia Maciel</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aaron Michael Martinez</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Johnathan Brown</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Omari Williams</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adrian Weichih Liang</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Nichols-Marcy</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rommel  Martinez</div>
+<div class='academy-name'>Charles Gracie Jiu-Jitsu Academy</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Bart Hubbard (REPETIDO 147335)</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jamison T. Cummings</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aleksander Sheynkman</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Shawn Wallace</div>
 <div class='academy-name'>CheckMat</div>
 </td>
 </tr>
 <tr>
 <td class='place'>3</td>
 <td class='athlete-academy'>
-<div class='athlete-name'>Tania Mabel Andrade Barrêto</div>
-<div class='academy-name'>Gracie Barra Rio de Janeiro</div>
+<div class='athlete-name'>Wayne Hom</div>
+<div class='academy-name'>Carlos Sapao BJJ </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Richard Wilkerson</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Julio Olimpio M. de Araujo</div>
+<div class='academy-name'>Brazilian Top Team</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jamison T. Cummings</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Adrian Weichih Liang</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Bart Hubbard (REPETIDO 147335)</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Richard Wilkerson</div>
+<div class='academy-name'>Gracie Humaita</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Purple / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>John Thomas Sorrell</div>
+<div class='academy-name'>Alliance San Francisco</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Danny Sungwoo Gong</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Angel Paul Lopez</div>
+<div class='academy-name'>Tinguinha BJJ Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark Allan Heinzer</div>
+<div class='academy-name'>Guerrilla Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Purple / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Antone Nardi</div>
+<div class='academy-name'>Crispim BJJ Brothers</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Purple / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Aaron Charles Lones</div>
+<div class='academy-name'>Clube de Jiu-Jitsu Pit Bull - San Diego</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Mark Andrew Simonson</div>
+<div class='academy-name'>Raul Castillo BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Purple / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Lord Fernandez</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Lord Fernandez</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Brown / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Leandro Luiz Massaro</div>
+<div class='academy-name'>Relson Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>John Anthony Villarruel</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Brown / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christian J. Hernandez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Brown / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christopher Joseph Latino</div>
+<div class='academy-name'>Cia Paulista USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nathan Wayne Jeffers</div>
+<div class='academy-name'>Five Rings Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Brown / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Wauriman Pereira Borges</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Brown / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christopher Joseph Latino</div>
+<div class='academy-name'>Cia Paulista USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Nathan Wayne Jeffers</div>
+<div class='academy-name'>Five Rings Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Christian J. Hernandez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Black / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Daniel V. Alvarez Jr.</div>
+<div class='academy-name'>Nova União USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Michael Edward Chapman</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Black / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Jackson E McVicker</div>
+<div class='academy-name'>Gracie Humaita USA </div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Stephan Luther Goyne</div>
+<div class='academy-name'>Stephan Goyne Bay Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Black / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Luis Eduardo Gonçalves Fraga</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 2 / Black / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Luis Eduardo Gonçalves Fraga</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Craig Ishimaru</div>
+<div class='academy-name'>Ralph Gracie Jiu-Jitsu Berkeley</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Morgan Manlopig</div>
+<div class='academy-name'>Gracie Barra Rohnert Park</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Misha Groysman</div>
+<div class='academy-name'>CheckMat</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Sohrab Gollogly</div>
+<div class='academy-name'>Claudio Franca</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Karl Voss</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Harold Villegas</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Scott Batson</div>
+<div class='academy-name'>Cyclone Martial Arts USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Eugene Wonkyu Kim</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew Reeves</div>
+<div class='academy-name'>Roger Gracie Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Keith Pridgen</div>
+<div class='academy-name'>Lotus Club Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew Gross</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Timothy Christian Oliveira</div>
+<div class='academy-name'>Stephan Goyne Bay Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kevin David Douglass</div>
+<div class='academy-name'>Ricardo Barros Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Paulo Braga</div>
+<div class='academy-name'>Gracie Fighter</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Scott Batson</div>
+<div class='academy-name'>Cyclone Martial Arts USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Andrew Reeves</div>
+<div class='academy-name'>Roger Gracie Academy</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Keith Pridgen</div>
+<div class='academy-name'>Lotus Club Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kevin David Douglass</div>
+<div class='academy-name'>Ricardo Barros Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kham Kone Francisco de Jasso Ngondara</div>
+<div class='academy-name'>SAS Team </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thomas Tupper, Jr.</div>
+<div class='academy-name'>Coalition 95 </div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thorin Oakenshield Ryan</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Marcus Boness</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kevin James Gonzalez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Ultra Heavy</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Niels Sondergaard Burgess</div>
+<div class='academy-name'>Cleber Jiu Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Scott C Lacer</div>
+<div class='academy-name'>Ribeiro Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Woody Lee Little</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 3 / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thorin Oakenshield Ryan</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Marcus Boness</div>
+<div class='academy-name'>Yemaso Brazilian Jiu-Jitsu</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kevin James Gonzalez</div>
+<div class='academy-name'>CheckMat USA</div>
+</td>
+</tr>
+<tr>
+<td class='place'>3</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Woody Lee Little</div>
+<div class='academy-name'>Impact Jiu Jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 4 / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rodante Pat Sagisi, Jr.</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 4 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Rodante Pat Sagisi, Jr.</div>
+<div class='academy-name'>Heroes Martial Arts</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 4 / Black / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Kurt Johann Osiander</div>
+<div class='academy-name'>Ralph Gracie</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Blue / Super Heavy (215.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Al Cintra-Leite</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Al Cintra-Leite</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Purple / Light (162.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Matthew Wong</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Purple / Heavy (202.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thomas Gerald Haselton</div>
+<div class='academy-name'>Ralph Gracie Dublin</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Purple / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Thomas Gerald Haselton</div>
+<div class='academy-name'>Ralph Gracie Dublin</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Matthew Wong</div>
+<div class='academy-name'>Sandro Batata Brazilian Jiu-jitsu</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 5 / Black / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Itabora Ferreira</div>
+<div class='academy-name'>Alliance Atlanta</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 6 / Blue / Middle (175.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Allan Nations</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 6 / Blue / Medium Heavy (188.60lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Douglas Afonso D&#39;Anna</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 6 / Blue / Open Class</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>Douglas Afonso D&#39;Anna</div>
+<div class='academy-name'>Marco Nascimento BJJ</div>
+</td>
+</tr>
+<tr>
+<td class='place'>2</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>James Allan Nations</div>
+<div class='academy-name'>Fabio Prado BJJ</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='category mt-4 mb-3'>Male / Master 6 / Purple / Feather (149.00lb)</div>
+<table class='table'>
+<tbody>
+<tr>
+<td class='place'>1</td>
+<td class='athlete-academy'>
+<div class='athlete-name'>William Michael Webber</div>
+<div class='academy-name'>Ralph Gracie Jiu-Jitsu Berkeley</div>
 </td>
 </tr>
 </tbody>
