@@ -1188,7 +1188,7 @@ e02187	martial_arts_japan_kickboxing_federation	2006-01-20	MAJKF - Surprising 1	
 e00157	pancrase	2006-01-26	PANCRASE 2006 BLOW TOUR（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/2006/0126.html
 e02188	wcapsule	2006-01-28	W-カプセル	新宿FACE	https://www.boutreview.com/fightsspiral//W_cupsle_06_01_28.html
 e04823	wcapsule	2006-01-28	SAMURAI SWORD「Wカプセルvol.1」	東京・新宿FACE	https://gbring.com/sokuho/result/result2006_01/0128_w.htm
-e01209	pancrase	2006-01-29	第8回西日本アマチュアパンクラスオープン大会／第4回西日本パンクラスゲート大会	P's LAB大阪	https://gbring.com/sokuho/result/result2006_02/0201_pancrase.htm
+e01209	pancrase_ama	2006-01-29	第8回西日本アマチュアパンクラスオープン大会／第4回西日本パンクラスゲート大会	P's LAB大阪	https://gbring.com/sokuho/result/result2006_02/0201_pancrase.htm
 e04767	powergate	2006-01-29	POWERGATE 4 TOUR in アゼリア大正	大阪・アゼリア大正	https://www.boutreview.com/fightsspiral/POWERGATE_4.html
 e04768	powergate	2006-01-29	POWERGATE 5 TOUR in BLACK CHAMBER	大阪・BLACK CHAMBER	https://www.boutreview.com/fightsspiral/POWERGATE_5.html
 e01210	smackgirl	2006-02-03	FF2 Gi-Feminino2006 × SMACKGIRL-F2006	北沢タウンホール	https://gbring.com/sokuho/result/result2006_02/0203_smack.htm 海外の記録サイト
@@ -1227,7 +1227,7 @@ e02202	spiritual_road	2006-03-21	スピリチュアルロード 2nd	広島市佐
 e00657	shooto	2006-03-24	プロフェッショナル修斗公式戦（後楽園ホール）		https://gbring.com/sokuho/result/result2006_03/0324_shooto.htm
 e07443	cage_warriors	2006-03-25	CWFC: Strike Force 5	英国コヴェントリー	https://en.wikipedia.org/wiki/2006_in_Cage_Warriors
 e08912	shoot_boxing	2006-03-25	NEO ΟΡΘΡΟΖ Series.2nd	東京・後楽園ホール	https://gbring.com/sokuho/result/result2006_03/0325_sb.htm
-e01214	pancrase	2006-03-26	アマチュアパンクラスワンマッチ＆第2回パンクラスアテナグラップリング	P'sLAB東京	https://gbring.com/sokuho/result/result2006_03/0326_pancrase.htm
+e01214	pancrase_ama	2006-03-26	アマチュアパンクラスワンマッチ＆第2回パンクラスアテナグラップリング	P'sLAB東京	https://gbring.com/sokuho/result/result2006_03/0326_pancrase.htm
 e02203	rings	2006-03-26	Rings - Road to Japan	Utrecht, Netherlands	https://combatreg.com/events/K-1-The-Road-to-Japan:B1146405-C21E-43E9-A455-45594EA69978 海外の記録サイト
 e04714	gcm	2006-04-01	D.O.G Ⅴ	ディファ有明	https://www.boutreview.com/fightsspiral/dog_06_04_01.html
 e00160	pancrase	2006-04-02	PANCRASE 2006 BLOW TOUR（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2006/0402.html
@@ -1273,7 +1273,7 @@ e02220	gcm	2006-05-28	MULTIPLEX 2006	東京・臨海副都心NOP街区特設イ�
 e04798	shooto	2006-06-03	プロフェッショナル修斗公式戦 SHOOTO GIG WEST 5	大阪・アゼリア大正	https://www.boutreview.com/fightsspiral/shoot_06_06_03.html
 e07585	ksw	2006-06-03	KSW 5	Hotel Marriott（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2006_in_Konfrontacja_Sztuk_Walki
 e08724	k1	2006-06-03	K-1 WORLD GP 2006 IN SEOUL	韓国・ソウル	https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%9F%E3%83%BC%E3%83%BB%E3%82%B7%E3%83%A5%E3%83%AB%E3%83%88 https://gbring.com/sokuho/result/result2006_06/0603_k-1.htm
-e01220	pancrase	2006-06-04	第16回パンクラスゲート×2	P'sLAB東京	https://gbring.com/sokuho/result/result2006_06/0604_pancrase.htm
+e01220	pancrase_ama	2006-06-04	第16回パンクラスゲート×2	P'sLAB東京	https://gbring.com/sokuho/result/result2006_06/0604_pancrase.htm
 e04218	pride	2006-06-04	PRIDE 武士道 其の十一	さいたまスーパーアリーナ	https://www.boutreview.com/fightsspiral/pride_bushido_11.html
 e04249	zst	2006-06-04	ZST SWAT！ 05 ジェネシスリーグ第2回大会	ゴールドジムサウス東京アネックス	https://www.boutreview.com/fightsspiral/ZST_SWAT_05.html
 e00163	pancrase	2006-06-06	PANCRASE 2006 BLOW TOUR（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/2006/0606.html
@@ -1310,7 +1310,7 @@ e04129	deep	2006-08-04	DEEP 25 IMPACT	後楽園ホール	https://www.boutreview.
 e04729	heros	2006-08-05	TBS「HERO'S 2006 ミドル級＆ライトヘビー級世界最強王者決定トーナメント準々決勝」	東京・有明コロシアム	https://gbring.com/sokuho/result/result2006_08/0805_heros.htm
 e04130	deep	2006-08-12	club DEEP 白馬	長野県 Hakuba47	https://www.boutreview.com/fightsspiral/clubDEEP_06_08_12.html
 e08750	k1	2006-08-12	FieLDS K-1 WORLD GP 2006 in LAS VEGAS II	アメリカ・ラスベガス ベラージオホテル	https://gbring.com/sokuho/result/result2006_08/0812_k-1.htm
-e01226	pancrase	2006-08-13	第17回パンクラスゲート×2	P's LAB東京	https://gbring.com/sokuho/result/result2006_08/0813_pancrase.htm
+e01226	pancrase_ama	2006-08-13	第17回パンクラスゲート×2	P's LAB東京	https://gbring.com/sokuho/result/result2006_08/0813_pancrase.htm
 e02239	rings	2006-08-13	Rings Lithuania - Lekeciai 500	Lekeciai, Lekeciai Lithuania	https://combatreg.com/events/Rings-Lithuania-Lekeciai-500:3B602707-BCB1-4EDD-AF95-611B58E28693 海外の記録サイト
 e04748	kokoro	2006-08-15	PUREBRED「心～Kill or be Killed～」	東京・後楽園ホール	https://gbring.com/sokuho/result/result2006_08/0815_purebred.htm
 e05545	ufc	2006-08-17	UFC Fight Night 6	Red Rock Resort Spa and Casino, Summerlin, Nevada, U.S.	https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E6%9C%89%E7%94%9F https://en.wikipedia.org/wiki/UFC_Fight_Night:_Sanchez_vs._Parisyan
@@ -1360,7 +1360,7 @@ e01230	smackgirl	2006-10-21	SMACKGIRL-F2006～西調布女子格ロードvol.1�
 e04222	pride	2006-10-21	PRIDE.32 - THE REAL DEAL -	アメリカ ネバダ州 ラスベガス トーマス&マックセンター	https://www.boutreview.com/fightsspiral/PRIDE32.html
 e00168	pancrase	2006-10-25	PANCRASE 2006 BLOW TOUR（東京・後楽園ホール）	東京・後楽園ホール	https://pancrase.co.jp/data/result/2006/1025.html
 e02261	mars	2006-10-28	MARS 05 in 両国国技館	東京・両国国技館	https://gbring.com/sokuho/result/result2006_10/1028_mars.htm
-e01231	pancrase	2006-10-29	第18回パンクラスゲート×2	P's LAB東京	https://gbring.com/sokuho/result/result2006_10/1029_pancrase.htm
+e01231	pancrase_ama	2006-10-29	第18回パンクラスゲート×2	P's LAB東京	https://gbring.com/sokuho/result/result2006_10/1029_pancrase.htm
 e04764	powergate	2006-10-29	バーサス『総合格闘技イベント POWERGATE 11 帰還 in フラミンゴ・ジ・アルーシャ』	大阪・フラミンゴ・ジ・アルーシャ	https://gbring.com/sokuho/result/result2006_10/1029_power.htm
 e08901	shoot_boxing	2006-11-03	SHOOT BOXING WORLD TOURNAMENT S-cup 2006	東京・両国国技館	https://boutreview.com/data/reports05/061103shootboxing.html
 e00668	shooto	2006-11-04	プロフェッショナル修斗公式戦（サステイン）		https://gbring.com/sokuho/result/result2006_11/1104_shooto.htm
@@ -1399,7 +1399,7 @@ e04135	deep	2006-12-20	DEEP 27 IMPACT	後楽園ホール	https://www.boutreview.
 e01236	mars	2006-12-22	MARS 06 “RAPID FIRE”		https://gbring.com/sokuho/result/result2006_12/1222_mars.htm
 e04756	mars	2006-12-22	"MARS 06 ""RAPID FIRE"""	神奈川・横浜文化体育館	https://gbring.com/sokuho/result/result2006_12/1222_mars.htm
 e01237	accel	2006-12-24	【アクセル格闘武道会】“天才児”横山剛が王者対決を難無く制す！		https://gbring.com/sokuho/result/result2006_12/1224_accel.htm
-e01238	pancrase	2006-12-24	第19回パンクラスゲート2	P'sLAB東京	https://gbring.com/sokuho/result/result2006_12/1224_pancrase.htm
+e01238	pancrase_ama	2006-12-24	第19回パンクラスゲート2	P'sLAB東京	https://gbring.com/sokuho/result/result2006_12/1224_pancrase.htm
 e04660	accel	2006-12-24	ACCEL格闘武道会7	兵庫県民会館	https://gbring.com/sokuho/result/result2006_12/1224_accel.htm
 e05540	ufc	2006-12-30	UFC 66: Liddell vs. Ortiz 2	MGM Grand Garden Arena	https://jp.ufc.com/event/ufcr-66 https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_66
 e02276	dynamite	2006-12-31	FieLDS K-1 PREMIUM 2006 Dynamite!!	京セラドーム大阪	https://www.boutreview.com/data/reports05/061231dynamite.html
@@ -1426,7 +1426,7 @@ e08931	k1	2007-02-18	K-1 FIGHTING NETWORK KHAN 2007 in SEOUL	韓国・ソウル 
 e04225	pride	2007-02-25	PRIDE.33 - THE SECOND COMING -	アメリカ ネバダ州 ラスベガス トーマス&マックセンター	https://www.boutreview.com/fightsspiral/PRIDE33.html
 e08891	shoot_boxing	2007-02-25	SHOOT BOXING2007 無双～MU-SO～其の壱	東京・後楽園ホール	https://gbring.com/sokuho/result/result2007_02/0225_sb.htm
 e00172	pancrase	2007-02-28	PANCRASE 2007 RISING TOUR（東京・後楽園ホール）	東京・後楽園ホール	https://pancrase.co.jp/data/result/2007/0228.html
-e01241	pancrase	2007-02-28	第20回パンクラスゲート×2	P'sLAB東京	https://gbring.com/sokuho/result/result2007_02/0228_pancrase_02.htm
+e01241	pancrase_ama	2007-02-28	第20回パンクラスゲート×2	P'sLAB東京	https://gbring.com/sokuho/result/result2007_02/0228_pancrase_02.htm
 e06744	ufc	2007-03-03	UFC 68: The Uprising	Nationwide Arena,	https://en.wikipedia.org/wiki/UFC_68 https://jp.ufc.com/event/ufcr-68
 e00676	shooto	2007-03-04	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2007_03/0304_shooto.htm
 e02285	tribelate	2007-03-04	TRIBELATE vol.12～Hybrid Club Fight～	東京・品川プリンスホテル クラブeX	https://gbring.com/sokuho/result/result2007_03/0304_tribelate.htm 海外の記録サイト
@@ -1463,7 +1463,7 @@ e04759	mars	2007-04-15	MARS 07 - TORNADO RETURNS -	ディファ有明	https://ww
 e06004	adcc	2007-04-15	ADCC 2007 JAPAN TRIAL 最終予選	東京・北沢タウンホール	https://www.boutreview.com/data/reports05/070415adccj.html
 e00680	shooto	2007-04-21	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2007_04/0421_shooto.htm
 e06743	ufc	2007-04-21	UFC 70: Nations Collide	M.E.N Arena,	https://en.wikipedia.org/wiki/UFC_70 https://jp.ufc.com/event/ufcr-70
-e01245	pancrase	2007-04-22	第21回パンクラスゲートゲート	ピーズラボ東京	https://gbring.com/sokuho/result/result2007_04/0422_pancrase.htm
+e01245	pancrase_ama	2007-04-22	第21回パンクラスゲートゲート	ピーズラボ東京	https://gbring.com/sokuho/result/result2007_04/0422_pancrase.htm
 e00176	pancrase	2007-04-27	PANCRASE 2007 RISING TOUR（東京・後楽園ホール）	東京・後楽園ホール	https://pancrase.co.jp/data/result/2007/0427.html
 e01246	smackgirl	2007-04-28	SMACKGIRL（4.28）		https://gbring.com/sokuho/result/result2007_04/0429_smack.htm
 e04804	smackgirl	2007-04-28	SMACKGIRL 2007～絶対女王は大正浪漫を舞ひ奏で～	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2007_04/0429_smack.htm
@@ -1505,7 +1505,7 @@ e06741	ufc	2007-06-12	UFC Fight Night: Stout vs. Fisher	Seminole Hard Rock Hotel
 e04140	deep	2007-06-16	club DEEP 東京	新宿FACE	https://www.boutreview.com/fightsspiral/clubDEEP_07_06_16.html
 e04141	deep	2007-06-16	おやじDEEP	新宿FACE	https://www.boutreview.com/fightsspiral//oyajideep_07_06_16.html
 e05537	ufc	2007-06-16	UFC 72: Victory	Odyssey Arena	https://jp.ufc.com/event/ufcr-72 https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_72
-e01251	pancrase	2007-06-17	第22回パンクラスゲート2	P's LAB東京	https://gbring.com/sokuho/result/result2007_06/0617_pancrase.htm
+e01251	pancrase_ama	2007-06-17	第22回パンクラスゲート2	P's LAB東京	https://gbring.com/sokuho/result/result2007_06/0617_pancrase.htm
 e04772	powergate	2007-06-17	POWERGATE 15 カイザーグランプリ2nd in 京都KBSホール	京都・KBSホール	https://www.boutreview.com/fightsspiral/POWERGATE_15.html
 e06740	ufc	2007-06-23	The Ultimate Fighter: Team Pulver vs. Team Penn Finale	The Pearl,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter_5_Finale https://jp.ufc.com/event/ultimate-fighterr-5
 e08623	k1	2007-06-23	FIELDS K-1 WORLD GP 2007 IN AMSTERDAM	オランダ・アムステルダムアリーナ	https://gbring.com/sokuho/result/result2007_06/0623_k-1.htm
@@ -1544,7 +1544,7 @@ e01255	gcm	2007-08-19	GCM DEMOLITION 070819	東京・ディファ有明	https://
 e02324	tenkaichi_fight	2007-08-19	TF - Tenkaichi Fight 16		海外の記録サイト
 e04763	powergate	2007-08-25	バーサス主催「POWERGATE カイザーグランプリファイナル in Zepp Osaka」	大阪・Zepp Osaka	https://gbring.com/sokuho/result/result2007_08/0825_powergate.htm
 e06738	ufc	2007-08-25	UFC 74: Respect	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/UFC_74 https://jp.ufc.com/event/ufcr-74
-e01256	pancrase	2007-08-26	第23回パンクラスゲート2	P’sLAB東京	https://gbring.com/sokuho/result/result2007_08/0826_pancrase.htm
+e01256	pancrase_ama	2007-08-26	第23回パンクラスゲート2	P’sLAB東京	https://gbring.com/sokuho/result/result2007_08/0826_pancrase.htm
 e04259	zst	2007-08-26	ZST SWAT！ 13	ゴールドジムサウス東京アネックス	https://www.boutreview.com/fightsspiral/ZST_SWAT_13.html
 e05285	zst	2007-08-26	SWAT!（ジェネシストーナメント2007）		https://gbring.com/sokuho/result/result2007_08/0826_zst.htm
 e01257	shooto	2007-09-02	Shooto - Gig North 1		https://shooto-mma.com/fighters/?id=96 https://www.boutreview.com/fightsspiral/shoot_07_09_02.html https://shooto-mma.com/fighters/?id=42 https://shooto-mma.com/fighters/?id=320 https://shooto-mma.com/fighters/?id=43
@@ -1589,7 +1589,7 @@ e07436	cage_warriors	2007-10-14	CWFC: Enter The Rough House 4	英国ノッティ
 e00691	shooto	2007-10-20	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2007_10/1020_shooto.htm
 e05532	ufc	2007-10-20	UFC 77: Hostile Territory	US Bank Arena	https://jp.ufc.com/event/ufcr-77 https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_77
 e01262	accel	2007-10-21	【アクセル】港町神戸で素手顔面ルールが遂に始動！ ファンも大喝采		https://gbring.com/sokuho/result/result2007_10/1021_accel.htm
-e01263	pancrase	2007-10-21	第24回パンクラスゲート×2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2007_10/1021_pancrase.htm
+e01263	pancrase_ama	2007-10-21	第24回パンクラスゲート×2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2007_10/1021_pancrase.htm
 e02340	legend_japan	2007-10-21	Legend - Martial Arts Festival		https://ja.wikipedia.org/wiki/%E5%86%A8%E6%A8%AB%E5%81%A5%E4%B8%80%E9%83%8E 海外の記録サイト
 e02342	tenkaichi_fight	2007-10-21	TF - Tenkaichi Fight 18		海外の記録サイト
 e04151	deep	2007-10-21	club DEEP 浜松	静岡県 浜松市 アクトシティ浜松	https://www.boutreview.com/fightsspiral/clubDEEP_07_10_21.html
@@ -1631,7 +1631,7 @@ e04753	mars	2007-12-09	MARS10「ALL-OUT WAR」	東京・ディファ有明	https
 e02360	deep	2007-12-12	ファイティングロード presents DEEP 33 IMPACT	東京・後楽園ホール	https://gbring.com/sokuho/result/result2007_12/1212_deep.htm 海外の記録サイト
 e05911	wec	2007-12-12	WEC 31: Faber vs. Curran	ザ・ジョイント（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_31
 e04816	tribelate	2007-12-13	TRIBELATE vol.15	東京・新宿FACE	http://gbring.com/sokuho/result/result2007_12/1213_tribelate.htm https://gbring.com/sokuho/result/result2007_12/1213_tribelate.htm 海外の記録サイト
-e01266	pancrase	2007-12-16	第25回パンクラスゲート2ワンマッチ	P’s LAB東京	https://gbring.com/sokuho/result/result2007_12/1216_pancrase.htm
+e01266	pancrase_ama	2007-12-16	第25回パンクラスゲート2ワンマッチ	P’s LAB東京	https://gbring.com/sokuho/result/result2007_12/1216_pancrase.htm
 e01267	powergate	2007-12-16	POWER GATE メモリアル in 京都KBSホール	京都・KBSホール	https://www.boutreview.com/data/reports05/071216powergate.html 海外の記録サイト
 e02362	pancrase	2007-12-16	Pancrase - 2007 Korea Neo-Blood Tournament		海外の記録サイト
 e02364	tenkaichi_fight	2007-12-17	TF - Tenkaichi Fight 20		海外の記録サイト
@@ -1654,7 +1654,7 @@ e00694	shooto	2008-01-26	プロフェッショナル修斗公式戦（後楽園�
 e00185	pancrase	2008-01-30	PANCRASE 2008 SHINING TOUR（東京・後楽園ホール）	東京・後楽園ホール	https://pancrase.co.jp/data/result/2008/0130.html
 e05529	ufc	2008-02-02	UFC 81: Breaking Point	Mandalay Bay Events Center	https://jp.ufc.com/event/ufcr-81 https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91K%E5%A4%AA%E9%83%8E https://en.wikipedia.org/wiki/UFC_81
 e08600	k1_max	2008-02-02	K-1 WORLD MAX 2008 〜日本代表決定トーナメント〜	東京・日本武道館	https://ja.wikipedia.org/wiki/K-1_WORLD_MAX_2008_%E3%80%9C%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8%E6%B1%BA%E5%AE%9A%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E3%80%9C
-e01270	pancrase	2008-02-03	第26回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_02/0203_pancrase.htm
+e01270	pancrase_ama	2008-02-03	第26回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_02/0203_pancrase.htm
 e04309	powergate	2008-02-03	POWERGATE カイザーグランプリ in 京都KBSホール	京都KBSホール	https://gbring.com/sokuho/result/result2008_02/0203_power.htm
 e05367	powergate	2008-02-03	Powergate - Kaiser Grand Prix 2008 First Round		https://gbring.com/sokuho/result/result2008_02/0203_power.htm
 e08893	shoot_boxing	2008-02-03	火魂～其の壱～	東京・後楽園ホール	https://gbring.com/sokuho/result/result2008_02/0203_sb.htm
@@ -1700,7 +1700,7 @@ e02393	powergate	2008-04-13	POWER GATE カイザーグランプリ in 京都KBS�
 e08758	k1	2008-04-13	K-1 WORLD GP 2008 IN YOKOHAMA	神奈川・横浜アリーナ	https://gbring.com/sokuho/result/result2008_04/0413_k-1.htm
 e05527	ufc	2008-04-19	UFC 83: Serra vs. St-Pierre 2	Centre Bell	https://jp.ufc.com/event/ufcr-83 https://ja.wikipedia.org/wiki/%E5%BC%98%E4%B8%AD%E9%82%A6%E4%BD%B3 https://en.wikipedia.org/wiki/UFC_83
 e07433	cage_warriors	2008-04-19	Cage Warriors: Enter the Rough House 6	英国ノッティンガム	https://en.wikipedia.org/wiki/2008_in_Cage_Warriors
-e01276	pancrase	2008-04-20	第27回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_04/0420_pancrase.htm
+e01276	pancrase_ama	2008-04-20	第27回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_04/0420_pancrase.htm
 e02394	deep	2008-04-20	DEEP - Kobudo Fight 3		海外の記録サイト
 e02395	tenkaichi_fight	2008-04-20	TF - Tenkaichi Fight 24		海外の記録サイト
 e04316	smackgirl	2008-04-25	SMACKGIRL WORLD ReMix TOURNAMENT 2008 準決勝戦	後楽園ホール	https://gbring.com/sokuho/result/result2008_04/0425_smack.htm
@@ -1732,7 +1732,7 @@ e04301	deep	2008-06-01	club DEEP 富山（2008年6月1日 イベントプラザ�
 e05914	wec	2008-06-01	WEC 34: Faber vs. Pulver	アルコ・アリーナ（カリフォルニア州サクラメント）	https://en.wikipedia.org/wiki/WEC_34 https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E5%90%89%E6%9C%97
 e06733	ufc	2008-06-07	UFC 85: Bedlam	O2アリーナ, ロンドン England	https://en.wikipedia.org/wiki/UFC_85 https://jp.ufc.com/event/ufcr-85
 e04314	sengoku	2008-06-08	ワールドビクトリーロード「戦極～第三陣～」	さいたまスーパーアリーナ	https://gbring.com/sokuho/result/result2008_06/0608_sengoku.htm
-e01281	pancrase	2008-06-15	第28回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_06/0615_pancrase.htm
+e01281	pancrase_ama	2008-06-15	第28回パンクラスゲート2ワンマッチ大会	P’s LAB東京	https://gbring.com/sokuho/result/result2008_06/0615_pancrase.htm
 e02412	deep	2008-06-15	DEEP GLOVE 2	東京・新宿FACE	https://gbring.com/sokuho/result/result2008_06/0615_deep.htm
 e02414	tenkaichi_fight	2008-06-15	TF - Tenkaichi Fight 26		海外の記録サイト
 e04264	zst	2008-06-15	SWAT！18	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2008_06/0615_zst.htm
@@ -1768,7 +1768,7 @@ e01283	deep	2008-07-27	ファイティングロード presents DEEP 36 IMPACT	�
 e04322	deep	2008-07-27	DEEP 36 IMPACT	Zepp Osaka	https://gbring.com/sokuho/result/result2008_07/0727_deep.htm
 e04325	deep	2008-08-02	club DEEP TOKYO メガトンGP決勝（2008年8月2日 新宿FACE）	新宿FACE	https://gbring.com/sokuho/result/result2008_08/0802_deep.htm
 e00702	shooto	2008-08-03	プロフェッショナル修斗公式戦（名古屋）		https://gbring.com/sokuho/result/result2008_08/0803_shooto.htm
-e01284	pancrase	2008-08-03	第13回西日本アマチュアパンクラスオープン大会＆第9回西日本パンクラスゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2008_08/0803_pancrase.htm
+e01284	pancrase_ama	2008-08-03	第13回西日本アマチュアパンクラスオープン大会＆第9回西日本パンクラスゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2008_08/0803_pancrase.htm
 e05292	zst	2008-08-03	SWAT!-GX3		https://gbring.com/sokuho/result/result2008_08/0803_zst.htm
 e05915	wec	2008-08-03	WEC 35: Condit vs. Miura	ザ・ジョイント（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_35 https://ja.wikipedia.org/wiki/%E4%B8%89%E6%B5%A6%E5%BA%83%E5%85%89 https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B2%A2%E3%82%B1%E3%83%B3%E3%82%B8
 e04353	kingdom_of_grapple	2008-08-06	サマフェス!! スマックガール（2008年8月6日 代々木公園野外ステージ）	代々木公園 野外ステージ＆イベントスペース	https://gbring.com/sokuho/result/result2008_08/0806_smack.htm
@@ -1861,7 +1861,7 @@ e05522	ufc	2008-12-10	UFC: Fight for the Troops	Crown Coliseum	https://jp.ufc.co
 e07578	ksw	2008-12-12	KSW 10	Hala Torwar（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2008_in_Konfrontacja_Sztuk_Walki
 e00709	shooto	2008-12-13	プロフェッショナル修斗公式戦（新人王決定戦）		https://gbring.com/sokuho/result/result2008_12/1213_shooto.htm
 e06725	ufc	2008-12-13	The Ultimate Fighter: Team Nogueira vs. Team Mir Finale	The Pearl,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Nogueira_vs._Team_Mir_Finale https://jp.ufc.com/event/ultimate-fighterr-finale-0
-e01295	pancrase	2008-12-14	第31回パンクラスゲート×2	P’s LAB横浜	https://gbring.com/sokuho/result/result2008_12/1214_pancrase.htm
+e01295	pancrase_ama	2008-12-14	第31回パンクラスゲート×2	P’s LAB横浜	https://gbring.com/sokuho/result/result2008_12/1214_pancrase.htm
 e02471	grachan	2008-12-14	GRACHAN1	東京・ディファ有明	https://grachan.jp/grachan1/
 e04346	grachan	2008-12-14	GRACHAN（2008年12月14日 ディファ有明）	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1214_grachan.htm
 e04348	heat	2008-12-14	HEAT 8（2008年12月14日 ディファ有明）	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1214_heat.htm
@@ -1903,7 +1903,7 @@ e04333	deep	2009-02-10	DEEP＆CMA（2009年2月10日 後楽園ホール）	後�
 e01301	powergate	2009-02-11	POWERGATE（2.11）		https://gbring.com/sokuho/result/result2009_02/0211_powergate.htm
 e04359	powergate	2009-02-11	POWERGATE（2009年2月11日 広島産業会館）	広島産業会館	https://gbring.com/sokuho/result/result2009_02/0211_powergate.htm
 e08896	shoot_boxing	2009-02-11	SHOOTBOXING2009シリーズ開幕戦『武志道-bushido-其の壱』	東京・後楽園ホール	https://gbring.com/sokuho/result/result2009_02/0211_sb.htm
-e01302	pancrase	2009-02-15	第32回パンクラスゲート2 ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_02/0215_pancrase.htm
+e01302	pancrase_ama	2009-02-15	第32回パンクラスゲート2 ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_02/0215_pancrase.htm
 e04371	tenkaichi_fight	2009-02-15	天下一ファイト（2009年2月15日 沖縄・天下一スタジアム）	天下一スタジアム	https://gbring.com/sokuho/result/result2009_02/0215_tenka.htm
 e04332	deep	2009-02-20	DEEP 40 IMPACT	後楽園ホール	https://gbring.com/sokuho/result/result2009_02/0220_deep.htm
 e01303	kingdom	2009-02-21	総合格闘技スペースFirst Spirit		https://gbring.com/sokuho/result/result2009_02/0221_kingdom.htm
@@ -1949,7 +1949,7 @@ e05920	wec	2009-04-05	WEC 40: Torres vs. Mizugaki	UICパヴィリオン（イリ
 e00716	shooto	2009-04-10	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_04/0410_shooto.htm
 e07280	bellator	2009-04-10	Bellator 2	Mohegan Sun	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_2
 e00717	shooto	2009-04-12	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_04/0412_shooto.htm
-e01306	pancrase	2009-04-12	第33回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_04/0412_pancrase.htm
+e01306	pancrase_ama	2009-04-12	第33回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_04/0412_pancrase.htm
 e04335	deep	2009-04-16	DEEP 41 IMPACT	後楽園ホール	https://gbring.com/sokuho/result/result2009_04/0416_deep.htm
 e07279	bellator	2009-04-17	Bellator 4	Lloyd Noble Center	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_4
 e05519	ufc	2009-04-18	UFC 97: Redemption	Centre Bell	https://jp.ufc.com/event/ufcr-97 https://ja.wikipedia.org/wiki/%E9%95%B7%E5%8D%97%E4%BA%AE https://en.wikipedia.org/wiki/UFC_97
@@ -1983,12 +1983,12 @@ e02528	tenkaichi_fight	2009-05-17	TF - Tenkaichi Fight 37		海外の記録サイ
 e00720	shooto	2009-05-20	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_05/0520_shooto.htm
 e05518	ufc	2009-05-23	UFC 98: Evans vs. Machida	MGM Grand Garden Arena	https://jp.ufc.com/event/ufc-98 https://ja.wikipedia.org/wiki/%E5%90%89%E7%94%B0%E5%96%84%E8%A1%8C https://en.wikipedia.org/wiki/UFC_98 https://jp.ufc.com/event/ufcr-98
 e08631	k1	2009-05-23	K-1 WORLD GP 2009 IN LODZ -Europe Tournament-	ポーランド・ウッチ スポーツホール	https://gbring.com/sokuho/result/result2009_05/0523_k-1.htm
-e00198	pancrase	2009-05-24	パンクラスゲート2009（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2009/0524.html
+e00198	pancrase_ama	2009-05-24	パンクラスゲート2009（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2009/0524.html
 e01310	shooto	2009-05-24	SPIRIT 2009	仙台 アクセルホール	http://blog.livedoor.jp/shooto_news/archives/51512824.html 海外の記録サイト
 e01311	zst	2009-05-24	ZST.20	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_05/0524_zst.htm 海外の記録サイト
 e04490	dream	2009-05-26	DREAM.9フェザー級GP 2nd ROUND	神奈川・横浜アリーナ	https://gbring.com/sokuho/result/result2009_05/0526_dream.htm
 e07275	bellator	2009-05-29	Bellator 9	Monroe Civic Center	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_9
-e01312	pancrase	2009-05-31	第14回西日本アマチュアパンクラスオープン大会＆第10回西日本パンクラスゲート2大会	大阪・P’s LAB大阪	https://gbring.com/sokuho/result/result2009_05/0531_pancrase.htm
+e01312	pancrase_ama	2009-05-31	第14回西日本アマチュアパンクラスオープン大会＆第10回西日本パンクラスゲート2大会	大阪・P’s LAB大阪	https://gbring.com/sokuho/result/result2009_05/0531_pancrase.htm
 e01313	tsuwamono	2009-05-31	強者 Second vol.5	京都KBSホール	https://gbring.com/sokuho/result/result2009_05/0531_tsuwamono.htm
 e07274	bellator	2009-06-05	Bellator 10	Citizens Business Bank Arena	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_10
 e00721	shooto	2009-06-06	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_06/0606_shooto.htm
@@ -2003,7 +2003,7 @@ e05517	ufc	2009-06-13	UFC 99: The Comeback	Lanxess Arena	https://jp.ufc.com/even
 e02536	sengoku	2009-06-16	SENGOKU - Gold Cup Semi Finals		海外の記録サイト
 e07272	bellator	2009-06-19	Bellator 12	Seminole Hard Rock Hotel & Casino	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_12
 e06719	ufc	2009-06-20	The Ultimate Fighter: United States vs. United Kingdom Finale	The Pearl,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_United_States_vs._United_Kingdom_Finale https://jp.ufc.com/event/ultimate-fighterr-2
-e01315	pancrase	2009-06-21	第34回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_06/0621_pancrase.htm
+e01315	pancrase_ama	2009-06-21	第34回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_06/0621_pancrase.htm
 e02537	tenkaichi_fight	2009-06-21	TF - Tenkaichi Fight 38		海外の記録サイト
 e04503	gcm	2009-06-27	GCM「CAGE FORCE」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_06/0627_gcm.htm
 e02539	deep	2009-06-28	DEEP  TOYAMA IMPACT	富山県・富山テクノホール	https://gbring.com/sokuho/result/result2009_06/0628_deep.htm
@@ -2026,7 +2026,7 @@ e00722	shooto	2009-07-19	プロフェッショナル修斗公式戦		https://gbr
 e02547	tenkaichi_fight	2009-07-19	TF - Tenkaichi Fight 39		海外の記録サイト
 e02549	tribelate	2009-07-20	TRIBELATE vol.24～Hybrid Club Fight～	新宿FACE	https://gbring.com/sokuho/result/result2009_07/0720_tribelate.htm 海外の記録サイト
 e04491	dream	2009-07-20	FEG「DREAM.10ウェルター級グランプリ2009 決勝戦」	さいたまスーパーアリーナ	https://gbring.com/sokuho/result/result2009_07/0720_dream.htm
-e00200	pancrase	2009-07-26	パンクラスゲート2009（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2009/0726.html
+e00200	pancrase_ama	2009-07-26	パンクラスゲート2009（ゴールドジムサウス東京アネックス）	ゴールドジムサウス東京アネックス	https://pancrase.co.jp/data/result/2009/0726.html
 e02550	deep	2009-07-26	DEEP NAGOYA IMPACT　公武堂ファイト in ZEPP NAGOYA	愛知・ZEPP NAGOYAにて「DEEP NAGOYA IMPACT　公武堂ファイト in ZEPP NAGOYA」が	https://gbring.com/sokuho/result/result2009_07/0726_deep.htm
 e04386	deep	2009-07-26	DEEP NAGOYA IMPACT 公武堂ファイト in ZEPP NAGOYA	ZEPP NAGOYA	https://gbring.com/sokuho/result/result2009_07/0726_deep.htm
 e01318	zst	2009-08-02	SWAT！28	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2009_08/0802_zst.htm
@@ -2040,7 +2040,7 @@ e01319	shooto	2009-08-09	Shooto - Gig Saitama 1		https://ja.wikipedia.org/wiki/%
 e02555	outsider	2009-08-09	THE OUTSIDER 第7戦	ディファ有明	https://gbring.com/sokuho/result/result2009_08/0809_outsider.htm 海外の記録サイト
 e05922	wec	2009-08-09	WEC 42: Torres vs. Bowles	ザ・ジョイント（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_42 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5
 e08618	k1	2009-08-11	K-1 WORLD GP 2009 IN TOKYO FINAL16 QUALIFYING GP	東京・国立代々木競技場第二体育館	https://gbring.com/sokuho/result/result2009_08/0811_k-1.htm
-e01320	pancrase	2009-08-16	第35回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_08/0816_pancrase.htm
+e01320	pancrase_ama	2009-08-16	第35回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_08/0816_pancrase.htm
 e02557	shooto	2009-08-16	BORDER -season 1-「進撃」	平野区民ホール	http://blog.livedoor.jp/shooto_news/archives/51550850.html 海外の記録サイト
 e02558	tenkaichi_fight	2009-08-16	TF - Tenkaichi Fight 40		海外の記録サイト
 e01321	tsuwamono	2009-08-22	強者Second vol.7	大阪・ZeppOSAKA	https://gbring.com/sokuho/result/result2009_08/0822_tsuwamono.htm
@@ -2054,7 +2054,7 @@ e02564	tenkaichi_fight	2009-08-30	TF - Tenkaichi Challenge		海外の記録サ�
 e04389	deep	2009-08-30	DEEP OSAKA IMPACT	Zepp OSAKA	https://gbring.com/sokuho/result/result2009_08/0830_deep.htm
 e00723	shooto	2009-09-04	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_09/0904_shooto.htm
 e08887	shoot_boxing	2009-09-04	武志道-bushido-其の四	東京・後楽園ホール	https://gbring.com/sokuho/result/result2009_09/0904_sb.htm
-e01323	pancrase	2009-09-06	第15回西日本アマチュアパンクラスオープン大会＆第11回西日本パンクラスゲート2大会	P’sLAB大阪	https://gbring.com/sokuho/result/result2009_09/0906_pancrase.htm
+e01323	pancrase_ama	2009-09-06	第15回西日本アマチュアパンクラスオープン大会＆第11回西日本パンクラスゲート2大会	P’sLAB大阪	https://gbring.com/sokuho/result/result2009_09/0906_pancrase.htm
 e01324	zst	2009-09-06	SWAT！Gx5	東京・ゴールドジムサウス東京ANNEX	https://gbring.com/sokuho/result/result2009_09/0906_zst.htm
 e02566	accel	2009-09-06	【アクセル】我龍真吾が復帰2戦目で新鋭TOMOYUKIに大苦戦の末ドロー！		https://gbring.com/sokuho/result/result2009_09/0906_accel.htm
 e04278	zst	2009-09-06	SWAT！－GX5	ゴールドジムサウス東京ANNEX	https://gbring.com/sokuho/result/result2009_09/0906_zst.htm
@@ -2078,7 +2078,7 @@ e08617	k1	2009-09-26	K-1 WORLD GP 2009 IN SEOUL FINAL16	韓国・ソウル オ�
 e01327	shooto_ama	2009-09-27	第16回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B3%E3%83%9C%E3%83%BC%E5%AE%8F%E8%BC%94 https://ja.wikipedia.org/wiki/%E6%B5%9C%E5%B4%8E%E6%9C%B1%E5%8A%A0 https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AD%E3%83%A9_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29 https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E6%BD%A4%E9%8E%AE%E9%AD%82%E6%AD%8C https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%84%AA%E4%BD%9C
 e02576	deep	2009-09-27	DEEP - Hamamatsu Impact		海外の記録サイト
 e05992	adcc	2009-09-27	ADCC 2009（バルセロナ）	スペイン・バルセロナ	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://btbrasil.livedoor.biz/archives/55311523.html https://btbrasil.livedoor.biz/archives/55306277.html https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91K%E5%A4%AA%E9%83%8E
-e01328	pancrase	2009-10-04	第36回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_10/1004_pancrase.htm
+e01328	pancrase_ama	2009-10-04	第36回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_10/1004_pancrase.htm
 e02577	shooto	2009-10-04	BORDER -season 1-「激突」	平野区民ホール	http://blog.livedoor.jp/shooto_news/archives/51571642.html 海外の記録サイト
 e02578	tenkaichi_fight	2009-10-04	TF - Tenkaichi Challenge		海外の記録サイト
 e04493	dream	2009-10-06	FEG「DREAM.11フェザー級グランプリ2009 決勝戦」	神奈川・横浜アリーナ	https://gbring.com/sokuho/result/result2009_10/1006_dream.htm
@@ -2112,7 +2112,7 @@ e00204	pancrase	2009-11-08	PANCRASE 2009 CHANGING TOUR（大阪・アゼリア�
 e04391	deep	2009-11-10	DEEP＆CMA 大感謝祭！	後楽園ホール	https://gbring.com/sokuho/result/result2009_11/1110_deep.htm
 e02596	gcm	2009-11-14	GCM - Demolition West Project		https://ja.wikipedia.org/wiki/グッドマン田中 https://ja.wikipedia.org/wiki/下石康太 https://ja.wikipedia.org/wiki/魚井フルスイング https://theanswer.hatenablog.com/entry/2020/05/08/210942 海外の記録サイト
 e06714	ufc	2009-11-14	UFC 105: Couture vs. Vera	M.E.N Arena,	https://en.wikipedia.org/wiki/UFC_105 https://jp.ufc.com/event/ufcr-105
-e01333	pancrase	2009-11-15	第11回アマチュアパンクラスオープントーナメント		https://gbring.com/sokuho/result/result2009_11/1115_pancrase.htm
+e01333	pancrase_ama	2009-11-15	第11回アマチュアパンクラスオープントーナメント		https://gbring.com/sokuho/result/result2009_11/1115_pancrase.htm
 e04626	tenkaichi_fight	2009-11-15	WILD SEASAR『TENKAICHI fight』	沖縄・天下一スタジアム	https://gbring.com/sokuho/result/result2009_11/1115_tenkaichi.htm
 e05924	wec	2009-11-18	WEC 44: Brown vs. Aldo	ザ・パール（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_44 https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B2%A2%E3%82%B1%E3%83%B3%E3%82%B8
 e01334	kingdom	2009-11-21	キングダムエルガイツ多摩大会 ～サテライトファイトVo.11～		https://gbring.com/sokuho/result/result2009_11/1121_kingdom.htm 海外の記録サイト
@@ -2153,7 +2153,7 @@ e00206	pancrase	2010-01-10	パンクラスゲート4th CHANCE（ゴールドジ�
 e04563	pancrase	2010-01-10	パンクラスゲート 4th CHANCE ネオブラッドトーナメント予選＆プロ昇格トーナメント	東京・大森ゴールドジムサウス東京ANNEX	https://gbring.com/sokuho/result/result2010_01/0110_pancrase.htm
 e05926	wec	2010-01-10	WEC 46: Varner vs. Henderson	アルコ・アリーナ（カリフォルニア州サクラメント）	https://en.wikipedia.org/wiki/WEC_46 https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E5%BD%B0%E6%95%8F
 e06710	ufc	2010-01-11	UFC Fight Night: Maynard vs. Diaz	Patriot Center,	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Maynard_vs._Diaz https://jp.ufc.com/event/ufcr-fight-nighttm-7
-e01341	pancrase	2010-01-17	第16回西日本アマチュアパンクラスオープン大会＆第12回西日本パンクラスゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_01/0117_pancrase.htm
+e01341	pancrase_ama	2010-01-17	第16回西日本アマチュアパンクラスオープン大会＆第12回西日本パンクラスゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_01/0117_pancrase.htm
 e04283	zst	2010-01-17	SWAT！－GX6	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2010_01/0117_zst.htm
 e04628	tenkaichi_fight	2010-01-17	WILD SEASAR『TENKAICHI fight』	沖縄・天下一スタジアム	https://gbring.com/sokuho/result/result2010_01/0117_tenkaichi.htm
 e08882	shoot_boxing	2010-01-17	SHOOT BOXING OSAKA2010『ALPINISME-Young Caesar Cup-』	大阪・松下IMPホール	https://shootboxing.org/result/620/
@@ -2261,8 +2261,8 @@ e04289	zst	2010-06-06	SWAT！34	ゴールドジムサウス東京	https://gbring
 e08880	shoot_boxing	2010-06-06	SHOOT BOXING 25TH ANNIVERSARY SERIES第3戦『維新-ISHIN-其の参』	東京・後楽園ホール	https://shootboxing.org/result/18717/
 e05794	bellator	2010-06-10	Bellator 21	Seminole Hard Rock Hotel & Casino	https://ja.wikipedia.org/wiki/藤井惠_(格闘家) https://en.wikipedia.org/wiki/2010_in_Bellator_MMA https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_21
 e06703	ufc	2010-06-12	UFC 115: Liddell vs. Franklin	General Motors Place,	https://en.wikipedia.org/wiki/UFC_115 https://jp.ufc.com/event/ufcr-115
-e01350	pancrase	2010-06-13	第17回西日本アマチュアパンクラスオープン大会＆第13回西日本パンクラスゲート×2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_06/0613_pancrase_02.htm
-e01351	pancrase	2010-06-13	第40回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_06/0613_pancrase.htm
+e01350	pancrase_ama	2010-06-13	第17回西日本アマチュアパンクラスオープン大会＆第13回西日本パンクラスゲート×2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_06/0613_pancrase_02.htm
+e01351	pancrase_ama	2010-06-13	第40回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_06/0613_pancrase.htm
 e02667	shooto	2010-06-13	Shooto - Gig Central 20		https://ja.wikipedia.org/wiki/%E4%B9%85%E7%B1%B3%E9%B7%B9%E4%BB%8B https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E4%BF%A1%E6%B2%BB https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E6%86%82%E6%B5%81%E8%BF%A6 https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E4%BA%95%E2%80%9C%E5%AF%92%E5%A4%A9%E2%80%9D%E3%81%9F%E3%81%91%E3%81%97 https://ja.wikipedia.org/wiki/%E6%9D%89%E6%B1%9F%E5%A4%A7%E8%BC%94 海外の記録サイト
 e07263	bellator	2010-06-17	Bellator 22	Kansas City Power & Light District	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_22
 e04512	gcm	2010-06-19	「CAGE FORCE」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_06/0619_cageforce.htm
@@ -2366,8 +2366,8 @@ e02719	outsider	2010-10-11	THE OUTSIDER 第13戦	横浜文化体育館	https://g
 e07255	bellator	2010-10-14	Bellator 32	Kansas City Power & Light District	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_32
 e00741	shooto	2010-10-16	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2010_10/1016_shooto.htm
 e05509	ufc	2010-10-16	UFC 120: Bisping vs. Akiyama	O2アリーナ, ロンドン England	https://jp.ufc.com/event/ufcr-120 https://ja.wikipedia.org/wiki/%E7%A7%8B%E5%B1%B1%E6%88%90%E5%8B%B2 https://en.wikipedia.org/wiki/UFC_120
-e01356	pancrase	2010-10-17	第18回西日本アマチュアパンクラスオープン大会＆第14回西日本ゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_10/1017_pancrase_02.htm
-e01357	pancrase	2010-10-17	第42回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_10/1017_pancrase.htm
+e01356	pancrase_ama	2010-10-17	第18回西日本アマチュアパンクラスオープン大会＆第14回西日本ゲート2大会	P’s LAB大阪	https://gbring.com/sokuho/result/result2010_10/1017_pancrase_02.htm
+e01357	pancrase_ama	2010-10-17	第42回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_10/1017_pancrase.htm
 e01358	zst	2010-10-17	SWAT!38	西調布アリーナ	https://zst-fc.doorblog.jp/archives/51521227.html 海外の記録サイト
 e02721	gladiator	2010-10-17	GLADIATOR 12		海外の記録サイト
 e07254	bellator	2010-10-21	Bellator 33	Liacouras Center	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_33
@@ -2391,7 +2391,7 @@ e05508	ufc	2010-11-13	UFC 122: Marquardt vs. Okami	König Pilsener Arena, Oberha
 e00742	shooto	2010-11-19	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2010_11/1119_shooto.htm 海外の記録サイト
 e06696	ufc	2010-11-20	UFC 123: Rampage vs. Machida	Palace of Auburn Hills, Auburn Hills アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_123 https://jp.ufc.com/event/ufcr-123
 e01361	gcm	2010-11-21	GCM - Demolition West in Yamaguchi 2		https://ja.wikipedia.org/wiki/井上誠午 https://ja.wikipedia.org/wiki/弘中邦佳 海外の記録サイト
-e01362	pancrase	2010-11-21	第12回アマチュアパンクラスオープントーナメント		https://gbring.com/sokuho/result/result2010_11/1121_pancrase.htm
+e01362	pancrase_ama	2010-11-21	第12回アマチュアパンクラスオープントーナメント		https://gbring.com/sokuho/result/result2010_11/1121_pancrase.htm
 e04578	rising_on_fighting_championship	2010-11-21	「RISING ON 4」	大阪・天王寺区民センター	https://gbring.com/sokuho/result/result2010_11/1121_risingon.htm
 e01363	zst	2010-11-23	ZST.26 ～旗揚げ8周年記念大会～		https://gbring.com/sokuho/result/result2010_11/1123_zst.htm 海外の記録サイト
 e04559	kingdom	2010-11-23	キングダムエルガイツ「A・R・T 2010 決勝大会」	東京・新宿PINK BIG PIG	https://gbring.com/sokuho/result/result2010_11/1123_kingdom.htm 海外の記録サイト
@@ -2421,7 +2421,7 @@ e00743	shooto	2010-12-18	プロフェッショナル修斗公式戦（新人王�
 e00220	pancrase	2010-12-19	PANCRASE 2010 PASSION TOUR（大阪・アゼリア大正ホール）	大阪・アゼリア大正ホール	https://pancrase.co.jp/data/result/2010/1219.html
 e02747	deep	2010-12-19	DEEP - Kobudo Fight Future Challenge 9		海外の記録サイト
 e01365	accel	2010-12-26	【アクセル】松本勇三、初防衛に失敗…新王者は“播州の狂犬”TOMOYUKI		https://gbring.com/sokuho/result/result2010_12/1226_accel.htm 海外の記録サイト
-e01366	pancrase	2010-12-26	第43回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_12/1226_pancrase.htm
+e01366	pancrase_ama	2010-12-26	第43回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2010_12/1226_pancrase.htm
 e02748	shooto	2010-12-26	BORDER -season 2-「不動」	平野区民ホール	http://blog.livedoor.jp/shooto_news/archives/51721596.html 海外の記録サイト
 e04651	zst	2010-12-26	FIGHTING NETWORK ZST SWAT！39	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2010_12/1226_zst.htm
 e05303	zst	2010-12-26	SWAT！39		https://gbring.com/sokuho/result/result2010_12/1226_zst.htm
@@ -2502,7 +2502,7 @@ e08038	outsider	2011-05-08	THE OUTSIDER 第16戦	横浜文化体育館	https://g
 e05306	jewels	2011-05-14	女子総合格闘技ジュエルス 13th RING	新木場1st RING	https://gbring.com/sokuho/result/result2011_05/0514_jewels_02.htm 海外の記録サイト
 e05307	jewels	2011-05-14	女子総合格闘技ジュエルス 14th RING	新木場1st RING	https://gbring.com/sokuho/result/result2011_05/0514_jewels_001.htm https://gbring.com/sokuho/result/result2011_05/0514_jewels_002.htm 海外の記録サイト
 e07244	bellator	2011-05-14	Bellator 44	Caesar's Resort	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_44
-e01372	pancrase	2011-05-15	第20回西日本アマチュアパンクラスオープン大会＆第16回西日本パンクラスゲート	P’s LAB大阪	https://gbring.com/sokuho/result/result2011_05/0515_pancrase.htm
+e01372	pancrase_ama	2011-05-15	第20回西日本アマチュアパンクラスオープン大会＆第16回西日本パンクラスゲート	P’s LAB大阪	https://gbring.com/sokuho/result/result2011_05/0515_pancrase.htm
 e02780	gladiator	2011-05-21	GLADIATOR 17		海外の記録サイト
 e07243	bellator	2011-05-21	Bellator 45	L'Auberge du Lac Resort	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_45
 e07571	ksw	2011-05-21	KSW 16	Ergo Arena（ポーランド・グダニスク）	https://en.wikipedia.org/wiki/2011_in_Konfrontacja_Sztuk_Walki
@@ -2607,7 +2607,7 @@ e04499	dream	2011-09-24	「DREAM.17」	さいたまスーパーアリーナ	http
 e05499	ufc	2011-09-24	UFC 135: Jones vs. Rampage	Pepsi Center, Denver アメリカ合衆国	https://jp.ufc.com/event/ufcr-135 https://ja.wikipedia.org/wiki/%E4%BA%94%E5%91%B3%E9%9A%86%E5%85%B8 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5 https://en.wikipedia.org/wiki/UFC_135
 e05993	adcc	2011-09-24	ADCC 2011（ノッティンガム）	イギリス・ノッティンガム	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://btbrasil.livedoor.biz/archives/55487764.html
 e07237	bellator	2011-09-24	Bellator 51	Canton Memorial Civic Center	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_51
-e01380	pancrase	2011-09-25	第13回アマチュアパンクラスオープントーナメント＆第1回アマチュアパンクラスミドルエイジワンマッチ大会		https://gbring.com/sokuho/result/result2011_09/0925_pancrase.htm
+e01380	pancrase_ama	2011-09-25	第13回アマチュアパンクラスオープントーナメント＆第1回アマチュアパンクラスミドルエイジワンマッチ大会		https://gbring.com/sokuho/result/result2011_09/0925_pancrase.htm
 e04552	heat	2011-09-25	「HEAT 19」	愛知・ZEPP NAGOYA	https://gbring.com/sokuho/result/result2011_09/0925_heat.htm 海外の記録サイト
 e08650	k1_max	2011-09-25	K-1 WORLD MAX 2011～-70kg Japan Tournament FINAL～	大阪・大阪府立体育会館第一競技場	https://gbring.com/sokuho/result/result2011_09/0925_k-1max.htm https://gbring.com/sokuho/result/result2011_09/0925_k-1max_02.htm https://gbring.com/sokuho/result/result2011_09/0925_k-1max_03.htm https://gbring.com/sokuho/result/result2011_09/0925_k-1max_04.htm
 e00757	shooto	2011-10-01	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2011_10/1001_shooto.htm 海外の記録サイト
@@ -2634,7 +2634,7 @@ e04452	deep	2011-10-29	FIGHT FOR JAPAN 10th Anniversary DEEP CAGE IMPACT2011 in 
 e04453	deep	2011-10-29	FIGHT FOR JAPAN 10th Anniversary DEEP CAGE IMPACT2011 in TOKYO 2ndROUND	東京・ディファ有明	https://gbring.com/sokuho/result/result2011_10/1029_deep_02.htm
 e05498	ufc	2011-10-29	UFC 137: Penn vs. Diaz	Mandalay Bay Events Center	https://jp.ufc.com/event/ufcr-137-live-pay-view https://ja.wikipedia.org/wiki/%E6%97%A5%E6%B2%96%E7%99%BA https://en.wikipedia.org/wiki/UFC_137
 e07232	bellator	2011-10-29	Bellator 56	Memorial Hall	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_56
-e01382	pancrase	2011-10-30	第48回パンクラスゲート×2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2011_10/1030_pancrase.htm
+e01382	pancrase_ama	2011-10-30	第48回パンクラスゲート×2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2011_10/1030_pancrase.htm
 e04525	gladiator	2011-10-30	東日本大震災復興支援 GLADIATOR25	東京・ディファ有明	https://gbring.com/sokuho/result/result2011_10/1030_gladiator.htm
 e02843	next_japan	2011-11-03	激突4		https://ameblo.jp/hybrid-k/entry-11069263533.html https://ameblo.jp/hybrid-k/entry-11069269748.html 海外の記録サイト
 e00758	shooto	2011-11-05	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2011_11/1105_shooto.htm 海外の記録サイト
@@ -2653,7 +2653,7 @@ e02849	tribelate	2011-11-19	TRIBELATE vol.35～Title Match Festival～	新宿FAC
 e04643	tribelate	2011-11-19	「TRIBELATE vol.35～Title Match Festival～」	東京・新宿FACE	https://gbring.com/sokuho/result/result2011_11/1119_tribelate.htm
 e06682	ufc	2011-11-19	UFC 139: Shogun vs. Henderson	HP Pavilion, San Jose アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_139 https://jp.ufc.com/event/ufcr-139
 e07230	bellator	2011-11-19	Bellator 58	Seminole Hard Rock Hotel and Casino	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_58
-e01383	pancrase	2011-11-20	第1回全日本アマチュアパンクラス選手権（初のアマチュア全日本大会）	P'sLAB横浜	https://gbring.com/sokuho/result/result2011_11/1120_pancrase.htm
+e01383	pancrase_ama	2011-11-20	第1回全日本アマチュアパンクラス選手権（初のアマチュア全日本大会）	P'sLAB横浜	https://gbring.com/sokuho/result/result2011_11/1120_pancrase.htm
 e02850	battle_code	2011-11-20	BC - Battle Code 3	Nagoya, Nagoya Japan	https://combatreg.com/events/Battle-Code-3:07F0EC41-2499-427C-AF13-3F8EDFD07073 海外の記録サイト
 e01384	demolition_xtreme_fighting_championship	2011-11-23	HIGH SPEED		https://gbring.com/sokuho/result/result2011_11/1123_demolition.htm
 e04488	demolition_xtreme_fighting_championship	2011-11-23	DEMOLITION XIGMA ‐HIGH SPEED-	大阪・世界館	https://gbring.com/sokuho/result/result2011_11/1123_demolition.htm
