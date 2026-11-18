@@ -164,6 +164,12 @@ def load():
         e = events.get(k)
         if e and e.get('promotion') in su and any(not (b.get('rule') or '').strip() for b in bl) and 'MMAルールあり' not in e['name']:
             e['name'] = re.sub(r'（MMAは[^（）]*）', '', e['name']).strip() + '（MMAルールあり）'
+    # 試合順が逆に記録されている大会（data/reorder.tsv：event_id, note）は番号を付け直す（メインが最後になるように）
+    for x in read_tsv(os.path.join(DATA, 'reorder.tsv')):
+        bl = bouts.get(x['event_id']) or []
+        bl.sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0, reverse=True)
+        for i, b in enumerate(bl, 1):
+            b['match_no'] = str(i)
     # 載せない大会・試合（data/exclude.tsv：event_id, fighter1, fighter2, reason。選手名が空なら大会ごと）…未成年の試合など
     for x in read_tsv(os.path.join(DATA, 'exclude.tsv')):
         k = x['event_id']
