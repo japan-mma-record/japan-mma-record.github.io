@@ -1,8 +1,4 @@
-YTDLP https://www.youtube.com/channel/UCvvRhsdPHuo7Q-GRXzAyzNw/videos
-YTDLP https://www.youtube.com/channel/UCjmxbizdgYoUCN6IcxcKk-g/videos
-YTDLP ytsearch20:ZST 公式 チャンネル 試合 ZST.
-YTDLP ytsearch20:HEAT 総合格闘技 名古屋 公式
-YTDLP ytsearch20:SMACKGIRL official
-YTDLP ytsearch20:JEWELS 女子 総合 公式 フルファイト
-YTDLP ytsearch20:CAGE FORCE 公式
-YTDLP ytsearch20:パンクラス ネオブラッドトーナメント 決勝 フルファイト
+YTDLP https://www.youtube.com/@UFCBrasil/videos
+YTDLP https://www.youtube.com/@UFCEspanol/videos
+YTDLP https://www.youtube.com/@ONEChampionshipThai/videos
+YTDLP https://www.youtube.com/@pflmmaespanol/videos

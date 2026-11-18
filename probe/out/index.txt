@@ -1,8 +1,0 @@
-1 YTDLP https://www.youtube.com/channel/UCvvRhsdPHuo7Q-GRXzAyzNw/videos 25284
-2 YTDLP https://www.youtube.com/channel/UCjmxbizdgYoUCN6IcxcKk-g/videos 36158
-3 YTDLP ytsearch20:ZST 公式 チャンネル 試合 ZST. 27474
-4 YTDLP ytsearch20:HEAT 総合格闘技 名古屋 公式 27492
-5 YTDLP ytsearch20:SMACKGIRL official 21082
-6 YTDLP ytsearch20:JEWELS 女子 総合 公式 フルファイト 25828
-7 YTDLP ytsearch20:CAGE FORCE 公式 25680
-8 YTDLP ytsearch20:パンクラス ネオブラッドトーナメント 決勝 フルファイト 27826
