@@ -34,6 +34,9 @@ function mainCard(e){ if((D.meta.bjj||[]).includes(e[2])||((D.meta.teams||{})[e[
   const t=pool.filter(b=>b!==m&&b!==se&&b[13]&&/タイトル|王座/.test(b[13])).pop();
   const one=b=>{ let A=b[2],B=b[4]; if(b[5]===2)[A,B]=[B,A]; return `${esc(A)} ${b[5]===1||b[5]===2?'def.':'vs'} ${esc(B)}${b[13]?`（${esc(b[13])}）`:''}`; };
   return `<span class="mc">メイン：${one(m)}${se?`<br>セミ：${one(se)}`:''}${t?`<br>${one(t)}`:''}</span>`; }
+function vshort(v){ return (v||'').replace(/\s*[（(][^（）()]*[）)]\s*$/,'').replace(/^(?:東京都|北海道|(?:京都|大阪)府|.{2,3}県)\s*[・･]?\s*/,'').trim(); }
+function evn(e){ const n=e[3]||'', v=vshort(e[4]); if(!v||(D.meta.world||[]).includes(e[2])||(D.meta.grappling||[]).includes(e[2])) return n;
+  if(n.includes(v)||/[（(][^（）()]*[）)]$/.test(n)&&v.slice(0,2)&&n.includes(v.slice(0,2))) return n; return `${n}（${v}）`; }
 function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
 function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
@@ -89,7 +92,7 @@ function vTop(){
   </div></section>`:''}
   <main class="wrap">
     <section class="sec"><div class="sh"><h2>最新の結果</h2><a class="aside lnk" href="#events">すべての大会 →</a></div>
-      ${latest.map(e=>{ const bj=(D.meta.bjj||[]).includes(e[2]); const b=bj?null:mainBout(e[0]); return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${esc(e[1].replace(/-/g,'.'))}</span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(e[3])}</b></span><span class="mb">${bj?'<span class="def">各カテゴリーの入賞者・トーナメント</span>':winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; }).join('')}
+      ${latest.map(e=>{ const bj=(D.meta.bjj||[]).includes(e[2]); const b=bj?null:mainBout(e[0]); return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${esc(e[1].replace(/-/g,'.'))}</span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(evn(e))}</b></span><span class="mb">${bj?'<span class="def">各カテゴリーの入賞者・トーナメント</span>':winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; }).join('')}
     </section>
     <section class="sec"><div class="sh"><h2>${y1-y0+1}年の歩み</h2><span class="aside" style="font-weight:500">年ごとの大会数</span></div>
       <div class="chart"><div class="in"><div class="bars">${bars}</div><div class="yrs">${lbl}</div></div></div></section>
@@ -204,10 +207,10 @@ function vFighter(id){
     let r='<span class="rs o">—</span>';
     const cnt = !b[11];
     if(b[5]===side){cnt&&w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){cnt&&l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){cnt&&d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){cnt&&nc++; r='<span class="rs o">無効</span>';}
-    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${ttag(b)}${esc(b[6])}${rtag(b)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
+    return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(evn(e))}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${ttag(b)}${esc(b[6])}${rtag(b)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
   const tl = list.filter(([e,b])=>b[13]).slice().reverse();
   const tbox = tl.length ? `<h2 class="sec">タイトル戦（${tl.length}）</h2><div class="tbl"><table><thead><tr><th>結果</th><th>試合</th><th>対戦相手</th><th>大会</th><th class="num">日付</th></tr></thead><tbody>${tl.map(([e,b,side])=>{ const opp = side===1?[b[3],b[4]]:[b[1],b[2]]; const r = b[5]===side?'<span class="rs w">勝</span>':(b[5]===1||b[5]===2)?'<span class="rs l">負</span>':'<span class="rs o">分</span>';
-    return `<tr><td>${r}</td><td>${ttag(b)}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td></tr>`; }).join('')}</tbody></table></div><h2 class="sec">全試合</h2>` : '';
+    return `<tr><td>${r}</td><td>${ttag(b)}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(evn(e))}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td></tr>`; }).join('')}</tbody></table></div><h2 class="sec">全試合</h2>` : '';
   const nm = f[0] || f[1];
   const span = list.length ? `${list[list.length-1][0][1].slice(0,4)}年〜${list[0][0][1].slice(0,4)}年` : '';
   const st = '';
@@ -238,7 +241,7 @@ function vEvents(){
   const ev = D.events.filter(e=>e[1].startsWith(evYear)).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const m=+e[1].slice(5,7); if(m!==cur){ cur=m; out+=`<p class="mo">${m}月</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(evn(e))}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   return `<main class="wrap"><div class="sh"><h1>大会</h1><span class="aside" style="font-weight:500">${esc(evYear)}年　${ev.length}大会</span></div>
     <div class="chips" id="ychips">${years.map(y=>`<button type="button" data-y="${y}" aria-pressed="${y===evYear}">${y}</button>`).join('')}</div>
     <div class="list">${out}</div></main>`;
@@ -262,7 +265,7 @@ function vPromotion(key){
   const ev = D.events.filter(e=>e[2]===p).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const y=e[1].slice(0,4); if(y!==cur){ cur=y; out+=`<p class="mo">${y}</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="n">${esc(e[3])}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="n">${esc(evn(e))}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   const nb = ev.reduce((s,e)=>s+e[6],0);
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#promotions">団体</a></p>
     <div class="ph"><div><h1>${esc(pl(p))}</h1><p class="sub">${esc(ev.length?ev[ev.length-1][1].slice(0,4)+'年〜'+ev[0][1].slice(0,4)+'年':'')}</p></div>
@@ -287,7 +290,7 @@ function vSearch(){
   const es = n ? D.events.filter(e=>norm(e[3]).includes(n)).slice(-60).reverse() : [];
   return `<main class="wrap"><div class="sh"><h1>「${esc(query)}」の検索結果</h1><span class="aside" style="font-weight:500">選手${fs.length}・大会${es.length}${fs.length>=60||es.length>=60?'（上位のみ）':''}</span></div>
     <h2 class="mo" style="margin-top:28px">選手</h2><div class="pgrid">${fs.length?fcards(fs):'<p class="note" style="background:var(--bg);margin:0;padding:16px">該当する選手はいません。</p>'}</div>
-    <h2 class="mo" style="margin-top:36px">大会</h2><div class="list">${es.map(e=>`<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].replace(/-/g,'.').slice(2))}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}</span><span class="c">${e[6]}試合</span></a>`).join('')||'<p class="note">該当する大会はありません。</p>'}</div></main>`;
+    <h2 class="mo" style="margin-top:36px">大会</h2><div class="list">${es.map(e=>`<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].replace(/-/g,'.').slice(2))}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(evn(e))}</span><span class="c">${e[6]}試合</span></a>`).join('')||'<p class="note">該当する大会はありません。</p>'}</div></main>`;
 }
 function vUpcoming(){
   const today = new Date().toISOString().slice(0,10);
