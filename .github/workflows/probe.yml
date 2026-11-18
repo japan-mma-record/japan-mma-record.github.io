@@ -1,7 +1,7 @@
 name: probe
 on:
   push:
-    branches: [probe]
+    branches: [probe-jbjjfb]
     paths: ['probe/urls.txt']
 permissions:
   contents: write
