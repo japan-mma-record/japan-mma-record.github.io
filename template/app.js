@@ -39,7 +39,7 @@ function evn(e){ const n=e[3]||'', v=vshort(e[4]); if(!v||(D.meta.world||[]).inc
   if(n.includes(v)||/[（(][^（）()]*[）)]$/.test(n)&&v.slice(0,2)&&n.includes(v.slice(0,2))) return n; return `${n}（${v}）`; }
 function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
-function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
+function rtag(b,e){ return (b[11] && !(e&&(D.meta.standup||[]).includes(e[2])) ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
 function buildIndex(){
@@ -209,12 +209,12 @@ function vEvent(k){
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
     <div id="bjjbox"><p class="sub">読み込み中…</p></div><p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
   const bs = D.bouts[k] || [];
-  const mb = bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定/.test(b[6])).length;
+  const su=(D.meta.standup||[]).includes(e[2]); const mb = su ? bs : bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定/.test(b[6])).length;
   const rows = bs.map(b=>{
     let A=[b[1],b[2]], B=[b[3],b[4]], r='<span class="rs o">—</span>';
     if(b[5]===2){ [A,B]=[B,A]; }
     if(b[5]===1||b[5]===2) r='<span class="rs w">WIN</span>'; else if(b[5]==='d') r='<span class="rs o">引分</span>'; else if(b[5]==='nc') r='<span class="rs o">無効</span>';
-    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}${rtag(b)}</td><td class="num">${esc(rt(b))}</td><td>${ttag(b)}${esc(b[9])}</td></tr>`; }).join('');
+    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}${rtag(b,e)}</td><td class="num">${esc(rt(b))}</td><td>${ttag(b)}${esc(b[9])}</td></tr>`; }).join('');
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div>
     <div class="kpis"><div><p class="k">試合</p><p class="v">${mb.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>

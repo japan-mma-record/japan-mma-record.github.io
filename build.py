@@ -230,7 +230,22 @@ def load():
                 b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(][^）)]*ルール[）)]|\s*[・/]\s*柔術ルール', '', b.get('weight') or '').strip()
             else:
                 b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
-        bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
+        if any(str(b.get('match_no') or '').isdigit() and int(b['match_no']) > 0 for b in bouts[k]):
+            bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
+        else:   # 試合番号の記録がない大会は、トーナメントの段階（1回戦→準々決勝→準決勝→決勝）の順に並べる
+            def stage(b):
+                t = (b.get('weight') or '') + ' ' + (b.get('note') or '')
+                for i, kw in enumerate(['オープニング', 'リザーブ', '1回戦', '一回戦', '2回戦', '二回戦', '準々決勝', '準決勝', '決勝']):
+                    pass
+                if re.search(r'オープニング|プレリミナリー', t): return 0
+                if re.search(r'リザーブ', t): return 1
+                if re.search(r'準々決勝', t): return 4
+                if re.search(r'準決勝', t): return 5
+                if re.search(r'決勝', t): return 7
+                if re.search(r'[1１一]回戦', t): return 2
+                if re.search(r'[2２二]回戦', t): return 3
+                return 6
+            bouts[k] = [b for _, b in sorted(enumerate(bouts[k]), key=lambda x: (stage(x[1]), x[0]))]
     merge_fighters(events, bouts, fighters)
     for bl in bouts.values():
         for b in bl:
