@@ -89,7 +89,7 @@ function vTop(){
   </div></section>`:''}
   <main class="wrap">
     <section class="sec"><div class="sh"><h2>最新の結果</h2><a class="aside lnk" href="#events">すべての大会 →</a></div>
-      ${latest.map(e=>{ const b=mainBout(e[0]); return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${esc(e[1].replace(/-/g,'.'))}</span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(e[3])}</b></span><span class="mb">${winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; }).join('')}
+      ${latest.map(e=>{ const bj=(D.meta.bjj||[]).includes(e[2]); const b=bj?null:mainBout(e[0]); return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${esc(e[1].replace(/-/g,'.'))}</span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(e[3])}</b></span><span class="mb">${bj?'<span class="def">各カテゴリーの入賞者・トーナメント</span>':winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; }).join('')}
     </section>
     <section class="sec"><div class="sh"><h2>${y1-y0+1}年の歩み</h2><span class="aside" style="font-weight:500">年ごとの大会数</span></div>
       <div class="chart"><div class="in"><div class="bars">${bars}</div><div class="yrs">${lbl}</div></div></div></section>
@@ -317,7 +317,7 @@ function notFound(){ return `<main class="wrap"><div class="sh"><h1>ページが
 
 function ticker(){
   const today = new Date().toISOString().slice(0,10);
-  const ev = D.events.filter(e=>e[1]<=today).slice(-10).reverse();
+  const ev = D.events.filter(e=>e[1]<=today&&!(D.meta.bjj||[]).includes(e[2])).slice(-10).reverse();
   const items = ev.map(e=>{ const b=mainBout(e[0]); if(!b) return ''; const t = (b[5]===1||b[5]===2) ? `${b[5]===1?b[2]:b[4]} def. ${b[5]===1?b[4]:b[2]}` : `${b[2]} vs ${b[4]}`;
     return `<a href="#e-${esc(e[0])}"><i>${esc(dshort(e[1]))}</i>${esc(e[3])}　${esc(t)}${b[6]?'（'+esc(b[6])+'）':''}</a>`; }).join('');
   $('#ticker').innerHTML = `<div class="track">${items}${items}</div>`;
