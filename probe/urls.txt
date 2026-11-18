@@ -1,13 +1,9 @@
-YTDLP https://www.youtube.com/channel/UCZZ0UGjWsRdM8_5bsqtxYaQ/videos
-YTDLP https://www.youtube.com/channel/UCeU0BOmDWDFCqi9qSCt-Sog/videos
-YTDLP https://www.youtube.com/channel/UCrzcqokfdjCm0JiqzYJZxeA/videos
-YTDLP https://www.youtube.com/channel/UC2ENxhP3eiSmkLUa3aax7AA/videos
-YTDLP https://www.youtube.com/channel/UCpeLGvz0uICdk9ILfHKiJOg/videos
-YTDLP ytsearch40:ONE Championship Japan 日本語 公式
-YTDLP ytsearch40:QUINTET grappling official full match
-YTDLP ytsearch40:GRACHAN グラチャン 公式
-YTDLP ytsearch30:ZST 総合格闘技 公式
-YTDLP ytsearch30:Gladiator 大阪 総合格闘技 フルファイト
-YTDLP ytsearch30:HEAT 総合格闘技 公式 試合
-YTDLP ytsearch30:KROSS×OVER 公式
-YTDLP ytsearch30:NEXUS MMA 公式 フルファイト
+YTDLP https://www.youtube.com/channel/UCymXmunl-HbqsXCcOSEZRqA/videos
+YTDLP https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA/videos
+YTDLP https://www.youtube.com/channel/UCw4RZz4S3ZdRyPfLBFVhYTw/videos
+YTDLP https://www.youtube.com/channel/UCPErofWfcNXis2f_sSDNSHg/videos
+YTDLP https://www.youtube.com/channel/UCUxFWK2IxAfFmp89UCAuhag/videos
+YTDLP https://www.youtube.com/channel/UCceNz215-iDAqgN3ujGiRRA/videos
+YTDLP https://www.youtube.com/channel/UCAQjjjdT32Pm5EjLQ0tbINA/videos
+YTDLP ytsearch40:KROSS×OVER クロスオーバー MMA 公式 試合
+YTDLP https://www.youtube.com/channel/UCiormkBf3jm6mfb7k0yPbKA/videos
