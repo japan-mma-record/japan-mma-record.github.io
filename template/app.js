@@ -181,10 +181,16 @@ function teamView(k){
 function tourView(k){
   const bs=D.bouts[k]||[]; const g=new Map();
   bs.forEach(b=>{ const w=((b[9]||'').split('・')[0]||'').trim()||'階級の記録なし'; if(!g.has(w)) g.set(w,[]); g.get(w).push(b); });
+  // 階級の記録がない試合は、対戦でつながっている選手のまとまり（＝1つのトーナメント）ごとに分ける
+  const un=g.get('階級の記録なし');
+  if(un){ g.delete('階級の記録なし'); const par={}; const f=x=>{ while(par[x]!==x){ par[x]=par[par[x]]; x=par[x]; } return x; };
+    un.forEach(b=>{ for(const n of [b[2],b[4]]) if(!(n in par)) par[n]=n; par[f(b[2])]=f(b[4]); });
+    const comp=new Map(); un.forEach(b=>{ const r=f(b[2]); if(!comp.has(r)) comp.set(r,[]); comp.get(r).push(b); });
+    let i=0; [...comp.values()].sort((a,b)=>b.length-a.length).forEach(bl=>{ i++; g.set(bl.length>1?`トーナメント${i}（階級の記録なし）`:`ワンマッチ${i}（階級の記録なし）`, bl); }); }
   const CL=['ミニマム','アトム','スーパーアトム','ストロー','フライ','バンタム','フェザー','ライト','ウェルター','ミドル','ライトヘビー','クルーザー','ヘビー','無差別'];
-  const ord=w=>{ const t=w.replace(/^女子/,''); let i=-1,L=0; CL.forEach((x,j)=>{ if(t.startsWith(x)&&x.length>L){i=j;L=x.length;} }); return [/女子/.test(w)?1:0, i<0?(w==='階級の記録なし'?999:98):i, w]; };
+  const ord=w=>{ const t=w.replace(/^女子/,''); let i=-1,L=0; CL.forEach((x,j)=>{ if(t.startsWith(x)&&x.length>L){i=j;L=x.length;} }); return [/女子/.test(w)?1:0, i<0?(/階級の記録なし/.test(w)?999:98):i, /トーナメント(\d+)/.test(w)?+w.match(/トーナメント(\d+)/)[1]:/ワンマッチ/.test(w)?1000:0, w]; };
   const list=[...g.entries()].sort((a,b)=>cmpArr(ord(a[0]),ord(b[0])));
-  const card=([w,bl])=>{ bl=bl.slice().sort((a,b)=>(a[0]||0)-(b[0]||0)); let champ=''; if(w!=='階級の記録なし'&&bl.length>1){ const W={},L={}; bl.forEach(x=>{ if(x[5]===1||x[5]===2){ const a=x[5]===1?x[2]:x[4], b=x[5]===1?x[4]:x[2]; W[a]=(W[a]||0)+1; L[b]=1; } });
+  const card=([w,bl])=>{ bl=bl.slice().sort((a,b)=>(a[0]||0)-(b[0]||0)); let champ=''; if(bl.length>1){ const W={},L={}; bl.forEach(x=>{ if(x[5]===1||x[5]===2){ const a=x[5]===1?x[2]:x[4], b=x[5]===1?x[4]:x[2]; W[a]=(W[a]||0)+1; L[b]=1; } });
       const c=Object.entries(W).filter(([n])=>!L[n]).sort((a,b)=>b[1]-a[1]); if(c.length===1||(c.length>1&&c[0][1]>c[1][1])) champ=c[0][0]; }
     const names=bl.map(x=>x[2]+' '+x[4]).join(' ');
     return `<details class="div" data-belt="" data-q="${esc((w+' '+names).toLowerCase())}"><summary><span class="dn"><b>${esc(w)}</b></span><span class="dm">${champ?'優勝 '+esc(champ)+'　':''}${bl.length}試合</span></summary><ul class="bres">${bl.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
