@@ -145,17 +145,26 @@ def load():
     for k in list(bouts):
         if bouts[k] and all(b.get('rule') for b in bouts[k]) and (events.get(k) or {}).get('promotion') not in gp:
             del bouts[k]
+    # 載せない大会・試合（data/exclude.tsv：event_id, fighter1, fighter2, reason。選手名が空なら大会ごと）…未成年の試合など
+    for x in read_tsv(os.path.join(DATA, 'exclude.tsv')):
+        k = x['event_id']
+        if not (x.get('fighter1') or '').strip():
+            bouts.pop(k, None)
+            events.pop(k, None)
+        elif k in bouts:
+            pair = frozenset((norm(x['fighter1']), norm(x['fighter2'])))
+            bouts[k] = [b for b in bouts[k] if frozenset((norm(b['fighter1']), norm(b['fighter2']))) != pair]
     # 空欄だったラウンド・時間・階級を、資料で確かめた値で埋める（data/fills.tsv：promotion, date, fighter1_ja, fighter2_ja, field, value）
     fills = {}
     for f in read_tsv(os.path.join(DATA, 'fills.tsv')):
-        fills[(f['promotion'], f['date'], frozenset((norm(f['fighter1_ja']), norm(f['fighter2_ja']))), f['field'])] = f['value']
+        fills[(f['date'], frozenset((norm(f['fighter1_ja']), norm(f['fighter2_ja']))), f['field'])] = f['value']
     if fills:
         for k in bouts:
             e = events.get(k) or {}
             for b in bouts[k]:
                 pair = frozenset((norm(b['fighter1']), norm(b['fighter2'])))
                 for fld in ('round', 'time', 'weight'):
-                    v = fills.get((e.get('promotion'), e.get('date'), pair, fld))
+                    v = fills.get((e.get('date'), pair, fld))
                     if v and not (b.get(fld) or '').strip():
                         b[fld] = v
     for k in bouts:

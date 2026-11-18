@@ -40,7 +40,7 @@ e00007	pancrase	1994-04-21	PANCRASH!（大阪府立体育会館）	大阪府立�
 e01752	lumax	1994-04-23	Lumax Cup - Tournament of J '94		https://ja.wikipedia.org/wiki/%E9%83%B7%E9%87%8E%E8%81%A1%E5%AF%9B https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%89%AF%E5%85%B8 海外の記録サイト
 e00450	shooto	1994-05-06	プロ修斗公式戦	後楽園ホール	http://hirashima-igs.com/shooto/1994/940506.htm
 e00008	pancrase	1994-05-31	ROAD TO THE CHAMPIONSHIP（日本武道館）	日本武道館	https://pancrase.co.jp/data/result/1994/0531.html
-e01099	shooto	1994-06-19	第1回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/akimoto_jin.html https://www.boutreview.com/fightsspiral/haraigawa_yoshinori.html https://www.boutreview.com/fightsspiral/sato_rumina.html https://www.boutreview.com/fightsspiral/takaesu_tomoya.html
+e01099	shooto_ama	1994-06-19	第1回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/akimoto_jin.html https://www.boutreview.com/fightsspiral/haraigawa_yoshinori.html https://www.boutreview.com/fightsspiral/sato_rumina.html https://www.boutreview.com/fightsspiral/takaesu_tomoya.html
 e00009	pancrase	1994-07-06	ROAD TO THE CHAMPIONSHIP（尼崎市記念公園総合体育館）	尼崎市記念公園総合体育館	https://pancrase.co.jp/data/result/1994/0706.html
 e00010	pancrase	1994-07-26	ROAD TO THE CHAMPIONSHIP（駒沢オリンピック公園総合体育館）	駒沢オリンピック公園総合体育館	https://pancrase.co.jp/data/result/1994/0726.html
 e00451	shooto	1994-07-29	Vale Tudo Japan 94	東京ベイNKホール（Vale Tudo Japan 94）	http://hirashima-igs.com/shooto/1994/940729.htm
@@ -83,7 +83,7 @@ e01761	koppo_vs_keisyukai	1995-11-12	Koppo vs. Keisyukai - Koppo Festival		海�
 e01762	k1	1995-12-09	K-1 HERCULES '95	名古屋レインボーホール	https://ja.wikipedia.org/wiki/田村潔司 海外の記録サイト
 e00024	pancrase	1995-12-14	EYES OF BEAST（札幌中島体育センター）	札幌中島体育センター	https://pancrase.co.jp/data/result/1995/1214.html
 e06793	ufc	1995-12-16	UFC: The Ultimate Ultimate	Mammoth Gardens,	https://en.wikipedia.org/wiki/Ultimate_Ultimate_1995 https://jp.ufc.com/event/Ultimate-Ultimate-95
-e01102	shooto	1995-12-17	第2回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/haraigawa_yoshinori.html https://www.boutreview.com/fightsspiral/ikeda_hisao.html https://www.boutreview.com/fightsspiral/kuwabara_tatsuya.html https://www.boutreview.com/fightsspiral/nakao_jutaro.html https://www.boutreview.com/fightsspiral/irie_hidetada.html https://www.boutreview.com/fightsspiral/fujii_shamoji.html
+e01102	shooto_ama	1995-12-17	第2回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/haraigawa_yoshinori.html https://www.boutreview.com/fightsspiral/ikeda_hisao.html https://www.boutreview.com/fightsspiral/kuwabara_tatsuya.html https://www.boutreview.com/fightsspiral/nakao_jutaro.html https://www.boutreview.com/fightsspiral/irie_hidetada.html https://www.boutreview.com/fightsspiral/fujii_shamoji.html
 e00461	shooto	1996-01-20	VALE TUDO JUNCTION 1	後楽園ホール	http://hirashima-igs.com/shooto/1996/960120.htm
 e01103	rings	1996-01-24	リングス「MEGA BATTLE TOURNAMENT 1995 GRAND-FINAL」	日本武道館	https://prowrestlingdata.com/%e3%83%aa%e3%83%b3%e3%82%b0%e3%82%b9/%e3%83%aa%e3%83%b3%e3%82%b0%e3%82%b9%e3%80%8cmega-battle-tournament-1995-grand-final%e3%80%8d1996%e5%b9%b41%e6%9c%8824%e6%97%a5%e3%80%80%e6%97%a5%e6%9c%ac%e6%ad%a6%e9%81%93%e9%a4%a8%e3%80%80%e8%a9%a6/ 海外の記録サイト
 e00025	pancrase	1996-01-28	PANCRASE TOUR 1996 TRUTH（横浜文化体育館）	横浜文化体育館	https://pancrase.co.jp/data/result/1996/0128.html
@@ -107,7 +107,7 @@ e01767	all_japan_womens_professional_wrestling	1996-07-14	AJWPW - U-Top Tourname
 e00031	pancrase	1996-07-22	PANCRASE TOUR 1996 TRUTH（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/1996/0722.html
 e00032	pancrase	1996-07-23	PANCRASE TOUR 1996 TRUTH（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/1996/0723.html
 e00465	shooto	1996-07-28	ＦＲＥＥ－ＦＩＧＨＴ ＫＡＷＡＳＡＫＩ	クラブチッタ川崎	http://hirashima-igs.com/shooto/1996/960728.htm
-e01105	shooto	1996-07-28	第3回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_3.html
+e01105	shooto_ama	1996-07-28	第3回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_3.html
 e01769	all_japan_womens_professional_wrestling	1996-08-12	AJWPW - U-Top Tournament Opening Round	日本武道館	https://prowrestlingdata.com/?p=16313 https://ja.wikipedia.org/wiki/%E5%A0%80%E7%94%B0%E7%A5%90%E7%BE%8E%E5%AD%90 海外の記録サイト
 e01770	all_japan_womens_professional_wrestling	1996-08-13	AJWPW - U-Top Tournament Finals	日本武道館	https://prowrestlingdata.com/?p=16315 https://ja.wikipedia.org/wiki/%E5%A0%80%E7%94%B0%E7%A5%90%E7%BE%8E%E5%AD%90 海外の記録サイト
 e01771	universal_vale_tudo_fighting	1996-08-14	UVF 3 - Universal Vale Tudo Fighting 3	東京	https://en.wikipedia.org/wiki/Harold_Howard 海外の記録サイト
@@ -192,7 +192,7 @@ e00059	pancrase	1998-07-07	PANCRASE 1998 ADVANCE TOUR（後楽園ホール）	�
 e00479	shooto	1998-07-18	Shooto GIG '98 2nd	北沢タウンホール	http://hirashima-igs.com/shooto/1998/980718.htm
 e00060	pancrase	1998-07-26	PANCRASE 1998 ADVANCE TOUR（青森県営体育館）	青森県営体育館	https://pancrase.co.jp/data/result/1998/0726.html
 e00480	shooto	1998-07-29	IV Las Grandes Viajes	東京 後楽園ホール	http://hirashima-igs.com/shooto/1998/980729.htm
-e01112	shooto	1998-08-23	第5回全日本アマチュア修斗選手権大会		https://wiki3.jp/bout/page/927 https://wiki3.jp/bout/name/%E6%A1%9C%E4%BA%95%E9%9A%86%E5%A4%9A
+e01112	shooto_ama	1998-08-23	第5回全日本アマチュア修斗選手権大会		https://wiki3.jp/bout/page/927 https://wiki3.jp/bout/name/%E6%A1%9C%E4%BA%95%E9%9A%86%E5%A4%9A
 e00481	shooto	1998-08-29	V Las Grandes Viajes	東京 後楽園ホール	http://hirashima-igs.com/shooto/1998/980829.htm
 e04720	gcm	1998-08-29	THE GCM 出島バーリトゥード 和術慧舟會vsオランダ軍団 5対5マッチ	長崎市公会堂	https://www.boutreview.com/fightsspiral/gcm_98_08_29.html
 e01797	rings	1998-09-13	Rings Australia - NR2		https://en.wikipedia.org/wiki/Elvis_Sinosic 海外の記録サイト
@@ -312,7 +312,7 @@ e00086	pancrase	2000-08-27	PANCRASE 2000 TRANS TOUR（大阪・梅田ステラ�
 e00512	shooto	2000-08-27	Shooto	横浜文化体育館	http://hirashima-igs.com/shooto/2000/000827.htm
 e01838	pride	2000-08-27	PRIDE.10	西武ドーム	https://www.boutreview.com/fightsspiral/PRIDE10.html
 e04785	rings	2000-09-05	リングス BATTLE GENESIS Vol.6	後楽園ホール	https://www.boutreview.com/fightsspiral/RINGS_00_09_05.html
-e01118	shooto	2000-09-10	第7回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_7.html
+e01118	shooto_ama	2000-09-10	第7回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_7.html
 e00513	shooto	2000-09-15	Shooto	東京 後楽園ホール	http://hirashima-igs.com/shooto/2000/000915.htm
 e05558	ufc	2000-09-22	UFC 27: Ultimate Bad Boyz	Lake Front Arena	https://jp.ufc.com/event/ufc-27 https://ja.wikipedia.org/wiki/%E6%9C%89%E5%B7%B1%E7%A9%BA https://en.wikipedia.org/wiki/UFC_27
 e00087	pancrase	2000-09-24	PANCRASE 2000 TRANS TOUR（横浜文化体育館）	横浜文化体育館	https://pancrase.co.jp/data/result/2000/0924.html
@@ -419,7 +419,7 @@ e01887	prowrestling_zero1	2001-08-30	Zero1 - Shingeki Chapter 2	日本武道館	
 e00535	shooto	2001-09-02	プロ修斗公式戦	後楽園ホール	http://hirashima-igs.com/shooto/2001/010902.htm
 e04784	rings	2001-09-21	リングス Battle Genesis Vol.8	後楽園ホール	https://www.boutreview.com/fightsspiral/RINGS_BG_8.html
 e00536	shooto	2001-09-23	プロ修斗公式戦	NGKスタジオ	http://hirashima-igs.com/shooto/2001/010923.htm
-e01133	shooto	2001-09-24	第8回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B5%9C%E5%BA%B7%E6%82%A6 https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E6%98%AD https://ja.wikipedia.org/wiki/%E6%9C%B4%E5%85%89%E5%93%B2 https://ja.wikipedia.org/wiki/%E6%97%A5%E6%B2%96%E7%99%BA https://ja.wikipedia.org/wiki/%E5%BC%98%E4%B8%AD%E9%82%A6%E4%BD%B3 https://ja.wikipedia.org/wiki/%E4%B8%AD%E8%94%B5%E9%9A%86%E5%BF%97
+e01133	shooto_ama	2001-09-24	第8回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B5%9C%E5%BA%B7%E6%82%A6 https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E6%98%AD https://ja.wikipedia.org/wiki/%E6%9C%B4%E5%85%89%E5%93%B2 https://ja.wikipedia.org/wiki/%E6%97%A5%E6%B2%96%E7%99%BA https://ja.wikipedia.org/wiki/%E5%BC%98%E4%B8%AD%E9%82%A6%E4%BD%B3 https://ja.wikipedia.org/wiki/%E4%B8%AD%E8%94%B5%E9%9A%86%E5%BF%97
 e04181	pride	2001-09-24	PRIDE.16	大阪城ホール	https://www.boutreview.com/fightsspiral/PRIDE16.html
 e00537	shooto	2001-09-27	プロ修斗公式戦	北沢タウンホール	http://hirashima-igs.com/shooto/2001/010927.htm
 e01890	smackgirl	2001-09-27	スマックガール第５回大会	渋谷 club ATOM	https://www.boutreview.com/news/data/grappling/1003257100.html 海外の記録サイト
@@ -543,7 +543,7 @@ e00572	shooto	2002-09-25	SHOOTO GIG EAST 11	北沢タウンホール	http://hira
 e05551	ufc	2002-09-27	UFC 39: The Warriors Return	Mohegan Sun Arena	https://jp.ufc.com/event/ufc-39 https://ja.wikipedia.org/wiki/%E5%AE%87%E9%87%8E%E8%96%AB https://en.wikipedia.org/wiki/UFC_39
 e00110	pancrase	2002-09-29	PANCRASE 2002 SPIRIT TOUR（横浜文化体育館）	横浜文化体育館	https://pancrase.co.jp/data/result/2002/0929.html
 e00573	shooto	2002-09-29	SHOOTO HOLLAND	-	http://hirashima-igs.com/shooto/2002/020929.htm
-e01148	shooto	2002-09-29	第9回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/tsurumi_issei.html https://www.boutreview.com/fightsspiral/tiger_ishii.html https://www.boutreview.com/fightsspiral/heat_takeshi.html https://www.boutreview.com/fightsspiral/akihisa_tetsuya.html https://www.boutreview.com/fightsspiral/osawa_kenji.html https://www.boutreview.com/fightsspiral/fujioka_masayoshi.html
+e01148	shooto_ama	2002-09-29	第9回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/tsurumi_issei.html https://www.boutreview.com/fightsspiral/tiger_ishii.html https://www.boutreview.com/fightsspiral/heat_takeshi.html https://www.boutreview.com/fightsspiral/akihisa_tetsuya.html https://www.boutreview.com/fightsspiral/osawa_kenji.html https://www.boutreview.com/fightsspiral/fujioka_masayoshi.html
 e04186	pride	2002-09-29	PRIDE.22	名古屋レインボーホール	https://www.boutreview.com/fightsspiral/PRIDE22.html
 e01941	smackgirl	2002-10-05	"SMACK GIRL ""JAPAN CUP 2002 開幕戦"""	ディファ有明	https://www.boutreview.com/data/reports/021005smack.html 海外の記録サイト
 e00574	shooto	2002-10-06	SHOOTO GIG CENTRAL 02	名古屋公会堂	http://hirashima-igs.com/shooto/2002/021006.htm
@@ -822,7 +822,7 @@ e00625	shooto	2004-09-12	SHOOTO GIG CENTRAL Vol.6	名古屋市公会堂	http://h
 e04239	zst	2004-09-12	ZST.6	Zepp Tokyo	https://www.boutreview.com/fightsspiral/ZST6.html
 e07456	cage_warriors	2004-09-18	Cage Warriors 8	英国シェフィールド	https://en.wikipedia.org/wiki/2004_in_Cage_Warriors
 e04691	gcm	2004-09-19	GCM「DEMOLITION 040919」	東京・お台場スタジオ・ドリーム・メーカー	https://gbring.com/sokuho/result/result2004_09/0919_demolittion.htm
-e01182	shooto	2004-09-20	第11回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_11.html
+e01182	shooto_ama	2004-09-20	第11回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_11.html
 e00138	pancrase	2004-09-24	PANCRASE 2004 BRAVE TOUR（後楽園ホール）	後楽園ホール	https://pancrase.co.jp/data/result/2004/0924.html
 e00626	shooto	2004-09-26	プロフェッショナル修斗公式戦	後楽園ホール	http://hirashima-igs.com/shooto/2004/040926.htm
 e01183	aranami	2004-10-01	荒波 PRE ARANAMI		https://www.boutreview.com/data/reports/041001aranami.html
@@ -1000,7 +1000,7 @@ e01203	kushimas_fight	2005-09-11	Kushima's Fight 10（クシマズファイト10
 e00646	shooto	2005-09-16	G-SHOOTO		https://gbring.com/sokuho/result/result2005_09/0916_shooto.htm
 e04683	gcm	2005-09-17	D.O.G～demolittion of octagon gear～ 3	東京・ディファ有明	https://gbring.com/sokuho/result/result2005_09/0917_dog.htm
 e07449	cage_warriors	2005-09-17	CWFC: Quest 3	英国シェフィールド	https://en.wikipedia.org/wiki/2005_in_Cage_Warriors
-e01204	shooto	2005-09-18	第12回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_12.html
+e01204	shooto_ama	2005-09-18	第12回全日本アマチュア修斗選手権大会		https://www.boutreview.com/fightsspiral/ama_shooto_jpn_12.html
 e00647	shooto	2005-09-23	プロフェッショナル修斗公式戦（後楽園ホール）		https://gbring.com/sokuho/result/result2005_09/0923_shooto.htm
 e04212	pride	2005-09-25	PRIDE 武士道 其の九	有明コロシアム	https://www.boutreview.com/fightsspiral/pride_bushido_gp_2005.html
 e07448	cage_warriors	2005-10-01	CWFC: Strike Force 3	英国コヴェントリー	https://en.wikipedia.org/wiki/2005_in_Cage_Warriors
@@ -1197,7 +1197,7 @@ e01228	buraikan	2006-09-23	武頼漢－BURAIKAN－	東京・新木場1stRING	htt
 e02253	heat	2006-09-23	SLENDERTONE presents HEAT 2nd	愛知県武道館	https://www.boutreview.com/fightsspiral//HEAT_2.html
 e04725	heat	2006-09-23	「SLENDERTONE presents HEAT 2nd.」	愛知県武道館	https://gbring.com/sokuho/result/result2006_09/0923_deep.htm
 e06749	ufc	2006-09-23	UFC 63: Hughes vs. Penn	ホンダ・センター, アナハイム アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_63 https://jp.ufc.com/event/ufcr-63
-e01229	shooto	2006-09-24	第13回全日本アマチュア修斗選手権大会		https://gbring.com/sokuho/result/result2006_09/0924_shooto.htm https://ja.wikipedia.org/wiki/%E4%B9%85%E7%B1%B3%E9%B7%B9%E4%BB%8B https://ja.wikipedia.org/wiki/%E8%8C%82%E6%9C%A8%E5%BA%B7%E5%AD%90 https://ja.wikipedia.org/wiki/%E9%98%BF%E9%83%A8%E5%8D%9A%E4%B9%8B https://ja.wikipedia.org/wiki/%E7%8C%BF%E4%B8%B8%E3%82%B8%E3%83%A5%E3%83%B3%E3%82%B8 https://ja.wikipedia.org/wiki/%E6%BD%A4%E9%8E%AE%E9%AD%82%E6%AD%8C
+e01229	shooto_ama	2006-09-24	第13回全日本アマチュア修斗選手権大会		https://gbring.com/sokuho/result/result2006_09/0924_shooto.htm https://ja.wikipedia.org/wiki/%E4%B9%85%E7%B1%B3%E9%B7%B9%E4%BB%8B https://ja.wikipedia.org/wiki/%E8%8C%82%E6%9C%A8%E5%BA%B7%E5%AD%90 https://ja.wikipedia.org/wiki/%E9%98%BF%E9%83%A8%E5%8D%9A%E4%B9%8B https://ja.wikipedia.org/wiki/%E7%8C%BF%E4%B8%B8%E3%82%B8%E3%83%A5%E3%83%B3%E3%82%B8 https://ja.wikipedia.org/wiki/%E6%BD%A4%E9%8E%AE%E9%AD%82%E6%AD%8C
 e00167	pancrase	2006-10-01	PANCRASE 2006 BLOW TOUR（大阪・梅田ステラホール）	大阪・梅田ステラホール	https://pancrase.co.jp/data/result/2006/1001.html
 e00665	shooto	2006-10-01	プロフェッショナル修斗公式戦（北沢タウンホール）		https://gbring.com/sokuho/result/result2006_10/1001_shooto.htm
 e02254	kushimas_fight	2006-10-01	Kushima's Fight 13	長崎市平和会館ホール	https://www.boutreview.com/fightsspiral//kushimas_fight_13.html https://www.boutreview.com/fightsspiral/kushimas_fight_13.html 海外の記録サイト
@@ -1405,7 +1405,7 @@ e01259	real_japan_pro_wrestling	2007-09-21	リアルジャパンプロレス 第
 e00688	shooto	2007-09-22	プロフェッショナル修斗公式戦（後楽園ホール）		https://gbring.com/sokuho/result/result2007_09/0922_shooto.htm
 e05533	ufc	2007-09-22	UFC 76	ホンダ・センター, アナハイム アメリカ合衆国	https://jp.ufc.com/event/ufcr-76 https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%92%8C%E8%A3%95 https://en.wikipedia.org/wiki/UFC_76
 e05534	ufc	2007-09-22	UFC 76: Knockout	ホンダ・センター, アナハイム アメリカ合衆国	https://jp.ufc.com/event/ufcr-76 https://ja.wikipedia.org/wiki/%E5%B0%8F%E8%A6%8B%E5%B7%9D%E9%81%93%E5%A4%A7
-e01260	shooto	2007-09-23	第14回全日本アマチュア修斗選手権大会	小田原アリーナ	https://www.boutreview.com/fightsspiral/ama_shooto_jpn_14.html https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9C%A8%E5%81%A5%E5%A4%AA https://gbring.com/sokuho/result/result2007_09/0923_shooto.htm
+e01260	shooto_ama	2007-09-23	第14回全日本アマチュア修斗選手権大会	小田原アリーナ	https://www.boutreview.com/fightsspiral/ama_shooto_jpn_14.html https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9C%A8%E5%81%A5%E5%A4%AA https://gbring.com/sokuho/result/result2007_09/0923_shooto.htm
 e04147	deep	2007-09-23	club DEEP 山口	山口県 新南陽体育館	https://www.boutreview.com/fightsspiral/clubDEEP_07_09_23.html 海外の記録サイト
 e08031	rings	2007-09-23	Rings Holland - Risky Business		https://en.wikipedia.org/wiki/Hesdy_Gerges https://en.wikipedia.org/wiki/Warren_Stevelmans
 e05286	smackgirl	2007-09-24	SMACKGIRL GRAPPLING QUEEN TOURNAMENT2007	北沢タウンホール	https://gbring.com/sokuho/result/result2007_09/0924_smack.htm
@@ -1522,7 +1522,7 @@ e04296	deep	2008-03-29	club DEEP TOKYO in 新宿FACE	新宿FACE	https://gbring.c
 e07434	cage_warriors	2008-03-29	Cage Warriors: USA Battle Royale	米国キシミー	https://en.wikipedia.org/wiki/2008_in_Cage_Warriors
 e07580	ksw	2008-03-29	KSW Elimination	Hala Stulecia（ポーランド・ヴロツワフ）	https://en.wikipedia.org/wiki/2008_in_Konfrontacja_Sztuk_Walki
 e04308	heat	2008-03-30	HEAT（2008年3月30日 名古屋国際会議場イベントホール）	名古屋国際会議場イベントホール	https://gbring.com/sokuho/result/result2008_03/0330_heat.htm
-e04311	rings	2008-03-30	THE OUTSIDER 第1戦	ディファ有明	https://gbring.com/sokuho/result/result2008_03/0330_outsider.htm
+e04311	outsider	2008-03-30	THE OUTSIDER 第1戦	ディファ有明	https://gbring.com/sokuho/result/result2008_03/0330_outsider.htm
 e06734	ufc	2008-04-02	UFC Fight Night: Florian vs. Lauzon	Broomfield Event Center,	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Florian_vs._Lauzon https://jp.ufc.com/event/UFC-Fight-Night-Kenny-Florian-vs-Joe-Lauzon
 e02392	gcm	2008-04-05	CAGE FORCE 06	ディファ有明	https://gbring.com/sokuho/result/result2008_04/0405_gcm.htm
 e02393	powergate	2008-04-13	POWER GATE カイザーグランプリ in 京都KBSホール 2nd	京都KBSホール	https://www.boutreview.com/data/reports05/080413powergate.html 海外の記録サイト
@@ -1579,7 +1579,7 @@ e07432	cage_warriors	2008-07-12	Cage Warriors: Enter the Rough House 7	英国ノ
 e04347	heat	2008-07-13	HEAT 7（2008年7月13日 Zepp Nagoya）	Zepp Nagoya	https://gbring.com/sokuho/result/result2008_07/0713_heat.htm
 e04354	m1	2008-07-17	M-1 MIXFIGHT CHALLENGE（2008年7月17日 後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2008_07/0717_m-1c.htm
 e00701	shooto	2008-07-18	プロフェッショナル修斗公式戦（後楽園ホール）		https://gbring.com/sokuho/result/result2008_07/0718_shooto.htm
-e04360	rings	2008-07-19	THE OUTSIDER 第2戦	ディファ有明	https://gbring.com/sokuho/result/result2008_07/0719_outsider.htm
+e04360	outsider	2008-07-19	THE OUTSIDER 第2戦	ディファ有明	https://gbring.com/sokuho/result/result2008_07/0719_outsider.htm
 e06730	ufc	2008-07-19	UFC Fight Night: Silva vs. Irvin	The Pearl,	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Silva_vs._Irvin https://jp.ufc.com/event/ufcr-5
 e02424	tenkaichi_fight	2008-07-20	TF - Tenkaichi Fight 27		海外の記録サイト
 e04269	zst	2008-07-20	SWAT！19	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2008_07/0720_zst.htm
@@ -1616,7 +1616,7 @@ e00192	pancrase	2008-09-07	PANCRASE 2008 SHINING TOUR（大阪・アゼリア大
 e04271	zst	2008-09-07	SWAT!20	ゴールドジム東京サウスアネックス	https://gbring.com/sokuho/result/result2008_09/0907_zst.htm
 e02441	deep	2008-09-13	DEEP - Kobudo Fight 4		海外の記録サイト
 e07579	ksw	2008-09-13	KSW Extra	Hala Centrum（ポーランド・ドンブロヴァ・グルニチャ）	https://en.wikipedia.org/wiki/2008_in_Konfrontacja_Sztuk_Walki
-e01287	shooto	2008-09-14	第15回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%9F%B3%E5%BA%B7%E5%A4%AA https://ja.wikipedia.org/wiki/%E8%8C%82%E6%9C%A8%E5%BA%B7%E5%AD%90 https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%82%BF%26%E3%83%AD%E3%83%83%E3%82%AF
+e01287	shooto_ama	2008-09-14	第15回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%9F%B3%E5%BA%B7%E5%A4%AA https://ja.wikipedia.org/wiki/%E8%8C%82%E6%9C%A8%E5%BA%B7%E5%AD%90 https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%82%BF%26%E3%83%AD%E3%83%83%E3%82%AF
 e02442	accel	2008-09-15	【アクセル】神戸初のムエタイVS日本人空手家4対4マッチは空手側が全敗		https://gbring.com/sokuho/result/result2008_09/0915_accel.htm
 e04320	accel	2008-09-15	ACCEL 格闘武道会（2008年9月15日 兵庫県民会館）	兵庫県民会館	https://gbring.com/sokuho/result/result2008_09/0915_accel.htm
 e06728	ufc	2008-09-17	UFC Fight Night: Diaz vs. Neer	Omaha Civic Auditorium,	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Diaz_vs._Neer https://jp.ufc.com/event/ufcr-fight-nighttm-0
@@ -1643,7 +1643,7 @@ e01290	tribelate	2008-10-13	TRIBELATE vol.20～Hybrid Club Fight～	新宿FACE	h
 e04374	tribelate	2008-10-13	TRIBELATE vol.20（2008年10月13日 新宿FACE）	新宿FACE	https://gbring.com/sokuho/result/result2008_10/1013_tribelate.htm
 e05523	ufc	2008-10-18	UFC 89: Bisping vs. Leben	The NIA	https://jp.ufc.com/event/ufcr-89 https://ja.wikipedia.org/wiki/%E9%83%B7%E9%87%8E%E8%81%A1%E5%AF%9B https://en.wikipedia.org/wiki/UFC_89
 e02455	tenkaichi_fight	2008-10-19	TF - Tenkaichi Fight 30		海外の記録サイト
-e04361	rings	2008-10-19	THE OUTSIDER 第参戦	ディファ有明	https://gbring.com/sokuho/result/result2008_10/1019_outsider.htm
+e04361	outsider	2008-10-19	THE OUTSIDER 第参戦	ディファ有明	https://gbring.com/sokuho/result/result2008_10/1019_outsider.htm
 e04328	deep	2008-10-23	DEEP 38 IMPACT	後楽園ホール	https://gbring.com/sokuho/result/result2008_10/1023_deep.htm
 e06727	ufc	2008-10-25	UFC 90: Silva vs. Côté	Allstate Arena,	https://en.wikipedia.org/wiki/UFC_90 https://jp.ufc.com/event/ufcr-90
 e00194	pancrase	2008-10-26	PANCRASE 2008 SHINING TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2008/1026.html
@@ -1682,9 +1682,9 @@ e01295	pancrase	2008-12-14	第31回パンクラスゲート×2	P’s LAB横浜	h
 e02471	grachan	2008-12-14	GRACHAN1	東京・ディファ有明	https://grachan.jp/grachan1/
 e04346	grachan	2008-12-14	GRACHAN（2008年12月14日 ディファ有明）	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1214_grachan.htm
 e04348	heat	2008-12-14	HEAT 8（2008年12月14日 ディファ有明）	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1214_heat.htm
-e01296	rings	2008-12-20	THE OUTSIDER 第四戦		https://gbring.com/sokuho/result/result2008_12/1220_outsider.htm
+e01296	outsider	2008-12-20	THE OUTSIDER 第四戦		https://gbring.com/sokuho/result/result2008_12/1220_outsider.htm
 e02474	tribelate	2008-12-20	TRIBELATE vol.21～Hybrid Club Fight～	新宿FACE	https://gbring.com/sokuho/result/result2008_12/1220_tribelate.htm
-e04362	rings	2008-12-20	THE OUTSIDER 第4戦	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1220_outsider.htm
+e04362	outsider	2008-12-20	THE OUTSIDER 第4戦	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1220_outsider.htm
 e04375	tribelate	2008-12-20	TRIBELATE（2008年12月20日 新宿FACE）	新宿FACE	https://gbring.com/sokuho/result/result2008_12/1220_tribelate.htm
 e04272	zst	2008-12-21	SWAT！22	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2008_12/1221_zst.htm
 e04812	tenkaichi_fight	2008-12-21	TENKAICHI fight	沖縄・天下一スタジアム	https://gbring.com/sokuho/result/result2008_12/1221_tenka.htm
@@ -1745,7 +1745,7 @@ e04345	gcm	2009-03-13	DEMOLITION（2009年3月13日 新木場1stRING）	新木�
 e02502	deep	2009-03-14	clubDEEP東京 プロテクト杯バンタム級トーナメント準決勝・決勝	東京・新木場1ｓｔRING	https://gbring.com/sokuho/result/result2009_03/0314_deep.htm
 e04334	deep	2009-03-14	club DEEP TOKYO プロテクト杯決勝（2009年3月14日 新木場1stRING）	新木場1stRING	https://gbring.com/sokuho/result/result2009_03/0314_deep.htm
 e02504	tenkaichi_fight	2009-03-15	TF - Tenkaichi Fight 35		海外の記録サイト
-e04363	rings	2009-03-15	クローズZEROⅡ公開記念 THE OUTSIDER SPECIAL	両国国技館	https://gbring.com/sokuho/result/result2009_03/0315_outsider.htm
+e04363	outsider	2009-03-15	クローズZEROⅡ公開記念 THE OUTSIDER SPECIAL	両国国技館	https://gbring.com/sokuho/result/result2009_03/0315_outsider.htm
 e00714	shooto	2009-03-20	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_03/0320_shooto.htm
 e02505	krunch	2009-03-20	KRUNCH 第参戦	ディファ有明	http://miruhon.net/news/2009/03/320krunch_1.html 海外の記録サイト
 e04368	sengoku	2009-03-20	戦極 ～第七陣～	国立代々木競技場第二体育館	https://gbring.com/sokuho/result/result2009_03/0320_sengoku.htm
@@ -1782,7 +1782,7 @@ e07278	bellator	2009-05-01	Bellator 5	Hara Arena	https://en.wikipedia.org/wiki/2
 e04604	sengoku	2009-05-02	ワールドビクトリーロード「戦極～第八陣～」	東京・国立代々木競技場第二体育館	https://gbring.com/sokuho/result/result2009_05/0502_sengoku.htm
 e01308	zst	2009-05-03	SWAT！－SBRX1	大森	https://gbring.com/sokuho/result/result2009_05/0503_zst.htm
 e02524	deep	2009-05-05	DEEP - Kobudo Fight 7		海外の記録サイト
-e04567	rings	2009-05-05	ファイティングネットワークリングス「THE OUTSIDER 第6戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_05/0505_outsider.htm
+e04567	outsider	2009-05-05	ファイティングネットワークリングス「THE OUTSIDER 第6戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_05/0505_outsider.htm
 e07277	bellator	2009-05-08	Bellator 6	Central Pavilion Arena	https://en.wikipedia.org/wiki/2009_in_Bellator_MMA#Bellator_6
 e00719	shooto	2009-05-10	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_05/0510_shooto.htm
 e02526	tsuwamono	2009-05-10	強者Second vol.4 東西対決 TSUWAMONO‐強者 VS KRUNCH 渋谷杉浦グループ	大阪・ZEPP OSAKA	https://gbring.com/sokuho/result/result2009_05/0510_tsuwamono.htm 海外の記録サイト
@@ -1844,7 +1844,7 @@ e02554	kingdom	2009-08-05	キングダムエルガイツ東京大会 ～キン�
 e00201	pancrase	2009-08-08	PANCRASE 2009 CHANGING TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2009/0808.html
 e06718	ufc	2009-08-08	UFC 101: Declaration	Wachovia Center,	https://en.wikipedia.org/wiki/UFC_101 https://jp.ufc.com/event/ufcr-101
 e01319	shooto	2009-08-09	Shooto - Gig Saitama 1		https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E3%83%AB%E3%83%9F%E3%83%8A https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%83%BB%E3%82%A4%E3%82%BA%E3%83%9F https://ja.wikipedia.org/wiki/%E5%B1%B1%E4%B8%8A%E5%B9%B9%E8%87%A3 https://ja.wikipedia.org/wiki/%E7%94%B0%E5%8E%9F%E3%81%97%E3%82%93%E3%81%BA%E3%83%BC https://ja.wikipedia.org/wiki/WINDY%E6%99%BA%E7%BE%8E 海外の記録サイト
-e02555	rings	2009-08-09	THE OUTSIDER 第7戦	ディファ有明	https://gbring.com/sokuho/result/result2009_08/0809_outsider.htm 海外の記録サイト
+e02555	outsider	2009-08-09	THE OUTSIDER 第7戦	ディファ有明	https://gbring.com/sokuho/result/result2009_08/0809_outsider.htm 海外の記録サイト
 e05922	wec	2009-08-09	WEC 42: Torres vs. Bowles	ザ・ジョイント（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_42 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5
 e01320	pancrase	2009-08-16	第35回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_08/0816_pancrase.htm
 e02557	shooto	2009-08-16	BORDER -season 1-「進撃」	平野区民ホール	http://blog.livedoor.jp/shooto_news/archives/51550850.html 海外の記録サイト
@@ -1878,7 +1878,7 @@ e04566	powergate	2009-09-23	VERSUS「POWER GATE－NEXT GENERATION－」	大阪�
 e04606	sengoku	2009-09-23	「戦極～第十陣～」	さいたまコミュニティアリーナ	https://gbring.com/sokuho/result/result2009_09/0923_sengoku.htm
 e04546	heat	2009-09-26	志村道場・日本拳法 同心会館 presents HEAT11	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_09/0926_heat.htm
 e05991	adcc	2009-09-26	ADCC 2009（バルセロナ）	スペイン・バルセロナ	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://ja.wikipedia.org/wiki/%E5%85%AB%E9%9A%85%E5%AD%9D%E5%B9%B3 https://btbrasil.livedoor.biz/archives/55306277.html https://btbrasil.livedoor.biz/archives/55312628.html https://ja.wikipedia.org/wiki/%E5%90%89%E7%94%B0%E5%96%84%E8%A1%8C
-e01327	shooto	2009-09-27	第16回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B3%E3%83%9C%E3%83%BC%E5%AE%8F%E8%BC%94 https://ja.wikipedia.org/wiki/%E6%B5%9C%E5%B4%8E%E6%9C%B1%E5%8A%A0 https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AD%E3%83%A9_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29 https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E6%BD%A4%E9%8E%AE%E9%AD%82%E6%AD%8C https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%84%AA%E4%BD%9C
+e01327	shooto_ama	2009-09-27	第16回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B3%E3%83%9C%E3%83%BC%E5%AE%8F%E8%BC%94 https://ja.wikipedia.org/wiki/%E6%B5%9C%E5%B4%8E%E6%9C%B1%E5%8A%A0 https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AD%E3%83%A9_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29 https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E6%BD%A4%E9%8E%AE%E9%AD%82%E6%AD%8C https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%84%AA%E4%BD%9C
 e02576	deep	2009-09-27	DEEP - Hamamatsu Impact		海外の記録サイト
 e05992	adcc	2009-09-27	ADCC 2009（バルセロナ）	スペイン・バルセロナ	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://btbrasil.livedoor.biz/archives/55311523.html https://btbrasil.livedoor.biz/archives/55306277.html https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91K%E5%A4%AA%E9%83%8E
 e01328	pancrase	2009-10-04	第36回パンクラスゲート2ワンマッチ大会	P’s LAB横浜	https://gbring.com/sokuho/result/result2009_10/1004_pancrase.htm
@@ -1889,7 +1889,7 @@ e04390	deep	2009-10-10	DEEP 44 IMPACT	後楽園ホール	https://gbring.com/soku
 e05923	wec	2009-10-10	WEC 43: Cerrone vs. Henderson	AT&Tセンター（テキサス州サンアントニオ）	https://en.wikipedia.org/wiki/WEC_43
 e01329	zst	2009-10-11	SWAT！29	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2009_10/1011_zst.htm
 e02581	battle_code	2009-10-11	Battle Code - Gate Challenge 4	Toyohashi, Aichi Japan	https://combatreg.com/events/Battle-Code-Gate-Challenge-4:CF747BBF-79F5-4153-8558-1B4CFEA313C6 海外の記録サイト
-e04568	rings	2009-10-11	「THE OUTSIDER 第8戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_10/1011_outsider.htm
+e04568	outsider	2009-10-11	「THE OUTSIDER 第8戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_10/1011_outsider.htm
 e00202	pancrase	2009-10-17	PANCRASE 2009 CHANGING TOUR（東京・新宿FACE）	東京・新宿FACE	https://pancrase.co.jp/data/result/2009/1017.html
 e00726	shooto	2009-10-18	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2009_10/1018_shooto.htm
 e02583	deep	2009-10-18	DEEP - Kobudo Fight 8		海外の記録サイト
@@ -1935,7 +1935,7 @@ e07576	ksw	2009-12-11	KSW 12	Hala Torwar（ポーランド・ワルシャワ）	
 e06712	ufc	2009-12-12	UFC 107: Penn vs. Sanchez	FedEx Forum,	https://en.wikipedia.org/wiki/UFC_107 https://jp.ufc.com/event/ufcr-107
 e00728	shooto	2009-12-13	プロフェッショナル修斗公式戦（新人王決定戦）		https://gbring.com/sokuho/result/result2009_12/1213_shooto.htm
 e02605	battle_code	2009-12-13	BC - Battle Code 1		https://ja.wikipedia.org/wiki/%E7%A5%96%E6%A0%B9%E5%AF%BF%E9%BA%BB 海外の記録サイト
-e04569	rings	2009-12-13	リングス「THE OUTSIDER 第9戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_12/1213_outsider.htm
+e04569	outsider	2009-12-13	リングス「THE OUTSIDER 第9戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2009_12/1213_outsider.htm
 e04392	deep	2009-12-19	DEEP CAGE IMPACT 2009	ディファ有明	https://gbring.com/sokuho/result/result2009_12/1219_deep_01.htm
 e05925	wec	2009-12-19	WEC 45: Cerrone vs. Ratcliff	ザ・パール（ネバダ州ラスベガス）	https://en.wikipedia.org/wiki/WEC_45 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5
 e04282	zst	2009-12-20	SWAT! 31	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2009_12/1220_zst.htm
@@ -1970,7 +1970,7 @@ e04284	zst	2010-02-07	SWAT！－VTX1	ゴールドジムサウス東京アネッ�
 e04509	gcm	2010-02-11	GCM「CAGE FORCE」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_02/0211_gcm_02.htm
 e04510	gcm	2010-02-11	GCM「VALKYRIE 04」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_02/0211_valkyrie.htm
 e02625	shooto	2010-02-14	SHOOTO GIG NORTH Vol.5	ZEPP SAPPORO	http://blog.livedoor.jp/shooto_news/archives/51623774.html 海外の記録サイト
-e04570	rings	2010-02-14	リングス「THE OUTSIDER 第10戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_02/0214_outsider.htm
+e04570	outsider	2010-02-14	リングス「THE OUTSIDER 第10戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_02/0214_outsider.htm
 e04285	zst	2010-02-20	ZST.23	新宿FACE	https://gbring.com/sokuho/result/result2010_02/0220_zst.htm
 e04286	zst	2010-02-20	SWAT! in FACE vol.4	新宿FACE	https://gbring.com/sokuho/result/result2010_02/0220_zst_02.htm
 e05296	zst	2010-02-20	ZST.23 / SWAT!		https://gbring.com/sokuho/result/result2010_02/0220_zst.htm
@@ -1999,7 +1999,7 @@ e04173	deep	2010-03-28	C-WAVE「Club DEEP Tokyo in 新宿」	新宿Pink Big Pig	
 e05513	ufc	2010-03-31	UFC Fight Night: Florian vs. Gomi	Bojangles' Coliseum	https://jp.ufc.com/event/ufcr-fight-nighttm-8 https://ja.wikipedia.org/wiki/%E4%BA%94%E5%91%B3%E9%9A%86%E5%85%B8 https://ja.wikipedia.org/wiki/%E5%AE%87%E9%87%8E%E8%96%AB https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Florian_vs._Gomi
 e07575	ksw	2010-04-01	KSW Elimination 3	CWKS Legia Boxing Club（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2010_in_Konfrontacja_Sztuk_Walki
 e02642	gcm	2010-04-03	GCM - Demolition West		https://ja.wikipedia.org/wiki/レッツ豪太 https://ja.wikipedia.org/wiki/福島秀和 https://ja.wikipedia.org/wiki/魚井フルスイング https://theanswer.hatenablog.com/entry/2020/05/08/210942 海外の記録サイト
-e04571	rings	2010-04-03	THE OUTSIDER 第11戦	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_04/0403_outsider.htm
+e04571	outsider	2010-04-03	THE OUTSIDER 第11戦	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_04/0403_outsider.htm
 e00209	pancrase	2010-04-04	PANCRASE 2010 PASSION TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2010/0404.html
 e01344	shooto	2010-04-04	GRAPPLINGMAN 10 闘裸男	ママカリフォーラム	http://blog.livedoor.jp/shooto_news/archives/51641172.html 海外の記録サイト
 e01345	zst	2010-04-04	SWAT！33	東京・大森ゴールドジムサウス東京ANNEX	https://gbring.com/sokuho/result/result2010_04/0404_zst.htm
@@ -2060,7 +2060,7 @@ e07263	bellator	2010-06-17	Bellator 22	Kansas City Power & Light District	https:
 e04512	gcm	2010-06-19	「CAGE FORCE」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_06/0619_cageforce.htm
 e04513	gcm	2010-06-19	GCM「VALKYRIE 06」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_06/0619_valkyrie.htm
 e06702	ufc	2010-06-19	The Ultimate Fighter: Team Liddell vs. Team Ortiz Finale	The Pearl,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Liddell_vs._Team_Ortiz_Finale https://jp.ufc.com/event/The-Ultimate-Fighter-Team-Liddell-vs-Team-Ortiz-FINALE
-e04572	rings	2010-06-20	リングス「THE OUTSIDER 第12戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_06/0620_outsider.htm
+e04572	outsider	2010-06-20	リングス「THE OUTSIDER 第12戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_06/0620_outsider.htm
 e04609	sengoku	2010-06-20	ワールドビクトリーロード「SRC13」	東京・両国国技館	https://gbring.com/sokuho/result/result2010_06/0620_src.htm 海外の記録サイト
 e05929	wec	2010-06-20	WEC 49: Varner vs. Shalorus	レクソール・プレイス（アルバータ州エドモントン）	https://en.wikipedia.org/wiki/WEC_49
 e07262	bellator	2010-06-24	Bellator 23	Fourth Street Live!	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_23
@@ -2112,7 +2112,7 @@ e02700	shooto	2010-08-29	SHOOTO GIG NORTH Vol.6	ZEPP SAPPORO	http://blog.livedoo
 e04614	shoot_boxing	2010-08-29	SHOOT BOXING WORLD TOURNAMENT Girls S-cup2010	東京・グランドプリンスホテル赤坂	https://gbring.com/sokuho/result/result2010_08/0829_sb.htm
 e07259	bellator	2010-09-02	Bellator 27	Majestic Theatre	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_27
 e00215	pancrase	2010-09-05	PANCRASE 2010 PASSION TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2010/0905.html
-e01354	shooto	2010-09-05	第17回全日本アマチュア修斗選手権大会		https://gbring.com/sokuho/result/result2010_09/0905_shooto.htm https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E6%96%8E%E8%97%A4%E8%A3%95_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29
+e01354	shooto_ama	2010-09-05	第17回全日本アマチュア修斗選手権大会		https://gbring.com/sokuho/result/result2010_09/0905_shooto.htm https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9A%AE%E8%81%A1 https://ja.wikipedia.org/wiki/%E6%96%8E%E8%97%A4%E8%A3%95_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29
 e02701	deep	2010-09-05	DEEP - clubDeep Nagoya: Kobudo Fight		海外の記録サイト
 e04648	zst	2010-09-05	SWAT！－VTX2	ゴールドジムサウス東京アネックス	https://gbring.com/sokuho/result/result2010_09/0905_zst.htm
 e07258	bellator	2010-09-09	Bellator 28	Mahalia Jackson Theater	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_28
@@ -2150,7 +2150,7 @@ e02717	gladiator	2010-10-09	GLADIATOR 11 - G-1		海外の記録サイト
 e07574	ksw	2010-10-09	KSW Fight Club	Ryn Castle（ポーランド・リン）	https://en.wikipedia.org/wiki/2010_in_Konfrontacja_Sztuk_Walki
 e02718	jewels	2010-10-10	女子総合格闘技ジュエルス 10th RING		https://gbring.com/sokuho/result/result2010_10/1010_jewels.htm
 e05301	jewels	2010-10-10	JEWELS 10th RING		https://ja.wikipedia.org/wiki/JEWELS_10th_RING https://en.wikipedia.org/wiki/Jewels_10th_Ring https://gbring.com/sokuho/result/result2010_10/1010_jewels.htm 海外の記録サイト
-e02719	rings	2010-10-11	THE OUTSIDER 第13戦	横浜文化体育館	https://gbring.com/sokuho/result/result2010_10/1011_outsider.htm 海外の記録サイト
+e02719	outsider	2010-10-11	THE OUTSIDER 第13戦	横浜文化体育館	https://gbring.com/sokuho/result/result2010_10/1011_outsider.htm 海外の記録サイト
 e07255	bellator	2010-10-14	Bellator 32	Kansas City Power & Light District	https://en.wikipedia.org/wiki/2010_in_Bellator_MMA#Bellator_32
 e00741	shooto	2010-10-16	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2010_10/1016_shooto.htm
 e05509	ufc	2010-10-16	UFC 120: Bisping vs. Akiyama	O2アリーナ, ロンドン England	https://jp.ufc.com/event/ufcr-120 https://ja.wikipedia.org/wiki/%E7%A7%8B%E5%B1%B1%E6%88%90%E5%8B%B2 https://en.wikipedia.org/wiki/UFC_120
@@ -2189,7 +2189,7 @@ e02737	battle_code	2010-11-28	BC - Battle Code 2		https://ja.wikipedia.org/wiki/
 e04516	gcm	2010-11-28	「CAGE FORCE 20」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_11/1128_cageforce.htm
 e04517	gcm	2010-11-28	「VALKYRIE 08」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_11/1128_valkyrie.htm
 e02741	tribelate	2010-12-04	TRIBELATE vol.31～Hybrid Club Fight～	東京・新宿FACE	https://gbring.com/sokuho/result/result2010_12/1204_tribelate.htm
-e04573	rings	2010-12-04	「THE OUTSIDER 第14戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_12/1204_outsider.htm
+e04573	outsider	2010-12-04	「THE OUTSIDER 第14戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2010_12/1204_outsider.htm
 e04642	tribelate	2010-12-04	「TRIBELATE vol.31」	東京・新宿FACE	https://gbring.com/sokuho/result/result2010_12/1204_tribelate.htm
 e06695	ufc	2010-12-04	The Ultimate Fighter: Team GSP vs. Team Koscheck Finale	The Pearl,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_GSP_vs._Team_Koscheck_Finale https://jp.ufc.com/event/ultimate-fighterr
 e00219	pancrase	2010-12-05	PANCRASE 2010 PASSION TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2010/1205.html
@@ -2230,7 +2230,7 @@ e02754	rings	2011-02-06	Rings Holland - Men of Respect		海外の記録サイト
 e02755	zst	2011-02-06	ZST - Swat! in Face 7		https://efight.jp/result-20110206_31594 海外の記録サイト
 e02756	zst	2011-02-06	ZST 27		https://efight.jp/result-20110206_31594 海外の記録サイト
 e02757	deep	2011-02-13	DEEP - clubDeep Nagoya: Kobudo Fight 2		海外の記録サイト
-e04574	rings	2011-02-13	「THE OUTSIDER 第15戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2011_02/0213_outsider.htm
+e04574	outsider	2011-02-13	「THE OUTSIDER 第15戦」	東京・ディファ有明	https://gbring.com/sokuho/result/result2011_02/0213_outsider.htm
 e02759	tenkaichi_fight	2011-02-20	TF - Tenkaichi Super Fight 4		海外の記録サイト
 e04158	deep	2011-02-25	10th Anniversary DEEP 52 IMPACT	東京・後楽園ホール	https://www.deep2001.com/deep-52-impact/
 e00745	shooto	2011-02-26	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2011_02/0226_shooto.htm
@@ -2280,7 +2280,7 @@ e01371	zst	2011-05-01	SWAT!-SBRX3		https://gbring.com/sokuho/result/result2011_0
 e00225	pancrase	2011-05-03	PANCRASE 2011 IMPRESSIVE TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2011/0503.html
 e02776	deep	2011-05-07	DEEP / Smash - Japan MMA League 2011: Raising an Army		海外の記録サイト
 e07245	bellator	2011-05-07	Bellator 43	First Council Casino	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_43
-e08038	rings	2011-05-08	THE OUTSIDER 第16戦	横浜文化体育館	https://gbring.com/sokuho/result/result2011_05/0508_outsider_02.htm https://gbring.com/sokuho/result/result2011_05/0508_outsider.htm 海外の記録サイト
+e08038	outsider	2011-05-08	THE OUTSIDER 第16戦	横浜文化体育館	https://gbring.com/sokuho/result/result2011_05/0508_outsider_02.htm https://gbring.com/sokuho/result/result2011_05/0508_outsider.htm 海外の記録サイト
 e05306	jewels	2011-05-14	女子総合格闘技ジュエルス 13th RING	新木場1st RING	https://gbring.com/sokuho/result/result2011_05/0514_jewels_02.htm 海外の記録サイト
 e05307	jewels	2011-05-14	女子総合格闘技ジュエルス 14th RING	新木場1st RING	https://gbring.com/sokuho/result/result2011_05/0514_jewels_001.htm https://gbring.com/sokuho/result/result2011_05/0514_jewels_002.htm 海外の記録サイト
 e07244	bellator	2011-05-14	Bellator 44	Caesar's Resort	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_44
@@ -2328,7 +2328,7 @@ e02799	deep	2011-07-10	DEEP - Cage Impact 2011 in Nagoya		海外の記録サイ�
 e02801	dream	2011-07-16	DREAM - Fight for Japan: 2011 Japan Bantamweight Tournament Final		海外の記録サイト
 e01376	demolition_xtreme_fighting_championship	2011-07-17	DEMOLITION XIGMA RAGE		https://gbring.com/sokuho/result/result2011_07/0717_demolition.htm 海外の記録サイト
 e01377	zst	2011-07-17	ZST / SWAT!（7.17）		https://gbring.com/sokuho/result/result2011_07/0717_zst.htm
-e02802	rings	2011-07-17	THE OUTSIDER 第17戦	ディファ有明	https://gbring.com/sokuho/result/result2011_07/0717_outsider.htm 海外の記録サイト
+e02802	outsider	2011-07-17	THE OUTSIDER 第17戦	ディファ有明	https://gbring.com/sokuho/result/result2011_07/0717_outsider.htm 海外の記録サイト
 e02803	zst	2011-07-17	ZST - Battle Hazard 5		https://efight.jp/result-20110717_16559/2 海外の記録サイト
 e02804	zst	2011-07-17	ZST - Swat! in Face 8		https://gbring.com/sokuho/result/result2011_07/0717_zst.htm 海外の記録サイト
 e00754	shooto	2011-07-18	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2011_07/0718_shooto.htm 海外の記録サイト
@@ -2348,7 +2348,7 @@ e02808	deep	2011-08-07	DEEP - clubDeep Toyama: Rookies and Oyaji Deep		海外の
 e02809	zst	2011-08-07	ZST - Swat! 43		https://gbring.com/sokuho/result/result2011_08/0807_zst_02.htm 海外の記録サイト
 e05309	zst	2011-08-07	SWAT！43		https://gbring.com/sokuho/result/result2011_08/0807_zst_02.htm
 e02810	gladiator	2011-08-14	GLADIATOR 22		海外の記録サイト
-e02811	rings	2011-08-14	THE OUTSIDER 第18戦	ディファ有明	https://gbring.com/sokuho/result/result2011_08/0814_outsider.htm 海外の記録サイト
+e02811	outsider	2011-08-14	THE OUTSIDER 第18戦	ディファ有明	https://gbring.com/sokuho/result/result2011_08/0814_outsider.htm 海外の記録サイト
 e06686	ufc	2011-08-14	UFC Live: Hardy vs. Lytle	Bradley Center, Milwaukee アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_Live:_Hardy_vs._Lytle https://jp.ufc.com/event/ufc-live
 e02812	deep	2011-08-20	DEEP / Smash - Japan MMA League 2011 vol. 4		海外の記録サイト
 e07240	bellator	2011-08-20	Bellator 48	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_48
@@ -2421,7 +2421,7 @@ e00233	pancrase	2011-11-12	PANCRASE 2011 IMPRESSIVE TOUR（東京・新宿FACE�
 e02847	rings	2011-11-12	Rings Holland - The Honored Society		海外の記録サイト
 e05496	ufc	2011-11-12	UFC on FOX 1: Velasquez vs. dos Santos	ホンダ・センター, アナハイム アメリカ合衆国	https://jp.ufc.com/event/ufc-fox-1 https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E5%BE%B3%E9%83%81 https://en.wikipedia.org/wiki/UFC_on_Fox:_Velasquez_vs._dos_Santos
 e07231	bellator	2011-11-12	Bellator 57	Casino Rama	https://en.wikipedia.org/wiki/2011_in_Bellator_MMA#Bellator_57
-e02848	rings	2011-11-13	THE OUTSIDER 第19戦	横浜文化体育館	https://gbring.com/sokuho/result/result2011_11/1113_outsider.htm 海外の記録サイト
+e02848	outsider	2011-11-13	THE OUTSIDER 第19戦	横浜文化体育館	https://gbring.com/sokuho/result/result2011_11/1113_outsider.htm 海外の記録サイト
 e02849	tribelate	2011-11-19	TRIBELATE vol.35～Title Match Festival～	新宿FACE	https://gbring.com/sokuho/result/result2011_11/1119_tribelate.htm
 e04643	tribelate	2011-11-19	「TRIBELATE vol.35～Title Match Festival～」	東京・新宿FACE	https://gbring.com/sokuho/result/result2011_11/1119_tribelate.htm
 e06682	ufc	2011-11-19	UFC 139: Shogun vs. Henderson	HP Pavilion, San Jose アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_139 https://jp.ufc.com/event/ufcr-139
@@ -2478,7 +2478,7 @@ e02870	gladiator	2012-02-05	GLADIATOR 28		海外の記録サイト
 e06199	one	2012-02-11	Battle Of Heroes	ケラパ・グラディン・スポーツ・モール	https://en.wikipedia.org/wiki/2012_in_ONE_Championship#ONE_Fighting_Championship:_Battle_of_Heroes
 e07419	cage_warriors	2012-02-11	Cage Warriors Fight Night 3	Al Habtoor（レバノン・ベイルート）	https://en.wikipedia.org/wiki/2012_in_Cage_Warriors
 e00763	shooto	2012-02-12	SHOOTO GIG CENTRAL Vol.24		https://j-shooto.com/?p=1340
-e02871	rings	2012-02-12	THE OUTSIDER 第20戦	ディファ有明	https://efight.jp/result-20120212_11182 海外の記録サイト
+e02871	outsider	2012-02-12	THE OUTSIDER 第20戦	ディファ有明	https://efight.jp/result-20120212_11182 海外の記録サイト
 e06675	ufc	2012-02-15	UFC on Fuel TV: Sanchez vs. Ellenberger	Omaha Civic Auditorium,	https://en.wikipedia.org/wiki/UFC_on_Fuel_TV:_Sanchez_vs._Ellenberger https://jp.ufc.com/event/ufcr-0
 e04159	deep	2012-02-18	DEEP 57 IMPACT～12年目の現実～	東京・TDCホール	https://www.deep2001.com/deep-57-impact/
 e07418	cage_warriors	2012-02-18	Cage Warriors 45	The Forum（英国ロンドン）	https://en.wikipedia.org/wiki/2012_in_Cage_Warriors
@@ -2539,7 +2539,7 @@ e01391	zst	2012-05-06	SWAT!-SBRX4		https://gbring.com/sokuho/result/result2012_0
 e02894	gladiator	2012-05-06	GLADIATOR 34		海外の記録サイト
 e07223	bellator	2012-05-11	Bellator 68	Caesars Hotel and Casino	https://en.wikipedia.org/wiki/2012_in_Bellator_MMA#Bellator_68
 e07568	ksw	2012-05-12	KSW 19	Arena Łódź（ポーランド・ウッチ）	https://en.wikipedia.org/wiki/2012_in_Konfrontacja_Sztuk_Walki
-e01392	rings	2012-05-13	THE OUTSIDER 第21戦	ディファ有明	https://efight.jp/result-20120513_10360 海外の記録サイト
+e01392	outsider	2012-05-13	THE OUTSIDER 第21戦	ディファ有明	https://efight.jp/result-20120513_10360 海外の記録サイト
 e06671	ufc	2012-05-15	UFC on Fuel TV: The Korean Zombie vs. Poirier	Patriot Center,	https://en.wikipedia.org/wiki/2012_in_UFC https://jp.ufc.com/event/ufc-fuel-tv-3
 e00769	shooto	2012-05-18	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2012_05/0518_shooto.htm
 e05801	bellator	2012-05-18	Bellator 69	L'Auberge du Lac Casino Resort	https://ja.wikipedia.org/wiki/藤井惠_(格闘家) https://en.wikipedia.org/wiki/2012_in_Bellator_MMA https://en.wikipedia.org/wiki/2012_in_Bellator_MMA#Bellator_69
@@ -2576,7 +2576,7 @@ e02905	tribelate	2012-07-07	TRIBELATE vol.37～Title Match Festival～	東京・
 e05492	ufc	2012-07-07	UFC 148: Silva vs. Sonnen 2	MGM Grand Garden Arena	https://jp.ufc.com/event/ufcr-148-live-pay-view https://ja.wikipedia.org/wiki/%E7%A6%8F%E7%94%B0%E5%8A%9B https://en.wikipedia.org/wiki/UFC_148
 e00772	shooto	2012-07-08	SHOOTO GIG WEST 14		https://j-shooto.com/?p=1831
 e05491	ufc	2012-07-11	UFC on Fuel TV 4: Munoz vs. Weidman	HP Pavilion, San Jose アメリカ合衆国	https://jp.ufc.com/event/ufc-fuel-tv-4 https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E4%B8%80%E8%81%96 https://en.wikipedia.org/wiki/UFC_on_Fuel_TV:_Muñoz_vs._Weidman
-e01397	rings	2012-07-15	THE OUTSIDER 第22戦	ディファ有明	https://efight.jp/result-20120715_10384 海外の記録サイト
+e01397	outsider	2012-07-15	THE OUTSIDER 第22戦	ディファ有明	https://efight.jp/result-20120715_10384 海外の記録サイト
 e02906	gladiator	2012-07-15	GLADIATOR 38		海外の記録サイト
 e00773	shooto	2012-07-16	プロフェッショナル修斗公式戦		https://gbring.com/sokuho/result/result2012_07/0716_shooto.htm
 e01398	zst	2012-07-16	ZST - Battle Hazard 6		https://efight.jp/result-20120716_10380
@@ -2607,7 +2607,7 @@ e05314	brave_fight	2012-08-26	Brave Fight 1		https://ameblo.jp/purebred/entry-11
 e05595	one	2012-08-31	PRIDE Of A Nation	スマート・アラネタ・コロシアム	https://www.onefc.com/jp/events/pride-of-a-nation/ https://en.wikipedia.org/wiki/2012_in_ONE_Championship#ONE_Fighting_Championship:_Pride_of_a_Nation
 e00247	pancrase	2012-09-01	PANCRASE 2012 PROGRESS TOUR（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2012/0901.html
 e07411	cage_warriors	2012-09-01	Cage Warriors Fight Night 7	Al-Hussein Youth City Boxing Arena（ヨルダン・アンマン）	https://en.wikipedia.org/wiki/2012_in_Cage_Warriors
-e01402	shooto	2012-09-02	第19回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2012/09/11/post-2084/
+e01402	shooto_ama	2012-09-02	第19回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2012/09/11/post-2084/
 e02918	tenkaichi_fight	2012-09-02	TF - Tenkaichi Super Fight 12		海外の記録サイト
 e02919	zst	2012-09-02	ZST - Swat! Gx10	ゴールドジムサウス東京アネックス	https://ja.wikipedia.org/wiki/篠宮敏久 海外の記録サイト
 e07567	ksw	2012-09-15	KSW 20	Ergo Arena（ポーランド・グダニスク）	https://en.wikipedia.org/wiki/2012_in_Konfrontacja_Sztuk_Walki
@@ -2690,10 +2690,10 @@ e01408	jewels	2012-12-15	女子総合格闘技ジュエルス 22nd RING	ディ�
 e05248	jewels	2012-12-15	JEWELS 22nd RING		https://efight.jp/result-20121215_9109
 e06658	ufc	2012-12-15	UFC on FX: Sotiropoulos vs. Pearson	Gold Coast Convention Centre, Gold Coast Australia	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_The_Smashes https://jp.ufc.com/event/ufc-fx
 e06659	ufc	2012-12-15	The Ultimate Fighter: Team Carwin vs. Team Nelson Finale	The Joint - Hard Rock Hotel & Casino,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Carwin_vs._Team_Nelson https://jp.ufc.com/event/ultimate-fighter-16
-e01409	rings	2012-12-16	RINGS／THE OUTSIDER 第23戦（ヴォルク・ハン引退試合）		https://efight.jp/result-20121216_9163
+e01409	outsider	2012-12-16	RINGS／THE OUTSIDER 第23戦（ヴォルク・ハン引退試合）		https://efight.jp/result-20121216_9163
 e02953	gladiator	2012-12-16	GLADIATOR 49		海外の記録サイト
 e02954	isshin	2012-12-16	ISSHIN 7		海外の記録サイト
-e05063	rings	2012-12-16	RINGS / THE OUTSIDER ～ヴォルク・ハン引退記念興行～		https://efight.jp/result-20121216_9163
+e05063	outsider	2012-12-16	RINGS / THE OUTSIDER ～ヴォルク・ハン引退記念興行～		https://efight.jp/result-20121216_9163
 e05073	tenkaichi_fight	2012-12-16	TENKAICHI Super Fight		https://efight.jp/result-20121216_9249
 e04485	deep	2012-12-22	DEEP HALEO IMPACT ～三崎和雄引退セレモニー～	後楽園ホール	https://www.deep2001.com/deep-haleo-impact-%ef%bd%9e%e4%b8%89%e5%b4%8e%e5%92%8c%e9%9b%84%e5%bc%95%e9%80%80%e3%82%bb%e3%83%ac%e3%83%a2%e3%83%8b%e3%83%bc%ef%bd%9e/
 e02958	deep	2012-12-23	DEEP - Oyaji and Rookies Deep in Kasugai 2012		海外の記録サイト
@@ -2719,7 +2719,7 @@ e05938	one	2013-02-02	Return Of Warriors	アクシアタ・アリーナ	https://
 e06656	ufc	2013-02-02	UFC 156: Aldo vs. Edgar	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/UFC_156 https://jp.ufc.com/event/ufc-156
 e00253	pancrase	2013-02-03	PANCRASE 245（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2013/0203.html
 e07205	bellator	2013-02-07	Bellator 88	Arena at Gwinnett Center	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_88
-e01411	rings	2013-02-10	THE OUTSIDER 第24戦		https://efight.jp/result-20130210_11591 https://efight.jp/result-20130211_11651
+e01411	outsider	2013-02-10	THE OUTSIDER 第24戦		https://efight.jp/result-20130210_11591 https://efight.jp/result-20130211_11651
 e02967	demolition_xtreme_fighting_championship	2013-02-11	DEMOLITION 15	大阪・アゼリア大正	https://efight.jp/result-20130211_12094
 e02968	zst	2013-02-11	ZST 34		https://efight.jp/result-20130211_11651
 e05114	zst	2013-02-11	ZST.34		https://efight.jp/result-20130211_11749
@@ -2744,7 +2744,7 @@ e05080	ufc	2013-03-03	UFC JAPAN 2013		https://efight.jp/result-20130303_12584
 e07201	bellator	2013-03-07	Bellator 92	Pechanga Resort and Casino	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_92
 e05266	u_spirits	2013-03-09	U-SPIRITS again		https://efight.jp/result-20130309_12890
 e07407	cage_warriors	2013-03-09	Cage Warriors 52	英国ロンドン	https://en.wikipedia.org/wiki/2013_in_Cage_Warriors
-e00786	shooto	2013-03-10	reversal Presents ISAMI SHOOTO CARAVAN 東京大会（アマチュア修斗）		https://j-shooto.com/2013/03/14/post-2950/ 海外の記録サイト
+e00786	shooto_ama	2013-03-10	reversal Presents ISAMI SHOOTO CARAVAN 東京大会（アマチュア修斗）		https://j-shooto.com/2013/03/14/post-2950/ 海外の記録サイト
 e02980	deep	2013-03-10	DEEP - Tokyo Impact: Lightweight GP 2013 Opening Round		海外の記録サイト
 e00787	shooto	2013-03-16	プロフェッショナル修斗公式戦2013年第2戦		https://j-shooto.com/?p=2982
 e05484	ufc	2013-03-16	UFC 158: St-Pierre vs. Diaz	ベル・センター, モントリオール カナダ	https://jp.ufc.com/event/ufc-158 https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E4%B8%80%E8%81%96 https://en.wikipedia.org/wiki/UFC_158
@@ -2754,13 +2754,13 @@ e02981	igf	2013-03-20	IGF GENOME25	福岡国際センター	https://ja.wikipedia
 e08045	tribelate	2013-03-20	Tribelate - vol. 39		https://efight.jp/result-20130320_14072 海外の記録サイト
 e07200	bellator	2013-03-21	Bellator 93	Androscoggin Bank Colisée	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_93
 e08012	wsof	2013-03-23	WSOF 2: Arlovski vs. Johnson	Revel Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_2:_Arlovski_vs._Johnson
-e00788	shooto	2013-03-24	reversal Presents ISAMI SHOOTO CARAVAN 名古屋大会（アマチュア修斗）		https://j-shooto.com/2013/03/25/post-3081/ 海外の記録サイト
+e00788	shooto_ama	2013-03-24	reversal Presents ISAMI SHOOTO CARAVAN 名古屋大会（アマチュア修斗）		https://j-shooto.com/2013/03/25/post-3081/ 海外の記録サイト
 e00789	shooto	2013-03-24	FORCE 01		https://j-shooto.com/?p=3117
 e06007	adcc	2013-03-24	ADCC ASIA TRIAL 2013（アジア予選）	東京・駒沢オリンピック公園総合運動場屋内球技場	https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E6%86%82%E6%B5%81%E8%BF%A6 https://ja.wikipedia.org/wiki/%E6%B9%AF%E6%B5%85%E9%BA%97%E6%AD%8C%E5%AD%90
 e07199	bellator	2013-03-28	Bellator 94	USF Sun Dome	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_94
 e02983	jewels	2013-03-30	女子総合格闘技ジュエルス23rd RING	新木場1st RING	https://efight.jp/result-20130330_14688/2
 e05250	jewels	2013-03-30	JEWELS 23rd RING		https://efight.jp/result-20130330_14688
-e00790	shooto	2013-03-31	第1回 横浜×フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/04/03/post-3146/ 海外の記録サイト
+e00790	shooto_ama	2013-03-31	第1回 横浜×フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/04/03/post-3146/ 海外の記録サイト
 e02984	gladiator	2013-03-31	GLADIATOR 52 - Bushido		海外の記録サイト
 e04894	heat	2013-03-31	HEAT26		https://efight.jp/result-20130331_15866
 e07198	bellator	2013-04-04	Bellator 95	Revel Casino	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_95
@@ -2774,14 +2774,14 @@ e04853	brave_fight	2013-04-07	BRAVE FIGHT Vol.3		https://efight.jp/result-201304
 e05115	zst	2013-04-07	ZST.35		https://efight.jp/result-20130407_15167
 e06653	ufc	2013-04-13	The Ultimate Fighter: Team Jones vs. Team Sonnen Finale	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Team_Jones_vs._Team_Sonnen https://jp.ufc.com/event/ultimate-fighter-17-finale
 e08307	cage_warriors	2013-04-13	Cage Warriors 53	Kelvin Hall International Sports Arena（英国グラスゴー）	https://next-fight.com/fr/event/cwfc-53-cage-warriors-fighting-championship-53
-e00792	shooto	2013-04-14	第2回山口フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/04/15/post-3188/
-e00793	shooto	2013-04-14	reversal Presents ISAMI SHOOTO CARAVAN 福島大会（アマチュア修斗）		https://j-shooto.com/2013/04/17/post-3190/ 海外の記録サイト
+e00792	shooto_ama	2013-04-14	第2回山口フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/04/15/post-3188/
+e00793	shooto_ama	2013-04-14	reversal Presents ISAMI SHOOTO CARAVAN 福島大会（アマチュア修斗）		https://j-shooto.com/2013/04/17/post-3190/ 海外の記録サイト
 e02989	deep	2013-04-14	DEEP - Toyama Impact 11		海外の記録サイト
 e02990	pound_4_pound_fighting_championship	2013-04-20	P4P FC 1 - Pound For Pound FC 1		https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%AF%E3%83%BB%E3%83%AA%E3%83%BC 海外の記録サイト
 e06652	ufc	2013-04-20	UFC on Fox: Henderson vs. Melendez	HP Pavilion, San Jose アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_on_Fox:_Henderson_vs._Melendez https://jp.ufc.com/event/ufc-fox-7
 e00255	pancrase	2013-04-21	(株)リョウ エンタープライズpresents 坂口道場×パンクラス合同興行（沖縄・沖縄市体育館）	沖縄・沖縄市体育館	https://pancrase.co.jp/data/result/2013/0421.html
 e00794	shooto	2013-04-21	SHOOTO GIG TOKYO Vol.14		https://j-shooto.com/?p=3194
-e01413	rings	2013-04-21	THE OUTSIDER 第25戦		https://efight.jp/result-20130421_15727
+e01413	outsider	2013-04-21	THE OUTSIDER 第25戦		https://efight.jp/result-20130421_15727
 e02991	gladiator	2013-04-21	GLADIATOR 54 - Dream, Power and Hope		海外の記録サイト
 e02993	deep	2013-04-26	DEEP 62 IMPACT	東京・TDCホール	https://www.deep2001.com/deep-62-impact/
 e06651	ufc	2013-04-27	UFC 159: Jones vs. Sonnen	プルデンシャル・センター, ニューアーク アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_159 https://jp.ufc.com/event/ufc-159
@@ -2811,8 +2811,8 @@ e00796	shooto	2013-06-02	闘裸男Ⅻ		https://j-shooto.com/?p=3297
 e00797	shooto	2013-06-08	SHOOTING DISCO 21 catch the moment ～今でしょ！～		https://j-shooto.com/?p=3343
 e05483	ufc	2013-06-08	UFC on Fuel TV 10: Nogueira vs. Werdum	Paulo Sarasate Arena, Fortaleza ブラジル	https://jp.ufc.com/event/ufc-fuel-tv-10 https://ja.wikipedia.org/wiki/%E5%BB%A3%E7%94%B0%E7%91%9E%E4%BA%BA https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Brazil_2
 e07564	ksw	2013-06-08	KSW 23	Ergo Arena（ポーランド・グダニスク）	https://en.wikipedia.org/wiki/2013_in_Konfrontacja_Sztuk_Walki
-e01415	rings	2013-06-09	RINGS／THE OUTSIDER 第26戦 横浜文化体育館		https://efight.jp/result-20130609_17814
-e05064	rings	2013-06-09	RINGS/THE OUTSIDER		https://efight.jp/result-20130609_17814
+e01415	outsider	2013-06-09	RINGS／THE OUTSIDER 第26戦 横浜文化体育館		https://efight.jp/result-20130609_17814
+e05064	outsider	2013-06-09	RINGS/THE OUTSIDER		https://efight.jp/result-20130609_17814
 e08011	wsof	2013-06-14	WSOF 3: Fitch vs. Burkman 2	Hard Rock Hotel and Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_3:_Fitch_vs._Burkman
 e03006	deep	2013-06-15	DEEP CAGE IMPACT 2013 in KORAKUEN HALL	後楽園ホール	https://www.deep2001.com/deep-cage-impact-2013-in-korakuen-hall/
 e06648	ufc	2013-06-15	UFC 161: Evans vs. Henderson	MTS Centre, Winnipeg カナダ	https://en.wikipedia.org/wiki/UFC_161 https://jp.ufc.com/event/ufc-161
@@ -2866,10 +2866,10 @@ e00802	shooto	2013-09-01	BORDER ～season5～ 2nd		https://j-shooto.com/?p=3558
 e05480	ufc	2013-09-04	UFC Fight Night: Teixeira vs. Bader	Mineirinho Gymnasium, Belo Horizonte ブラジル	https://jp.ufc.com/event/ufc-fox-sports-1 https://ja.wikipedia.org/wiki/%E5%B2%A1%E8%A6%8B%E5%8B%87%E4%BF%A1 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Teixeira_vs._Bader
 e00261	pancrase	2013-09-07	PANCRASE 251（東京・新宿FACE）	東京・新宿FACE	https://pancrase.co.jp/data/result/2013/0907.html
 e07195	bellator	2013-09-07	Bellator 98	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_98
-e01420	rings	2013-09-08	THE OUTSIDER 第27戦		https://efight.jp/result-20130908_21609
+e01420	outsider	2013-09-08	THE OUTSIDER 第27戦		https://efight.jp/result-20130908_21609
 e03025	gladiator	2013-09-08	GLADIATOR 60		海外の記録サイト
 e03027	tenkaichi_fight	2013-09-08	Tenkaichi Fight - Tenkaichi 68		海外の記録サイト
-e05065	rings	2013-09-08	THE OUTSIDER 第27戦 ～大阪初上陸～		https://efight.jp/result-20130908_21609
+e05065	outsider	2013-09-08	THE OUTSIDER 第27戦 ～大阪初上陸～		https://efight.jp/result-20130908_21609
 e05941	one	2013-09-13	Champions & Warriors	イストラ・スナヤン	https://www.onefc.com/athletes/kotetsu-boku/matchups/page/2/ https://en.wikipedia.org/wiki/2013_in_ONE_Championship#ONE_Fighting_Championship:_Champions_&_Warriors
 e07194	bellator	2013-09-13	Bellator 99	Pechanga Resort & Casino	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_99
 e08008	wsof	2013-09-14	WSOF 5: Arlovski vs. Kyle	Revel Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_5:_Arlovski_vs._Kyle
@@ -2938,7 +2938,7 @@ e03052	legend_japan	2013-11-17	LEGEND 4（熊本）		https://efight.jp/result-20
 e04970	legend_japan	2013-11-17	火の国格闘伝説 LEGEND 4		https://efight.jp/result-20131117_24627
 e05316	shooto	2013-11-17	越後風神祭り（Shooto / Philoktetes Niigata - Echigo Fujin Matsuri 1）	新潟ロッツ	http://blog.livedoor.jp/philok_n/archives/8144123.html http://blog.livedoor.jp/philok_n/archives/8135280.html 海外の記録サイト
 e07184	bellator	2013-11-22	Bellator 109	Sands Casino Event Center	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_109
-e00808	shooto	2013-11-23	第20回全日本アマチュア修斗選手権大会		https://j-shooto.com/2013/12/31/post-3936/
+e00808	shooto_ama	2013-11-23	第20回全日本アマチュア修斗選手権大会		https://j-shooto.com/2013/12/31/post-3936/
 e01423	zst	2013-11-23	ZST 38		https://efight.jp/result-20131123_24792/2
 e05120	zst	2013-11-23	ZST.38～旗揚げ11周年記念大会～		https://efight.jp/result-20131123_24792
 e03054	deep	2013-11-24	DEEP CAGE IMPACT 2013 in TDC HALL	TDCホール	https://www.deep2001.com/deep-cage-impact-2013-in-tdc-hall/
@@ -2955,10 +2955,10 @@ e05579	ksw	2013-12-07	KSW 25	Centennial Hall（ポーランド・ヴロツワフ
 e08006	wsof	2013-12-07	WSOF 7: Karakhanyan vs. Palmer	PNE Agrodome	https://en.wikipedia.org/wiki/World_Series_of_Fighting_7:_Karakhanyan_vs._Palmer
 e08297	cage_warriors	2013-12-07	Cage Warriors 62	Metro Radio Arena（英国ニューカッスル）	https://next-fight.com/fr/event/cwfc-62-cage-warriors-fighting-championship-62
 e00265	pancrase	2013-12-08	PANCRASE 255（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2013/1208.html
-e00809	shooto	2013-12-08	第二回 小田原フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/12/09/post-3904/ 海外の記録サイト
+e00809	shooto_ama	2013-12-08	第二回 小田原フリーファイト（アマチュア修斗）		https://j-shooto.com/2013/12/09/post-3904/ 海外の記録サイト
 e03059	demolition_xtreme_fighting_championship	2013-12-08	Demolition Project - Demolition 19		https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%B4%8E%E6%82%A0%E8%BC%9D 海外の記録サイト
 e03060	gladiator	2013-12-08	GLADIATOR 66 - Bushido		海外の記録サイト
-e03061	rings	2013-12-08	THE OUTSIDER 第28戦	なみはやドーム サブアリーナ	https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
+e03061	outsider	2013-12-08	THE OUTSIDER 第28戦	なみはやドーム サブアリーナ	https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
 e06636	ufc	2013-12-14	UFC on Fox: Johnson vs. Benavidez 2	Sleep Train Arena, Sacramento アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_on_Fox:_Johnson_vs._Benavidez_2 https://jp.ufc.com/event/ufc-fox
 e08005	wsof	2013-12-14	WSOF Central America 2	Pharaoh's Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_2:_Central_America
 e08296	cage_warriors	2013-12-14	Cage Warriors 61	Al-Hussein Youth Boxing Arena（ヨルダン・アンマン）	https://next-fight.com/fr/event/cwfc-61-cage-warriors-fighting-championship-61
@@ -2996,7 +2996,7 @@ e05122	zst	2014-02-09	ZST.39		https://efight.jp/result-20140209_27950
 e03075	grachan	2014-02-11	GRACHAN12	東京・ディファ有明	https://grachan.jp/grachan12/
 e05475	ufc	2014-02-15	UFC Fight Night: Machida vs. Mousasi	Arena Jaragua, Jaragua ブラジル	https://jp.ufc.com/event/ufc-fuaitonaito-5 https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E8%B1%AA%E5%89%87 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Machida_vs._Mousasi
 e08294	cage_warriors	2014-02-15	Cage Warriors 64	O2 Forum Kentish Town（英国ロンドン）	https://next-fight.com/fr/event/cwfc-64-cage-warriors-fighting-championship-64
-e01428	rings	2014-02-16	THE OUTSIDER 第29戦	ディファ有明	https://ameblo.jp/king-mitarai/entry-11778666643.html https://ameblo.jp/king-mitarai/entry-11780067385.html https://ameblo.jp/king-mitarai/entry-11787920542.html（観戦ブログ、バトル・ニュース速報の転載） https://ameblo.jp/king-mitarai/entry-11787920542.html 海外の記録サイト
+e01428	outsider	2014-02-16	THE OUTSIDER 第29戦	ディファ有明	https://ameblo.jp/king-mitarai/entry-11778666643.html https://ameblo.jp/king-mitarai/entry-11780067385.html https://ameblo.jp/king-mitarai/entry-11787920542.html（観戦ブログ、バトル・ニュース速報の転載） https://ameblo.jp/king-mitarai/entry-11787920542.html 海外の記録サイト
 e03076	deep	2014-02-16	DEEP - Tokyo Impact: Wave 7		海外の記録サイト
 e03077	deep	2014-02-16	DEEP JEWELS 3	新宿FACE	https://www.deep2001.com/deep-jewels-3/
 e08003	wsof	2014-02-21	WSOF Canada 1: Ford vs. Powell	Edmonton Expo Centre	https://en.wikipedia.org/wiki/World_Series_of_Fighting_Canada_1:_Ford_vs._Powell
@@ -3038,7 +3038,7 @@ e03089	gladiator	2014-03-30	GLADIATOR 68 - Bushido		海外の記録サイト
 e08112	aca	2014-03-30	ACB 4	Fight club Berkut（ロシア・グロズヌイ）	https://www.ufcalendar.com/events/aca-4-2014-03-29
 e07178	bellator	2014-04-04	Bellator 115	Reno Events Center	https://en.wikipedia.org/wiki/2014_in_Bellator_MMA#Bellator_115
 e05343	igf	2014-04-05	IGF - Inoki Genome Fight 1		https://efight.jp/result-20140405_29790
-e01429	rings	2014-04-06	THE OUTSIDER 第30戦	ディファ有明	https://ameblo.jp/king-mitarai/entry-11816464745.html https://ameblo.jp/king-mitarai/entry-11863814291.html 海外の記録サイト
+e01429	outsider	2014-04-06	THE OUTSIDER 第30戦	ディファ有明	https://ameblo.jp/king-mitarai/entry-11816464745.html https://ameblo.jp/king-mitarai/entry-11863814291.html 海外の記録サイト
 e08111	aca	2014-04-06	ACB 5	Fight club Berkut（ロシア・グロズヌイ）	https://www.ufcalendar.com/events/aca-5-2014-04-05
 e05473	ufc	2014-04-11	UFC Fight Night: Nogueira vs. Nelson	DU Arena, Yas Island	https://jp.ufc.com/event/ufc-fight-night-14 https://ja.wikipedia.org/wiki/%E5%B7%9D%E5%B0%BB%E9%81%94%E4%B9%9F https://en.wikipedia.org/wiki/UFC_Fight_Night:_Nogueira_vs._Nelson
 e07177	bellator	2014-04-11	Bellator 116	Pechanga Resort & Casino	https://en.wikipedia.org/wiki/2014_in_Bellator_MMA#Bellator_116
@@ -3099,7 +3099,7 @@ e03111	gladiator	2014-06-15	GLADIATOR 71		海外の記録サイト
 e03112	pound_4_pound_fighting_championship	2014-06-15	P4P FC 6 - Pound For Pound FC 6		https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E7%A9%BA%E8%89%AF https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%B7%9D%E5%A4%A7%E5%92%8C 海外の記録サイト
 e08000	wsof	2014-06-21	WSOF 10: Branch vs. Taylor	Hard Rock Hotel & Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_10:_Branch_vs._Taylor
 e00271	pancrase	2014-06-22	パンクラス北海道大会（北海道・コンカリーニョ）	北海道・コンカリーニョ	https://pancrase.co.jp/data/result/2014/0622.html
-e01431	rings	2014-06-22	THE OUTSIDER 第31戦	ディファ有明	https://ja.wikipedia.org/wiki/白川陸斗 https://ja.wikipedia.org/wiki/樋口武大 海外の記録サイト
+e01431	outsider	2014-06-22	THE OUTSIDER 第31戦	ディファ有明	https://ja.wikipedia.org/wiki/白川陸斗 https://ja.wikipedia.org/wiki/樋口武大 海外の記録サイト
 e03113	deep	2014-06-22	DEEP 67 IMPACT	後楽園ホール	https://www.deep2001.com/deep-67-impact/
 e08107	aca	2014-06-22	ACB 9	Fight club Berkut（ロシア・グロズヌイ）	https://www.ufcalendar.com/events/aca-9-2014-06-21
 e00821	shooto	2014-06-28	VTJ 5th		https://shooto-mma.com/result/?id=22
@@ -3158,7 +3158,7 @@ e05126	zst	2014-08-31	ZST.42		https://efight.jp/result-20140831_50005
 e05465	ufc	2014-09-05	UFC Fight Night: Jacare vs. Mousasi	Foxwoods Resort Casino, Ledyard アメリカ合衆国	https://jp.ufc.com/event/ufc-fuaitonaito-13 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Jacaré_vs._Mousasi
 e07170	bellator	2014-09-05	Bellator 123: Curran vs. Pitbull 2	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2014_in_Bellator_MMA#Bellator_123
 e03140	deep	2014-09-07	DEEP - Kanazawa Impact 2014 Rookies		海外の記録サイト
-e03142	rings	2014-09-07	THE OUTSIDER 第32戦	なみはやドーム	https://ja.wikipedia.org/wiki/吉永啓之輔 海外の記録サイト
+e03142	outsider	2014-09-07	THE OUTSIDER 第32戦	なみはやドーム	https://ja.wikipedia.org/wiki/吉永啓之輔 海外の記録サイト
 e03143	tenkaichi_fight	2014-09-07	Tenkaichi Fight - Tenkaichi 73: All Stars		海外の記録サイト
 e04901	heat	2014-09-07	HEAT 33		https://efight.jp/result-20140907_55194
 e08050	brave_fight	2014-09-07	Brave Fight 7		https://ameblo.jp/bravegym/entry-11922051307.html 海外の記録サイト
@@ -3191,7 +3191,7 @@ e03151	deep	2014-10-05	DEEP - Amateur Deep 23: Kobudo Fight		海外の記録サ�
 e03152	pancrase	2014-10-05	PANCRASE 261		https://efight.jp/result-20141005_68480
 e07165	bellator	2014-10-10	Bellator 128: Dantas vs. Warren	Winstar World Casino	https://en.wikipedia.org/wiki/2014_in_Bellator_MMA#Bellator_128
 e07996	wsof	2014-10-11	WSOF 14: Ford vs. Shields	Edmonton Expo Centre	https://en.wikipedia.org/wiki/World_Series_of_Fighting_14:_Ford_vs._Shields
-e00828	shooto	2014-10-12	第21回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2014/10/17/post-0-207/
+e00828	shooto_ama	2014-10-12	第21回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2014/10/17/post-0-207/
 e03153	gladiator	2014-10-13	GLADIATOR 77		海外の記録サイト
 e03154	heat	2014-10-13	HEAT in Fukuoka		海外の記録サイト
 e06194	one	2014-10-17	Roar Of Tigers	アクシアタ・アリーナ	https://en.wikipedia.org/wiki/2014_in_ONE_Championship#ONE_Fighting_Championship:_Roar_of_the_Tigers
@@ -3236,12 +3236,12 @@ e05949	one	2014-12-05	Warrior’s Way	モール・オブ・アジア・アリー
 e00278	pancrase	2014-12-06	PANCRASE 263（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2014/1206.html
 e06607	ufc	2014-12-06	UFC 181: Hendricks vs. Lawler II	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/UFC_181 https://jp.ufc.com/event/ufc-181
 e07559	ksw	2014-12-06	KSW 29	Kraków Arena（ポーランド・クラクフ）	https://en.wikipedia.org/wiki/2014_in_Konfrontacja_Sztuk_Walki
-e01438	rings	2014-12-07	RINGS／THE OUTSIDER 第33戦 横浜文化体育館大会		https://battle-news.com/?p=3234 海外の記録サイト
+e01438	outsider	2014-12-07	RINGS／THE OUTSIDER 第33戦 横浜文化体育館大会		https://battle-news.com/?p=3234 海外の記録サイト
 e03170	deep	2014-12-07	DEEP - Amateur Deep 24: Kobudo Fight		海外の記録サイト
 e06606	ufc	2014-12-12	The Ultimate Fighter: A Champion Will Be Crowned Finale	Pearl Concert Theater at Palms Casino Resort, Las Vegas アメリカ合衆国	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_A_Champion_Will_Be_Crowned https://jp.ufc.com/event/ultimate-fighter-finale-0
 e06605	ufc	2014-12-13	UFC on Fox: dos Santos vs. Miocic	US Airways Center, Phoenix アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_on_Fox:_dos_Santos_vs._Miocic https://jp.ufc.com/event/ufc-fight-night-4
 e07994	wsof	2014-12-13	WSOF 16: Palhares vs. Fitch	McClellan Conference Center	https://en.wikipedia.org/wiki/World_Series_of_Fighting_16:_Palhares_vs._Fitch
-e00832	shooto	2014-12-14	第4回小田原フリーファイト（アマチュア修斗）		https://j-shooto.com/2014/12/16/post-0-1042/ 海外の記録サイト
+e00832	shooto_ama	2014-12-14	第4回小田原フリーファイト（アマチュア修斗）		https://j-shooto.com/2014/12/16/post-0-1042/ 海外の記録サイト
 e03172	tenkaichi_fight	2014-12-14	Tenkaichi Fight - Tenkaichi 74		海外の記録サイト
 e06193	one	2014-12-19	Dynasty Of Champions (Beijing)	オリンピックスポーツセンター体育館	https://en.wikipedia.org/wiki/2014_in_ONE_Championship#ONE_Fighting_Championship:_Dynasty_of_Champions_(Beijing)
 e05462	ufc	2014-12-20	UFC Fight Night: Machida vs. Dollaway	Ginasio Jose Correa, Barueri ブラジル	https://jp.ufc.com/event/ufc-fight-night-5 https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E6%86%82%E6%B5%81%E8%BF%A6 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Machida_vs._Dollaway
@@ -3297,7 +3297,7 @@ e00281	pancrase	2015-03-15	PANCRASE 265（東京・ディファ有明）	東京�
 e01443	chakuriki	2015-03-15	Chakuriki 1		https://battle-news.com/?p=6781
 e03195	zst	2015-03-15	ZST Challenge 138	Tokyo, Tokyo Japan	https://www.combatreg.com/events/ZST-Challenge-138:23E14249-83FF-4529-9574-3059B7487187 海外の記録サイト
 e05229	chakuriki	2015-03-16	CHAKURIKI 1		https://efight.jp/result-20150315_142177
-e01444	rings	2015-03-21	THE OUTSIDER 第34戦（ディファ有明）		https://battle-news.com/?p=6916 海外の記録サイト
+e01444	outsider	2015-03-21	THE OUTSIDER 第34戦（ディファ有明）		https://battle-news.com/?p=6916 海外の記録サイト
 e05319	wardog_cage_fight	2015-03-21	WARDOG CAGE FIGHT 02	大阪・世界館	https://mmaplanet.jp/45689 海外の記録サイト
 e05457	ufc	2015-03-21	UFC Fight Night: Maia vs. LaFlare	Ginásio do Maracanãzinho, Rio de Janeiro, Brazil	https://jp.ufc.com/event/ufc-fight-night-13 https://ja.wikipedia.org/wiki/%E8%8F%8A%E9%87%8E%E5%85%8B%E7%B4%80 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Maia_vs._LaFlare
 e06994	aca	2015-03-21	ACB 15	Nalchik Sports Complex（ロシア・ナリチク）	https://en.wikipedia.org/wiki/2015_in_Absolute_Championship_Berkut
@@ -3339,7 +3339,7 @@ e07156	bellator	2015-05-15	Bellator 137: Halsey vs. Grove	Pechanga Resort and Ca
 e04162	deep	2015-05-16	DEEP 73 IMPACT	後楽園ホール	https://www.deep2001.com/deep-72-impact/ 海外の記録サイト
 e06598	ufc	2015-05-16	UFC Fight Night: Edgar vs. Faber	Mall of Asia Arena, Manila フィリピン	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Edgar_vs._Faber https://jp.ufc.com/event/ufc-fight-night-29
 e00283	pancrase	2015-05-17	PANCRASE札幌大会2015（北海道・コンカリーニョ）	北海道・コンカリーニョ	https://pancrase.co.jp/data/result/2015/0517.html
-e01448	rings	2015-05-17	THE OUTSIDER 第35戦（有明）		https://battle-news.com/?p=9066 海外の記録サイト
+e01448	outsider	2015-05-17	THE OUTSIDER 第35戦（有明）		https://battle-news.com/?p=9066 海外の記録サイト
 e03214	japan_mma_license	2015-05-17	JML関西12		海外の記録サイト
 e05951	one	2015-05-22	Warrior’s Quest	シンガポール・インドア・スタジアム	https://www.onefc.com/athletes/shinya-aoki/matchups/page/4/ https://en.wikipedia.org/wiki/2015_in_ONE_Championship#ONE_Championship:_Warrior's_Quest
 e06597	ufc	2015-05-23	UFC 187: Johnson vs. Cormier	MGM Grand Garden Arena,	https://en.wikipedia.org/wiki/UFC_187 https://jp.ufc.com/event/ufc-187
@@ -3395,7 +3395,7 @@ e06190	one	2015-07-18	Kingdom Of Warriors	トゥウンナ・スタジアム	http
 e06590	ufc	2015-07-18	UFC Fight Night: Bisping vs. Leites	The SSE Hydro, Glasgow イギリス	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Bisping_vs._Leites https://jp.ufc.com/event/ufc-fuaitonaito-21
 e01453	accel	2015-07-19	ACCEL vol.31		https://efight.jp/result-20150719_188227
 e03234	brave_fight	2015-07-19	Brave Fight 10		https://ja.wikipedia.org/wiki/%E7%AB%BF%E6%9C%AC%E6%A8%B9%E7%94%9F 海外の記録サイト
-e03235	rings	2015-07-19	THE OUTSIDER 第36戦	ディファ有明	https://ja.wikipedia.org/wiki/朝倉未来 海外の記録サイト
+e03235	outsider	2015-07-19	THE OUTSIDER 第36戦	ディファ有明	https://ja.wikipedia.org/wiki/朝倉未来 海外の記録サイト
 e04829	accel	2015-07-19	ACCEL 31 格闘技夏祭り		https://efight.jp/result-20150719_188227
 e03236	deep	2015-07-20	DEEP CAGE IMPACT 2015	東京・大田区総合体育館	https://efight.jp/result-20150720_187187 海外の記録サイト
 e05261	road_fighting_championship	2015-07-25	ROAD FC 024 IN JAPAN / YOUNG GUNS 23		https://efight.jp/result-20150725_189134 https://efight.jp/etc-20150725_189974
@@ -3428,7 +3428,7 @@ e06988	aca	2015-08-29	ACB 21	Arena Coliseum（ロシア・グロズヌイ）	htt
 e06586	ufc	2015-09-05	UFC 191: Johnson vs. Dodson 2	MGM Grand Garden Arena,	https://en.wikipedia.org/wiki/UFC_191 https://jp.ufc.com/event/ufc-191
 e00845	shooto	2015-09-06	BORDER-season7-「The2nd」		https://j-shooto.com/?p=14880
 e01737	deep	2015-09-06	DEEP - Hamamatsu Impact 2015		海外の記録サイト
-e03252	rings	2015-09-06	THE OUTSIDER 第37戦	キラメッセぬまづ	https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
+e03252	outsider	2015-09-06	THE OUTSIDER 第37戦	キラメッセぬまづ	https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
 e03253	zst	2015-09-06	ZST Challenge 146		https://ja.wikipedia.org/wiki/加賀谷大 海外の記録サイト
 e01455	grandslam_mma	2015-09-12	GRANDSLAM 3 〜Way of the Cage〜		https://mmaplanet.jp/49527 海外の記録サイト
 e05244	grandslam_mma	2015-09-12	GRANDSLAM 3 -Way of the CAGE-		https://efight.jp/result-20150912_205071
@@ -3441,7 +3441,7 @@ e03256	grachan	2015-09-19	GRACHAN19	東京・大田区総合体育館	https://gr
 e07152	bellator	2015-09-19	Bellator 142: Dynamite 1	SAP Center	https://en.wikipedia.org/wiki/Bellator_MMA_%26_Glory:_Dynamite_1
 e03257	shooto	2015-09-21	Shooto - Torao 16: Torao Tokyo		https://shooto-mma.com/fighters/?id=267 https://efight.jp/result-20150921_209711 https://shooto-mma.com/fighters/?id=194 https://shooto-mma.com/fighters/?id=127 https://shooto-mma.com/fighters/?id=279 https://shooto-mma.com/fighters/?id=63
 e05069	shooto	2015-09-21	プロフェッショナル修斗公式戦 闘裸男16 TORAO/TOKYO		https://efight.jp/result-20150921_209711
-e00847	shooto	2015-09-22	第22回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2015/10/05/post-0-846/ https://mmaplanet.jp/50565
+e00847	shooto_ama	2015-09-22	第22回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2015/10/05/post-0-846/ https://mmaplanet.jp/50565
 e03258	wardog_cage_fight	2015-09-22	WARDOG CAGE FIGHT06		https://mmaplanet.jp/50347
 e05092	wardog_cage_fight	2015-09-22	WCF - Wardog Cage Fight 6		https://mmaplanet.jp/50347
 e05077	tribe_tokyo_fight	2015-09-23	TTF CHALLENGE 05		https://efight.jp/result-20150923_212450
@@ -3515,7 +3515,7 @@ e05449	ufc	2015-12-11	The Ultimate Fighter 22 Finale	The Chelsea at The Cosmopol
 e06187	one	2015-12-11	Spirit Of Champions	モール・オブ・アジア・アリーナ	https://www.onefc.com/jp/events/spirit-of-champions/ https://en.wikipedia.org/wiki/2015_in_ONE_Championship#ONE_Championship:_Spirit_of_Champions
 e06579	ufc	2015-12-12	UFC 194: Aldo vs. McGregor	MGM Grand Garden Arena,	https://en.wikipedia.org/wiki/UFC_194 https://jp.ufc.com/event/ufc-194
 e00292	pancrase	2015-12-13	PANCRASE 273（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2015/1213.html
-e01460	rings	2015-12-13	THE OUTSIDER 第38戦 大田区総合体育館SPECIAL		https://battle-news.com/?p=17716 海外の記録サイト
+e01460	outsider	2015-12-13	THE OUTSIDER 第38戦 大田区総合体育館SPECIAL		https://battle-news.com/?p=17716 海外の記録サイト
 e07984	wsof	2015-12-18	WSOF 26: Palmer vs. Almeida	The Chelsea at The Cosmopolitan	https://en.wikipedia.org/wiki/World_Series_of_Fighting_26:_Palmer_vs._Almeida
 e06578	ufc	2015-12-19	UFC on Fox: dos Anjos vs. Cowboy 2	アムウェイ・センター, オーランド アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_on_Fox:_dos_Anjos_vs._Cowboy_2 https://jp.ufc.com/event/ufc-fuaitonaito-3
 e00293	pancrase	2015-12-20	PANCRASE 274（福岡・西日本展示場 本館 中展示場）	福岡・西日本展示場 本館 中展示場	https://pancrase.co.jp/data/result/2015/1220.html
@@ -3585,7 +3585,7 @@ e00860	shooto	2016-03-21	プロフェッショナル修斗公式戦		https://sho
 e03304	deep	2016-03-21	DEEP OSAKA IMPACT 2016	大阪・住吉区民センター大ホール	https://mma.blog.jp/archives/2004167.html 海外の記録サイト
 e06977	aca	2016-03-26	ACB 32	Dynamo Palace of Sports in Krylatskoye（ロシア・モスクワ）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e00861	shooto	2016-03-27	プロフェッショナル修斗公式戦 BORDER -season8-「The 1st」		https://shooto-mma.com/result/?id=4
-e01467	rings	2016-03-27	THE OUTSIDER 第39戦（ディファ有明）		https://battle-news.com/?p=20302 海外の記録サイト
+e01467	outsider	2016-03-27	THE OUTSIDER 第39戦（ディファ有明）		https://battle-news.com/?p=20302 海外の記録サイト
 e03305	deep	2016-03-27	DEEP奄美大島 すっとごれ!!!	鹿児島・奄美体験交流館	https://efight.jp/result-20160327_235675 海外の記録サイト
 e03306	deep	2016-03-27	DEEP - Nagoya Impact 2016		https://ja.wikipedia.org/wiki/TATSUMI_(格闘家) https://ja.wikipedia.org/wiki/山本聖悟 https://ja.wikipedia.org/wiki/杉山廣平 海外の記録サイト
 e03307	jmmaf	2016-03-27	JMMAF公式戦 上尾ケージファイト02	PUREBRED	https://ameblo.jp/purebred/entry-12144444879.html 海外の記録サイト
@@ -3627,14 +3627,14 @@ e06971	aca	2016-05-20	ACB 38	"KSK ""Ekspress""（ロシア・ロストフ・ナ�
 e07141	bellator	2016-05-20	Bellator 155: Carvalho vs. Manhoef	CenturyLink Arena	https://en.wikipedia.org/wiki/2016_in_Bellator_MMA#Bellator_155
 e05321	tribelate	2016-05-21	Tribelate - vol. 50		https://efight.jp/result-20160521_238608 海外の記録サイト
 e03320	grachan	2016-05-22	GRACHAN23	東京・ディファ有明	https://grachan.jp/grachan23/
-e03321	shooto	2016-05-22	第1回アマチュア修斗香港大会（Hong Kong Amateur Shooto 2016）	香港 Southern Stadium	https://j-shooto.com/2016/05/30/post-0-695/ 海外の記録サイト
+e03321	shooto_ama	2016-05-22	第1回アマチュア修斗香港大会（Hong Kong Amateur Shooto 2016）	香港 Southern Stadium	https://j-shooto.com/2016/05/30/post-0-695/ 海外の記録サイト
 e03322	tenkaichi_fight	2016-05-22	Tenkaichi 80 - Tenkaichi vs. Heat		海外の記録サイト
 e05956	one	2016-05-27	Kingdom Of Champions	インパクト・アリーナ	https://www.onefc.com/jp/athletes/yoshitaka-naito/matchups/page/2/ https://www.onefc.com/athletes/kazunori-yokota/ https://en.wikipedia.org/wiki/2016_in_ONE_Championship#ONE_Championship:_Kingdom_of_Champions
 e07553	ksw	2016-05-27	KSW 35	Ergo Arena（ポーランド・グダニスク／ソポト）	https://en.wikipedia.org/wiki/2016_in_Konfrontacja_Sztuk_Walki
 e00864	shooto	2016-05-28	プロフェッショナル修斗公式戦 SHOOTO GIG TOKYO Vol.21		https://shooto-mma.com/result/?id=3
 e06970	aca	2016-05-28	ACB 39	Kristall Ice Sports Palace（ロシア・サラトフ）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e00298	pancrase	2016-05-29	PANCRASE札幌大会（札幌・コンカリーニョ）	札幌・コンカリーニョ	https://pancrase.co.jp/data/result/2016/0529.html
-e01469	rings	2016-05-29	THE OUTSIDER 第40戦		https://ja.wikipedia.org/wiki/伊藤裕樹_(格闘家) https://ja.wikipedia.org/wiki/大井洋一 海外の記録サイト
+e01469	outsider	2016-05-29	THE OUTSIDER 第40戦		https://ja.wikipedia.org/wiki/伊藤裕樹_(格闘家) https://ja.wikipedia.org/wiki/大井洋一 海外の記録サイト
 e03323	jmmaf	2016-05-29	北海道ケージファイト01		https://image01w.seesaawiki.jp/p/b/pancraselab/23cb0fa55bb8cf01.pdf 海外の記録サイト
 e06570	ufc	2016-05-29	UFC Fight Night: Almeida vs. Garbrandt	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Almeida_vs._Garbrandt https://jp.ufc.com/event/ufcfuaitonaito-9
 e05567	aca	2016-06-03	ACB 40	Sports Palace Olymp（ロシア・クラスノダール）	https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E5%A4%AA%E4%B8%80 https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
@@ -3682,7 +3682,7 @@ e06564	ufc	2016-07-30	UFC 201: Lawler vs. Woodley	Philips Arena,	https://en.wiki
 e07978	wsof	2016-07-30	WSOF 32: Moraes vs. Hill 2	Xfinity Arena	https://en.wikipedia.org/wiki/World_Series_of_Fighting_32:_Moraes_vs._Hill_2
 e00301	pancrase	2016-07-31	PANCRASE大阪大会（大阪・阿倍野区民センター大ホール）	大阪・阿倍野区民センター大ホール	https://pancrase.co.jp/data/result/2016/0731.html
 e01471	atoys_challenge_fight	2016-07-31	ACF23rd		https://ameblo.jp/wjkfkenwakan/entry-12186073061.html 海外の記録サイト
-e01472	rings	2016-07-31	THE OUTSIDER 第41戦（ディファ有明）		https://battle-news.com/?p=22736 海外の記録サイト
+e01472	outsider	2016-07-31	THE OUTSIDER 第41戦（ディファ有明）		https://battle-news.com/?p=22736 海外の記録サイト
 e05440	ufc	2016-08-06	UFC Fight Night: Rodriguez vs. Caceres	Vivint Smart Home Arena, Salt Lake City アメリカ合衆国	https://jp.ufc.com/event/ufcfuaitonaito-14 https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%8E%9F%E5%A4%9C%E5%8F%89%E5%9D%8A https://ja.wikipedia.org/wiki/%E5%B7%9D%E5%B0%BB%E9%81%94%E4%B9%9F https://en.wikipedia.org/wiki/UFC_Fight_Night:_Rodríguez_vs._Caceres
 e03343	grachan	2016-08-07	GRACHAN24	東京・ディファ有明	https://grachan.jp/grachan24/
 e03344	zst	2016-08-07	ZST 52 / Swat! 154		https://efight.jp/result-20160807_243451
@@ -3701,7 +3701,7 @@ e06562	ufc	2016-09-03	UFC Fight Night: Arlovski vs. Barnett	Barclaycard Arena, H
 e06966	aca	2016-09-03	ACB 44	Volgograd Arena（ロシア・ヴォルゴグラード）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e00869	shooto	2016-09-04	熊本地震復興支援チャリティー プロフェッショナル修斗公式戦福岡大会「闘裸男19」		https://j-shooto.com/?p=17931 海外の記録サイト
 e00870	shooto	2016-09-04	BORDER-season8-「The2nd」		https://shooto-mma.com/result/?id=27
-e01474	rings	2016-09-04	THE OUTSIDER 第42戦	豊川市総合体育館	https://ja.wikipedia.org/wiki/伊藤裕樹_(格闘家) https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
+e01474	outsider	2016-09-04	THE OUTSIDER 第42戦	豊川市総合体育館	https://ja.wikipedia.org/wiki/伊藤裕樹_(格闘家) https://ja.wikipedia.org/wiki/朝倉海 海外の記録サイト
 e06561	ufc	2016-09-10	UFC 203: Miocic vs. Overeem	Quicken Loans Arena, Cleveland アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_203 https://jp.ufc.com/event/ufc-203
 e08278	cage_warriors	2016-09-10	Cage Warriors 78	Echo Arena（英国リバプール）	https://next-fight.com/fr/event/cwfc-78-cage-warriors-fighting-championship-78
 e00302	pancrase	2016-09-11	PANCRASE 280（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2016/0911.html
@@ -3731,7 +3731,7 @@ e05245	hoost_cup	2016-10-02	HOOST CUP KINGS OSAKA		https://efight.jp/result-2016
 e05959	one	2016-10-07	State of Warriors	トゥウンナ・スタジアム	https://www.onefc.com/jp/athletes/yoshitaka-naito/matchups/page/2/ https://en.wikipedia.org/wiki/2016_in_ONE_Championship#ONE_Championship:_State_of_Warriors
 e07977	wsof	2016-10-07	WSOF 33: Branch vs. Magalhães	Municipal Auditorium	https://en.wikipedia.org/wiki/World_Series_of_Fighting_33:_Branch_vs._Magalh%C3%A3es
 e06559	ufc	2016-10-08	UFC 204: Bisping vs. Henderson 2	Manchester Arena, Manchester イギリス	https://en.wikipedia.org/wiki/UFC_204 https://jp.ufc.com/event/ufc-204
-e00872	shooto	2016-10-09	第23回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2016/10/19/post-0-230/
+e00872	shooto_ama	2016-10-09	第23回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2016/10/19/post-0-230/
 e01475	deep	2016-10-09	ファイティングロード presents DEEP CAGE IMPACT 2016 in OSAKA	大阪住吉区民センター大ホール	https://efight.jp/result-20161009_248057 海外の記録サイト
 e01476	demolition_xtreme_fighting_championship	2016-10-09	DXFC - Highspeed 2016: Higher Self	大阪・豊中市ローズ文化ホール	https://efight.jp/result-20161009_248375 海外の記録サイト
 e01477	grachan	2016-10-10	GRACHAN25	東京・ディファ有明	https://grachan.jp/grachan25/ 海外の記録サイト
@@ -3783,13 +3783,13 @@ e08201	oktagon	2016-12-10	OKTAGON 1	Sportovní hala Královka（チェコ・プ�
 e00306	pancrase	2016-12-11	PANCRASE大阪大会（大阪・東成区民センター大ホール）	大阪・東成区民センター大ホール	https://pancrase.co.jp/data/result/2016/1211.html
 e00879	shooto	2016-12-11	BORDER-season8-「The3rd」		https://shooto-mma.com/result/?id=37
 e01479	grachan	2016-12-11	GRACHAN26	東京・ディファ有明	https://grachan.jp/grachan26/
-e01480	rings	2016-12-11	RINGS／THE OUTSIDER 第43戦 横浜文化体育館大会		https://battle-news.com/?p=25638 海外の記録サイト
+e01480	outsider	2016-12-11	RINGS／THE OUTSIDER 第43戦 横浜文化体育館大会		https://battle-news.com/?p=25638 海外の記録サイト
 e05809	bellator	2016-12-16	Bellator 169: King Mo vs. Ishii	3Arena	https://ja.wikipedia.org/wiki/石井慧 https://en.wikipedia.org/wiki/2016_in_Bellator_MMA https://en.wikipedia.org/wiki/2016_in_Bellator_MMA#Bellator_169
 e03373	deep	2016-12-17	DEEP CAGE IMPACT 2016～DEEP VS WSOF-GC～	ディファ有明	https://www.deep2001.com/deep-cage-impact-2016%ef%bd%9edeep-vs-wsof-gc%ef%bd%9e/
 e05434	ufc	2016-12-17	UFC on FOX 22: VanZant vs. Waterson	Golden 1 Center, Sacramento アメリカ合衆国	https://jp.ufc.com/event/ufcfuaitonaito-25 https://ja.wikipedia.org/wiki/%E5%BB%A3%E7%94%B0%E7%91%9E%E4%BA%BA https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5 https://en.wikipedia.org/wiki/UFC_on_Fox:_VanZant_vs._Waterson
 e00307	pancrase	2016-12-18	PANCRASE 283（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2016/1218.html
 e00880	shooto	2016-12-18	インフィニティリーグ2016優勝決定戦		https://shooto-mma.com/result/?id=12
-e01738	rings	2016-12-18	THE OUTSIDER 第44戦	宗像ユリックス	海外の記録サイト
+e01738	outsider	2016-12-18	THE OUTSIDER 第44戦	宗像ユリックス	海外の記録サイト
 e06961	aca	2016-12-18	ACB 50	Sibur Arena（ロシア・サンクトペテルブルク）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e01481	accel	2016-12-23	ACCEL 35		https://efight.jp/result-20161223_252641
 e04831	accel	2016-12-23	ACCEL 35 聖夜への架け橋		https://efight.jp/result-20161223_252641
@@ -3820,7 +3820,7 @@ e07819	lfa	2017-02-17	LFA 4	Horseshoe Bossier City Hotel and Casino（米国ル�
 e06958	aca	2017-02-18	ACB 53	Hala Urania（ポーランド・オルシュティン）	https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e07128	bellator	2017-02-18	Bellator 172: Thomson vs. Pitbull	SAP Center	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_172
 e08275	cage_warriors	2017-02-18	Cage Warriors 80	Indigo at The O2（英国ロンドン）	https://next-fight.com/fr/event/cwfc-80-cage-warriors-fighting-championship-80
-e03382	rings	2017-02-19	THE OUTSIDER 第45戦		https://ja.wikipedia.org/wiki/堀鉄平 海外の記録サイト
+e03382	outsider	2017-02-19	THE OUTSIDER 第45戦		https://ja.wikipedia.org/wiki/堀鉄平 海外の記録サイト
 e04906	heat	2017-02-19	HEAT 39		https://efight.jp/result-20170219_255769
 e06549	ufc	2017-02-19	UFC Fight Night: Lewis vs. Browne	Scotiabank Centre, Halifax カナダ	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Lewis_vs._Browne https://jp.ufc.com/event/ufcfuaitonaito-30
 e00882	shooto	2017-02-24	プロフェッショナル修斗公式戦 THIS is SHOOTO Vol.1		https://shooto-mma.com/result/?id=38
@@ -3900,7 +3900,7 @@ e03403	deep	2017-05-20	ドン・キホーテ Presents DEEP JEWELS 16	新宿FACE	
 e04378	deep	2017-05-20	DEEP JEWELS 16	新宿FACE	https://www.deep2001.com/deep-jewels-16/
 e05571	aca	2017-05-20	ACB 61	Sibur Arena（ロシア・サンクトペテルブルク）	https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E5%A4%AA%E4%B8%80 https://www.aca-mma.com/en/tournamentprev/acb-61-st-petersburg-dkMWX368_69 https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e07120	bellator	2017-05-20	Bellator: Monster Energy Fight Series: Charlotte	Charlotte Motor Speedway	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_Monster_Energy_Fight_Series:_Charlotte
-e01485	rings	2017-05-21	THE OUTSIDER 第46戦（ディファ有明）		https://battle-news.com/?p=30025 海外の記録サイト
+e01485	outsider	2017-05-21	THE OUTSIDER 第46戦（ディファ有明）		https://battle-news.com/?p=30025 海外の記録サイト
 e05011	nexus	2017-05-21	Fighting NEXUS vol.9 2017.5.21(sun) in SHINJUKU FACE		https://fighting-nexus.net/event.php?id=result-88
 e06953	aca	2017-05-25	ACB 59	Sports Hall Coliseum（ロシア・グロズヌイ）	https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e05602	one	2017-05-26	Dynasty Of Heroes	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/dynasty-of-heroes/ https://en.wikipedia.org/wiki/2017_in_ONE_Championship#ONE_Championship:_Dynasty_of_Heroes
@@ -3954,7 +3954,7 @@ e05825	pfl	2017-07-29	PFL: Everett	Xfinity Arena	https://ja.wikipedia.org/wiki/�
 e06535	ufc	2017-07-29	UFC 214: Cormier vs. Jones 2	ホンダ・センター, アナハイム アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_214 https://jp.ufc.com/event/ufc-214
 e08138	brave_cf	2017-07-29	Brave CF 7	メキシコ	https://www.bravecf.com/event-results/brave-cf-7-result
 e08199	oktagon	2017-07-29	OKTAGON 3	Štvanice（チェコ・プラハ）	https://www.ufcalendar.com/events/oktagon-3-2017-07-29
-e01487	rings	2017-07-30	THE OUTSIDER 第47戦	ディファ有明	https://ja.wikipedia.org/wiki/ジョーブログ 海外の記録サイト
+e01487	outsider	2017-07-30	THE OUTSIDER 第47戦	ディファ有明	https://ja.wikipedia.org/wiki/ジョーブログ 海外の記録サイト
 e01488	rizin	2017-07-30	RIZIN.6 RIZIN FIGHTING WORLD GRAND-PRIX 2017 バンタム級トーナメント 1st ROUND -夏の陣-	さいたまスーパーアリーナ	https://jp.rizinff.com/_ct/17105213
 e07804	lfa	2017-08-04	LFA 18	Firelake Arena（米国オクラホマ州ショーニー）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
 e05604	one	2017-08-05	Kings & Conquerors	コタイ・アリーナ	https://www.onefc.com/jp/events/kings-and-conquerors/ https://en.wikipedia.org/wiki/2017_in_ONE_Championship#ONE_Championship:_Kings_and_Conquerors
@@ -3998,7 +3998,7 @@ e04933	krossxover	2017-09-17	KROSS×OVER～いじめ撲滅～		https://efight.jp
 e03429	atoys_challenge_fight	2017-09-18	ACF 30th - Girls' Fight 2017		海外の記録サイト
 e05268	ufc	2017-09-22	UFC FIGHT NIGHT JAPAN		https://efight.jp/result-20170923_268436
 e07799	lfa	2017-09-22	LFA 23	Horseshoe Bossier City Hotel and Casino（米国ルイジアナ州ボージャーシティ）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
-e01495	shooto	2017-09-23	第24回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E5%B9%B3%E8%89%AF%E9%81%94%E9%83%8E https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
+e01495	shooto_ama	2017-09-23	第24回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E5%B9%B3%E8%89%AF%E9%81%94%E9%83%8E https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
 e05996	adcc	2017-09-23	ADCC 2017（エスポー）	フィンランド・エスポー エスポー・メトロ・アリーナ	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://btbrasil.livedoor.biz/archives/55748790.html
 e06944	aca	2017-09-23	ACB 70	Sheffield Arena（英国シェフィールド）	https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e07115	bellator	2017-09-23	Bellator 183: Henderson vs. Pitbull	SAP Center	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_183
@@ -4075,7 +4075,7 @@ e06939	aca	2017-12-09	ACB 76	Gold Coast Convention and Exhibition Centre（オ�
 e07107	bellator	2017-12-09	Bellator 190: Carvalho vs. Sakara	Nelson Mandela Forum	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_190
 e00319	pancrase	2017-12-10	PANCRASE 292（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2017/1210.html
 e01500	grachan	2017-12-10	GRACHAN32	東京・大田区産業プラザPIO	https://grachan.jp/grachan32/
-e01501	rings	2017-12-10	THE OUTSIDER 第48戦 大田区総合体育館大会		https://battle-news.com/?p=35307 海外の記録サイト
+e01501	outsider	2017-12-10	THE OUTSIDER 第48戦 大田区総合体育館大会		https://battle-news.com/?p=35307 海外の記録サイト
 e07106	bellator	2017-12-15	Bellator 191 McDonald vs. Ligier	Metro Radio Arena	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_191
 e07793	lfa	2017-12-15	LFA 29	Mystic Lake Casino Hotel（米国ミネソタ州プライアーレイク）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
 e06520	ufc	2017-12-16	UFC on Fox: Lawler vs. dos Anjos	Bell MTS Place, Winnipeg カナダ	https://en.wikipedia.org/wiki/UFC_on_Fox:_Lawler_vs._dos_Anjos https://jp.ufc.com/event/ufc-fight-night-38
@@ -4128,7 +4128,7 @@ e04934	krossxover	2018-02-24	KROSS×OVER 2		https://efight.jp/result-20180225_28
 e06513	ufc	2018-02-24	UFC on Fox: Emmett vs. Stephens	アムウェイ・センター, オーランド アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_on_Fox:_Emmett_vs._Stephens https://jp.ufc.com/event/ufc-fight-night-41
 e08095	aca	2018-02-24	ACB KB 13	Halle Georges Carpentier（フランス・パリ）	https://en.wikipedia.org/wiki/2018_in_Absolute_Championship_Berkut
 e08265	cage_warriors	2018-02-24	Cage Warriors 90	Echo Arena（英国リバプール）	https://next-fight.com/en/event/cw-90-cage-warriors-90
-e01741	rings	2018-02-25	THE OUTSIDER 第49戦	宗像ユリックス	海外の記録サイト
+e01741	outsider	2018-02-25	THE OUTSIDER 第49戦	宗像ユリックス	海外の記録サイト
 e03460	grachan	2018-02-25	GRACHAN34	東京・ディファ有明	https://grachan.jp/grachan34/ 海外の記録サイト
 e05232	chakuriki	2018-03-01	CHAKURIKI 3		https://efight.jp/result-20180301_280685
 e08061	chakuriki	2018-03-01	Chakuriki 3		https://efight.jp/result-20180301_280685
@@ -4145,7 +4145,7 @@ e06934	aca	2018-03-09	ACB 82	Club Hebraica（ブラジル・サンパウロ）	h
 e07787	lfa	2018-03-09	LFA 35	Arena Theatre（米国テキサス州ヒューストン）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
 e03464	deep	2018-03-10	DEEP JEWELS 19	新宿FACE	https://www.deep2001.com/deep-jewels-19/
 e00322	pancrase	2018-03-11	PANCRASE 294（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2018/0311.html
-e01504	rings	2018-03-11	THE OUTSIDER 第50戦（ディファ有明）		https://battle-news.com/?p=37855 海外の記録サイト
+e01504	outsider	2018-03-11	THE OUTSIDER 第50戦（ディファ有明）		https://battle-news.com/?p=37855 海外の記録サイト
 e03466	zst	2018-03-17	ZST.59 & SWAT!164	東京・新宿FACE	https://www.boutreview.com/3/reports/item_3283.html
 e05142	zst	2018-03-17	ZST.59		https://efight.jp/result-20180317_281639
 e06511	ufc	2018-03-17	UFC Fight Night: Werdum vs. Volkov	The O2, London United Kingdom	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Werdum_vs._Volkov https://jp.ufc.com/event/ufc-fight-night-london-march-17-2018
@@ -4182,7 +4182,7 @@ e00906	shooto	2018-04-22	SHOOTO GIG TOKYO Vol.25		https://shooto-mma.com/result/
 e03471	king_of_kings_japan	2018-04-22	KOK - King of Kings Vol. 5		https://ja.wikipedia.org/wiki/%E6%BB%9D%E7%94%B0J%E5%A4%AA%E9%83%8E 海外の記録サイト
 e05325	tribelate	2018-04-27	Tribelate - vol. 55		https://efight.jp/result-20180427_286335 海外の記録サイト
 e07784	lfa	2018-04-27	LFA 38	Minneapolis Armory（米国ミネソタ州ミネアポリス）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
-e01742	rings	2018-04-28	THE OUTSIDER Experiment League		海外の記録サイト
+e01742	outsider	2018-04-28	THE OUTSIDER Experiment League		海外の記録サイト
 e03473	deep	2018-04-28	DEEP 83 IMPACT	後楽園ホール	https://www.deep2001.com/deep-83-impact/
 e07098	bellator	2018-04-28	Bellator 198: Fedor vs. Mir	Allstate Arena	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_198
 e08262	cage_warriors	2018-04-28	Cage Warriors 93	Lisebergshallen（スウェーデン・ヨーテボリ）	https://next-fight.com/en/event/cw-93-cage-warriors-93
@@ -4260,7 +4260,7 @@ e06013	quintet	2018-07-16	QUINTET.2	大田区総合体育館	https://www.quintet
 e06177	one	2018-07-19	ONE Warrior Series 2	シンガポール	https://en.wikipedia.org/wiki/2018_in_ONE_Championship#ONE_Warrior_Series_2
 e07972	pfl	2018-07-19	PFL 4: 2018 Regular Season	Nassau Coliseum	https://en.wikipedia.org/wiki/PFL_4_(2018)
 e07777	lfa	2018-07-20	LFA 45	Morongo Casino, Resort & Spa（米国カリフォルニア州カバゾン）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
-e03494	rings	2018-07-21	THE OUTSIDER 第51戦 10th Anniversary Road to Las Vegas	川崎市とどろきアリーナ	https://ja.wikipedia.org/wiki/堀鉄平 海外の記録サイト
+e03494	outsider	2018-07-21	THE OUTSIDER 第51戦 10th Anniversary Road to Las Vegas	川崎市とどろきアリーナ	https://ja.wikipedia.org/wiki/堀鉄平 海外の記録サイト
 e08260	cage_warriors	2018-07-21	Cage Warriors 95	Indigo at The O2（英国ロンドン）	https://next-fight.com/en/event/cw-95-cage-warriors-95
 e03495	wardog_cage_fight	2018-07-22	WARDOG CAGE FIGHT 7.22 大阪 世界館		https://www.boutreview.com/3/reports/item_9526.html
 e05100	wardog_cage_fight	2018-07-22	WCF - Wardog Cage Fight 18		https://mmaplanet.jp/81867
@@ -4291,7 +4291,7 @@ e04167	deep	2018-08-26	カーエイド Presents DEEP 85 IMPACT	後楽園ホー�
 e05156	atoys_challenge_fight	2018-08-26	ACF 37th - A-Toys Challenge Fight 37		https://www.boutreview.com/3/reports/item_10857.html
 e07970	pfl	2018-08-30	PFL 7: 2018 Regular Season	Ocean Resort Casino	https://en.wikipedia.org/wiki/PFL_7_(2018)
 e08259	cage_warriors	2018-09-01	Cage Warriors 96	Echo Arena（英国リバプール）	https://next-fight.com/en/event/cw-96-cage-warriors-96
-e01511	rings	2018-09-02	THE OUTSIDER 第52戦 10周年 九州大会		https://ja.wikipedia.org/wiki/吉永啓之輔 https://ja.wikipedia.org/wiki/RYOGA https://ja.wikipedia.org/wiki/大井洋一 海外の記録サイト
+e01511	outsider	2018-09-02	THE OUTSIDER 第52戦 10周年 九州大会		https://ja.wikipedia.org/wiki/吉永啓之輔 https://ja.wikipedia.org/wiki/RYOGA https://ja.wikipedia.org/wiki/大井洋一 海外の記録サイト
 e04876	gladiator	2018-09-02	GLADIATOR×DEMOLITION vol.2		https://efight.jp/result-20180902_303805
 e07774	lfa	2018-09-07	LFA 48	Viaero Center（米国ネブラスカ州カーニー）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
 e08131	brave_cf	2018-09-07	Brave CF 15	コロンビア	https://www.bravecf.com/event-results/brave-cf-15-result
@@ -4332,7 +4332,7 @@ e06175	one	2018-10-11	ONE Warrior Series 3	シンガポール	https://en.wikiped
 e07089	bellator	2018-10-12	Bellator 207: Mitrione vs. Bader	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_207
 e05828	pfl	2018-10-13	PFL 9: 2018 Season PFL Playoffs 2	Long Beach Arena	https://ja.wikipedia.org/wiki/川名TENCHO雄生 https://en.wikipedia.org/wiki/PFL_9_(2018)
 e07088	bellator	2018-10-13	Bellator 208: Fedor vs. Sonnen	Nassau Coliseum	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_208
-e01513	shooto	2018-10-14	第25回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
+e01513	shooto_ama	2018-10-14	第25回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
 e07770	lfa	2018-10-19	LFA 52	Bell County Expo Center（米国テキサス州ベルトン）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
 e01514	krossxover	2018-10-20	KROSS×OVER 10.20 新宿フェイス		https://www.boutreview.com/3/reports/item_13530.html
 e04940	krossxover	2018-10-20	KROSS×OVER 5		https://krossover.jp/?p=218
@@ -4630,7 +4630,7 @@ e07068	bellator	2019-09-28	Bellator 228: Machida vs. Mousasi 2	The Forum	https:/
 e08247	cage_warriors	2019-09-28	Cage Warriors 107	Exhibition Centre Liverpool（英国リバプール）	https://next-fight.com/en/event/cw-107-cage-warriors-107
 e00342	pancrase	2019-09-29	PANCRASE 308（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0929.html
 e01533	pound_4_pound_fighting_championship	2019-09-29	PFC 9.29 札幌 コンカリーニョ		https://www.boutreview.com/3/reports/item_30426.html
-e01534	shooto	2019-09-29	第26回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
+e01534	shooto_ama	2019-09-29	第26回全日本アマチュア修斗選手権大会		https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AB%E5%BE%A1%E6%AE%BF
 e05045	pound_4_pound_fighting_championship	2019-09-29	P4P FC 22 - Pound For Pound FC 22 / Stones.3		https://mmaplanet.jp/96360
 e06917	aca	2019-10-04	ACA 100	Sports Hall Coliseum（ロシア・グロズヌイ）	https://en.wikipedia.org/wiki/2019_in_Absolute_Championship_Akhmat
 e07067	bellator	2019-10-04	Bellator 229: Koreshkov vs. Larkin	Pechanga Resort and Casino	https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_229
@@ -4638,7 +4638,7 @@ e08119	brave_cf	2019-10-04	Brave CF 27	アラブ首長国連邦	https://www.brav
 e05036	one	2019-10-05	日本VS世界	ベルサール渋谷ガーデン	https://efight.jp/result-20191005_358884 https://www.onefc.com/jp/events/one-warrior-series-8/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Warrior_Series_8
 e06462	ufc	2019-10-05	UFC 243: Whittaker vs. Adesanya	Marvel Stadium, Melbourne Australia	https://en.wikipedia.org/wiki/UFC_243 https://jp.ufc.com/event/ufc-243
 e08066	one	2019-10-05	ONE Warrior Series（OWS）8 日本VS世界		https://efight.jp/result-20191005_358884
-e00934	shooto	2019-10-06	アマチュア修斗inマーシャルアーツ・ファンフェス		https://j-shooto.com/2019/10/06/post-25468/ 海外の記録サイト
+e00934	shooto_ama	2019-10-06	アマチュア修斗inマーシャルアーツ・ファンフェス		https://j-shooto.com/2019/10/06/post-25468/ 海外の記録サイト
 e01535	kingdom	2019-10-06	キングダムエルガイツ生誕20周年記念大会 ～FOREVER OF KINGDOM～	北沢タウンホール	https://www.boutreview.com/3/reports/item_30850.html
 e07962	pfl	2019-10-11	PFL 7: 2019 Season PFL Playoffs 1	Mandalay Bay Events Center	https://en.wikipedia.org/wiki/PFL_7_(2019)
 e01536	one	2019-10-12	ONE: CENTURY PART I	両国国技館	https://efight.jp/result-20191013_362174 https://www.onefc.com/jp/events/century/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Championship:_Century
@@ -4665,7 +4665,7 @@ e08186	oktagon	2019-10-25	OKTAGON PRIME 2	Crow Arena（スロバキア・コシ�
 e06459	ufc	2019-10-26	UFC Fight Night: Maia vs. Askren	Singapore Indoor Stadium, Singapore Singapore	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Maia_vs._Askren https://jp.ufc.com/event/ufc-fight-night-october-26-2019
 e07064	bellator	2019-10-26	Bellator 232: MacDonald vs. Lima 2	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_232
 e08245	cage_warriors	2019-10-26	Cage Warriors 109	Resorts World Arena（英国バーミンガム）	https://next-fight.com/en/event/cw-109-cage-warriors-109
-e03575	rings	2019-10-27	THE OUTSIDER 第54戦 九州覚醒トーナメント	宗像ユリックス	https://ja.wikipedia.org/wiki/樋口武大 海外の記録サイト
+e03575	outsider	2019-10-27	THE OUTSIDER 第54戦 九州覚醒トーナメント	宗像ユリックス	https://ja.wikipedia.org/wiki/樋口武大 海外の記録サイト
 e05218	wardog_cage_fight	2019-10-27	WCF - Wardog Cage Fight 23		https://www.boutreview.com/3/reports/item_31905.html
 e06165	one	2019-10-28	ONE Hero Series October	北京	https://www.onefc.com/jp/events/one-hero-series-october/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Hero_Series_October
 e05831	pfl	2019-10-31	PFL 9: 2019 Season PFL Playoffs 3	Mandalay Bay Events Center	https://ja.wikipedia.org/wiki/石井慧 https://en.wikipedia.org/wiki/PFL_9_(2019)
@@ -4674,7 +4674,7 @@ e00936	shooto	2019-11-03	沖縄大会 THE SHOOTO OKINAWA vol.２		https://shooto
 e03577	atoys_challenge_fight	2019-11-03	ACF 11.3 大阪沖縄会館		https://www.boutreview.com/3/reports/item_32357.html 海外の記録サイト
 e05208	shooto	2019-11-03	Shooto - The Shooto Okinawa Vol. 2		https://www.boutreview.com/3/reports/item_32361.html
 e01539	krossxover	2019-11-04	KROSS×OVER 11.4 埼玉県県民活動総合センター		https://www.boutreview.com/3/reports/item_32603.html
-e01744	rings	2019-11-04	THE OUTSIDER 第53戦 第1回東北トーナメント	白河市中央体育館	海外の記録サイト
+e01744	outsider	2019-11-04	THE OUTSIDER 第53戦 第1回東北トーナメント	白河市中央体育館	海外の記録サイト
 e08118	brave_cf	2019-11-04	Brave CF 28		https://www.bravecf.com/event-results/brave-cf-28-results
 e05646	one	2019-11-08	Masters Of Fate	モール・オブ・アジア・アリーナ	https://www.onefc.com/jp/events/masters-of-fate/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Championship:_Masters_Of_Fate
 e07063	bellator	2019-11-08	Bellator 233: Salter vs. Van Steenis	WinStar World Casino	https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_233
@@ -5611,7 +5611,7 @@ e08501	jbjjf	2022-10-23	第14回関西柔術選手権	大阪府・大阪市立�
 e07326	brave_cf	2022-10-28	Brave CF 65	Khalifa Sports City Stadium（バーレーン・イーサタウン）	https://en.wikipedia.org/wiki/2022_in_Brave_Combat_Federation
 e06342	ufc	2022-10-29	UFC Fight Night: Kattar vs. Allen	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Kattar_vs._Allen https://jp.ufc.com/event/ufc-fight-night-october-29-2022
 e07014	bellator	2022-10-29	Bellator 287: Piccolotti vs. Barnaoui	Allianz Cloud Arena	https://en.wikipedia.org/wiki/Bellator_287
-e01595	shooto	2022-10-30	第28回全日本アマチュア修斗選手権大会	小田原アリーナ・サブアリーナ	https://j-shooto.com/2022/11/02/post-32572/
+e01595	shooto_ama	2022-10-30	第28回全日本アマチュア修斗選手権大会	小田原アリーナ・サブアリーナ	https://j-shooto.com/2022/11/02/post-32572/
 e03761	deep	2022-10-30	DEEP OKINAWA IMPACT 2022	ミュージックタウン音市場	https://www.deep2001.com/deep-okinawa-impact-2022/
 e05255	ldh_martial_arts	2022-10-30	EXFIGHT06		https://mmaplanet.jp/136667 https://mmaplanet.jp/136669 海外の記録サイト
 e06862	aca	2022-11-04	ACA 147	CSKA Arena（ロシア・モスクワ）	https://en.wikipedia.org/wiki/2022_in_Absolute_Championship_Akhmat
@@ -6021,7 +6021,7 @@ e06306	ufc	2023-10-14	UFCファイトナイト・ラスベガス81: ユサフ vs
 e07501	ksw	2023-10-14	KSW 87	Werk Arena（チェコ・トシネツ）	https://en.wikipedia.org/wiki/2023_in_Konfrontacja_Sztuk_Walki
 e08149	cage_warriors	2023-10-14	Cage Warriors 161	Shelbourne Hall（アイルランド・ダブリン）	https://www.ufcalendar.com/events/cage-warriors-161-2023-10-14
 e01626	grachan	2023-10-15	GRACHAN65　旗揚げ15周年記念大会	東京・TFTホール1000	https://grachan.jp/grachan65_result/
-e01627	shooto	2023-10-15	第29回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2023/10/18/post-36845/
+e01627	shooto_ama	2023-10-15	第29回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2023/10/18/post-36845/
 e04540	grachan	2023-10-15	GRACHAN65 旗揚げ15周年記念大会	東京・TFTホール1000	https://grachan.jp/grachan65_result/
 e04997	nexus	2023-10-15	Fighting NEXUS“BAYSIDE BATTLE in YOKOSUKA 2023” 2023.10.15(sun)		https://fighting-nexus.net/event.php?id=result-1716
 e06099	one	2023-10-20	ONE Friday Fights 37	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-37/ https://en.wikipedia.org/wiki/2023_in_ONE_Championship#ONE_Friday_Fights_37
@@ -6465,7 +6465,7 @@ e05355	poundout	2024-10-05	Poundout 1		https://efight.jp/result-20241006_1542231
 e01662	deep	2024-10-06	DEEP HAMAMATSU IMPACT 2024		https://www.deep2001.com/deep-hamamatsu-impact-2024/ 海外の記録サイト
 e01663	krossxover	2024-10-06	KROSS×OVER 10.6 新宿フェイス		https://www.boutreview.com/3/reports/item_116110.html
 e01664	pound_4_pound_fighting_championship	2024-10-06	PFC 10.6 札幌PODアリーナ		https://www.boutreview.com/3/reports/item_116158.html
-e01665	shooto	2024-10-06	第30回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2024/10/12/post-41213/
+e01665	shooto_ama	2024-10-06	第30回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2024/10/12/post-41213/
 e03905	gladiator	2024-10-06	GLADIATOR 028 in Osaka		https://www.boutreview.com/3/reports/item_116141.html
 e05186	pound_4_pound_fighting_championship	2024-10-06	P4P FC 34 - Pound For Pound FC 34		https://www.boutreview.com/3/reports/item_116158.html
 e08415	jbjjf	2024-10-06	第7回北日本柔術選手権	岩手県 岩手県営武道館 大道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vS02zdEF7UClGwZ19PO7D_set20K9MmoADBCg26Fp6pY87yWHPMs_BVzskf0jeskjVQgBZF9um2ySnn/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vS02zdEF7UClGwZ19PO7D_set20K9MmoADBCg26Fp6pY87yWHPMs_BVzskf0jeskjVQgBZF9um2ySnn/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vS02zdEF7UClGwZ19PO7D_set20K9MmoADBCg26Fp6pY87yWHPMs_BVzskf0jeskjVQgBZF9um2ySnn/pubhtml?gid=2036727323&single=true
@@ -6910,7 +6910,7 @@ e06816	aca	2025-10-04	ACA 193	Sport Hall Colosseum（ロシア・グロズヌイ
 e07377	cage_warriors	2025-10-04	Cage Warriors 195	PalaPellicone（イタリア・ローマ）	https://en.wikipedia.org/wiki/2025_in_Cage_Warriors
 e07843	oktagon	2025-10-04	OKTAGON 77	Ondrej Nepela Stadium（スロバキア・ブラチスラバ）	https://en.wikipedia.org/wiki/2025_in_Oktagon_MMA
 e01690	deep	2025-10-05	DEEP HAMAMATSU IMPACT 2025 2nd ROUND	アクトシティ浜松	https://www.deep2001.com/deep-hamamatsu-impact-2025-2nd-round/
-e01691	shooto	2025-10-05	第31回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2025/10/06/post-45001/
+e01691	shooto_ama	2025-10-05	第31回全日本アマチュア修斗選手権大会	小田原アリーナ	https://j-shooto.com/2025/10/06/post-45001/
 e08360	jbjjf	2025-10-05	第15回四国柔術選手権	徳島県・ソイジョイ武道館	https://docs.google.com/spreadsheets/d/e/2PACX-1vRCxaHVeZjkNNwZDvoaS954YnhicpygG7TolXAy2hOqgMblkpgSrxXpyoDtL1X-EQ3Y6Sjx-YL_IV01/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRCxaHVeZjkNNwZDvoaS954YnhicpygG7TolXAy2hOqgMblkpgSrxXpyoDtL1X-EQ3Y6Sjx-YL_IV01/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRCxaHVeZjkNNwZDvoaS954YnhicpygG7TolXAy2hOqgMblkpgSrxXpyoDtL1X-EQ3Y6Sjx-YL_IV01/pubhtml?gid=2036727323&single=true
 e06050	one	2025-10-10	ONE Friday Fights 128	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-128/ https://en.wikipedia.org/wiki/2025_in_ONE_Championship#ONE_Friday_Fights_128
 e07615	lfa	2025-10-10	LFA 219	F&M Bank Arena（米国テネシー州クラークスビル）	https://en.wikipedia.org/wiki/2025_in_Legacy_Fighting_Alliance
@@ -7371,7 +7371,7 @@ e07593	lfa	2026-10-09	LFA 243	Kaiser Permanente Arena（米国カリフォルニ
 e06204	ufc	2026-10-10	UFCファイトナイト・ラスベガス122: アレン vs. ダンカン	UFC APEX, ラスベガス アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan https://jp.ufc.com/event/ufc-fight-night-october-10-2026
 e07465	ksw	2026-10-10	KSW 122	Hala Podpromie（ポーランド・ジェシュフ）	https://en.wikipedia.org/wiki/2026_in_Konfrontacja_Sztuk_Walki
 e07884	pfl	2026-10-10	PFL Africa 3: Morocco	Mohammed V Sports Complex	https://en.wikipedia.org/wiki/PFL_Africa_3_(2026)
-e01725	shooto	2026-10-11	SECOND CAREER presents 第32回全日本アマチュア修斗選手権大会		https://j-shooto.com/2026/10/12/post-52440/
+e01725	shooto_ama	2026-10-11	SECOND CAREER presents 第32回全日本アマチュア修斗選手権大会		https://j-shooto.com/2026/10/12/post-52440/
 e04081	krossxover	2026-10-11	KROSS×OVER 10.11 大田PiO		https://www.boutreview.com/3/reports/item_153740.html
 e04082	pound_4_pound_fighting_championship	2026-10-11	リミットレス提供 PFC.42（10.11 札幌PODアリーナ）		https://www.boutreview.com/3/reports/item_153630.html 海外の記録サイト
 e04967	krossxover	2026-10-11	宿命 25〜syukumei		https://krossover.jp/?p=4272
