@@ -44,6 +44,7 @@
   "pancrase_ama"
  ],
  "keep_promotions": [
-  "daidojuku"
+  "daidojuku",
+  "gcm"
  ]
 }
