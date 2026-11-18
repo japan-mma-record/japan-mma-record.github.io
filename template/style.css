@@ -224,3 +224,6 @@ ol.pod .tm{font-size:12px;opacity:.7}
 ul.bres{list-style:none;margin:4px 14px 0;padding:8px 0 0;border-top:1px solid var(--line2);display:grid;gap:4px;font-size:14px}
 ul.bres .bm{margin-left:8px;font-size:12px;opacity:.7}
 ul.bres .mn{display:inline-block;min-width:6.2em;font-size:12px;font-family:var(--f-num,inherit);opacity:.65}
+.kbox{display:flex;flex-direction:column;align-items:flex-end;gap:6px;min-width:0}
+.kbox .kh{margin:0;font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--fg)}
+@media (max-width:640px){.kbox{align-items:flex-start}}
