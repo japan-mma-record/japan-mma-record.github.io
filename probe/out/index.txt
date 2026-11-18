@@ -1,5 +1,7 @@
-1 https://ibjjf.com/events/results 748236
-2 https://asjjf.org/ 349550
-3 https://sjjjf.org/ 103938
-4 https://asjjf.org/main/eventResults 42026
-5 https://www.ibjjfdb.com/ChampionshipResults/2306/PublicResults 190405
+1 https://ibjjf.com/events/2684/results 373712
+2 https://ibjjf.com/events/135/results 149809
+3 https://ibjjf.com/events/2929/results 235845
+4 https://ibjjf.com/events/2928/results 160631
+5 https://asjjf.org/main/eventResultsBySeason/454 41901
+6 https://dumau.asjjf.org/results/eventsListBySeason/7 113841
+7 https://matchlog.bjjhub.biz/ 186968
