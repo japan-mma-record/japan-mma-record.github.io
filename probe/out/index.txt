@@ -1,0 +1,13 @@
+1 https://cs.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&redirects=1&titles=Seznam%20turnaj%C5%AF%20Oktagonu%20MMA%7COktagon%20MMA%7COktagon%2037%7COktagon%2038%7COktagon%2039%7CSeznam%20%C5%A1ampion%C5%AF%20Oktagonu%20MMA 139226
+2 https://www.cagewarriors.com/events/ 1385
+3 https://www.cagewarriors.com/results/ 1390
+4 https://cagewarriors.com/events/past/ 1390
+5 https://www.bravecf.com/events 223524
+6 https://bravecf.com/results 24
+7 https://oktagonmma.com/en/events/ 355447
+8 https://oktagonmma.com/cs/udalosti/ 61087
+9 https://www.ksw.com/en/events 
+10 https://www.lfafighting.com/events 
+11 https://aca-mma.com/en/events/ 74138
+12 https://ru.wikipedia.org/w/api.php?action=query&format=json&list=search&srlimit=100&srsearch=Brave%20Combat%20Federation 21411
+13 https://pl.wikipedia.org/w/api.php?action=query&format=json&list=search&srlimit=100&srsearch=Cage%20Warriors%20gala 38620
