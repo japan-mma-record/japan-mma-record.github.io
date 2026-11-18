@@ -1,9 +1,0 @@
-1 http://image01w.seesaawiki.jp/p/b/pancraselab/f9e8b47e540e48d0.pdf 78836
-2 http://image02w.seesaawiki.jp/p/b/pancraselab/485ddc047b456216.pdf 108885
-3 http://image02w.seesaawiki.jp/p/b/pancraselab/8f30e612e3a05e89.pdf 121948
-4 http://image01w.seesaawiki.jp/p/b/pancraselab/23cb0fa55bb8cf01.pdf 58975
-5 http://image02w.seesaawiki.jp/p/b/pancraselab/fe0bdcfcb697b26f.pdf 141329
-6 http://image02w.seesaawiki.jp/p/b/pancraselab/d30c3cc79141607a.pdf 94893
-7 http://image01w.seesaawiki.jp/p/b/pancraselab/8667e5caef83ee7a.pdf 108344
-8 http://image02w.seesaawiki.jp/p/b/pancraselab/6d3090cac507cbe5.pdf 106588
-9 https://image01w.seesaawiki.jp/p/b/pancraselab/f9e8b47e540e48d0.pdf 78836
