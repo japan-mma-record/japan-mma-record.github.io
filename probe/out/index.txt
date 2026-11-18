@@ -1,0 +1,10 @@
+1 https://en.wikipedia-on-ipfs.org/wiki/2014_in_Cage_Warriors 5712
+2 https://en.wikipedia-on-ipfs.org/wiki/2015_in_Cage_Warriors 5712
+3 https://en.wikipedia-on-ipfs.org/wiki/2016_in_Cage_Warriors 5690
+4 https://en.wikipedia-on-ipfs.org/wiki/2017_in_Cage_Warriors 5712
+5 https://en.wikipedia-on-ipfs.org/wiki/2013_in_Cage_Warriors 5712
+6 https://espndeportes.espn.com/mma/fightcenter/_/id/401072514 0
+7 https://www.espn.com/mma/fightcenter/_/id/401072514/league/cw 0
+8 https://site.web.api.espn.com/apis/common/v3/sports/mma/cw/fightcenter/401072514 98
+9 https://site.api.espn.com/apis/site/v2/sports/mma/cw/scoreboard?dates=2018 80
+10 https://next-fight.com/en/event/cw-100-cage-warriors-100 656590
