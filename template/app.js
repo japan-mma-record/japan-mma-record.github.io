@@ -254,7 +254,8 @@ function vPromotions(){
   const card = p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会・${fmt(p.bo)}試合</span></a>`;
   const sec = (t,arr,note)=> arr.length ? `<h2 class="sec">${t}</h2>${note?`<p class="sub" style="font-size:13px;margin:0 0 10px">${note}</p>`:''}<div class="pgrid">${arr.map(card).join('')}</div>` : '';
   return `<main class="wrap"><div class="sh"><h1>団体</h1><span class="aside" style="font-weight:500">${all.length}団体</span></div>
-    ${sec('日本の団体', JP)}
+    ${(()=>{ const cy=new Date().getFullYear(); const act=JP.filter(p=>p.b>=cy-1), past=JP.filter(p=>p.b<cy-1).sort((a,b)=>b.b-a.b||b.n-a.n);
+      return sec('日本の団体（活動中）', act, `${cy-1}年以降に大会を開いている団体`)+sec('日本の団体（過去の団体）', past, `最後の大会が${cy-2}年以前の団体。最後の大会が新しい順`); })()}
     ${sec('世界の主要団体', W.map(k=>by[k]), '日本人選手が出た試合と、日本で開かれた大会の試合です')}
     ${sec('アマチュア', A.map(k=>by[k]))}
     ${sec('立ち技', S.map(k=>by[k]), 'MMAの戦績には数えません')}
