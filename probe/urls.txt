@@ -1,12 +1,10 @@
-YTDLP https://www.youtube.com/@ufc/videos
-YTDLP ytsearch15:Bellator MMA full fight
-YTDLP ytsearch15:PFL MMA full fight
-YTDLP ytsearch15:LFA Legacy Fighting Alliance full fight
-YTDLP ytsearch15:KSW free fight
-YTDLP ytsearch15:Cage Warriors full fight
-YTDLP ytsearch15:ADCC full match official
-YTDLP ytsearch15:CJI Craig Jones Invitational full match
-YTDLP ytsearch15:KROSS×OVER 総合格闘技 試合
-YTDLP ytsearch15:UFC Fight Pass free fight Japanese
-YTDLP https://www.youtube.com/@DEEPMMA/videos
-YTDLP https://www.youtube.com/@j-shootochannel8365/videos
+YTDLP https://www.youtube.com/channel/UC-kXNOU14XWpPW_0JdAebcA/videos
+YTDLP https://www.youtube.com/channel/UCPrONRG9hO1f-OrxW-WH-xg/videos
+YTDLP https://www.youtube.com/channel/UCMssVoZVgjD4pyeG6Ic-_Nw/videos
+YTDLP https://www.youtube.com/channel/UCRqvJVpMT9dzhX5UzRXPQbg/videos
+YTDLP https://www.youtube.com/channel/UCv_fwQqff6zEFDxfJh_03fg/videos
+YTDLP https://www.youtube.com/channel/UCg5E4hWlXrJX7Ukx80941FA/videos
+YTDLP https://www.youtube.com/@BellatorMMA/videos
+YTDLP https://www.youtube.com/@ADCCOfficial/videos
+YTDLP https://www.youtube.com/channel/UCPQDDlGe7lbgmEJ0ge7a_JA/videos
+YTDLP https://www.youtube.com/channel/UCeOvhU6RbmEj8GKFiIMWxKQ/videos
