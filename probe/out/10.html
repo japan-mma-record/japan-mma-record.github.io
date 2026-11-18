@@ -11,22 +11,19 @@
 
 
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8c51996690ccd0d6918","applicationID":"311541416","transactionName":"cllYRUFaDloBRBwDQlRYQkIcRgpZEw==","queueTime":1,"applicationTime":19,"agent":""}</script>
-<script type="text/javascript">(window.NREUM||(NREUM={})).init={"ajax":{"deny_list":["bam.nr-data.net"]},"feature_flags":["rum_v2"]};(window.NREUM||(NREUM={})).loader_config={"licenseKey":"NRJS-8c51996690ccd0d6918","applicationID":"311541416","browserID":"311542241"};;/*! For license information please see nr-loader-rum-1.324.1.min.js.LICENSE.txt */
-(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.1.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-zuv39xzZ8AH/HwpVrtkixvcBuOFo2ydcFzMtXjx+3Iwr5g++inX+6YDH7J/8fOCAtBetz8aDyaYCRkGy2nnG/w=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <meta content='International Brazilian Jiu-Jitsu Federation' name='description'>
-<meta content='ibjjf championships, Asian Jiu-Jitsu IBJJF Championship 2024' name='keywords'>
-<meta content='Asian Jiu-Jitsu IBJJF Championship 2024' property='og:title'>
+<meta content='ibjjf, jiu-jitsu, bjj' name='keywords'>
+<meta content='IBJJF | International Brazilian Jiu-Jitsu Federation' property='og:title'>
 <meta content='website' property='og:type'>
-<meta content='https://ibjjf.com/events/asian-jiu-jitsu-ibjjf-championship-2024' property='og:url'>
+<meta content='https://ibjjf.com/404' property='og:url'>
 <meta content='https://ibjjf.com/packs/media/images/ibjjf/logo-ibjjf-horizontal-WHITE-5052f98303bf969a21192eabba044849.svg' itemprop='image' property='og:image'>
 <meta content='International Brazilian Jiu-Jitsu Federation' property='og:description'>
-<meta content='Asian Jiu-Jitsu IBJJF Championship 2024' property='og:site_name'>
+<meta content='IBJJF | International Brazilian Jiu-Jitsu Federation' property='og:site_name'>
 <meta content='summary_large_image' name='twitter:card'>
 <meta content='@ibjjf' name='twitter:site'>
-<meta content='Asian Jiu-Jitsu IBJJF Championship 2024' name='twitter:title'>
+<meta content='IBJJF | International Brazilian Jiu-Jitsu Federation' name='twitter:title'>
 <meta content='International Brazilian Jiu-Jitsu Federation' name='twitter:description'>
 <meta content='@ibjjf' name='twitter:creator'>
 <meta content='https://ibjjf.com/packs/media/images/ibjjf/logo-ibjjf-horizontal-WHITE-5052f98303bf969a21192eabba044849.svg' name='twitter:image:src'>
@@ -36,12 +33,12 @@
   window.DpMessengerOptions = { showLauncherButton: true }
 </script>
 
-<title>Asian Jiu-Jitsu IBJJF Championship 2024 | IBJJF</title>
+<title>IBJJF | International Brazilian Jiu-Jitsu Federation</title>
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="Ig2HsObu3drucBWKhH9QMn1rgMf8HX1v19tNF8ljOgAAkQDtO5faZhqdwx7IwTWH-6l3U6xh9mybgn8CGIXqqw" />
+<meta name="csrf-token" content="vxl1gQABBfkle6LEE0m7NMJpiLo-UkMmSvnb6Knv60WaK0Ustf87y6AHzpMap71jcfjhxENMAmYp1Q3NQzWh-g" />
 <link rel="stylesheet" media="all" href="/packs/css/ibjjf-440ec5cd.css" />
 </head>
-<body class='events show'>
+<body class='errors not-found'>
 <section class='row no-gutters' id='top-bar'>
 <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
 <nav class='navbar navbar-expand-xl'>
@@ -310,579 +307,30 @@ Rules
 </section>
 
 
+<section class='row no-gutters'><div class='col-12'>
 <section class='row no-gutters'>
+<div class='col-12 page-title'>
+<h1>Page not found</h1>
+<div class='divider'></div>
+</div>
+</section>
 
-
-
-<script src='//maps.google.com/maps/api/js?key=AIzaSyAOHxC64CZ9vAddkvk05UN-0Y5kEe9PrCg'></script>
-<div class='container-fluid' id='event-page'>
-<div class='row no-gutters'>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='row no-gutters'>
+</div>
+<div class='container text-center' id='error-page'>
 <div class='col-12'>
-<div class='event-banner' style='background: url(&#39;https://ibjjf.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUFYIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b7132b5b231114da9e1cb6d7121db12d31127563/asian-2024-background-website%20(1).jpg&#39;) center center no-repeat;background-size:cover'>
-<div class='logo'><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbDhYIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--db3c534f615b5095e4c16ac9c012999f14b2127d/asian-2024-logo-website-white%20(1).png" /></div>
+<div class='error-number text-center'>404</div>
 </div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='row no-gutters date-weight-disclaimer my-5'>
 <div class='col-12'>
-<div class='date-weight d-flex justify-content-between'>
-<div class='date'>June 28th - 30th, 2024</div>
-<div class='weight'>
-<span>3</span>
-<span>
-<i class='fa fa-star bg-yellow'></i>
-</span>
+<div class='title'>Something&#39;s missing</div>
+<div class='subtitle'>We can&#39;t find the page you&#39;re looking for. Please check the URL to make sure the path is correct.</div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='row no-gutters location-prices-actions my-5'>
-<div class='col-sm-12 col-md-4 location'>
-<div class='title'>Location</div>
-<address>
-<div class='local'>Chiba Port Arena</div>
-<div class='address_lines'><div class="address_lines">1-20 Tonyacho, Chuo Ward</div></div>
-<div class='complement'>Chiba</div>
-<div class='complement2'><div class="complement2">- - 260-0025</div></div>
-<div class='country'>Japan</div>
-</address>
-</div>
-<div class='col-sm-12 col-md-4 prices'>
-<div class='title'>Prices</div>
-<div class='price'>
-<div class='price-title'>Standard</div>
-<div class='price-string'>$108.00 (USD)   until April 10th, 2024</div>
-<div class='price-string'>$114.00 (USD)   until May 15th, 2024</div>
-<div class='price-string'>$120.00 (USD)   until June 19th, 2024</div>
-</div>
-<div class='spectator-entrance my-3'>
-<div class='title'>Spectator Entrance Fee</div>
-<div class='value'><p>¥1000<br>
-Cash only</p>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-4 event-actions'>
-
-<a href="https://www.bjjcompsystem.com/tournaments/2482/schedule" role="button" target="_blank" class="btn btn-outline-primary">Schedule</a>
-<a href="https://www.bjjcompsystem.com" role="button" target="_blank" class="btn btn-outline-primary">Brackets</a>
-<a href="/events/2482/athletes-list-by-academy-teams" role="button" class="btn btn-outline-primary">Athletes List by teams</a>
-<a href="/events/2482/athletes-list-by-divisions" role="button" class="btn btn-outline-primary">Athletes List by divisions</a>
-<a href="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbDRYIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--05db5bcd70453a4c1c4aebfb3de5a04747081aa6/tabela-gi-kg-majors.pdf" role="button" target="_blank" class="btn btn-outline-primary">Weight Chart</a>
-<a href="/weigh-ins" role="button" target="_blank" class="btn btn-outline-primary">Weigh Ins</a>
-<a href="/events/2482/results" role="button" class="btn btn-outline-primary"><span class="translation_missing" title="translation missing: en.event_page.buttons.results">Results</span></a>
-</div>
-</div>
-<div class='row no-gutters registration-button my-5'>
-<div class='col-sm-12 text-center'>
-<a class="btn btn-outline-primary disabled" href="#">This event has reached full capacity and registration is now closed.</a>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='relevant-dates'>
-<div class='title'>RELEVANT DATES</div>
-<div class='disclamer'>* Date(s) and time(s) based on event location</div>
-<div class='row'>
-<div class='col-sm-12 col-md-6'>
-<div class='athletes-academy-registration'>
-<div class='description d-flex justify-content-between'>
-Affiliation Deadline
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#athlete-academy-registration-deadline' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 6th, 2024
-<div class='collapse my-3' id='athlete-academy-registration-deadline'>
-<p>This is the preferred deadline for academies to be registered and for athletes to have valid membership in order to register for the championship.</p><p>Athletes must have active membership through the event dates under their current belt rank and academy in order to register for championships.</p><p>Academies must be registered with IBJJF for their students to request membership.</p><p>IBJJF cannot guarantee that applications submitted after the Affiliation Deadline will be processed in time for athletes to register for championship.</p><p>For more information on how to request or renew your membership, please <a href='/athletes/become-a-member' target='_blank'>click here</a>.</p><p>For more information on how to register your academy, please <a href='/join-us' target='_blank'>click here</a>.</p>
-</div>
-</div>
-</div>
-<div class='registration-deadline'>
-<div class='description d-flex justify-content-between'>
-Registration deadline
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#registration-deadline' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 19th, 2024
-<div class='collapse my-3' id='registration-deadline'>
-<p>Before registering, athletes must have active membership that will be valid through the last day of the championship.</p><p>Athletes with expired or incomplete membership applications are ineligible to register.</p><p>Athletes are strongly advised to complete their championship registrations before making any travel arrangements.</p><p>IBJJF reserves the right to close registration prior to the Registration Deadline if the event reaches full capacity.</p><p>The Registration Deadline expires at 11:59 PM, event local time, unless the championship reaches full capacity prior to that date.</p><p>The registration for this tournament will not be confirmed until the payment is completed (a pending registration does not guarantee the spot in the tournament).</p>
-</div>
-</div>
-</div>
-<div class='athlete-correction'>
-<div class='description d-flex justify-content-between'>
-Athlete Correction Deadline
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#athlete-correction-deadline' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 20th, 2024
-<div class='collapse my-3' id='athlete-correction-deadline'>
-<p>Athletes may edit their team, age division, and weight division by logging into their account at <a href='https://www.ibjjfdb.com'>www.ibjjfdb.com</a> until the Athlete Correction Deadline.</p><p>Athletes that miss the Athlete Correction Deadline should contact their professor to request the change during the Professor Correction Period.</p><p>Athletes unable to edit their tournament registration from their profile should contact <a href='mailto:ibjjf@ibjjf.com'>ibjjf@ibjjf.com</a> with their requested change within the deadline.</p><p>For security purposes, the request must be made from the athlete’s email address associated with the IBJJF account.</p><p>If you no longer have access to the email registered on your IBJJF account, please email us a copy of your government-issued photo ID along with your request.</p><p>Athletes who requested a change must verify the correction(s) on the Athlete List. Once the correction has been completed, the Athlete List will update within 30 minutes.</p><p>The Athlete Correction Deadline expires at 11:59 PM, event local time.</p>
-</div>
-</div>
-</div>
-<div class='team-correction'>
-<div class='description d-flex justify-content-between'>
-Professor Correction Period
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#team-correction' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 21st - 22nd, 2024
-<div class='collapse my-3' id='team-correction'>
-<p>Authorized professors may make corrections to their team lists during the Professor Correction Period by logging into their account at <a href='https://www.ibjjfdb.com'>www.ibjjfdb.com</a>.</p><p>Authorized professors unable to make changes online should email their changes from their registered email address to <a href='mailto:ibjjf@ibjjf.com'>ibjjf@ibjjf.com</a>, during the Professor Correction Period.</p><p>For security purposes, all professor requests must be made from the email address associated with the professor’s IBJJF account.</p><p>If you no longer have access to the email registered on your IBJJF account, please email us a copy of your government-issued photo ID along with your request.</p><p>Professors who completed a correction must verify the correction(s) on the Athlete List. The Athlete List will update every 30 minutes.</p><p>The Professor Correction Period expires at 11:59 PM, event local time.</p>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-6'>
-<div class='checkdate'>
-<div class='description d-flex justify-content-between'>
-Registration Checkday
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#checkdate' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 25th, 2024
-<div class='collapse my-3' id='checkdate'>
-<p>Single-bracket competitors should email <a href='mailto:ibjjf@ibjjf.com'>ibjjf@ibjjf.com</a> with their preferred championship registration option within the deadline. Check the single-bracket options on the event’s page.</p><p>Athletes and professors who requested a change must verify the correction(s) on the Athlete List to ensure the correction was performed correctly.</p><p>Only mistakes made by IBJJF staff are eligible for correction on the Registration Checkday. New correction requests will not be considered.</p><p>If you need assistance with a correction, please email ibjjf@ibjjf.com within the deadline.</p><p>For security purposes, the request must be made from the athlete’s email address associated with the IBJJF account.</p><p>If you no longer have access to the email registered on your IBJJF account, please email us a copy of your government-issued photo ID along with your request.</p><p>The deadline to contact IBJJF is 5 PM, event local time.</p>
-</div>
-</div>
-</div>
-<div class='schedule-release'>
-<div class='description d-flex justify-content-between'>
-Schedule Release Date
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#schedule-release' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 25th, 2024
-<div class='collapse my-3' id='schedule-release'>
-<p>On this date, IBJJF will release the final schedule. Time of release will depend upon the championship’s organization.</p>
-</div>
-</div>
-</div>
-<div class='brackets-release'>
-<div class='description d-flex justify-content-between'>
-Brackets Release Date
-<a aria-controls='relevantDates' aria-expanded='false' data-accordion='' data-toggle='collapse' href='#brackets-release' role='button'>
-<i class='fa fa-plus-square'></i>
-</a>
-</div>
-<div class='date'>
-June 25th, 2024
-<div class='collapse my-3' id='brackets-release'>
-<p>The brackets will be available online at <a href='https://www.bjjcompsystem.com'>bjjcompsystem.com</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='row no-gutters sponsors'>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="http://ibjjf.com"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUVYIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b5b6a61a9ef2dc852d9a299f52d8ca924652e51/ibjjf%20logo.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="http://jiujitsucon.com/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUlYIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--700433cb420d0167d5372354b1bd59637d5a7bb1/jjcon.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://kingz.jp/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjhaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a9d0ffd99abd766da2ac1e8a922b1e7087d5e11c/Kingz%20japan.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://www.fluory.com/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4270cd5aaff0a191085d45bf5e4e40f24b7d9bdd/fluory.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://www.bullterrier.co.jp/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0VaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cdab273765afd3823e7616f848fb47af2d7fd953/bullterrier.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://shop.jhoodjapan.com/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0laIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e98534e683bcd44631002af7df2387a2dff39a9a/jhood.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://www.almaweb.jp/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc01aIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--54bc4f18b86d6eb1ea18cd73528c6530edf09c43/alma.png" /></a></div>
-</div>
-<div class='col-sm-12 col-md-6 col-lg-4 col-xl-3'>
-<div class='sponsor'><a target="_blank" href="https://fujisports.com/"><img src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1FaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--53964715c02cf409e7522181804b867ba1ddb702/fuji.png" /></a></div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='row no-gutters'>
 <div class='col-12'>
-<div class='map embed-responsive embed-responsive-16by9'>
-<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOHxC64CZ9vAddkvk05UN-0Y5kEe9PrCg&amp;q=35.603553040031436,140.11193030406432" allowfullscreen="allowfullscreen" class="embed-responsive-item"></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='belt-age-divisions'>
-<div class='title'>BELT &amp; AGE DIVISIONS</div>
-<div class='row no-gutters d-lg-none d-xl-none d-flex'>
-<div class='col-12'>
-<div class='table-title'>Male and Female</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>2008</div>
-<div class='age'><span class="translation_missing" title="translation missing: en.age_divisions.juvenile1">Juvenile1</span></div>
-<div class='belts'>White, Blue, Purple</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>2007</div>
-<div class='age'><span class="translation_missing" title="translation missing: en.age_divisions.juvenile2">Juvenile2</span></div>
-<div class='belts'>White, Blue, Purple</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>2006 and before</div>
-<div class='age'>Adult</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1994 and before</div>
-<div class='age'>Master 1</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1988 and before</div>
-<div class='age'>Master 2</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1983 and before</div>
-<div class='age'>Master 3</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1978 and before</div>
-<div class='age'>Master 4</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1973 and before</div>
-<div class='age'>Master 5</div>
-<div class='belts'>White, Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1968 and before</div>
-<div class='age'>Master 6</div>
-<div class='belts'>Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters division'>
-<div class='col-12'>
-<div class='years'>1963 and before</div>
-<div class='age'>Master 7</div>
-<div class='belts'>Blue, Purple, Brown, Black</div>
-</div>
-</div>
-<div class='row no-gutters'>
-<div class='col-12'>
-<div class='disclaimer disclaimer'><p>*Any athlete who has proven to be a black belt in judo, has fought MMA professionally, has an amateur MMA record or has proven experience in wrestling, Olympic wrestling or Greco-Roman wrestling, can not participate in any IBJJF event as a white belt.</p><p>Proven experience in the U.S. consists of having competed at the collegiate level or higher and in other countries, having competed in nationwide events.</p></div>
-</div>
+<div class='return-home'>
+<a class='btn btn-outline-primary' href='/'>Return home</a>
 </div>
 </div>
 </div>
 
-<div class='row d-none d-sm-none d-md-none d-lg-flex'>
-<div class='col-md-8'>
-<div class='table-title'>Male and Female</div>
-<table class='table'>
-<tbody>
-<tr>
-<th class='bg-primary'>Year Of Birth</th>
-<th class='bg-age-division'>Age Division</th>
-<th class='bg-primary'>Belt</th>
-</tr>
-<tr>
-<td class='bg-year-belt'>2008</td>
-<td class='bg-age-division'><span class="translation_missing" title="translation missing: en.age_divisions.juvenile1">Juvenile1</span></td>
-<td class='bg-year-belt'>White, Blue, Purple</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>2007</td>
-<td class='bg-age-division'><span class="translation_missing" title="translation missing: en.age_divisions.juvenile2">Juvenile2</span></td>
-<td class='bg-year-belt'>White, Blue, Purple</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>2006 and before</td>
-<td class='bg-age-division'>Adult</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1994 and before</td>
-<td class='bg-age-division'>Master 1</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1988 and before</td>
-<td class='bg-age-division'>Master 2</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1983 and before</td>
-<td class='bg-age-division'>Master 3</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1978 and before</td>
-<td class='bg-age-division'>Master 4</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1973 and before</td>
-<td class='bg-age-division'>Master 5</td>
-<td class='bg-year-belt'>White, Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1968 and before</td>
-<td class='bg-age-division'>Master 6</td>
-<td class='bg-year-belt'>Blue, Purple, Brown, Black</td>
-</tr>
-<tr>
-<td class='bg-year-belt'>1963 and before</td>
-<td class='bg-age-division'>Master 7</td>
-<td class='bg-year-belt'>Blue, Purple, Brown, Black</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class='col-md-4'>
-<div class='disclaimer'><p>*Any athlete who has proven to be a black belt in judo, has fought MMA professionally, has an amateur MMA record or has proven experience in wrestling, Olympic wrestling or Greco-Roman wrestling, can not participate in any IBJJF event as a white belt.</p><p>Proven experience in the U.S. consists of having competed at the collegiate level or higher and in other countries, having competed in nationwide events.</p></div>
-</div>
-</div>
-
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='open-class-info'>
-<div class='title'>OPEN CLASS</div>
-<div class='row no-gutters'>
-<div class='col-12'>
-<p><p><strong>Athletes who placed 1st, 2nd or 3rd are eligible to register for the Open Class bracket.</strong></p>
-
-<p>Juvenile Blue and Purple Belts will have two Open Class divisions: </p>
-
-<p>1 - Open Class Light, from Rooster to Light;</p>
-
-<p>2 - Open Class Heavy, from Middle to Ultra-Heavy.</p>
-
-<p><strong>Exceptions:</strong></p>
-
-<p>White Belts (all weight divisions) - There will not be an Open Class for these divisions.</p>
-
-<p>Black Belt Adult - All athletes are eligible to compete in Open Class.</p>
-
-<p><strong>How to register?</strong></p>
-
-<p>The athletes who are willing to register for the Open Class may do so at the event at the Open Class registration table. </p>
-
-<p>Athletes must register in Open Class within 15 minutes after receiving their medal awards. </p>
-
-<p>Athletes will not be able to register for the Open Class division after its registration deadline.</p>
-
-<p>* The Open Class start time posted in the event’s schedule it’s an estimated start time only. The division start time can vary throughout the event day due to several factors, such as: number of people registered, previous fight time duration, inside the ring medical care, etc. </p>
-
-<p>The competitors who are willing to participate in the Open Class divisions must have a flexible schedule, in order to be available for the start time of the division, whenever that may be.</p>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class='col-sm-12 col-md-12 col-lg-12'>
-<div class='important-info'>
-<div class='title'>IMPORTANT INFO</div>
-<div class='row no-gutters'>
-<div class='col-12'>
-<p><p><strong>Registration </strong></p>
-
-<p>We try to accommodate as many athletes as possible in our events comfortably, but there is a limit on the number of athletes in order to guarantee a high quality event.</p>
-
-<p>IBJJF reserves the right to close registration when we reach full capacity, or on the day of the appointed event registration deadline, whichever comes first.</p>
-
-<p>We strongly suggest that athlete registration is finalized before making any travel arrangements.</p>
-
-<p>Any false information provided during registration such as, but not limited to, DOB, may lead to immediate disqualification. Such actions are subject to suspension or even banishment from future IBJJF events.</p>
-
-<p><strong>Refund Policy</strong></p>
-
-<p>The registration fee is non-refundable and non-transferable.</p>
-
-<p>IBJJF cannot guarantee the athletes will show up for the tournament. Therefore, IBJJF will not refund athletes who end up without a match due to a non-show for his / her opponent.</p>
-
-<p>Exemption: Athletes who are alone in their division are eligible to receive a full refund of the registration if they contact ibjjf@ibjjf.com and request to withdraw their name from the competition on the day of the tournament’s Registration Checkday, before 5 PM (event local time). If the athlete remains alone in the division by 5 PM, the refund will be processed.</p>
-
-<p>*If an athlete’s division becomes populated with an additional athlete(s) on or before the Registration Checkday, the athlete will remain in their division and will no longer qualify for a refund.</p>
-
-<p>For more detailed information regarding athletes who are alone in their division, please refer to the "Athlete Alone in the Division" section found below.</p>
-
-<p><strong>Competition Day - Show up Time and Weigh-in</strong></p>
-
-<p>It is the responsibility of the athlete to be knowledgeable of the rules and guidelines pertaining to the sport (as outlined in the IBJJF Rules Book).</p>
-
-<p>It is mandatory to have an official government photo ID or an IBJJF membership card at all times.  Before each fight, athletes will be asked to show their valid form of photo identification (ID) to the officials. Make sure you have it on hand.</p>
-
-<p>If you have any issues regarding your ID documents, please go to the Customer Service booth when it is available, or the Administration Table.</p>
-
-<p>Refer to the schedule link in order to know when you should be at the event ready to compete and inside the warm up area.</p>
-
-<p>Competitors must be at the venue ready to compete, one hour prior to the start time for their division in the case the tournament is running earlier than expected.</p>
-
-<p>The division start time posted in the event’s schedule it’s an estimated start time only. The division start time can vary throughout the event day due to several factors that are beyond our control.</p>
-
-<p>The official weight measurements of this event is in <strong>KILOGRAMS.</strong></p>
-
-<p>Official weigh-in will occur immediately before the first fight. Only one attempt to make weight is allowed.</p>
-
-<p>Be advised the athletes will be disqualified in their division if they weigh in heavier than the weight listed for the division they registered in.</p>
-
-<p>Athletes are subject to blood and/or urine testing for any substance or method on the World Anti-Doping Agency (“WADA”) Prohibited List (<a href="http://www.usada.org/prohibited-list/">click here to view</a>). You may review the WADA Code by <a href="https://www.wada-ama.org/en/resources/the-code/world-anti-doping-code">clicking here.</a></p>
-
-<p><strong>Athletes Under 18 Years Old</strong></p>
-
-<p>Athletes 18 years old or younger, who have previously worn a belt from a belt rank that does not exist for their current age range, according to the IBJJF Graduation System, will only be allowed to compete in a belt rank that matches that athlete's current age group.</p>
-
-<p>For tournaments with a spectator fee, athletes registered in the Juvenile divisions are allowed to enter with one companion for free on the day they compete, as long as the companion checks in at the entrance venue at the same time as the athlete enters the venue.</p>
-
-<p><strong>Black Belt Coaching Area </strong></p>
-
-<p>If the tournament doesn't have a coaching area available, coaching will be prohibited within the barricaded area/competition area. Coaching will be allowed outside of the barricaded area only.</p>
-
-<p>If the tournament has a specific designated  area for coaches, only coaches with valid IBJJF Black Belt membership ID will be allowed inside the coaching area.</p>
-
-<p>Black Belt Coaches will need to have valid membership prior to the competition day. Memberships will not be renewed in person at the event.</p>
-
-<p><strong>Athlete Alone in the Division</strong></p>
-
-<p>Posted below are the three options for single-bracket competitors. Single-bracket competitors must inform IBJJF via their registered email which option they choose by 5 PM (event local time) on the event's Registration Checkday - ibjjf@ibjjf.com.</p>
-
-<p>In the case that the division becomes populated with additional athletes during the Registration Checkday period, these options will no longer apply and the athlete will remain in the original division.</p>
-
-<p>OPTION #1 </p>
-
-<p>Athletes may stay in their current weight class, make weight, and receive the 1st place medal for the division.</p>
-
-<p>Once the athlete has had their weight and uniform checked, they will then be eligible to register for the Open Class division in the case that the age and belt division offers an Open Class division.</p>
-
-<p>Please note: Option #1 is the default option if athletes do not respond to ibjjf@ibjjf.com by 5 PM (event local time) before the Registration Checkday deadline.</p>
-
-<p>OPTION #2 </p>
-
-<p>Move up or down in age and/or weight division.</p>
-
-<p>By moving up or down in age and/or weight, athletes may be paired with an opponent. However, IBJJF cannot guarantee that an opponent will be available. Athletes may select a second change option in case their first choice of division change is not available.</p>
-
-<p>Athletes can make their selection(s) after viewing the Athlete’s List by Division. The decision to move up or down in age and/or weight should be made solely at the athlete's discretion. If athletes choose OPTION 2 to change divisions, please be aware that athletes will be required to make weight for the new division. In order to request to change divisions, athletes will need to specify the exact division that they wish to be moved to. Athletes can specify a first and second choice (limited to the divisions available for the tournament).</p>
-
-<p>Master and Adult division athletes: Athletes can move up or down in age by specifying an age-eligible division determined by the athlete's birth year. For example, an athlete eligible to compete in Master 2 may move to Master 1 or Adult, but may not move into Master 3 unless they are eligible.</p>
-
-<p>Juvenile division athletes: Juvenile division athletes can move from Juvenile 1 to Juvenile 2 (if applicable) when alone in their bracket on the Registration Checkday. Juvenile athletes will not be allowed to move to the Adult division. *The request to move up one age division must be done by the parent / legal guardian registered on the athlete"s IBJJF account.</p>
-
-<p>OPTION #3 </p>
-
-<p>Withdraw from the tournament if alone at 5 PM on the Registration Checkday.</p>
-
-<p>Athletes who are alone in their division on the Registration Checkday are eligible to receive a full refund of their tournament registration fee if they contact ibjjf@ibjjf.com PRIOR to the end of the Registration Checkday deadline. Refunds will be processed after 5 PM (event local time) if the athlete is still alone after the Checkday period.</p>
-
-<p><strong>Teams</strong></p>
-
-<p>Each team can only have two athletes in the same division bracket of age/weight/belt. If your team has more than two athletes in the same division, the Professor needs to email ibjjf@ibjjf.com prior to the Professor Correction Period deadline in order to edit their student’s registration. This rule does not prevent you from registering for the event.</p>
-
-<p>Athletes from the exact same team will not fight against each other before the final match, except in a three athletes bracket.</p>
-
-<p><strong>Medals and Trophy</strong></p>
-
-<p>Athletes who place in 1st, 2nd and 3rd in their division will receive a medal at the event. </p>
-
-<p>All the medals should be picked up at the event's podium. IBJJF does not mail out unclaimed or lost medals after the tournaments.</p>
-
-<p>There will be four trophies awarded for this event:</p>
-
-<p>Adult Male</p>
-
-<p>Adult Female</p>
-
-<p>Juvenile</p>
-
-<p>Master</p>
-
-<p>Novice</p>
-
-<p><strong>Tournament T-Shirt</strong></p>
-
-<p>Athletes will receive a complimentary event t-shirt which they must pick up at the event's shirt booth.</p>
-
-<p>IBJJF does not mail out unclaimed t-shirts after the tournaments.</p>
-
-<p><strong>What Is Not Permitted Inside the Venue</strong></p>
-
-<p>Signs/flags are not permitted inside the event facility.</p>
-
-<p>Food, pets, professional cameras and guns are not permitted inside the event facility.</p>
-
-<p>Please note that video recording for social media live streaming of fights will not be allowed at any time.</p>
-
-<p><strong>Media Professionals </strong></p>
-
-<p>Media application <a href="https://docs.google.com/forms/d/e/1FAIpQLScCwAeihXQsBJl7gbyNRsLlA6zvqCNIVpz9GxAxlD8ZlTHcXQ/viewform?usp=sf_link"><strong>[here]</strong></a></p>
-
-<p>Media passes are not guaranteed upon application. All applications are up to review. The number of passes granted are limited.</p>
-
-<p>Approval and denial emails will be sent approximately 2 weeks prior to the event.</p>
-
-<p>A government issued photo ID will be required to claim the press vest in case of approval. The IBJJF staff will hold your ID until you return the press vest.</p>
-
-<p>Doors will open approximately one hour before the first match. Please check the schedule day release above to find this information.</p>
-
-<p>Please note that video recording and social media live streaming of fights will not be allowed at any time.</p>
-
-<p><strong>Organization</strong></p>
-
-<p>This tournament is organized by the International BJJ Inc. in partnership with the International Brazilian Jiu-Jitsu Federation and the Japan Brazilian Jiu-Jitsu Federation.</p>
-</p>
-</div>
-</div>
-<div class='row no-gutters registration-button my-5'>
-<div class='col-12 text-center'>
-<a class="btn btn-outline-primary disabled" href="#">This event has reached full capacity and registration is now closed.</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <a class='scroll-to-top scroll-to-top--ibjjf'></a>
 <section class='row no-gutters'>
