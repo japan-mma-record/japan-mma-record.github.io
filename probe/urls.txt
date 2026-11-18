@@ -1,2 +1,1 @@
-https://next-fight.com/sitemap.xml
-https://next-fight.com/robots.txt
+https://next-fight.com/sitemaps/events.xml

@@ -1,2 +1,0 @@
-1 https://next-fight.com/sitemap.xml 564
-2 https://next-fight.com/robots.txt 3355
