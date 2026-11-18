@@ -202,3 +202,18 @@ ol.pod li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
 ol.pod .pl{display:inline-block;min-width:4.5em;font-size:12px;font-weight:700}
 ol.pod .p1{color:#d4a72c} ol.pod .p2{color:#a9aeb6} ol.pod .p3{color:#c07a4a}
 ol.pod .tm{font-size:12px;opacity:.7}
+
+/* 団体戦（QUINTET） */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:0 0 8px}
+.tcard{border:1px solid var(--line2);background:var(--bg2);padding:12px 14px;min-width:0}
+.tcard .tn{margin:0 0 6px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.tcard .tr{font-size:12px;font-weight:700;opacity:.85}
+.tcard .r0{color:#d4a72c} .tcard .r1{color:#a9aeb6}
+.tcard ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;font-size:14px}
+.tcard .ps{display:inline-block;width:3em;font-size:12px;opacity:.6}
+.qmatch{margin:0 0 18px}
+.qmatch .qh{margin:0 0 6px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.qmatch .qs{font-size:12px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border:1px solid var(--line2)}
+.qmatch .qw{font-size:13px;opacity:.8}
+.qmatch td.ql,.qmatch th.ql{text-align:right}
+.qmatch td.qm,.qmatch th.qm{text-align:center;font-size:13px}

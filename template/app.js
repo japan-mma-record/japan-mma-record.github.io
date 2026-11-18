@@ -131,8 +131,44 @@ function bjjView(k){
   };
   if((D.meta.pd||[]).includes(k)) fetch('pd/'+encodeURIComponent(k)+'.json').then(r=>r.ok?r.json():null).then(go).catch(()=>go(null)); else go(null);
 }
+/* 団体戦（QUINTETなど）：チームごとの対戦にまとめ、勝ち抜きの流れが見えるようにする */
+const POS=['先鋒','次鋒','中堅','副将','大将','補欠'];
+function qn(s){ return (s||'').replace(/[\s　・･“”"'’]/g,'').toLowerCase(); }
+function teamView(k){
+  const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
+  const bs=D.bouts[k]||[];
+  const teams=ts.map(t=>{ const raw=(t[1]||'').replace(/（[^）]*オーダー[^）]*）/g,''); const mem=[]; const re=new RegExp('('+POS.join('|')+')','g'); const parts=raw.split(re); for(let i=1;i<parts.length;i+=2){ const n=(parts[i+1]||'').replace(/^[・\s]+|[・\s]+$/g,''); if(n) mem.push([parts[i],n]); } return {name:t[0],res:t[2]||'',mem}; });
+  const who=new Map(); teams.forEach((t,i)=>t.mem.forEach(m=>who.set(qn(m[1]),i)));
+  const tOf=n=>{ const q=qn(n); if(who.has(q)) return who.get(q); for(const [key,i] of who){ if(key.length>2&&(q.includes(key)||key.includes(q))) return i; } return -1; };
+  const indiv=[], groups=[];
+  bs.forEach(b=>{ if(/個人戦|ワンマッチ|スーパーファイト/.test(b[9]||'')){ indiv.push(b); return; }
+    let a=tOf(b[2]), c=tOf(b[4]); const g=groups[groups.length-1];
+    if(g&&((a<0&&c<0)||((a<0||g.t.includes(a))&&(c<0||g.t.includes(c))))){ g.b.push(b); return; }
+    if(a<0||c<0||a===c){ if(g){ g.b.push(b); return; } }
+    groups.push({t:[a,c],b:[b]}); });
+  const n=groups.length, stage=i=> n===3?(i<2?'1回戦':'決勝'): n===7?(i<4?'1回戦':i<6?'準決勝':'決勝'): n===1?'決勝':`第${i+1}試合`;
+  const ord=['優勝','準優勝','3位','1回戦敗退'];
+  const rank=t=>{const i=ord.findIndex(x=>t.res.startsWith(x)); return i<0?9:i;};
+  const tcards=teams.slice().sort((a,b)=>rank(a)-rank(b)).map(t=>`<div class="tcard"><p class="tn"><b>${esc(t.name)}</b>${t.res?`<span class="tr r${rank(t)}">${esc(t.res)}</span>`:''}</p><ol>${t.mem.map(m=>`<li><span class="ps">${esc(m[0])}</span>${esc(m[1])}</li>`).join('')}</ol></div>`).join('');
+  const side=(b,ti)=>{ const a=tOf(b[2]); return (a===ti||(a<0&&tOf(b[4])!==ti))?1:2; };
+  const gtbl=(g,i)=>{ const [L,R]=g.t; const LN=teams[L]?teams[L].name:'', RN=teams[R]?teams[R].name:'';
+    const last=g.b[g.b.length-1]; let win='';
+    if(last&&(last[5]===1||last[5]===2)){ const ws=last[5]===1?tOf(last[2]):tOf(last[4]); if(ws>=0) win=teams[ws].name; }
+    if(!win){ const st=stage(i); const adv=[L,R].filter(x=>teams[x]&&(st==='決勝'?/^優勝/.test(teams[x].res):!/敗退/.test(teams[x].res))); if(adv.length===1) win=teams[adv[0]].name; }
+    const rows=g.b.map((b,j)=>{ const s1=side(b,L); const lf=s1===1?[b[1],b[2]]:[b[3],b[4]], rf=s1===1?[b[3],b[4]]:[b[1],b[2]]; const lw=(b[5]===1&&s1===1)||(b[5]===2&&s1===2), rw=(b[5]===1&&s1===2)||(b[5]===2&&s1===1);
+      const mk=w=>w?'<span class="rs w">勝</span>':(b[5]==='d'?'<span class="rs o">分</span>':(b[5]===1||b[5]===2)?'<span class="rs l">負</span>':'');
+      return `<tr><td class="num">${j+1}</td><td class="ql">${flink(lf[0],lf[1])} ${mk(lw)}</td><td class="qm">${esc(b[6]||'')}${b[8]?`<br><small>${esc(b[8])}</small>`:''}</td><td class="qr">${mk(rw)} ${flink(rf[0],rf[1])}</td></tr>`; }).join('');
+    return `<div class="qmatch"><p class="qh"><span class="qs">${esc(stage(i))}</span><b>${esc(LN)}</b> <span class="def">vs</span> <b>${esc(RN)}</b>${win?`<span class="qw">${stage(i)==='決勝'?'優勝':'勝ち上がり'}：${esc(win)}</span>`:''}</p>
+      <div class="tbl"><table><thead><tr><th class="num">#</th><th class="ql">${esc(LN)}</th><th class="qm">決まり手・時間</th><th class="qr">${esc(RN)}</th></tr></thead><tbody>${rows}</tbody></table></div></div>`; };
+  const ind=indiv.length?`<h2 class="sec">個人戦・ワンマッチ</h2><div class="tbl"><table><thead><tr><th>勝者</th><th>相手</th><th>決まり手</th><th class="num">時間</th></tr></thead><tbody>${indiv.map(b=>{ let A=[b[1],b[2]],B=[b[3],b[4]]; if(b[5]===2)[A,B]=[B,A]; return `<tr><td>${flink(A[0],A[1])}${b[5]==='d'?' <span class="def">vs</span>':''}</td><td>${flink(B[0],B[1])}</td><td>${esc(b[6]||'')}</td><td class="num">${esc(b[8]||'')}</td></tr>`; }).join('')}</tbody></table></div>`:'';
+  return `<h2 class="sec">出場チーム</h2><p class="sub" style="font-size:13px;margin:0 0 10px">5人ずつの勝ち抜き戦。引き分けは両者とも退場です（オーダーは初戦のもの）</p><div class="tgrid">${tcards}</div>
+    <h2 class="sec">団体戦</h2>${groups.map(gtbl).join('')}${ind}`;
+}
 function vEvent(k){
   const e = D.events.find(x=>x[0]===k); if(!e) return notFound();
+  if(((D.meta.teams||{})[k]||[]).length) return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
+    <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
+    ${teamView(k)}<p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
   if((D.meta.bjj||[]).includes(e[2])) return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
     <div id="bjjbox"><p class="sub">読み込み中…</p></div><p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
