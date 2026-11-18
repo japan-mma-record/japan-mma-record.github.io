@@ -177,8 +177,25 @@ function teamView(k){
   return `<h2 class="sec">出場チーム</h2><p class="sub" style="font-size:13px;margin:0 0 10px">5人ずつの勝ち抜き戦。引き分けは両者とも退場です（オーダーは初戦のもの）</p><div class="tgrid">${tcards}</div>
     <h2 class="sec">団体戦</h2>${groups.map(gtbl).join('')}${ind}`;
 }
+/* 階級別トーナメントの大会（アマチュア修斗など）：階級ごとにまとめる */
+function tourView(k){
+  const bs=D.bouts[k]||[]; const g=new Map();
+  bs.forEach(b=>{ const w=((b[9]||'').split('・')[0]||'').trim()||'階級の記録なし'; if(!g.has(w)) g.set(w,[]); g.get(w).push(b); });
+  const CL=['ミニマム','アトム','スーパーアトム','ストロー','フライ','バンタム','フェザー','ライト','ウェルター','ミドル','ライトヘビー','クルーザー','ヘビー','無差別'];
+  const ord=w=>{ const t=w.replace(/^女子/,''); let i=-1,L=0; CL.forEach((x,j)=>{ if(t.startsWith(x)&&x.length>L){i=j;L=x.length;} }); return [/女子/.test(w)?1:0, i<0?(w==='階級の記録なし'?999:98):i, w]; };
+  const list=[...g.entries()].sort((a,b)=>cmpArr(ord(a[0]),ord(b[0])));
+  const card=([w,bl])=>{ bl=bl.slice().sort((a,b)=>(a[0]||0)-(b[0]||0)); let champ=''; if(w!=='階級の記録なし'&&bl.length>1){ const W={},L={}; bl.forEach(x=>{ if(x[5]===1||x[5]===2){ const a=x[5]===1?x[2]:x[4], b=x[5]===1?x[4]:x[2]; W[a]=(W[a]||0)+1; L[b]=1; } });
+      const c=Object.entries(W).filter(([n])=>!L[n]).sort((a,b)=>b[1]-a[1]); if(c.length===1||(c.length>1&&c[0][1]>c[1][1])) champ=c[0][0]; }
+    const names=bl.map(x=>x[2]+' '+x[4]).join(' ');
+    return `<details class="div" data-belt="" data-q="${esc((w+' '+names).toLowerCase())}"><summary><span class="dn"><b>${esc(w)}</b></span><span class="dm">${champ?'優勝 '+esc(champ)+'　':''}${bl.length}試合</span></summary><ul class="bres">${bl.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
+      return `<li>${x[0]?`<span class="mn">第${x[0]}試合</span>`:''}${dec?'<span class="rs w">WIN</span> ':''}${flink(A[0],A[1])} <span class="def">${dec?'def.':'vs'}</span> ${flink(B[0],B[1])}${x[6]?`<span class="bm">${esc(x[6])}</span>`:''}${rt(x)?`<span class="bm">${esc(rt(x))}</span>`:''}</li>`; }).join('')}</ul></details>`; };
+  return `<h2 class="sec">階級別トーナメント（${list.length}）</h2><div class="bjjf"><input type="search" id="tq" placeholder="選手名・階級で探す" aria-label="選手名・階級で探す" oninput="const q=this.value.trim().toLowerCase();document.querySelectorAll('#tlist details').forEach(el=>{const ok=!q||el.dataset.q.includes(q);el.hidden=!ok;if(q&&ok)el.open=true;})"><button type="button" class="lnk" onclick="const els=[...document.querySelectorAll('#tlist details:not([hidden])')];const o=!els.every(x=>x.open);els.forEach(x=>x.open=o);this.textContent=o?'すべて閉じる':'すべて開く'">すべて開く</button></div><div id="tlist">${list.map(card).join('')}</div>`;
+}
 function vEvent(k){
   const e = D.events.find(x=>x[0]===k); if(!e) return notFound();
+  if((D.meta.amateur||[]).includes(e[2])&&/選手権|トーナメント|大会/.test(e[3])&&(D.bouts[k]||[]).length>=12) return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
+    <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
+    ${tourView(k)}<p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
   if(((D.meta.teams||{})[k]||[]).length) return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
     ${teamView(k)}<p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
