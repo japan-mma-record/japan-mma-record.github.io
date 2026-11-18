@@ -13,7 +13,7 @@ jobs:
       - run: |
           rm -rf probe/out; mkdir -p probe/out
           nl -ba -w1 -s' ' probe/urls.txt > /tmp/list.txt
-          cat /tmp/list.txt | xargs -P 4 -L 1 sh -c 'case "$1" in *matchlog*) curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0; +https://japan-mma-record.github.io/)" --retry 2 --max-time 90 "$1" | head -c 12000 > "probe/out/$0.html";; *) curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0; +https://japan-mma-record.github.io/)" --retry 2 --max-time 90 "$1" -o "probe/out/$0.html" || echo "fail $1";; esac; sleep 1'
+          cat /tmp/list.txt | xargs -P 4 -L 1 sh -c 'case "$1" in *matchlog*) curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0; +https://japan-mma-record.github.io/)" --max-time 25 "$1" | head -c 12000 > "probe/out/$0.html";; *) curl -sSL -A "Mozilla/5.0 (compatible; JapanMMARecordBot/1.0; +https://japan-mma-record.github.io/)" --retry 2 --max-time 90 "$1" -o "probe/out/$0.html" || echo "fail $1";; esac; sleep 1'
           while read i u; do echo "$i $u $(wc -c < probe/out/$i.html 2>/dev/null || echo 0)" >> probe/out/index.txt; done < /tmp/list.txt
           git config user.name bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add probe/out; git commit -q -m "probe results [skip ci]"; git push
