@@ -84,6 +84,16 @@ def load():
                         b[f'fighter{k}_id'] = hit[0]
             bouts[e['event_id']].append(b)
 
+    # 同じ人だと資料で確かめた試合を選手につなぐ（data/links.tsv：date, name, fighter_id, source_url）
+    links = {(r['date'], norm(r['name'])): r['fighter_id'] for r in read_tsv(os.path.join(DATA, 'links.tsv'))}
+    if links:
+        for k in bouts:
+            e = events.get(k) or {}
+            for b in bouts[k]:
+                for n in ('1', '2'):
+                    fid = links.get((e.get('date'), norm(b[f'fighter{n}'])))
+                    if fid and not b.get(f'fighter{n}_id'):
+                        b[f'fighter{n}_id'] = fid
     # 柔術の試合番号（マット番号つき、data/bjj_mats.tsv：date, fighter1, fighter2, label 例「MAT2-33・準々決勝」）
     mats = {}
     for r in read_tsv(os.path.join(DATA, 'bjj_mats.tsv')):
