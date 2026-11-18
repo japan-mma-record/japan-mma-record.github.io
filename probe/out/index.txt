@@ -1,6 +1,0 @@
-1 https://www.fightmatrix.com/upcoming-events/ 228168
-2 https://cagewarriors.com/wp-json/wp/v2/posts?search=results&per_page=5 1555
-3 https://www.mixedmartialarts.com/events 94495
-4 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&titles=Cage%20Warriors&rvlimit=1&rvstart=2016-01-01T00:00:00Z 25678
-5 https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=ids|timestamp|size&titles=2014%20in%20Cage%20Warriors 99
-6 https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letitle=2014%20in%20Cage%20Warriors 2712

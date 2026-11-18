@@ -1,6 +1,2 @@
-https://www.fightmatrix.com/upcoming-events/
-https://cagewarriors.com/wp-json/wp/v2/posts?search=results&per_page=5
-https://www.mixedmartialarts.com/events
-https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&rvslots=main&titles=Cage%20Warriors&rvlimit=1&rvstart=2016-01-01T00:00:00Z
-https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=ids|timestamp|size&titles=2014%20in%20Cage%20Warriors
-https://en.wikipedia.org/w/api.php?action=query&format=json&list=logevents&letitle=2014%20in%20Cage%20Warriors
+https://www.fightmatrix.com/past-events-by-promotion/
+https://www.fightmatrix.com/past-events-2/
