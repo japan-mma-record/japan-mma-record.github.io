@@ -1,7 +1,4 @@
-https://dumau.asjjf.org/main/eventResults/367
-https://www.asjjf.org/main/eventResults/1333
-https://asjjf.org/main/eventResults/1333
-https://www.asjjf.org/main/eventResults/1778
-https://asjjf.org/main/eventInfo/2120
-https://sjjjf.org/results
-https://www.sjjjf.org/
+https://ibjjf.com/packs/js/calendar-038d717e8b83f5958f95.js
+https://ibjjf.com/api/v1/events/calendar.json
+https://ibjjf.com/api/v1/events/upcomings.json
+https://www.ibjjfdb.com/ChampionshipResults/2306/PublicResults
