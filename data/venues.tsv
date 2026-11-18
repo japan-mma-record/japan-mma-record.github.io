@@ -1,0 +1,1008 @@
+event_id	promotion	date	name	venue	source_url
+e00628	shooto	2004-11-12	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2004_11/1112_shooto.htm
+e00782	shooto	2012-12-24	VTJ 1st	国立代々木競技場第二体育館	https://www.shooto-mma.com/result/?id=26
+e00798	shooto	2013-06-22	VTJ 2nd	TDCホール	https://www.shooto-mma.com/result/?id=25
+e00806	shooto	2013-10-05	VTJ 3rd	大田区総合体育館	https://www.shooto-mma.com/result/?id=24
+e00814	shooto	2014-02-23	VTJ 4th	大田区総合体育館	https://www.shooto-mma.com/result/?id=23
+e00821	shooto	2014-06-28	VTJ 5th	大阪・BODYMAKERコロシアム第2競技場	https://www.shooto-mma.com/result/?id=22
+e00826	shooto	2014-10-04	VTJ 6th	大田区総合体育館	https://www.shooto-mma.com/result/?id=21
+e00840	shooto	2015-06-21	VTJ in OSAKA	大阪・BODYMAKERコロシアム第二競技場	https://www.shooto-mma.com/result/?id=18
+e00846	shooto	2015-09-13	VTJ 7th	舞浜アンフィシアター	https://www.shooto-mma.com/result/?id=16
+e00848	shooto	2015-10-03	VTJ in OKINAWA	沖縄県立武道館	https://www.shooto-mma.com/result/?id=17
+e00856	shooto	2015-12-20	プロフェッショナル修斗公式戦 インフィニティリーグ2015フェザー級最終戦	新宿FACE	https://www.shooto-mma.com/result/?id=31
+e00857	shooto	2015-12-23	プロフェッショナル修斗公式戦 BORDER -season7-「The 3rd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=33
+e00858	shooto	2016-01-11	プロフェッショナル修斗公式戦	後楽園ホール	https://www.shooto-mma.com/result/?id=29
+e00859	shooto	2016-02-27	プロフェッショナル修斗公式戦 SHOOTO GIG TOKYO Vol.20	新宿FACE	https://www.shooto-mma.com/result/?id=28
+e00860	shooto	2016-03-21	プロフェッショナル修斗公式戦	後楽園ホール	https://www.shooto-mma.com/result/?id=8
+e00861	shooto	2016-03-27	プロフェッショナル修斗公式戦 BORDER -season8-「The 1st」	大阪・平野区民ホール	https://www.shooto-mma.com/result/?id=4
+e00863	shooto	2016-04-23	MOBSTYLES Presents FIGHT & MOSH	舞浜アンフィシアター	https://www.shooto-mma.com/result/?id=1
+e00864	shooto	2016-05-28	プロフェッショナル修斗公式戦 SHOOTO GIG TOKYO Vol.21	新宿FACE	https://www.shooto-mma.com/result/?id=3
+e00866	shooto	2016-06-19	VTJ in OSAKA	エディオンアリーナ大阪	https://www.shooto-mma.com/result/?id=5
+e00867	shooto	2016-07-03	プロフェッショナル修斗公式戦 SHOOTO GIG WEST Vol.18	大阪・阿倍野区民センター	https://www.shooto-mma.com/result/?id=6
+e00868	shooto	2016-07-17	プロフェッショナル修斗公式戦	後楽園ホール	https://www.shooto-mma.com/result/?id=7
+e00870	shooto	2016-09-04	BORDER-season8-「The2nd」	大阪・コミュニティプラザ平野	https://shooto-mma.com/result/
+e00871	shooto	2016-09-19	VTJ 8th	舞浜アンフィシアター	https://www.shooto-mma.com/result/?id=19
+e00873	shooto	2016-10-16	プロフェッショナル修斗公式戦 SHOOTO GIG TOKYO Vol.22	新宿FACE	https://www.shooto-mma.com/result/?id=10
+e00876	shooto	2016-11-06	プロフェッショナル修斗公式戦青森大会 SHOOTO GRANZ 2016	青森・プラザマリュウ	https://www.shooto-mma.com/result/?id=35
+e00877	shooto	2016-11-12	環太平洋ダブルチャンピオンシップ	後楽園ホール	https://www.shooto-mma.com/result/?id=11
+e00879	shooto	2016-12-11	BORDER-season8-「The3rd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=37
+e00880	shooto	2016-12-18	インフィニティリーグ2016優勝決定戦	新宿FACE	https://www.shooto-mma.com/result/?id=12
+e00881	shooto	2017-01-29	プロフェッショナル修斗公式戦 後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=36
+e00882	shooto	2017-02-24	プロフェッショナル修斗公式戦 THIS is SHOOTO Vol.1	TSUTAYA O-East	https://www.shooto-mma.com/result/?id=38
+e00883	shooto	2017-03-19	プロフェッショナル修斗公式戦 BORDER-season9-「The1st」	大阪・コミュニティプラザ平野	https://shooto-mma.com/result/
+e00884	shooto	2017-03-24	プロフェッショナル修斗公式戦 後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=39
+e00886	shooto	2017-04-23	プロフェッショナル修斗公式戦 舞浜アンフィシアター大会	舞浜アンフィシアター	https://www.shooto-mma.com/result/?id=41
+e00887	shooto	2017-05-12	プロフェッショナル修斗公式戦 後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=42
+e00888	shooto	2017-06-25	プロフェッショナル修斗公式戦 in OSAKA	エディオンアリーナ大阪第2競技場	https://www.shooto-mma.com/result/?id=43
+e00890	shooto	2017-07-23	プロフェッショナル修斗公式戦 後楽園大会	後楽園ホール	https://www.shooto-mma.com/result/?id=44
+e00891	shooto	2017-09-02	RUN & FIGHT & MOSH Vol.1	新木場STUDIO COAST	https://www.shooto-mma.com/result/?id=45
+e00892	shooto	2017-09-03	BORDER-season9-「The2nd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=50
+e00894	shooto	2017-10-15	プロフェッショナル修斗公式戦	舞浜アンフィシアター	https://www.shooto-mma.com/result/?id=46
+e00896	shooto	2017-11-19	SHOOTO GIG TOKYO Vol.23	新宿FACE	https://www.shooto-mma.com/result/?id=47
+e00899	shooto	2017-12-17	MOBSTYLES Presents インフィニティリーグ2017優勝決定戦	新宿FACE	https://www.shooto-mma.com/result/?id=48
+e00900	shooto	2017-12-23	BORDER-season9-「The3rd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=62
+e00901	shooto	2018-01-28	プロフェッショナル修斗 2018開幕戦	後楽園ホール	https://www.shooto-mma.com/result/?id=51
+e00902	shooto	2018-02-24	プロフェッショナル修斗公式戦 SHOOTO GIG TOKYO Vol.24	新宿FACE	https://www.shooto-mma.com/result/?id=52
+e00903	shooto	2018-03-25	プロフェッショナル修斗後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=54
+e00904	shooto	2018-03-25	BORDER-season10-「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=63
+e00906	shooto	2018-04-22	SHOOTO GIG TOKYO Vol.25	新宿FACE	https://www.shooto-mma.com/result/?id=55
+e00907	shooto	2018-05-13	プロフェッショナル修斗川崎大会	カルッツかわさき	https://www.shooto-mma.com/result/?id=56
+e00908	shooto	2018-06-17	プロフェッショナル修斗 in OSAKA 2018	エディオンアリーナ大阪第2競技場	https://www.shooto-mma.com/result/?id=57
+e00909	shooto	2018-07-01	闘裸男22 Direction of the Cage2	山口・新南陽ふれあいセンター	https://www.shooto-mma.com/result/?id=150
+e00910	shooto	2018-07-15	プロフェッショナル修斗後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=58
+e00911	shooto	2018-08-03	プロフェッショナル修斗公式戦 This is SHOOTO Vol.2	TSUTAYA O-East	https://www.shooto-mma.com/result/?id=65
+e00913	shooto	2018-09-23	プロフェッショナル修斗後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=59
+e00916	shooto	2018-10-26	SHOOTO GIG TOKYO Vol.26	新宿FACE	https://www.shooto-mma.com/result/?id=64
+e00917	shooto	2018-11-17	プロフェッショナル修斗後楽園ホール大会	後楽園ホール	https://www.shooto-mma.com/result/?id=60
+e00918	shooto	2018-11-18	プロフェッショナル修斗公式戦「越後風神祭り6」	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=69
+e00920	shooto	2018-12-15	MOBSTYLES presents インフィニティリーグ2018優勝決定戦	新宿FACE	https://www.shooto-mma.com/result/?id=61
+e00921	shooto	2019-01-20	BORDER-season11-「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=79
+e00922	shooto	2019-01-27	SHOOTO 30th ANNIVERSARY TOUR 開幕戦	後楽園ホール	https://www.shooto-mma.com/result/?id=68
+e00923	shooto	2019-03-24	SHOOTO 30th ANNIVERSARY TOUR 第2戦 Supported by ONE Championship	ニューピアホール	https://www.shooto-mma.com/result/?id=71
+e00924	shooto	2019-04-07	FORCE 11	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=149
+e00925	shooto	2019-05-06	SHOOTO 30th ANNIVERSARY TOUR 30周年記念大会 第1部 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=72
+e00926	shooto	2019-05-06	SHOOTO 30th ANNIVERSARY TOUR 30周年記念大会 第2部 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=81
+e00927	shooto	2019-05-12	BORDER-season11-「The2nd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=83
+e00928	shooto	2019-06-08	SHOOTO GIG TOKYO Vol.27 Supported by ONE Championship	新宿FACE	https://www.shooto-mma.com/result/?id=73
+e00930	shooto	2019-06-30	SHOOTO 30th ANNIVERSARY TOUR 第5戦 Supported by ONE Championship	エディオンアリーナ大阪第2競技場	https://www.shooto-mma.com/result/?id=82
+e00931	shooto	2019-07-15	SHOOTO 30th ANNIVERSARY TOUR 第6戦 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=74
+e00932	shooto	2019-09-22	SHOOTO 30th ANNIVERSARY TOUR 第7戦 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=75
+e00933	shooto	2019-09-22	BORDER-season11-「The3rd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=84
+e00935	shooto	2019-10-20	SHOOTO GIG TOKYO Vol.28 Supported by ONE Championship	新宿FACE	https://www.shooto-mma.com/result/?id=76
+e00936	shooto	2019-11-03	沖縄大会 THE SHOOTO OKINAWA vol.２	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=85
+e00937	shooto	2019-11-10	プロフェッショナル修斗公式戦広島大会 闘裸男25	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=104
+e00938	shooto	2019-11-24	SHOOTO 30th ANNIVERSARY TOUR FINAL Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=77
+e00939	shooto	2019-11-24	越後風神祭り７	新潟ロッツ	https://www.shooto-mma.com/result/?id=87
+e00940	shooto	2019-12-15	プロフェッショナル修斗公式戦香川大会「FORCE 12」	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=97
+e00941	shooto	2019-12-22	SHOOTO GIG TOKYO Vol.29 Supported by ONE Championship	新宿FACE	https://www.shooto-mma.com/result/?id=78
+e00942	shooto	2020-01-19	BORDER-season12-「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=98
+e00943	shooto	2020-01-26	PROFESSONAL SHOOTO 2020 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=86
+e00944	shooto	2020-02-16	PROFESSIONAL SHOOTO 2020 Vol.2 Supported by ONE Championship	ニューピアホール	https://www.shooto-mma.com/result/?id=89
+e00945	shooto	2020-03-21	MOBSTYLES 20th ANNIVERSARY TOUR FIGHT＆MOSH Vol.2 Supported by ONE Championship	渋谷TSUTAYA O-EAST	https://www.shooto-mma.com/result/?id=99
+e00947	shooto	2020-07-12	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2020 Vol.4 in OSAKA Supported by ONE Championship	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=100
+e00948	shooto	2020-08-01	PROFESSIONAL SHOOTO 2020 Vol.5 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=93
+e00950	shooto	2020-09-19	PROFESSIONAL SHOOTO 2020 Vol.6 Supported by ONE Championship 第1部	渋谷TSUTAYA O-EAST	https://www.shooto-mma.com/result/?id=94
+e00951	shooto	2020-11-23	PROFESSIONAL SHOOTO 2020 Vol.7 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=96
+e00952	shooto	2020-11-29	THE SHOOTO OKINAWA vol.３	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=105
+e00953	shooto	2020-12-13	闘裸男×FORCE	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=106
+e00954	shooto	2020-12-20	PROFESSIONAL SHOOTO 2020 Vol.8 最終戦 in OSAKA 2部 Supported by ONE Championship	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=103
+e00955	shooto	2020-12-20	TTF CHALLENGE 09	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=115
+e00956	shooto	2021-01-31	《第1部》PROFESSIONAL SHOOTO 2021開幕戦 Supported by ONE Championship	ニューピアホール	https://www.shooto-mma.com/result/?id=107
+e00957	shooto	2021-01-31	《第2部》PROFESSIONAL SHOOTO 2021開幕戦 Supported by ONE Championship	ニューピアホール	https://www.shooto-mma.com/result/?id=108
+e00958	shooto	2021-03-20	PROFESSIONAL SHOOTO 2021 Vol.2 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=109
+e00959	shooto	2021-04-18	沖縄大会【THE SHOOTO OKINAWA vol.４】	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=117
+e00960	shooto	2021-05-16	PROFESSIONAL SHOOTO 2021 Vol.3 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=110
+e00961	shooto	2021-06-26	SHOOTO GIG TOKYO Vol.30 Supported by ONEchampionship	新宿FACE	https://www.shooto-mma.com/result/?id=118
+e00962	shooto	2021-07-04	PROFESSIONAL SHOOTO 2021 Vol.4 in OSAKA Supported by ONE Championship 第1部	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=111
+e00963	shooto	2021-07-04	PROFESSIONAL SHOOTO 2021 Vol.4 in OSAKA Supported by ONE Championship 第2部	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=116
+e00964	shooto	2021-07-25	PROFESSIONAL SHOOTO 2021 Vol.5 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=112
+e00965	shooto	2021-08-28	『越後風神祭り８』	新潟・万代島多目的広場大かま	https://www.shooto-mma.com/result/?id=120
+e00966	shooto	2021-09-20	PROFESSIONAL SHOOTO 2021 Vol.6 Supported by ONE Championship	後楽園ホール	https://www.shooto-mma.com/result/?id=113
+e00967	shooto	2021-10-02	SHOOTO GIG TOKYO Vol.31 Supported by ONE Championship	新宿FACE	https://www.shooto-mma.com/result/?id=119
+e00968	shooto	2021-11-06	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2021 Vol.7 Supported by ONE Championship	USEN STUDIO COAST	https://www.shooto-mma.com/result/?id=121
+e00969	shooto	2021-11-06	VTJ 2021	USEN STUDIO COAST	https://www.shooto-mma.com/result/?id=122
+e00970	shooto	2021-11-07	FORCE GIG 01	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=124
+e00971	shooto	2021-11-07	FORCE 14	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=125
+e00972	shooto	2021-11-14	THE SHOOTO OKINAWA vol.５	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=126
+e00973	shooto	2021-12-05	闘裸男26	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=127
+e00974	shooto	2021-12-05	闘裸男GIG03	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=128
+e00975	shooto	2021-12-19	PROFESSIONAL SHOOTO 2021 Vol.8 in OSAKA Supported by ONE Championship	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=123
+e00976	shooto	2022-01-16	PROFESSIONAL SHOOTO 2022 開幕戦	後楽園ホール	https://www.shooto-mma.com/result/?id=129
+e00977	shooto	2022-03-21	PROFESSIONAL SHOOTO 2022 Vol.2	後楽園ホール	https://www.shooto-mma.com/result/?id=130
+e00978	shooto	2022-04-03	SHOOTO GIG TOKYO Vol.32	新宿FACE	https://www.shooto-mma.com/result/?id=135
+e00979	shooto	2022-04-17	THE SHOOTO OKINAWA vol.6	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=139
+e00980	shooto	2022-04-24	FORCE GIG 02	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=140
+e00981	shooto	2022-04-24	FORCE 15	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=142
+e00982	shooto	2022-05-15	TORAO27	福岡・よしもと福岡 大和証券CONNECT劇場	https://www.shooto-mma.com/result/?id=143
+e00983	shooto	2022-05-15	TORAO GIG04	福岡・よしもと福岡 大和証券CONNECT劇場	https://www.shooto-mma.com/result/?id=144
+e00984	shooto	2022-05-22	PROFESSIONAL SHOOTO 2022 Vol.3	後楽園ホール	https://www.shooto-mma.com/result/?id=131
+e00985	shooto	2022-06-05	北海道大会	札幌・サッポロ・イーワン・スタジアム	https://www.shooto-mma.com/result/?id=141
+e00986	shooto	2022-07-03	PROFESSIONAL SHOOTO 2022 Vol.4 in OSAKA	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=136
+e01584	shooto	2022-07-03	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2022 Vol.4 in OSAKA	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=136
+e00987	shooto	2022-07-17	PROFESSIONAL SHOOTO 2022 Vol.5	後楽園ホール	https://www.shooto-mma.com/result/?id=132
+e00988	shooto	2022-08-21	越後風神祭り9	新潟・万代島多目的広場大かま	https://www.shooto-mma.com/result/?id=147
+e00989	shooto	2022-09-11	FORCE 16	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=146
+e00990	shooto	2022-09-19	PROFESSIONAL SHOOTO 2022 Vol.6	後楽園ホール	https://www.shooto-mma.com/result/?id=133
+e00991	shooto	2022-10-15	SHOOTO GIG TOKYO Vol.33	新宿FACE	https://www.shooto-mma.com/result/?id=138
+e00992	shooto	2022-11-06	THE SHOOTO OKINAWA vol.7	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=148
+e00993	shooto	2022-11-27	PROFESSIONAL SHOOTO 2022 Vol.7	後楽園ホール	https://www.shooto-mma.com/result/?id=134
+e00994	shooto	2022-12-04	TORAO28	山口・新南陽ふれあいセンター	https://www.shooto-mma.com/result/?id=172
+e00995	shooto	2022-12-11	PROFESSIONAL SHOOTO 2022 Vol.8 in OSAKA	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=145
+e00996	shooto	2023-01-15	PROFESSIONAL SHOOTO 2023 開幕戦	後楽園ホール	https://www.shooto-mma.com/result/?id=151
+e00997	shooto	2023-03-05	BORDER2023「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=154
+e00998	shooto	2023-03-19	PROFESSIONAL SHOOTO 2023 Vol.2	後楽園ホール	https://www.shooto-mma.com/result/?id=153
+e00999	shooto	2023-03-26	越後風神祭り10	新潟・万代島多目的広場大かま	https://www.shooto-mma.com/result/?id=174
+e01000	shooto	2023-04-09	SHOOTO GIG TOKYO Vol.34	新宿FACE	https://www.shooto-mma.com/result/?id=157
+e01001	shooto	2023-04-16	THE SHOOTO OKINAWA vol.8	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=156
+e01002	shooto	2023-04-23	FORCE 17	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=158
+e01003	shooto	2023-05-21	Colors（カラーズ）	ニューピアホール	https://www.shooto-mma.com/result/?id=159
+e01004	shooto	2023-05-21	PROFESSIONAL SHOOTO 2023 Vol.3	ニューピアホール	https://www.shooto-mma.com/result/?id=173
+e01005	shooto	2023-05-28	TORAO29	福岡・アクロス福岡	https://www.shooto-mma.com/result/?id=160
+e01006	shooto	2023-06-18	PROFESSIONAL SHOOTO 2023 Vol.4 in OSAKA	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=161
+e08068	shooto	2023-06-18	プロフェッショナル修斗公式戦 PROFESSIONAL SHOOTO 2023 Vol.4 in OSAKA	大阪・メルパルクホールOSAKA	https://www.shooto-mma.com/result/?id=161
+e01007	shooto	2023-07-23	PROFESSIONAL SHOOTO 2023 Vol.5	後楽園ホール	https://www.shooto-mma.com/result/?id=162
+e01008	shooto	2023-08-20	広島大会「TORAO30」	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=163
+e01009	shooto	2023-08-20	広島大会「TORAO	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=175
+e05336	shooto	2023-08-20	広島大会「TORAO | colors」	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=175
+e01010	shooto	2023-09-03	越後風神祭り11	新潟・万代島多目的広場大かま	https://www.shooto-mma.com/result/?id=164
+e01011	shooto	2023-09-17	FORCE 18	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=165
+e01012	shooto	2023-09-24	PROFESSIONAL SHOOTO 2023 Vol.6	後楽園ホール	https://www.shooto-mma.com/result/?id=166
+e01013	shooto	2023-10-21	SHOOTO GIG TOKYO Vol.35	新宿FACE	https://www.shooto-mma.com/result/?id=167
+e01014	shooto	2023-11-12	THE SHOOTO OKINAWA vol.9	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=168
+e01015	shooto	2023-11-19	後楽園大会 PROFESSIONAL SHOOTO 2023 Vol.7	後楽園ホール	https://www.shooto-mma.com/result/?id=169
+e01016	shooto	2023-12-02	MOBSTYLES presents FIGHT&MOSH	豊洲PIT	https://www.shooto-mma.com/result/?id=171
+e01017	shooto	2023-12-02	MOBSTYLES presents COLORS Produce by SHOOTO Vol.2 “FIGHT&MOSH”	豊洲PIT	https://www.shooto-mma.com/result/?id=176
+e01018	shooto	2023-12-03	TOYOSUI GROUP PRESENTS 山口大会「TORAO31」	山口・KDDI維新ホール	https://www.shooto-mma.com/result/?id=170
+e01019	shooto	2023-12-17	PROFESSIONAL SHOOTO 2023 Vol.9 in OSAKA	大阪・阿倍野区民センター	https://www.shooto-mma.com/result/?id=177
+e01020	shooto	2024-01-28	PROFESSIONAL SHOOTO 2024 Vol.1 - 2部	ニューピアホール	https://www.shooto-mma.com/result/?id=178
+e01021	shooto	2024-01-28	PROFESSIONAL SHOOTO 2024 Vol.1 - 1部	ニューピアホール	https://www.shooto-mma.com/result/?id=199
+e01023	shooto	2024-03-23	PROFESSIONAL SHOOTO 2024 Vol.3 東京・後楽園ホール	後楽園ホール	https://www.shooto-mma.com/result/?id=179
+e01024	shooto	2024-03-24	FORCE 19	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=180
+e01025	shooto	2024-04-07	SHOOTO GIG TOKYO Vol.36	新宿FACE	https://www.shooto-mma.com/result/?id=181
+e01026	shooto	2024-04-14	THE SHOOTO OKINAWA vol.10	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=182
+e01027	shooto	2024-04-29	新潟・新潟LOT	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=183
+e01028	shooto	2024-05-19	【第1部】PROFESSIONAL SHOOTO 2024 Vol.4	ニューピアホール	https://www.shooto-mma.com/result/?id=184
+e01029	shooto	2024-05-19	【第2部】修斗×YFU 7対7 日中対抗戦	ニューピアホール	https://www.shooto-mma.com/result/?id=204
+e01030	shooto	2024-05-26	TORAO32	福岡・アクロス福岡	https://www.shooto-mma.com/result/?id=185
+e01031	shooto	2024-07-14	プロフェッショナル修斗公式戦広島大会 TORAO33	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=207
+e01032	shooto	2024-07-21	PROFESSIONAL SHOOTO 2024 Vol.5	後楽園ホール	https://www.shooto-mma.com/result/?id=188
+e01033	shooto	2024-07-28	PROFESSIONAL SHOOTO 2024 Vol.6 in OSAKA 第1部	大阪・阿倍野区民センター	https://www.shooto-mma.com/result/?id=202
+e01035	shooto	2024-08-03	COLORS Produce by SHOOTO Vol.3	新宿FACE	https://www.shooto-mma.com/result/?id=205
+e01036	shooto	2024-09-01	越後風神祭り13	新潟・東区プラザ	https://www.shooto-mma.com/result/?id=211
+e01037	shooto	2024-09-08	香川・高松シンボルタワー展示場	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=191
+e01038	shooto	2024-09-22	PROFESSIONAL SHOOTO 2024 Vol.7	後楽園ホール	https://www.shooto-mma.com/result/?id=192
+e01039	shooto	2024-09-29	BORDER2024「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=213
+e01040	shooto	2024-10-20	SHOOTO GIG TOKYO Vol.37	新宿FACE	https://www.shooto-mma.com/result/?id=193
+e01041	shooto	2024-11-10	沖縄・コザミュージックタウン音市場	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=194
+e01042	shooto	2024-11-17	山口・KDDI維新ホール	山口・KDDI維新ホール	https://www.shooto-mma.com/result/?id=215
+e01043	shooto	2024-11-30	PROFESSIONAL SHOOTO 2024 Vol.8	後楽園ホール	https://www.shooto-mma.com/result/?id=212
+e01044	shooto	2024-12-15	COLORS Produce by SHOOTO Vol.4	新宿FACE	https://www.shooto-mma.com/result/?id=203
+e01045	shooto	2024-12-29	PROFESSIONAL SHOOTO 2024 FINAL in OSAKA	大阪・GORILLA HALL OSAKA	https://www.shooto-mma.com/result/?id=214
+e01046	shooto	2025-01-19	PROFESSIONAL SHOOTO 2025 開幕戦	後楽園ホール	https://www.shooto-mma.com/result/?id=216
+e01047	shooto	2025-03-16	PROFESSIONAL SHOOTO 2025 Vol.2	後楽園ホール	https://www.shooto-mma.com/result/?id=217
+e01048	shooto	2025-03-23	SHOOTO GIG TOKYO Vol.38	新宿FACE	https://www.shooto-mma.com/result/?id=218
+e01049	shooto	2025-04-13	BORDER2025「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=230
+e01050	shooto	2025-04-20	THE SHOOTO OKINAWA vol.12	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=233
+e01051	shooto	2025-04-27	越後風神祭り14	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=234
+e01052	shooto	2025-05-11	TORAO35	福岡・アクロス福岡イベントホール	https://www.shooto-mma.com/result/?id=235
+e01053	shooto	2025-05-18	【第1部】PROFESSIONAL SHOOTO 2025 Vol.3	ニューピアホール	https://www.shooto-mma.com/result/?id=219
+e01054	shooto	2025-05-18	【第2部】PROFESSIONAL SHOOTO 2025 Vol.4	ニューピアホール	https://www.shooto-mma.com/result/?id=229
+e01055	shooto	2025-05-25	PROFESSIONAL SHOOTO 2025 Vol.5 in OSAKA	大阪・GORILLA HALL OSAKA	https://www.shooto-mma.com/result/?id=228
+e01056	shooto	2025-06-14	COLORS Produce by SHOOTO Vol.5	新宿FACE	https://www.shooto-mma.com/result/?id=220
+e01059	shooto	2025-07-21	PROFESSIONAL SHOOTO 2025 Vol.6	後楽園ホール	https://www.shooto-mma.com/result/?id=221
+e01060	shooto	2025-08-31	越後風神祭り15	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=240
+e01061	shooto	2025-09-02	Lemino修斗１	後楽園ホール	https://www.shooto-mma.com/result/?id=242
+e01062	shooto	2025-09-07	BORDER2025「The2nd」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=241
+e01063	shooto	2025-09-21	【第1部】PROFESSIONAL SHOOTO 2025 Vol.7	ニューピアホール	https://www.shooto-mma.com/result/?id=222
+e01064	shooto	2025-09-21	【第2部】PROFESSIONAL SHOOTO 2025 Vol.8	ニューピアホール	https://www.shooto-mma.com/result/?id=239
+e01065	shooto	2025-10-11	SHOOTO GIG TOKYO Vol.39	新宿FACE	https://www.shooto-mma.com/result/?id=223
+e01066	shooto	2025-10-19	Lemino修斗.2	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=243
+e01067	shooto	2025-10-26	FORCE 22	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=244
+e01068	shooto	2025-11-16	PROFESSIONAL SHOOTO 2025 Vol.9	後楽園ホール	https://www.shooto-mma.com/result/?id=224
+e01069	shooto	2025-11-22	PROFESSIONAL SHOOTO 2025 Vol.10 in OSAKA	大阪・GORILLA HALL OSAKA	https://www.shooto-mma.com/result/?id=238
+e01070	shooto	2025-12-07	株式会社大熊警備隊presentsプロフェッショナル修斗公式戦山口大会「TORAO37」	山口・KDDI維新ホール	https://www.shooto-mma.com/result/?id=248
+e01071	shooto	2026-01-18	【第1部】COLORS Produce by SHOOTO Vol.6	ニューピアホール	https://www.shooto-mma.com/result/?id=247
+e01072	shooto	2026-01-18	【第2部】PROFESSIONAL SHOOTO 2026 Vol.1	ニューピアホール	https://www.shooto-mma.com/result/?id=249
+e01073	shooto	2026-02-18	Lemino修斗.3	後楽園ホール	https://www.shooto-mma.com/result/?id=260
+e01074	shooto	2026-02-28	SHOOTO GIG TOKYO Vol.40	新宿FACE	https://www.shooto-mma.com/result/?id=250
+e01075	shooto	2026-03-29	PROFESSIONAL SHOOTO 2026 Vol.2	後楽園ホール	https://www.shooto-mma.com/result/?id=251
+e01076	shooto	2026-03-30	Lemino修斗.4	後楽園ホール	https://www.shooto-mma.com/result/?id=262
+e01077	shooto	2026-04-05	越後風神祭り16【第1部】	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=263
+e01078	shooto	2026-04-05	越後風神祭り16【第2部】	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=282
+e01079	shooto	2026-04-11	SHOOTO GIG TOKYO Vol.41	新宿FACE	https://www.shooto-mma.com/result/?id=252
+e01080	shooto	2026-04-19	Lemino修斗.5	沖縄・ミュージックタウン音市場	https://www.shooto-mma.com/result/?id=264
+e01081	shooto	2026-04-26	BORDER2026「The1st」	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=265
+e01082	shooto	2026-05-17	【第1部】PROFESSIONAL SHOOTO 2026 Vol.3	ニューピアホール	https://www.shooto-mma.com/result/?id=253
+e01083	shooto	2026-05-17	プロフェッショナル修斗公式戦福岡大会TORAO38	福岡・アクロス福岡イベントホール	https://www.shooto-mma.com/result/?id=266
+e01084	shooto	2026-05-17	【第2部】PROFESSIONAL SHOOTO 2026 Vol.3	ニューピアホール	https://www.shooto-mma.com/result/?id=283
+e01085	shooto	2026-05-24	プロフェッショナル修斗公式戦『FORCE 23』	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=267
+e01086	shooto	2026-05-31	PROFESSIONAL SHOOTO 2026 Vol.4 in OSAKA	大阪・GORILLA HALL OSAKA	https://www.shooto-mma.com/result/?id=281
+e01087	shooto	2026-06-01	プロフェッショナル修斗公式戦後楽園大会 『Lemino修斗.6』	後楽園ホール	https://www.shooto-mma.com/result/?id=284
+e01088	shooto	2026-06-28	プロフェッショナル修斗公式戦福岡大会「Lemino修斗TORAO」	福岡・アクロス福岡イベントホール	https://www.shooto-mma.com/result/?id=299
+e01089	shooto	2026-07-12	プロフェッショナル修斗公式戦広島大会『TORAO39』	広島・BLUE LIVE HIROSHIMA	https://www.shooto-mma.com/result/?id=268
+e01090	shooto	2026-07-13	プロフェッショナル修斗公式戦後楽園大会 『Lemino修斗.7』	後楽園ホール	https://www.shooto-mma.com/result/?id=285
+e01091	shooto	2026-07-20	PROFESSIONAL SHOOTO 2026 Vol.5	後楽園ホール	https://www.shooto-mma.com/result/?id=254
+e01092	shooto	2026-08-02	プロフェッショナル修斗公式戦『Lemino修斗~POUND OUT~』	千葉・TKPガーデンシティ千葉	https://www.shooto-mma.com/result/?id=286
+e01093	shooto	2026-08-30	プロフェッショナル修斗公式戦「越後風神祭り１７」	新潟・新潟LOTS	https://www.shooto-mma.com/result/?id=269
+e01094	shooto	2026-09-13	プロフェッショナル修斗公式戦岐阜大会「TORAO40」	岐阜・各務原市産業文化センター	https://www.shooto-mma.com/result/?id=303
+e01095	shooto	2026-09-24	【NTT DOCOMO presents】 プロフェッショナル修斗公式戦後楽園大会 『Lemino修斗.8』	後楽園ホール	https://www.shooto-mma.com/result/?id=302
+e01096	shooto	2026-09-27	令和8年熊本地震復興支援チャリティー PROFESSIONAL SHOOTO 2026 Vol.6	ニューピアホール	https://www.shooto-mma.com/result/?id=255
+e01097	shooto	2026-10-19	プロフェッショナル修斗公式戦後楽園大会 『Lemino修斗.９』	後楽園ホール	https://www.shooto-mma.com/result/?id=287
+e01098	shooto	2026-10-25	プロフェッショナル修斗公式戦『FORCE 24』	高松・高松シンボルタワー展示場	https://www.shooto-mma.com/result/?id=271
+e00629	shooto	2004-11-25	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2004_11/1125_shooto.htm
+e00630	shooto	2004-11-26	G-SHOOTO	Zepp Tokyo	https://gbring.com/sokuho/result/result2004_11/1126_gshooto.htm
+e00631	shooto	2004-12-14	プロフェッショナル修斗公式戦 15th Anniversary	国立代々木競技場第二体育館	https://gbring.com/sokuho/result/result2004_12/1214_shooto.htm
+e00632	shooto	2005-01-29	プロフェッショナル修斗公式戦	後楽園ホール	https://gbring.com/sokuho/result/result2005_01/0129_shooto.htm
+e00634	shooto	2005-03-11	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2005_03/0311_shooto.htm
+e00635	shooto	2005-03-12	G-SHOOTO	Zepp Tokyo	https://gbring.com/sokuho/result/result2005_03/0312_g-shooto.htm
+e00636	shooto	2005-03-27	プロフェッショナル修斗公式戦（名古屋市公会堂）	名古屋市公会堂	https://gbring.com/sokuho/result/result2005_03/0327_shooto.htm
+e00637	shooto	2005-04-23	クリムゾン・プレゼンツ プロフェッショナル修斗公式戦IN福岡	福岡・博多スターレーン	https://gbring.com/sokuho/result/result2005_04/0423_shooto.htm
+e00638	shooto	2005-05-04	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2005_05/0504_shooto.htm
+e00639	shooto	2005-05-11	G-SHOOTO（Zepp Nagoya）	名古屋・Zepp Nagoya	https://gbring.com/sokuho/result/result2005_05/0511_shooto.htm
+e00640	shooto	2005-05-29	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2005_05/0529_shooto.htm
+e00641	shooto	2005-06-03	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2005_06/0603_shooto.htm
+e00642	shooto	2005-07-12	G-SHOOTO	北沢タウンホール	https://gbring.com/sokuho/result/result2005_07/0712_gshooto.htm
+e00643	shooto	2005-07-14	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2005_07/0714_shooto.htm
+e00644	shooto	2005-07-30	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2005_07/0730_shooto.htm
+e00645	shooto	2005-08-20	プロフェッショナル修斗公式戦（横浜文化体育館）	横浜文化体育館	https://gbring.com/sokuho/result/result2005_08/0820_shooto.htm
+e00646	shooto	2005-09-16	G-SHOOTO	北沢タウンホール	https://gbring.com/sokuho/result/result2005_09/0916_shooto.htm
+e00647	shooto	2005-09-23	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2005_09/0923_shooto.htm
+e00648	shooto	2005-11-06	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2005_11/1106_shooto.htm
+e00649	shooto	2005-11-29	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2005_11/1129_shooto.htm
+e00652	shooto	2006-02-17	プロフェッショナル修斗公式戦（代々木第二体育館）	代々木第二体育館	https://gbring.com/sokuho/result/result2006_02/0217_shooto.htm
+e00653	shooto	2006-02-24	G-SHOOTO	新木場1stRING	https://gbring.com/sokuho/result/result2006_02/0224_shooto.htm
+e00654	shooto	2006-02-26	プロフェッショナル修斗公式戦（Zepp名古屋）	名古屋・Zepp Nagoya	https://gbring.com/sokuho/result/result2006_02/0226_shooto.htm
+e00656	shooto	2006-03-11	G-SHOOTO（新宿FACE）	新宿FACE	https://gbring.com/sokuho/result/result2006_03/0311_shooto.htm
+e00657	shooto	2006-03-24	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2006_03/0324_shooto.htm
+e00659	shooto	2006-05-12	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2006_05/0512_shooto.htm
+e00660	shooto	2006-05-28	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2006_05/0528_shooto.htm
+e00661	shooto	2006-06-11	G-SHOOTO	北沢タウンホール	https://gbring.com/sokuho/result/result2006_06/0611_g-shooto.htm
+e00662	shooto	2006-07-21	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2006_07/0721_shooto.htm
+e00663	shooto	2006-07-30	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2006_07/0730_shooto.htm
+e00664	shooto	2006-09-08	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2006_09/0908_shooto.htm
+e00667	shooto	2006-10-20	G-SHOOTO（男女混合興行）	東京キネマ倶楽部	https://gbring.com/sokuho/result/result2006_10/1020_g-shooto.htm
+e00670	shooto	2006-11-19	G-SHOOTO	新木場1stRING	https://gbring.com/sokuho/result/result2006_11/1119_shooto.htm
+e00671	shooto	2006-11-26	プロフェッショナル修斗公式戦（名古屋）	名古屋・Zepp Nagoya	https://gbring.com/sokuho/result/result2006_11/1126_shooto.htm
+e00672	shooto	2006-11-30	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://gbring.com/sokuho/result/result2006_11/1130_shooto.htm
+e00674	shooto	2007-01-26	G-SHOOTO	東京キネマ倶楽部	https://gbring.com/sokuho/result/result2007_01/0126_shooto.htm
+e00675	shooto	2007-02-17	プロフェッショナル修斗公式戦（後楽園ホール）	パシフィコ横浜	https://gbring.com/sokuho/result/result2007_02/0217_shooto.htm
+e00678	shooto	2007-03-25	プロフェッショナル修斗公式戦（名古屋）	名古屋・Zepp Nagoya	https://gbring.com/sokuho/result/result2007_03/0325_shooto.htm
+e00679	shooto	2007-03-30	プロフェッショナル修斗公式戦／G-SHOOTO	東京キネマ倶楽部	https://gbring.com/sokuho/result/result2007_03/0330_shooto.htm
+e00680	shooto	2007-04-21	プロフェッショナル修斗公式戦	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2007_04/0421_shooto.htm
+e00682	shooto	2007-05-26	プロフェッショナル修斗公式戦／G-SHOOTO	東京キネマ倶楽部	https://gbring.com/sokuho/result/result2007_05/0526_shooto.htm
+e00684	shooto	2007-06-30	プロフェッショナル修斗公式戦	北沢タウンホール	https://gbring.com/sokuho/result/result2007_06/0630_shooto.htm
+e00686	shooto	2007-07-20	プロフェッショナル修斗公式戦／G-SHOOTO	東京キネマ倶楽部	https://gbring.com/sokuho/result/result2007_07/0720_shooto.htm
+e00694	shooto	2008-01-26	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://gbring.com/sokuho/result/result2008_01/0126_shooto.htm
+e03126	deep	2014-07-21	DEEP CAGE IMPACT 2014	大田区総合体育館	https://www.deep2001.com/deep-cage-impact-2014%ef%bd%9e%e3%83%9f%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%a1%e3%82%ac%e3%83%88%e3%83%b3%e8%aa%a0%e6%82%9f%e5%bc%95%e9%80%80%e8%88%88%e8%a1%8c%ef%bd%9e/
+e01601	deep	2022-12-11	DEEP TOKYO IMPACT 2022 7th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2022-7th-ro/
+e02038	deep	2004-03-20	DEEP - clubDeep Fukuoka: Team Roken Festival	福岡・TNC放送会館パヴェリアホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02184	deep	2005-12-25	DEEP - Future King Tournament 2005	ゴールドジム サウス東京ANNEX	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02369	deep	2008-01-14	DEEP - Future King Tournament 2007	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02448	deep	2008-09-28	DEEP - clubDeep Hamamatsu	浜松・アクトシティ浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02534	deep	2009-06-07	DEEP - clubDeep Osaka	大阪・アゼリア大正ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02576	deep	2009-09-27	DEEP - Hamamatsu Impact	浜松・アクトシティ浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02591	deep	2009-11-03	DEEP - clubDeep Kyoto	京都・京都テルサ	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02646	deep	2010-04-11	DEEP - Kobudo Fight 9	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02701	deep	2010-09-05	DEEP - clubDeep Nagoya: Kobudo Fight	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02707	deep	2010-09-19	DEEP - Cage Impact 2010 in Hamamatsu	浜松・アクトシティ浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01359	deep	2010-10-24	DEEP 50 IMPACT	JCBホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02743	deep	2010-12-11	DEEP - Future King Tournament 2010	ディファ有明	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02757	deep	2011-02-13	DEEP - clubDeep Nagoya: Kobudo Fight 2	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02776	deep	2011-05-07	DEEP / Smash - Japan MMA League 2011: Raising an Army	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02785	deep	2011-06-05	DEEP - Tokyo Impact 2	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02793	deep	2011-06-18	DEEP / Smash - Japan MMA League 2011 vol. 2	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02796	deep	2011-07-02	DEEP / Smash - Japan MMA League 2011 vol. 3	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02799	deep	2011-07-10	DEEP - Cage Impact 2011 in Nagoya	名古屋・Zepp Nagoya	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02812	deep	2011-08-20	DEEP / Smash - Japan MMA League 2011 vol. 4	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02817	deep	2011-09-03	DEEP / Smash - Japan MMA League 2011 vol. 5	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02819	deep	2011-09-04	DEEP - Osaka Impact	大阪・松下IMPホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02834	deep	2011-10-08	DEEP / Smash - Japan MMA League 2011 vol. 6	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02854	deep	2011-12-10	DEEP - Future King Tournament 2011	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02857	deep	2011-12-17	DEEP / Smash - Japan MMA League 2011 Semifinals	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02860	deep	2011-12-18	DEEP - Oyaji Deep	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02868	deep	2012-01-29	DEEP - Fujisan Matsuri	富士・ふじさんめっせ	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02869	deep	2012-02-05	DEEP - Shizuoka Impact 2012	静岡・ツインメッセ静岡	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02884	deep	2012-03-25	DEEP - Nagoya Impact: Kobudo Fight 10	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02886	deep	2012-04-07	DEEP - Cage Impact 2012 in Tokyo: Over Again	ディファ有明	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02898	deep	2012-05-26	DEEP - Osaka Impact	大阪・アゼリア大正ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02910	deep	2012-07-22	DEEP - Nagoya Impact 2012: Kobudo Fight 11	名古屋・Zepp Nagoya	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02920	deep	2012-09-16	DEEP - Cage Impact 2012 in Hamamatsu	浜松・アクトシティ浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02949	deep	2012-12-08	DEEP - Cage Impact 2012 in Tokyo: 2nd Round	ディファ有明	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02950	deep	2012-12-08	DEEP - Cage Impact 2012 in Tokyo: 1st Round	ディファ有明	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02963	deep	2013-01-26	DEEP - Future King Tournament 2012	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02980	deep	2013-03-10	DEEP - Tokyo Impact: Lightweight GP 2013 Opening Round	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02997	deep	2013-05-05	DEEP - Nagoya Impact: Kobudo Fight 12	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03000	deep	2013-05-18	DEEP - Tokyo Impact: Wave 5	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03013	deep	2013-07-20	DEEP - Tokyo Impact: Lightweight GP 2013 Semifinal	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03019	deep	2013-08-10	DEEP - Nagoya Impact: Kobudo Fight 13	名古屋国際会議場	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03036	deep	2013-10-13	DEEP - Osaka Impact 2013	大阪・アゼリア大正ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03037	deep	2013-10-14	DEEP - Tokyo Impact: Wave 6	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03073	deep	2014-02-09	DEEP - Nagoya Impact 2014	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03076	deep	2014-02-16	DEEP - Tokyo Impact: Wave 7	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03079	deep	2014-02-23	DEEP - Osaka Impact 2014	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03106	deep	2014-05-25	DEEP - Fujisan Matsuri	富士・ふじさんめっせ	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03127	deep	2014-07-27	DEEP - Nagoya Impact 2014: Kobudo Fight 14	名古屋国際会議場	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03145	deep	2014-09-14	DEEP - Hamamatsu Impact 2014	浜松・オークラアクトシティホテル浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03157	deep	2014-10-19	DEEP - Cage Impact 2014 in Osaka	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03193	deep	2015-03-08	DEEP - Nagoya Impact: Kobudo Fight 16	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03219	deep	2015-05-31	DEEP TOKYO IMPACT 2015 WAVE 8	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01450	deep	2015-06-07	おやじDEEP名古屋（DEEP OYAJI IMPACT 2015）	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01737	deep	2015-09-06	DEEP - Hamamatsu Impact 2015	浜松・アクトシティ浜松	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03262	deep	2015-09-27	DEEP - Nagoya Impact 2015	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01461	deep	2015-12-20	DEEPフューチャーキングトーナメント2015	ディファ有明	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03306	deep	2016-03-27	DEEP - Nagoya Impact 2016	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03327	deep	2016-06-12	DEEP - Nagoya Impact: Kobudo Fight 17	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03357	deep	2016-10-02	DEEP - Nagoya Impact: Kobudo Fight 18	春日井・ホテルプラザ勝川	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03368	deep	2016-11-27	DEEP 沼津 富士山まつり	沼津・プラサヴェルデ	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01739	deep	2017-02-12	DEEPフューチャーキングトーナメント2016	GENスポーツパレス	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01556	deep	2021-06-20	DEEP 101 IMPACT（公式ページの日付は延期前の2021年5月5日表記）	ニューピアホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03674	deep	2021-09-23	DEEP 103 IMPACT ～20th Anniversary～	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03799	deep	2023-05-07	DEEP 113 IMPACT	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e03834	deep	2023-11-11	DEEP 116 IMPACT	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Deep_events
+e02444	deep	2008-09-20	DEEP - Glove Amateur	新宿FACE	https://en.wikipedia.org/wiki/List_of_Deep_events
+e01192	shooto	2005-02-11	G-Shooto - Plus 01	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e05277	shooto	2005-11-11	G-SHOOTO Plus 04	新木場1stRING	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02172	shooto	2005-11-13	Shooto & Kakumei Kickboxing	大阪府立体育会館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00650	shooto	2005-12-17	G-SHOOTO 03	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00651	shooto	2005-12-17	プロフェッショナル修斗公式戦（新宿FACE）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00655	shooto	2006-03-03	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00658	shooto	2006-05-06	G-SHOOTO JAPAN 05	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00665	shooto	2006-10-01	プロフェッショナル修斗公式戦（北沢タウンホール）	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00666	shooto	2006-10-14	プロフェッショナル修斗公式戦（パシフィコ横浜）	パシフィコ横浜	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00668	shooto	2006-11-04	プロフェッショナル修斗公式戦（サステイン）	大阪・アゼリア大正ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00669	shooto	2006-11-10	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00673	shooto	2006-12-02	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00676	shooto	2007-03-04	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00677	shooto	2007-03-16	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e01248	shooto	2007-05-13	Shooto - Grapplingman 6	広島・広島産業会館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00681	shooto	2007-05-18	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00683	shooto	2007-06-02	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00685	shooto	2007-07-15	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00687	shooto	2007-08-05	プロフェッショナル修斗公式戦（新宿FACE）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e01257	shooto	2007-09-02	Shooto - Gig North 1	札幌・Zepp Sapporo	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00688	shooto	2007-09-22	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00690	shooto	2007-10-08	修斗＆KAKUMEI KICK	名古屋国際会議場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00691	shooto	2007-10-20	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00692	shooto	2007-11-08	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00693	shooto	2007-12-08	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00695	shooto	2008-02-23	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00696	shooto	2008-03-21	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02386	shooto	2008-03-23	Shooto - Gig Torao 1	福山・ふくやま産業交流館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00697	shooto	2008-03-28	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00698	shooto	2008-05-03	プロフェッショナル修斗公式戦	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02408	shooto	2008-05-25	Shooto - Gig North 2	札幌・Zepp Sapporo	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00699	shooto	2008-06-21	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00700	shooto	2008-06-26	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00701	shooto	2008-07-18	プロフェッショナル修斗公式戦（後楽園ホール）	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00702	shooto	2008-08-03	プロフェッショナル修斗公式戦（名古屋）	名古屋・Zepp Nagoya	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00703	shooto	2008-09-20	プロフェッショナル修斗公式戦	大阪・アゼリア大正ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00704	shooto	2008-09-28	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00705	shooto	2008-10-05	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00706	shooto	2008-10-13	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00707	shooto	2008-10-26	プロフェッショナル修斗公式戦	名古屋・東海テレビテレピアホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00708	shooto	2008-11-29	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00709	shooto	2008-12-13	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00710	shooto	2009-01-18	プロフェッショナル修斗公式戦	ディファ有明	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00711	shooto	2009-01-31	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00712	shooto	2009-02-28	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00713	shooto	2009-03-08	プロフェッショナル修斗公式戦（大阪）	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00714	shooto	2009-03-20	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00715	shooto	2009-03-22	プロフェッショナル修斗公式戦	福山・ふくやま産業交流館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00716	shooto	2009-04-10	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00717	shooto	2009-04-12	プロフェッショナル修斗公式戦	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00718	shooto	2009-04-19	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00719	shooto	2009-05-10	プロフェッショナル修斗公式戦	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02527	shooto	2009-05-17	Shooto - Grapplingman 8	広島・広島産業会館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00720	shooto	2009-05-20	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00721	shooto	2009-06-06	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02535	shooto	2009-06-07	Shooto - Gig North 4	札幌・Zepp Sapporo	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00722	shooto	2009-07-19	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00723	shooto	2009-09-04	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00724	shooto	2009-09-20	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00725	shooto	2009-09-22	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00726	shooto	2009-10-18	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00727	shooto	2009-11-23	プロフェッショナル修斗公式戦（修斗vsパンクラス対抗戦）	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00728	shooto	2009-12-13	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00729	shooto	2010-01-23	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00730	shooto	2010-02-27	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00731	shooto	2010-03-22	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00732	shooto	2010-04-24	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00733	shooto	2010-05-09	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00734	shooto	2010-05-30	プロフェッショナル修斗公式戦	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00735	shooto	2010-06-06	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02667	shooto	2010-06-13	Shooto - Gig Central 20	名古屋・Zepp Nagoya	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00737	shooto	2010-07-19	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00738	shooto	2010-08-07	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00739	shooto	2010-09-17	プロフェッショナル修斗公式戦	北沢タウンホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00740	shooto	2010-09-23	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00741	shooto	2010-10-16	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00742	shooto	2010-11-19	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00744	shooto	2011-01-10	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00745	shooto	2011-02-26	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00747	shooto	2011-04-01	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00748	shooto	2011-04-03	プロフェッショナル修斗公式戦	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00750	shooto	2011-04-17	プロフェッショナル修斗公式戦	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00751	shooto	2011-04-29	プロフェッショナル修斗公式戦	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00752	shooto	2011-05-28	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00753	shooto	2011-06-11	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00754	shooto	2011-07-18	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00755	shooto	2011-08-06	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02821	shooto	2011-09-04	Shooto - Border: Season 3 - Roaring Thunder	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00756	shooto	2011-09-23	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00757	shooto	2011-10-01	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00758	shooto	2011-11-05	プロフェッショナル修斗公式戦	TDCホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e02846	shooto	2011-11-11	Shoot Boxing / Rise / Sustain - SRS 2011 for Japan	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00759	shooto	2011-12-18	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00760	shooto	2012-01-08	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00761	shooto	2012-01-21	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00762	shooto	2012-02-05	SHOOTO GIG KAGAWA 01	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00763	shooto	2012-02-12	SHOOTO GIG CENTRAL Vol.24	名古屋・アスナル金山	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00764	shooto	2012-02-25	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00765	shooto	2012-03-10	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00766	shooto	2012-04-01	プロフェッショナル修斗公式戦	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00767	shooto	2012-04-14	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00768	shooto	2012-04-22	BATTLE MIX 7	札幌・コンカリーニョ	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00769	shooto	2012-05-18	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00770	shooto	2012-06-02	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00771	shooto	2012-06-30	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00772	shooto	2012-07-08	SHOOTO GIG WEST 14	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00773	shooto	2012-07-16	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00774	shooto	2012-08-25	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00775	shooto	2012-09-16	SHOOTO GIG NORTH Vol. 8	札幌・Zepp Sapporo	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00776	shooto	2012-09-23	BORDER – SEASON 4 – 2nd	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00777	shooto	2012-09-30	プロフェッショナル修斗公式戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00778	shooto	2012-10-07	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e05066	shooto	2012-10-27	プロフェッショナル修斗公式戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00779	shooto	2012-11-11	環太平洋ライト級チャンピオン決定戦 MIKI vs YACHI	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00780	shooto	2012-12-09	BORDER – SEASON 4 – 3rd	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00781	shooto	2012-12-15	THE ROOKIE TOURNAMENT 2012 FINAL	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00783	shooto	2013-01-20	環太平洋ダブルチャンピオンシップ	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00784	shooto	2013-02-16	SHOOTO GIG TOKYO Vol.13	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00785	shooto	2013-02-23	SHOOTING DISCO 20 ～君のコブシは100万ボルト～	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00787	shooto	2013-03-16	プロフェッショナル修斗公式戦2013年第2戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00789	shooto	2013-03-24	FORCE 01	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00791	shooto	2013-04-07	BORDER ～season5～ 1st	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00794	shooto	2013-04-21	SHOOTO GIG TOKYO Vol.14	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00795	shooto	2013-05-12	FORO vol.1	ゴールドジム サウス東京ANNEX	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00796	shooto	2013-06-02	闘裸男Ⅻ	広島・広島産業会館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00797	shooto	2013-06-08	SHOOTING DISCO 21 catch the moment ～今でしょ！～	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00799	shooto	2013-07-27	プロフェッショナル修斗公式戦2013年第3戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00800	shooto	2013-07-28	SHOOTO GIG WEST 15	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00801	shooto	2013-08-25	SHOOTO GIG TOKYO Vol.15	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00802	shooto	2013-09-01	BORDER ～season5～ 2nd	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00803	shooto	2013-09-22	SHOOTO GRANZ 青森大会	青森・青森県武道館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00804	shooto	2013-09-29	プロフェッショナル修斗公式戦2013年第4戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00805	shooto	2013-10-05	SHOOTING DISCO 22 ～俺たちの旅～	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00807	shooto	2013-10-06	BATTLE MIX 8	札幌・MARS GYM	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e05067	shooto	2013-11-09	プロフェッショナル修斗公式戦 2013年第5戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00810	shooto	2013-12-15	THE ROOKIE TOURNAMENT FINAL 2013	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00811	shooto	2014-01-12	BORDER -season6-「The 1st」	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00812	shooto	2014-01-13	プロフェッショナル修斗公式戦 2014年第1戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00813	shooto	2014-02-22	SHOOTING DISCO FINAL	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00815	shooto	2014-03-09	FORCE 02	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00816	shooto	2014-03-16	プロフェッショナル修斗公式戦 2014年第2戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00817	shooto	2014-04-20	SHOOTO GIG TOKYO Vol.16	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00818	shooto	2014-04-27	BORDER -season6-「The 2nd」	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00819	shooto	2014-05-05	プロフェッショナル修斗25周年記念大会	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00820	shooto	2014-05-25	闘裸男13	広島・マリーナホップ	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00822	shooto	2014-07-06	SHOOTO GIG WEST 16	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00823	shooto	2014-07-19	SHOOTO GIG TOKYO Vol17	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00824	shooto	2014-09-21	BORDER -season6-「The 3rd」	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00825	shooto	2014-09-27	プロフェッショナル修斗公式戦2014年第7戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00827	shooto	2014-10-05	BATTLE MIX 9	札幌・MARS GYM	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00829	shooto	2014-10-26	SHOOTO GRANZ vol.2	青森・青森県武道館	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00833	shooto	2014-12-21	インフィニティリーグ2014優勝決定戦	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e05068	shooto	2015-01-25	プロフェッショナル修斗公式戦2015年開幕戦	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00834	shooto	2015-02-11	SHOOTO GIG TOKYO Vol.18	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00835	shooto	2015-03-22	BORDER -season7-「The 1st」	大阪・平野区民ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00836	shooto	2015-04-12	FORCE 03	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00837	shooto	2015-04-18	SHOOTO GIG TOKYO Vol.19	新宿FACE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00838	shooto	2015-05-03	MOBSTYLES 15th Anniversary TOUR FIGHT & MOSH	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00842	shooto	2015-07-12	SHOOTO GIG WEST 17	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00843	shooto	2015-07-26	インターナショナル修斗コミッション認定	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00854	shooto	2015-11-29		後楽園ホール	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00855	shooto	2015-12-06	FORCE 04	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e03309	shooto	2016-03-27	Shooto - Fight Collection in Okinawa	沖縄コンベンションセンター	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00862	shooto	2016-04-10	FORCE 05	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00865	shooto	2016-06-12	熊本地震復興支援チャリティー	広島・マリーナホップ	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00869	shooto	2016-09-04	熊本地震復興支援チャリティー プロフェッショナル修斗公式戦福岡大会「闘裸男19」	北九州芸術劇場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00874	shooto	2016-10-29	プロフェッショナル修斗公式戦「バトルミックス11」	札幌・MARS GYM	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00878	shooto	2016-11-13	熊本地震復興支援チャリティー	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00885	shooto	2017-04-09	プロフェッショナル修斗公式戦 香川大会『FORCE 07』	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00889	shooto	2017-07-02	プロフェッショナル修斗公式戦広島大会「闘裸男20」	広島・BLUE LIVE HIROSHIMA	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00893	shooto	2017-09-10	九州北部豪雨復興支援チャリティー プロフェッショナル修斗公式戦福岡大会「闘裸男21」	北九州芸術劇場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00898	shooto	2017-12-03	九州北部豪雨復興支援チャリティー プロフェッショナル修斗公式戦香川大会「FORCE08」	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00905	shooto	2018-04-15	プロフェッショナル修斗公式戦香川大会「FORCE 09」	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00912	shooto	2018-09-09	プロフェッショナル修斗公式戦福岡大会「闘裸男23」	北九州芸術劇場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00915	shooto	2018-10-21	プロフェッショナル修斗公式戦香川大会「FORCE 10」	高松・高松シンボルタワー展示場	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e05207	shooto	2019-09-22	Shooto - Border: Season 11 - The 3rd	大阪・コミュニティプラザ平野	https://shooto-mma.com/result/
+e05208	shooto	2019-11-03	Shooto - The Shooto Okinawa Vol. 2	沖縄・ミュージックタウン音市場	https://shooto-mma.com/result/
+e05206	shooto	2019-11-10	Shooto - Torao 25	広島・BLUE LIVE HIROSHIMA	https://shooto-mma.com/result/
+e03641	shooto	2021-02-22	Shooto - Road to ONE: 4th Young Guns	渋谷TSUTAYA O-EAST	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e03677	shooto	2021-10-05	Shooto - Road to ONE: 5th Sexyama Edition	渋谷TSUTAYA O-EAST	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e01814	rings	1999-10-28	リングス「WORLD MEGA-BATTLE OPEN TOURNAMENT KING of KINGS」Aブロック	国立代々木競技場第二体育館	https://en.wikipedia.org/wiki/List_of_Fighting_Network_Rings_events
+e02343	pancrase	2007-10-27	Pancrase - Hybrid Bout in Utsunomiya 3	宇都宮市体育館	https://en.wikipedia.org/wiki/List_of_Pancrase_events
+e02708	pancrase	2010-09-19	Pancrase Gate 6th Chance	ゴールドジム サウス東京ANNEX	https://en.wikipedia.org/wiki/List_of_Pancrase_events
+e02878	rings	2012-03-09	リングス「REINCARNATION」	後楽園ホール	https://en.wikipedia.org/wiki/List_of_Fighting_Network_Rings_events
+e03152	pancrase	2014-10-05	PANCRASE 261	ディファ有明	https://en.wikipedia.org/wiki/List_of_Pancrase_events
+e01518	pancrase	2018-12-24	PANCRASE パンクラス大阪主催大会（阿倍野区民センター）	大阪・阿倍野区民センター	https://en.wikipedia.org/wiki/List_of_Pancrase_events
+e01177	zst	2004-07-04	BATTLE HAZARD 01	Zepp Tokyo	https://gbring.com/sokuho/result/result2004_07/0704_zst.htm
+e01202	zst	2005-09-10	BATTLE HAZARD 02	Zepp Tokyo	https://gbring.com/sokuho/result/result2005_09/0910_zst.htm
+e02152	zst	2005-09-10	ZST - Battle Hazard 2	Zepp Tokyo	https://gbring.com/sokuho/result/result2005_09/0910_zst.htm
+e05279	zst	2006-05-27	ZST GT－F2（第2回ZSTフェザー級グラップリングトーナメント）	ディファ有明	https://gbring.com/sokuho/result/result2006_05/0527_zst.htm
+e05282	zst	2007-05-20	SWAT!11	ゴールドジム サウス東京ANNEX	https://gbring.com/sokuho/result/result2007_05/0520_zst.htm
+e05285	zst	2007-08-26	SWAT!（ジェネシストーナメント2007）	ゴールドジム サウス東京ANNEX	https://gbring.com/sokuho/result/result2007_08/0826_zst.htm
+e05289	zst	2007-10-28	SWAT！14	ゴールドジム サウス東京ANNEX	https://gbring.com/sokuho/result/result2007_10/1028_zst.htm
+e02714	zst	2010-09-26	ZST - Swat! in Face 6	新宿FACE	https://gbring.com/sokuho/result/result2010_09/0926_zst.htm
+e01363	zst	2010-11-23	ZST.26 ～旗揚げ8周年記念大会～	ディファ有明	https://gbring.com/sokuho/result/result2010_11/1123_zst.htm
+e00743	shooto	2010-12-18	プロフェッショナル修斗公式戦（新人王決定戦）	新宿FACE	https://gbring.com/sokuho/result/result2010_12/1218_shooto.htm
+e05303	zst	2010-12-26	SWAT！39	ゴールドジム サウス東京ANNEX	https://gbring.com/sokuho/result/result2010_12/1226_zst.htm
+e00746	shooto	2011-03-21	プロフェッショナル修斗公式戦（福岡）	北九州・小倉北体育館	https://gbring.com/sokuho/result/result2011_03/0321_shooto.htm
+e05315	zst	2012-09-16	ZST.32	新宿FACE	https://gbring.com/sokuho/result/result2012_09/0917_zst.htm
+e01176	smackgirl	2004-06-19	SMACK GIRL2004～GO WEST～	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2004_06/0620_smack.htm
+e05273	smackgirl	2004-08-08	SMACK JIU-JITSU GIG 02	千代田区体育館	https://gbring.com/sokuho/result/result2004_08/0808_smack.htm
+e05276	smackgirl	2005-05-15	SMACK JIU-JITSU GIG 04 in NAGOYA	愛知・総合格闘技道場ALIVE	https://gbring.com/sokuho/result/result2005_05/0515_smack.htm
+e02233	smackgirl	2006-07-23	SMACKGIRL（7.23 無差別級・ミドル級トーナメント）	ゴールドジム サウス東京ANNEX	https://gbring.com/sokuho/result/result2006_07/0723_smack.htm
+e01236	mars	2006-12-22	MARS 06 “RAPID FIRE”	横浜文化体育館	https://gbring.com/sokuho/result/result2006_12/1222_mars.htm
+e01237	accel	2006-12-24	【アクセル格闘武道会】“天才児”横山剛が王者対決を難無く制す！	兵庫・兵庫県民会館	https://gbring.com/sokuho/result/result2006_12/1224_accel.htm
+e01239	smackgirl	2007-01-21	SMACKGIRL アマチュア大会（1.21）	愛知・公武堂MACS 3Fタイガーホール	https://gbring.com/sokuho/result/result2007_01/0121_smack.htm
+e01240	smackgirl	2007-02-12	SMACKGIRL アマチュア大会（2.12）	台東リバーサイドスポーツセンター	https://gbring.com/sokuho/result/result2007_02/0212_smack.htm
+e01246	smackgirl	2007-04-28	SMACKGIRL（4.28）	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2007_04/0429_smack.htm
+e01252	mars	2007-07-20	MARS 08	新宿FACE	https://gbring.com/sokuho/result/result2007_07/0720_mars.htm
+e01253	smackgirl	2007-07-26	女子総合格闘技SMACKGIRL IN サマフェス!!	代々木公園野外ステージ＆イベントスペース	https://gbring.com/sokuho/result/result2007_07/0726_smack.htm
+e01261	mars	2007-10-13	MARS 09 BLOW AWAY	新宿FACE	https://gbring.com/sokuho/result/result2007_10/1013_mars.htm
+e01262	accel	2007-10-21	【アクセル】港町神戸で素手顔面ルールが遂に始動！ ファンも大喝采	兵庫・神戸ポートターミナル	https://gbring.com/sokuho/result/result2007_10/1021_accel.htm
+e01268	smackgirl	2007-12-26	SMACKGIRL（12.26）	後楽園ホール	https://gbring.com/sokuho/result/result2007_12/1226_smack.htm
+e01296	outsider	2008-12-20	THE OUTSIDER 第四戦	ディファ有明	https://gbring.com/sokuho/result/result2008_12/1220_outsider.htm
+e02585	gcm	2009-10-24	VALKYRIE 03	ディファ有明	https://gbring.com/sokuho/result/result2009_10/1024_gcm.htm
+e08036	accel	2009-12-27	Accel 13 - West Evolution	神戸ポートターミナルホール	https://gbring.com/sokuho/result/result2009_12/1227_accel.htm
+e01340	rising_on_fighting_championship	2009-12-29	ライジングオン	大阪・高石アプラホール	https://gbring.com/sokuho/result/result2009_12/1229_risingon.htm
+e02712	gcm	2010-09-26	VALKYRIE 07	ディファ有明	https://gbring.com/sokuho/result/result2010_09/0926_valkyrie.htm
+e05300	gcm	2010-09-26	CAGE FORCE 19	ディファ有明	https://gbring.com/sokuho/result/result2010_09/0926_cageforce.htm
+e05370	gcm	2010-09-26	GCM - Cage Force 19	ディファ有明	https://gbring.com/sokuho/result/result2010_09/0926_cageforce.htm
+e01362	pancrase	2010-11-21	第12回アマチュアパンクラスオープントーナメント	横浜・P'sLAB横浜	https://gbring.com/sokuho/result/result2010_11/1121_pancrase.htm
+e01365	accel	2010-12-26	【アクセル】松本勇三、初防衛に失敗…新王者は“播州の狂犬”TOMOYUKI	神戸ポートターミナルホール	https://gbring.com/sokuho/result/result2010_12/1226_accel.htm
+e01370	demolition_xtreme_fighting_championship	2011-03-06	DEMOLITION XIGMA OUTBREAK	広島産業会館	https://gbring.com/sokuho/result/result2011_03/0306_demolition.htm
+e01229	shooto_ama	2006-09-24	第13回全日本アマチュア修斗選手権大会	小田原アリーナ	https://gbring.com/sokuho/result/result2006_09/0924_shooto.htm
+e01354	shooto_ama	2010-09-05	第17回全日本アマチュア修斗選手権大会	小田原アリーナ	https://gbring.com/sokuho/result/result2010_09/0905_shooto.htm
+e01373	accel	2011-05-22	【アクセル】大石亨が初代ヘビー級王座決定トーナメントで優勝！横山剛が屋比久にKO勝利	兵庫・メリケン波止場上屋劇場	https://gbring.com/sokuho/result/result2011_05/0522_accel.htm
+e01376	demolition_xtreme_fighting_championship	2011-07-17	DEMOLITION XIGMA RAGE	大阪・世界館	https://gbring.com/sokuho/result/result2011_07/0717_demolition.htm
+e01378	demolition_xtreme_fighting_championship	2011-07-18	DEMOLITION（7.18）	大阪・世界館	https://gbring.com/sokuho/result/result2011_07/0718_demolition.htm
+e02823	accel	2011-09-11	【アクセル】元K-1ファイター瀧川リョウがアームロックで秒殺勝利、金泰泳に挑戦状	大阪・ムーブ・オンアリーナ	https://gbring.com/sokuho/result/result2011_09/0911_accel.htm
+e01380	pancrase	2011-09-25	第13回アマチュアパンクラスオープントーナメント＆第1回アマチュアパンクラスミドルエイジワンマッチ大会	横浜・P'sLAB横浜	https://gbring.com/sokuho/result/result2011_09/0925_pancrase.htm
+e01381	demolition_xtreme_fighting_championship	2011-10-10	DEMOLITION XIGMA COMPILE	大阪・世界館	https://gbring.com/sokuho/result/result2011_10/1010_demolition.htm
+e01384	demolition_xtreme_fighting_championship	2011-11-23	HIGH SPEED	大阪・世界館	https://gbring.com/sokuho/result/result2011_11/1123_demolition.htm
+e01385	demolition_xtreme_fighting_championship	2011-12-04	DEMOLITION XIGMA ENTHUSIASM	広島産業会館	https://gbring.com/sokuho/result/result2011_12/1204_demolition.htm
+e01386	accel	2011-12-25	【アクセル】金泰泳が後藤龍治に勝利、ボブ・サップは反則負け	神戸ポートターミナルホール	https://gbring.com/sokuho/result/result2011_12/1225_accel.htm
+e02880	rising_on_fighting_championship	2012-03-17	ライジングオン11～Road to Champion～	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2012_03/0317_risingon.htm
+e01389	demolition_xtreme_fighting_championship	2012-04-30	BIOSTEMCELL PRESENTS -HIGH SPEED Ⅲ-	大阪・アゼリア大正ホール	https://gbring.com/sokuho/result/result2012_04/0430_demolition.htm
+e01399	demolition_xtreme_fighting_championship	2012-07-22	DEMOLITION 11	兵庫・AI・HALL	https://gbring.com/sokuho/result/result2012_07/0722_demolition.htm
+e01400	accel	2012-07-28	【アクセル】金泰泳が我龍真吾を秒殺！	神戸市立中央体育館	https://gbring.com/sokuho/result/result2012_07/0728_accel.htm
+e05004	nexus	2014-09-28	Fighting NEXUS vol.1 2014.9.28(sun) in 新木場1st RING	新木場1stRING	https://fighting-nexus.net/event.php?id=result-72
+e05005	nexus	2015-03-01	Fighting NEXUS 2nd 2015.03.01(sun) in 新木場1st RING	新木場1stRING	https://fighting-nexus.net/event.php?id=result-81
+e05006	nexus	2015-08-02	Fighting NEXUS 3rd 2015.08.02(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-82
+e05007	nexus	2015-11-15	Fighting NEXUS vol.4 2015.11.15(sun) in 新木場1st RING	新木場1stRING	https://fighting-nexus.net/event.php?id=result-83
+e05008	nexus	2016-03-06	Fighting NEXUS vol.5 2016.3.6(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-84
+e05009	nexus	2016-07-24	Fighting NEXUS vol.7 2016.7.24(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-86
+e05010	nexus	2016-11-12	Fighting NEXUS vol.8 2016.11.16(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-87
+e05011	nexus	2017-05-21	Fighting NEXUS vol.9 2017.5.21(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-88
+e05012	nexus	2017-08-20	Fighting NEXUS vol.10 2017.8.20(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-89
+e05013	nexus	2017-12-03	Fighting NEXUS vol.11 2017.12.4(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-90
+e03459	krossxover	2018-02-24	KROSS×OVER 2.25 埼玉 イコス上尾	埼玉・イコス上尾	https://www.boutreview.com/3/reports/item_2559.html
+e04974	nexus	2018-05-06	Fighting NEXUS vol.13 2018.5.6(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-91
+e03491	krossxover	2018-07-01	KROSS×OVER 7.1 埼玉県県民活動総合センター	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_8549.html
+e04975	nexus	2018-08-11	Fighting NEXUS vol.14 2018.8.11(sat) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-92
+e01514	krossxover	2018-10-20	KROSS×OVER 10.20 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_13530.html
+e04976	nexus	2018-12-16	Fighting NEXUS vol.15 2018.12.16(sun) in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-93
+e01519	krossxover	2019-02-24	KROSS×OVER 2.24 埼玉県県民活動総合センター	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_19820.html
+e04977	nexus	2019-04-28	Fighting NEXUS vol.16 2019.04.28(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-94
+e03551	krossxover	2019-07-07	KROSS×OVER 7.7 埼玉県県民活動総合センター	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_26697.html
+e04978	nexus	2019-07-14	Fighting NEXUS vol.17 ✖ wave10 2019.07.14(sun) in SHINJUKU FACE	新宿FACE	https://fighting-nexus.net/event.php?id=result-95
+e04979	nexus	2019-09-22	Fighting NEXUS “SUBLIME GUYS FIGHT” 2019.09.22(Sun) in espoir ISANUMA	川越・エスポワール伊佐沼	https://fighting-nexus.net/event.php?id=result-378
+e01533	pound_4_pound_fighting_championship	2019-09-29	PFC 9.29 札幌 コンカリーニョ	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_30426.html
+e01539	krossxover	2019-11-04	KROSS×OVER 11.4 埼玉県県民活動総合センター	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_32603.html
+e04980	nexus	2019-11-24	Fighting NEXUS vol.18 2019.11.24(sun) in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-199
+e01543	krossxover	2020-02-23	KROSS×OVER 2.23 埼玉県県民活動総合センター	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_37633.html
+e04981	nexus	2020-02-23	Fighting NEXUS vol.19 2020.2.23(sun) in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-286
+e01544	pound_4_pound_fighting_championship	2020-03-08	PFC 3.8 札幌コンカリーニョ	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_38043.html
+e04982	nexus	2020-12-27	Fighting NEXUS vol.20 in GEN SPORTS PALACE 2020.12.27(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-644
+e04983	nexus	2020-12-27	Fighting NEXUS vol.21×PFC.24 in GEN SPORTS PALACE 2020.12.27(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-646
+e03642	krossxover	2021-03-06	KROSS×OVER 3.7 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_50615.html
+e04984	nexus	2021-04-04	MARRION APPAREL presents Fighting NEXUS vol.22 in GEN SPORTS PALACE 2021.4.4(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-759
+e01553	krossxover	2021-06-05	KROSS×OVER 6.6 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_55106.html
+e01557	krossxover	2021-07-18	KROSS×OVER 7.18 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_57612.html
+e04985	nexus	2021-07-25	MARRION APPAREL presents Fighting NEXUS vol.23 in GEN SPORTS PALACE 2021.7.25(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-835
+e01564	krossxover	2021-10-03	KROSS×OVER 10.3 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_61434.html
+e04986	nexus	2021-11-07	MARRION APPAREL presents Fighting NEXUS vol.24＠寄居町MAJIC BOX on 2021.11.07(sun)	埼玉・寄居町MAJIC BOX	https://fighting-nexus.net/event.php?id=result-899
+e01568	krossxover	2021-12-04	KROSS×OVER 12.5 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_64668.html
+e04987	nexus	2021-12-19	MARRION APPAREL presents Fighting NEXUS vol.25 in GEN SPORTS PALACE / 2021.12.19(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-950
+e01571	pound_4_pound_fighting_championship	2021-12-26	PFC 12.26 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_65674.html
+e04988	nexus	2022-02-13	Ohana Paint presents Fighting NEXUS vol.26 in GEN SPORTS PALACE / 2022.02.13(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1014
+e01575	krossxover	2022-03-03	KROSS×OVER 3.6 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_69010.html
+e01581	krossxover	2022-04-17	KROSS×OVER 4.17 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_71395.html
+e04989	nexus	2022-05-08	KikuNiku presents Fighting NEXUS vol.27 in GEN SPORTS PALACE 2022.05.08(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1105
+e01585	krossxover	2022-07-17	KROSS×OVER 7.17 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_75923.html
+e01586	krossxover	2022-07-31	KROSS×OVER 7.31 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_76764.html
+e04990	nexus	2022-08-07	KikuNiku presents Fighting NEXUS vol.28 in GEN SPORTS PALACE 2022.08.07(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1208
+e01593	krossxover	2022-10-16	KROSS×OVER 10.16 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_80951.html
+e01594	pound_4_pound_fighting_championship	2022-10-16	PFC 10.16 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_80902.html
+e04992	nexus	2022-11-07	株式会社ブシドー presents Fighting NEXUS vol.29 in KORAKUEN HALL 2022.11.07(Mon)	後楽園ホール	https://fighting-nexus.net/event.php?id=result-1311
+e01598	pound_4_pound_fighting_championship	2022-11-20	PFC 11.20 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_82805.html
+e01599	krossxover	2022-11-27	KROSS×OVER 11.27 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_83158.html
+e01603	krossxover	2022-12-18	KROSS×OVER 12.18 ベルサール飯田橋駅前	ベルサール飯田橋駅前	https://www.boutreview.com/3/reports/item_84233.html
+e04993	nexus	2023-02-26	VIVA LA PIPO presents Fighting NEXUS vol.30 in GEN SPORTS PALACE 2023.02.26(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1391
+e01608	krossxover	2023-03-05	KROSS×OVER 3.5 東京 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_87954.html
+e01609	pound_4_pound_fighting_championship	2023-03-12	PFC 3.12 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_88133.html
+e01612	krossxover	2023-04-16	KROSS×OVER 4.16 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_89914.html
+e04994	nexus	2023-05-21	株式会社ライフイン24group presents Fighting NEXUS vol.31 in GEN SPORTS PALACE 2023.05.21(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1495
+e01615	krossxover	2023-06-11	KROSS×OVER & Level-G 6.11 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_92804.html
+e01619	krossxover	2023-08-13	KROSS×OVER 8.13 大田区産業プラザPiO	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_96019.html
+e04996	nexus	2023-08-20	株式会社ライフイン24group presents Fighting NEXUS vol.32 in 後楽園ホール 2023.08.20(Sun)	後楽園ホール	https://fighting-nexus.net/event.php?id=result-1618
+e01628	krossxover	2023-10-22	KROSS×OVER 10.22 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_99142.html
+e01632	krossxover	2023-11-26	KROSS×OVER 11.26 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_100908.html
+e04998	nexus	2023-12-10	株式会社ライフイン24group presents Fighting NEXUS vol.33 in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-1845
+e03847	krossxover	2023-12-17	KROSS×OVER 12.17 東京 GENスポースパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_101914.html
+e04999	nexus	2024-02-18	株式会社ライフイン24group presents Fighting NEXUS vol.34 in GARDEN 新木場 FACTORY	GARDEN新木場FACTORY	https://fighting-nexus.net/event.php?id=result-1975
+e01641	krossxover	2024-03-03	KROSS×OVER 3.3 東京 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_105318.html
+e01642	pound_4_pound_fighting_championship	2024-03-03	PFC 3.3 北海道 PODアリーナ	北海道・PODアリーナ	https://www.boutreview.com/3/reports/item_105385.html
+e05001	nexus	2024-05-12	Fighting NEXUS vol.35 in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-2110
+e01650	krossxover	2024-06-16	KROSS×OVER & Level-G 6.16 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_110443.html
+e01652	krossxover	2024-07-07	KROSS×OVER 7.7 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_111540.html
+e01653	pound_4_pound_fighting_championship	2024-07-07	PFC 7.7 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_111553.html
+e01655	krossxover	2024-07-27	KROSS×OVER 7.27 東京 大田区産業プラザPiO	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_112479.html
+e05003	nexus	2024-08-25	Fighting NEXUS vol.36～初代ミドル級王者決定トーナメント準決勝～ in NEW PIER HALL	ニューピアホール	https://fighting-nexus.net/event.php?id=result-2281
+e01663	krossxover	2024-10-06	KROSS×OVER 10.6 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_116110.html
+e01664	pound_4_pound_fighting_championship	2024-10-06	PFC 10.6 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_116158.html
+e05014	nexus	2024-10-20	Fighting NEXUS “BAYSIDE BATTLE in YOKOSUKA 2024” in 神奈川歯科大学アリーナ	横須賀・神奈川歯科大学アリーナ	https://fighting-nexus.net/event.php?id=result-2345
+e03915	krossxover	2024-11-10	KROSS×OVER 11.10 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_117642.html
+e05015	nexus	2024-11-28	Fighting NEXUS vol.37 in 後楽園ホール	後楽園ホール	https://fighting-nexus.net/event.php?id=result-2448
+e01668	pound_4_pound_fighting_championship	2024-12-08	PFC 12.8 札幌 PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_118982.html
+e01669	krossxover	2024-12-14	KROSS×OVER 12.14 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_119310.html
+e01670	krossxover	2024-12-15	KROSS×OVER 12.15 大田区産業プラザPiO	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_119318.html
+e05016	nexus	2024-12-22	NEXUS MANIA 2024 in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-2524
+e05017	nexus	2025-03-02	Fighting NEXUS vol.38 in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-2592
+e01675	krossxover	2025-03-09	KROSS×OVER 3.9 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_123129.html
+e01678	krossxover	2025-04-06	KROSS×OVER 4.6 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_124343.html
+e01679	pound_4_pound_fighting_championship	2025-04-06	PFC 4.6 札幌 PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_124330.html
+e05018	nexus	2025-05-11	Fighting NEXUS vol.39 in GEN SPORTS PALACE	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-2744
+e03966	krossxover	2025-06-15	KROSS×OVER 6.15 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_128386.html
+e01684	krossxover	2025-07-13	KROSS×OVER 7.13 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_129839.html
+e01685	pound_4_pound_fighting_championship	2025-07-13	PFC 7.13 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_129860.html
+e01687	krossxover	2025-07-27	KROSS×OVER 7.27 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_131029.html
+e05022	nexus	2025-08-03	NEXUS MANIA 2025 in 後楽園ホール 2025.08.03(Sun)	後楽園ホール	https://fighting-nexus.net/event.php?id=result-3007
+e05023	nexus	2025-09-14	Fighting NEXUS vol.40 in GEN SPORTS PALACE 2025.09.14(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=result-3085
+e01688	pound_4_pound_fighting_championship	2025-09-21	PFC 9.21 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_133871.html
+e01689	krossxover	2025-09-28	KROSS×OVER 9.28 東京 IKUSA ARENA	IKUSA ARENA	https://www.boutreview.com/3/reports/item_134284.html
+e05024	nexus	2025-10-19	Fighting NEXUS “BAYSIDE BATTLE in YOKOSUKA 2025” in 神奈川歯科大学アリーナ 2025.10.19(Sun)	横須賀・神奈川歯科大学アリーナ	https://fighting-nexus.net/event.php?id=result-3149
+e04002	krossxover	2025-11-16	KROSS×OVER 11.16 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_137099.html
+e05025	nexus	2025-11-22	Fighting NEXUS vol.41 in 後楽園ホール 2025.11.22(Sat)	後楽園ホール	https://fighting-nexus.net/event.php?id=result-3226
+e01696	krossxover	2025-12-07	KROSS×OVER 12.7 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_138277.html
+e04010	pound_4_pound_fighting_championship	2025-12-07	PFC 12.7 札幌 PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_138141.html
+e01698	krossxover	2025-12-14	KROSS×OVER 12.14 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_138772.html
+e05026	nexus	2025-12-21	FightingNEXUS vol.42 in GEN SPORTS PALACE 2025.12.21(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=fighting-nexus-vol-42
+e01703	krossxover	2026-03-01	KROSS×OVER 3.1 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_142174.html
+e05027	nexus	2026-03-08	Fighting NEXUS vol.43 in GEN SPORTS PALACE 2026.03.08(Sun)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=fighting-nexus-vol-43
+e01705	pound_4_pound_fighting_championship	2026-03-29	PFC 3.29 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_143582.html
+e01707	krossxover	2026-04-19	KROSS×OVER 4.19 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_144729.html
+e05028	nexus	2026-04-25	クラウドWi-Fi presents NEXUS MANIA 2026 1stROUND in 後楽園ホール	後楽園ホール	https://fighting-nexus.net/event.php?id=nexus-mania-2026-1st-round
+e05029	nexus	2026-06-07	株式会社TOMUSHI presents NEXUS YAKUMO ～神前試合～ 2026 in だんだんとまとアリーナ	北海道・だんだんとまとアリーナ	https://fighting-nexus.net/event.php?id=result-3517
+e01714	krossxover	2026-06-21	KROSS×OVER 6.21 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_147856.html
+e05030	nexus	2026-06-27	FightingNEXUS vol.44 in GEN SPORTS PALACE 2026.06.27(Sat)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=fightingnexus-vol-44
+e05031	nexus	2026-07-03	クラウドWi-Fi presents NEXUS MANIA 2026 2stROUND in 後楽園ホール 2026.07.03(Fri)	後楽園ホール	https://fighting-nexus.net/event.php?id=result-3588
+e01715	krossxover	2026-07-05	KROSS×OVER 7.5 新宿フェイス	新宿FACE	https://www.boutreview.com/3/reports/item_148553.html
+e01719	krossxover	2026-07-26	KROSS×OVER 7.26 GENスポーツパレス	GENスポーツパレス	https://www.boutreview.com/3/reports/item_149837.html
+e01720	pound_4_pound_fighting_championship	2026-08-02	PFC 8.2 札幌PODアリーナ	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_150072.html
+e05034	nexus	2026-09-12	Fighting NEXUS vol.45×STRIKE NEXUS 10 in GEN SPORTS PALACE 2026.09.12(Sat)	GENスポーツパレス	https://fighting-nexus.net/event.php?id=nexus45
+e01724	krossxover	2026-09-27	KROSS×OVER 9.27 TOKYO SQUARE	TOKYO SQUARE	https://www.boutreview.com/3/reports/item_153144.html
+e04081	krossxover	2026-10-11	KROSS×OVER 10.11 大田PiO	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_153740.html
+e04082	pound_4_pound_fighting_championship	2026-10-11	リミットレス提供 PFC.42（10.11 札幌PODアリーナ）	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_153630.html
+e05035	nexus	2026-10-18	Fighting NEXUS “BAYSIDE BATTLE in YOKOSUKA 2026” in 神奈川歯科大学アリーナ 2026.10.18(Sun)	横須賀・神奈川歯科大学アリーナ	https://fighting-nexus.net/event.php?id=bayside-battle-yokosuka-2026
+e05046	pound_4_pound_fighting_championship	2020-03-08	P4P FC 23 - Pound For Pound FC 23 / Stones.4	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_38043.html
+e05191	pound_4_pound_fighting_championship	2021-12-26	P4P FC - PFC Yarennoka! 2021	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_65674.html
+e05193	pound_4_pound_fighting_championship	2022-10-16	P4P FC 27 - Pound For Pound FC 27	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_80902.html
+e05194	pound_4_pound_fighting_championship	2022-11-20	P4P FC 28 - Pound For Pound FC 28	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_82805.html
+e05174	krossxover	2023-10-22	KROSSxOVER 23	新宿FACE	https://www.boutreview.com/3/reports/item_99142.html
+e05184	pound_4_pound_fighting_championship	2024-03-03	P4P FC 32 - Pound For Pound FC 32	北海道・PODアリーナ	https://www.boutreview.com/3/reports/item_105385.html
+e05185	pound_4_pound_fighting_championship	2024-07-07	P4P FC 33 - Pound For Pound FC 33	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_111553.html
+e05171	krossxover	2024-07-27	KROSSxOVER 27	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_112479.html
+e05186	pound_4_pound_fighting_championship	2024-10-06	P4P FC 34 - Pound For Pound FC 34	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_116158.html
+e05187	pound_4_pound_fighting_championship	2024-12-08	P4P FC 35 - Pound For Pound FC 35	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_118982.html
+e05048	pound_4_pound_fighting_championship	2025-04-06	P4P FC 36 - Pound For Pound FC 36	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_124330.html
+e05054	pound_4_pound_fighting_championship	2025-07-13	P4P FC 37 - Pound For Pound FC 37	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_129860.html
+e05055	pound_4_pound_fighting_championship	2025-09-21	P4P FC 38 - Pound For Pound FC 38	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_133871.html
+e05049	pound_4_pound_fighting_championship	2025-12-07	P4P FC 39 - Pound For Pound FC 39	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_138141.html
+e05050	pound_4_pound_fighting_championship	2026-03-29	P4P FC 40 - Pound For Pound FC 40	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_143582.html
+e05172	krossxover	2026-06-21	KROSSxOVER - Cage 9	GENスポーツパレス	https://www.boutreview.com/3/reports/item_147856.html
+e05051	pound_4_pound_fighting_championship	2026-08-02	P4P FC 41 - Pound For Pound FC 41	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_150072.html
+e01145	universal_fightingarts_organization	2002-08-08	LEGEND（東京ドーム）	東京ドーム	https://www.boutreview.com/fightsspiral/LEGEND.html
+e01415	outsider	2013-06-09	RINGS／THE OUTSIDER 第26戦 横浜文化体育館	横浜文化体育館	https://efight.jp/result-20130609_17814
+e01438	outsider	2014-12-07	RINGS／THE OUTSIDER 第33戦 横浜文化体育館大会	横浜文化体育館	https://battle-news.com/?p=3234
+e01444	outsider	2015-03-21	THE OUTSIDER 第34戦（ディファ有明）	ディファ有明	https://battle-news.com/?p=6916
+e01448	outsider	2015-05-17	THE OUTSIDER 第35戦（有明）	ディファ有明	https://battle-news.com/?p=9066
+e01460	outsider	2015-12-13	THE OUTSIDER 第38戦 大田区総合体育館SPECIAL	大田区総合体育館	https://battle-news.com/?p=17716
+e01467	outsider	2016-03-27	THE OUTSIDER 第39戦（ディファ有明）	ディファ有明	https://battle-news.com/?p=20302
+e01472	outsider	2016-07-31	THE OUTSIDER 第41戦（ディファ有明）	ディファ有明	https://battle-news.com/?p=22736
+e01480	outsider	2016-12-11	RINGS／THE OUTSIDER 第43戦 横浜文化体育館大会	横浜文化体育館	https://battle-news.com/?p=25638
+e01485	outsider	2017-05-21	THE OUTSIDER 第46戦（ディファ有明）	ディファ有明	https://battle-news.com/?p=30025
+e01501	outsider	2017-12-10	THE OUTSIDER 第48戦 大田区総合体育館大会	大田区総合体育館	https://battle-news.com/?p=35307
+e05324	atoys_challenge_fight	2018-02-18	格闘技のおもちゃ箱 ACF 35th（2.18 大阪 アゼリア大正ホール）	大阪・アゼリア大正ホール	https://www.boutreview.com/3/reports/item_1960.html
+e01510	atoys_challenge_fight	2018-08-26	ACF 8.26 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_10857.html
+e05326	zst	2018-10-28	ZST.62 / SWAT!167（横浜大さん橋ホール）	横浜大さん橋ホール	https://www.boutreview.com/3/reports/item_14089.html
+e03536	atoys_challenge_fight	2019-04-07	ACF 40th ～ガールズファイト3～ 4.7 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_21899.html
+e01526	atoys_challenge_fight	2019-05-05	ACF 5.5 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_23371.html
+e01529	pancrase	2019-07-15	PANCRASE大阪大会（城東KADO-YAがもよんホール）	大阪・城東KADO-YAがもよんホール	https://battle-news.com/?p=51301
+e03577	atoys_challenge_fight	2019-11-03	ACF 11.3 大阪沖縄会館	大阪沖縄会館	https://www.boutreview.com/3/reports/item_32357.html
+e01542	atoys_challenge_fight	2020-02-16	ACF 2.16 大阪 プリンセスガーデン	大阪・プリンセスガーデン	https://www.boutreview.com/3/reports/item_37251.html
+e03627	atoys_challenge_fight	2020-11-29	ACF 11.29 滋賀 ハーティーセンター秦荘	滋賀・ハーティーセンター秦荘	https://www.boutreview.com/3/reports/item_46312.html
+e03632	atoys_challenge_fight	2020-12-20	ACF 12.20 コミュニティプラザ平野	大阪・コミュニティプラザ平野	https://www.boutreview.com/3/reports/item_47285.html
+e03645	atoys_challenge_fight	2021-03-14	ACF 3.14 大阪 平野区民ホール	大阪・平野区民ホール	https://www.boutreview.com/3/reports/item_50902.html
+e01554	atoys_challenge_fight	2021-06-06	ACF 6.6 大阪 176BOX	大阪・176BOX	https://www.boutreview.com/3/reports/item_55083.html
+e01560	atoys_challenge_fight	2021-08-29	ACF 8.29 大阪 176BOX	大阪・176BOX	https://www.boutreview.com/3/reports/item_59290.html
+e03678	atoys_challenge_fight	2021-10-17	ACF 10.17 大阪市阿倍野区民センター	大阪・阿倍野区民センター	https://www.boutreview.com/3/reports/item_62105.html
+e01567	atoys_challenge_fight	2021-11-28	ACF 11.28 滋賀 ハーティーセンター秦荘	滋賀・ハーティーセンター秦荘	https://www.boutreview.com/3/reports/item_64386.html
+e01574	atoys_challenge_fight	2022-02-27	ACF 2.27 大阪 すみのえ舞昆ホール	大阪・すみのえ舞昆ホール	https://www.boutreview.com/3/reports/item_68769.html
+e01579	atoys_challenge_fight	2022-04-03	ACF 4.3 大阪沖縄会館	大阪沖縄会館	https://www.boutreview.com/3/reports/item_70770.html
+e03805	atoys_challenge_fight	2023-06-04	ACF 6.4 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_92384.html
+e01629	bloom_fighting_championship	2023-11-19	BLOOM FC 11.19 福岡 西鉄ホール	福岡・西鉄ホール	https://www.boutreview.com/3/reports/item_100704.html
+e01631	atoys_challenge_fight	2023-11-26	ACF 11.26 滋賀 ハーティーセンター秦荘	滋賀・ハーティーセンター秦荘	https://www.boutreview.com/3/reports/item_100942.html
+e01633	atoys_challenge_fight	2023-12-10	ACF 12.10 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_101867.html
+e03849	atoys_challenge_fight	2024-01-14	ACF 1.14 大阪 ドーンセンター	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_102987.html
+e01654	atoys_challenge_fight	2024-07-14	ACF 7.14 大阪 176BOX	大阪・176BOX	https://www.boutreview.com/3/reports/item_111816.html
+e01682	atoys_challenge_fight	2025-05-06	ACF 5.6 大阪沖縄会館	大阪沖縄会館	https://www.boutreview.com/3/reports/item_125886.html
+e01686	ultimate_shooting	2025-07-20	ULTIMATE SHOOTING PRE MATCH（沖縄コンベンションセンター展示棟）	沖縄コンベンションセンター展示棟	https://battle-news.com/?p=134250
+e05340	gladiator	2025-09-21	BODYMAKER presents GLADIATOR 032（176BOX）	大阪・176BOX	https://battle-news.com/?p=136632
+e01697	atoys_challenge_fight	2025-12-14	ACF 12.14 大阪市西区民センター	大阪市西区民センター	https://www.boutreview.com/3/reports/item_138524.html
+e01704	atoys_challenge_fight	2026-03-22	ACF 3.22 大阪沖縄会館	大阪沖縄会館	https://www.boutreview.com/3/reports/item_143099.html
+e03485	gladiator	2018-06-03	GLADIATOR x Demolition, Vol. 1	大阪・東成区民センター	https://www.boutreview.com/3/reports/item_7156.html
+e04876	gladiator	2018-09-02	GLADIATOR×DEMOLITION vol.2	大阪・堺市産業振興センター	http://www.boutreview.com/3/news/item_9274.html
+e04877	gladiator	2019-04-14	GLADIATOR 009 in OSAKA	大阪・城東KADO-YAがもよんホール	https://www.boutreview.com/3/reports/item_22304.html
+e03549	gladiator	2019-07-07	GLADIATOR 010 in Osaka	大阪・堺市産業振興センター	https://www.boutreview.com/3/reports/item_26686.html
+e03701	gladiator	2022-01-23	GLADIATOR 016 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_66737.html
+e03722	gladiator	2022-05-01	GLADIATOR 017 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_72274.html
+e03734	gladiator	2022-06-26	GLADIATOR 018 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_75043.html
+e04859	gladiator	2023-01-22	BODYMAKER presents GLADIATOR 020 in OSAKA	大阪・176BOX	https://www.boutreview.com/3/reports/item_85612.html
+e03788	gladiator	2023-03-26	GLADIATOR 021 in Osaka	大阪・176BOX	https://www.boutreview.com/3/news/item_87474.html
+e03829	gladiator	2023-09-30	GLADIATOR 023 in Osaka	大阪・176BOX	https://www.boutreview.com/3/news/item_96940.html
+e03841	gladiator	2023-12-09	GLADIATOR 024 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_101966.html
+e03856	gladiator	2024-03-03	GLADIATOR 025 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_105222.html
+e03876	gladiator	2024-05-05	GLADIATOR 026 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_108519.html
+e03905	gladiator	2024-10-06	GLADIATOR 028 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_116141.html
+e03934	gladiator	2025-01-12	GLADIATOR 029 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_120404.html
+e04861	gladiator	2025-04-06	BODYMAKERpresentsGLADIATOR 030	大阪・176BOX	https://www.boutreview.com/3/reports/item_124356.html
+e08070	gladiator	2025-04-06	BODYMAKER presents GLADIATOR 030	大阪・176BOX	https://www.boutreview.com/3/reports/item_124356.html
+e04862	gladiator	2025-06-08	BODYMAKER presentsGLADIATOR 031	大阪・176BOX	https://www.boutreview.com/3/reports/item_127899.html
+e05339	gladiator	2025-06-08	BODYMAKER presents GLADIATOR 031	大阪・176BOX	https://www.boutreview.com/3/reports/item_127899.html
+e04863	gladiator	2025-09-21	BODYMAKER presents GLADIATOR 032	大阪・176BOX	https://www.boutreview.com/3/reports/item_133625.html
+e04864	gladiator	2025-11-30	BODYMAKERpresents GLADIATOR 033	大阪・176BOX	https://www.boutreview.com/3/news/item_136124.html
+e08071	gladiator	2025-11-30	BODYMAKER presents GLADIATOR 033	大阪・176BOX	https://www.boutreview.com/3/news/item_136124.html
+e03598	gladiator	2020-02-23	GLADIATOR 012 in Osaka	大阪・東成区民センター	https://www.boutreview.com/3/news/item_35672.html
+e04879	gladiator	2021-02-07	グラジエーター	大阪・176BOX	https://www.boutreview.com/3/reports/item_49179.html
+e03658	gladiator	2021-06-27	GLADIATOR 014 in Osaka	大阪・176BOX	https://www.boutreview.com/3/reports/item_56382.html
+e04882	gladiator	2022-09-25	グラジエーター	大阪・176BOX	https://www.boutreview.com/3/reports/item_79776.html
+e04883	gladiator	2023-06-11	恥知らずな行為	大阪・176BOX	https://www.boutreview.com/3/news/item_91694.html
+e04027	gladiator	2026-02-23	GLADIATOR 034 in Osaka	大阪・176BOX	https://www.boutreview.com/3/news/item_140452.html
+e04908	heat	2019-03-02	HEAT 44	名古屋国際会議場	https://www.boutreview.com/3/reports/item_20045.html
+e04916	heat	2019-07-28	HEAT45	名古屋国際会議場	https://www.boutreview.com/3/reports/item_27628.html
+e04915	heat	2020-01-19	HEAT46	ニューピアホール	https://www.boutreview.com/3/reports/item_35828.html
+e04911	heat	2021-10-17	勝敗なし	名古屋国際会議場	https://www.boutreview.com/3/reports/item_62112.html
+e03724	heat	2022-05-07	HEAT 50	名古屋国際会議場	https://www.boutreview.com/3/reports/item_72421.html
+e03344	zst	2016-08-07	ZST 52 / Swat! 154	新宿FACE	http://www.boutreview.com/2/schedule/zst/160807zst.html
+e05136	zst	2016-08-07	ZST.52	新宿FACE	http://www.boutreview.com/2/schedule/zst/160807zst.html
+e05142	zst	2018-03-17	ZST.59	新宿FACE	https://www.boutreview.com/3/reports/item_3283.html
+e03528	zst	2019-01-27	ZST.63	新宿FACE	https://www.boutreview.com/3/reports/item_18262.html
+e05360	zst	2020-01-26	ZST 67	新宿FACE	https://www.boutreview.com/3/news/item_35296.html
+e05072	tenkaichi_fight	2012-10-21	TENKAICHI Super Fight	沖縄・ミュージックタウン音市場	https://efight.jp/result-20121021_4702
+e05073	tenkaichi_fight	2012-12-16	TENKAICHI Super Fight	沖縄・ミュージックタウン音市場	https://efight.jp/result-20121216_9249
+e03192	tenkaichi_fight	2015-03-01	Tenkaichi Fight - Tenkaichi 75	沖縄・ミュージックタウン音市場	https://efight.jp/result-20150301_138817
+e03221	tenkaichi_fight	2015-05-31	Tenkaichi 76 - Special Live AK-69	沖縄コンベンションセンター展示棟	https://efight.jp/result-20150531_171956
+e03230	tenkaichi_fight	2015-07-12	Tenkaichi Fight - Tenkaichi with Best Gym	沖縄・ナムラホール	https://efight.jp/result-20150712_186083
+e03255	tenkaichi_fight	2015-09-13	Tenkaichi Fight - Tenkaichi 77	沖縄・ミュージックタウン音市場	https://efight.jp/result-20150913_206683
+e03280	tenkaichi_fight	2015-11-29	Tenkaichi Fight - Tenkaichi 78	沖縄・ミュージックタウン音市場	https://efight.jp/result-20151129_226996
+e03291	tenkaichi_fight	2016-01-31	Tenkaichi Fight - Tenkaichi 79	沖縄・ミュージックタウン音市場	https://efight.jp/result-20160131_232651
+e03322	tenkaichi_fight	2016-05-22	Tenkaichi 80 - Tenkaichi vs. Heat	沖縄・ミュージックタウン音市場	https://efight.jp/result-20160522_238785
+e03369	tenkaichi_fight	2016-11-27	Tenkaichi Fight - Tenkaichi 83	沖縄・ミュージックタウン音市場	https://efight.jp/result-20161127_251353
+e03392	tenkaichi_fight	2017-03-26	Tenkaichi Fight - Tenkaichi 84	沖縄・ミュージックタウン音市場	https://efight.jp/result-20170326_257682
+e03416	tenkaichi_fight	2017-07-16	Tenkaichi Fight - Tenkaichi 86	沖縄・ミュージックタウン音市場	https://efight.jp/result-20170720_264227
+e04894	heat	2013-03-31	HEAT26	名古屋国際会議場	https://efight.jp/result-20130331_15866
+e04290	zst	2010-07-03	SWAT！in FACE vol.5	新宿FACE	https://efight.jp/result-20100703_190815
+e02968	zst	2013-02-11	ZST 34	新宿FACE	https://efight.jp/result-20130211_11651
+e05114	zst	2013-02-11	ZST.34	新宿FACE	https://efight.jp/result-20130211_11651
+e03093	zst	2014-04-12	ZST 40	新宿FACE	https://efight.jp/result-20140412_30444
+e05123	zst	2014-04-12	ZST.40	新宿FACE	https://efight.jp/result-20140412_30444
+e03311	zst	2016-04-17	ZST 50 / Zst Challenge 151	新宿FACE	https://efight.jp/result-20160417_236669
+e03312	zst	2016-04-17	ZST 51 / Zst Challenge 152	新宿FACE	https://efight.jp/result-20160417_236669
+e05135	zst	2016-04-17	ZST.51	新宿FACE	https://efight.jp/result-20160417_236669
+e05146	zst	2019-12-01	今回は所選手の教え子と試合をさせていただきとても光栄です。長野選手といい試合をして昔のZSTを超えていきたいです	GENスポーツパレス	https://efight.jp/result-20191201_376678
+e05361	zst	2020-08-30	ZST 68	GENスポーツパレス	https://efight.jp/result-20200830_458051
+e05362	zst	2020-11-22	ZST 69	GENスポーツパレス	https://efight.jp/result-20201124_485982
+e05363	zst	2021-04-18	ZST 70	GENスポーツパレス	https://efight.jp/result-20210418_528101
+e04901	heat	2014-09-07	HEAT 33	名古屋国際会議場	https://efight.jp/result-20140907_55194
+e04906	heat	2017-02-19	HEAT 39	名古屋国際会議場	https://efight.jp/result-20170219_255769
+e04914	heat	2024-04-27	HEAT53	名古屋国際会議場	https://efight.jp/result-20240501_1491770
+e03987	heat	2025-09-20	HEAT 57	愛知・刈谷市産業振興センターあいおいホール	https://efight.jp/result-20250921_1648022
+e04038	heat	2026-04-11	HEAT 58	ニューピアホール	https://efight.jp/result-20260415_1702584
+e02818	gladiator	2011-09-03	GLADIATOR 23	広島産業会館	https://efight.jp/result-20110903_14242
+e02888	gladiator	2012-04-08	GLADIATOR 32	ディファ有明	https://efight.jp/result-20120408_10823
+e04870	gladiator	2013-09-29	DEEP	ディファ有明	https://efight.jp/result-20130929_22426
+e01414	zst	2013-04-28	ZST - Swat! 50	ゴールドジム サウス東京ANNEX	https://efight.jp/news/result-20130428_16110
+e05116	zst	2013-04-28	～FIGHTING NETWORK ZST～SWAT!50	ゴールドジム サウス東京ANNEX	https://efight.jp/news/result-20130428_16110
+e01418	zst	2013-07-14	ZST 36	ディファ有明	https://efight.jp/result-20130714_19765
+e05117	zst	2013-07-14	FIGHTING NETWORK ZST～ZST.36	ディファ有明	https://efight.jp/result-20130714_19765
+e05121	zst	2013-12-22	SWAT!53	ゴールドジム サウス東京ANNEX	https://efight.jp/result-20131222_26605
+e03167	zst	2014-11-23	ZST 43	ディファ有明	https://efight.jp/result-20141123_90791
+e05127	zst	2014-11-23	ZST.43－旗揚げ12周年記念大会－	ディファ有明	https://efight.jp/result-20141123_90791
+e05140	zst	2017-09-10	ZST.57	ディファ有明	https://efight.jp/result-20170910_267461
+e05221	zst	2019-05-11	ZST 64	新宿FACE	http://www.boutreview.com/3/events/event/190511zst
+e05222	zst	2019-05-11	ZST 65	新宿FACE	http://www.boutreview.com/3/events/event/190511zst
+e02055	zst	2004-07-04	ZST - Battle Hazard 1	Zepp Tokyo	https://gbring.com/sokuho/result/result2004_07/0704_zst.htm
+e04934	krossxover	2018-02-24	KROSS×OVER 2	埼玉・イコス上尾	https://www.boutreview.com/3/reports/item_2559.html
+e04935	krossxover	2018-07-01	KROSS×OVER 3	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_8549.html
+e04940	krossxover	2018-10-20	KROSS×OVER 5	新宿FACE	https://www.boutreview.com/3/reports/item_13530.html
+e05145	zst	2018-10-28	ZST.62	横浜大さん橋ホール	https://www.boutreview.com/3/reports/item_14089.html
+e04941	krossxover	2019-02-24	KROSSxOVER 5	埼玉・埼玉県県民活動総合センター	https://www.boutreview.com/3/reports/item_19820.html
+e05045	pound_4_pound_fighting_championship	2019-09-29	P4P FC 22 - Pound For Pound FC 22 / Stones.3	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_30426.html
+e05348	krossxover	2021-06-05	KROSSxOVER 12	新宿FACE	https://www.boutreview.com/3/reports/item_55106.html
+e04945	krossxover	2022-12-18	KROSS×OVER20	ベルサール飯田橋駅前	https://www.boutreview.com/3/reports/item_84233.html
+e05047	pound_4_pound_fighting_championship	2023-03-12	P4P FC 29 - Pound For Pound FC 29	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_88133.html
+e06026	krossxover	2023-04-16	KROSSxOVER 21	新宿FACE	https://www.boutreview.com/3/reports/item_89914.html
+e05347	krossxover	2023-11-26	KROSSxOVER - Cage 2	GENスポーツパレス	https://www.boutreview.com/3/reports/item_100908.html
+e04952	krossxover	2024-11-10	KROSSxOVER - Cage 4	GENスポーツパレス	https://www.boutreview.com/3/reports/item_117642.html
+e04953	krossxover	2024-12-15	KROSSxOVER 29	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_119318.html
+e04954	krossxover	2025-03-09	KROSS×OVER.28	GENスポーツパレス	https://www.boutreview.com/3/reports/item_123129.html
+e04956	krossxover	2025-06-15	KROSSxOVER - Cage 6	GENスポーツパレス	https://www.boutreview.com/3/reports/item_128386.html
+e04959	krossxover	2025-09-28	KROSSxOVER 32	IKUSA ARENA	https://www.boutreview.com/3/reports/item_134284.html
+e05052	pound_4_pound_fighting_championship	2026-10-11	P4P FC 42 - Pound For Pound FC 42	札幌・PODアリーナ	https://www.boutreview.com/3/reports/item_153630.html
+e03862	deep	2024-03-17	DEEP OSAKA IMPACT 2024 1st ROUND	大阪・住吉区民センター	https://www.boutreview.com/3/events/event/240317deep
+e03879	deep	2024-05-26	DEEP TOKYO IMPACT 2024 3rd ROUND	ニューピアホール	https://www.boutreview.com/3/news/item_107014.html
+e03898	deep	2024-09-08	DEEP TOKYO IMPACT 2024 4th ROUND	ニューピアホール	https://www.boutreview.com/3/events/event/240908deep
+e01662	deep	2024-10-06	DEEP HAMAMATSU IMPACT 2024	浜松・アクトシティ浜松	https://www.boutreview.com/3/reports/item_115989.html
+e03918	deep	2024-11-23	DEEP TOKYO IMPACT 2024 5th ROUND	ニューピアホール	https://www.boutreview.com/3/reports/item_118062.html
+e05189	pound_4_pound_fighting_championship	2019-07-28	P4P FC 21 - Pound For Pound FC 21 / Stones.2	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_27748.html
+e05190	pound_4_pound_fighting_championship	2019-12-22	P4P FC - PFC Yarennoka! 2019	札幌・コンカリーニョ	https://www.boutreview.com/3/reports/item_34834.html
+e01576	pound_4_pound_fighting_championship	2022-03-06	PFC.25	札幌・PODアリーナ	https://www.boutreview.com/3/news/item_68764.html
+e05192	pound_4_pound_fighting_championship	2022-03-06	P4P FC 25 - Pound For Pound FC 25	札幌・PODアリーナ	https://www.boutreview.com/3/news/item_68764.html
+e02999	tenkaichi_fight	2013-05-12	Tenkaichi Fight - Tenkaichi 66	沖縄・ミュージックタウン音市場	https://efight.jp/result-20130516_16895
+e04917	heat	2018-09-17	HEAT43	愛知・刈谷市産業振興センター	https://www.boutreview.com/3/news/item_9298.html
+e02852	deep	2011-11-27	DEEP - Cage Impact 2011 in Toyama	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e02904	deep	2012-06-24	DEEP - clubDeep Toyama: Barbarian Festival 10	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e02943	deep	2012-11-11	DEEP - Toyama Impact 2012	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e03028	deep	2013-09-15	DEEP - Cage Impact 2013 in Hamamatsu	浜松・アクトシティ浜松	https://www.deep2001.com/past-deep-jewels/
+e03051	deep	2013-11-17	DEEP - Toyama Impact: Rookies 3	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e03082	deep	2014-03-01	DEEP - Hachioji Chojin Matsuri 2014	八王子総合体育館	https://www.deep2001.com/past-deep-jewels/
+e03096	deep	2014-04-20	DEEP - Toyama Impact 12	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e03140	deep	2014-09-07	DEEP - Kanazawa Impact 2014 Rookies	金沢・金沢流通会館大ホール	https://www.deep2001.com/past-deep-jewels/
+e03158	deep	2014-10-19	DEEP - Nagoya Impact 2014: Kobudo Fight 15	春日井・ホテルプラザ勝川	https://www.deep2001.com/past-deep-jewels/
+e03165	deep	2014-11-16	DEEP - Toyama Impact 2014: Rookies 4	富山・イベントプラザ富山	https://www.deep2001.com/past-deep-jewels/
+e03336	deep	2016-07-03	DEEP SAITAMA IMPACT in 小江戸川越 2016	川越・えすぽわーる伊佐沼	https://www.deep2001.com/past-deep-jewels/
+e03349	deep	2016-09-18	DEEP - Hamamatsu Impact 2016	浜松・アクトシティ浜松	https://www.deep2001.com/past-deep-jewels/
+e03365	deep	2016-11-20	DEEP Hitachinaka: Yasuhiro Kawasaki Intai Matsuri	ひたちなか・那珂湊体育館	https://www.deep2001.com/past-deep-jewels/
+e03391	deep	2017-03-26	DEEP - Saitama Impact in Koedo Kawagoe 2017	川越・えすぽわーる伊佐沼	https://www.deep2001.com/past-deep-jewels/
+e08055	deep	2017-04-02	DEEP - Hachioji Chojin Matsuri 2017	八王子市民体育館	https://www.deep2001.com/past-deep-jewels/
+e08063	deep	2018-04-01	DEEP - Hachioji Chojin Matsuri 2018	八王子市民体育館	https://www.deep2001.com/past-deep-jewels/
+e01745	deep	2021-03-13	DEEPフューチャーキングトーナメント2020	ニューピアホール	https://www.deep2001.com/past-deep-jewels/
+e02885	gladiator	2012-04-01	GLADIATOR 31	広島産業会館	https://efight.jp/result-20120401_10830
+e02913	gladiator	2012-08-05	GLADIATOR / Big Japan Pro Wrestling - Nagoya	名古屋国際会議場	https://efight.jp/result-20120805_10258
+e03111	gladiator	2014-06-15	GLADIATOR 71	大阪・アゼリア大正ホール	https://efight.jp/news-20140529_31737
+e03116	gladiator	2014-06-29	GLADIATOR 72	新宿FACE	https://efight.jp/news-20140529_31737
+e04869	gladiator	2013-05-26	GLADIATOR56 武士道	小田原アリーナ	https://efight.jp/result-20130526_17445
+e05210	tenkaichi_fight	2019-09-08	Tenkaichi Fight - Tenkaichi 95	沖縄・ミュージックタウン音市場	https://www.boutreview.com/3/reports/item_29406.html
+e04903	heat	2015-03-22	HEAT 35	名古屋国際会議場	https://efight.jp/ringsidemovie-20150325_144097
+e04904	heat	2015-11-29	HEAT 36	名古屋国際会議場	https://efight.jp/ringsidemovie-20151130_226849
+e02249	zst	2006-09-10	ZST 10	ディファ有明	https://www.boutreview.com/data/news05/060910zst.html
+e04910	heat	2021-04-25	K-1の世界王者になる	名古屋国際会議場	https://www.boutreview.com/3/news/item_52694.html
+e02268	zst	2006-11-23	ZST 11	ディファ有明	https://www.boutreview.com/fightsspiral/ito_hiroyuki.html
+e02279	zst	2007-02-12	ZST 12	ディファ有明	https://www.boutreview.com/fightsspiral/ito_hiroyuki.html
+e02352	zst	2007-11-23	ZST 15 - Fifth Anniversary	ディファ有明	https://www.boutreview.com/fightsspiral/ito_hiroyuki.html
+e02175	zst	2005-11-23	ZST 8	Zepp Tokyo	https://www.boutreview.com/fightsspiral/okude_masayuki.html
+e05280	zst	2007-02-04	SWAT!09	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/fujiwara_takanori.html
+e02293	zst	2007-04-01	ZST - Swat! 10	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/okude_masayuki.html
+e05281	zst	2007-04-01	SWAT！10	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/okude_masayuki.html
+e02310	zst	2007-06-10	ZST 13	ディファ有明	https://www.boutreview.com/fightsspiral/onuma_keisuke.html
+e05283	zst	2007-07-15	SWAT！	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/nishizaka_tatsuhiko.html
+e05284	zst	2007-08-12	SWAT!-GX1	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/nishizaka_tatsuhiko.html
+e01258	zst	2007-09-09	SWAT!-RX1	ゴールドジム サウス東京ANNEX	https://www.boutreview.com/fightsspiral/takeda_siishi.html
+e02336	zst	2007-10-07	ZST 14	ディファ有明	https://www.boutreview.com/fightsspiral/takeda_siishi.html
+e02003	zst	2003-09-07	ZST - The Battlefield 4	Zepp Tokyo	https://www.boutreview.com/fightsspiral/kobayashi_goro.html
+e01196	shooto	2005-05-22	Shooto - Grapplingman 4	津山・津山コミュニティーセンター	https://www.boutreview.com/fightsspiral/sakai_keisuke.html
+e01219	shooto	2006-05-14	Shooto - Grapplingman 5	広島・広島産業会館	https://www.boutreview.com/fightsspiral/ito_kazuhiro.html
+e00914	shooto	2018-09-30	BORDER-season10-「The2nd」	大阪・平野区民ホール	https://www.shooto-mma.com/result/?id=66
+e03615	shooto	2020-09-10	ROAD to ONE 3rd TOKYO FIGHT NIGHT（渋谷TSUTAYA O-EAST）	渋谷TSUTAYA O-EAST	https://www.shooto-mma.com/result/?id=101
+e05209	shooto	2023-05-28	Shooto - Torao 29	福岡・アクロス福岡	https://www.shooto-mma.com/result/?id=160
+e05205	shooto	2025-09-07	Shooto - Border 2025: The 2nd	大阪・コミュニティプラザ平野	https://www.shooto-mma.com/result/?id=241
+e05357	shooto	2026-02-18	Shooto - Lemino Shooto Vol. 3	後楽園ホール	https://www.shooto-mma.com/result/?id=260
+e05358	shooto	2026-06-01	Shooto - Lemino Shooto Vol. 6	後楽園ホール	https://www.shooto-mma.com/result/?id=284
+e04056	gladiator	2026-06-28	GLADIATOR 035 in Osaka: 10th Anniversary	大阪・176BOX	https://www.boutreview.com/3/reports/item_148192.html
+e04865	gladiator	2026-09-20	BODYMAKERpresents GLADIATOR 036	大阪・176BOX	https://www.boutreview.com/3/reports/item_152372.html
+e04872	gladiator	2016-06-19	グラジエーター	和歌山ビッグホエール	https://mmaplanet.jp/57828
+e04873	gladiator	2016-11-23	グラジエーター002 in OSAKA	大阪・コミュニティプラザ平野	https://mmaplanet.jp/61464
+e03385	gladiator	2017-03-05	GLADIATOR 003 in Wakayama	和歌山ビッグウェーブ	https://mmaplanet.jp/65252
+e04874	gladiator	2017-08-13	GLADIATOR 004 in WAKAYAMA	和歌山ビッグウェーブ	https://mmaplanet.jp/70679
+e03675	gladiator	2021-09-26	GLADIATOR 015 in Osaka	大阪・176BOX	https://www.boutreview.com/3/news/item_59337.html
+e04875	gladiator	2018-01-21	GLADIATOR 005 in OSAKA	大阪・阿倍野区民センター	https://mmaplanet.jp/75569
+e02833	zst	2011-10-02	ZST - Swat! 44	ゴールドジム サウス東京ANNEX	https://efight.jp/result-20111002_14186
+e01449	zst	2015-05-24	ZST 46	ディファ有明	https://efight.jp/result-20150524_167244
+e03217	zst	2015-05-24	ZST Challenge 141	ディファ有明	https://efight.jp/result-20150524_167244
+e05130	zst	2015-05-24	ZST.46	ディファ有明	https://efight.jp/result-20150524_167244
+e03370	zst	2016-11-27	ZST 54 / Swat! 157	ディファ有明	https://efight.jp/result-20161127_251050
+e05137	zst	2016-11-27	ZST.54 ～旗揚げ14周年記念大会～	ディファ有明	https://efight.jp/result-20161127_251050
+e01498	zst	2017-11-25	ZST 58 - 15th Anniversary	ディファ有明	https://efight.jp/news-20171106_271877
+e03443	zst	2017-11-25	ZST - Swat! 162	ディファ有明	https://efight.jp/news-20171106_271877
+e05141	zst	2017-11-25	ZST.58～旗揚げ15周年記念大会～	ディファ有明	https://efight.jp/news-20171106_271877
+e01371	zst	2011-05-01	SWAT!-SBRX3	ゴールドジム サウス東京ANNEX	https://efight.jp/result-20110501_16630
+e02804	zst	2011-07-17	ZST - Swat! in Face 8	新宿FACE	https://efight.jp/result-20110717_16558
+e01379	zst	2011-08-07	ZST - Swat! 42	ゴールドジム サウス東京ANNEX	https://efight.jp/result-20110807_14294
+e02825	zst	2011-09-11	ZST - Swat! in Face 9	新宿FACE	https://efight.jp/result-20110911_14252
+e05310	zst	2011-09-11	SWAT！トーナメント2011	新宿FACE	https://efight.jp/result-20110911_14252
+e02936	zst	2012-10-21	ZST - Swat! 48	西調布アリーナ	https://efight.jp/result-20121021_4704
+e02959	zst	2012-12-23	ZST - Swat! 49	ゴールドジム サウス東京ANNEX	https://efight.jp/result-20121223_9553
+e05131	zst	2015-08-01	ZST in YOKOSUKA vol.2	横須賀市総合体育館	https://efight.jp/result-20150801_192725
+e03035	zst	2013-10-12	ZST in Yokosuka	横須賀市総合体育会館サブアリーナ	https://efight.jp/result-20131012_22833
+e05119	zst	2013-10-12	ZST in YOKOSUKA プレ旗揚げ大会	横須賀市総合体育会館サブアリーナ	https://efight.jp/result-20131012_22833
+e03105	tenkaichi_fight	2014-05-18	Tenkaichi Fight - Tenkaichi 71	沖縄・ミュージックタウン音市場	https://efight.jp/news-20140507_30990
+e03475	wardog_cage_fight	2018-04-29	WARDOG CAGE FIGHT 17（4.29 大阪 世界館）	大阪・世界館	https://www.boutreview.com/3/reports/item_5552.html
+e03495	wardog_cage_fight	2018-07-22	WARDOG CAGE FIGHT 7.22 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_9526.html
+e01515	wardog_cage_fight	2018-10-28	WARDOG 10.28 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_14092.html
+e01525	wardog_cage_fight	2019-04-29	WARDOG CAGE FIGHT 4.29 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_23129.html
+e03553	wardog_cage_fight	2019-07-14	WARDOG CAGE FIGHT 7.14 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_26955.html
+e01530	atoys_challenge_fight	2019-09-01	ACF 9.1 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_29150.html
+e05328	brave_fight	2019-11-30	BRAVE FIGHT（12.1 三郷BRAVEジム）	三郷・BRAVEジム	https://www.boutreview.com/3/reports/item_33726.html
+e01551	wardog_cage_fight	2021-04-24	WARDOG 4.25 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_53119.html
+e03665	wardog_cage_fight	2021-07-25	WARDOG 7.25 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_57999.html
+e01562	atoys_challenge_fight	2021-09-20	ACF 9.20 兵庫 契明ジム	兵庫・契明ジム	https://www.boutreview.com/3/reports/item_60883.html
+e01565	wardog_cage_fight	2021-10-24	WARDOG 10.24 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_62571.html
+e01578	atoys_challenge_fight	2022-03-21	IMPACT×ACF 3.21 東京 BASEMENT MONSTAR王子	BASEMENT MONSTAR王子	https://www.boutreview.com/3/reports/item_69852.html
+e03813	wardog_cage_fight	2023-07-23	WARDOG 7.23 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_95035.html
+e01622	atoys_challenge_fight	2023-08-27	ACF 8.27 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_96609.html
+e01643	atoys_challenge_fight	2024-03-20	ACF 3.20 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_106457.html
+e03865	bloom_fighting_championship	2024-03-31	BLOOM FC 3.31 アクロス福岡	アクロス福岡	https://www.boutreview.com/3/reports/item_106799.html
+e03909	bloom_fighting_championship	2024-10-27	BLOOM FC 10.27 アクロス福岡	アクロス福岡	https://www.boutreview.com/3/reports/item_117137.html
+e05338	wardog_cage_fight	2024-10-27	WARDOG 10.27 大阪 世界館	大阪・世界館	https://www.boutreview.com/3/reports/item_117005.html
+e03996	bloom_fighting_championship	2025-11-02	BLOOM FC 11.2 アクロス福岡	アクロス福岡	https://www.boutreview.com/3/reports/item_136143.html
+e01700	bloom_fighting_championship	2026-01-18	BLOOM FC 1.18 福岡 Rangers Gym	福岡・Rangers Gym	https://www.boutreview.com/3/reports/item_140215.html
+e05099	wardog_cage_fight	2018-04-29	WCF - Wardog Cage Fight 17	大阪・世界館	https://www.boutreview.com/3/reports/item_5552.html
+e05100	wardog_cage_fight	2018-07-22	WCF - Wardog Cage Fight 18	大阪・世界館	https://www.boutreview.com/3/reports/item_9526.html
+e05156	atoys_challenge_fight	2018-08-26	ACF 37th - A-Toys Challenge Fight 37	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_10857.html
+e05101	wardog_cage_fight	2018-10-28	WCF - Wardog Cage Fight 19	大阪・世界館	https://www.boutreview.com/3/reports/item_14092.html
+e05102	wardog_cage_fight	2019-04-29	WCF - Wardog Cage Fight 21	大阪・世界館	https://www.boutreview.com/3/reports/item_23129.html
+e05155	atoys_challenge_fight	2019-05-05	ACF 41st - A-Toys Challenge Fight 41	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_23371.html
+e05154	atoys_challenge_fight	2019-09-01	ACF 43rd - A-Toys Challenge Fight 43	大阪・世界館	https://www.boutreview.com/3/reports/item_29150.html
+e04833	atoys_challenge_fight	2020-12-20	ACF 55th - A-Toys Challenge Fight 55	大阪・コミュニティプラザ平野	https://www.boutreview.com/3/reports/item_47285.html
+e04834	atoys_challenge_fight	2021-03-14	ACF 58th - A-Toys Challenge Fight 58	大阪・平野区民ホール	https://www.boutreview.com/3/reports/item_50902.html
+e04835	atoys_challenge_fight	2021-06-06	ACF 60th - A-Toys Challenge Fight 60	大阪・176BOX	https://www.boutreview.com/3/reports/item_55083.html
+e05105	wardog_cage_fight	2021-07-25	WCF - Wardog Cage Fight 32	大阪・世界館	https://www.boutreview.com/3/reports/item_57999.html
+e04836	atoys_challenge_fight	2021-08-29	ACF 61st - A-Toys Challenge Fight 61	大阪・176BOX	https://www.boutreview.com/3/reports/item_59290.html
+e04837	atoys_challenge_fight	2021-10-17	ACF 63rd - A-Toys Challenge Fight 63	大阪・阿倍野区民センター	https://www.boutreview.com/3/reports/item_62105.html
+e05106	wardog_cage_fight	2021-10-24	WCF - Wardog Cage Fight 34	大阪・世界館	https://www.boutreview.com/3/reports/item_62571.html
+e05112	wardog_cage_fight	2023-07-23	WCF - Wardog Cage Fight 43	大阪・世界館	https://www.boutreview.com/3/reports/item_95035.html
+e04841	atoys_challenge_fight	2023-08-27	ACF 91st - A-Toys Challenge Fight 91	大阪・世界館	https://www.boutreview.com/3/reports/item_96609.html
+e05158	bloom_fighting_championship	2023-11-19	Bloom FC 1 - Bloom Fighting Championship 1	福岡・西鉄ホール	https://www.boutreview.com/3/reports/item_100704.html
+e04843	atoys_challenge_fight	2023-12-10	ACF 97th - A-Toys Challenge Fight 97	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_101867.html
+e04844	atoys_challenge_fight	2024-01-14	ACF 99th - A-Toys Challenge Fight 99	大阪・ドーンセンター	https://www.boutreview.com/3/reports/item_102987.html
+e04848	bloom_fighting_championship	2024-03-31	Bloom FC 2 - Bloom Fighting Championship 2	アクロス福岡	https://www.boutreview.com/3/reports/item_106799.html
+e04850	bloom_fighting_championship	2025-11-02	Bloom FC 5 - Bloom Fighting Championship 5	アクロス福岡	https://www.boutreview.com/3/reports/item_136143.html
+e04851	bloom_fighting_championship	2026-01-18	Bloom Fighting Championship - Fight Day	福岡・Rangers Gym	https://www.boutreview.com/3/reports/item_140215.html
+e05215	wardog_cage_fight	2024-10-27	WCF - Wardog Cage Fight 50: 1st Round	大阪・世界館	https://www.boutreview.com/3/reports/item_117005.html
+e05216	wardog_cage_fight	2024-10-27	WCF - Wardog Cage Fight 50: 2nd Round	大阪・世界館	https://www.boutreview.com/3/reports/item_117005.html
+e03940	grachan	2025-03-02	GRACHAN73×BRAVE FIGHT35	TFTホール500	https://www.boutreview.com/3/reports/item_123185.html
+e01683	grachan	2025-05-31	GRACHAN74	大田区産業プラザPiO	https://www.boutreview.com/3/reports/item_127704.html
+e03978	grachan	2025-08-31	GRACHAN76	アクロス福岡	https://www.boutreview.com/3/news/item_131163.html
+e01702	grachan	2026-03-01	GRACHAN81	有明TFTホール	https://www.boutreview.com/3/reports/item_142049.html
+e04046	grachan	2026-05-17	GRACHAN82	大田区産業プラザPiO	https://www.boutreview.com/3/news/item_144414.html
+e04068	grachan	2026-08-26	GRACHAN84	後楽園ホール	https://www.boutreview.com/3/reports/item_151264.html
+e05103	wardog_cage_fight	2020-07-26	WCF - Wardog Cage Fight 25	大阪・世界館	https://www.boutreview.com/3/news/item_40142.html
+e05108	wardog_cage_fight	2022-07-24	WCF - Wardog Cage Fight 38	大阪・世界館	https://www.boutreview.com/3/reports/item_76198.html
+e05109	wardog_cage_fight	2022-07-24	WCF - Wardog Cage Fight 39	大阪・世界館	https://www.boutreview.com/3/reports/item_76198.html
+e05110	wardog_cage_fight	2022-10-23	WCF - Wardog Cage Fight 40	大阪・世界館	https://www.boutreview.com/3/reports/item_81216.html
+e03976	grachan	2025-08-10	GRACHAN75	東京ビッグサイトTFTホール	https://www.boutreview.com/3/events/event/250810grachan
+e03983	grachan	2025-09-14	GRACHAN77	大阪・176BOX	https://www.boutreview.com/3/events/event/250914grachan
+e01723	grachan	2026-09-13	GRACHAN85	アクロス福岡	https://www.boutreview.com/3/events/event/260913grachan
+e01439	accel	2014-12-28	ACCEL vol.30	兵庫・メリケン波止場上屋劇場	https://efight.jp/result-20141228_113370
+e05218	wardog_cage_fight	2019-10-27	WCF - Wardog Cage Fight 23	大阪・世界館	https://www.boutreview.com/3/reports/item_31905.html
+e05082	wardog_cage_fight	2023-01-22	マリオンアパレルpresents WARDOG.41	大阪・176BOX	https://efight.jp/result-20230125_1342968
+e04065	wardog_cage_fight	2026-08-09	WCF - Wardog Cage Fight 58	大阪・住吉区民センター	https://efight.jp/jump_schedule-20260809_1721786
+e01481	accel	2016-12-23	ACCEL 35	兵庫・神戸サンボーホール	https://efight.jp/news-20161205_251547
+e04831	accel	2016-12-23	ACCEL 35 聖夜への架け橋	兵庫・神戸サンボーホール	https://efight.jp/news-20161205_251547
+e00786	shooto_ama	2013-03-10	reversal Presents ISAMI SHOOTO CARAVAN 東京大会（アマチュア修斗）	KRAZY BEE	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00790	shooto_ama	2013-03-31	第1回 横浜×フリーファイト（アマチュア修斗）	横浜・P'sLAB横浜	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e00808	shooto_ama	2013-11-23	第20回全日本アマチュア修斗選手権大会	小田原アリーナ	https://en.wikipedia.org/wiki/List_of_Shooto_events
+e04899	heat	2014-04-19	HEAT 31	名古屋国際会議場	https://efight.jp/result-20140419_30407
