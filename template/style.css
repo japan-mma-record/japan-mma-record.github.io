@@ -228,3 +228,4 @@ ul.bres .mn{display:inline-block;min-width:6.2em;font-size:12px;font-family:var(
 .kbox .kh{margin:0;font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--fg)}
 @media (max-width:640px){.kbox{align-items:flex-start}}
 .kboxes{display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-end}
+.kbox[hidden],[hidden]{display:none!important}

@@ -455,6 +455,14 @@ def main():
     for e in ev:
         for b in bouts[e['event_id']]:
             b['video'] = vids.get((e['date'], frozenset((norm(b['fighter1']), norm(b['fighter2'])))), '')
+    # 選手番号のない名前にも選手ページを作る（同じ名前の試合を名前だけでまとめる。番号は n＋名前から作る）
+    for e in ev:
+        for b in bouts[e['event_id']]:
+            for k in ('1', '2'):
+                if not b.get(f'fighter{k}_id') and norm(b[f'fighter{k}']):
+                    nid = 'n' + hashlib.md5(norm(b[f'fighter{k}']).encode()).hexdigest()[:9]
+                    b[f'fighter{k}_id'] = nid
+                    fighters.setdefault(nid, re.sub(r'[\s　]+', '', b[f'fighter{k}']) if re.search(r'[ぁ-んァ-ヶ一-龥]', b[f'fighter{k}']) else b[f'fighter{k}'].strip())
     bout_out = {}
     used = set()
     for e in ev:
@@ -517,7 +525,7 @@ def main():
     for e in ev:
         for b in bouts[e['event_id']]:
             for k in ('1', '2'):
-                if b.get(f'fighter{k}_id'):
+                if b.get(f'fighter{k}_id') and not b[f'fighter{k}_id'].startswith('n'):   # 名前だけの選手は静的ページを作らない
                     e_by[b[f'fighter{k}_id']].append((e, b, int(k)))
     urls = ['']
     for e in ev:
@@ -579,6 +587,8 @@ def main():
 
     # 選手ごとの静的ページ
     for fid, _v in fout.items():
+        if fid.startswith('n'):   # 名前だけでまとめた選手は静的ページを作らない（画面はサイト内で表示）
+            continue
         name = _v[0]
         lst = sorted(e_by.get(fid, []), key=lambda x: x[0]['date'], reverse=True)
         w = l = d = nc = 0
