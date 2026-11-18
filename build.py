@@ -104,7 +104,8 @@ def load():
         for o in evs:
             if o is main:
                 continue
-            if not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']) and len(o['name'].strip()) > 4:
+            same_su = o['promotion'] in (site.get('standup_promotions') or []) and not (re.search(r'第\d部', o['name']) and re.search(r'第\d部', main['name']))   # 立ち技は同じ日の同じ団体を1大会にまとめる
+            if not same_su and not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']) and len(o['name'].strip()) > 4:
                 continue
             main_id = main['event_id']
             have = {frozenset((norm(x['fighter1']), norm(x['fighter2']))) for x in bouts[main_id]}
