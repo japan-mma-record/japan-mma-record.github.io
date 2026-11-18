@@ -92,8 +92,50 @@ function promoStats(){
   const m = {}; D.events.forEach(e=>{ const p=m[e[2]]||(m[e[2]]={k:e[2],n:0,b:0,a:9999,z:0}); p.n++; p.b+=0; const y=+e[1].slice(0,4); p.a=Math.min(p.a,y); p.z=Math.max(p.z,y); p.bo=(p.bo||0)+e[6]; });
   return Object.values(m).map(p=>({k:p.k,n:p.n,a:p.a,b:p.z,bo:p.bo}));
 }
+/* 柔術の大会：トーナメント（カテゴリー・階級）ごとにまとめて見せる */
+const BELTS=['白','灰','黄','オレンジ','緑','青','紫','茶','黒'];
+const WTS=['ルースター','ライトフェザー','フェザー','ライト','ミドル','ミディアムヘビー','ヘビー','スーパーヘビー','ウルトラヘビー','オープンクラス','オープン','無差別','アブソルート'];
+function bjjSplit(s){ s=(s||'').trim(); const m=s.match(new RegExp('^(.*?)((?:'+WTS.join('|')+')(?:級)?)$')); return m?[m[1].trim(),m[2]]:[s,'']; }
+function bjjKey(cat,w){ return (cat+' '+w).trim(); }
+function bjjOrd(cat,w){ const bi=BELTS.findIndex(x=>cat.includes(x+'帯')); const wi=WTS.findIndex(x=>w.startsWith(x)); return [/女子|女性|ウィメン/.test(cat)?1:0, bi<0?99:bi, cat, wi<0?99:wi]; }
+function cmpArr(a,b){ for(let i=0;i<a.length;i++){ if(a[i]<b[i]) return -1; if(a[i]>b[i]) return 1; } return 0; }
+function bjjView(k){
+  const box=document.getElementById('bjjbox'); if(!box) return;
+  const bs=D.bouts[k]||[];
+  const go=ps=>{
+    const div=new Map(); const known=new Set();
+    const get=(cat,w)=>{ const key=bjjKey(cat,w); if(!div.has(key)) div.set(key,{cat,w,pd:[],bo:[]}); return div.get(key); };
+    bs.forEach(b=>{ const raw=(b[9]||'').split('・')[0]; const kg=(raw.match(/（([^）]*kg[^）]*)）/)||[])[1]||''; const [cat,w]=bjjSplit(raw.replace(/（[^）]*）/g,'')); const d=get(cat,w); if(kg&&!d.kg) d.kg=kg; d.bo.push(b); });
+    (ps||[]).forEach(p=>{ let cat,w; [cat,w]=bjjSplit((p[0]||'').replace(/（[^）]*）/g,'')); get(cat,w).pd.push(p); });
+    const list=[...div.values()].sort((a,b)=>cmpArr(bjjOrd(a.cat,a.w),bjjOrd(b.cat,b.w)));
+    const belts=[...new Set(list.map(d=>{const x=BELTS.find(x=>d.cat.includes(x+'帯'));return x||'その他';}))];
+    const PL={'1':'優勝','2':'準優勝','3':'3位'};
+    const card=d=>{ const b=BELTS.find(x=>d.cat.includes(x+'帯'))||'その他';
+      const top=d.pd.filter(p=>p[1]==='1').map(p=>p[2]).join('・');
+      const pod=d.pd.length?`<ol class="pod">${d.pd.map(p=>`<li><span class="pl p${esc(p[1])}">${PL[p[1]]||esc(p[1])}</span>${esc(p[2])}<span class="tm">${esc(p[3]||'')}</span></li>`).join('')}</ol>`:'';
+      const bo=d.bo.length?`<div class="tbl"><table><thead><tr><th class="num">No.</th><th>勝者</th><th>相手</th><th>決まり手</th></tr></thead><tbody>${d.bo.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
+        return `<tr><td class="num">${x[0]||''}</td><td>${dec?flink(A[0],A[1]):flink(A[0],A[1])+' <span class="def">vs</span>'}</td><td>${flink(B[0],B[1])}</td><td>${esc(x[6]||'')}</td></tr>`; }).join('')}</tbody></table></div>`:'';
+      const names=[...d.pd.map(p=>p[2]+' '+(p[3]||'')),...d.bo.map(x=>x[2]+' '+x[4])].join(' ');
+      return `<details class="div" data-belt="${esc(b)}" data-q="${esc((d.cat+' '+d.w+' '+names).toLowerCase())}"><summary><span class="dn">${esc(d.cat)} <b>${esc(d.w)}</b>${d.kg?`<small>（${esc(d.kg)}）</small>`:''}</span><span class="dm">${top?'優勝 '+esc(top):''}${d.bo.length?`　${d.bo.length}試合`:''}</span></summary>${pod}${bo}</details>`; };
+    box.innerHTML=`<h2 class="sec">トーナメント（${list.length}）</h2>
+      <div class="bjjf"><input type="search" id="bjjq" placeholder="選手名・所属・階級で探す" aria-label="選手名・所属・階級で探す">
+      <div class="chips" id="bjjb"><button type="button" data-b="" aria-pressed="true">すべての帯</button>${belts.map(b=>`<button type="button" data-b="${esc(b)}" aria-pressed="false">${esc(b)}${b==='その他'?'':'帯'}</button>`).join('')}</div>
+      <button type="button" class="lnk" id="bjjall">すべて開く</button></div>
+      <div id="bjjlist">${list.map(card).join('')}</div>`;
+    let fb='';
+    const apply=()=>{ const q=(document.getElementById('bjjq').value||'').trim().toLowerCase();
+      document.querySelectorAll('#bjjlist details').forEach(el=>{ const ok=(!fb||el.dataset.belt===fb)&&(!q||el.dataset.q.includes(q)); el.hidden=!ok; if(q&&ok) el.open=true; }); };
+    document.getElementById('bjjq').addEventListener('input',apply);
+    document.getElementById('bjjb').addEventListener('click',ev=>{ const t=ev.target.closest('button'); if(!t) return; fb=t.dataset.b; document.querySelectorAll('#bjjb button').forEach(x=>x.setAttribute('aria-pressed',String(x===t))); apply(); });
+    document.getElementById('bjjall').addEventListener('click',ev=>{ const els=[...document.querySelectorAll('#bjjlist details:not([hidden])')]; const open=!els.every(x=>x.open); els.forEach(x=>x.open=open); ev.target.textContent=open?'すべて閉じる':'すべて開く'; });
+  };
+  if((D.meta.pd||[]).includes(k)) fetch('pd/'+encodeURIComponent(k)+'.json').then(r=>r.ok?r.json():null).then(go).catch(()=>go(null)); else go(null);
+}
 function vEvent(k){
   const e = D.events.find(x=>x[0]===k); if(!e) return notFound();
+  if((D.meta.bjj||[]).includes(e[2])) return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
+    <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
+    <div id="bjjbox"><p class="sub">読み込み中…</p></div><p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
   const bs = D.bouts[k] || [];
   const mb = bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定/.test(b[6])).length;
   const rows = bs.map(b=>{
@@ -251,7 +293,7 @@ function route(){
   if(h.startsWith('e-')) nav='events'; if(h.startsWith('f-')) nav='fighters';
   $('#view').innerHTML = html;
   if(h.startsWith('f-')) enhanceFighter(h.slice(2));
-  if(h.startsWith('e-')) loadPodium(h.slice(2));
+  if(h.startsWith('e-')){ const ek=h.slice(2), ee=D.events.find(x=>x[0]===ek); if(ee&&(D.meta.bjj||[]).includes(ee[2])) bjjView(ek); else loadPodium(ek); }
   document.querySelectorAll('[data-nav]').forEach(a=>{ if(a.dataset.nav===nav) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
   window.scrollTo(0,0);
 }

@@ -173,10 +173,14 @@ def load():
                     v = fills.get((e.get('date'), pair, fld))
                     if v and not (b.get(fld) or '').strip():
                         b[fld] = v
+    bjjp = set(site.get('bjj_promotions') or [])
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
-            b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
+            if (events.get(k) or {}).get('promotion') in bjjp:   # 柔術はカテゴリー名をそのまま（ルール名は書かない）
+                b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(][^）)]*ルール[）)]|\s*[・/]\s*柔術ルール', '', b.get('weight') or '').strip()
+            else:
+                b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
         bouts[k].sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 999)
     merge_fighters(events, bouts, fighters)
     for bl in bouts.values():

@@ -183,3 +183,22 @@ h2.sec{font-size:18px;margin:28px 0 8px;letter-spacing:.04em}
 a.vid{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:3px;background:#c4161c;color:#fff;font-size:11px;font-weight:700;text-decoration:none;white-space:nowrap}
 a.vid:hover{opacity:.85}
 .row .n span.jp{font-weight:500;color:var(--mut,#9a9a9a);margin-left:4px;font-size:.92em}
+
+/* 柔術のトーナメント表示 */
+.bjjf{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 12px}
+.bjjf input{flex:1 1 220px;min-width:0;padding:8px 10px;border:1px solid var(--line2);background:var(--bg2);color:inherit;font:inherit}
+.bjjf .chips{margin:0}
+details.div{border:1px solid var(--line2);margin:0 0 6px;background:var(--bg2)}
+details.div>summary{cursor:pointer;padding:10px 14px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;list-style:none}
+details.div>summary::-webkit-details-marker{display:none}
+details.div>summary::before{content:'▸';margin-right:6px;opacity:.6}
+details.div[open]>summary::before{content:'▾'}
+details.div .dn{font-weight:500}
+details.div .dm{font-size:13px;opacity:.75}
+details.div[open]{padding-bottom:10px}
+details.div .tbl{margin:6px 14px 0}
+ol.pod{list-style:none;margin:2px 14px 6px;padding:0;display:grid;gap:4px}
+ol.pod li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+ol.pod .pl{display:inline-block;min-width:4.5em;font-size:12px;font-weight:700}
+ol.pod .p1{color:#d4a72c} ol.pod .p2{color:#a9aeb6} ol.pod .p3{color:#c07a4a}
+ol.pod .tm{font-size:12px;opacity:.7}
