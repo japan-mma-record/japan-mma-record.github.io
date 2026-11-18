@@ -1,11 +1,13 @@
-https://www.youtube.com/@RIZINFF/videos
-https://www.youtube.com/@shooto_official/videos
-https://www.youtube.com/@DEEPofficial/videos
-https://www.youtube.com/@PANCRASE/videos
-https://www.youtube.com/@UFCJapan/videos
-https://www.youtube.com/@ONEChampionshipJP/videos
-https://www.youtube.com/@QUINTETofficial/videos
-https://www.youtube.com/@GRACHAN/videos
-https://www.youtube.com/results?search_query=%E4%BF%AE%E6%96%97+%E5%85%AC%E5%BC%8F
-https://www.youtube.com/results?search_query=DEEP+MMA+official
-https://www.youtube.com/results?search_query=PANCRASE+%E3%83%91%E3%83%B3%E3%82%AF%E3%83%A9%E3%82%B9
+YTDLP ytsearch40:RIZIN FIGHTING FEDERATION 公式 試合
+YTDLP ytsearch40:shootoofficial プロフェッショナル修斗 公式戦 フルファイト
+YTDLP ytsearch40:DEEP チャンネル DEEP MMA 試合
+YTDLP ytsearch40:pancrase_mma PANCRASE フルファイト
+YTDLP ytsearch40:ONE Championship 日本語 フルファイト
+YTDLP ytsearch40:QUINTET グラップリング 公式
+YTDLP ytsearch40:GRACHAN グラチャン 試合
+YTDLP ytsearch40:ZST 試合
+YTDLP ytsearch40:HEAT 総合格闘技 試合
+YTDLP ytsearch40:Gladiator MMA 大阪 試合
+YTDLP ytsearch40:KROSS×OVER 試合
+YTDLP ytsearch40:NEXUS MMA 試合
+YTDLP https://www.youtube.com/@pancrase_mma/videos
