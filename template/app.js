@@ -261,7 +261,7 @@ function enhanceFighter(id){
     n.innerHTML= w.t ? `通算戦績はWikipedia「<a class="u" href="${esc(w.u)}" target="_blank" rel="noopener">${esc(w.t)}</a>」の戦績表によります（海外の試合を含む全${W+L+Dr+NC}試合）。印のついた試合はWikipediaからの記録です。` : `通算戦績は、海外の大会を含むプロの全${W+L+Dr+NC}試合です。印のついた試合は、このサイトに大会がない試合です。`;
     const rs={win:'<span class="rs w">勝</span>',loss:'<span class="rs l">負</span>',draw:'<span class="rs o">分</span>',nc:'<span class="rs o">無効</span>'};
     let h='';
-    w.x.forEach(x=>{ h+=`<tr data-d="${esc(x[0])}"><td>${rs[x[1]]||'—'}</td><td><span class="nb">${esc(x[2])}</span></td><td>${esc(x[4])}<span class="unc">${w.t?'Wikipedia':'海外の大会'}</span></td><td class="num">${esc((x[0]||'').replace(/-/g,'.'))}</td><td>${esc(x[3])}</td><td class="num"></td></tr>`; });
+    w.x.forEach(x=>{ h+=`<tr data-d="${esc(x[0])}"><td>${rs[x[1]]||'—'}</td><td><span class="nb">${esc(x[2])}</span></td><td>${esc(x[4])}<span class="unc">${w.t?'Wikipedia':'海外の大会'}</span></td><td class="num">${esc((x[0]||'').replace(/-/g,'.'))}</td><td>${esc(x[3])}</td><td class="num">${esc(x[5]||'')}</td></tr>`; });
     tb.insertAdjacentHTML('beforeend',h);
     [...tb.querySelectorAll('tr')].sort((a,b)=>(b.dataset.d||'').localeCompare(a.dataset.d||'')).forEach(tr=>tb.appendChild(tr));
   }).catch(()=>{});

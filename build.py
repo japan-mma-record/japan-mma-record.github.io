@@ -28,6 +28,31 @@ def read_tsv(path):
         return list(csv.DictReader(fp, delimiter='\t'))
 
 
+def en_method(m):
+    """英語の決まり手（TKO (Punches) など）を日本語の書き方にそろえる。"""
+    m = (m or '').strip()
+    k = re.match(r'^([A-Za-z./ -]+?)\s*(?:\((.*)\))?$', m)
+    if not k:
+        return methods.tidy(m)
+    head, inner = k.group(1).strip().lower(), (k.group(2) or '').strip()
+    if head.startswith('submission') or head.startswith('technical submission'):
+        return methods.tidy(f'一本（{inner}）' if inner else '一本')
+    if head.startswith('tko') or head.startswith('technical knockout'):
+        return 'TKO（ドクターストップ）' if 'doctor' in inner.lower() else 'TKO'
+    if head.startswith('ko'):
+        return 'KO'
+    if head.startswith('decision') or head.startswith('technical decision'):
+        il = inner.lower()
+        return '判定2-1' if 'split' in il else '判定2-0' if 'majority' in il else '判定3-0' if 'unanimous' in il else '判定'
+    if head.startswith('draw'):
+        return '引き分け'
+    if head.startswith('no contest') or head == 'nc':
+        return 'ノーコンテスト'
+    if head.startswith('dq') or 'disqualif' in head:
+        return '反則'
+    return methods.tidy(m)
+
+
 def title_of(w):
     """階級の欄に書かれたタイトルマッチなどの文字を取り出す（titles.tsv にないもの用）。"""
     for x in (w or '').split('・'):
@@ -602,7 +627,8 @@ def main():
     for r in read_tsv(os.path.join(DATA, 'records', 'bouts.tsv')):
         f = MERGED.get(r['fighter_id'], r['fighter_id'])
         if wrec.get(f, {}).get('wiki_title') == '':
-            wb[f].append({'date': r['date'], 'result': r['result'], 'opponent': r['opponent'], 'method': r['method'] + (f"（{r['round']}R {r['time']}）" if r.get('round') else ''), 'event': r['event']})
+            wb[f].append({'date': r['date'], 'result': r['result'], 'opponent': r['opponent'], 'method': en_method(r['method']), 'event': r['event'],
+                          'rt': (f"{r['round']}R {r['time']}" if r.get('round') else '')})
     wextra = {}
     for fid, r in wrec.items():
         if fid not in fout:
@@ -612,7 +638,7 @@ def main():
             o = b['fighter2'] if side == 1 else b['fighter1']
             have.add((e['date'], norm(o)))
         dates = {e['date'] for e, b, side in e_by.get(fid, [])}
-        x = [[w['date'], w['result'], w['opponent'], methods.tidy(w['method']), w['event']] for w in wb.get(fid, [])
+        x = [[w['date'], w['result'], w['opponent'], w['method'] if w.get('rt') is not None else methods.tidy(w['method']), w['event'], w.get('rt', '')] for w in wb.get(fid, [])
              if (w['date'], norm(w['opponent'])) not in have and w['date'] not in dates]
         wextra[fid] = x
         with open(os.path.join(OUT, 'w', f'{fid}.json'), 'w', encoding='utf-8') as fp:
