@@ -177,11 +177,11 @@ def load():
     titles = {}
     for t in read_tsv(os.path.join(DATA, 'titles.tsv')):
         if (t.get('label') or '').strip():
-            titles[(t['date'], frozenset((norm(t['fighter1_ja']), norm(t['fighter2_ja']))))] = t['label'].strip()
+            titles[(t['date'], frozenset((norm(t['fighter1_ja']), norm(t['fighter2_ja']))))] = (t['label'].strip(), (t.get('note') or '').strip())
     for k in bouts:
         e = events.get(k) or {}
         for b in bouts[k]:
-            b['title'] = titles.get((e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2'])))), '')
+            b['title'], b['tnote'] = titles.get((e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2'])))), ('', ''))
     # 空欄だったラウンド・時間・階級を、資料で確かめた値で埋める（data/fills.tsv：promotion, date, fighter1_ja, fighter2_ja, field, value）
     fills = {}
     for f in read_tsv(os.path.join(DATA, 'fills.tsv')):
@@ -401,7 +401,7 @@ def main():
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight'))])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight')), b.get('tnote') or ''])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}

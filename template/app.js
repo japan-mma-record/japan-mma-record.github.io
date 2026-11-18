@@ -27,7 +27,7 @@ function loadPodium(k){ if(!(D.meta.pd||[]).includes(k)) return;
 function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
 function jpn(e){ return (e[7]&&e[7].length) ? `<span class="jp">（${e[7].map(esc).join('、')}）</span>` : ''; }
-function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>` : ''; }
+function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
 function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
@@ -196,6 +196,9 @@ function vFighter(id){
     const cnt = !b[11];
     if(b[5]===side){cnt&&w++; r='<span class="rs w">勝</span>';} else if(b[5]===1||b[5]===2){cnt&&l++; r='<span class="rs l">負</span>';} else if(b[5]==='d'){cnt&&d++; r='<span class="rs o">分</span>';} else if(b[5]==='nc'){cnt&&nc++; r='<span class="rs o">無効</span>';}
     return `<tr data-d="${esc(e[1])}"><td>${r}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td><td>${ttag(b)}${esc(b[6])}${rtag(b)}${b[10]?'<span class="unc">未確定</span>':''}</td><td class="num">${esc(rt(b))}</td></tr>`; }).join('');
+  const tl = list.filter(([e,b])=>b[13]).slice().reverse();
+  const tbox = tl.length ? `<h2 class="sec">タイトル戦（${tl.length}）</h2><div class="tbl"><table><thead><tr><th>結果</th><th>試合</th><th>対戦相手</th><th>大会</th><th class="num">日付</th></tr></thead><tbody>${tl.map(([e,b,side])=>{ const opp = side===1?[b[3],b[4]]:[b[1],b[2]]; const r = b[5]===side?'<span class="rs w">勝</span>':(b[5]===1||b[5]===2)?'<span class="rs l">負</span>':'<span class="rs o">分</span>';
+    return `<tr><td>${r}</td><td>${ttag(b)}</td><td>${flink(opp[0],opp[1])}</td><td><a class="u" href="#e-${esc(e[0])}">${esc(e[3])}</a></td><td class="num">${esc(e[1].replace(/-/g,'.'))}</td></tr>`; }).join('')}</tbody></table></div><h2 class="sec">全試合</h2>` : '';
   const nm = f[0] || f[1];
   const span = list.length ? `${list[list.length-1][0][1].slice(0,4)}年〜${list[0][0][1].slice(0,4)}年` : '';
   const st = '';
@@ -203,7 +206,7 @@ function vFighter(id){
     <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}</p></div>
     <div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div>
     <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません</p>
-    <div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
+    ${tbox}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
 }
 function enhanceFighter(id){
   fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
