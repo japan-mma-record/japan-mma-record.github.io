@@ -1,2 +1,10 @@
-https://www.fightmatrix.com/past-events-by-promotion/
-https://www.fightmatrix.com/past-events-2/
+https://en.wikipedia-on-ipfs.org/wiki/2014_in_Cage_Warriors
+https://en.wikipedia-on-ipfs.org/wiki/2015_in_Cage_Warriors
+https://en.wikipedia-on-ipfs.org/wiki/2016_in_Cage_Warriors
+https://en.wikipedia-on-ipfs.org/wiki/2017_in_Cage_Warriors
+https://en.wikipedia-on-ipfs.org/wiki/2013_in_Cage_Warriors
+https://espndeportes.espn.com/mma/fightcenter/_/id/401072514
+https://www.espn.com/mma/fightcenter/_/id/401072514/league/cw
+https://site.web.api.espn.com/apis/common/v3/sports/mma/cw/fightcenter/401072514
+https://site.api.espn.com/apis/site/v2/sports/mma/cw/scoreboard?dates=2018
+https://next-fight.com/en/event/cw-100-cage-warriors-100
