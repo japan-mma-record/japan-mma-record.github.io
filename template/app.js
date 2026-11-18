@@ -258,10 +258,10 @@ function enhanceFighter(id){
     const k=document.getElementById('fk'), n=document.getElementById('fnote'), tb=document.getElementById('fb'); if(!k||!tb) return;
     const [W,L,Dr,NC]=w.rec;
     { const h=document.getElementById('fkh'); if(h) h.textContent='MMA戦績（海外を含む通算）'; } k.innerHTML=`<div><p class="k">勝</p><p class="v r">${W}</p></div><div><p class="k">敗</p><p class="v">${L}</p></div><div><p class="k">分</p><p class="v">${Dr}</p></div>${NC?`<div><p class="k">無効</p><p class="v">${NC}</p></div>`:''}`;
-    n.innerHTML=`通算戦績はWikipedia「<a class="u" href="${esc(w.u)}" target="_blank" rel="noopener">${esc(w.t)}</a>」の戦績表によります（海外の試合を含む全${W+L+Dr+NC}試合）。印のついた試合はWikipediaからの記録です。`;
+    n.innerHTML= w.t ? `通算戦績はWikipedia「<a class="u" href="${esc(w.u)}" target="_blank" rel="noopener">${esc(w.t)}</a>」の戦績表によります（海外の試合を含む全${W+L+Dr+NC}試合）。印のついた試合はWikipediaからの記録です。` : `通算戦績は、海外の大会を含むプロの全${W+L+Dr+NC}試合です。印のついた試合は、このサイトに大会がない試合です。`;
     const rs={win:'<span class="rs w">勝</span>',loss:'<span class="rs l">負</span>',draw:'<span class="rs o">分</span>',nc:'<span class="rs o">無効</span>'};
     let h='';
-    w.x.forEach(x=>{ h+=`<tr data-d="${esc(x[0])}"><td>${rs[x[1]]||'—'}</td><td><span class="nb">${esc(x[2])}</span></td><td>${esc(x[4])}<span class="unc">Wikipedia</span></td><td class="num">${esc((x[0]||'').replace(/-/g,'.'))}</td><td>${esc(x[3])}</td><td class="num"></td></tr>`; });
+    w.x.forEach(x=>{ h+=`<tr data-d="${esc(x[0])}"><td>${rs[x[1]]||'—'}</td><td><span class="nb">${esc(x[2])}</span></td><td>${esc(x[4])}<span class="unc">${w.t?'Wikipedia':'海外の大会'}</span></td><td class="num">${esc((x[0]||'').replace(/-/g,'.'))}</td><td>${esc(x[3])}</td><td class="num"></td></tr>`; });
     tb.insertAdjacentHTML('beforeend',h);
     [...tb.querySelectorAll('tr')].sort((a,b)=>(b.dataset.d||'').localeCompare(a.dataset.d||'')).forEach(tr=>tb.appendChild(tr));
   }).catch(()=>{});

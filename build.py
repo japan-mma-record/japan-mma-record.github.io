@@ -569,6 +569,15 @@ def main():
     wb = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'wiki', 'bouts.tsv')):
         wb[MERGED.get(r['fighter_id'], r['fighter_id'])].append(r)
+    # 海外の記録サイトの通算戦績（data/records/records.tsv・bouts.tsv）。あればこちらを優先する（出典名は出さない）
+    for r in read_tsv(os.path.join(DATA, 'records', 'records.tsv')):
+        f = MERGED.get(r['fighter_id'], r['fighter_id'])
+        wrec[f] = {'wiki_title': '', 'source_url': '', 'wins': r['wins'], 'losses': r['losses'], 'draws': r['draws'], 'no_contests': r['no_contests']}
+        wb[f] = []
+    for r in read_tsv(os.path.join(DATA, 'records', 'bouts.tsv')):
+        f = MERGED.get(r['fighter_id'], r['fighter_id'])
+        if wrec.get(f, {}).get('wiki_title') == '':
+            wb[f].append({'date': r['date'], 'result': r['result'], 'opponent': r['opponent'], 'method': r['method'] + (f"（{r['round']}R {r['time']}）" if r.get('round') else ''), 'event': r['event']})
     wextra = {}
     for fid, r in wrec.items():
         if fid not in fout:
@@ -614,11 +623,12 @@ def main():
         if fid in wrec:
             r0 = wrec[fid]
             rec = f'通算 {r0["wins"]}勝{r0["losses"]}敗{r0["draws"]}分' + (f'{r0["no_contests"]}無効試合' if r0['no_contests'] not in ('0', '') else '')
-            note = f'通算戦績はWikipedia「<a class="u" href="{html.escape(r0["source_url"])}">{html.escape(r0["wiki_title"])}</a>」の戦績表によります（海外の試合を含む）。印のついた試合はWikipediaからの記録です。'
+            note = (f'通算戦績はWikipedia「<a class="u" href="{html.escape(r0["source_url"])}">{html.escape(r0["wiki_title"])}</a>」の戦績表によります（海外の試合を含む）。印のついた試合はWikipediaからの記録です。'
+                    if r0.get('wiki_title') else '通算戦績は海外の大会を含むプロの全試合です。印のついた試合は、このサイトに大会がない試合です。')
             RS = {'win': ('w', '勝'), 'loss': ('l', '負'), 'draw': ('o', '分'), 'nc': ('o', '無効')}
             for x in wextra.get(fid, []):
                 c, t = RS.get(x[1], ('o', '—'))
-                rows.append((x[0], f'<tr><td><span class="rs {c}">{t}</span></td><td><span class="nb">{html.escape(x[2])}</span></td><td>{html.escape(x[4])}<span class="unc">Wikipedia</span></td>'
+                rows.append((x[0], f'<tr><td><span class="rs {c}">{t}</span></td><td><span class="nb">{html.escape(x[2])}</span></td><td>{html.escape(x[4])}<span class="unc">{'Wikipedia' if r0.get('wiki_title') else '海外の大会'}</span></td>'
                                    f'<td class="num">{html.escape(x[0])}</td><td>{html.escape(x[3])}</td><td class="num"></td></tr>'))
         page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../') + static_header('../') +
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#fighters">選手</a></p>'
