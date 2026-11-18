@@ -1,3 +1,4 @@
+YTDLP ytsearch5:RIZIN
 YTDLP ytsearch40:RIZIN FIGHTING FEDERATION 公式 試合
 YTDLP ytsearch40:shootoofficial プロフェッショナル修斗 公式戦 フルファイト
 YTDLP ytsearch40:DEEP チャンネル DEEP MMA 試合
