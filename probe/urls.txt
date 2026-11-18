@@ -1,4 +1,12 @@
-YTDLP https://www.youtube.com/@UFCBrasil/videos
-YTDLP https://www.youtube.com/@UFCEspanol/videos
-YTDLP https://www.youtube.com/@ONEChampionshipThai/videos
-YTDLP https://www.youtube.com/@pflmmaespanol/videos
+YTDLP https://www.youtube.com/channel/UCZZ0UGjWsRdM8_5bsqtxYaQ/playlists
+YTDLP https://www.youtube.com/channel/UCZZ0UGjWsRdM8_5bsqtxYaQ/streams
+YTDLP https://www.youtube.com/channel/UCeU0BOmDWDFCqi9qSCt-Sog/playlists
+YTDLP https://www.youtube.com/channel/UCeU0BOmDWDFCqi9qSCt-Sog/streams
+YTDLP https://www.youtube.com/channel/UCrzcqokfdjCm0JiqzYJZxeA/playlists
+YTDLP https://www.youtube.com/channel/UCrzcqokfdjCm0JiqzYJZxeA/streams
+YTDLP https://www.youtube.com/channel/UC2ENxhP3eiSmkLUa3aax7AA/playlists
+YTDLP https://www.youtube.com/channel/UC2ENxhP3eiSmkLUa3aax7AA/streams
+YTDLP https://www.youtube.com/channel/UCw4RZz4S3ZdRyPfLBFVhYTw/playlists
+YTDLP https://www.youtube.com/channel/UCw4RZz4S3ZdRyPfLBFVhYTw/streams
+YTDLP https://www.youtube.com/channel/UCymXmunl-HbqsXCcOSEZRqA/playlists
+YTDLP https://www.youtube.com/channel/UCymXmunl-HbqsXCcOSEZRqA/streams
