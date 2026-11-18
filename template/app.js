@@ -122,8 +122,8 @@ function bjjView(k){
     const card=d=>{ const b=BELTS.find(x=>d.cat.includes(x+'帯'))||'その他';
       const top=d.pd.filter(p=>p[1]==='1').map(p=>p[2]).join('・');
       const pod=d.pd.length?`<ol class="pod">${d.pd.map(p=>`<li><span class="pl p${esc(p[1])}">${PL[p[1]]||esc(p[1])}</span>${esc(p[2])}<span class="tm">${esc(p[3]||'')}</span></li>`).join('')}</ol>`:'';
-      const bo=d.bo.length?`<div class="tbl"><table><thead><tr><th class="num">No.</th><th>勝者</th><th>相手</th><th>決まり手</th></tr></thead><tbody>${d.bo.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
-        return `<tr><td class="num">${x[0]||''}</td><td>${dec?flink(A[0],A[1]):flink(A[0],A[1])+' <span class="def">vs</span>'}</td><td>${flink(B[0],B[1])}</td><td>${esc(x[6]||'')}</td></tr>`; }).join('')}</tbody></table></div>`:'';
+      const bo=d.bo.length?`<ul class="bres">${d.bo.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
+        return `<li>${flink(A[0],A[1])} <span class="def">${dec?'def.':'vs'}</span> ${flink(B[0],B[1])}${x[6]?`<span class="bm">${esc(x[6])}</span>`:''}</li>`; }).join('')}</ul>`:'';
       const names=[...d.pd.map(p=>p[2]+' '+(p[3]||'')),...d.bo.map(x=>x[2]+' '+x[4])].join(' ');
       return `<details class="div" data-belt="${esc(b)}" data-q="${esc((d.cat+' '+d.w+' '+names).toLowerCase())}"><summary><span class="dn">${esc(d.cat)} <b>${esc(d.w)}</b>${d.kg?`<small>（${esc(d.kg)}）</small>`:''}</span><span class="dm">${top?'優勝 '+esc(top):''}${d.bo.length?`　${d.bo.length}試合`:''}</span></summary>${pod}${bo}</details>`; };
     box.innerHTML=`<h2 class="sec">トーナメント（${list.length}）</h2>
