@@ -28,11 +28,12 @@ function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return 
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
 function mainCard(e){ if((D.meta.bjj||[]).includes(e[2])||((D.meta.teams||{})[e[0]]||[]).length) return '';
   const bs=D.bouts[e[0]]||[]; if(!bs.length) return '';
-  const pool=bs.filter(b=>!b[11]).length?bs.filter(b=>!b[11]):bs;
-  let m=pool[pool.length-1]; const mx=Math.max(...pool.map(b=>b[0]||0)); if(mx>0) m=pool.filter(b=>(b[0]||0)===mx).pop();
-  const t=pool.find(b=>b[13]&&/タイトル|王座/.test(b[13]))&&!m[13]?pool.filter(b=>b[13]&&/タイトル|王座/.test(b[13])).pop():null;
+  const pool0=bs.filter(b=>!b[11]).length?bs.filter(b=>!b[11]):bs;
+  const pool=pool0.map((b,i)=>[b,i]).sort((x,y)=>((x[0][0]||0)-(y[0][0]||0))||(x[1]-y[1])).map(x=>x[0]);
+  const m=pool[pool.length-1], se=pool.length>2?pool[pool.length-2]:null;
+  const t=pool.filter(b=>b!==m&&b!==se&&b[13]&&/タイトル|王座/.test(b[13])).pop();
   const one=b=>{ let A=b[2],B=b[4]; if(b[5]===2)[A,B]=[B,A]; return `${esc(A)} ${b[5]===1||b[5]===2?'def.':'vs'} ${esc(B)}${b[13]?`（${esc(b[13])}）`:''}`; };
-  return `<span class="mc">メイン：${one(m)}${t&&t!==m?`　／　${one(t)}`:''}</span>`; }
+  return `<span class="mc">メイン：${one(m)}${se?`<br>セミ：${one(se)}`:''}${t?`<br>${one(t)}`:''}</span>`; }
 function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
 function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
