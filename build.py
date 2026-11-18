@@ -84,6 +84,18 @@ def load():
                         b[f'fighter{k}_id'] = hit[0]
             bouts[e['event_id']].append(b)
 
+    # 柔術の試合番号（マット番号つき、data/bjj_mats.tsv：date, fighter1, fighter2, label 例「MAT2-33・準々決勝」）
+    mats = {}
+    for r in read_tsv(os.path.join(DATA, 'bjj_mats.tsv')):
+        k0 = (r['date'], frozenset((norm(r['fighter1']), norm(r['fighter2']))), norm((r.get('division') or '').split('・')[0]))
+        no = re.match(r'MAT\d+-(\d+)', r['label'])
+        mats[k0 + (no.group(1) if no else '',)] = r['label']
+        mats.setdefault(k0, r['label'])
+    for k in bouts:
+        e = events.get(k) or {}
+        for b in bouts[k]:
+            k0 = (e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2']))), norm((b.get('weight') or '').split('・')[0]))
+            b['mat'] = mats.get(k0 + (str(b.get('match_no') or ''),)) or mats.get(k0, '')
     # 個別の訂正
     for f in read_tsv(os.path.join(DATA, 'fixes.tsv')):
         for b in bouts.get(f['event_id'], []):
@@ -233,6 +245,10 @@ def load():
         if u and u not in (e.get('sources') or '').split():
             e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
         PODIUM[k].append([r.get('division', ''), r.get('place', ''), r.get('name_ja') or r.get('name_en', ''), r.get('team', '')])
+    # 公開を保留している団体（site.json の hidden_promotions）は載せない
+    hide = set(site.get('hidden_promotions') or [])
+    for k in [k for k, e in events.items() if e.get('promotion') in hide]:
+        events.pop(k, None); bouts.pop(k, None); PODIUM.pop(k, None)
     return site, promos, events, bouts, fighters
 
 
@@ -408,7 +424,7 @@ def main():
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight')), b.get('tnote') or ''])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight')), b.get('tnote') or '', b.get('mat') or ''])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}

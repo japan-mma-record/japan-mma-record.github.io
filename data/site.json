@@ -29,12 +29,14 @@
  ],
  "bjj_promotions": [
   "jbjjf",
-  "ibjjf",
   "asjjf"
  ],
  "standup_promotions": [
   "k1",
   "k1_max",
   "shoot_boxing"
+ ],
+ "hidden_promotions": [
+  "ibjjf"
  ]
 }

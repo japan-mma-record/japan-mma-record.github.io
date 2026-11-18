@@ -223,3 +223,4 @@ ol.pod .tm{font-size:12px;opacity:.7}
 .row .n .mc{display:block;font-size:12.5px;font-weight:400;color:var(--fg3,#999);margin-top:2px;line-height:1.45}
 ul.bres{list-style:none;margin:4px 14px 0;padding:8px 0 0;border-top:1px solid var(--line2);display:grid;gap:4px;font-size:14px}
 ul.bres .bm{margin-left:8px;font-size:12px;opacity:.7}
+ul.bres .mn{display:inline-block;min-width:6.2em;font-size:12px;font-family:var(--f-num,inherit);opacity:.65}
