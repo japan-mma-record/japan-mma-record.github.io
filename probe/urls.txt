@@ -1,10 +1,30 @@
-YTDLP https://www.youtube.com/channel/UC-kXNOU14XWpPW_0JdAebcA/videos
-YTDLP https://www.youtube.com/channel/UCPrONRG9hO1f-OrxW-WH-xg/videos
-YTDLP https://www.youtube.com/channel/UCMssVoZVgjD4pyeG6Ic-_Nw/videos
-YTDLP https://www.youtube.com/channel/UCRqvJVpMT9dzhX5UzRXPQbg/videos
-YTDLP https://www.youtube.com/channel/UCv_fwQqff6zEFDxfJh_03fg/videos
-YTDLP https://www.youtube.com/channel/UCg5E4hWlXrJX7Ukx80941FA/videos
-YTDLP https://www.youtube.com/@BellatorMMA/videos
-YTDLP https://www.youtube.com/@ADCCOfficial/videos
-YTDLP https://www.youtube.com/channel/UCPQDDlGe7lbgmEJ0ge7a_JA/videos
-YTDLP https://www.youtube.com/channel/UCeOvhU6RbmEj8GKFiIMWxKQ/videos
+YTDLP ytsearch20:パンクラス 公式 試合 フルファイト
+YTDLP ytsearch20:修斗 公式 試合映像
+YTDLP ytsearch20:DEEP JEWELS 試合 公式
+YTDLP ytsearch20:POWERGATE パワーゲート 試合
+YTDLP ytsearch20:WARDOG ケージファイト 試合
+YTDLP ytsearch20:TRIBELATE トライブレイト 試合
+YTDLP ytsearch20:天下一FIGHT 試合
+YTDLP ytsearch20:ACCEL 総合格闘技 試合
+YTDLP ytsearch20:POUND FOR POUND 総合格闘技 試合
+YTDLP ytsearch20:KINGDOM 総合格闘技 九州 試合
+YTDLP ytsearch20:ATOYS CHALLENGE FIGHT 試合
+YTDLP ytsearch20:BRAVE FIGHT 総合格闘技 試合
+YTDLP ytsearch20:DEMOLITION 総合格闘技 試合
+YTDLP ytsearch20:BATTLE CODE 総合格闘技 試合
+YTDLP ytsearch20:RISING ON FIGHTING CHAMPIONSHIP 試合
+YTDLP ytsearch20:GCM CAGE FORCE 試合
+YTDLP ytsearch20:CHAKURIKI 着力 試合
+YTDLP ytsearch20:TRIBE TOKYO FIGHT 試合
+YTDLP ytsearch20:RINGS リングス 公式 試合
+YTDLP ytsearch20:MARS 総合格闘技 試合
+YTDLP ytsearch20:IGF 猪木 総合格闘技 試合
+YTDLP ytsearch20:ADCC official full match Japan
+YTDLP ytsearch20:JEWELS 女子総合格闘技 試合
+YTDLP ytsearch20:SMACKGIRL 試合
+YTDLP ytsearch20:Bloom FC 総合格闘技 試合
+YTDLP ytsearch20:legion japan 総合格闘技
+YTDLP ytsearch20:BOUT 総合格闘技 公式
+YTDLP ytsearch20:GRANDSLAM MMA 試合
+YTDLP ytsearch20:ROOTS 総合格闘技 試合
+YTDLP ytsearch20:Kushima's Fight 試合
