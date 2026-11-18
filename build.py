@@ -483,6 +483,11 @@ def main():
         upcoming = [u for u in json.load(open(up_path, encoding='utf-8')) if (u.get('d') or '') >= today]
     write_json('events.json', ev_list)
     write_json('bouts.json', bout_out)
+    # 選手のほかの競技の試合（data/other_bouts.tsv：fighter_id, date, event, opponent, result(勝/敗/分/無効), method, round, time, rule, source_url）
+    other = collections.defaultdict(list)
+    for r in read_tsv(os.path.join(DATA, 'other_bouts.tsv')):
+        other[MERGED.get(r['fighter_id'], r['fighter_id'])].append([r.get('date', ''), r.get('event', ''), r.get('opponent', ''), r.get('result', ''), r.get('method', ''), r.get('round', ''), r.get('time', ''), r.get('rule', ''), r.get('source_url', '')])
+    meta['other'] = {k: sorted(v, reverse=True) for k, v in other.items() if k in fout}
     write_json('fighters.json', fout)
     meta['pd'] = sorted(k for k in PODIUM if k in {e['event_id'] for e in ev})
     os.makedirs(os.path.join(OUT, 'pd'), exist_ok=True)

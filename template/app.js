@@ -221,6 +221,14 @@ function vEvent(k){
     <div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>${rows}</tbody></table></div>
     ${teamTbl(k)}<div id="pdbox"></div><p class="src">出典：${e[5].length?e[5].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc((()=>{try{return decodeURIComponent(u)}catch(e){return u}})().replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　'):''}</p></main>`;
 }
+function kickRows(id,list){ const o=((D.meta.other||{})[id]||[]).filter(r=>/キック|ムエタイ|シュートボクシング|K-1/.test(r[7]));
+  const s=(list||[]).filter(([e,b])=>/キック|ムエタイ|ボクシング/.test(b[11]||'')&&!/^ボクシング$/.test(b[11]||'')); return {o,s}; }
+function kickBox(id,list){ const {o,s}=kickRows(id,list); if(!o.length&&!s.length) return ''; let w=0,l=0,d=0;
+  o.forEach(r=>{ if(r[3]==='勝')w++; else if(r[3]==='敗')l++; else if(r[3]==='分')d++; });
+  s.forEach(([e,b,side])=>{ if(b[5]===side)w++; else if(b[5]===1||b[5]===2)l++; else if(b[5]==='d')d++; });
+  return `<div class="kbox"><p class="kh">キック戦績</p><div class="kpis"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div></div></div>`; }
+function kickTbl(id){ const o=((D.meta.other||{})[id]||[]); if(!o.length) return '';
+  return `<h2 class="sec">キックの試合（このサイトの大会以外）</h2><div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th></tr></thead><tbody>${o.map(r=>`<tr><td>${r[3]==='勝'?'<span class="rs w">勝</span>':r[3]==='敗'?'<span class="rs l">負</span>':`<span class="rs o">${esc(r[3])}</span>`}</td><td>${esc(r[2])}</td><td>${r[8]?`<a class="u" href="${esc(r[8])}" target="_blank" rel="noopener">${esc(r[1])}</a>`:esc(r[1])}</td><td class="num">${esc(r[0].replace(/-/g,'.'))}</td><td>${esc(r[4])}${r[5]?` ${esc(r[5])}R`:''}${r[6]?` ${esc(r[6])}`:''}</td></tr>`).join('')}</tbody></table></div><h2 class="sec">全試合</h2>`; }
 function vFighter(id){
   const f = D.fighters[id]; if(!f) return notFound(); buildIndex();
   const list = (byFighter[id]||[]).slice().sort((a,b)=> b[0][1].localeCompare(a[0][1]) || b[1][0]-a[1][0]);
@@ -239,9 +247,9 @@ function vFighter(id){
   const st = '';
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#fighters">選手</a></p>
     <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}</p></div>
-    <div class="kbox"><p class="kh" id="fkh">MMA戦績</p><div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div></div>
+    <div class="kboxes">${kickBox(id,list)}<div class="kbox"><p class="kh" id="fkh">MMA戦績</p><div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div></div></div>
     <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません</p>
-    ${tbox}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
+    ${tbox}${kickTbl(id)}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
 }
 function enhanceFighter(id){
   fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
