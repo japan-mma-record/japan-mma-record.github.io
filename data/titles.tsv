@@ -1,0 +1,622 @@
+promotion	date	fighter1_ja	fighter2_ja	label	source_url	note
+rizin	2019-04-21	キング・モー	イリー・プロハースカ	RIZINライトヘビー級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	イリー・プロハースカが王座獲得
+rizin	2019-12-31	イリー・プロハースカ	C.B.ダラウェイ	RIZINライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	イリー・プロハースカの初防衛戦
+rizin	2021-06-13	トフィック・ムサエフ	ホベルト・サトシ・ソウザ	RIZINライト級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザが王座獲得
+rizin	2021-12-31	ホベルト・サトシ・ソウザ	矢地祐介	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザの初防衛戦
+rizin	2022-04-17	ホベルト・サトシ・ソウザ	ジョニー・ケース	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザの2度目の防衛戦
+rizin	2024-09-29	ホベルト・サトシ・ソウザ	ルイス・グスタボ	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザの3度目の防衛戦
+rizin	2024-12-31	ホベルト・サトシ・ソウザ	ヴガール・ケラモフ	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザの4度目の防衛戦
+rizin	2025-09-28	ホベルト・サトシ・ソウザ	堀江圭功	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ホベルト・サトシ・ソウザの5度目の防衛戦
+rizin	2025-12-31	ホベルト・サトシ・ソウザ	イルホム・ノジモフ	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	イルホム・ノジモフが王座獲得
+rizin	2026-05-10	イルホム・ノジモフ	ルイス・グスタボ	RIZINライト級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ルイス・グスタボが王座獲得
+rizin	2020-11-21	朝倉未来	斎藤裕	RIZINフェザー級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	斎藤裕が王座獲得
+rizin	2021-10-24	斎藤裕	牛久絢太郎	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	牛久絢太郎が王座獲得
+rizin	2022-04-17	牛久絢太郎	斎藤裕	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	牛久絢太郎の初防衛戦
+rizin	2022-10-23	牛久絢太郎	クレベル・コイケ	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	クレベル・コイケが王座獲得
+rizin	2023-07-30	朝倉未来	ヴガール・ケラモフ	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ヴガール・ケラモフが王座獲得
+rizin	2023-11-04	ヴガール・ケラモフ	鈴木千裕	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	鈴木千裕が王座獲得
+rizin	2024-04-29	鈴木千裕	金原正徳	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	鈴木千裕の初防衛戦
+rizin	2024-12-31	鈴木千裕	クレベル・コイケ	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	クレベル・コイケが王座獲得
+rizin	2025-05-04	クレベル・コイケ	ラジャブアリ・シェイドゥラエフ	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ラジャブアリ・シェイドゥラエフが王座獲得
+rizin	2025-09-28	ラジャブアリ・シェイドゥラエフ	ビクター・コレスニック	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ラジャブアリ・シェイドゥラエフの初防衛戦
+rizin	2025-12-31	ラジャブアリ・シェイドゥラエフ	朝倉未来	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ラジャブアリ・シェイドゥラエフの2度目の防衛戦
+rizin	2026-04-12	ラジャブアリ・シェイドゥラエフ	久保優太	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ラジャブアリ・シェイドゥラエフの3度目の防衛戦
+rizin	2026-09-10	ラジャブアリ・シェイドゥラエフ	AJ・マッキー	RIZINフェザー級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ラジャブアリ・シェイドゥラエフの4度目の防衛戦（本文では王座統一戦とも記載）
+rizin	2018-12-31	堀口恭司	ダリオン・コールドウェル	RIZINバンタム級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	堀口恭司が王座獲得
+rizin	2019-12-31	朝倉海	マネル・ケイプ	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	マネル・ケイプが王座獲得
+rizin	2020-08-10	朝倉海	扇久保博正	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	朝倉海が王座獲得
+rizin	2020-12-31	朝倉海	堀口恭司	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	堀口恭司が王座獲得
+rizin	2023-07-30	フアン・アーチュレッタ	扇久保博正	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	フアン・アーチュレッタが王座獲得
+rizin	2023-12-31	フアン・アーチュレッタ	朝倉海	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	朝倉海が王座獲得
+rizin	2024-09-29	井上直樹	キム・スーチョル	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	井上直樹が王座獲得
+rizin	2025-03-30	井上直樹	元谷友貴	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	井上直樹の初防衛戦
+rizin	2025-07-27	井上直樹	福田龍彌	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	井上直樹の2度目の防衛戦
+rizin	2025-12-31	井上直樹	ダニー・サバテロ	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ダニー・サバテロが王座獲得
+rizin	2026-04-12	ダニー・サバテロ	後藤丈治	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ダニー・サバテロの初防衛戦
+rizin	2026-07-18	ダニー・サバテロ	鹿志村仁之介	RIZINバンタム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ダニー・サバテロの2度目の防衛戦
+rizin	2023-12-31	堀口恭司	神龍誠	RIZINフライ級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	堀口恭司が王座獲得
+rizin	2024-12-31	堀口恭司	エンカジムーロ・ズールー	RIZINフライ級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	堀口恭司の初防衛戦
+rizin	2025-12-31	扇久保博正	元谷友貴	RIZINフライ級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	扇久保博正が王座獲得
+rizin	2026-06-06	扇久保博正	神龍誠	RIZINフライ級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	神龍誠が王座獲得
+rizin	2026-11-08	神龍誠	トニー・ララミー	RIZINフライ級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	トニー・ララミーが王座獲得
+rizin	2018-12-31	浅倉カンナ	浜崎朱加	RIZIN女子スーパーアトム級初代王座決定戦	https://en.wikipedia.org/wiki/Rizin_FF	浜崎朱加が王座獲得
+rizin	2019-06-02	浜崎朱加	ジン・ユ・フレイ	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	浜崎朱加の初防衛戦
+rizin	2019-12-31	浜崎朱加	ハム・ソヒ	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	ハム・ソヒが王座獲得
+rizin	2020-12-31	浜崎朱加	山本美憂	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	浜崎朱加が王座獲得
+rizin	2021-03-21	浜崎朱加	浅倉カンナ	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	浜崎朱加の初防衛戦
+rizin	2022-04-17	浜崎朱加	伊澤星花	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	伊澤星花が王座獲得
+rizin	2023-07-30	伊澤星花	クレア・ロペス	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	伊澤星花の初防衛戦
+rizin	2025-11-03	伊澤星花	大島沙緒里	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	伊澤星花の2度目の防衛戦
+rizin	2025-12-31	伊澤星花	RENA	RIZIN女子スーパーアトム級タイトルマッチ	https://en.wikipedia.org/wiki/Rizin_FF	伊澤星花の3度目の防衛戦
+rizin	2015-12-31	キング・モー	イリー・プロハースカ	RIZIN WORLD GP 2015 ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2016-12-31	ミルコ・クロコップ	アミール・アリアックバリ	RIZIN WORLD GP 2016 無差別級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2017-12-31	堀口恭司	石渡伸太郎	RIZIN WORLD GP 2017 バンタム級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2017-12-31	RENA	浅倉カンナ	RIZIN WORLD GP 2017 女子スーパーアトム級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2019-12-31	トフィック・ムサエフ	パトリッキー・“ピットブル”・フレイレ	RIZIN WORLD GP 2019 ライト級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2021-12-31	朝倉海	扇久保博正	RIZIN JAPAN GP 2021 バンタム級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2022-12-31	伊澤星花	パク・シウ	RIZIN WORLD GP 2022 女子スーパーアトム級トーナメント決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+rizin	2025-09-28	マレク・サモチュク	アレクサンダー・ソルダトキン	RIZIN ヘビー級GP決勝	https://en.wikipedia.org/wiki/Rizin_FF	
+shooto	1991-05-31	川口健次	山田 学	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川口健次が王座獲得
+shooto	1991-10-17	川口健次	本間 聡	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川口健次の初防衛戦
+shooto	1992-07-23	川口健次	山田 学	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川口健次の2度目の防衛戦
+shooto	1992-11-27	川口健次	本間 聡	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川口健次の3度目の防衛戦（引き分け）
+shooto	1996-05-07	エリック・パーソン	川口健次	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	エリック・パーソンが王座獲得
+shooto	1998-08-29	エリック・パーソン	須田匡昇	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	エリック・パーソンの初防衛戦
+shooto	2002-01-12	須田匡昇	ランス・ギブソン	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	須田匡昇が王座獲得
+shooto	2004-07-09	須田匡昇	ダスティン・デニス	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	須田匡昇の2度目の防衛戦（引き分け）
+shooto	2007-07-15	シアー・バハルドゥザダ	山下志功	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	シアー・バハルドゥザダが王座獲得
+shooto	2024-11-30	岡見 勇信	キム ジェヨン	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	岡見 勇信が王座獲得
+shooto	1990-05-12	関島康人	石川義将	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	関島康人が王座獲得
+shooto	1990-11-28	関島康人	桜田直樹	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	関島康人の初防衛戦（引き分け）
+shooto	1991-08-03	石川義将	関島康人	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	石川義将が王座獲得
+shooto	1991-10-17	桜田直樹	関島康人	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	桜田直樹が王座獲得
+shooto	1992-09-25	桜田直樹	草柳和宏	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	桜田直樹の初防衛戦
+shooto	1998-05-13	桜井速人	中尾受太郎	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	桜井速人が王座獲得
+shooto	2000-03-17	桜井”マッハ”速人	加藤鉄史	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	桜井”マッハ”速人の初防衛戦
+shooto	2001-08-26	アンデウソン・シウバ	桜井"マッハ"速人	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アンデウソン・シウバが王座獲得
+shooto	2004-07-09	ジェイク・シールズ	レイ・クーパー	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ジェイク・シールズが王座獲得
+shooto	2004-12-14	菊地昭	ジェイク・シールズ	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	菊地昭が王座獲得
+shooto	2006-02-17	青木真也	菊地 昭	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	青木真也が王座獲得
+shooto	2007-02-17	青木真也	菊地 昭	修斗世界ウェルター級(77.1kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	青木真也の初防衛戦
+shooto	2025-07-21	住村 竜市朗	ソーキ	修斗世界ウェルター級(77.1kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	住村 竜市朗が暫定王座獲得
+shooto	1991-03-29	渡部優一	草柳和宏	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	渡部優一が王座獲得
+shooto	1991-10-17	大原友則	石川義将	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	大原友則が王座獲得
+shooto	1992-09-25	大原友則	田中智宏	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	大原友則の初防衛戦
+shooto	1994-11-07	中井祐樹	草柳和宏	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	中井祐樹が王座獲得
+shooto	1999-05-29	宇野 薫	佐藤ルミナ	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	宇野 薫が王座獲得
+shooto	2000-12-17	宇野 薫	佐藤ルミナ	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	宇野 薫の初防衛戦
+shooto	2001-12-16	五味隆典	佐藤ルミナ	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	五味隆典が王座獲得
+shooto	2002-12-14	五味隆典	三島☆ド根性ノ助	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	五味隆典の初防衛戦
+shooto	2003-08-10	ヨアキム・ハンセン	五味隆典	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ヨアキム・ハンセンが王座獲得
+shooto	2003-12-14	ビトー"シャオリン"ヒベイロ	ヨアキム・ハンセン	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ビトー"シャオリン"ヒベイロが王座獲得
+shooto	2004-12-14	川尻達也	ヴィトー・"シャオリン"・ヒベイロ	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川尻達也が王座獲得
+shooto	2006-02-17	川尻達也	ヨアキム・ハンセン	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川尻達也の初防衛戦
+shooto	2008-05-03	中蔵隆志	天突頑丈	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	中蔵隆志が王座獲得
+shooto	2009-10-30	ヴィラミー・シケリム	冨樫健一郎	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ヴィラミー・シケリムが王座獲得
+shooto	2010-05-30	ヴィラミー・シケリム	遠藤雄介	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ヴィラミー・シケリムの初防衛戦
+shooto	2011-07-18	弘中邦佳	朴 光哲	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	弘中邦佳が王座獲得
+shooto	2012-05-18	弘中邦佳	ジョヴァニ・ジニス	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	弘中邦佳の初防衛戦
+shooto	2013-09-29	弘中邦佳	児山佳宏	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	弘中邦佳の2度目の防衛戦
+shooto	2016-04-23	松本 光史	川名 TENCHO 雄生	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	松本 光史が王座獲得
+shooto	2018-03-25	松本 光史	岡野 裕城	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	松本 光史の初防衛戦
+shooto	2019-05-06	松本 光史	小谷 直之	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	松本 光史の2度目の防衛戦
+shooto	2020-07-12	川名 TENCHO 雄生	キャプテン ☆ アフリカ	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	川名 TENCHO 雄生が王座獲得
+shooto	2021-09-20	西川 大和	川名 TENCHO 雄生	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	西川 大和が王座獲得
+shooto	2024-07-28	キャプテン ☆ アフリカ	大尊 伸光	修斗世界ライト級(70.3kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	大尊 伸光（出花崇太郎）が王座獲得
+shooto	1990-09-08	田中健一	坂本一弘	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	田中健一が王座獲得
+shooto	1991-05-31	坂本一弘	田中健一	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	坂本一弘が王座獲得
+shooto	1991-10-17	坂本一弘	菅野浩之	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	坂本一弘の初防衛戦
+shooto	1992-03-27	朝日 昇	坂本一弘	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	朝日 昇が王座獲得
+shooto	1992-07-23	朝日 昇	田中健一	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	朝日 昇の初防衛戦（引き分け）
+shooto	1999-03-28	朝日 昇	巽 宇宙	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	朝日 昇の2度目の防衛戦（引き分け）
+shooto	1999-09-05	アレキサンドレ・ノゲーラ	朝日 昇	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレキサンドレ・ノゲーラが王座獲得
+shooto	2000-08-27	アレキサンドレ・ノゲーラ	巽 宇宙	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレキサンドレ・ノゲーラの初防衛戦
+shooto	2001-09-02	アレッシャンドリ・フランカ・ノゲイラ	勝田哲夫	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレッシャンドリ・フランカ・ノゲイラの2度目の防衛戦
+shooto	2001-12-16	アレッシャンドリ・フランカ・ノゲイラ	戸井田カツヤ	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレッシャンドリ・フランカ・ノゲイラの3度目の防衛戦
+shooto	2002-12-14	アレッシャンドリ・フランカ・ノゲイラ	阿部裕幸	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレッシャンドリ・フランカ・ノゲイラの4度目の防衛戦
+shooto	2003-08-10	アレッシャンドリ・フランカ・ノゲイラ	ステファン・パーリング	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレッシャンドリ・フランカ・ノゲイラの5度目の防衛戦（引き分け）
+shooto	2005-03-11	アレッシャンドリ・フランカ・ノゲイラ	ジョン・ホーキ	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	アレッシャンドリ・フランカ・ノゲイラの6度目の防衛戦
+shooto	2006-05-12	リオン武	アントニオ・カルバーリョ	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	リオン武が王座獲得
+shooto	2007-05-18	田村彰敏	リオン武	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	田村彰敏が王座獲得
+shooto	2008-03-28	門脇英基	田村彰敏	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	門脇英基が王座獲得
+shooto	2008-11-29	リオン武	門脇英基	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	リオン武が王座獲得
+shooto	2009-05-10	リオン武	佐藤ルミナ	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	リオン武の初防衛戦
+shooto	2010-05-30	日沖 発	リオン武	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	日沖 発が王座獲得
+shooto	2016-01-11	斎藤 裕	中村 ジュニア	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	斎藤 裕が王座獲得
+shooto	2017-04-23	斎藤 裕	宇野 薫	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	斎藤 裕の初防衛戦
+shooto	2021-07-25	SASUKE	工藤 諒司	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	SASUKEが王座獲得
+shooto	2023-03-19	SASUKE	たてお	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	SASUKEの初防衛戦
+shooto	2023-12-02	SASUKE	田中 半蔵	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	SASUKEの2度目の防衛戦
+shooto	2025-03-16	SASUKE	椿 飛鳥	修斗世界フェザー級(65.8kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	SASUKEの3度目の防衛戦
+shooto	2000-12-17	マモル	秋本じん	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	マモルが王座獲得
+shooto	2001-11-25	大石真丈	マモル	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	大石真丈が王座獲得
+shooto	2002-09-16	大石真丈	池田久雄	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	大石真丈の初防衛戦（引き分け）
+shooto	2003-08-10	松根良太	大石真丈	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	松根良太が王座獲得
+shooto	2004-11-12	松根良太	今泉堅太郎	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	松根良太の初防衛戦
+shooto	2006-07-21	外薗晶敏	大沢ケンジ	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	外薗晶敏が王座獲得
+shooto	2008-03-28	上田将勝	岡嵜康悦	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	上田将勝が王座獲得
+shooto	2009-03-20	上田将勝	田澤 聡	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	上田将勝の2度目の防衛戦
+shooto	2009-07-19	上田将勝	エドゥアルド・ダンタス	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	上田将勝の3度目の防衛戦
+shooto	2010-03-22	勝村周一朗	上田将勝	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	勝村周一朗が王座獲得
+shooto	2011-04-29	岡嵜康悦	勝村周一朗	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	岡嵜康悦が王座獲得
+shooto	2012-05-18	扇久保博正	岡嵜康悦	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	扇久保博正が王座獲得
+shooto	2013-03-16	堀口恭司	扇久保博正	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	堀口恭司が王座獲得
+shooto	2013-06-22	堀口 恭司	石渡 伸太郎	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	堀口 恭司の初防衛戦
+shooto	2017-10-15	佐藤 将光	石橋 佳大	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	佐藤 将光が王座獲得
+shooto	2018-07-15	佐藤 将光	トリスタン グリムズリー	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	佐藤 将光の初防衛戦
+shooto	2018-11-17	佐藤 将光	齊藤 曜	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	佐藤 将光の2度目の防衛戦
+shooto	2020-05-31	岡田 遼	倉本 一真	修斗世界バンタム級(61.2kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	岡田 遼が暫定王座獲得
+shooto	2021-03-20	岡田 遼	大塚 隆史	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	岡田 遼の初防衛戦
+shooto	2022-03-21	安藤 達也	岡田 遼	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	安藤 達也が王座獲得
+shooto	2024-07-21	齋藤 奨司	藤井 伸樹	修斗世界バンタム級(61.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	齋藤 奨司が王座獲得
+shooto	2025-05-25	永井 奏多	ダイキ ライトイヤー	修斗世界バンタム級(61.2kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	永井 奏多が暫定王座獲得
+shooto	2003-12-14	マモル	漆谷康宏	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	マモルが王座獲得
+shooto	2004-09-26	マモル	ホビソン・モウラ	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	マモルの初防衛戦（引き分け）
+shooto	2010-05-30	漆谷康宏	神酒龍一	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	漆谷康宏が王座獲得
+shooto	2011-07-18	漆谷康宏	正城ユウキ	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	漆谷康宏の初防衛戦
+shooto	2015-05-03	菅原雅顕	神酒龍一	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	菅原雅顕が王座獲得
+shooto	2016-04-23	扇久保 博正	菅原 雅顕	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	扇久保 博正が王座獲得
+shooto	2017-10-15	扇久保 博正	オニボウズ	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	扇久保 博正の初防衛戦
+shooto	2019-05-06	扇久保 博正	清水 清隆	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	扇久保 博正の2度目の防衛戦
+shooto	2020-07-12	福田 龍彌	前田 吉朗	修斗世界フライ級(56.7kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	福田 龍彌が暫定王座獲得
+shooto	2021-07-04	平良 達郎	福田 龍彌	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	平良 達郎が王座獲得
+shooto	2023-11-19	新井 丈	山内 渉	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	新井 丈が王座獲得
+shooto	2025-01-19	関口 祐冬	安芸 柊斗	修斗世界フライ級(56.7kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	関口 祐冬が暫定王座獲得
+shooto	2025-11-16	亮我	関口 祐冬	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	亮我が王座獲得
+shooto	2009-11-23	ランバー・ソムデートM16	田原しんぺー	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ランバー・ソムデートM16が王座獲得
+shooto	2010-07-19	ランバー・ソムデートM16	阿部博之	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	ランバー・ソムデートM16の初防衛戦
+shooto	2011-04-29	生駒純司	猿丸ジュンジ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	生駒純司が王座獲得
+shooto	2011-11-05	山上幹臣	生駒純司	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	山上幹臣が王座獲得
+shooto	2012-09-30	山上幹臣	猿丸ジュンジ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	山上幹臣の初防衛戦
+shooto	2014-01-13	室伏シンヤ	猿丸ジュンジ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	室伏シンヤが王座獲得
+shooto	2015-07-26	内藤のび太	澤田龍人	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	内藤のび太の初防衛戦
+shooto	2015-11-29	内藤 のび太	猿丸 ジュンジ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	内藤 のび太の2度目の防衛戦
+shooto	2016-07-17	黒澤 亮平	澤田 龍人	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	黒澤 亮平が王座獲得
+shooto	2017-10-15	猿田 洋祐	澤田 龍人	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	猿田 洋祐が王座獲得
+shooto	2018-05-13	猿田 洋祐	村田 一着	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	猿田 洋祐の初防衛戦
+shooto	2020-01-26	箕輪 ひろば	小巻 洋平	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	箕輪 ひろばが王座獲得
+shooto	2021-11-06	猿丸 ジュンジ	黒澤 亮平	修斗世界ストロー級(52.2kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	猿丸 ジュンジが暫定王座獲得
+shooto	2022-09-19	新井 丈	猿丸 ジュンジ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	新井 丈が王座獲得
+shooto	2023-07-23	新井 丈	安芸 柊斗	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	新井 丈の初防衛戦
+shooto	2025-09-21	田上 こゆる	山上 幹臣	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	田上 こゆるの初防衛戦
+shooto	2024-05-19	藤野 恵実	杉本 恵	修斗女子世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	藤野 恵実が王座獲得
+shooto	2025-07-21	パク ボヒョン	宝珠山 桃花	修斗女子世界ストロー級(52.2kg)暫定王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	パク ボヒョンが暫定王座獲得
+shooto	2020-08-01	黒部 三奈	杉本 恵	修斗女子世界スーパーアトム級(49.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	黒部 三奈が王座獲得
+shooto	2023-12-02	澤田 千優	中村 未来	修斗女子世界アトム級(47.6kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	澤田 千優の初防衛戦
+shooto	2026-03-29	青野 ひかる	中村 未来	修斗女子世界アトム級(47.6kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	青野 ひかるが王座獲得
+shooto	1997-10-12	エンセン井上	ジョー・エステス	修斗世界ヘビー級(120.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	エンセン井上が王座獲得
+shooto	2006-03-24	マモル	BJ	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	マモルの2度目の防衛戦（引き分け）
+shooto	2006-10-14	BJ	マモル	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	BJが王座獲得
+shooto	2007-03-16	BJ	漆谷康宏	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	BJの初防衛戦（引き分け）
+shooto	2008-07-18	BJ	マモル	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	BJの2度目の防衛戦
+shooto	2009-03-20	BJ	正城ユウキ	修斗世界フライ級(56.7kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	BJの3度目の防衛戦
+shooto	2013-07-27	神酒龍一	飛猿☆No.2	修斗世界フライ級(56.7kg)王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	引き分け（王座決定せず）
+shooto	2013-11-09	神酒龍一	飛猿☆No.2	修斗世界フライ級(56.7kg)王座決定戦	https://en.wikipedia.org/wiki/List_of_Shooto_champions	神酒龍一が王座獲得
+shooto	2014-09-27	内藤のび太	室伏シンヤ	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	内藤のび太が王座獲得
+shooto	2024-12-29	田上 こゆる	旭那 拳	修斗世界ストロー級(52.2kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	田上 こゆるが王座獲得
+shooto	2024-08-03	古賀 愛蘭	ジェニー ファン	修斗女子世界アトム級(47.6kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	古賀 愛蘭が王座獲得
+shooto	2021-11-06	高野聡美	黒部三奈	修斗女子世界スーパーアトム級(49.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	高野聡美が王座獲得
+shooto	2023-05-21	渡辺彩華	高野聡美	修斗女子世界スーパーアトム級(49.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	渡辺彩華が王座獲得
+shooto	2022-11-27	澤田千優	Yuki Ono	修斗女子世界アトム級(47.6kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	澤田千優が王座獲得
+shooto	2003-05-09	須田匡昇	Egan Inoue	修斗世界ミドル級(83.9kg)タイトルマッチ	https://en.wikipedia.org/wiki/List_of_Shooto_champions	須田匡昇の初防衛戦
+ufc	1997-02-07	マーク・コールマン	ダン・スバーン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マーク・コールマンが王座獲得
+ufc	1997-07-27	モーリス・スミス	マーク・コールマン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	モーリス・スミスが王座獲得
+ufc	1997-10-17	モーリス・スミス	タンク・アボット	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	モーリス・スミスの1度目の防衛戦
+ufc	1997-12-21	ランディ・クートゥア	モーリス・スミス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが王座獲得
+ufc	1999-05-07	バス・ルッテン	ケビン・ランデルマン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	バス・ルッテンが王座獲得
+ufc	1999-11-19	ケビン・ランデルマン	ピート・ウイリアムス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケビン・ランデルマンが王座獲得
+ufc	2000-06-09	ケビン・ランデルマン	ペドロ・ヒーゾ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケビン・ランデルマンの1度目の防衛戦
+ufc	2000-11-17	ランディ・クートゥア	ケビン・ランデルマン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが王座獲得
+ufc	2001-05-04	ランディ・クートゥア	ペドロ・ヒーゾ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアの1度目の防衛戦
+ufc	2001-11-02	ランディ・クートゥア	ペドロ・ヒーゾ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアの2度目の防衛戦
+ufc	2002-03-22	ジョシュ・バーネット	ランディ・クートゥア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョシュ・バーネットが王座獲得
+ufc	2002-09-27	リコ・ロドリゲス	ランディ・クートゥア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リコ・ロドリゲスが王座獲得
+ufc	2003-02-28	ティム・シルビア	リコ・ロドリゲス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティム・シルビアが王座獲得
+ufc	2003-09-26	ティム・シルビア	ガン・マッギー	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティム・シルビアの1度目の防衛戦
+ufc	2004-06-19	フランク・ミア	ティム・シルビア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・ミアが王座獲得
+ufc	2005-02-05	アンドレイ・アルロフスキー	ティム・シルビア	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンドレイ・アルロフスキーが暫定王座獲得
+ufc	2005-06-04	アンドレイ・アルロフスキー	ジャスティン・エイラーズ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンドレイ・アルロフスキーの1度目の防衛戦
+ufc	2005-10-07	アンドレイ・アルロフスキー	ポール・ブエンテロ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンドレイ・アルロフスキーの1度目の防衛戦
+ufc	2006-04-15	ティム・シルビア	アンドレイ・アルロフスキー	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティム・シルビアが王座獲得
+ufc	2006-07-08	ティム・シルビア	アンドレイ・アルロフスキー	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティム・シルビアの1度目の防衛戦
+ufc	2006-11-18	ティム・シルビア	ジェフ・モンソン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティム・シルビアの2度目の防衛戦
+ufc	2007-03-03	ランディ・クートゥア	ティム・シルビア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが王座獲得
+ufc	2007-08-25	ランディ・クートゥア	ガブリエル・ゴンザーガ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアの1度目の防衛戦
+ufc	2008-02-02	アントニオ・ホドリゴ・ノゲイラ	ティム・シルビア	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	アントニオ・ホドリゴ・ノゲイラが暫定王座獲得
+ufc	2008-11-15	ブロック・レスナー	ランディ・クートゥア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブロック・レスナーが王座獲得
+ufc	2008-12-27	フランク・ミア	アントニオ・ホドリゴ・ノゲイラ	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・ミアが暫定王座獲得
+ufc	2009-07-11	ブロック・レスナー	フランク・ミア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブロック・レスナーの1度目の防衛戦
+ufc	2010-03-27	シェイン・カーウィン	フランク・ミア	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	シェイン・カーウィンが暫定王座獲得
+ufc	2010-07-03	ブロック・レスナー	シェイン・カーウィン	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブロック・レスナーの2度目の防衛戦
+ufc	2010-10-23	ケイン・ヴェラスケス	ブロック・レスナー	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケイン・ヴェラスケスが王座獲得
+ufc	2011-11-12	ジュニオール・ドス・サントス	ケイン・ヴェラスケス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジュニオール・ドス・サントスが王座獲得
+ufc	2012-05-26	ジュニオール・ドス・サントス	フランク・ミア	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジュニオール・ドス・サントスの1度目の防衛戦
+ufc	2012-12-29	ケイン・ヴェラスケス	ジュニオール・ドス・サントス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケイン・ヴェラスケスが王座獲得
+ufc	2013-05-25	ケイン・ヴェラスケス	アントニオ・シウバ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケイン・ヴェラスケスの1度目の防衛戦
+ufc	2013-10-19	ケイン・ヴェラスケス	ジュニオール・ドス・サントス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケイン・ヴェラスケスの2度目の防衛戦
+ufc	2014-11-15	ファブリシオ・ヴェウドゥム	マーク・ハント	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ファブリシオ・ヴェウドゥムが暫定王座獲得
+ufc	2015-06-13	ファブリシオ・ヴェウドゥム	ケイン・ヴェラスケス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ファブリシオ・ヴェウドゥムが王座獲得
+ufc	2016-05-14	スティペ・ミオシッチ	ファブリシオ・ヴェウドゥム	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチが王座獲得
+ufc	2016-09-10	スティペ・ミオシッチ	アリスター・オーフレイム	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチの1度目の防衛戦
+ufc	2017-05-13	スティペ・ミオシッチ	ジュニオール・ドス・サントス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチの2度目の防衛戦
+ufc	2018-01-20	スティペ・ミオシッチ	フランシス・ンガヌー	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチの3度目の防衛戦
+ufc	2018-07-07	ダニエル・コーミエ	スティペ・ミオシッチ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエが王座獲得
+ufc	2018-11-03	ダニエル・コーミエ	デリック・ルイス	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエの1度目の防衛戦
+ufc	2019-08-17	スティペ・ミオシッチ	ダニエル・コーミエ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチが王座獲得
+ufc	2020-08-15	スティペ・ミオシッチ	ダニエル・コーミエ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティペ・ミオシッチの1度目の防衛戦
+ufc	2021-03-27	フランシス・ンガヌー	スティペ・ミオシッチ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランシス・ンガヌーが王座獲得
+ufc	2021-08-07	シリル・ガヌ	デリック・ルイス	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	シリル・ガヌが暫定王座獲得
+ufc	2022-01-22	フランシス・ンガヌー	シリル・ガヌ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランシス・ンガヌーの1度目の防衛戦
+ufc	2023-03-04	ジョン・ジョーンズ	シリル・ガヌ	UFC世界ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズが王座獲得
+ufc	2023-11-11	トム・アスピナル	セルゲイ・パブロビッチ	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	トム・アスピナルが暫定王座獲得
+ufc	2024-07-27	トム・アスピナル	カーティス・ブレイズ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	トム・アスピナルの1度目の防衛戦
+ufc	2024-11-16	ジョン・ジョーンズ	スティペ・ミオシッチ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの1度目の防衛戦
+ufc	2025-10-25	トム・アスピナル	シリル・ガヌ	UFC世界ヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	
+ufc	2026-06-14	シリル・ガヌ	アレックス・ペレイラ	UFC暫定ヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	シリル・ガヌが暫定王座獲得
+ufc	1997-12-21	フランク・シャムロック	ケビン・ジャクソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・シャムロックが王座獲得
+ufc	1998-03-13	フランク・シャムロック	イゴール・ジノビエフ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・シャムロックの1度目の防衛戦
+ufc	1998-05-15	フランク・シャムロック	ジェレミー・ホーン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・シャムロックの2度目の防衛戦
+ufc	1998-10-16	フランク・シャムロック	ジョン・ローバー	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・シャムロックの3度目の防衛戦
+ufc	1999-09-24	フランク・シャムロック	ティト・オーティズ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・シャムロックの4度目の防衛戦
+ufc	2000-04-14	ティト・オーティズ	ヴァンダレイ・シウバ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズが王座獲得
+ufc	2000-12-16	ティト・オーティズ	近藤有己	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズの1度目の防衛戦
+ufc	2001-02-23	ティト・オーティズ	エヴァン・タナー	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズの2度目の防衛戦
+ufc	2001-06-29	ティト・オーティズ	エルヴィス・シノシック	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズの3度目の防衛戦
+ufc	2001-09-28	ティト・オーティズ	ウラジミール・マティシェンコ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズの4度目の防衛戦
+ufc	2002-11-22	ティト・オーティズ	ケン・シャムロック	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ティト・オーティズの5度目の防衛戦
+ufc	2003-06-06	ランディ・クートゥア	チャック・リデル	UFC暫定ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが暫定王座獲得
+ufc	2003-09-26	ランディ・クートゥア	ティト・オーティズ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが王座獲得
+ufc	2004-01-31	ビクトー・ベウフォート	ランディ・クートゥア	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ビクトー・ベウフォートが王座獲得
+ufc	2004-08-21	ランディ・クートゥア	ビクトー・ベウフォート	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアが王座獲得
+ufc	2005-04-16	チャック・リデル	ランディ・クートゥア	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャック・リデルが王座獲得
+ufc	2005-08-20	チャック・リデル	ジェレミー・ホーン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャック・リデルの1度目の防衛戦
+ufc	2006-02-04	チャック・リデル	ランディ・クートゥア	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャック・リデルの2度目の防衛戦
+ufc	2006-08-26	チャック・リデル	ヘナート・ババル	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャック・リデルの3度目の防衛戦
+ufc	2006-12-30	チャック・リデル	ティト・オーティズ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャック・リデルの4度目の防衛戦
+ufc	2007-05-26	クイントン・ジャクソン	チャック・リデル	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クイントン・ジャクソンが王座獲得
+ufc	2007-09-08	クイントン・ジャクソン	ダン・ヘンダーソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クイントン・ジャクソンの1度目の防衛戦
+ufc	2008-07-05	フォレスト・グリフィン	クイントン・ジャクソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フォレスト・グリフィンが王座獲得
+ufc	2008-12-27	ラシャド・エヴァンス	フォレスト・グリフィン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ラシャド・エヴァンスが王座獲得
+ufc	2009-05-23	リョート・マチダ	ラシャド・エヴァンス	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リョート・マチダが王座獲得
+ufc	2009-10-24	リョート・マチダ	マウリシオ・ショーグン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リョート・マチダの1度目の防衛戦
+ufc	2011-03-19	ジョン・ジョーンズ	マウリシオ・ショーグン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズが王座獲得
+ufc	2011-09-24	ジョン・ジョーンズ	クイントン・ジャクソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの1度目の防衛戦
+ufc	2011-12-10	ジョン・ジョーンズ	リョート・マチダ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの2度目の防衛戦
+ufc	2012-04-21	ジョン・ジョーンズ	ラシャド・エヴァンス	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの3度目の防衛戦
+ufc	2012-09-22	ジョン・ジョーンズ	ビクトー・ベウフォート	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの4度目の防衛戦
+ufc	2013-04-27	ジョン・ジョーンズ	チェール・ソネン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの5度目の防衛戦
+ufc	2013-09-21	ジョン・ジョーンズ	アレクサンダー・グスタフソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの6度目の防衛戦
+ufc	2014-04-26	ジョン・ジョーンズ	グローバー・テイシェイラ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの7度目の防衛戦
+ufc	2015-01-03	ジョン・ジョーンズ	ダニエル・コーミエ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの8度目の防衛戦
+ufc	2015-05-23	ダニエル・コーミエ	アンソニー・ジョンソン	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエが王座獲得
+ufc	2015-10-03	ダニエル・コーミエ	アレクサンダー・グスタフソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエの1度目の防衛戦
+ufc	2016-04-23	ジョン・ジョーンズ	オヴィンス・サン・プルー	UFC暫定ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズが暫定王座獲得
+ufc	2017-04-08	ダニエル・コーミエ	アンソニー・ジョンソン	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエの2度目の防衛戦
+ufc	2017-07-29	ダニエル・コーミエ	ジョン・ジョーンズ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	
+ufc	2018-01-20	ダニエル・コーミエ	ヴォルカン・ウーズデミア	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダニエル・コーミエの3度目の防衛戦
+ufc	2018-12-29	ジョン・ジョーンズ	アレクサンダー・グスタフソン	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズが王座獲得
+ufc	2019-03-02	ジョン・ジョーンズ	アンソニー・スミス	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの1度目の防衛戦
+ufc	2019-07-06	ジョン・ジョーンズ	チアゴ・サントス	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの2度目の防衛戦
+ufc	2020-02-08	ジョン・ジョーンズ	ドミニク・レイエス	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョン・ジョーンズの3度目の防衛戦
+ufc	2020-09-27	ヤン・ブワホビッチ	ドミニク・レイエス	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヤン・ブワホビッチが王座獲得
+ufc	2021-03-06	ヤン・ブワホビッチ	イズラエル・アデサニヤ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヤン・ブワホビッチの1度目の防衛戦
+ufc	2021-10-30	グローバー・テイシェイラ	ヤン・ブワホビッチ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	グローバー・テイシェイラが王座獲得
+ufc	2022-06-12	イジー・プロハースカ	グローバー・テイシェイラ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イジー・プロハースカが王座獲得
+ufc	2022-12-10	ヤン・ブワホビッチ	マゴメド・アンカラエフ	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	
+ufc	2023-01-21	ジャマール・ヒル	グローバー・テイシェイラ	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャマール・ヒルが王座獲得
+ufc	2023-11-11	アレックス・ペレイラ	イジー・プロハースカ	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレックス・ペレイラが王座獲得
+ufc	2024-04-13	アレックス・ペレイラ	ジャマール・ヒル	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレックス・ペレイラの1度目の防衛戦
+ufc	2024-06-29	アレックス・ペレイラ	イジー・プロハースカ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレックス・ペレイラの2度目の防衛戦
+ufc	2025-03-08	マゴメド・アンカラエフ	アレックス・ペレイラ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マゴメド・アンカラエフが王座獲得
+ufc	2025-10-04	アレックス・ペレイラ	マゴメド・アンカラエフ	UFC世界ライトヘビー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレックス・ペレイラが王座獲得
+ufc	2026-04-11	カーロス・アルバーグ	イジー・プロハースカ	UFC世界ライトヘビー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	カーロス・アルバーグが王座獲得
+ufc	2001-09-28	デイブ・メネー	ギル・カスティーリョ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デイブ・メネーが王座獲得
+ufc	2002-01-11	ムリーロ・ブスタマンチ	デイブ・メネー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ムリーロ・ブスタマンチが王座獲得
+ufc	2002-05-10	ムリーロ・ブスタマンチ	マット・リンドランド	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ムリーロ・ブスタマンチの1度目の防衛戦
+ufc	2005-02-05	エヴァン・タナー	デビッド・テレル	UFC世界ミドル級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	エヴァン・タナーが王座獲得
+ufc	2005-06-04	リッチ・フランクリン	エヴァン・タナー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リッチ・フランクリンが王座獲得
+ufc	2005-11-19	リッチ・フランクリン	ネイサン・クォーリー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リッチ・フランクリンの1度目の防衛戦
+ufc	2006-03-04	リッチ・フランクリン	デビッド・ロワゾー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	リッチ・フランクリンの2度目の防衛戦
+ufc	2006-10-14	アンデウソン・シウバ	リッチ・フランクリン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバが王座獲得
+ufc	2007-07-07	アンデウソン・シウバ	ネイサン・マーコート	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの1度目の防衛戦
+ufc	2007-10-20	アンデウソン・シウバ	リッチ・フランクリン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの2度目の防衛戦
+ufc	2008-03-01	アンデウソン・シウバ	ダン・ヘンダーソン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの3度目の防衛戦
+ufc	2008-10-25	アンデウソン・シウバ	パトリック・コーテ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの4度目の防衛戦
+ufc	2009-04-18	アンデウソン・シウバ	ターレス・レイチ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの5度目の防衛戦
+ufc	2010-04-10	アンデウソン・シウバ	デミアン・マイア	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの6度目の防衛戦
+ufc	2010-08-07	アンデウソン・シウバ	チェール・ソネン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの7度目の防衛戦
+ufc	2011-02-05	アンデウソン・シウバ	ビクトー・ベウフォート	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの8度目の防衛戦
+ufc	2011-08-27	アンデウソン・シウバ	岡見勇信	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの9度目の防衛戦
+ufc	2012-07-07	アンデウソン・シウバ	チェール・ソネン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンデウソン・シウバの10度目の防衛戦
+ufc	2013-07-06	クリス・ワイドマン	アンデウソン・シウバ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリス・ワイドマンが王座獲得
+ufc	2013-12-28	クリス・ワイドマン	アンデウソン・シウバ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリス・ワイドマンの1度目の防衛戦
+ufc	2014-07-05	クリス・ワイドマン	リョート・マチダ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリス・ワイドマンの2度目の防衛戦
+ufc	2015-05-23	クリス・ワイドマン	ビクトー・ベウフォート	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリス・ワイドマンの3度目の防衛戦
+ufc	2015-12-12	ルーク・ロックホールド	クリス・ワイドマン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ルーク・ロックホールドが王座獲得
+ufc	2016-06-04	マイケル・ビスピン	ルーク・ロックホールド	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マイケル・ビスピンが王座獲得
+ufc	2016-10-08	マイケル・ビスピン	ダン・ヘンダーソン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マイケル・ビスピンの1度目の防衛戦
+ufc	2017-07-08	ロバート・ウィテカー	ヨエル・ロメロ	UFC暫定ミドル級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロバート・ウィテカーが暫定王座獲得
+ufc	2017-11-04	ジョルジュ・サンピエール	マイケル・ビスピン	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールが王座獲得
+ufc	2019-04-13	イズラエル・アデサニヤ	ケルヴィン・ガステラム	UFC暫定ミドル級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤが暫定王座獲得
+ufc	2019-10-05	イズラエル・アデサニヤ	ロバート・ウィテカー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤが王座獲得
+ufc	2020-03-07	イズラエル・アデサニヤ	ヨエル・ロメロ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤの1度目の防衛戦
+ufc	2020-09-27	イズラエル・アデサニヤ	パウロ・コスタ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤの2度目の防衛戦
+ufc	2021-06-12	イズラエル・アデサニヤ	マルヴィン・ヴェットーリ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤの3度目の防衛戦
+ufc	2022-02-12	イズラエル・アデサニヤ	ロバート・ウィテカー	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤの4度目の防衛戦
+ufc	2022-07-02	イズラエル・アデサニヤ	ジャレッド・キャノニア	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤの5度目の防衛戦
+ufc	2022-11-12	アレックス・ペレイラ	イズラエル・アデサニヤ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレックス・ペレイラが王座獲得
+ufc	2023-04-08	イズラエル・アデサニヤ	アレックス・ペレイラ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イズラエル・アデサニヤが王座獲得
+ufc	2023-09-10	ショーン・ストリックランド	イズラエル・アデサニヤ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・ストリックランドが王座獲得
+ufc	2024-01-20	ドリカス・デュ・プレシ	ショーン・ストリックランド	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドリカス・デュ・プレシが王座獲得
+ufc	2024-08-18	ドリカス・デュ・プレシ	イズラエル・アデサニヤ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドリカス・デュ・プレシの1度目の防衛戦
+ufc	2025-02-08	ドリカス・デュ・プレシ	ショーン・ストリックランド	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドリカス・デュ・プレシの2度目の防衛戦
+ufc	2025-08-16	ハムザト・チマエフ	ドリカス・デュ・プレシ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハムザト・チマエフが王座獲得
+ufc	2026-05-09	ショーン・ストリックランド	ハムザト・チマエフ	UFC世界ミドル級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・ストリックランドが王座獲得
+ufc	1998-10-16	パット・ミレティッチ	マイキー・バーネット	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチが王座獲得
+ufc	1999-01-09	パット・ミレティッチ	ジョルジ・パチーノ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチの1度目の防衛戦
+ufc	1999-07-16	パット・ミレティッチ	アンドレ・ペデネイラス	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチの2度目の防衛戦
+ufc	2000-06-09	パット・ミレティッチ	ジョン・アレッシオ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチの3度目の防衛戦
+ufc	2000-12-16	パット・ミレティッチ	山本喧一	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチの4度目の防衛戦
+ufc	2001-05-04	カーロス・ニュートン	パット・ミレティッチ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カーロス・ニュートンが王座獲得
+ufc	2001-11-02	マット・ヒューズ	カーロス・ニュートン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズが王座獲得
+ufc	2002-03-22	ペドロ・ヒーゾ	アンドレイ・アルロフスキー	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの1度目の防衛戦
+ufc	2002-07-13	マット・ヒューズ	カーロス・ニュートン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの2度目の防衛戦
+ufc	2002-11-22	マット・ヒューズ	ギル・カスティーリョ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの3度目の防衛戦
+ufc	2003-04-25	マット・ヒューズ	ショーン・シャーク	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの4度目の防衛戦
+ufc	2003-11-21	マット・ヒューズ	フランク・トリッグ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの5度目の防衛戦
+ufc	2004-01-31	BJ・ペン	マット・ヒューズ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	BJ・ペンが王座獲得
+ufc	2004-10-22	マット・ヒューズ	ジョルジュ・サンピエール	UFC世界ウェルター級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズが王座獲得
+ufc	2005-04-16	マット・ヒューズ	フランク・トリッグ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの1度目の防衛戦
+ufc	2006-09-23	マット・ヒューズ	BJ・ペン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・ヒューズの2度目の防衛戦
+ufc	2006-11-18	ジョルジュ・サンピエール	マット・ヒューズ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールが王座獲得
+ufc	2007-04-07	マット・セラ	ジョルジュ・サンピエール	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マット・セラが王座獲得
+ufc	2007-12-29	ジョルジュ・サンピエール	マット・ヒューズ	UFC暫定ウェルター級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールが暫定王座獲得
+ufc	2008-04-19	ジョルジュ・サンピエール	マット・セラ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールが王座獲得
+ufc	2008-08-09	ジョルジュ・サンピエール	ジョン・フィッチ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの1度目の防衛戦
+ufc	2009-01-31	ジョルジュ・サンピエール	BJ・ペン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの2度目の防衛戦
+ufc	2009-07-11	ジョルジュ・サンピエール	チアゴ・アウベス	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの3度目の防衛戦
+ufc	2010-03-27	ジョルジュ・サンピエール	ダン・ハーディー	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの4度目の防衛戦
+ufc	2010-12-11	ジョルジュ・サンピエール	ジョシュ・コスチェック	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの5度目の防衛戦
+ufc	2011-04-30	ジョルジュ・サンピエール	ジェイク・シールズ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの6度目の防衛戦
+ufc	2012-02-04	カーロス・コンディット	ニック・ディアス	UFC暫定ウェルター級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	カーロス・コンディットが暫定王座獲得
+ufc	2012-11-17	ジョルジュ・サンピエール	カーロス・コンディット	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの7度目の防衛戦
+ufc	2013-03-16	ジョルジュ・サンピエール	ニック・ディアス	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの8度目の防衛戦
+ufc	2013-11-16	ジョルジュ・サンピエール	ジョニー・ヘンドリックス	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョルジュ・サンピエールの9度目の防衛戦
+ufc	2014-03-15	ジョニー・ヘンドリックス	ロビー・ローラー	UFC世界ウェルター級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョニー・ヘンドリックスが王座獲得
+ufc	2015-07-11	ロビー・ローラー	ローリー・マクドナルド	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロビー・ローラーの1度目の防衛戦
+ufc	2016-01-02	ロビー・ローラー	カーロス・コンディット	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロビー・ローラーの2度目の防衛戦
+ufc	2016-07-30	タイロン・ウッドリー	ロビー・ローラー	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	タイロン・ウッドリーが王座獲得
+ufc	2016-11-12	タイロン・ウッドリー	スティーブン・トンプソン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	タイロン・ウッドリーの防衛戦
+ufc	2017-03-04	タイロン・ウッドリー	スティーブン・トンプソン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	タイロン・ウッドリーの1度目の防衛戦
+ufc	2017-07-29	タイロン・ウッドリー	デミアン・マイア	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	タイロン・ウッドリーの2度目の防衛戦
+ufc	2018-06-09	コルビー・コビントン	ハファエル・ドス・アンジョス	UFC暫定ウェルター級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	コルビー・コビントンが暫定王座獲得
+ufc	2018-09-08	タイロン・ウッドリー	ダレン・ティル	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	タイロン・ウッドリーの3度目の防衛戦
+ufc	2019-03-02	カマル・ウスマン	タイロン・ウッドリー	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンが王座獲得
+ufc	2019-12-14	カマル・ウスマン	コルビー・コビントン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンの1度目の防衛戦
+ufc	2020-07-12	カマル・ウスマン	ホルヘ・マスヴィダル	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンの2度目の防衛戦
+ufc	2021-02-13	カマル・ウスマン	ギルバート・バーンズ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンの3度目の防衛戦
+ufc	2021-04-24	カマル・ウスマン	ホルヘ・マスヴィダル	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンの4度目の防衛戦
+ufc	2021-11-06	カマル・ウスマン	コルビー・コビントン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カマル・ウスマンの5度目の防衛戦
+ufc	2022-08-20	レオン・エドワーズ	カマル・ウスマン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	レオン・エドワーズが王座獲得
+ufc	2023-03-18	レオン・エドワーズ	カマル・ウスマン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	レオン・エドワーズの1度目の防衛戦
+ufc	2023-12-16	レオン・エドワーズ	コルビー・コビントン	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	レオン・エドワーズの2度目の防衛戦
+ufc	2024-07-27	ベラル・ムハメド	レオン・エドワーズ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ベラル・ムハメドが王座獲得
+ufc	2025-05-10	ジャック・デラ・マダレナ	ベラル・ムハメド	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャック・デラ・マダレナが王座獲得
+ufc	2025-11-15	イスラム・マハチェフ	ジャック・デラ・マダレナ	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフが王座獲得
+ufc	2026-08-15	イスラム・マハチェフ	イアン・マシャド・ガリー	UFC世界ウェルター級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフの1度目の防衛戦
+ufc	2001-02-23	ジェンス・パルヴァー	宇野薫	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジェンス・パルヴァーが王座獲得
+ufc	2001-09-28	ジェンス・パルヴァー	デニス・ホールマン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジェンス・パルヴァーの1度目の防衛戦
+ufc	2002-01-11	ジェンス・パルヴァー	BJ・ペン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジェンス・パルヴァーの2度目の防衛戦
+ufc	2006-10-14	ショーン・シャーク	ケニー・フロリアン	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・シャークが王座獲得
+ufc	2007-07-07	ショーン・シャーク	エルメス・フランカ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・シャークの1度目の防衛戦
+ufc	2008-01-19	BJ・ペン	ジョー・スティーブンソン	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	BJ・ペンが王座獲得
+ufc	2008-05-24	BJ・ペン	ショーン・シャーク	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	BJ・ペンの1度目の防衛戦
+ufc	2009-08-08	BJ・ペン	ケニー・フロリアン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	BJ・ペンの2度目の防衛戦
+ufc	2009-12-12	BJ・ペン	ディエゴ・サンチェス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	BJ・ペンの3度目の防衛戦
+ufc	2010-04-10	フランク・エドガー	BJ・ペン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・エドガーが王座獲得
+ufc	2010-08-28	フランク・エドガー	BJ・ペン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・エドガーの1度目の防衛戦
+ufc	2011-01-01	フランク・エドガー	グレイ・メイナード	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・エドガーの防衛戦
+ufc	2011-10-08	フランク・エドガー	グレイ・メイナード	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	フランク・エドガーの3度目の防衛戦
+ufc	2012-02-26	ベンソン・ヘンダーソン	フランク・エドガー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ベンソン・ヘンダーソンが王座獲得
+ufc	2012-08-11	ベン・ヘンダーソン	フランク・エドガー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ベン・ヘンダーソンの1度目の防衛戦
+ufc	2012-12-08	ベン・ヘンダーソン	ネイト・ディアス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ベン・ヘンダーソンの2度目の防衛戦
+ufc	2013-04-20	ベン・ヘンダーソン	ギルバート・メレンデス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ベン・ヘンダーソンの3度目の防衛戦
+ufc	2013-08-31	アンソニー・ペティス	ベン・ヘンダーソン	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンソニー・ペティスが王座獲得
+ufc	2014-12-06	アンソニー・ペティス	ギルバート・メレンデス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アンソニー・ペティスの1度目の防衛戦
+ufc	2015-03-14	ハファエル・ドス・アンジョス	アンソニー・ペティス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハファエル・ドス・アンジョスが王座獲得
+ufc	2015-12-19	ハファエル・ドス・アンジョス	ドナルド・セラーニ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハファエル・ドス・アンジョスの1度目の防衛戦
+ufc	2016-07-07	エディ・アルバレス	ハファエル・ドス・アンジョス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	エディ・アルバレスが王座獲得
+ufc	2016-11-12	コナー・マクレガー	エディ・アルバレス	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	コナー・マクレガーが王座獲得
+ufc	2017-10-07	トニー・ファーガソン	ケビン・リー	UFC暫定ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	トニー・ファーガソンが暫定王座獲得
+ufc	2018-04-07	ハビブ・ヌルマゴメドフ	アル・アイアキンタ	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハビブ・ヌルマゴメドフが王座獲得
+ufc	2018-10-06	ハビブ・ヌルマゴメドフ	コナー・マクレガー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハビブ・ヌルマゴメドフの1度目の防衛戦
+ufc	2019-04-13	ダスティン・ポワリエ	マックス・ホロウェイ	UFC暫定ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダスティン・ポワリエが暫定王座獲得
+ufc	2019-09-07	ハビブ・ヌルマゴメドフ	ダスティン・ポワリエ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハビブ・ヌルマゴメドフの2度目の防衛戦
+ufc	2020-05-09	ジャスティン・ゲイジー	トニー・ファーガソン	UFC暫定ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャスティン・ゲイジーが暫定王座獲得
+ufc	2020-10-24	ハビブ・ヌルマゴメドフ	ジャスティン・ゲイジー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ハビブ・ヌルマゴメドフの3度目の防衛戦
+ufc	2021-05-15	チャールズ・オリヴェイラ	マイケル・チャンドラー	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャールズ・オリヴェイラが王座獲得
+ufc	2021-12-11	チャールズ・オリヴェイラ	ダスティン・ポワリエ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャールズ・オリヴェイラの1度目の防衛戦
+ufc	2022-10-22	イスラム・マハチェフ	チャールズ・オリヴェイラ	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフが王座獲得
+ufc	2023-02-12	イスラム・マハチェフ	アレクサンダー・ヴォルカノフスキー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフの1度目の防衛戦
+ufc	2023-10-21	イスラム・マハチェフ	アレクサンダー・ヴォルカノフスキー	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフの2度目の防衛戦
+ufc	2024-06-01	イスラム・マハチェフ	ダスティン・ポワリエ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフの3度目の防衛戦
+ufc	2025-01-18	イスラム・マハチェフ	ヘナート・モイカノ	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イスラム・マハチェフの4度目の防衛戦
+ufc	2025-06-28	イリア・トプリア	チャールズ・オリヴェイラ	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	イリア・トプリアが王座獲得
+ufc	2026-01-24	ジャスティン・ゲイジー	パディ・ピンブレット	UFC暫定ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャスティン・ゲイジーが暫定王座獲得
+ufc	2026-06-14	ジャスティン・ゲイジー	イリア・トプリア	UFC世界ライト級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャスティン・ゲイジーが王座獲得
+ufc	2011-04-30	ジョゼ・アルド	マーク・ホーミニック	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの1度目の防衛戦
+ufc	2011-10-08	ジョゼ・アルド	ケニー・フロリアン	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの2度目の防衛戦
+ufc	2012-01-14	ジョゼ・アルド	チャド・メンデス	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの3度目の防衛戦
+ufc	2013-02-02	ジョゼ・アルド	フランク・エドガー	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの4度目の防衛戦
+ufc	2013-08-03	ジョゼ・アルド	ジョン・チャンソン	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの5度目の防衛戦
+ufc	2014-02-01	ジョゼ・アルド	リカルド・ラマス	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの6度目の防衛戦
+ufc	2014-10-25	ジョゼ・アルド	チャド・メンデス	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドの7度目の防衛戦
+ufc	2015-07-11	コナー・マクレガー	チャド・メンデス	UFC暫定フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	コナー・マクレガーが暫定王座獲得
+ufc	2015-12-12	コナー・マクレガー	ジョゼ・アルド	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	コナー・マクレガーが王座獲得
+ufc	2016-07-09	ジョゼ・アルド	フランク・エドガー	UFC暫定フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョゼ・アルドが暫定王座獲得
+ufc	2016-12-10	マックス・ホロウェイ	アンソニー・ペティス	UFC暫定フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイが暫定王座獲得
+ufc	2017-06-03	マックス・ホロウェイ	ジョゼ・アルド	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイが王座獲得
+ufc	2017-12-02	マックス・ホロウェイ	ジョゼ・アルド	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイの1度目の防衛戦
+ufc	2018-12-08	マックス・ホロウェイ	ブライアン・オルテガ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイの2度目の防衛戦
+ufc	2019-07-27	マックス・ホロウェイ	フランク・エドガー	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイの3度目の防衛戦
+ufc	2019-12-14	アレクサンダー・ヴォルカノフスキー	マックス・ホロウェイ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーが王座獲得
+ufc	2020-07-12	アレクサンダー・ヴォルカノフスキー	マックス・ホロウェイ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの1度目の防衛戦
+ufc	2021-09-25	アレクサンダー・ヴォルカノフスキー	ブライアン・オルテガ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの2度目の防衛戦
+ufc	2022-04-09	アレクサンダー・ヴォルカノフスキー	ジョン・チャンソン	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの3度目の防衛戦
+ufc	2022-07-02	アレクサンダー・ヴォルカノフスキー	マックス・ホロウェイ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの4度目の防衛戦
+ufc	2023-02-12	ヤイール・ロドリゲス	ジョシュ・エメット	UFC暫定フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヤイール・ロドリゲスが暫定王座獲得
+ufc	2023-07-08	アレクサンダー・ヴォルカノフスキー	ヤイール・ロドリゲス	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの5度目の防衛戦
+ufc	2024-02-17	イリア・トプリア	アレクサンダー・ヴォルカノフスキー	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イリア・トプリアが王座獲得
+ufc	2024-10-26	イリア・トプリア	マックス・ホロウェイ	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	イリア・トプリアの1度目の防衛戦
+ufc	2025-04-12	アレクサンダー・ヴォルカノフスキー	ディエゴ・ロペス	UFC世界フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーが王座獲得
+ufc	2026-02-01	アレクサンダー・ヴォルカノフスキー	ディエゴ・ロペス	UFC世界フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサンダー・ヴォルカノフスキーの1度目の防衛戦
+ufc	2011-07-02	ドミニク・クルーズ	ユライア・フェイバー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドミニク・クルーズの1度目の防衛戦
+ufc	2011-10-01	ドミニク・クルーズ	デメトリアス・ジョンソン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドミニク・クルーズの2度目の防衛戦
+ufc	2012-07-21	ヘナン・バラオン	ユライア・フェイバー	UFC暫定バンタム級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘナン・バラオンが暫定王座獲得
+ufc	2013-02-16	ヘナン・バラオン	マイケル・マクドナルド	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘナン・バラオンの1度目の防衛戦
+ufc	2013-09-21	ヘナン・バラオン	エディ・ワインランド	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘナン・バラオンの2度目の防衛戦
+ufc	2014-02-01	ヘナン・バラオン	ユライア・フェイバー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘナン・バラオンの1度目の防衛戦
+ufc	2014-05-24	T.J. ディラショー	ヘナン・バラオン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	T.J. ディラショーが王座獲得
+ufc	2014-08-30	T.J. ディラショー	ジョー・ソト	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	T.J. ディラショーの1度目の防衛戦
+ufc	2015-07-25	T.J. ディラショー	ヘナン・バラオン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	T.J. ディラショーの2度目の防衛戦
+ufc	2016-01-17	ドミニク・クルーズ	T.J. ディラショー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドミニク・クルーズが王座獲得
+ufc	2016-06-04	ドミニク・クルーズ	ユライア・フェイバー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドミニク・クルーズの1度目の防衛戦
+ufc	2016-12-30	コーディ・ガーブラント	ドミニク・クルーズ	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	コーディ・ガーブラントが王座獲得
+ufc	2017-11-04	T.J. ディラショー	コーディ・ガーブラント	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	T.J. ディラショーが王座獲得
+ufc	2018-08-04	T.J. ディラショー	コーディ・ガーブラント	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	T.J. ディラショーの1度目の防衛戦
+ufc	2019-06-08	ヘンリー・セフード	マルロン・モラエス	UFC世界バンタム級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘンリー・セフードが王座獲得
+ufc	2020-05-09	ヘンリー・セフード	ドミニク・クルーズ	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘンリー・セフードの1度目の防衛戦
+ufc	2020-07-12	ピョートル・ヤン	ジョゼ・アルド	UFC世界バンタム級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ピョートル・ヤンが王座獲得
+ufc	2021-03-06	アルジャメイン・スターリング	ピョートル・ヤン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アルジャメイン・スターリングが王座獲得
+ufc	2021-10-30	ピョートル・ヤン	コーリー・サンドヘイゲン	UFC暫定バンタム級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ピョートル・ヤンが暫定王座獲得
+ufc	2022-04-09	アルジャメイン・スターリング	ピョートル・ヤン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アルジャメイン・スターリングの1度目の防衛戦
+ufc	2022-10-22	アルジャメイン・スターリング	T.J. ディラショー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アルジャメイン・スターリングの2度目の防衛戦
+ufc	2023-05-06	アルジャメイン・スターリング	ヘンリー・セフード	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アルジャメイン・スターリングの3度目の防衛戦
+ufc	2023-08-19	ショーン・オマリー	アルジャメイン・スターリング	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・オマリーが王座獲得
+ufc	2024-03-09	ショーン・オマリー	マルロン・ヴェラ	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ショーン・オマリーの1度目の防衛戦
+ufc	2024-09-14	メラブ・ドバリシビリ	ショーン・オマリー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	メラブ・ドバリシビリが王座獲得
+ufc	2025-01-18	メラブ・ドバリシビリ	ウマル・ヌルマゴメドフ	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	メラブ・ドバリシビリの1度目の防衛戦
+ufc	2025-06-07	メラブ・ドバリシビリ	ショーン・オマリー	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	メラブ・ドバリシビリの2度目の防衛戦
+ufc	2025-10-04	メラブ・ドバリシビリ	コーリー・サンドヘイゲン	UFC世界バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	メラブ・ドバリシビリの3度目の防衛戦
+ufc	2012-09-22	デメトリアス・ジョンソン	ジョセフ・ベナビデス	UFC世界フライ級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンが王座獲得
+ufc	2013-01-26	デメトリアス・ジョンソン	ジョン・ドッドソン	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの1度目の防衛戦
+ufc	2013-07-27	デメトリアス・ジョンソン	ジョン・モラガ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの2度目の防衛戦
+ufc	2013-12-14	デメトリアス・ジョンソン	ジョセフ・ベナビデス	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの3度目の防衛戦
+ufc	2014-06-14	デメトリアス・ジョンソン	アリ・バガウティノフ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの4度目の防衛戦
+ufc	2014-09-27	デメトリアス・ジョンソン	クリス・カリアソ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの5度目の防衛戦
+ufc	2015-04-25	デメトリアス・ジョンソン	堀口恭司	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの6度目の防衛戦
+ufc	2015-09-05	デメトリアス・ジョンソン	ジョン・ドッドソン	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの7度目の防衛戦
+ufc	2016-04-23	デメトリアス・ジョンソン	ヘンリー・セフード	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの8度目の防衛戦
+ufc	2016-12-03	デメトリアス・ジョンソン	ティム・エリオット	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの9度目の防衛戦
+ufc	2017-04-15	デメトリアス・ジョンソン	ウィルソン・ヘイス	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの10度目の防衛戦
+ufc	2017-10-07	デメトリアス・ジョンソン	レイ・ボーグ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デメトリアス・ジョンソンの11度目の防衛戦
+ufc	2018-08-04	ヘンリー・セフード	デメトリアス・ジョンソン	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘンリー・セフードが王座獲得
+ufc	2019-01-19	ヘンリー・セフード	T.J. ディラショー	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヘンリー・セフードの1度目の防衛戦
+ufc	2020-07-19	デイヴソン・フィゲイレード	ジョセフ・ベナビデス	UFC世界フライ級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	デイヴソン・フィゲイレードが王座獲得
+ufc	2020-11-21	デイヴソン・フィゲイレード	アレックス・ペレス	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デイヴソン・フィゲイレードの1度目の防衛戦
+ufc	2020-12-12	デイヴソン・フィゲイレード	ブランドン・モレノ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デイヴソン・フィゲイレードの防衛戦
+ufc	2021-06-12	ブランドン・モレノ	デイヴソン・フィゲイレード	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブランドン・モレノが王座獲得
+ufc	2022-01-22	デイヴソン・フィゲイレード	ブランドン・モレノ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	デイヴソン・フィゲイレードが王座獲得
+ufc	2022-07-30	ブランドン・モレノ	カイ・カラ・フランス	UFC暫定フライ級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブランドン・モレノが暫定王座獲得
+ufc	2023-01-21	ブランドン・モレノ	デイヴソン・フィゲイレード	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ブランドン・モレノが王座獲得
+ufc	2023-07-08	アレシャンドレ・パントージャ	ブランドン・モレノ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレシャンドレ・パントージャが王座獲得
+ufc	2023-12-16	アレシャンドレ・パントージャ	ブランドン・ロイバル	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレシャンドレ・パントージャの1度目の防衛戦
+ufc	2024-05-04	アレシャンドレ・パントージャ	スティーヴ・エルセグ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレシャンドレ・パントージャの2度目の防衛戦
+ufc	2024-12-07	アレシャンドレ・パントージャ	朝倉海	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレシャンドレ・パントージャの3度目の防衛戦
+ufc	2025-06-28	アレシャンドレ・パントージャ	カイ・カラ・フランス	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレシャンドレ・パントージャの4度目の防衛戦
+ufc	2025-12-06	ジョシュア・ヴァン	アレシャンドレ・パントージャ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョシュア・ヴァンが王座獲得
+ufc	2026-05-09	ジョシュア・ヴァン	平良達郎	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョシュア・ヴァンの1度目の防衛戦
+ufc	2026-09-19	ジョシュア・ヴァン	アレシャンドレ・パントージャ	UFC世界フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジョシュア・ヴァンの2度目の防衛戦
+ufc	2013-02-23	ロンダ・ラウジー	リズ・カムーシュ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの1度目の防衛戦
+ufc	2013-12-28	ロンダ・ラウジー	ミーシャ・テイト	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの2度目の防衛戦
+ufc	2014-02-22	ロンダ・ラウジー	サラ・マクマン	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの3度目の防衛戦
+ufc	2014-07-05	ロンダ・ラウジー	アレクシス・デイビス	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの4度目の防衛戦
+ufc	2015-02-28	ロンダ・ラウジー	キャット・ジンガノ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの5度目の防衛戦
+ufc	2015-08-01	ロンダ・ラウジー	ベチ・コヘイア	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ロンダ・ラウジーの6度目の防衛戦
+ufc	2015-11-15	ホリー・ホルム	ロンダ・ラウジー	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ホリー・ホルムが王座獲得
+ufc	2016-03-05	ミーシャ・テイト	ホリー・ホルム	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ミーシャ・テイトが王座獲得
+ufc	2016-07-09	アマンダ・ヌネス	ミーシャ・テイト	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスが王座獲得
+ufc	2016-12-30	アマンダ・ヌネス	ロンダ・ラウジー	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの1度目の防衛戦
+ufc	2017-09-09	アマンダ・ヌネス	ヴァレンティナ・シェフチェンコ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの2度目の防衛戦
+ufc	2018-05-12	アマンダ・ヌネス	ラケル・ペニントン	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの3度目の防衛戦
+ufc	2019-07-06	アマンダ・ヌネス	ホリー・ホルム	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの4度目の防衛戦
+ufc	2019-12-14	アマンダ・ヌネス	ジャーメイン・デ・ランダミー	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの5度目の防衛戦
+ufc	2021-12-11	ジュリアナ・ペーニャ	アマンダ・ヌネス	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジュリアナ・ペーニャが王座獲得
+ufc	2022-07-30	アマンダ・ヌネス	ジュリアナ・ペーニャ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスが王座獲得
+ufc	2023-06-10	アマンダ・ヌネス	イレーネ・アルダナ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの1度目の防衛戦
+ufc	2024-01-20	ラケル・ペニントン	マイラ・ブエノ・シウヴァ	UFC世界女子バンタム級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ラケル・ペニントンが王座獲得
+ufc	2025-06-07	ケイラ・ハリソン	ジュリアナ・ペーニャ	UFC世界女子バンタム級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケイラ・ハリソンが王座獲得
+ufc	2017-02-11	ジャーメイン・デ・ランダミー	ホリー・ホルム	UFC世界女子フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャーメイン・デ・ランダミーが王座獲得
+ufc	2017-07-29	クリスチャン・サイボーグ	トーニャ・エヴァンジャー	UFC世界女子フェザー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリスチャン・サイボーグが王座獲得
+ufc	2017-12-30	クリスチャン・サイボーグ	ホリー・ホルム	UFC世界女子フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリスチャン・サイボーグの1度目の防衛戦
+ufc	2018-03-03	クリスチャン・サイボーグ	ヤナ・サントス	UFC世界女子フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	クリスチャン・サイボーグの2度目の防衛戦
+ufc	2018-12-29	アマンダ・ヌネス	クリスチャン・サイボーグ	UFC世界女子フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスが王座獲得
+ufc	2020-06-06	アマンダ・ヌネス	フェリシア・スペンサー	UFC世界女子フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの1度目の防衛戦
+ufc	2021-03-06	アマンダ・ヌネス	ミーガン・アンダーソン	UFC世界女子フェザー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アマンダ・ヌネスの2度目の防衛戦
+ufc	2017-12-01	ニコ・モンターニョ	ロクサン・モダフェリ	UFC世界女子フライ級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ニコ・モンターニョが王座獲得
+ufc	2018-12-08	ヴァレンティナ・シェフチェンコ	ヨアナ・イェンジェイチック	UFC世界女子フライ級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコが王座獲得
+ufc	2019-06-08	ヴァレンティナ・シェフチェンコ	ジェシカ・アイ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの1度目の防衛戦
+ufc	2019-08-10	ヴァレンティナ・シェフチェンコ	リズ・カムーシュ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの2度目の防衛戦
+ufc	2020-02-08	ヴァレンティナ・シェフチェンコ	ケイトリン・サーミナラ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの3度目の防衛戦
+ufc	2020-11-21	ヴァレンティナ・シェフチェンコ	ジェニファー・マイア	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの4度目の防衛戦
+ufc	2021-04-24	ヴァレンティナ・シェフチェンコ	ジェシカ・アンドラージ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの5度目の防衛戦
+ufc	2021-09-25	ヴァレンティナ・シェフチェンコ	ローレン・マーフィー	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの6度目の防衛戦
+ufc	2022-06-12	ヴァレンティナ・シェフチェンコ	タイラ・サントス	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの7度目の防衛戦
+ufc	2023-03-04	アレクサ・グラッソ	ヴァレンティナ・シェフチェンコ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサ・グラッソが王座獲得
+ufc	2023-09-16	アレクサ・グラッソ	ヴァレンティナ・シェフチェンコ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	アレクサ・グラッソの防衛戦
+ufc	2024-09-14	ヴァレンティナ・シェフチェンコ	アレクサ・グラッソ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコが王座獲得
+ufc	2025-05-10	ヴァレンティナ・シェフチェンコ	マノン・フィオロ	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの1度目の防衛戦
+ufc	2025-11-15	ヴァレンティナ・シェフチェンコ	ジャン・ウェイリー	UFC世界女子フライ級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヴァレンティナ・シェフチェンコの2度目の防衛戦
+ufc	2014-12-12	カーラ・エスパルザ	ローズ・ナマユナス	UFC世界女子ストロー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	カーラ・エスパルザが王座獲得
+ufc	2015-06-20	ヨアナ・イェンジェイチック	ジェシカ・ペネ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヨアナ・イェンジェイチックの1度目の防衛戦
+ufc	2015-11-15	ヨアナ・イェンジェイチック	ヴァレリー・レターノー	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヨアナ・イェンジェイチックの2度目の防衛戦
+ufc	2016-07-08	ヨアナ・イェンジェイチック	クラウディア・ガデーリャ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヨアナ・イェンジェイチックの3度目の防衛戦
+ufc	2016-11-12	ヨアナ・イェンジェイチック	カロリーナ・コバルケビッチ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヨアナ・イェンジェイチックの4度目の防衛戦
+ufc	2017-05-13	ヨアナ・イェンジェイチック	ジェシカ・アンドラージ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ヨアナ・イェンジェイチックの5度目の防衛戦
+ufc	2017-11-04	ローズ・ナマユナス	ヨアナ・イェンジェイチック	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ローズ・ナマユナスが王座獲得
+ufc	2018-04-07	ローズ・ナマユナス	ヨアナ・イェンジェイチック	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ローズ・ナマユナスの1度目の防衛戦
+ufc	2019-05-11	ジェシカ・アンドラージ	ローズ・ナマユナス	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジェシカ・アンドラージが王座獲得
+ufc	2019-08-31	ジャン・ウェイリー	ジェシカ・アンドラージ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーが王座獲得
+ufc	2020-03-07	ジャン・ウェイリー	ヨアナ・イェンジェイチック	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーの1度目の防衛戦
+ufc	2021-04-24	ローズ・ナマユナス	ジャン・ウェイリー	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ローズ・ナマユナスが王座獲得
+ufc	2021-11-06	ローズ・ナマユナス	ジャン・ウェイリー	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ローズ・ナマユナスの1度目の防衛戦
+ufc	2022-05-07	カーラ・エスパルザ	ローズ・ナマユナス	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	カーラ・エスパルザが王座獲得
+ufc	2022-11-12	ジャン・ウェイリー	カーラ・エスパルザ	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーが王座獲得
+ufc	2023-08-19	ジャン・ウェイリー	アマンダ・レモス	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーの1度目の防衛戦
+ufc	2024-04-13	ジャン・ウェイリー	ヤン・シャオナン	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーの2度目の防衛戦
+ufc	2025-02-08	ジャン・ウェイリー	タティアナ・スアレス	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャン・ウェイリーの3度目の防衛戦
+ufc	2025-10-25	マッケンジー・ダーン	ヴィーナ・ジャンジロバ	UFC世界女子ストロー級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	マッケンジー・ダーンが王座獲得
+ufc	2026-08-15	マッケンジー・ダーン	ジリアン・ロバートソン	UFC世界女子ストロー級タイトルマッチ	https://en.wikipedia.org/wiki/List_of_UFC_champions	マッケンジー・ダーンの1度目の防衛戦
+ufc	1995-04-07	ケン・シャムロック	ホイス・グレイシー	UFCスーパーファイト王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケン・シャムロックの防衛戦
+ufc	1995-07-14	ケン・シャムロック	ダン・スバーン	UFCスーパーファイト王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケン・シャムロックが王座獲得
+ufc	1995-09-08	ケン・シャムロック	オレッグ・タクタロフ	UFCスーパーファイト王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケン・シャムロックの防衛戦
+ufc	1996-02-16	ケン・シャムロック	キモ	UFCスーパーファイト王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケン・シャムロックの防衛戦
+ufc	1996-05-17	ダン・スバーン	ケン・シャムロック	UFCスーパーファイト王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダン・スバーンが王座獲得
+ufc	1993-11-12	ホイス・グレイシー	ジェラルド・ゴルドー	UFC 1 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ホイス・グレイシーがトーナメント優勝
+ufc	1994-09-09	スティーブ・ジェナム	ハロルド・ハワード	UFC 3 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	スティーブ・ジェナムがトーナメント優勝
+ufc	1994-12-16	ホイス・グレイシー	ダン・スバーン	UFC 4 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ホイス・グレイシーがトーナメント優勝
+ufc	1995-04-07	ダン・スバーン	デイブ・ベネトゥー	UFC 5 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダン・スバーンがトーナメント優勝
+ufc	1995-07-14	オレッグ・タクタロフ	タンク・アボット	UFC 6 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	オレッグ・タクタロフがトーナメント優勝
+ufc	1995-09-08	マルコ・ファス	ポール・ヴァレランス	UFC 7 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	マルコ・ファスがトーナメント優勝
+ufc	1995-12-16	ダン・スバーン	オレッグ・タクタロフ	UFC トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダン・スバーンがトーナメント優勝
+ufc	1996-02-16	ドン・フライ	ゲーリー・グッドリッジ	UFC 8 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドン・フライがトーナメント優勝
+ufc	1996-07-12	マーク・コールマン	ドン・フライ	UFC 10 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	マーク・コールマンがトーナメント優勝
+ufc	1996-09-20	マーク・コールマン	スコット・フェローゾ	UFC 11 トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	マーク・コールマンがトーナメント優勝
+ufc	1996-12-07	ドン・フライ	タンク・アボット	UFC トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ドン・フライがトーナメント優勝
+ufc	1997-02-07	ビクトー・ベウフォート	スコット・フェローゾ	UFC 12 ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ビクトー・ベウフォートがトーナメント優勝
+ufc	1997-02-07	ジェリー・ボーランダー	ニック・サンゾー	UFC 12 ライトヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジェリー・ボーランダーがトーナメント優勝
+ufc	1997-05-30	ランディ・クートゥア	スティーブ・グラハム	UFC 13 ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ランディ・クートゥアがトーナメント優勝
+ufc	1997-05-30	ガイ・メッツァー	ティト・オーティズ	UFC 13 ライトヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ガイ・メッツァーがトーナメント優勝
+ufc	1997-07-27	マーク・ケアー	ダン・ボビッシュ	UFC 14 ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	マーク・ケアーがトーナメント優勝
+ufc	1997-07-27	ケビン・ジャクソン	トニー・フリックランド	UFC 14 ライトヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ケビン・ジャクソンがトーナメント優勝
+ufc	1997-10-17	マーク・ケアー	ドゥエイン・ケイソン	UFC 15 ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	マーク・ケアーがトーナメント優勝
+ufc	1997-12-21	桜庭和志	マーカス・コナン・シウヴェイラ	UFC Japan ヘビー級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	桜庭和志がトーナメント優勝
+ufc	1998-03-13	パット・ミレティッチ	クリス・ブレナン	UFC 16 ウェルター級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	パット・ミレティッチがトーナメント優勝
+ufc	1998-05-15	ダン・ヘンダーソン	カーロス・ニュートン	UFC 17 ミドル級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	ダン・ヘンダーソンがトーナメント優勝
+ufc	1999-11-19	山本喧一	藤井勝久	UFC23 - Ultimate Japan 2 - ミドル級トーナメント決勝	https://en.wikipedia.org/wiki/List_of_UFC_champions	山本喧一がトーナメント優勝
+ufc	2003-02-28	宇野薫	BJ・ペン	UFC世界ライト級王座決定戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	
+ufc	2019-11-02	ホルヘ・マスヴィダル	ネイト・ディアス	UFCBMF王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ホルヘ・マスヴィダルが王座獲得
+ufc	2023-07-29	ジャスティン・ゲイジー	ダスティン・ポワリエ	UFCBMF王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	ジャスティン・ゲイジーが王座獲得
+ufc	2024-04-13	マックス・ホロウェイ	ジャスティン・ゲイジー	UFCBMF王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイが王座獲得
+ufc	2025-07-19	マックス・ホロウェイ	ダスティン・ポワリエ	UFCBMF王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	マックス・ホロウェイの防衛戦
+ufc	2026-03-07	チャールズ・オリヴェイラ	マックス・ホロウェイ	UFCBMF王座戦	https://en.wikipedia.org/wiki/List_of_UFC_champions	チャールズ・オリヴェイラが王座獲得
