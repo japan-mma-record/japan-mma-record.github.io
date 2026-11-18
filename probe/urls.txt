@@ -1,23 +1,10 @@
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0KI2nZgbd2QIY6N74uAmw-3
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0LWVAVPT7gX9wXOIDjB85vP
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0KY6Wc6lXrRVjC7G1SxqUNF
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0KJgNn7Mq3pXWpe3fBGdhgX
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0Km1iJUZX5pNQlu_5nu6w8A
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0J2Zbb4dzMflm3vnF4Smb82
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0KAg37xt8GmBcaz6Rd3-jRB
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0J4rLHiOgheN-xPhvII0gGa
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0J1_JmLwiIiVMcouO2Ixyxv
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0LfrSR5kZF1giQqZEfYaJpg
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0K7BwwcWl11Lmm7OCtna3oL
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0ICZrhbXUslW3pf_l7-i1Jt
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0IPV7CRARArpi0p_O_n_uIz
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0K76NHV62rDEORCw3dy06M-
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0JHuaQcqDi8wLAiOJZ4OYTG
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0JL9wYq-Ce9tW93eqHVD0pF
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0J9K-ndxS3o92xleqNv-jTC
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0JViMyaw_tGKqjKuGXemK5O
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0IGsiKRZ9J7eaYfsOn9wbE7
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0Is2zFf-oAcS9h5Gl8gyxkd
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0LwlT0MaBfzEThpUs6XZX8h
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0LrSZyn9nb9zhFTct2vJdfb
-YTDLP https://www.youtube.com/playlist?list=PLdDyfUJCwu0Kml2A-8oRr73mpBk2BLSFM
+YTDLP ytsearch30:パンクラス 試合映像 公式 PANCRASE full fight
+YTDLP ytsearch30:PANCRASE full fight official
+YTDLP ytsearch30:修斗 フルファイト 公式
+YTDLP ytsearch30:DEEP IMPACT full fight official
+YTDLP ytsearch30:RIZIN full fight
+YTDLP ytsearch30:ZST full fight
+YTDLP ytsearch30:HEAT MMA full fight
+YTDLP ytsearch30:QUINTET full match
+YTDLP ytsearch30:Gladiator MMA Japan full fight
+YTDLP ytsearch30:JEWELS 女子格闘技 試合
