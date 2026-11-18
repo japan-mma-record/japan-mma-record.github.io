@@ -1,0 +1,13 @@
+1 YTDLP ytsearch40:RIZIN FIGHTING FEDERATION 公式 試合 
+2 YTDLP ytsearch40:shootoofficial プロフェッショナル修斗 公式戦 フルファイト 
+3 YTDLP ytsearch40:DEEP チャンネル DEEP MMA 試合 
+4 YTDLP ytsearch40:pancrase_mma PANCRASE フルファイト 
+5 YTDLP ytsearch40:ONE Championship 日本語 フルファイト 
+6 YTDLP ytsearch40:QUINTET グラップリング 公式 
+7 YTDLP ytsearch40:GRACHAN グラチャン 試合 
+8 YTDLP ytsearch40:ZST 試合 
+9 YTDLP ytsearch40:HEAT 総合格闘技 試合 
+10 YTDLP ytsearch40:Gladiator MMA 大阪 試合 
+11 YTDLP ytsearch40:KROSS×OVER 試合 
+12 YTDLP ytsearch40:NEXUS MMA 試合 
+13 YTDLP https://www.youtube.com/@pancrase_mma/videos 
