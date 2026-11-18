@@ -3095,8 +3095,8 @@ e00801	shooto	2013-08-25	SHOOTO GIG TOKYO Vol.15		https://j-shooto.com/?p=3540
 e03022	deep	2013-08-25	DEEP 63 IMPACT	東京・後楽園ホール	https://www.deep2001.com/deep-63-impact/
 e03023	gladiator	2013-08-25	GLADIATOR 59 - Bushido		海外の記録サイト
 e05481	ufc	2013-08-28	UFC Fight Night: Condit vs. Kampmann 2	Conseco Fieldhouse, Indianapolis アメリカ合衆国	https://jp.ufc.com/event/ufc-2 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5 https://ja.wikipedia.org/wiki/%E6%97%A5%E6%B2%96%E7%99%BA https://en.wikipedia.org/wiki/UFC_Fight_Night:_Condit_vs._Kampmann_2
-e03024	deep	2013-08-31	DEEP JEWELS ~旗揚げ戦~		https://www.deep2001.com/deep-jewels-%e6%97%97%e6%8f%9a%e3%81%92%e6%88%a6/
-e04377	deep	2013-08-31	DEEP JEWELS ～旗揚げ戦～	新宿FACE	https://www.deep2001.com/deep-jewels-%e6%97%97%e6%8f%9a%e3%81%92%e6%88%a6/
+e03024	deep_jewels	2013-08-31	DEEP JEWELS ~旗揚げ戦~		https://www.deep2001.com/deep-jewels-%e6%97%97%e6%8f%9a%e3%81%92%e6%88%a6/
+e04377	deep_jewels	2013-08-31	DEEP JEWELS ～旗揚げ戦～	新宿FACE	https://www.deep2001.com/deep-jewels-%e6%97%97%e6%8f%9a%e3%81%92%e6%88%a6/
 e06644	ufc	2013-08-31	UFC 164: Henderson vs. Pettis 2	BMO Harris Bradley Center, Milwaukee アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_164 https://jp.ufc.com/event/ufc-164
 e00260	pancrase	2013-09-01	Bayside FIGHT（神奈川・ベイサイドヨコハマ）	神奈川・ベイサイドヨコハマ	https://pancrase.co.jp/data/result/2013/0901.html
 e00802	shooto	2013-09-01	BORDER ～season5～ 2nd		https://j-shooto.com/?p=3558
@@ -3160,7 +3160,7 @@ e07187	bellator	2013-11-02	Bellator 106	Convention and Entertainment Center	http
 e00263	pancrase	2013-11-03	PANCRASE 253（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2013/1103.html
 e03046	pound_4_pound_fighting_championship	2013-11-03	P4P FC 3 - Pound For Pound FC 3		https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E7%A9%BA%E8%89%AF https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%B7%9D%E5%A4%A7%E5%92%8C 海外の記録サイト
 e03047	brave_fight	2013-11-04	Brave Fight 5		https://ja.wikipedia.org/wiki/%E8%8A%A6%E7%94%B0%E5%B4%87%E5%AE%8F https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E9%9A%BC%E4%BA%BA_%28%E6%A0%BC%E9%97%98%E5%AE%B6%29 海外の記録サイト
-e03048	deep	2013-11-04	DEEP JEWELS 2	新宿FACE	https://www.deep2001.com/deep-jewels-2/
+e03048	deep_jewels	2013-11-04	DEEP JEWELS 2	新宿FACE	https://www.deep2001.com/deep-jewels-2/
 e06640	ufc	2013-11-06	UFC: Fight for the Troops 3	Fort Campbell and the 101st Airborne Division, Fort Campbell アメリカ合衆国	https://en.wikipedia.org/wiki/UFC:_Fight_for_the_Troops_3 https://jp.ufc.com/event/fight-troops
 e07186	bellator	2013-11-08	Bellator 107	WinStar World Casino	https://en.wikipedia.org/wiki/2013_in_Bellator_MMA#Bellator_107
 e05067	shooto	2013-11-09	プロフェッショナル修斗公式戦 2013年第5戦		https://efight.jp/result-20131109_24198
@@ -3238,7 +3238,7 @@ e05475	ufc	2014-02-15	UFC Fight Night: Machida vs. Mousasi	Arena Jaragua, Jaragu
 e08294	cage_warriors	2014-02-15	Cage Warriors 64	O2 Forum Kentish Town（英国ロンドン）	https://next-fight.com/fr/event/cwfc-64-cage-warriors-fighting-championship-64
 e01428	outsider	2014-02-16	THE OUTSIDER 第29戦	ディファ有明	https://ameblo.jp/king-mitarai/entry-11778666643.html https://ameblo.jp/king-mitarai/entry-11780067385.html https://ameblo.jp/king-mitarai/entry-11787920542.html（観戦ブログ、バトル・ニュース速報の転載） https://ameblo.jp/king-mitarai/entry-11787920542.html 海外の記録サイト
 e03076	deep	2014-02-16	DEEP - Tokyo Impact: Wave 7		海外の記録サイト
-e03077	deep	2014-02-16	DEEP JEWELS 3	新宿FACE	https://www.deep2001.com/deep-jewels-3/
+e03077	deep_jewels	2014-02-16	DEEP JEWELS 3	新宿FACE	https://www.deep2001.com/deep-jewels-3/
 e08003	wsof	2014-02-21	WSOF Canada 1: Ford vs. Powell	Edmonton Expo Centre	https://en.wikipedia.org/wiki/World_Series_of_Fighting_Canada_1:_Ford_vs._Powell
 e00813	shooto	2014-02-22	SHOOTING DISCO FINAL		https://j-shooto.com/?p=4095
 e06631	ufc	2014-02-22	UFC 170: Rousey vs. McMann	Mandalay Bay Events Center,	https://en.wikipedia.org/wiki/UFC_170 https://jp.ufc.com/event/ufc-170
@@ -3315,7 +3315,7 @@ e03102	zst	2014-05-11	ZST - Swat! 54	Tokyo, Tokyo Japan	https://www.combatreg.co
 e03103	atoys_challenge_fight	2014-05-17	ACF 3rd - A-Toys Challenge Fight 3		海外の記録サイト
 e07173	bellator	2014-05-17	Bellator 120	Landers Center	https://en.wikipedia.org/wiki/2014_in_Bellator_MMA#Bellator_120
 e07561	ksw	2014-05-17	KSW 27	Ergo Arena（ポーランド・グダニスク）	https://en.wikipedia.org/wiki/2014_in_Konfrontacja_Sztuk_Walki
-e03104	deep	2014-05-18	DEEP JEWELS 4	新宿FACE	https://www.deep2001.com/deep-jewels-4/
+e03104	deep_jewels	2014-05-18	DEEP JEWELS 4	新宿FACE	https://www.deep2001.com/deep-jewels-4/
 e03105	tenkaichi_fight	2014-05-18	Tenkaichi Fight - Tenkaichi 71		海外の記録サイト
 e08109	aca	2014-05-18	ACB 7	Fight club Berkut（ロシア・グロズヌイ）	https://www.ufcalendar.com/events/aca-7-2014-05-17
 e05470	ufc	2014-05-24	UFC 173: Barao vs. Dillashaw	MGM Grand Garden Arena	https://jp.ufc.com/event/ufc-173 https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%9E%A3%E5%81%89%E5%BC%A5 https://ja.wikipedia.org/wiki/%E8%8F%8A%E9%87%8E%E5%85%8B%E7%B4%80 https://en.wikipedia.org/wiki/UFC_173
@@ -3379,7 +3379,7 @@ e03127	deep	2014-07-27	DEEP - Nagoya Impact 2014: Kobudo Fight 14		海外の記�
 e04871	gladiator	2014-07-27	GLADIATOR 73		https://efight.jp/result-20140727_42224
 e08855	shoot_boxing	2014-08-02	SHOOT BOXING Girls S-cup 2014	東京・代々木YAMANO HALL	https://shootboxing.org/result/556/
 e03129	deep	2014-08-03	DEEP - Amateur Deep 22: Kobudo Fight		海外の記録サイト
-e03130	deep	2014-08-09	DEEP JEWELS 5	新宿FACE	https://www.deep2001.com/deep-jewels-5/
+e03130	deep_jewels	2014-08-09	DEEP JEWELS 5	新宿FACE	https://www.deep2001.com/deep-jewels-5/
 e07998	wsof	2014-08-09	WSOF 12: Palomino vs. Gonzalez	Hard Rock Hotel and Casino	https://en.wikipedia.org/wiki/World_Series_of_Fighting_12:_Palomino_vs_Gonzalez
 e00274	pancrase	2014-08-10	PANCRASE 260（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2014/0810.html
 e01434	accel	2014-08-10	ACCEL vol.28		https://efight.jp/result-20140810_45405
@@ -3456,7 +3456,7 @@ e08051	tribelate	2014-10-26	Tribelate - vol. 45		https://efight.jp/result-201410
 e08283	cage_warriors	2014-11-01	Cage Warriors 73	Metro Radio Arena（英国ニューカッスル）	https://next-fight.com/fr/event/cwfc-73-cage-warriors-fighting-championship-73
 e00277	pancrase	2014-11-02	PANCRASE 262（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2014/1102.html
 e03161	zst	2014-11-02	ZST - Swat! 57	Tokyo, Tokyo Japan	https://www.combatreg.com/events/ZST-Swat-57:DAEAC633-3EBF-4019-BE33-6A28241FE99D 海外の記録サイト
-e03162	deep	2014-11-03	DEEP JEWELS 6	新宿FACE	https://www.deep2001.com/deep-jewels-6/
+e03162	deep_jewels	2014-11-03	DEEP JEWELS 6	新宿FACE	https://www.deep2001.com/deep-jewels-6/
 e03163	tribe_tokyo_fight	2014-11-03	Tribe Tokyo Fight - TTF Challenge 03		https://ja.wikipedia.org/wiki/%E5%B0%8F%E5%B7%9D%E5%BE%B9%20%28%E6%A0%BC%E9%97%98%E5%AE%B6%29 https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%A4%A9 https://ja.wikipedia.org/wiki/KODO 海外の記録サイト
 e05948	one	2014-11-07	Battle Of Lions	シンガポール・インドア・スタジアム	https://www.onefc.com/athletes/tatsuya-mizuno/ https://www.onefc.com/athletes/koji-ando/matchups/page/2/ https://en.wikipedia.org/wiki/2014_in_ONE_Championship#ONE_Fighting_Championship:_Battle_of_the_Lions
 e06610	ufc	2014-11-08	UFC Fight Night: Shogun vs. Saint Preux	Sabiazinho Gymnasium, Uberlandia ブラジル	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Shogun_vs._Saint_Preux https://jp.ufc.com/event/ufc-fuaitonaito-17
@@ -3521,7 +3521,7 @@ e00834	shooto	2015-02-11	SHOOTO GIG TOKYO Vol.18		https://j-shooto.com/?p=11127
 e07992	wsof	2015-02-12	WSOF 18: Moraes vs. Hill	Edmonton Expo Centre	https://en.wikipedia.org/wiki/World_Series_of_Fighting_18:_Moraes_vs._Hill
 e07159	bellator	2015-02-13	Bellator 133: Shlemenko vs. Manhoef	Save Mart Center	https://en.wikipedia.org/wiki/2015_in_Bellator_MMA#Bellator_133
 e05459	ufc	2015-02-14	UFC Fight Night: Henderson vs. Thatch	1stBank Center, Broomfield, Colorado, U.S.	https://jp.ufc.com/event/ufc-fight-night-7 https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%82%B5%E3%83%BC%E8%B5%B7%E4%B8%80 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Henderson_vs._Thatch
-e03184	deep	2015-02-21	DEEP JEWELS 7	新宿FACE	https://www.deep2001.com/deep-jewels-7/
+e03184	deep_jewels	2015-02-21	DEEP JEWELS 7	新宿FACE	https://www.deep2001.com/deep-jewels-7/
 e07558	ksw	2015-02-21	KSW 30	Poznań Arena（ポーランド・ポズナン）	https://en.wikipedia.org/wiki/2015_in_Konfrontacja_Sztuk_Walki
 e08850	shoot_boxing	2015-02-21	SHOOT BOXING2015～30th Anniversary～act.1	東京・後楽園ホール	https://shootboxing.org/result/565/
 e01442	zst	2015-02-22	ZST 44		https://efight.jp/result-20150222_136459/3 https://efight.jp/result-20150222_136459
@@ -3606,7 +3606,7 @@ e06008	adcc	2015-05-24	ADCC アジア＆オセアニア選手権2015（第2回�
 e06596	ufc	2015-05-30	UFC Fight Night: Condit vs. Alves	Goiania Arena, Goiania ブラジル	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Condit_vs._Alves https://jp.ufc.com/event/ufc-fight-night-31
 e06990	aca	2015-05-30	ACB 19	Amber Arena（ロシア・カリーニングラード）	https://en.wikipedia.org/wiki/2015_in_Absolute_Championship_Berkut
 e00284	pancrase	2015-05-31	PANCRASE 267（東京・ディファ有明）	東京・ディファ有明	https://pancrase.co.jp/data/result/2015/0531.html
-e03218	deep	2015-05-31	DEEP JEWELS 8	新宿FACE	https://www.deep2001.com/deep-jewels-8/
+e03218	deep_jewels	2015-05-31	DEEP JEWELS 8	新宿FACE	https://www.deep2001.com/deep-jewels-8/
 e03219	deep	2015-05-31	DEEP TOKYO IMPACT 2015 WAVE 8		https://ameblo.jp/gold-impact/entry-12033556294.html https://ja.wikipedia.org/wiki/木暮聡 https://ja.wikipedia.org/wiki/鈴木一史 海外の記録サイト
 e03221	tenkaichi_fight	2015-05-31	Tenkaichi 76 - Special Live AK-69		海外の記録サイト
 e03222	wardog_cage_fight	2015-05-31	WARDOG CAGE FIGHT04	大阪・世界館	https://mmaplanet.jp/47376
@@ -3676,7 +3676,7 @@ e03247	zst	2015-08-23	ZST 47		https://efight.jp/result-20150823_199355/3
 e05132	zst	2015-08-23	ZST.47		https://efight.jp/result-20150823_199355
 e06587	ufc	2015-08-23	UFC Fight Night: Holloway vs. Oliveira	SaskTel Centre, Saskatoon カナダ	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Holloway_vs._Oliveira https://jp.ufc.com/event/ufc-fight-night-1
 e07153	bellator	2015-08-28	Bellator 141: Guillard vs. Girtz	Pechanga Resort and Casino	https://en.wikipedia.org/wiki/2015_in_Bellator_MMA#Bellator_141
-e03248	deep	2015-08-29	DEEP JEWELS 9	ディファ有明	https://www.deep2001.com/deep-jewels-9/
+e03248	deep_jewels	2015-08-29	DEEP JEWELS 9	ディファ有明	https://www.deep2001.com/deep-jewels-9/
 e03249	deep	2015-08-29	DEEP CAGE IMPACT 2015	ディファ有明	https://www.deep2001.com/deep-cage-impact-2015/
 e03250	igf	2015-08-29	INOKI GENOME FIGHT 4		https://efight.jp/result-20150829_200207
 e05995	adcc	2015-08-29	ADCC 2015（サンパウロ）	ブラジル・サンパウロ マウロ・ピンネイロ・アリーナ	https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%83%93%E3%82%B3%E3%83%B3%E3%83%90%E3%83%83%E3%83%88 https://btbrasil.livedoor.biz/archives/55655084.html https://btbrasil.livedoor.biz/archives/55656433.html
@@ -3753,7 +3753,7 @@ e03274	zst	2015-11-22	ZST Challenge 149		https://efight.jp/result-20151122_22647
 e05134	zst	2015-11-22	ZST.49 －旗揚げ13周年記念大会－		https://efight.jp/result-20151122_226470
 e01458	mach_dojo	2015-11-23	マッハ祭り 一宮大会	千葉・一宮GSSセンター	https://efight.jp/result-20151124_226568
 e01459	tribelate	2015-11-23	TRIBELATE vol.49	ディファ有明	https://efight.jp/result-20151126_226718 海外の記録サイト
-e03275	deep	2015-11-23	DEEP JEWELS 10	新宿FACE	https://www.deep2001.com/deep-jewels-10/
+e03275	deep_jewels	2015-11-23	DEEP JEWELS 10	新宿FACE	https://www.deep2001.com/deep-jewels-10/
 e05258	mach_dojo	2015-11-23	マッハ祭り2015		https://efight.jp/result-20151124_226568
 e00290	pancrase	2015-11-28	PANCRASE 272（ハワイ・ブレイズデルアリーナ）	ハワイ・ブレイズデルアリーナ	https://pancrase.co.jp/data/result/2015/1128.html
 e03276	pancrase	2015-11-28	PANCRASE 272		https://efight.jp/result-20151128_226865
@@ -3830,7 +3830,7 @@ e04529	grachan	2016-02-28	GRACHAN22 × BRAVE FIGHT	東京・ディファ有明	h
 e07145	bellator	2016-03-04	Bellator 151: Warren vs. Caldwell	WinStar World Casino	https://en.wikipedia.org/wiki/2016_in_Bellator_MMA#Bellator_151
 e05445	ufc	2016-03-05	UFC 196: McGregor vs. Diaz	MGM Grand Garden Arena	https://jp.ufc.com/event/ufc-196 https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%8E%9F%E5%A4%9C%E5%8F%89%E5%9D%8A https://en.wikipedia.org/wiki/UFC_196
 e07554	ksw	2016-03-05	KSW 34	Torwar（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2016_in_Konfrontacja_Sztuk_Walki
-e03297	deep	2016-03-06	DEEP JEWELS 11	新宿FACE	https://www.deep2001.com/deep-jewels-11/
+e03297	deep_jewels	2016-03-06	DEEP JEWELS 11	新宿FACE	https://www.deep2001.com/deep-jewels-11/
 e03300	pound_4_pound_fighting_championship	2016-03-06	P4P FC 12 - Pound For Pound FC 12		https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%B7%9D%E5%A4%A7%E5%92%8C 海外の記録サイト
 e04905	heat	2016-03-06	HEAT 37		https://efight.jp/result-20160306_234337
 e05008	nexus	2016-03-06	Fighting NEXUS vol.5 2016.3.6(sun) in SHINJUKU FACE		https://fighting-nexus.net/event.php?id=result-84
@@ -3903,7 +3903,7 @@ e06570	ufc	2016-05-29	UFC Fight Night: Almeida vs. Garbrandt	Mandalay Bay Events
 e05567	aca	2016-06-03	ACB 40	Sports Palace Olymp（ロシア・クラスノダール）	https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E5%A4%AA%E4%B8%80 https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e06569	ufc	2016-06-04	UFC 199: Rockhold vs. Bisping 2	The Forum, Los Angeles アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_199 https://jp.ufc.com/event/ufc-199
 e08280	cage_warriors	2016-06-04	Cage Warriors 76	Newport Centre（英国ニューポート）	https://next-fight.com/fr/event/cwfc-76-cage-warriors-fighting-championship-76
-e03325	deep	2016-06-05	DEEP JEWELS 12	新宿FACE	https://www.deep2001.com/deep-jewels-12/
+e03325	deep_jewels	2016-06-05	DEEP JEWELS 12	新宿FACE	https://www.deep2001.com/deep-jewels-12/
 e03326	jmmaf	2016-06-05	第16回JMMAF関西大会	大阪・P'sLAB大阪	https://jmmaf.org/wp/?p=2334 海外の記録サイト
 e08102	aca	2016-06-05	ACB KB 6	Sporthal Merchtem（ベルギー・ブリュッセル）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e08840	shoot_boxing	2016-06-05	SHOOT BOXING2016 act.3	東京・後楽園ホール	https://shootboxing.org/result/591/
@@ -4011,7 +4011,7 @@ e03361	deep	2016-10-18	DEEP CAGE IMPACT 2016 in KORAKUEN HALL	後楽園ホール
 e05808	bellator	2016-10-21	Bellator 162: Shlemenko vs. Grove	FedEx Forum	https://ja.wikipedia.org/wiki/加藤久輝 https://en.wikipedia.org/wiki/2016_in_Bellator_MMA https://en.wikipedia.org/wiki/2016_in_Bellator_MMA#Bellator_162
 e06963	aca	2016-10-22	ACB 48	Dynamo Palace of Sports in Krylatskoye（ロシア・モスクワ）	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
 e00874	shooto	2016-10-29	プロフェッショナル修斗公式戦「バトルミックス11」		https://j-shooto.com/?p=18299
-e03362	deep	2016-11-03	DEEP JEWELS 14	新宿FACE	https://www.deep2001.com/deep-jewels-14/
+e03362	deep_jewels	2016-11-03	DEEP JEWELS 14	新宿FACE	https://www.deep2001.com/deep-jewels-14/
 e03363	grandslam_mma	2016-11-03	GRANDSLAM 5－WAY OF THE CAGE－	東京・ディファ有明	https://efight.jp/result-20161103_249484
 e08588	k1	2016-11-03	K-1 WORLD GP 2016 JAPAN ～初代フェザー級王座決定トーナメント～	東京・国立代々木競技場第二体育館	https://efight.jp/result-20161103_249401
 e07135	bellator	2016-11-04	Bellator 163: McGeary vs. Davis	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2016_in_Bellator_MMA#Bellator_163
@@ -4098,7 +4098,7 @@ e01483	zst	2017-02-24	ZST 55		https://efight.jp/result-20170224_255859/2
 e05138	zst	2017-02-24	ZST.55		https://efight.jp/result-20170224_255859
 e07127	bellator	2017-02-24	Bellator 173 McGeary vs. McDermott	SSE Arena	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_173
 e07818	lfa	2017-02-24	LFA 5	1stBank Center（米国コロラド州ブルームフィールド）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
-e03383	deep	2017-02-25	DEEP JEWELS 15	新宿FACE	https://www.deep2001.com/deep-jewels-15/
+e03383	deep_jewels	2017-02-25	DEEP JEWELS 15	新宿FACE	https://www.deep2001.com/deep-jewels-15/
 e08944	k1	2017-02-25	K-1 WORLD GP 2017 JAPAN ～初代ライト級王座決定トーナメント～	東京・国立代々木競技場	https://en.wikipedia.org/wiki/2017_in_K-1
 e03384	grachan	2017-02-26	GRACHAN28	東京・ディファ有明	https://grachan.jp/grachan28/ 海外の記録サイト
 e07126	bellator	2017-03-03	Bellator 174 Coenen vs. Budd	WinStar World Casino	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_174
@@ -4169,8 +4169,8 @@ e00311	pancrase	2017-05-14	PANCRASE札幌大会（北海道・コンカリーニ
 e03402	grachan	2017-05-14	GRACHAN29	東京・ディファ有明	https://grachan.jp/grachan29/
 e07121	bellator	2017-05-19	Bellator 179: MacDonald vs. Daley	SSE Arena	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_179
 e07810	lfa	2017-05-19	LFA 12	Mystic Lake Casino Hotel（米国ミネソタ州プライアーレイク）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
-e03403	deep	2017-05-20	ドン・キホーテ Presents DEEP JEWELS 16	新宿FACE	https://www.deep2001.com/deep-jewels-16/
-e04378	deep	2017-05-20	DEEP JEWELS 16	新宿FACE	https://www.deep2001.com/deep-jewels-16/
+e03403	deep_jewels	2017-05-20	ドン・キホーテ Presents DEEP JEWELS 16	新宿FACE	https://www.deep2001.com/deep-jewels-16/
+e04378	deep_jewels	2017-05-20	DEEP JEWELS 16	新宿FACE	https://www.deep2001.com/deep-jewels-16/
 e05571	aca	2017-05-20	ACB 61	Sibur Arena（ロシア・サンクトペテルブルク）	https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E5%A4%AA%E4%B8%80 https://www.aca-mma.com/en/tournamentprev/acb-61-st-petersburg-dkMWX368_69 https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e07120	bellator	2017-05-20	Bellator: Monster Energy Fight Series: Charlotte	Charlotte Motor Speedway	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_Monster_Energy_Fight_Series:_Charlotte
 e01485	outsider	2017-05-21	THE OUTSIDER 第46戦（ディファ有明）		https://battle-news.com/?p=30025 海外の記録サイト
@@ -4252,7 +4252,7 @@ e05012	nexus	2017-08-20	Fighting NEXUS vol.10 2017.8.20(sun) in SHINJUKU FACE		h
 e07116	bellator	2017-08-25	Bellator 182: Koreshkov vs. Njokuani	Turning Stone Resort & Casino	https://en.wikipedia.org/wiki/2017_in_Bellator_MMA#Bellator_182
 e07802	lfa	2017-08-25	LFA 20	Mystic Lake Casino Hotel（米国ミネソタ州プライアーレイク）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
 e03425	brave_fight	2017-08-26	BRAVE FIGHT15	東京・新宿FACE	https://efight.jp/result-20170826_266551
-e04379	deep	2017-08-26	ドン・キホーテ Presents DEEP JEWELS 17	新宿FACE	https://www.deep2001.com/deep-jewels-17/
+e04379	deep_jewels	2017-08-26	ドン・キホーテ Presents DEEP JEWELS 17	新宿FACE	https://www.deep2001.com/deep-jewels-17/
 e06946	aca	2017-08-26	ACB 68	Tax Committee Sports Center（タジキスタン・ドゥシャンベ）	https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
 e01493	grachan	2017-08-27	GRACHAN30.5	北海道・釧路市観光国際交流センター	https://grachan.jp/grachan30_5/
 e07801	lfa	2017-09-01	LFA 21	Branson Convention Center（米国ミズーリ州ブランソン）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
@@ -4346,7 +4346,7 @@ e06523	ufc	2017-12-01	The Ultimate Fighter: A New World Champion Finale	Park The
 e06522	ufc	2017-12-02	UFC 218: Holloway vs. Aldo 2	Little Caesars Arena, Detroit アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_218 https://jp.ufc.com/event/ufc-218
 e00898	shooto	2017-12-03	九州北部豪雨復興支援チャリティー プロフェッショナル修斗公式戦香川大会「FORCE08」		https://j-shooto.com/?p=21492
 e01499	lequio_battle	2017-12-03	レキオバトル名護 vol.2（プロの部）		https://efight.jp/result-20171203_274345
-e03444	deep	2017-12-03	DEEP JEWELS 18	新宿FACE	https://www.deep2001.com/deep-jewels-18/
+e03444	deep_jewels	2017-12-03	DEEP JEWELS 18	新宿FACE	https://www.deep2001.com/deep-jewels-18/
 e05013	nexus	2017-12-03	Fighting NEXUS vol.11 2017.12.4(sun) in SHINJUKU FACE		https://fighting-nexus.net/event.php?id=result-90
 e07794	lfa	2017-12-08	LFA 28	The Bomb Factory（米国テキサス州ダラス）	https://en.wikipedia.org/wiki/2017_in_Legacy_Fighting_Alliance
 e05608	one	2017-12-09	Warriors Of The World	インパクト・アリーナ	https://www.onefc.com/jp/events/warriors-of-the-world/ https://en.wikipedia.org/wiki/2017_in_ONE_Championship#ONE_Championship:_Warriors_of_the_World
@@ -4424,7 +4424,7 @@ e08062	deep	2018-03-04	DEEP SAITAMA IMPACT in小江戸・川越2018	埼玉・え
 e05980	one	2018-03-09	Visions of Victory	アクシアタ・アリーナ	https://www.onefc.com/jp/events/visions-of-victory/ https://en.wikipedia.org/wiki/2018_in_ONE_Championship#ONE_Championship:_Visions_of_Victory
 e06934	aca	2018-03-09	ACB 82	Club Hebraica（ブラジル・サンパウロ）	https://en.wikipedia.org/wiki/2018_in_Absolute_Championship_Berkut
 e07787	lfa	2018-03-09	LFA 35	Arena Theatre（米国テキサス州ヒューストン）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
-e03464	deep	2018-03-10	DEEP JEWELS 19	新宿FACE	https://www.deep2001.com/deep-jewels-19/
+e03464	deep_jewels	2018-03-10	DEEP JEWELS 19	新宿FACE	https://www.deep2001.com/deep-jewels-19/
 e00322	pancrase	2018-03-11	PANCRASE 294（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2018/0311.html
 e01504	outsider	2018-03-11	THE OUTSIDER 第50戦（ディファ有明）		https://battle-news.com/?p=37855 海外の記録サイト
 e03466	zst	2018-03-17	ZST.59 & SWAT!164	東京・新宿FACE	https://www.boutreview.com/3/reports/item_3283.html
@@ -4502,7 +4502,7 @@ e07781	lfa	2018-06-01	LFA 41	Mystic Lake Casino Hotel（米国ミネソタ州プ
 e03485	gladiator	2018-06-03	GLADIATOR x Demolition, Vol. 1		https://mmaplanet.jp/80057
 e07974	pfl	2018-06-07	PFL 1: 2018 Regular Season	Hulu Theater at Madison Square Garden	https://en.wikipedia.org/wiki/PFL_1_(2018)
 e07780	lfa	2018-06-08	LFA 42	Branson Convention Center（米国ミズーリ州ブランソン）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
-e04396	deep	2018-06-09	Abema TV Presents DEEP JEWELS 20	新宿FACE	https://www.deep2001.com/deep-jewels-20/
+e04396	deep_jewels	2018-06-09	Abema TV Presents DEEP JEWELS 20	新宿FACE	https://www.deep2001.com/deep-jewels-20/
 e06012	quintet	2018-06-09	QUINTET FIGHT NIGHT in TOKYO	ディファ有明	https://www.quintet-fight.com/eventinfo/quintet-fight-night-in-tokyo/ https://www.quintet-fight.com/2018/06/08/press-conference-0608/ https://www.quintet-fight.com/2018/06/12/quintet-fn-event/
 e06506	ufc	2018-06-09	UFC 225: Whittaker vs. Romero 2	United Center, Chicago アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_225 https://jp.ufc.com/event/ufc-225
 e07544	ksw	2018-06-09	KSW 44	Ergo Arena（ポーランド・グダニスク）	https://en.wikipedia.org/wiki/2018_in_Konfrontacja_Sztuk_Walki
@@ -4590,8 +4590,8 @@ e07773	lfa	2018-09-14	LFA 49	Golden Nugget Hotel & Casino（米国ニュージ�
 e06497	ufc	2018-09-15	UFC Fight Night: Hunt vs. Oleinik	Olimpiyskiy Stadium, Moskva Russia	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Hunt_vs._Oleinik https://jp.ufc.com/event/fight-night-moscow-sept-15-2018
 e08193	oktagon	2018-09-15	OKTAGON 9	Zimní stadion Ondřeje Nepely（スロバキア・ブラチスラバ）	https://www.ufcalendar.com/events/oktagon-9-2018-09-15
 e08824	shoot_boxing	2018-09-15	SHOOT BOXING2018 act.4	東京・後楽園ホール	https://shootboxing.org/result/19183/
-e03506	deep	2018-09-16	DEEP JEWELS 21	新宿FACE	https://www.deep2001.com/deep-jewels-21/
-e03507	deep	2018-09-16	DEEP JEWELS アマチュア	新宿FACE	https://ja.wikipedia.org/wiki/平田樹 海外の記録サイト
+e03506	deep_jewels	2018-09-16	DEEP JEWELS 21	新宿FACE	https://www.deep2001.com/deep-jewels-21/
+e03507	deep_jewels	2018-09-16	DEEP JEWELS アマチュア	新宿FACE	https://ja.wikipedia.org/wiki/平田樹 海外の記録サイト
 e03508	pound_4_pound_fighting_championship	2018-09-16	P4P FC 19 - Pound For Pound FC 19		https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%B7%9D%E5%A4%A7%E5%92%8C 海外の記録サイト
 e04917	heat	2018-09-17	HEAT43		https://heatofficial.com/schedule/266/
 e07091	bellator	2018-09-21	Bellator 205: McKee vs. Macapa	CenturyLink Arena	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_205
@@ -4664,8 +4664,8 @@ e00919	shooto	2018-11-25	THE SHOOTO OKINAWA vol.1		https://shooto-mma.com/result
 e06491	ufc	2018-11-30	The Ultimate Fighter: Heavy Hitters Finale	The Pearl - The Palms Hotel & Casino, Las Vegas United States	https://en.wikipedia.org/wiki/The_Ultimate_Fighter:_Heavy_Hitters https://jp.ufc.com/event/tuf-28-finale-2018
 e07086	bellator	2018-11-30	Bellator 210: Njokuani vs. Salter	WinStar World Casino and Resort	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_210
 e07767	lfa	2018-11-30	LFA 55	The Bomb Factory（米国テキサス州ダラス）	https://en.wikipedia.org/wiki/2018_in_Legacy_Fighting_Alliance
-e01516	deep	2018-12-01	DEEP JEWELS 22		https://www.deep2001.com/deep-jewels-22/
-e04395	deep	2018-12-01	Abema TV Presents DEEP JEWELS 22	新宿FACE	https://www.deep2001.com/deep-jewels-22/
+e01516	deep_jewels	2018-12-01	DEEP JEWELS 22		https://www.deep2001.com/deep-jewels-22/
+e04395	deep_jewels	2018-12-01	Abema TV Presents DEEP JEWELS 22	新宿FACE	https://www.deep2001.com/deep-jewels-22/
 e05239	fighting_agent_war	2018-12-01	格闘代理戦争 3rdシーズン 準決勝		https://efight.jp/result-20181202_313638
 e07085	bellator	2018-12-01	Bellator 211: Sakara vs. Kauppinen	RDS Stadium	https://en.wikipedia.org/wiki/2018_in_Bellator_MMA#Bellator_211
 e07542	ksw	2018-12-01	KSW 46	Gliwice Arena（ポーランド・グリヴィツェ）	https://en.wikipedia.org/wiki/2018_in_Konfrontacja_Sztuk_Walki
@@ -4738,7 +4738,7 @@ e08091	aca	2019-03-02	ACA KB 18	Sports Hall Coliseum（ロシア・グロズヌ�
 e08253	cage_warriors	2019-03-02	Cage Warriors 102	Indigo at The O2（英国ロンドン）	https://next-fight.com/en/event/cw-102-cage-warriors-102
 e05633	one	2019-03-08	Reign Of Valor	トゥウンナ・スタジアム	https://www.onefc.com/jp/events/reign-of-valor/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Championship:_Reign_of_Valor
 e04170	deep	2019-03-09	DEEP 88 IMPACT	後楽園ホール	https://www.deep2001.com/deep-88-impact/
-e04397	deep	2019-03-09	Abema TV Presents DEEP JEWELS 23	後楽園ホール	https://www.deep2001.com/deep-jewels-23/
+e04397	deep_jewels	2019-03-09	Abema TV Presents DEEP JEWELS 23	後楽園ホール	https://www.deep2001.com/deep-jewels-23/
 e06482	ufc	2019-03-09	UFC Fight Night: Lewis vs. dos Santos	INTRUST Bank Arena, Wichita United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Lewis_vs._dos_Santos https://jp.ufc.com/event/ufc-fight-night-march-9-2019
 e08252	cage_warriors	2019-03-09	Cage Warriors 103	K.B. Hallen（デンマーク・コペンハーゲン）	https://next-fight.com/en/event/cw-103-cage-warriors-103
 e01521	grachan	2019-03-10	BRAVE FIGHT 18×GRACHAN39 ブレイブ創立10周年記念大会	大田区産業プラザPIO	https://grachan.jp/brave-fight-18xgrachan39/
@@ -4829,8 +4829,8 @@ e00928	shooto	2019-06-08	SHOOTO GIG TOKYO Vol.27 Supported by ONE Championship		
 e06473	ufc	2019-06-08	UFC 238: Cejudo vs. Moraes	United Center, Chicago United States	https://en.wikipedia.org/wiki/UFC_238 https://jp.ufc.com/event/ufc-238
 e06921	aca	2019-06-08	ACA 96	Łódź Sport Arena（ポーランド・ウッチ）	https://en.wikipedia.org/wiki/2019_in_Absolute_Championship_Akhmat
 e08189	oktagon	2019-06-08	OKTAGON 12	Zimní stadion Ondřeje Nepely（スロバキア・ブラチスラバ）	https://www.ufcalendar.com/events/oktagon-12-2019-06-08
-e01528	deep	2019-06-09	DEEP JEWELS 24		https://www.deep2001.com/deep-jewels-24/
-e04398	deep	2019-06-09	skyticket Presents DEEP JEWELS 24	新宿FACE	https://www.deep2001.com/deep-jewels-24/
+e01528	deep_jewels	2019-06-09	DEEP JEWELS 24		https://www.deep2001.com/deep-jewels-24/
+e04398	deep_jewels	2019-06-09	skyticket Presents DEEP JEWELS 24	新宿FACE	https://www.deep2001.com/deep-jewels-24/
 e05812	bellator	2019-06-14	Bellator 222: MacDonald vs. Gracie	Madison Square Garden	https://ja.wikipedia.org/wiki/堀口恭司 https://en.wikipedia.org/wiki/2019_in_Bellator_MMA https://ja.wikipedia.org/wiki/RENA_(格闘家) https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_222
 e06169	one	2019-06-14	ONE Hero Series June	上海	https://www.onefc.com/jp/events/one-hero-series-june/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Hero_Series_June
 e05639	one	2019-06-15	Legendary Quest	バオシャン・アリーナ	https://www.onefc.com/jp/events/legendary-quest/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Championship:_Legendary_Quest
@@ -4899,7 +4899,7 @@ e06920	aca	2019-08-31	ACA 97	Basket-Hall（ロシア・クラスノダール）	
 e00340	pancrase	2019-09-01	Road to ONE:CENTURY（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2019/0901.html
 e01530	atoys_challenge_fight	2019-09-01	ACF 9.1 大阪 世界館		https://www.boutreview.com/3/reports/item_29150.html
 e03560	deep	2019-09-01	DEEP TOKYO IMPACT 2019	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2019/ 海外の記録サイト
-e04399	deep	2019-09-01	skyticket Presents DEEP JEWELS 25	新宿FACE	https://www.deep2001.com/deep-jewels-25/
+e04399	deep_jewels	2019-09-01	skyticket Presents DEEP JEWELS 25	新宿FACE	https://www.deep2001.com/deep-jewels-25/
 e05154	atoys_challenge_fight	2019-09-01	ACF 43rd - A-Toys Challenge Fight 43		https://www.boutreview.com/3/reports/item_29150.html
 e05259	one	2019-09-01	ONE Japan Series - Road to Century		https://efight.jp/result-20190901_351734
 e07747	lfa	2019-09-06	LFA 75	Maverik Center（米国ユタ州ウェストバレーシティ）	https://en.wikipedia.org/wiki/2019_in_Legacy_Fighting_Alliance
@@ -4962,7 +4962,7 @@ e00343	pancrase	2019-10-20	PANCRASE 309（東京・スタジオコースト）	�
 e00935	shooto	2019-10-20	SHOOTO GIG TOKYO Vol.28 Supported by ONE Championship		https://shooto-mma.com/result/?id=76
 e03572	grachan	2019-10-20	GRACHAN41 × 1MC	神奈川歯科大学体育館1Ｆ	https://grachan.jp/grachan-2019-10/
 e04533	grachan	2019-10-20	GRACHAN41 × 1MC 横須賀大会	神奈川歯科大学体育館1F	https://grachan.jp/grachan-2019-10/
-e03573	deep	2019-10-22	skyticket Presents DEEP JEWELS 26	後楽園ホール	https://www.deep2001.com/deep-jewels-26/
+e03573	deep_jewels	2019-10-22	skyticket Presents DEEP JEWELS 26	後楽園ホール	https://www.deep2001.com/deep-jewels-26/
 e04401	deep	2019-10-22	skyticket Presents DEEP 92 IMPACT	後楽園ホール	https://www.deep2001.com/deep-92-impact/
 e05645	one	2019-10-25	Dawn Of Valor	イストラ・スナヤン	https://www.onefc.com/jp/events/dawn-of-valor/ https://en.wikipedia.org/wiki/2019_in_ONE_Championship#ONE_Championship:_Dawn_Of_Valor
 e07065	bellator	2019-10-25	Bellator 231: Mir vs. Nelson 2	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_231
@@ -5039,7 +5039,7 @@ e03587	grachan	2019-12-21	GRACHAN 42 × GLADIATOR 011	東京・大田区産業�
 e05814	bellator	2019-12-21	Bellator 236: Macfarlane vs. Jackson	Neal S. Blaisdell Arena	https://ja.wikipedia.org/wiki/ストラッサー起一 https://en.wikipedia.org/wiki/2019_in_Bellator_MMA https://en.wikipedia.org/wiki/2019_in_Bellator_MMA#Bellator_236
 e06453	ufc	2019-12-21	UFC Fight Night: Edgar vs. The Korean Zombie	Sajik Arena, Busan South Korea	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Edgar_vs._The_Korean_Zombie https://jp.ufc.com/event/ufc-fight-night-december-21-2019
 e00941	shooto	2019-12-22	SHOOTO GIG TOKYO Vol.29 Supported by ONE Championship		https://shooto-mma.com/result/?id=78
-e03588	deep	2019-12-22	skyticket Presents DEEP JEWELS 27	大阪阿倍野区民センター大ホール	https://www.deep2001.com/deep-jewels-27/ 海外の記録サイト
+e03588	deep_jewels	2019-12-22	skyticket Presents DEEP JEWELS 27	大阪阿倍野区民センター大ホール	https://www.deep2001.com/deep-jewels-27/ 海外の記録サイト
 e04532	grachan	2019-12-22	GRACHAN42 × GLADIATOR011	東京・大田区産業プラザPIO	https://grachan.jp/grachan42xgladiator011-2/
 e05190	pound_4_pound_fighting_championship	2019-12-22	P4P FC - PFC Yarennoka! 2019		https://www.boutreview.com/3/reports/item_34834.html
 e08113	brave_cf	2019-12-27	Brave CF 33	サウジアラビア	https://www.bravecf.com/event-results/brave-cf-33-result
@@ -5083,8 +5083,8 @@ e03598	gladiator	2020-02-23	GLADIATOR 012 in Osaka		https://mmaplanet.jp/101268
 e04943	krossxover	2020-02-23	株式会社秀拓 presents KROSS×OVER 8		https://krossover.jp/?p=206
 e04981	nexus	2020-02-23	Fighting NEXUS vol.19 2020.2.23(sun) in GEN SPORTS PALACE		https://fighting-nexus.net/event.php?id=result-286
 e06448	ufc	2020-02-23	UFC Fight Night: Felder vs. Hooker	Spark Arena, Auckland New Zealand	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Felder_vs._Hooker https://jp.ufc.com/event/ufc-fight-night-february-23-2020
-e03601	deep	2020-02-24	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%E3%82%A2%E3%83%9E%E3%83%81%E3%83%A5%E3%82%A2-6/ https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-6/
-e04405	deep	2020-02-24	skyticket Presents DEEP JEWELS 28	ニューピアホール	https://www.deep2001.com/deep-jewels-28/
+e03601	deep_jewels	2020-02-24	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%E3%82%A2%E3%83%9E%E3%83%81%E3%83%A5%E3%82%A2-6/ https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-6/
+e04405	deep_jewels	2020-02-24	skyticket Presents DEEP JEWELS 28	ニューピアホール	https://www.deep2001.com/deep-jewels-28/
 e05655	one	2020-02-28	King of the Jungle	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/king-of-the-jungle/ https://en.wikipedia.org/wiki/2020_in_ONE_Championship#ONE_Championship:_King_of_the_Jungle
 e06447	ufc	2020-02-29	UFC Fight Night: Benavidez vs. Figueiredo	Chartway Arena, Norfolk United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Benavidez_vs._Figueiredo https://jp.ufc.com/event/ufc-fight-night-norfolk-february-29-2020
 e03603	grachan	2020-03-01	GRACHAN44×BRAVE FIGHT22	東京・大田区産業プラザPIO	https://grachan.jp/%e3%80%8cgrachan44xbrave-fight22%e3%80%8d/
@@ -5131,7 +5131,7 @@ e06436	ufc	2020-07-16	UFC on ESPN: Kattar vs. Ige	UFC Fight Island, Abu Dhabi Un
 e07738	lfa	2020-07-17	LFA 85	Sanford Pentagon（米国サウスダコタ州スーフォールズ）	https://en.wikipedia.org/wiki/2020_in_Legacy_Fighting_Alliance
 e06435	ufc	2020-07-19	UFC Fight Night: Figueiredo vs. Benavidez 2	UFC Fight Island, Abu Dhabi United Arab Emirates	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Figueiredo_vs._Benavidez_2 https://jp.ufc.com/event/ufc-fight-night-july-18-2020
 e07357	brave_cf	2020-07-20	Brave CF 35	Berăria H（ルーマニア・ブカレスト）	https://en.wikipedia.org/wiki/2020_in_Brave_Combat_Federation
-e03607	deep	2020-07-23	DEEP JEWELS 29		https://www.deep2001.com/deep-jewels-29/ 海外の記録サイト
+e03607	deep_jewels	2020-07-23	DEEP JEWELS 29		https://www.deep2001.com/deep-jewels-29/ 海外の記録サイト
 e00348	pancrase	2020-07-24	PANCRASE 316（東京・スタジオコースト）	東京・スタジオコースト	https://pancrase.co.jp/data/result/2020/0724.html
 e06910	aca	2020-07-24	ACA 107	ロシア・ソチ	https://en.wikipedia.org/wiki/2020_in_Absolute_Championship_Akhmat
 e07056	bellator	2020-07-24	Bellator 242: Bandejas vs. Pettis	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2020_in_Bellator_MMA#Bellator_242
@@ -5223,8 +5223,8 @@ e06019	quintet	2020-10-27	QUINTET FIGHT NIGHT5 in TOKYO	後楽園ホール	https
 e07046	bellator	2020-10-29	Bellator 250: Mousasi vs. Lima	Mohegan Sun Arena	https://en.wikipedia.org/wiki/2020_in_Bellator_MMA#Bellator_250
 e06154	one	2020-10-30	Inside the Matrix	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/inside-the-matrix/ https://en.wikipedia.org/wiki/2020_in_ONE_Championship#ONE_Championship:_Inside_the_Matrix
 e07729	lfa	2020-10-30	LFA 94	Hartman Arena（米国カンザス州パークシティ）	https://en.wikipedia.org/wiki/2020_in_Legacy_Fighting_Alliance
-e03621	deep	2020-10-31	DEEP JEWELS 30		https://www.deep2001.com/deep-jewels-30/ 海外の記録サイト
-e03622	deep	2020-10-31	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-5/
+e03621	deep_jewels	2020-10-31	DEEP JEWELS 30		https://www.deep2001.com/deep-jewels-30/ 海外の記録サイト
+e03622	deep_jewels	2020-10-31	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-5/
 e06421	ufc	2020-10-31	UFC Fight Night: Hall vs. Silva	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Hall_vs._Silva https://jp.ufc.com/event/ufc-fight-night-october-31-2020
 e04410	deep	2020-11-01	DEEP 98 IMPACT	ニューピアホール	https://www.deep2001.com/deep-98-impact/
 e04411	deep	2020-11-01	skyticket Presents DEEP 99 IMPACT	ニューピアホール	https://www.deep2001.com/deep-99-impact/
@@ -5275,7 +5275,7 @@ e00953	shooto	2020-12-13	闘裸男×FORCE		https://shooto-mma.com/result/?id=106
 e08584	k1	2020-12-13	K-1 WORLD GP 2020 JAPAN～K-1冬の大一番～	東京・両国国技館	https://efight.jp/result-20201213_490463
 e05663	one	2020-12-18	Collision Course	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/collision-course/ https://en.wikipedia.org/wiki/2020_in_ONE_Championship#ONE_Championship:_Collision_Course
 e06901	aca	2020-12-18	ACA 116	VTB Arena（ロシア・モスクワ）	https://en.wikipedia.org/wiki/2020_in_Absolute_Championship_Akhmat
-e03629	deep	2020-12-19	DEEP JEWELS 31		https://www.deep2001.com/deep-jewels-31/ 海外の記録サイト
+e03629	deep_jewels	2020-12-19	DEEP JEWELS 31		https://www.deep2001.com/deep-jewels-31/ 海外の記録サイト
 e03630	deep	2020-12-19	DEEP TOKYO IMPACT 2020	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2020/
 e03631	tribe_tokyo_fight	2020-12-19	TTF CHALLENGE 09		https://www.boutreview.com/3/reports/item_47202.html
 e06416	ufc	2020-12-19	UFC Fight Night: Thompson vs. Neal	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Thompson_vs._Neal https://jp.ufc.com/event/ufc-fight-night-december-19-2020
@@ -5324,15 +5324,15 @@ e08369	oktagon	2021-02-27	OKTAGON UNDERGROUND: Last Man Standing	Zoner BOBYHALL�
 e05668	one	2021-03-05	Fists of Fury II	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/fists-of-fury-ii/ https://en.wikipedia.org/wiki/2021_in_ONE_Championship#ONE_Championship:_Fists_Of_Fury_2
 e03642	krossxover	2021-03-06	KROSS×OVER 3.7 GENスポーツパレス		https://www.boutreview.com/3/reports/item_50615.html 海外の記録サイト
 e06408	ufc	2021-03-06	UFC 259: Błachowicz vs. Adesanya	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_259 https://jp.ufc.com/event/ufc-259
-e01550	deep	2021-03-07	DEEP JEWELS 32		https://www.deep2001.com/deep-jewels-32/
-e04414	deep	2021-03-07	skyticket Presents DEEP JEWELS 32	後楽園ホール	https://www.deep2001.com/deep-jewels-32/
+e01550	deep_jewels	2021-03-07	DEEP JEWELS 32		https://www.deep2001.com/deep-jewels-32/
+e04414	deep_jewels	2021-03-07	skyticket Presents DEEP JEWELS 32	後楽園ホール	https://www.deep2001.com/deep-jewels-32/
 e07345	brave_cf	2021-03-11	Brave CF 47	Arad Fort（バーレーン・アラド）	https://en.wikipedia.org/wiki/2021_in_Brave_Combat_Federation
 e06020	quintet	2021-03-12	QUINTET FIGHT NIGHT6 in TOKYO	EX THEATER ROPPONGI	https://www.quintet-fight.com/eventinfo/20210312_fn6/ https://www.quintet-fight.com/2021/03/11/all-members/ https://www.quintet-fight.com/2021/03/15/3-12_fn6_event/
 e06896	aca	2021-03-12	ACA 119	Basket-Hall（ロシア・クラスノダール）	https://en.wikipedia.org/wiki/2021_in_Absolute_Championship_Akhmat
 e07722	lfa	2021-03-12	LFA 101	Grand Casino Hotel & Resort（米国オクラホマ州ショーニー）	https://en.wikipedia.org/wiki/2021_in_Legacy_Fighting_Alliance
 e01745	deep	2021-03-13	DEEPフューチャーキングトーナメント2020		海外の記録サイト
 e03643	deep	2021-03-13	DEEP TOKYO IMPACT 2021	新宿FACE	https://www.deep2001.com/deep-tokyo-impact-2021-2/
-e03644	deep	2021-03-13	DEEP JEWELSアマチュア	新宿FACE	https://www.deep2001.com/deep-jewels%E3%82%A2%E3%83%9E%E3%83%81%E3%83%A5%E3%82%A2-4/ 海外の記録サイト
+e03644	deep_jewels	2021-03-13	DEEP JEWELSアマチュア	新宿FACE	https://www.deep2001.com/deep-jewels%E3%82%A2%E3%83%9E%E3%83%81%E3%83%A5%E3%82%A2-4/ 海外の記録サイト
 e06407	ufc	2021-03-13	UFC Fight Night: Edwards vs. Muhammad	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Edwards_vs._Muhammad https://jp.ufc.com/event/ufc-fight-night-march-13-2021
 e03645	atoys_challenge_fight	2021-03-14	ACF 3.14 大阪 平野区民ホール		https://www.boutreview.com/3/reports/item_50902.html
 e04834	atoys_challenge_fight	2021-03-14	ACF 58th - A-Toys Challenge Fight 58		https://miruhon.net/168859
@@ -5424,7 +5424,7 @@ e04417	deep	2021-06-19	DEEP TOKYO IMPACT 2nd ROUND	ニューピアホール	http
 e05409	ufc	2021-06-19	UFC on ESPN 25: The Korean Zombie vs. Ige	Meta APEX, Las Vegas United States	https://jp.ufc.com/event/ufc-fight-night-june-19-2021 https://ja.wikipedia.org/wiki/%E6%9D%91%E7%94%B0%E5%A4%8F%E5%8D%97%E5%AD%90 https://en.wikipedia.org/wiki/UFC_on_ESPN:_The_Korean_Zombie_vs._Ige
 e08174	oktagon	2021-06-19	OKTAGON 25	Zoner BOBYHALL（チェコ・ブルノ）	https://www.ufcalendar.com/events/oktagon-25-2021-06-19
 e01556	deep	2021-06-20	DEEP 101 IMPACT（公式ページの日付は延期前の2021年5月5日表記）		https://www.deep2001.com/deep-101-impact/
-e03656	deep	2021-06-20	DEEP JEWELS 33		https://www.deep2001.com/deep-jewels-33/ 海外の記録サイト
+e03656	deep_jewels	2021-06-20	DEEP JEWELS 33		https://www.deep2001.com/deep-jewels-33/ 海外の記録サイト
 e03657	grachan	2021-06-20	GRACHAN 48	東京・大田区産業プラザPIO	https://grachan.jp/%e3%80%8cgrachan-48%e3%80%8d%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
 e08804	shoot_boxing	2021-06-20	SHOOT BOXING 2021 act.3	東京・後楽園ホール	https://shootboxing.org/result/24120/
 e08231	cage_warriors	2021-06-24	Cage Warriors 123	York Hall（英国ロンドン）	https://next-fight.com/en/event/cw-123-cage-warriors-123
@@ -5495,8 +5495,8 @@ e01560	atoys_challenge_fight	2021-08-29	ACF 8.29 大阪 176BOX		https://www.bout
 e04836	atoys_challenge_fight	2021-08-29	ACF 61st - A-Toys Challenge Fight 61		https://miruhon.net/183694
 e05251	ldh_martial_arts	2021-08-30	EXFIGHT01		https://mmaplanet.jp/120570 https://mmaplanet.jp/120572 海外の記録サイト
 e05675	one	2021-09-03	Empower	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/empower/ https://en.wikipedia.org/wiki/2021_in_ONE_Championship#ONE_Championship:_Empower
-e01561	deep	2021-09-04	DEEP JEWELS 34		https://www.deep2001.com/deep-jewels-34/ 海外の記録サイト
-e03670	deep	2021-09-04	DEEP JEWELSアマチュア	新宿FACE	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-3/
+e01561	deep_jewels	2021-09-04	DEEP JEWELS 34		https://www.deep2001.com/deep-jewels-34/ 海外の記録サイト
+e03670	deep_jewels	2021-09-04	DEEP JEWELSアマチュア	新宿FACE	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-3/
 e06387	ufc	2021-09-04	UFC Fight Night: Brunson vs. Till	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Brunson_vs._Till https://jp.ufc.com/event/ufc-fight-night-september-04-2021
 e07525	ksw	2021-09-04	KSW 63	ATM studio（ポーランド・ワルシャワ）	https://en.wikipedia.org/wiki/2021_in_Konfrontacja_Sztuk_Walki
 e08803	shoot_boxing	2021-09-04	SHOOT BOXING 2021 act.4	東京・後楽園ホール	https://www.boutreview.com/3/reports/item_59551.html
@@ -5605,8 +5605,8 @@ e00973	shooto	2021-12-05	闘裸男26		https://shooto-mma.com/result/?id=127
 e00974	shooto	2021-12-05	闘裸男GIG03		https://shooto-mma.com/result/?id=128
 e07706	lfa	2021-12-10	LFA 120	Mystic Lake Casino Hotel（米国ミネソタ州プライアーレイク）	https://en.wikipedia.org/wiki/2021_in_Legacy_Fighting_Alliance
 e08223	cage_warriors	2021-12-10	Cage Warriors 131	York Hall（英国ロンドン）	https://next-fight.com/en/event/cw-131-cage-warriors-131
-e01569	deep	2021-12-11	DEEP JEWELS 35	ニューピアホール	https://www.deep2001.com/deep-jewels-35/
-e03693	deep	2021-12-11	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-2/
+e01569	deep_jewels	2021-12-11	DEEP JEWELS 35	ニューピアホール	https://www.deep2001.com/deep-jewels-35/
+e03693	deep_jewels	2021-12-11	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2-2/
 e06375	ufc	2021-12-11	UFC 269: Oliveira vs. Poirier	T-Mobile Arena, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_269 https://jp.ufc.com/event/ufc-269
 e08222	cage_warriors	2021-12-11	Cage Warriors 132	York Hall（英国ロンドン）	https://next-fight.com/en/event/cw-132-cage-warriors-132
 e00360	pancrase	2021-12-12	PANCRASE 325（東京・USEN STUDIO COAST）	東京・USEN STUDIO COAST	https://pancrase.co.jp/data/result/2021/1212.html
@@ -5688,11 +5688,11 @@ e03711	grachan	2022-03-11	GRACHAN53×BRAVE FIGHT26	東京・大田区産業プ�
 e06143	one	2022-03-11	LIGHTS OUT	シンガポール・インドア・スタジアム	https://www.onefc.com/jp/events/lights-out/ https://en.wikipedia.org/wiki/2022_in_ONE_Championship#ONE_Championship:_Lights_Out
 e07334	brave_cf	2022-03-11	Brave CF 57	Khalifa Sports City Stadium（バーレーン・イーサタウン）	https://en.wikipedia.org/wiki/2022_in_Brave_Combat_Federation
 e07700	lfa	2022-03-11	LFA 126	Complexo Ribalta（ブラジル・リオデジャネイロ）	https://en.wikipedia.org/wiki/2022_in_Legacy_Fighting_Alliance
-e01577	deep	2022-03-12	DEEP JEWELS 36	ニューピアホール	https://www.deep2001.com/deep-jewels-36/
+e01577	deep_jewels	2022-03-12	DEEP JEWELS 36	ニューピアホール	https://www.deep2001.com/deep-jewels-36/
 e03712	deep	2022-03-12	DEEP TOKYO IMPACT 2022 1st ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2022-1st-round/
 e06366	ufc	2022-03-12	UFC Fight Night: Santos vs. Ankalaev	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Santos_vs._Ankalaev https://jp.ufc.com/event/ufc-fight-night-march-12-2022
 e07023	bellator	2022-03-12	Bellator 276: Borics vs. Burnell	Family Arena	https://en.wikipedia.org/wiki/Bellator_276
-e03713	deep	2022-03-13	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2/
+e03713	deep_jewels	2022-03-13	DEEP JEWELSアマチュア	ニューピアホール	https://www.deep2001.com/deep-jewels%e3%82%a2%e3%83%9e%e3%83%81%e3%83%a5%e3%82%a2/
 e03714	deep	2022-03-13	DEEP TOKYO IMPACT 2022 2nd ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2022-2nd-round/
 e08534	jbjjf	2022-03-13	第13回関東柔術オープントーナメント	東京都・墨田区総合体育館	https://docs.google.com/spreadsheets/d/e/2PACX-1vSoepBTITkbkkAn9Si-9ibEAWhz9OtsaoQbyulyt-oOD9bAvCBBKZq7wMhadaNnXszn53ZCkgwKz7YG/pubhtml?gid=236763297&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSoepBTITkbkkAn9Si-9ibEAWhz9OtsaoQbyulyt-oOD9bAvCBBKZq7wMhadaNnXszn53ZCkgwKz7YG/pubhtml?gid=1514349767&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSoepBTITkbkkAn9Si-9ibEAWhz9OtsaoQbyulyt-oOD9bAvCBBKZq7wMhadaNnXszn53ZCkgwKz7YG/pubhtml?gid=464647666&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSoepBTITkbkkAn9Si-9ibEAWhz9OtsaoQbyulyt-oOD9bAvCBBKZq7wMhadaNnXszn53ZCkgwKz7YG/pubhtml?gid=1616984899&single=true
 e08220	cage_warriors	2022-03-18	Cage Warriors 134	The O2 Arena（英国ロンドン）	https://next-fight.com/en/event/cw-134-cage-warriors-134
@@ -5758,7 +5758,7 @@ e07948	pfl	2022-05-06	PFL 3: 2022 Regular Season	Esports Stadium Arlington	https
 e03724	heat	2022-05-07	HEAT 50		https://efight.jp/result-20220507_1039931
 e06360	ufc	2022-05-07	UFC 274: Oliveira vs. Gaethje	Footprint Center, Phoenix United States	https://en.wikipedia.org/wiki/UFC_274 https://jp.ufc.com/event/ufc-274
 e04419	deep	2022-05-08	DEEP 107 IMPACT	後楽園ホール	https://www.deep2001.com/deep-107-impact/ 海外の記録サイト
-e04423	deep	2022-05-08	skyticket Presents DEEP JEWELS 37	後楽園ホール	https://www.deep2001.com/deep-jewels-37/
+e04423	deep_jewels	2022-05-08	skyticket Presents DEEP JEWELS 37	後楽園ホール	https://www.deep2001.com/deep-jewels-37/
 e04989	nexus	2022-05-08	KikuNiku presents Fighting NEXUS vol.27 in GEN SPORTS PALACE 2022.05.08(Sun)		https://fighting-nexus.net/event.php?id=result-1105
 e08526	jbjjf	2022-05-08	第6回南日本柔術選手権	福岡県・福岡市総合体育館	https://docs.google.com/spreadsheets/d/e/2PACX-1vR9I8QWKzc3iHZ8j-DG5OOb6-g1Fus7Tks90-NK4Q0ooKL9xLCEXWSpmCFQs37U59dxAyhe70hd9j7T/pubhtml?gid=1713622750&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vR9I8QWKzc3iHZ8j-DG5OOb6-g1Fus7Tks90-NK4Q0ooKL9xLCEXWSpmCFQs37U59dxAyhe70hd9j7T/pubhtml?gid=289842288&single=true
 e05819	bellator	2022-05-13	Bellator 281: MVP vs. Storley	SSE Arena	https://ja.wikipedia.org/wiki/渡辺華奈 https://en.wikipedia.org/wiki/Bellator_281
@@ -5894,7 +5894,7 @@ e06346	ufc	2022-09-10	UFC 279: Diaz vs. Ferguson	T-Mobile Arena, Las Vegas Unite
 e07514	ksw	2022-09-10	KSW 74	Arena Ostrów（ポーランド・オストルフ・ヴィエルコポルスキ）	https://en.wikipedia.org/wiki/2022_in_Konfrontacja_Sztuk_Walki
 e00366	pancrase	2022-09-11	PANCRASE 329（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2022/0911.html
 e00989	shooto	2022-09-11	FORCE 16		https://shooto-mma.com/result/?id=146
-e03754	deep	2022-09-11	skyticket Presents DEEP JEWELS 38	ニューピアホール	https://www.deep2001.com/deep-jewels-38/ 海外の記録サイト
+e03754	deep_jewels	2022-09-11	skyticket Presents DEEP JEWELS 38	ニューピアホール	https://www.deep2001.com/deep-jewels-38/ 海外の記録サイト
 e03755	deep	2022-09-11	DEEP TOKYO IMPACT 2022 5th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-5th-round/
 e08509	jbjjf	2022-09-11	第14回九州柔術選手権	福岡県・福岡市総合体育館（TERIHA SEKISUI HOUSE ARENA）武道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vRfqbpN-5qW0eZuM1aQ4fdNTL2cgSM2FlwwormVE09Mh-OI8uHguloePG4oVYxPoLNPabu8w6JcvJmC/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRfqbpN-5qW0eZuM1aQ4fdNTL2cgSM2FlwwormVE09Mh-OI8uHguloePG4oVYxPoLNPabu8w6JcvJmC/pubhtml?gid=926400971&single=true
 e08571	k1	2022-09-11	K-1 WORLD GP 2022 JAPAN～よこはまつり～	神奈川・横浜アリーナ	https://efight.jp/result-20220911_1296127
@@ -5983,7 +5983,7 @@ e05194	pound_4_pound_fighting_championship	2022-11-20	P4P FC 28 - Pound For Poun
 e08207	cage_warriors	2022-11-20	Cage Warriors 147	BT Sport Studio（英国ロンドン）	https://next-fight.com/en/event/cw-147-cage-warriors-147-unplugged
 e08500	jbjjf	2022-11-20	第11回中国柔術選手権	岡山県・岡山武道館 柔道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vRrCC2vmW2tpDKN0sQBID4hX6bm3T7L9eFZzd2Jv0D2hRR3kRRfDy7IoyAndaAEiixtKlfjdC5V_8Kg/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRrCC2vmW2tpDKN0sQBID4hX6bm3T7L9eFZzd2Jv0D2hRR3kRRfDy7IoyAndaAEiixtKlfjdC5V_8Kg/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRrCC2vmW2tpDKN0sQBID4hX6bm3T7L9eFZzd2Jv0D2hRR3kRRfDy7IoyAndaAEiixtKlfjdC5V_8Kg/pubhtml?gid=2036727323&single=true
 e03769	deep	2022-11-23	DEEP TOKYO IMPACT 2022 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-6th-round/
-e04486	deep	2022-11-23	skyticket Presents DEEP JEWELS 39	ニューピアホール	https://www.deep2001.com/deep-jewels-39/
+e04486	deep_jewels	2022-11-23	skyticket Presents DEEP JEWELS 39	ニューピアホール	https://www.deep2001.com/deep-jewels-39/
 e07943	pfl	2022-11-25	PFL 10: 2022 Championship	Hulu Theater	https://en.wikipedia.org/wiki/PFL_10_(2022)
 e07325	brave_cf	2022-11-26	Brave CF 66	Politeknik Pariwisata（インドネシア・バリ）	https://en.wikipedia.org/wiki/2022_in_Brave_Combat_Federation
 e00993	shooto	2022-11-27	PROFESSIONAL SHOOTO 2022 Vol.7		https://shooto-mma.com/result/?id=134
@@ -6059,7 +6059,7 @@ e08792	shoot_boxing	2023-02-12	SHOOT BOXING 2023 act.1	東京・後楽園ホー�
 e05691	one	2023-02-17	ONE Friday Fights 5	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-5/ https://en.wikipedia.org/wiki/ONE_Friday_Fights_5
 e07677	lfa	2023-02-17	LFA 153	Horseshoe Hammond Casino（米国インディアナ州ハモンド）	https://en.wikipedia.org/wiki/2023_in_Legacy_Fighting_Alliance
 e01606	deep	2023-02-18	DEEPフューチャーキングトーナメント2022	新宿FACE	https://www.deep2001.com/deep%e3%83%95%e3%83%a5%e3%83%bc%e3%83%81%e3%83%a3%e3%83%bc%e3%82%ad%e3%83%b3%e3%82%b0%e3%83%88%e3%83%bc%e3%83%8a%e3%83%a1%e3%83%b3%e3%83%882022/
-e03782	deep	2023-02-18	DEEP JEWELS 40	新宿FACE	https://www.deep2001.com/deep-jewels-40/
+e03782	deep_jewels	2023-02-18	DEEP JEWELS 40	新宿FACE	https://www.deep2001.com/deep-jewels-40/
 e06332	ufc	2023-02-18	UFC Fight Night: Andrade vs. Blanchfield	Meta APEX, Las Vegas United States	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Andrade_vs._Blanchfield https://jp.ufc.com/event/ufc-fight-night-february-18-2023
 e07322	brave_cf	2023-02-18	Brave CF 69	Stark Arena（セルビア・ベオグラード）	https://en.wikipedia.org/wiki/2023_in_Brave_Combat_Federation
 e08495	jbjjf	2023-02-19	修斗杯柔術選手権2023 横浜	神奈川県・横浜武道館 柔道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vQPMczz_Xb9FVSdtEILBykMxD2TfBgVsafANC6NBCJakQ7hv3CzFG3-8JHFClD3qWlqXtXDAxUrXT48/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vQPMczz_Xb9FVSdtEILBykMxD2TfBgVsafANC6NBCJakQ7hv3CzFG3-8JHFClD3qWlqXtXDAxUrXT48/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vQPMczz_Xb9FVSdtEILBykMxD2TfBgVsafANC6NBCJakQ7hv3CzFG3-8JHFClD3qWlqXtXDAxUrXT48/pubhtml?gid=2036727323&single=true
@@ -6189,7 +6189,7 @@ e05859	ufc	2023-05-27	Road to UFC シーズン2 エピソード1	UFCパフォー
 e05860	ufc	2023-05-27	Road to UFC シーズン2 エピソード2	UFCパフォーマンス・インスティテュート上海	https://en.wikipedia.org/wiki/Road_to_UFC_Season_2
 e07671	lfa	2023-05-27	LFA 159	CIDE Casa Branca Sports Complex（ブラジル・サンパウロ州カラグアタトゥバ）	https://en.wikipedia.org/wiki/2023_in_Legacy_Fighting_Alliance
 e01005	shooto	2023-05-28	TORAO29		https://shooto-mma.com/result/?id=160
-e03803	deep	2023-05-28	DEEP JEWELS 41	ニューピアホール	https://www.deep2001.com/deep-jewels-41/
+e03803	deep_jewels	2023-05-28	DEEP JEWELS 41	ニューピアホール	https://www.deep2001.com/deep-jewels-41/
 e03804	deep	2023-05-28	DEEP TOKYO IMPACT 2023 4th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2023-4th-round/
 e05209	shooto	2023-05-28	Shooto - Torao 29		https://www.boutreview.com/3/reports/item_92000.html
 e05861	ufc	2023-05-28	Road to UFC シーズン2 エピソード3	UFCパフォーマンス・インスティテュート上海	https://en.wikipedia.org/wiki/Road_to_UFC_Season_2
@@ -6331,7 +6331,7 @@ e08464	jbjjf	2023-09-08	ヒカルド･デラヒーバ杯 ノーギ 2023	東京�
 e08465	jbjjf	2023-09-08	第10回東京柔術オープントーナメント	東京都 東京武道館 大武道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vQM0-wnDXohYAaTzvPD-ArAwyBBbvqqz8v4dP8ITsJaQoMgE0oAbThEYiExYIIOr_hyCIKY4Frh1BJI/pubhtml?gid=1633299088&single=true
 e08462	jbjjf	2023-09-09	ヒカルド･デラヒーバ杯 2023	東京都 東京武道館 大武道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vSHke9snjSIJjX0-vbtXF9DF8W5rIGBBHUFvYwQLc7wjMqgGhjy3Rd_zqNvFEo88UY9KrsFVrugxKWe/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSHke9snjSIJjX0-vbtXF9DF8W5rIGBBHUFvYwQLc7wjMqgGhjy3Rd_zqNvFEo88UY9KrsFVrugxKWe/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSHke9snjSIJjX0-vbtXF9DF8W5rIGBBHUFvYwQLc7wjMqgGhjy3Rd_zqNvFEo88UY9KrsFVrugxKWe/pubhtml?gid=2036727323&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSHke9snjSIJjX0-vbtXF9DF8W5rIGBBHUFvYwQLc7wjMqgGhjy3Rd_zqNvFEo88UY9KrsFVrugxKWe/pubhtml?gid=1271335490&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSHke9snjSIJjX0-vbtXF9DF8W5rIGBBHUFvYwQLc7wjMqgGhjy3Rd_zqNvFEo88UY9KrsFVrugxKWe/pubhtml?gid=1553648344&single=true
 e01624	pound_4_pound_fighting_championship	2023-09-10	MID α Presents STONES＆ROOKIES		https://www.p4pfc.com/post/9-10-stones%EF%BC%86rookies-match-result
-e04431	deep	2023-09-10	skyticket Presents DEEP JEWELS 42 ~10th Anniversary～	ニューピアホール	https://www.deep2001.com/deep-jewels-42-10th-anniversary%ef%bd%9e/
+e04431	deep_jewels	2023-09-10	skyticket Presents DEEP JEWELS 42 ~10th Anniversary～	ニューピアホール	https://www.deep2001.com/deep-jewels-42-10th-anniversary%ef%bd%9e/
 e04432	deep	2023-09-10	宗明建設Presents DEEP TOKYO IMPACT 2023 5th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2023-5th-round-2/
 e06022	quintet	2023-09-10	ReBOOT～QUINTET.4～	横浜アリーナ	https://www.quintet-fight.com/eventinfo/quintet-4/ https://www.quintet-fight.com/2023/09/09/fight-order-2/ https://www.quintet-fight.com/2023/09/12/quintet4-event-night/
 e06308	ufc	2023-09-10	UFC 293: アデサニヤ vs. ストリックランド	クドス・バンク・アリーナ, シドニー・オリンピック・パーク オーストラリア	https://en.wikipedia.org/wiki/UFC_293 https://jp.ufc.com/event/ufc-293
@@ -6425,8 +6425,8 @@ e05053	pound_4_pound_fighting_championship	2023-11-19	P4P FC 31 - Pound For Poun
 e05158	bloom_fighting_championship	2023-11-19	Bloom FC 1 - Bloom Fighting Championship 1		https://www.boutreview.com/3/reports/item_100891.html
 e08454	jbjjf	2023-11-19	第6回全日本マスター柔術オープントーナメント	愛知県 愛知県武道館 大道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vRvfDbK0iQcef0frp1YTUNYGdbrT4oKuuhlPGKDuuaCZGOmTanGMwpujs8R_DS9HssKkgyUyld7jo7j/pubhtml?gid=984617611&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRvfDbK0iQcef0frp1YTUNYGdbrT4oKuuhlPGKDuuaCZGOmTanGMwpujs8R_DS9HssKkgyUyld7jo7j/pubhtml?gid=342456163&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRvfDbK0iQcef0frp1YTUNYGdbrT4oKuuhlPGKDuuaCZGOmTanGMwpujs8R_DS9HssKkgyUyld7jo7j/pubhtml?gid=731904047&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vRvfDbK0iQcef0frp1YTUNYGdbrT4oKuuhlPGKDuuaCZGOmTanGMwpujs8R_DS9HssKkgyUyld7jo7j/pubhtml?gid=452456835&single=true
 e08788	shoot_boxing	2023-11-19	SHOOTBOXING 2023 YOUNG CAESER CUP CENTRAL #33/MAX FC “DEAD or ALIVE 07”	愛知・ホテル勝川	https://shootboxing.org/result/28872/
-e03837	deep	2023-11-23	DEEP JEWELS 43（公式ページの日付表記は2003年11月23日だが2023年の誤記）	ニューピアホール	https://www.deep2001.com/deep-jewels-43/
-e04434	deep	2023-11-23	skyticket Presents DEEP JEWELS 43	ニューピアホール	https://www.deep2001.com/deep-jewels-43/
+e03837	deep_jewels	2023-11-23	DEEP JEWELS 43（公式ページの日付表記は2003年11月23日だが2023年の誤記）	ニューピアホール	https://www.deep2001.com/deep-jewels-43/
+e04434	deep_jewels	2023-11-23	skyticket Presents DEEP JEWELS 43	ニューピアホール	https://www.deep2001.com/deep-jewels-43/
 e04435	deep	2023-11-23	宗明建設Presents DEEP TOKYO IMPACT 2023 6th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2023-6th-round/
 e06094	one	2023-11-24	ONE Friday Fights 42	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-42/ https://en.wikipedia.org/wiki/2023_in_ONE_Championship#ONE_Friday_Fights_42
 e06843	aca	2023-11-24	ACA 166	Sibur Arena（ロシア・サンクトペテルブルク）	https://en.wikipedia.org/wiki/2023_in_Absolute_Championship_Akhmat
@@ -6575,8 +6575,8 @@ e06291	ufc	2024-03-23	UFCファイトナイト・ラスベガス89: ヒバス vs
 e07651	lfa	2024-03-23	LFA 179	Parque Olimpico（ブラジル・リオデジャネイロ）	https://en.wikipedia.org/wiki/2024_in_Legacy_Fighting_Alliance
 e07865	oktagon	2024-03-23	OKTAGON 55	Hanns-Martin-Schleyer-Halle（ドイツ・シュトゥットガルト）	https://en.wikipedia.org/wiki/2024_in_Oktagon_MMA
 e01024	shooto	2024-03-24	FORCE 19		https://shooto-mma.com/result/?id=180
-e01644	deep	2024-03-24	DEEP JEWELS 44		https://www.deep2001.com/skyticket-presents-deep-jewels-44/
-e04438	deep	2024-03-24	skyticket Presents DEEP JEWELS 44	ニューピアホール	https://www.deep2001.com/skyticket-presents-deep-jewels-44/
+e01644	deep_jewels	2024-03-24	DEEP JEWELS 44		https://www.deep2001.com/skyticket-presents-deep-jewels-44/
+e04438	deep_jewels	2024-03-24	skyticket Presents DEEP JEWELS 44	ニューピアホール	https://www.deep2001.com/skyticket-presents-deep-jewels-44/
 e04439	deep	2024-03-24	宗明建設Presents DEEP TOKYO IMPACT 2024 1st ROUND	ニューピアホール	https://www.deep2001.com/%e5%ae%97%e6%98%8e%e5%bb%ba%e8%a8%adpresents-deep-tokyo-impact-2024-1st-round/
 e05707	one	2024-03-29	ONE Friday Fights 57	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-57/ https://en.wikipedia.org/wiki/2024_in_ONE_Championship#ONE_Friday_Fights_57
 e06836	aca	2024-03-29	ACA 173	Falcon Club Arena（ベラルーシ・ミンスク）	https://en.wikipedia.org/wiki/2024_in_Absolute_Championship_Akhmat
@@ -6661,7 +6661,7 @@ e07400	cage_warriors	2024-05-25	Cage Warriors 172	Vertu Motors Arena（英国ニ
 e08437	jbjjf	2024-05-25	第9回全日本ノーギ柔術オープントーナメント	神奈川県 横浜武道館 武道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vSqtL1HXf-8_GcXqXUTRmvY3NZSEqFRzImtJ6rpjCUPEJ9Rc9bZ13WjAzb0RZmw9GzrJB6TdwmNBhjj/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSqtL1HXf-8_GcXqXUTRmvY3NZSEqFRzImtJ6rpjCUPEJ9Rc9bZ13WjAzb0RZmw9GzrJB6TdwmNBhjj/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSqtL1HXf-8_GcXqXUTRmvY3NZSEqFRzImtJ6rpjCUPEJ9Rc9bZ13WjAzb0RZmw9GzrJB6TdwmNBhjj/pubhtml?gid=2036727323&single=true
 e01030	shooto	2024-05-26	TORAO32		https://shooto-mma.com/result/?id=185
 e03879	deep	2024-05-26	DEEP TOKYO IMPACT 2024 3rd ROUND		https://www.deep2001.com/deep-tokyo-impact-2024-3rd-round/ 海外の記録サイト
-e03880	deep	2024-05-26	DEEP JEWELS 45	ニューピアホール	https://www.deep2001.com/deep-jewels-45/
+e03880	deep_jewels	2024-05-26	DEEP JEWELS 45	ニューピアホール	https://www.deep2001.com/deep-jewels-45/
 e04541	grachan	2024-05-26	GRACHAN 69	東京・大田区産業プラザPIO	https://grachan.jp/grachan69-result/
 e05716	one	2024-05-31	ONE Friday Fights 65	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-65/ https://en.wikipedia.org/wiki/2024_in_ONE_Championship#ONE_Friday_Fights_65
 e06833	aca	2024-05-31	ACA 176	Ufa Arena（ロシア・ウファ）	https://en.wikipedia.org/wiki/2024_in_Absolute_Championship_Akhmat
@@ -6795,7 +6795,7 @@ e07860	oktagon	2024-09-07	OKTAGON 60	Rudolf Weber-Arena（ドイツ・オーバ�
 e08422	jbjjf	2024-09-07	第8回南日本柔術選手権	鹿児島県 西原商会アリーナ（鹿児島アリーナ） 武道場	https://docs.google.com/spreadsheets/d/1OnV_7XBkGpTRIKK-xhS2Lkej3VGbE22Eb72IQeC2QVM/htmlview?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/1OnV_7XBkGpTRIKK-xhS2Lkej3VGbE22Eb72IQeC2QVM/htmlview?gid=926400971&single=true
 e01037	shooto	2024-09-08	香川・高松シンボルタワー展示場		https://shooto-mma.com/result/?id=191
 e03898	deep	2024-09-08	DEEP TOKYO IMPACT 2024 4th ROUND		https://www.deep2001.com/deep-tokyo-impact-2024-4th-round/ 海外の記録サイト
-e04441	deep	2024-09-08	DAYS Presents DEEP JEWELS 46	ニューピアホール	https://www.deep2001.com/deep-jewels-46/
+e04441	deep_jewels	2024-09-08	DAYS Presents DEEP JEWELS 46	ニューピアホール	https://www.deep2001.com/deep-jewels-46/
 e06830	aca	2024-09-08	ACA 179	Basket-Hall Krasnodar（ロシア・クラスノダール）	https://en.wikipedia.org/wiki/2024_in_Absolute_Championship_Akhmat
 e05729	one	2024-09-13	ONE Friday Fights 79	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-79/ https://en.wikipedia.org/wiki/2024_in_ONE_Championship#ONE_Friday_Fights_79
 e07638	lfa	2024-09-13	LFA 192	Kaiser Permanente Arena（米国カリフォルニア州サンタクルーズ）	https://en.wikipedia.org/wiki/2024_in_Legacy_Fighting_Alliance
@@ -6895,7 +6895,7 @@ e08776	shoot_boxing	2024-11-17	SHOOTBOXING 2024 YOUNG CAESER CUP CENTRAL #35/MAX
 e05735	one	2024-11-22	ONE Friday Fights 88	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-88/ https://en.wikipedia.org/wiki/2024_in_ONE_Championship#ONE_Friday_Fights_88
 e07633	lfa	2024-11-22	LFA 197	Ginásio do Povilho（ブラジル・カジャマール）	https://en.wikipedia.org/wiki/2024_in_Legacy_Fighting_Alliance
 e03918	deep	2024-11-23	DEEP TOKYO IMPACT 2024 5th ROUND		https://www.deep2001.com/deep-tokyo-impact-2024-5th-round/ 海外の記録サイト
-e04442	deep	2024-11-23	DAYS Presents DEEP JEWELS 47	ニューピアホール	https://www.deep2001.com/deep-jewels-47/
+e04442	deep_jewels	2024-11-23	DAYS Presents DEEP JEWELS 47	ニューピアホール	https://www.deep2001.com/deep-jewels-47/
 e06266	ufc	2024-11-23	UFCファイトナイト・マカオ: ヤン vs. フィゲイレード	Galaxy Arena, Macao	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Yan_vs._Figueiredo https://jp.ufc.com/event/ufc-fight-night-november-23-2024
 e07301	brave_cf	2024-11-23	Brave CF 90	Multiversum（オーストリア・ウィーン）	https://en.wikipedia.org/wiki/2024_in_Brave_Combat_Federation
 e07391	cage_warriors	2024-11-23	Cage Warriors 181	Vertu Motors Arena（英国ニューカッスル）	https://en.wikipedia.org/wiki/2024_in_Cage_Warriors
@@ -7024,7 +7024,7 @@ e07627	lfa	2025-03-22	LFA 204	Foxwoods Resort Casino（米国コネチカット�
 e01048	shooto	2025-03-23	SHOOTO GIG TOKYO Vol.38		https://shooto-mma.com/result/?id=218
 e01676	impact_japan	2025-03-23	Impact 56 - Battle Festival	王子ベースメントモンスター	https://miruhon.net/282634 海外の記録サイト
 e01677	one	2025-03-23	ONE 172: TAKERU vs. RODTANG	さいたまスーパーアリーナ	https://efight.jp/result-20250323_1594405
-e03944	deep	2025-03-23	DEEP JEWELS 48	ニューピアホール	https://www.deep2001.com/deep-jewels-48/
+e03944	deep_jewels	2025-03-23	DEEP JEWELS 48	ニューピアホール	https://www.deep2001.com/deep-jewels-48/
 e04446	deep	2025-03-23	SOUMEI Presents DEEP TOKYO IMPACT 2025 1st ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-1st-round/
 e06027	one	2025-03-23	One Championship - One 172: Takeru vs. Rodtang		https://efight.jp/result-20250323_1594405
 e08083	one	2025-03-23	ONE 172: 武尊 VS ロッタン	さいたまスーパーアリーナ	https://www.onefc.com/jp/events/one172/ https://en.wikipedia.org/wiki/ONE_172
@@ -7116,8 +7116,8 @@ e05875	ufc	2025-05-23	Road to UFC シーズン4 エピソード4	UFCパフォー
 e06060	one	2025-05-23	ONE Friday Fights 109	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-109/ https://en.wikipedia.org/wiki/2025_in_ONE_Championship#ONE_Friday_Fights_109
 e07623	lfa	2025-05-24	LFA 209	Malai Manso Resort（ブラジル・シャパーダ・ドス・ギマランイス）	https://en.wikipedia.org/wiki/2025_in_Legacy_Fighting_Alliance
 e01055	shooto	2025-05-25	PROFESSIONAL SHOOTO 2025 Vol.5 in OSAKA		https://shooto-mma.com/result/?id=228
-e03960	deep	2025-05-25	DEEP JEWELS 49		https://www.deep2001.com/deep-jewels-49/
-e04458	deep	2025-05-25	DAYS Presents DEEP JEWELS 49	ニューピアホール	https://www.deep2001.com/deep-jewels-49/
+e03960	deep_jewels	2025-05-25	DEEP JEWELS 49		https://www.deep2001.com/deep-jewels-49/
+e04458	deep_jewels	2025-05-25	DAYS Presents DEEP JEWELS 49	ニューピアホール	https://www.deep2001.com/deep-jewels-49/
 e04467	deep	2025-05-25	SOUMEI Presents DEEP TOKYO IMPACT 2025 3rd ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-3rd-round/
 e06059	one	2025-05-30	ONE Friday Fights 110	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-110/ https://en.wikipedia.org/wiki/2025_in_ONE_Championship#ONE_Friday_Fights_110
 e01683	grachan	2025-05-31	GRACHAN74		https://grachan.jp/grachan74-result/
@@ -7242,7 +7242,7 @@ e01062	shooto	2025-09-07	BORDER2025「The2nd」		https://shooto-mma.com/result/?
 e01747	grasp_the_future_cage	2025-09-07	GFC - Grasp The Future Cage 22	沖縄	海外の記録サイト
 e03982	k1_max	2025-09-07	K-1 WORLD MAX 2025～-70kg世界最強決定トーナメント・開幕戦～	東京・国立代々木競技場 第二体育館	https://efight.jp/result-20250907_1643785
 e04469	deep	2025-09-07	SOUMEI Presents DEEP TOKYO IMPACT 2025 4th ROUND～DEEP VS YFU～	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-4th-round/
-e04470	deep	2025-09-07	DAYS Presents DEEP JEWELS 50	ニューピアホール	https://www.deep2001.com/deep-jewels-50/
+e04470	deep_jewels	2025-09-07	DAYS Presents DEEP JEWELS 50	ニューピアホール	https://www.deep2001.com/deep-jewels-50/
 e05205	shooto	2025-09-07	Shooto - Border 2025: The 2nd		https://www.boutreview.com/3/reports/item_132914.html
 e08553	k1_max	2025-09-07	K-1 WORLD MAX 2025～-70kg世界最強決定トーナメント・開幕戦～	東京・国立代々木競技場第二体育館	https://efight.jp/result-20250907_1643785
 e05758	one	2025-09-12	ONE Friday Fights 124	ルンピニー・スタジアム	https://www.onefc.com/jp/events/one-friday-fights-124/ https://en.wikipedia.org/wiki/2025_in_ONE_Championship#ONE_Friday_Fights_124
@@ -7363,7 +7363,7 @@ e05025	nexus	2025-11-22	Fighting NEXUS vol.41 in 後楽園ホール 2025.11.22(S
 e05385	ufc	2025-11-22	UFCファイトナイト・カタール: ツァルキャン vs. フッカー	ABHA Arena, Doha Qatar	https://jp.ufc.com/event/ufc-fight-night-november-22-2025 https://ja.wikipedia.org/wiki/%E5%A0%80%E5%8F%A3%E6%81%AD%E5%8F%B8 https://en.wikipedia.org/wiki/UFC_Fight_Night:_Tsarukyan_vs._Hooker
 e07374	cage_warriors	2025-11-22	Cage Warriors 198	BEC Arena（英国マンチェスター）	https://en.wikipedia.org/wiki/2025_in_Cage_Warriors
 e07840	oktagon	2025-11-22	OKTAGON 80	SAP Garden（ドイツ・ミュンヘン）	https://en.wikipedia.org/wiki/2025_in_Oktagon_MMA
-e04473	deep	2025-11-23	DAYS Presents DEEP JEWELS 51	ニューピアホール	https://www.deep2001.com/deep-jewels-51/
+e04473	deep_jewels	2025-11-23	DAYS Presents DEEP JEWELS 51	ニューピアホール	https://www.deep2001.com/deep-jewels-51/
 e04474	deep	2025-11-23	SOUMEI Presents DEEP TOKYO IMPACT 2025 5th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2025-5th-round/
 e06813	aca	2025-11-23	ACA 196	Falcon Club Arena（ベラルーシ・ミンスク）	https://en.wikipedia.org/wiki/2025_in_Absolute_Championship_Akhmat
 e07288	brave_cf	2025-11-23	Brave CF 102	Hala Tivoli（スロベニア・リュブリャナ）	https://en.wikipedia.org/wiki/2025_in_Brave_Combat_Federation
@@ -7453,7 +7453,7 @@ e06044	one	2026-02-20	ONE Friday Fights 143	ルンピニー・スタジアム	ht
 e06230	ufc	2026-02-21	UFCファイトナイト・ヒューストン: ストリックランド vs. ヘルナンデス	Toyota Center, Houston アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Strickland_vs._Hernandez https://jp.ufc.com/event/ufc-fight-night-february-21-2026
 e07372	cage_warriors	2026-02-21	Cage Warriors 200	Simmonscourt RDS（アイルランド・ダブリン）	https://en.wikipedia.org/wiki/2026_in_Cage_Warriors
 e07472	ksw	2026-02-21	KSW 115	RCS Lubin（ポーランド・ルビン）	https://en.wikipedia.org/wiki/2026_in_Konfrontacja_Sztuk_Walki
-e04025	deep	2026-02-23	DEEP JEWELS 52	ニューピアホール	https://www.deep2001.com/deep-jewels-52/
+e04025	deep_jewels	2026-02-23	DEEP JEWELS 52	ニューピアホール	https://www.deep2001.com/deep-jewels-52/
 e04027	gladiator	2026-02-23	GLADIATOR 034 in Osaka		https://gonkaku.jp/articles/23074
 e04460	deep	2026-02-23	DEEP NAGOYA IMPACT 2026 1ST ROUND公武堂ファイト	刈谷市産業振興センターあいおいホール	https://www.deep2001.com/deep-nagoya-impact-2026-1st-round/
 e04477	deep	2026-02-23	SOUMEI Presents DEEP TOKYO IMPACT 2026 1st ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2026-1st-round/
@@ -7578,7 +7578,7 @@ e06039	one	2026-05-22	ONE Friday Fights 155	ルンピニー・スタジアム	ht
 e07602	lfa	2026-05-22	LFA 233	Seneca Allegany Casino（米国ニューヨーク州サラマンカ）	https://en.wikipedia.org/wiki/2026_in_Legacy_Fighting_Alliance
 e05851	pfl	2026-05-23	PFL Brussels: Habirora vs. Henderson	ING Arena	https://ja.wikipedia.org/wiki/井上直樹_(格闘家) https://en.wikipedia.org/wiki/PFL_Brussels:_Habirora_vs._Henderson https://ja.wikipedia.org/wiki/SASUKE_(格闘家)
 e01085	shooto	2026-05-24	プロフェッショナル修斗公式戦『FORCE 23』		https://shooto-mma.com/result/?id=267
-e04480	deep	2026-05-24	DAYS Presents DEEP JEWELS 53	ニューピアホール	https://www.deep2001.com/deep-jewels-53/
+e04480	deep_jewels	2026-05-24	DAYS Presents DEEP JEWELS 53	ニューピアホール	https://www.deep2001.com/deep-jewels-53/
 e04481	deep	2026-05-24	SOUMEI Presents DEEP TOKYO IMPACT 2026 3rd ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2026-3rd-round/
 e07894	pfl	2026-05-24	PFL MENA 9: Pride of Arabia	Coca-Cola Arena	https://en.wikipedia.org/wiki/PFL_MENA_9
 e08336	jbjjf	2026-05-24	第18回関西柔術選手権	大阪府・Asueアリーナ大阪 武道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vQXfC7YX3Q1HBfQJxAu0JWtn7pJ8Yck2AlzuztbiK1TUU3C_6fwcbc7yc7FH8l_BCgoS1SVDKKgyJRd/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vQXfC7YX3Q1HBfQJxAu0JWtn7pJ8Yck2AlzuztbiK1TUU3C_6fwcbc7yc7FH8l_BCgoS1SVDKKgyJRd/pubhtml?gid=926400971&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vQXfC7YX3Q1HBfQJxAu0JWtn7pJ8Yck2AlzuztbiK1TUU3C_6fwcbc7yc7FH8l_BCgoS1SVDKKgyJRd/pubhtml?gid=2036727323&single=true
@@ -7717,7 +7717,7 @@ e05784	one	2026-09-05	ONE Fight Night 47	ルンピニー・スタジアム	https
 e06208	ufc	2026-09-05	UFCファイトナイト・パリ: フッカー vs. パルナス	アコー・アリーナ, パリ フランス	https://en.wikipedia.org/wiki/UFC_Fight_Night:_Hooker_vs._Parnasse https://jp.ufc.com/event/ufc-fight-night-september-05-2026
 e07282	brave_cf	2026-09-05	Brave CF 108	Pula Arena（クロアチア・プーラ）	https://en.wikipedia.org/wiki/2026_in_Brave_Combat_Federation
 e00418	pancrase	2026-09-06	PANCRASE 365（東京・立川ステージガーデン）	東京・立川ステージガーデン	https://pancrase.co.jp/data/result/2026/0906.html
-e04072	deep	2026-09-06	DAYS Presents DEEP JEWELS 54	ニューピアホール	https://www.deep2001.com/deep-jewels-54-2/
+e04072	deep_jewels	2026-09-06	DAYS Presents DEEP JEWELS 54	ニューピアホール	https://www.deep2001.com/deep-jewels-54-2/
 e04482	deep	2026-09-06	SOUMEI Presents DEEP TOKYO IMPACT 2026 4th ROUND	ニューピアホール	https://www.deep2001.com/deep-tokyo-impact-2026-4th-round/
 e08323	jbjjf	2026-09-06	第16回四国柔術選手権	徳島県・ソイジョイ武道館	https://docs.google.com/spreadsheets/d/e/2PACX-1vSgxsmAOLFQ4ET5_-C8ldl-xlfncpqvP_eHLvLm95Q3ZkxeIGSkdklafL0vcYpThBme7luWrjqscUhG/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vSgxsmAOLFQ4ET5_-C8ldl-xlfncpqvP_eHLvLm95Q3ZkxeIGSkdklafL0vcYpThBme7luWrjqscUhG/pubhtml?gid=926400971&single=true
 e04073	rizin	2026-09-10	ANGEL CHAMPAGNE presents 超RIZIN.5 浪速の超復活祭り	京セラドーム大阪	https://jp.rizinff.com/_ct/17863569
@@ -7821,3 +7821,4 @@ e05852	pfl	2026-11-14	PFL Dubai: Nemkov vs. Bilostenniy	Coca-Cola Arena	https://
 e06200	ufc	2026-11-14	UFC 334: ガヌ vs. ホキット	マディソン・スクエア・ガーデン, ニューヨーク アメリカ合衆国	https://en.wikipedia.org/wiki/UFC_334 https://jp.ufc.com/event/ufc-334
 e07359	cage_warriors	2026-11-14	Cage Warriors 213	BBC Studioworks Television Centre（英国ロンドン）	https://en.wikipedia.org/wiki/2026_in_Cage_Warriors
 e08310	jbjjf	2026-11-14	第3回令和杯柔術選手権	栃木県・ユウケイ武道館 第二道場	https://docs.google.com/spreadsheets/d/e/2PACX-1vQuamFeOlqQns4ZFzvW9hFEMbD9TY6Li2WTqHlo4SE8CtqaUO1LjDZYbVYYgPqcf2mIFHAADgzluKbP/pubhtml?gid=1633299088&single=true https://docs.google.com/spreadsheets/d/e/2PACX-1vQuamFeOlqQns4ZFzvW9hFEMbD9TY6Li2WTqHlo4SE8CtqaUO1LjDZYbVYYgPqcf2mIFHAADgzluKbP/pubhtml?gid=926400971&single=true
+e08952	one	2026-11-18	ONE SAMURAI 5	EBARA WAVE アリーナおおた	https://www.onefc.com/jp/events/one-samurai-5/
