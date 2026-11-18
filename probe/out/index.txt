@@ -1,8 +1,7 @@
-1 https://asjjf.org/main/eventResults/1778 44344
-2 https://asjjf.org/main/eventResults/367 1987
-3 https://asjjf.org/main/eventInfo/2286 96259
-4 https://ibjjf.com/events/calendar 45762
-5 https://ibjjf.com/events/championships 45817
-6 https://matchlog.bjjhub.biz/tournament/2000 14542
-7 https://matchlog.bjjhub.biz/tournament/1500 82902
-8 https://ibjjf.com/events/3108/results 360691
+1 https://dumau.asjjf.org/main/eventResults/367 43799
+2 https://www.asjjf.org/main/eventResults/1333 44344
+3 https://asjjf.org/main/eventResults/1333 44344
+4 https://www.asjjf.org/main/eventResults/1778 44344
+5 https://asjjf.org/main/eventInfo/2120 134135
+6 https://sjjjf.org/results 51262
+7 https://www.sjjjf.org/ 103938
