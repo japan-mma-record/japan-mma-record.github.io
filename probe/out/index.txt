@@ -1,0 +1,10 @@
+1 https://www.ufcalendar.com/cage-warriors/results 273628
+2 https://www.ufcalendar.com/cage-warriors/results?page=2 273660
+3 https://www.ufcalendar.com/oktagon-mma/results 59048
+4 https://www.ufcalendar.com/aca/results 283466
+5 https://bravecf.com/event-results?page=3 3072140
+6 https://bravecf.com/event-results?page=4 2924570
+7 https://bravecf.com/event-results?page=5 3014528
+8 https://oktagonmma.com/en/events/oktagon-38/results/ 65584
+9 https://oktagonmma.com/en/events/oktagon-38/?tab=results 167268
+10 https://www.ufcalendar.com/events/ksw-ksw-9-2008-05-09 275206
