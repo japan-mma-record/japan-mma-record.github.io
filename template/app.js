@@ -26,7 +26,14 @@ function loadPodium(k){ if(!(D.meta.pd||[]).includes(k)) return;
     b.innerHTML=`<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>${ps.map(p=>`<tr><td>${esc(p[0])}</td><td>${PL[p[1]]||esc(p[1])}</td><td>${esc(p[2])}</td><td>${esc(p[3])}</td></tr>`).join('')}</tbody></table></div>`; }); }
 function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
-function jpn(e){ return (e[7]&&e[7].length) ? `<span class="jp">（${e[7].map(esc).join('、')}）</span>` : ''; }
+function mainCard(e){ if((D.meta.bjj||[]).includes(e[2])||((D.meta.teams||{})[e[0]]||[]).length) return '';
+  const bs=D.bouts[e[0]]||[]; if(!bs.length) return '';
+  const pool=bs.filter(b=>!b[11]).length?bs.filter(b=>!b[11]):bs;
+  let m=pool[pool.length-1]; const mx=Math.max(...pool.map(b=>b[0]||0)); if(mx>0) m=pool.filter(b=>(b[0]||0)===mx).pop();
+  const t=pool.find(b=>b[13]&&/タイトル|王座/.test(b[13]))&&!m[13]?pool.filter(b=>b[13]&&/タイトル|王座/.test(b[13])).pop():null;
+  const one=b=>{ let A=b[2],B=b[4]; if(b[5]===2)[A,B]=[B,A]; return `${esc(A)} ${b[5]===1||b[5]===2?'def.':'vs'} ${esc(B)}${b[13]?`（${esc(b[13])}）`:''}`; };
+  return `<span class="mc">メイン：${one(m)}${t&&t!==m?`　／　${one(t)}`:''}</span>`; }
+function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
 function rtag(b){ return (b[11] ? `<span class="unc">${esc(b[11])}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
@@ -229,7 +236,7 @@ function vEvents(){
   const ev = D.events.filter(e=>e[1].startsWith(evYear)).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const m=+e[1].slice(5,7); if(m!==cur){ cur=m; out+=`<p class="mo">${m}月</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="p">${esc(pl(e[2]))}</span><span class="n">${esc(e[3])}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   return `<main class="wrap"><div class="sh"><h1>大会</h1><span class="aside" style="font-weight:500">${esc(evYear)}年　${ev.length}大会</span></div>
     <div class="chips" id="ychips">${years.map(y=>`<button type="button" data-y="${y}" aria-pressed="${y===evYear}">${y}</button>`).join('')}</div>
     <div class="list">${out}</div></main>`;
@@ -253,7 +260,7 @@ function vPromotion(key){
   const ev = D.events.filter(e=>e[2]===p).slice().reverse();
   let cur='', out='';
   ev.forEach(e=>{ const y=e[1].slice(0,4); if(y!==cur){ cur=y; out+=`<p class="mo">${y}</p>`; }
-    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="n">${esc(e[3])}${jpn(e)}</span><span class="c">${e[6]}試合</span></a>`; });
+    out += `<a class="row" href="#e-${esc(e[0])}"><span class="d">${esc(e[1].length===10?e[1].slice(5).replace('-','.'):'—')}</span><span class="n">${esc(e[3])}${jpn(e)}${mainCard(e)}</span><span class="c">${e[6]}試合</span></a>`; });
   const nb = ev.reduce((s,e)=>s+e[6],0);
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#promotions">団体</a></p>
     <div class="ph"><div><h1>${esc(pl(p))}</h1><p class="sub">${esc(ev.length?ev[ev.length-1][1].slice(0,4)+'年〜'+ev[0][1].slice(0,4)+'年':'')}</p></div>
