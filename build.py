@@ -137,6 +137,19 @@ def load():
         e = events.get(r.get('event_id'))
         if e and r.get('field') in ('name', 'date', 'venue') and (r.get('value') or '').strip():
             e[r['field']] = r['value'].strip()
+        elif e and r.get('field') == 'merge' and r.get('value') in events and r['value'] != r['event_id']:
+            # 同じ大会が2つに分かれて登録されているとき、試合を1つの大会にまとめる
+            tgt = r['value']
+            have = {frozenset((b.get('fighter1'), b.get('fighter2'))) for b in bouts.get(tgt, [])}
+            n = max([int(b.get('match_no') or 0) for b in bouts.get(tgt, [])] or [0])
+            for b in bouts.pop(r['event_id'], []):
+                if frozenset((b.get('fighter1'), b.get('fighter2'))) in have:
+                    continue
+                n += 1
+                b['match_no'] = n
+                b['event_id'] = tgt
+                bouts.setdefault(tgt, []).append(b)
+            events.pop(r['event_id'], None)
     # 会場が空の大会を補う（data/venues.tsv：event_id, promotion, date, name, venue, source_url）
     for r in read_tsv(os.path.join(DATA, 'venues.tsv')):
         e = events.get(r.get('event_id'))
