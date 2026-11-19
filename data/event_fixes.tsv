@@ -40,5 +40,4 @@ e04949	name	KROSS×OVER EXTRA.5	同じ名前の大会が2つあったため、�
 e05322	name	DEEP NAGOYA IMPACT 2017 古武道FIGHT 19	同じ名前の大会が2つあったため、大会の記録（日付）に合わせて訂正
 e08059	name	DEEP NAGOYA IMPACT 2017 古武道FIGHT 21	同じ名前の大会が2つあったため、大会の記録（日付）に合わせて訂正
 e03413	name	DEEP CAGE IMPACT 2017 in 後楽園ホール	同じ名前の大会が2つあったため、大会の記録（日付）に合わせて訂正
-e03247	merge	e05132	同じ日の同じ大会（ZST.47）が2つに分かれていたのを1つにまとめる
-e04932	merge	e04931	同じ日の同じ大会（キングダムエルガイツ サテライトファイトvol.20）が2つに分かれていたのを1つにまとめる
+e03246	name	ZST.47 / ZST Challenge 145	同じ日に同じ会場で行われたZST.47とZST Challenge 145の試合がこの大会にまとまっているため（https://efight.jp/result-20150823_199355）
