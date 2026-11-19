@@ -291,7 +291,7 @@ function vPromotions(){
     ${sec('世界の主要団体', W.map(k=>by[k]), '日本人選手が出た試合と、日本で開かれた大会の試合です')}
     ${sec('アマチュア', A.map(k=>by[k]))}
     ${sec('立ち技', S.map(k=>by[k]), 'MMAの戦績には数えません')}
-    ${sec('柔術・グラップリング', G.concat(B).map(k=>by[k]), 'プロ柔術（KIT・ART）、DEEP Xなどの組み技の大会、柔術の大会です。柔術の大会は、大人の部の入賞者とトーナメント表が残っている試合を載せています。MMAの戦績には数えません')}</main>`;
+    ${sec('柔術・グラップリング', G.concat(B).map(k=>by[k]), 'プロ柔術（KIT・ART・IF-PROJECT Gi）、DEEP Xなどの組み技の大会、柔術の大会です。柔術の大会は、大人の部の入賞者とトーナメント表が残っている試合を載せています。MMAの戦績には数えません')}</main>`;
 }
 function vPromotion(key){
   const p = Object.keys(D.meta.plabel).find(k=>k.replace(/_/g,'-')===key); if(!p) return notFound();

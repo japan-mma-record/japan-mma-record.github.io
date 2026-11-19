@@ -267,7 +267,7 @@ def load():
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
-            if (events.get(k) or {}).get('promotion') in ('kit', 'art', 'deepx'):   # プロ柔術・DEEP X：階級だけを書く（ノーギのときだけ「ノーギ」）
+            if (events.get(k) or {}).get('promotion') in ('kit', 'art', 'deepx', 'ifpro_gi'):   # プロ柔術・DEEP X：階級だけを書く（ノーギのときだけ「ノーギ」）
                 w = re.sub(r'\s*[・/]\s*(柔術\s*[（(]道着[）)]|グラップリング\s*[（(][^）)]*[）)]|グラップリング$)', '', b.get('weight') or '')
                 b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(]ノーギ[）)]', '', w).strip()
             elif (events.get(k) or {}).get('promotion') in bjjp:   # 柔術はカテゴリー名をそのまま（ルール名は書かない）
@@ -302,6 +302,8 @@ def load():
     key2id = {(e['promotion'], e['date'], methods.event_name(e['name'])): k for k, e in events.items()}
     for r in read_tsv(os.path.join(DATA, 'podium.tsv')):
         pr, d, nm = r.get('promotion') or 'jbjjf', r.get('date', ''), methods.event_name(r.get('event_name_ja'))
+        if pr == 'jbjjf' and re.search(r'(?i)Ground\s*Impact|グラウンドインパクト|グランドインパクト|デラヒーバ杯|De\s*La\s*Riva\s*CUP|KBJJA', nm or ''):
+            pr = 'groundimpact'   # IF-PROJECT の大会
         k = key2id.get((pr, d, nm)) or key2id.get(('groundimpact', d, nm))
         if not k:
             k = 'j' + hashlib.md5(f'{pr}|{d}|{nm}'.encode()).hexdigest()[:8]
