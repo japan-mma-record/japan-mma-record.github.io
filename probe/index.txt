@@ -1,4 +1,2 @@
-1 200 387 https://wardog-cf.jp/wp-json/wp/v2/event?per_page=20&_fields=link,date,title
-2 200 59768 https://grachan.jp/schedule/grachan86/
-3 200 59484 https://grachan.jp/schedule/grachan85/
-4 404 31208 https://wardog-cf.jp/event/wardog-58
+1 200 44146 https://grachan.jp/result/
+2 404 38286 https://grachan.jp/results/
