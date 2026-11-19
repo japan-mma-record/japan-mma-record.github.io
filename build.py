@@ -215,7 +215,9 @@ def load():
                 gap = (datetime.date.fromisoformat(o['date']) - datetime.date.fromisoformat(main['date'])).days
             except ValueError:
                 continue
-            if gap > 3:
+            # 会場が違うものは、名前が同じでも別の大会（「プロフェッショナル修斗公式戦」のような一般的な名前の別大会がある）
+            v1, v2 = re.sub(r'\s', '', main.get('venue') or ''), re.sub(r'\s', '', o.get('venue') or '')
+            if gap > 3 or (v1 and v2 and v1 not in v2 and v2 not in v1):
                 main = o
                 continue
             n0 = len(bouts[main['event_id']])
