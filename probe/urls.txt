@@ -1,4 +1,2 @@
-https://wardog-cf.jp/wp-json/wp/v2/event?per_page=20&_fields=link,date,title
-https://grachan.jp/schedule/grachan86/
-https://grachan.jp/schedule/grachan85/
-https://wardog-cf.jp/event/wardog-58
+https://grachan.jp/result/
+https://grachan.jp/results/
