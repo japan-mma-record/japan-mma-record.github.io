@@ -3,7 +3,7 @@
 import os, sys
 here = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, here)
 from common import text_lines
-import pancrase, deep, shooto, rizin
+import pancrase, deep, shooto, rizin, grachan, wardog, upcoming
 
 def read(n): return open(os.path.join(here, 'tests', n), encoding='utf-8', errors='replace').read()
 
@@ -19,4 +19,16 @@ assert b[0]['winner'] == '2' and b[1]['method'] == '一本（三角絞め）' an
 ev, b = rizin.parse(read('rizin_53.html'), 'x')
 assert ev['date'] == '2026-05-10' and ev['name'] == 'RIZIN.53' and len(b) >= 10, (ev, len(b))
 assert b[0]['winner'] == '2' and b[0]['round'] == '1' and b[0]['time'] == '2:08'
+ev, b = grachan.parse(text_lines(read('grachan_86.html')), 'x')
+assert ev['name'] == 'GRACHAN86' and len(b) == 8, (ev, len(b))
+assert b[0]['fighter1'] == '岡田達朗' and b[0]['winner'] == '2' and b[0]['round'] == '2' and b[0]['time'] == '1:09'
+assert grachan.list_items(read('grachan_result_list.html'))[1][:2] == ('https://grachan.jp/grachan86-result/', '2026-10-25')
+ev, b = wardog.parse(text_lines(read('wardog_59.html')), 'x')
+assert ev['name'] == 'WARDOG.59' and ev['date'] == '2026-11-08' and len(b) >= 10, (ev, len(b))
+assert b[-1]['fighter1'] == '浅野こうき' and b[-1]['winner'] == '1' and b[-1]['time'] == '4:07'
+rows = upcoming.parse_efight_month(read('efight_202612.html'))
+assert any(r[1] == 'DEEP 135 IMPACT' and r[0] == '2026-12-13' for r in rows), rows
+assert upcoming.promo_of('DEEP 135 IMPACT') == 'DEEP' and upcoming.promo_of('DEEP☆KICK 81') == '' and upcoming.promo_of('PANCRASE 369') == 'パンクラス'
+v, c = upcoming.parse_efight_event(read('efight_event.html'))
+assert len(c) == 9 and c[0][0] == 'イリー・プロハースカ', c[:2]
 print('見本ページの読み取り: すべて正常')

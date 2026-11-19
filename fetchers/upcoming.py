@@ -101,7 +101,15 @@ def cards_from_lines(L):
     return res
 
 
+def mma_card(c):
+    lab = c[2] or ''
+    if re.search(r'キッズ|ジュニア|少年|U-?1\d', lab):
+        return False
+    return not re.search(r'キック|ムエタイ|ボクシング|アマチュア|グラップリング|柔術|エキシビション|エキシビジョン', lab) or bool(re.search(r'MMA|総合', lab))
+
+
 def ev(d, n, v, p, src, cards):
+    cards = [c for c in cards if mma_card(c)]
     e = {'d': d, 'n': n, 'v': v, 'p': p, 'c': cards, 'src': [src] if src else []}
     if cards:
         e['m'] = {'f1': cards[0][0], 'f2': cards[0][1], 'l': cards[0][2]}
@@ -342,6 +350,9 @@ def run(dry=False):
         return 0
     merged = [e for e in merge(old, got) if (e.get('d') or '') >= today]
     for e in merged:
+        e['c'] = [c for c in (e.get('c') or []) if len(c) < 3 or mma_card(c)]
+        if e.get('m') and e['c'] and not any(c[0] == e['m'].get('f1') for c in e['c']):
+            e['m'] = {'f1': e['c'][0][0], 'f2': e['c'][0][1], 'l': e['c'][0][2]}
         if not e.get('m'):
             e.pop('m', None)
     merged.sort(key=lambda e: (e['d'], e.get('p') or '', e.get('n') or ''))
