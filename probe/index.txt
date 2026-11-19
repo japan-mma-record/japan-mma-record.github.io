@@ -1,2 +1,2 @@
-1 200 44146 https://grachan.jp/result/
-2 404 38286 https://grachan.jp/results/
+1 200 72315 https://grachan.jp/grachan86-result/
+2 200 77462 https://grachan.jp/grachan85-result/
