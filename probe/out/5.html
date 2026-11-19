@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+
+	<script type="text/javascript">
+		function gototop() {
+			var pth = location.pathname;
+			if (pth == "/") {
+				// pass
+			}
+			else {
+				location.href = "/";
+			}
+		}
+		setTimeout(gototop, 3000);
+	</script>
+
+	<title>HTTP 404 Not Found</title>
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {}
+
+		#container {
+			height: 100%;
+			overflow: hidden;
+			margin-top: 120px;
+			text-align: center;
+		}
+
+
+		#error_content {
+			margin: 0 auto;
+			padding: 0 16px;
+		}
+
+		h1 {
+			font-size: 280%;
+			margin: 0;
+			line-height: 1;
+		}
+
+		p {
+			line-height: 1.7;
+			margin: 0;
+		}
+
+		p+p {
+			margin-top: 1.2em;
+		}
+
+		a {
+			color: #0000EE;
+			font-weight: bold;
+		}
+
+
+		.ttl-leed {
+			margin-top: 1.2em;
+		}
+
+		.text-en {
+			display: block;
+		}
+
+		div[class^="lang"] {
+			margin-top: 2.5em;
+		}
+
+		div[class^="lang"] p {
+			font-size: 92.5%;
+		}
+
+		.back .notice {
+			font-size: 87.5%;
+			display: block;
+		}
+
+		#error_footer {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+
+		@media screen and (max-width: 767px) {
+			#container {
+				margin-top: 62px;
+				text-align: left;
+			}
+
+			h1 {
+				font-size: 240%;
+				margin: 0;
+				line-height: 1;
+			}
+
+			p br {
+				display: none;
+			}
+
+			.lang-jp {
+				margin-top: 2.6em;
+			}
+
+			.lang-en {
+				margin-top: 2em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="error_content">
+			<h1>404 Not Found</h1>
+			<p class="ttl-leed">
+				<b>ご指定のページが見つかりません。
+				<span class="text-en">The requested URL was not found on this server.</span></b>
+			</p>
+
+			<div class="lang-jp">
+				<p class="ttl-leed-sub">
+					申しわけありませんが、ご指定のページは見つかりませんでした。<br>
+					入力したアドレスが間違っているか、ページが移動もしくは削除されている可能性があります。
+				</p>
+
+				<p class="back">
+					このページは3秒後に自動的にサイトのトップページへジャンプします。
+					<span class="notice">※ 自動的にジャンプしない場合は、<a href="/">こちら</a>をクリックして下さい。</span>
+				</p>
+			</div>
+
+			<div class="lang-en">
+				<p class="ttl-leed-sub">
+					We’re sorry, but the page you specified could not be found.<br>
+					The URL may be incorrect, or the page may have been moved or deleted.
+				</p>
+
+				<p class="back">
+					This page will automatically redirect to the site’s homepage in 3 seconds.
+					<span class="notice">※ If the redirect does not happen automatically, please click <a href="/">here</a>.</span>
+				</p>
+			</div>
+
+		</div>
+
+		<div id="error_footer" class="rvlvr-footer">
+		</div>
+	</div>
+</body>
+</html>
