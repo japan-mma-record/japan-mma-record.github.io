@@ -427,7 +427,7 @@ def static_header(pre):
 
 
 def foot(site, n_ev, n_b):
-    return f'''<footer class="ft"><div class="wrap"><b>日本MMA戦績録</b><span>{n_ev:,}興行・{n_b:,}試合を収録　データ更新日 {site["built"]}　記録の出典は各大会ページに記載</span></div></footer></body></html>'''
+    return f'''<footer class="ft"><div class="wrap"><b>日本MMA戦績録</b><span>{n_ev:,}興行・{n_b:,}試合を収録　データ更新日 {site["built"]}　記録の出典は各大会ページに記載</span><span>お問い合わせ：japan.mma.record@gmail.com</span></div></footer></body></html>'''
 
 
 def rt(b):

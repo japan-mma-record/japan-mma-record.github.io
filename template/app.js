@@ -360,6 +360,9 @@ function vAbout(){
     <p>各大会ページの下に、その大会の記録の出典を載せています。</p>
     <h2>間違いを見つけたら</h2>
     <p>記録の訂正は、出典（公式サイトや当時の記事など）を添えてお知らせください。確かめたうえで直します。</p>
+    <h2>お問い合わせ</h2>
+    <p>記録の訂正、ご意見、そのほかのお問い合わせは、下のメールアドレスまでお送りください。</p>
+    <p><b style="user-select:all">japan.mma.record@gmail.com</b></p>
     <p style="color:var(--fg3);font-size:13px">データ更新日：${esc(D.meta.built)}</p></div></main>`;
 }
 function notFound(){ return `<main class="wrap"><div class="sh"><h1>ページが見つかりません</h1></div><p class="note" style="margin-top:20px">リンクが古いか、まだ収録していない記録です。<a class="u" href="#top" style="color:var(--red2)">トップに戻る</a></p></main>`; }
