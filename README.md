@@ -15,7 +15,7 @@
 | `data/fixes.tsv` | 個別の訂正（あれば） |
 | `data/promotions.tsv` | 団体の表示名 |
 | `build.py` | 記録からサイトを作るプログラム |
-| `fetch.py`, `fetchers/` | 公式サイトから新しい結果を取り込むプログラム |
+| `fetch.py`, `fetchers/` | 公式サイトから新しい結果と今後の大会予定を取り込むプログラム |
 | `template/` | サイトの見た目（デザイン） |
 | `.github/workflows/` | 毎日の自動更新と、年1回のデータ保存の設定 |
 | `HANDOVER.md` | **後を引き継ぐ方へ**。仕組みと直し方 |
