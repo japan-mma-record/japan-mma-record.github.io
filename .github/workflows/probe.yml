@@ -1,0 +1,22 @@
+name: probe-web
+on:
+  push:
+    branches: [probe-web]
+    paths: ['probe/urls.txt']
+permissions:
+  contents: write
+concurrency:
+  group: probe-web
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          rm -rf probe/out probe/index.txt; mkdir -p probe/out
+          n=0; while read -r u; do [ -z "$u" ] && continue; n=$((n+1));
+            r=$(curl -sSL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" -H "Accept-Language: ja,en;q=0.8" --compressed --retry 2 --max-time 60 -w "%{http_code}" "$u" -o "probe/out/$n.html" || echo ERR);
+            echo "$n $r $(wc -c < probe/out/$n.html 2>/dev/null || echo 0) $u" >> probe/index.txt; sleep 1; done < probe/urls.txt
+          git config user.name bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A probe; git commit -q -m "probe results [skip ci]"; git push
