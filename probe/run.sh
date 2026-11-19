@@ -1,1 +1,1 @@
-python3 probe/venues.py
+python3 probe/venues2.py
