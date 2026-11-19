@@ -39,7 +39,7 @@ function evn(e){ const n=e[3]||'', v=vshort(e[4]); if(!v||(D.meta.world||[]).inc
   if(n.includes(v)||/[（(][^（）()]*[）)]$/.test(n)&&v.slice(0,2)&&n.includes(v.slice(0,2))) return n; return `${n}（${v}）`; }
 function jpn(e){ if((D.meta.bjj||[]).includes(e[2])||!(e[7]&&e[7].length)) return ''; const a=e[7]; return `<span class="jp">（${a.slice(0,6).map(esc).join('、')}${a.length>6?`ほか${a.length-6}人`:''}）</span>`; }
 function ttag(b){ return b[13] ? `<span class="ttl">${esc(b[13])}</span>${b[14]?`<span class="tnote">${esc(b[14])}</span>`:''}` : ''; }
-function rtag(b,e){ const ama=e&&(D.meta.amateur||[]).includes(e[2]); return ((b[11]||ama) && !(e&&(D.meta.standup||[]).includes(e[2])) ? `<span class="unc">${esc(b[11]||'アマチュア')}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
+function rtag(b,e){ const ama=e&&(D.meta.amateur||[]).includes(e[2]); return ((b[11]||ama) && !(e&&[...(D.meta.standup||[]),...(D.meta.grappling||[])].includes(e[2])) ? `<span class="unc">${esc(b[11]||'アマチュア')}・戦績に数えない</span>` : '') + (b[12] ? ` <a class="vid" href="${esc(b[12])}" target="_blank" rel="noopener">▶ 公式動画</a>` : ''); }
 function rt(b){ const r = b[7] ? (/R$/i.test(b[7]) ? b[7] : b[7]+'R') : ''; return [r, b[8]].filter(Boolean).join(' '); }
 
 function buildIndex(){
@@ -209,7 +209,7 @@ function vEvent(k){
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div></div>
     <div id="bjjbox"><p class="sub">読み込み中…</p></div><p class="src">出典：${[...new Set(e[5])].map(u=>/^https?:/.test(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,'').slice(0,70))}</a>`:esc(u)).join('　')}</p></main>`;
   const bs = D.bouts[k] || [];
-  const su=(D.meta.standup||[]).includes(e[2]); const mb = su ? bs : bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定/.test(b[6])).length;
+  const su=[...(D.meta.standup||[]),...(D.meta.grappling||[])].includes(e[2]); const mb = su ? bs : bs.filter(b=>!b[11]); const ko = mb.filter(b=>/^T?KO/.test(b[6])).length, sub = mb.filter(b=>/^一本|^Submission/.test(b[6])).length, dec = mb.filter(b=>/^判定|^レフェリー判定|^ポイント/.test(b[6])).length;
   const rows = bs.map(b=>{
     let A=[b[1],b[2]], B=[b[3],b[4]], r='<span class="rs o">—</span>';
     if(b[5]===2){ [A,B]=[B,A]; }
@@ -291,8 +291,7 @@ function vPromotions(){
     ${sec('世界の主要団体', W.map(k=>by[k]), '日本人選手が出た試合と、日本で開かれた大会の試合です')}
     ${sec('アマチュア', A.map(k=>by[k]))}
     ${sec('立ち技', S.map(k=>by[k]), 'MMAの戦績には数えません')}
-    ${sec('グラップリング', G.map(k=>by[k]), 'MMAの戦績には数えません')}
-    ${sec('ブラジリアン柔術', B.map(k=>by[k]), '大人の部の入賞者と、トーナメント表が残っている大会の試合です。MMAの戦績には数えません')}</main>`;
+    ${sec('柔術・グラップリング', G.concat(B).map(k=>by[k]), 'プロ柔術（KIT・ART）、組み技の大会、柔術の大会です。柔術の大会は、大人の部の入賞者とトーナメント表が残っている試合を載せています。MMAの戦績には数えません')}</main>`;
 }
 function vPromotion(key){
   const p = Object.keys(D.meta.plabel).find(k=>k.replace(/_/g,'-')===key); if(!p) return notFound();

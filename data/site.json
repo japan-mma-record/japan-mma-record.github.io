@@ -4,7 +4,9 @@
  "grappling_promotions": [
   "quintet",
   "adcc",
-  "cji"
+  "cji",
+  "kit",
+  "art"
  ],
  "world_promotions": [
   "ufc",
@@ -29,6 +31,7 @@
  ],
  "bjj_promotions": [
   "jbjjf",
+  "groundimpact",
   "asjjf"
  ],
  "standup_promotions": [

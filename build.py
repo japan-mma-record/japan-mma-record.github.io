@@ -267,7 +267,10 @@ def load():
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
-            if (events.get(k) or {}).get('promotion') in bjjp:   # 柔術はカテゴリー名をそのまま（ルール名は書かない）
+            if (events.get(k) or {}).get('promotion') in ('kit', 'art'):   # プロ柔術：階級だけを書く（ノーギのときだけ「ノーギ」）
+                w = re.sub(r'\s*[・/]\s*柔術\s*[（(]道着[）)]', '', b.get('weight') or '')
+                b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(]ノーギ[）)]', '', w).strip()
+            elif (events.get(k) or {}).get('promotion') in bjjp:   # 柔術はカテゴリー名をそのまま（ルール名は書かない）
                 b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(][^）)]*ルール[）)]|\s*[・/]\s*柔術ルール', '', b.get('weight') or '').strip()
             else:
                 b['weight'] = methods.weight(b.get('weight'))  # 階級の書き方をそろえる
@@ -299,7 +302,7 @@ def load():
     key2id = {(e['promotion'], e['date'], methods.event_name(e['name'])): k for k, e in events.items()}
     for r in read_tsv(os.path.join(DATA, 'podium.tsv')):
         pr, d, nm = r.get('promotion') or 'jbjjf', r.get('date', ''), methods.event_name(r.get('event_name_ja'))
-        k = key2id.get((pr, d, nm))
+        k = key2id.get((pr, d, nm)) or key2id.get(('groundimpact', d, nm))
         if not k:
             k = 'j' + hashlib.md5(f'{pr}|{d}|{nm}'.encode()).hexdigest()[:8]
             events[k] = {'event_id': k, 'promotion': pr, 'date': d, 'name': nm, 'venue': r.get('venue', ''), 'sources': ''}
