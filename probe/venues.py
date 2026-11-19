@@ -1,6 +1,6 @@
 import json,re,time,urllib.request
 ids=json.load(open('probe/sid.json'))
-out=open('probe/venues.tsv','w')
+out=open('probe/venues3.tsv','w')
 for k,s in ids.items():
     try:
         req=urllib.request.Request(f'https://www.sherdog.com/events/a-{s}',headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0'})
