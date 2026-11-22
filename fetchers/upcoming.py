@@ -62,7 +62,8 @@ def jvenue(v):
 
 
 def clean_fighter(s):
-    s = re.sub(r'^[\d０-９]+\s*[.．]\s*', '', s.strip())
+    s = re.sub(r'^[・･\s]+', '', s.strip())   # 先頭の「・」（箇条書きの印）を取る
+    s = re.sub(r'^[\d０-９]+\s*[.．]\s*', '', s)
     s = re.sub(r'^(王者|挑戦者|暫定王者)\s*[：:]', '', s)
     s = re.sub(r'[：:]\s*(王者|挑戦者|暫定王者)$', '', s)
     s = re.split(r'\s*[（(]', s, maxsplit=1)[0]
@@ -96,7 +97,8 @@ def cards_from_lines(L):
         i += 1
     seen, res = set(), []
     for c in out:
-        if c[0] and c[1] and len(c[0]) <= 30 and len(c[1]) <= 30 and (c[0], c[1]) not in seen:
+        # 「ライト級暫定王者決定戦 5分3R」のような見出しが選手名の位置に入ったものは、読み違いなので載せない
+        if c[0] and c[1] and len(c[0]) <= 30 and len(c[1]) <= 30 and not is_label(c[0]) and not is_label(c[1]) and (c[0], c[1]) not in seen:
             seen.add((c[0], c[1])); res.append(c)
     return res
 
