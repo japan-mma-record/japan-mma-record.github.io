@@ -44,7 +44,11 @@ jobs:
           git config user.name "japan-mma-record-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          if ! git diff --cached --quiet; then git commit -m "自動更新 $(date -u +%Y-%m-%d)" && git push; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "自動更新 $(date -u +%Y-%m-%d)"
+            # 同じ時に別の更新が入っていると送れないので、最新を取り込んでから送る（3回まで試す）
+            for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 15; done
+          fi
       - name: サイトを作る
         run: python3 build.py
       - uses: actions/configure-pages@v5
