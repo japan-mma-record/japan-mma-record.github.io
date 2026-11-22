@@ -51,5 +51,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      # 公開はGitHub側の一時的な不調で失敗することがある（2026年11月21日に実際に起きた）ので、失敗したら1分待ってもう一度だけ試す
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: 公開に失敗したときは1分待つ
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 60
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
