@@ -14,8 +14,13 @@ def clean_name(s):
     return re.split(r'[（(]', s, maxsplit=1)[0].strip()
 
 
+def norm_mark(l):
+    # 勝ちの印は「○」のほかに「￮」（半角の丸）「〇」「◯」が使われることがある（DEEP 134 は「￮」）
+    return '○' + l[1:] if l[:1] in '￮〇◯' else l
+
+
 def parse(lines, url):
-    lines = [l for l in lines if l]
+    lines = [norm_mark(l) for l in lines if l]
     if not lines:
         return None, []
     if '【試合結果】' not in lines:
@@ -54,6 +59,10 @@ def parse(lines, url):
         m = re.match(r'^(\d+)R\s*(\d+)[’\'′:](\d+)[”"″]?\s*(.*)$', res)
         if m:
             rnd, tm, meth = m.group(1), f'{int(m.group(2))}:{m.group(3)}', m.group(4).strip()
+        sc = re.match(r'^(.*判定)\s*(\d)\s*-\s*(\d)(.*)$', meth)
+        if sc:   # 判定の数字は勝った選手の側を先にそろえる（「判定0-3」→「判定3-0」）
+            x, y = sorted([int(sc.group(2)), int(sc.group(3))], reverse=True)
+            meth = f'{sc.group(1)}{x}-{y}{sc.group(4)}'
         if re.search(r'ノーコンテスト|無効', meth):
             win = 'nc'
         rule = h.group(2).strip()

@@ -13,6 +13,9 @@ assert b[0]['fighter1'] == '菊入正行' and b[0]['winner'] == '1' and b[0]['ro
 ev, b = deep.parse(text_lines(read('deep_133.html')), 'x')
 assert ev['date'] == '2026-09-13' and ev['name'] == 'DEEP 133 IMPACT' and len(b) == 8, (ev, len(b))
 assert b[1]['fighter2'] == '新井丈' and b[1]['winner'] == '2' and b[1]['time'] == '1:42'
+ev, b = deep.parse(text_lines(read('deep_134.html')), 'x')   # 勝ちの印が「￮」の大会
+assert ev['name'] == 'DEEP 134 IMPACT' and len(b) == 10 and all(x['winner'] in ('1', '2') for x in b), (ev, len(b))
+assert [x for x in b if x['match_no'] == 1][0]['method'] == '判定3-0'
 ev, b = shooto.parse(read('shooto_299.html'), 'x')
 assert ev['date'] == '2026-06-28' and len(b) == 10, (ev, len(b))
 assert b[0]['winner'] == '2' and b[1]['method'] == '一本（三角絞め）' and b[1]['time'] == '2:19'
