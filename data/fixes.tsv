@@ -22,3 +22,8 @@ e00157	name:北岡悟	winner	draw	判定0-1は、ジャッジ1人だけが片方
 e00267	name:ハルク大城	winner	draw	判定1-0は、ジャッジ1人だけが片方を支持し残りが引き分けとした「引き分け（マジョリティドロー）」
 e00267	name:アキラ	winner	draw	判定0-1は、ジャッジ1人だけが片方を支持し残りが引き分けとした「引き分け（マジョリティドロー）」
 e03256	name:原井徹	winner	draw	判定1-0は、ジャッジ1人だけが片方を支持し残りが引き分けとした「引き分け（マジョリティドロー）」
+e03278	name:チェリー俊輔	winner	1	公式の試合結果で チェリー俊輔 に×（負け）印、判定0-3 https://grachan.jp/grachan20/
+e03278	name:チェリー俊輔	method	判定3-0	公式の試合結果（チェリー俊輔 側から見て判定0-3） https://grachan.jp/grachan20/
+e01437	name:バーソロミュートシオ	winner	1	公式の試合結果で バーソロミュートシオ に●（負け）印、1R3:03 https://grachan.jp/grachan15/
+e01437	name:バーソロミュートシオ	round	1	https://grachan.jp/grachan15/
+e01437	name:バーソロミュートシオ	time	3:03	https://grachan.jp/grachan15/
