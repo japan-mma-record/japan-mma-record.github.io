@@ -209,3 +209,54 @@ e01423	merge	e05120	同じ大会（ZST.38）が2つに分かれ、試合も別�
 e01430	merge	e05124	同じ大会（ZST.41）が2つに分かれ、試合も別々に入っていたのを1つにまとめる
 e01518	merge	e00333	同じ大会（PANCRASE 大阪大会 2018年12月24日）が2つに分かれ、試合も別々に入っていたのを1つにまとめる
 e04095	merge	e04091	同じ大会（DEEP 7th IMPACT 2002年12月8日・ディファ有明）のフューチャーキングトーナメント部分が別の大会として入っていたのを1つにまとめる
+e02273	name	TENKAICHI 8	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02301	name	TENKAICHI 13	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02317	name	TENKAICHI 15	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02324	name	TENKAICHI 16	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02331	name	TENKAICHI 17	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02342	name	TENKAICHI 18	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02351	name	TENKAICHI 19	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02364	name	TENKAICHI 20	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02370	name	TENKAICHI 21	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02375	name	TENKAICHI 22	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02385	name	TENKAICHI 23	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02395	name	TENKAICHI 24	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02414	name	TENKAICHI 26	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02424	name	TENKAICHI 27	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02435	name	TENKAICHI 28	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02445	name	TENKAICHI 29	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02455	name	TENKAICHI 30	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02464	name	TENKAICHI 31	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02504	name	TENKAICHI 35	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02528	name	TENKAICHI 37	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02537	name	TENKAICHI 38	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02547	name	TENKAICHI 39	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02558	name	TENKAICHI 40	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02564	name	TENKAICHI Challenge	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02570	name	TENKAICHI 41	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02578	name	TENKAICHI Challenge	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02604	name	TENKAICHI Challenge	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02652	name	TENKAICHI 48	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02729	name	TENKAICHI Super Fight 3	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02759	name	TENKAICHI Super Fight 4	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02839	name	TENKAICHI Super Fight 7	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02918	name	TENKAICHI Super Fight 12	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02977	name	TENKAICHI 65	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e02999	name	TENKAICHI 66	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03009	name	TENKAICHI 67	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03027	name	TENKAICHI 68	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03063	name	TENKAICHI 69	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03085	name	TENKAICHI 70	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03105	name	TENKAICHI 71	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03118	name	TENKAICHI 72	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03172	name	TENKAICHI 74	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03192	name	TENKAICHI 75	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03255	name	TENKAICHI 77	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03280	name	TENKAICHI 78	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03291	name	TENKAICHI 79	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03355	name	TENKAICHI 82	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03369	name	TENKAICHI 83	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03392	name	TENKAICHI 84	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03407	name	TENKAICHI 85	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03416	name	TENKAICHI 86	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
+e03431	name	TENKAICHI 87	主催の公式ブログの表記（「TENKAICHI 41」など）にそろえる
