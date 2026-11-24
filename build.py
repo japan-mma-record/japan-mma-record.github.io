@@ -418,8 +418,16 @@ def merge_fighters(events, bouts, fighters):
                     b[f'fighter{k}_id'] = MERGED[f]
                 elif not f:
                     hit = uniq.get(key(b.get(f'fighter{k}')))
-                    if hit and pr in proms[MERGED.get(hit, hit)]:   # 同じ団体に出ている同じ名前の選手だけにつなぐ
-                        b[f'fighter{k}_id'] = MERGED.get(hit, hit)
+                    if not hit:
+                        continue
+                    h = MERGED.get(hit, hit)
+                    d = (events.get(eid) or {}).get('date', '')
+                    ys = [int(x[:4]) for x in dates[h] if x[:4].isdigit()]
+                    # 同じ団体に出ている同じ名前の選手につなぐ。別の団体でも、名前が4文字以上で、
+                    # その選手の活動期間（前後3年）の中の試合で、同じ日に別の試合をしていなければつなぐ
+                    near = d[:4].isdigit() and ys and min(ys) - 3 <= int(d[:4]) <= max(ys) + 3 and d not in dates[h]
+                    if pr in proms[h] or near:
+                        b[f'fighter{k}_id'] = h
 
 
 def podium_html(ps):
