@@ -170,12 +170,6 @@ def load():
         for b in bouts.get(f['event_id'], []):
             if str(b.get('match_no')) == str(f['match_no']) and f['field'] in b:
                 b[f['field']] = f['value']
-    # 選手番号の付け間違いの取り消し（data/id_fixes.tsv：その大会で、その名前の選手に付いている番号を外す。別人の選手ページにまとめられないようにする）
-    for f in read_tsv(os.path.join(DATA, 'id_fixes.tsv')):
-        for b in bouts.get(f['event_id'], []):
-            for k in ('1', '2'):
-                if b.get(f'fighter{k}_id') == f['wrong_id'] and re.sub(r'[\s　]', '', b.get(f'fighter{k}') or '') == re.sub(r'[\s　]', '', f['name']):
-                    b[f'fighter{k}_id'] = ''
     # 同じ団体・同じ日の大会で、出典が同じもの、または「海外の記録サイト」だけが出典のものは、1つの大会にまとめる（同じ試合は重ねない）
     byday = collections.defaultdict(list)
     for e in events.values():
@@ -523,6 +517,14 @@ def main():
                     fighters.setdefault(nid, re.sub(r'[\s　]+', '', b[f'fighter{k}']) if re.search(r'[ぁ-んァ-ヶ一-龥]', b[f'fighter{k}']) else b[f'fighter{k}'].strip())
     # 同じ大会の同じ試合が2回入っているもの（同じ試合番号・同じ2人・同じ勝者）は1つにする。
     # 2つの資料から同じ大会を取り込んだときに起きる。情報の多い方を残す。柔術は同じ2人が階級別と無差別で2回戦うことがあるので対象外。
+    # 選手番号の付け間違いの取り消し（data/id_fixes.tsv：その大会で、その名前の選手に付いている番号を外す。別人の選手ページにまとめられないようにする）
+    for f in read_tsv(os.path.join(DATA, 'id_fixes.tsv')):
+        for b in bouts.get(f['event_id'], []):
+            for k in ('1', '2'):
+                if b.get(f'fighter{k}_id') == f['wrong_id'] and re.sub(r'[\s　]', '', b.get(f'fighter{k}') or '') == re.sub(r'[\s　]', '', f['name']):
+                    nid = 'n' + hashlib.md5(norm(b[f'fighter{k}']).encode()).hexdigest()[:9]   # 名前だけの選手ページにつなぐ
+                    b[f'fighter{k}_id'] = nid
+                    fighters.setdefault(nid, re.sub(r'[\s　]+', '', b[f'fighter{k}']))
     bjj_set = set(site.get('bjj_promotions') or []) | set(site.get('grappling_promotions') or [])
     ndup = 0
     for e in ev:
