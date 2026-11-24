@@ -141,14 +141,21 @@ def load():
             # 同じ大会が2つに分かれて登録されているとき、試合を1つの大会にまとめる
             tgt = r['value']
             have = {frozenset((b.get('fighter1'), b.get('fighter2'))) for b in bouts.get(tgt, [])}
-            n = max([int(b.get('match_no') or 0) for b in bouts.get(tgt, [])] or [0])
-            for b in bouts.pop(r['event_id'], []):
-                if frozenset((b.get('fighter1'), b.get('fighter2'))) in have:
-                    continue
-                n += 1
-                b['match_no'] = n
+            mv = [b for b in bouts.pop(r['event_id'], []) if frozenset((b.get('fighter1'), b.get('fighter2'))) not in have]
+            used_no = {str(b.get('match_no')) for b in bouts.get(tgt, []) if str(b.get('match_no') or '') not in ('', '0')}
+            n = max([int(x) for x in used_no if x.isdigit()] + [int(b['match_no']) for b in mv if str(b.get('match_no') or '').isdigit()] or [0])
+            for b in mv:
+                no = str(b.get('match_no') or '')
+                # 試合番号が付いていて、まとめ先と重ならないときはそのまま使う（同じ大会の別の資料なので番号は共通）
+                if no in ('', '0') or no in used_no:
+                    n += 1
+                    b['match_no'] = n
+                used_no.add(str(b['match_no']))
                 b['event_id'] = tgt
                 bouts.setdefault(tgt, []).append(b)
+            for u in (events[r['event_id']].get('sources') or '').split():
+                if u not in (events[tgt].get('sources') or '').split():
+                    events[tgt]['sources'] = ((events[tgt].get('sources') or '') + ' ' + u).strip()
             events.pop(r['event_id'], None)
     # 会場が空の大会を補う（data/venues.tsv：event_id, promotion, date, name, venue, source_url）
     for r in read_tsv(os.path.join(DATA, 'venues.tsv')):
