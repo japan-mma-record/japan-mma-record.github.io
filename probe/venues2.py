@@ -1,6 +1,6 @@
 import json,re,time,urllib.request,html
 items=json.load(open('probe/vurls.json'))
-out=open('probe/venues2.tsv','w')
+out=open('probe/venues4.tsv','w')
 def text(u):
     req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0','Accept-Language':'ja'})
     raw=urllib.request.urlopen(req,timeout=40).read()
@@ -16,7 +16,8 @@ for it in items:
         try: L=text(u)
         except Exception as e: found.append('ERR '+str(e)[:60]); continue
         for i,l in enumerate(L):
-            if re.search(r'会場\s*[：:]', l) and len(l)<120: found.append(l)
+            if re.search(r'(会\s*場|場\s*所)\s*[：:］】]', l) and len(l)<120: found.append(l)
+            if re.fullmatch(r'[［【]?(会\s*場|開催場所|場所)[］】]?', l) and i+1<len(L): found.append('会場：'+L[i+1][:80])
             if re.search(rf'{y}年\s*0?{mo}月\s*0?{d}日', l) and len(l)<140: found.append(l+' || '+(L[i+1] if i+1<len(L) else '')[:80])
         if found: break
         time.sleep(1)
