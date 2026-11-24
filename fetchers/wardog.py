@@ -53,7 +53,7 @@ def parse(lines, url):
         win = next((x[2:].strip() for x in res if x.startswith('勝者')), '')
         lose = next((x[2:].strip() for x in res if x.startswith('敗者')), '')
         meth = next((x for x in res if not x.startswith(('勝者', '敗者'))), '')
-        if is_out_of_scope(label) or re.search(r'甲子園|高校|アマチュア', ' '.join(blk)) or re.search(r'5分1R$', label):   # 1ラウンドの試合はアマチュア・若年層の試合のことがあるので取り込まない
+        if is_out_of_scope(label) or re.search(r'アマチュア', ' '.join(blk)) or re.search(r'5分1R$', label):   # 1ラウンドの試合はアマチュア・若年層の試合のことがあるので取り込まない
             continue
         if win == a and lose == b:
             w = '1'

@@ -276,7 +276,7 @@ def load():
         bl.sort(key=lambda b: int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0, reverse=True)
         for i, b in enumerate(bl, 1):
             b['match_no'] = str(i)
-    # 載せない大会・試合（data/exclude.tsv：event_id, fighter1, fighter2, reason。選手名が空なら大会ごと）…未成年の試合など
+    # 載せない大会・試合（data/exclude.tsv：event_id, fighter1, fighter2, reason。選手名が空なら大会ごと）…MMA以外の試合など
     for x in read_tsv(os.path.join(DATA, 'exclude.tsv')):
         k = x['event_id']
         if not (x.get('fighter1') or '').strip():
