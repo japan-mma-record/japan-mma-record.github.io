@@ -168,7 +168,9 @@ def load():
     # 個別の訂正
     for f in read_tsv(os.path.join(DATA, 'fixes.tsv')):
         for b in bouts.get(f['event_id'], []):
-            if str(b.get('match_no')) == str(f['match_no']) and f['field'] in b:
+            mn = str(f['match_no'])
+            hit = (mn[5:] in (b.get('fighter1') or '') + ' ' + (b.get('fighter2') or '')) if mn.startswith('name:') else str(b.get('match_no')) == mn   # 「name:選手名」なら名前で試合を特定する
+            if hit and f['field'] in b:
                 b[f['field']] = f['value']
     # 同じ団体・同じ日の大会で、出典が同じもの、または「海外の記録サイト」だけが出典のものは、1つの大会にまとめる（同じ試合は重ねない）
     byday = collections.defaultdict(list)
