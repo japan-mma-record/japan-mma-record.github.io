@@ -165,6 +165,26 @@ def load():
             u = (r.get('source_url') or '').strip()
             if u and u not in (e.get('sources') or '').split():
                 e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
+    # 大会の試合をまるごと作り直す（data/replace_bouts.tsv：取り込んだ資料の組み合わせが崩れていた大会を、公式の資料から書き直したもの）
+    rep = collections.defaultdict(list)
+    for r in read_tsv(os.path.join(DATA, 'replace_bouts.tsv')):
+        rep[r['event_id']].append(r)
+    for eid, rows in rep.items():
+        if eid in events:
+            # 前の試合データに付いていた選手番号は、名前が同じならそのまま使う
+            old = {}
+            for x in bouts.get(eid, []):
+                for k in ('1', '2'):
+                    if x.get(f'fighter{k}_id'):
+                        old.setdefault(re.sub(r'[\s　“”"]', '', x.get(f'fighter{k}') or ''), x[f'fighter{k}_id'])
+            # 前のデータは組み合わせが崩れていたので、番号の選手名（選手名簿の名前）と一致するときだけ使う
+            nn = lambda n: re.sub(r'[\s　“”"]', '', n or '')
+            oid = lambda n: old.get(nn(n), '') if nn(fighters.get(old.get(nn(n), ''), '')) == nn(n) else ''
+            bouts[eid] = [{'event_id': eid, 'match_no': r['match_no'], 'fighter1': r['fighter1'], 'fighter2': r['fighter2'], 'fighter1_id': r.get('fighter1_id') or oid(r['fighter1']), 'fighter2_id': r.get('fighter2_id') or oid(r['fighter2']),
+                           'winner': r['winner'], 'method': r['method'], 'round': r['round'], 'time': r['time'], 'weight': r['weight'], 'note': '', 'rule': ''} for r in rows]
+            for u in {r['source'] for r in rows if r.get('source')}:
+                if u not in (events[eid].get('sources') or '').split():
+                    events[eid]['sources'] = ((events[eid].get('sources') or '') + ' ' + u).strip()
     # 個別の訂正
     for f in read_tsv(os.path.join(DATA, 'fixes.tsv')):
         for b in bouts.get(f['event_id'], []):
@@ -280,6 +300,8 @@ def load():
         fills[(f['date'], frozenset((norm(f['fighter1_ja']), norm(f['fighter2_ja']))), f['field'])] = f['value']
     if fills:
         for k in bouts:
+            if k in rep:   # 公式資料から作り直した大会には、ほかの資料からの補いを入れない
+                continue
             e = events.get(k) or {}
             for b in bouts[k]:
                 pair = frozenset((norm(b['fighter1']), norm(b['fighter2'])))

@@ -1,0 +1,50 @@
+event_id	match_no	fighter1	fighter2	winner	method	round	time	weight	source	fighter1_id	fighter2_id
+e00221	1	島袋力	牧ヶ谷篤	1	判定2-0			フライ級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	2	木内崇雅	小島壮太	1	延長判定3-0			フライ級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	3	千田昇	田村裕之	1	延長判定3-0			バンタム級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	4	川元啓吾	岸幸生	2	判定3-0			バンタム級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		f00800
+e00221	5	小渕真毅	土佐健市	2	判定3-0			バンタム級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	6	久保田潤郎	井藁誉仁	1	判定3-0			フェザー級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	7	ピータン	小畑公史	2	判定3-0			フェザー級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	8	藤井伸樹	須崎“ジオング”康文	1	判定2-1			フェザー級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		f00803
+e00221	9	長谷川雅彬	松木集	1	TKO	1	3:06	ライト級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	10	松本崇寿	原昭仁	1	延長判定3-0			ライト級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	11	野口岳人	平山学	2	一本（ヒールホールド）	1	4:02	ライト級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	12	高階修	大迫元喜	2	判定2-0			ライト級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf	f00702	
+e00221	13	永瀬正敏	中村悦久	1	判定3-0			ウェルター級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf	f00808	
+e00221	14	菱沼郷	真野桐郎	2	判定3-0			ウェルター級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		f00811
+e00221	15	大橋省吾	木村長平	1	判定2-0			ウェルター級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	16	松山隼	西川純也	1	KO	1	0:54	ウェルター級ネオブラッド予選トーナメント 1回戦	https://pancrase.co.jp/data/result/2011/0130.pdf		f00739
+e00221	17	千田昇	北郷祐介	1	反則	1	1:05	バンタム級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	18	岸幸生	土佐健市	2	判定3-0			バンタム級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf	f00800	
+e00221	19	久保田潤郎	小畑公史	2	判定3-0			フェザー級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	20	高橋忠一朗	藤井伸樹	2	判定3-0			フェザー級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf	f00715	
+e00221	21	長谷川雅彬	松本崇寿	2	判定2-0			ライト級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	22	平山学	大迫元喜	1	TKO	1	0:29	ライト級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00221	23	永瀬正敏	真野桐郎	1	TKO	1	0:28	ウェルター級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf	f00808	f00811
+e00221	24	大橋省吾	松山隼	1	TKO	1	4:11	ウェルター級ネオブラッド予選トーナメント 準決勝	https://pancrase.co.jp/data/result/2011/0130.pdf		
+e00227	1	北郷祐介	風間ルミ	2	反則	1	2:26	バンタム級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	2	森竹康之	田村裕之	2	判定3-0			バンタム級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	3	千田昇	CORO	2	一本（チョーク）	1	1:34	バンタム級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	4	岸幸生	小宮稔大	2	判定3-0			バンタム級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00800	
+e00227	5	川原レイ	久保田潤郎	1	TKO	1	4:47	フェザー級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00850	
+e00227	6	高津庸	若松史朗	2	判定3-0			フェザー級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	7	小畑公史	深澤駿	2	判定3-0			フェザー級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	8	井藁誉仁	須崎“ジオング”康文	2	判定2-0			フェザー級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		f00803
+e00227	9	金子健作	真野桐郎	1	TKO	1	5:00	ライト級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		f00811
+e00227	10	高橋悟	依光健太郎	2	一本（フロントチョーク）	1	4:22	ライト級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	11	平山学	原昭仁	2	KO	1	2:16	ライト級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	12	中島太一	須貝幸市	2	反則	1	0:41	ライト級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	13	ジャンボ笹川	菱沼郷	1	延長判定3-0			ウェルター級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00839	
+e00227	14	ルクク・ダリ	桜田信人	1	延長判定3-0			ウェルター級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00856	
+e00227	15	西川純也	中村悦久	1	判定3-0			ウェルター級プロ昇格トーナメント 1回戦	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00739	
+e00227	17	小島壮太	牧ヶ谷篤	draw	引き分け（時間切れ）			スーパーフライ級 5分2R	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	18	荒井司	榛葉善也	2	一本（アームバー）	1	3:40	スーパーフライ級 5分2R	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	19	木内崇雅	中山春樹	1	一本（腕ひしぎ十字固め）	1	2:53	スーパーフライ級 5分2R	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		f00845
+e00227	20	成田健二	ジョシュア・ロビンソン	draw	引き分け（時間切れ）			ミドル級 5分2R	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	21	CORO	小宮稔大	1	延長判定3-0			バンタム級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	22	川原レイ	若松史朗	2	判定3-0			フェザー級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00850	
+e00227	23	深澤駿	須崎“ジオング”康文	1	判定3-0			フェザー級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		f00803
+e00227	24	金子健作	依光健太郎	1	判定3-0			ライト級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf		
+e00227	25	ジャンボ笹川	ルクク・ダリ	2	TKO	1	1:28	ウェルター級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00839	f00856
+e00227	26	西川純也	鬼島有羽	1	判定3-0			ウェルター級プロ昇格トーナメント 準決勝	https://www.pancrase.co.jp/data/result/2011/0710/chance.pdf	f00739	
