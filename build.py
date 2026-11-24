@@ -559,9 +559,9 @@ def main():
         keep, seen = [], {}
         def core(m):   # 決まり手の大まかな種類（判定・KO・TKO・一本・引き分けなど）
             m = re.sub(r'[\s　（）()]', '', m or '')
-            for kw in ('引き分け', 'ドロー', 'ノーコンテスト', '無効', '判定', 'ポイント', 'TKO', 'KO', '一本', 'タップ', '反則', '失格', '棄権'):
+            for kw in ('引き分け', 'ドロー', 'ノーコンテスト', '無効', '判定', 'ポイント', 'TKO', 'KO', '一本', 'サブミッション', 'タップ', '反則', '失格', '棄権'):
                 if kw in m:
-                    return {'ドロー': '引き分け', '無効': 'ノーコンテスト', 'タップ': '一本', 'ポイント': '判定'}.get(kw, kw)
+                    return {'ドロー': '引き分け', '無効': 'ノーコンテスト', 'タップ': '一本', 'サブミッション': '一本', 'ポイント': '判定'}.get(kw, kw)
             return m[:4]
         for b in bouts[e['event_id']]:
             ids = (b.get('fighter1_id'), b.get('fighter2_id'))
@@ -576,7 +576,8 @@ def main():
                     ono = str(ob.get('match_no') or '')
                     ono = '' if ono in ('', '0') else ono
                     # 試合番号が同じか、どちらかに番号がない。決まり手の種類も食い違わない（片方が空でもよい）
-                    if (no == ono or not no or not ono) and (not b.get('method') or not ob.get('method') or core(b.get('method')) == core(ob.get('method'))):
+                    same_detail = b.get('method') and b.get('method') == ob.get('method') and (b.get('time') or '') == (ob.get('time') or '') and (b.get('round') or '') == (ob.get('round') or '') and (b.get('time') or b.get('round'))
+                    if same_detail or ((no == ono or not no or not ono) and (not b.get('method') or not ob.get('method') or core(b.get('method')) == core(ob.get('method')))):
                         hit = o
                         break
             if hit is not None:
