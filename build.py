@@ -820,6 +820,10 @@ def main():
         fp.write('</sitemapindex>\n')
     with open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8') as fp:
         fp.write(f'User-agent: *\nAllow: /\nSitemap: {base}sitemap.xml\n')
+    if site.get('google_site_verification'):   # Google Search Console の所有権の確認ファイル（消さないこと）
+        g = site['google_site_verification']
+        with open(os.path.join(OUT, g + '.html'), 'w') as fp:
+            fp.write(f'google-site-verification: {g}.html')
     if site.get('indexnow_key'):   # 検索エンジン（Bingなど）に新しいページを知らせる仕組み（IndexNow）の鍵ファイル
         with open(os.path.join(OUT, site['indexnow_key'] + '.txt'), 'w') as fp:
             fp.write(site['indexnow_key'])
