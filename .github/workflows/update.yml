@@ -72,3 +72,9 @@ jobs:
       - id: deploy3
         if: steps.deploy.outcome == 'failure' && steps.deploy2.outcome == 'failure'
         uses: actions/deploy-pages@v4
+      - name: 検索エンジンに新しいページを知らせる（毎月1日・15日、または[indexnow]と書いた更新のとき）
+        if: always()
+        continue-on-error: true
+        run: |
+          d=$(date -u +%d)
+          if [ "$d" = "01" ] || [ "$d" = "15" ] || echo "${{ github.event.head_commit.message }}" | grep -q "\[indexnow\]"; then python3 indexnow.py; fi

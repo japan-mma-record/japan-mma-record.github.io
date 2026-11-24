@@ -783,6 +783,9 @@ def main():
         fp.write('</sitemapindex>\n')
     with open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8') as fp:
         fp.write(f'User-agent: *\nAllow: /\nSitemap: {base}sitemap.xml\n')
+    if site.get('indexnow_key'):   # 検索エンジン（Bingなど）に新しいページを知らせる仕組み（IndexNow）の鍵ファイル
+        with open(os.path.join(OUT, site['indexnow_key'] + '.txt'), 'w') as fp:
+            fp.write(site['indexnow_key'])
     with open(os.path.join(OUT, '.nojekyll'), 'w') as fp:
         fp.write('')
     if site.get('custom_domain'):
