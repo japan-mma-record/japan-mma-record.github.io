@@ -163,6 +163,12 @@ def load():
         for b in bouts.get(f['event_id'], []):
             if str(b.get('match_no')) == str(f['match_no']) and f['field'] in b:
                 b[f['field']] = f['value']
+    # 選手番号の付け間違いの取り消し（data/id_fixes.tsv：その大会で、その名前の選手に付いている番号を外す。別人の選手ページにまとめられないようにする）
+    for f in read_tsv(os.path.join(DATA, 'id_fixes.tsv')):
+        for b in bouts.get(f['event_id'], []):
+            for k in ('1', '2'):
+                if b.get(f'fighter{k}_id') == f['wrong_id'] and re.sub(r'[\s　]', '', b.get(f'fighter{k}') or '') == re.sub(r'[\s　]', '', f['name']):
+                    b[f'fighter{k}_id'] = ''
     # 同じ団体・同じ日の大会で、出典が同じもの、または「海外の記録サイト」だけが出典のものは、1つの大会にまとめる（同じ試合は重ねない）
     byday = collections.defaultdict(list)
     for e in events.values():
@@ -508,6 +514,47 @@ def main():
                     nid = 'n' + hashlib.md5(norm(b[f'fighter{k}']).encode()).hexdigest()[:9]
                     b[f'fighter{k}_id'] = nid
                     fighters.setdefault(nid, re.sub(r'[\s　]+', '', b[f'fighter{k}']) if re.search(r'[ぁ-んァ-ヶ一-龥]', b[f'fighter{k}']) else b[f'fighter{k}'].strip())
+    # 同じ大会の同じ試合が2回入っているもの（同じ試合番号・同じ2人・同じ勝者）は1つにする。
+    # 2つの資料から同じ大会を取り込んだときに起きる。情報の多い方を残す。柔術は同じ2人が階級別と無差別で2回戦うことがあるので対象外。
+    bjj_set = set(site.get('bjj_promotions') or []) | set(site.get('grappling_promotions') or [])
+    ndup = 0
+    for e in ev:
+        if e.get('promotion') in bjj_set:
+            continue
+        keep, seen = [], {}
+        def core(m):   # 決まり手の大まかな種類（判定・KO・TKO・一本・引き分けなど）
+            m = re.sub(r'[\s　（）()]', '', m or '')
+            for kw in ('引き分け', 'ドロー', 'ノーコンテスト', '無効', '判定', 'ポイント', 'TKO', 'KO', '一本', 'タップ', '反則', '失格', '棄権'):
+                if kw in m:
+                    return {'ドロー': '引き分け', '無効': 'ノーコンテスト', 'タップ': '一本', 'ポイント': '判定'}.get(kw, kw)
+            return m[:4]
+        for b in bouts[e['event_id']]:
+            ids = (b.get('fighter1_id'), b.get('fighter2_id'))
+            wid = ids[0] if b.get('winner') == '1' else ids[1] if b.get('winner') == '2' else b.get('winner') or ''
+            no = str(b.get('match_no') or '')
+            no = '' if no in ('', '0') else no
+            k = (frozenset(ids), wid)
+            hit = None
+            if all(ids):
+                for o in seen.get(k, []):
+                    ob = keep[o]
+                    ono = str(ob.get('match_no') or '')
+                    ono = '' if ono in ('', '0') else ono
+                    # 試合番号が同じか、どちらかに番号がない。決まり手の種類も食い違わない（片方が空でもよい）
+                    if (no == ono or not no or not ono) and (not b.get('method') or not ob.get('method') or core(b.get('method')) == core(ob.get('method'))):
+                        hit = o
+                        break
+            if hit is not None:
+                ob = keep[hit]
+                # 試合番号のある方、次に情報の多い方を残す
+                if (bool(no), sum(bool(v) for v in b.values())) > (bool(str(ob.get('match_no') or '') not in ('', '0')), sum(bool(v) for v in ob.values())):
+                    keep[hit] = b
+                ndup += 1
+                continue
+            seen.setdefault(k, []).append(len(keep))
+            keep.append(b)
+        bouts[e['event_id']] = keep
+    print(f'重複していた試合を1つにまとめた: {ndup}')
     bout_out = {}
     used = set()
     for e in ev:
