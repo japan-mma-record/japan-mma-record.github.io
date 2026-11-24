@@ -522,7 +522,9 @@ def main():
         for b in bouts.get(f['event_id'], []):
             for k in ('1', '2'):
                 if b.get(f'fighter{k}_id') == f['wrong_id'] and re.sub(r'[\s　]', '', b.get(f'fighter{k}') or '') == re.sub(r'[\s　]', '', f['name']):
-                    nid = 'n' + hashlib.md5(norm(b[f'fighter{k}']).encode()).hexdigest()[:9]   # 名前だけの選手ページにつなぐ
+                    # 同じ名前の選手がいればその選手に、いなければ名前だけの選手ページにつなぐ
+                    same = [fid for fid, fn in fighters.items() if fid.startswith('f') and fid != f['wrong_id'] and norm(fn) == norm(b[f'fighter{k}'])]
+                    nid = same[0] if len(same) == 1 else 'n' + hashlib.md5(norm(b[f'fighter{k}']).encode()).hexdigest()[:9]
                     b[f'fighter{k}_id'] = nid
                     fighters.setdefault(nid, re.sub(r'[\s　]+', '', b[f'fighter{k}']))
     bjj_set = set(site.get('bjj_promotions') or []) | set(site.get('grappling_promotions') or [])
