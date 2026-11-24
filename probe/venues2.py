@@ -1,7 +1,9 @@
 import json,re,time,urllib.request,html
 items=json.load(open('probe/vurls.json'))
-out=open('probe/venues4.tsv','w')
+out=open('probe/venues5.tsv','w')
+import urllib.parse
 def text(u):
+    u=urllib.parse.quote(u,safe=':/?&=%#+~@!$,;')
     req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0','Accept-Language':'ja'})
     raw=urllib.request.urlopen(req,timeout=40).read()
     m=re.search(rb'charset=["\']?([\w-]+)',raw[:4000],re.I); cs=(m.group(1).decode() if m else 'utf-8').lower()
