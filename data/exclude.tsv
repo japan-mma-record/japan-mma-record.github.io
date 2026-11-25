@@ -77,3 +77,20 @@ e08080	吉成名高	ヌンスリン	同じ大会の同じ試合（吉成名高 v
 e01706	デング・シウバ	アルフォセヌー・カマラ	同じ大会の同じ試合（デング・シルバ vs アルフォセヌー・カマラ）が選手名の別の表記で二重に入っていた重複
 e01643	獅子正	Fuji	同じ大会の同じ試合（獅子正 vs BOSS Fuji）が選手名の別の表記で二重に入っていた重複
 e01536	サムエー	ダレン・ローラン	同じ大会の同じ試合（サムエー・ガイヤーンハーダオ vs ダレン・ローラン）が選手名の別の表記で二重に入っていた重複
+e08016	Ernesto Hoost	Mirko Cro Cop	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（アーネスト・ホースト vs ミルコ・クロコップ）
+e08016	Francisco Filho	Stefan Leko	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（フランシスコ・フィリォ vs ステファン“ブリッツ”レコ）
+e08016	Peter Aerts	Cyril Abidi	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（ピーター・アーツ vs シリル・アビディ）
+e08016	Ray Sefo	Musashi	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（レイ・セフォー vs 武蔵）
+e08016	Ernesto Hoost	Francisco Filho	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（アーネスト・ホースト vs フランシスコ・フィリォ）
+e08016	Ray Sefo	Cyril Abidi	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（レイ・セフォー vs シリル・アビディ）
+e08016	Ernesto Hoost	Ray Sefo	K-1 WORLD GP 2000 決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記の2つで二重に入っていた重複（アーネスト・ホースト vs レイ・セフォー）
+e08022	Takashi Ohno	Vincent Swaans	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（大野崇 vs ビンセント・スワーンズ）
+e08022	Duane Ludwig	Serkan Yilmaz	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（ドゥエイン・ラドウィック vs セルカン・イルマッツ）
+e08022	Takayuki Kohiruimaki	Mike Zambidis	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（小比類巻貴之 vs マイク・ザンビディス）
+e08022	Buakaw Por. Pramuk	John Wayne Parr	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（ブアカーオ vs ジョン・ウェイン・パー）
+e08022	Masato	Jadamba Narantungalag	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（魔裟斗 vs ジャダンバ・ナラントンガラグ）
+e08022	Albert Kraus	Shamil Gaidarbekov	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（アルバート・クラウス vs シャミール・ガイダルベコフ）
+e08022	Buakaw Por. Pramuk	Takayuki Kohiruimaki	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（ブアカーオ vs 小比類巻貴之）
+e08022	Masato	Albert Kraus	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（魔裟斗 vs アルバート・クラウス）
+e08022	Buakaw Por. Pramuk	Masato	K-1 WORLD MAX 2004 世界一決定トーナメント決勝戦の同じ試合が、英語表記（Wikipedia 英語版から）と日本語表記（GBR から）の2つで二重に入っていた重複（ブアカーオ vs 魔裟斗）
+e01177	梅木義則	細川“DOCTOR”慎一郎	BATTLE HAZARD 01 第1試合の同じ試合（梅木良則 vs 綱川“DOCTOR”慎一郎、1R 1:31 ヒールホールド）が、GBR の表記（梅木義則・細川）と BOUTREVIEW の表記の2つで二重に入っていた重複
