@@ -1,2 +1,2 @@
-1 200 99992 https://www.sherdog.com/events/K1-Heros-2-3129
-2 200 139234 https://en.wikipedia.org/wiki/Rodrigo_Gracie
+1 200 127142 https://www.sherdog.com/fighter/Tsuyoshi-Kosaka-190
+2 200 287382 https://en.wikipedia.org/wiki/Tsuyoshi_Kosaka
