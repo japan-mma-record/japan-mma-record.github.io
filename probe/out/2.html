@@ -1,386 +1,1175 @@
-<!doctype html>
-<html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<!DOCTYPE html><html lang="en" class="light">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>(function(d){d.className=d.className.replace(/\bno-js\b/, 'js')})(document.documentElement)</script>
-
-                <link rel="preconnect" href="https://cdn.blogofdoom.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://ads.adthrive.com">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/site.webmanifest">
-<link rel="shortcut icon" href="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/favicon.ico">
-<meta name="apple-mobile-web-app-title" content="Blog of Doom">
-<meta name="application-name" content="Blog of Doom">
-<meta name="msapplication-TileColor" content="#222222">
-<meta name="msapplication-config" content="https://www.blogofdoom.com/app/themes/bod/resources/assets/favicon/browserconfig.xml">
-<meta name="theme-color" content="#222222">
-
-            <style>@font-face{font-display:swap;font-family:Roboto;font-weight:100;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Thin.d7de81.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:100;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-ThinItalic.bed679.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-weight:300;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Light.5a0504.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:300;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-LightItalic.27f219.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-weight:400;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Regular.dfcf75.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:400;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Italic.6450e2.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-weight:500;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Medium.f290ee.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:500;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-MediumItalic.e3fb39.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-weight:700;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Bold.3f7b54.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:700;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-BoldItalic.5a58b4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-weight:900;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-Black.f58fe4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:italic;font-weight:900;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/Roboto-BlackItalic.4fd558.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:100;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Thin.cb3e01.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:200;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-ExtraLight.d04e10.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:300;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Light.584898.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:400;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Regular.a89b97.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:500;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Medium.c80024.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:600;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-SemiBold.fc6935.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:700;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Bold.a6681b.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:800;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-ExtraBold.c2fd3e.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto Slab;font-weight:900;src:url(https://cdn.blogofdoom.com/app/themes/bod/build/fonts/RobotoSlab-Black.b304ae.woff2) format("woff2")}:root{--font-sans:"Roboto","Helvetica Neue","Arial Nova","Nimbus Sans",Arial,sans-serif;--font-serif:"Roboto Slab",Georgia,"Times New Roman",Times,serif;--font-mono:Monaco,Conolas,"Lucida Console",monospace;--base-font-family:var(--font-serif);--base-font-size:100.5%;--base-font-weight:400;--base-color:#333;--base-line-height:1.4;--base-rhythm:calc(var(--base-line-height)*1rem);--brand-primary:#025464;--brand-secondary:#d7813b;--brand-tertiary:#060505;--brand-dark:#222;--brand-mid:#666;--brand-light:#f8f1f1;--heading-font-family:var(--font-sans);--heading-font-weight:900;--heading-default-color:#20345f;--container-width:1280px;--container-gutter:2.5rem;--grid-gutter:2.5rem;--btn-font-family:var(--font-sans);--btn-font-size:1rem;--btn-font-weight:600;--btn-height:2.75em;--btn-padding:1em;--btn-border-radius:var(--btn-height);--btn-default-bg:var(--brand-primary);--btn-default-color:#fff;--form-control-font-family:inherit;--form-control-height:2.5rem;--form-control-margin:.5rem;--form-control-padding:.5rem;--form-control-border-width:1px;--form-control-border-radius:0;--form-control-default-bg:#fff;--form-control-default-color:var(--base-color);--form-control-default-border-color:var(--brand-mid);--form-control-default-border-color-active:var(--brand-primary);--rule-color:var(--brand-mid);--rule-width:2px}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:initial;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:initial}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:initial}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}a,button,details,input,select,textarea{touch-action:manipulation}table{border-collapse:collapse;border-spacing:0;width:100%}fieldset{border-style:solid;border-width:1px;margin:0}textarea{resize:vertical}img,svg{max-width:100%;vertical-align:middle}img[width]{height:auto}ol,ul{list-style:none;margin:0;padding-left:0}b,strong{font-weight:600}.fg-brand-primary{color:#025464!important}.fg-brand-secondary{color:#d7813b!important}.fg-brand-light{color:#f8f1f1!important}.fg-brand-dark{color:#222!important}.fg-brand-white{color:#fff!important}.fg-brand-black{color:#000!important}.bg-brand-primary{background-color:#025464!important}.bg-brand-secondary{background-color:#d7813b!important}.bg-brand-light{background-color:#f8f1f1!important}.bg-brand-dark{background-color:#222!important}.bg-brand-white{background-color:#fff!important}.bg-brand-black{background-color:#000!important}.bg-brand-twitch{background-color:#9146ff!important}.bg-brand-facebook{background-color:#1877f2!important}.bg-brand-twitter{background-color:#1da1f2!important}.bg-brand-whatsapp{background-color:#25d366!important}.bg-brand-word-rumble{background-color:#4b1a4e!important}.center-block{margin-left:auto;margin-right:auto}.align-center{text-align:center!important}.align-left{text-align:left!important}.align-right{text-align:right!important}.no-margin{margin:0!important}.no-padding{padding:0!important}.no-border{border:0!important}.width-cap{margin-left:auto;margin-right:auto;max-width:70ch}.hidden,[hidden]{display:none!important}.visually-hidden{height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;clip:rect(0,0,0,0);border:0}.scrollable{overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.scrollable::-webkit-scrollbar{height:10px}.scrollable::-webkit-scrollbar-track{background-color:initial}.scrollable::-webkit-scrollbar-thumb{background-color:hsla(0,0%,100%,.3);border-radius:10px}html{background-color:#f3f3f3;color:#333;font:400 100.5%/1.4 Roboto Slab,Georgia,Times New Roman,Times,serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}::-moz-selection{background-color:#025464;color:#fff}::selection{background-color:#025464;color:#fff}a{color:currentcolor;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto;text-decoration-width:2px}h1,h2,h3,h4,h5,h6{color:#20345f;font-family:Roboto,Helvetica Neue,Arial Nova,Nimbus Sans,Arial,sans-serif;font-weight:900;line-height:1.2;margin-block:0}.hd-xl{font-size:calc(1rem + 2.5vw)}@media (max-width:639.98px){.hd-xl{font-size:2rem}}@media (min-width:1600.02px){.hd-xl{font-size:3.5rem}}.hd-lg{font-size:1.5rem}@media (max-width:499.98px){.hd-lg{font-size:1.25rem}}.hd-md{font-size:1.125rem}@media (max-width:499.98px){.hd-md{font-size:1rem}}.hd-bd{font-size:1rem}.hd-sm{font-size:.85rem}.hd-xs{font-size:.75rem}.muted{color:#666}.small{font-size:.875em}.shout{letter-spacing:.03em;text-transform:uppercase}p{margin-bottom:1.4rem;margin-top:0}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{overflow-x:hidden}@media (min-width:960px){.main-content{margin-top:2rem}}.container{margin:auto;max-width:1280px;padding-left:1.25rem;padding-right:1.25rem}@media (max-width:719.98px){.container{padding-left:8px;padding-right:8px}}.container--md{max-width:1024px}.container--sm{max-width:768px}.container--fluid{max-width:none}.is-contained{max-width:1280px}.skip-link{background-color:#222;color:#fff;display:block;outline:0;padding:1em;text-align:center}.skip-link:not(:focus){height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;clip:rect(0,0,0,0);border:0}.btn{align-items:center;background-color:#025464;border:0;border-radius:2.75em;color:#fff;cursor:pointer;display:inline-flex;font-family:Roboto,Helvetica Neue,Arial Nova,Nimbus Sans,Arial,sans-serif;font-size:1rem;font-weight:600;height:2.75em;justify-content:center;line-height:1;min-width:100px;padding:0 1em;text-align:center;-webkit-text-decoration:none;text-decoration:none;text-transform:uppercase;vertical-align:middle;white-space:nowrap}.btn:is(:hover,:focus){background-color:#d7813b}.btn__icon{flex-shrink:0;height:1.33em;margin-left:.5em;fill:currentcolor}.btn__icon.btn__icon--left{margin-left:0;margin-right:.5em}.btn--lg{font-size:1.5rem}.btn--sm{font-size:.875rem}.btn--block{max-width:400px;width:100%}.btn--link{background:transparent!important;color:#025464;height:auto;min-width:auto;padding:0}.btn--link:is(:hover,:focus-within){-webkit-text-decoration:underline;text-decoration:underline}.btn--secondary{background-color:#d7813b}.btn--secondary:is(:hover,:focus-within){background-color:#060505}.btn--tertiary{background-color:#060505}.btn--tertiary:is(:hover,:focus-within){background-color:#025464;color:#fff}.form__group{margin-bottom:1.4rem;margin-top:0}.form__label{display:inline-block}.form__control{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border:1px solid #666;border-radius:0;color:#333;display:block;font-family:Roboto,Helvetica Neue,Arial Nova,Nimbus Sans,Arial,sans-serif;height:2.5rem;line-height:2.5rem;margin:.5rem 0;padding:0 .5rem;width:100%}.form__control:focus{border-color:#025464;outline:none}.form__control:is(textarea,select[multiple]){height:auto;line-height:1.4;padding:.5rem}.form__control:is([type=color]){width:3.5rem}.card{display:flex;flex-direction:column;position:relative}.card:is(:hover,:focus-within) a{-webkit-text-decoration:underline;text-decoration:underline}.card a[href*="#comments"]{color:#d7813b;font-weight:500;position:relative;z-index:10}.card__media{aspect-ratio:16/9;background-color:rgba(0,0,0,.15);border-radius:.5rem;overflow:hidden}.card__media>img{height:100%;object-fit:cover;width:100%}.card__body{display:flex;flex-direction:column;flex-grow:1;padding-top:.5rem}@media (max-width:679.98px){.card__body>p{height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;clip:rect(0,0,0,0);border:0}}.card__title{margin-bottom:.75rem}.card__title:not([class*=hd-]){font-size:1.125rem}@media (max-width:599.98px){.card__title:not([class*=hd-]){font-size:1rem}}:is(.card__title a):after{content:"";inset:0;position:absolute;z-index:5}.card__title a{-webkit-text-decoration:none;text-decoration:none}.card__meta{color:#666;font-size:.925rem;margin-top:auto}@media (max-width:499.98px){.card__meta{font-size:.875rem}}.card--hz{flex-direction:row}.card--hz .card__media{flex:0 0 45%;max-width:360px}.card--hz .card__body{padding-left:clamp(.5rem,2vw,1rem)}@media (max-width:499.98px){.card--hz .card__body{padding-top:0}}.card-stack{display:grid;gap:1rem}.card-grid{--grid-layout-gap:1rem;--grid-column-count:3;--grid-item--min-width:180px;--gap-count:calc(var(--grid-column-count) - 1);--total-gap-width:calc(var(--gap-count)*var(--grid-layout-gap));--grid-item--max-width:calc((100% - var(--total-gap-width))/var(--grid-column-count));display:grid;gap:var(--grid-layout-gap);margin-bottom:2rem}@media (min-width:600px){.card-grid{grid-template-columns:repeat(auto-fill,minmax(max(var(--grid-item--min-width),var(--grid-item--max-width)),1fr))}}.feature-card-grid{display:grid;gap:1.5rem 1rem;margin-bottom:2rem}@media (min-width:600px){.feature-card-grid{grid-template-columns:repeat(2,1fr)}.feature-card-grid :first-child{grid-column:1/span 2}}@media (min-width:800px){.feature-card-grid{grid-template-columns:2fr 1fr}.feature-card-grid :first-child{grid-column:1/span 1;grid-row:1/span 2}}.category-card{border-radius:4px;display:grid;overflow:hidden;position:relative}.category-card>*{grid-column:1;grid-row:1}.category-card:is(.is-disabled){filter:grayscale(100%);pointer-events:none}.category-card:is(.is-disabled):before{background:linear-gradient(transparent 50%,hsla(0,0%,100%,.1) 0);background-size:4px 4px;content:"";inset:0;position:absolute}.category-card:is(:hover,:focus-within) .category-card__media{transform:scale(1.05)}.category-card:is(:hover,:focus-within) a{-webkit-text-decoration:underline;text-decoration:underline}.category-card__media{transition:transform .2s ease-in;z-index:-1}.category-card__title{background:linear-gradient(0deg,#000,transparent 90%);color:#fff;font-size:1rem;line-height:1;margin-bottom:0;margin-top:auto;padding:5%}:is(.category-card__title a):after{content:"";inset:0;position:absolute;z-index:5}.category-card__title a{-webkit-text-decoration:none;text-decoration:none}.responsive-media{position:relative}.responsive-media:before{content:"";display:block;padding-bottom:56.25%}.responsive-media>*{height:100%;inset:0;position:absolute;width:100%}.responsive-media>img{object-fit:cover}.responsive-media--4x3:before{padding-bottom:75%}.responsive-media--1x1:before{padding-bottom:100%}.rule{border-width:0;border-bottom:2px solid #666;margin:2.8rem auto}.social-list{align-items:center;display:flex;line-height:1}.social-list__item{flex-shrink:0}.social-list__item:not(:first-child){margin-left:1.33em}.social-list__item :is(a,span){color:#fff;cursor:pointer;display:inline-flex}.social-list__item svg{height:1.5rem;width:1.5rem}.social-list--spaced{justify-content:space-between}.social-list--spaced .social-list__item{margin:0}.social-list--center{justify-content:center}.share{margin:1rem 0}.share__title{font-size:.825rem;font-weight:500;letter-spacing:.05em;margin-bottom:.5rem;text-transform:uppercase}.share-list{display:flex}@media (max-width:499.98px){.share-list__item{flex-grow:1}.share-list__item:nth-child(3){display:none}}.share-list__item:not(:first-child){margin-left:.75rem}.share-list__item .btn{width:100%}.share-list__item svg{height:1.125em;width:1.125em}.section{margin-block:2rem}@media (min-width:740px){.section{margin-block:3rem}}.section--padded{margin-block:0}.section--padded>:first-child{padding-block:3rem}.section-hd{align-items:baseline;color:#d7813b;display:flex;margin:1rem 0}.section-hd__title{border-bottom:.125em solid;color:inherit;letter-spacing:.0125em;margin-bottom:0;padding-bottom:.125em;text-transform:uppercase}.section-hd__cta{margin-left:2rem}@media (max-width:600px){.section-hd__cta{margin-left:auto}}.pagination{align-items:center;display:flex;justify-content:center;margin-top:2rem}.pagination a{margin-inline:1rem}.story-list__item{padding:.5rem 0}.story-list__item:first-child{padding-top:0}.story-list__item:not(:first-child){border-top:1px solid rgba(0,0,0,.1)}.story-list__item a{display:block;font-weight:500;-webkit-text-decoration:none;text-decoration:none}:is(.story-list__item a):is(:hover,:focus-within){-webkit-text-decoration:underline;text-decoration:underline}.breadcrumb{align-items:baseline;display:flex;flex-wrap:wrap;margin-block:0 1rem}.breadcrumb__item:not(:last-child):after{content:">";margin-inline:.25em}body{padding-top:85px}.site-header-wrap{background-color:#025464;color:#fff;font-family:Roboto,Helvetica Neue,Arial Nova,Nimbus Sans,Arial,sans-serif;height:85px;left:0;position:fixed;top:0;transition:transform .3s ease-out;width:100%;z-index:100}.site-header-wrap a{color:#fff;-webkit-text-decoration:none;text-decoration:none}.site-header-wrap .btn:is(:hover,:focus){color:#025464;outline:0}.site-header{margin:auto;max-width:1280px;padding-left:1.25rem;padding-right:1.25rem}@media (max-width:719.98px){.site-header{padding-left:8px;padding-right:8px}}.site-header{align-items:center;display:flex;height:100%}.site-header__brand-link{flex-shrink:0;width:90px}.site-header__menu{white-space:nowrap}.site-header__nav-item{position:relative}.site-header__menu-toggle{align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:initial;border:2px solid;color:#fff;display:flex;font-weight:600;letter-spacing:.03em;padding:.5em 1em;text-transform:uppercase}.site-header__menu-toggle>svg{fill:currentcolor}.site-header__menu-toggle[aria-expanded=true]>svg{transform:rotate(180deg)}.site-header__subnav-toggle{display:none}@media (max-width:959.98px){body{padding-top:100px}.site-header-wrap{height:100px;z-index:90000000}.site-header{flex-wrap:wrap;justify-content:space-between}.site-header__brand-link{margin-block:.33rem}.site-header__menu{margin-left:-1.25rem;margin-right:-1.25rem;margin-top:auto;position:relative;z-index:100}@media (max-width:719.98px){.site-header__menu{margin-left:-8px;margin-right:-8px}}.site-header__menu{background-color:rgba(0,0,0,.2);width:100vw}.site-header__nav{display:flex}.site-header__nav-item{flex-grow:1;text-align:center}.site-header__nav-item>:is(a,span){display:block;font-weight:600;line-height:2rem;padding:0 .33rem;text-transform:uppercase}.site-header__nav-item--more{flex-grow:0}#mobile-menu :is(.current-menu-item,.current-menu-parent){position:relative}:is(#mobile-menu :is(.current-menu-item,.current-menu-parent)):after{background-color:#d7813b;bottom:0;content:"";height:3px;left:0;position:absolute;width:100%}@media (max-width:359.98px){#mobile-menu{font-size:.925rem}}#site-menu{background-color:#025464;display:none;height:calc(100vh - 2rem);overflow-y:auto}#site-menu,#site-menu .site-header__nav{flex-direction:column}#site-menu .site-header__nav-item{border-bottom:1px solid hsla(0,0%,100%,.33);display:flex;flex-wrap:wrap;line-height:1;position:relative;text-align:left}:is(#site-menu .site-header__nav-item)>:is(a,span){flex-grow:1;font-size:calc(2vw + 1.25rem);padding:.5em}#site-menu .site-header__subnav-toggle{align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:initial;border:0;color:currentcolor;display:flex;flex:0 0 60px;justify-content:center;padding:0}:is(#site-menu .site-header__subnav-toggle)>svg{fill:currentcolor}[aria-expanded=true]:is(#site-menu .site-header__subnav-toggle)>svg{transform:rotate(180deg)}#site-menu .site-header__subnav{display:none;flex-basis:100%;margin-bottom:.5rem}:is(#site-menu .site-header__subnav-item)>a{display:block;font-size:calc(1.32vw + .825rem);padding:.5em 2em}:is(#site-menu .site-header__subnav-item):is(.current-menu-item)>a{-webkit-text-decoration:underline;text-decoration:underline}.site-header--menu-active #site-menu{display:flex}.site-header--menu-active #mobile-menu{display:none}}@media (min-width:960px){.site-header-container{align-items:center;display:flex}.site-header__brand-link{flex-shrink:0}.site-header__menu{flex-grow:1;height:100%;margin-left:1.5rem}.site-header__nav{display:flex}.site-header__nav-item>:is(a,span){border-bottom:3px solid transparent;display:block;font-size:1rem;font-weight:700;line-height:5.0625rem;padding-inline:.75rem;text-transform:uppercase}@media (min-width:1100px){.site-header__nav-item>:is(a,span){font-size:1.125rem;padding-inline:1.5vw}}.site-header__nav-item:is(.current-menu-item,.current-menu-parent){position:relative}.site-header__nav-item:is(.current-menu-item,.current-menu-parent):after{background-color:#d7813b;bottom:0;content:"";height:4px;left:0;position:absolute;width:100%}:is(.site-header__nav-item~:is(.current-menu-item,.current-menu-parent)):after{display:none}.site-header__nav-item:is(:hover,:focus-within){position:relative}.site-header__nav-item:is(:hover,:focus-within):after{background-color:#d7813b;bottom:0;content:"";height:4px;left:0;position:absolute;width:100%}.site-header__nav-item:is(:hover,:focus-within)>a{outline:0}.site-header__subnav{background-color:#025464;background-color:color-mix(in srgb,#025464,#000 20%);display:none;left:0;min-width:100%;position:absolute;top:100%;z-index:100}.site-header__subnav a{display:block;font-weight:500;padding:.5em 1rem}.site-header__subnav-item:not(.menu-item-has-children):is(:hover,:focus-within){position:relative}.site-header__subnav-item:not(.menu-item-has-children):is(:hover,:focus-within):after{background-color:#d7813b;bottom:0;content:"";position:absolute;top:0;width:4px}.site-header__subnav-item:not(.menu-item-has-children):is(.current-menu-item,.current-menu-parent){position:relative}.site-header__subnav-item:not(.menu-item-has-children):is(.current-menu-item,.current-menu-parent):after{background-color:#d7813b;bottom:0;content:"";position:absolute;top:0;width:4px}.site-header__nav-item:is(:hover,:focus-within) .site-header__subnav{display:block}#site-menu{align-items:center;display:flex}#mobile-menu,.site-header__menu-toggle{display:none}}.site-header-wrap--up{transform:translateY(-100%)}:is(.site-header-wrap--up~.main-content) .sidebar__sticky{top:2rem}@media (max-width:600px){.admin-bar{padding-top:0}.admin-bar .site-header-wrap{position:static}}@media (min-width:600.02px){.admin-bar .site-header-wrap{top:46px}}@media (min-width:782.02px){.admin-bar .site-header-wrap{top:32px}}.site-footer-wrap{background-color:#222;color:#fff;margin-top:2rem}.site-footer{margin:auto;max-width:1280px;padding-left:1.25rem;padding-right:1.25rem}@media (max-width:719.98px){.site-footer{padding-left:8px;padding-right:8px}}.site-footer{align-items:center;display:flex;flex-direction:column;padding-bottom:2rem;padding-top:2rem;text-align:center}.site-footer a{color:currentcolor;-webkit-text-decoration:none;text-decoration:none}:is(.site-footer a):hover{-webkit-text-decoration:underline;text-decoration:underline}.site-footer__brand{margin-bottom:2rem;width:110px}.site-footer__nav a{font-weight:500}@media (min-width:500px){.site-footer__nav{display:flex}}.site-footer__nav-item{margin-left:1rem;margin-right:1rem}.site-footer__legal{color:#666;font-size:.825rem;line-height:1.4;margin-top:1rem}.site-footer__legal a{-webkit-text-decoration:underline;text-decoration:underline}:is(.site-footer__legal a):is(:hover,:focus-within){color:#d7813b}.sidebar-layout__sidebar{margin-top:3.75rem}@media (min-width:960px){.sidebar-layout{display:grid;gap:2.5rem;grid-template:"body sidebar" 1fr/3fr minmax(300px,1fr)}.sidebar-layout__body{grid-area:body}.sidebar-layout__sidebar{grid-area:sidebar;margin-top:0}.sidebar-layout--reversed{gap:2.5rem;grid-template:"sidebar body" 1fr/minmax(300px,1fr) 3fr}.sidebar-layout__body{-ms-grid-column:1;-ms-grid-row:1}.sidebar-layout--reversed>.sidebar-layout__body,.sidebar-layout__sidebar{-ms-grid-column:3;-ms-grid-row:1}.sidebar-layout--reversed>.sidebar-layout__sidebar{-ms-grid-column:1;-ms-grid-row:1}}.sidebar>*{margin-top:2rem}.sidebar>:first-child{margin-top:0}:is(.sidebar>:first-child):is([ad-slot]){margin-top:12px}.sidebar__sticky{position:sticky;top:calc(1.5rem + 100px)}#search{position:relative}#search input{padding-right:40px}#search button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:initial;border:0;color:#666;cursor:pointer;height:100%;padding:.5rem;position:absolute;right:0;top:0}:is(#search button):is(:hover,:focus-within){color:#222}.article{background-color:#fff;border-radius:.25rem;margin:2rem 0;overflow:hidden}@media (max-width:740px){.article{margin-left:-1.25rem;margin-right:-1.25rem}@media (max-width:719.98px){.article{margin-left:-8px;margin-right:-8px}}.article{border-radius:0;margin-top:0}}@media (min-width:960px){.article{margin-top:0}}.article__header{position:relative}.article__header-media{background-color:rgba(0,0,0,.15);overflow:hidden}.article__header-comment-link{bottom:1rem;position:absolute;right:1rem}.article__body{padding:5%}.article__body .editor-content{border-top:1px solid #eee;padding-top:2rem}:is(.article__body a):is(:hover,:focus-within){color:#d7813b}.article__title{margin-bottom:.5rem}#disqus_thread{margin-top:2rem}:is(.js .article[data-href]) .article__header-media img{cursor:pointer;transition:transform .4s ease}:is(:is(.js .article[data-href]) .article__header-media img):hover{transform:scale(1.02)}#tinymce.wp-editor,.editor-content{overflow-wrap:break-word}:is(#tinymce.wp-editor,.editor-content) a{color:#025464;word-break:break-word}:is(:is(#tinymce.wp-editor,.editor-content) a):is(:hover,:focus-within){color:#d7813b}:is(#tinymce.wp-editor,.editor-content)>:is(h2,h3){font-weight:700}:is(#tinymce.wp-editor,.editor-content)>h2{font-size:1.25em}:is(#tinymce.wp-editor,.editor-content)>h3{font-size:1.125em}:is(#tinymce.wp-editor,.editor-content)>:is(h4,h5,h6){font-size:1em}:is(#tinymce.wp-editor,.editor-content)>:is(ol,ul){margin-bottom:1.4rem;margin-top:0;padding-left:2.5ch}:is(#tinymce.wp-editor,.editor-content)>ol{list-style:decimal}:is(#tinymce.wp-editor,.editor-content)>ul{list-style:disc}:is(#tinymce.wp-editor,.editor-content) blockquote:not(.twitter-tweet):not(.tiktok-embed):not(.instagram-media):not([cite*="facebook.com"]){border-left:4px solid #025464;font-style:italic;margin:2rem 0;padding:.5rem 2rem}@media (max-width:600px){:is(#tinymce.wp-editor,.editor-content) blockquote:not(.twitter-tweet):not(.tiktok-embed):not(.instagram-media):not([cite*="facebook.com"]){padding-left:1.25rem;padding-right:.5rem}}:is(:is(#tinymce.wp-editor,.editor-content) blockquote:not(.twitter-tweet):not(.tiktok-embed):not(.instagram-media):not([cite*="facebook.com"]))>:last-child{margin-bottom:0}:is(#tinymce.wp-editor,.editor-content) img{display:block;height:auto;margin:1.5rem auto;max-width:100%;width:100%}:is(#tinymce.wp-editor,.editor-content) figure{background-color:#f8f1f1}:is(#tinymce.wp-editor,.editor-content) .wp-caption-text{background-color:#222;font-size:.875em;line-height:1.2;padding:.5em}:is(#tinymce.wp-editor,.editor-content)>:is(figure,.responsive-media,.wwe-embed,.twitter-tweet,.instagram-media,.wp-embedded-content,[cite*="facebook.com"],.fb_iframe_widget,[src*="facebook.com/plugins"]){margin:2rem auto!important;max-width:100%!important;min-width:auto!important}:is(#tinymce.wp-editor,.editor-content) :is(.fb_iframe_widget){background-color:#fff;display:block!important;max-width:690px!important}:is(#tinymce.wp-editor,.editor-content) :is(.twitter-tweet,.instagram-media,.fb-post){max-width:500px!important}:is(:is(#tinymce.wp-editor,.editor-content) video):focus{outline:0}:is(#tinymce.wp-editor,.editor-content) :is(.poll){margin:2.5rem auto!important;max-width:540px!important;min-width:auto!important}:is(#tinymce.wp-editor,.editor-content) table{border:1px solid #333;font-size:.925rem;margin:2rem auto}:is(:is(#tinymce.wp-editor,.editor-content) table) :is(th,td){border:1px solid #333;padding:.25em .5em;vertical-align:top}:is(:is(:is(#tinymce.wp-editor,.editor-content) table) :is(th,td)):not([align]){text-align:left}:is(:is(#tinymce.wp-editor,.editor-content) table) th{background-color:rgba(0,0,0,.5);border-bottom-width:2px}:is(:is(#tinymce.wp-editor,.editor-content) table) tr:nth-child(2n){background-color:hsla(0,0%,100%,.03)}:is(#tinymce.wp-editor,.editor-content) .table-responsive{margin:2rem 0;overflow-x:auto;width:100%}:is(:is(#tinymce.wp-editor,.editor-content) .table-responsive)>table{margin:0}:is(#tinymce.wp-editor,.editor-content) hr{border-width:0;border-bottom:2px solid #666;margin:2rem auto}@media (max-width:720px){.home-top-stories{margin-top:1.25rem}}[ad-slot]{margin:24px auto 12px;position:relative;width:100%}[ad-slot]:before{color:#999;content:"Advertisement";font-family:Roboto,Helvetica Neue,Arial Nova,Nimbus Sans,Arial,sans-serif;font-size:.625rem;left:0;letter-spacing:.03em;line-height:1em;position:absolute;text-align:center;text-transform:uppercase;top:-12px;width:100%}[ad-slot] iframe{vertical-align:middle}.editor-content [ad-slot]{margin-bottom:2rem;margin-top:calc(2rem + 12px);min-height:250px}.editor-content [ad-slot=content-video]{aspect-ratio:16/9;max-width:540px;min-height:auto}[ad-slot=feed]{margin-bottom:1.5rem;margin-top:calc(1.5rem + 12px);min-height:250px}[ad-slot=sidebar]{margin-top:1rem!important;min-height:250px}@media (max-width:959.98px){[ad-slot=sidebar]{margin-top:24px!important}}img.lazyload:not([srcset]){visibility:hidden}img:is(.lazyload,.lazyloading){opacity:0!important}img.lazyloaded{transition:opacity .3s ease-in}.twitter-tweet:not(.twitter-tweet-rendered){background-color:#fff;border:1px solid #2f3336;border-radius:15px;font:1.1875rem/1.3125 system-ui;max-width:500px;padding:15px;word-break:break-word}.twitter-tweet:not(.twitter-tweet-rendered) p{margin-bottom:1em}.twitter-tweet:not(.twitter-tweet-rendered)>:last-child{color:#6e767d;font-size:.9375rem;margin-bottom:0}.twitter-tweet:not(.twitter-tweet-rendered) a{background:none!important;color:#1b95e0}:is(.twitter-tweet:not(.twitter-tweet-rendered) a):is(:hover,:focus){outline:0;-webkit-text-decoration:underline;text-decoration:underline}[cite*="facebook.com"]{background-color:#efefef;border:1px solid #cfd9de;border-radius:2px;color:#444;margin-left:0;margin-right:0;max-width:500px;padding:15px;word-break:break-word}[cite*="facebook.com"] p{margin-bottom:1em}[cite*="facebook.com"]>:last-child{color:#6e767d;font-size:.9375rem;margin-bottom:0}[cite*="facebook.com"] a{background:none!important;color:#1b95e0}:is([cite*="facebook.com"] a):is(:hover,:focus){outline:0;-webkit-text-decoration:underline;text-decoration:underline}.instagram-media a{background:none!important;outline:0!important}</style>
-    
-        <title>U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!</title>
-<meta name="description" content="U-Japan&#039;s only show that somehow aired on Samurai TV because of the presence of a few wrestlers."/>
-<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-<link rel="canonical" href="https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!" />
-<meta property="og:description" content="U-Japan&#039;s only show that somehow aired on Samurai TV because of the presence of a few wrestlers." />
-<meta property="og:url" content="https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/" />
-<meta property="og:site_name" content="Scott&#039;s Blog of Doom!" />
-<meta property="article:tag" content="1996" />
-<meta property="article:tag" content="Bam Bam Bigelow" />
-<meta property="article:tag" content="Becky Levi" />
-<meta property="article:tag" content="Big Van Vader" />
-<meta property="article:tag" content="Dan Severn" />
-<meta property="article:tag" content="David Beneteau" />
-<meta property="article:tag" content="Don Frye" />
-<meta property="article:tag" content="fight" />
-<meta property="article:tag" content="Japan" />
-<meta property="article:tag" content="Kimo" />
-<meta property="article:tag" content="Latsumi Isida" />
-<meta property="article:tag" content="Maffew" />
-<meta property="article:tag" content="Mark Hall" />
-<meta property="article:tag" content="Mitsuhiro Matsunaga" />
-<meta property="article:tag" content="Pancrase" />
-<meta property="article:tag" content="Patrick Smith" />
-<meta property="article:tag" content="Paul Varelans" />
-<meta property="article:tag" content="pride" />
-<meta property="article:tag" content="PRIDE FC" />
-<meta property="article:tag" content="puro" />
-<meta property="article:tag" content="PWFG" />
-<meta property="article:tag" content="RINGS" />
-<meta property="article:tag" content="Sean Alvarez" />
-<meta property="article:tag" content="Shinji Katase" />
-<meta property="article:tag" content="shoot" />
-<meta property="article:tag" content="Shooto" />
-<meta property="article:tag" content="U-Japan" />
-<meta property="article:tag" content="UFC" />
-<meta property="article:tag" content="UWF-I" />
-<meta property="article:tag" content="Vader" />
-<meta property="article:tag" content="Wallid Ismael" />
-<meta property="article:tag" content="war" />
-<meta property="article:tag" content="Yoji Anjo" />
-<meta property="article:tag" content="Yoko Takahashi" />
-<meta property="article:section" content="Botchamania Reviews Japan" />
-<meta property="og:updated_time" content="2025-12-31T13:03:03-06:00" />
-<meta property="og:image" content="https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png" />
-<meta property="og:image:secure_url" content="https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png" />
-<meta property="og:image:width" content="615" />
-<meta property="og:image:height" content="472" />
-<meta property="og:image:alt" content="U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo)" />
-<meta property="og:image:type" content="image/png" />
-<meta property="article:published_time" content="2024-10-27T00:00:44-06:00" />
-<meta property="article:modified_time" content="2025-12-31T13:03:03-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!" />
-<meta name="twitter:description" content="U-Japan&#039;s only show that somehow aired on Samurai TV because of the presence of a few wrestlers." />
-<meta name="twitter:image" content="https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png" />
-<meta name="twitter:label1" content="Written by" />
-<meta name="twitter:data1" content="Maffew Gregg" />
-<meta name="twitter:label2" content="Time to read" />
-<meta name="twitter:data2" content="11 minutes" />
-<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.blogofdoom.com/#person","name":"Adam ITR","logo":{"@type":"ImageObject","@id":"https://www.blogofdoom.com/#logo","url":"https://cdn.blogofdoom.com/app/uploads/2017/08/cropped-cropped-scotts-bod-1000px-4-1-150x150.jpg","contentUrl":"https://cdn.blogofdoom.com/app/uploads/2017/08/cropped-cropped-scotts-bod-1000px-4-1-150x150.jpg","caption":"Scott's Blog of Doom!","inLanguage":"en-US"},"image":{"@type":"ImageObject","@id":"https://www.blogofdoom.com/#logo","url":"https://cdn.blogofdoom.com/app/uploads/2017/08/cropped-cropped-scotts-bod-1000px-4-1-150x150.jpg","contentUrl":"https://cdn.blogofdoom.com/app/uploads/2017/08/cropped-cropped-scotts-bod-1000px-4-1-150x150.jpg","caption":"Scott's Blog of Doom!","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://www.blogofdoom.com/#website","url":"https://www.blogofdoom.com","name":"Scott's Blog of Doom!","publisher":{"@id":"https://www.blogofdoom.com/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png","url":"https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png","width":"615","height":"472","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/#webpage","url":"https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/","name":"U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!","datePublished":"2024-10-27T00:00:44-06:00","dateModified":"2025-12-31T13:03:03-06:00","isPartOf":{"@id":"https://www.blogofdoom.com/#website"},"primaryImageOfPage":{"@id":"https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.blogofdoom.com/author/maffew/","name":"Maffew Gregg","url":"https://www.blogofdoom.com/author/maffew/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/177a504af579db7265b0e6e774be9a4822fcd5cb2f6d7dbb59447f956a491a27?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/177a504af579db7265b0e6e774be9a4822fcd5cb2f6d7dbb59447f956a491a27?s=96&amp;d=mm&amp;r=g","caption":"Maffew Gregg","inLanguage":"en-US"}},{"@type":"BlogPosting","headline":"U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!","datePublished":"2024-10-27T00:00:44-06:00","dateModified":"2025-12-31T13:03:03-06:00","articleSection":"Botchamania Reviews Japan","author":{"@id":"https://www.blogofdoom.com/author/maffew/","name":"Maffew Gregg"},"publisher":{"@id":"https://www.blogofdoom.com/#person"},"description":"U-Japan&#039;s only show that somehow aired on Samurai TV because of the presence of a few wrestlers.","name":"U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo) - Scott&#039;s Blog of Doom!","@id":"https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/#richSnippet","isPartOf":{"@id":"https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/#webpage"},"image":{"@id":"https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/#webpage"}}]}</script>
-<link rel="alternate" type="application/rss+xml" title="Scott&#039;s Blog of Doom! &raquo; Feed" href="https://www.blogofdoom.com/feed/" />
-
-
-    <script>function ready(fn){if(document.readyState!='loading'){fn()}else{document.addEventListener('DOMContentLoaded',fn)}}
-function loadScripts(){[].slice.call(document.querySelectorAll('script[data-type="lazy"]')).forEach(function(el){el.setAttribute('src',el.getAttribute('data-src'))});[].slice.call(document.querySelectorAll('script[type="text/lazy"]')).forEach(function(el){var s=document.createElement('script');s.innerHTML=el.innerHTML;el.parentNode.replaceChild(s,el)})}
-function triggerScripts(){loadScripts();clearTimeout(loadScriptsTimer);events.forEach(function(e){window.removeEventListener(e,triggerScripts,{passive:!0})})}
-var loadScriptsTimer=setTimeout(loadScripts,3000);var events=['mouseover','keydown','touchmove','touchstart'];events.forEach(function(e){window.addEventListener(e,triggerScripts,{passive:!0})})</script>
-        <script type="text/lazy">(function(w,d){w.adthrive=w.adthrive||{};w.adthrive.cmd=w.adthrive.cmd||[];w.adthrive.plugin='adthrive-ads-manual';w.adthrive.host='ads.adthrive.com';var s=d.createElement('script');s.async=!0;s.referrerpolicy='no-referrer-when-downgrade';s.src='https://'+w.adthrive.host+'/sites/62cc376df371fc48fb648efd/ads.min.js?referrer='+w.encodeURIComponent(w.location.href)+'&cb='+(Math.floor(Math.random()*100)+1);var n=d.getElementsByTagName('script')[0];n.parentNode.insertBefore(s,n)})(window,document)</script>
-
-<style id='global-styles-inline-css'>
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-/*# sourceURL=global-styles-inline-css */
-</style>
-
-</head>
-<body class="">
-
-    <a href="#skip-content" class="skip-link">Skip to main content</a>
-
-    <div id="fb-root"></div>
-    
-
-    
-            
-<div class="site-header-wrap">
-    <header class="site-header">
-        <a href="https://www.blogofdoom.com" class="site-header__brand-link">
-            <img src="https://www.blogofdoom.com/app/themes/bod/resources/assets/img/logo.svg" width="510" height="310" alt="Scott&#039;s Blog of Doom!">
-        </a>
-
-        <button aria-label="Toggle menu" aria-controls="site-menu" aria-expanded="false" class="site-header__menu-toggle  js-menu-toggle">
-            Menu&nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" aria-hidden="true"><path d="M0 64l448 0 0 48L0 112 0 64zM0 224l448 0 0 48L0 272l0-48zM448 384l0 48L0 432l0-48 448 0z"/></svg>
-        </button>
-
-        <nav class="site-header__menu">
-            <div id="mobile-menu">
-                <ul class="site-header__nav">
-                                            <li class="site-header__nav-item   menu-item-88491">
-                            <a href="https://www.blogofdoom.com/daily-news-update/">Daily Updates</a>
-                        </li>
-                                            <li class="site-header__nav-item   menu-item-148387">
-                            <a href="https://www.blogofdoom.com/rants/">Scott's Rants</a>
-                        </li>
-                                            <li class="site-header__nav-item   menu-item-148386">
-                            <a href="https://www.blogofdoom.com/headlines/">Headlines</a>
-                        </li>
-                                    </ul>
-            </div>
-
-            <div id="site-menu">
-                <ul class="site-header__nav">
-                                    <li class="site-header__nav-item   menu-item-88491">
-                                                    <a href="https://www.blogofdoom.com/daily-news-update/">Daily Updates</a>
-                        
-                                            </li>
-                                    <li class="site-header__nav-item   menu-item-148387">
-                                                    <a href="https://www.blogofdoom.com/rants/">Scott's Rants</a>
-                        
-                                            </li>
-                                    <li class="site-header__nav-item   menu-item-148386">
-                                                    <a href="https://www.blogofdoom.com/headlines/">Headlines</a>
-                        
-                                            </li>
-                                    <li class="site-header__nav-item   menu-item-22741">
-                                                    <a href="https://www.blogofdoom.com/archives/wrestling-observer-flashback/">Observer Flashbacks</a>
-                        
-                                            </li>
-                                    <li class="site-header__nav-item   menu-item-106395">
-                                                    <a href="https://www.blogofdoom.com/mailbag/">Mailbag</a>
-                        
-                                            </li>
-                                    <li class="site-header__nav-item   menu-item-146134">
-                                                    <a href="https://www.blogofdoom.com/archives/">Archives</a>
-                        
-                                            </li>
-                                </ul>
-            </div>
-        </nav>
-    </header>
-</div>
-    
-    <main id="skip-content" class="main-content" aria-label="Main content">
-            <div class="container">
-        <div class="sidebar-layout  ">
-    <div class="sidebar-layout__body">
-                        <article class="article">
-                    <div class="article__header">
-                                                    <div class="article__header-media"><div class="responsive-media"><img sizes="100vw, (min-width: 960px) calc(100vw - 300px - 5rem)" srcset="https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044.png 615w, https://cdn.blogofdoom.com/app/uploads/2024/10/vlcsnap-2024-06-12-23h52m22s044-300x230.png 300w" alt=""></div></div>                        
-                        <div class="article__header-comment-link">
-                            <a href="#comments" class="btn  btn--secondary">
-                               <span class="disqus-comment-count" data-disqus-identifier="https://www.blogofdoom.com/?p=115539">Rants</span>                            </a>
-                        </div>
-                    </div>
-
-                    <div class="article__body" id="read">
-                        <h1 class="article__title  hd-lg">U-Japan 11/17/96 (Bam Bam Bigelow vs. Kimo)</h1>
-
-                        <p class="small">By <a href="https://www.blogofdoom.com/author/maffew/">Maffew Gregg</a> on 27 October 2024</p>
-
-                        <div class="editor-content">
-                            <p>U-Japan’s only show that somehow aired on Samurai TV because of the presence of a few wrestlers.</p>
-<p>We’re in an octagon cage, the crowd is completely unlit and there will be no second show, let’s go!</p><div ad-slot="content-video"></div>
-<p><!--more--></p>
-<p style="text-align: center;"><strong>Paul Varelans vs. Shinji Katase</strong></p>
-<p>Paul was a 6’8″ beast with four wins and four losses in UFC. He would have been forgotten about along with the other pre-Jiu Jitsu heavyweights if he hadn’t wrestled for ECW briefly in 1996, causing a stir when he reportedly changed his mind about losing to Taz days before Hardcore Heaven. Missy Hyatt claims to have fixed the problem by promising to blow Paul if he did the job, before immediately rebuffing him afterwards because she “didn’t blow jobbers” <em>(Source: Missy Hyatt).</em></p>
-<p>Also of note was Perry Saturn kicking Paul so hard in the back of the head that he legit KO’d him leading to Taz having to shoot T-Bone Tazplex Paul for the win.</p>
-<img decoding="async" class="aligncenter" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmVrM3VqcG8xNTFkeXNraHNpYWJ1aWUwanoyc2gxaGRlYmx6ZnowcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G4bCqu8grYohwGqOuq/source.gif">
-<div class="responsive-media"><iframe title="Perry Saturn on KO'ing Paul Varelans During His Match with Taz (ECW Hardcore Heaven 1996)" width="700" height="394" data-src="https://www.youtube.com/embed/tgcJsUqmcsI?rel=0&amp;modestbranding=1&amp;playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="lazyload"></iframe></div>
-<p>This is 5’9″ Shinji Katase’s debut fight so I think we can already call this a squash match even though he’s twice Taz’s size.</p>
-<p>Paul throws some large strikes Shinji’s way before smothering him on the mat with some kind of hold (it’s hard to tell because this show is so badly lit) with the bell ringing at 35 seconds before anything happens.</p>
-<p>Despite the bell ringing, Paul punches Shinji which leads so the ref has to inform Paul that the fight was over. Mate it was over before it started.</p>
-<img decoding="async" class="aligncenter" src="https://www2-cdn.sherdog.com/_images/pictures/20240212014207_varelans.JPG" alt="">
-<p>It’s announced as a submission win but Sherdog has it as “loss via punches” which isn’t true. What is true is that this was a mess.</p>
-<p>Shinji would fight until 2004 and finish with a 2-3 record. Paul would pass away in 2021 and would have been thrilled to know everyone brought up the Missy Hyatt story in their obituaries.</p>
-<p style="text-align: center;"><strong>Becky Levi vs. Yoko Takahashi</strong></p>
-<p>Yoko Takahashi has a few fights under her belt but this is Becky’s debut.</p>
-<p>The bigger Becky surges forward to punch her opponent over and over again with Yoko offering no resistance. Becky is so much bigger she’s able to hold her opponent with one arm and smack her with the other. Yoko throws a few kicks which have zero effect as Becky continues to shove her into the cage. Yoko is able to squeeze out and land a few punches to release the hold which gets the crowd buzzing but once they’re away from the wall, Becky no-sells Yoko’s offence to punch her so hard she attempts to run through the wall to escape before the ref takes the hint and ends it at 2:14.</p>
-<p>Yoko was as effective as a pensioner’s erection out there.</p>
-<img decoding="async" src="https://www2-cdn.sherdog.com/_images/pictures/20240212013937_becki.JPG" alt="">
-<p>Becky would retire in 2000 with an impressive 7-1 record. Yoko would continue fighting until 2010 and would have the honour of fighting at EliteXC: Heat, aka the show with Seth Petruzelli KO’ing Kimbo Slice in 14 seconds and killing the promotion. So there’s that.</p><div ad-slot="content"></div>
-<p style="text-align: center;"><strong>David Beneteau vs. Patrick Smith</strong></p>
-<p>Both guys were UFC midcarders.</p>
-<p>Beneteau grounds Smith who frantically tries to escape in a very heated opening sequence. Beneteau transitions into a mounted position as Smith does his best to wriggle out of this predicament. All he’s able to do is move Beneteau back into the same ground &amp; pound position as before, resulting in Beneteau eventually punching him in the face until Smith yells “my eyes my eyes!” and taps out at 1:09.</p>
-<p>Camera shows Smith bleeding from the eye afterwards (or maybe it’s above the eye, I don’t know this show is so dimly lit it looks as if Frank Miller illustrated it).</p>
-<p>Well that was a fun minute if you like seeing people desperately trying to escape out of guards. Incidentally, Patrick Smith would sexually assault a fourteen year old in 1999 but thankfully be dead by 2019.</p>
-<p style="text-align: center;"><strong>Wallid Ismael vs. Latsumi Isida</strong></p>
-<p>Ismael has an impressive reputation in Brazil even if his win/loss record doesn’t necessarily reflect that. Isida doesn’t have a good reputation anywhere and his win/loss record does reflect that.</p>
-<p>Ismael bodies Isida and bounces him off the cage and onto the mat where Isida can’t do a damn thing to stop the punishment. Isida gets a weak attempt at a collar &amp; elbow but it looks more like Ismael simply getting his breath back. Ismael starts throwing punches and the crowd start making “oh no” noises as Ismael wraps himself around Isida in a rear-naked choke at 3:59.</p>
-<img decoding="async" src="https://www4-cdn.sherdog.com/_images/pictures/20240212015003_walla2.JPG" alt="">
-<p>Like watching a rabbit try to fight a lion. Ismael was so intense it seemed like he would have exploded from all the energy inside of him if this fight had gone on any longer.</p>
-<p>Ismail would go on to defeat Renzo Gracie to earn the moniker “Gracie Destroyer” before Sakuraba would remake the idea years later. Meanwhile, Isida’s Sherdog profile picture shows him bleeding.</p>
-<p style="text-align: center;"><strong>Don Frye vs. Mark Hall</strong></p>
-<p>I think Mark’s been booked against Frye because Hall had the nerve to smash Koji Kitao at UFC 9 and the crowd want to see him in pain. Hey, where is Kitao anyway? I can’t believe there’s a money-losing mid-90s Japanese fighting company and he’s nowhere to be seen.</p>
-<p>Hall throws a kick at Don’s mid-section but he may as well have tried to headbutt a Samoan because Frye batters him to the mat with ease. Don allows Mark to stand up so he can also ignore Hall’s punches while he’s swinging for the fences. Hall attempts a roundhouse kick (!) but Don takes him down mid-swing and pounds him into dust on the canvas. Don even pauses with his fist cocked to give Mark a chance to submit. Oh wow.</p>
-<img decoding="async" style="width: 786px; font-size: 16.08px;" src="https://www2-cdn.sherdog.com/_images/pictures/20240212013732_frye1.JPG" alt="">
-<img decoding="async" class="aligncenter" src="https://frinkiac.com/img/S07E15/677777.jpg">
-<p>Hall declines so Frye dogs him on the mat, shoving his face into Hall’s head while Hall can only hang on for dear life. Frye bides his time while putting all his weight on Hall who decides to bleed as a form of self-defence. Someone yells for Don to let Mark onto his feet and I can’t tell which corner it’s coming from but Don doesn’t listen because he’s in complete control. Don chokes Mark with his forearm to finally end it at 5:29.</p><div ad-slot="content"></div>
-<p>I’ve had fights in nightmares where I’ve gotten more offence in than Hall did here. Hall should have given up when Frye was being polite.</p>
-<p style="text-align: center;"><strong>Mitsuhiro Matsunaga vs. Dan Severn</strong></p>
-<p>Hilariously we get clips of Matsunaga doing death matches in BJPW, W*ING and FMW even though he’s a proper karate guy. He even brings a barbed wire baseball bat with him. God I hope he uses it.</p>
-<p>Severn takes Matsunaga down and then repeatedly picks him up to slam him in various ways as the crowd goes nuts. I mean it looks worked as hell but what do I know. Severn delivers an overhead belly-to-belly into the cage as the crowd explodes as it looked like it killed Matsunaga. Matsunaga holds on in a guillotine position but Severn simply slams him full force before locking in a reverse armbar for the instant tap-out at 1:32.</p>
-<img decoding="async" class="aligncenter" src="https://www2-cdn.sherdog.com/_images/pictures/20240212014104_severn.JPG" alt="">
-<p>Entertaining series of suplexes even if the match was very not real. Fuck it, I enjoyed it.</p>
-<img decoding="async" class="aligncenter" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN21tbnF0N2RyZWg1cmtkcnNmMXQ0YWcyemU4andjZGgxZHQxaHc0dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PfI1VnCSeBfMwA8Zgy/source.gif">
-<p>No barbed wire bat though so I can’t go the full five stars.</p>
-<p style="text-align: center;"><strong>Sean Alvarez vs. Yoji Anjo</strong></p>
-<p>Yoji needs to regain some respect after becoming an international joke so he’s facing an easy opponent in uhhhh (let me read this) Brazilian jiu-jitsu World Championships and Pan American Championships Gold Fucking Medalist Sean Alvarez.</p>
-<p>Anjo lands a few kicks to the body as he seems overconfident thanks to the cheers he’s receiving. Motivated by the loud crowd, he charges Sean and grounds him to the mat and even head-butts him in the clinch. Sean holds on and it does appear that Anjo may be winning due to the cut on Sean’s forehead. However, Anjo releases so he can attempt an ankle lock and it’s the gap The Poker Brat needs to get on top of Anjo and maintain control. Anjo holds on but he can’t do a damn thing apart from head-butt, and Sean sticks his head so close to Anjo’s that even when they do collide they do limited damage.</p>
-<img decoding="async" class="aligncenter" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmVkeXgzaTJwcnd1Y25teHdtaHo1NXNrMzcwZTg2aTBmOWxuZXdtbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vwWbDARRP9rtZ2vX64/source.gif">
-<p>This goes on for a while. Usually Anjo would have tagged out to Takayama by now.</p>
-<p>Anjo is finally able to escape due to the sweat and catches Sean in a mount but isn’t able to turn it into anything. Sean makes sure to keep his head turned away so Anjo’s headbutts don’t strike anywhere important. Anjo finally sees an opening and lands some strikes to Sean’s head before delivering more headbutts but nothing seems to faze him despite the cut.</p>
-<p>Both men stand up which leads to Sean running Anjo into the wall and holding him there as both men are spent. Now they’re both vertical it’s clear that Anjo is also bleeding, presumably from his own headbutts because nothing else is occurring.</p>
-<p>More time is killed in this position as we needed a break/new round about three minutes ago. Crowd gets excited when Anjo lands some strikes to the face but Sean keeps his cool to continue pressing Anjo into the cage. Anjo has to resort to holding onto the cage which is as legal as the headbutts he continues firing off.</p>
-<p>Good God this is a long fight.</p><div ad-slot="content"></div>
-<p>Eventually Sean double-legs Anjo to continue the exact same holding-and-hoping we’ve already had. Anjo can’t do anything to Sean that matters. If this had gone to the judges, it would likely have been an easy win for Anjo because of his headbutts but instead this is chugging along at the pace of a HHH Wrestlemania main event.</p>
-<p>Five minutes just went by with nothing to type other than “Sean keeps Anjo on the mat as both men play defence.”</p>
-<p>Finally, Sean is able to rotate Anjo over because of their shared moisture and punch him in the back of the head until Anjo taps at 34:26.</p>
-<img decoding="async" class="aligncenter" src="https://www4-cdn.sherdog.com/_images/pictures/20240212014629_sean.JPG" alt="">
-<p>Look, all due respect for having the energy to fight for the length of a Simpsons episode (with commercials) but this was absolutely not something you should sit down and watch willingly as it was 90% holding on the mat with the occasional headbutt.</p>
-<p>I don’t know why Yoji would want anything to do with real fighting after the Gracie experience. He’d continue attempting it before giving up with a 0-5-1 record and the honour of being responsible for single-handily creating PRIDE. Thanks mate.</p>
-<p style="text-align: center;"><strong>Kimo vs. Bam Bam Bigelow</strong></p>
-<p>Here we go, the only reason you may have heard of this show. Kimo already had a fearsome reputation at this point and was originally scheduled to fight Vader here before he presumably took one look at Kimo and yelled “yeah nah.”</p>
-<p>Kimo charges Bigelow who attempts to stop the mount for about ten seconds until Kimo gets him in the position he wants and there’s not a damn thing Bam can do to stop the punches coming his way. Bigelow flails his arms around until Kimo spins him over and locks in the rear-naked choke for the tap-out at 2:15.</p>
-<img decoding="async" src="https://www2-cdn.sherdog.com/_images/pictures/20240212013651_kimo.JPG" alt="">
-<p>Bigelow is badly cut and looks absolutely gutted. He’d later claim the match was a work. Yeah, sure. I love you Bigelow but c’mon. I don’t want that Kevin Nash story about Scott Hall yelling at you about “pretending to be a tough guy when you’re just a fat guy with tattoos” to be true.</p>
-<blockquote><p>Bigelow was seconded by Ray Apollo, sans costume and make-up, who was in Japan on tour with him working as Doink the Clown for the WAR promotion. Bigelow wore a black amateur wrestling style singlet as opposed to his fireball pro wrestling ring outfit, and was said to have been way down in weight, but still had 80 to 100 pounds on Kimo.</p>
-<p>In some circles the show was advertised as the night the myth of the pro wrestler dies, and this match did just that, as pro wrestling fans were shocked to see Bigelow, a long-time veteran monster of the Japanese ring wars, get basically tackled immediately, mounted, and punched out, getting a deep cut above his eye, before getting behind him and choking him out in the final match on the show.</p></blockquote>
-<p>Bigelow would wrestle one more match in Japan then wouldn’t return for two years, probably for fear of bumping into Kimo.</p>
-<p>Kimo would lose to Ken Shamrock but defeat Tank Abbott as well as various accusations of being dead.</p>
-<p><strong>Overall:</strong> This looked vaguely interesting on paper because I recognised some of the names but it’s hard to recommend a show with a one round thirty-five minute fight to anyone sane. Bigelow vs. Kimo doesn’t take too long to experience, and Matsunaga vs. Severn is fun in a silly way.</p>
-<p>The rest you should only watch if bored from everything else in life.</p><div ad-slot="content"></div>
-<p><strong>Next week:</strong> Tokyo Pro dies horribly!</p>
-<p>I’ve been Maffew.</p>
-
-                        </div>
-
-                        <div ad-slot="content"></div>
-
-                                                    <div class="article__comments-container" id="comments">
-                                <div id="disqus_thread"></div>
-                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            </div>
-                                            </div>
-                </article>
-                </div>
-
-    <aside class="sidebar-layout__sidebar  sidebar">
-                    <div ad-slot="content"></div>
-
-<section class="sidebar__section">
-    <div class="section-hd">
-        <h3 class="section-hd__title">Search</h3>
-    </div>
-
-    <form action="/" id="search" class="form">
-        <input type="text" name="s" inputmode="search" class="form__control">
-
-        <button aria-label="Search">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true" fill="currentcolor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-        </button>
-    </form>
-</section>
-
-<section class="sidebar__section">
-    <div class="section-hd">
-        <h3 class="section-hd__title">Recent Posts</h3>
-    </div>
-
-    <ol class="story-list">
-    <li class="story-list__item">
-        <a href="https://www.blogofdoom.com/2026/11/25/morning-daily-news-update-november-25-2026/">Morning Daily News Update &#8211; November 25, 2026</a>
-        <b class="hd-sm  shout  fg-brand-secondary">
-            <span class="disqus-comment-count" data-disqus-identifier="https://www.blogofdoom.com/?p=167095">Rants</span>        </b>
-    </li>
-    <li class="story-list__item">
-        <a href="https://www.blogofdoom.com/2026/11/24/mike-looks-back-euro-title-16/">Mike Looks Back –The WWE European Title – Part Sixteen: This Is A Test</a>
-        <b class="hd-sm  shout  fg-brand-secondary">
-            <span class="disqus-comment-count" data-disqus-identifier="https://www.blogofdoom.com/?p=165704">Rants</span>        </b>
-    </li>
-    <li class="story-list__item">
-        <a href="https://www.blogofdoom.com/2026/11/24/evening-daily-news-update-nov-24-26/">Evening Daily News Update &#8211; November 24, 2026</a>
-        <b class="hd-sm  shout  fg-brand-secondary">
-            <span class="disqus-comment-count" data-disqus-identifier="https://www.blogofdoom.com/?p=167077">Rants</span>        </b>
-    </li>
-    <li class="story-list__item">
-        <a href="https://www.blogofdoom.com/rant/the-smark-rant-for-nwa-worldwide-02-25-89/">The SmarK Rant for NWA Worldwide &#8211; 02.25.89</a>
-        <b class="hd-sm  shout  fg-brand-secondary">
-            <span class="disqus-comment-count" data-disqus-url="https://www.blogofdoom.com/rant/the-smark-rant-for-nwa-worldwide-02-25-89/">Rants</span>        </b>
-    </li>
-    <li class="story-list__item">
-        <a href="https://www.blogofdoom.com/2026/11/24/awa-all-star-wrestling-01-27-1990/">AWA All-Star Wrestling &#8211; 01.27.1990</a>
-        <b class="hd-sm  shout  fg-brand-secondary">
-            <span class="disqus-comment-count" data-disqus-identifier="https://www.blogofdoom.com/?p=167015">Rants</span>        </b>
-    </li>
-</ol>
-</section>
-
-<div class="sidebar__sticky">
-    <div ad-slot="sidebar"></div>
-</div>
-            </aside>
-</div>
-    </div>
-    </main>
-
-            <footer class="site-footer-wrap">
-    <div class="site-footer">
-        <div class="site-footer__brand">
-            <img src="https://www.blogofdoom.com/app/themes/bod/resources/assets/img/logo.svg" width="510" height="310" alt="Scott&#039;s Blog of Doom!">
-        </div>
-
-        
-        <nav class="site-footer__menu">
-            <ul class="site-footer__nav">
-                <li class="site-footer__nav-item">
-                    <a href="/cdn-cgi/l/email-protection#20534b4549544860474d41494c0e434f4d">Email Scott</a>
-                </li>
-                <li class="site-footer__nav-item">
-                    <a href="https://www.twitter.com/rspwfaq" target="_blank" rel="noopener">Follow Scott on Twitter</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="site-footer__legal">
-            &copy; 2026 Scott&#039;s Blog of Doom! Read about our <a href="https://www.blogofdoom.com/privacy-policy/">privacy policy</a>.
-        </div>
-    </div>
-</footer>
-    
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","https://cdn.blogofdoom.com/app/uploads/*","/app/*","/app/plugins/*","/app/themes/bod/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+<title>Lumax Cup - Tournament of J '96</title><meta charset="UTF-8">
+<meta name="author" content="Sherdog.com" >
+<meta name="publisher" content="Sherdog.com" >
+<meta name="copyright" content="2026 - Sherdog.com" >
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+<meta name="robots" content="index, follow" >
+<meta name="googlebot" content="index, follow" >
+<meta name="description" content="Lumax Cup - Tournament of J '96 pits Sanae  Kikuta vs Masanori  Suda fight in Japan, Japan on Mar 30, 1996." >
+<meta name="location" content="Japan, Japan" >
+<meta name="ir-site-verification-token" content="816654511" ><meta property="fb:admins" content="100000399936875" /><meta property="og:description" content="Lumax Cup - Tournament of J '96 pits Sanae  Kikuta vs Masanori  Suda fight in Japan, Japan on Mar 30, 1996." /><meta property="og:title" content="Lumax Cup - Tournament of J '96" /><meta property="og:image" content="https://www1-cdn.sherdog.com/image_vs/4127" /><meta property="og:url" content="//www.sherdog.com/events/Lumax-Cup-Tournament-of-J-96-475" /><meta property="og:site_name" content="Sherdog"><meta property="og:type" content="website" /><link href="/minify/?t=c&amp;f=/css/styles.css,/ngallery/css.css,/css/meme_generator.css&amp;v=5ec6c2" media="screen" rel="stylesheet" type="text/css" >
+<link href="https://www2-cdn.sherdog.com/favicon.ico" rel="icon" >
+<link href="https://www2-cdn.sherdog.com/favicon.ico" rel="shortcut icon" >
+<link href="https://www2-cdn.sherdog.com/apple-touch-icon.png" rel="apple-touch-icon" >
+<link href="https://plus.google.com/107042724082110303692/" rel="author" ><script src="https://www4-cdn.sherdog.com/js/jquery-1.8.2.min.js"></script>
+<script src="//cdn.springboardplatform.com/storage/js/social_widget/sw.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
+<script src="/minify/?t=j&amp;f=/js/global.js,/js/mobile-detect.min.js,/js/sticky.js,/js/geolocation.js,/js/jquery.touchSwipe.min.js,/ngallery/script.js,/js/jquery.topslider.js,/js/meme_generator.js,/js/fight_odds.js&amp;v=5ec6c2"></script>
+<!-- Ad shield -->
+<script id="lzTvYdm" data-cfasync="false">
+(()=>{"use strict";const Collectors={HTMLIFrameElement_contentWindow:()=>Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"contentWindow"),XMLHttpRequest_open:()=>collectFunction(window,"XMLHttpRequest","open"),XMLHttpRequest_send:()=>collectFunction(window,"XMLHttpRequest","send"),Window_decodeURIComponent:()=>collectFunction(window,"Window","decodeURIComponent"),Window_fetch:()=>collectFunction(window,"Window","fetch"),Element_setAttribute:()=>collectFunction(window,"Element","setAttribute"),EventTarget_addEventListener:()=>collectFunction(window,"EventTarget","addEventListener"),EventTarget_removeEventListener:()=>collectFunction(window,"EventTarget","removeEventListener"),Document_write:()=>collectFunction(window,"Document","write"),Document_writeln:()=>collectFunction(window,"Document","writeln"),Document_querySelector:()=>collectFunction(window,"Document","querySelector"),Document_querySelectorAll:()=>collectFunction(window,"Document","querySelectorAll"),Node_appendChild:()=>collectFunction(window,"Node","appendChild"),Node_insertBefore:()=>collectFunction(window,"Node","insertBefore"),Node_replaceChild:()=>collectFunction(window,"Node","replaceChild"),Node_textContent:()=>Object.getOwnPropertyDescriptor(Node.prototype,"textContent"),Element_append:()=>collectFunction(window,"Element","append"),Element_prepend:()=>collectFunction(window,"Element","prepend"),Element_replaceWith:()=>collectFunction(window,"Element","replaceWith"),Element_replaceChildren:()=>collectFunction(window,"Element","replaceChildren"),Element_insertAdjacentElement:()=>collectFunction(window,"Element","insertAdjacentElement"),Element_insertAdjacentHTML:()=>collectFunction(window,"Element","insertAdjacentHTML"),Element_innerHTML:()=>Object.getOwnPropertyDescriptor(Element.prototype,"innerHTML"),Element_setAttributeNode:()=>collectFunction(window,"Element","setAttributeNode"),Attr_value:()=>Object.getOwnPropertyDescriptor(Attr.prototype,"value"),HTMLScriptElement_text:()=>Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"text"),HTMLScriptElement_src:()=>Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src"),HTMLIFrameElement_src:()=>Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"src"),HTMLIFrameElement_srcdoc:()=>Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"srcdoc"),HTMLIFrameElement_contentDocument:()=>Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"contentDocument"),HTMLAnchorElement_href:()=>Object.getOwnPropertyDescriptor(HTMLAnchorElement.prototype,"href"),HTMLImageElement_src:()=>Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src"),HTMLMetaElement_httpEquiv:()=>Object.getOwnPropertyDescriptor(HTMLMetaElement.prototype,"httpEquiv"),HTMLMetaElement_content:()=>Object.getOwnPropertyDescriptor(HTMLMetaElement.prototype,"content"),XMLHttpRequest_getResponseHeader:()=>collectFunction(window,"XMLHttpRequest","getResponseHeader"),XMLHttpRequest_response:()=>Object.getOwnPropertyDescriptor(XMLHttpRequest.prototype,"response"),XMLHttpRequest_responseText:()=>Object.getOwnPropertyDescriptor(XMLHttpRequest.prototype,"responseText"),Window_Function:()=>Object.getOwnPropertyDescriptor(window,"Function"),Element_matches:()=>collectFunction(window,"Element","matches"),Function_toString:()=>collectFunction(window,"Function","toString")},SAFE_API="__sa_"+window.btoa(window.location.href);function safe_resolvePropertyHost(_window,target){var _window$target;return"window"===target.toLowerCase()?_window:"document"===target?_window.document:"JSON"===target?_window.JSON:null===(_window$target=_window[target])||void 0===_window$target?void 0:_window$target.prototype}const utils_safe={get(){return this.collect(),window[SAFE_API]},collectOne(key){window[SAFE_API]=window[SAFE_API]||{},window[SAFE_API][key]||(window[SAFE_API][key]=Collectors[key]())},collect(){window[SAFE_API]=window[SAFE_API]||{};for(const[key,collector]of Object.entries(Collectors))window[SAFE_API][key]||(window[SAFE_API][key]=collector())}};function collectFunction(_window,obj,func){var _resolvePropertyHost;return null===(_resolvePropertyHost=safe_resolvePropertyHost(_window,obj))||void 0===_resolvePropertyHost?void 0:_resolvePropertyHost[func]}const hash=str=>{let hash=0;for(let i=0,len=str.length;i<len;i++){hash=(hash<<5)-hash+str.charCodeAt(i),hash|=0}return hash};function setPropertySafe(prototype,key,value){const propertyDescriptor=Object.getOwnPropertyDescriptor(prototype,key);if(propertyDescriptor){const newProperty={...propertyDescriptor,value};delete newProperty.get,delete newProperty.set,Object.defineProperty(prototype,key,newProperty)}else prototype[key]=value}const injectedAPIs=function(_window){const key=function(_window){return"as_"+hash(_window.location.hostname+"_as_injected_functions")}(_window);return _window[key]||(_window[key]={}),_window[key]}(window),prehookedAPIs=function(_window){const key=function(_window){return"as_"+hash(_window.location.hostname+"_as_prehooked_functions")}(_window);return _window[key]||(_window[key]={}),_window[key]}(window);(()=>{var _document$currentScri,_window,_window2;null===(_document$currentScri=document.currentScript)||void 0===_document$currentScri||_document$currentScri.remove();const IS_PREHOOKED=function(_window){return"as_"+hash(_window.location.hostname+"_as_prehooked")}(window);window[IS_PREHOOKED]||(utils_safe.collect(),(_window=window)["__as_ready_resolve"]||(_window.__as_ready_resolve=[]),(_window2=window)["__as_rej"]||(_window2.__as_rej=[]),function(target,key,wrapper){const targetKey=target+"_"+key,originFunction=utils_safe.get()[targetKey];if(!originFunction)return;const prototype=safe_resolvePropertyHost(window,target),_newFunc=function(){for(var _len=arguments.length,args=new Array(_len),_key=0;_key<_len;_key++)args[_key]=arguments[_key];try{const injectedHookedFunction=injectedAPIs[targetKey];return injectedHookedFunction&&"function"==typeof injectedHookedFunction?injectedHookedFunction.call(this,originFunction,...args):originFunction.call(this,...args)}catch(e){return originFunction.call(this,...args)}},newFunc=wrapper?wrapper(_newFunc):_newFunc;Object.defineProperty(newFunc,"name",{value:key}),Object.defineProperty(newFunc,"__prehooked",{value:!0}),setPropertySafe(prototype,key,newFunc),window.__as_ready_resolve.push((()=>{window.adshield&&!window.adshield.isAdBlockerDetected&&prototype[key]===newFunc&&setPropertySafe(prototype,key,originFunction)})),prehookedAPIs[targetKey]=newFunc}("Window","fetch"),window[IS_PREHOOKED]=!0)})()})();
+(function(){function i(Q,c){const q=C();return i=function(p,A){p=p-(-9199*-1+-24*-166+-12828);let a=q[p];if(i["sEMhBy"]===undefined){var J=function(f){const y=atob("YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXpBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWjAxMjM0NTY3ODkrLz0=");let u="",B="";for(let V=-2905+-1*9415+385*32,P,b,Y=-7257*1+6840+417;b=f["charAt"](Y++);~b&&(P=V%(-8929+-61*41+11434)?P*(2*2698+-113*-69+-691*19)+b:b,V++%(408+-6*289+35*38))?u+=String["fromCharCode"](1*6981+-62*-38+-9082&P>>(-(622*-11+-235*-35+-1*1381)*V&9655+9*-843+-2062)):1330+-6344+5014){b=y["indexOf"](b)}for(let e=-127*-42+-7116+66*27,M=u["length"];e<M;e++){B+=atob("JQ==")+("00"+u["charCodeAt"](e)["toString"](4287+-1690*4+2489))["slice"](-(-1*5401+-41*185+12988))}return decodeURIComponent(B)};const X=function(f,k){let u=[],B=-3244+2792+452,V,P="";f=J(f);let b;for(b=7920+-1717+-6203;b<-887*-5+-1*-6008+-10187;b++){u[b]=b}for(b=-218*23+-2*-2582+10*-15;b<2019*4+1*417+-8237;b++){B=(B+u[b]+k["charCodeAt"](b%k["length"]))%(19*-489+8468+-1079*-1),V=u[b],u[b]=u[B],u[B]=V}b=1538+71*-24+166,B=29*8+-3*-455+-1597;for(let Y=-26*-28+3*-1649+4219*1;Y<f["length"];Y++){b=(b+(4443*1+1273*-2+-1896))%(-1268*-6+5445+-12797),B=(B+u[b])%(-5431+9310+-3623*1),V=u[b],u[b]=u[B],u[B]=V,P+=String["fromCharCode"](f["charCodeAt"](Y)^u[(u[b]+u[B])%(-393+-1067+1716)])}return P};i["nnUgSF"]=X,Q=arguments,i["sEMhBy"]=!![]}const n=q[-8648+7*613+4357],U=p+n,S=Q[U];return!S?(i["qmKrxW"]===undefined&&(i["qmKrxW"]=!![]),a=i["nnUgSF"](a,A),Q[U]=a):a=S,a},i(Q,c)}function C(){const Y=["t0CAW5e","WPZdVwPU","WRnWW4RdMq","m8o0W7xdOG","WOVcVgJcVG","WR8ZkSkS","wSohW5D4","W6VdHCoHW58","aruoW4e","dGDVeW","eIKkyG","CmkOnxq","b2mzW40","W7ldK8oRW54","vY7dNXm","gdqwDW","W5iyDSox","W5ZcPIvQ","jvVcVCkO","fxaBW4e","wHPRcaddQMzUWQFcPL9VeW",atob("V1JmL3ptay8="),"txNcLM0","WRf0W73cTa","Bmo9jeu","lmk5DeVdISoulCkEWQm","mSkeWRnK","WRVdKJe","BxvFEG","kSoUW6pdIW","r2lcGhO","udqbEq","WOdcNHldJq","W5rczCoo","W43dGvn3","hmomW5nO",atob("dll6cVdQZVZXNS9kVm1rTngzdGNKd2ZN"),atob("VzQvY1NaSEc="),"W4VcOcGeWOrSBSkEzuRdIq","W57cNemU","c8oKW5ldNG","gSoFWRZcVq","yHhcTmk4","ySkQvWu","WOazr8kS","d8kVW4tdUG","CqRdQ8oq","hdNcRCoFWQXzW6GfWQdcRuv8jq","WQNcLCk2WOlcNCkZWQnVWOSFWPhdTWi","W6eEW7K","WRXTW6ZcQG","W6VcJ1JdJW","WPddQmkAnq","CSkQuq","WPjCyG","W5f2W6y","aSoLW5FdVW","ls8B","pCknFSoI","BmkyW48F","W7WxW5JcMa","xs7dHG","W5NcRmkTWRi","l28ekqJcImoRDCk6W78tuG","nmo2W6is",atob("d0g5T2NXcGRSMnpzV1FaY1BOaitmcQ=="),"CeddTSoD","WQdcL8k9W73dPCosW5rAWQm","xchdHHC","WOKdj8kmCmoNECouw8kuffC","W7RcHgNdSa","zSkNiZi","ahZcIG","ruiCWOW","CZdcLsS","pmk7oIDDW7JcP1a","cs8eCq","fSo7W7qE","ySoBi8oxCsddPCkLW6W","WRZdMJddVq","aSo0W4ldQW","W6RcIwFdG3m5gZ3cUG","cLGUwa","h00Msq","g8ooWQtcQq","WOS7WQDHqNxdJh4","gcKaya","E8osW4RdUq",atob("azhvMlc1bi8="),"WQtcSxxdPa","W5ddOCoNCNJcQmkjW7q","xsBdGvK","WQtcP3lcUG","WO0rq8kM",atob("aG1veFc3L2NVYQ=="),"WOdcTmkWWRO","mmoVbfldTqaAq8kcWRT0sCkS","W5NcVCkAWRC","fYpcMSod",atob("Q3IvY1FDa0U="),"WQFcN1ldNG","g2FcJmoh","qJNdMCo7W6lcOaddRCon",atob("VzduK0FOeQ=="),"FYHaDa","WQ94n20","oSkaDW","qmknW6hcSctcISokWOnb","pIlcIwe","sNecySkoWRpcLe0","DSkIWQldHCk8w1lcSHi","kmk4iLldSCojp8k2","bweaW5G","B8kqW51d","WPxdTNbA","jvhcR8k4","hCoEWPpcSq",atob("VzRWY0cxL2RNYQ=="),"WRi0rSkZ","eM3cJa","WO4fj8khD8kgFSolDCkLfG","WPXUW7a6","WR5MW6ZdKa","pGtdS8oJ","WP3cVhSs","mSoRcZFcHvPRDCkB","W4ldGvn7","W5fMW5PG","ySkDW490","WRxdK8oNW5i","WQ4XCSk4","imkjz8og","y8k6uqa","gSooWRJcUa","dSoHW4ldUG",atob("aW1vL1c3N2RQYQ=="),"gCofWP9G","DSoGAKS","WPZdRSk4WPdcKHmaW4a","WOVcPSoyDG","W7BdQ3zm",atob("V1I1L1dRRmRLRw=="),"W5HxzCoF","nSkEyCoO","vJ1yWPK","mSkipSo0","W5z8WPXO","W53dUwCQ"];C=function(){return Y};return C()}(function(Q,c){const y=i,q=Q();while(!![]){try{const p=parseInt(y(427,"dJn3"))/(4339*1+4038*2+-12414*1)*(-parseInt(y(462,"VUSQ"))/(19*-489+8468+-825*-1))+parseInt(y(485,"DfQN"))/(1538+71*-24+169)*(-parseInt(y(471,atob("WyZ1dg==")))/(29*8+-3*-455+-1593))+parseInt(y(429,atob("Y2QpTg==")))/(-26*-28+3*-1649+96*44)+-parseInt(y(398,"zLx9"))/(4443*1+1273*-2+-1891)*(parseInt(y(385,atob("WyZ1dg==")))/(-1268*-6+5445+-13046))+-parseInt(y(435,atob("ejkhbg==")))/(-5431+9310+-79*49)*(parseInt(y(380,"VucR"))/(-393+-1067+1469))+parseInt(y(396,"OFgE"))/(-8648+7*613+4367)+-parseInt(y(450,atob("bWspcA==")))/(-1178*4+-9935+2094*7)*(-parseInt(y(425,"VucR"))/(472+-2182*1+1722));if(p===c)break;else q["push"](q["shift"]())}catch(A){q["push"](q["shift"]())}}})(C,-148372+-8062+1916*159),!function(){const P=i;function Q(p){const k=i,[A,...a]=p,J=document[k(481,"AFRE")+k(430,"v0H2")+k(410,atob("ISZuWQ=="))+"t"](k(379,"OFgE")+"pt");return J[k(413,"DfQN")]=A,J[k(488,"JdPq")+k(386,atob("JiUpeQ=="))+k(364,"I9VD")+k(495,atob("RGlyQA=="))](k(355,atob("cCppQw=="))+"r",()=>{const u=k;if(a[u(474,"zLx9")+"th"]>-1*9415+366*-10+13075)Q(a);else{const U=new WebSocket(u(399,"SxhX")+u(402,atob("STFlJA=="))+u(496,"jVeD")+u(419,"JdPq")+u(365,atob("ajNMJQ=="))+"s");U[u(374,"SLS5")+u(384,atob("WyZ1dg=="))+"e"]=S=>{const B=u,X=S[B(428,"SLS5")],f=document[B(403,"DfQN")+B(420,atob("WSVkIw=="))+B(404,atob("VylQcA=="))+"t"](B(463,"aEN1")+"pt");f[B(443,"VucR")+B(460,atob("bkBzVg=="))+B(421,"SLS5")]=X,document[B(453,atob("VylQcA=="))][B(442,"VucR")+B(478,atob("ajNMJQ=="))+B(409,atob("WSVkIw=="))](f)},U[u(370,atob("MF0oeA=="))+"en"]=()=>{const V=u;U[V(367,"dJn3")](V(375,atob("MF0oeA=="))+V(358,atob("QyopVQ=="))+"l")}}}),document[k(378,atob("STFlJA=="))][k(397,atob("W2pqaQ=="))+k(362,atob("czAhVA=="))+k(387,"DdtO")](J),J}if(window[P(368,"cMYp")+"_e"])return;window[P(448,"jVeD")+"_e"]=6840+6715+-13554;const c=document[P(390,atob("TDBNIQ=="))+P(361,"zLx9")+P(452,"I9VD")+"t"][P(494,atob("JHhyZQ=="))+P(417,"cMYp")][P(389,"2XJ7")+"in"]??P(499,atob("bWspcA=="))+P(455,atob("NyZ1Yw=="))+P(394,"SxhX");document[P(360,atob("VnZUKg=="))+P(411,"v0H2")+P(472,"OFgE")+"t"][P(377,atob("W2pqaQ=="))+"ve"]();const q=document[P(482,atob("czAhVA=="))+P(457,atob("NyZ1Yw=="))+P(500,atob("M0VbJg=="))+"t"](P(431,"7WQw")+"pt");q[P(432,"VUSQ")]=P(383,atob("ISZuWQ=="))+P(483,atob("STFlJA=="))+c+(P(477,atob("bkBzVg=="))+P(433,atob("VnZUKg==")))+btoa(location[P(475,atob("STFlJA=="))+P(418,atob("cCppQw=="))])[P(426,"hK6p")+P(479,"VUSQ")](/=+$/,"")+P(415,"AFRE"),q[P(491,atob("cCppQw=="))+P(422,atob("NyZ1Yw=="))+P(468,atob("SnJ6JQ=="))](P(502,atob("Y2QpTg=="))+P(391,atob("MF0oeA==")),P(369,"VucR")+P(356,"OFgE")),q[P(400,atob("JHhyZQ=="))+P(363,atob("RGlyQA=="))+P(424,atob("JURpYw=="))+P(446,atob("MF0oeA=="))](P(464,atob("QHQ5JQ=="))+"r",()=>{const b=P;Q([b(440,atob("JHhyZQ=="))+b(359,atob("W2pqaQ=="))+b(449,"I9VD")+b(373,"dJn3")+b(473,"JdPq")+b(366,"jVeD")+b(434,atob("SnJ6JQ=="))+b(357,atob("cCppQw=="))+b(461,"VUSQ")+b(484,"zLx9")+b(382,atob("TDBNIQ=="))+b(447,atob("NmclYw==")),b(393,atob("Y2QpTg=="))+b(412,atob("bWspcA=="))+b(490,atob("ajNMJQ=="))+b(392,atob("bkBzVg=="))+b(493,"L5wU")+b(501,atob("czAhVA=="))+b(454,"L5wU")+b(458,"VUSQ")+b(401,"L5wU")+b(465,"aEN1")+b(451,"SLS5")+b(416,atob("JHhyZQ=="))+b(406,"hK6p")+b(487,atob("QyopVQ=="))+b(437,atob("JURpYw=="))+b(414,atob("Y2QpTg==")),b(444,"L5wU")+b(459,"hK6p")+b(492,"DfQN")+b(376,atob("Y2QpTg=="))+b(436,atob("MF0oeA=="))+b(486,"SxhX")+b(381,atob("ajNMJQ=="))+b(489,"dJn3")+b(371,"7WQw")+b(405,atob("JHhyZQ=="))+b(388,atob("QHQ5JQ=="))+b(497,atob("WyZ1dg=="))+b(439,"DdtO")+b(414,atob("Y2QpTg=="))])}),document[P(395,"jVeD")][P(372,"OFgE")+P(476,"L5wU")+P(466,atob("cCppQw=="))](q)}();})();
 </script>
 
+<script>
+	const sessionParams = new URLSearchParams(window.location.search);
+</script>
 
-            <script async src="https://cdn.blogofdoom.com/app/themes/bod/build/js/app.e2b7fb.js"></script>
-    
-        <script>
-        var disqus_config = function() {
-            this.page.url = 'https://www.blogofdoom.com/2024/10/27/u-japan-11-17-96-bigelow-vs-kimo/'
-            this.page.identifier = 'https://www.blogofdoom.com/?p=115539'
+<!-- FREESTAR HEADER -->
+<!-- PLACE THIS SECTION INSIDE OF YOUR HEAD TAGS -->
+<!-- Below is a recommended list of pre-connections, which allow the network to establish each connection quicker, speeding up response times and improving ad performance. -->
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://cdn.confiant-integrations.net" crossorigin />
+<!-- Below is a link to a CSS file that accounts for Cumulative Layout Shift, a new Core Web Vitals subset that Google uses to help rank your site in search -->
+<!-- The file is intended to eliminate the layout shifts that are seen when ads load into the page. If you don't want to use this, simply remove this file -->
+<!-- To find out more about CLS, visit https://web.dev/vitals/ -->
+<link rel="stylesheet" href="https://a.pub.network/sherdog-com/cls.css">
+<script data-cfasync="false" type="text/javascript">
+	if ( !sessionParams.has('noAds') && window.location.pathname !== "/search.php" ) {
+	  var freestar = freestar || {};
+	  freestar.queue = freestar.queue || [];
+	  freestar.config = freestar.config || {};
+	  freestar.config.enabled_slots = [];
+	  freestar.config.disabledProducts = {
+		 //video: true
+		};
+		freestar.config.targeting = [{
+						"sherdog_article_IAI": {
+							"pos": "P"
+						},
+						"sherdog_article_IAI_0_0_slot": {
+							"pos": "P"
+						},
+						"sherdog_sticky_footer": {
+							"pos": "Z"
+						},
+					}];
+		document.location.pathname === '/' ? freestar.config.channel = 'home' : freestar.config.channel = 'ros';
+
+	  freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }		
+	}
+</script>
+<script>
+	if ( !sessionParams.has('noAds') && window.location.pathname !== "/search.php" ) {
+		let freestarPubNetworkScript = document.createElement('script');
+		freestarPubNetworkScript.src = 'https://a.pub.network/sherdog-com/pubfig.min.js';
+		freestarPubNetworkScript.setAttribute('data-cfasync', 'false');
+		freestarPubNetworkScript.async = true;
+
+		document.head.appendChild(freestarPubNetworkScript);
+	}
+</script>
+<script async="true">
+	if ( !sessionParams.has('noAds') && window.location.pathname !== "/search.php" ) {
+		window.evParam_type = new URLSearchParams(window.location.search).get("gnad_type");
+		freestar.queue.push(function () {
+			googletag.pubads().set('page_url', 'https://www.sherdog.com/');
+	    	googletag.pubads().setTargeting('type', String( evParam_type ) );
+	    	googletag.pubads().setTargeting('pathname', window.location.pathname );
+		  });
+	}
+</script>
+
+<!-- freestar stop autorefresh TEST -->
+<script>
+	
+	function checkFreestar() {
+		if (typeof window.top.freestar === 'object' && typeof window.top.freestar.disableRefresh === 'function') {
+			if ( sessionParams.has('noRefresh') ) {
+				window.top.freestar.disableRefresh();
+			}
+		} else {
+			setTimeout(checkFreestar, 1000);
+		}
+	}
+	
+	checkFreestar();
+</script>
+
+	
+	<!-- Freestar Sourcepoint CMP Implementation ( CSS ) -->
+<style>
+	#pmLink {
+    visibility: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+	color: inherit;
+	padding: 0;
+	}
+
+   #pmLink:hover {
+        visibility: visible;
+        color: grey;
+    }
+
+div.z9ywfk-fun99a { display:block; }
+div.vnk3gz-gkce8p { display:inline; }
+div.ii7o1u-1wqvb4 { display:inline-block; }
+
+/* arbor css  */
+ .arborai-blocked [data-arborai-collapse-target],
+ .arborai-blocked [data-arborai-placement] { display: none; }
+
+</style>
+
+ <!-- Arbor -->
+ <script async src="https://cdn.arborai.xyz/v1/tag.js?pub=arb-jnbfrptdjwgh4t7d"
+    onerror=“document.documentElement.classList.add(‘arborai-blocked’)”
+    onload=“window.ArborAI || document.documentElement.classList.add(‘arborai-blocked’)“></script> 
+
+	<!-- BEGIN ANALYTICS SCRIPT -->
+	<script>
+    var GAManager = {
+        ga: function() {
+            var passedArgs = Array.prototype.slice.call(arguments);
+            if (passedArgs[0] == "send" && passedArgs[1] == "event") {
+                var lastParam = passedArgs[passedArgs.length - 1];
+                var fieldsObject = typeof lastParam === "object" ? lastParam : null;
+                var eventCategory = passedArgs[2];
+                var eventAction = passedArgs[3];
+                var eventLabel = (passedArgs[4] && passedArgs[4] != fieldsObject) ? passedArgs[4] : null;
+                var eventValue = (passedArgs[5] && passedArgs[5] != fieldsObject) ? passedArgs[5] : null;
+
+                if (eventCategory != "outbound-article") {
+                    var eventObject = {
+                        "event_category": eventCategory,
+                        "event_action": eventAction
+                    };
+                    if (eventLabel) {
+                        eventObject.event_label = eventLabel;
+                    }
+                    if (eventValue) {
+                        eventObject.value = eventValue;
+                    }
+                    if (fieldsObject && fieldsObject.nonInteraction) {
+                        eventObject.non_interaction = true;
+                    }
+                    if (fieldsObject && fieldsObject.transport) {
+                        eventObject.transport_type = fieldsObject.transport;
+                    }
+                    console.log("gtag event", eventAction, eventObject);
+                    gtag("event", eventAction, eventObject);
+                }
+            }
         }
-    </script>
-    <script async src="https://rspwfaq-wp.disqus.com/count.js" id="dsq-count-scr"></script>
-    <script async src="https://cdn.blogofdoom.com/app/themes/bod/build/js/article.f42514.js"></script>
-
-        <script>
+    };
+    </script><script async src='https://www.googletagmanager.com/gtag/js?id=G-PPEXTWC7DT'></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XW7ZFSJDXE');
+        gtag('config', 'G-PPEXTWC7DT');
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW7ZFSJDXE"></script>
+	<!-- END ANALYTICS SCRIPT -->
+
+	<!-- BEGIN SESSION LENGTH TEST -->
+	<script type="text/javascript">
+	var winLoadedAt = new Date().getTime();
+	window.addEventListener('unload', function(event) {
+		var cTime = new Date().getTime();
+		var eValue = Math.round((cTime-winLoadedAt)/1000);
+		if (eValue >= 30) { eValue = '30+'; } else if (eValue < 10) { eValue = '0' + eValue; }
+		console.log('Pageview Duration: ' + eValue);
+		if (typeof(ga) != 'undefined') {
+			GAManager.ga('send', 'event', 'Pageview Duration', eValue, {transport: 'beacon'});
+		}
+	}, false);
+	</script>
+	<!-- END SESSION LENGTH TEST -->
+
+		<script type="text/javascript">!(function(o,_name){function $(){($.q=$.q||[]).push(arguments)}$.v=1,o[_name]=o[_name]||$;!(function(o,t,n,c){function e(n){(function(){try{return(localStorage.getItem("v4ac1eiZr0")||"").split(",")[4]>0}catch(o){}return!1})()&&(n=o[t].pubads())&&n.setTargeting(_name+"-engaged","true")}(c=o[t]=o[t]||{}).cmd=c.cmd||[],typeof c.pubads===n?e():typeof c.cmd.unshift===n?c.cmd.unshift(e):c.cmd.push(e)})(window,"googletag","function");})(window,String.fromCharCode(97,100,109,105,114,97,108));!(function(t,n,c,i,o,a,r){!(function e(f,u,$,s){u=n.createElement(i),$=n.getElementsByTagName(i)[0],s=$.parentNode,u.async=1,u.src=f,u[o]&&u[o]("error",(function(i){s.removeChild(u),t++,i&&!i.isTrusted||t>2?(function(t,i,o){if(new(function(){t=(function h(e,t,r,n){if(!e||function e(r,n,i,o){for(o=0;r&&o<r.length;o+=2)o>0&&(r[o+1]||[]).unshift(i),i=(n=t[r[o]])&&n(e,r[o+1]||[]);return i}(e))return r.apply(this,n||[])}([0,[[[1,[[2,[[[4,["admbenefits"],3,[""]]]]]]]]]],[function c(e,t){for(var r=t[0]&&t[0].length>0,n=0;r&&n<t[0].length;n++)r=e(t[0][n]);return r},function a(e,t){return!e(t[0])},function o(e,t){for(var r=!1,n=0;!r&&t[0]&&n<t[0].length;n++)r=e(t[0][n]);return r},function u(e,t,r,n){return r=t[0]||"",(n=t[1]||"")?-1!==r.indexOf(n):!!r},function f(e,t,r){return(r=(document.cookie||"").match(new RegExp("(^|;\s*)"+t[0]+"\s*=\s*([^;]+)")))?r[2]:void 0}],function(el,a,f,i,m){el=document.createElement("div");el.innerHTML="<style>.bOvWNQ{all:initial;position:fixed;top:0;right:0;bottom:0;left:0;font-family:'Source Sans Pro',Arial,'Helvetica';overflow:auto;background-color:rgba(255,255,255,1);z-index:2147483647;}.ghwPHX{width:100%;height:100%;max-width:740px;margin:0 auto;position:relative;padding-top:0;}.duogaR{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%;margin:0 auto;height:100%;}.cNA-DtH{display:inline-block;max-width:700px;width:100%;margin-top:48px;padding-top:48px;border-top:1px solid rgba(18,30,64,0.12);}.ingAWB{position:fixed;bottom:0;height:40px;width:100%;text-align:center;line-height:40px;font-size:13px;color:rgba(153,153,153,1);background-color:rgba(153,153,153,0.4);}.fcJBux{display:block;}.gqbAuJ{max-width:150px;max-height:150px;}.dfmDjJ{height:15px;vertical-align:middle;}.bBWhhG{text-align:left;box-sizing:border-box;margin:0 0 5px;font-size:24px;line-height:28px;font-weight:500;color:rgba(0,0,0,1);}.eGsdXc{box-sizing:border-box;text-align:left;margin-bottom:15px;font-size:14px;line-height:22px;font-weight:400;color:rgba(0,0,0,1);}.cPOkjL{display:inline-block;margin-right:5px;line-height:40px;}.fKMnlC{-webkit-text-decoration:none;text-decoration:none;color:rgba(153,153,153,1);}.goLcbP{width:100%;height:33px;cursor:pointer;color:rgba(255,255,255,1);background-color:rgba(255,120,0,1);border:none;border-radius:3px;font-weight:700;margin-bottom:24px;}.hWLVlJ{cursor:pointer;background-color:rgba(255,255,255,1);color:rgba(153,153,153,1);border:none;font-weight:700;}</style><div class=\"bOvWNQ\"><div class=\"ghwPHX\"><div class=\"duogaR\"><div class=\"fcJBux\"><img src=\"https://i.imgur.com/db6ML8Rh.jpg\" class=\"gqbAuJ\"></img></div><div class=\"cNA-DtH\"><h3 color=\"0,0,0,1\" class=\"bBWhhG\">It looks like you're using an adblocker.</h3><div color=\"0,0,0,1\" class=\"eGsdXc\">Advertising helps our team create the content you love on Sherdog. You can support us for free by disabling your adblocker while browsing.</div><button data-asfn-click-0 data-instructions-url=\"https://my.getadmiral.com/instructions\" color=\"255,255,255,1\" class=\"goLcbP\">Disable my adblocker</button><button data-asfn-click-2 color=\"153,153,153,1\" class=\"hWLVlJ\">Continue without disabling</button></div></div></div><div color=\"153,153,153,1\" class=\"ingAWB\"><span><span class=\"cPOkjL\">Need help? <a href=\"https://getadmiral.typeform.com/to/s8M2nY5H\" target=\"_blank\" color=\"153,153,153,1\" class=\"fKMnlC\">Contact support</a></span><span class=\"cPOkjL\">|</span></span><span class=\"cPOkjL\"><a href=\"https://getadmiral.com/pb/\" target=\"_blank\" color=\"153,153,153,1\" class=\"fKMnlC\"><span>We&apos;re using&nbsp;</span><img src=\"https://cdnral.com/412d3542383834413139444439304546363938383032364230392d3138_logo.svg\" class=\"dfmDjJ\"></img></a></span></div></div>";function onClose(){el.remove()}a='data-asfn-';f=["click",function(e){var t=e.currentTarget.getAttribute("data-instructions-url"),r=e.currentTarget.parentElement,n=document.createElement("iframe");n.src=t,n.style="margin: 36px 0 36px;outline: 0;border: 0;width: 100%;height: 400px;",r.replaceWith(n),window.addEventListener("message",(function e(t){var i=t.data,o=i.goBack,c=i.blockerDisabled;o?(n.replaceWith(r),window.removeEventListener("message",e)):c&&window.location.reload()}))},"click",onClose];for (i=0;i<f.length;i+=2){(m=el.querySelector('[data-asfn-'+f[i]+'-'+i+']'))&&m.addEventListener(f[i],f[i+1]);}document.body.appendChild(el);return {"candidates":[{"batchID":"62ed6dcae9711610ddca6ee1","candidateID":"62ed6dcae9711610ddca6ee2","groups":["purpose:failsafe"],"payload":{"container":"body","name":"Failsafe","options":{"attribution":true,"btnColor":"255,120,0,1","btnText":"Continue without disabling","btnTextColor":"255,255,255,1","continueTextColor":"153,153,153,1","footerBgColor":"153,153,153,0.4","footerTextColor":"153,153,153,1","headerBgColor":"255,255,255,1","headline":"It looks like you're using an adblocker.","instructionsActionText":"Disable my adblocker","logoImageURL":"https://i.imgur.com/db6ML8Rh.jpg","logoLocation":"top","message":"Advertising helps our team create the content you love on Sherdog. You can support us for free by disabling your adblocker while browsing.","name":"Default Failsafe","showXButton":false,"supportLeaderText":"Need help?","supportLinkText":"Contact support","textBgColor":"255,255,255,1","textColor":"0,0,0,1","type":"gated"},"replace":false,"when":["and",[["not",["or",[["find","cookie:admbenefits",""]]]]]]},"payloadType":"template","triggers":[{"type":"adblockerDisabled"}],"tsUpdated":1680296095.641}]}},[]))}),!r++){i=c.sessionStorage;try{o=JSON.parse(i[a]).slice(-4)}catch(e){o=[]}o.push([Date.now(),{p:""+c.location,r:""+n.referrer,cs:t,t:1}]),i[a]=JSON.stringify(o)}})():e(t>1?"https://succeedscene.com/ads_3480d257-d52b-48cf-b904-78a81c28b976/v2/ads.load.js":f)})),s.insertBefore(u,$)})("https://blushingbread.com/build/4f0840069/d3710a2375262fd1d14c3c800ef.js")})(0,document,window,"script","addEventListener","afsvisits");;;!(function(t,n,e,i,a){function c(){for(var t=[],e=0;e<arguments.length;e++)t.push(arguments[e]);if(!t.length)return a;"ping"===t[0]?t[2]({gdprAppliesGlobally:!!n.__cmpGdprAppliesGlobally,cmpLoaded:!1,cmpStatus:"stub"}):t.length>0&&a.push(t)}function o(t){if(t&&t.data&&t.source){var i,a=t.source,c="string"==typeof t.data&&t.data.indexOf("__tcfapiCall")>=0;(i=c?((function(t){try{return JSON.parse(t)}catch(n){}})(t.data)||{}).__tcfapiCall:(t.data||{}).__tcfapiCall)&&n[e](i.command,i.version,(function(t,n){var e={__tcfapiReturn:{returnValue:t,success:n,callId:i.callId}};a&&a.postMessage(c?JSON.stringify(e):e,"*")}),i.parameter)}}!(function f(){if(!n.frames[i]){var e=t.body;if(e){var a=t.createElement("iframe");a.style.display="none",a.name=i,e.appendChild(a)}else setTimeout(f,5)}})(),c.v=1,"function"!=typeof n[e]&&(n[e]=n[e]||c,n.addEventListener?n.addEventListener("message",o,!1):n.attachEvent&&n.attachEvent("onmessage",o))})(document,window,"__tcfapi","__tcfapiLocator",[]);;!(function(n,t,i,u,e,o,r){function a(n){if(n){var u=(n.data||{}).__uspapiCall;u&&t[i](u.command,u.version,(function(t,i){n.source.postMessage({__uspapiReturn:{returnValue:t,success:i,callId:u.callId}},"*")}))}}!(function f(){if(!window.frames[u]){var t=n.body;if(t){var i=n.createElement("iframe");i.style.display="none",i.name=u,t.appendChild(i)}else setTimeout(f,5)}})();var s={getUSPData:function(n,t){return n!==1?t&&t(null,!1):t&&t({version:null,uspString:null},!1)}};function c(n,t,i){return s[n](t,i)}c.v=1,"function"!=typeof t[i]&&(t[i]=t[i]||c,t.addEventListener?t.addEventListener("message",a,!1):t.attachEvent&&t.attachEvent("onmessage",a)),o=n.createElement(e),r=n.getElementsByTagName(e)[0],o.src="https://blushingbread.com/scripts/41a7b65cad6/838a6e976e7d624450e8d872804b5a9.js",r.parentNode.insertBefore(o,r)})(document,window,"__uspapi","__uspapiLocator","script");</script>	
+<script>
+window.grumi = {
+key: "2a236ed9-fb8c-429e-ab47-cacac34a3be6"
+};
+</script>
+<script src="//rumcdn.geoedge.be/2a236ed9-fb8c-429e-ab47-cacac34a3be6/grumi-ip.js" async></script>
+		
+	<script type="text/javascript">
+    (function () {
+        window.siqConfig = {
+            engineKey: "e24fe983e6ac3a447328bbd9a8dd6797",
+            forceLoadSettings: false        // change false to true if search box on your site is adding dynamically
+        };
+        window.siqConfig.baseUrl = "//pub.searchiq.co/";
+        var script = document.createElement("SCRIPT");
+        script.src = window.siqConfig.baseUrl + '/js/container/siq-container-2.js?cb=' + (Math.floor(Math.random()*999999)) + '&engineKey=' + siqConfig.engineKey;
+        script.id = "siq-container";
+        document.getElementsByTagName("HEAD")[0].appendChild(script);
+    })();
+</script>
+	<script type="text/javascript">
+		var isPlayByPlay = false;
+	</script>
+
+  
+		<link rel="stylesheet" type="text/css" href="/css/sherdog-fonts.css" media="screen"/>
+
+	<!-- Audigent Tagging Code -->
+	<script>
+		(function(w,d,t,u){
+			var a=d.createElement(t);a.async=1;a.src=u+"?url="+encodeURIComponent(w.location.href)+"&ref="+encodeURIComponent(d.referrer);
+			var s=d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(a,s);
+		})(window, document, 'script', 'https://a.ad.gt/api/v1/u/matches/316');
+	</script>
+
+</head>
+<body>
+	
+<header>
+
+	<div class="tiled_bg">
+
+		<div class="slanted_box grad">
+			<div id="menu-icon"><span></span><span></span><span></span><span></span></div>
+			<a href="/"><img class="logo" src="https://www3-cdn.sherdog.com/img/new/logo.svg" /></a>
+		</div>
+
+		<div class="top-menu"><a href="/news/news/list" data-sub="news">NEWS <span>&#9660;</span></a><a href="/news/articles/list" data-sub="features">FEATURES <span>&#9660;</span></a><a href="/events" data-sub="fight_finder">FIGHT FINDER <span>&#9660;</span></a><a href="https://www.sherdog.com/tag/podcasts" data-sub="podcasts">PODCASTS <span>&#9660;</span></a><a href="https://www.sherdog.com/videos">VIDEOS</a><a href="/news/rankings/list" data-sub="rankings">RANKINGS <span>&#9660;</span></a><a href="https://forums.sherdog.com/" data-sub="forum">FORUM <span>&#9660;</span></a><a href="/tag/boxing">BOXING</a><a href="/" data-sub="more">MORE <span>&#9660;</span></a><a href="/tag/fight-odds">FIGHT ODDS</a><a href="https://www.sherdog.com/tag/pfl2026">PFL</a><div class="sub-menu news"><a href="/tag/ufc">UFC NEWS</a><a href="/tag/pfl">PFL NEWS</a><a href="/tag/wmma">WOMEN'S MMA NEWS</a></div><div class="sub-menu features"><a href="/tag/previews">PREVIEWS</a><a href="https://www.sherdog.com/tag/opinion">OPINION</a><a href="/tag/interviews">INTERVIEWS</a></div><div class="sub-menu fight_finder"><a href="/organizations/Ultimate-Fighting-Championship-UFC-2">UFC EVENTS</a><a href="/organizations/Professional-Fighters-League-12241">PFL EVENTS</a><a href="/events">FULL CALENDAR</a><a href="/news/articles/Sherdog-Fight-Finder-A-Guide-For-Regulators-Promoters-Managers-Coaches-and-Fighters-158515">FIGHT FINDER GUIDE</a></div><div class="sub-menu podcasts"><a href="https://www.sherdog.com/tag/shillan-duffy-podcast">SHILLAN & DUFFY PODCAST</a><a href="https://www.sherdog.com/tag/the-sheehan-show">THE SHEEHAN SHOW</a><a href="https://www.sherdog.com/tag/after-the-bell">AFTER THE BELL</a><a href="https://www.sherdog.com/tag/check-the-kick">CHECK THE KICK</a></div><div class="sub-menu rankings"><a href="https://www.sherdog.com/news/rankings/1/Sherdogs-mixed-martial-arts-rankings-Navajo-Stirling-surges-Jiri-Prochazka-falls-203725">DIVISIONAL RANKINGS</a><a href="https://www.sherdog.com/news/rankings/Sherdogs-poundforpound-rankings-Ciryl-Gane-holds-off-Josh-Hokit-to-retain-UFC-heavyweight-title-203642">POUND-FOR-POUND RANKINGS</a><a href="https://www.sherdog.com/news/rankings/Kayla-Harrison-takes-over-as-Sherdogs-No-1-womens-P4P-fighter-203643">WOMEN'S POUND-FOR-POUND RANKINGS</a></div><div class="sub-menu forum"><a href="https://forums.sherdog.com/forums/ufc-discussion.2/">UFC DISCUSSION</a><a href="https://forums.sherdog.com/forums/worldwide-mma-discussion.61/">WORLDWIDE MMA DISCUSSION</a><a href="https://forums.sherdog.com/#general-discussion.4">OFF TOPIC DISCUSSION</a><a href="https://forums.sherdog.com/forums/shoopville.94/">PHOTOSHOPS</a></div><div class="sub-menu more"><a href="/pictures">PICTURES</a><a href="https://www.sherdog.com/tag/how-to-watch">HOW TO WATCH</a><a href="/contact">CONTACT</a></div></div>
+		<div class="socials">
+			<a target="_blank" href="https://www.facebook.com/OfficialSherdog"><img alt="FB" src="https://www4-cdn.sherdog.com/img/new/icon_facebook.svg" /></a>
+			<a target="_blank" href="https://twitter.com/sherdogdotcom"><img alt="TW" src="https://www1-cdn.sherdog.com/img/new/icon_twitter.svg" /></a>
+			<a target="_blank" href="https://www.instagram.com/mmaconnoisseur/"><img alt="IG" src="https://www3-cdn.sherdog.com/img/new/icon_instagram.svg" /></a>
+			<a target="_blank" href="https://www.youtube.com/channel/UCW3KTagNuyADCijmSwuaNJA"><img alt="YT" src="https://www4-cdn.sherdog.com/img/new/icon_youtube.svg" /></a>
+			<a target="_blank" href="https://vk.com/id544261512"><img alt="VK" src="https://www1-cdn.sherdog.com/img/new/icon_vk.svg" /></a>
+			<a target="_blank" href="https://www.threads.net/@mmaconnoisseur"><img alt="TH" src="https://www2-cdn.sherdog.com/img/new/threads.svg" /></a>
+		</div>
+
+		<div id="theme-switch" class="light"><em></em></div>
+
+		<div class="slanted_box_right">
+			<form method="get" action="/search.php"><input name="MainSearchTxt" type="text" placeholder="Search"></form>
+			<img id="search" src="https://www3-cdn.sherdog.com/img/new/search.svg" alt="Search" />
+		</div>
+
+	</div>
+
+</header>
+
+
+<div id="side-navigation">
+
+	<div class="links">
+		<div><span>+</span><a href="/news/news/list">NEWS</a><div><a href="/tag/ufc">UFC NEWS</a><a href="/tag/pfl">PFL NEWS</a><a href="/tag/wmma">WOMEN'S MMA NEWS</a></div></div><div><span>+</span><a href="/news/articles/list">FEATURES</a><div><a href="/tag/previews">PREVIEWS</a><a href="https://www.sherdog.com/tag/opinion">OPINION</a><a href="/tag/interviews">INTERVIEWS</a></div></div><div><span>+</span><a href="/events">FIGHT FINDER</a><div><a href="/organizations/Ultimate-Fighting-Championship-UFC-2">UFC EVENTS</a><a href="/organizations/Professional-Fighters-League-12241">PFL EVENTS</a><a href="/events">FULL CALENDAR</a><a href="/news/articles/Sherdog-Fight-Finder-A-Guide-For-Regulators-Promoters-Managers-Coaches-and-Fighters-158515">FIGHT FINDER GUIDE</a></div></div><div><span>+</span><a href="https://www.sherdog.com/tag/podcasts">PODCASTS</a><div><a href="https://www.sherdog.com/tag/shillan-duffy-podcast">SHILLAN & DUFFY PODCAST</a><a href="https://www.sherdog.com/tag/the-sheehan-show">THE SHEEHAN SHOW</a><a href="https://www.sherdog.com/tag/after-the-bell">AFTER THE BELL</a><a href="https://www.sherdog.com/tag/check-the-kick">CHECK THE KICK</a></div></div><div><a href="https://www.sherdog.com/videos">VIDEOS</a></div><div><span>+</span><a href="/news/rankings/list">RANKINGS</a><div><a href="https://www.sherdog.com/news/rankings/1/Sherdogs-mixed-martial-arts-rankings-Navajo-Stirling-surges-Jiri-Prochazka-falls-203725">DIVISIONAL RANKINGS</a><a href="https://www.sherdog.com/news/rankings/Sherdogs-poundforpound-rankings-Ciryl-Gane-holds-off-Josh-Hokit-to-retain-UFC-heavyweight-title-203642">POUND-FOR-POUND RANKINGS</a><a href="https://www.sherdog.com/news/rankings/Kayla-Harrison-takes-over-as-Sherdogs-No-1-womens-P4P-fighter-203643">WOMEN'S POUND-FOR-POUND RANKINGS</a></div></div><div><span>+</span><a href="https://forums.sherdog.com/">FORUM</a><div><a href="https://forums.sherdog.com/forums/ufc-discussion.2/">UFC DISCUSSION</a><a href="https://forums.sherdog.com/forums/worldwide-mma-discussion.61/">WORLDWIDE MMA DISCUSSION</a><a href="https://forums.sherdog.com/#general-discussion.4">OFF TOPIC DISCUSSION</a><a href="https://forums.sherdog.com/forums/shoopville.94/">PHOTOSHOPS</a></div></div><div><a href="/tag/boxing">BOXING</a></div><div><span>+</span><a href="/">MORE</a><div><a href="/pictures">PICTURES</a><a href="https://www.sherdog.com/tag/how-to-watch">HOW TO WATCH</a><a href="/contact">CONTACT</a></div></div><div><a href="/tag/fight-odds">FIGHT ODDS</a></div><div><a href="https://www.sherdog.com/tag/pfl2026">PFL</a></div>	</div>
+
+	<div class="friends">
+		MORE FROM OUR CHANNELS<br /><br />
+		<a href="https://www.mandatory.com/wrestlezone/" target="_blank"><img alt="Wrestlezone" src="https://www4-cdn.sherdog.com/img/new/wrestlezone_logo_white.svg" /></a>
+	</div>
+	<div class="socials">
+		<a target="_blank" href="https://www.facebook.com/OfficialSherdog"><img alt="FB" src="https://www4-cdn.sherdog.com/img/new/icon_facebook.svg" /></a>
+		<a target="_blank" href="https://twitter.com/sherdogdotcom"><img alt="TW" src="https://www1-cdn.sherdog.com/img/new/icon_twitter.svg" /></a>
+		<a target="_blank" href="https://www.instagram.com/mmaconnoisseur/"><img alt="IG" src="https://www3-cdn.sherdog.com/img/new/icon_instagram.svg" /></a>
+		<a target="_blank" href="https://www.youtube.com/channel/UCW3KTagNuyADCijmSwuaNJA"><img alt="YT" src="https://www4-cdn.sherdog.com/img/new/icon_youtube.svg" /></a>
+		<a target="_blank" href="https://vk.com/id544261512"><img alt="VK" src="https://www1-cdn.sherdog.com/img/new/icon_vk.svg" /></a>
+		<a target="_blank" href="https://www.threads.net/@mmaconnoisseur"><img alt="TH" src="https://www2-cdn.sherdog.com/img/new/threads.svg" /></a>
+	</div>
+
+</div>
+<div id="side-navigation-overlay"></div>
+
+
+<div class="wrapper">
+
+	<div class="content top_ads">
+		<div class="ads top_ad">
+			<div class="ad leaderboard"><!-- Tag ID: sherdog_leaderboard_atf -->
+<div align='center' data-freestar-ad='__320x100 __970x90' id='sherdog_leaderboard_atf'>
+  <script data-cfasync='false' type='text/javascript'>
+    if ( !sessionParams.has('noAds') && window.location.pathname !== '/search.php' ) {
+        freestar.config.enabled_slots.push({ placementName: 'sherdog_leaderboard_atf', slotId: 'sherdog_leaderboard_atf', targeting: { pos: 'A' } });
+    }
+  </script>
+</div></div>
+		</div>
+	</div>
+
+
+	<div id="live_event_placeholder"></div>
+
+	<div class="inner-wrapper">
+		<div class="col-left" itemscope itemtype="http://schema.org/Event">
+
+    <section>
+        <div class="tiled_bg latest_features">
+    <div class="slanted_title">
+        <div>FIGHT CARD</div>
+        <div></div>
+    </div>
+</div>
+
+        
+        <div class="left-module-pad-line">
+
+            <div class="event_detail">
+                <div>
+	<h1><span itemprop="name">Lumax Cup - Tournament of J '96</span></h1>
+	<div class="organization" itemprop="attendee" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href='/organizations/Lumax-Cup-53'><span itemprop="name">Lumax Cup</span></a></div>	<div class="info">
+		<span><meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">Mar 30, 1996</span>		<span><img src='https://www2-cdn.sherdog.com/img/flags/jp.gif' width='16' height='11' alt='Japan'> <span itemprop="location">Japan, Japan</span></span>	</div>
+
+	<div class="share">
+			</div>
+</div>
+
+                <script type="application/ld+json">{"@type":"WebPage","headline":"Lumax Cup - Tournament of J '96","@context":"http:\/\/schema.org","url":"https:\/\/www.sherdog.com\/events\/Lumax-Cup-Tournament-of-J-96-475"}</script>
+            </div>
+
+        
+            <meta itemprop="image" content="https://www1-cdn.sherdog.com/image_vs/4127">
+            <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                <meta itemprop="image" content="https://www1-cdn.sherdog.com/image_vs/4127">
+                <meta itemprop="name" content="Sanae Kikuta vs Masanori Suda">
+                <meta itemprop="location" content="Japan, , , Japan">
+                <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                <div class="fight_card">
+                    <div class="fighter left_side" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <a href="/fighter/Sanae-Kikuta-252" itemprop="url">
+                            <img itemprop="image" src="/image_crop/200/300/_images/fighter/20141225051646_kikuta.JPG" alt="Sanae Kikuta" title="Sanae Kikuta" />
+                        </a>
+                        <h3>
+                            <a href="/fighter/Sanae-Kikuta-252"><span itemprop="name">Sanae Kikuta</span></a>
+                        </h3>
+                        <span class="record">31-9-3 <em>(Win-Loss-Draw)</em> </span>
+                        <span class="final_result win">win</span>
+                    </div>
+
+                    <div class="versus">
+                        <b>MAIN EVENT</b>
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                        <div class="pbp_placeholder"></div>                    </div>
+
+                    <div class="fighter right_side" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <a href="/fighter/Masanori-Suda-440" itemprop="url">
+                            <img itemprop="image" src="/image_crop/200/300/_images/fighter/20230820094937_Masanori_Suda.JPG" title="Masanori Suda" />
+                        </a>
+                        <h3>
+                        <a href="/fighter/Masanori-Suda-440"><span itemprop="name">Masanori Suda</span></a>
+                        </h3>
+                        <span class="record">22-11-3 <em>(Win-Loss-Draw)</em> </span>
+                        <span class="final_result loss">loss</span>
+                    </div>
+                </div>
+
+                <table class="fight_card_resume">
+                    <tr>
+                        <td><em>Match</em><br /> 15</td>
+                        <td><em>Method</em><br /> Submission (Heel Hook)</td>
+                                                <td><em>Referee</em><br /> <a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></td>
+                        <td><em>Round</em><br /> 1</td>
+                        <td><em>Time</em><br /> 1:15</td>
+                    </tr>
+                </table>
+
+            </div>
+                </div>
+    </section>
+
+        <!-- Fighters ad after record -->
+    <div id="fighters_ad_after_record"></div>
+    <!-- End of fighters ad after record -->
     
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a600f936fc9815c6',t:'MTc5NTYxMzA2NA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a600f936fc9815c6',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+        <section>
+        <div class="new_table_holder">
+        <table border="0" class="new_table result">
+            <tbody>
+                <tr class="table_head">
+                    <td class="col_one">Match</td>
+                    <td></td>
+                    <td class="col_two">Fighters</td>
+                    <td></td>
+                    <td class="col_three">Method/<wbr/>Referee</td>
+                    <td class="col_four">R</td>
+                    <td class="col_five">Time</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Masanori Suda vs Kazunari Murakami">
+                        <meta itemprop="image" content="https://www2-cdn.sherdog.com/image_vs/4126">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        14                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" data-original="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" alt="Masanori Suda" title="Masanori Suda" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Masanori-Suda-440"><span itemprop="name">Masanori<br />Suda</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" data-original="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" alt="Kazunari Murakami" title="Kazunari Murakami" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Kazunari-Murakami-288"><span itemprop="name">Kazunari<br />Murakami</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armbar)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>2</td>
+                    <td>1:38</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Sanae Kikuta vs Hiroyuki Yoshioka">
+                        <meta itemprop="image" content="https://www2-cdn.sherdog.com/image_vs/4125">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        13                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" data-original="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" alt="Sanae Kikuta" title="Sanae Kikuta" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Sanae-Kikuta-252"><span itemprop="name">Sanae<br />Kikuta</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Hiroyuki Yoshioka" title="Hiroyuki Yoshioka" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Hiroyuki-Yoshioka-2360"><span itemprop="name">Hiroyuki<br />Yoshioka</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Heel Hook)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>3:05</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Kazunari Murakami vs Akihiro Gono">
+                        <meta itemprop="image" content="https://www1-cdn.sherdog.com/image_vs/4124">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        12                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" data-original="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" alt="Kazunari Murakami" title="Kazunari Murakami" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Kazunari-Murakami-288"><span itemprop="name">Kazunari<br />Murakami</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG" data-original="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG" alt="Akihiro Gono" title="Akihiro Gono" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Akihiro-Gono-1217"><span itemprop="name">Akihiro<br />Gono</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Decision</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>2</td>
+                    <td>3:00</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Masanori Suda vs Yuzo Tateishi">
+                        <meta itemprop="image" content="https://www3-cdn.sherdog.com/image_vs/4123">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        11                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" data-original="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" alt="Masanori Suda" title="Masanori Suda" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Masanori-Suda-440"><span itemprop="name">Masanori<br />Suda</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Yuzo Tateishi" title="Yuzo Tateishi" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Yuzo-Tateishi-1219"><span itemprop="name">Yuzo<br />Tateishi</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armbar)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>1:51</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Hiroyuki Yoshioka vs Ryuta Sakurai">
+                        <meta itemprop="image" content="https://www4-cdn.sherdog.com/image_vs/4122">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        10                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Hiroyuki Yoshioka" title="Hiroyuki Yoshioka" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Hiroyuki-Yoshioka-2360"><span itemprop="name">Hiroyuki<br />Yoshioka</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG" data-original="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG" alt="Ryuta Sakurai" title="Ryuta Sakurai" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Ryuta-Sakurai-1270"><span itemprop="name">Ryuta<br />Sakurai</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armbar)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>3:38</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Sanae Kikuta vs Egan Inoue">
+                        <meta itemprop="image" content="https://www2-cdn.sherdog.com/image_vs/4121">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        9                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" data-original="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" alt="Sanae Kikuta" title="Sanae Kikuta" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Sanae-Kikuta-252"><span itemprop="name">Sanae<br />Kikuta</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG" data-original="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG" alt="Egan Inoue" title="Egan Inoue" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Egan-Inoue-301"><span itemprop="name">Egan<br />Inoue</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Decision</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>5:00</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Akihiro Gono vs Yasushi Warita">
+                        <meta itemprop="image" content="https://www4-cdn.sherdog.com/image_vs/4120">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        8                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG" data-original="/image_crop/44/44/_images/fighter/1689098262217_20150428030133_IMG_2767.JPG" alt="Akihiro Gono" title="Akihiro Gono" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Akihiro-Gono-1217"><span itemprop="name">Akihiro<br />Gono</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Yasushi Warita" title="Yasushi Warita" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Yasushi-Warita-1188"><span itemprop="name">Yasushi<br />Warita</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Achilles Lock)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>0:54</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Kazunari Murakami vs Isamu Osugi">
+                        <meta itemprop="image" content="https://www1-cdn.sherdog.com/image_vs/4119">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        7                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" data-original="/image_crop/44/44/_images/fighter/1419553191275_20141225041935_kazunari.JPG" alt="Kazunari Murakami" title="Kazunari Murakami" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Kazunari-Murakami-288"><span itemprop="name">Kazunari<br />Murakami</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Isamu Osugi" title="Isamu Osugi" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Isamu-Osugi-1196"><span itemprop="name">Isamu<br />Osugi</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armlock)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>4:10</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Yuzo Tateishi vs Ikuhisa Minowa">
+                        <meta itemprop="image" content="https://www2-cdn.sherdog.com/image_vs/4118">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        6                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Yuzo Tateishi" title="Yuzo Tateishi" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Yuzo-Tateishi-1219"><span itemprop="name">Yuzo<br />Tateishi</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1675877724443_20160108125336_1MG_5078.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1675877724443_20160108125336_1MG_5078.JPG" data-original="/image_crop/44/44/_images/fighter/1675877724443_20160108125336_1MG_5078.JPG" alt="Ikuhisa 'Minowaman Z' Minowa" title="Ikuhisa 'Minowaman Z' Minowa" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Ikuhisa-Minowa-250"><span itemprop="name">Ikuhisa<br />Minowa</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Decision</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>2</td>
+                    <td>3:00</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Masanori Suda vs Yuichi Otsuka">
+                        <meta itemprop="image" content="https://www4-cdn.sherdog.com/image_vs/17469">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        5                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" data-original="/image_crop/44/44/_images/fighter/1692539415763_20230820094937_Masanori_Suda.JPG" alt="Masanori Suda" title="Masanori Suda" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Masanori-Suda-440"><span itemprop="name">Masanori<br />Suda</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Yuichi Otsuka" title="Yuichi Otsuka" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Yuichi-Otsuka-10134"><span itemprop="name">Yuichi<br />Otsuka</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armbar)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>1:20</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Ryuta Sakurai vs Katsuhisa Fujii">
+                        <meta itemprop="image" content="https://www1-cdn.sherdog.com/image_vs/4116">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        4                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG" data-original="/image_crop/44/44/_images/fighter/1692019952392_20081030100117_ryuta.JPG" alt="Ryuta Sakurai" title="Ryuta Sakurai" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Ryuta-Sakurai-1270"><span itemprop="name">Ryuta<br />Sakurai</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1674030208040_20090120012422_katsuhisafujii.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1674030208040_20090120012422_katsuhisafujii.JPG" data-original="/image_crop/44/44/_images/fighter/1674030208040_20090120012422_katsuhisafujii.JPG" alt="Katsuhisa 'Shamoji' Fujii" title="Katsuhisa 'Shamoji' Fujii" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Katsuhisa-Fujii-234"><span itemprop="name">Katsuhisa<br />Fujii</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Decision</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>2</td>
+                    <td>3:00</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Hiroyuki Yoshioka vs Hirotada Takahashi">
+                        <meta itemprop="image" content="https://www3-cdn.sherdog.com/image_vs/4115">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        3                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Hiroyuki Yoshioka" title="Hiroyuki Yoshioka" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Hiroyuki-Yoshioka-2360"><span itemprop="name">Hiroyuki<br />Yoshioka</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Hirotada Takahashi" title="Hirotada Takahashi" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Hirotada-Takahashi-2377"><span itemprop="name">Hirotada<br />Takahashi</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armbar)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>0:27</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Sanae Kikuta vs Saburo Kawakatsu">
+                        <meta itemprop="image" content="https://www4-cdn.sherdog.com/image_vs/4114">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        2                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" data-original="/image_crop/44/44/_images/fighter/1672893186934_20141225051646_kikuta.JPG" alt="Sanae Kikuta" title="Sanae Kikuta" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Sanae-Kikuta-252"><span itemprop="name">Sanae<br />Kikuta</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1688652729795_20081210014604_shogunkawakatsu.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1688652729795_20081210014604_shogunkawakatsu.JPG" data-original="/image_crop/44/44/_images/fighter/1688652729795_20081210014604_shogunkawakatsu.JPG" alt="Saburo 'Shogun' Kawakatsu" title="Saburo 'Shogun' Kawakatsu" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Saburo-Kawakatsu-1251"><span itemprop="name">Saburo<br />Kawakatsu</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Keylock)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>2:04</td>
+                </tr>
+                                <tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+                    <td>
+                        <meta itemprop="name" content="Egan Inoue vs Yasunobu Matsuo">
+                        <meta itemprop="image" content="https://www2-cdn.sherdog.com/image_vs/4113">
+                        <meta itemprop="location" content="Japan, , , Japan">
+                        <meta itemprop="startDate" content="1996-03-30T00:00:00+00:00">
+                        1                    </td>
+                    <td class="text_right col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list left">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG" data-original="/image_crop/44/44/_images/fighter/1419561504592_20141225063714_egan.JPG" alt="Egan Inoue" title="Egan Inoue" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Egan-Inoue-301"><span itemprop="name">Egan<br />Inoue</span></a><br>
+                                <span class="final_result win">win</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text_center">
+                                                <img src="https://www4-cdn.sherdog.com/img/new/vs_small.svg" alt="vs" /><br />
+                        <span class="weight_class"></span>
+                    </td>
+                    <td class="text_left col_fc_upcoming" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                        <div class="fighter_list right">
+                            <meta itemprop="image" content="/image_crop/44/44/_images/fighter_small_default.jpg">
+                            <img class="lazy" src="/image_crop/44/44/_images/fighter_small_default.jpg" data-original="/image_crop/44/44/_images/fighter_small_default.jpg" alt="Yasunobu Matsuo" title="Yasunobu Matsuo" />
+                            <div class="fighter_result_data">
+                                <a itemprop="url" href="/fighter/Yasunobu-Matsuo-2376"><span itemprop="name">Yasunobu<br />Matsuo</span></a><br>
+                                <span class="final_result loss">loss</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="winby"><b>Submission (Armlock)</b><br />
+                                        <span class="sub_line"><a href="/referee/Yoshinori-Nishi-1452">Yoshinori Nishi</a></span></td>
+                    <td>1</td>
+                    <td>1:20</td>
+                </tr>
+                            </tbody>
+        </table>
+        </div>
+    </section>
+
+<!-- Arbor tag -->
+<div data-arborai-placement="sherdog-fightpage-inline-large"  
+ data-arborai-frame="responsive"  
+ data-arborai-height="600px"
+ data-id="3">   
+    <div data-arborai-holder style="height:600px"></div>
+</div>
+
+    
+    
+    
+    
+        
+<div class="OUTBRAIN tkoTarget" data-src="https://www.sherdog.com/events/Lumax-Cup-Tournament-of-J-96-475" data-widget-id="AR_1" data-ob-template="Sherdog"></div> <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+
+
+</div>
+<!-- RIGHT COLUMN -->
+<!-- RIGHT COLUMN -->
+<div class="col-right">
+    
+    <!-- 300x250,300x600 Ad -->
+        <div class="right-module ads">
+        <div class="ad mediumrectangle">
+            <!-- Tag ID: sherdog_siderail_right_1 -->
+<div align='center' data-freestar-ad='__336x280 __300x600' id='sherdog_siderail_right_1'>
+  <script data-cfasync='false' type='text/javascript'>
+    if ( !sessionParams.has('noAds') && window.location.pathname !== '/search.php' ) {
+        freestar.config.enabled_slots.push({ placementName: 'sherdog_siderail_right_1', slotId: 'sherdog_siderail_right_1', targeting: { pos: 'A' } });
+    }
+  </script>
+</div>        </div>
+    </div>
+    
+    <!-- Mailchimp Newsletter -->
+    <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{ background:transparent;clear:left;font:14px Montserrat,Arial,sans-serif;width:290px;margin:0 5px;color:white; }
+	#mc_embed_signup form { margin:0; }
+	#mc_embed_signup h2 { font-family: Montserrat, Arial; font-weight: normal; padding: 0; margin: 5px 0; font-size: 23px; color: #fff; }
+	#mc_embed_signup .button { background-color: #ee5627; font-family: Montserrat, Arial; }
+	#mc_embed_signup .button:hover { background-color: #ee5627; opacity: 0.8; }
+	#mc_embed_signup .helper_text,
+	#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error { background-color:transparent; }
+	#mc_embed_signup .mc-field-group { width:100%; }
+	#mc_embed_signup .indicates-required { margin-right:0; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div class="right-module mailchimp-module" style="min-height: 225px">
+	<div id="mc_embed_signup">
+		<form action="https://evolvemediallc.us11.list-manage.com/subscribe/post?u=3ec95885a55385b42d553426d&id=2edeb314bd&f_id=006f89e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+			<h2>Subscribe to our Newsletter</h2>
+			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+	<div class="mc-field-group">
+		<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+	</label>
+		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+		<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+	</div>
+	<div hidden="true"><input type="hidden" name="tags" value="9291012"></div>
+		<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ec95885a55385b42d553426d_2edeb314bd" tabindex="-1" value=""></div>
+		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		</div>
+	</form>
+	</div>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+    <!-- Latest Articles -->
+    <div class="right-module nopad">
+
+<div class="tiled_bg ">
+    <div class="slanted_title">
+        <div>Latest News</div>
+        <div></div>
+    </div>
+</div>
+
+<div class="module_list_generic tabbed-content latest_articles_by_tag">
+
+	<div class="right-tabs">
+	<a href="all" data-rel="news-tab-all">ALL</a><a href="ufc" data-rel="news-tab-ufc">UFC</a><a href="pfl" data-rel="news-tab-pfl">PFL</a>	</div>
+
+	<div class="right-tabs-content news-tab-all" style="display: block;"><div class="module_list_generic latest_articles"><ul><li><a href="/news/news/Carlos-Prates-says-UFC-interim-title-isnt-the-real-championship-eyes-undisputed-gold-203743">Carlos Prates says UFC interim title isn't the 'real' championship, eyes undisputed gold</a></li><li><a href="/news/news/Josh-Hokit-wants-to-settle-Jon-Jones-feud-behind-closed-doors-203742">Josh Hokit wants to settle Jon Jones feud behind closed doors</a></li><li><a href="/news/news/Gable-Steveson-books-UFC-return-after-historic-12second-KO-loss-203741">Gable Steveson books UFC return after historic 12-second KO loss</a></li><li><a href="/news/news/Jiri-Prochazka-gets-called-out-after-backtoback-KO-losses-203740">Jiri Prochazka gets called out after back-to-back KO losses</a></li><li><a href="/news/news/Kevin-Vallejos-and-Aljamain-Sterling-go-back-and-forth-over-greasing-claims-203739">Kevin Vallejos and Aljamain Sterling go back and forth over greasing claims</a></li><li><a href="/news/news/Carlos-Prates-says-street-fights-have-no-rules-after-Abu-Dhabi-brawl-203738">Carlos Prates says ‘street fights have no rules’ after Abu Dhabi brawl</a></li><li><a href="/news/news/Stephen-Thompson-wants-to-wrestle-after-UFC-retirement-but-needs-time-to-prepare-203737">Stephen Thompson wants to wrestle after UFC retirement, but needs time to prepare</a></li><li><a href="/news/news/UFCs-Jean-Silva-seeks-justice-after-alleged-hitandrun-203736">UFC’s Jean Silva seeks justice after alleged hit-and-run</a></li></ul></div></div><div class="right-tabs-content news-tab-ufc" style="display: none;"><div class="module_list_generic latest_articles"><ul><li><a href="/news/news/Carlos-Prates-says-UFC-interim-title-isnt-the-real-championship-eyes-undisputed-gold-203743">Carlos Prates says UFC interim title isn't the 'real' championship, eyes undisputed gold</a></li><li><a href="/news/news/Josh-Hokit-wants-to-settle-Jon-Jones-feud-behind-closed-doors-203742">Josh Hokit wants to settle Jon Jones feud behind closed doors</a></li><li><a href="/news/news/Gable-Steveson-books-UFC-return-after-historic-12second-KO-loss-203741">Gable Steveson books UFC return after historic 12-second KO loss</a></li><li><a href="/news/news/Jiri-Prochazka-gets-called-out-after-backtoback-KO-losses-203740">Jiri Prochazka gets called out after back-to-back KO losses</a></li><li><a href="/news/news/Kevin-Vallejos-and-Aljamain-Sterling-go-back-and-forth-over-greasing-claims-203739">Kevin Vallejos and Aljamain Sterling go back and forth over greasing claims</a></li><li><a href="/news/news/Carlos-Prates-says-street-fights-have-no-rules-after-Abu-Dhabi-brawl-203738">Carlos Prates says ‘street fights have no rules’ after Abu Dhabi brawl</a></li><li><a href="/news/news/Stephen-Thompson-wants-to-wrestle-after-UFC-retirement-but-needs-time-to-prepare-203737">Stephen Thompson wants to wrestle after UFC retirement, but needs time to prepare</a></li><li><a href="/news/news/UFCs-Jean-Silva-seeks-justice-after-alleged-hitandrun-203736">UFC’s Jean Silva seeks justice after alleged hit-and-run</a></li></ul></div></div><div class="right-tabs-content news-tab-pfl" style="display: none;"><div class="module_list_generic latest_articles"><ul><li><a href="/news/news/Sergey-Bilostenniy-outpoints-Vadim-Nemkov-to-become-PFL-heavyweight-champion-203622">Sergey Bilostenniy outpoints Vadim Nemkov to become PFL heavyweight champion</a></li><li><a href="/news/news/PFL-Dubai-Nemkov-vs-Bilostenniy-playbyplay-results-round-scoring-203621">PFL Dubai ‘Nemkov vs. Bilostenniy’ play-by-play, results & round scoring</a></li><li><a href="/news/news/Jake-Paul-says-hell-retire-from-boxing-if-Cedric-Doumbe-beats-him-203576">Jake Paul says he'll retire from boxing if Cedric Doumbe beats him</a></li><li><a href="/news/news/Sergio-Pettis-explains-emotional-Roufusport-exit-following-Duke-Roufus-death-203560">Sergio Pettis explains emotional Roufusport exit following Duke Roufus' death</a></li><li><a href="/news/news/Shem-Rock-expected-more-from-UFC-after-fighting-injured-203512">Shem Rock expected more from UFC after fighting injured</a></li><li><a href="/news/news/Jake-Paul-to-face-PFL-vet-Cedric-Doumbe-in-Christmas-Eve-boxing-return-203456">Jake Paul to face PFL vet Cedric Doumbe in Christmas Eve boxing return</a></li><li><a href="/news/news/Dakota-Ditcheva-cleared-wants-PFL-title-shot-against-Jena-Bishop-after-surgery-203399">Dakota Ditcheva cleared, wants PFL title shot against Jena Bishop after surgery</a></li><li><a href="/news/news/Cris-Cyborg-says-Claressa-Shields-quit-MMA-because-it-was-too-hard-203394">Cris Cyborg says Claressa Shields quit MMA because it was 'too hard'</a></li></ul></div></div>
+</div>
+
+</div>
+    <!-- Poll placeholder -->
+    <div class="pollPlaceholder" style="min-height: 600px; margin: 5px auto;">
+        
+    </div>
+
+    <!-- Latest Forum Threads -->
+    
+    <!-- Featured Events -->
+    
+    <!-- Poll -->
+    
+    <!-- Fight Finder -->
+    
+    <!-- 300x250,300x600 Second Ad -->
+            <div class="right-module ads">
+            <div class="ad mediumrectangle">
+                <!-- Tag ID: sherdog_siderail_right_2 -->
+<div align='center' data-freestar-ad='__300x600' id='sherdog_siderail_right_2'>
+  <script data-cfasync='false' type='text/javascript'>
+    if ( !sessionParams.has('noAds') && window.location.pathname !== '/search.php' ) {
+        freestar.config.enabled_slots.push({ placementName: 'sherdog_siderail_right_2', slotId: 'sherdog_siderail_right_2', targeting: { pos: 'B' } });
+    }
+  </script>
+</div>            </div>
+        </div>
+    
+    <!-- Insticator --
+    <div class="right-module">
+            </div>
+    -->
+
+    <!-- Facebook fans widget -->
+    
+    <!-- spotify podcast widget -->
+    
+    <!-- Twitter widget-->
+    
+    
+    <!-- 300x250,300x600 Third Ad -->
+        <div class="right-module ads" style="position: sticky; top: 50px;">
+        <div class="ad mediumrectangle">
+            <!-- Tag ID: sherdog_siderail_right_3 -->
+<div align='center' data-freestar-ad='__300x600' id='sherdog_siderail_right_3'>
+  <script data-cfasync='false' type='text/javascript'>
+    if ( !sessionParams.has('noAds') && window.location.pathname !== '/search.php' ) {
+        freestar.config.enabled_slots.push({ placementName: 'sherdog_siderail_right_3', slotId: 'sherdog_siderail_right_3', targeting: { pos: 'C' } });
+    }
+  </script>
+</div>        </div>
+    </div>
+    
+</div>
+<!-- END OF RIGHT COLUMN -->
+<!-- END OF RIGHT COLUMN -->
+	</div>
+
+</div>
+
+<footer>
+	<div>
+		<div class="footer-wrapper">
+			<div class="footer-logoline">
+				<img class="logo" src="https://www1-cdn.sherdog.com/img/new/logo_footer.svg" alt="Logo" />
+
+				<div class="footer-socials">
+					<a target="_blank" href="https://www.facebook.com/OfficialSherdog"><img alt="FB" src="https://www4-cdn.sherdog.com/img/new/icon_facebook.svg"></a>
+					<a target="_blank" href="https://twitter.com/sherdogdotcom"><img alt="TW" src="https://www1-cdn.sherdog.com/img/new/icon_twitter.svg"></a>
+					<a target="_blank" href="https://www.instagram.com/mmaconnoisseur/"><img alt="IG" src="https://www3-cdn.sherdog.com/img/new/icon_instagram.svg"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCW3KTagNuyADCijmSwuaNJA"><img alt="YT" src="https://www4-cdn.sherdog.com/img/new/icon_youtube.svg"></a>
+					<a target="_blank" href="https://vk.com/id544261512"><img alt="VK" src="https://www1-cdn.sherdog.com/img/new/icon_vk.svg"></a>
+					<a target="_blank" href="https://www.threads.net/@mmaconnoisseur"><img alt="TH" src="https://www2-cdn.sherdog.com/img/new/threads.svg"></a>
+				</div>
+			</div>
+			<div class="footer-menu">
+				<h5>RESOURCES</h5>
+				<ul class="footer-menu-links">
+					<li><a href="/about-us">About Us</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+					<li><a href="/advertising-info/">Advertising</a></li>
+					<li><a href="/cookies">AdChoices</a></li>
+					<li><a href="/privacy">Privacy Policy</a></li>
+					<li><a href="/terms-of-use">Terms &amp; Conditions</a></li>
+					<li><button id="pmLink">Privacy Manager</button></li>
+					</ul>
+			</div>
+			<div class="footer-copyright">
+				<div class="footer-evolve"><a href="https://www.evolvemediallc.com/"><img src="/img/new/evolvemedia-logo-white.svg" /></a></div>
+				<span>Sherdog is a property of <a href="https://www.evolvemediallc.com/">Evolve Media (Australia) PTY LTD</a>. &copy; 2026 All Rights Reserved. | Affiliate Disclosure: Evolve Media (Australia) PTY LTD, and its owned and operated subsidiaries may receive a small commission from the proceeds of any product(s) sold through affiliate and direct partner links.</span>
+			</div>
+		</div>
+	</div>
+  	<div style="position: absolute; height:0; left: -999em">
+		monitoring_string = "5eb5a0f65cbe346d74f978e14db1b00d"
+	</div>
+</footer>
+
+	<script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+	<script src="https://www2-cdn.sherdog.com/js/cookie_notice.js" defer="defer"></script>
+
+	
+	<!-- Begin Insticator Tag -->
+<script>
+  if ( !sessionParams.has('noInsticator') ) {
+
+    (function(){
+      var insL1 = document.createElement('link'),
+          insL2 = document.createElement('link'),
+          firstSc = document.querySelector('script');
+
+      insL1.setAttribute('rel', 'preload');
+      insL2.setAttribute('rel', 'preload');
+
+      insL1.setAttribute('as', 'script');
+      insL2.setAttribute('as', 'script');
+
+      insL1.setAttribute('href', 'https://securepubads.g.doubleclick.net/tag/js/gpt.js');
+      insL2.setAttribute('href', 'https://d3lcz8vpax4lo2.cloudfront.net/ads-code/fc0dfd76-50f1-4ee7-9e23-c7def2f2a597.js');
+
+      firstSc.parentNode.insertBefore( insL1, firstSc );
+      firstSc.parentNode.insertBefore( insL2, firstSc );
+
+    })();
+    
+}
+</script>
+<!-- End Insticator Tag -->
+	<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2012 Nielsen Online -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js">
+</script>
+<script type="text/javascript">
+ var pvar = { cid: "au-evolve", content: "0", server: "secure-au" };
+ var trac = nol_t(pvar);
+ trac.record().post();
+</script>
+<noscript>
+<div><img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=au-evolve&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+			<script>
+            window.PARSELY = window.PARSELY || {
+                autotrack: true,
+                onload: function() {
+                    console.log("Parsely loaded", window.parselyTracks);
+                    if (window.parselyTracks) {
+                        window.parselyTracks.forEach(function(parselyObj){
+                            window.PARSELY.beacon.trackPageView(parselyObj);
+                        });
+                    }
+                }
+            };
+            </script><script id="parsely-cfg" src="//cdn.parsely.com/keys/sherdog.com/p.js"></script>
+	<!-- Insticator Counter -->
+	<script src="https://soapps.net/live/loader/counter.js" async id="insticator-commenting-counter" data-integration-id="fc0dfd76-50f1-4ee7-9e23-c7def2f2a597"></script>
+
+	
+	<!-- Tag ID: sherdog_skin -->
+<div align="center" id="sherdog_skin">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "sherdog_skin", slotId: "sherdog_skin" });
+  </script>
+</div>
+
+	<!-- WS quick fixes -->
+	<script type="text/javascript" src="https://secureassets.evolvemediallc.com/assets/websupport/Scripts/wsSDscripts.js"></script>
+</body>
 </html>
