@@ -273,3 +273,6 @@ e01258	merge	e04261	同じ大会（SWAT!-RX1・2007年9月9日・ゴールドジ
 e05244	merge	e01455	同じ大会（GRANDSLAM 3 〜Way of the Cage〜・2015年9月12日・ディファ有明）が表記ゆれで2つに分かれていたのを1つにまとめる https://mmaplanet.jp/49527 https://efight.jp/result-20150912_205071
 e01529	merge	e00338	同じ大会（PANCRASE 大阪大会・2019年7月15日・城東KADO-YAがもよんホール）が表記ゆれで2つに分かれていたのを1つにまとめる https://pancrase.co.jp/data/result/2019/0715.html https://battle-news.com/?p=51301
 e04652	merge	e01374	同じ大会（ZST.28・2011年5月22日・ディファ有明）が表記ゆれで2つに分かれていたのを1つにまとめる https://efight.jp/result-20110522_23401/2 https://gbring.com/sokuho/result/result2011_05/0522_zst.htm
+e04963	merge	e01703	同じ大会（KROSS×OVER -CAGE.8-・2026年3月1日・GENスポーツパレス）。公式の結果ページの見出しではなく次回大会の告知の題名が大会名として入り、別の大会になっていたのを1つにまとめる https://krossover.jp/?p=3929
+e04964	merge	e01707	同じ大会（KROSS×OVER.35・2026年4月19日・新宿FACE）。次回大会の告知の題名が大会名として入り、別の大会になっていたのを1つにまとめる https://krossover.jp/?p=3995
+e04955	merge	e01678	同じ大会（KROSS×OVER.30・2025年4月6日・新宿FACE）。次回大会の告知の題名が大会名として入り、別の大会になっていたのを1つにまとめる https://krossover.jp/?p=3411
