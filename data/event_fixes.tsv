@@ -264,3 +264,4 @@ e03631	date	2020-12-20	BOUTREVIEW と修斗公式の結果で開催日は2020年
 e01551	date	2021-04-25	BOUTREVIEW の結果で開催日は2021年4月25日（日） https://www.boutreview.com/3/reports/item_53119.html
 e05333	date	2021-07-25	BOUTREVIEW の結果で開催日は2021年7月25日（日） https://www.boutreview.com/3/reports/item_57999.html
 e03683	date	2021-10-24	BOUTREVIEW の結果で開催日は2021年10月24日（日） https://www.boutreview.com/3/reports/item_62571.html
+e05262	merge	e01524	同じ大会（Resilience 01・2019年4月14日・水戸）が日付を4月4日と誤って別に入っていたのを1つにまとめる https://www.boutreview.com/3/reports/item_22398.html
