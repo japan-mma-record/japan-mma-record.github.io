@@ -217,3 +217,7 @@ e01161	name:御園努	method	判定1-2（出典の表記のまま）	https://www
 e01668	name:延藤	winner	2	https://www.boutreview.com/3/reports/item_118982.html（第25試合は「×延藤亮太 ○梶原広樹 判定1-2」。勝者が逆に入っていた）
 e05190	name:新名正啓	winner	2	https://www.boutreview.com/3/reports/item_34834.html（ライト級トーナメント決勝。「×新名正啓 ○渡辺トシキ 2R判定1-1ドロー 延長0-3」「勝った渡辺が第4代王者」。引き分けと入っていた）
 e05190	name:新名正啓	method	延長判定0-3（本戦1-1）	https://www.boutreview.com/3/reports/item_34834.html
+e00759	name:中村好史	winner	draw	https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm（「判定0-1 △中村好史 △加藤忠治」「公式戦としての結果はドロー」。優勝者を決める延長Rで中村が肩固めで一本勝ち）
+e00759	name:中村好史	method	引き分け（判定0-1。新人王トーナメントの規定による延長Rで中村が2:58 肩固めで一本勝ち・優勝）	https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm
+e00759	name:中村好史	round	2	https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm（本戦2Rの判定）
+e00759	name:中村好史	time		https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm（2:58 は延長Rの時間）
