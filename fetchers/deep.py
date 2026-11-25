@@ -32,6 +32,7 @@ def parse(lines, url):
         if m:
             date = f'{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}'
             venue = m.group(4).strip()
+            venue = re.sub(r'^に(?=\S{2,})', '', re.sub(r'にて.*$', '', venue))   # 「…日（月）にニューピアホールにて」の形
             name = lines[k - 1] if k else ''
             break
     if not date:

@@ -337,3 +337,7 @@ e04946	merge	e01615	同じ大会（KROSS×OVER-CAGE-＝KROSS×OVER & Level-G 6.1
 e04961	merge	e01696	同じ大会（KROSS×OVER.33 第1部・2部＝KROSS×OVER 12.7・2025年12月7日・新宿FACE）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=3781 https://www.boutreview.com/3/reports/item_138277.html
 e04962	merge	e01698	同じ大会（KROSS×OVER.34-2025 FINAL＝KROSS×OVER 12.14・2025年12月14日・GENスポーツパレス）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=3838 https://www.boutreview.com/3/reports/item_138772.html
 e04966	name	KROSS×OVER -EXTRA.8-	大会名に別の大会（11/8 KROSS×OVER-CAGE.11 アマチュア大会）の告知の題名が入っていたのを、公式結果ページの題名（9/27【KROSS×OVER -EXTRA.8-】試合結果&レポート）どおりに直す https://krossover.jp/?p=4235
+e00206	merge	e04563	同じ大会（パンクラスゲート 4th CHANCE・2010年1月10日・ゴールドジムサウス東京ANNEX）が、パンクラス公式の結果（ワンマッチ3試合）と GBR の結果（予選トーナメント）の2つに分かれていたのを1つにまとめる。公式の結果ページにはトーナメントの結果と第21〜23試合のワンマッチが同じ大会として載っている https://pancrase.co.jp/data/result/2010/0110.html
+e00216	merge	e02708	同じ大会（2010年9月19日・ゴールドジムサウス東京ANNEX）が、パンクラス公式の結果（2試合）と海外の記録サイトの結果（プロ昇格トーナメントなど）の2つに分かれていたのを1つにまとめる。公式の結果ページに同じ日のプロ昇格トーナメントの結果が載っている https://pancrase.co.jp/data/result/2010/0919.html
+e02708	name	PANCRASE 2010 PASSION TOUR（ゴールドジムサウス東京ANNEX）	パンクラス公式の結果ページの大会名 https://pancrase.co.jp/data/result/2010/0919.html
+e01547	name	BATTLE HAZARD 08	昼夜2部制の昼の部（夜の部が ZST.69＝e05362）。試合はすべて eFight の BATTLE HAZARD 08 の結果のもの https://efight.jp/result-20201124_485987 https://www.boutreview.com/3/reports/item_45881.html
