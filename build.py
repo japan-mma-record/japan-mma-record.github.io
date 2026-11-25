@@ -207,7 +207,10 @@ def load():
         for o in evs:
             if o is main:
                 continue
-            same_su = o['promotion'] in (site.get('standup_promotions') or []) and not (re.search(r'第\d部', o['name']) and re.search(r'第\d部', main['name']))   # 立ち技は同じ日の同じ団体を1大会にまとめる
+            # 柔術は同じ日・同じ会場・同じトーナメント表で別の大会（ノービス選手権など）が行われるので、名前の違う大会はまとめない
+            if o['promotion'] in (site.get('bjj_promotions') or []) and methods.event_name(o['name']) != methods.event_name(main['name']):
+                continue
+            same_su =o['promotion'] in (site.get('standup_promotions') or []) and not (re.search(r'第\d部', o['name']) and re.search(r'第\d部', main['name']))   # 立ち技は同じ日の同じ団体を1大会にまとめる
             if not same_su and not (src(o) & src(main)) and src(o) and ' - ' not in o['name'] + main['name'] and not methods.headline(o['name']) and len(o['name'].strip()) > 4:
                 continue
             main_id = main['event_id']
