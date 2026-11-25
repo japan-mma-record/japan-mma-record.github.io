@@ -342,3 +342,5 @@ e00216	merge	e02708	同じ大会（2010年9月19日・ゴールドジムサウ�
 e02708	name	PANCRASE 2010 PASSION TOUR（ゴールドジムサウス東京ANNEX）	パンクラス公式の結果ページの大会名 https://pancrase.co.jp/data/result/2010/0919.html
 e01547	name	BATTLE HAZARD 08	昼夜2部制の昼の部（夜の部が ZST.69＝e05362）。試合はすべて eFight の BATTLE HAZARD 08 の結果のもの https://efight.jp/result-20201124_485987 https://www.boutreview.com/3/reports/item_45881.html
 e05880	merge	e05383	同じ大会（UFC 325・2026年2月1日・シドニー）が、英語の大会名（Road to UFC シーズン4 の記事から入った中村京一郎 vs セバスチャン・サレイの1試合）と日本語の大会名の2つに分かれていたのを1つにまとめる https://en.wikipedia.org/wiki/UFC_325
+e04415	date	2021-06-20	DEEP 101 IMPACT は2021年5月5日（後楽園ホール）の予定が緊急事態宣言で延期になり、6月20日にニューピアホールで開かれた（海外の記録サイトの大会ページ・Wikipedia 英語版 List of Deep events）。DEEP 公式の結果ページの日付と会場は延期前のまま。日付を直すと、正しい日付で別に入っていた同じ大会（e01556）と1つにまとまる
+e04415	venue	ニューピアホール	同上（海外の記録サイトの大会ページ：New Pier Hall, Minato, Tokyo）
