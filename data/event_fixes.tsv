@@ -284,3 +284,17 @@ e02846	merge	e08873	同じ大会（SRS.2011-For Japan-・2011年11月11日・後
 e03837	name	DEEP JEWELS 43	大会名に出典の日付の誤記についての注記が入っていたのを外す https://www.deep2001.com/deep-jewels-43/
 e01234	name	リアルジャパンプロレス - リアルストロングスタイル頂上決戦！ -	大会名に出典の日付の誤記についての注記が入っていたのを外す https://www.boutreview.com/fightsspiral//seikendo_06_12_12.html
 e01556	name	DEEP 101 IMPACT	大会名に出典の日付についての注記が入っていたのを外す
+e01009	name	広島大会「TORAO | colors」	大会名が途中で切れていた。修斗公式の結果ページの大会名どおりに直す（同じ日の二部興行のもう一方、TORAO30 とは別の大会） https://shooto-mma.com/result/?id=175
+e01237	name	ACCEL格闘武道会7	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2006_12/1224_accel.htm
+e02431	name	POWERGATE 2DAYS DAYBRAEKE in 京都KBSホール	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2008_08/0810_powergate.htm
+e02442	name	格闘武道会ACCEL vol.10～日本VSタイ国親善対抗試合	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2008_09/0915_accel.htm
+e01294	name	ファイティングロード杯 ダブルインパクト	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2008_12/1206_deep.htm
+e02618	name	DEEP 45 IMPACT	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2010_01/0124_deep.htm
+e01353	name	ACCEL vol.14 夏の陣	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2010_07/0704_accel.htm
+e02823	name	アクセル17	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2011_09/0911_accel.htm
+e01386	name	アクセル18 聖夜祭り	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2011_12/1225_accel.htm
+e01400	name	ACCEL20 格闘技夏祭り	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2012_07/0728_accel.htm
+e05146	name	ZST in 師走！	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20191201_376678
+e04910	name	HEAT48	記事の見出し・選手の言葉が大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20210426_529805
+e01294	venue	大阪府立体育会館 第2競技場	会場の欄に記事の文章が入っていたのを直す https://gbring.com/sokuho/result/result2008_12/1206_deep.htm
+e02618	venue	Zepp大阪	会場の欄に記事の文章が入っていたのを直す https://gbring.com/sokuho/result/result2010_01/0124_deep.htm
