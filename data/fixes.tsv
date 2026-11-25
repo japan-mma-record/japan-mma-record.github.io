@@ -68,3 +68,11 @@ e06868	name:イスラム・メシェフ	winner	1	海外の記録サイト（ACA 
 e07291	name:ティム・クインラン	winner	1	海外の記録サイト（Brave CF 99：Emilijus Kaganovicius win / Tim Quinlan loss, Submission (Rear-Naked Choke)）
 e07684	name:ジェイク・コゾロスキー	winner	1	海外の記録サイト（LFA 145：Kegan Gennrich win / Jake Kozorosky loss, Submission (Armbar)）
 e07684	name:ダイアモンド・ロング	winner	1	https://cagesidepress.com/2022/10/21/lfa-145-assis-vs-murray-full-results（Rachel Martinez def. Diamond Long by TKO）
+e04136	6	winner	2	https://en.wikipedia.org/wiki/Hector_Lombard（戦績表：Win, Eiji Ishikawa, TKO (punches), DEEP 28 Impact, 16 February 2007, 1R 0:50）
+e04136	6	method	TKO（パンチ）	https://en.wikipedia.org/wiki/Hector_Lombard
+e04136	6	round	1	https://en.wikipedia.org/wiki/Hector_Lombard
+e04136	6	time	0:50	https://en.wikipedia.org/wiki/Hector_Lombard
+e00880	1	method	試合中止（加藤ケンジの計量超過）	https://shooto-mma.com/result/?id=12
+e00881	1	method	試合中止（奇天烈の計量超過）	https://shooto-mma.com/result/?id=36
+e00882	7	method	試合中止（三上譲治の体調不良による欠場）	https://shooto-mma.com/result/?id=38
+e04136	6	note		https://en.wikipedia.org/wiki/Hector_Lombard（結果が確かめられたので「未確定」を外す）
