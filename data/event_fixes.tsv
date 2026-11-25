@@ -268,3 +268,7 @@ e05262	merge	e01524	同じ大会（Resilience 01・2019年4月14日・水戸）�
 e05229	merge	e01443	同じ大会（CHAKURIKI 1・2015年3月15日）が日付を3月16日と誤って別に入っていたのを1つにまとめる https://efight.jp/result-20150315_142177 https://battle-news.com/?p=6781
 e05161	date	2019-12-01	BRAVE FIGHT 21 は2019年12月1日（日）開催（BOUTREVIEW）。11月30日は誤り https://www.boutreview.com/3/reports/item_33726.html
 e05328	merge	e05161	同じ大会（BRAVE FIGHT 21・2019年12月1日・三郷BRAVEジム）のキック・グラップリングの試合が別の大会として入っていたのを1つにまとめる https://www.boutreview.com/3/reports/item_33726.html
+e01184	merge	e04781	同じ大会（RED ZONE 9・2004年10月3日・大阪・天保山BAYSIDE Jenny）が表記ゆれで2つに分かれていたのを1つにまとめる https://www.boutreview.com/data/reports/041003redzone.html https://www.boutreview.com/fightsspiral/REDZONE_9.html
+e01258	merge	e04261	同じ大会（SWAT!-RX1・2007年9月9日・ゴールドジム サウス東京ANNEX）が表記ゆれで2つに分かれていたのを1つにまとめる https://gbring.com/sokuho/result/result2007_09/0909_zst.htm https://www.boutreview.com/fightsspiral/SWAT-RX1.html
+e05244	merge	e01455	同じ大会（GRANDSLAM 3 〜Way of the Cage〜・2015年9月12日・ディファ有明）が表記ゆれで2つに分かれていたのを1つにまとめる https://mmaplanet.jp/49527 https://efight.jp/result-20150912_205071
+e01529	merge	e00338	同じ大会（PANCRASE 大阪大会・2019年7月15日・城東KADO-YAがもよんホール）が表記ゆれで2つに分かれていたのを1つにまとめる https://pancrase.co.jp/data/result/2019/0715.html https://battle-news.com/?p=51301
