@@ -46,9 +46,17 @@ def parse(lines, url):
                 break
             i += 1
             continue
-        if i + 2 >= len(ls) or not ls[i + 1][:1] in MARK or not ls[i + 2][:1] in MARK:
+        if i + 2 >= len(ls):
             i += 1
             continue
+        if not ls[i + 1][:1] in MARK or not ls[i + 2][:1] in MARK:
+            # ノーコンテストの試合は両者に○●の印が付かないので、結果の行で見分ける（DEEP TOKYO IMPACT 2026 5th ROUND の第4試合）
+            nc_res = ls[i + 3] if i + 3 < len(ls) else ''
+            if (ls[i + 1][:1] in MARK or ls[i + 2][:1] in MARK or HEAD.search(ls[i + 1]) or HEAD.search(ls[i + 2])
+                    or not re.search(r'ノーコンテスト|無効試合', nc_res)):
+                i += 1
+                continue
+            ls[i + 1], ls[i + 2] = '－' + ls[i + 1], '－' + ls[i + 2]
         a, b = ls[i + 1], ls[i + 2]
         res = ls[i + 3] if i + 3 < len(ls) and not HEAD.search(ls[i + 3]) else ''
         i += 4 if res else 3
