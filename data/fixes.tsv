@@ -201,3 +201,13 @@ e01357	name:長谷川弘太郎	fighter2	田村裕之	https://gbring.com/sokuho/r
 e03619	name:康輝	fighter1	青谷秋未	https://efight.jp/result-20201027_478500/2
 e04987	name:小森真誉	fighter2_id	f01087	島村裕（総合格闘技宇留野道場）。ZST.32 などの島村裕（同じ所属）と同じ選手 https://fighting-nexus.net/event.php?id=result-950
 e01569	name:音波	winner	draw	https://www.deep2001.com/deep-jewels-35/
+e01583	name:神谷大智	method	一本（RNC）	https://grachan.jp/grachan-challenge%e3%80%806%e6%9c%88%e9%96%a2%e6%9d%b1%e3%80%80%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/（公式の結果は「1R 0:37 RNC」。取り込みで RNC が NC＝ノーコンテストと読まれていた）
+e01647	name:野澤エディ	method	一本（RNC）	https://grachan.jp/20240428_result/（公式の結果は「1R 2:16 RNC」。取り込みで RNC が NC＝ノーコンテストと読まれていた）
+e01647	name:猿丸凜太朗	method	一本（RNC）	https://grachan.jp/20240428_result/（公式の結果は「1R 1:42 RNC」。取り込みで RNC が NC＝ノーコンテストと読まれていた）
+e07452	name:リチオ	winner	nc	https://en.wikipedia.org/wiki/2005_in_Cage_Warriors（No Contest (Accidental Cut)）
+e07448	name:ハーディー	winner	nc	https://en.wikipedia.org/wiki/2005_in_Cage_Warriors（No Contest）
+e06993	name:アルトゥコヴィッチ	winner	nc	https://en.wikipedia.org/wiki/2015_in_Absolute_Championship_Berkut（No Contest）
+e06967	name:アルハソフ	winner	nc	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut（No Contest (Illegal Knee)）
+e06965	name:ライェフスキ	winner	nc	https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut（No Contest (Accidental Eye Poke)）
+e08118	name:キエレク	winner	nc	https://www.bravecf.com/event-results/brave-cf-28-results（Overturned to No Contest）
+e07321	name:フルリッチ	winner	draw	https://en.wikipedia.org/wiki/2023_in_Brave_Combat_Federation（Draw (Unanimous)）
