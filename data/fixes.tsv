@@ -225,3 +225,6 @@ e08563	16	winner	nc	https://k-1.world/?p=850（K-1 公式の裁定：1R途中で
 e08563	16	method	ノーコンテスト（イストラテの後頭部への打撃は故意でないと判断、1R途中の中断）	https://k-1.world/?p=850
 e08553	6	winner	nc	https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%8A%E3%83%BB%E3%82%AB%E3%83%AA%E3%83%9F%E3%82%A2%E3%83%B3（戦績表「－ ブレイク・トループ 無効試合（互いの反則行為） K-1 WORLD MAX 2025 2025年9月7日」）
 e08553	6	method	ノーコンテスト（互いの反則行為）	https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%8A%E3%83%BB%E3%82%AB%E3%83%AA%E3%83%9F%E3%82%A2%E3%83%B3
+e01579	name:ストロング小林	method	試合中止（ストロング小林が新型コロナウイルス検査で陽性となり欠場）	https://www.boutreview.com/3/reports/item_70770.html
+e01222	name:石井智大	method	結果の記載なし（出典の表で勝敗・決まり手が「？」）	https://www.boutreview.com/fightsspiral/W_cupsle_06_06_11.html
+e00144	10	method	裁定保留（井上のローブローによるダメージで長谷川が試合続行不可能。結果はコミッショナー預かり）	https://pancrase.co.jp/data/result/2005/0227.html
