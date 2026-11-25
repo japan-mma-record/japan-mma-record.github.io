@@ -316,6 +316,11 @@ def load():
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
+            # 「0ラウンド」「0:00」は資料に記録がないときの埋め草なので空欄（不明）にする
+            if str(b.get('round') or '').strip() == '0':
+                b['round'] = ''
+            if str(b.get('time') or '').strip() in ('0:00', '00:00'):
+                b['time'] = ''
             if (events.get(k) or {}).get('promotion') in ('kit', 'art', 'deepx', 'ifpro_gi'):   # プロ柔術・DEEP X：階級だけを書く（ノーギのときだけ「ノーギ」）
                 w = re.sub(r'\s*[・/]\s*(柔術\s*[（(]道着[）)]|グラップリング\s*[（(][^）)]*[）)]|グラップリング$)', '', b.get('weight') or '')
                 b['weight'] = re.sub(r'\s*[・/]\s*柔術\s*[（(]ノーギ[）)]', '', w).strip()
