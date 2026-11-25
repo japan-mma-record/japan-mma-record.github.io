@@ -304,3 +304,22 @@ e02550	venue	愛知・ZEPP NAGOYA	会場の欄に記事の文章が入ってい�
 e02753	venue	ツインメッセ静岡	会場の欄に記事の文章が入っていたのを直す https://gbring.com/sokuho/result/result2011_02/0206_deep.htm
 e02358	name	ファーストグループpresents clubDEEP金沢 12.9～野武士あばれ祭1～	記事の見出しが大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2007_12/1209_deep.htm
 e01373	name	ACCEL初代ヘビー級王者決定戦	記事の見出しが大会名として入っていたのを、記事本文の大会名に直す https://gbring.com/sokuho/result/result2011_05/0522_accel.htm
+e04896	name	HEAT28	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20130929_22471
+e04971	name	東日本大震災復興支援イベント 格闘伝説LEGEND 5	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20131124_25168
+e04826	name	ACCEL 26	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20131223_26648
+e04872	name	BODYMAKER presents GLADIATOR 001	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20160619_240286
+e04879	name	BODYMAKERpresents GLADIATOR 013 in OSAKA	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20210208_510426
+e04882	name	BODYMAKER presents GLADIATOR 019 in OSAKA	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20220927_1303351
+e05036	name	ONE Warrior Series（OWS）8.日本VS世界	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20191005_358884
+e04911	name	HEAT49	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20211018_658132
+e05176	name	KROSS×OVER15	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20211207_770880
+e05177	name	KROSS×OVER16	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20220309_954546
+e04883	name	GLADIATOR 022	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20230612_1387252
+e04922	name	GENOME27	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20130720_20002
+e04868	name	GLADIATOR51 武士道	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20130224_12362
+e04867	name	GLADIATOR50「武士道」	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20130217_12331
+e04973	name	NARIAGARI vol.3	記事の見出しの言葉などが大会名として入っていたのを、記事本文の大会名に直す https://efight.jp/result-20231202_1444213
+e05176	date	2021-12-05	記事本文の開催日（2021年12月5日）に直す https://efight.jp/result-20211207_770880
+e05177	date	2022-03-06	記事本文の開催日（2022年3月6日）に直す https://efight.jp/result-20220309_954546
+e04936	merge	e01581	同じ大会（KROSS×OVER 17・2022年4月17日・新宿FACE）。記事の見出しの言葉が大会名として入り、別の大会になっていたのを1つにまとめる https://efight.jp/result-20220419_1003453
+e04938	merge	e01593	同じ大会（KROSS×OVER19・2022年10月16日・新宿FACE）。記事の見出しの言葉が大会名として入り、別の大会になっていたのを1つにまとめる https://efight.jp/result-20221018_1309784
