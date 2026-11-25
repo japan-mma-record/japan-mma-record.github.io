@@ -330,3 +330,10 @@ e01575	date	2022-03-06	BOUTREVIEW の記事本文の開催日（2022年3月6日�
 e05177	merge	e01575	同じ大会（KROSS×OVER16＝KROSS×OVER 3.6・2022年3月6日・GENスポーツパレス）が2つに分かれ、MMAの試合とキックの試合が別々に入っていたのを1つにまとめる https://efight.jp/result-20220309_954546
 e04942	name	KROSS×OVER 7.7 埼玉県県民活動総合センター	大会名に次回大会の告知（KICK SPECIAL(仮・10月13日開催予定)）が入っていたのを、公式結果ページの題名どおりに直す https://krossover.jp/?p=212
 e04960	name	KROSS×OVER-CAGE.7	大会名に別の大会（12.14 KROSS×OVER-NEXT13）の告知の題名が入っていたのを、公式結果ページの題名（11/16 KROSS×OVER-CAGE.7 公式結果）どおりに直す https://krossover.jp/?p=3768
+e04949	merge	e01641	同じ大会（KROSS×OVER-EXTRA.5-＝KROSS×OVER 3.3・2024年3月3日・GENスポーツパレス）が2つに分かれ、MMAの試合とキックの試合が別々に入っていたのを1つにまとめる https://krossover.jp/?p=1636 https://www.boutreview.com/3/reports/item_105318.html
+e04950	merge	e01650	同じ大会（KROSS×OVER-CAGE.3-＆Level-G PRO＝KROSS×OVER & Level-G 6.16・2024年6月16日・GENスポーツパレス）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=2833 https://www.boutreview.com/3/reports/item_110443.html
+e04951	merge	e01652	同じ大会（KROSS×OVER.26 1部・2部＝KROSS×OVER 7.7・2024年7月7日・新宿FACE）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=2849 https://www.boutreview.com/3/reports/item_111540.html
+e04946	merge	e01615	同じ大会（KROSS×OVER-CAGE-＝KROSS×OVER & Level-G 6.11・2023年6月11日・GENスポーツパレス）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=767 https://www.boutreview.com/3/reports/item_92804.html
+e04961	merge	e01696	同じ大会（KROSS×OVER.33 第1部・2部＝KROSS×OVER 12.7・2025年12月7日・新宿FACE）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=3781 https://www.boutreview.com/3/reports/item_138277.html
+e04962	merge	e01698	同じ大会（KROSS×OVER.34-2025 FINAL＝KROSS×OVER 12.14・2025年12月14日・GENスポーツパレス）が2つに分かれていたのを1つにまとめる https://krossover.jp/?p=3838 https://www.boutreview.com/3/reports/item_138772.html
+e04966	name	KROSS×OVER -EXTRA.8-	大会名に別の大会（11/8 KROSS×OVER-CAGE.11 アマチュア大会）の告知の題名が入っていたのを、公式結果ページの題名（9/27【KROSS×OVER -EXTRA.8-】試合結果&レポート）どおりに直す https://krossover.jp/?p=4235
