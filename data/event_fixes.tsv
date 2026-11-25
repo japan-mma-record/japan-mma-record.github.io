@@ -266,3 +266,5 @@ e05333	date	2021-07-25	BOUTREVIEW の結果で開催日は2021年7月25日（日
 e03683	date	2021-10-24	BOUTREVIEW の結果で開催日は2021年10月24日（日） https://www.boutreview.com/3/reports/item_62571.html
 e05262	merge	e01524	同じ大会（Resilience 01・2019年4月14日・水戸）が日付を4月4日と誤って別に入っていたのを1つにまとめる https://www.boutreview.com/3/reports/item_22398.html
 e05229	merge	e01443	同じ大会（CHAKURIKI 1・2015年3月15日）が日付を3月16日と誤って別に入っていたのを1つにまとめる https://efight.jp/result-20150315_142177 https://battle-news.com/?p=6781
+e05161	date	2019-12-01	BRAVE FIGHT 21 は2019年12月1日（日）開催（BOUTREVIEW）。11月30日は誤り https://www.boutreview.com/3/reports/item_33726.html
+e05328	merge	e05161	同じ大会（BRAVE FIGHT 21・2019年12月1日・三郷BRAVEジム）のキック・グラップリングの試合が別の大会として入っていたのを1つにまとめる https://www.boutreview.com/3/reports/item_33726.html
