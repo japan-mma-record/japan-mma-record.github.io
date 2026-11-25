@@ -1,5 +1,1 @@
-1 200 72958 https://www.sherdog.com/organizations/Soul-Fight-2160
-2 200 73749 https://www.sherdog.com/organizations/Lumax-Cup-53
-3 200 103093 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398
-4 200 69568 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398/recent-events/2
-5 200 84427 https://www.sherdog.com/events/BC-Battle-Code-3-18982
+1 200 83450 https://www.sherdog.com/organizations/Battle-Code-3312
