@@ -1,2 +1,2 @@
-1 404 343 https://pancrase.co.jp/data/result/2014/0713.html
-2 200 85871 https://www.sherdog.com/events/UVF-1-Universal-Vale-Tudo-Fighting-1-391
+1 200 108910 https://www.sherdog.com/organizations/K1-29
+2 200 69581 https://www.sherdog.com/organizations/K1-29/recent-events/3
