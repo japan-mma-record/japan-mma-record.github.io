@@ -1,3 +1,4 @@
-1 200 76839 https://www.sherdog.com/organizations/Japan-MMA-License-5431
-2 200 69704 https://www.sherdog.com/organizations/Japan-MMA-License-5431/recent-events/2
-3 200 71003 https://www.sherdog.com/organizations/Koppo-vs-Keisyukai-132
+1 200 71066 https://www.sherdog.com/organizations/Shoot-Boxing-58
+2 200 62224 https://www.sherdog.com/events/K1-Legend-94-609
+3 200 66042 https://www.sherdog.com/events/K1-Hercules-95-387
+4 200 62432 https://www.sherdog.com/events/K1-Grand-Prix-2000-Final-347
