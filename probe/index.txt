@@ -1,3 +1,2 @@
-1 200 59941 https://www.sherdog.com/events/Rings-The-Outsider-55-Awakening-Kyushu-Tournament-Again-93467
-2 200 59582 https://www.sherdog.com/events/Rings-Gala-Risky-Business-5594
-3 200 91383 https://www.sherdog.com/organizations/Rings-10/recent-events/2
+1 404 343 https://pancrase.co.jp/data/result/2014/0713.html
+2 200 85871 https://www.sherdog.com/events/UVF-1-Universal-Vale-Tudo-Fighting-1-391
