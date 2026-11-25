@@ -221,3 +221,7 @@ e00759	name:中村好史	winner	draw	https://gbring.com/sokuho/result/result2011
 e00759	name:中村好史	method	引き分け（判定0-1。新人王トーナメントの規定による延長Rで中村が2:58 肩固めで一本勝ち・優勝）	https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm
 e00759	name:中村好史	round	2	https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm（本戦2Rの判定）
 e00759	name:中村好史	time		https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm（2:58 は延長Rの時間）
+e08563	16	winner	nc	https://k-1.world/?p=850（K-1 公式の裁定：1R途中で止まったため K-1ルール第7条5項によりノーコンテスト）
+e08563	16	method	ノーコンテスト（イストラテの後頭部への打撃は故意でないと判断、1R途中の中断）	https://k-1.world/?p=850
+e08553	6	winner	nc	https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%8A%E3%83%BB%E3%82%AB%E3%83%AA%E3%83%9F%E3%82%A2%E3%83%B3（戦績表「－ ブレイク・トループ 無効試合（互いの反則行為） K-1 WORLD MAX 2025 2025年9月7日」）
+e08553	6	method	ノーコンテスト（互いの反則行為）	https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%8A%E3%83%BB%E3%82%AB%E3%83%AA%E3%83%9F%E3%82%A2%E3%83%B3
