@@ -255,5 +255,3 @@ e04731	1	winner	2	海外の記録サイトの大会ページ https://en.wikipedi
 e04731	1	method	判定0-3	海外の記録サイトの大会ページ
 e03162	1	fighter2	谷山尚未	海外の記録サイトの大会ページ（第1試合 Yukiko Seki def. Naomi Taniyama, TKO (Punches) 2R 1:17）。DEEP 公式の結果ページには関友紀子の相手の名前が書かれていない
 e03162	1	fighter2_id	f08294	谷山尚未（Naomi Taniyama）の選手ページ。ジュエルス・DEEP JEWELS で2012〜2014年に試合
-e05954	name:ロイ・ドリゲス	winner	1	https://en.wikipedia.org/wiki/2016_in_ONE_Championship（Riku Shibuya def. Roy Doliguez, Decision (unanimous) 3R 5:00）。ONE 公式の渋谷莉孔の戦績（ロイ・ドリゲス WIN ユナニマス判定）と渋谷莉孔の Wikipedia 日本語版の戦績表（判定3-0）も同じ。引き分け（負傷判定）は同じ戦績表の前の試合（ジャンニ・スッバ戦）のものとみられる
-e05954	name:ロイ・ドリゲス	method	判定3-0	https://en.wikipedia.org/wiki/2016_in_ONE_Championship
