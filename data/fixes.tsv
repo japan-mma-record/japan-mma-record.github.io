@@ -253,3 +253,5 @@ e04418	4	winner	2	海外の記録サイトの大会ページ https://ja.wikipedi
 e04418	4	method	判定0-3（28-29・28-29・28-29）	https://www.deep2001.com/deep-106-impact/
 e04731	1	winner	2	海外の記録サイトの大会ページ https://en.wikipedia.org/wiki/Rodrigo_Gracie https://ja.wikipedia.org/wiki/%E5%9C%8B%E5%A5%A5%E9%BA%92%E6%A8%B9%E7%9C%9F https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%89%E3%83%AA%E3%82%B4%E3%83%BB%E3%82%B0%E3%83%AC%E3%82%A4%E3%82%B7%E3%83%BC（海外の記録サイト・Wikipedia 英語版・國奥麒樹真とホドリゴ・グレイシー両方の記事でホドリゴの判定3-0勝ち。GBR の結果は○●が逆）
 e04731	1	method	判定0-3	海外の記録サイトの大会ページ
+e03162	1	fighter2	谷山尚未	海外の記録サイトの大会ページ（第1試合 Yukiko Seki def. Naomi Taniyama, TKO (Punches) 2R 1:17）。DEEP 公式の結果ページには関友紀子の相手の名前が書かれていない
+e03162	1	fighter2_id	f08294	谷山尚未（Naomi Taniyama）の選手ページ。ジュエルス・DEEP JEWELS で2012〜2014年に試合
