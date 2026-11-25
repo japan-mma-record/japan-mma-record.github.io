@@ -1,1 +1,3 @@
-1 200 102571 https://www.sherdog.com/events/Zst-18-Sixth-Anniversary-7481
+1 200 76157 https://efight.jp/result-20150503_157284/2
+2 200 76172 https://efight.jp/result-20150503_157284/3
+3 200 74666 https://efight.jp/result-20150503_157284/4
