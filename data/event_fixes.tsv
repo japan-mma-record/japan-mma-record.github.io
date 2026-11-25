@@ -344,3 +344,4 @@ e01547	name	BATTLE HAZARD 08	昼夜2部制の昼の部（夜の部が ZST.69＝e
 e05880	merge	e05383	同じ大会（UFC 325・2026年2月1日・シドニー）が、英語の大会名（Road to UFC シーズン4 の記事から入った中村京一郎 vs セバスチャン・サレイの1試合）と日本語の大会名の2つに分かれていたのを1つにまとめる https://en.wikipedia.org/wiki/UFC_325
 e04415	date	2021-06-20	DEEP 101 IMPACT は2021年5月5日（後楽園ホール）の予定が緊急事態宣言で延期になり、6月20日にニューピアホールで開かれた（海外の記録サイトの大会ページ・Wikipedia 英語版 List of Deep events）。DEEP 公式の結果ページの日付と会場は延期前のまま。日付を直すと、正しい日付で別に入っていた同じ大会（e01556）と1つにまとまる
 e04415	venue	ニューピアホール	同上（海外の記録サイトの大会ページ：New Pier Hall, Minato, Tokyo）
+e04104	date	2003-12-07	Wikipedia 英語版「2003 in Deep」で Deep: clubDeep Osaka（デルフィンアリーナ）は2003年12月7日（池本誠知 vs 木村仁要、寺田功 vs 山崎晃裕、尾藤広光 vs 江波圭一 など同じ試合）。BOUTREVIEW の本文の日付「2003年5月25日」は名古屋大会の写し間違いとみられ、宮田卓郎が同じ日に名古屋と大阪の両方で試合をしたことになっていた https://en.wikipedia.org/wiki/2003_in_Deep
