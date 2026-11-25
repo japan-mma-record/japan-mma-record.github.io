@@ -255,3 +255,5 @@ e04731	1	winner	2	海外の記録サイトの大会ページ https://en.wikipedi
 e04731	1	method	判定0-3	海外の記録サイトの大会ページ
 e03162	1	fighter2	谷山尚未	海外の記録サイトの大会ページ（第1試合 Yukiko Seki def. Naomi Taniyama, TKO (Punches) 2R 1:17）。DEEP 公式の結果ページには関友紀子の相手の名前が書かれていない
 e03162	1	fighter2_id	f08294	谷山尚未（Naomi Taniyama）の選手ページ。ジュエルス・DEEP JEWELS で2012〜2014年に試合
+e04915	name:高坂剛	fighter1_id	f00357	https://ja.wikipedia.org/wiki/%E9%AB%98%E9%98%AA%E5%89%9B（高阪剛の戦績表：2020年1月19日 HEAT 46 サシャ・ミリンコヴィッチ戦 1R 3:23 TKO負け）
+e04915	name:高坂剛	fighter1	高阪剛	名前の書き間違い（高坂→高阪）。高阪剛の Wikipedia 日本語版の戦績表どおり
