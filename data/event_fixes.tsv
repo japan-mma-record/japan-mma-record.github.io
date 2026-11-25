@@ -326,3 +326,7 @@ e04938	merge	e01593	同じ大会（KROSS×OVER19・2022年10月16日・新宿FAC
 e00854	name	サステイン主催プロ興行	大会名が空だった。日本修斗協会の結果ページの題名（11月29日 サステイン主催プロ興行 試合結果）どおりに入れる https://j-shooto.com/?p=15913
 e01037	name	プロフェッショナル修斗公式戦 香川・高松シンボルタワー展示場	大会名の欄に会場名だけが入っていたのを、修斗公式の結果ページの大会名どおりに直す https://shooto-mma.com/result/?id=191
 e01041	name	プロフェッショナル修斗公式戦 沖縄・コザミュージックタウン音市場	大会名の欄に会場名だけが入っていたのを、修斗公式の結果ページの大会名どおりに直す https://shooto-mma.com/result/?id=194
+e01575	date	2022-03-06	BOUTREVIEW の記事本文の開催日（2022年3月6日（日）東京・GENスポーツパレス）に直す https://www.boutreview.com/3/reports/item_69010.html
+e05177	merge	e01575	同じ大会（KROSS×OVER16＝KROSS×OVER 3.6・2022年3月6日・GENスポーツパレス）が2つに分かれ、MMAの試合とキックの試合が別々に入っていたのを1つにまとめる https://efight.jp/result-20220309_954546
+e04942	name	KROSS×OVER 7.7 埼玉県県民活動総合センター	大会名に次回大会の告知（KICK SPECIAL(仮・10月13日開催予定)）が入っていたのを、公式結果ページの題名どおりに直す https://krossover.jp/?p=212
+e04960	name	KROSS×OVER-CAGE.7	大会名に別の大会（12.14 KROSS×OVER-NEXT13）の告知の題名が入っていたのを、公式結果ページの題名（11/16 KROSS×OVER-CAGE.7 公式結果）どおりに直す https://krossover.jp/?p=3768
