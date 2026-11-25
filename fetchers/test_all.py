@@ -35,3 +35,11 @@ assert upcoming.promo_of('DEEP 135 IMPACT') == 'DEEP' and upcoming.promo_of('DEE
 v, c = upcoming.parse_efight_event(read('efight_event.html'))
 assert len(c) == 9 and c[0][0] == 'イリー・プロハースカ', c[:2]
 print('見本ページの読み取り: すべて正常')
+import jbjjf_bracket   # JBJJF のトーナメント表（第15回全日本マスター柔術選手権 2021年9月24日 1マット）
+bb = jbjjf_bracket.usable(jbjjf_bracket.parse(os.path.join(here, 'tests', 'jbjjf_bracket_20210924.csv')))
+x = [b for b in bb if b['match_no'] == '2'][0]
+assert (x['f1'], x['f2'], x['winner'], x['round']) == ('藤原靖典', '長屋英一', '2', '準々決勝'), x
+x = [b for b in bb if b['match_no'] == '12'][0]
+assert (x['f1'], x['f2'], x['winner'], x['round']) == ('中村圭太', 'Sergey Vedenev', '1', '決勝'), x
+assert not [b for b in bb if b['n'] <= 3]
+print('JBJJF のトーナメント表の読み取り: 正常')
