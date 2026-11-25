@@ -1,4 +1,2 @@
-1 200 33092 https://www.jbjjf.com/2022/08/31562/
-2 200 72575 https://www.jbjjf.com/2021/09/22586/
-3 200 35407 https://www.jbjjf.com/2025/08/46531/
-4 200 32196 https://www.jbjjf.com/2016/06/42792/
+1 200 66956 https://docs.google.com/spreadsheets/d/e/2PACX-1vT8Xv67sm7caACatNkITrdB0wcRaPpQvdfys4Z12fDwaekqmgObQJSrRGkxtMZJ3vP3Sm_mtfe18UWd/pubhtml
+2 200 65352 https://docs.google.com/spreadsheets/d/e/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF/pubhtml?gid=897291374&single=true
