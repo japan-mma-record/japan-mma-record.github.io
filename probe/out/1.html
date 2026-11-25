@@ -1,325 +1,351 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117744042-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117744042-1');
-</script>
-<meta charset="utf-8" />
-<title>ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ï¼šPANCRASE Official Site | PANCRASE Z</title>
-<meta name="keywords" content="PANCRASE,MMA,ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹,ç·åˆæ ¼é—˜æŠ€,ãƒã‚¤ãƒ–ãƒªãƒƒãƒ‰ãƒ»ãƒ¬ã‚¹ãƒªãƒ³ã‚°,P's LAB,ãƒ”ãƒ¼ã‚ºãƒ»ãƒ©ãƒœ,ä¸–ç•Œæ¨™æº–" />
-<meta name="description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel="stylesheet" href="../../../css/p2020.css" type="text/css" />
-<link rel="shortcut icon" href="../../../images/favicon.ico" />
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<meta property="og:title" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pancrase.co.jp/" />
-<meta property="og:image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
-<meta property="og:site_name" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta property="og:description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta name="twitter:description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="twitter:image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
-<meta itemprop="image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
+<title>GBR„ƒjƒ…[ƒX„y‰©‹à‹Ø“÷z5.18@“nç²‹v]A‰‘ã‰¤ŽÒ‚É‹P‚­</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<link rel="stylesheet" href="c.css" type="text/css">
+<style type="text/css">
+<!--
+a {  text-decoration: none}
+a:link {  color: #333333}
+a:hover {  color: #FF3300; text-decoration: underline}
+.news {
+	line-height: 17px;
+}
+.news1 {	line-height: 17px;
+	font-size: 12px;
+}
+.style1 {color: #0000FF}
+.style3 {line-height: 18px; font-size: 12px; }
+.style4 {color: #FF0000}
+.style5 {color: #333333}
+-->
+</style>
 </head>
-<body>
-<div id="wrapper">
-<div id="container">
+<body text="#444444" bgColor="#FFFFFF" leftMargin="0" topMargin="0" marginheight="0" marginwidth="0" vlink="#333333">
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr> 
+      <td colspan="3"><a name=top></a></td>
+    </tr>
+    <tr> 
+      <td><img src="../../../images/top_00.gif" width="160" height="57" alt="GBR`ƒSƒbƒgƒuƒŒƒXƒUƒŠƒ“ƒO`Ši“¬‹Z‘‡î•ñƒEƒFƒuƒ}ƒKƒWƒ“"></td>
+      <td><img src="../../../images/top_01.gif" width="356" height="57" alt="K-1APRIDE(ƒvƒ‰ƒCƒh)‚ÌŽŽ‡‘¬•ñƒjƒ…[ƒX‚©‚çƒeƒNƒjƒbƒNuÀAƒCƒ“ƒ^ƒrƒ…[VTR‚âŠi“¬‹Z‘IŽè•ÇŽ†‚Ü‚ÅŠi“¬‹Zî•ñ–žÚ‚Ì‘‡î•ñƒEƒFƒuƒ}ƒKƒWƒ“IGBR`ƒSƒbƒgEƒuƒŒƒXEƒUEƒŠƒ“ƒO`"></td>
+      <td><img src="../../../images/top_02.gif" width="227" height="57" alt="Ši“¬‹Z‘¬•ñ•ƒjƒ…[ƒX‚È‚çGBR‚Ìƒƒ‹ƒ}ƒK‚Å‚¢‚¿‚Í‚â‚­GETI‚»‚Ì‘¼AŠi“¬‹ZŒŽŠÔƒXƒPƒWƒ…[ƒ‹E‘IŽè–¼ŠÓEŠi“¬ƒRƒ‰ƒ€“™"></td>
+    </tr>
+    <tr> 
+      <td colspan="3">
+        <table width="730" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="175" align="center" bgcolor="#b91b00" valign="top" rowspan="2"> 
+              <p><br>
+                 </p>
+              <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF">
+                <tr> 
+                  <td bgcolor="#003399" height="18" bordercolor="#FFFFFF" align="center"><b><font size="2" color="#FFFFFF">GBR‚É“ü‰ï‚·‚é</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><a href="../../../chrginfo.html"><font size="2">‰ïˆõ“o˜^‚Í‚±‚¿‚ç</font></a></b></td>
+                </tr>
+              </table>
+              <br>
+              <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF">
+                <tr> 
+                  <td bgcolor="#3399FF" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../index.html"><font color="#FFFFFF">ƒTƒCƒgƒgƒbƒv</font></a></font></b></td>
+                </tr>
+              </table>
+              <br>
+              <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF">
+                <tr> 
+                  <td bordercolor="#b91b00" align="center"><b><font size="2" color="#FFFFFF">–³—¿ƒRƒ“ƒeƒ“ƒc</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font size="2" color="#FFFFFF">‘¬•ñ</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../news.htm"><font color="#999999">ƒjƒ…[ƒX</font></a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../result/result.htm">ŽŽ‡Œ‹‰Ê</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚»‚Ì‘¼</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../schedule/schedule.htm">ŒŽŠÔƒXƒPƒWƒ…[ƒ‹</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../link/link.htm">Ši“¬ƒŠƒ“ƒN</a></font></b></td>
+                </tr>
+              </table>
+              <br>
+              <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF">
+                <tr> 
+                  <td bgcolor="#b91b00" bordercolor="#b91b00" align="center"><b><font size="2" color="#FFFFFF">—L—¿ƒRƒ“ƒeƒ“ƒc</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">“ÁW</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../closeup/closeup.htm">ƒNƒ[ƒYƒAƒbƒvI</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">“®‰æ</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../ringsidemovie/ringsidemovie.htm">ƒŠƒ“ƒOƒTƒCƒhƒ€[ƒr[</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../dreamspar/dreamspar.htm">ƒhƒŠ[ƒ€ƒXƒp[ƒŠƒ“ƒO</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../technique/technique.htm">ƒeƒNƒjƒbƒNuÀ</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../interviewmovie/interviewmovie.htm">VTRƒCƒ“ƒ^ƒrƒ…[</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../roundgirl/roundgirl.htm">ƒ‰ƒEƒ“ƒhƒK[ƒ‹</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚æ‚Ý‚à‚Ì</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../fightingreport/fightingreport.htm">ƒtƒ@ƒCƒeƒBƒ“ƒOƒŒƒ|[ƒg</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../interview/interview.htm">ƒCƒ“ƒ^ƒrƒ…[</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../ippitu/ippitu.htm">ƒRƒ‰ƒ€Eˆê•M“ü°</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚»‚Ì‘¼</font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../mailmagazine/mailmagazine.htm">’´‘¬Iƒ[ƒ‹ƒ}ƒKƒWƒ“</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../kabegami/kabegami.htm">•ÇŽ†</a></font></b></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../playermeikan/playermeikan.htm">Ši“¬‘IŽè–¼ŠÓ</a></font></b></td>
+                </tr>
+              </table>
+              <p><br>
+                <a href="mailto:gbr@hajimail.jp"> <img src="../../../images/button_ikenbako.gif" width="150" height="26" alt="‚f‚a‚q‚Ö‚Ì“ŠeE‚²ˆÓŒ©‚Í‚±‚¿‚çI" border="0"></a></p>
+              <p>@ </p>
+              <table width="150" border="1" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" bordercolor="#666666">
+                <tr> 
+                  <td bgcolor="#FFFFFF" bordercolor="#666666" align="center"> 
+                    <font size="1">“®‰æÄ¶‚É‚ÍWindows Media Player9ˆÈã‚ª•K—v‚Å‚·B<br>
+                    ˆÈ‰º‚æ‚èƒ_ƒEƒ“ƒ[ƒhi–³žj<br>
+                    ‚µ‚Ä‚­‚¾‚³‚¢B<br>
+                    </font><a href="http://www.microsoft.com/japan/windows/windowsmedia/download/" target="_blank"> 
+                    <img src="https://www.microsoft.com/windows/windowsmedia/images/Download_88x31_ani.gif"
+width="88"height="31"border="0" alt="Get Windows Media Player" vspace="7"></a> 
+                  </td>
+                </tr>
+              </table>
+              <p><BR>
+                <BR>
+              </p>
+            </td>
+            <td width="555" valign="top"><font size="2"><img height=19 src="../../../images/bar_01.gif" width=528 border=0> 
+              </font> </td>
+          </tr>
+          <tr>
+            <td width="555" valign="top" align="center"> 
+              <table width="500" border="0" cellspacing="10" cellpadding="0">
+                <tr> 
+                  <td valign="top" height="30"><img src="../bar_result.gif" width="500" height="30"></td>
+                </tr>
+                <tr> 
+                  <td valign="top" align="right"> <a href="../news.htm"><b><font size="2" color="#FF3300">âƒjƒ…[ƒXTOP‚Ö–ß‚é</font></b></a><br>
+                    <br>
+                    
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                    <tr> 
+                      <td width="1%" bgcolor="#000066"></td>
+                      <td bgcolor="#CDCDCD"> 
+                        <p><b><font size="2">y‰©‹à‹Ø“÷z5.18@“nç²‹v]A‰‘ã‰¤ŽÒ‚É‹P‚­</font></b></td>
+                      <td align="right" width="20%" bgcolor="#CCCCCC"><font size="2">2004/05/20</font></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3" bgcolor="#000066"></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3">                        <p class="news1"><strong>‰©‹à‹Ø“÷
 
-<div class="pancrase_logo">
-<a href="../../../index.html"><img src="../../../images/pancrase.png" alt="PANCRASE -ä¸–ç•Œæ¨™æº–-" /></a>
-</div>
 
-
-<!-- navi -->
-<div class="navi">
-<ul>
-<li><i class="fas fa-times fa-fw rd"></i><a href="../../../index.html">PANCRASEãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸</a></li>
-<li><a href="../../index.html">database</a></li>
-<li><a href="../index.html">è©¦åˆçµæžœ</a></li>
-<li><a href="index.html">2005</a></li>
-</ul>
-</div>
-</div>
-<!-- navi -->
-
-
-<!-- main -->
-<div id="main">
-
-<h1>PANCRASE Z</h1>
-<h4>2005.9.03ã€€ã‚°ãƒ©ãƒ³ãƒ¡ãƒƒã‚»ç†Šæœ¬ã€€ä¸»å‚¬è€…ç™ºè¡¨ï¼š4000äºº(æº€å“¡)</h4>
-
-
-<div id="card">
-<table>
-<tr><td colspan="5" class="rdcube">ãƒ¡ã‚¤ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆã€€ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ«ãƒ¼ãƒ«ã€€ç„¡å·®åˆ¥ç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-â—‹<a href="../../../data/prfl/sato.html">ä½è—¤å…‰ç•™</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ism)</div></td>
-<td class="icn"><img src="../../../icn/sato1995.jpg" alt="ä½è—¤å…‰ç•™" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/matsumoto.jpg" alt="æ¾æœ¬å¤©å¿ƒ" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl2/matsumoto.html">æ¾æœ¬å¤©å¿ƒ</a>Ã—
-<div class="sm">(SKã‚¢ãƒ–ã‚½ãƒªãƒ¥ãƒ¼ãƒˆ)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 2:43ã€TKO(ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ã‚¹ãƒˆãƒƒãƒ—)/ã‚¹ãƒªãƒ¼ãƒ‘ãƒ¼ãƒ›ãƒ¼ãƒ«ãƒ‰</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ä½è—¤å…‰ç•™(88.6kg)</div>
-<div class="wcube">æ¾æœ¬å¤©å¿ƒ(86.8kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå²¡æœ¬æµ©ç¨”
-</td></tr>
+ u‚s‚a‚r—Žq‘‡Ši“¬‹ZÅ‹­—ŽqŒˆ’èƒg[ƒiƒƒ“ƒgv</strong><br>
+                          2004”N5ŒŽ7“úi‹àj“Œ‹žEƒfƒBƒtƒ@—L–¾<br>
+                          &lt;ŽŽ‡Œ‹‰Ê&gt;<br>
+                          ¥‘æ9ŽŽ‡@ƒg[ƒiƒƒ“ƒgŒˆŸ@3•ª2R<br>
+                          ›<span class="style4">“nç²‹v]</span>iAJƒWƒ€j<br>
+                          ‰„’·”»’è@3-0<br>
+                          œ<span class="style1">‹àŽq^—</span>i‘T“¹‰ïj<br>
+                          <br>
+                          ¥‘æ7ŽŽ‡@ƒg[ƒiƒƒ“ƒg€ŒˆŸ@3•ª2R<br>
+                          ›<span class="style4">“nç²‹v]</span>iAJƒWƒ€j<br>
+                          1R47•b@˜r‚Ð‚µ‚¬\ŽšŒÅ‚ß<br> 
+                          œ<span class="style1">¯–ì‹vŽq</span>i—ESŠÙj<br>
+                          <br>
+                          ¥‘æ6ŽŽ‡@ƒg[ƒiƒƒ“ƒg€ŒˆŸ@3•ª2R<br>
+                          ›<span class="style4">‹àŽq^—</span>i‘T“¹‰ïj<br>
+                          1R2•ª7•b@˜r‚Ð‚µ‚¬\ŽšŒÅ‚ß<br>
+                          œ<span class="style1">Îì”ü’Ã•ä</span>iƒtƒŠ[j<br>
+                          <br>
+                          ¥‘æ5ŽŽ‡
+                          ƒg[ƒiƒƒ“ƒgˆê‰ñí@3•ª2R<br>
+›<span class="style4">“nç²‹v]</span>iAJƒWƒ€j<br> 
+1‚q1•ª7•b@KO@¦‰EƒXƒgƒŒ[ƒg<br>
+œ<span class="style1">Žðˆä^‹I</span>i‘T“¹‰ïj<br>
+<br>
+¥‘æ4ŽŽ‡@ƒg[ƒiƒƒ“ƒgˆê‰ñí@3•ª2R<br>
+›<span class="style4">¯–ì‹vŽq</span>i—ES‰ïj<br>
+1‚q2•ª38•b@˜r‚Ð‚µ‚¬\ŽšŒÅ‚ß<br>
+œ<span class="style1">ã“cŽé—</span>i“ú–{Œ–@j<br>
+<br>
+¥‘æ3ŽŽ‡@ƒg[ƒiƒƒ“ƒgˆê‰ñí@3•ª2R<br>
+›<span class="style4">‹àŽq^—</span>i‘T“¹‰ïj<br>
+                          1‚q1•ª17•b@ƒ`ƒ‡[ƒNƒXƒŠ[ƒp[<br>
+                          œ<span class="style1">ASAMI</span>iŽmSŠÙj<br>
+                          <br>
+                          ¥‘æ2ŽŽ‡@ƒg[ƒiƒƒ“ƒgˆê‰ñí@3•ª2R<br>
+›<span class="style4">Îì”ü’Ã•ä</span>iƒtƒŠ[j<br> 
+1R2•ª9•b@ƒ`ƒ‡[ƒNƒXƒŠ[ƒp[ 
+<br>
+œ<span class="style1">‰HŽÄ‚Ü‚ä‚Ý</span>iBBdollj<br>
+<br>
+&lt;ƒƒ“ƒ}ƒbƒ`&gt;<br>
+¥ƒX[ƒp[ƒtƒ@ƒCƒg@ƒLƒbƒNƒ{ƒNƒVƒ“ƒOƒ‹[ƒ‹@2•ª5R@<br>
+  ›<span class="style4">ƒOƒŒƒCƒVƒƒƒAˆŸ‹I</span>i²lŠÚj<br>
+  5R”»’è@3-0  <br>
+  œ<span class="style1">™‹M”üŽq</span>iCUCj<br>
+  <br>
+  ¥ƒŠƒU[ƒuƒtƒ@ƒCƒg@@3•ª2R<br>
+  ›<span class="style4">ƒWƒFƒbƒgEƒCƒYƒ~</span>iƒNƒƒXƒ|ƒCƒ“ƒg‹gËŽ›j<br>
+  1R1•ª5•b@˜r‚Ð‚µ‚¬\ŽšŒÅ‚ß<br>
+  œ<span class="style1">ŸŽR•‘Žq</span>i•õS‰ïj<br>
+  <br>
+  </td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3" bgcolor="#F0F0F0"><font size="2">yŠÖ˜AƒŠƒ“ƒNz</font></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3"><font size="2"><a href="http://www.tbs.co.jp/g-muscle/corner2/woman/index-j.htm" target="_blank"><b><font color="#0000FF">â‰©‹à‹Ø“÷@ŒöŽ®ƒTƒCƒg</font></b></a></font></td>
+                    </tr>
+                  </table>
+                    
+                </td>
+                </tr>
+                <tr>
+                  <td height="197" valign="top"> 
+                    <table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#666666">
+                      <tr> 
+                        <td valign="top" bordercolor="#FFFFFF" bgcolor="#003366"><font size="2" color="#FFFFFF">á‚»‚Ì‘¼‚ÌŽå‚Èƒjƒ…[ƒXâ</font></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+                          
+                          <table border="0" cellspacing="0" cellpadding="4" width="100%">
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/16</font></td>
+                              <td>
+                                <p class="style3"><a href="0516_jungle.htm">yƒWƒƒƒ“ƒOƒ‹ƒtƒ@ƒCƒgzƒVƒEƒo‚Ìˆê‰Ÿ‚µ@ƒAƒJƒVƒIAKOŸ—˜</a> </p></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap bgcolor="#FFFFFF"><font color="#999999" size="1">¡@</font><font size="2">2004/05/16</font></td>
+                              <td bgcolor="#FFFFFF"><a href="0516_ajkick.htm" class="style3">y‘S“ú–{ƒLƒbƒNz‹ÁˆÙ‚Ì18Î@•½’JAƒƒCƒ“‚ÅKO•‰‚¯</a></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/16</font></td>
+                              <td>
+                                <p class="style3"><a href="0516_daido.htm">y‘å“¹mzƒRƒmƒlƒ“ƒR‘SŽŽ‡ˆê–{Ÿ‚¿AŽRè‚àKO</a> </p></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap bgcolor="#FFFFFF"><font color="#999999" size="1">¡@</font><font size="2">2004/05/16</font></td>
+                              <td bgcolor="#FFFFFF"><a href="0516_smack.htm" class="style3">yƒXƒ}ƒbƒNƒK[ƒ‹z5.16@–Î–ØA^•‚ªƒg[ƒiƒƒ“ƒg§”e</a></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/15</font></td>
+                              <td>
+                                <p class="style3"><a href="0515_jiu-jitsu.htm">y_pzƒeƒŒƒŒ~ƒKƒ‹ƒVƒA@–²‚ÌƒJ[ƒh‚ÍƒeƒŒƒŒ‚ÉŒR”z</a> </p>
+                              </td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap bgcolor="#FFFFFF"><font color="#999999" size="1">¡@</font><font size="2">2004/05/09</font></td>
+                              <td bgcolor="#FFFFFF"><a href="0509_makick.htm" class="style3">yMA“ú–{ƒLƒbƒNz–Ø‘º‚ª‰ƒƒCƒ“‚ÅTKOŸ‚¿AŽ³ŒËA”’’¹‚àŸ‚ÂI</a></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/05</font></td>
+                              <td>
+                                <p class="style3"><a href="0505_zst.htm">yZSTz¬’JA–³”O‚ÌƒŒƒtƒFƒŠ[ƒXƒgƒbƒv@ŠAƒŒƒ~[ƒK‚ÉƒŠƒxƒ“ƒW</a> </p></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td width="16%" nowrap bgcolor="#FFFFFF"><font color="#999999" size="1">¡@</font><font size="2">2004/05/03</font></td>
+                              <td width="75%" bgcolor="#FFFFFF"><a href="0503_shooto.htm" class="style3">yC“lz‚’JA¶ƒnƒC‚ÅíœÉKO@ƒ‹ƒ~ƒiA—¬ŒŒ‚µ‚È‚ª‚çˆê–{Ÿ‚¿</a></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/02</font></td>
+                              <td>
+                                <p class="style3"><a href="0502_njkf.htm">yNJKFz“¶ŽqŠÛ‚ªƒ€ƒGƒ^ƒCŒ»–ðƒ‰ƒ“ƒJ[‚ðƒqƒW‚Å—ô‚­I</a> </p></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td width="16%" nowrap bgcolor="#FFFFFF"><font color="#999999" size="1">¡@</font><font size="2">2004/05/02 </font></td>
+                              <td width="75%" bgcolor="#FFFFFF"><a href="0502_pancrase.htm" class="news style2">yPANCRASEzƒlƒIƒuƒ‰AoêŽÒŒˆ’è</a></td>
+                            </tr>
+                            <tr bgcolor="#F0F0F0">
+                              <td width="16%" nowrap><font color="#999999" size="1">¡@</font><font size="2">2004/05/01</font></td>
+                              <td width="75%"><font size="2"><a href="0501_K-1.htm">yK-1zƒTƒbƒv‰õŸAƒg[ƒiƒƒ“ƒg—DŸ‚Í39Îƒ}ƒNƒhƒiƒ‹ƒh</a></font></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>  
+                    <p><font size="2"><b><a href="../news_overall.htm"><font color="#0000CC">â”N“x•Êƒjƒ…[ƒXˆê——</font></a></b></font>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="13" valign="top"><div align="right"><a href="#top" class="news">£ƒy[ƒWTOP‚Ö–ß‚é</a></div></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing=0 cellpadding=0 border=0>
+          <tbody> 
+          <tr> 
+            <td class=size1 valign=top align=middle bgcolor=#b91b00> 
+              <div align=center><font size="2"><img height=31 src="../../../images/foot01.gif" width=695 border=0><br>
+                <img title="" height=3 alt="" 
+            src="../images/qqq.gif" width=1 border=0><br>
+                <a href="../../../entry/what_gbr.htm"><font color="#ffffff">GBR‚Æ‚Í</font></a>@<a href="../../../entry/machine.htm"><font 
+            color=#ffffff>“®ìŠÂ‹«</font></a>@<a href="../../../entry/rules.htm"><font 
+            color=#ffffff>—˜—p‹K–ñ</font></a>@<a href="../../../entry/privacy.htm"><font 
+            color=#ffffff>ƒvƒ‰ƒCƒoƒV[‚Ìl‚¦•û</font></a>@<a 
+            href="https://member1.biglobe.ne.jp/cgi-bin/content_p/contset.pl?url=https://gbring.com/"><font 
+            color=#ffffff>‰ð–ñ‚Í‚±‚¿‚ç</font></a>@<a 
+            href="mailto:gbr@hajimail.jp"><font 
+            color=#ffffff>‚¨–â‡‚í‚¹</font></a></font></div>
+            </td>
+            <td><font size="2"><img height=56 src="../../../images/foot02.gif" width=49 border=0><br>
+              </font></td>
+          </tr>
+          <tr> 
+            <td colspan=2><font size="2"><img title="" height=1 alt="" 
+            src="../images/qqq.gif" width=1 
+border=0><br>
+              </font></td>
+          </tr>
+          <tr> 
+            <td bgcolor=#b91b00 colspan=2><font size="2"><img title="" height=15 alt="" 
+            src="../images/qqq.gif" width=1 
+        border=0><br>
+              </font></td>
+          </tr>
+          </tbody> 
+        </table>
+      </td>
+    </tr>
 </table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ã‚»ãƒŸãƒ•ã‚¡ã‚¤ãƒŠãƒ«ã€€ã‚¨ã‚­ã‚·ãƒ“ã‚¸ãƒ§ãƒ³ãƒžãƒƒãƒã€€3åˆ†1ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ç¬¬3ä»£ãƒ©ã‚¤ãƒˆãƒ˜ãƒ“ãƒ¼ç´šçŽ‹è€…</div>
-<a href="../../../data/prfl/kondo.html">è¿‘è—¤æœ‰å·±</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ism)</div></td>
-<td class="icn"><img src="../../../icn/kondo1995.jpg" alt="è¿‘è—¤æœ‰å·±" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/kitaoka1995.jpg" alt="åŒ—å²¡æ‚Ÿ" /></td>
-<td class="crdr">
-<div class="sm">ã‚¦ã‚§ãƒ«ã‚¿ãƒ¼ç´š1ä½</div>
-<a href="../../../data/prfl/kitaoka.html">åŒ—å²¡æ‚Ÿ</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ism)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 3:00ã€ã‚¨ã‚­ã‚·ãƒ“ã‚·ãƒ§ãƒ³ã®ãŸã‚å‹æ•—ãªã—</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">è¿‘è—¤æœ‰å·±(88.8kg)</div>
-<div class="wcube">åŒ—å²¡æ‚Ÿ(81.6kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå²¡æœ¬æµ©ç¨”
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬6è©¦åˆã€€ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ«ãƒ¼ãƒ«ã€€ãƒ˜ãƒ“ãƒ¼ç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—<a href="../../../data/prfl2/nakamuray.html">ä¸­æ‘å‹‡å¤ª</a>
-<div class="sm">(å’Œè¡“æ…§èˆŸæœƒç¦å²¡æ”¯éƒ¨)</div></td>
-<td class="icn"><img src="../../../icn/nakamuray.jpg" alt="ä¸­æ‘å‹‡å¤ª" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/sakuragi.jpg" alt="æ¡œæœ¨è£•å¸" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl2/sakuragi.html">æ¡œæœ¨è£•å¸</a>â—‹
-<div class="sm">(æŽ£åœä¼šé¤¨)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">2R 5:00ã€åˆ¤å®š/0-3</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¢…æœ¨è‰¯å‰‡(18-20)å²¡æœ¬æµ©ç¨”(18-20)å°è…è³¢æ¬¡(18-20)
-<div class="wcube">ä¸­æ‘å‹‡å¤ª(90.8kg)</div>
-<div class="wcube">æ¡œæœ¨è£•å¸(93.4kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå’Œç”°è‰¯è¦š
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬5è©¦åˆã€€ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ«ãƒ¼ãƒ«ã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—<a href="../../../data/prfl2/tsuiki.html">ç¯‰åŸŽå®Ÿ</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹P's LABæ±äº¬)</div></td>
-<td class="icn"><img src="../../../icn/tsuiki.jpg" alt="ç¯‰åŸŽå®Ÿ" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/sunabe.jpg" alt="ç ‚è¾ºå…‰ä¹…" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl2/sunabe.html">ç ‚è¾ºå…‰ä¹…</a>â—‹
-<div class="sm">(HYBRID WRESTLINGæ­¦âˆžé™)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 4:21ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/ä¸‰è§’çµžã‚</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ç¯‰åŸŽå®Ÿ(61.2kg)</div>
-<div class="wcube">ç ‚è¾ºå…‰ä¹…(61.2kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ¢…æœ¨è‰¯å‰‡
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬4è©¦åˆã€€ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ«ãƒ¼ãƒ«ã€€20åˆ†1æœ¬å‹è² </td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-â—‹<a href="../../../mission/data/p_suzuki.html">éˆ´æœ¨ã¿ã®ã‚‹</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹MISSION)</div></td>
-<td class="icn"><img src="../../../icn/suzuki1995.jpg" alt="éˆ´æœ¨ã¿ã®ã‚‹" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/x.jpg" alt="ã‚¢ã‚¹ãƒ†ã‚«" /></td>
-<td class="crdr">
-<div class="sm"></div>
-ã‚¢ã‚¹ãƒ†ã‚«Ã—
-<div class="sm">(ãƒ—ãƒ­ãƒ¬ã‚¹ãƒªãƒ³ã‚°è¯â˜†æ¿€)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">15åˆ†03ç§’ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/é€†è½ã¨ã—â†’ã‚¹ãƒªãƒ¼ãƒ‘ãƒ¼ãƒ›ãƒ¼ãƒ«ãƒ‰</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">éˆ´æœ¨ã¿ã®ã‚‹(102.0kg)</div>
-<div class="wcube">ã‚¢ã‚¹ãƒ†ã‚«(90.0kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ—¥é«˜
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬3è©¦åˆã€€ã‚­ãƒƒã‚¯ãƒ«ãƒ¼ãƒ«ã€€70kgæœªæº€å¥‘ç´„ãƒ»ãƒ’ã‚¸æœ‰ã‚Šã€€3åˆ†5ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—<a href="../../../data/prfl-e/fiordo.html">ãƒ‹ãƒƒã‚¯ãƒ»ãƒ’ãƒ§ãƒ¼ãƒ‰</a>
-<div class="sm">(å’Œè¡“æ…§èˆŸæœƒç·æœ¬éƒ¨)</div></td>
-
-<td class="icn"><img src="../../../icn/fiordo.jpg" alt="ãƒ‹ãƒƒã‚¯ãƒ»ãƒ’ãƒ§ãƒ¼ãƒ‰" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/kuntap.jpg" alt="ã‚¯ãƒ³ã‚¿ãƒƒãƒ—ãƒ»ã‚¦ã‚£ãƒ©ã‚µã‚¯ãƒ¬ãƒƒã‚¯" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl-e/kuntap.html">ã‚¯ãƒ³ã‚¿ãƒƒãƒ—ãƒ»ã‚¦ã‚£ãƒ©ã‚µã‚¯ãƒ¬ãƒƒã‚¯</a>â—‹
-<div class="sm">(ã‚¦ã‚£ãƒ©ã‚µã‚¯ãƒ¬ãƒƒã‚¯ãƒ»ãƒ•ã‚§ã‚¢ãƒ†ãƒƒã‚¯ã‚¹ã‚¸ãƒ )</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 0:20ã€KO/ãƒ‘ãƒ³ãƒ</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ãƒ‹ãƒƒã‚¯ãƒ»ãƒ’ãƒ§ãƒ¼ãƒ‰(69.8kg)</div>
-<div class="wcube">ã‚¯ãƒ³ã‚¿ãƒƒãƒ—ãƒ»ã‚¦ã‚£ãƒ©ã‚µã‚¯ãƒ¬ãƒƒã‚¯(69.6kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå’Œç”°è‰¯è¦š
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬2è©¦åˆã€€ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚¢ãƒ†ãƒŠã€€54kgæœªæº€å¥‘ç´„æˆ¦ã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—<a href="../../../data/prfl-a/kuroda.html">é»’ç”°ã‚¨ãƒŸ</a>
-<div class="sm">(S-KEEP)</div></td>
-
-<td class="icn"><img src="../../../icn/at/kuroda.jpg" alt="é»’ç”°ã‚¨ãƒŸ" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/at/sayaka.jpg" alt="SAYAKA" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl-a/sayaka.html">SAYAKA</a>â—‹
-<div class="sm">(ã‚¬ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¤ãƒˆAACC)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 0:44ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/ãƒ’ãƒ¼ãƒ«ãƒ›ãƒ¼ãƒ«ãƒ‰</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">é»’ç”°ã‚¨ãƒŸ(52.8kg)</div>
-<div class="wcube">SAYAKA(53.6kg)ã€€ã‚»ã‚³ãƒ³ãƒ‰ï¼šé˜¿éƒ¨è£•å¹¸ã€è—¤äº•æµ</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ¢…æœ¨è‰¯å‰‡
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬1è©¦åˆã€€ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ«ãƒ¼ãƒ«ã€€ã‚¦ã‚§ãƒ«ã‚¿ãƒ¼ç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-â—‹<a href="../../../data/prfl2/koike.html">å°æ± ç§€ä¿¡</a>
-<div class="sm">(ã‚°ãƒ©ãƒã‚«ã‚¸ãƒ )</div></td>
-<td class="icn"><img src="../../../icn/koike.jpg" alt="å°æ± ç§€ä¿¡" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/takenawa.jpg" alt="ç«¹ç¸„å…ƒåš" /></td>
-<td class="crdr">
-<div class="sm"></div>
-<a href="../../../data/prfl2/takenawa.html">ç«¹ç¸„å…ƒåš</a>Ã—
-<div class="sm">(ãƒžã‚¹ã‚¿ãƒ¼ãƒ—ãƒ©ãƒ³ãƒˆ)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 0:55ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/ä¸‰è§’çµžã‚</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">å°æ± ç§€ä¿¡(74.2kg)ã€€ã‚»ã‚³ãƒ³ãƒ‰ï¼šä½ã€…æœ¨æœ‰ç”Ÿ</div>
-<div class="wcube">ç«¹ç¸„å…ƒåš(73.2kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå°è…è³¢æ¬¡
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬2è©¦åˆã€€ã€Œãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚²ãƒ¼ãƒˆã€ã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—æ± ç”°å¤§å¿—<br />
-<div class="sm">(HYBRID WRESTLINGé¹¿å…å³¶)</div></td>
-<td class="icn"><img src="../../../icn/x.jpg" alt="icn" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/x.jpg" alt="icn" /></td>
-<td class="crdr">
-<div class="sm"></div>
-å®®åŸŽå‹ä¸€â—‹
-<div class="sm">(HYBRID WRESTLINGæ­¦âˆžé™)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 1:47ã€ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ã‚¹ãƒˆãƒƒãƒ—/ã‚¹ã‚¿ãƒ³ãƒ‡ã‚£ãƒ³ã‚°ãƒ‘ãƒ³ãƒ(é¡”é¢)</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">æ± ç”°å¤§å¿—(63.8kg)</div>
-<div class="wcube">å®®åŸŽå‹ä¸€(63.2kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå°è…è³¢æ¬¡
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬1è©¦åˆã€€ã€Œãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚²ãƒ¼ãƒˆã€ã€€ãƒ©ã‚¤ãƒˆç´šæˆ¦ã€€5åˆ†2ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm"></div>
-Ã—ä¸­é‡Œè²´å¹¸<br />
-<div class="sm">(HYBRID WRESTLINGé¹¿å…å³¶)</div></td>
-<td class="icn"><img src="../../../icn/x.jpg" alt="icn" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/x.jpg" alt="icn" /></td>
-<td class="crdr">
-<div class="sm"></div>
-æ²³é‡Žç«œä¹Ÿâ—‹
-<div class="sm">(ç·åˆæ ¼é—˜æŠ€ç·’æ–¹é“å ´)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 1:50ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/è…•åå­—å›ºã‚</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ä¸­é‡Œè²´å¹¸(65.6kg)</div>
-<div class="wcube">æ²³é‡Žç«œä¹Ÿ(64.8kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå°è…è³¢æ¬¡
-</td></tr>
-</table>
-</div>
-
-
-<div class="back"><a href="../../../index.html">ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ toppage</a></div>
-</div>
-<div id="footer-space"></div>
-</div>
-<!-- main -->
-
-
-<!-- footer -->
-<div id="footer">
-<!-- navi -->
-<div class="navi">
-<ul>
-<li><i class="fas fa-times fa-fw rd"></i><a href="../../../index.html">PANCRASEãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸</a></li>
-<li><a href="../../index.html">database</a></li>
-<li><a href="../index.html">è©¦åˆçµæžœ</a></li>
-<li><a href="index.html">2005</a></li>
-</ul>
-</div>
-<!-- navi -->
-</div>
-<!-- footer -->
-
-
-<div id="WATelements"></div> <script id="WAT" src="https://djnbrbrnw10mo.cloudfront.net/_js/wat.js?symbol=WTL&id=27&default_lang=ja"></script>
-</div>
-</body>
-</html>
+</BODY></HTML>
