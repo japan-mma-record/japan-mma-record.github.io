@@ -1,2 +1,1 @@
-1 200 181697 https://en.wikipedia.org/wiki/2003_in_Deep
-2 200 77534 https://www.sherdog.com/events/Powergate-8-Kakuto-Gion-Festival-4456
+1 200 92943 https://www.sherdog.com/organizations/Powergate-920
