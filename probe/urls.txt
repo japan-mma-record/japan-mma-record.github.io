@@ -1,4 +1,8 @@
-https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=K-1+%E3%83%90%E3%83%BC%E3%83%AA%E3%83%88%E3%82%A5%E3%83%BC%E3%83%89+%E3%83%AB%E3%83%BC%E3%83%AB&format=json&srlimit=50
-https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=insource%3A%22K-1%22+insource%3A%22%E7%B7%8F%E5%90%88%E3%83%AB%E3%83%BC%E3%83%AB%22&format=json&srlimit=50
-https://ja.wikipedia.org/w/api.php?action=query&list=search&srsearch=%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%88%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0+%E7%B7%8F%E5%90%88%E6%A0%BC%E9%97%98%E6%8A%80%E3%83%AB%E3%83%BC%E3%83%AB+2003&format=json&srlimit=50
-https://en.wikipedia.org/wiki/List_of_K-1_events
+https://grachan.jp/20240428_result/
+https://efight.jp/result-20150503_157284
+https://gbring.com/sokuho/result/result2008_11/1123_zst.htm
+https://www.bravecf.com/event-results/brave-cf-28-results
+https://en.wikipedia.org/wiki/2023_in_Brave_Combat_Federation
+https://en.wikipedia.org/wiki/2005_in_Cage_Warriors
+https://en.wikipedia.org/wiki/2015_in_Absolute_Championship_Berkut
+https://en.wikipedia.org/wiki/2016_in_Absolute_Championship_Berkut
