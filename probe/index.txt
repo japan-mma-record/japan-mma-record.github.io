@@ -1,1 +1,4 @@
-1 200 60103 https://fighting-nexus.net/event.php?id=kawagoe2026
+1 200 19215 https://combatreg.com/fighters/Shun-Shimazaki:D5D64960451B9FA7
+2 200 17824 https://combatreg.com/fighters/search?query=Ginpei+Arai
+3 200 5725 https://combatreg.com/fighters/search?query=Azumi+Kawabata
+4 200 18891 https://combatreg.com/fighters/search?query=Rintaro+Kikuchi
