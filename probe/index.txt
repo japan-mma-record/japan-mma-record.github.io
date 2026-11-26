@@ -1,4 +1,2 @@
-1 200 87093 https://efight.jp/result-20190303_323376
-2 200 83471 https://efight.jp/result-20190303_323376/2
-3 200 88151 https://efight.jp/result-20130407_15167/2
-4 404 134089 https://www.boutreview.com/3/reports/item_19972.html
+1 200 83227 https://efight.jp/result-20190303_323376/3
+2 200 81254 https://efight.jp/result-20190303_323376/4
