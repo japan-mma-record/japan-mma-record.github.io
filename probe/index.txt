@@ -1,3 +1,4 @@
-1 200 39808 https://gbring.com/sokuho/result/result2007_07/0715_shooto.htm
-2 200 38445 https://gbring.com/sokuho/result/result2012_06/0630_shooto.htm
-3 200 31936 https://gbring.com/sokuho/result/result2007_02/0217_shooto.htm
+1 200 25276 https://gbring.com/sokuho/result/result2008_12/1213_shooto.htm
+2 200 37836 https://gbring.com/sokuho/result/result2012_07/0716_shooto.htm
+3 200 25535 https://gbring.com/sokuho/result/result2007_07/0720_shooto.htm
+4 200 40922 https://gbring.com/sokuho/result/result2011_12/1218_shooto.htm
