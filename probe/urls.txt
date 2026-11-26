@@ -1,4 +1,2 @@
-https://grachan.jp/wp-json/wp/v2/posts?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
-https://grachan.jp/wp-json/wp/v2/pages?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
-https://grachan.jp/wp-json/wp/v2/search?search=%E4%B8%89%E9%83%B7&per_page=50&subtype=any
-https://www.p4pfc.com/post/2024-3-3-pfc-32
+https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/
+https://grachan.jp/schedule/challenge20240428/
