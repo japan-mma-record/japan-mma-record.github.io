@@ -913,3 +913,26 @@ e04997	27	time	5:00	https://combatreg.com/events/Fighting-Nexus-Bayside-Battle-i
 e05014	2	method	一本（ヒールホールド）	https://combatreg.com/events/Fighting-Nexus-Bayside-Battle-in-Yokosuka:52060780-9159-4e61-b96c-0cea8cc384ef（Goki Ichikawa defeated Atsumi Arata by Submission (Heel Hook) at 03:14 of Round 1）
 e05014	2	round	1	https://combatreg.com/events/Fighting-Nexus-Bayside-Battle-in-Yokosuka:52060780-9159-4e61-b96c-0cea8cc384ef（Goki Ichikawa defeated Atsumi Arata by Submission (Heel Hook) at 03:14 of Round 1）
 e05014	2	time	3:14	https://combatreg.com/events/Fighting-Nexus-Bayside-Battle-in-Yokosuka:52060780-9159-4e61-b96c-0cea8cc384ef（Goki Ichikawa defeated Atsumi Arata by Submission (Heel Hook) at 03:14 of Round 1）
+e03333	7	method	TKO（打撃）	https://combatreg.com/fighters/Katsunori-Kikuno（06/26/2016 W Takuya Oyama, TKO/RSC (Referee Stoppage from Strikes), Deep - 76th Impact, Round 2, 04:46）
+e00894	12	method	一本（RNC）	https://combatreg.com/fighters/Hiromasa-Ougikubo（10/15/2017 W Tadaaki Yamamoto, Submission (Rear Naked Choke), Professional Shooto 10/15/17, Round 1, 04:26）
+e00894	2	method	TKO（打撃）	https://combatreg.com/fighters/Hiroba-Minowa（10/15/2017 W Nobuyuki Fujii, TKO/RSC (Referee Stoppage from Strikes), Professional Shooto 10/15/17, Round 1, 04:36）
+e03842	4	method	TKO	https://combatreg.com/fighters/Kotaro-Owada（12/10/2023 L Daiki Yonamine, TKO/RSC, Deep - Tokyo Impact 2023 7th Round, Round 1, 05:00）
+e03842	4	round	1	https://combatreg.com/fighters/Kotaro-Owada（12/10/2023 L Daiki Yonamine, TKO/RSC, Deep - Tokyo Impact 2023 7th Round, Round 1, 05:00）
+e03842	4	time	5:00	https://combatreg.com/fighters/Kotaro-Owada（12/10/2023 L Daiki Yonamine, TKO/RSC, Deep - Tokyo Impact 2023 7th Round, Round 1, 05:00）
+e03598	name:浅井亮麿	method	TKO	https://combatreg.com/fighters/Hagiwara-Kyohei:25EF1C02B5B85B08（02/23/2020 W Ryoma Asai, TKO/RSC, Gladiator 12, Round 2, 00:54）
+e03598	name:浅井亮麿	round	2	https://combatreg.com/fighters/Hagiwara-Kyohei:25EF1C02B5B85B08（02/23/2020 W Ryoma Asai, TKO/RSC, Gladiator 12, Round 2, 00:54）
+e03598	name:浅井亮麿	time	0:54	https://combatreg.com/fighters/Hagiwara-Kyohei:25EF1C02B5B85B08（02/23/2020 W Ryoma Asai, TKO/RSC, Gladiator 12, Round 2, 00:54）
+e04443	name:黒沢涼平	method	一本（腕ひしぎ十字固め）	https://combatreg.com/fighters/Ryohei-Kurosawa:4F6EF25819823AE2（12/08/2024 L Yo Sasaki, Submission (Arm Bar), Deep - 123rd Impact, Round 2, 01:42）
+e04467	3	method	判定3-0	https://combatreg.com/fighters/Soichiro-Hirai:0D2C30F291AF1760（05/25/2025 L Ryuto Take, Decision (Unanimous Decision), Deep - Tokyo Impact 2025 3rd Round, Round 3, 05:00）
+e04467	3	round	3	https://combatreg.com/fighters/Soichiro-Hirai:0D2C30F291AF1760（05/25/2025 L Ryuto Take, Decision (Unanimous Decision), Deep - Tokyo Impact 2025 3rd Round, Round 3, 05:00）
+e04467	3	time	5:00	https://combatreg.com/fighters/Soichiro-Hirai:0D2C30F291AF1760（05/25/2025 L Ryuto Take, Decision (Unanimous Decision), Deep - Tokyo Impact 2025 3rd Round, Round 3, 05:00）
+e00978	2	method	一本（ギロチンチョーク）	https://combatreg.com/fighters/Yoshiki-Hitosugi:C9CFB38AF8C0B66E（04/03/2022 L Shinji Aoi, Submission (Guillotine Choke), Shooto - Gig Tokyo 32, Round 1, 02:02）
+e01032	1	method	判定3-0	https://combatreg.com/fighters/Reku-Setoguchi:2B3935F98D15B964（07/21/2024 L Goki Nakano, Decision (Unanimous Decision), Shooto - Professional Shooto 2024 Vol. 5, Round 2, 05:00）
+e01032	1	round	2	https://combatreg.com/fighters/Reku-Setoguchi:2B3935F98D15B964（07/21/2024 L Goki Nakano, Decision (Unanimous Decision), Shooto - Professional Shooto 2024 Vol. 5, Round 2, 05:00）
+e01032	1	time	5:00	https://combatreg.com/fighters/Reku-Setoguchi:2B3935F98D15B964（07/21/2024 L Goki Nakano, Decision (Unanimous Decision), Shooto - Professional Shooto 2024 Vol. 5, Round 2, 05:00）
+e03947	11	method	TKO（パンチ）	https://combatreg.com/fighters/Kodai-Yamasaki:329BD2EE6B079408（04/06/2025 W Deo Lebana, TKO/RSC (Referee Stoppage from Punches), Deep - Osaka Impact 2025 1st Round, Round 1, 03:36）
+e05135	name:益田亮	method	一本（RNC）	https://combatreg.com/fighters/Takamasa-Kiuchi:C460595C887603F1（04/17/2016 W Ryo Masuda, Submission (Rear Naked Choke), ZST 50, Round 1, 02:12）
+e04528	name:三浦康彰	method	KO	https://combatreg.com/fighters/Naoki-Samukawa:7FAECA94FC788167（07/20/2014 W Yasuaki Miura, KO, Grachan 14, Round 1, 01:30）
+e05089	name:徳野	method	TKO	https://combatreg.com/fighters/Taiki-Fukuda:A49E9EF94D1AB581（04/28/2024 W Kazuma Tokuno, TKO/RSC, Round 2, 00:27）
+e05089	name:徳野	round	2	https://combatreg.com/fighters/Taiki-Fukuda:A49E9EF94D1AB581（04/28/2024 W Kazuma Tokuno, TKO/RSC, Round 2, 00:27）
+e05089	name:徳野	time	0:27	https://combatreg.com/fighters/Taiki-Fukuda:A49E9EF94D1AB581（04/28/2024 W Kazuma Tokuno, TKO/RSC, Round 2, 00:27）
