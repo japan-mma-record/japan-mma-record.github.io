@@ -1,3 +1,4 @@
-1 200 84820 https://www.sherdog.com/events/Fighting-Nexus-Vol-37-105181
-2 200 78435 https://www.sherdog.com/stats/fightfinder?SearchTxt=Fighting+Nexus
-3 200 29027 https://combatreg.com/fighters/Yokoya-McGregor:AECE5E3858CA7D36
+1 200 27324 https://combatreg.com/events/Fighting-Nexus-35:36b2dbfb-44f0-4621-8828-b9a62261b37f
+2 200 76426 https://combatreg.com/events/results?search=Nexus
+3 200 76426 https://combatreg.com/events/results?q=Nexus
+4 200 76426 https://combatreg.com/events/results
