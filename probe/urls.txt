@@ -1,12 +1,5 @@
-https://docs.google.com/spreadsheets/d/e/2PACX-1vTuV66CC15nZcU9twltF7KoE-3qm0KK4L9kQB6D52fmdQaHoRvhsFM2bv0xN8ZylZKgd6wjt91VruoR/pub?gid=1715771946&single=true&output=csv
-https://docs.google.com/spreadsheets/d/e/2PACX-1vTuV66CC15nZcU9twltF7KoE-3qm0KK4L9kQB6D52fmdQaHoRvhsFM2bv0xN8ZylZKgd6wjt91VruoR/pub?gid=1581594543&single=true&output=csv
-https://docs.google.com/spreadsheets/d/e/2PACX-1vTuV66CC15nZcU9twltF7KoE-3qm0KK4L9kQB6D52fmdQaHoRvhsFM2bv0xN8ZylZKgd6wjt91VruoR/pub?gid=2079220192&single=true&output=csv
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=1633299088&single=true&output=csv
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=2036727323&single=true&output=csv
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=926400971&single=true&output=csv
-https://www.jbjjf.com/?s=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8
-https://www.jbjjf.com/?s=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8%202021
-https://www.jbjjf.com/?s=%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B
-https://www.jbjjf.com/?s=%E7%AC%AC5%E5%9B%9E%E5%8D%97%E6%97%A5%E6%9C%AC%E6%9F%94%E8%A1%93%E9%81%B8%E6%89%8B%E6%A8%A9
-https://www.jbjjf.com/page/2/?s=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8
-https://www.jbjjf.com/upcoming-events/
+https://dumau.asjjf.org/main/eventResults/444
+https://dumau.asjjf.org/main/eventInfo/444
+https://dumau.asjjf.org/main/eventBrackets/444
+https://dumau.asjjf.org/main/brackets/444
+https://www.jbjjf.com/?s=%E6%9C%A8%E6%9D%91%E6%94%BF%E5%BD%A6%E6%9D%AF+%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8
