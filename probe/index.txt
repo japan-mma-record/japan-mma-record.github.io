@@ -1,1 +1,4 @@
-1 200 98398 https://dumau.asjjf.org/main/bracketsList/444
+1 200 3490 https://files.asjjf.org/brackets//444/268035/1.pdf
+2 200 2954 https://files.asjjf.org/brackets//444/268036/1.pdf
+3 200 3492 https://files.asjjf.org/brackets//444/268037/1.pdf
+4 200 2936 https://files.asjjf.org/brackets//444/268038/1.pdf
