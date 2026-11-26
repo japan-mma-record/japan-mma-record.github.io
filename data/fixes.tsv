@@ -1044,3 +1044,5 @@ e01551	name:ERIKA	note		https://www.boutreview.com/3/reports/item_53119.html（�
 e01565	name:LUCKYBOY慶輔	note		https://www.boutreview.com/3/reports/item_62571.html（△LUCKYBOY慶輔 △DAIGO 判定）
 e01571	name:下間 英史	note		https://www.boutreview.com/3/reports/item_65674.html（△下間英史 △ウォーズマン フルタイム ドロー）
 e01571	name:エディ竹山	note		https://www.boutreview.com/3/reports/item_65674.html（△エディ竹山 △松崎徳彦 フルタイム ドロー）
+e05326	name:小見川道大	fighter1	小見川道大＆伊藤健一＆太田裕之	https://www.boutreview.com/3/reports/item_14089.html（横浜大会スペシャルマッチ GT3×3ルール：小見川道大・伊藤健一・太田裕之 vs 平尾悠人＆水洗裕一郎＆早坂俊明、ドロー）
+e05326	name:小見川道大＆伊藤健一＆太田裕之	fighter1_id		https://www.boutreview.com/3/reports/item_14089.html。3対3の団体戦なので個人の選手番号を外す
