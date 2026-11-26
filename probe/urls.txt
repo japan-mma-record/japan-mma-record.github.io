@@ -1,2 +1,2 @@
-https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/
-https://grachan.jp/schedule/challenge20240428/
+https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/?paged=2
+https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/?paged=3
