@@ -1,3 +1,4 @@
-1 200 42082 https://www.asjjf.org/main/eventResults/180
-2 200 42082 https://www.asjjf.org/main/eventInfo/180
-3 200 275812 https://www.asjjf.org/main/eventsBySeason/41
+1 200 86512 https://www.sherdog.com/events/GCM-Demolition-West-in-Yamaguchi-11499
+2 200 71742 https://www.sherdog.com/organizations/CMA-MMA-13601
+3 200 103217 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398
+4 200 69692 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398/recent-events/2
