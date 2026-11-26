@@ -141,6 +141,19 @@ ALIAS = [
     (r'グラウンド(?:で|状態で|状態の)?の?パンチ|パウンド', 'グラウンドのパンチ'),
     (r'(?:セコンド(?:から|より)?の?)?タオル(?:の)?投入|セコンドのタオル', 'セコンドのタオル'),
     (r'(?i)\bno ?contest\b|ノー・コンテスト', 'ノーコンテスト'),
+    # 海外の資料の英語の書き方（意味が決まっているものだけ）
+    (r'^[○◯]\S+\s+', ''),                                              # 「○Backman 腕ひしぎ十字固め」の勝者の名前は取る
+    (r'(?i)\(?(\d)\s*-\s*(\d) points\)?|points\s*(\d)\s*-\s*(\d)', lambda x: f'ポイント{x.group(1) or x.group(3)}-{x.group(2) or x.group(4)}'),
+    (r'(?i)points\s*(\d)\s*-\s*(\d)', r'ポイント\1-\2'),
+    (r'(?i)(\d+) lost points', r'ロストポイント\1'),
+    (r'(?i)^disqualification,\s*illegal stomp$', '反則（踏みつけ）'),
+    (r'(?i)illegal punch on the ground', 'グラウンドでの反則のパンチ'),
+    (r'(?i)kicking on the ground', 'グラウンドでの蹴り'),
+    (r'(?i)illegal kick', '反則の蹴り'),
+    (r'(?i)eye gouging', '目への攻撃'),
+    (r'(?i)single wing choke', '片羽絞め'),
+    (r'(?i)^一本（leglock）$', '一本（レッグロック）'),
+    (r'(?i)^一本（headlock）$', '一本（ヘッドロック）'),
 ]
 
 
