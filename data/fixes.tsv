@@ -1177,3 +1177,10 @@ e00410	name:小澤武輝	winner		https://pancrase.co.jp/data/result/2026/0211.ht
 e00411	name:伊藤盛一郎	winner		https://pancrase.co.jp/data/result/2026/0314.html（伊藤盛一郎 vs ジョセフ・カマチョ は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
 e00412	name:野田遼介	winner		https://pancrase.co.jp/data/result/2026/0504.html（野田遼介 vs 氏原魁星 は「試合中止（野田棄権）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
 e00415	name:小野瑛大	winner		https://pancrase.co.jp/data/result/2026/0726.html（小野瑛大 vs 山田浩平 は「試合中止（小野瑛大計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e01644	name:横瀬友愛	rule	キック	https://www.deep2001.com/skyticket-presents-deep-jewels-44/（アマチュア第1試合 DEEP JEWELS 53kg以下 1分30秒 2R アマチュアKICKルール）
+e01680	name:シュン・プルネダ	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2025-1st-round/（第9試合 DEEP 88kg以下 1分30秒2R アマチュアKICKルール）
+e01680	name:熊谷輝彦	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2025-1st-round/（第3試合 DEEP62kg以下 2分3R アマチュアKICKルール）
+e01690	name:ドリーム★キミ	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2025-2nd-round/（第3試合 DEEPメガトン級アマチュアKICKルール1分30秒2R）
+e01711	name:金城壮志	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2026-1st-round/（第3試合 DEEP 62kg以下2分3R アマチュアKICKルール）
+e01711	name:中村大和	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2026-1st-round/（第2試合 DEEP 60kg以下 2分3R アマチュアKICKルール）
+e01711	name:AKINA	rule	キック	https://www.deep2001.com/deep-hamamatsu-impact-2026-1st-round/（第1試合 DEEP JEWELS ストロー級 2分2R アマチュアKICKルール）
