@@ -1,2 +1,1 @@
-1 200 9248 https://combatreg.com/fighters/search?query=Tom+Niinimaki
-2 200 6623 https://combatreg.com/fighters/search?query=Thomas+Backman
+1 200 23214 https://combatreg.com/fighters/Thuomas-Backman:585E0C9EC527190C
