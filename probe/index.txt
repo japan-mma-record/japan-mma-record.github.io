@@ -1,1 +1,6 @@
-1 200 102571 https://www.sherdog.com/events/Zst-18-Sixth-Anniversary-7481
+1 200 12429 https://www.boutreview.com/report/kick/00/0124sb/0.html
+2 200 16399 https://www.boutreview.com/report/kick/00/1130sb/index.html
+3 200 11837 https://www.boutreview.com/data/reports/020922shootboxing.html
+4 200 12587 https://boutreview.com/data/reports/021104shootboxing.html
+5 200 7486 https://www.boutreview.com/data/reports/030704shootboxing.html
+6 200 16349 https://www.boutreview.com/data/reports/1028436173.html
