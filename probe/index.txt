@@ -1,5 +1,2 @@
-1 200 162321 https://www.boutreview.com/3/reports/item_60883.html
-2 200 164747 https://www.boutreview.com/3/reports/item_64386.html
-3 200 166066 https://www.boutreview.com/3/reports/item_69852.html
-4 200 165419 https://www.boutreview.com/3/reports/item_111816.html
-5 200 173000 https://www.boutreview.com/3/reports/item_88133.html
+1 200 172153 https://www.boutreview.com/3/reports/item_20039.html
+2 200 165648 https://www.boutreview.com/3/reports/item_30850.html
