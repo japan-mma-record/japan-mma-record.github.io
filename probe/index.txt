@@ -1,3 +1,2 @@
-1 200 44346 https://www.asjjf.org/main/eventResults/1601
-2 200 42082 https://www.asjjf.org/main/eventResults/444
-3 200 125423 https://asjjf.org/main/eventInfo/1601
+1 302ERR 0 https://asjjf.org/public/brackets/1601
+2 200 58501 https://asjjf.org/public/brackets/444
