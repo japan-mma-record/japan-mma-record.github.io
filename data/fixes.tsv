@@ -1096,3 +1096,20 @@ e08915	name:杉山しずか	note		https://gbring.com/sokuho/result/result2009_08
 e08618	name:ピーター・アーツ	rule	キック	https://gbring.com/sokuho/result/result2009_08/0811_k-1.htm（特別試合 特別ルール。西島洋介の蹴りが認められない K-1 対ボクシングの立ち技の試合）
 e08618	name:ピーター・アーツ	note		https://gbring.com/sokuho/result/result2009_08/0811_k-1.htm
 e01280	name:藤原敬典	rule	キック	https://gbring.com/sokuho/result/result2008_05/0518_zst.htm（第2試合 SB-Xルール。立ち技のシュートボクシング系ルール）
+e04283	7	note		https://gbring.com/sokuho/result/result2010_01/0117_zst.htm（第7試合 △蔵本一平 ドロー △近藤正俊）
+e04283	12	note		https://gbring.com/sokuho/result/result2010_01/0117_zst.htm（第12試合 △清水俊裕 ドロー △西林浩平）
+e04283	13	note		https://gbring.com/sokuho/result/result2010_01/0117_zst.htm（セミファイナル △吾妻エメルソン ドロー △牧野仁史）
+e01357	name:長谷川弘太郎	fighter2	田村裕之	https://gbring.com/sokuho/result/result2010_10/1017_pancrase.htm（第6試合 バンタム級 ○長谷川弘太郎（GRABAKAジム） 判定3－0 ●田村裕之（SKアブソリュート）。相手の名前が抜けていた）
+e01357	name:長谷川弘太郎	note		https://gbring.com/sokuho/result/result2010_10/1017_pancrase.htm
+e01356	name:石村 誠	fighter2	佐藤拓馬	https://gbring.com/sokuho/result/result2010_10/1017_pancrase_02.htm（第15試合 84kg以上 パンクラスゲート2ルール ○石村誠 一本 1R2分41秒 チョークスリーパー ●佐藤拓馬（修武館）。相手の名前が抜けていた）
+e01356	name:石村 誠	note		https://gbring.com/sokuho/result/result2010_10/1017_pancrase_02.htm
+e08873	name:山内慎人	note		https://gbring.com/sokuho/result/result2011_11/1111_srs.htm（チェ・ジョン・フンから三角絞めで一本勝ちした山内慎人）
+e01615	9	note		https://www.boutreview.com/3/reports/item_92804.html（第9試合 KROSS×OVER MMA △ハルク大城 △山本惇 判定0-1 ドロー）
+e01398	name:島田洸也	rule	キック	https://gbring.com/sokuho/result/result2012_07/0716_zst.htm（第1試合 SBXルール（立ち技のシュートボクシング系ルール） 57kg以下契約 3分3R）
+e01398	name:島田洸也	note		https://gbring.com/sokuho/result/result2012_07/0716_zst.htm
+e01348	9	rule	空道・その他	https://gbring.com/sokuho/result/result2010_05/0522_tribelate.htm（メインイベント テコンドールール 卯月昇引退試合。MMA の試合ではない）
+e01363	name:勝村周一朗	fighter1	勝村周一朗＆大石真丈	https://gbring.com/sokuho/result/result2010_11/1123_zst.htm（第1試合 フェザー級タッグマッチ：△勝村周一朗・大石真丈 vs △清水俊裕・杉田一朗、時間切れドロー）
+e01363	name:勝村周一朗	fighter1_id		https://gbring.com/sokuho/result/result2010_11/1123_zst.htm。タッグマッチなので個人の選手番号を外す
+e01363	name:勝村周一朗	fighter2	清水俊裕＆杉田一朗	https://gbring.com/sokuho/result/result2010_11/1123_zst.htm
+e01363	name:勝村周一朗	fighter2_id		https://gbring.com/sokuho/result/result2010_11/1123_zst.htm。タッグマッチなので個人の選手番号を外す
+e01363	name:勝村周一朗	note		https://gbring.com/sokuho/result/result2010_11/1123_zst.htm
