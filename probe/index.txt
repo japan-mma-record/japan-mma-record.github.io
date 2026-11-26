@@ -1,6 +1,1 @@
-1 404 196 https://gbring.com/sokuho/result/result2013_09/0908_gladiator.htm
-2 404 196 https://gbring.com/sokuho/result/result2015_12/1220_deep.htm
-3 404 196 https://gbring.com/sokuho/result/result2017_02/0212_deep.htm
-4 404 196 https://gbring.com/sokuho/result/result2016_12/1218_outsider.htm
-5 404 196 https://gbring.com/sokuho/result/result2018_02/0225_outsider.htm
-6 404 196 https://gbring.com/sokuho/result/result2019_11/1104_outsider.htm
+1 200 189099 https://www.deep2001.com/deep%E3%83%95%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%882016/
