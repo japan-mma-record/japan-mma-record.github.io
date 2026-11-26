@@ -1,4 +1,4 @@
-https://combatreg.com/fighters/search?query=Akihiro+Gono
-https://combatreg.com/fighters/search?query=Sanae+Kikuta
-https://combatreg.com/fighters/search?query=Akira+Shoji
-https://combatreg.com/fighters/search?query=Wallid+Ismail
+https://combatreg.com/fighters/Akihiro-Gono:2D2D06DC880EC4CB
+https://combatreg.com/fighters/Akira-Shoji:DC07B3E67FD32A44
+https://combatreg.com/fighters/Kikuta-Sanae:8C5E049B4C625873
+https://combatreg.com/events/Universal-Vale-Tudo-1:DACA28C2-3049-4232-8E7B-7E8BA15D4226
