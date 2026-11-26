@@ -987,3 +987,13 @@ e01535	name:佐藤健	rule	空道・その他	https://www.boutreview.com/3/repor
 e01562	name:新井蒼汰	rule	空道・その他	https://www.boutreview.com/3/reports/item_60883.html（タイヤファイト キッズトーナメント2021 準決勝戦 30秒1R）
 e01562	name:ウィリアム・ミヤギ	rule	空道・その他	https://www.boutreview.com/3/reports/item_60883.html（タイヤファイト キッズトーナメント2021 準決勝戦 30秒1R）
 e01562	name:リュウジ・ヤゴウ	rule	空道・その他	https://www.boutreview.com/3/reports/item_60883.html（タイヤファイト キッズトーナメント 決勝戦）
+e01292	name:伊藤健一	fighter1	伊藤健一＆伊藤有起	GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。この試合はタッグマッチ（伊藤健一＆伊藤有起 vs 奥出雅之＆佐東伸哉、時間切れドロー）
+e01292	name:伊藤健一	fighter1_id		GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。この試合はタッグマッチ。個人の戦績に数えないよう選手番号を外す
+e01292	name:奥出雅之	fighter2	奥出雅之＆佐東伸哉	GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。この試合はタッグマッチ
+e01292	name:奥出雅之	fighter2_id		GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。この試合はタッグマッチ。個人の戦績に数えないよう選手番号を外す
+e01292	name:伊藤健一	weight	ライト級タッグマッチ	GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。この試合はタッグマッチ
+e01292	name:所 英男	fighter1	所英男＆今成正和	GBR の当時の結果（https://gbring.com/sokuho/result/result2008_11/1123_zst.htm）。メインイベントは初代GT-Fタッグ王座決定戦（所英男＆今成正和 vs 矢野卓見＆横山大輔、判定2-1で所＆今成組の勝ち）
+e01292	name:所英男＆今成正和	fighter1_id		同上。個人の戦績に数えないよう選手番号を外す
+e01292	name:所英男＆今成正和	fighter2	矢野卓見＆横山大輔	同上
+e01292	name:矢野卓見＆横山大輔	fighter2_id		同上。個人の戦績に数えないよう選手番号を外す
+e01292	name:所英男＆今成正和	weight	初代GT-Fタッグ王座決定戦	同上
