@@ -353,3 +353,10 @@ e01317	merge	e04277	同じ大会「SWAT！27」（2009年7月5日・ゴールド
 e01701	date	2026-01-25	https://www.p4pfc.com/post/2026-1-25-g-fight-44-stones%EF%BC%86rookies（PFC 公式の大会概要「2026年1月25日（日）」。結果の記事が載った翌日の日付になっていた）
 e01713	date	2026-06-14	https://www.p4pfc.com/post/2026-6-14-g-fight-45-stones%EF%BC%86rookies（PFC 公式の大会概要「開催日 2026年6月14日（日）」。結果の記事が載った翌日の日付になっていた）
 e00692	merge	e04802	同じ大会（修斗 BACK TO OUR ROOTS 6、2007年11月8日・国立代々木競技場第二体育館）が2つに分かれ、第1〜4試合と第5〜9試合が別々の大会に入っていた。BOUTREVIEW（https://www.boutreview.com/fightsspiral/shoot_07_11_08.html）と GBR（https://gbring.com/sokuho/result/result2007_11/1108_shooto.htm）の結果はどちらも1つの大会で、会場はどちらも国立代々木競技場第二体育館（後楽園ホールではない）
+e03459	date	2018-02-25	BOUTREVIEW の記事の開催日（2018年2月25日(日)）に直す https://www.boutreview.com/3/reports/item_2559.html
+e03642	date	2021-03-07	BOUTREVIEW の記事の開催日（2021年3月7日(日)）に直す https://www.boutreview.com/3/reports/item_50615.html
+e01553	date	2021-06-06	BOUTREVIEW の記事の開催日（2021年6月6日(日)）に直す https://www.boutreview.com/3/reports/item_55106.html
+e01568	date	2021-12-05	BOUTREVIEW の記事の開催日（2021年12月5日(日)）に直す https://www.boutreview.com/3/reports/item_64668.html
+e05176	merge	e01568	同じ大会（KROSS×OVER 15、2021年12月5日・新宿FACE）が2つに分かれていたのを1つにまとめる。第9〜13試合は BOUTREVIEW の記事と同じ https://www.boutreview.com/3/reports/item_64668.html
+e04934	date	2018-02-25	eFight の記事の開催日（2018年2月25日(日)）に直す https://efight.jp/result-20180225_280892
+e05348	date	2021-06-06	eFight の記事の開催日（2021年6月6日（日））に直す https://efight.jp/result-20210609_552429
