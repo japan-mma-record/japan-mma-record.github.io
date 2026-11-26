@@ -1,2 +1,2 @@
-1 200 90236 https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/
-2 200 55469 https://grachan.jp/schedule/challenge20240428/
+1 200 30799 https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/?paged=2
+2 404 1187 https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/?paged=3
