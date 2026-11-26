@@ -466,8 +466,10 @@ def write_json(name, obj):
 WIN = {'1': 1, '2': 2, 'draw': 'd', 'nc': 'nc'}
 
 
-def head(site, title, desc, path, css_prefix=''):
+def head(site, title, desc, path, css_prefix='', ld=None):
     url = site['base_url'].rstrip('/') + '/' + path
+    # 検索エンジン向けの構造化データ（JSON-LD）。</ を含む文字はエスケープする
+    ldh = ''.join('<script type="application/ld+json">' + json.dumps(x, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n' for x in (ld or []))
     return f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -479,7 +481,7 @@ def head(site, title, desc, path, css_prefix=''):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="{css_prefix}style.css">
-</head><body>'''
+{ldh}</head><body>'''
 
 
 def static_header(pre):
@@ -697,6 +699,7 @@ def main():
                 if b.get(f'fighter{k}_id') and not b[f'fighter{k}_id'].startswith('n'):   # 名前だけの選手は静的ページを作らない
                     e_by[b[f'fighter{k}_id']].append((e, b, int(k)))
     urls = ['']
+    p_ev = collections.defaultdict(list)   # 団体ごとの大会（団体ページ用）
     for e in ev:
         eid = e['event_id']
         rows = []
@@ -719,8 +722,17 @@ def main():
         src_html = '　'.join(f'<a href="{html.escape(s)}" rel="noopener">{html.escape(re.sub("^https?://", "", urllib.parse.unquote(s))[:70])}</a>' if s.startswith('http') else html.escape(s) for s in srcs)
         pn = pname(promos, e['promotion'])
         title = f'{e["name"]}（{e["date"]}）｜日本MMA戦績録'
-        page = (head(site, title, f'{pn} {e["name"]} {e["date"]} の全試合結果（{len(bouts[eid])}試合）', f'e/{eid}.html', '../') + static_header('../') +
-                f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#p-{e["promotion"].replace("_", "-")}">{html.escape(pn)}</a></p>'
+        base_u = site['base_url'].rstrip('/') + '/'
+        ld = [{'@context': 'https://schema.org', '@type': 'SportsEvent', 'name': e['name'], 'startDate': e['date'], 'url': base_u + f'e/{eid}.html',
+               'sport': 'Mixed Martial Arts', 'eventStatus': 'https://schema.org/EventScheduled', 'organizer': {'@type': 'Organization', 'name': pn},
+               'location': {'@type': 'Place', 'name': e.get('venue') or '不明', 'address': e.get('venue') or '不明'}},
+              {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                  {'@type': 'ListItem', 'position': 1, 'name': 'トップ', 'item': base_u},
+                  {'@type': 'ListItem', 'position': 2, 'name': pn, 'item': base_u + f'p/{e["promotion"]}.html'},
+                  {'@type': 'ListItem', 'position': 3, 'name': e['name'], 'item': base_u + f'e/{eid}.html'}]}]
+        p_ev[e['promotion']].append(e)
+        page = (head(site, title, f'{pn} {e["name"]} {e["date"]} の全試合結果（{len(bouts[eid])}試合）', f'e/{eid}.html', '../', ld) + static_header('../') +
+                f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../p/{e["promotion"]}.html">{html.escape(pn)}</a></p>'
                 f'<div class="ph"><div><span class="badge">{html.escape(pn)}</span><h1>{html.escape(e["name"])}</h1><p class="sub">{html.escape(e["date"])}　{html.escape(e.get("venue") or "")}</p></div></div>'
                 f'<div class="tbl"><table><thead><tr><th class="num">No.</th><th>結果</th><th>勝者</th><th>対戦相手</th><th>決まり手</th><th class="num">R・時間</th><th>階級・ルール</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
                 + team_html(teams.get(eid)) + podium_html(PODIUM.get(eid)) +
@@ -800,7 +812,13 @@ def main():
                 c, t = RS.get(x[1], ('o', '—'))
                 rows.append((x[0], f'<tr><td><span class="rs {c}">{t}</span></td><td><span class="nb">{html.escape(x[2])}</span></td><td>{html.escape(x[4])}<span class="unc">{'Wikipedia' if r0.get('wiki_title') else '海外の大会'}</span></td>'
                                    f'<td class="num">{html.escape(x[0])}</td><td>{html.escape(x[3])}</td><td class="num"></td></tr>'))
-        page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../') + static_header('../') +
+        base_u = site['base_url'].rstrip('/') + '/'
+        ld = [{'@context': 'https://schema.org', '@type': 'ProfilePage', 'url': base_u + f'f/{fid}.html', 'name': f'{name}の戦績',
+               'mainEntity': {'@type': 'Person', 'name': name, 'description': f'総合格闘技の選手。戦績 {rec}'}},
+              {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                  {'@type': 'ListItem', 'position': 1, 'name': 'トップ', 'item': base_u},
+                  {'@type': 'ListItem', 'position': 2, 'name': name, 'item': base_u + f'f/{fid}.html'}]}]
+        page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../', ld) + static_header('../') +
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#fighters">選手</a></p>'
                 f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}</p><p class="sub" style="font-size:13px;color:var(--fg3)">{note}</p></div></div>'
                 f'<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>{"".join(h for d, h in sorted(rows, key=lambda t: t[0], reverse=True))}</tbody></table></div></main>'
@@ -808,6 +826,43 @@ def main():
         with open(os.path.join(OUT, 'f', f'{fid}.html'), 'w', encoding='utf-8') as fp:
             fp.write(page)
         urls.append(f'f/{fid}.html')
+
+    # 団体ごとの静的ページ（大会の一覧。年ごと・新しい順）
+    os.makedirs(os.path.join(OUT, 'p'), exist_ok=True)
+    plinks = []
+    for pk, lst in sorted(p_ev.items(), key=lambda t: (-len(t[1]), t[0])):
+        pn = pname(promos, pk)
+        by_y = collections.defaultdict(list)
+        for e in lst:
+            by_y[e['date'][:4]].append(e)
+        secs = []
+        for y in sorted(by_y, reverse=True):
+            items = ''.join(f'<tr><td class="num">{html.escape(e["date"])}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td><td>{html.escape(e.get("venue") or "")}</td><td class="num">{len(bouts[e["event_id"]])}</td></tr>'
+                            for e in sorted(by_y[y], key=lambda x: x['date'], reverse=True))
+            secs.append(f'<h2>{y}年</h2><div class="tbl"><table><thead><tr><th class="num">日付</th><th>大会</th><th>会場</th><th class="num">試合数</th></tr></thead><tbody>{items}</tbody></table></div>')
+        yrs = sorted(by_y)
+        span = f'{yrs[0]}年〜{yrs[-1]}年' if yrs[0] != yrs[-1] else f'{yrs[0]}年'
+        nb = sum(len(bouts[e['event_id']]) for e in lst)
+        base_u = site['base_url'].rstrip('/') + '/'
+        ld = [{'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': f'{pn}の大会一覧', 'url': base_u + f'p/{pk}.html'},
+              {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                  {'@type': 'ListItem', 'position': 1, 'name': 'トップ', 'item': base_u},
+                  {'@type': 'ListItem', 'position': 2, 'name': pn, 'item': base_u + f'p/{pk}.html'}]}]
+        page = (head(site, f'{pn}の大会一覧・全試合結果｜日本MMA戦績録', f'{pn}の全{len(lst):,}大会・{nb:,}試合の結果（{span}）。大会ごとの全試合結果と出典。', f'p/{pk}.html', '../', ld) + static_header('../') +
+                f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#promotions">団体</a></p>'
+                f'<div class="ph"><div><h1>{html.escape(pn)}</h1><p class="sub">{len(lst):,}大会・{nb:,}試合（{span}）</p>'
+                f'<p class="sub"><a class="lnk" href="../index.html#p-{pk.replace("_", "-")}">検索・絞り込みつきの一覧を開く</a></p></div></div>'
+                + ''.join(secs) + '</main>' + foot(site, len(ev_list), n_b))
+        with open(os.path.join(OUT, 'p', f'{pk}.html'), 'w', encoding='utf-8') as fp:
+            fp.write(page)
+        urls.append(f'p/{pk}.html')
+        plinks.append(f'<a href="p/{pk}.html">{html.escape(pn)}</a>')
+    # トップページの下に、団体ページへの普通のリンクを並べる（検索エンジンがたどれるように）
+    ip = os.path.join(OUT, 'index.html')
+    t = open(ip, encoding='utf-8').read()
+    nav = '<nav class="wrap plinks" aria-label="団体の一覧" style="font-size:13px;line-height:2;padding-block:16px"><b>団体別の大会一覧：</b> ' + '　'.join(plinks) + '</nav>'
+    t = t.replace('<footer class="ft">', nav + '<footer class="ft">', 1)
+    open(ip, 'w', encoding='utf-8').write(t)
 
     # 検索エンジン向け
     base = site['base_url'].rstrip('/') + '/'
