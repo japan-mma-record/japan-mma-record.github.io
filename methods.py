@@ -233,8 +233,68 @@ def _ko(t):
     return _strike('KO', mm.group(1))
 
 
+_EN_KIND = (('unanimous', '全員一致'), ('split', 'スプリット'), ('majority', 'マジョリティ'))
+
+
+_EN_TKO = {'punches': 'パンチ', 'knee to body and punches': 'ボディへの膝蹴り&パンチ', '2 knockdowns': '2ノックダウン'}
+
+
+def _english_ko(t):
+    """「Ko（Tko, Punches）」のような書き方 → 「TKO（パンチ）」。知っている言い方だけを日本語にする。"""
+    mm = re.fullmatch(r'Ko[（(]Tko,\s*(.+?)\s*(\[[^\[\]]*\])?\s*[)）]', t.strip())
+    if not mm:
+        return None
+    cause = _EN_TKO.get(mm.group(1).strip().lower())
+    if not cause:
+        return None
+    return f'TKO（{cause}）' + (' ' + mm.group(2) if mm.group(2) else '')
+
+
+def _english(m):
+    """海外の資料の英語の決まり手（「Decision, Unanimous」「Unanimous Decision 3-0」「Draw, Time Limit」など）を日本語の書き方にする。
+    書かれていることだけを日本語にする（「Unanimous」に採点の数字がないときは「判定（全員一致）」とし、3-0 とは書かない）。"""
+    t = m.strip()
+    tag = ''
+    mt = re.search(r'\s*(\[[^\[\]]*\])\s*$', t)            # 「… [決勝]」のような後ろの注記はそのまま残す
+    if mt:
+        tag, t = ' ' + mt.group(1), t[:mt.start()].strip()
+    low = t.lower()
+    if not re.fullmatch(r"[a-z0-9 ,.:()（）\-]+", low) or not re.search(r'decision|draw', low):
+        return None
+    ext = ('再延長' if re.search(r'2nd extra round|second extra round', low) else '延長') if re.search(r'extra round|overtime', low) else ''
+    sc = re.search(r'(\d)\s*-\s*(\d)(?!\d)', low)
+    kind = next((j for e, j in _EN_KIND if e in low), '')
+    if 'draw' in low:
+        if 'time limit' in low and not sc and not kind:
+            return '引き分け（時間切れ）' + tag
+        if sc:
+            return f'引き分け（{ext}判定{sc.group(1)}-{sc.group(2)}）' + tag
+        if kind:
+            return f'引き分け（判定・{kind}）' + tag
+        return ('引き分け（判定）' if 'decision' in low else '引き分け') + tag
+    rest = low
+    if sc:
+        rest = low[sc.end():]
+        scores = re.findall(r'(\d{1,3})\s*-\s*(\d{1,3})', rest)
+        out = f'{ext}判定{sc.group(1)}-{sc.group(2)}'
+        if scores and re.fullmatch(r'[\s\d\-,.]*', rest):
+            out += '（' + '・'.join(f'{a}-{b}' for a, b in scores) + '）'
+        elif re.search(r'[a-z]', re.sub(r'2nd|second|unanimous|split|majority|decision|extra round|overtime', '', rest)):
+            return None
+        return out + tag
+    if re.search(r'\d', low):
+        return None
+    left = re.sub(r'2nd|second|unanimous|split|majority|decision|extra round|overtime|[\s,.:()（）]', '', low)
+    if left:
+        return None
+    return f'{ext}判定' + (f'（{kind}）' if kind else '') + tag
+
+
 def tidy(m):
     m = re.sub(r'<!--.*?(?:-->|$)', '', m or '', flags=re.S)   # Wikipediaの注釈コメントは載せない
+    e = _english(m or '') or _english_ko(m or '')
+    if e:
+        return e
     m = _alias(m.strip())
     t = unicodedata.normalize('NFKC', m)
     for f in (_nc, _draw, _tko, _ko):
