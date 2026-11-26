@@ -1,7 +1,7 @@
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pubhtml
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=1&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=2&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=3&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=4&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=5&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/pages?per_page=100&page=6&_fields=id,link,date,title,content
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=1633299088&single=true&output=csv
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=2036727323&single=true&output=csv
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=926400971&single=true&output=csv
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSUX_qleYSZHpNMvlNp9-dISosGnQt-t6rYyUvMmE41fKuOQBxaq2GG9a4XpO6Uu4aVUqKS26oAlaix/pub?gid=2083882489&single=true&output=csv
+https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E6%9C%A8%E6%9D%91%E6%94%BF%E5%BD%A6%E6%9D%AF&per_page=50&_fields=id,link,date,title,content
+https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8&per_page=100&_fields=id,link,date,title,content
+https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8&per_page=100&page=2&_fields=id,link,date,title,content
