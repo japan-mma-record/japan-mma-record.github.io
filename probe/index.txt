@@ -1,2 +1,2 @@
-1 200 32714 https://combatreg.com/fighters/Nao-Yoneda:9DCA209DA68F6EF6
-2 200 45510 https://combatreg.com/fighters/Kosuke-Suzuki:EBCAB8E729E3A933
+1 200 56805 https://combatreg.com/fighters/search?query=Haruo+Ochi
+2 200 10178 https://combatreg.com/fighters/search?query=Sho+Sekihara
