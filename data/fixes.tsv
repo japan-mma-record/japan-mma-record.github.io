@@ -1348,3 +1348,10 @@ e05154	name:ケビン・パク	round	1	https://www.boutreview.com/3/reports/item
 e05154	name:ケビン・パク	time	0:26	https://www.boutreview.com/3/reports/item_29150.html
 e05154	name:ケビン・パク	weight	フェザー級	https://www.boutreview.com/3/reports/item_29150.html
 e01739	name:Takatoshi Shibata	fighter1	柴にゃん	https://www.deep2001.com/deep%E3%83%95%E3%83%A5%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%882016/（DEEP公式の結果で、フェザー級の優勝者は「柴 にゃん」。海外の記録サイトの英字表記のままだった）
+e02418	name:長谷川秀彦	fighter1	長谷川秀彦＆TAISHO	https://gbring.com/sokuho/result/result2008_06/0629_deep.htm（GBR の当時の結果（第2試合 グラップリングタッグマッチ ○長谷川秀彦＆TAISHO vs ●クリスチアン＆コダ・アウド）。決まり手の欄に結果の文がそのまま入っていた）
+e02418	name:長谷川秀彦	fighter1_id		https://gbring.com/sokuho/result/result2008_06/0629_deep.htm（タッグマッチなので個人の戦績に数えないよう選手番号を外す）
+e02418	name:長谷川秀彦	fighter2	クリスチアン＆コダ・アウド	https://gbring.com/sokuho/result/result2008_06/0629_deep.htm
+e02418	name:長谷川秀彦	fighter2_id		https://gbring.com/sokuho/result/result2008_06/0629_deep.htm
+e02418	name:長谷川秀彦	method	一本（長谷川がクリスチアンに腕ひしぎ十字固め 7分42秒、TAISHOがコダに腕ひしぎ十字固め 7分48秒）	https://gbring.com/sokuho/result/result2008_06/0629_deep.htm
+e02418	name:長谷川秀彦	time	7:48	https://gbring.com/sokuho/result/result2008_06/0629_deep.htm
+e02418	name:長谷川秀彦	weight	グラップリングタッグマッチ	https://gbring.com/sokuho/result/result2008_06/0629_deep.htm
