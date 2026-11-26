@@ -1,3 +1,2 @@
-1 200 994 https://grachan.jp/wp-sitemap.xml
-2 200 994 https://grachan.jp/sitemap.xml
-3 404 38286 https://grachan.jp/sitemap_index.xml
+1 200 4976 https://grachan.jp/wp-sitemap-posts-event-1.xml
+2 200 12768 https://grachan.jp/wp-sitemap-posts-news-1.xml
