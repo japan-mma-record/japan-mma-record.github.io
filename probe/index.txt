@@ -1,1 +1,2 @@
-1 200 23214 https://combatreg.com/fighters/Thuomas-Backman:585E0C9EC527190C
+1 200 22249 https://combatreg.com/events/ShootoFinland-Capital-Punishment:8BD901F9-DCE5-44F4-8B6D-08F80A61598D
+2 200 24572 https://combatreg.com/events/Shooto-Finland-Capital-Punishment-2:696BF43B-3202-4EAE-B757-587D55A82CD5
