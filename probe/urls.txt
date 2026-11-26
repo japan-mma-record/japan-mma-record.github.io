@@ -1,3 +1,4 @@
-https://www.sherdog.com/events/Fighting-Nexus-Vol-37-105181
-https://www.sherdog.com/stats/fightfinder?SearchTxt=Fighting+Nexus
-https://combatreg.com/fighters/Yokoya-McGregor:AECE5E3858CA7D36
+https://combatreg.com/events/Fighting-Nexus-35:36b2dbfb-44f0-4621-8828-b9a62261b37f
+https://combatreg.com/events/results?search=Nexus
+https://combatreg.com/events/results?q=Nexus
+https://combatreg.com/events/results
