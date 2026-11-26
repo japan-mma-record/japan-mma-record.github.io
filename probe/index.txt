@@ -1,4 +1,2 @@
-1 200 86512 https://www.sherdog.com/events/GCM-Demolition-West-in-Yamaguchi-11499
-2 200 71742 https://www.sherdog.com/organizations/CMA-MMA-13601
-3 200 103217 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398
-4 200 69692 https://www.sherdog.com/organizations/Kingdom-Ehrgeiz-1398/recent-events/2
+1 200 72379 https://www.sherdog.com/events/CMA-MMA-Crazy-King-10-CMA-Kaiser-5-69061
+2 200 77753 https://www.sherdog.com/events/Kingdom-Ehrgeiz-Satellite-Fight-Vol-1-6858
