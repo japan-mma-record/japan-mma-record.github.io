@@ -266,3 +266,5 @@ e03791	name:岩堀徹大	method	一本（RNC）	https://www.deep2001.com/deep-na
 e05167	2	winner	2	海外の記録サイト（CMA MMA - Crazy King 10 / CMA Kaiser 5、2018年6月16日・新宿FACE：Ui Jong Kim win / Tatsuhito Yamazaki loss、TKO (Punches) 2R 1:35）。BOUTREVIEW の結果（https://www.boutreview.com/3/reports/item_8149.html）は TKO 2R 1分35秒 で両者に×が付いていた
 e01292	name:伊海敬介	winner		海外の記録サイト（Zst 18 - Sixth Anniversary：Keisuke Ikai win / Hiroyuki Ai loss としながら決まり手は Draw (Time Limit) 1R 5:00）。勝ちと引き分けが食い違っていて、ほかに結果の資料が見つからないので勝敗は空にする
 e01292	name:川頭広卓	winner		海外の記録サイト（Zst 18 - Sixth Anniversary：Kotaku Kawazu win / Ryota Kobayashi loss としながら決まり手は Draw (Time Limit) 1R 5:00）。勝ちと引き分けが食い違っていて、ほかに結果の資料が見つからないので勝敗は空にする
+e00089	6	rule	エキシビション	https://pancrase.co.jp/data/result/2000/1204.html（パンクラス公式の結果で「エキジビジョンマッチ」）
+e00094	7	rule	エキシビション	https://pancrase.co.jp/data/result/2001/0513.html（パンクラス公式の結果で「山田学引退エキジビジョンマッチ」）
