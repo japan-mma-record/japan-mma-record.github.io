@@ -451,3 +451,27 @@ if __name__ == '__main__':
               '判定3-0 （30-28/30-28/30-28）', '判定0-3 (20-17 x3)', '判定:3-0 30-27 30-27 29-28', '判定3-0 ※30-27、30-27、30-27',
               '延長判定 0-1', '判定 ドロー', '判定2-1 (19-19 x3, マスト2名岩見)', '判定', 'ドロー 判定1-0', '判定 （２－１）']:
         print(f'{x!r:45} → {tidy(x)!r}')
+
+
+def time(t):
+    """試合時間の書き方をそろえる：「2分43秒」→「2:43」、「32秒」→「0:32」、「6：15」→「6:15」、「1:29 of round 1.」→「1:29」、「N/A」→ 空。
+    それ以外（「終了時」など）はそのまま。"""
+    s = unicodedata.normalize('NFKC', str(t or '')).strip()
+    if re.fullmatch(r'(?i)n/?a', s):
+        return ''
+    m = re.fullmatch(r'(?i)(\d{1,2}:\d\d) of round \d+\.?', s)
+    if m:
+        return m.group(1)
+    m = re.fullmatch(r'(\d{1,2})\s*分\s*(\d{1,2})\s*秒', s)
+    if m and int(m.group(2)) < 60:
+        return f'{int(m.group(1))}:{int(m.group(2)):02d}'
+    m = re.fullmatch(r'(\d{1,2})\s*秒', s)
+    if m and int(m.group(1)) < 60:
+        return f'0:{int(m.group(1)):02d}'
+    m = re.fullmatch(r'(\d{1,2})\s*分', s)
+    if m:
+        return f'{int(m.group(1))}:00'
+    if re.fullmatch(r'\d{1,2}:\d\d', s):
+        return s
+    return str(t or '').strip()
+

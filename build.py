@@ -316,6 +316,7 @@ def load():
     for k in bouts:
         for b in bouts[k]:
             b['method'] = methods.tidy(b.get('method'))   # 決まり手の書き方をそろえる（methods.py）
+            b['time'] = methods.time(b.get('time'))       # 時間の書き方をそろえる（「2分43秒」→「2:43」など）
             # 「0ラウンド」「0:00」は資料に記録がないときの埋め草なので空欄（不明）にする
             if str(b.get('round') or '').strip() == '0':
                 b['round'] = ''
