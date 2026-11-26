@@ -1,12 +1,3 @@
-https://grachan.jp/schedule/challenge20230410/
-https://grachan.jp/schedule/gc20230410/
-https://grachan.jp/schedule/grachan-challenge20230410/
-https://grachan.jp/schedule/grachanchallenge20230410/
-https://grachan.jp/schedule/challenge20230903/
-https://grachan.jp/schedule/gc20230903/
-https://grachan.jp/schedule/grachan-challenge20230903/
-https://grachan.jp/schedule/grachanchallenge20230903/
-https://grachan.jp/schedule/
-https://grachan.jp/schedule/page/5/
-https://grachan.jp/schedule/page/6/
-https://grachan.jp/schedule/page/7/
+https://grachan.jp/wp-sitemap.xml
+https://grachan.jp/sitemap.xml
+https://grachan.jp/sitemap_index.xml
