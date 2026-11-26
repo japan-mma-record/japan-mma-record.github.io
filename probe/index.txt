@@ -1,4 +1,2 @@
-1 200 24719 https://combatreg.com/fighters/search?query=Magomed-Emin+Myatliev
-2 200 27598 https://combatreg.com/fighters/search?query=Oleg+Belozerov
-3 200 5724 https://combatreg.com/fighters/search?query=Mitsutaka+Eto
-4 200 6125 https://combatreg.com/fighters/search?query=Teymur+Aliev
+1 200 22848 https://combatreg.com/fighters/Teimur-Aliev:9DF3F7F75B50D444
+2 200 19230 https://combatreg.com/fighters/Timur-Aliyev:0753E060194B69BC
