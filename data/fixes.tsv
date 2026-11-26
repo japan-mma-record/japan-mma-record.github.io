@@ -1136,3 +1136,11 @@ e04104	name:深見智之	note		https://www.boutreview.com/fightsspiral/clubDEEP_
 e01371	name:高嶋龍弘	rule	キック	https://gbring.com/sokuho/result/result2011_05/0501_zst.htm（セミファイナル SBXルール バンタム級 3分3R。シュートボクシングルールを基本とした立ち技のルール）
 e01371	name:島田洸也	rule	キック	https://gbring.com/sokuho/result/result2011_05/0501_zst.htm（メインイベント SBXルール フェザー級 3分3R）
 e01391	name:伊藤健一	weight	RXルール（旧リングスルール） 68kg未満契約	https://gbring.com/sokuho/result/result2012_05/0506_zst.htm（第6試合 RXルール（旧リングスルール） 68kg未満契約 10分。SBRXルールではなかった）
+e00962	1	rule	キック	https://shooto-mma.com/result/?id=111（第1部 第1〜4試合は「CKC2021-54kgトーナメント一回戦 3分3R」。CKC はキックのトーナメントで、準決勝・決勝は第2部でキックとして入っている）
+e00962	2	rule	キック	https://shooto-mma.com/result/?id=111（第1部 第1〜4試合は「CKC2021-54kgトーナメント一回戦 3分3R」。CKC はキックのトーナメントで、準決勝・決勝は第2部でキックとして入っている）
+e00962	3	rule	キック	https://shooto-mma.com/result/?id=111（第1部 第1〜4試合は「CKC2021-54kgトーナメント一回戦 3分3R」。CKC はキックのトーナメントで、準決勝・決勝は第2部でキックとして入っている）
+e00962	4	rule	キック	https://shooto-mma.com/result/?id=111（第1部 第1〜4試合は「CKC2021-54kgトーナメント一回戦 3分3R」。CKC はキックのトーナメントで、準決勝・決勝は第2部でキックとして入っている）
+e00962	1	weight	CKC2021-54kgトーナメント一回戦（キック）	https://shooto-mma.com/result/?id=111
+e00962	2	weight	CKC2021-54kgトーナメント一回戦（キック）	https://shooto-mma.com/result/?id=111
+e00962	3	weight	CKC2021-54kgトーナメント一回戦（キック）	https://shooto-mma.com/result/?id=111
+e00962	4	weight	CKC2021-54kgトーナメント一回戦（キック）	https://shooto-mma.com/result/?id=111
