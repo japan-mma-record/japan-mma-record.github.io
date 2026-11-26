@@ -154,6 +154,13 @@ ALIAS = [
     (r'(?i)single wing choke', '片羽絞め'),
     (r'(?i)^一本（leglock）$', '一本（レッグロック）'),
     (r'(?i)^一本（headlock）$', '一本（ヘッドロック）'),
+    (r'^Ko（TKO）$', 'TKO'),                                             # 「Ko（TKO）」「Ko（TKO・パンチ）」→「TKO」「TKO（パンチ）」
+    (r'^Ko（TKO・(.+)）$', r'TKO（\1）'),
+    (r'^T\.K\.O\.?\s*\[(.+)\]$', r'TKO（\1）'),
+    (r'^T\.K\.O\.?$', 'TKO'),
+    (r'^K\.O\.?$', 'KO'),
+    (r'^『?(?:時間切れ|フルタイム|タイムアップ)\s*ドロー』?$', '引き分け（時間切れ）'),
+    (r'^フルタイム\s*ドロー（判定無し）$', '引き分け（時間切れ・判定なし）'),
 ]
 
 
@@ -249,7 +256,8 @@ def _ko(t):
 _EN_KIND = (('unanimous', '全員一致'), ('split', 'スプリット'), ('majority', 'マジョリティ'))
 
 
-_EN_TKO = {'punches': 'パンチ', 'knee to body and punches': 'ボディへの膝蹴り&パンチ', '2 knockdowns': '2ノックダウン'}
+_EN_TKO = {'punches': 'パンチ', 'knee to body and punches': 'ボディへの膝蹴り&パンチ', '2 knockdowns': '2ノックダウン', 'gnp': 'グラウンドのパンチ',
+           'rs (gnp)': 'グラウンドのパンチ', 'rs': 'レフェリーストップ', 'left hook': '左フック', 'thrown in the towel': 'セコンドのタオル'}
 
 
 def _english_ko(t):
@@ -484,6 +492,16 @@ def split_rt(m, rnd, tm):
     KO・TKO・一本で始まり、時間が1つだけ書かれているときだけ。欄にすでに別の値があるときは触らない。"""
     t = unicodedata.normalize('NFKC', m or '').strip()
     t = re.sub(r'(\d)\s+(秒)', r'\1\2', t)                    # 「1分13 秒」
+    q = re.match(r'^(\d)\s*R\s*(\d{1,2})\s*[:：\'’]\s*(\d\d)\s*[”"]?\s*', t)    # 「1R 1：38 （ TKO　負傷棄権）」「2R 1’33” KO」
+    if q:
+        t = t[q.end():].strip() + f' {q.group(1)}R{int(q.group(2))}分{q.group(3)}秒'
+        mm = re.match(r'^[（(]\s*(.+?)\s*[)）](.*)$', t)
+        if mm:
+            t = mm.group(1) + mm.group(2)
+    else:
+        q2 = re.match(r'^(\d)\s*R\s+(?=(?:KO|TKO)$)', t)                     # 「2R KO」（ラウンドだけ）
+        if q2 and (not str(rnd or '').strip() or str(rnd).strip() == q2.group(1)):
+            return t[q2.end():], q2.group(1), tm
     lead = re.match(r'^(?:(\d)\s*R\s*)?\d{1,2}\s*分\s*\d{1,2}\s*秒\s*[、,]?\s*', t)   # 「3分4秒、三角絞め」「0分28秒 TKO」のように時間が先
     if lead and not re.match(r'^(?:KO|TKO|一本)(?![A-Za-z])', t):
         after = tidy(re.sub(r'^ドクターストップ\s*TKO$', 'TKO（ドクターストップ）', t[lead.end():].strip()))
