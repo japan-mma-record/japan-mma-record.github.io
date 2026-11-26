@@ -1050,3 +1050,39 @@ e03466	name:後藤琢磨	fighter1	後藤琢磨＆平山学	https://www.boutrevie
 e03466	name:後藤琢磨＆平山学	fighter1_id		https://www.boutreview.com/3/reports/item_3283.html。タッグマッチなので個人の選手番号を外す
 e03466	name:後藤琢磨＆平山学	fighter2	垣ヶ原雄基＆工藤大輔	https://www.boutreview.com/3/reports/item_3283.html
 e03466	name:垣ヶ原雄基＆工藤大輔	fighter2_id		https://www.boutreview.com/3/reports/item_3283.html。タッグマッチなので個人の選手番号を外す
+e01240	7	rule	グラップリング	https://gbring.com/sokuho/result/result2007_02/0212_smack.htm（第7試合 NO-GI撫子04 ADCCルール）
+e01240	8	rule	グラップリング	https://gbring.com/sokuho/result/result2007_02/0212_smack.htm（第8試合 NO-GI撫子04 ADCCルール）
+e01240	9	rule	グラップリング	https://gbring.com/sokuho/result/result2007_02/0212_smack.htm（第9試合 NO-GI撫子04 ADCCルール）
+e01240	10	rule	グラップリング	https://gbring.com/sokuho/result/result2007_02/0212_smack.htm（第10試合 NO-GI撫子04 ADCCルール）
+e08550	6	note		https://gbring.com/sokuho/result/result2004_04/0407_k1.htm（○山本KID徳郁 1R58秒 チョークスリーパー ●トニー・バレント）
+e04744	1	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第1試合の○●・結果が明記）
+e04744	2	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第2試合の○●・結果が明記）
+e04744	3	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第3試合の○●・結果が明記）
+e04744	4	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第4試合の○●・結果が明記）
+e04744	5	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第5試合の○●・結果が明記）
+e04744	6	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第6試合の○●・結果が明記）
+e04744	7	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第7試合の○●・結果が明記）
+e04744	8	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第8試合の○●・結果が明記）
+e04744	9	note		https://gbring.com/sokuho/result/result2004_05/0522_romanex.htm（第9試合の○●・結果が明記）
+e08551	name:安廣一哉	note		https://gbring.com/sokuho/result/result2004_07/0707_k-1max.htm（○山本KID徳郁 KO 2R2分40秒 ●安廣一哉）
+e08552	7	note		https://gbring.com/sokuho/result/result2004_10/1013_k-1.htm（○山本“KID”徳郁 1R1分55秒 KO ●ジャダンバ・ナラントンガラグ）
+e08548	8	note		https://gbring.com/sokuho/result/result2005_02/0223_k-1.htm（○宇野薫 一本 1R1分59秒 ●セルカン・イルマッツ）
+e08549	1	note		https://gbring.com/sokuho/result/result2005_10/1012_k-1max.htm（○所英男 一本 1R1分12秒 三角絞め ●ガブリエル・リムレイ）
+e08549	2	note		https://gbring.com/sokuho/result/result2005_10/1012_k-1max.htm（○秋山成勲 TKO 1R2分47秒 ●マイケル・ラーマ）
+e08636	name:ハキーム・ゴラン	note		https://gbring.com/sokuho/result/result2006_05/0513_k-1.htm（○ハキーム・ゴラン 一本 1R 腕ひしぎ十字 ●デーブ・ダリウス）
+e01236	2	note		https://gbring.com/sokuho/result/result2006_12/1222_mars.htm（△山野寛之 ドロー 判定1－0 △大野修司）
+e01246	name:井上由美子	rule	空道・その他	https://gbring.com/sokuho/result/result2007_04/0429_smack.htm（第5試合 プロスタイル・テコンドーマッチ。MMA の試合ではない）
+e01246	name:井上由美子	note		https://gbring.com/sokuho/result/result2007_04/0429_smack.htm
+e08755	name:カイ・ホーレンベック	rule	キック	https://gbring.com/sokuho/result/result2007_04/0430_k-1.htm（オープニングファイト1 K-1特別ルール 2分3R）
+e08755	name:カイ・ホーレンベック	note		https://gbring.com/sokuho/result/result2007_04/0430_k-1.htm
+e08623	6	rule	キック	https://gbring.com/sokuho/result/result2007_06/0623_k-1.htm（第6試合 スペシャルファイト K-1特別ルール 3分3R）
+e08623	6	note		https://gbring.com/sokuho/result/result2007_06/0623_k-1.htm
+e04261	name:西哲也	fighter1	西哲也＆大村朗	https://gbring.com/sokuho/result/result2007_09/0909_zst.htm（第4試合 フェザー級タッグマッチ：○西哲也＆大村朗 vs ●清水俊一＆清水俊裕、ポイント優勢勝ち）
+e04261	name:西哲也＆大村朗	fighter1_id		https://gbring.com/sokuho/result/result2007_09/0909_zst.htm。タッグマッチなので個人の選手番号を外す
+e04261	name:西哲也＆大村朗	fighter2	清水俊一＆清水俊裕	https://gbring.com/sokuho/result/result2007_09/0909_zst.htm
+e04261	name:西哲也＆大村朗	fighter2_id		https://gbring.com/sokuho/result/result2007_09/0909_zst.htm。タッグマッチなので個人の選手番号を外す
+e04261	name:西哲也＆大村朗	note		https://gbring.com/sokuho/result/result2007_09/0909_zst.htm
+e01220	name:根本博一	winner	draw	https://gbring.com/sokuho/result/result2006_06/0604_pancrase.htm（第6試合 根本博一 判定0-0 大月鉄平。○●の印がなく判定0-0の引き分け）
+e01220	name:根本博一	method	引き分け（判定0-0）	https://gbring.com/sokuho/result/result2006_06/0604_pancrase.htm
+e01220	name:根本博一	note		https://gbring.com/sokuho/result/result2006_06/0604_pancrase.htm
+e01216	name:神山敏宏	rule	空道・その他	https://gbring.com/sokuho/result/result2006_04/0422_oyaji.htm（第3試合 プロスタイルテコンドーKOK実験マッチ。MMA の試合ではない）
