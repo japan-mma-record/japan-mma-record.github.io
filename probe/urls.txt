@@ -1,6 +1,10 @@
-https://dumau.asjjf.org/main/eventResults/444
-https://dumau.asjjf.org/main/eventInfo/444
-https://dumau.asjjf.org/main/eventBrackets/444
-https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8&per_page=100&page=3&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E3%83%88%E3%83%BC%E3%83%8A%E3%83%A1%E3%83%B3%E3%83%88%E8%A1%A8&per_page=100&page=4&_fields=id,link,date,title,content
-https://www.jbjjf.com/wp-json/wp/v2/posts?search=%E7%86%8A%E6%9C%AC%E5%9B%BD%E9%9A%9B&per_page=50&_fields=id,link,date,title,content
+https://gbring.com/sokuho/result/result2008_11/1123_zst.htm
+https://www.boutreview.com/fightsspiral/DEMOLITION_07_11_25.html
+https://pancrase.co.jp/data/result/2023/0326n.html
+https://en.wikipedia.org/wiki/2017_in_Absolute_Championship_Berkut
+https://grachan.jp/grachan-challenge%e3%80%806%e6%9c%88%e9%96%a2%e6%9d%b1%e3%80%80%e8%a9%a6%e5%90%88%e7%b5%90%e6%9e%9c/
+https://shooto-mma.com/result/?id=102
+https://www.boutreview.com/3/reports/item_152940.html
+https://www.boutreview.com/3/reports/item_8149.html
+https://www.boutreview.com/3/reports/item_91369.html
+https://gbring.com/sokuho/result/result2011_05/0529_risingon.htm
