@@ -1,4 +1,2 @@
-1 200 8381 https://combatreg.com/fighters/search?query=Junya+Hibino
-2 200 6117 https://combatreg.com/fighters/search?query=Nao+Yoneda
-3 200 22073 https://combatreg.com/fighters/search?query=Kosuke+Suzuki
-4 200 56028 https://combatreg.com/fighters/search?query=Juntaro+Ushiku
+1 200 32714 https://combatreg.com/fighters/Nao-Yoneda:9DCA209DA68F6EF6
+2 200 45510 https://combatreg.com/fighters/Kosuke-Suzuki:EBCAB8E729E3A933
