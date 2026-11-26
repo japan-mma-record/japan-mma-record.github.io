@@ -1,4 +1,2 @@
-1 000ERR 0 https://grachan.jp/wp-json/wp/v2/posts?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
-2 000ERR 0 https://grachan.jp/wp-json/wp/v2/pages?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
-3 000ERR 0 https://grachan.jp/wp-json/wp/v2/search?search=%E4%B8%89%E9%83%B7&per_page=50&subtype=any
-4 200 22029 https://www.p4pfc.com/post/2024-3-3-pfc-32
+1 200 90236 https://grachan.jp/search/%E4%B8%89%E9%83%B7/feed/rss2/
+2 200 55469 https://grachan.jp/schedule/challenge20240428/
