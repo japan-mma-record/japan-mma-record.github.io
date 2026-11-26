@@ -1,2 +1,2 @@
-1 200 2241 https://grachan.jp/wp-sitemap-posts-page-1.xml
-2 200 7180 https://grachan.jp/wp-sitemap-posts-special-1.xml
+1 200 82360 https://j-shooto.com/2015/10/05/post-0-846/
+2 200 10743 https://pancrase.co.jp/data/result/1997/0117.html
