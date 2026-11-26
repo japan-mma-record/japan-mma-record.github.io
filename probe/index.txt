@@ -1,2 +1,2 @@
-1 200 275812 https://www.asjjf.org/main/eventsBySeason/41
-2 200 476110 https://www.asjjf.org/
+1 200 173180 https://www.asjjf.org/main/eventResultsBySeason/286
+2 200 536564 https://www.asjjf.org/main/eventsBySeason/286
