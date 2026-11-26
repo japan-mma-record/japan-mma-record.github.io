@@ -1046,3 +1046,7 @@ e01571	name:下間 英史	note		https://www.boutreview.com/3/reports/item_65674.
 e01571	name:エディ竹山	note		https://www.boutreview.com/3/reports/item_65674.html（△エディ竹山 △松崎徳彦 フルタイム ドロー）
 e05326	name:小見川道大	fighter1	小見川道大＆伊藤健一＆太田裕之	https://www.boutreview.com/3/reports/item_14089.html（横浜大会スペシャルマッチ GT3×3ルール：小見川道大・伊藤健一・太田裕之 vs 平尾悠人＆水洗裕一郎＆早坂俊明、ドロー）
 e05326	name:小見川道大＆伊藤健一＆太田裕之	fighter1_id		https://www.boutreview.com/3/reports/item_14089.html。3対3の団体戦なので個人の選手番号を外す
+e03466	name:後藤琢磨	fighter1	後藤琢磨＆平山学	https://www.boutreview.com/3/reports/item_3283.html（第5試合 GT（グラップリング）タッグマッチ：○後藤琢磨＆平山学 vs ×垣ヶ原雄基＆工藤大輔、3:34 腕ひしぎ十字固め（後藤→工藤））
+e03466	name:後藤琢磨＆平山学	fighter1_id		https://www.boutreview.com/3/reports/item_3283.html。タッグマッチなので個人の選手番号を外す
+e03466	name:後藤琢磨＆平山学	fighter2	垣ヶ原雄基＆工藤大輔	https://www.boutreview.com/3/reports/item_3283.html
+e03466	name:垣ヶ原雄基＆工藤大輔	fighter2_id		https://www.boutreview.com/3/reports/item_3283.html。タッグマッチなので個人の選手番号を外す
