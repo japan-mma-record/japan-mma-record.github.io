@@ -1,4 +1,2 @@
-1 200 98398 https://dumau.asjjf.org/main/bracketsList/444
-2 200 42082 https://www.asjjf.org/main/bracketsList/294
-3 404 1987 https://dumau.asjjf.org/main/eventInfo/444
-4 200 53516 https://dumau.asjjf.org/main/bracketsList/180
+1 200 2638 https://files.asjjf.org/brackets//444/268731/1.pdf
+2 200 2964 https://files.asjjf.org/brackets//444/268611/1.pdf
