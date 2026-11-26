@@ -361,3 +361,6 @@ e05176	merge	e01568	同じ大会（KROSS×OVER 15、2021年12月5日・新宿FAC
 e04934	date	2018-02-25	eFight の記事の開催日（2018年2月25日(日)）に直す https://efight.jp/result-20180225_280892
 e05348	date	2021-06-06	eFight の記事の開催日（2021年6月6日（日））に直す https://efight.jp/result-20210609_552429
 e04943	merge	e01543	KROSS×OVER 8（株式会社秀拓 presents、2020年2月23日・埼玉県県民活動総合センター）は KROSS×OVER 2.23 と同じ大会。BOUTREVIEW の結果では第12試合 PRO-MMA 森田啓佑 vs クイック・チョップ・リーが同じ大会の本戦にある https://www.boutreview.com/3/reports/item_37633.html
+e00575	venue	Kupittaan Urheiluhalli（フィンランド・トゥルク）	https://combatreg.com/events/Shooto-Europe-The-First-Time:8A324668-E0FE-4356-97E6-52936DBF1618（海外の記録サイト。会場が「-」だった）
+e00597	venue	Töölön kisahalli（フィンランド・ヘルシンキ）	https://combatreg.com/events/ShootoFinland-Capital-Punishment:8BD901F9-DCE5-44F4-8B6D-08F80A61598D（海外の記録サイト。会場が「-」だった）
+e00573	venue	オランダ（Culemborg）	https://combatreg.com/events/Shooto-Holland-Culemborg-2:51587CDB-5A3B-498C-AF78-B6C7857B3790（海外の記録サイト。会場の名前はなく、場所は Culemborg, Netherlands。会場が「-」だった）
