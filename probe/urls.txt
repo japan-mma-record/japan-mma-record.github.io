@@ -1,6 +1,4 @@
-https://combatreg.com/events/results/promotion/:d0c8e0fc-fcc8-4004-88ef-d4f550617f1d
-https://combatreg.com/events/results/promotion/:d0c8e0fc-fcc8-4004-88ef-d4f550617f1d?page=2
-https://combatreg.com/events/results/promotion/:d0c8e0fc-fcc8-4004-88ef-d4f550617f1d?page=3
-https://combatreg.com/events/results/promotion/:d0c8e0fc-fcc8-4004-88ef-d4f550617f1d?page=4
-https://combatreg.com/events/Fighting-Nexus-43:9b49672f-6b86-4d37-9ba1-30826c1d0a37
-https://combatreg.com/events/Fighting-Nexus-Nexus-Yakumo:ef027ab5-0199-4aaf-886e-4375fd2e1c93
+https://combatreg.com/fighters/Kengo-Ishikawa:FA89CBEFBF390A47
+https://combatreg.com/fighters?search=Takuma+Sudo
+https://combatreg.com/fighters?q=Sudo
+https://combatreg.com/fighters/search?q=Sudo
