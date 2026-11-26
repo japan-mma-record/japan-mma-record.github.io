@@ -1,2 +1,2 @@
-https://grachan.jp/4%E6%9C%8810%E6%97%A5%E3%80%80%E4%B8%89%E9%83%B7%E3%83%96%E3%83%AC%E3%82%A4%E3%83%96%E3%82%B8%E3%83%A0%E3%80%80grachan%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E5%AF%BE%E6%88%A6%E3%82%AB%E3%83%BC/
-https://grachan.jp/wp-sitemap-posts-post-1.xml
+https://grachan.jp/wp-sitemap-posts-page-1.xml
+https://grachan.jp/wp-sitemap-posts-special-1.xml
