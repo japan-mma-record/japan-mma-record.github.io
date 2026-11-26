@@ -1,5 +1,4 @@
-https://www.p4pfc.com/blog-feed.xml
-https://www.p4pfc.com/post/pfc-31
-https://www.p4pfc.com/schedule-match
-https://grachan.jp/schedule/
-https://grachan.jp/?s=%E4%B8%89%E9%83%B7
+https://grachan.jp/wp-json/wp/v2/posts?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
+https://grachan.jp/wp-json/wp/v2/pages?search=%E4%B8%89%E9%83%B7&per_page=50&_fields=id,date,link,title,content
+https://grachan.jp/wp-json/wp/v2/search?search=%E4%B8%89%E9%83%B7&per_page=50&subtype=any
+https://www.p4pfc.com/post/2024-3-3-pfc-32
