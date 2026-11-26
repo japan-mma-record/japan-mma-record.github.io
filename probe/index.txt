@@ -1,6 +1,1 @@
-1 200 138122 https://www.sherdog.com/organizations/Zst-209/recent-events/1
-2 200 134829 https://www.sherdog.com/organizations/Zst-209/recent-events/2
-3 200 69596 https://www.sherdog.com/organizations/Zst-209/recent-events/3
-4 200 69596 https://www.sherdog.com/organizations/Zst-209/recent-events/4
-5 200 69596 https://www.sherdog.com/organizations/Zst-209/recent-events/5
-6 200 69596 https://www.sherdog.com/organizations/Zst-209/recent-events/6
+1 200 102571 https://www.sherdog.com/events/Zst-18-Sixth-Anniversary-7481
