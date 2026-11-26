@@ -1147,3 +1147,33 @@ e00962	4	weight	CKC2021-54kgトーナメント一回戦（キック）	https://s
 e00921	6	method	判定2-0	https://shooto-mma.com/result/?id=79（第6試合 新人王決定トーナメント決勝 5分2R。「勝利した青：須貝THE YAMANBA」、サブレフェリー 安芸 19-19・加納 18-20・豊島 19-20（赤ムテカツ-青須貝））
 e00930	3	method	判定3-0	https://shooto-mma.com/result/?id=82（第3試合 フェザー級 5分2R。サブレフェリー 片岡 18-20・吉田 18-20・山本 18-20（赤 後藤陽駆-青 ムテカツ））
 e00975	9	method	判定2-1	https://shooto-mma.com/result/?id=123（第9試合 ストロー級 5分3R。サブレフェリー 片岡 28-29・安芸 28-29・山本 29-28（赤 田上こゆる-青 マッチョ・ザ・バタフライ））
+e00232	name:松岡嵩志	winner		https://pancrase.co.jp/data/result/2011/1002.html（松岡嵩志 vs 伊禮真也 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00256	name:石田源	winner		https://pancrase.co.jp/data/result/2013/0519.html（石田源 vs ペニー清水 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00320	name:三谷敏生	winner		https://pancrase.co.jp/data/result/2017/1224.html（三谷敏生 vs 後藤琢也 は「後藤琢也計量オーバーにより試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00320	name:三村亘	winner		https://pancrase.co.jp/data/result/2017/1224.html（三村亘 vs 平田丈二 は「計量オーバーにより試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00321	name:網潤太郎	winner		https://pancrase.co.jp/data/result/2018/0204.html（網潤太郎 vs 丸山数馬 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00321	name:コンバ王子	winner		https://pancrase.co.jp/data/result/2018/0204.html（コンバ王子 vs イズマエル・ボンフィン は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00332	name:中村龍之	winner		https://pancrase.co.jp/data/result/2018/1209.html（中村龍之 vs 鈴木千裕 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00335	name:廣野雄大	winner		https://pancrase.co.jp/data/result/2019/0414.html（廣野雄大 vs 真王 DATE は「試合中止、廣野雄大の計量失格」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00336	name:御代川敏志	winner		https://pancrase.co.jp/data/result/2019/0526.html（御代川敏志 vs 川端康太 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00350	name:リトル	winner		https://pancrase.co.jp/data/result/2020/0927.html（リトル vs 永井美自戒 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00353	name:中田大貴	winner		https://pancrase.co.jp/data/result/2020/1213.html（中田大貴 vs 上田厚志 は「試合中止、中田大貴体調不良」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00384	name:中田大貴	winner		https://pancrase.co.jp/data/result/2024/0331.html（中田大貴 vs シュウジ ヤマウチ は「試合中止（シュウジヤマウチ計量失敗）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00387	name:原田惟紘	winner		https://pancrase.co.jp/data/result/2024/0630d.html（原田惟紘 vs ギレルメ・ナカガワ は「試合中止（両者計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00391	name:佐々木瞬真	winner		https://pancrase.co.jp/data/result/2024/0825.html（佐々木瞬真 vs 今井洋希 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00391	name:赤﨑清志朗	winner		https://pancrase.co.jp/data/result/2024/0825.html（赤﨑清志朗 vs 柴山鷹成 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00393	name:大野友哉	winner		https://pancrase.co.jp/data/result/2024/1110d.html（大野友哉 vs 田中亮祐 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00393	name:シュウジ ヤマウチ	winner		https://pancrase.co.jp/data/result/2024/1110d.html（シュウジ ヤマウチ vs 遠藤来生 は「試合中止（計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00395	name:田嶋 椋	winner		https://pancrase.co.jp/data/result/2024/1215d.html（田嶋 椋 vs オタベク・ラジャボフ は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00397	name:今田六颯士	winner		https://pancrase.co.jp/data/result/2025/0211.html（今田六颯士 vs 前川 慧 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00397	name:笹崎健司	winner		https://pancrase.co.jp/data/result/2025/0211.html（笹崎健司 vs 水永将太 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00399	name:透暉鷹	winner		https://pancrase.co.jp/data/result/2025/0427.html（透暉鷹 vs カリベク・アルジクル ウルル は「試合中止（両者計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00400	name:水永将太	winner		https://pancrase.co.jp/data/result/2025/0506.html（水永将太 vs 貫井義規 は「試合中止（両者計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00409	name:松井斗輝	winner		https://pancrase.co.jp/data/result/2025/1221.html（松井斗輝 vs 荒田大輝 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00410	name:葛西和希	winner		https://pancrase.co.jp/data/result/2026/0211.html（葛西和希 vs 西尾真輔 は「試合中止（計量失格(西尾)）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00410	name:水戸邉荘大	winner		https://pancrase.co.jp/data/result/2026/0211.html（水戸邉荘大 vs 時田一生 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00410	name:平賀丈一郎	winner		https://pancrase.co.jp/data/result/2026/0211.html（平賀丈一郎 vs 細川勇哉 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00410	name:小澤武輝	winner		https://pancrase.co.jp/data/result/2026/0211.html（小澤武輝 vs 鳴海秀哉 は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00411	name:伊藤盛一郎	winner		https://pancrase.co.jp/data/result/2026/0314.html（伊藤盛一郎 vs ジョセフ・カマチョ は「試合中止」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00412	name:野田遼介	winner		https://pancrase.co.jp/data/result/2026/0504.html（野田遼介 vs 氏原魁星 は「試合中止（野田棄権）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
+e00415	name:小野瑛大	winner		https://pancrase.co.jp/data/result/2026/0726.html（小野瑛大 vs 山田浩平 は「試合中止（小野瑛大計量失格）」。試合が行われていないので、無効試合（ノーコンテスト）として戦績に数えないよう勝敗を空にする）
