@@ -1,3 +1,2 @@
-https://www.asjjf.org/main/eventResults/1601
-https://www.asjjf.org/main/eventResults/444
-https://asjjf.org/main/eventInfo/1601
+https://asjjf.org/public/brackets/1601
+https://asjjf.org/public/brackets/444
