@@ -475,3 +475,36 @@ def time(t):
         return s
     return str(t or '').strip()
 
+
+_RT = re.compile(r'(?:(\d)\s*R\s*)?(\d{1,2})\s*分\s*(\d{1,2})\s*秒|(\d)\s*R\s*(\d{1,2}):(\d\d)')
+
+
+def split_rt(m, rnd, tm):
+    """決まり手の欄に書かれたラウンド・時間（「KO　1R 1分20秒 ※右フック」「TKO（2R1分12秒）」）を、ラウンド・時間の欄に移す。
+    KO・TKO・一本で始まり、時間が1つだけ書かれているときだけ。欄にすでに別の値があるときは触らない。"""
+    t = unicodedata.normalize('NFKC', m or '').strip()
+    if not re.match(r'^(?:KO|TKO|一本)(?![A-Za-z])', t):
+        return m, rnd, tm
+    found = list(_RT.finditer(t))
+    if len(found) != 1:
+        return m, rnd, tm
+    f = found[0]
+    if f.group(2) is not None:
+        r, mm, ss = f.group(1), f.group(2), f.group(3)
+    else:
+        r, mm, ss = f.group(4), f.group(5), f.group(6)
+    if int(ss) >= 60:
+        return m, rnd, tm
+    nt = f'{int(mm)}:{int(ss):02d}'
+    rnd0, tm0 = str(rnd or '').strip(), time(tm)
+    if (r and rnd0 and rnd0 != r) or (tm0 and tm0 != nt):
+        return m, rnd, tm
+    rest = (t[:f.start()] + ' ' + t[f.end():]).strip()
+    rest = re.sub(r'[（(]\s*[※、,]?\s*[)）]', '', rest)           # 「TKO（）」のように空になったかっこ
+    rest = re.sub(r'[（(]\s*[※、,]\s*', '（', rest)
+    rest = re.sub(r'\s+', ' ', rest).strip()
+    if re.search(r'\d+\s*-\s*\d+|分|秒|時間', rest):   # 採点などほかの数字・時間の言葉が残るものは触らない
+        return m, rnd, tm
+    rest = re.sub(r'^(KO|TKO)\s*※\s*(.+)$', r'\1（\2）', rest)
+    return rest, (r or rnd0), nt
+
