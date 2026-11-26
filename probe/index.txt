@@ -1,4 +1,2 @@
-1 200 19215 https://combatreg.com/fighters/Shun-Shimazaki:D5D64960451B9FA7
-2 200 17824 https://combatreg.com/fighters/search?query=Ginpei+Arai
-3 200 5725 https://combatreg.com/fighters/search?query=Azumi+Kawabata
-4 200 18891 https://combatreg.com/fighters/search?query=Rintaro+Kikuchi
+1 200 180524 https://www.deep2001.com/deep-101-impact/
+2 200 223909 https://www.deep2001.com/deep-nagoya-impact-2024-3rd-round/
