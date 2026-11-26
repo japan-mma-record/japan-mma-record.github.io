@@ -1342,3 +1342,8 @@ e01530	name:パク・イクスン ショッカー・シン	round	1	https://www.b
 e01530	name:パク・イクスン ショッカー・シン	time	2:07	https://www.boutreview.com/3/reports/item_29150.html（当時の結果に書かれた決着の時間）
 e01641	name:高本 裕和 室谷 勇汰	round	1	https://www.boutreview.com/3/reports/item_105318.html（当時の結果で1ラウンド制（「○分1R」）の試合）
 e01685	name:小西 哲矢 ゴメちゃん	round	1	https://www.boutreview.com/3/reports/item_129860.html（当時の結果で1ラウンド制（「○分1R」）の試合）
+e05154	name:ケビン・パク	fighter2	天草ストロンガー四郎	https://www.boutreview.com/3/reports/item_29150.html（第13試合 MMAルール フェザー級「○ケビン・パク（1R26秒、パウンドTKO）天草ストロンガー四郎×」。相手の名前が次の第14試合のパンナコッタみのりになっていた）
+e05154	name:ケビン・パク	method	TKO（パウンド）	https://www.boutreview.com/3/reports/item_29150.html
+e05154	name:ケビン・パク	round	1	https://www.boutreview.com/3/reports/item_29150.html
+e05154	name:ケビン・パク	time	0:26	https://www.boutreview.com/3/reports/item_29150.html
+e05154	name:ケビン・パク	weight	フェザー級	https://www.boutreview.com/3/reports/item_29150.html
