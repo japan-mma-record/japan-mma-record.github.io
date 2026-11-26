@@ -94,11 +94,27 @@ function vTop(){
     <section class="sec"><div class="sh"><h2>最新の結果</h2><a class="aside lnk" href="#events">すべての大会 →</a></div>
       ${latest.map(e=>{ const bj=(D.meta.bjj||[]).includes(e[2]); const b=bj?null:mainBout(e[0]); return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${esc(e[1].replace(/-/g,'.'))}</span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(evn(e))}</b></span><span class="mb">${bj?'':winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; }).join('')}
     </section>
+    ${onThisDay()}
     <section class="sec"><div class="sh"><h2>${y1-y0+1}年の歩み</h2><span class="aside" style="font-weight:500">年ごとの大会数</span></div>
       <div class="chart"><div class="in"><div class="bars">${bars}</div><div class="yrs">${lbl}</div></div></div></section>
     <section class="sec"><div class="sh"><h2>団体の系譜</h2><a class="aside lnk" href="#promotions">すべての団体 →</a></div>
       <div class="gantt"><div class="in">${gantt}<div class="axis"><span style="width:128px"></span><span class="t">${ticks}</span><span style="width:170px"></span></div></div></div></section>
   </main>`;
+}
+/* 何年前の今日の大会（柔術・グラップリングの大会は除く。日付は見ている人のパソコン・スマホの日付） */
+function onThisDay(){
+  const now = new Date(), y = now.getFullYear(), md = String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+  const skip = new Set([...(D.meta.bjj||[]), ...(D.meta.grappling||[])]);
+  const list = D.events.filter(e => /^\d{4}-\d{2}-\d{2}$/.test(e[1]) && e[1].slice(5)===md && +e[1].slice(0,4) < y && !skip.has(e[2]))
+    .sort((a,b) => b[1].localeCompare(a[1]) || (b[6]-a[6]));
+  if(!list.length) return '';
+  const row = e => { const b = mainBout(e[0]); const ago = y - +e[1].slice(0,4);
+    return `<a class="res row" href="#e-${esc(e[0])}"><span class="dt">${ago}年前<br><small style="font-size:12px;color:var(--fg3)">${esc(e[1].slice(0,4))}年</small></span><span class="ev"><small>${esc(pl(e[2]))}</small><b>${esc(evn(e))}</b></span><span class="mb">${winnerLine(b)}</span><span class="mt">${esc(b?[b[6],rt(b)].filter(Boolean).join(' '):'')}</span></a>`; };
+  const N = 8, first = list.slice(0,N), rest = list.slice(N);
+  return `<section class="sec"><div class="sh"><h2>あの日の大会　<span style="font-size:.7em;font-weight:500">${now.getMonth()+1}月${now.getDate()}日</span></h2><span class="aside" style="font-weight:500">${list.length}大会</span></div>
+    ${first.map(row).join('')}
+    ${rest.length ? `<details><summary class="lnk" style="cursor:pointer;padding:12px 0">ほかの${rest.length}大会を見る</summary>${rest.map(row).join('')}</details>` : ''}
+  </section>`;
 }
 function promoStats(){
   const m = {}; D.events.forEach(e=>{ const p=m[e[2]]||(m[e[2]]={k:e[2],n:0,b:0,a:9999,z:0}); p.n++; p.b+=0; const y=+e[1].slice(0,4); p.a=Math.min(p.a,y); p.z=Math.max(p.z,y); p.bo=(p.bo||0)+e[6]; });
