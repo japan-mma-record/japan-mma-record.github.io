@@ -674,3 +674,23 @@ e05031	5	method	一本（RNC）	https://fighting-nexus.net/event.php?id=result-3
 e05032	1	method	一本（RNC）	https://fighting-nexus.net/event.php?id=nexus-noroshi-2026（公式の結果は「RNC」。取り込みで決まり手が抜けていた）
 e05032	11	method	一本（RNC）	https://fighting-nexus.net/event.php?id=nexus-noroshi-2026（公式の結果は「RNC」。取り込みで決まり手が抜けていた）
 e05034	4	method	一本（RNC）	https://fighting-nexus.net/event.php?id=nexus45（公式の結果は「RNC」。取り込みで決まり手が抜けていた）
+e03353	name:チョン・ダウン	method	TKO（レフェリーストップ）	https://heatofficial.com/schedule/276/
+e04917	name:ミシェウ・ペライラ	method	ノーコンテスト	https://heatofficial.com/schedule/266/
+e04859	name:笹晋久	method	反則（ローブローにより続行不可能）	https://www.boutreview.com/3/reports/item_85612.html
+e01610	name:新居すぐる	method	一本（ネックシザース）	https://www.boutreview.com/3/reports/item_88363.html
+e01610	name:新居すぐる	time	3:25	https://www.boutreview.com/3/reports/item_88363.html
+e01610	12	method	ポイント8-4	https://www.boutreview.com/3/reports/item_88363.html
+e01610	13	method	ポイント6-2	https://www.boutreview.com/3/reports/item_88363.html
+e01610	14	method	ポイント4-0	https://www.boutreview.com/3/reports/item_88363.html
+e01615	name:藤本新	method	不戦勝（藤本の棄権）	https://www.boutreview.com/3/reports/item_92804.html
+e01006	name:田中 佑樹	method	不戦勝（田中佑樹の欠場）	https://shooto-mma.com/result/?id=161
+e01007	1	method	不戦勝（試合の取りやめ）	https://shooto-mma.com/result/?id=162
+e01696	name:鷲頭優斗	method	TKO（パウンド）	https://www.boutreview.com/3/reports/item_138277.html
+e01696	name:鷲頭優斗	round	2	https://www.boutreview.com/3/reports/item_138277.html
+e01696	name:鷲頭優斗	time	0:57	https://www.boutreview.com/3/reports/item_138277.html
+e04967	11	method	一本（バックチョーク）	https://krossover.jp/?p=4272
+e04967	11	round	2	https://krossover.jp/?p=4272
+e04967	11	time	2:33	https://krossover.jp/?p=4272
+e04967	12	method	TKO（左ストレート）	https://krossover.jp/?p=4272
+e04967	12	round	1	https://krossover.jp/?p=4272
+e04967	12	time	2:05	https://krossover.jp/?p=4272
