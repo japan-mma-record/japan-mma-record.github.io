@@ -112,6 +112,6 @@ def is_out_of_scope(text):
     t = re.sub(r'ジュニア[･・]?(ヘビー|ライト|ウェルター|ミドル|フェザー|バンタム|フライ)', '', text or '')
     if re.search(r'キッズ|少年|子供|子ども|小学|中学|高校生|ジュニア|Jr\.?|U-?1[0-8]', t):
         return True
-    if re.search(r'グラップリング|キックボクシング|キック|柔術|ボクシング|エキシビション|エキシビジョン', text or '') and not re.search(r'MMA|総合', text or ''):
+    if re.search(r'(?i)グラップリング|キックボクシング|キック|柔術|ボクシング|エキシビション|エキシビジョン|\bkick|grappling|boxing', text or '') and not re.search(r'(?i)MMA|総合', text or ''):   # 「KICKルール」のような英字の書き方も
         return True
     return False
