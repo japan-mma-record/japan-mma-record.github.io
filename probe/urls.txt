@@ -1,2 +1,3 @@
-https://www.asjjf.org/main/eventResultsBySeason/286
-https://www.asjjf.org/main/eventsBySeason/286
+https://www.asjjf.org/main/eventResults/1601
+https://www.asjjf.org/main/eventResults/444
+https://asjjf.org/main/eventInfo/1601
