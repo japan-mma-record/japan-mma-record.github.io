@@ -483,6 +483,13 @@ def split_rt(m, rnd, tm):
     """決まり手の欄に書かれたラウンド・時間（「KO　1R 1分20秒 ※右フック」「TKO（2R1分12秒）」）を、ラウンド・時間の欄に移す。
     KO・TKO・一本で始まり、時間が1つだけ書かれているときだけ。欄にすでに別の値があるときは触らない。"""
     t = unicodedata.normalize('NFKC', m or '').strip()
+    t = re.sub(r'(\d)\s+(秒)', r'\1\2', t)                    # 「1分13 秒」
+    lead = re.match(r'^(?:(\d)\s*R\s*)?\d{1,2}\s*分\s*\d{1,2}\s*秒\s*[、,]?\s*', t)   # 「3分4秒、三角絞め」「0分28秒 TKO」のように時間が先
+    if lead and not re.match(r'^(?:KO|TKO|一本)(?![A-Za-z])', t):
+        after = tidy(re.sub(r'^ドクターストップ\s*TKO$', 'TKO（ドクターストップ）', t[lead.end():].strip()))
+        if not re.match(r'^(?:KO|TKO|一本)(?![A-Za-z])', after or ''):
+            return m, rnd, tm
+        t = after + ' ' + t[:lead.end()].strip(' 、,')
     if not re.match(r'^(?:KO|TKO|一本)(?![A-Za-z])', t):
         return m, rnd, tm
     found = list(_RT.finditer(t))
