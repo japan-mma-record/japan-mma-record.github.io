@@ -1,1 +1,4 @@
-1 200 30650 https://combatreg.com/events/Shooto-Holland-Culemborg-2:51587CDB-5A3B-498C-AF78-B6C7857B3790
+1 200 6623 https://combatreg.com/fighters/search?query=Akihiro+Gono
+2 200 11023 https://combatreg.com/fighters/search?query=Sanae+Kikuta
+3 200 7913 https://combatreg.com/fighters/search?query=Akira+Shoji
+4 200 32141 https://combatreg.com/fighters/search?query=Wallid+Ismail
