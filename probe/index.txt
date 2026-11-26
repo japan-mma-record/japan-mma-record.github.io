@@ -1,5 +1,1 @@
-1 200 16427 https://www.boutreview.com/fightsspiral/
-2 200 16427 https://www.boutreview.com/fightsspiral/index.html
-3 403 4908 https://fightsspiral.wiki.fc2.com/
-4 403 4908 https://fightsspiral.wiki.fc2.com/wiki/K-1
-5 403 4908 https://fightsspiral.wiki.fc2.com/wiki/%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%88%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0
+1 200 4268 https://www.boutreview.com/fightsspiral/zentaikaikekka_ichiran.html
