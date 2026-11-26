@@ -1,3 +1,2 @@
-https://grachan.jp/wp-sitemap.xml
-https://grachan.jp/sitemap.xml
-https://grachan.jp/sitemap_index.xml
+https://grachan.jp/wp-sitemap-posts-event-1.xml
+https://grachan.jp/wp-sitemap-posts-news-1.xml
