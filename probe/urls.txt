@@ -1,8 +1,3 @@
-https://combatreg.com/fighters/search?query=Masato+Gaja
-https://combatreg.com/fighters/search?query=Sho+Hiramatsu
-https://combatreg.com/fighters/search?query=Simon+She
-https://combatreg.com/fighters/search?query=Yoichiro+Sato
-https://combatreg.com/fighters/search?query=Taito+Kubota
-https://combatreg.com/fighters/search?query=Yasutaka+Ishigami
-https://combatreg.com/fighters/search?query=Naoto+Ayuta
-https://combatreg.com/fighters/search?query=Kosuke+Rambo
+https://combatreg.com/fighters/Chikara-Shimabukuro:310F3A5668B05EDB
+https://combatreg.com/fighters/Yoichiro-Sato:D5A6AC6905E8C7A0
+https://combatreg.com/fighters/Taito-Kubota:A6A0204943D3F46B
