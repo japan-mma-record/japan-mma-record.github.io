@@ -484,6 +484,9 @@ def time(t):
         return f'{int(m.group(1))}:00'
     if re.fullmatch(r'\d{1,2}:\d\d', s):
         return s
+    m = re.fullmatch(r'(\d{1,2})\.(\d\d)', s)            # 「3.03」→「3:03」（区切りがピリオドになっているもの）
+    if m and int(m.group(2)) < 60:
+        return f'{int(m.group(1))}:{m.group(2)}'
     return str(t or '').strip()
 
 
