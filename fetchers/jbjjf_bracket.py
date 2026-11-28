@@ -12,7 +12,8 @@
 タブの名前（「１マット」など）と gid は .../pubhtml のページの items.push({name: ..., gid: ...}) にある。
 注意: 3人の区分は総当たり・敗者復活で表の形が違うので使わない。「欠場」「棄権」「失格」の付いた試合も使わない。
 決勝の勝者は表彰台（data/podium.tsv）と照らし合わせてから入れる（2,860件中2件で食い違いがあった）。
-ジュブナイル（16・17歳）の区分は、これまで表彰台も試合も載せていない。
+2026年11月から、キッズ・ジュブナイル（未成年）の区分も表彰台と試合を載せる。
+所属は teams() で読める（選手名の次の行）。試合ごとの所属として data/gyms.tsv に入れる。
 """
 import csv, re, sys
 
@@ -120,6 +121,31 @@ def parse(path):
             for no, a, b, w in rb:
                 out.append({'division': div, 'weight': weight_label(wt), 'n': n, 'match_no': no,
                             'f1': jname(a), 'f2': jname(b), 'winner': w or '', 'round': lab})
+    return out
+
+
+def teams(path):
+    """1回戦の選手名の次の行（0 列目）にある所属を読む。{(区分名, 選手名): 所属}"""
+    rows = list(csv.reader(open(path, encoding='utf-8')))
+    heads = [i for i, r in enumerate(rows) if len(r) > 5 and re.fullmatch(r'\d+\s*人', r[5].strip() or 'x') and r[0].strip()]
+    out = {}
+    for hi, h in enumerate(heads):
+        end = heads[hi + 1] if hi + 1 < len(heads) else len(rows)
+        div = rows[h][0].strip()
+        start = h + 1
+        for i in range(h + 1, end):
+            if rows[i] and rows[i][0].strip() in ('優勝', '準優勝', '3位'):
+                start = i + 1
+        i = start
+        while i < end:
+            nm = rows[i][0].strip() if rows[i] else ''
+            if nm:
+                tm = rows[i + 1][0].strip() if i + 1 < end and rows[i + 1] else ''
+                if tm and not re.search('欠場|棄権|失格', nm + tm):
+                    out[(div, jname(nm))] = tm
+                i += 2
+                continue
+            i += 1
     return out
 
 
