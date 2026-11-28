@@ -160,7 +160,7 @@ def post_bluesky(text):
 def buffer_call(query, variables=None):
     req = urllib.request.Request('https://api.buffer.com', method='POST',
                                  data=json.dumps({'query': query, 'variables': variables or {}}).encode(),
-                                 headers={'Authorization': 'Bearer ' + os.environ['BUFFER_API_KEY'], 'Content-Type': 'application/json'})
+                                 headers={'Authorization': 'Bearer ' + os.environ['BUFFER_API_KEY'].strip(), 'Content-Type': 'application/json'})
     with urllib.request.urlopen(req, timeout=60) as r:
         out = json.load(r)
     if out.get('errors'):
@@ -206,6 +206,8 @@ def main():
         print('X の鍵が設定されていないので、X には投稿していない')
     failed = False
     if os.environ.get('BUFFER_API_KEY'):
+        k = os.environ['BUFFER_API_KEY'].strip()
+        print(f'Buffer の鍵: {len(k)}文字' + ('（伏せ字の「•」が入っている。コピーし直しが必要）' if '•' in k or '*' in k else ''))
         bt = build_text(day, long_post, True)   # Buffer 経由なら URL を付けても無料
         try:
             print('Buffer 経由で X に投稿を入れました:', post_buffer(bt))
