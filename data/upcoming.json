@@ -149,6 +149,39 @@
   }
  },
  {
+  "d": "2026-12-03",
+  "n": "Japanese National IBJJF Jiu-Jitsu Championship 2026",
+  "v": "Aichi-ken Budokan Nagoya",
+  "p": "IBJJF",
+  "c": [],
+  "src": [
+   "https://ibjjf.com/events/3164"
+  ],
+  "g": "bjj"
+ },
+ {
+  "d": "2026-12-04",
+  "n": "Japanese National IBJJF Jiu-Jitsu No-Gi Championship 2026",
+  "v": "Aichi-ken Budokan Nagoya",
+  "p": "IBJJF",
+  "c": [],
+  "src": [
+   "https://ibjjf.com/events/3165"
+  ],
+  "g": "bjj"
+ },
+ {
+  "d": "2026-12-04",
+  "n": "Master International Jiu-Jitsu Championship - Asia 2026",
+  "v": "Aichi-ken Budokan Nagoya",
+  "p": "IBJJF",
+  "c": [],
+  "src": [
+   "https://ibjjf.com/events/3166"
+  ],
+  "g": "bjj"
+ },
+ {
   "d": "2026-12-06",
   "n": "GRACHAN 87",
   "v": "大田区産業プラザPiO（東京・大田区）",
@@ -240,6 +273,17 @@
    "f2": "藏ノ介",
    "l": "第15試合 フェザー級王座決定戦 5分3R"
   }
+ },
+ {
+  "d": "2026-12-06",
+  "n": "Asian Kids IBJJF Jiu-Jitsu Championship 2026",
+  "v": "Aichi-ken Budokan Nagoya",
+  "p": "IBJJF",
+  "c": [],
+  "src": [
+   "https://ibjjf.com/events/3167"
+  ],
+  "g": "bjj"
  },
  {
   "d": "2026-12-06",
