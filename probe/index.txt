@@ -1,4 +1,1 @@
-1 200 67798 https://efight.jp/?s=%E5%85%A8%E8%A9%A6%E5%90%88&tag=deep
-2 200 67978 https://efight.jp/?s=%E5%85%A8%E8%A9%A6%E5%90%88&tag=deep&paged=3
-3 200 68220 https://efight.jp/page/3?s=%E5%85%A8%E8%A9%A6%E5%90%88
-4 200 68461 https://efight.jp/?cat=4&s=+&tag=deep
+1 200 178357 https://www.boutreview.com/3/topics/item_139649.html
