@@ -1,4 +1,5 @@
-https://battle-news.com/wp-json/wp/v2/categories?per_page=100&_fields=id,slug,name,count
-https://mmaplanet.jp/wp-json/wp/v2/categories?per_page=100&_fields=id,slug,name,count
-https://www.deep2001.com/wp-json/wp/v2/posts?per_page=3&_fields=date,link,content
-https://fighters-spirits.com/wp-json/wp/v2/categories?per_page=100&_fields=id,slug,name,count
+https://www.deep2001.com/wp-json/wp/v2/categories?per_page=100&_fields=id,slug,name,count
+https://battle-news.com/wp-sitemap.xml
+https://battle-news.com/sitemap.xml
+https://battle-news.com/?s=GLADIATOR
+https://battle-news.com/?cat=1
