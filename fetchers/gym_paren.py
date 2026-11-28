@@ -33,7 +33,7 @@ BAD = re.compile(r'\d+(\.\d+)?\s*(kg|ｋｇ|Kg|KG|lb|cm|ｃｍ)|\d+\s*(勝|敗|�
 
 TITLE = re.compile(r'推薦|連覇|冠王|冠$|制覇|王者|挑戦者|チャンピオン|優勝|代表|ランカー|ランキング|位$|招待|甲子園|世界一|日本一|^元|^現|MVP|賞$|デビュー|参戦|出場|復帰|引退|ラストファイト|キング・オブ|クイーン・オブ|級|外敵|軍$')
 
-POS = set('アウトサイダー アウトサイダー軍 右 左 奥 手前 中央 上 下 写真 写真右 写真左 右から 左から'.split())
+POS = set('無 なし 不明 アウトサイダー アウトサイダー軍 右 左 奥 手前 中央 上 下 写真 写真右 写真左 右から 左から'.split())
 STYLES = set('グレコローマン・レスリング グレコローマンレスリング フリースタイル・レスリング フリースタイルレスリング 柔術 ブラジリアン柔術 総合格闘技 カポエイラ ルタ・リブレ ルタリーブリ 空手 空手道 キックボクシング キック ボクシング レスリング アマレス 柔道 サンボ 相撲 プロレス ムエタイ 極真空手 テコンドー MMA アマMMA 格闘技 XXX ??? ？？？'.split())
 
 def clean_gym(g):
@@ -140,6 +140,7 @@ for e in ev:
 
 
 DIST = {}
+BEST = {}
 
 
 def events_for(url):
@@ -200,6 +201,7 @@ def run(dirs):
                                 got[nm] = raw
                         if len(got) < 2:
                             continue
+                        BEST[url] = min(BEST.get(url, 99), DIST.get((url, eid), 0))
                         g2 = {}
                         for nm, raw in got.items():
                             cs = {clean_gym(g) for g in raw}
@@ -207,6 +209,8 @@ def run(dirs):
                             if len(cs) == 1 and all(clean_gym(g) for g in raw) or (len(cs) == 1):
                                 g2[nm] = cs.pop()
                         got = g2
+                    if got:
+                        BEST[url] = min(BEST.get(url, 99), DIST.get((url, eid), 0))
                     for nm, orig in ((n1, b[2]), (n2, b[4])):
                         g = got.get(nm)
                         if g is None:
@@ -221,11 +225,8 @@ def run(dirs):
                             continue
                         res.append((eid, no, orig, g, url))
     # 1つのページが日付の違う複数の大会の試合に当たったときは、日付がいちばん近い大会の試合だけにする
-    best = {}
-    for r in res:
-        dd = DIST.get((r[4], r[0]), 0)
-        best[r[4]] = min(best.get(r[4], 99), dd)
-    res = [r for r in res if DIST.get((r[4], r[0]), 0) == best[r[4]]]
+    # （すでに所属が入っている試合も含めて、いちばん近い大会を決める）
+    res = [r for r in res if DIST.get((r[4], r[0]), 0) == BEST.get(r[4], 0)]
     seen = set()
     for r in res:
         k = r[:3]
