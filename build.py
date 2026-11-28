@@ -868,9 +868,20 @@ def main():
         with open(os.path.join(OUT, 'pd', f'{k}.json'), 'w', encoding='utf-8') as fp:
             json.dump(PODIUM[k], fp, ensure_ascii=False, separators=(',', ':'))
     os.makedirs(os.path.join(OUT, 'pf'), exist_ok=True)
+    # 同じ道場の選手（いちばん新しい入賞の所属が同じ選手。入賞の多い順に8人）
+    tkey = lambda t: re.sub(r'[\s・･　\-_.,]', '', unicodedata.normalize('NFKC', t or '')).lower()
+    cur_team = {fid: tkey(v[0][4]) for fid, v in PF.items() if v and v[0][4]}
+    by_team = collections.defaultdict(list)
+    for fid, t in cur_team.items():
+        by_team[t].append(fid)
     for fid, v in PF.items():
+        same = []
+        t = cur_team.get(fid)
+        if t:
+            ids = sorted((x for x in by_team[t] if x != fid), key=lambda x: (-len(PF[x]), x))[:8]
+            same = [[x, fout[x][0], sum(1 for r in PF[x] if r[3] == '1'), len(PF[x])] for x in ids]
         with open(os.path.join(OUT, 'pf', f'{fid}.json'), 'w', encoding='utf-8') as fp:
-            json.dump(v, fp, ensure_ascii=False, separators=(',', ':'))
+            json.dump({'r': v, 's': same}, fp, ensure_ascii=False, separators=(',', ':'))
     write_json('meta.json', meta)
     write_json('upcoming.json', upcoming)
 

@@ -286,10 +286,38 @@ function vFighter(id){
     ${nonly}${hx}<div id="fpod"></div>${(hx||f[3])&&!tbox&&list.length?'<h2 class="sec">全試合</h2>':''}${tbox}${kickTbl(id)}<div class="tbl"${list.length?'':' hidden'}><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
 }
 // 表彰台（柔術などの入賞）を選手ページに出す
+// 柔術などの入賞を選手ページに出す（入賞のまとめ・帯の変遷・年別・出場カテゴリ・同じ道場の選手・入賞歴）
+const BELTJ=[['白','white'],['青','blue'],['紫','purple'],['茶','brown'],['黒','black']];
+const WTJ=[['ルースター','rooster'],['ライトフェザー','light ?feather'],['フェザー','feather'],['ライト','light'],['ミドル','middle'],['ミディアムヘビー','medium ?heavy'],['スーパーヘビー','super ?heavy'],['ウルトラヘビー','ultra ?heavy'],['ヘビー','heavy'],['オープンクラス','open|absolute|オープン|無差別|アブソルート']];
+function beltOf(d){ d=String(d||''); for(const [j,e] of BELTJ){ if(d.includes(j+'帯')||new RegExp('\\b'+e+'\\b','i').test(d)) return j; } return ''; }
+function wtOf(d){ d=String(d||''); for(const [j,e] of WTJ){ if(d.includes(j)&&!(j==='ライト'&&/ライトフェザー/.test(d))&&!(j==='ヘビー'&&/(ミディアム|スーパー|ウルトラ)ヘビー/.test(d))) return j+(j==='オープンクラス'?'':'級'); if(new RegExp('\\b('+e+')\\b','i').test(d)&&!(j==='feather'&&/light ?feather/i.test(d))) return j+(j==='オープンクラス'?'':'級'); } return ''; }
 function loadPF(id){ const f=D.fighters[id]; if(!f||!f[3]) return;
-  fetch('pf/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(ps=>{ const b=document.getElementById('fpod'); if(!ps||!b||location.hash!=='#f-'+id) return;
+  fetch('pf/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(J=>{ const b=document.getElementById('fpod'); if(!J||!b||location.hash!=='#f-'+id) return;
+    const ps=Array.isArray(J)?J:(J.r||[]), same=Array.isArray(J)?[]:(J.s||[]);
     const PL={'1':'優勝','2':'準優勝','3':'3位'}; const en=Object.fromEntries(D.events.map(e=>[e[0],e]));
-    b.innerHTML=`<h2 class="sec">入賞歴（${ps.length}）</h2><div class="tbl"><table><thead><tr><th>順位</th><th>階級</th><th>大会</th><th class="num">日付</th><th>所属</th></tr></thead><tbody>${ps.map(x=>`<tr><td>${PL[x[3]]||esc(x[3])}</td><td>${esc(x[2])}</td><td>${en[x[1]]?`<a class="u" href="#e-${esc(x[1])}">${esc(evn(en[x[1]]))}</a>`:''}</td><td class="num">${esc(x[0].replace(/-/g,'.'))}</td><td>${esc(x[4]||'')}</td></tr>`).join('')}</tbody></table></div>`; }); }
+    const n1=ps.filter(x=>x[3]==='1').length, n2=ps.filter(x=>x[3]==='2').length, n3=ps.filter(x=>x[3]==='3').length;
+    const evs=new Set(ps.map(x=>x[1])).size, ys=ps.map(x=>x[0].slice(0,4)).filter(Boolean).sort(), y0=ys[0], y1=ys[ys.length-1];
+    const team=(ps.find(x=>x[4])||[])[4]||'', belt=(ps.map(x=>beltOf(x[2])).find(Boolean))||'';
+    const orgs=[...new Set(ps.map(x=>en[x[1]]?pl(en[x[1]][2]):'').filter(Boolean))];
+    const cnt=a=>{ const m=new Map(); a.filter(Boolean).forEach(x=>m.set(x,(m.get(x)||0)+1)); return [...m].sort((a,b)=>b[1]-a[1]); };
+    const bc=cnt(ps.map(x=>beltOf(x[2]))), wc=cnt(ps.map(x=>wtOf(x[2]))), dc=cnt(ps.map(x=>{ const d=String(x[2]||''); return /マスター|master/i.test(d)?'マスター':/アダルト|adult/i.test(d)?'アダルト':/ジュベニ|juvenile|ティーン|teen/i.test(d)?'ジュブナイル・ティーン':/キッズ|kids|ジュニア|ピーウィー|pee/i.test(d)?'キッズ':''; }));
+    // 帯の変遷（出場した区分の帯から。その帯で最初に入賞した年）
+    const bt=[]; ps.slice().reverse().forEach(x=>{ const bb=beltOf(x[2]); if(bb&&!bt.find(t=>t[0]===bb)) bt.push([bb,x[0].slice(0,4)]); }); bt.sort((a,b)=>BELTJ.findIndex(t=>t[0]===a[0])-BELTJ.findIndex(t=>t[0]===b[0]));
+    const byY=new Map(); ps.forEach(x=>{ const y=x[0].slice(0,4); const o=byY.get(y)||[0,0,0]; if(x[3]>='1'&&x[3]<='3') o[+x[3]-1]++; byY.set(y,o); });
+    const yl=[...byY].sort((a,b)=>a[0].localeCompare(b[0])), ymax=Math.max(1,...yl.map(([,o])=>o[0]+o[1]+o[2]));
+    const last=ps[0]; const le=last&&en[last[1]];
+    const nm=f[0]||f[1];
+    const desc=`${esc(nm)}${team?`（${esc(team)}所属）`:''}は、${y0===y1?`${y0}年に`:`${y0}年から${y1}年にかけて`}${esc(orgs.join('・')||'柔術')}の大会${evs}大会で入賞した選手。通算は優勝${n1}回・準優勝${n2}回・3位${n3}回の入賞${ps.length}回${wc.length||bc.length?`。主な出場区分は${esc([bc[0]&&bc[0][0]+'帯',dc[0]&&dc[0][0],wc[0]&&wc[0][0]].filter(Boolean).join('・'))}`:''}${le?`。直近では${esc(last[0].replace(/-/g,'.'))}の「${esc(evn(le))}」で${PL[last[3]]||esc(last[3])}`:''}。`;
+    const kp=(k,v)=>`<div><p class="k">${k}</p><p class="v">${v}</p></div>`;
+    const bar=o=>{ const t=o[0]+o[1]+o[2]; return `<span style="display:inline-flex;height:10px;width:${Math.max(4,t/ymax*100)}%;min-width:4px;border-radius:2px;overflow:hidden">${o.map((c,i)=>c?`<span style="flex:${c};background:${['#d4a017','#9aa4ad','#b0703a'][i]}"></span>`:'').join('')}</span>`; };
+    b.innerHTML=`<h2 class="sec">柔術の入賞のまとめ</h2>
+      <div class="kpis" style="margin-bottom:10px">${kp('優勝',n1)}${kp('準優勝',n2)}${kp('3位',n3)}${kp('大会',evs)}</div>
+      <p class="sub" style="font-size:14px;line-height:1.8">${desc}${belt?`　現在の帯：<b>${esc(belt)}帯</b>`:''}</p>
+      ${bt.length>1?`<h3 class="sec" style="font-size:15px">帯の変遷</h3><p class="sub" style="font-size:14px">${bt.map(([b,y])=>`${esc(b)}帯 ${y}年`).join('　→　')}</p><p class="sub" style="font-size:12px;color:var(--fg3)">※出場した区分の帯から見たもので、実際に帯が上がった日ではありません。</p>`:''}
+      ${yl.length>1?`<h3 class="sec" style="font-size:15px">年別の入賞</h3><div class="tbl"><table><tbody>${yl.map(([y,o])=>`<tr><td class="num" style="width:4em">${y}</td><td>${bar(o)}</td><td class="num" style="width:9em">優勝${o[0]}・準${o[1]}・3位${o[2]}</td></tr>`).join('')}</tbody></table></div>`:''}
+      ${bc.length||wc.length?`<h3 class="sec" style="font-size:15px">出場した区分</h3><p class="sub" style="font-size:14px">${bc.length?'帯：'+bc.map(([k,v])=>`${esc(k)}帯 ${v}`).join('・'):''}${wc.length?'　階級：'+wc.map(([k,v])=>`${esc(k)} ${v}`).join('・'):''}</p>`:''}
+      ${same.length?`<h3 class="sec" style="font-size:15px">同じ道場の選手${team?`（${esc(team)}）`:''}</h3><div class="pgrid">${same.filter(x=>D.fighters[x[0]]).map(x=>`<a href="#f-${esc(x[0])}"><b>${esc(x[1])}</b><span>優勝${x[2]}回・入賞${x[3]}回</span></a>`).join('')}</div>`:''}
+      <h2 class="sec">入賞歴（${ps.length}）</h2><div class="tbl"><table><thead><tr><th>順位</th><th>階級</th><th>大会</th><th class="num">日付</th><th>所属</th></tr></thead><tbody>${ps.map(x=>`<tr><td>${PL[x[3]]||esc(x[3])}</td><td>${esc(x[2])}</td><td>${en[x[1]]?`<a class="u" href="#e-${esc(x[1])}">${esc(evn(en[x[1]]))}</a>`:''}</td><td class="num">${esc(x[0].replace(/-/g,'.'))}</td><td>${esc(x[4]||'')}</td></tr>`).join('')}</tbody></table></div>`; }); }
 function enhanceFighter(id){
   fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
     if(!w || location.hash!=='#f-'+id) return;
