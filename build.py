@@ -634,12 +634,23 @@ def main():
     def gym_of(eid, no, name):
         k = re.sub(r'\s', '', name or '')
         return GYM.get((eid, str(no or '').strip(), k)) or GYM.get((eid, '', k)) or ''
+    # 選手ページへのリンクを付けない選手（data/nolink.tsv：name, scope[bjj＝柔術・グラップリングの大会だけ／all], note）
+    NOLINK = {}
+    for r in read_tsv(os.path.join(DATA, 'nolink.tsv')):
+        if r.get('name'):
+            NOLINK[re.sub(r'\s', '', r['name'])] = (r.get('scope') or 'all').strip()
+    def nolink(e, name):
+        sc = NOLINK.get(re.sub(r'\s', '', name or ''))
+        return sc == 'all' or (sc == 'bjj' and e.get('promotion') in bjj_set)
     ngym = 0
     bout_out = {}
     used = set()
     for e in ev:
         rows = []
         for b in bouts[e['event_id']]:
+            for k in (1, 2):
+                if nolink(e, b.get(f'fighter{k}')):
+                    b[f'fighter{k}_id'] = ''
             g1, g2 = gym_of(e['event_id'], b.get('match_no'), b['fighter1']), gym_of(e['event_id'], b.get('match_no'), b['fighter2'])
             ngym += bool(g1) + bool(g2)
             b['gym1'], b['gym2'] = g1, g2
