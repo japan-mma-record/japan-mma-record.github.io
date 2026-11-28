@@ -12,7 +12,7 @@ Buffer の「個人の鍵」は最長1年で切れる。そこで Buffer の OAu
 最初の1回だけ：サイトの buffer-oauth.html で「Buffer に許可」を押すと、許可のしるし（コード）を公開鍵で暗号化した文字列が出る。
 それを data/buffer_grant.enc に置けば、次の実行でここが更新の鍵に交換する。
 """
-import base64, json, os, subprocess, sys, time, urllib.parse, urllib.request
+import base64, json, os, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONF = os.path.join(HERE, 'data', 'buffer_oauth.json')
@@ -53,8 +53,12 @@ def decrypt(text):
 def _post(params):
     req = urllib.request.Request(TOKEN_URL, data=urllib.parse.urlencode(params).encode(), method='POST',
                                  headers={'Content-Type': 'application/x-www-form-urlencoded'})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode('utf-8', 'replace')[:300]
+        raise RuntimeError(f'HTTP {e.code}: {body}')
 
 
 def _save_and_push(path, content, msg):
