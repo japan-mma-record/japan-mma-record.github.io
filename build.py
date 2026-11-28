@@ -703,6 +703,9 @@ def main():
                 fid = b.get(f'fighter{k}_id')
                 if fid and fid in fout and fid not in grap[norm(fout[fid][0]).lower()]:
                     grap[norm(fout[fid][0]).lower()].append(fid)
+    # アルファベット表記の入賞者を日本語名の選手につなぐ表（data/en_links.tsv、fetchers/en_links.py で作る。フルネームと所属が同じものだけ）
+    ENJA = {(r['promotion'], re.sub(r'\s+', ' ', r['name_en']).strip().lower(), r['team'].strip()): r['name_ja']
+            for r in read_tsv(os.path.join(DATA, 'en_links.tsv')) if r.get('name_ja')}
     PF = collections.defaultdict(list)
     for k, ps in PODIUM.items():
         if k not in ev_ids:
@@ -714,6 +717,9 @@ def main():
                     here.setdefault(norm(b[f'fighter{n}']).lower(), b[f'fighter{n}_id'])
         for p in ps:
             nm = (p[2] or '').strip()
+            ja = ENJA.get((ev_by_id[k].get('promotion'), re.sub(r'\s+', ' ', nm).lower(), (p[3] or '').strip())) if k in ev_by_id else None
+            if ja:
+                nm = ja
             key = norm(nm).lower()
             if not key:
                 continue
