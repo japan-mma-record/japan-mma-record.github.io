@@ -22,7 +22,7 @@ jobs:
           X_INCLUDE_URL: ${{ vars.X_INCLUDE_URL }}
           X_LONG_POST: ${{ vars.X_LONG_POST }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          BUFFER_CHANNEL_ID: '6b0a5a4f8541f09ecbcd843a'   # Buffer につないだ X（日本格闘技戦績録）のチャンネル番号（秘密ではない）
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: python3 xpost.py
