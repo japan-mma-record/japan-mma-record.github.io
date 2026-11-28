@@ -33,16 +33,16 @@
  ],
  "bjj_promotions": [
   "jbjjf",
-  "asjjf"
+  "asjjf",
+  "ibjjf",
+  "sjjjf"
  ],
  "standup_promotions": [
   "k1",
   "k1_max",
   "shoot_boxing"
  ],
- "hidden_promotions": [
-  "ibjjf"
- ],
+ "hidden_promotions": [],
  "amateur_promotions": [
   "shooto_ama",
   "pancrase_ama"

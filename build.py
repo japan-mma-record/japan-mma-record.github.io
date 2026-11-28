@@ -12,7 +12,7 @@ Pythonの標準機能だけで動きます（追加のインストールは不�
   data/promotions.tsv … 団体の表示名。
   data/site.json … サイトの住所など。
 """
-import csv, json, os, re, shutil, html, datetime, collections, urllib.parse, unicodedata, hashlib
+import csv, json, os, re, shutil, html, datetime, collections, urllib.parse, unicodedata, hashlib, difflib
 import methods
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -391,6 +391,65 @@ def load():
         if u and u not in (e.get('sources') or '').split():
             e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
         PODIUM[k].append([r.get('division', ''), r.get('place', ''), r.get('name_ja') or r.get('name_en', ''), r.get('team', ''), (r.get('entrants') or '').strip()])
+    # 柔術の入賞記録（data/matchlog/：BJJ MATCH LOG の全大会。サイトの管理者の了解済みで、出典には各大会の公式ページを書く）
+    # 同じ団体・同じ日の大会がすでにあればそこに足し（同じ区分・同じ順位・同じ名前の入賞は重ねない）、なければ新しい大会にする。
+    # 選手番号（athlete_id）が同じ入賞は同じ選手としてまとめる（PAID）。
+    global PAID
+    PAID = {}
+    mt = read_tsv(os.path.join(DATA, 'matchlog', 'tournaments.tsv'))
+    mp = collections.defaultdict(list)
+    for r in read_tsv(os.path.join(DATA, 'matchlog', 'podium.tsv')):
+        mp[r['tid']].append(r)
+    def fedp(f):
+        f = (f or '').upper()
+        for k in ('SJJJF', 'IBJJF', 'ASJJF', 'JBJJF'):
+            if k in f:
+                return k.lower()
+        return re.sub(r'[^a-z0-9]', '', f.lower()) or 'jbjjf'
+    dn = lambda x: re.sub(r'[\s・･　()（）/]', '', unicodedata.normalize('NFKC', x or '')).lower()
+    byday = collections.defaultdict(list)
+    for k, e in events.items():
+        byday[(e.get('promotion'), e.get('date'))].append(k)
+    nml = 0
+    for t in mt:
+        rows = mp.get(t['tid']) or []
+        if not rows or not re.match(r'\d{4}-\d{2}-\d{2}$', t.get('date') or ''):
+            continue
+        pr, d = fedp(t.get('federation')), t['date']
+        nm = methods.event_name(re.sub(r'^【公式結果】\s*', '', t.get('name') or ''))
+        off = (t.get('official_url') or '').strip()
+        cands = [k for k in byday.get((pr, d), []) if k in events]
+        k = next((c for c in cands if off and off in (events[c].get('sources') or '').split()), None)
+        if not k and cands:
+            sc = sorted(((difflib.SequenceMatcher(None, dn(events[c]['name']), dn(nm)).ratio(), c) for c in cands), reverse=True)
+            if len(cands) == 1 or sc[0][0] >= 0.5:
+                k = sc[0][1]
+        if not k:
+            k = 'm' + t['tid']
+            events[k] = {'event_id': k, 'promotion': pr, 'date': d, 'name': nm, 'venue': '', 'sources': ''}
+            byday[(pr, d)].append(k)
+        e = events[k]
+        if off.startswith('http') and off not in (e.get('sources') or '').split():
+            e['sources'] = ((e.get('sources') or '') + ' ' + off).strip()
+        have = {}
+        for i, p in enumerate(PODIUM[k]):
+            have.setdefault((str(p[1]), norm(p[2]).lower()), []).append(i)
+        for r in rows:
+            name = alias(r.get('name') or '')
+            if not name:
+                continue
+            hit = [i for i in have.get((str(r.get('place')), norm(name).lower()), [])
+                   if dn(PODIUM[k][i][0]) == dn(r.get('division')) or difflib.SequenceMatcher(None, dn(PODIUM[k][i][0]), dn(r.get('division'))).ratio() >= 0.8]
+            if hit:
+                if r.get('athlete_id'):
+                    PAID[(k, hit[0])] = r['athlete_id']
+                continue
+            PODIUM[k].append([r.get('division', ''), r.get('place', ''), name, r.get('team', ''), ''])
+            nml += 1
+            if r.get('athlete_id'):
+                PAID[(k, len(PODIUM[k]) - 1)] = r['athlete_id']
+    if mt:
+        print(f'柔術の入賞記録（BJJ MATCH LOG）から足した入賞: {nml:,}件')
     # 公開を保留している団体（site.json の hidden_promotions）は載せない
     hide = set(site.get('hidden_promotions') or [])
     for k in [k for k, e in events.items() if e.get('promotion') in hide]:
@@ -399,6 +458,7 @@ def load():
 
 
 PODIUM = {}
+PAID = {}
 MERGED = {}   # 消えた選手番号 → まとめ先の選手番号（Wikipediaの記録の付け替えに使う）
 
 
@@ -706,6 +766,12 @@ def main():
     # アルファベット表記の入賞者を日本語名の選手につなぐ表（data/en_links.tsv、fetchers/en_links.py で作る。フルネームと所属が同じものだけ）
     ENJA = {(r['promotion'], re.sub(r'\s+', ' ', r['name_en']).strip().lower(), r['team'].strip()): r['name_ja']
             for r in read_tsv(os.path.join(DATA, 'en_links.tsv')) if r.get('name_ja')}
+    # 同じ選手番号（BJJ MATCH LOG）の入賞は、いちばん多く使われた名前（日本語の名前を優先）にそろえてつなぐ
+    acnt = collections.defaultdict(collections.Counter)
+    for (k, i), aid in PAID.items():
+        if k in PODIUM and i < len(PODIUM[k]):
+            acnt[aid][PODIUM[k][i][2].strip()] += 1
+    ACAN = {aid: max(c.items(), key=lambda x: (bool(re.search(r'[ぁ-んァ-ヶ一-龥]', x[0])), x[1]))[0] for aid, c in acnt.items()}
     PF = collections.defaultdict(list)
     for k, ps in PODIUM.items():
         if k not in ev_ids:
@@ -715,8 +781,10 @@ def main():
             for n in ('1', '2'):
                 if b.get(f'fighter{n}_id') and b.get(f'fighter{n}_id') in fout:
                     here.setdefault(norm(b[f'fighter{n}']).lower(), b[f'fighter{n}_id'])
-        for p in ps:
+        for pi, p in enumerate(ps):
             nm = (p[2] or '').strip()
+            if (k, pi) in PAID:
+                nm = ACAN.get(PAID[(k, pi)], nm)
             ja = ENJA.get((ev_by_id[k].get('promotion'), re.sub(r'\s+', ' ', nm).lower(), (p[3] or '').strip())) if k in ev_by_id else None
             if ja:
                 nm = ja
