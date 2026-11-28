@@ -3,7 +3,9 @@
 公開中のサイトのデータ（data/upcoming.json・events.json・bouts.json・meta.json）を読んで投稿文を作り、
 X API（POST /2/tweets）で1件投稿する。
 
-GitHub の Secrets に次の4つが入っているときだけ投稿する（入っていなければ投稿文を表示するだけ）:
+【無料】GitHub の Secrets に BUFFER_API_KEY（Buffer の無料プランの API キー。Buffer に X のアカウントをつないでおく）があれば、
+Buffer 経由で X に投稿する（X の API 料金はかからない）。任意で BUFFER_CHANNEL_ID。
+【有料・使わない】GitHub の Secrets に次の4つが入っているときだけ X API で直接投稿する（入っていなければ投稿文を表示するだけ）:
   X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
 任意の設定（GitHub の Variables）:
   X_INCLUDE_URL = 1  … 最後にサイトのURLを付ける（URL付きの投稿は X API の料金が高い）
@@ -155,6 +157,38 @@ def post_bluesky(text):
     return call('com.atproto.repo.createRecord', {'repo': ses['did'], 'collection': 'app.bsky.feed.post', 'record': rec}, ses['accessJwt'])
 
 
+def buffer_call(query, variables=None):
+    req = urllib.request.Request('https://api.buffer.com', method='POST',
+                                 data=json.dumps({'query': query, 'variables': variables or {}}).encode(),
+                                 headers={'Authorization': 'Bearer ' + os.environ['BUFFER_API_KEY'], 'Content-Type': 'application/json'})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        out = json.load(r)
+    if out.get('errors'):
+        raise RuntimeError(json.dumps(out['errors'], ensure_ascii=False)[:500])
+    return out['data']
+
+
+def buffer_x_channel():
+    """Buffer につないだ X のチャンネルの番号。BUFFER_CHANNEL_ID があればそれを使い、なければ探す"""
+    if os.environ.get('BUFFER_CHANNEL_ID'):
+        return os.environ['BUFFER_CHANNEL_ID']
+    orgs = buffer_call('query { account { organizations { id } } }')['account']['organizations']
+    for o in orgs:
+        chs = buffer_call('query($id: OrganizationId!) { channels(input: { organizationId: $id }) { id service } }', {'id': o['id']})['channels']
+        for c in chs:
+            if str(c.get('service', '')).lower() in ('twitter', 'x'):
+                return c['id']
+    raise RuntimeError('Buffer に X のチャンネルが見つからない')
+
+
+def post_buffer(text):
+    """Buffer（無料プランでも API が使える）経由で X に投稿する。X の API 料金はかからない"""
+    due = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=2)).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+    q = ('mutation($text: String!, $ch: ChannelId!, $due: DateTime!) { createPost(input: { text: $text, channelId: $ch, '
+         'schedulingType: automatic, mode: customScheduled, dueAt: $due }) { __typename } }')
+    return buffer_call(q, {'text': text, 'ch': buffer_x_channel(), 'due': due})['createPost']
+
+
 def main():
     day = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.datetime.now(JST).date()
     long_post = os.environ.get('X_LONG_POST', '0') == '1'
@@ -170,12 +204,25 @@ def main():
         print('投稿しました:', r.get('data', {}).get('id'))
     else:
         print('X の鍵が設定されていないので、X には投稿していない')
+    failed = False
+    if os.environ.get('BUFFER_API_KEY'):
+        bt = build_text(day, long_post, True)   # Buffer 経由なら URL を付けても無料
+        try:
+            print('Buffer 経由で X に投稿を入れました:', post_buffer(bt))
+        except Exception as ex:
+            print('Buffer 経由の X 投稿に失敗:', ex); failed = True
+    else:
+        print('Buffer の鍵がないので、Buffer 経由の X 投稿はしていない')
     if os.environ.get('BLUESKY_HANDLE') and os.environ.get('BLUESKY_APP_PASSWORD'):
         bt = build_text(day, False, True, limit=300, wfun=len)   # Bluesky は300文字まで。URLを付けても無料
-        r = post_bluesky(bt)
-        print('Bluesky に投稿しました:', r.get('uri'))
+        try:
+            print('Bluesky に投稿しました:', post_bluesky(bt).get('uri'))
+        except Exception as ex:
+            print('Bluesky への投稿に失敗:', ex); failed = True
     else:
         print('Bluesky の設定がないので、Bluesky には投稿していない')
+    if failed:
+        sys.exit(1)
 
 
 if __name__ == '__main__':
