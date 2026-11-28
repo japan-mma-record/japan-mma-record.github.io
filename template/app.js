@@ -23,7 +23,7 @@ function winnerLine(b){
 function loadPodium(k){ if(!(D.meta.pd||[]).includes(k)) return;
   fetch('pd/'+encodeURIComponent(k)+'.json').then(r=>r.ok?r.json():null).then(ps=>{ const b=document.getElementById('pdbox'); if(!ps||!b) return;
     const PL={'1':'優勝','2':'準優勝','3':'3位'};
-    b.innerHTML=`<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>${ps.map(p=>`<tr><td>${esc(p[0])}</td><td>${PL[p[1]]||esc(p[1])}</td><td>${esc(p[2])}</td><td>${esc(p[3])}</td></tr>`).join('')}</tbody></table></div>`; }); }
+    b.innerHTML=`<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>${ps.map(p=>`<tr><td>${esc(p[0])}</td><td>${PL[p[1]]||esc(p[1])}</td><td>${flink(p[5],p[2])}</td><td>${esc(p[3])}</td></tr>`).join('')}</tbody></table></div>`; }); }
 function teamTbl(k){ const ts=(D.meta.teams||{})[k]; if(!ts||!ts.length) return '';
   return `<h2 class="sec">出場チーム</h2><div class="tbl"><table><thead><tr><th>チーム</th><th>メンバー</th><th>成績</th></tr></thead><tbody>${ts.map(t=>`<tr><td>${esc(t[0])}</td><td>${esc(t[1])}</td><td>${esc(t[2])}</td></tr>`).join('')}</tbody></table></div>`; }
 function mainCard(e){ if((D.meta.bjj||[]).includes(e[2])||((D.meta.teams||{})[e[0]]||[]).length) return '';
@@ -140,7 +140,7 @@ function bjjView(k){
     const PL={'1':'優勝','2':'準優勝','3':'3位'};
     const card=d=>{ const b=BELTS.find(x=>d.cat.includes(x+'帯'))||'その他';
       const top=d.pd.filter(p=>p[1]==='1').map(p=>p[2]).join('・');
-      const pod=d.pd.length?`<ol class="pod">${d.pd.map(p=>`<li><span class="pl p${esc(p[1])}">${PL[p[1]]||esc(p[1])}</span>${esc(p[2])}<span class="tm">${esc(p[3]||'')}</span></li>`).join('')}</ol>`:'';
+      const pod=d.pd.length?`<ol class="pod">${d.pd.map(p=>`<li><span class="pl p${esc(p[1])}">${PL[p[1]]||esc(p[1])}</span>${flink(p[5],p[2])}<span class="tm">${esc(p[3]||'')}</span></li>`).join('')}</ol>`:'';
       const mk=x=>{const m=(x[15]||'').match(/MAT(\d+)-(\d+)/);return m?[+m[1],+m[2]]:[99,x[0]||0];}; d.bo.sort((a,b)=>cmpArr(mk(a),mk(b)));
       const bo=d.bo.length?`<ul class="bres">${d.bo.map(x=>{ let A=[x[1],x[2]],B=[x[3],x[4]]; if(x[5]===2)[A,B]=[B,A]; const dec=(x[5]===1||x[5]===2);
         const ml=(x[15]||'').split('・'); return `<li>${ml[0]?`<span class="mn">${esc(ml[0])}</span>`:''}${dec?'<span class="rs w">WIN</span> ':''}${flink(A[0],A[1])} <span class="def">${dec?'def.':'vs'}</span> ${flink(B[0],B[1])}${x[6]?`<span class="bm">${esc(x[6])}</span>`:''}${ml[1]?`<span class="bm">${esc(ml[1])}</span>`:''}</li>`; }).join('')}</ul>`:'';
@@ -282,9 +282,14 @@ function vFighter(id){
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#fighters">選手</a></p>
     <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}${H.gym?`　所属：${esc(H.gym)}`:''}</p></div>
     <div class="kboxes">${kickBox(id,list)}<div class="kbox"${(w+l+d+nc===0&&!list.some(([e,b])=>!b[11]&&!(D.meta.amateur||[]).includes(e[2])))?' hidden':''}><p class="kh" id="fkh">MMA戦績</p><div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div></div></div>
-    <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません</p>
-    ${nonly}${hx}${hx&&!tbox?'<h2 class="sec">全試合</h2>':''}${tbox}${kickTbl(id)}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
+    <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)"${list.length?'':' hidden'}>収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません</p>
+    ${nonly}${hx}<div id="fpod"></div>${(hx||f[3])&&!tbox&&list.length?'<h2 class="sec">全試合</h2>':''}${tbox}${kickTbl(id)}<div class="tbl"${list.length?'':' hidden'}><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
 }
+// 表彰台（柔術などの入賞）を選手ページに出す
+function loadPF(id){ const f=D.fighters[id]; if(!f||!f[3]) return;
+  fetch('pf/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(ps=>{ const b=document.getElementById('fpod'); if(!ps||!b||location.hash!=='#f-'+id) return;
+    const PL={'1':'優勝','2':'準優勝','3':'3位'}; const en=Object.fromEntries(D.events.map(e=>[e[0],e]));
+    b.innerHTML=`<h2 class="sec">入賞歴（${ps.length}）</h2><div class="tbl"><table><thead><tr><th>順位</th><th>階級</th><th>大会</th><th class="num">日付</th><th>所属</th></tr></thead><tbody>${ps.map(x=>`<tr><td>${PL[x[3]]||esc(x[3])}</td><td>${esc(x[2])}</td><td>${en[x[1]]?`<a class="u" href="#e-${esc(x[1])}">${esc(evn(en[x[1]]))}</a>`:''}</td><td class="num">${esc(x[0].replace(/-/g,'.'))}</td><td>${esc(x[4]||'')}</td></tr>`).join('')}</tbody></table></div>`; }); }
 function enhanceFighter(id){
   fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
     if(!w || location.hash!=='#f-'+id) return;
@@ -345,7 +350,7 @@ function vFighters(){
     <form class="fsearch" id="fform" role="search"><label for="fq" style="position:absolute;left:-9999px">選手名で探す</label><input id="fq" type="search" placeholder="選手名で探す（日本語・英語）" autocomplete="off"></form>
     <div class="pgrid" id="flist">${fcards(ids)}</div></main>`;
 }
-function fcards(ids){ buildIndex(); return ids.map(id=>{ const f=D.fighters[id]; return `<a href="#f-${esc(id)}"><b>${esc(f[0]||f[1])}</b><span>${f[0]?esc(f[1])+'　':''}${(byFighter[id]||[]).length}試合</span></a>`; }).join('') || '<p class="note" style="background:var(--bg);margin:0;padding:16px">見つかりませんでした。</p>'; }
+function fcards(ids){ buildIndex(); return ids.map(id=>{ const f=D.fighters[id]; return `<a href="#f-${esc(id)}"><b>${esc(f[0]||f[1])}</b><span>${f[0]?esc(f[1])+'　':''}${(byFighter[id]||[]).length?(byFighter[id]||[]).length+'試合':''}${f[3]?`${(byFighter[id]||[]).length?'・':''}入賞${f[3]}回`:''}</span></a>`; }).join('') || '<p class="note" style="background:var(--bg);margin:0;padding:16px">見つかりませんでした。</p>'; }
 const norm = s => String(s||'').toLowerCase().replace(/[\s・･．.　\-]/g,'').replace(/[ぁ-ゖ]/g, c=>String.fromCharCode(c.charCodeAt(0)+0x60));
 function searchFighters(q){ const n=norm(q); if(!n) return []; buildIndex();
   return Object.keys(D.fighters).filter(id=>{ const f=D.fighters[id]; return norm(f[0]).includes(n)||norm(f[1]).includes(n); })
@@ -426,7 +431,7 @@ function route(){
   else html = notFound();
   if(h.startsWith('e-')) nav='events'; if(h.startsWith('f-')) nav='fighters';
   $('#view').innerHTML = html;
-  if(h.startsWith('f-')) enhanceFighter(h.slice(2));
+  if(h.startsWith('f-')){ enhanceFighter(h.slice(2)); loadPF(h.slice(2)); }
   if(h.startsWith('e-')){ const ek=h.slice(2), ee=D.events.find(x=>x[0]===ek); if(ee&&(D.meta.bjj||[]).includes(ee[2])) bjjView(ek); else loadPodium(ek); }
   document.querySelectorAll('[data-nav]').forEach(a=>{ if(a.dataset.nav===nav) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
   window.scrollTo(0,0);

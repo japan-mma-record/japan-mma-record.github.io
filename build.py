@@ -465,7 +465,14 @@ def podium_html(ps):
     if not ps:
         return ''
     PL = {'1': '優勝', '2': '準優勝', '3': '3位'}
-    rows = ''.join(f'<tr><td>{html.escape(p[0])}{"（" + p[4] + "人参加）" if len(p) > 4 and p[4] else ""}</td><td>{PL.get(str(p[1]), html.escape(str(p[1])))}</td><td>{html.escape(p[2])}</td><td>{html.escape(p[3])}</td></tr>' for p in ps)
+    def nm(p):   # 選手ページ（静的ページがあるのは選手番号 f の選手だけ。名前だけのページはサイト内の画面）
+        f = p[5] if len(p) > 5 else ''
+        if f.startswith('f'):
+            return f'<a class="u nb" href="../f/{f}.html">{html.escape(p[2])}</a>'
+        if f:
+            return f'<a class="u nb" href="../index.html#f-{f}">{html.escape(p[2])}</a>'
+        return html.escape(p[2])
+    rows = ''.join(f'<tr><td>{html.escape(p[0])}{"（" + p[4] + "人参加）" if len(p) > 4 and p[4] else ""}</td><td>{PL.get(str(p[1]), html.escape(str(p[1])))}</td><td>{nm(p)}</td><td>{html.escape(p[3])}</td></tr>' for p in ps)
     return f'<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>{rows}</tbody></table></div>'
 
 
@@ -681,6 +688,49 @@ def main():
         bout_out[e['event_id']] = rows
     print(f'所属が入った選手（試合ごと）: {ngym}')
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
+    # 柔術などの表彰台の選手を選手ページにつなぐ
+    # 1) 同じ大会の試合に同じ名前の選手がいればその選手
+    # 2) 柔術・グラップリングの試合がある選手で、同じ名前が一人だけならその選手（名前だけでまとめたページを含む）
+    # 3) どちらもなければ、名前だけでまとめた選手ページ（同じ名前の表彰台をまとめる）
+    ev_ids = {e['event_id'] for e in ev}
+    ev_by_id = {e['event_id']: e for e in ev}
+    grap = collections.defaultdict(list)
+    for e in ev:
+        if e.get('promotion') not in bjj_set:
+            continue
+        for b in bouts[e['event_id']]:
+            for k in ('1', '2'):
+                fid = b.get(f'fighter{k}_id')
+                if fid and fid in fout and fid not in grap[norm(fout[fid][0]).lower()]:
+                    grap[norm(fout[fid][0]).lower()].append(fid)
+    PF = collections.defaultdict(list)
+    for k, ps in PODIUM.items():
+        if k not in ev_ids:
+            continue
+        here = {}
+        for b in bouts.get(k, []):
+            for n in ('1', '2'):
+                if b.get(f'fighter{n}_id') and b.get(f'fighter{n}_id') in fout:
+                    here.setdefault(norm(b[f'fighter{n}']).lower(), b[f'fighter{n}_id'])
+        for p in ps:
+            nm = (p[2] or '').strip()
+            key = norm(nm).lower()
+            if not key:
+                continue
+            fid = here.get(key) or (grap[key][0] if len(grap.get(key, [])) == 1 else '')
+            if not fid:
+                fid = 'n' + hashlib.md5(norm(nm).encode()).hexdigest()[:9]
+                if fid not in fout:
+                    fout[fid] = [re.sub(r'[\s　]+', '', nm) if re.search(r'[ぁ-んァ-ヶ一-龥]', nm) else re.sub(r'\s+', ' ', nm), '', 1]
+            while len(p) < 5:
+                p.append('')
+            p[5:] = [fid]
+            e = ev_by_id[k]
+            PF[fid].append([e['date'], k, p[0], str(p[1]), p[3]])
+    for fid, v in PF.items():
+        v.sort(reverse=True)
+        fout[fid] = fout[fid][:3] + [len(v)]
+    print(f'表彰台の選手を選手ページにつないだ: {sum(len(v) for v in PF.values()):,}件（{len(PF):,}人）')
     # 歴代王者（タイトルマッチ・王座決定戦の勝者を、団体と階級ごとに古い順にたどる）
     champs = collections.defaultdict(list)
     for e in sorted(ev, key=lambda x: x['date']):
@@ -739,6 +789,10 @@ def main():
     for k in meta['pd']:
         with open(os.path.join(OUT, 'pd', f'{k}.json'), 'w', encoding='utf-8') as fp:
             json.dump(PODIUM[k], fp, ensure_ascii=False, separators=(',', ':'))
+    os.makedirs(os.path.join(OUT, 'pf'), exist_ok=True)
+    for fid, v in PF.items():
+        with open(os.path.join(OUT, 'pf', f'{fid}.json'), 'w', encoding='utf-8') as fp:
+            json.dump(v, fp, ensure_ascii=False, separators=(',', ':'))
     write_json('meta.json', meta)
     write_json('upcoming.json', upcoming)
 
@@ -904,7 +958,13 @@ def main():
             gym_html = ('<h2 class="sec">所属</h2><div class="tbl"><table><thead><tr><th>所属</th><th class="num">期間（試合の日付）</th></tr></thead><tbody>'
                         + ''.join(f'<tr><td>{html.escape(g)}</td><td class="num">{a[:7].replace("-", ".")}{"" if a[:7] == z[:7] else "〜" + z[:7].replace("-", ".")}</td></tr>' for g, a, z in reversed(ghist))
                         + '</tbody></table></div>')
-        gym_html = gym_name + gym_html + ('<h2 class="sec">全試合</h2>' if (gym_name or gym_html) else '')
+        pod_html = ''
+        if PF.get(fid):
+            PLB = {'1': '優勝', '2': '準優勝', '3': '3位'}
+            pod_html = (f'<h2 class="sec">入賞歴（{len(PF[fid])}）</h2><div class="tbl"><table><thead><tr><th>順位</th><th>階級</th><th>大会</th><th class="num">日付</th><th>所属</th></tr></thead><tbody>'
+                        + ''.join(f'<tr><td>{PLB.get(x[3], html.escape(x[3]))}</td><td>{html.escape(x[2])}</td><td><a class="u" href="../e/{x[1]}.html">{html.escape(ev_by_id[x[1]]["name"])}</a></td><td class="num">{html.escape(x[0])}</td><td>{html.escape(x[4])}</td></tr>' for x in PF[fid])
+                        + '</tbody></table></div>')
+        gym_html = gym_name + gym_html + pod_html + ('<h2 class="sec">全試合</h2>' if (gym_name or gym_html or pod_html) else '')
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
         note = '※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません'
         if fid in wrec:
