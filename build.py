@@ -726,7 +726,7 @@ def main():
             if hit is not None:
                 ob = keep[hit]
                 # 試合番号のある方、次に情報の多い方を残す
-                if (bool(no), sum(bool(v) for v in b.values())) > (bool(str(ob.get('match_no') or '') not in ('', '0')), sum(bool(v) for v in ob.values())):
+                if (bool(no), sum(bool(v) for k_, v in b.items() if not k_.startswith('_'))) > (bool(str(ob.get('match_no') or '') not in ('', '0')), sum(bool(v) for k_, v in ob.items() if not k_.startswith('_'))):
                     keep[hit] = b
                 ndup += 1
                 continue
