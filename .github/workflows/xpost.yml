@@ -2,7 +2,12 @@ name: 毎日のSNS投稿（本日の大会・過去のこの日の大会）
 on:
   schedule:
     - cron: '31 22 * * *'   # 毎日 日本時間 7:31（GitHub の混み具合で遅れることがある）
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      token_only:
+        description: 'Buffer の鍵を新しくするだけ（投稿しない）'
+        type: boolean
+        default: false
 permissions:
   contents: write   # Buffer の更新の鍵（暗号化したもの）をリポジトリに保存し直すため
 concurrency:
@@ -32,4 +37,5 @@ jobs:
           BUFFER_CHANNEL_ID: '6b0a64f28541f09ecbce382d'   # Buffer につないだ X（@japanmmarecord）のチャンネル番号（秘密ではない）
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-        run: python3 xpost.py
+          TOKEN_ONLY: ${{ inputs.token_only }}
+        run: if [ "$TOKEN_ONLY" = "true" ]; then python3 buffer_token.py; else python3 xpost.py; fi
