@@ -139,8 +139,14 @@ for e in ev:
         date2ev[e[1]].append(e[0])
 
 
+DIST = {}
+
+
 def events_for(url):
+    """出典の大会（距離0）と、--near のときは日付の近い大会。DIST[(url, eid)] に日付の差を入れる"""
     got = list(url2ev.get(url, []))
+    for eid in got:
+        DIST[(url, eid)] = 0
     if NEAR is not None:
         m = re.search(r'(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)', url)
         if m:
@@ -153,6 +159,7 @@ def events_for(url):
                 for eid in date2ev.get((d + datetime.timedelta(k)).isoformat(), []):
                     if eid not in got:
                         got.append(eid)
+                        DIST[(url, eid)] = abs(k)
     return got
 
 
@@ -209,6 +216,12 @@ def run(dirs):
                         if cur:
                             continue
                         res.append((eid, no, orig, g, url))
+    # 1つのページが日付の違う複数の大会の試合に当たったときは、日付がいちばん近い大会の試合だけにする
+    best = {}
+    for r in res:
+        dd = DIST.get((r[4], r[0]), 0)
+        best[r[4]] = min(best.get(r[4], 99), dd)
+    res = [r for r in res if DIST.get((r[4], r[0]), 0) == best[r[4]]]
     seen = set()
     for r in res:
         k = r[:3]
