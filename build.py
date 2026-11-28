@@ -480,6 +480,7 @@ def head(site, title, desc, path, css_prefix='', ld=None):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{html.escape(url)}">
+<link rel="alternate" type="application/rss+xml" title="本日の大会・過去のこの日の大会" href="{site['base_url'].rstrip('/')}/onthisday.xml">
 <meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="website"><meta property="og:url" content="{html.escape(url)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -948,6 +949,27 @@ def main():
         for m in maps:
             fp.write(f'<sitemap><loc>{html.escape(base + m)}</loc></sitemap>\n')
         fp.write('</sitemapindex>\n')
+    # 「本日の大会・過去のこの日の大会」の RSS（無料でずっと続く配信。X・Bluesky・読者のアプリがここから拾える）
+    try:
+        import xpost
+        xpost.get = lambda path: json.load(open(os.path.join(OUT, path), encoding='utf-8'))
+        today = datetime.datetime.now(xpost.JST).date()
+        items = []
+        for i in range(7):
+            d = today - datetime.timedelta(days=i)
+            t = xpost.build_text(d, True, False)
+            if not t:
+                continue
+            pub = datetime.datetime(d.year, d.month, d.day, 6, 0, tzinfo=xpost.JST).strftime('%a, %d %b %Y %H:%M:%S %z')
+            items.append(f'<item><title>{d.month}月{d.day}日の大会（本日の大会・過去のこの日の大会）</title><link>{base}</link>'
+                         f'<guid isPermaLink="false">onthisday-{d.isoformat()}</guid><pubDate>{pub}</pubDate><description>{html.escape(t)}</description></item>')
+        with open(os.path.join(OUT, 'onthisday.xml'), 'w', encoding='utf-8') as fp:
+            fp.write('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>日本MMA戦績録 本日の大会・過去のこの日の大会</title>'
+                     f'<link>{base}</link><description>毎日、その日に開かれる大会と、過去の同じ日に開かれた大会のお知らせ</description><language>ja</language>'
+                     + ''.join(items) + '</channel></rss>\n')
+        print(f'RSS（本日の大会・過去のこの日の大会）: {len(items)}日分')
+    except Exception as ex:
+        print('RSS を作れなかった:', ex)
     with open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8') as fp:
         fp.write(f'User-agent: *\nAllow: /\nSitemap: {base}sitemap.xml\n')
     if site.get('google_site_verification'):   # Google Search Console の所有権の確認ファイル（消さないこと）
