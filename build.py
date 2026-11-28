@@ -70,6 +70,17 @@ def norm(s):
     return re.sub(r'[\s・･　]', '', s or '')
 
 
+# 同じ人の名前の書き方をそろえる（data/aliases.tsv：name, to, note）
+ALIAS = {}
+def alias(n):
+    if not ALIAS:
+        ALIAS[None] = None
+        for r in read_tsv(os.path.join(DATA, 'aliases.tsv')):
+            if r.get('name') and r.get('to'):
+                ALIAS[norm(r['name']).lower()] = r['to'].strip()
+    return ALIAS.get(norm(n).lower(), n) if n else n
+
+
 def load():
     site = json.load(open(os.path.join(DATA, 'site.json'), encoding='utf-8'))
     promos = {r['promotion']: r for r in read_tsv(os.path.join(DATA, 'promotions.tsv'))}
@@ -81,6 +92,7 @@ def load():
         r['sources'] = methods.clean_sources(r.get('sources'))
     bouts = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'core', 'bouts.tsv')):
+        r['fighter1'], r['fighter2'] = alias(r.get('fighter1')), alias(r.get('fighter2'))
         bouts[r['event_id']].append(r)
     fighters = {r['fighter_id']: r['name'] for r in read_tsv(os.path.join(DATA, 'core', 'fighters.tsv'))}
     renamed = {}
@@ -96,6 +108,7 @@ def load():
     auto_ev = read_tsv(os.path.join(DATA, 'auto', 'events.tsv'))
     auto_b = collections.defaultdict(list)
     for r in read_tsv(os.path.join(DATA, 'auto', 'bouts.tsv')):
+        r['fighter1'], r['fighter2'] = alias(r.get('fighter1')), alias(r.get('fighter2'))
         auto_b[r['event_id']].append(r)
     for e in auto_ev:
         if e.get('promotion') == 'groundimpact':
@@ -127,7 +140,7 @@ def load():
     # 柔術の試合番号（マット番号つき、data/bjj_mats.tsv：date, fighter1, fighter2, label 例「MAT2-33・準々決勝」）
     mats = {}
     for r in read_tsv(os.path.join(DATA, 'bjj_mats.tsv')):
-        k0 = (r['date'], frozenset((norm(r['fighter1']), norm(r['fighter2']))), norm((r.get('division') or '').split('・')[0]))
+        k0 = (r['date'], frozenset((norm(alias(r['fighter1'])), norm(alias(r['fighter2'])))), norm((r.get('division') or '').split('・')[0]))
         no = re.match(r'MAT\d+-(\d+)', r['label'])
         mats[k0 + (no.group(1) if no else '',)] = r['label']
         mats.setdefault(k0, r['label'])
@@ -363,6 +376,8 @@ def load():
     PODIUM = collections.defaultdict(list)
     key2id = {(e['promotion'], e['date'], methods.event_name(e['name'])): k for k, e in events.items()}
     for r in read_tsv(os.path.join(DATA, 'podium.tsv')):
+        if alias(r.get('name_ja') or r.get('name_en')) != (r.get('name_ja') or r.get('name_en')):
+            r['name_ja'] = alias(r.get('name_ja') or r.get('name_en'))
         pr, d, nm = r.get('promotion') or 'jbjjf', r.get('date', ''), methods.event_name(r.get('event_name_ja'))
         if pr == 'groundimpact':
             pr = 'jbjjf'   # グランドインパクト・デラヒーバ杯の主催は JBJJF
@@ -627,7 +642,7 @@ def main():
         g = (r.get('gym') or '').strip()
         if not g or not r.get('event_id') or not r.get('name'):
             continue
-        k = re.sub(r'\s', '', r['name'])
+        k = re.sub(r'\s', '', alias(r['name']))
         GYM[(r['event_id'], str(r.get('match_no') or '').strip(), k)] = g
         GYM.setdefault((r['event_id'], '', k), g)
     # 柔術の大会は、公式の表彰台に書かれた所属をその大会の試合にも使う（同じ大会・同じ名前のときだけ）
