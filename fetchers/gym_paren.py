@@ -33,7 +33,7 @@ BAD = re.compile(r'\d+(\.\d+)?\s*(kg|ｋｇ|Kg|KG|lb|cm|ｃｍ)|\d+\s*(勝|敗|�
 
 TITLE = re.compile(r'推薦|連覇|冠王|冠$|制覇|王者|挑戦者|チャンピオン|優勝|代表|ランカー|ランキング|位$|招待|甲子園|世界一|日本一|^元|^現|MVP|賞$|デビュー|参戦|出場|復帰|引退|ラストファイト|キング・オブ|クイーン・オブ|級|外敵|軍$')
 
-POS = set('右 左 奥 手前 中央 上 下 写真 写真右 写真左 右から 左から'.split())
+POS = set('アウトサイダー アウトサイダー軍 右 左 奥 手前 中央 上 下 写真 写真右 写真左 右から 左から'.split())
 STYLES = set('グレコローマン・レスリング グレコローマンレスリング フリースタイル・レスリング フリースタイルレスリング 柔術 ブラジリアン柔術 総合格闘技 カポエイラ ルタ・リブレ ルタリーブリ 空手 空手道 キックボクシング キック ボクシング レスリング アマレス 柔道 サンボ 相撲 プロレス ムエタイ 極真空手 テコンドー MMA アマMMA 格闘技 XXX ??? ？？？'.split())
 
 def clean_gym(g):
@@ -148,11 +148,15 @@ def events_for(url):
     for eid in got:
         DIST[(url, eid)] = 0
     if NEAR is not None:
-        m = re.search(r'(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)', url)
+        m = (re.search(r'result((?:19|20)\d{2})_(\d{2})/(\d{2})(\d{2})_', url)  # GBR の速報
+             or re.search(r'(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)', url))
         if m:
             import datetime
             try:
-                d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                if m.lastindex == 4:
+                    d = datetime.date(int(m.group(1)), int(m.group(3)), int(m.group(4)))
+                else:
+                    d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
             except ValueError:
                 return got
             for k in range(-NEAR, NEAR + 1):
