@@ -859,6 +859,10 @@ def main():
     meta['other'] = {k: sorted(v, reverse=True) for k, v in other.items() if k in fout}
     write_json('fighters.json', fout)
     meta['pd'] = sorted(k for k in PODIUM if k in {e['event_id'] for e in ev})
+    pdn = collections.Counter()
+    for k in meta['pd']:
+        pdn[ev_by_id[k]['promotion']] += len(PODIUM[k])
+    meta['pdn'] = dict(pdn)   # 団体ごとの入賞の数（団体の一覧に出す）
     os.makedirs(os.path.join(OUT, 'pd'), exist_ok=True)
     for k in meta['pd']:
         with open(os.path.join(OUT, 'pd', f'{k}.json'), 'w', encoding='utf-8') as fp:

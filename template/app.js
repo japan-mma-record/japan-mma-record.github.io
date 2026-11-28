@@ -321,7 +321,7 @@ function vPromotions(){
   const W = (D.meta.world||[]).filter(k=>by[k]), G = (D.meta.grappling||[]).filter(k=>by[k]), F = (D.meta.first||[]).filter(k=>by[k]), B = (D.meta.bjj||[]).filter(k=>by[k]), S = (D.meta.standup||[]).filter(k=>by[k]), A = (D.meta.amateur||[]).filter(k=>by[k]);
   const other = new Set([...W,...G,...F,...B,...S,...A]);
   const JP = [...F.map(k=>by[k]), ...all.filter(p=>!other.has(p.k)).sort((a,b)=>b.n-a.n)];
-  const card = p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会・${fmt(p.bo)}試合</span></a>`;
+  const card = p=>`<a href="#${pkey(p.k)}"><b>${esc(pl(p.k))}</b><span>${p.a}–${p.b}年　${fmt(p.n)}大会${p.bo?`・${fmt(p.bo)}試合`:''}${((D.meta.pdn||{})[p.k])?`・入賞${fmt(D.meta.pdn[p.k])}件`:''}</span></a>`;
   const sec = (t,arr,note)=> arr.length ? `<h2 class="sec">${t}</h2>${note?`<p class="sub" style="font-size:13px;margin:0 0 10px">${note}</p>`:''}<div class="pgrid">${arr.map(card).join('')}</div>` : '';
   return `<main class="wrap"><div class="sh"><h1>団体</h1><span class="aside" style="font-weight:500">${all.length}団体</span></div>
     ${(()=>{ const cy=new Date().getFullYear(); const act=JP.filter(p=>p.b>=cy-1), past=JP.filter(p=>p.b<cy-1).sort((a,b)=>b.b-a.b||b.n-a.n);
