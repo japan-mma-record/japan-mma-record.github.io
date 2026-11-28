@@ -7,8 +7,10 @@ data/gyms.tsv に足す行を作る（BOUTREVIEW のレポート https://www.bou
   ・記事ごとに、記事の日付の3日前から当日までの大会（柔術の団体は除く）の試合と照らし合わせる。
   ・読み取りの決まりは fetchers/gym_paren.py と同じ（2人ともの「名前（所属）」がある試合だけ）。
   ・出典は記事の URL（link）。
+  ・JSON でない普通の記事のページ（battle-news.com/?p=… など）も、ページの中の公開日
+    （<meta property="article:published_time"> か itemprop="datePublished"）が読めれば同じように読む。
 """
-import json, os, sys, datetime, tempfile
+import json, os, re, sys, datetime, tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gym_paren as gp  # noqa: E402
@@ -28,7 +30,11 @@ def main(dirs):
             try:
                 posts = json.load(open(path, encoding='utf-8'))
             except Exception:
-                continue
+                raw = open(path, 'rb').read().decode('utf-8', errors='replace')
+                m = re.search(r'(?:article:published_time"\s+content|itemprop="datePublished"\s+(?:datetime|content))="(\d{4}-\d\d-\d\d)', raw)
+                if not m:
+                    continue
+                posts = [{'link': p[3], 'date': m.group(1), 'content': {'rendered': raw}}]
             if not isinstance(posts, list):
                 continue
             for po in posts:
