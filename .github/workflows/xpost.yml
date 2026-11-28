@@ -1,0 +1,24 @@
+name: 毎日のX投稿（本日の大会・過去のこの日の大会）
+on:
+  schedule:
+    - cron: '31 22 * * *'   # 毎日 日本時間 7:31（GitHub の混み具合で遅れることがある）
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 投稿（X の鍵が Secrets にないときは投稿文の表示だけ）
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_INCLUDE_URL: ${{ vars.X_INCLUDE_URL }}
+          X_LONG_POST: ${{ vars.X_LONG_POST }}
+        run: python3 xpost.py
