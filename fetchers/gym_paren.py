@@ -101,7 +101,7 @@ NAMECH = re.compile(r'[\w぀-ヿ一-鿿・ー"”“’\'.＝=]')
 def paren_map(text, name):
     """name（空白は無視）の直後に（所属）が付いた箇所を全部拾う"""
     out = []
-    pat = r'[ \t]*'.join(re.escape(c) for c in name) + r'[ \t]*[（(]([^（）()\n]{1,40})[)）]'
+    pat = r'[ \t]*'.join(re.escape(c) for c in name) + r'[ \t]*[○×〇●△▲◯]?[ \t]*\n?[ \t]*[（(]([^（）()\n]{1,40})[)）]'
     for m in re.finditer(pat, text):
         s = m.start()
         pre = re.sub(r'[ \t]', '', text[max(0, s - 6):s])
