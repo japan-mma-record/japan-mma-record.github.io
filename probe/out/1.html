@@ -1,26 +1,1130 @@
-<!DOCTYPE html><html><head><script nonce="MQisUW8IGksVnFJZWt11ow">window['ppConfig'] = {productName: '26981ed0d57bbad37e728ff58134270c', deleteIsEnforced:  false , sealIsEnforced:  false , heartbeatRate:  0.5 , periodicReportingRateMillis:  60000.0 , disableAllReporting:  false };(function(){'use strict';function k(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function l(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:k(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}function m(a,b){var c;b&&!b.done&&(c=a["return"])&&c.call(a)}
-var n=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function p(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var q=p(this);
-function r(a,b){if(b)a:{var c=q;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&n(c,a,{configurable:!0,writable:!0,value:b})}}r("Object.is",function(a){return a?a:function(b,c){return b===c?b!==0||1/b===1/c:b!==b&&c!==c}});
-r("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});
-r("String.prototype.includes",function(a){return a?a:function(b,c){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(b instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(b,c||0)!==-1}});function t(a,b,c){a("https://csp.withgoogle.com/csp/proto/"+encodeURIComponent(b),JSON.stringify(c))}function u(){var a;if((a=window.ppConfig)==null?0:a.disableAllReporting)return function(){};var b,c,d,e;return(e=(b=window)==null?void 0:(c=b.navigator)==null?void 0:(d=c.sendBeacon)==null?void 0:d.bind(navigator))!=null?e:v}function v(a,b){var c=new XMLHttpRequest;c.open("POST",a);c.send(b)}
-function w(){var a=(x=Object.prototype)==null?void 0:x.__lookupGetter__("__proto__"),b=y,c=z;return function(){var d=a.call(this),e,f,g,h;t(c,b,{type:"ACCESS_GET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}
-function A(){var a=(B=Object.prototype)==null?void 0:B.__lookupSetter__("__proto__"),b=y,c=z;return function(d){d=a.call(this,d);var e,f,g,h;t(c,b,{type:"ACCESS_SET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}function C(a,b){D(a.productName,b);setInterval(function(){D(a.productName,b)},a.periodicReportingRateMillis)}
-var E="constructor __defineGetter__ __defineSetter__ hasOwnProperty __lookupGetter__ __lookupSetter__ isPrototypeOf propertyIsEnumerable toString valueOf __proto__ toLocaleString x_ngfn_x".split(" "),F=E.concat,G=navigator.userAgent.match(/Firefox\/([0-9]+)\./),H=(!G||G.length<2?0:Number(G[1])<75)?["toSource"]:[],I;if(H instanceof Array)I=H;else{for(var J=l(H),K,L=[];!(K=J.next()).done;)L.push(K.value);I=L}var M=F.call(E,I),N=[];
-function D(a,b){var c=[],d=l(Object.getOwnPropertyNames(Object.prototype)),e=d.next();try{for(;!e.done;e=d.next()){var f=e.value;M.includes(f)||N.includes(f)||c.push(f)}}finally{m(d,e)}e=Object.prototype;d=[];for(f=0;f<c.length;f++){var g=c[f];d[f]={name:g,descriptor:Object.getOwnPropertyDescriptor(Object.prototype,g),type:typeof e[g]}}if(d.length!==0){c=l(d);e=c.next();try{for(;!e.done;e=c.next())N.push(e.value.name)}finally{m(c,e)}var h;t(b,a,{type:"SEAL",origin:(h=window.location.origin)!=null?
-h:"unknown",report:{blockers:d}})}};var O=Math.random(),P=u(),Q=window.ppConfig;Q&&(Q.disableAllReporting||Q.deleteIsEnforced&&Q.sealIsEnforced||O<Q.heartbeatRate&&t(P,Q.productName,{origin:window.location.origin,type:"HEARTBEAT"}));var z=u(),R=window.ppConfig;if(R)if(R.deleteIsEnforced)delete Object.prototype.__proto__;else if(!R.disableAllReporting){var y=R.productName;try{var x,B;Object.defineProperty(Object.prototype,"__proto__",{enumerable:!1,get:w(),set:A()})}catch(a){}}
-(function(){var a=u(),b=window.ppConfig;b&&(b.sealIsEnforced?Object.seal(Object.prototype):b.disableAllReporting||(document.readyState!=="loading"?C(b,a):document.addEventListener("DOMContentLoaded",function(){C(b,a)})))})();}).call(this);
-</script><meta name="google" content="notranslate"><meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><meta name="referrer" content="strict-origin-when-cross-origin"><title>20210924 第15回全日本マスター柔術選手権(オープンクラス) - Google ドライブ</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/spreadsheets-2026-v3.ico"><meta property="og:title" content="20210924 第15回全日本マスター柔術選手権(オープンクラス)"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF/pubhtml?usp=embed_facebook"><meta property="og:image" content="https://lh7-us.googleusercontent.com/docs/AHkbwyJzbOAsoTYdZFjmBXoFeGSW4Eo_dP00WE8ZRJ_ZOZSylEfaNR9WNhnCJPEqfpDufzSQVL8XJKkd4jn-vYmGUO910eBiGNQ-webtTbQxkXMj2TrQELI=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><script nonce="MQisUW8IGksVnFJZWt11ow">_docs_webfonts_fontFaces = null; _docs_webfonts_iframe_fontFaces = null;(function() {_docs_webfonts_createFontFaces = function(doc) {if (doc && doc.fonts) {var win = window; var fontFaceObject = {}; var docs_fontFaces_data = {}; for (var identifierString in docs_fontFaces_data) {var fontFace = new win.FontFace( docs_fontFaces_data[identifierString]['fontFamily'], docs_fontFaces_data[identifierString]['sourceString'],{'style': docs_fontFaces_data[identifierString]['style'], 'weight': docs_fontFaces_data[identifierString]['weight']}); fontFace.load().then(function(loadedFontFace) {doc.fonts.add(loadedFontFace);}); fontFaceObject[identifierString] = fontFace;}return fontFaceObject;}return null;}; _docs_webfonts_fontFaces = _docs_webfonts_createFontFaces(document);})();DOCS_timing['wpid']=new Date().getTime();</script><style nonce="kZak8YRFztERtxbsc72SeQ">body,html{height:100%}body{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column}#sheets-viewport{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-flex:1;-webkit-flex:1;flex:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;overflow:auto}#sheets-viewport.widget-viewport{overflow:hidden}#top-bar,.top-bar{margin:0;overflow:hidden;border-bottom:1px solid var(--gm3-sys-color-outline-variant,#c4c7c5);padding:6px 6px 0}#top-bar #sheet-menu li.active{border-bottom:0}#doc-title,.doc-title{padding-bottom:5px}#doc-title .name,.doc-title .name{font-size:15px}#sheet-menu{font-size:13px;margin:6px 0 0;padding:0 0 5px}#sheet-menu li{display:inline;list-style-type:none;margin:0;padding:5px 8px}#sheet-menu li.active{background-color:var(--gm3-sys-color-surface,#fff);font-weight:700;border:1px solid var(--gm3-sys-color-outline,#747775)}#sheet-menu a,#sheet-menu a:visited{color:var(--gm3-sys-color-secondary,#00639b)}#footer{background:var(--gm3-sys-color-inverse-on-surface,#f2f2f2);border-top:1px var(--gm3-sys-color-outline-variant,#c4c7c5) solid;border-bottom:1px var(--gm3-sys-color-outline-variant,#c4c7c5) solid;font-size:13px;padding:10px}.dash{padding:0 6px}a{text-decoration:none}a:link{color:#15c}a:visited{color:#61c}a:active{color:#d14836}a:hover{text-decoration:underline}.ritz.grid-container:has(>.grid-chunk){width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;min-width:100%}.grid-chunk{content-visibility:auto;contain-intrinsic-size:auto none auto 4200px}.row-header-wrapper{overflow:hidden;border-width:0;margin:0;padding:0}.grid-minimized tbody th>div{overflow:hidden;border-width:0;margin:0;padding:0;line-height:20px}.column-headers-background,.grid-minimized th,.row-headers-background{z-index:1}.selected-row-headers-background{position:absolute;background-color:var(--ws-sys-color-extended-grey-tonal,#e3e3e3);width:45px;z-index:2}.selected-column-headers-background{position:absolute;background-color:var(--ws-sys-color-extended-grey-tonal,#e3e3e3);height:23px;z-index:2}.grid-fixed-table,.waffle{table-layout:fixed;border-collapse:separate;border-style:none;border-spacing:0;width:0}.grid-fixed-table td,.waffle td{overflow:hidden;border:1px var(--gm3-sys-color-outline-variant,#c4c7c5) solid;border-color:color-mix(in sRGB,#000 15%,transparent);border-width:0 1px 1px 0;vertical-align:bottom;line-height:inherit;background-color:var(--gm3-sys-color-surface,#fff);padding:0 3px}.grid-minimized td{font-size:10pt;font-family:Arial;vertical-align:bottom}.waffle .softmerge{overflow:visible}.softmerge-inner{white-space:nowrap;overflow:hidden;text-overflow:hidden;position:relative}.grid-fixed-table-ltr td,.waffle-ltr td{border-width:0 1px 1px 0}.grid-fixed-table-rtl td,.waffle-rtl td{border-width:0 0 1px 1px}.grid-minimized tbody th,.grid-minimized tbody tr{height:20px}.grid-fixed-table th,.waffle th{font-weight:400;background:transparent;text-align:center;vertical-align:middle;font-size:8pt;color:var(--gm3-sys-color-on-surface,#1f1f1f);height:23px;border:solid 1px var(--gm3-sys-color-outline-variant,#c4c7c5);border-width:0 1px 1px 0;overflow:hidden;padding:0}.grid-fixed-table-ltr th,.waffle-ltr th{border-width:0 1px 1px 0}.grid-fixed-table-rtl th,.waffle-rtl th{border-width:0 0 1px 1px}.no-grid td{border:solid 1px var(--gm3-sys-color-surface,#fff);border:solid 1px color-mix(in sRGB,var(--gm3-sys-color-outline,#747775) 0%,transparent);border-width:0 1px 1px 0}td.empty{font-size:0!important}th.row-header{background-color:#efeded;width:45px;text-align:center;vertical-align:middle;font-size:8pt;color:var(--gm3-sys-color-on-surface,#1f1f1f);line-height:inherit;overflow:hidden}col.row-header{width:46px}td.tall-row,th.tall-row{vertical-align:top}td.row-header-shim,th.row-header-shim{width:0;margin:0;overflow:hidden}col.row-header-shim{width:1px}div.column-headers-background{position:absolute;height:23px}div.row-headers-background{position:absolute;width:45px}.grid-minimized th,th.column-headers-background,th.row-headers-background{position:relative}tr.column-header-row{height:23px}td.selected,th.selected{background-color:#c7c7c7;border-bottom:1px solid #a1c9ff}td.header-shim,th.header-shim{border-width:0 1px 0 0;height:0;margin:0}.grid-minimized th,div.column-headers-background,div.row-headers-background,th.column-headers-background,th.row-headers-background{background:var(--gm3-sys-color-surface,#fff);color:var(--gm3-sys-color-on-surface-variant,#444746);font-family:"Google Sans",Roboto,Arial,sans-serif,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:.75rem}td.freezebar-cell,th.freezebar-cell{border-color:var(--gm3-sys-color-surface-container-highest,#dde3ea)!important;background-color:var(--gm3-sys-color-surface-container-highest,#dde3ea);padding:0;border-width:0}th.freezebar-origin-rtl{background:no-repeat url(https://ssl.gstatic.com/docs/spreadsheets/waffle_sprite53.png) -305px -62px}th.freezebar-origin-ltr{background:no-repeat url(https://ssl.gstatic.com/docs/spreadsheets/waffle_sprite53.png) -205px 0}th.freezebar-origin-ltr,th.freezebar-origin-rtl{background-color:#efeded;position:relative}col.frozen-column-cell,th.frozen-column-cell{width:4px}td.freezebar-hidden,th.freezebar-hidden{height:0;width:0;display:none}.grid-minimized tbody tr:has(>th.freezebar-cell){height:auto}td.frozen-row-cell,th.frozen-row-cell{height:4px}.grid-fixed-table tr{height:10px}.row-header,.row-header-shim{background:#f9f9f9}html{overflow:visible}body{background-color:var(--gm3-sys-color-surface,#fff);color:var(--gm3-sys-color-on-surface,#1f1f1f);font-weight:400;font-size:13px;font-family:"Google Sans Text","Google Sans",Roboto,Arial,sans-serif,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;margin:0}.grid-container{overflow:visible;background:var(--gm3-sys-color-surface,#fff)}.grid-table-container{overflow:visible}.ritz.grid-container table.waffle svg{display:block}.waffle-embedded-object-overlay{outline:0;position:absolute;z-index:10}.docs-charts-tooltip{z-index:3}.docs-charts-component:focus{outline:none}.docs-charts-component-canvas{direction:ltr}.docs-charts-tooltip{-webkit-box-shadow:3;box-shadow:3;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:var(--gm3-sys-color-surface,#fff);border:1px solid var(--gm3-sys-color-outline-variant,#c4c7c5);border-radius:2px;color:var(--gm3-sys-color-on-surface,#1f1f1f);cursor:default;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-size:13px;font-weight:500;padding:3px 12px;pointer-events:none;position:absolute}.docs-charts-tooltip-label,.docs-charts-tooltip-value{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.docs-charts-tooltip-entry{margin-bottom:3px;margin-top:3px}.docs-charts-tooltip-symbol-value{white-space:nowrap}.docs-charts-tooltip-entry .docs-charts-tooltip-label{color:var(--gm3-sys-color-on-surface-variant,#444746)}.docs-charts-tooltip-entry .docs-charts-tooltip-symbol{margin-right:6px}.docs-charts-tooltip-entry .docs-charts-tooltip-symbol .docs-charts-tooltip-symbol-icon{height:12px;stroke:var(--gm3-sys-color-on-surface-variant,#444746);stroke-width:1px;width:12px}.docs-charts-tooltip-entry-single .docs-charts-tooltip-label{margin-bottom:3px}.docs-charts-tooltip-entry-single .docs-charts-tooltip-value{font-size:1.1em;font-weight:700}.docs-charts-tooltip-entry-domain .docs-charts-tooltip-value{color:var(--gm3-sys-color-on-surface-variant,#444746)}.docs-charts-tooltip-entry-range .docs-charts-tooltip-value{font-weight:700}.docs-charts-tooltip-entry-range .docs-charts-tooltip-symbol .docs-charts-tooltip-symbol-icon{margin-bottom:-1px}.quantumIconsIcon{font-family:Material Icons Extended;font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-rendering:optimizeLegibility;text-transform:none;display:inline-block;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:"liga" 1;font-feature-settings:"liga" 1;-webkit-font-smoothing:antialiased}html[dir=rtl] .quantumIconsRtlIcon{-webkit-transform:scaleX(-1);-ms-transform:scaleX(-1);transform:scaleX(-1)}.docsshared-no-download .docsshared-no-select-when-no-download,.docsshared-no-select{-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;-webkit-user-select:none;user-select:none}.docsshared-disable-image-copy canvas,.docsshared-disable-image-copy image,.docsshared-disable-image-copy img{pointer-events:none}.appsDocsUiWizStaticBannerInfoBanner:before{position:absolute;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid transparent;border-radius:inherit;content:"";pointer-events:none}@media screen and (forced-colors:active){.appsDocsUiWizStaticBannerInfoBanner:before{border-color:CanvasText}}.appsDocsUiWizStaticBannerInfoBanner{-webkit-box-align:center;-webkit-align-items:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:flex;inline-size:-webkit-fill-available;inline-size:-moz-available;inline-size:stretch;overflow:hidden;padding:6px 4px;position:relative;background-color:var(--gm3-sys-color-primary-container,#d3e3fd);color:var(--gm3-sys-color-on-primary-container,#0842a0)}.appsDocsUiWizStaticBannerWarningBanner:before{position:absolute;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid transparent;border-radius:inherit;content:"";pointer-events:none}@media screen and (forced-colors:active){.appsDocsUiWizStaticBannerWarningBanner:before{border-color:CanvasText}}.appsDocsUiWizStaticBannerWarningBanner{-webkit-box-align:center;-webkit-align-items:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:flex;inline-size:-webkit-fill-available;inline-size:-moz-available;inline-size:stretch;overflow:hidden;padding:6px 4px;position:relative;background-color:var(--ws-sys-color-extended-yellow-tonal,#fff2b4);color:var(--ws-sys-color-extended-on-yellow-tonal,#6d3a01)}.appsDocsUiWizStaticBannerContent{font-family:Google Sans,Roboto,Arial,sans-serif;font-size:.875rem;font-weight:400;letter-spacing:0;line-height:1.25rem;-webkit-column-gap:4px;-moz-column-gap:4px;column-gap:4px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-flex:1;-webkit-flex-grow:1;flex-grow:1;-webkit-flex-wrap:wrap;flex-wrap:wrap;padding:12px 0}.appsDocsUiWizStaticBannerTitle{font-weight:700;text-wrap:pretty}.appsDocsUiWizStaticBannerText{text-wrap:pretty}.appsDocsUiWizStaticBannerPrimaryIcon,.appsDocsUiWizStaticBannerWarningIcon{display:-webkit-box;display:-webkit-flex;display:flex;fill:currentColor;margin:12px}.appsDocsUiWizStaticBannerActions{-webkit-box-align:center;-webkit-align-items:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-shrink:0;flex-shrink:0;gap:8px;padding:0 12px}.appsDocsUiWizStaticBannerActionButton{font-family:Google Sans,Roboto,Arial,sans-serif;font-size:.875rem;font-weight:500;letter-spacing:0;line-height:1.25rem;border-radius:9999px;color:inherit;padding:10px 12px;text-decoration:none}.appsDocsUiWizStaticBannerActionButton:active,.appsDocsUiWizStaticBannerActionButton:hover,.appsDocsUiWizStaticBannerActionButton:link,.appsDocsUiWizStaticBannerActionButton:visited{color:inherit;text-decoration:none}.appsDocsUiWizStaticBannerActionButton:focus-visible{outline:3px solid var(--gm3-sys-color-secondary,#00639b);outline-offset:2px}sentinel{}</style>
-<link href='/static/spreadsheets2/client/css/4290128036-trix_widget_ltr.css' type='text/css' rel='stylesheet'><script src='/static/spreadsheets2/client/js/1349377037-trix_widgets.js' nonce="MQisUW8IGksVnFJZWt11ow"></script><script nonce="MQisUW8IGksVnFJZWt11ow">(function(){'use strict';/*
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head profile="http://purl.org/net/ns/metaprof">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PNFBDCNB');</script>
+<!-- End Google Tag Manager --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BP73JNJ5Q7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	    gtag('config', 'G-BP73JNJ5Q7');
+		</script>
 
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
-var e=this||self;function f(a,c){a=a.split(".");for(var b=e,d;a.length&&(d=a.shift());)a.length||c===void 0?b[d]&&b[d]!==Object.prototype[d]?b=b[d]:b=b[d]={}:b[d]=c};var g=new function(){this.h=null};f("initialize",function(){var a=window.location.href.replace("?sle=true&","?");a=a.replace("?sle=true","");a=a.replace("&sle=true&","&");a=a.replace("&sle=true","");window.history.replaceState(null,"",a)});
-f("switchToSheet",function(a){document.getElementById("sheet-menu")&&(g.h&&(document.getElementById("sheet-button-"+g.h).className=""),document.getElementById("sheet-button-"+a).className="active");g.h&&(document.getElementById(g.h).style.display="none");var c=document.getElementById(a);c.style.display="";var b=document.getElementById("sheets-viewport");c=c.getAttribute("dir");b&&c&&b.setAttribute("dir",c);g.h=a;typeof posObjs==="function"&&posObjs()});}).call(this);
-</script><script nonce="MQisUW8IGksVnFJZWt11ow">if ((!this['_getWGTPageSwitcher']) ||  false ) {if (window.navigator && window.navigator.sendBeacon) {var DOCS_hasSentJsNotLoadedError=window['DOCS_hasSentJsNotLoadedError']||false; var perfContext = '';var severityContext = DOCS_hasSentJsNotLoadedError?'&context.severity=postmortem':'&context.severity=warning';const isServiceWorkerControlled = !!(window.origin !== 'null' && navigator.serviceWorker && navigator.serviceWorker.controller); window.navigator.sendBeacon('\/spreadsheets\/jserror?jobset\x3dprod\x26error\x3dJS+binary+load+failure&context.functionName=_getWGTPageSwitcher' + '&context.serviceWorkerControlled=' + isServiceWorkerControlled + '\x26context.actionName\x3dPublishedHtmlView' + severityContext + perfContext); DOCS_hasSentJsNotLoadedError=true;}(window.enterCoreJsErrorDialog ? enterCoreJsErrorDialog() : (window.location.href = 'https:\/\/support.google.com\/accounts\/answer\/32050'))}
-        function init() {
-        var _optPageSwitcher;
-        var gidMatch = /gid=(-?[0-9]+)/.exec(window.location.hash); var gid = gidMatch ? gidMatch[1] : null;var items = [];items.push({name: "１マット", pageUrl: "https:\/\/docs.google.com\/spreadsheets\/d\/e\/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF\/pubhtml\/sheet?headers\x3dfalse&gid=897291374", gid: "897291374",initialSheet: ("897291374" == gid)});items.push({name: "２マット", pageUrl: "https:\/\/docs.google.com\/spreadsheets\/d\/e\/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF\/pubhtml\/sheet?headers\x3dfalse&gid=653347474", gid: "653347474",initialSheet: ("653347474" == gid)});items.push({name: "３マット", pageUrl: "https:\/\/docs.google.com\/spreadsheets\/d\/e\/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF\/pubhtml\/sheet?headers\x3dfalse&gid=840456477", gid: "840456477",initialSheet: ("840456477" == gid)});items.push({name: "一人優勝", pageUrl: "https:\/\/docs.google.com\/spreadsheets\/d\/e\/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF\/pubhtml\/sheet?headers\x3dfalse&gid=2000142669", gid: "2000142669",initialSheet: ("2000142669" == gid)});items.push({name: "タイムスケジュール ", pageUrl: "https:\/\/docs.google.com\/spreadsheets\/d\/e\/2PACX-1vQQOqFBDSmEByng43N19s9zNZixomoGXf3Tmy7GUi8XH33gSdzghu1UBXqI59ilXwWx9CBWju9OnUSF\/pubhtml\/sheet?headers\x3dfalse&gid=751899562", gid: "751899562",initialSheet: ("751899562" == gid)});var sheetsViewport = document.getElementById('sheets-viewport'); _optPageSwitcher = _getWGTPageSwitcher(window, document, sheetsViewport, 0, 0, "100%", "100%", items);
-        initialize();
+
+
+<script src="https://one.adingo.jp/tag/efight/8bfe3b09-2294-45c2-a860-0bfddc1e4ff6.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="eFight 【イーファイト】 格闘技情報を毎日配信！" />
+<link rel="start" href="https://efight.jp" title="eFight 【イーファイト】 格闘技情報を毎日配信！ Home" />
+<meta name="description" content='【ライジン 結果】RIZIN.55 千葉大会の全試合を写真付きで掲載。トニー・ララミーが神龍誠に勝利しフライ級王座を奪取！ティレノフが井上直樹に勝利、鹿志村仁之介が太田忍に一本勝ち。全16試合の勝敗・決め手を掲載。' />
+
+
+<meta name="keywords" content="RIZIN">
+
+<meta name="DC.date" content="2026-11-08">
+<meta name="DC.publisher" content="eFight"/>
+
+<link rel="canonical" href="https://efight.jp/result-20261108_1754742" />
+<link rel="apple-touch-icon" type="image/png" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/mark/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/mark/icon-192x192.png">
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_gNavi/css/superfish.css?v=20180918" media="screen">
+<link rel="stylesheet" href="https://efight.jp/wp-content/themes/wp-vicuna/gbr_tab/yetii.css?v=20180918" type="text/css" media="print, projection, screen">
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_slider/jquery.bxslider.css?v=20180918" media="screen">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://efight.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fefight.jp%2Fresult-20261108_1754742" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://efight.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fefight.jp%2Fresult-20261108_1754742&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='taxopress-frontend-css-css' href='https://efight.jp/wp-content/plugins/simple-tags/assets/frontend/css/frontend.css?ver=3.44.0' type='text/css' media='all' />
+<script type="text/javascript" src="https://efight.jp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://efight.jp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://efight.jp/wp-content/plugins/simple-tags/assets/frontend/js/frontend.js?ver=3.44.0" id="taxopress-frontend-js-js"></script>
+<link rel="https://api.w.org/" href="https://efight.jp/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://efight.jp/wp-json/wp/v2/posts/1754742" />
+
+
+	<!-- Added by EventCalendar plugin. Version 3.1.4 -->
+
+	<script type='text/javascript' src='https://efight.jp/wp-content/plugins/eventcalendar3/xmlhttprequest.js'></script>
+
+	<script type='text/javascript' src='https://efight.jp/wp-content/plugins/eventcalendar3/ec3.js'></script>
+
+	<script type='text/javascript'><!--
+
+	ec3.start_of_week=1;
+
+	ec3.month_of_year=new Array('1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月');
+
+	ec3.month_abbrev=new Array('1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月');
+
+	ec3.myfiles='https://efight.jp/wp-content/plugins/eventcalendar3';
+
+	ec3.home='https://efight.jp';
+
+	ec3.hide_logo=1;
+
+	ec3.viewpostsfor="%2$s年%1$sのイベントを表示";
+
+	// --></script>
+
+
+
+
+<style type='text/css' media='screen'>
+
+@import url(https://efight.jp/wp-content/plugins/eventcalendar3/ec3.css);
+
+.ec3_ec {
+
+ background-image:url(https://efight.jp/wp-content/plugins/eventcalendar3/ec.png) !IMPORTANT;
+
+ background-image:none;
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://efight.jp/wp-content/plugins/eventcalendar3/ec.png');
+
+}
+
+
+#ec3_shadow0 {
+
+ background-image:url(https://efight.jp/wp-content/plugins/eventcalendar3/shadow0.png) !IMPORTANT;
+
+ background-image:none;
+
+}
+
+#ec3_shadow0 div {
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://efight.jp/wp-content/plugins/eventcalendar3/shadow0.png',sizingMethod='scale');
+
+}
+
+#ec3_shadow1 {
+
+ background-image:url(https://efight.jp/wp-content/plugins/eventcalendar3/shadow1.png) !IMPORTANT;
+
+ background-image:none;
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://efight.jp/wp-content/plugins/eventcalendar3/shadow1.png',sizingMethod='crop');
+
+}
+
+#ec3_shadow2 {
+
+ background-image:url(https://efight.jp/wp-content/plugins/eventcalendar3/shadow2.png) !IMPORTANT;
+
+ background-image:none;
+
+}
+
+#ec3_shadow2 div {
+
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://efight.jp/wp-content/plugins/eventcalendar3/shadow2.png',sizingMethod='scale');
+
+}
+
+
+</style>
+
+
+
+<script src="https://www.google.com/jsapi"></script>
+<script>
+if(typeof jQuery === "undefined"){google.load("jquery", "1.7.1");}
+</script>
+<script>
+//jQuery(document).ready( function () {
+//jQuery('a[href^=http]').not('[href*="'+location.hostname+'"]').attr('target','_blank');
+//})
+</script><link rel="icon" href="https://efight.jp/wp-content/uploads/2026/03/icon-512-144x144.png" sizes="32x32" />
+<link rel="icon" href="https://efight.jp/wp-content/uploads/2026/03/icon-512-320x320.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://efight.jp/wp-content/uploads/2026/03/icon-512-320x320.png" />
+<meta name="msapplication-TileImage" content="https://efight.jp/wp-content/uploads/2026/03/icon-512-320x320.png" />
+<script type="text/javascript" src="https://efight.jp/wp-content/themes/wp-vicuna/gbr_tab/yetii-min.js?v=20180918" charset="utf-8"></script>
+<meta property="og:title" content="RIZIN 結果｜ライジン千葉大会 全試合結果｜ララミーが神龍誠に勝利し新王者に【RIZIN.55】" />
+<meta property="og:url" content="https://efight.jp/result-20261108_1754742" />
+<meta property="og:image" content="https://efight.jp/wp-content/uploads/2026/11/R1_A2862.jpg" />
+<meta property="og:image:secure_url" content="https://efight.jp/wp-content/uploads/2026/11/R1_A2862.jpg" />
+<meta property="og:image:width" content="800" /> 
+<meta property="og:image:height" content="533" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="格闘技情報を毎日配信！"><meta property="og:site_name" content="eFight【イーファイト】格闘技情報を毎日配信！">
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:admins" content="100002677802863" />
+<meta property="fb:app_id" content="289098734911567" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@efight_twit">
+<meta name="twitter:creator" content="@efight_twit"><script type="text/javascript"><!--
+jQuery.noConflict();
+jQuery(document).ready(function($){
+//checkbox limit
+'use strict';
+var limit = 1,allBox = $("input[name='checkbox-798[]']");
+function checkMe() {
+var chkedLen = allBox.filter(":checked").length,noBox = allBox.not(":checked");
+if (chkedLen > limit - 1) {noBox.prop("disabled", true);} else {noBox.prop("disabled", false);}
+}
+allBox.on("click", checkMe);
+checkMe();
+});
+//-->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3510392-14', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['sp.efight.jp'] );
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- GAMスクリプトの読み込み -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<!-- ポリシー違反用出し分けスクリプトの読み込み -->
+<script async src="https://cdn-fluct.sh.adingo.jp/ts/kv.js"></script>
+
+
+<!-- BID STRAPスクリプトの読み込み -->
+<script async src="https://fam.adingo.jp/bid-strap/efight/pb.js"></script>
+<script>
+  var googletag = window.googletag || {cmd: []};
+  var bsttag = window.bsttag || {cmd: [], slots: []};
+  bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
+  bsttag.launchAuction = function (slots) {
+    var hbm = {};
+    bsttag.cmd.push(function(cmd) {
+      hbm = cmd.requestBids({adUnits: slots});
+    });
+    
+    setTimeout(function () {
+      if (hbm.isRequestSent) {
+        return;
+      }
+      hbm.isRequestSent = true;
+      googletag.cmd.push(function() {
+        googletag.pubads().refresh(slots);
+      });
+    }, bsttag.failSafeTimeout);
+  }
+</script>
+
+<!-- 広告枠の定義と、prebidの処理 -->
+<script>
+  window.googletag = window.googletag || {};
+  window.googletag.cmd = window.googletag.cmd || [];
+  googletag.cmd.push(function () {
+
+    function getKeywords() {
+	    var metaTag = document.querySelector('meta[name="keywords"]');
+		    if (!metaTag || !metaTag.content) {
+				return [];
+			}
+		return metaTag.content.split(",");
+	}
+
+    var slots = [];
+    slots.push(
+      googletag.defineSlot('/34849640/dojogym->efight_header', [300, 100], 'div-gpt-ad-1435218381830-0').addService(googletag.pubads()),
+      googletag.defineSlot('/34849640/dojogym->efight01', [320, 50], 'div-gpt-ad-1435218381830-1').addService(googletag.pubads()),
+      googletag.defineSlot('/34849640/dojogym->efight02', [320, 50], 'div-gpt-ad-1435218381830-2').addService(googletag.pubads()),
+      googletag.defineSlot('/34849640/dojogym->efight03', [320, 50], 'div-gpt-ad-1435218381830-3').addService(googletag.pubads()),
+      googletag.defineSlot('/34849640/dojogym->efight04', [320, 50], 'div-gpt-ad-1435218381830-4').addService(googletag.pubads()),
+      googletag.defineSlot('/34849640/dojogym->efight', [320, 50], 'div-gpt-ad-1435218381830-5').addService(googletag.pubads()),
+      // AdX
+      googletag.defineSlot('/62532913,34849640/p_efight_970x250_billboard_4205', [[728, 90], [970, 250]], 'div-gpt-ad-1642064922629-0').addService(googletag.pubads()),
+      googletag.defineSlot('/62532913,34849640/p_efight_300x600_rightcolumn1st_4205', [[300, 600], [300, 250], [336, 280]], 'div-gpt-ad-1642064954257-0').addService(googletag.pubads()),
+      googletag.defineSlot('/62532913,34849640/p_efight_728x90_overlay_4205', [728, 90], 'div-gpt-ad-1642065151802-0').addService(googletag.pubads()),
+    );
+
+    googletag.pubads().setTargeting("efight_metakeyword", getKeywords());
+    function randomInt(min, max) {
+	  return Math.floor( Math.random() * (max + 1 - min) ) + min;
+	}
+    googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+    bsttag.launchAuction(slots);
+    
+    if (window.fluctkvapi) {
+      fluctkvapi.fetchPolicyStatus(function (isPolicyViolation) {
+        googletag.pubads().setTargeting("pa", isPolicyViolation ? "ng" : "ok");
+      });
+    }
+  });
+</script>
+
+<!--Interstitial-->
+<!--<link rel="preload" as="script" href="https://pdn.adingo.jp/p.js">-->
+<!--<link rel="preconnect" href="https://sh.adingo.jp" crossorigin="use-credentials">-->
+<!--Interstitial-->
+<!--Auto-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4428471688030472"
+     crossorigin="anonymous"></script>
+<!--Auto-->
+
+
+<!--Recommend-->
+<script>
+(function () {
+    var PUBLISHER_ID = 'efightjapan';
+    var PAGE_TYPE = 'article';
+
+    var LOADER_URL = '//cdn.taboola.com/libtrc/' + PUBLISHER_ID + '/loader.js';
+    var LOADER_PRIVACY_URL = '//static.tblcontent.com/libtrc/' + PUBLISHER_ID + '/loader.privacy.js';
+    var SCRIPT_ID = 'tb_loader_script';
+
+    window._taboola = window._taboola || [];
+
+    var pageTypePush = {};
+    pageTypePush[PAGE_TYPE] = 'auto';
+    _taboola.push(pageTypePush);
+
+    var firstScript = document.getElementsByTagName('script')[0];
+
+    function injectLoader(id, src, fallbackSrc) {
+        if (document.getElementById(id)) return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = src;
+        s.id = id;
+        if (fallbackSrc) {
+            s.onerror = function () {
+                if (s.parentNode) s.parentNode.removeChild(s);
+                injectLoader(SCRIPT_ID + '_fb', fallbackSrc, null);
+            };
         }
-        </script><script data-id="_gd" nonce="MQisUW8IGksVnFJZWt11ow">window.WIZ_global_data = {"K1cgmc":"%.@.[null,null,null,[3,1,[1795758917,38431000],4],null,0]]","TSDtV":"%.@.[[null,[[45736426,null,null,0.5,null,null,\"AtjTse\"],[45798333,null,false,null,null,null,\"bk3LGf\"],[45759550,null,false,null,null,null,\"ipHXZe\"],[45833707,null,false,null,null,null,\"Y5BYb\"],[45755088,null,true,null,null,null,\"fzPMYc\"],[45796590,null,true,null,null,null,\"rFDJvb\"],[45776074,null,false,null,null,null,\"H0kCgf\"],[45702908,0,null,null,null,null,\"YUmR1e\"],[45868116,null,false,null,null,null,\"Nrdjsc\"],[45794381,null,false,null,null,null,\"mPb5ue\"],[45808609,null,false,null,null,null,\"SY6Rxb\"],[45736423,null,false,null,null,null,\"KdGYpb\"],[45657263,null,false,null,null,null,\"ByEExb\"],[45769604,null,false,null,null,null,\"h14wf\"],[45822231,null,true,null,null,null,\"CwJ3S\"],[45760386,null,false,null,null,null,\"B22Yae\"],[45678214,null,null,null,\"qYGgY5L4A0suK1NZr2K0QusvQmcX\",null,\"VL579e\"],[45853721,null,true,null,null,null,\"Uv2ac\"],[45791957,null,true,null,null,null,\"yYo5Mc\"],[45644642,null,null,null,\"X-WS exp!\",null,\"rsrxGc\"],[45748088,null,true,null,null,null,\"KLuwTc\"],[45749331,null,true,null,null,null,\"JQs3De\"],[45696305,null,false,null,null,null,\"Uujhbc\"],[45775833,null,true,null,null,null,\"bRlUw\"],[45677009,null,false,null,null,null,\"JkUdKe\"],[45678187,null,false,null,null,null,\"OrvCpd\"],[45831222,null,false,null,null,null,\"CVzrEc\"],[45643359,null,true,null,null,null,\"GcxuKe\"],[45691859,null,false,null,null,null,\"p9TOQ\"],[45717711,null,false,null,null,null,\"lhxHkd\"],[45891851,null,false,null,null,null,\"E5b4q\"],[45775398,null,false,null,null,null,\"ejP0Cd\"],[45673686,null,false,null,null,null,\"TVdkuc\"],[45850231,null,null,null,\"\",null,\"y2TLhf\"],[45673687,null,false,null,null,null,\"OQKgkd\"],[45762063,null,true,null,null,null,\"WlmQwb\"],[45872486,null,false,null,null,null,\"g3E0ob\"],[45743516,null,false,null,null,null,\"C3mEk\"],[45801628,null,false,null,null,null,\"HAOZVe\"],[45724030,null,false,null,null,null,\"V0bNGd\"],[45725105,null,true,null,null,null,\"VQN2ac\"],[45800462,null,false,null,null,null,\"ggsQnc\"],[45844594,null,false,null,null,null,\"HVEeXb\"],[45672211,null,true,null,null,null,\"Wgtd8c\"],[45693258,null,null,null,null,null,\"BrCRse\",[\"[[\\\"en\\\",\\\"en-US\\\",\\\"en-GB\\\",\\\"en-CA\\\",\\\"en-AU\\\",\\\"en-IN\\\",\\\"en-IE\\\",\\\"en-NZ\\\",\\\"en-ZA\\\"]]\"]],[45782633,null,false,null,null,null,\"CfqILe\"],[45789952,null,false,null,null,null,\"GY0Vfe\"],[45757913,null,false,null,null,null,\"qmNm7d\"],[45769936,null,false,null,null,null,\"FXtIgb\"],[45861909,null,false,null,null,null,\"pkD3oe\"],[45800797,null,false,null,null,null,\"oilzpb\"],[45811663,null,false,null,null,null,\"HDt2pc\"],[45668197,null,true,null,null,null,\"pReYPb\"],[45822166,null,null,null,\"Generate the draft based on these details\",null,\"K2uSgc\"],[45674975,null,false,null,null,null,\"sBUhfc\"],[45810515,null,false,null,null,null,\"ZQkAB\"],[45830368,null,false,null,null,null,\"L0LqSd\"],[45828446,null,false,null,null,null,\"gwwDYd\"],[45706188,null,true,null,null,null,\"OF1zrd\"],[45706819,null,false,null,null,null,\"aPAx2b\"],[45664242,null,false,null,null,null,\"o4hKqd\"],[45700150,null,false,null,null,null,\"RLRykc\"],[45888720,null,false,null,null,null,\"xXaoRb\"],[45818826,null,false,null,null,null,\"j5G1xf\"],[45882402,null,false,null,null,null,\"wkq8Ve\"],[45822533,null,false,null,null,null,\"xXn8Hd\"],[45700770,null,false,null,null,null,\"Mk7a4d\"],[45883697,null,false,null,null,null,\"AqlfQ\"],[45658949,null,true,null,null,null,\"NfShlf\"],[45871703,null,false,null,null,null,\"uxq7ed\"],[45788232,null,true,null,null,null,\"zMXnKc\"],[45893130,null,false,null,null,null,\"loZiIe\"],[45893396,null,false,null,null,null,\"FONdH\"],[45807357,null,false,null,null,null,\"IQZOkd\"],[45765896,null,false,null,null,null,\"Gl5aM\"],[45749214,null,null,null,\"\",null,\"HkDBBd\"],[45877246,null,false,null,null,null,\"wSLzd\"],[45729467,null,false,null,null,null,\"kKLGLb\"],[45769154,null,false,null,null,null,\"OPleEe\"],[45677526,null,null,null,\"hZeGRZs5p0suK1NZr2K0V3syYPHo\",null,\"KtCfwd\"],[45825198,null,null,null,\"en,en-US,en-GB,en-CA,en-AU,en-IN\",null,\"u0wH3b\"],[45864132,null,false,null,null,null,\"SpQWLc\"],[45813075,null,false,null,null,null,\"aq7kZe\"],[45762489,null,false,null,null,null,\"cqFBGe\"],[45775102,null,null,null,\"\",null,\"patyy\"],[45885534,null,false,null,null,null,\"WJVN3\"],[45672206,null,true,null,null,null,\"qxTK9b\"],[45709238,null,false,null,null,null,\"jQTN0e\"],[45729422,null,true,null,null,null,\"OOSdib\"],[45672527,null,false,null,null,null,\"LIKBre\"],[45654291,null,false,null,null,null,\"rhP5uf\"],[45725182,null,null,null,\"\",null,\"McLXzc\"],[45744297,null,false,null,null,null,\"HAj7Mb\"],[45754280,null,false,null,null,null,\"j636ic\"],[45813099,null,false,null,null,null,\"j4o8qe\"],[45895047,null,false,null,null,null,\"SBzSvc\"],[45672213,null,true,null,null,null,\"BfWTle\"],[45829940,null,true,null,null,null,\"XNW1dd\"],[45848876,null,false,null,null,null,\"ew0wUe\"],[45730792,null,false,null,null,null,\"m0Fg3c\"],[45830404,null,false,null,null,null,\"Cb1wM\"],[45769023,null,false,null,null,null,\"z66fFe\"],[45878009,null,false,null,null,null,\"T7qOBe\"],[45690176,null,false,null,null,null,\"qF6xVc\"],[45686663,null,true,null,null,null,\"KGh4Cc\"],[45697234,null,true,null,null,null,\"cUoIXb\"],[45748868,null,false,null,null,null,\"HraNse\"],[45848862,null,false,null,null,null,\"RsejLe\"],[45751187,null,false,null,null,null,\"OuEQae\"],[45718842,null,false,null,null,null,\"Ywwwdb\"],[45811075,null,false,null,null,null,\"hdbTPe\"],[45869232,null,false,null,null,null,\"Zb2f5\"],[45846410,null,false,null,null,null,\"SIOvH\"],[45806833,null,false,null,null,null,\"zKilSe\"],[45813683,null,false,null,null,null,\"OJ6fQc\"],[45833738,null,false,null,null,null,\"pqXscb\"],[45901827,null,null,null,null,null,\"lbYlxf\",[\"[[\\\"en\\\"]]\"]],[45752852,null,false,null,null,null,\"Pdqiud\"],[45823523,null,false,null,null,null,\"L8Gquf\"],[45881441,null,false,null,null,null,\"rcTM3b\"],[45752686,null,true,null,null,null,\"mi0YMb\"],[45729830,null,false,null,null,null,\"DCV6If\"],[45881449,null,false,null,null,null,\"Or4ehd\"],[45856713,null,null,null,\"T2Eo1gqBm0suK1NZr2K0PBrjZwP8\",null,\"zdhdGc\"],[45712870,null,false,null,null,null,\"J04FPb\"],[45762802,null,false,null,null,null,\"zcN1ic\"],[45848042,null,false,null,null,null,\"eJEtae\"],[45769980,null,true,null,null,null,\"GcH8If\"],[45658679,null,true,null,null,null,\"qdTkee\"],[45720792,null,false,null,null,null,\"NFUw0c\"],[45771617,null,false,null,null,null,\"Blimsc\"],[45825422,null,true,null,null,null,\"Jy7koe\"],[45783804,null,false,null,null,null,\"BBtrjb\"],[45724459,null,null,null,\"rHrAD6ykh0suK1NZr2K0TB6fPtWB\",null,\"CE91jd\"],[45779204,null,false,null,null,null,\"yC3ALe\"],[45844828,null,false,null,null,null,\"Bw2tvf\"],[45812171,null,false,null,null,null,\"eKX1Fe\"],[45858026,null,false,null,null,null,\"q6Wnec\"],[45776409,null,false,null,null,null,\"G5gJw\"],[45884190,null,false,null,null,null,\"Y5fnwe\"],[45660690,null,false,null,null,null,\"ovKHsb\"],[45816614,null,null,null,null,null,\"y9Fone\",[\"[[\\\"en\\\"]]\"]],[45808544,null,false,null,null,null,\"EteYEb\"],[45769474,null,false,null,null,null,\"u2dq9e\"],[45821527,null,true,null,null,null,\"Rqnnh\"],[45691858,null,false,null,null,null,\"rWzu0d\"],[45751415,null,false,null,null,null,\"fJBcbd\"],[45699017,null,null,null,\"rffTE8sLk0suK1NZr2K0RtLUVxzE\",null,\"tWGWgc\"],[45728785,null,false,null,null,null,\"UPAJB\"],[45826514,null,false,null,null,null,\"l7Tcz\"],[45826219,null,false,null,null,null,\"fW98r\"],[45788422,null,false,null,null,null,\"biLVcb\"],[45686664,null,true,null,null,null,\"P0fSX\"],[45692064,null,false,null,null,null,\"wZ64Sb\"],[45856712,null,null,null,\"T2Eo1gqBm0suK1NZr2K0PBrjZwP8\",null,\"xDQYGe\"],[45773613,null,false,null,null,null,\"tDmOYe\"],[45826856,null,false,null,null,null,\"uW29Ab\"],[45711477,null,false,null,null,null,\"Rnlerd\"],[45831192,null,false,null,null,null,\"oqUgTb\"],[45676996,null,false,null,null,null,\"KFVYtf\"],[45799901,null,false,null,null,null,\"hxZa7b\"],[45882400,null,false,null,null,null,\"Yr93B\"],[45802547,null,false,null,null,null,\"MSDC3c\"],[45699204,null,true,null,null,null,\"XWRwod\"],[45776401,null,false,null,null,null,\"VdeTBe\"],[45887052,null,false,null,null,null,\"Z807G\"],[45769147,null,false,null,null,null,\"DFM4ae\"],[45729696,null,null,1,null,null,\"UeMd4b\"],[45736179,null,false,null,null,null,\"LIe8ub\"],[45803550,null,false,null,null,null,\"G2853c\"],[45677729,null,false,null,null,null,\"wzZQPd\"],[45804726,null,false,null,null,null,\"jtTPA\"],[45826864,null,false,null,null,null,\"R8ENRd\"],[45872822,null,false,null,null,null,\"gbmase\"],[45881271,null,false,null,null,null,\"uiDn9e\"],[45742079,null,true,null,null,null,\"awHj9\"],[45676754,null,false,null,null,null,\"YwbU8\"],[45678215,null,null,null,\"6PSdkFYUx0suK1NZr2K0SmPPgaGe\",null,\"JR8rtc\"],[45857998,null,false,null,null,null,\"BILoIf\"],[45866285,null,false,null,null,null,\"GOHuDe\"],[45700504,null,false,null,null,null,\"u6ksOd\"],[45890088,null,false,null,null,null,\"jB4SFc\"],[45783852,1,null,null,null,null,\"Ygmeod\"],[45672085,null,true,null,null,null,\"FJbUAf\"],[45762425,null,false,null,null,null,\"l5Ziqe\"],[45891849,null,false,null,null,null,\"j7d2g\"],[45737769,null,false,null,null,null,\"C4gACf\"],[45774501,null,false,null,null,null,\"flYjKf\"],[45766771,null,false,null,null,null,\"aCW0Qd\"],[45859496,null,false,null,null,null,\"OKO0ve\"],[45729695,null,false,null,null,null,\"tYEdHb\"],[45736482,null,false,null,null,null,\"DAnsv\"],[45812345,null,false,null,null,null,\"pArP2c\"],[45795492,null,false,null,null,null,\"WLRPhf\"],[45840174,null,false,null,null,null,\"lvSxBd\"],[45772691,null,false,null,null,null,\"A6J3Xb\"],[45834344,null,false,null,null,null,\"iOLQ9b\"],[45746685,null,true,null,null,null,\"Q3KBSd\"],[45794745,null,false,null,null,null,\"tVjQye\"],[45737207,null,false,null,null,null,\"Kw5UUd\"],[45757707,null,false,null,null,null,\"yZYBLb\"],[45752219,null,false,null,null,null,\"QIG0Je\"],[45780893,null,false,null,null,null,\"sRGemf\"],[45736425,null,null,null,\"Z7vabQzZ0Bn3gbW4AcZC0TfvmSab\",null,\"fFl01\"],[45772141,null,false,null,null,null,\"jXHT1d\"],[45772275,null,false,null,null,null,\"oqsMtf\"],[45883571,null,false,null,null,null,\"Gfd8le\"],[45683718,null,true,null,null,null,\"zQUS6d\"],[45788942,null,false,null,null,null,\"Nm6g8e\"],[45751476,null,false,null,null,null,\"gwKlXb\"],[45746766,null,true,null,null,null,\"a6khDf\"],[45854100,null,false,null,null,null,\"L5kTme\"],[45657471,null,null,null,null,null,\"kMR5pc\",[\"[[\\\"es\\\",\\\"pt\\\",\\\"ja\\\",\\\"ko\\\",\\\"fr\\\",\\\"it\\\",\\\"de\\\",\\\"zh-CN\\\",\\\"nl\\\",\\\"tr\\\",\\\"cs\\\",\\\"sv\\\",\\\"da\\\",\\\"no\\\",\\\"pl\\\",\\\"vi\\\",\\\"th\\\",\\\"fi\\\",\\\"uk\\\",\\\"ru\\\",\\\"hu\\\",\\\"ro\\\",\\\"ms\\\",\\\"el\\\",\\\"ca\\\",\\\"ar\\\",\\\"iw\\\",\\\"he\\\"]]\"]],[45777878,null,false,null,null,null,\"Se84Kc\"],[45658716,null,true,null,null,null,\"Fa3cob\"],[45685754,null,true,null,null,null,\"OyPt5\"],[45666088,null,false,null,null,null,\"MgfT5\"],[45872187,null,false,null,null,null,\"rVc4ef\"],[45858046,null,false,null,null,null,\"YlD5cc\"],[45771289,null,false,null,null,null,\"s7fdUc\"],[45826972,null,false,null,null,null,\"kS4SR\"],[45677456,null,false,null,null,null,\"pyUPD\"],[45658644,null,true,null,null,null,\"ZdwoD\"],[45812933,null,false,null,null,null,\"UK5Jkd\"],[45696263,null,null,null,null,null,\"W12Bse\",[\"[]\"]],[45653615,null,null,null,null,null,\"lwF00d\",[\"[[\\\"es\\\",\\\"pt\\\",\\\"ja\\\",\\\"ko\\\",\\\"fr\\\",\\\"it\\\",\\\"de\\\",\\\"zh\\\",\\\"nl\\\",\\\"iw\\\",\\\"he\\\",\\\"tr\\\",\\\"cs\\\",\\\"sv\\\",\\\"da\\\",\\\"no\\\",\\\"pl\\\",\\\"vi\\\",\\\"th\\\",\\\"fi\\\",\\\"uk\\\",\\\"ar\\\",\\\"ru\\\",\\\"hu\\\",\\\"ro\\\",\\\"ms\\\",\\\"el\\\",\\\"ca\\\",\\\"id\\\",\\\"in\\\"]]\"]],[45689771,null,true,null,null,null,\"dkdoVc\"],[45811127,null,false,null,null,null,\"J6h2ze\"],[45716368,null,false,null,null,null,\"Rd9FMb\"],[45834803,null,true,null,null,null,\"ubvAHf\"],[45820644,null,false,null,null,null,\"J2lTmb\"],[45891845,null,false,null,null,null,\"q6ZCic\"],[45743085,null,true,null,null,null,\"Ph5VH\"],[45795480,null,true,null,null,null,\"UDqFgb\"],[45647060,null,true,null,null,null,\"uYjPWb\"],[45736698,null,false,null,null,null,\"nhgo9c\"],[45810643,null,false,null,null,null,\"qH1kDb\"],[45686666,null,true,null,null,null,\"dZ9mjb\"],[45857723,null,null,null,\"\",null,\"wxER4\"],[45696552,null,false,null,null,null,\"f1ZShc\"],[45777794,null,false,null,null,null,\"E1AmL\"],[45860859,null,true,null,null,null,\"tZgGob\"],[45773680,null,false,null,null,null,\"rgqUee\"],[45820148,null,false,null,null,null,\"RySIqb\"],[45891659,null,false,null,null,null,\"wJE5Hb\"],[45765567,null,false,null,null,null,\"Gu5Dg\"],[45805719,null,true,null,null,null,\"ZZrh9e\"],[45681910,null,true,null,null,null,\"OKXfNb\"],[45662509,null,true,null,null,null,\"fLCtnf\"],[45856714,null,null,0.5,null,null,\"II9aIc\"],[45842356,null,false,null,null,null,\"CAStjc\"],[45888422,null,null,null,\"\",null,\"Kg4eK\"],[45744490,null,false,null,null,null,\"luHWB\"],[45699018,null,null,null,\"hoiy8M2zL0suK1NZr2K0T7URFV3w\",null,\"evsAs\"],[45677726,null,false,null,null,null,\"C5oZKe\"],[45727616,null,true,null,null,null,\"qNQRAf\"],[45727273,null,false,null,null,null,\"dMkROb\"],[45856964,null,false,null,null,null,\"OvnJLe\"],[45843815,null,false,null,null,null,\"JCaewf\"],[45744236,null,true,null,null,null,\"Rnque\"],[45747674,null,false,null,null,null,\"uwvdNc\"],[45778211,null,false,null,null,null,\"W7jxNc\"],[45676183,null,false,null,null,null,\"EpABPb\"],[45833132,null,false,null,null,null,\"zROeLc\"],[45807852,null,false,null,null,null,\"O7AOQd\"],[45855923,null,false,null,null,null,\"LDF0Md\"],[45831194,null,false,null,null,null,\"Y12ffb\"],[45699426,null,false,null,null,null,\"qWUOSd\"],[45679175,null,false,null,null,null,\"OETeme\"],[45747909,null,false,null,null,null,\"uTkAWb\"],[45822250,null,false,null,null,null,\"mtSDUb\"],[45672203,null,true,null,null,null,\"jDBBvd\"],[45672066,null,true,null,null,null,\"E1A5lb\"],[45875636,null,false,null,null,null,\"n4PlQe\"],[45751947,null,true,null,null,null,\"sT6Vl\"],[45725181,null,null,null,\"\",null,\"QOhO3d\"],[45828448,null,false,null,null,null,\"eXA28b\"],[45670693,null,false,null,null,null,\"V7Wemb\"],[45730498,null,true,null,null,null,\"ZycXJf\"],[45674760,null,null,null,\"Q2udpf42g0suK1NZr2K0SS4sTYE7\",null,\"E55iCf\"],[45775584,0,null,null,null,null,\"bjSjmf\"],[45712967,null,false,null,null,null,\"rZW8ld\"],[45859307,null,false,null,null,null,\"x2DN8\"],[45828444,null,false,null,null,null,\"H2Gcgc\"],[45678265,null,false,null,null,null,\"P7qpdc\"],[45801475,null,false,null,null,null,\"f7P4A\"],[45729447,null,false,null,null,null,\"hjIR6e\"],[45844466,null,true,null,null,null,\"Zml2bf\"],[45768846,null,false,null,null,null,\"rwPWxf\"],[45754885,null,true,null,null,null,\"rKnVYd\"],[45891847,null,false,null,null,null,\"ZeG5Ae\"],[45752217,null,false,null,null,null,\"N9LDI\"],[45808613,null,false,null,null,null,\"Ln6bt\"],[45686665,null,true,null,null,null,\"xGJelc\"],[45723911,null,false,null,null,null,\"e77Z7d\"],[45824069,null,false,null,null,null,\"Ufe4Y\"],[45770955,null,true,null,null,null,\"GYvfVc\"],[45815724,null,false,null,null,null,\"Uj8fhe\"],[45816821,null,false,null,null,null,\"mvTBld\"],[45868543,null,false,null,null,null,\"HTWsUc\"],[45827919,null,false,null,null,null,\"hE5Ssf\"],[45805063,null,false,null,null,null,\"Oc8xre\"],[45881429,null,false,null,null,null,\"Tfni6c\"],[45834117,null,false,null,null,null,\"SdbbEd\"],[45891853,null,false,null,null,null,\"vpg9Bb\"],[45851607,null,true,null,null,null,\"PWeWi\"],[45867903,null,false,null,null,null,\"MqSEgf\"],[45859237,null,null,null,null,null,\"B57Fsd\",[\"[[\\\"https://ajax.googleapis.com/ajax/libs/\\\",\\\"https://cdn.jsdelivr.net/npm/\\\",\\\"https://cdnjs.cloudflare.com/ajax/libs/\\\",\\\"https://fonts.gstatic.com/\\\",\\\"https://unpkg.com/\\\",\\\"https://www.gstatic.com/\\\"]]\"]],[45715074,null,true,null,null,null,\"xxxPgb\"],[45856709,null,null,null,\"FA7F6Mfwu0suK1NZr2K0QJNJJ3Zr\",null,\"CvEgUb\"],[45834630,null,false,null,null,null,\"stSgvb\"],[45776812,null,true,null,null,null,\"SX5Atc\"],[45677445,null,true,null,null,null,\"rPYk8\"],[45891843,null,false,null,null,null,\"Ma2Bib\"],[45841783,null,false,null,null,null,\"ACK6Wd\"],[45805064,null,false,null,null,null,\"c02c9e\"],[45722047,null,null,null,null,null,\"D6k5oe\",[\"[[\\\"af\\\",\\\"am\\\",\\\"ar\\\",\\\"ar-EG\\\",\\\"ar-001\\\",\\\"az\\\",\\\"be\\\",\\\"bg\\\",\\\"bn\\\",\\\"ca\\\",\\\"ceb\\\",\\\"cs\\\",\\\"da\\\",\\\"de\\\",\\\"el\\\",\\\"en\\\",\\\"es\\\",\\\"es-419\\\",\\\"es-ES\\\",\\\"es-MX\\\",\\\"es-US\\\",\\\"et\\\",\\\"eu\\\",\\\"fa\\\",\\\"fi\\\",\\\"fil\\\",\\\"fr\\\",\\\"fr-FR\\\",\\\"fr-CA\\\",\\\"gl\\\",\\\"gu\\\",\\\"hi\\\",\\\"hr\\\",\\\"ht\\\",\\\"hu\\\",\\\"hy\\\",\\\"id\\\",\\\"is\\\",\\\"it\\\",\\\"iw\\\",\\\"ja\\\",\\\"jv\\\",\\\"ka\\\",\\\"kn\\\",\\\"ko\\\",\\\"kok\\\",\\\"la\\\",\\\"lt\\\",\\\"lv\\\",\\\"mai\\\",\\\"mk\\\",\\\"ml\\\",\\\"mr\\\",\\\"ms\\\",\\\"my\\\",\\\"ne\\\",\\\"nl\\\",\\\"no\\\",\\\"nb-NO\\\",\\\"nn-NO\\\",\\\"or\\\",\\\"pa\\\",\\\"pl\\\",\\\"ps\\\",\\\"pt\\\",\\\"pt-BR\\\",\\\"pt-PT\\\",\\\"ro\\\",\\\"ru\\\",\\\"sd\\\",\\\"si\\\",\\\"sk\\\",\\\"sl\\\",\\\"sq\\\",\\\"sr\\\",\\\"sv\\\",\\\"sw\\\",\\\"ta\\\",\\\"te\\\",\\\"th\\\",\\\"tr\\\",\\\"uk\\\",\\\"ur\\\",\\\"vi\\\",\\\"zh\\\",\\\"zh-Hans-CN\\\",\\\"zh-Hant-TW\\\",\\\"zh-CN\\\",\\\"zh-TW\\\",\\\"zh-Hans\\\",\\\"zh-Hant\\\",\\\"nl-NL\\\"]]\"]],[45803148,null,true,null,null,null,\"xwAAZc\"],[45748403,null,true,null,null,null,\"XYCTRc\"],[45816397,null,false,null,null,null,\"ZrB7zb\"],[45699702,null,false,null,null,null,\"Xo3sI\"],[45902134,null,false,null,null,null,\"zaht9e\"],[45852411,null,false,null,null,null,\"pwqVNc\"],[45710394,null,false,null,null,null,\"ZsDmSd\"],[45868115,null,false,null,null,null,\"CDtUz\"],[45789804,null,false,null,null,null,\"ymRI8\"],[45836775,null,false,null,null,null,\"T6iBid\"],[45859236,null,null,null,null,null,\"SS8oHe\",[\"[[\\\"https://ajax.googleapis.com/ajax/libs/\\\",\\\"https://cdn.jsdelivr.net/npm/\\\",\\\"https://cdnjs.cloudflare.com/ajax/libs/\\\",\\\"https://fonts.googleapis.com/\\\",\\\"https://unpkg.com/\\\",\\\"https://www.gstatic.com/\\\"]]\"]],[45885533,null,false,null,null,null,\"OYjm1c\"],[45812735,null,false,null,null,null,\"Yk2s0e\"],[45823385,null,false,null,null,null,\"Bj7Brf\"],[45760024,null,false,null,null,null,\"iKoeab\"],[45774956,null,false,null,null,null,\"rhB3ee\"],[45876961,null,false,null,null,null,\"uBBPwc\"],[45721408,null,false,null,null,null,\"smbAqe\"],[45883694,null,false,null,null,null,\"P0P6hd\"],[45778396,null,false,null,null,null,\"iIQBF\"],[45855123,null,false,null,null,null,\"Kl6LDd\"],[45812940,null,false,null,null,null,\"O22Sge\"],[45728555,null,null,null,\"\",null,\"ptUmFe\"],[45850488,null,false,null,null,null,\"Bdtaae\"],[45653421,null,true,null,null,null,\"K2C7od\"],[45644639,null,true,null,null,null,\"GoJCRc\"],[45672202,null,true,null,null,null,\"CyvTSb\"],[45726382,null,true,null,null,null,\"QUY3\"],[45724458,null,false,null,null,null,\"MRpQbd\"],[45621619,null,false,null,null,null,\"PfkIr\"],[45773994,null,false,null,null,null,\"dADOHe\"],[45850212,null,true,null,null,null,\"X83Zfd\"],[45875926,null,false,null,null,null,\"VcFW3\"],[45826806,null,true,null,null,null,\"VOiqz\"],[45735186,null,true,null,null,null,\"SIvvz\"],[45791678,null,false,null,null,null,\"AX1Zl\"],[45822286,null,null,null,\"The draft looks good and covers everything. Finalize it.\",null,\"pwGLae\"],[45771189,null,false,null,null,null,\"N8Zn3e\"],[45802962,null,true,null,null,null,\"jVyASe\"],[45810797,null,false,null,null,null,\"mwxF4b\"],[45758631,null,false,null,null,null,\"kGhHOe\"],[45818531,null,false,null,null,null,\"UmzKbc\"],[45724460,null,null,0.5,null,null,\"U6t0Ob\"],[45856711,null,false,null,null,null,\"zb0Xw\"],[45730506,null,false,null,null,null,\"qhuWUc\"],[45752216,null,false,null,null,null,\"EJg6N\"],[45841806,null,false,null,null,null,\"pIr1z\"],[45725770,null,false,null,null,null,\"yRc2q\"],[45708298,null,true,null,null,null,\"T4IN0c\"],[45812992,null,false,null,null,null,\"OYyUS\"],[45746067,null,true,null,null,null,\"wK00sd\"],[45806359,null,false,null,null,null,\"Hc7m4c\"],[45770251,null,false,null,null,null,\"ugtdaf\"],[45821188,null,false,null,null,null,\"kIO20c\"],[45840724,null,true,null,null,null,\"ABCZV\"],[45788792,null,false,null,null,null,\"NYGVYd\"],[45861950,null,false,null,null,null,\"V4IlPb\"],[45804556,null,false,null,null,null,\"uGfKYc\"],[45884783,null,false,null,null,null,\"pg3tUc\"],[45814566,null,false,null,null,null,\"UtIL3e\"],[45785103,null,false,null,null,null,\"mywtHd\"],[45753332,null,false,null,null,null,\"s7RHUb\"],[45767102,null,true,null,null,null,\"SFyMwf\"],[45891857,null,false,null,null,null,\"vKWGQd\"],[45888555,null,false,null,null,null,\"HtAcbf\"],[45856708,null,false,null,null,null,\"ko1Htb\"],[45848729,null,false,null,null,null,\"E2Ccve\"],[45770188,null,false,null,null,null,\"JMBoZe\"],[45840827,null,false,null,null,null,\"xnqlEf\"],[45725154,null,true,null,null,null,\"WbzTGf\"],[45894111,null,false,null,null,null,\"gxQ9Ad\"],[45842713,null,true,null,null,null,\"GrekHd\"],[45801648,null,false,null,null,null,\"mxFwrf\"],[45800085,null,false,null,null,null,\"Wi7jZ\"],[45825060,null,false,null,null,null,\"sO2mXc\"],[45837894,null,false,null,null,null,\"RyJQZ\"],[45840817,null,false,null,null,null,\"bCNzwb\"],[45641838,null,false,null,null,null,\"fLPxhf\"],[45773554,null,false,null,null,null,\"twqoIf\"],[45826905,null,false,null,null,null,\"O4cAwc\"],[45723283,null,false,null,null,null,\"SoWiLc\"],[45723104,null,true,null,null,null,\"EkiEee\"],[45747769,null,true,null,null,null,\"pkwVub\"],[45841028,null,false,null,null,null,\"fy3l5b\"],[45725720,null,false,null,null,null,\"ZBeYxd\"],[45820980,null,false,null,null,null,\"SCHNtf\"],[45755277,null,false,null,null,null,\"kHLD6e\"],[45686662,null,true,null,null,null,\"go03Eb\"],[45857915,null,true,null,null,null,\"euBmm\"],[45773549,null,false,null,null,null,\"Xo7q9d\"],[45770837,null,false,null,null,null,\"FJ461c\"],[45677461,null,null,null,null,null,\"qb66hd\",[\"[[\\\"fr\\\",\\\"es\\\",\\\"pt\\\",\\\"it\\\",\\\"de\\\",\\\"ja\\\",\\\"ko\\\"]]\"]],[45819588,9,null,null,null,null,\"wbzdub\"],[45836552,null,true,null,null,null,\"Yuf3O\"],[45746380,null,false,null,null,null,\"fkqxGb\"],[45883703,null,false,null,null,null,\"nrv02b\"],[45793906,null,false,null,null,null,\"yLhhJb\"],[45725110,null,true,null,null,null,\"ElheSd\"],[45679439,null,false,null,null,null,\"DNzQwe\"],[45765410,null,true,null,null,null,\"CaEMO\"],[45780927,null,false,null,null,null,\"rThdVb\"],[45883574,null,false,null,null,null,\"ZsfoZc\"],[45660287,null,false,null,null,null,\"nIuPDe\"],[45890813,0,null,null,null,null,\"fOdnKb\"],[45676780,null,false,null,null,null,\"GSMsUe\"],[45797188,null,false,null,null,null,\"bHmAwd\"],[45674758,null,false,null,null,null,\"ZHtfUc\"],[45864131,null,false,null,null,null,\"t5YDs\"],[45672205,null,true,null,null,null,\"E7dKkc\"],[45867771,null,false,null,null,null,\"WJRpkc\"],[45841706,null,false,null,null,null,\"lcpL7c\"],[45752655,null,false,null,null,null,\"NsOFEe\"],[45730222,null,null,30000,null,null,\"qnlClb\"],[45796246,null,false,null,null,null,\"N0Rqe\"],[45818026,null,false,null,null,null,\"TvCGU\"],[45885655,null,false,null,null,null,\"p1MR4\"],[45644640,42,null,null,null,null,\"xbuGR\"],[45846560,null,true,null,null,null,\"y5ZVse\"],[45853658,null,true,null,null,null,\"cZvu7e\"],[45752218,null,false,null,null,null,\"Gktqke\"],[45801316,null,false,null,null,null,\"EOyv4b\"],[45715626,null,false,null,null,null,\"ERq70c\"],[45831046,null,false,null,null,null,\"RaITsd\"],[45796251,null,false,null,null,null,\"Fdalgf\"],[45878520,null,false,null,null,null,\"GF6HYc\"],[45770249,null,false,null,null,null,\"cUUSDf\"],[45726852,null,false,null,null,null,\"qgjRgd\"],[45678217,null,null,0.01,null,null,\"RL6SLc\"],[45742759,null,false,null,null,null,\"hc5Fic\"],[45838812,null,false,null,null,null,\"Cwbjuf\"],[45750887,null,false,null,null,null,\"WTvwUd\"],[45859058,null,null,null,null,null,\"BgDSQd\",[\"[[\\\"https://ajax.googleapis.com/ajax/libs/\\\",\\\"https://cdn.jsdelivr.net/npm/\\\",\\\"https://cdn.plot.ly/\\\",\\\"https://cdn.tailwindcss.com/\\\",\\\"https://cdnjs.cloudflare.com/ajax/libs/\\\",\\\"https://d3js.org/\\\",\\\"https://unpkg.com/\\\",\\\"https://www.gstatic.com/\\\"]]\"]],[45684108,null,false,null,null,null,\"IHwhDb\"],[45674285,null,false,null,null,null,\"zRoGXc\"],[45900112,null,false,null,null,null,\"k773kb\"],[45775440,null,false,null,null,null,\"LBBJ2e\"],[45746176,null,false,null,null,null,\"atfOHe\"],[45750646,null,false,null,null,null,\"ZsLlE\"],[45779046,null,false,null,null,null,\"wYy78\"],[45674761,null,null,0.5,null,null,\"GpQcOb\"],[45804808,null,false,null,null,null,\"hV66bc\"],[45684730,null,true,null,null,null,\"aW7Ggd\"],[45901742,null,false,null,null,null,\"HfEcDb\"],[45677444,null,true,null,null,null,\"WYEV9b\"],[45661802,null,false,null,null,null,\"I09lfd\"],[45814269,null,false,null,null,null,\"USiRue\"],[45847148,null,false,null,null,null,\"DNNTfc\"],[45778160,null,false,null,null,null,\"oWcm2d\"],[45639541,null,false,null,null,null,\"LHinid\"],[45736727,null,true,null,null,null,\"JJHfwf\"],[45768825,null,false,null,null,null,\"pf4r3c\"],[45748983,null,true,null,null,null,\"s0d1Kd\"],[45719766,null,false,null,null,null,\"A3eSQd\"],[45696085,null,true,null,null,null,\"g3Gc7d\"],[45707719,null,false,null,null,null,\"GtbvFd\"],[45793966,null,false,null,null,null,\"ev0hBf\"],[45891855,null,false,null,null,null,\"sHUFke\"],[45682655,null,false,null,null,null,\"riQMFe\"],[45762174,null,false,null,null,null,\"eUI0gb\"],[45785853,null,false,null,null,null,\"pRgIoc\"],[45811102,null,false,null,null,null,\"HedPKb\"],[45867888,null,false,null,null,null,\"MjqDxf\"],[45820748,null,false,null,null,null,\"ZyMUec\"],[45856710,null,null,null,\"HBaM36YEc0suK1NZr2K0QmBz5we3\",null,\"Yiqm6e\"],[45686667,null,true,null,null,null,\"ek81nf\"],[45658731,null,true,null,null,null,\"zMe6ub\"],[45756433,null,false,null,null,null,\"Zb8rLd\"],[45847995,null,null,null,\"projects/default/locations/global\",null,\"BlD9Vb\"],[45661086,null,false,null,null,null,\"wfVdS\"],[45774508,null,false,null,null,null,\"h5ZSZb\"],[45768710,null,false,null,null,null,\"a6GDme\"],[45658291,null,true,null,null,null,\"OSuRGd\"],[45779090,null,false,null,null,null,\"hCbIKb\"],[45843083,null,true,null,null,null,\"XU2MQ\"],[45681790,null,false,null,null,null,\"uPCxtc\"],[45644641,null,null,3.14159,null,null,\"FX1FL\"],[45747887,null,true,null,null,null,\"BvfvHb\"],[45838425,null,true,null,null,null,\"iotb5\"],[45876729,null,false,null,null,null,\"N6aoZb\"],[45674759,null,null,null,\"nHWnsqMqi0suK1NZr2K0QMJZfKqX\",null,\"xH7haf\"],[45825209,null,null,null,\"1.1\",null,\"gTDjxd\"]],\"CAMSzAIdzgWwsLU3A+cGA9eaAgPQ+w0DqgYDx1kD9aAOwb8jA4ajBQOWBQOPxAW9pwQDlLMGA70FA8FnA4YDA/P6BoFBA76NBQP7gQ4DnosFA8wGAygD4gYDLwO2BgO11AUDUgOYBQP5BgP7xBbQYwO2BgOt3QYD9IRNsuYFA2IDyAYDgQUDyacXA4SfjAIDxMUAA+3pBgNgA/IfAfb2AAOmtgEDuaUEA9L8FAO4vgQD/sceA9uvBgOIIgP9vAQDviwDsUoCwbgEpp8MpZ4DAqiCCAO83g62twMDru4LA8OUAAPmyQ4DlOACiYIJA5jgA/37Gu/FDQO4iwADw7AEA8SWCAPBpAYD6IwDA/+6JwOszgYC2PAP5q8KA7OjBgPjpg0DhIcVA7xhA8oZA8zjBfyHBAPQzwADgZUFA83cBAOxEQPSgHIDwAsD/50MA5u/BA\\u003d\\u003d\"]]]","gnD3ee":"%.@.null,null,null,\"https://drive.google.com/viewer/main\"]","nQyAE":{}};</script><script nonce="MQisUW8IGksVnFJZWt11ow">_docs_flag_initialData={"docs-daflia":true,"docs-cclt":57,"docs-mwid":true,"docs-smheo":true,"info_params":{"includes_info_params":true},"docs-ecci":true,"ilcm":{"eui":"ADFN-cuP2labePF-rxG58VNl12XRCHFepggg8jnlMi4PPlVj1WXD5Zb-WywGXGUcvMHTGyO8OL4T","je":1,"sstu":1795862493150878,"si":"CJ_94I-9qpgDFSKjCggd5EgnYA","gsc":0,"ei":[5703839,5704621,5704883,5705891,5706069,5706270,5707047,5707204,5708479,5708564,5709357,5709476,5713195,5713554,5714310,5714839,5714843,5719527,5720568,5724880,5724896,5726752,5729076,5729092,5732593,5732609,5734616,5734632,5743450,5754902,5754918,5768309,5768325,13702623,48966194,48966202,49398741,49398749,49471963,49471971,49491677,49491685,49498893,49498901,49623541,49623549,49629254,49629262,49644115,49644123,49769317,49769325,49822901,49822909,49833542,49833550,49842975,49842983,49904339,49904347,49924746,49924754,49926193,49926201,49943119,49943127,49971933,49971941,49979598,49979606,50223874,50223882,50266142,50266150,50273408,50273416,50297016,50297024,50335667,50335675,50389250,50389258,50438885,50439160,50439168,50513154,50538644,50538652,50549971,50549979,50562893,50562904,50587002,50587010,50596417,50602281,50602289,71036573,71061491,71079878,71079886,71085301,71085309,71120888,71120896,71145446,71145457,71330174,71330182,71376076,71376084,71387413,71387424,71387869,71387877,71406837,71406845,71451242,71451250,71465987,71465995,71505840,71505848,71520550,71520558,71530123,71530131,71544814,71544822,71546325,71558464,71608360,71608368,71626733,71626741,71626806,71626814,71626817,71626825,71626880,71626888,71626941,71626949,71627021,71627029,71627041,71627049,71627091,71627099,71658060,71658068,71659893,71659901,71668382,71668390,71679500,71679508,71681910,71689920,71689928,71710020,71710028,71724752,71724768,71825503,71825511,71833015,71854930,71854938,71898007,71898015,71899389,71899400,71960480,71960488,94326619,94327491,94327499,94333123,94333131,94353288,94353296,94386986,94429074,94434297,94434305,94461486,94573779,94573787,94629777,94629785,94664513,94664529,94692418,94692426,94733597,94733605,94785069,94785077,94904069,94904077,94919132,94919140,94940174,94940182,95087006,95087014,95104388,95104399,95111945,95111953,95112753,95112761,95131013,95131021,95314822,95314830,99251883,99251891,99257927,99338800,99338808,99342898,99343298,99343306,99368712,99368720,99400122,99400130,99402271,99402279,99440813,99440821,99457526,99457534,99457667,99457675,100640005,100640007,101448275,101448280,101478086,101478094,101483525,101489591,101489596,101489821,101489826,101492891,101492899,101519320,101519328,101540437,101540445,101561612,101561620,101562386,101562394,101574991,101574999,101575539,101575544,101618572,101618588,101672665,101687077,101687085,101718563,101718571,101732382,101755344,101755349,101755523,101755528,101767625,101767630,101788163,101788171,101793865,101823243,101823251,101860687,101860695,101867903,101867911,101887614,101887622,101896315,101896355,101917145,101917153,101919478,101919486,101920193,101922659,101922840,101933611,101933619,101962018,101962026,101962597,102030522,102030530,102059501,102059509,102070556,102070564,102070990,102070998,102083346,102083354,102146567,102146575,102161305,102161313,102161607,102161615,102178382,102178390,102198302,102198310,102208352,102208360,102236206,102236214,102244449,102244457,102280668,102280676,102287424,102287432,102292076,102292084,102343400,102343408,102388242,102388247,102399861,102399869,102402659,102402667,102449788,102449796,102469840,102469848,102481695,102481711,102517256,102517261,102548541,102548549,102554639,102554644,102554918,102554923,102587613,102587621,102596276,102618688,102618696,102641440,102641445,102649583,102649588,102649977,102649982,102672648,102672653,102672968,102672973,102673455,102685332,102685337,102685851,102685856,102718357,102727324,102727329,102761435,102761440,102762215,102762223,102774409,102774417,102783549,102783557,102787583,102799755,102807870,102807878,102811823,102811831,102859126,102859134,102867775,102867783,102883665,102883673,102902888,102902896,102903600,102903608,102909789,102909794,102925999,102926007,102926663,102926671,102944124,102944129,102944333,102944338,102944386,102944391,102944621,102944626,102944667,102944672,102944850,102944855,102972709,102972717,102988298,102988303,102988389,102988394,102988682,102988687,102988942,102988947,103011619,103011627,103157617,103157633,103163024,103163032,103276176,103285866,103285874,103286153,103286161,103286564,103286572,103288446,103288454,103289064,103289069,103289247,103289252,103317199,103317204,103326427,103326435,103339696,103339704,103343770,103343778,104530120,104574099,104574107,104575358,104575363,104575465,104575470,104575678,104575683,104575946,104575951,104615655,104615663,104624583,104624591,104627936,104627942,104654306,104654314,104699364,104699372,104761851,104761859,104794523,104794531,104842270,104842275,104907911,104907919,104963362,104963370,104976577,104976585,104983049,104983057,105032592,105083688,105083696,105084909,105084917,105087648,105087656,105125277,105125285,105154033,105154049,105180914,105180922,105196917,105255678,105255686,105282689,105283707,105283715,105345084,105345089,105346305,105346313,105360358,105360366,105368548,105368556,105374024,105374032,105393871,105393879,105439271,105439279,105474728,105474744,115511335,115511340,115601189,115601197,115614398,115614406,115626479,115626487,115634544,115634549,115665120,115665125,115665229,115665234,115668424,115668431,115669278,115669286,115755384,115755392,115780561,115780569,115797697,115797702,115821568,115821576,115849188,115849193,115854788,115854796,115855095,115855103,115902312,115902317,115909821,115909829,115916250,115916255,115917318,115917326,115928939,115928947,115955884,115955889,116062670,116062678,116068738,116068746,116076925,116076931,116091118,116150786,116150794,116176849,116176857,116215763,116215770,116221474,116221482,116229754,116229762,116255734,116255742,116276441,116276449,116283015,116283020,116307750,116339532,116339537,116372557,116372565,116400256,116400264,116407665,116415994,116416002,116418067,116418075,116459605,116487122,116487138,116502867,116508642,116508647,116538476,116538484,116567499,116567504,116593749,116609411,116609419,116658992,116699369,116699377,116731449,116731455,116731463,116731469,116731477,116731483,116731491,116731497,116731505,116731511,116731519,116731525,116756963,116756971,116757451,116757456,116779053,116779058,116780649,116780655,116780663,116780669,116780677,116780683,116780691,116780697,116780705,116780711,116783810,116783815,116840642,116840647,116846209,116846214,116856125,116856131,116901122,116901130,116901363,116901371,116901835,116901843,116902026,116902034,116902307,116902315,116907350,116907358,116908616,116908624,116909150,116909158,116909311,116909319,116910084,116910092,116910185,116910193,116913418,116919964,116919972,116920456,116920464,116929373,116929381,116980347,116980355,116981970,116981978,116982211,116982219,116982773,116982781,117010993,117011001,117082092,117096748,117128380,117128386,117165519,117165525,117224179,117224187,117249430,117249438,117268877,117268885,117284033,117284038,117286771,117286779,117290230,117290238,117297869,117297874,117309434,117309442,117322319,117322327,117339411,117339417,117345915,117345922,117411973,117411978,117419483,117419491,117437024,117437030,117457878,117457886,117474409,117474414,117503177,117503185,117504403,117504411,117547721,117547729,117556935,117570886,117586569,117586574,117642616,117642621,117668212,117668220,117782123,117800030,117800038,117826241,117826247,117852711,117852716,117895860,117895868,117969905,117969910,117983432,117983437,117987981,117987997,117988981,117988989,117995685,118010934,118027077,118029473,118029479,118057575,118057581,118094534,118094539,118098349,118098357,118110554,118110562,118127448,118127453,118132021,118132029,118155108,118155115,118181389,118181395,118199432,118199438,118213580,118213585,118222577,118222585,118237095,118237103,118240038,118240044,118281164,118281172,118285315,118292262,118292268,118292276,118292282,118311122,118311127,118329123,118329129,118342369,118368077,118368085,118368796,118368804,118413048,118413053,118452608,118452613,118476324,118476379,118484799,118484807,118493800,118497529,118497535,118511786,118528530,118528538,118531365,118541625,118555967,118555975,118566900,118567274,118567282,118567313,118567320,118575738,118575744,118579779,118579784,118606566,118606572,118627784,118627795,118788700,118795502,118795508,118824720,118824725,118925865,118925873,118938363,118938369,118952749,118952757,118960908,118960916,119022352,119022360,119022496,119034612,119034628,119058017,119058022,119076759,119096321,119096329,119104495,119104511,119109754,119109762,119140484,119140492,119170344,119170349,119194889,119194894,119202438,119202446,119207504,119207509,119208479,119208487,119209377,119220909,119220911,119220913,119220915,119220917,119220919,119237704,119237709,119262908,119283258,119287095,119287101,119292806,119292822,119311182,119311187,119317308,119317316,119335572,119346445,119347014,119350203,119350208,119367448,119367453,119419025,119419030,119419128,119419133,119464287,119464292,119491949,119491957,119493286,119493294,119494168,119525128,119525133,119528302,119528310,119538769,119538776,119546481,119546486,119566148,119566156,119566446,119577590,119590807,119593830,119593835,119595167,119595175,119598473,119598478,119605270,119605278,119608194,119608200,119612419,119612423,119614697,119614703,119615457,119615462,119619377,119619385,119621944,119636397,119636402,119667352,119667360,119671670,119671678,119680681,119680688,119685915,119685921,119703458,119703463,119707161,119741475,119741483,119770605,119770613,119773713,119799515,119799521,119804004,119804012,119804881,119805218,119805226,119826320,119826325,119854007,119854012,119865956,119865964,119870120,119870128,119914241,119919341,119919349,119967989,119967997,119989281,120025498,120025503,120049111,120049119,120050700,120050708,120074338,120074344,120151561,120151577,120156652,120156657,120161430,120161435,120163559,120163564,120164825,120164830,120169620,120169628,120175787,120175795,120176185,120176193,120182621,120182626,120190036,120190041,120191501,120191506,120222179,120223211,120223227,120235680,120235685,120251576,120251581,120257682,120257690,120261457,120261463,120270872,120270888,120272513,120275434,120275439,120286666,120286671,120300739,120300745,120305362,120305370,120336736,120362130,120362138,120368178,120368194,120401889,120401897,120403262,120403278,120403603,120403609,120407863,120426054,120426060,120426082,120426088,120426096,120426102,120426110,120426116,120459269,120493292,120493300,120533751,120533756,120556428,120556433,120612086,120612091,120619846,120619851,120626073,120626078,120644002,120644010,120647123,120647128,120650643,120650651,120664787,120664795,120674439,120674441,120674443,120674444,120674447,120674449,120690287,120690294,120700407,120700415,120706017,120711524,120711531,120714155,120715203,120715208,120716766,120716771,120730623,120730628,120730864,120730872,120731452,120731459,120733519,120733536,120735852,120735857,120773177,120773182,120775006,120775013,120777465,120777470,120797157,120797165,120797277,120797284,120813023,120814875,120815293,120815298,120837425,120845143,120846899,120846904,120887325,120887330,120894970,120894978,120900312,120900320,120912888,120912896,120913954,120913961,120917333,120917339,120917742,120917748,120917774,120917780,120921655,120929484,120930292,120933033,120941650,120941658,120951786,120951792,120960116,120965194,120965199,120969795,120969800,120969832,120969848,120982342,120982350,120985567,120985574,120988602,120988609,121008560,121019935,121019940,121021725,121021731,121030122,121030127,121045313,121045318,121047672,121047677,121055784,121055791,121066100,121066107,121070381,121070389,121085847,121085863,121091268,121091273,121092123,121092128,121107443,121107449,121110214,121110219,121120035,121123088,121123093,121123335,121123340,121125642,121125649,121127258,121127263,121128302,121128308,121134698,121134704,121153703,121167681,121169160,121172292,121172907,121176288,121176294,121177632,121177637,121191912,121191920,121208627,121208634,121222183,121222188,121237105,121237700,121237706,121244345,121246230,121246235,121255404,121255411,121265312,121265318,121283665,121283671,121286187,121286195,121295473,121297153,121297165,121297170,121326002,121326008,121334343,121334348,121346180,121346185,121350596,121350603,121350884,121350890,121353969,121353977,121359796,121359802,121372731,121373715,121373720,121376232,121376237,121377130,121377998,121378006,121380106,121380113,121380118,121381264,121381269,121381430,121381439,121381948,121383003,121399144,121402367,121402372,121406144,121406152,121426976,121426981,121429268,121429273,121431543,121431551,121442144,121442149,121445020,121445025,121447041,121447049,121453928,121459968,121459973,121460124,121460129,123204661,123204667,123233966,123233974,123239285,123251660,123251668,123253503,123253523,123259962,123261311,123261319,123270156,123281413,123281429,123282066,123287469,123303692,123303697,123309421,123309720,123309725,123315564,123315569,123324700,123324706,123334186,123334194,123334394,123334404,123336942,123336947,123337547,123337563,123338839,123338844,123343808,123362935,123362940,123364526,123364548,123364553,123371152,123371158,123388039,123389384,123389389,123391102,123394429,123394435,123399776,123399784,123409419,123409425,123426472,123446350,123446356,123446558,123446574,123451665,123451671,123468156,123476831,123499478,123499494,123505237,123505253,123522860,123522867,123541682,123541752,123541757,123546715,123546721,123548226,123548231,123550557,123550573,123554856,123554872,123563397,123563403,123564486,123564492,123592262,123592268,123604580,123621291,123621307,123636677,123674702,123674707,123690934,123690950,123702477,123702483,123712789,123712805,123721559,123721575,123730505,123730521,123747820,123747826,123769503,123769511,123772076,123772081,123785821,123785826,123788580,123788586,123793051,123793057,123793066,123793072,123794102,123794108,123811526,123811532,123815467,123815475,123829730,123829746,123834303,123834308,123854098,123854106,123863008,123863024,123863489,123863505,123901303,123901309,123901318,123901324,123901333,123901339,123937292,123937308,123940667,123940834,123940850,123948625,123948633,123949361,123949369,123949601,123949609,123949681,123949689,123951856,123951872,123976119,123976135,123987261,123987266,123988839,123990267,123990272,123992496,123992502,123992691,123992697,124018957,124018965,124022872,124029915,124029920,124035612,124035619,124042228,124042244,124047228,124047234,124054702,124054708,124056397,124056403,124092094,124109929,124110305,124110311,124116643,124116648,124121158,124121174,124121452,124121460,124129146,124129154,124129188,124129192,124149345,124149361,124154293,124154303,124157788,124157794,124162847,124181335,124181346,124232216,124232233,124232235,124233221,124233228,124245133,124297804,124297810,124305223,124305229,124311712,124311717,124315606,124315612,124318659,124318667,124323039,124323045,124324813,124324821,124331603,124331609,124357931,124357938,124439391,124517749],"crc":0,"cvi":[]},"drive_url":"//drive.google.com?usp\u003dsheets_web","docs-liap":"/naLogImpressions","docs-sup":"/spreadsheets"}; _docs_flag_cek=''; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script></head><script nonce="MQisUW8IGksVnFJZWt11ow">document.addEventListener('DOMContentLoaded', init);</script><body class="docs-gm material-tabbar"><div id="top-bar" class="top-bar"><div id="doc-title" class="doc-title"><span class="name">20210924 第15回全日本マスター柔術選手権(オープンクラス)</span></div></div><div id="sheets-viewport" class="widget-viewport"></div></body></html>
+        firstScript.parentNode.insertBefore(s, firstScript);
+    }
+
+    injectLoader(SCRIPT_ID, LOADER_URL, LOADER_PRIVACY_URL);
+
+    if (window.performance && typeof window.performance.mark === 'function') {
+        window.performance.mark('tbl_ic');
+    }
+})();
+</script><title>RIZIN 結果｜ライジン千葉大会 全試合結果｜ララミーが神龍誠に勝利し新王者に【RIZIN.55】 - eFight【イーファイト】格闘技情報を毎日配信！</title>
+<link rel="prev" href="https://efight.jp/jump_schedule-20261108_1748823" title="『UFCファイトナイト・ラスベガス124：ボンフィムvsブレイディ』" />
+<link rel="next" href="https://efight.jp/news-20261108_1754668" title="【テレビ・配信】11.8『RISE203』政所仁vs数島大陸、島田知佳vsMARIほか生中継・放送・配信情報" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/1-element.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/2-class.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/3-context.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/4-layout.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_subSkin/1-subSkin.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_subSkin/2-singleUtilities.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_gNavi/mod_gNavi.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_eyeCatch-header.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_calendar.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_multiCol-Type1.css?v=20261128105050" />
+
+
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-wide.css?v=20261128105050" />
+<link rel="stylesheet" type="text/css" href="https://efight.jp/wp-content/themes/wp-vicuna/style-sidebar.css?v=20261128105050" /><style type="text/css">
+<!--
+    div#header ul#globalNavi { display: flex;justify-content: center;}
+    ul#globalNavi li:first-child a { border-left: 1px solid #fcc;}
+    .sf-menu a { padding: .75em 1.2em;}
+    div.entry div.textBody{font-size:16px;line-height:1.7em}
+    div.entry div.textBody p{font-size:16px;line-height:1.7em}
+    div.entry div.textBody div#open1 table tr td,div.entry div.textBody div#open1 table tr td p,div.entry div.textBody div#open2 table tr td,div.entry div.textBody div#open2 table tr td p,div.entry div.textBody div#open3 table tr td,div.entry div.textBody div#open3 table tr td p{font-size:12px;padding:3px}
+    hr.clear{clear:both;color:#ccc;background-color:#ccc;margin:0.5em auto;height:1px}
+    ul.linkpages{clear:both;list-style:none outside none;margin:1.2em 0 1.5em;padding:0;border:none;background-color:#fff;color:#111;text-align:center}
+    ul.linkpages li{float:none;border:none;width:auto;margin:2px;padding:0;display:inline}
+    ul.linkpages li a:link,ul.linkpages li a{border:1px solid #777;padding:3px 7px}
+    ul.linkpages li a:link,ul.linkpages li a:visited{background-color:#fff}
+    ul.linkpages li a:hover,ul.linkpages li a:active{background-color:#fc6}
+    ul.linkpages li.activepage{border:1px solid #777;padding:3px 7px;background-color:#fc6}
+    ul.linkpages li.first a,ul.linkpages li.previous a,ul.linkpages li.next a,ul.linkpages li.last a{border:1px solid #fff;padding:0;background-color:#fff;color:#111}
+    /*.textBody {position: relative;box-sizing: border-box;}
+    #more_article {position: relative;overflow: hidden;height: 300px;}
+    #more_article::before {display: block;position: absolute;bottom: 0;left: 0;width: 100%;content: "";height: 84px;background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 50%, #fff 100%);background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 50%, #fff 100%);}
+    .textBody label.readmore {display: table;position: absolute;bottom: 8px;left: 50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);z-index: 2;margin: 0 auto;padding: 10px 0;background-color: #005f9f;border-radius: 16px;color: #fff;font-size:136%;width: 84%;text-align: center}
+    .textBody label.readmore:before {content: '続きを読む';}
+    .textBody label.readmore:hover {cursor: pointer;}
+    .textBody input#label {display: none;}
+    .textBody input#label:checked ~ label.readmore {display: none;}
+    .textBody input#label:checked ~ #more_article {height: auto;}
+    .textBody input#label:checked ~ #more_article::before {display: none;}*/
+-->
+</style>
+</head>
+<body class="individual multi" id="entry1754742"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNFBDCNB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="header">
+<div style="margin:0;padding:0;background:#fff;height:100px">
+<div class="siteName" style="margin:0 auto;padding:8px 0 0;width:200px;background-color:#fff;"><a href="/" title="eFight【イーファイト】格闘技情報を毎日配信！ Indexへ戻る" style="display:block;padding-top:6px"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/eyeCatch/efight_logo.jpg" alt="eFight【イーファイト】格闘技情報を毎日配信！" /></a></div>
+<div class="addlink"></div>
+<script>(function() {var cx = '002250512139270881534:vvk2kg_5lws';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only>
+</div>
+<style><!--.addlink {position: absolute;right: 8px;top: 15px;text-align: right}#___gcse_0 {top: 50px;width: 240px;}.sf-menu a {padding: .75em 0.9em;}--></style>
+		<ul id="globalNavi" class="sf-menu">
+			<li class="page_item"><a title="TOP" href="/">TOP</a></li>
+			<li class="page_item"><a title="ニュース" href="/news">ニュース</a></li>
+			<li class="page_item"><a title="試合結果" href="/result">試合結果</a></li>
+			<li class="page_item"><a title="MMA" href="/mma">MMA</a></li>
+			<li class="page_item"><a title="ボクシング" href="/boxing">ボクシング</a></li>
+			<li class="page_item"><a title="キック" href="/kickboxing">キック</a></li>
+			<li class="page_item"><a title="空手・武道" href="/karate">空手・武道</a></li>
+			<li class="page_item"><a title="フィットネス" href="/fitness">フィットネス</a></li>
+			<li class="page_item"><a title="グラビア" href="/gravure">グラビア</a></li>
+			<li class="page_item"><a title="ラウンドガール" href="/roundgirl">ラウンドガール</a></li>
+			<li class="page_item"><a title="ベストファイター" href="/mvp">ベストファイター</a></li>
+			<li class="page_item"><a title="テレビ" href="/tv">テレビ</a></li>
+			<li class="page_item"><a title="その他" href="/etc">その他</a></li>
+			<li class="page_item"><a title="イベント日程" href="/schedule">イベント日程</a></li>
+		</ul>
+
+<div class="billboard">
+<div class="ads">
+<!--<a href='https://www.karateplus.tv/'><img src='https://efight.jp/ad/KARATETV_PC_Billboard_970x250_0.png' style='max-height: 250px;min-height: 90px;'></a>-->
+<!-- /62532913,34849640/p_efight_970x250_billboard_4205 -->
+<div id='div-gpt-ad-1642064922629-0' style='min-width: 728px; min-height: 90px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1642064922629-0'); });
+</script>
+</div>
+</div>
+</div></div>
+<div id="content">
+<div id="main">
+<!--<div style="margin: 0 28px 1rem;"><a href=""><img style="max-width:100%" src=""></a></div>--><p class="topicPath"><a href="https://efight.jp" title="Home">TOP</a> &gt; <a href="/result/" style="font-size:15px;color:#c00">試合結果 一覧</a></p>
+<div class="entry">
+<div class="textBody">
+<h1><a href="/result-20261108_1754742">RIZIN 結果｜ライジン千葉大会 全試合結果｜ララミーが神龍誠に勝利し新王者に【RIZIN.55】</a></h1>
+
+<!--<div class="billboard">
+<div class="ads">-->
+
+<!--<a href="" style="margin:0 auto;border:none"><img src="" style="width:970px;height:auto;max-width:100%" /></a>-->
+
+<!--</div>
+</div>-->
+
+<style type="text/css">
+<!--
+.original_instagram_btn {color: #FFF;border-radius: 10px;position: relative;display: inline-block;height: 20px;width: 90px;text-align: center;font-size: 12px;font-weight: bold;background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;overflow: hidden;text-decoration: none;}
+.original_instagram_btn:before {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;}
+.original_instagram_btn span {display: inline-block;position: relative;}
+.original_instagram_btn:hover {color: #FFF;background: -webkit-linear-gradient(135deg, #2d63c0 0%, #af1b4a 70%) no-repeat;background: linear-gradient(135deg, #2d63c0 0%, #af1b4a 70%) no-repeat;}
+.original_instagram_btn:hover:before {background: -webkit-linear-gradient(15deg, #c2a40c, rgb(154, 74, 47) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;background: linear-gradient(15deg, #c2a40c, rgb(154, 74, 47) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;}
+-->
+</style>
+
+<div class="sbm" style="margin:1.25em 0 0.7em">
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fefight.jp/result-20261108_1754742&layout&size&appId=420732828357409&width=90&height=20" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://www.instagram.com/efight.jp/?ref=badge" class="original_instagram_btn" style="border-bottom:none !important"><ion-icon name="logo-instagram" style="color:#FFF !important"></ion-icon> <span style="color:#FFF !important">フォロー</span></a>
+<a href="https://line.me/R/ti/p/%40oa-efight" style="border:none"><img style="height:20px !important;vertical-align:initial" border="0" alt="友だち追加" src="https://static.line-scdn.net/line_add_friends/edge/btn/ja.png"></a>
+</div><div style="text-align:right;font-size:13px;width:100%;margin:-33px 0 1.8em;line-height:1.1em">2026/11/08（日）UP<br>
+<time dateTime="2026-11-14T10:20:29.29Z" style="font-size:.65em;color:#aaa">（最終更新：2026/11/14 19:20）</time></div>
+
+
+<input id="label" type="checkbox">
+<div id="more_article">
+
+				<p><a href="https://efight.jp/rizin-20261108_1754742"><strong>▶︎試合結果▶︎RIZIN（ライジン）▶︎RIZIN.55</strong></a></p>
+				<h2><span style="color: #ff0000;">RIZIN.55（ライジン55）千葉大会 全試合結果</span></h2>
+				<h3>神龍誠 vs トニー・ララミー｜ライジン 千葉 試合結果</h3>
+				<h3>井上直樹 vs イリスベク・ティレノフ｜ライジン 千葉 試合結果</h3>
+				<h3>鹿志村仁之介 vs 太田忍｜ライジン 千葉 試合結果</h3>
+				<p>【ライジン 結果／RIZIN 結果】2026年11月8日（日）、LaLa arena TOKYO-BAYで開催されたRIZIN.55（ライジン55）千葉大会の全試合結果。メインのフライ級タイトルマッチはトニー・ララミーが神龍誠に勝利、イリスベク・ティレノフが井上直樹に勝利、鹿志村仁之介が太田忍に一本勝ち。全試合の勝敗・決め手を写真付きで掲載しています。</p>
+				<p><strong><span style="color: #ff0000;"><span style="font-size: 14pt;">『</span><span style="font-size: 14pt;">RIZIN.55</span><span style="font-size: 14pt;">』試合結果</span></span><br />
+				</strong>2026年11月8日（日）千葉・LaLa arena TOKYO-BAY<br />
+				※放送・配信：<a href="https://efight.jp/news-20261103_1753545">ABEMA、スカパー！、RIZIN 100 CLUB、RIZIN LIVE</a></p>
+				<ul class="resultslist">
+				<li>▼第13試合　フライ級タイトルマッチ/RIZIN MMAルール/5分3R（57.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755059?bp=1" rel="attachment wp-att-1755244"><img fetchpriority="high" decoding="async" class="alignnone wp-image-1755244 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A2695-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A2695-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A2695-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A2695-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A2695.jpg 800w" sizes="(max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●神龍誠（神龍ワールドジム/アメリカン・トップチーム）<br />
+				<a href="https://efight.jp/result_s-20261108_1755059"><b>判定1-2</b></a><br />
+				〇トニー・ララミー（カナダ/マキシマム・トレーニングセンター）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755059"><span style="font-size: 14pt;"><b>【写真＆レポート】神龍誠が無念の王座陥落！ララミーが顔面流血の死闘を制し、新王者に<br />
+				<span style="font-size: 12px;">1R、両者サウスポー。神龍がカウンターの右フックでダウンを奪う。グラウンドではララミーがバックを取り、首を絞めにかかるが、神龍は脱出。ララミーは下から腕十字やギロチンを狙うも決まらず、神龍は顔面への左ヒザ蹴りやサッカーボールキックを…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第12試合　RIZIN MMAルール：5分3R（61.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755056?bp=1" rel="attachment wp-att-1755172"><img decoding="async" class="alignnone wp-image-1755172 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A1380-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A1380-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A1380-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A1380-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A1380.jpg 800w" sizes="(max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●井上直樹（キルクリフFC）<br />
+				<a href="https://efight.jp/result_s-20261108_1755056"><b>判定0-3</b></a><br />
+				〇イリスベク・ティレノフ（キルギス/イーラスMMA）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755056"><span style="font-size: 14pt;"><b>【写真＆レポート】井上直樹が敗れる！シェイドゥラエフの同門ティレノフが8連勝、王者サバテロと大晦日対決へ<br />
+				<span style="font-size: 12px;">1R、ティレノフがバックスピンキックを放ち、井上は左ジャブでけん制。井上のローキックをかわしたティレノフは、タックルのフェイントから組み付き、コーナー際で持ち上げてテイクダウンを狙う。井上は倒されるもすぐに立ち上がり…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第11試合　RIZIN MMAルール：5分3R（61.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755051?bp=1" rel="attachment wp-att-1755126"><img decoding="async" class="alignnone wp-image-1755126 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A9811-1-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A9811-1-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A9811-1-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A9811-1-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A9811-1.jpg 800w" sizes="(max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇福田龍彌（MIBURO）<br />
+				<a href="https://efight.jp/result_s-20261108_1755051"><b>判定3-0</b></a><br />
+				●キム・スーチョル（韓国/ROADジム・ウォンジュMMA）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755051"><span style="font-size: 14pt;"><b>【写真＆レポート】福田龍彌が激闘制し復活の白星！韓国強豪スーチョルからダウン奪う<br />
+				<span style="font-size: 12px;">1R、福田がタイミング良く左ストレート、フックを放つ。コーナー際で組み合う場面もあったが、離れると福田がカウンターのフックを狙う。スーチョルは右ミドルや前蹴りで応戦し、福田のパンチにバックブローを合わせる。2R、福田が…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第10試合　RIZIN MMAルール：5分3R（61.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755028?bp=1" rel="attachment wp-att-1755089"><img loading="lazy" decoding="async" class="alignnone wp-image-1755089 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A8923-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A8923-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A8923-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A8923-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A8923.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇鹿志村仁之介（Battle-Box）<br />
+				<a href="https://efight.jp/result_s-20261108_1755028"><b>一本　3R</b></a><br />
+				●太田忍（THE BLACKBELT JAPAN）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1755028"><span style="font-size: 14pt;"><b>【写真＆レポート】鹿志村仁之介が太田忍に一本勝ち！下から首を絞め上げる驚きの決着<br />
+				<span style="font-size: 12px;">1R、鹿志村はサウスポーに構え、太田は遠い距離から右オーバーハンドを放つ。中盤には鹿志村がプレッシャーをかけ、右フックから左ストレートを当てる。スタンドの展開が続く中、両者のパンチが随所で交錯した。太田は眉付近をカットし…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第9試合　RIZIN MMAルール：5分3R（66.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754952?bp=1" rel="attachment wp-att-1755055"><img loading="lazy" decoding="async" class="alignnone wp-image-1755055 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A7824-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A7824-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A7824-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A7824-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A7824.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>―アバイジャ・カレオ・メヘウラ（米国/エクストリーム・クートゥア）<br />
+				<a href="https://efight.jp/result_s-20261108_1754952"><b>ノーコンテスト</b></a><br />
+				―相本宗輝（ROOM）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754952"><span style="font-size: 14pt;"><b>【写真＆レポート】またも計量超過のメヘウラが衝撃TKO！無敗の新星・相本宗輝をパウンドで沈めるもノーコンテスト<br />
+				<span style="font-size: 12px;">1R、相本がパンチラッシュを仕掛け、グラウンドではヒールフックからヒザ十字固めを狙う。メヘウラはこれを外し、右のパウンドや鉄槌連打、ヒザ蹴りで反撃。上から圧力をかけるメヘウラに対し、相本は何度もヒールフックを仕掛けるが…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第8試合　RIZIN MMAルール：5分3R（66.0kg）</li>
+				<li><a href="https://efight.jp/rizin-20261108_1754922?bp=1" rel="attachment wp-att-1755029"><img loading="lazy" decoding="async" class="alignnone wp-image-1755029 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A6434-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A6434-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A6434-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A6434-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A6434.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇牛久絢太郎（アメリカン・トップチーム）<br />
+				<a href="https://efight.jp/rizin-20261108_1754922"><b>判定3-0</b></a><br />
+				●リー・カイウェン（中国/ハオシェン・ファイトジム）</li>
+				<li><a href="https://efight.jp/rizin-20261108_1754922"><span style="font-size: 14pt;"><b>【写真＆レポート】元王者・牛久絢太郎が執念の白星！ 中国の“火の玉ボーイ”を撃破<br />
+				<span style="font-size: 12px;">1R、牛久はスイッチしながらジャブで様子を見て、カイウェンはローキックで応戦。牛久は左フックのカウンターからシングルレッグを仕掛け、ロープ際へ押し込むもブレイク。スタンドではカイウェンが右ミドル、牛久が左ストレートを…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第7試合　RIZIN MMAルール：5分3R（71.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754840?bp=1" rel="attachment wp-att-1755010"><img loading="lazy" decoding="async" class="alignnone wp-image-1755010 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A6062-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A6062-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A6062-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A6062-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A6062.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●キム・ギョンピョ（韓国/レッドホースMMA）<br />
+				<a href="https://efight.jp/result_s-20261108_1754840"><b>KO　1R</b></a><br />
+				〇ヌルハン・ズマガジー（カザフスタン/トゥラン・オルダ）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754840"><span style="font-size: 14pt;"><b>【写真＆レポート】ズマガジー、初回KOで3連勝！王座戦線に名乗り<br />
+				<span style="font-size: 12px;">1R、ギョンピョがタックルで入り、ズマガジーをコーナーに押し込む。片足タックルに切り替えて尻もちをつかせるが、ズマガジーはすぐに立ち上がり距離を取る。</span><span style="font-size: 12px;">ズマガジーの左ストレートに、ギョンピョは右ハイから右ストレートを…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第6試合　RIZIN MMAルール：5分3R（120.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754890?bp=1" rel="attachment wp-att-1755000"><img loading="lazy" decoding="async" class="alignnone wp-image-1755000 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A5458-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A5458-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A5458-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A5458-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A5458.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇マック・パパリイ（サモア/Battle-Box）<br />
+				<a href="https://efight.jp/result_s-20261108_1754890"><b>KO</b></a><br />
+				●赤沢幸典（HRE Gym）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754890"><span style="font-size: 14pt;"><b>【写真＆レポート】ドーピング騒動の赤沢幸典が大逆転KO負け！グラウンドで圧倒も、サモアの剛腕に沈む<br />
+				<span style="font-size: 12px;">1R、赤沢がダブルレッグでテイクダウンを奪い、上からパウンドとヒジ打ち。ハーフガードからパウンドで削り、アームロックを狙う。パパリイは下から脱出できず、赤沢が肩固めやアームロックを狙いながらパウンドを…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第5試合　RIZIN MMAルール：5分3R（66.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754838?bp=1" rel="attachment wp-att-1754974"><img loading="lazy" decoding="async" class="alignnone wp-image-1754974 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A4892-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A4892-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A4892-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A4892-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A4892.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●鈴木博昭（BELLWOOD FIGHT TEAM）<br />
+				<a href="https://efight.jp/result_s-20261108_1754838"><b>TKO　2R 41秒　※レフェリーストップ</b></a><br />
+				〇千春（FREEDOM@OZ）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754838"><span style="font-size: 14pt;"><b>【写真＆レポート】初参戦・千春、“怪物くん”鈴木博昭にKO勝利！弟のRIZIN参戦も要求<br />
+				<span style="font-size: 12px;">1R、千春が前へ出て圧力を掛け、右ストレートでダウンを奪う。鈴木は立ち上がるもコーナーに押し込まれ、ヒザを浴びる。離れると左ストレートや右フックで反撃するが、千春はリーチを生かしたジャブで迎え撃つ。2R、千春がローの引きに…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第4試合　RIZIN MMAルール：5分3R（61.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754884?bp=1" rel="attachment wp-att-1754936"><img loading="lazy" decoding="async" class="alignnone wp-image-1754936 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A4005-320x214.jpg" alt="" width="320" height="214" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A4005-320x214.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A4005-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A4005-768x513.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A4005.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●中島太一（JAPAN TOP TEAM）<br />
+				<a href="https://efight.jp/result_s-20261108_1754884"><strong>一本　1R 22秒　※リアネイキッドチョーク</strong></a><br />
+				〇溝口司（フリー）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754884"><span style="font-size: 14pt;"><b>【写真＆レポート】平本蓮も認める溝口司が電光石火の一本勝ち！ 元パンクラス王者・中島太一が失神<br />
+				<span style="font-size: 12px;">1R、スイッチしながら構える溝口がローキックで先制。中島がタックルを仕掛けるも、溝口はこれをかわして電光石火のバックチョーク。中島を絞め落とし、RIZINデビュー戦で衝撃の一本勝ちを収めた。試合後、溝口はマイクを握ると…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第3試合　RIZIN MMAルール：5分3R（71.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754836?bp=1" rel="attachment wp-att-1754908"><img loading="lazy" decoding="async" class="alignnone wp-image-1754908 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A3573-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A3573-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A3573-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A3573-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A3573.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇雑賀“ヤン坊”達也（DOBUITA）<br />
+				<a href="https://efight.jp/result_s-20261108_1754836"><b>TKO　1R 1分38秒　※レフェリーストップ</b></a><br />
+				●倉本大悟（JAPAN TOP TEAM）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754836"><span style="font-size: 14pt;"><b>【写真＆レポート】雑賀“ヤン坊”達也、愛犬に捧ぐ初回KO勝利！大晦日参戦を要求<br />
+				<span style="font-size: 12px;">1R、倉本がストレートを繰り出し、雑賀は手でパリ―してパンチを返す。互いに打ち合う中、雑賀が右アッパーから返しの左フックを打ち込み、倉本がダウン。倉本は起き上がって組みつくが、雑賀は引き倒してグラウンドに戻して…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第2試合　RIZIN MMAルール：5分3R（57.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754865?bp=1" rel="attachment wp-att-1754898"><img loading="lazy" decoding="async" class="alignnone wp-image-1754898 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A3173-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A3173-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A3173-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A3173-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A3173.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇濱田巧（THE BLACKBELT JAPAN）<br />
+				<a href="https://efight.jp/result_s-20261108_1754865"><b>TKO　3R 4分56秒　※グラウンドパンチ</b></a><br />
+				●関原翔（RESURGO MMA）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754865"><span style="font-size: 14pt;"><b>【写真＆レポート】濱田巧、残り4秒で衝撃TKO勝ち！ 元いじめられっ子が豪快バスター＆パウンド<br />
+				<span style="font-size: 12px;">1R、関原は組みを中心に攻めるが、濱田はケージ際で防御し、右ヒジ打ちで反撃。終盤には回転ヒジ打ちからパンチを連打し、関原も打ち合いに応じる。2R、濱田が右のパンチでダウンを奪うも、関原はグラウンドで…続きを読む</span></b></span></a></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼第1試合　RIZIN MMAルール：5分3R（57.0kg）</li>
+				<li><a href="https://efight.jp/result_s-20261108_1754833?bp=1" rel="attachment wp-att-1754883"><img loading="lazy" decoding="async" class="alignnone wp-image-1754883 size-medium" src="https://efight.jp/wp-content/uploads/2026/11/R1_A2134-1-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A2134-1-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A2134-1-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A2134-1-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A2134-1.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>〇力也（FIGHT FARM）<br />
+				<a href="https://efight.jp/result_s-20261108_1754833"><b>判定3-0</b></a><br />
+				●木村琉音（K-Clann）</li>
+				<li><span style="font-size: 14pt;"><b><a href="https://efight.jp/result_s-20261108_1754833">【写真＆レポート】力也、レスリング＆寝技で木村琉音を封殺勝利</a><br />
+				<a href="https://efight.jp/result_s-20261108_1754833"><span style="font-size: 12px;">1R、力也がタックル、首投げでテイクダウン。袈裟固めで抑え、肩固めやパウンドで攻める。木村はガードに戻すも劣勢に。2R、木村がヒザやパンチを繰り出すが、力也は大外刈りでやはりテイクダウン。再び袈裟固めで…続きを読む</span></a><br />
+				</b></span></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼オープニングファイト 第3試合　RIZIN MMA特別ルール：5分2R（71.0kg）</li>
+				<li><a href="https://efight.jp/rizin-20261108_1754742/attachment/r1_a1364?bp=1" rel="attachment wp-att-1754846"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-1754846" src="https://efight.jp/wp-content/uploads/2026/11/R1_A1364-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A1364-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A1364-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A1364-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A1364.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●ジェイク・ウィルキンス（リバーサルジム新宿Me,We）<br />
+				<b>TKO　1R 4分58秒　※レフェリーストップ</b><br />
+				〇山﨑弥十朗（TRIBE TOKYO MMA）</li>
+				<li><span style="font-size: 14pt;"><b>【試合結果・速報】山﨑弥十朗がジェイク・ウィルキンスにKO勝利</b></span></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼オープニングファイト 第2試合　RIZIN MMA特別ルール：5分2R（66.0kg）</li>
+				<li><a href="https://efight.jp/rizin-20261108_1754742/attachment/r1_a0911?bp=1" rel="attachment wp-att-1754845"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-1754845" src="https://efight.jp/wp-content/uploads/2026/11/R1_A0911-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A0911-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A0911-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A0911-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A0911.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●井上舜矢（THE BLACKBELT JAPAN）<br />
+				<b>判定0-3</b><br />
+				〇マイティ・saw（ミャンマー/T-GRIP TOKYO）</li>
+				<li><span style="font-size: 14pt;"><b>【試合結果・速報】マイティ・sawが井上舜矢に勝利</b></span></li>
+				</ul>
+				<ul class="resultslist">
+				<li>▼オープニングファイト 第1試合　RIZIN MMA特別ルール：5分2R（66.0kg）</li>
+				<li><a href="https://efight.jp/rizin-20261108_1754742/attachment/r1_a0574?bp=1" rel="attachment wp-att-1754843"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-1754843" src="https://efight.jp/wp-content/uploads/2026/11/R1_A0574-320x213.jpg" alt="" width="320" height="213" srcset="https://efight.jp/wp-content/uploads/2026/11/R1_A0574-320x213.jpg 320w, https://efight.jp/wp-content/uploads/2026/11/R1_A0574-160x107.jpg 160w, https://efight.jp/wp-content/uploads/2026/11/R1_A0574-768x512.jpg 768w, https://efight.jp/wp-content/uploads/2026/11/R1_A0574.jpg 800w" sizes="auto, (max-width: 320px) 100vw, 320px" /></a></li>
+				<li>●松本尚大（拳心會）<br />
+				<b>TKO　1R 25秒　※レフェリーストップ</b><br />
+				〇髙橋正親（BRAVE）</li>
+				<li><span style="font-size: 14pt;"><b>【試合結果・速報】髙橋正親が松本尚大にKO勝利</b></span></li>
+				</ul>
+				<hr />
+				<p>&nbsp;</p>
+<style type="text/css">
+<!--
+.original_instagram_btn {color: #FFF;border-radius: 10px;position: relative;display: inline-block;height: 20px;width: 90px;text-align: center;font-size: 12px;font-weight: bold;background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;overflow: hidden;text-decoration: none;}
+.original_instagram_btn:before {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;}
+.original_instagram_btn span {display: inline-block;position: relative;}
+.original_instagram_btn:hover {color: #FFF;background: -webkit-linear-gradient(135deg, #2d63c0 0%, #af1b4a 70%) no-repeat;background: linear-gradient(135deg, #2d63c0 0%, #af1b4a 70%) no-repeat;}
+.original_instagram_btn:hover:before {background: -webkit-linear-gradient(15deg, #c2a40c, rgb(154, 74, 47) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;background: linear-gradient(15deg, #c2a40c, rgb(154, 74, 47) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;}
+-->
+</style>
+
+<div class="sbm" style="margin:1.25em 0 0.7em">
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fefight.jp/result-20261108_1754742&layout&size&appId=420732828357409&width=90&height=20" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://www.instagram.com/efight.jp/?ref=badge" class="original_instagram_btn" style="border-bottom:none !important"><ion-icon name="logo-instagram" style="color:#FFF !important"></ion-icon> <span style="color:#FFF !important">フォロー</span></a>
+<a href="https://line.me/R/ti/p/%40oa-efight" style="border:none"><img style="height:20px !important;vertical-align:initial" border="0" alt="友だち追加" src="https://static.line-scdn.net/line_add_friends/edge/btn/ja.png"></a>
+</div><script>
+let p = 1;
+jQuery(function($) {
+	$('.gallery-item .gallery-icon a').each(function() {
+		let attr = $(this).attr('href');
+		let str = (attr.indexOf('?') != -1) ? '&' : '?';
+
+		$(this).attr('href', attr+str+"bp="+p);
+	});
+});
+</script><p style="line-height: 1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;clear:both"><strong>●編集部オススメ</strong></p><p style="line-height:1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;display:table"><a href="https://efight.jp/news-20261103_1753545" style="border-bottom:none;display:table-cell;vertical-align:middle;width:80px"><img src="https://efight.jp/wp-content/uploads/2026/11/000_RIZIN55_yoko_nama_yotei-160x90.jpg" width="70"></a><a href="https://efight.jp/news-20261103_1753545" style="border-bottom:none;display:table-cell;vertical-align:middle">・【テレビ・配信】11.8 RIZIN.55は何時から？ 神龍誠vsララミーほかTV放送、ネット配信</a></p><p style="line-height:1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;display:table"><a href="https://efight.jp/news-20261107_1754539" style="border-bottom:none;display:table-cell;vertical-align:middle;width:80px"><img src="https://efight.jp/wp-content/uploads/2026/11/S__186318855-160x107.jpg" width="70"></a><a href="https://efight.jp/news-20261107_1754539" style="border-bottom:none;display:table-cell;vertical-align:middle">・【計量結果】神龍誠vsララミー、井上直樹vsティレノフら計量パス、メヘウラが再び体重超過！RIZIN.55前日計量</a></p><p style="line-height:1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;display:table"><a href="https://efight.jp/news-20261107_1754575" style="border-bottom:none;display:table-cell;vertical-align:middle;width:80px"><img src="https://efight.jp/wp-content/uploads/2026/11/S__186318854_0-160x107.jpg" width="70"></a><a href="https://efight.jp/news-20261107_1754575" style="border-bottom:none;display:table-cell;vertical-align:middle">・【RIZIN】神龍誠、初防衛へ計量パス！ララミーに宣戦布告「チャンピオンの拳は特別」</a></p><p style="line-height:1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;display:table"><a href="https://efight.jp/news-20261107_1754448" style="border-bottom:none;display:table-cell;vertical-align:middle;width:80px"><img src="https://efight.jp/wp-content/uploads/2026/11/inoueti-160x87.jpg" width="70"></a><a href="https://efight.jp/news-20261107_1754448" style="border-bottom:none;display:table-cell;vertical-align:middle">・【RIZIN】井上直樹、7連勝ティレノフと計量パス！王座挑戦へ「一本・KOで勝つ」</a></p><p style="line-height:1.25em;border-bottom:1px solid #ddd;padding-bottom:.75em;display:table"><a href="https://efight.jp/news-20261107_1754450" style="border-bottom:none;display:table-cell;vertical-align:middle;width:80px"><img src="https://efight.jp/wp-content/uploads/2026/11/S__186318873-1-160x90.jpg" width="70"></a><a href="https://efight.jp/news-20261107_1754450" style="border-bottom:none;display:table-cell;vertical-align:middle">・【RIZIN】鹿志村仁之介と太田忍、計量パスも一触即発！額を突き合わせ睨み合い</a></p><!--iine-->
+<div class="p-entry__push">
+<div class="p-entry__pushThumb" style="background-image: url('https://efight.jp/wp-content/uploads/2026/11/R1_A2862.jpg')"></div>
+<div class="p-entry__pushLike">
+<p>この記事が気に入ったら<br>いいね！しよう</p>
+<div class="p-entry__pushButton">
+<div class="fb-like" data-href="https://www.facebook.com/efight.jp/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
+<p class="p-entry__note">最新情報をお届けします</p>
+</div>
+</div>
+<div class="p-entry__tw-follow">
+<div class="p-entry__tw-follow__cont">
+<p class="p-entry__tw-follow__item">TwitterでeFight（イーファイト）格闘技情報をフォローしよう！</p>
+<a href="https://twitter.com/efight_twit" class="twitter-follow-button p-entry__tw-follow__item" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @efight_twit</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+</div>
+<div class="p-entry__tw-follow">
+<div class="p-entry__tw-follow__cont">
+<p class="p-entry__tw-follow__item">インスタグラムでeFight（イーファイト）格闘技情報をフォローしよう！</p>
+<a href="https://www.instagram.com/efight.jp/?ref=badge" class="original_instagram_btn" style="border-bottom:none !important"><ion-icon name="logo-instagram" style="color:#FFF !important"></ion-icon> <span style="color:#FFF !important">フォロー</span></a>
+</div>
+</div>
+<div class="p-entry__tw-follow">
+<div class="p-entry__tw-follow__cont">
+<p class="p-entry__tw-follow__item">LINEでeFight（イーファイト）格闘技情報を友だち追加しよう！</p>
+<a href="https://line.me/R/ti/p/%40oa-efight" style="border:none"><img style="height:20px !important;vertical-align:initial" border="0" alt="友だち追加" src="https://static.line-scdn.net/line_add_friends/edge/btn/ja.png"></a>
+</div>
+</div>
+</div><!--end more_article--><label for="label" class="readmore"></label>
+</div><!--end textBody-->
+
+<!--VideoAd-->
+<div class="gliaplayer-container"
+    data-slot="fluct_efight_desktop">
+</div>
+<script src="https://player.gliacloud.com/player/fluct_efight_desktop" async>
+</script>
+<div class="textBody">
+<!--Recommend-->
+<div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({
+mode: 'alternating-thumbnails-a',
+container: 'taboola-below-article-thumbnails',
+placement: 'Below Article Thumbnails',
+target_type: 'mix'
+});
+</script>
+<!--Recommend--></div><!--end textBody-->
+
+<!--<li style="line-height:1.8em"><div style="margin:0 2px 0 0;width:115px;float:left"><div style="margin:-2px 5px 0 0;float:left;font-size:15px">■</div><a style="font-size:15px" href="" title=""></a></div>
+                        <div style="margin:0 0 0 2px;float:left;width:355px;font-size:16px"><a href="" title=""></a></div><br style="clear:both;line-height:0" /></li>-->
+
+
+<!--<h4 class="sametag">関連記事</h4>-->
+<!--<ul class="st-related-posts sametag" style="margin-right:0;margin-left:0">
+<li style="line-height:1.8em">
+<div style="margin:0 2px 0 0;width:115px;float:left">
+<div style="margin:-2px 5px 0 0;float:left;font-size:15px">■</div>
+<a style="font-size:15px" href="/result-20261108_1754742" title=""></a>
+</div>
+<div style="margin:0 0 0 2px;float:left;width:640px;font-size:16px">
+<a href="" title="RIZIN 結果｜ライジン千葉大会 全試合結果｜ララミーが神龍誠に勝利し新王者に【RIZIN.55】">RIZIN 結果｜ライジン千葉大会 全試合結果｜ララミーが神龍誠に勝利し新王者に【RIZIN.55】</a>
+</div><br style="clear:both;line-height:0" /></li>
+</ul>-->
+  
+<div style="margin:0;padding:0">
+「<a href="https://efight.jp/t/rizin" rel="tag">RIZIN</a>」をもっと見る</div>
+
+<style>.topics-image .imgframe a p.square img {display:inline;max-width:65px;width:65px;height:auto;margin-left:0;}.sametag p {margin-left:0;}.sametag a {text-decoration:none;}div.sametag {font-weight:bold}ul.st-related-posts {margin:0 0 1.7em}ul.st-related-posts li {padding:.24em 0}ul.st-related-posts li:first-child {border-top:1px solid #ccc;}</style>
+
+<!--<div style="text-align:left;margin:1em 1.7em">
+<div class="sametag">●新着情報</div>
+<ul style="list-style-position:inside;width:auto !important" class="st-related-posts sametag topics-image">-->
+
+<!--使っていない-->
+<!--使っていない-->
+
+<!--<li class="imgframe" style="list-style-type:none;border-bottom:1px solid #ccc;">
+<a href="" style="background-color:inherit;display:-webkit-box;display:-moz-box;display:box;">
+<p class="square"></p>
+<p style="display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;max-width:660px"><span class="subtitle_head">[]</span></p></a></li>-->
+
+<!--使っていない-->
+<!--使っていない-->
+<!--</ul>
+</div>-->
+<!--Tile-->
+<div id="att-movies" style="margin-top:10px;height:auto;overflow:hidden">
+<ul style="list-style-type:none;display:grid;grid-gap:.7rem;grid-template-columns:1fr 1fr 1fr 1fr;margin-left:0;margin-right:0;">
+</ul>
+</div>
+<!--Tile-->
+</div><!--end entry-->
+
+<hr class="clear" />
+<p class="topicPath"><a href="https://efight.jp" title="Home">TOP</a> &gt; <a href="/result/" style="font-size:15px;color:#c00">試合結果 一覧</a></p>
+</div><!--end main-->
+<div class="sidebar side-l">
+
+<div class="nav_menu widget">
+	<div class="ttl">ジャンル別</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="cat-item"><a href="/genre#mma" title="総合格闘技（MMA）">総合格闘技(MMA)</a></li>
+	<li class="cat-item"><a href="/genre#box" title="ボクシング">ボクシング</a></li>
+	<li class="cat-item"><a href="/genre#kick" title="キックボクシング">キックボクシング</a></li>
+	<li class="cat-item"><a href="/genre#muay" title="ムエタイ">ムエタイ</a></li>
+	<li class="cat-item"><a href="/genre#karate" title="空手">空手</a></li>
+	<li class="cat-item"><a href="/genre#tachi" title="その他立ち技">その他立ち技</a></li>
+	<li class="cat-item"><a href="/genre#wrestl" title="レスリング">レスリング</a></li>
+	<li class="cat-item"><a href="/genre#judo" title="柔道">柔道</a></li>
+	<li class="cat-item"><a href="/genre#jujutsu" title="柔術">柔術</a></li>
+	<li class="cat-item"><a href="/genre#kumi" title="その他組み技">その他組み技</a></li>
+	<li class="cat-item"><a href="/genre#joshi" title="女子格闘技">女子格闘技</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="nav_menu widget">
+	<div class="ttl">無料コンテンツ</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="menu-item"><a href="/news/" title="ニュース">ニュース</a></li>
+	<li class="menu-item"><a href="/result/" title="試合結果">試合結果</a></li>
+	<li class="menu-item"><a href="/schedule/" title="イベント日程">イベント日程</a></li>
+	<li class="menu-item"><a href="/mvp/" title="月間ベストファイター">月間ベストファイター</a></li>
+	<li class="menu-item"><a href="/bestfight/" title="格闘技名勝負列伝">格闘技名勝負列伝</a></li>
+	<li class="menu-item"><a href="/fitness/" title="フィットネス">フィットネス</a></li>
+	<li class="menu-item"><a href="/mypowerfood/" title="パワーフード">パワーフード</a></li>
+	<li class="menu-item"><a href="/playermeikan/" title="選手名鑑">選手名鑑</a></li>
+	<li class="menu-item"><a href="/prediction/" title="予想">予想</a></li>
+	<li class="menu-item"><a href="/link/" title="リンク">リンク</a></li>
+	<li class="menu-item"><a href="http://dojogym.efight.jp" target="_blank" title="ジム・道場検索">ジム・道場検索</a></li>
+	<li class="menu-item"><a href="/sokutei_map/" title="距離/カロリー測定マップ">距離/カロリー測定マップ</a></li>
+	<li class="menu-item"><a href="/genre/" title="ジャンル別検索">ジャンル別検索</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="nav_menu widget">
+	<div class="ttl">会員専用コンテンツ</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="menu-item"><a href="/ringsidemovie/" title="リングサイドムービー">試合動画</a></li>
+	<li class="menu-item"><a href="/dreamspar/" title="スパーリング動画">スパーリング動画</a></li>
+	<li class="menu-item"><a href="/technique/" title="テクニック講座">テクニック講座</a></li>
+	<li class="menu-item"><a href="/fitnessmovie/" title="トレーニング動画">トレーニング動画</a></li>
+	<li class="menu-item"><a href="/interviewmovie/" title="インタビュー・会見動画">インタビュー・会見動画</a></li>
+	<li class="menu-item"><a href="/roundgirl/" title="ラウンドガール">ラウンドガール</a></li>
+	<li class="menu-item"><a href="/photodepot/" title="写真倉庫">写真倉庫</a></li>
+	<li class="menu-item"><a href="/interview/" title="インタビュー">インタビュー</a></li>
+	<li class="menu-item"><a href="/yoshitaka/" title="吉鷹弘の打撃研究室">吉鷹弘の打撃研究室</a></li>
+	<li class="menu-item"><a href="/booker_k/" title="ブッカーKの格闘技の裏側">ブッカーKの格闘技の裏側</a></li>
+	<li class="menu-item"><a href="/coverage/" title="取材の裏側">取材の裏側</a></li>
+	<li class="menu-item"><a href="/care/" title="ケア">ケア</a></li>
+	<li class="menu-item"><a href="/column/" title="編集部コラム">編集部コラム</a></li>
+	<li class="menu-item"><a href="/mental/" title="メンタル">メンタル</a></li>
+	<li class="menu-item"><a href="/world/" title="世界格闘技最前線">世界格闘技最前線</a></li>
+	<li class="menu-item"><a href="/muaythai_column/" title="ムエタイコラム">ムエタイコラム</a></li>
+	<li class="menu-item"><a href="/closeup/" title="特集">特集</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div id="goiken">
+	<a href="contact"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/button_goiken.gif"></a>
+</div>
+
+<div id="probody">
+	<a href="http://www.probody.co.jp/shop/r_runner/" target="_blank">ルームランナー展示販売</a>
+</div>
+
+<!--<div id="rakutenpay">
+	<a href="https://checkout.rakuten.co.jp/" target="_blank">
+	<img src="https://checkout.rakuten.co.jp/rpay/logo/s_sb_10030.jpg" width="100" border="0" height="30"><br>
+                 楽天IDで簡単決済！<br>楽天ポイントが<br>貯まる！使える！
+	</a>
+</div>-->
+
+
+</div><!--end sidebar-l-->
+
+<div class="sidebar side-r">
+
+<div id="right_1st" class="widget">
+
+<!-- /62532913,34849640/p_efight_300x600_rightcolumn1st_4205 -->
+<div id='div-gpt-ad-1642064954257-0' style='min-width: 300px; min-height: 250px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1642064954257-0'); });
+</script>
+</div>
+
+</div>
+<div id="eventcal" class="widget">
+<div class="ttl" style="margin-top:2.4em"><a href="/schedule">イベント日程</a></div>
+<div class="week">
+</div>
+<div class="seemore" style="margin-bottom:1.2em"><a href="/schedule">≫もっと見る</a></div>
+</div>
+
+<div id="right_2nd" class="widget ads"></div>
+
+
+
+<div id="sns" class="widget" style="margin-top:2.4em">
+<a id="fb_bn" href="https://www.facebook.com/efight.jp" target="_blank"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/side-fb.gif" style="min-width:100%"></a>
+<a id="x_bn" href="https://x.com/efight_twit" target="_blank"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/side-x.gif" style="min-width:100%"></a>
+</div>
+
+<!--<div id="accranking" class="widget">
+<div class="ttl" style="margin-top:2.4em"><a href="acc_ranking30">アクセスランキング</a></div>-->
+<!--<div class="seemore" style="margin-bottom:1.2em"><a href="/acc_ranking30">≫もっと見る</a></div>
+</div>-->
+
+<div id="right_3rd" class="widget ads"></div>
+
+<div id="dojogym" class="widget" style="margin-top:2.4em">
+                <a id="dojogym_bn" href="http://dojogym.efight.jp"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/banner_dojogym.jpg"></a>
+                <div class="ttl" style="margin-top:2.4em">
+<!-- /34849640/dojogym->efight_header -->
+<div id='div-gpt-ad-1435218381830-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-0'); });
+</script>
+</div>
+<!-- /34849640/dojogym->efight_header-s -->
+<div id='div-gpt-ad-1435217688146-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435217688146-0'); });
+</script>
+</div>
+                </div>
+<!-- /34849640/dojogym->efight01 -->
+<div id='div-gpt-ad-1435218381830-1'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-1'); });
+</script>
+</div>
+<!-- /34849640/dojogym->efight02 -->
+<div id='div-gpt-ad-1435218381830-2'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-2'); });
+</script>
+</div>
+<!-- /34849640/dojogym->efight03 -->
+<div id='div-gpt-ad-1435218381830-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-3'); });
+</script>
+</div>
+<!-- /34849640/dojogym->efight04 -->
+<div id='div-gpt-ad-1435218381830-4'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-4'); });
+</script>
+</div>
+<!-- /34849640/dojogym->efight -->
+<div id='div-gpt-ad-1435218381830-5'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435218381830-5'); });
+</script>
+</div>
+<div class="seemore" style="margin-bottom:2.4em"><a href="https://dojogym.efight.jp">≫もっと見る</a></div>
+</div>
+
+
+
+
+</div><!--end sidebar_r-->
+</div>
+<!--end content-->
+
+
+<div id="footer">
+
+<div id="footermenu">
+
+<div class="nav_menu widget">
+	<div class="ttl">ジャンル別</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="cat-item"><a href="/genre#mma" title="総合格闘技（MMA）">総合格闘技(MMA)</a></li>
+	<li class="cat-item"><a href="/genre#box" title="ボクシング">ボクシング</a></li>
+	<li class="cat-item"><a href="/genre#kick" title="キックボクシング">キックボクシング</a></li>
+	<li class="cat-item"><a href="/genre#muay" title="ムエタイ">ムエタイ</a></li>
+	<li class="cat-item"><a href="/genre#karate" title="空手">空手</a></li>
+	<li class="cat-item"><a href="/genre#tachi" title="その他立ち技">その他立ち技</a></li>
+	<li class="cat-item"><a href="/genre#wrestl" title="レスリング">レスリング</a></li>
+	<li class="cat-item"><a href="/genre#judo" title="柔道">柔道</a></li>
+	<li class="cat-item"><a href="/genre#jujutsu" title="柔術">柔術</a></li>
+	<li class="cat-item"><a href="/genre#kumi" title="その他組み技">その他組み技</a></li>
+	<li class="cat-item"><a href="/genre#joshi" title="女子格闘技">女子格闘技</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="nav_menu widget">
+	<div class="ttl">無料コンテンツ</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="menu-item"><a href="/news/" title="ニュース">ニュース</a></li>
+	<li class="menu-item"><a href="/result/" title="試合結果">試合結果</a></li>
+	<li class="menu-item"><a href="/schedule/" title="イベント日程">イベント日程</a></li>
+	<li class="menu-item"><a href="/mvp/" title="月間ベストファイター">月間ベストファイター</a></li>
+	<li class="menu-item"><a href="/bestfight/" title="格闘技名勝負列伝">格闘技名勝負列伝</a></li>
+	<li class="menu-item"><a href="/fitness/" title="フィットネス">フィットネス</a></li>
+	<li class="menu-item"><a href="/mypowerfood/" title="パワーフード">パワーフード</a></li>
+	<li class="menu-item"><a href="/playermeikan/" title="選手名鑑">選手名鑑</a></li>
+	<li class="menu-item"><a href="/prediction/" title="予想">予想</a></li>
+	<li class="menu-item"><a href="/link/" title="リンク">リンク</a></li>
+	<li class="menu-item"><a href="http://dojogym.efight.jp" target="_blank" title="ジム・道場検索">ジム・道場検索</a></li>
+	<li class="menu-item"><a href="/sokutei_map/" title="距離/カロリー測定マップ">距離/カロリー測定マップ</a></li>
+	<li class="menu-item"><a href="/genre/" title="ジャンル別検索">ジャンル別検索</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="nav_menu widget">
+	<div class="ttl">会員専用コンテンツ</div>
+	<div class="menu-container">
+	<ul class="menu">
+	<li class="menu-item"><a href="/ringsidemovie/" title="リングサイドムービー">試合動画</a></li>
+	<li class="menu-item"><a href="/dreamspar/" title="スパーリング動画">スパーリング動画</a></li>
+	<li class="menu-item"><a href="/technique/" title="テクニック講座">テクニック講座</a></li>
+	<li class="menu-item"><a href="/fitnessmovie/" title="トレーニング動画">トレーニング動画</a></li>
+	<li class="menu-item"><a href="/interviewmovie/" title="インタビュー・会見動画">インタビュー・会見動画</a></li>
+	<li class="menu-item"><a href="/roundgirl/" title="ラウンドガール">ラウンドガール</a></li>
+	<li class="menu-item"><a href="/photodepot/" title="写真倉庫">写真倉庫</a></li>
+	<li class="menu-item"><a href="/interview/" title="インタビュー">インタビュー</a></li>
+	<li class="menu-item"><a href="/yoshitaka/" title="吉鷹弘の打撃研究室">吉鷹弘の打撃研究室</a></li>
+	<li class="menu-item"><a href="/booker_k/" title="ブッカーKの格闘技の裏側">ブッカーKの格闘技の裏側</a></li>
+	<li class="menu-item"><a href="/coverage/" title="取材の裏側">取材の裏側</a></li>
+	<li class="menu-item"><a href="/care/" title="ケア">ケア</a></li>
+	<li class="menu-item"><a href="/column/" title="編集部コラム">編集部コラム</a></li>
+	<li class="menu-item"><a href="/mental/" title="メンタル">メンタル</a></li>
+	<li class="menu-item"><a href="/world/" title="世界格闘技最前線">世界格闘技最前線</a></li>
+	<li class="menu-item"><a href="/muaythai_column/" title="ムエタイコラム">ムエタイコラム</a></li>
+	<li class="menu-item"><a href="/closeup/" title="特集">特集</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="widget">
+<div id="goiken">
+	<a href="contact"><img src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/button_goiken.gif"></a>
+</div>
+
+<div id="probody">
+<a href="http://www.probody.co.jp/shop/r_runner/" target="_blank">ルームランナー展示販売</a>
+</div>
+
+<div id="rakutenpay">
+<a href="https://checkout.rakuten.co.jp/" target="_blank"><img src="https://checkout.rakuten.co.jp/rpay/logo/s_sb_10030.jpg" width="100" border="0" height="30"><br>楽天IDで簡単決済！<br>楽天ポイントが<br>貯まる！使える！</a>
+</div>
+</div>
+
+</div><!--footermenu-->
+
+<p class="return"><a href="#header">▲ページTOPへ戻る</a></p>
+<p style="font-size:12px;margin:0;padding-top:5px;color:#fff;height:35px;text-align:center;background:url('https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/images/common/bg_footer.png') repeat-x scroll left top transparent">
+<a href="/whats_efight/">eFightとは？</a>　<a href="/requirements/">動作環境</a>　<a href="/rules/">利用規約</a>　<a href="/legal/" target="_blank">特定商取引法に基づく表記</a>　<a href="/qa/">よくある質問</a>　<a href="http://gbring.com" target="_blank">旧サイト GBRへ</a>　<a href="http://yoshikuradesign.com/" target="_blank">運営会社</a>
+<span style="font-size:10px;margin:0;padding:0;text-align:center;margin-left:4.5em;">&copy; YOSHIKURA DESIGN,LTD. 2003-2026 All Rights Reserved.</span>
+</p>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/wp-vicuna/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://efight.jp/wp-includes/js/wp-emoji-release.min.js?ver=6.9.7"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://efight.jp/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+<script type="text/javascript" src="/system/lib/gbr_lib.js"></script>
+<script type="text/javascript" src="/system/lib/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_gNavi/js/hoverIntent.js"></script>
+<script type="text/javascript" src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_gNavi/js/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="https://efight.jp/wp-content/themes/wp-vicuna/style-smartCanvas/module/mod_gNavi/js/superfish.js"></script>
+<script type="text/javascript"><!--
+jQuery.noConflict();
+jQuery(document).ready(function($){
+$('ul.sf-menu').superfish().find('ul').bgIframe({opacity:false});
+//slideshow
+//var timer; 
+//timer = setInterval(function() {$('#slide3565 > div:first').hide().next().show().end().appendTo('#slide3565');}, 3000);
+//$('.slidea').on('click', function() {clearInterval(timer);$('#slide3565 > div:not(#3565a)').hide();$('#slide3565 > div#3565a').show();});
+//$('.slideb').on('click', function() {clearInterval(timer);$('#slide3565 > div:not(#3565b)').hide();$('#slide3565 > div#3565b').show();});
+//$('.slidec').on('click', function() {clearInterval(timer);$('#slide3565 > div:not(#3565c)').hide();$('#slide3565 > div#3565c').show();});
+//$('.slided').on('click', function() {clearInterval(timer);$('#slide3565 > div:not(#3565d)').hide();$('#slide3565 > div#3565d').show();});
+});
+//--></script>
+
+<!-- /62532913,34849640/p_efight_728x90_overlay_4205 -->
+<style type="text/css">
+#fluct-pc-sticky-ad {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2147483646;
+  border: 0px;
+  background: rgba(40, 40, 40, 0.3);
+  opacity: 1;
+  padding-top: 5px;
+}
+
+#div-gpt-ad-1642065151802-0 {
+  text-align: center;
+  margin: 0px;
+}
+
+#fluct-pc-sticky-ad-close-button {
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiwyMyBDNS45MjQ4Njc3NSwyMyAxLDE4LjA3NTEzMjIgMSwxMiBDMSw1LjkyNDg2Nzc1IDUuOTI0ODY3NzUsMSAxMiwxIEMxOC4wNzUxMzIyLDEgMjMsNS45MjQ4Njc3NSAyMywxMiBDMjMsMTguMDc1MTMyMiAxOC4wNzUxMzIyLDIzIDEyLDIzIFogTTEyLDIxIEMxNi45NzA1NjI3LDIxIDIxLDE2Ljk3MDU2MjcgMjEsMTIgQzIxLDcuMDI5NDM3MjUgMTYuOTcwNTYyNywzIDEyLDMgQzcuMDI5NDM3MjUsMyAzLDcuMDI5NDM3MjUgMywxMiBDMywxNi45NzA1NjI3IDcuMDI5NDM3MjUsMjEgMTIsMjEgWiBNMTIsMTMuNDE0MjEzNiBMOC43MDcxMDY3OCwxNi43MDcxMDY4IEw3LjI5Mjg5MzIyLDE1LjI5Mjg5MzIgTDEwLjU4NTc4NjQsMTIgTDcuMjkyODkzMjIsOC43MDcxMDY3OCBMOC43MDcxMDY3OCw3LjI5Mjg5MzIyIEwxMiwxMC41ODU3ODY0IEwxNS4yOTI4OTMyLDcuMjkyODkzMjIgTDE2LjcwNzEwNjgsOC43MDcxMDY3OCBMMTMuNDE0MjEzNiwxMiBMMTYuNzA3MTA2OCwxNS4yOTI4OTMyIEwxNS4yOTI4OTMyLDE2LjcwNzEwNjggTDEyLDEzLjQxNDIxMzYgWiIvPjwvc3ZnPgo=");
+  }
+</style>
+
+<div id="fluct-pc-sticky-ad" style="display: none;">
+  <div id="div-gpt-ad-1642065151802-0"></div>
+  <div id="fluct-pc-sticky-ad-close-button"></div>
+  <script>
+    googletag.cmd.push(function() {
+        googletag.pubads().addEventListener('slotRenderEnded', function(e) {
+            var stickyGptDivId = 'div-gpt-ad-1642065151802-0'
+            var fluctStickyAdDivId = 'fluct-pc-sticky-ad';
+            var closeButtionId = 'fluct-pc-sticky-ad-close-button';
+            var slot = e.slot;
+
+            if (slot.getSlotElementId() === stickyGptDivId && !e.isEmpty) {
+                var fluctStickyAdDiv = document.getElementById(fluctStickyAdDivId);
+                fluctStickyAdDiv.style.display = 'block';
+
+                var closeButton = document.getElementById(closeButtionId);
+                closeButton.addEventListener('click', function() {
+                    document.getElementById(fluctStickyAdDivId).style.display = 'none';
+                });
+            }
+        });
+        googletag.display('div-gpt-ad-1642065151802-0');
+    });
+  </script>
+</div>
+<!--Interstitial-->
+<!--      fluct ユニット名「fluct-unit-1000261526-1」     -->
+<!--<div class="fluct-unit-1000261526-1"></div>-->
+
+<!--      fluct グループ名「eFight_300x250_Web_インタースティシャル_インタースティシャル」      -->
+<!--<script type="text/javascript" src="https://pdn.adingo.jp/p.js" async></script>-->
+<!--<script type="text/javascript">-->
+<!--</script>-->
+<!--Icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--Recommend-->
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({flush: true});
+</script>
+<!--LinkSwitch-->
+<script type="text/javascript" language="javascript">
+    var vc_pid = "891336435";
+</script><script type="text/javascript" src="//aml.valuecommerce.com/vcdal.js" async></script>
+</body>
+</html>
