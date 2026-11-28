@@ -32,6 +32,8 @@ BAD = re.compile(r'\d+(\.\d+)?\s*(kg|ｋｇ|Kg|KG|lb|cm|ｃｍ)|\d+\s*(勝|敗|�
 TITLE = re.compile(r'推薦|連覇|冠王|冠$|制覇|王者|挑戦者|チャンピオン|優勝|代表|ランカー|ランキング|位$|招待|甲子園|世界一|日本一|^元|^現|MVP|賞$|デビュー|参戦|出場|復帰|引退|ラストファイト|キング・オブ|クイーン・オブ|級|外敵|軍$')
 
 def clean_gym(g):
+    import unicodedata
+    g = re.sub(r'[\uff61-\uff9f]+', lambda m: unicodedata.normalize('NFKC', m.group(0)), g)
     g = re.sub(r'\s+', ' ', g).strip().strip('　 ・,、')
     g = re.sub(r'所属$', '', g).strip()
     for c in ('北朝鮮', '韓国', '中国', '台湾', '香港', '日本', '米国', '英国'):
