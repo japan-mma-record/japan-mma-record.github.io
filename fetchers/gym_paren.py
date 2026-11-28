@@ -1,8 +1,10 @@
 """出典の結果ページ（probe-web で取ったもの）から「選手名（所属）」を読み取り、data/gyms.tsv に足す行を作る。
 
-使い方: python3 build.py のあと、python3 fetchers/gym_paren.py DIR [DIR...] >> data/gyms.tsv
+使い方: python3 build.py のあと、python3 fetchers/gym_paren.py [--near N] DIR [DIR...] >> data/gyms.tsv
   DIR は probe-web ブランチの probe/ と同じ形（index.txt と out/N.html）のフォルダ。
   index.txt の URL が _site/data/events.json の出典URLに入っている大会の試合だけを見る。
+  --near N を付けると、出典に挙げていないページ（URL に日付 YYYYMMDD が入っている eFight の結果ページなど）も、
+  その日付の前後 N 日の大会（柔術の団体は除く）の試合と照らし合わせる。
 決まり:
   ・その試合の2人ともの名前が「名前（所属）」「名前(所属)」の形でページにあり、その選手の所属が1つに決まるときだけ入れる。
   ・Fighting NEXUS 公式（fighting-nexus.net）は「名前／所属／VS／名前／所属」の並びが試合の2人と合うときだけ。
@@ -24,13 +26,14 @@ for line in open(f'{REPO}/data/gyms.tsv', encoding='utf-8').read().splitlines()[
     if len(p) >= 4 and p[3].strip():
         have.add((p[0], p[1], re.sub(r'\s', '', p[2])))
 
-COUNTRIES = set('スコットランド イングランド ウェールズ 北アイルランド コートジボワール ガボン マリ ギニア ベナン トーゴ ニジェール チャド マダガスカル モーリシャス ハイチ パナマ コスタリカ グアテマラ ホンジュラス エルサルバドル ニカラグア トリニダード・トバゴ アルジェリア チュニジア リビア スーダン エチオピア ソマリア コンゴ アンゴラ ジンバブエ ザンビア ウガンダ タンザニア イラク シリア ヨルダン レバノン サウジアラビア クウェート カタール バーレーン オマーン アフガニスタン ブータン マカオ 東ティモール ブルネイ パプアニューギニア スロバキア スロベニア ボスニア 北マケドニア マケドニア アルバニア コソボ モンテネグロ キプロス アイスランド ルクセンブルク モナコ アイルランド ポルトガル ベルギー スイス オーストリア チェコ ハンガリー ルーマニア ブルガリア セルビア クロアチア ギリシャ エジプト モロッコ ケニア ガーナ コロンビア ベネズエラ エクアドル ボリビア ウルグアイ パラグアイ プエルトリコ ドミニカ タジキスタン トルクメニスタン ダゲスタン チェチェン パキスタン バングラデシュ スリランカ サモア トンガ フィジー リトアニア ラトビア エストニア モルドバ イスラエル UAE 日本 アメリカ 米国 ブラジル 韓国 中国 タイ ロシア フランス イギリス 英国 オランダ カナダ モンゴル フィリピン オーストラリア ドイツ イタリア スペイン ポーランド ウクライナ カザフスタン キルギス ウズベキスタン 台湾 香港 シンガポール マレーシア インドネシア ベトナム インド ニュージーランド メキシコ ペルー アルゼンチン チリ グアム ハワイ スウェーデン ノルウェー フィンランド デンマーク ベラルーシ ジョージア グルジア アルメニア アゼルバイジャン トルコ イラン ネパール ミャンマー カンボジア ラオス 北朝鮮 南アフリカ ナイジェリア カメルーン セネガル ジャマイカ キューバ USA Japan Brazil Korea Thailand China Russia'.split())
+COUNTRIES = set('スコットランド イングランド ウェールズ 北アイルランド コートジボワール ガボン マリ ギニア ベナン トーゴ ニジェール チャド マダガスカル モーリシャス ハイチ パナマ コスタリカ グアテマラ ホンジュラス エルサルバドル ニカラグア トリニダード・トバゴ アルジェリア チュニジア リビア スーダン エチオピア ソマリア コンゴ アンゴラ ジンバブエ ザンビア ウガンダ タンザニア イラク シリア ヨルダン レバノン サウジアラビア クウェート カタール バーレーン オマーン アフガニスタン ブータン マカオ 東ティモール ブルネイ パプアニューギニア スロバキア スロベニア ボスニア 北マケドニア マケドニア アルバニア コソボ モンテネグロ キプロス アイスランド ルクセンブルク モナコ アイルランド ポルトガル ベルギー スイス オーストリア チェコ ハンガリー ルーマニア ブルガリア セルビア クロアチア ギリシャ エジプト モロッコ ケニア ガーナ コロンビア ベネズエラ エクアドル ボリビア ウルグアイ パラグアイ プエルトリコ ドミニカ タジキスタン トルクメニスタン ダゲスタン チェチェン パキスタン バングラデシュ スリランカ サモア トンガ フィジー リトアニア ラトビア エストニア モルドバ イスラエル UAE 日本 アメリカ 米国 ブラジル 韓国 中国 タイ ロシア フランス イギリス 英国 オランダ カナダ モンゴル フィリピン オーストラリア ドイツ イタリア スペイン ポーランド ウクライナ カザフスタン キルギス ウズベキスタン 台湾 香港 シンガポール マレーシア インドネシア ベトナム インド ニュージーランド メキシコ ペルー アルゼンチン チリ グアム ハワイ スウェーデン ノルウェー フィンランド デンマーク ベラルーシ ジョージア グルジア アルメニア アゼルバイジャン トルコ イラン ネパール ミャンマー カンボジア ラオス 北朝鮮 南アフリカ ナイジェリア カメルーン セネガル ジャマイカ キューバ USA Japan Brazil Korea Thailand China Russia スリナム イエメン ボスニア・ヘルツェゴビナ ヘルツェゴビナ セルビア・モンテネグロ ガイアナ スーダン 中華人民共和国 中華人民共和国香港特別行政区 香港特別行政区 マカオ特別行政区 アラブ首長国連邦 キュラソー オランダ領キュラソー タヒチ ニューカレドニア マーシャル諸島 ミクロネシア パラオ'.split())
 PREFS = set('北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 新潟 富山 石川 福井 山梨 長野 岐阜 静岡 愛知 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄'.split())
 PREFS |= {p + s for p in list(PREFS) for s in '都道府県'}
 BAD = re.compile(r'\d+(\.\d+)?\s*(kg|ｋｇ|Kg|KG|lb|cm|ｃｍ)|\d+\s*(勝|敗|分|戦|歳|才|年生|位)|戦績|王者|挑戦者|チャンピオン|優勝|ランキング|ランカー|位$|代表|選手|出身|高校|中学|小学|大学$|学年|職業|会社員|^[\d\s\-－:：.]+$|vs|ＶＳ|VS|反則|判定|一本|KO|TKO|ラウンド|^\d|第\d|招待|推薦枠|試合|ドクター|減点|イエロー|計量|kg|延長|※|→|http|監督|コーチ$|^コーチ|芸人|タレント|俳優|アイドル|グラビア|YouTuber|ユーチューバー')
 
 TITLE = re.compile(r'推薦|連覇|冠王|冠$|制覇|王者|挑戦者|チャンピオン|優勝|代表|ランカー|ランキング|位$|招待|甲子園|世界一|日本一|^元|^現|MVP|賞$|デビュー|参戦|出場|復帰|引退|ラストファイト|キング・オブ|クイーン・オブ|級|外敵|軍$')
 
+POS = set('右 左 奥 手前 中央 上 下 写真 写真右 写真左 右から 左から'.split())
 STYLES = set('柔術 ブラジリアン柔術 総合格闘技 カポエイラ ルタ・リブレ ルタリーブリ 空手 空手道 キックボクシング キック ボクシング レスリング アマレス 柔道 サンボ 相撲 プロレス ムエタイ 極真空手 テコンドー MMA アマMMA 格闘技 XXX ??? ？？？'.split())
 
 def clean_gym(g):
@@ -53,7 +56,7 @@ def clean_gym(g):
             continue
         if re.search(r'(共和国|合衆国|王国|連邦)$', x) or x in COUNTRIES or x in PREFS or x.rstrip('出身') in COUNTRIES | PREFS:
             continue
-        if x[0] in '＝=' or TITLE.search(x) or x in STYLES:
+        if x[0] in '＝=' or TITLE.search(x) or x in STYLES or x in POS:
             continue
         if BAD.search(x):
             return ''
@@ -128,6 +131,31 @@ def nz(s):
     return re.sub(r'\s', '', s or '')
 
 
+NEAR = None
+JJ = {'jbjjf', 'ibjjf', 'asjjf', 'sjjjf', 'groundimpact'}
+date2ev = collections.defaultdict(list)
+for e in ev:
+    if e[2] not in JJ:
+        date2ev[e[1]].append(e[0])
+
+
+def events_for(url):
+    got = list(url2ev.get(url, []))
+    if NEAR is not None:
+        m = re.search(r'(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)', url)
+        if m:
+            import datetime
+            try:
+                d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            except ValueError:
+                return got
+            for k in range(-NEAR, NEAR + 1):
+                for eid in date2ev.get((d + datetime.timedelta(k)).isoformat(), []):
+                    if eid not in got:
+                        got.append(eid)
+    return got
+
+
 def run(dirs):
     res = []
     for d in dirs:
@@ -142,7 +170,7 @@ def run(dirs):
                 continue
             text = page_text(path)
             pairs = vs_pairs(text) if 'fighting-nexus.net' in url else []
-            for eid in url2ev.get(url, []):
+            for eid in events_for(url):
                 for b in bouts.get(eid, []):
                     no = str(b[0]) if b[0] else ''
                     n1, n2 = nz(b[2]), nz(b[4])
@@ -191,4 +219,8 @@ def run(dirs):
 
 
 if __name__ == '__main__':
-    run(sys.argv[1:])
+    a = sys.argv[1:]
+    if a and a[0] == '--near':
+        NEAR = int(a[1])
+        a = a[2:]
+    run(a)
