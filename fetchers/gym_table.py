@@ -7,6 +7,9 @@
   ・修斗の古い結果ページ（hirashima-igs.com/shooto/）：1試合ごとの表に、左右の選手名と
     「ランク」「戦績」「出身」「所属」の行がある。「所属」の行の左右をそれぞれの選手の所属とする。
     文字コードは Shift_JIS（ページに charset が書かれていない）。
+  ・BOUTREVIEW の古いレポート（boutreview.com/report/…/index.html）：選手ごとに <!--所属--> と <!--名前--> の
+    印が付いた欄がある（リングスの「リングスジャパン」「リングスオランダ」などもそのまま所属とする）。
+    「第N試合」ごとに区切り、所属と名前の組がちょうど2つある試合だけ使う。
 決まり:
   ・表の2人の名前（空白は無視）が、その大会の試合の2人と同じときだけ入れる。
   ・「フリー」「無所属」、空欄、国名は入れない（fetchers/gym_paren.py の clean_gym と同じ）。
@@ -51,6 +54,16 @@ def hirashima_bouts(t):
     return out
 
 
+def comment_bouts(t):
+    out = []
+    for seg in re.split(r'第\s*[0-9０-９]+\s*試合', t)[1:]:
+        pairs = re.findall(r'(?is)<!--所属-->(.*?)</td>.*?<!--名前-->(.*?)</td>', seg)
+        if len(pairs) == 2:
+            (g1, n1), (g2, n2) = pairs
+            out.append((cell(n1), cell(n2), cell(g1), cell(g2)))
+    return out
+
+
 def run(dirs):
     seen = set()
     for d in dirs:
@@ -60,10 +73,15 @@ def run(dirs):
                 continue
             n, url = p[0], p[3]
             path = os.path.join(d, 'out', f'{n}.html')
-            if not os.path.exists(path) or 'hirashima-igs.com' not in url:
+            if not os.path.exists(path):
                 continue
             t = decode(open(path, 'rb').read())
-            tb = hirashima_bouts(t)
+            if 'hirashima-igs.com' in url:
+                tb = hirashima_bouts(t)
+            elif '<!--所属-->' in t:
+                tb = comment_bouts(t)
+            else:
+                continue
             for eid in gp.url2ev.get(url, []):
                 for b in gp.bouts.get(eid, []):
                     no = str(b[0]) if b[0] else ''
