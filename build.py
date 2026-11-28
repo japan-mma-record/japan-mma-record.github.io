@@ -371,7 +371,7 @@ def load():
         u = r.get('source_url') or ''
         if u and u not in (e.get('sources') or '').split():
             e['sources'] = ((e.get('sources') or '') + ' ' + u).strip()
-        PODIUM[k].append([r.get('division', ''), r.get('place', ''), r.get('name_ja') or r.get('name_en', ''), r.get('team', '')])
+        PODIUM[k].append([r.get('division', ''), r.get('place', ''), r.get('name_ja') or r.get('name_en', ''), r.get('team', ''), (r.get('entrants') or '').strip()])
     # 公開を保留している団体（site.json の hidden_promotions）は載せない
     hide = set(site.get('hidden_promotions') or [])
     for k in [k for k, e in events.items() if e.get('promotion') in hide]:
@@ -446,7 +446,7 @@ def podium_html(ps):
     if not ps:
         return ''
     PL = {'1': '優勝', '2': '準優勝', '3': '3位'}
-    rows = ''.join(f'<tr><td>{html.escape(p[0])}</td><td>{PL.get(str(p[1]), html.escape(str(p[1])))}</td><td>{html.escape(p[2])}</td><td>{html.escape(p[3])}</td></tr>' for p in ps)
+    rows = ''.join(f'<tr><td>{html.escape(p[0])}{"（" + p[4] + "人参加）" if len(p) > 4 and p[4] else ""}</td><td>{PL.get(str(p[1]), html.escape(str(p[1])))}</td><td>{html.escape(p[2])}</td><td>{html.escape(p[3])}</td></tr>' for p in ps)
     return f'<h2 class="sec">入賞者</h2><div class="tbl"><table><thead><tr><th>階級</th><th>順位</th><th>選手</th><th>所属</th></tr></thead><tbody>{rows}</tbody></table></div>'
 
 
