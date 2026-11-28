@@ -517,7 +517,10 @@ def main():
     os.makedirs(os.path.join(OUT, 'e'))
     os.makedirs(os.path.join(OUT, 'f'))
 
-    ev = sorted((e for e in events.values() if bouts.get(e['event_id']) or PODIUM.get(e['event_id'])), key=lambda e: (e['date'], e['event_id']))
+    # 団体戦の結果（data/teams.tsv）だけがある大会も載せる
+    team_keys = {(r.get('date', ''), methods.event_name(r.get('event_name_ja'))) for r in read_tsv(os.path.join(DATA, 'teams.tsv'))}
+    ev = sorted((e for e in events.values() if bouts.get(e['event_id']) or PODIUM.get(e['event_id'])
+                 or (e['date'], methods.event_name(e['name'])) in team_keys), key=lambda e: (e['date'], e['event_id']))
     for e in ev:
         bouts.setdefault(e['event_id'], [])
     ev_list = [[e['event_id'], e['date'], e['promotion'], e['name'], e.get('venue', ''),
