@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-607932-84"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-607932-84"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-607932-84');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<meta charset="UTF-8">
-<title>『後楽園ホール大会 試合結果』 日本修斗協会公認サイト | PRO SHOOTO MMA JAPAN - 修斗  - サステイン </title>
-<link rel="icon" type="image/png" href="/shooto_logo_master.png" sizes="16x16">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-<meta name="keywords" content="修斗,SHOOTO,MMA,総合格闘技,後楽園ホール大会">
-<meta name="description" content="修斗（SHOOTO）公式サイト 試合結果を紹介">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    gtag('config', 'UA-607932-84');
+  </script>
+
+  <meta charset="UTF-8">
+  <title>『吉岡広明 | Hiroaki  Yoshioka』 日本修斗協会公認サイト | PRO SHOOTO MMA JAPAN - 修斗 - サステイン </title>
+  <link rel="icon" type="image/png" href="/shooto_logo_master.png" sizes="16x16">
+  <meta name="keywords" content="修斗,SHOOTO,MMA,総合格闘技,吉岡広明 | Hiroaki  Yoshioka">
+  <meta name="description" content="修斗（SHOOTO）公式サイト 吉岡広明 | Hiroaki  Yoshioka選手情報">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css.css?version=261027">
-<link rel="stylesheet" type="text/css" href="/menu.css?version=260202"/>
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-<script src="//apis.google.com/js/platform.js"></script>
-<script src="/jquery.mobile-menu.js"></script>
-<script src="/pagetop.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css.css?version=260714">
+  <link rel="stylesheet" type="text/css" href="/menu.css?version=260202" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="//apis.google.com/js/platform.js"></script>
+  <script src="/jquery.mobile-menu.js"></script>
+  <script src="/pagetop.js"></script>
+  <style>
+    .social-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    .insta-link {
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+      background-color: black;
+      padding: 0px 10px;
+      border-radius: 5000px;
+      overflow: visible !important;
+      color: white !important;
+    }
+
+    .sms-icon {
+      width: 28px !important;
+      height: 28px !important;
+      color: black;
+      padding: 6px;
+    }
+
+    .sms-link {
+      vertical-align: middle;
+      height: 28px !important;
+      width: fit-content;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .pf-fighter-sms {
+      color: #666;
+      margin-bottom: 0.2em;
+      vertical-align: middle;
+      margin-top: 0.6em;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+  </style>
 </head>
+
 <body>
-<style>
-	html {
-		scroll-behavior: smooth;
-		scroll-padding-top: 10rem;
-	}
-</style>
-<script>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -48,12 +93,46 @@
   ga('create', 'UA-607932-84', 'auto');
   ga('send', 'pageview');
 
-</script><div id="main">
-<div id="contents">
-<div id="shadow">
-<div id="gauge">
+</script>  <style>
+    .nextfight {
+      position: absolute;
+      bottom: 5.5em !important;
+      text-align: center;
+      width: 100%;
+      margin-left: -1.5em;
+    }
 
+    .nf {
+      height: 70px;
+      display: block;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 1px #000;
+    }
 
+    .nf strong {
+      color: #DDD;
+    }
+
+    .nf-day {
+      text-align: right;
+      color: #DDD;
+      text-align: center;
+      font-size: 0.5em;
+    }
+
+    .nf-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+    }
+  </style>
+  <div id="main">
+    <div id="contents">
+      <div id="shadow">
+        <div id="gauge">
+
+          
 <script>
 $(function () {
     var navi = $("#sllide_menu");
@@ -108,1363 +187,50 @@ $(function () {
     <a class="sns_icon" href="https://www.instagram.com/shooto_sustain/" target="_blank"><img src="/images/instagram.svg" alt="instagram"></a>
 </div>
 </nav>
-</div><div id="pagetop"></div>
-<div class="container">
-<h2>RESULT<small style="margin-left:1em;">修斗試合結果</small><a class="pull-right" href="./?">一覧へ</a></h2><div id="fighter-info"></div>
+</div>          <div id="pagetop"></div>
+          <div class="container">
+            <h2>FIGHTERS<small style="margin-left:1em;"><a href="./?">選手紹介</a></small><small style="margin-left:1em;">吉岡広明</small></h2>
 
-
-<div id="result">
-<div class="row">
-<div class="col-xs-12 col-md-3"><a style="background:url(/images/5900bab94dde0.jpg) no-repeat center;background-size:contain;width:100%;height:360px;margin-top:1em;display:block;" href="/images/5900bab94dde0.jpg"></a></div>
-<div class="col-xs-12 col-md-9">
-<h3 id="result-title"><span class="result-day">2017-05-12</span><span class="result-presents">プロフェッショナル修斗公式戦</span><span class="result-title">後楽園ホール大会</span></h3>
-
-<div class="eventBanner">
-	<h4 style="padding:0.5em 0;">TICKETS・STREAM</h4>
-	<ul class="eventBanner__list">
-	<li class="ticket-preparation">
-		<span class="eventBanner-subtitle">e+でチケット購入</span>
-		<a href="https://eplus.jp/shooto/" target="_blank"><img src="/images/event/eventWatch_eplus.png" alt="e+(イープラス)"></a>
-	</li>
-	<li class="ticket-preparation">
-		<span class="eventBanner-subtitle">修斗BASEでチケット購入</span>
-		<a href="https://proshooto.official.ec/" target="_blank"><img src="/images/event/eventWatch_base.png" alt="修斗BASE"></a>
-	</li>
+            <div class="row"><div class="col-xs-12 col-md-4">
+	<div class="fighter-img" style="background:url(/images/yoshioka.jpg) no-repeat top;min-height:400px;background-size:contain;">
 	
 	
+	<div class="fighter-score"><span class="total_num"><b>18</b>戦</span><span class="win_num"><b>6</b>勝</span><span class="lose_num"><b>10</b>敗</span><span class="draw_num"><b>2</b>分</span><div style=" font-weight: normal; text-shadow: 1px 1px 1px #000;">（プロ修斗公式戦 / プロ戦績）</div></div>
+	</div></div><div class="col-xs-12 col-md-8 fighter-data">
+	<div id="pf-fighter-profile">
+	<div class="pf-fighter-weight-class"><span><a href="./?pg=fighters&weight_class=1">ストロー級<span> [ -52.2 Kg ]</span></a><span></div>
+	<div class="pf-fighter-name">吉岡  広明</div>
+	<div class="pf-fighter-name-roma"><span>Hiroaki  Yoshioka<span></div>
+		<div class="pf-fighter-gym">所属 : <span><a href="./?pg=fighters&gymid=32">パラエストラ和泉</a><span></div>
+	<div class="pf-fighter-country">国籍 : <span><a href="./?pg=fighters&home_country=日本">日本</a><span></div>
+	<h4>Personal data</h4>
+	<div class="pf-fighter-pref">出身地 : <span>東京都板橋区</span></div>
+	<div class="pf-fighter-birth">生年月日 : <span>1974 / 1 / 3</span></div>
+	<div class="pf-fighter-height">身長 : <span>164 cm</span></div>
 	
-	
-	
-	<li>
-		<span class="eventBanner-subtitle">配信予定は調整中</span>
-		<a style="pointer-events: none;cursor:none;" href="#" target="_blank"><img src="/images/event/eventWatch_stream_tbd.png" alt="配信予定"></a>
-	</li>
-	
-	</ul>
-</div>
-	<div class="eventBanner">
-		<h4 style="padding:0.5em 0;">SPONSOR</h4>
-		<ul class="eventBanner__list">
-		<li>
-			<span class="eventBanner-subtitle">フィットネスショップ</span>
-			<a href="https://www.fs-kakuto.com/" target="_blank"><img src="/images/event/eventSponsor_fs-kakuto.png" alt="フィットネスショップ"></a>
-		</li>
-		</ul>
-	</div>
-<h4>関連情報</h4>
-<div class="posts" style="padding:1em;background:url(/images/news-bg.png) center;border-bottom:1px solid #333;">
-<div class="post-feed" data-id="1574">
-<span class="post-day">2017-05-25</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1574" aria-expanded="false" aria-controls="post1574" style="color:#F7B800;">5.26 21:00よりAbemaTV格闘チャンネルにて 5.12プロフェッショナル修斗後楽園大会見逃し配信！</a></h5>
-<div class="collapse post-content" id="post1574">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents"><div class="row"><div class="col-xs-12 col-md-4"><a href="//abema.tv/channels/fighting-sports/slots/8uxEM3ykVrNpSb?utm_source=referral&utm_medium=referral&utm_campaign=slot_share" style="background:url(//www.shooto-mma.com/images/abema_logo_news.png) no-repeat center;background-size:contain;display:block;width:100%;height:200px;"></a></div><div class="col-xs-12 col-md-8"><br />
-KO、一本決着の連続となり、かつてないほどの盛り上がりを見せた「5.12プロフェッショナル修斗 後楽園ホール大会」。この熱戦の模様を5月26日(金)21:00より、AbemaTV格闘チャンネルにて見逃し配信を行います。見逃してしまった方は勿論、ご覧頂いた方も是非あの興奮をもう一度感じてください。視聴には便利な視聴予約機能をご利用ください。視聴に関するお問い合わせはAbemaTVホームページでご確認ください。<br />
-<br />
-<h3>プロフェッショナル修斗公式戦後楽園ホール 5.24(見逃し配信)</h3><a href="https://abema.tv/channels/fighting-sports/slots/8uxEM3ykVrNpSb?utm_source=referral&utm_medium=referral&utm_campaign=slot_share">https://abema.tv/channels/fighting-sports/slots/8uxEM3ykVrNpSb?utm_source=referral&utm_medium=referral&utm_campaign=slot_share</a><br />
-</div><br />
-</div></p>
-</div>
-</div>
-<div class="post-feed" data-id="1573">
-<span class="post-day">2017-05-15</span>
-<h5 class="post-title"><a href="http://www.shooto-mma.com/result/?id=42" target="_blank" style="color:#F7B800;">5.12後楽園大会 格闘写真家・長尾迪氏撮影の各試合写真をアップ！</a></h5>
-<div class="collapse post-content" id="post1573">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents"></p>
-</div>
-</div>
-<div class="post-feed" data-id="1477">
-<span class="post-day">2017-05-12</span>
-<h5 class="post-title"><a href="http://www.shooto-mma.com/result/?id=42" target="_blank" style="color:#F7B800;">5.12 プロフェッショナル修斗後楽園ホール大会結果</a></h5>
-<div class="collapse post-content" id="post1477">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents"></p>
-</div>
-</div>
-<div class="post-feed" data-id="1475">
-<span class="post-day">2017-05-12</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1475" aria-expanded="false" aria-controls="post1475" style="color:#F7B800;">5.12 プロフェッショナル修斗当日券情報 　16:00より全席種販売、小中学生立見も販売！</a></h5>
-<div class="collapse post-content" id="post1475">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">　明日の当日券は16:00より、後楽園ホール１Fチケット売場にて全席種販売。また前回より販売しました小中学生立ち見（2000円）も販売します。こちらのチケットのみ後楽園ホール5F関係者受付にて販売します。なお、販売の際、学生証等のご呈示をお願いする場合がございます。予めご了承下さい。<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※17:45よりオープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］RS 10,500円／SS 8,500円／S 6,500円／A 5,500円／小中学生立見 2,000円（当日のみ／5Fで販売）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042</p>
-</div>
-</div>
-<div class="post-feed" data-id="1474">
-<span class="post-day">2017-05-12</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1474" aria-expanded="false" aria-controls="post1474" style="color:#F7B800;">5.12プロフェッショナル修斗後楽園ホール大会 計量結果</a></h5>
-<div class="collapse post-content" id="post1474">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">［メインイベント／第6試合］フェザー級5分3R<br />
-高橋遼伍（日本／同級環太平洋王者／KRAZY BEE）65.7kg<br />
-vs<br />
-アーノルド・クエロ（フランス／MMA FACTORY）65.8kg<br />
-<br />
-［セミファイナル／第5試合］フライ級5分3R<br />
-征矢 貴（パラエストラ松戸）56.7kg<br />
-vs<br />
-清水清隆（TRIBE TOKYO M.M.A.）56.6kg<br />
-<br />
-［第4試合］ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）70.2kg<br />
-vs<br />
-鈴木慎吾（アライアンス）70.0kg<br />
-<br />
-◎ジュニア修斗 55kg契約4分1R<br />
-有馬鉄太（パラエストラCNW）54.3kg<br />
-vs<br />
-内田滝琉（NOBUSHI）49.5kg<br />
-<br />
-［第3試合］バンタム級5分3R<br />
-魚井フルスイング（和術慧舟會HEARTS）61.1kg<br />
-vs<br />
-加藤 惇（ZSTフェザー級王者／キングダムエルガイツ）60.9kg<br />
-<br />
-［第2試合］ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）70.1kg<br />
-vs<br />
-木村孔明（パラエストラTB）70.2kg<br />
-<br />
-［第1試合］MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点 4／roots）65.7kg<br />
-vs<br />
-TOMA（勝ち点 0／直心会TK68）65.5kg<br />
-<br />
-［オープニングファイト第3試合］2017年度新人王決定トーナメント２回戦 バンタム級5分2R<br />
-よしずみ（SHOOTO GYM K'zFACTORY）61.1kg<br />
-vs<br />
-Jセロウ若林（SAI-GYM）60.6kg<br />
-<br />
-［オープニングファイト第2試合］フライ級5分2R<br />
-本田良介（CAVE）56.4kg<br />
-vs<br />
-関口祐冬（修斗ジム東京）56.5kg<br />
-<br />
-［オープニングファイト第1試合］バンタム級5分2R ※17:45より開始<br />
-岩木 啓（フリー）61.0kg<br />
-vs<br />
-大越崇弘（TRIBE TOKYO M.M.A.）61.0kg</p>
-</div>
-</div>
-<div class="post-feed" data-id="1473">
-<span class="post-day">2017-05-11</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1473" aria-expanded="false" aria-controls="post1473" style="color:#F7B800;">5.12プロ修斗公式戦・後楽園ホール大会がAbemaTVとスカパー!「FIGHTING TV サムライ」で完全生中継！</a></h5>
-<div class="collapse post-content" id="post1473">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">いよいよ明日に迫った5.12プロフェッショナル修斗公式戦・後楽園ホール大会をAbemaTVとスカパー「サムライTV」で完全生中継。<br />
-メインでは環太平洋フェザー級王者・高橋遼伍がWSOF-GC日本大会で強烈なインパクトを残したフランスのストライカーアーノルド・クロエと対戦。<br />
-セミファイナルでは、フライ級屈指のハードパンチャー征矢貴が元キング・オブ・パンクラス清水清隆と激突。<br />
-今大会ではあらゆる階級のストライカーが集結、全試合KO決着もありうる好カードがラインナップされております。<br />
-実況は河内孝博、ゲスト解説に4.23舞浜アンフィシアター大会で宇野薫選手を相手に初防衛戦を果たした修斗フェザー級世界王者斎藤裕選手、MOBSTYLESの田原洋氏を迎えてお送り致します。<br />
-会場にお越しになれない方はAbemaTV、スカパー「サムライTV」で是非ご視聴下さい！<br />
-<br />
-<img src="//www.shooto-mma.com/images/S__96272391.jpg" width="100%" alt="Yutaka Saito"><br />
-<br />
-<div class="row"><div class="col-xs-12 col-md-4" style="background:#000;"><a href="//goo.gl/zim1xE" style="background:url(//www.shooto-mma.com/images/abema_logo_news.png) no-repeat center;background-size:contain;display:block;width:100%;height:200px;"></a></div><div class="col-xs-12 col-md-8"><p style="padding-top:0.5em;">■AbemaTVをダウンロードすれば、スマホ、タブレット、パソコン等あらゆる手段で大会をご覧になる事が可能です。<br />
-AbemaTVはオンエアの時間が近づくとお知らせしてくれる通知機能があります。大会を逃したくない方はご予約をオススメ致します！</p><br />
-<br />
-■視聴のご予約はこちらから→<a href="http://goo.gl/zim1xE">http://goo.gl/zim1xE</a><br />
-ダウンロードがお済みでない方は、下記のURLからAbemaTVをダウンロードして下さい。<br />
-■ダウンロードはこちらから→<a href="https://abema.tv/">https://abema.tv/</a><br />
-</div></div><br />
-<div class="row"><div class="col-xs-12 col-md-4" style="background:#000;"><a href="//www.samurai-tv.com/" style="background:url(//www.shooto-mma.com/images/samurai_logo_news.png) no-repeat center;background-size:contain;width:100%;display:block;height:200px;"></a></div><div class="col-xs-12 col-md-8"><p style="padding-top:0.5em;">■FIGHTING TV サムライHP<br />
-<a href="http://www.samurai-tv.com/">http://www.samurai-tv.com/</a></p><br />
-<br />
-■視聴方法は下記のURLを参照下さい<br />
-<a href="http://www.samurai-tv.com/">http://www.samurai-tv.com/</a><br />
-<br />
-［放送予定］<br />
-5月12日（金）後5:30  ※初回放送<br />
-5月12日（金）後10:00<br />
-5月19日（金）深2:00<br />
-</div></div><br />
-<br />
-［放送予定カード］<br />
-◆メインイベント フェザー級5分3R<br />
-高橋遼伍（日本／同級環太平洋王者／KRAZY BEE）<br />
-vs<br />
-アーノルド・クエロ（フランス／MMA FACTORY）<br />
-<br />
-◆セミファイナル  フライ級5分3R<br />
-征矢貴（同級世界6位/パラエストラ松戸）<br />
-vs<br />
-清水清隆（TRIBE TOKYO MMA）※元キング・オブ・パンクラス<br />
-<br />
-◆第4試合  ライト級5分3R<br />
-川名雄生（同級世界3位／SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木慎吾（アライアンス）※元ウェルター級キング・オブ・パンクラス<br />
-<br />
-◆第3試合  ライト級5分3R<br />
-大尊伸光（同級世界9位／総合格闘技津田沼道場）<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-◆第2試合  バンタム級5分3R<br />
-魚井フルスイング（同級世界10位/和術慧舟會HEART）<br />
-vs<br />
-加藤惇（キングダムエルガイツ）※ZSTバンタム級王者<br />
-<br />
-◆第1試合 フェザー級5分2R<br />
- MOBSTYLES プレゼンツ インフィニティリーグ2017<br />
-内藤太尊（roots）<br />
-vs<br />
-TOMA（直心会TK68）<br />
-<br />
-◆オープ二ングファイト 第3試合  バンタム級5分2R<br />
-2017年新人王決定トーナメント1回戦<br />
-よしずみ（SHOOTOGYM K'zFACTORY）<br />
-vs<br />
-Jセロウ若林（SAI-GYM）<br />
-<br />
-◆オープニングファイト 第2試合 バンタム級5分2R<br />
-本田良介（CAVE）<br />
-vs<br />
-関口祐冬（修斗ジム東京）<br />
-<br />
-◆オープニングファイト 第1試合 バンタム級5分2R<br />
-岩木啓（フリー）<br />
-vs<br />
-大越崇弘（TRIBE TOKYO MMA）</p>
-</div>
-</div>
-<div class="post-feed" data-id="1471">
-<span class="post-day">2017-05-09</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1471" aria-expanded="false" aria-controls="post1471" style="color:#F7B800;">5.12 プロフェッショナル修斗後楽園ホール大会 セミファイナル清水VS征矢 インタビュー</a></h5>
-<div class="collapse post-content" id="post1471">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents"><img src="/images/soya0512.jpg" width="100%" alt="soya"><br />
-<br />
-<h4>征矢貴「実は僕もまだ若いので、ここから上位ランカーを倒していきたい」</h4><br />
-<p style="color:#DDD;"><br />
-――昨年出場したインフィニティリーグを振り返っていただけますか？<br />
-「1年を通して試合日程が決まっている中でコンディションを整えるというのは、すごくいい経験になったと思います。前半は少し結果を出せませんでしたが、後半は連勝することもできて調子を取り戻せたかなと思います」<br />
-――第3戦・第4戦は2連勝という結果でしたが、どんな変化があったのですか？<br />
-「1戦目・2戦目はリラックスすることを意識してやったんですけど、自分の場合、それだとエンジンがかかるのが遅くて…。それで1Rにポイントをとられて、2Rに挽回しないといけないという試合が続いてしまいました。それに途中で気付いて、後半戦は1Rから攻めることを意識した試合をするようになって、それが結果につながったんだと思います」<br />
-――自分はアグレッシブに戦った方がいい選手だと再確認しましたか？<br />
-「はい。やっぱり自分はそういう選手だなと思いました」<br />
-――今大会では清水清隆選手と対戦が決まりました。オファーを受けた時はどんな心境でしたか？<br />
-「清水選手が修斗に出るようになってから、いつか戦うこともあるだろうなと思っていました。なのでオファーを受けた時は『分かりました。お願いします』という感じでした」<br />
-――清水選手はパンクラス王者としても活躍していましたが、どんなファイターとして見ていましたか？<br />
-「昔ちょっと練習していた時期もあったんですけど、試合になると練習以上の強さを発揮する選手だなと思っていました。試合を見ていると、スタミナと気持ちの強さで最後まで動き続けることが出来るタイプなので、本当に強い選手ですよね」<br />
-――対戦相手としてどんなファイターだと分析していますか？<br />
-「今までは打撃を見せておいてテイクダウンして削るというスタイルでしたが、前回の大里洋志戦でもパンチでKO勝ちしているので、危険な打撃を持ち合わせているコンプリートファイターだなと思います」<br />
-――穴が少ないファイターだと思いますが、どんな試合で勝ちたいと思っていますか？<br />
-「相手に合わせない戦い方ですね。清水選手は動き続けるタイプですが、僕はそれに付き合わないで自分の試合を貫きます。それをやるためにもしんどいことをやる覚悟でリングに立ちます」<br />
-――フライ級は田丸匠選手や覇彌斗選手など新世代ファイターの活躍が目立っていますが、それについてはどう感じていますか？<br />
-「実は僕も年齢で言ったら22歳なんで、田丸選手や覇彌斗選手と同世代なんですよ。僕の方がキャリアが長いから同世代とは思われないですが…実は僕もまだ若いので（笑）、清水選手をクリアして、ここから上位ランカーを倒していきたいです」<br />
-――それでは最後にファンの皆さんにメッセージをお願いします。<br />
-「いつも通りみんなが興奮する試合をしたいので応援よろしくお願いします」<br />
-</p><br />
-<br />
-<img src="/images/shimizu0512.jpg" width="100%" alt="shimizu"><br />
-<br />
-<h4>清水清隆「一戦一戦が崖っぷち、進退もかけた博打です」</h4><br />
-<p style="color:#DDD;"><br />
-――3月の大里洋志戦では見事なKO勝利でしたが、あの試合を振り返ってもらえますか？<br />
-「結果はよかったんですけど、そこまでのプロセスはあまりよくなかったかなと思います。手放しで喜べる試合ではなかったです」<br />
-――練習してきたことが出せなかったのですか？<br />
-「そうですね。試合は練習と違うものだし、もっと色々ああしようこうしようと思っていたんですけど…結果がハマっただけで、もう一回やれと言われればできないですね（苦笑）。今回はそこを修正して準備しています」<br />
-――清水選手は昨年9月に約9カ月ぶりに復帰し、そこから2連勝しています。今はどんな心境で戦っていますか？<br />
-「いつもいっぱいいっぱいで試合をしていますし、自分のキャリアも終盤なんで『負けたらあとがねえな…』と思ってやっています。そういう気持ちが今までよりも強くなっているかもしれませんね」<br />
-――4連敗してからの復帰という部分では精神的にも辛い時期だったと思います。<br />
-「復帰した一発目の試合は秋葉尉頼が事故で亡くなったあとの試合だったので、あれは背中を押してもらった感じですよね。やらなければいけないのは当たり前なんですけど、TRIBE TOKYO M.M.Aの最年長で引っ張ってきた人間として落とせないという気持ちでやりました。復帰まで約9カ月間ほど休んでいて、そこで気持ちがダレることはなかったんですけど、客観的に僕は見ていたトレーナーから『最近どうした？』と心配されることもあって…今思うと負けるべくして負けていたんだなと思います。連敗中は色々なことが重なって、それが全部試合に出ちゃったんだと思います」<br />
-――復帰後はコンスタントに試合を続けていますが、またどんどん試合をしていきたいですか？<br />
-「ここから浮上していけば、また今までとは違うものが見えてくると思います。そう思う一方で、負けたら進退を考えなきゃいけないという博打だと思います」<br />
-――対戦相手の征矢貴選手にはどんな印象を持っていますか？<br />
-「若いのに入場曲が浜田省吾ですよね？　年齢の割には渋いなっていう印象ですね（笑）」<br />
-――ファイトスタイルの印象はいかがでしょうか（笑）？<br />
-「征矢選手が少しTRIBEに出稽古に来ていたこともあって、練習したこともあるんですよね。軽く見ているというわけではなく、TRIBEスタイルでMMAをやれば大丈夫かなと思っています」<br />
-――改めてここからどんな試合をしていきたいと思っていますか？<br />
-「一戦一戦が崖っぷちなんで、結果を出せなかったら進退をかけないと…と思いながら一回一回の練習を頑張って、試合を作る感じですね。修斗のフライ級は若い選手が活躍していますけど、僕は一戦一戦最後になるかもしれない覚悟で戦って必死に勝ちに行くだけです」<br />
-――清水選手の試合を楽しみにしているファンのみなさんに一言お願いします。<br />
-「今回もKOかサブミッションで終わると思うので見逃さないでいて欲しいです」<br />
-</p></p>
-</div>
-</div>
-<div class="post-feed" data-id="1470">
-<span class="post-day">2017-05-09</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1470" aria-expanded="false" aria-controls="post1470" style="color:#F7B800;">5.12 プロ修斗後楽園ホール大会 前日計量はMLBカフェ東京ドーム店にて入場無料で一般公開！</a></h5>
-<div class="collapse post-content" id="post1470">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">　今大会前日計量を以下の日程で行います。この前日計量は一般公開形式で行います。入場は無料、どなたでもご参加頂けます。是非生で計量の緊張感を感じて下さい。当日はラウンドガールも来場致します。<br />
-　入場は無料、一般の皆様の写真撮影等も可能です。平日の夕方という時間帯になりますが、皆様のご来場、お待ち致しております。<br />
-<br />
-<br />
-<br />
-［5.12 プロ修斗後楽園ホール大会 前日計量］<br />
-［日時］2017年5月11日（木）　17時00分開始（18時終了予定）<br />
-　　　　（16時50分より入場開始）<br />
-　［場所］MLBカフェ・東京ドーム店<br />
-　　　　〒112-0004<br />
-　　　　東京都文京区後楽1-3 ジオポリス1F<br />
-　　　　TEL 03-5840-8905<br />
-　　　　※JR水道橋駅東口より徒歩2分<br />
-［備考］入場無料<br />
-　　　　5.12後楽園大会出場全選手、ラウンドガールが登場<br />
-［URL］<a href="http://www.mlbcafe.jp/tdc/index.html">http://www.mlbcafe.jp/tdc/index.html</a></p>
-</div>
-</div>
-<div class="post-feed" data-id="1469">
-<span class="post-day">2017-05-08</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1469" aria-expanded="false" aria-controls="post1469" style="color:#F7B800;">5.12 プロ修斗後楽園大会 　高橋遼伍インタビュー「試合じゃなくて解体ショーを見せたい」</a></h5>
-<div class="collapse post-content" id="post1469">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents"><img src="/images/0512-takahashi-img.jpg" width="100%" alt="高橋インタビュー"><br />
-<br />
-―昨年11月に環太平洋のタイトルを獲って、どんな変化がありましたか？</h4><br />
-<p>「ベルトを獲るまでは勝ちにこだわってやっていたんですけど、ベルトを獲って一区切りなんで、次の試合からはお客さんに喜んでもらえる試合をしたいなと思います。人が喜んでくれたら自分もうれしいって感じですね」</p><br />
-――勝ちにこだわっていたとは言うものの、現在は4連勝・3KOと絶好調です。高橋選手自身、何が好調の要因だと思っていますか？<br />
-<p>「変化があったとすれば日体大にレスリングの練習に行くようになったことですね。正直、自分では何が変わったか分からないんですけど…フィジカルが強くなっているんだと思います。レスリングの練習をして打撃で倒せるようになるって面白い話ですけどね（笑）」</p><br />
-――最近の試合で倒せる感覚や倒す勘がついてきましたか？<br />
-<p>「そうですね。試合はパンチで倒すことが多いんですけど、練習ではローキックをしっかり蹴って…という感じなんですね。そうするとみんな足を痛がるんですよ。だからローキックは練習で感覚を養ってますね。どうしても練習では思いっきり殴って蹴っては出来ないので、ぶっつけ本番になっちゃうんですけど、思い切りの良さがKOにつながってるんでしょうね」</p><br />
-――日々の練習も充実していますか？<br />
-<p>「かもしれないですね。最近は練習にメリハリをつけるようになって、調子がいい時とやる気がある時しか練習しないんですよ。それまでは調子が悪くても無理矢理練習していたのが、今はあえて休むようにしました。そうすると良いモチベーションで練習を続けられるので、一回一回の練習の質が上がるんですよね。それが結果につながってるんじゃないのかなぁと思いますね」</p><br />
-――そして今大会では初の国際戦でアーノルド・クエロと対戦が決まりました。<br />
-<p>「楽しみですね。今回の試合が自分にとっての物差しになるので」</p><br />
-――クエロにはどんな印象を持っていますか？<br />
-<p>「エジソン・バルボーザやジョゼ・アルドのパワーがないバージョンって感じですよね。割と綺麗にお手本通りに戦うスタイルなのでやりやすい気がします。攻略のイメージはばっちり出来ています」</p><br />
-――今大会への参戦挨拶では「足の靭帯を切りたい」宣言もありましたが、ずばりローで倒したいですか？<br />
-<p>「自然にそうなるでしょうね。僕は絶対に当たると思った時にしか蹴らないんですよ。だからローにパンチを合わされるんじゃないか？　蹴り足を取られるんじゃないか？　という不安は一切なくて、そうならない状況でしか蹴ってないんです。僕の中でそういう絶対のタイミングがあるから、相手は僕の蹴りに対処できないんです」</p><br />
-――なるほど。だからこそ確実にローを当てて効かせることが出来る、と。<br />
-<p>「はい。的確に蹴りを当てられるようになったんで、次は出来るだけ少ない蹴りで効かせたいじゃないですか。それで太ももとお尻のトレーニングをやってきたんです。次の試合はそのための確認でもありますよね。今度の試合でロー一発で効かせられたら、今まで自分がやってきたことの証明じゃないですか。そういう作業が楽しいです」</p><br />
-――チャンピオンとして最初の試合ということで注目も集まると思います。どんな試合を見せたいですか？<br />
-<p>「試合…じゃなくて解体ショーを見せたいです（笑）。相手をKOするとか倒すじゃなくて、順番に相手の身体を解体していきますよ」</p><br />
-</p>
-</div>
-</div>
-<div class="post-feed" data-id="1455">
-<span class="post-day">2017-05-07</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1455" aria-expanded="false" aria-controls="post1455" style="color:#F7B800;">5.12プロフェッショナル修斗 後楽園ホール大会試合順決定 　恒例のジュニア修斗１試合を追加、土屋が網膜剥離で今大会を欠場</a></h5>
-<div class="collapse post-content" id="post1455">
-<p class="post-img"><div style="clear:both; display: flex; flex-wrap: wrap;"><a class="img-feed schedule_posts_img" data-id="1458" style="height:auto; box-sizing:border-box;" href="/images/590def9257e0c.jpg"><img src="/images/590def9257e0c.jpg" alt="" style="width:100%; border:1px solid #DDD; box-sizing:border-box;"></a><a class="img-feed schedule_posts_img" data-id="1459" style="height:auto; box-sizing:border-box;" href="/images/590def9b3c5ba.jpg"><img src="/images/590def9b3c5ba.jpg" alt="" style="width:100%; border:1px solid #DDD; box-sizing:border-box;"></a></div></p>
-<p style="clear:both;" class="post-contents">　今年1月からキッズ、ジュニア修斗公式戦を取り入れて参りました。定例化しつつある後楽園ホール大会での公開試合を今大会でも行います。今回は中学校3年生同士によりますジュニア修斗公式戦を実施。有馬鉄太くん、内田滝琉くんが激突します。14歳にして経験豊富な両者によるファイトにどうぞご期待下さい。なおこの試合は休憩時間中で行います。<br />
-　また今大会に出場を予定しておりました土屋大喜（roots）が調整中に眼を負傷。診断の結果、右眼裂孔原性網膜剥離を発症し、今大会を欠場する事となりました。この試合を楽しみにされていた皆様には心よりお詫び申し上げます。対戦相手のルーベン・デュランは今大会の出場を見送り、次回7月23日（日）後楽園ホール大会へスライド参戦する予定です。<br />
-　そして今大会の全試合順が決定。オープニングファイト3試合を17:45より行い、本戦6試合を実施致します。<br />
-<br />
-［新たに決定した対戦カード］<br />
-◎ジュニア修斗 55kg契約4分1R<br />
-有馬鉄太（パラエストラCNW）<br />
-vs<br />
-内田滝琉（NOBUSHI）<br />
-<br />
-□選手プロフィール<br />
-有馬鉄太　ありま・てった<br />
-［所属］パラエストラCNW<br />
-［生年月日］2002年6月3日（14歳）※中学3年生<br />
-［身長］170.5cm<br />
-［戦績］1W1L<br />
-［格闘技歴］総合９ヶ月、レスリング９年<br />
-<br />
-<br />
-内田滝琉　うちだ・たける<br />
-［所属］NOBUSHI<br />
-［生年月日］2002年9月30日（14歳）※中学3年生<br />
-［身長］156cm<br />
-［格闘技歴］格闘歴7年<br />
-<br />
-<br />
-□5.12プロフェッショナル修斗後楽園ホール大会 試合順決定<br />
-［メインイベント／第6試合］フェザー級5分3R<br />
-高橋遼伍（日本／同級環太平洋王者／KRAZY BEE）<br />
-vs<br />
-アーノルド・クエロ（フランス／MMA FACTORY）<br />
-<br />
-［セミファイナル／第5試合］フライ級5分3R<br />
-征矢 貴（パラエストラ松戸）<br />
-vs<br />
-清水清隆（TRIBE TOKYO M.M.A.）※元フライ級キングオブパンクラシスト<br />
-<br />
-［第4試合］ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木槇吾（アライアンス）※前ウェルター級キングオブパンクラシスト<br />
-<br />
-<br />
-◎ジュニア修斗 55kg契約4分1R<br />
-有馬鉄太（パラエストラCNW）<br />
-vs<br />
-内田滝琉（NOBUSHI）<br />
-<br />
-<br />
-［第3試合］バンタム級5分3R<br />
-魚井フルスイング（和術慧舟會HEARTS）<br />
-vs<br />
-加藤 惇（ZSTフェザー級王者／キングダムエルガイツ）<br />
-<br />
-［第2試合］ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）※前環太平洋ライト級チャンピオン<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-［第1試合］MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点 4／roots）<br />
-vs<br />
-TOMA（勝ち点 0／直心会TK68）<br />
-<br />
-［オープニングファイト第3試合］2017年度新人王決定トーナメント２回戦 バンタム級5分2R<br />
-よしずみさん（SHOOTO GYM K'zFACTORY）<br />
-vs<br />
-Jセロウ若林（SAI-GYM）<br />
-<br />
-［オープニングファイト第2試合］バンタム級5分2R<br />
-本田良介（CAVE）※デビュー戦<br />
-vs<br />
-関口祐冬（修斗ジム東京）※デビュー戦<br />
-<br />
-［オープニングファイト第1試合］バンタム級5分2R ※17:45より開始<br />
-岩木 啓（フリー）<br />
-vs<br />
-大越崇弘（TRIBE TOKYO M.M.A.）※初参戦<br />
-<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※17:45よりオープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［チケット取扱所］<br />
-DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a><br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042</p>
-</div>
-</div>
-<div class="post-feed" data-id="1371">
-<span class="post-day">2017-04-26</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1371" aria-expanded="false" aria-controls="post1371" style="color:#F7B800;">5.12 プロフェッショナル修斗後楽園ホール大会決定対戦カード発表 　日仏究極のストライカー対決実現！高橋遼伍vsアーノルド・クエロ決定！</a></h5>
-<div class="collapse post-content" id="post1371">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">　今大会への出場が早くから発表されていた環太平洋フェザー級王者・高橋遼伍（KRAZY BEE）の対戦相手が決定。対戦するのは“シルバーバック”アーノルド・クエロ。フランス出身のストライカーだ。クエロは昨年２月に行われた「WSOF-GC2 Japan」に出場し中島太一と対戦。持ち前のスタンドスキルと身体能力で全局面で圧倒。ヨーロッパMMAのレベルの高さを見せつけてみせた。迎え撃つ高橋もスタンドでの勝負は望むところ。今や代名詞となった強烈なローキックがクエロを捕らえる事ができるか。共に60％を越えるKO率を誇る両者の一戦。二人に3ラウンドは必要ないのかもしれない。<br />
-　そして昨年度全日本アマチュア選手権バンタム級王者・本田良介（CAVE）のデビュー戦が決定。関口祐冬（修斗ジム東京）と対戦する。<br />
-　これで全10カードが揃った今大会。前大会同様に休憩時間にキッズ修斗公式戦を行う予定。出場選手は後日発表となる。<br />
-<br />
-<img src="/images/0512-1.jpg" title="fighter" width="100%"><br />
-<img src="/images/0512-2.jpg" title="fighter" width="100%"><br /><br />
-<br />
-［新たに決定した対戦カード］<br />
-◎フェザー級5分3R<br />
-高橋遼伍（日本／同級環太平洋王者／KRAZY BEE）<br />
-vs<br />
-アーノルド・クエロ（フランス／MMA FACTORY）<br />
-<br />
-□選手プロフィール<br />
-アーノルド・クエロ<br />
-ARNOLD QUERO<br />
-［所属］MMA FACTORY<br />
-［出身］フランス・パリ<br />
-［生年月日］1987年9月10日（29歳）<br />
-［身長］172cm<br />
-［戦績］20戦14勝（9KO）5敗1ノーコンテスト<br />
-<br />
-◎バンタム級5分2R<br />
-本田良介（CAVE）<br />
-vs<br />
-関口祐冬（修斗ジム東京）<br />
-<br />
-<br />
-［既に発表済みの対戦カード］<br />
-◎ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木槇吾（アライアンス）※前ウェルター級キングオブパンクラシスト<br />
-<br />
-◎バンタム級5分3R<br />
-土屋大喜（日本／roots）※元環太平洋フェザー級チャンピオン<br />
-vs<br />
-ルーベン・デュラン（アメリカ）<br />
-<br />
-◎フライ級5分3R<br />
-清水清隆（TRIBE TOKYO M.M.A.）※元フライ級キングオブパンクラシスト<br />
-vs<br />
-征矢 貴（パラエストラ松戸）<br />
-<br />
-◎バンタム級5分3R<br />
-魚井フルスイング（和術慧舟會HEARTS）<br />
-vs<br />
-加藤 惇（ZSTフェザー級王者／キングダムエルガイツ）<br />
-<br />
-◎ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）※前環太平洋ライト級チャンピオン<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-◎MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点 4／roots）<br />
-vs<br />
-TOMA（勝ち点 0／直心会TK68）<br />
-<br />
-◎2017年度新人王決定トーナメント２回戦 バンタム級5分2R<br />
-よしずみさん（SHOOTO GYM K'zFACTORY）<br />
-vs<br />
-Jセロウ若林（SAI-GYM）<br />
-<br />
-◎バンタム級5分2R<br />
-岩木 啓（フリー）<br />
-vs<br />
-大越崇弘（TRIBE TOKYO M.M.A.）※初参戦<br />
-<br />
-<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※開場中にオープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［チケット取扱所］<br />
-DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a><br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042</p>
-</div>
-</div>
-<div class="post-feed" data-id="1337">
-<span class="post-day">2017-04-19</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1337" aria-expanded="false" aria-controls="post1337" style="color:#F7B800;">5.12プロフェッショナル修斗後楽園ホール大会決定カード発表 　修斗フライ級注目カード実現、清水清隆vs征矢貴！ 　修斗初参戦のZST王者・加藤惇を魚井フルスイングが迎え撃つ！</a></h5>
-<div class="collapse post-content" id="post1337">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">話題沸騰中の5月12日（金）プロフェッショナル修斗公式戦・後楽園ホール大会の新たに決定した4カードを発表。<br />
-<br />
-最注目は田丸匠や覇彌斗など新世代の台頭で更に温度が上がった修斗フライ級のキーマン対決が実現。<br />
-<div class="row"><div class="col-xs-6" style="background:url(/images/0512/shimizu.jpg) no-repeat top center;height:250px;background-size:contain;"></div><div class="col-xs-6" style="background:url(/images/0512/soya.jpg) no-repeat top center;height:250px;background-size:contain;"></div></div><br />
-3月の後楽園ホール大会でワンパンKOで再起戦を見事に制した清水清隆（TRIBE TOKYO M.M.A.）の連続参戦が決定。<br />
-フライ級屈指のハードパンチャー・征矢貴（パラエストラ松戸）と激突する。両者ともこの階級を盛り上げてきた立役者なだけに、話題を若い世代に持っていかれることは面白くないはず。<br />
-この一戦で勝利しタイトル戦線へ向け一気に名乗りを上げたい所だ。<br />
-<div class="row"><div class="col-xs-6"  style="background:url(/images/0512/kato.jpg) no-repeat top center;height:250px;background-size:contain;"></div><div class="col-xs-6"  style="background:url(/images/0512/uoi.jpg) no-repeat top center;height:250px;background-size:contain;"></div></div><br />
-そして修斗初参戦がアナウンスされていたZSTフェザー級王者・加藤惇（キングダムエルガイツ）の対戦相手は魚井フルスイング（和術慧舟會HEARTS）に決定。<br />
-共に激しい試合が信条なだけに判定決着は考え難い。加藤が極めるか、魚井のフルスイングが再び火を噴くか。<br />
-その他にも新人王トーナメント他1試合が決定、残すは環太平洋フェザー級王者・高橋遼伍（KRAZY BEE）の対戦相手は決定次第、発表となる。<br />
-<br />
-［新たに決定した対戦カード］<br />
-◎フライ級5分3R<br />
-清水清隆（TRIBE TOKYO M.M.A.）元フライ級キングオブパンクラシスト<br />
-vs<br />
-征矢 貴（パラエストラ松戸）<br />
-<br />
-◎バンタム級5分3R<br />
-魚井フルスイング（和術慧舟會HEARTS）<br />
-vs<br />
-加藤 惇（ZSTフェザー級王者／キングダムエルガイツ）<br />
-<br />
-◎2017年度新人王決定トーナメント２回戦 バンタム級5分2R<br />
-よしずみさん（SHOOTO GYM K'zFACTORY）<br />
-vs<br />
-Jセロウ若林（SAI-GYM）<br />
-<br />
-◎バンタム級5分2R<br />
-岩木 啓（フリー）<br />
-vs<br />
-大越崇弘（TRIBE TOKYO M.M.A.）※初参戦<br />
-<br />
-<br />
-［出場予定選手］<br />
-高橋遼伍（日本・環太平洋フェザー級王者／KRAZY BEE）<br />
-<br />
-<br />
-<br />
-［既に発表済みの対戦カード］<br />
-◎ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木槇吾（アライアンス）※前ウェルター級キングオブパンクラシスト<br />
-<br />
-◎バンタム級5分3R<br />
-土屋大喜（日本／roots）元環太平洋フェザー級チャンピオン<br />
-vs<br />
-ルーベン・デュラン（アメリカ）<br />
-<br />
-◎MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点 4／roots）<br />
-vs<br />
-TOMA（勝ち点 0／直心会TK68）<br />
-<br />
-◎ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）※前環太平洋ライト級チャンピオン<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※開場中にオープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［チケット取扱所］<br />
-DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a><br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042</p>
-</div>
-</div>
-<div class="post-feed" data-id="1328">
-<span class="post-day">2017-04-05</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1328" aria-expanded="false" aria-controls="post1328" style="color:#F7B800;">5.12 プロフェッショナル修斗後楽園ホール大会 　4/5よりDMM.Eにてチケット先行販売開始！</a></h5>
-<div class="collapse post-content" id="post1328">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">　環太平洋フェザー級王者・高橋遼伍、初の国際戦、元KOP・鈴木槙吾初参戦で川名雄生と激突、大尊伸光約２年振りの復帰戦、土屋大喜、ZST王者・加藤惇の参戦など、大会前から話題沸騰の5.12後楽園ホール大会のチケットが4月5日（水）12:00より、スマートフォンから簡単に購入可能なチケットレスアプリ「DMM.E」にて先行販売を開始致します。良いお席はお早めにお買い求め下さい。<br />
-　なお一般販売は4月9日（日）より開始となります。<br />
-<br />
-◎DMM.E 5.12プロフェッショナル修斗・後楽園ホール大会サイト<br />
-<a href="http://bit.ly/2o4Zu7L">http://bit.ly/2o4Zu7L</a><br />
-<br />
-<br />
-<br />
-<br />
-◎5.12プロ修斗後楽園ホール大会　決定対戦カード<br />
-　<br />
-［決定対戦カード］<br />
-◎ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木槙吾（アライアンス）元ウェルター級キングオブパンクラシスト<br />
-<br />
-◎バンタム級5分3R<br />
-土屋大喜（roots）<br />
-vs<br />
-ルーベン・デュラン（米国）<br />
-<br />
-◎ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-◎MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点4／roots）<br />
-vs<br />
-TOMA（勝ち点0／直心会TK68）<br />
-<br />
-<br />
-［出場決定選手］<br />
-高橋遼伍（環太平洋フェザー級王者／KRAZY BEE）<br />
-加藤惇（ZSTフェザー級王者／キングダムエルガイツ）他<br />
-<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※開場中にオープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［チケット販売］4月5日（水）よりDMM.Eにて先行販売　<a href="http://bit.ly/2o4Zu7L">http://bit.ly/2o4Zu7L</a><br />
-　　　　　　　　4月9日（月）より各チケット取扱所にて発売<br />
-［チケット取扱所］<br />
-DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a>（大会サイト：<a href="http://bit.ly/2o4Zu7L">http://bit.ly/2o4Zu7L</a>）<br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042<br />
-<br />
-<br />
-◎2017年度 プロフェッショナル修斗公式戦日程<br />
-4月9日（日）香川・高松シンボルタワー　主催：TNS<br />
-4月23日（日）千葉・舞浜アンフィシアター　主催：サステイン<br />
-5月12日（金）東京・後楽園ホール　主催：サステイン<br />
-6月25日（日）大阪・エディオンアリーナ大阪第2競技場　主催：サステイン<br />
-7月23日（日）東京・後楽園ホール　主催：サステイン<br />
-9月2日（土）東京・新宿FACE　主催：サステイン<br />
-9月3日（日）大阪・コミュニティプラザ平野　主催：TKプロモーション<br />
-10月15日（日）千葉・舞浜アンフィシアター　主催：サステイン<br />
-11月19日（日）東京・新宿FACE　主催：サステイン<br />
-11月23日（木・祝）新潟・亀田体育館　主催：ピロクテテス新潟<br />
-12月17日（日）東京・新宿FACE　主催：サステイン<br />
-※日程は予告なく変更、中止、追加になる場合があります。<br />
-</p>
-</div>
-</div>
-<div class="post-feed" data-id="1286">
-<span class="post-day">2017-03-25</span>
-<h5 class="post-title"><span class="glyphicon glyphicon-collapse-down" style="margin-right:0.5em;"></span><a role="button" data-toggle="collapse" href="#post1286" aria-expanded="false" aria-controls="post1286" style="color:#F7B800;">5.12プロ修斗後楽園ホール大会 プロ修斗春の2連戦、5.12後楽園も超強力ラインナップ
-</a></h5>
-<div class="collapse post-content" id="post1286">
-<p class="post-img"></p>
-<p style="clear:both;" class="post-contents">　4.23舞浜のビッグマッチから２週間後にはホームである後楽園ホール大会が控えるが、今大会は舞浜大会にも引けをとらない超強力ラインナップが揃う事となった。<br />
-　まずは昨年最も大きなインパクトを残したと言える環太平洋フェザー級王者・高橋諒伍（KRAZY BEE）の今年度初戦が決定。今大会では外国人選手との対戦を予定。相手の足を得意のローキックで破壊宣言も飛び出したチャンピオン初の国際戦に期待が高まる。<br />
-　そして他団体からタイトル獲得者が続々参戦を表明。第8代ウェルター級キングオブパンクラシストで国内重量級を代表する選手と数々の激闘を繰り広げてきた鈴木慎吾（アライアンス）の参戦が決定。修斗参戦を機に階級をライト級（70.3kg）に変更する。その対戦相手が修斗ライト級を代表する川名雄生（SHNWA MMA ACADEMY）に決定。昨年４月の世界タイトル挑戦で喫した初黒星からの復帰戦で強敵を迎える事となった。打投極どの局面でもフィニッシュできる両者なだけに激しい試合展開が予想される。<br />
-　修斗の中心選手として活躍する土屋大喜（roots）、今年初戦にして久々の国際戦が決定。対戦相手はUFC在籍経験を持ち、その際には水垣偉弥とも対戦経験があるアメリカの強豪“ハリケーン”ルーベン・デュラン（アメリカ）と対戦。常に動き続ける両選手の激突、面白くならない訳が無い。<br />
-　その他にも約2年振りの復帰戦となる元環太平洋ライト級王者・大尊伸光（総合格闘技津田沼道場）が2月渋谷大会メインで見事なKO勝利を修めた木村孔明（パラエストラTB）と対戦する。<br />
-　4.23舞浜に続き、5.12後楽園も超強力ラインナップが揃う修斗春の2連戦、どうぞご期待下さい。<br />
-<br />
-<br />
-［決定対戦カード］<br />
-◎ライト級5分3R<br />
-川名雄生（SHINWA MMA ACADEMY）<br />
-vs<br />
-鈴木槙吾（アライアンス）元ウェルター級キングオブパンクラシスト<br />
-<br />
-◎バンタム級5分3R<br />
-土屋大喜（roots）<br />
-vs<br />
-ルーベン・デュラン（米国）<br />
-<br />
-◎ライト級5分3R<br />
-大尊伸光（総合格闘技津田沼道場）<br />
-vs<br />
-木村孔明（パラエストラTB）<br />
-<br />
-◎MOBSTYLESプレゼンツ インフィニティリーグ2017フェザー級5分2R<br />
-内藤太尊（勝ち点4／roots）<br />
-vs<br />
-TOMA（勝ち点0／直心会TK68）<br />
-<br />
-<br />
-［出場決定選手］<br />
-高橋遼伍（環太平洋フェザー級王者／KRAZY BEE）<br />
-加藤惇（ZSTフェザー級王者／キングダムエルガイツ）他<br />
-<br />
-<br />
-□大会概要<br />
-［大会名］プロフェッショナル修斗公式戦<br />
-［日時］2017年5月12日（金）<br />
-［開場］17:30<br />
-［開始］18:30 ※17:45～オープニングファイトを実施<br />
-［会場］東京/後楽園ホール<br />
-［特別協賛］株式会社ドン・キホーテ<br />
-［認定］ISC<br />
-［協力］一般社団法人 日本修斗協会<br />
-［主催］株式会社サステイン<br />
-［チケット料金］VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。<br />
-［チケット販売］4月上旬を予定<br />
-［チケット取扱所］<br />
-DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a><br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042<br />
-［お問い合せ］株式会社 サステイン 03-3788-3042</p>
-</div>
-</div></div>
-</div>
-
-</div><!--row--><!-- Nav tabs -->
-<div id="result_point" style="margin-top:2em;"></div>
-<ul class="nav nav-tabs" role="tablist" style="margin-bottom:1em;">
-<li role="presentation" class="active"><a href="#tab1" aria-controls="outline" role="tab" data-toggle="tab">試合結果</a></li>
-<li role="presentation" ><a href="#tab3"  aria-controls="ticket" role="tab" data-toggle="tab">概要</a></li>
-</ul>
-
-<!-- Tab panes -->
-<div class="tab-content">
-
-<div role="tabpanel" class="tab-pane fade in active" id="tab1">
-<div class="row">
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2590">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p></p>
-    <p></p>
-    
-    <p>バンタム級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2590">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="12">
-    <div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/577a558d12841.png) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">土屋  大喜</span>
-    <span class="gym-name">roots</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">22 戦</span><span class="win-num">13勝</span><span class="ko-num">4KO</span><span class="submision-num">1S</span><span class="lose-num">9敗</span></div>
-    </h4>
-		<div class="weight-test"></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1076">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/58f6e21038539.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">ルーベン  デュラン</span>
-    <span class="gym-name">CQUENCE JIUJITSU</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">1 戦</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"></div>
-		</div>
-    </div>
-
-		<div><span class="nocontest">ノーコンテスト</span><div class="note" style="text-align:left;">【中止】<br />
-土屋大喜（roots）が調整中に眼を負傷。診断の結果、右眼裂孔原性網膜剥離を発症し、今大会を欠場</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> </div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="4758">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p></p>
-    <p>55kg契約</p>
-    
-    <p>キッズ・ジュニア修斗 </p>
-    <p>4分1R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-4758">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1087">
-    <div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/6ad85f88e7f36.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">有馬  鉄太</span>
-    <span class="gym-name">THE BLACKBELT JAPAN</span>
-    <div  class="matchmake-list-score" id="getscore"><p>キッズ・ジュニア戦績 </p><span class="total_num">1 戦</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>54.3 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1088">
-		<div class="center-block" style="background:url(/images/590df36a8a28a.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">内田  滝琉</span>
-    <span class="gym-name">NOBUSHI</span>
-    <div  class="matchmake-list-score" id="getscore"><p>キッズ・ジュニア戦績 </p><span class="total_num">1 戦</span><span class="win-num">1勝</span><span class="submision-num">1S</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>49.5 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>1</b>R</span><span class="result-time">03:30</span><span class="result-type"><span class="submision">S</span><div class="result-method">腕ひしぎ十字固め</div></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">上を奪った有馬がスリーパー、アームロック、十字を狙い優勢。しかし内田が下から一瞬で十字に捕らえて一本勝ち。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> </div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2604">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p></p>
-    <p>オープニングファイト第3試合</p>
-    <strong style="display:block;"><a href="http://www.shooto-mma.com/ROY/">新人王決定トーナメント2017</a> </strong>
-    <p>バンタム級 </p>
-    <p>5分2R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2604">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1050">
-    <div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5e46149f231be.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">小林  佳純</span>
-    <span class="gym-name">HAGANE GYM</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">17 戦</span><span class="win-num">5勝</span><span class="lose-num">6敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>60.6 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1081">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/654872dcef2f9.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">Jセロウ  若林</span>
-    <span class="gym-name">SAI-GYM</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">5 戦</span><span class="lose-num">3敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>61.1 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>2</b>R</span><span class="result-type"><span class="ud">判定 1-0</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">※20-18, 19-19, 19-19（よしずみに一票）<br />
-※※新人王トーナメントはよしずみが3-0で3回戦進出<br />
-<br />
-Jセロウが金網際でテイクダウンを狙う展開。1Rはテイクダウンに成功するも、2Rは逆に上を奪われドロー。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2604" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2606">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p></p>
-    <p> オープニングファイト第1試合</p>
-    
-    <p>バンタム級 </p>
-    <p>5分2R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2606">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="270">
-    <div class="center-block" style="background:url(/images/iwakik_ll.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">岩鬼  </span>
-    <span class="gym-name">フリー</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">9 戦</span><span class="win-num">1勝</span><span class="lose-num">5敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>61.0 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1082">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/58ff5d766cf2b.png) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">大越  崇弘</span>
-    <span class="gym-name">TRIBE TOKYO M.M.A</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">2 戦</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>61.0 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>2</b>R</span><span class="result-type"><span class="ud">判定 2-1</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">大越が打撃を当てるが岩木がテイクダウンする展開。岩木が２R終了間際にチョークを極めかけ判定勝利。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2606" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2612">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p></p>
-    <p>オープニングファイト第2試合</p>
-    
-    <p>バンタム級 </p>
-    <p>5分2R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2612">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1049">
-    <div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5bab8e5dc9983.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    <div class="pro_title"><span class="year">2017年</span><span class="title">フライ級新人王</span></div>
-    <h4>
-    <span class="fighter-name">本田  良介</span>
-    <span class="gym-name">CAVE</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">8 戦</span><span class="win-num">6勝</span><span class="ko-num">1KO</span><span class="submision-num">2S</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>56.5 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="959">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/640fef99e55d6.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">関口  祐冬</span>
-    <span class="gym-name">修斗GYM東京</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">20 戦</span><span class="win-num">13勝</span><span class="ko-num">4KO</span><span class="submision-num">2S</span><span class="lose-num">5敗</span><span class="draw-num">1分</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>56.5 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>2</b>R</span><span class="result-type"><span class="ud">判定 0-0</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">※19-19, 19-19, 19-19<br />
-<br />
-1R関口がトリッキーな打撃で優勢も、2Rは本田がグランドで試合を優勢に進めドロー。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2612" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2585">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第1試合</p>
-    <p></p>
-    <strong style="display:block;"><a href="http://www.shooto-mma.com/infinity/">MOBSTYLES Presents インフィニティリーグ2017</a> </strong>
-    <p>フェザー級 </p>
-    <p>5分2R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2585">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="15">
-    <div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5772ba84e7904.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">内藤  太尊</span>
-    <span class="gym-name">roots</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">21 戦</span><span class="win-num">10勝</span><span class="ko-num">6KO</span><span class="submision-num">2S</span><span class="lose-num">10敗</span><span class="draw-num">1分</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>65.7 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="255">
-		<div class="center-block" style="background:url(/images/5ae293e970967.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">TOMA  </span>
-    <span class="gym-name">直心会TK68</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">29 戦</span><span class="win-num">16勝</span><span class="ko-num">9KO</span><span class="submision-num">4S</span><span class="lose-num">11敗</span><span class="draw-num">2分</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>65.5 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>1</b>R</span><span class="result-time">00:56</span><span class="result-type"><span class="ko">KO</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">※TOMAが勝ち点４を獲得。<br />
-<br />
-どっしり構えるTOMAに対し、内藤が細かい打撃で揺さぶる。しかし内藤が入ってくるところTOMAがカウンター右フック一発でKO勝利。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2585" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2591">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第2試合</p>
-    <p></p>
-    
-    <p>ライト級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2591">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="247">
-    <div class="center-block" style="background:url(/images/taisonn_ll.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    <div class="pro_title"><span class="title">第7代環太平洋ウェルター級チャンピオン</span></div>
-    <h4>
-    <span class="fighter-name">大尊  伸光</span>
-    <span class="gym-name">野田ボディビル同好会</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">19 戦</span><span class="win-num">13勝</span><span class="ko-num">7KO</span><span class="submision-num">1S</span><span class="lose-num">6敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>70.1 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="564">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5772bb50414af.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">木村  孔明</span>
-    <span class="gym-name">パラエストラTB</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">6 戦</span><span class="win-num">2勝</span><span class="ko-num">1KO</span><span class="submision-num">1S</span><span class="lose-num">4敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>70.2 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>1</b>R</span><span class="result-time">01:33</span><span class="result-type"><span class="submision">S</span><div class="result-method">ネックロック</div></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">打撃をもらってバランスを崩した木村、タックルに逃げるが、がぶった大尊が上からネックロックを極めて一本勝ち。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2591" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2603">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第3試合</p>
-    <p></p>
-    
-    <p>バンタム級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2603">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="198">
-    <div class="center-block" style="background:url(/images/58f6e18a0ffa4.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">魚井  フルスイング</span>
-    <span class="gym-name">和術慧舟會HEARTS</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">19 戦</span><span class="win-num">11勝</span><span class="ko-num">5KO</span><span class="lose-num">7敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>61.1 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1074">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/58f6e17dd0dd5.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">加藤  惇</span>
-    <span class="gym-name">キングダムエルガイツ</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">1 戦</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>60.9 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>1</b>R</span><span class="result-time">03:42</span><span class="result-type"><span class="ko">KO</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">加藤、フルスイングパンチを繰り出す魚井を冷静にさばきテイクダウンを狙う。加藤の前蹴りがクリーンヒットし、パンチで詰めると打ち合いに。魚井のフルスイング左フックが加藤を直撃。加藤、崩れ落ちて失神KO負け。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2603" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2589">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第4試合</p>
-    <p></p>
-    
-    <p>ライト級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2589">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="4">
-    <div class="center-block" style="background:url(/images/5ffc7ded7f465.jpeg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    <div class="pro_title"><span class="year">2017年</span><span class="title">第9代環太平洋ライト級王者</span></div>
-    <h4>
-    <span class="fighter-name">川名 TENCHO 雄生</span>
-    <span class="gym-name">Y&K MMA ACADEMY</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">13 戦</span><span class="win-num">10勝</span><span class="ko-num">4KO</span><span class="submision-num">1S</span><span class="lose-num">2敗</span><span class="draw-num">1分</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>70.2 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1075">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/58f6e1f1b6c04.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">鈴木  槙吾</span>
-    <span class="gym-name">アライアンス</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">3 戦</span><span class="lose-num">3敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>70.0 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>1</b>R</span><span class="result-time">00:21</span><span class="result-type"><span class="ko">KO</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">開始後すぐに間合いを詰めた川名がいきなりパンチをラッシュ。鈴木も応戦し足を止めての激しい打ち合い。川名のパンチが入り鈴木がダウンしKO。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2589" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2602">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第5試合</p>
-    <p>セミファイナル</p>
-    
-    <p>フライ級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2602">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="100">
-    <div class="center-block" style="background:url(/images/606c30e5050fc.JPG) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">清水  清隆</span>
-    <span class="gym-name">TRIBE TOKYO M.M.A</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">18 戦</span><span class="win-num">10勝</span><span class="ko-num">6KO</span><span class="submision-num">1S</span><span class="lose-num">8敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>56.6 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="102">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5772b78bf30f0.png) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    <div class="pro_title"><span class="year">2013年</span><span class="title">バンタム級新人王 MVP</span></div>
-    <h4>
-    <span class="fighter-name">征矢  貴</span>
-    <span class="gym-name">パラエストラ松戸</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">11 戦</span><span class="win-num">7勝</span><span class="ko-num">5KO</span><span class="lose-num">3敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>56.7 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>3</b>R</span><span class="result-time">00:32</span><span class="result-type"><span class="ko">KO</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">1,2R、両者鋭い打撃を見せる緊迫の展開。3R、征矢が入るところ清水のカウンターパンチで征矢がダウンし、ストップ。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2602" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div>
-		<div class="col-xs-12 col-md-4">
-		<div class="matchmake-box h_js" data-id="2611">
-		<div class="matchmake-win clearfix">
-
-		<div class="matchmake-title">
-    <p> 第6試合</p>
-    <p>メインイベント</p>
-    
-    <p>フェザー級 </p>
-    <p>5分3R</p>
-    </div>
-		
-    <div class="getitem_matchmake getitem-2611">
-
-    <div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="248">
-    <div class="center-block" style="background:url(/images/5900bd8f8107f.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    <div class="pro_title"><span class="year">2016年</span><span class="title">環太平洋フェザー級チャンピオン</span></div>
-    <h4>
-    <span class="fighter-name">高橋  遼伍</span>
-    <span class="gym-name">KRAZY BEE</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">13 戦</span><span class="win-num">11勝</span><span class="ko-num">8KO</span><span class="lose-num">2敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>65.7 Kg</p></div>
-		</div>
-
-		<div class="matchmake col-xs-6 col-md-6 fighter fighter-mdl" data-id="1083">
-		<div class="center-block" style="opacity:0.3;border-color:silver !important;background:url(/images/5900638377555.jpg) no-repeat top;background-size:cover;width:120px;height:120px;border-radius:100px;border:2px solid #F7B800;"></div>
-    
-    <h4>
-    <span class="fighter-name">アーノルド  クエロ</span>
-    <span class="gym-name">MMA FACTORY</span>
-    <div  class="matchmake-list-score" id="getscore"><p>SHOOTO戦績 </p><span class="total_num">1 戦</span><span class="lose-num">1敗</span></div>
-    </h4>
-		<div class="weight-test"><p><span>計量結果 : </span>65.8 Kg</p></div>
-		</div>
-    </div>
-
-		<div><div class="getresult" style="border:none;"><span class="result-round"><b>3</b>R</span><span class="result-time">01:35</span><span class="result-type"><span class="ko">KO</span></span><span class="ud-score"></span></div><div class="note" style="text-align:left;">1Rからローを効かせた高橋。2Rもロー、パンチと攻め続ける。3R、足を引きずって後ろに下がるクエロにローで畳み掛けストップ。</div></div>
-
-    </div><!--panel-body-->
-		<!-- <div></div> -->
-		<div> <a href="/post.php?tbl=matchmake&type=photo&id=2611" class="btn btn-sm" style="background:#222;">写真を表示</a></div>
-		</div><!--matchmake-box-->
-		</div></div><!-- getmatchmake row -->
-
-</div><!--tab1-->
-
-<div role="tabpanel" class="tab-pane fade" id="tab3">
-<table class="table table-bg table-eventInfo">
-<tr><th>大会名称</th><td>後楽園ホール大会</td></tr>
-<tr><th>開催日</th><td>2017年05月12日</td></tr>
-
-<tr><th>会場</th><td><a href="https://goo.gl/maps/6rd79dsT9n22" target="_blank">東京・後楽園ホール</a><p></p></td></tr>
-
-<tr><th>配信</th><td>
-
-
-
-
-</td></tr>
-
-<tr><th>開場</th><td>17:30</td></tr>
-<tr><th>開始</th><td>18:30</td></tr>
-<tr><th>特別協賛</th><td>株式会社ドン・キホーテ</td></tr>
-<tr><th>後援</th><td></td></tr>
-<tr><th>協力</th><td>一般社団法人 日本修斗協会</td></tr>
-<tr><th>認定</th><td>ISC</td></tr>
-<tr><th>主催</th><td>株式会社サステイン</td></tr>
-<tr><th>入場料</th><td>VIP 15,000円／RS 10,000円／SS 8,000円／S 6,000円／A 5,000円／小中学生立見 2,000円（当日のみ）<br />
-※全席指定、全て税込み価格。<br />
-※当日は500円増し。<br />
-※小学生以上はチケットが必要。</td></tr>
-<tr><th>発売日</th><td>4月上旬を予定</td></tr>
-<tr><th>チケット</th><td>DMM.E　<a href="http://event.dmm.com/">http://event.dmm.com/</a><br />
-フィットネスショップ水道橋　03-3265-4646<br />
-後楽園ホール　03-5800-9999<br />
-チケット&トラベルT-1　03-3788-3042 <a href="http://www.t-1.jp/tk/">http://www.t-1.jp/tk/</a><br />
-修斗GYM東京　03-3788-3042</td></tr>
-<tr><th>問合わせ</th><td>株式会社 サステイン 03-3788-3042</td></tr>
-
-</table>
-</div><!--tab3-->
-
-</div><!--tab-content-->
-</div><!--#result-->
-
-</div><!--container-->
-<div style="height:20px;"></div>
-<p class="pagetop"><a href="#wrap" class="glyphicon glyphicon-chevron-up"></a></p>
-
-<footer>
+	</div><!--fighter-profile--><div id="fighter-proresult"></div></div><div class="col-xs-12 col-md-4 social-wrapper" ></div></div><!--row--><div class="container"><div class="row result-list"><h3>プロフェッショナル修斗公式戦</h3><div class="result-block--ttl">▼ プロ戦績</div><div class="result-block"><h5>SHOOTO戦績</h5><table class="table result-list"><tr><td style="white-space:nowrap;width:7em;">2010-02-27</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=29">猿丸  ジュンジ</a><p>3R  判定 3-0 </p></tr><tr><td style="white-space:nowrap;width:7em;">2009-09-04</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=24">阿部  博之</a><p>2R 03:03 S  フロント・スリーパーホールド</p></tr><tr><td style="white-space:nowrap;width:7em;">2007-09-02</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=457">森  卓也</a><p>2R  判定 0-3 </p></tr><tr><td style="white-space:nowrap;width:7em;">2005-05-08</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=26">生駒  純司</a><p>3R 01:36 S  スリーパーホールド</p></tr><tr><td style="white-space:nowrap;width:7em;">2004-05-03</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=109">マモル  </a><p>3R 04:11 TKO  </p></tr><tr><td style="white-space:nowrap;width:7em;">2003-08-10</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=26">生駒  純司</a><p>2R 03:46 S  スリーパーホールド</p></tr><tr><td style="white-space:nowrap;width:7em;">2002-10-06</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=489">野中  公人</a><p>3R  判定 0-3 </p></tr><tr><td style="white-space:nowrap;width:7em;">2002-07-27</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=85">村田  一着</a><p>3R  判定 3-0 </p></tr><tr><td style="white-space:nowrap;width:7em;">2002-04-14</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=109">マモル  </a><p>3R  判定 0-3 </p></tr><tr><td style="white-space:nowrap;width:7em;">2002-01-12</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=488">池田  久雄</a><p>3R  判定 0-3 </p></tr><tr><td style="white-space:nowrap;width:7em;">2001-08-15</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=487">今泉  堅太郎	</a><p>3R  判定 3-0 </p></tr><tr><td style="white-space:nowrap;width:7em;">2001-03-21</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=456">秋本  じん</a><p>3R  判定 0-3 </p></tr><tr><td style="white-space:nowrap;width:7em;">2001-01-19</td><td style="text-align:center;">△</td><td><a href="/fighters/?id=454">廣野  剛康</a><p>3R  判定 1-1 </p></tr><tr><td style="white-space:nowrap;width:7em;">2000-09-15</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=486">五木田  勝</a><p>1R 00:17 TKO  </p></tr><tr><td style="white-space:nowrap;width:7em;">2000-07-22</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=172">勝村  周一朗</a><p>2R 03:43 S  腕ひしぎ十字固め</p></tr><tr><td style="white-space:nowrap;width:7em;">2000-04-12</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=103">高橋  大児</a><p>2R  判定 2-1 </p></tr><tr><td style="white-space:nowrap;width:7em;">1999-01-27</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=485">太田  吉信</a><p>2R  判定 0-2 </p></tr><tr><td style="white-space:nowrap;width:7em;">1998-09-18</td><td style="text-align:center;">△</td><td><a href="/fighters/?id=484">西澤  正樹</a><p>2R  判定 0-1 </p></tr></table></div></div><!--row--></div><!--container-->
+          </div><!--container-->
+          <div style="height:20px;"></div>
+          <p class="pagetop"><a href="#wrap" class="glyphicon glyphicon-chevron-up"></a></p>
+          <footer>
+            <footer>
 <div class="foot-links"><a href="/page/?p=privacy">個人情報保護</a> | <a href="/page/?p=membership">ご利用規約</a> | <a href="/page/?p=contact">お問い合わせ</a> | <a href="/company">会社概要</a></div>
 <p>2016 SUSTAIN  ALL RIGHTS RESERVED.</p>
-</footer>
-</div><!--gauge-->
-</div><!--shadow-->
-
-</div></div><!--main & contents-->
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover({
-	html: true,
-  	})
-	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-	e.target // newly activated tab
-	e.relatedTarget // previous active tab
-	});
-});
-
+</footer>          </footer>
+        </div><!--gauge-->
+      </div><!--shadow-->
+    </div>
+  </div><!--main & contents-->
+  <script>
+    var mHeight = 0;
+    $(".fighter-data").each(function() {
+      if ($(this).height() > mHeight) {
+        mHeight = $(this).height();
+      }
+    });
+    $(".fighter-img").height(mHeight);
+    $(".thisheight").height(mHeight);
+    
 //　選手情報モーダル表示
 $(".fighter-mdl").on("click",function(){
   var id = $(this).data("id");
@@ -1476,30 +242,7 @@ $(".fighter-mdl").on("click",function(){
     console.log(data);
   });
 });
-
-function setHeight() {
-	var maxHeight = 0;
-	$(".matchmake-box.h_js").each(function(){
-		var h = $(this).outerHeight();
-		if (h > maxHeight) {
-			maxHeight = h;
-		}
-	});
-	$(".matchmake-box.h_js").height(maxHeight);
-}
-$(window).on("load resize", function(){
-	setHeight();
-});
-
-// 見どころのモーダル表示
-$(".highlights_mdl").on("click",function(){
-var $this = $(this);
-var $this_parent = $this.parents(".matchmake-box");
-var target = $this_parent.find(".highlights-info-mdl");
-$(".highlights-info-mdl").modal("hide");
-target.modal("show");
-console.log(target);
-});
-</script>
+  </script>
 </body>
+
 </html>
