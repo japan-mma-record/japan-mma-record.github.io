@@ -157,3 +157,9 @@ GitHubの画面でファイルを開き、鉛筆マーク（Edit）で直接直�
 サイトの「このサイトについて」と、各ページの一番下に、問い合わせ先として japan.mma.record@gmail.com を載せています（GitHubアカウントのメインのアドレスも同じ）。
 
 - 同じ人の名前の書き方の統一は data/aliases.tsv（name, to, note）に書く。作るときに試合・表彰台・所属・マット番号の名前を「to」にそろえる（例：タナベイゴール・Igor Tanabe → イゴール・タナベ）。グランドインパクト・デラヒーバ杯は主催が JBJJF なので promotion は jbjjf（groundimpact と書いても jbjjf として扱う）。
+
+## 柔術の入賞記録（BJJ MATCH LOG）
+- matchlog.bjjhub.biz は、このサイトの管理者が管理しているサイト。全部取り込んでよく、出典にこのサイトの名前は書かない（各大会の「公式ページ」を出典にする）。
+- `fetchers/matchlog.py` が全大会（/tournament/番号）を読み、`data/matchlog/tournaments.tsv`・`podium.tsv`（選手番号つき）に書く。`.github/workflows/matchlog.yml` で毎週月曜に自動で動く。日付が空の大会（海外の IBJJF）は `fetchers/matchlog_dates.py` が IBJJF の公式サイトから補う（`data/matchlog/dates.tsv`）。
+- build.py は、公式ページが同じ大会、または同じ団体で日付が35日以内・名前がよく似ている大会（大会の回数が同じもの）にまとめる。同じ区分・同じ順位・同じ名前の入賞は重ねない。選手番号が同じ入賞は1人の選手にまとめる（名前は日本語の名前を優先）。
+- 「ASJJF/SJJJF」「ASJJF アジア」は ASJJF として扱う。

@@ -402,32 +402,58 @@ def load():
         mp[r['tid']].append(r)
     def fedp(f):
         f = (f or '').upper()
-        for k in ('SJJJF', 'IBJJF', 'ASJJF', 'JBJJF'):
+        for k in ('ASJJF', 'SJJJF', 'IBJJF', 'JBJJF'):
             if k in f:
                 return k.lower()
         return re.sub(r'[^a-z0-9]', '', f.lower()) or 'jbjjf'
     dn = lambda x: re.sub(r'[\s・･　()（）/]', '', unicodedata.normalize('NFKC', x or '')).lower()
-    byday = collections.defaultdict(list)
+    bypr = collections.defaultdict(list)
+    by_src = {}
     for k, e in events.items():
-        byday[(e.get('promotion'), e.get('date'))].append(k)
+        bypr[e.get('promotion')].append(k)
+        for u in (e.get('sources') or '').split():
+            by_src.setdefault(u, k)
+    MLD = {r['tid']: r['date'] for r in read_tsv(os.path.join(DATA, 'matchlog', 'dates.tsv')) if r.get('date')}
     nml = 0
     for t in mt:
         rows = mp.get(t['tid']) or []
-        if not rows or not re.match(r'\d{4}-\d{2}-\d{2}$', t.get('date') or ''):
+        d = t.get('date') or MLD.get(t['tid']) or ''
+        if not rows or not re.match(r'\d{4}-\d{2}-\d{2}$', d):
             continue
-        pr, d = fedp(t.get('federation')), t['date']
+        pr = fedp(t.get('federation'))
         nm = methods.event_name(re.sub(r'^【公式結果】\s*', '', t.get('name') or ''))
         off = (t.get('official_url') or '').strip()
-        cands = [k for k in byday.get((pr, d), []) if k in events]
-        k = next((c for c in cands if off and off in (events[c].get('sources') or '').split()), None)
-        if not k and cands:
-            sc = sorted(((difflib.SequenceMatcher(None, dn(events[c]['name']), dn(nm)).ratio(), c) for c in cands), reverse=True)
-            if len(cands) == 1 or sc[0][0] >= 0.5:
-                k = sc[0][1]
+        # 同じ大会を探す：①公式ページが同じ ②同じ団体で日付が35日以内・名前がよく似ている ③同じ団体・同じ日で1つだけ
+        # （BJJ MATCH LOG の日付は月の1日になっているものがあるので、日付は近いものまで見る）
+        k = by_src.get(off) if off else None
+        if not k:
+            dd = datetime.date.fromisoformat(d)
+            near = []
+            for c in bypr.get(pr, []):
+                if c not in events:
+                    continue
+                try:
+                    gap = abs((datetime.date.fromisoformat(events[c]['date']) - dd).days)
+                except ValueError:
+                    continue
+                n1 = re.findall(r'\d+', re.sub(r'(19|20)\d\d', '', dn(events[c]['name']))); n2 = re.findall(r'\d+', re.sub(r'(19|20)\d\d', '', dn(nm)))
+                if gap <= 35 and (not n1 or not n2 or n1[0] == n2[0]):
+                    near.append((difflib.SequenceMatcher(None, dn(events[c]['name']), dn(nm)).ratio() - gap / 1000, gap, c))
+            near.sort(reverse=True)
+            if near and near[0][0] >= 0.75:
+                k = near[0][2]
+            else:
+                same = [x for x in near if x[1] == 0]
+                if len(same) == 1 and same[0][0] >= 0.3:
+                    k = same[0][2]
+        if k and events[k]['date'][8:] != '01' and d[8:] == '01':
+            pass   # 日付はもとの大会（日まで分かっているもの）を使う
         if not k:
             k = 'm' + t['tid']
             events[k] = {'event_id': k, 'promotion': pr, 'date': d, 'name': nm, 'venue': '', 'sources': ''}
-            byday[(pr, d)].append(k)
+            bypr[pr].append(k)
+            if off:
+                by_src[off] = k
         e = events[k]
         if off.startswith('http') and off not in (e.get('sources') or '').split():
             e['sources'] = ((e.get('sources') or '') + ' ' + off).strip()
