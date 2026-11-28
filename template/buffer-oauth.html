@@ -48,7 +48,20 @@ document.getElementById('go').onclick = async () => {
   const s = JSON.parse(sessionStorage.getItem('pkce') || '{}');
   if (!s.state || s.state !== p.get('state')) { document.getElementById('msg').textContent = '確認の文字が合いません。もう一度ボタンから始めてください。'; return; }
   const c = await conf();
-  const blob = await encrypt({code:p.get('code'), verifier:s.verifier, redirect_uri:c.redirect_uri, at:Date.now()}, c.public_key_pem);
+  // その場で Buffer に「更新の鍵」をもらい、公開鍵で暗号化して表示する（平文の鍵はどこにも出さない）
+  let blob;
+  try {
+    const r = await fetch('https://auth.buffer.com/token', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body: new URLSearchParams({grant_type:'authorization_code', code:p.get('code'), redirect_uri:c.redirect_uri, code_verifier:s.verifier, client_id:c.client_id})});
+    const j = await r.json();
+    if (!j.refresh_token) throw new Error(JSON.stringify(j).slice(0, 200));
+    blob = await encrypt({refresh_token:j.refresh_token, saved_at:Math.floor(Date.now()/1000)}, c.public_key_pem);
+    document.getElementById('msg').textContent = '更新の鍵（暗号化済み）。data/buffer_token.enc に置く。';
+  } catch (ex) {
+    // うまくいかないときは、許可のしるしを暗号化して出す（data/buffer_grant.enc に置けば GitHub 側で交換する）
+    blob = await encrypt({code:p.get('code'), verifier:s.verifier, redirect_uri:c.redirect_uri, at:Date.now()}, c.public_key_pem);
+    document.getElementById('msg').textContent = 'その場での交換に失敗（' + ex.message + '）。許可のしるし（暗号化済み）。data/buffer_grant.enc に置く。';
+  }
   sessionStorage.removeItem('pkce');
   history.replaceState(null, '', location.pathname);
   document.getElementById('blob').value = blob;
