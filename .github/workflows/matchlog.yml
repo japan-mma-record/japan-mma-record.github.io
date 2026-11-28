@@ -1,0 +1,28 @@
+name: 柔術の入賞記録の取り込み（BJJ MATCH LOG）
+on:
+  schedule:
+    - cron: '40 17 * * 0'   # 毎週月曜 日本時間 2:40
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: matchlog
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 fetchers/matchlog.py
+      - name: 保存
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/matchlog
+          git diff --cached --quiet && exit 0
+          git commit -m "柔術の入賞記録を取り込んだ（BJJ MATCH LOG、自動）"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs origin main && git push origin HEAD:main && break; sleep 10; done
