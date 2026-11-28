@@ -613,17 +613,39 @@ def main():
             keep.append(b)
         bouts[e['event_id']] = keep
     print(f'重複していた試合を1つにまとめた: {ndup}')
+    # 所属（data/gyms.tsv：event_id, match_no, name, gym, source）。試合ごとの所属なので、移籍の流れもたどれる
+    GYM = {}
+    for r in read_tsv(os.path.join(DATA, 'gyms.tsv')):
+        g = (r.get('gym') or '').strip()
+        if not g or not r.get('event_id') or not r.get('name'):
+            continue
+        k = re.sub(r'\s', '', r['name'])
+        GYM[(r['event_id'], str(r.get('match_no') or '').strip(), k)] = g
+        GYM.setdefault((r['event_id'], '', k), g)
+    # 柔術の大会は、公式の表彰台に書かれた所属をその大会の試合にも使う（同じ大会・同じ名前のときだけ）
+    for k, ps in PODIUM.items():
+        for p in ps:
+            if p[2] and p[3] and p[3].strip() not in ('-', '－', '無所属', 'なし'):
+                GYM.setdefault((k, '', re.sub(r'\s', '', p[2])), p[3].strip())
+    def gym_of(eid, no, name):
+        k = re.sub(r'\s', '', name or '')
+        return GYM.get((eid, str(no or '').strip(), k)) or GYM.get((eid, '', k)) or ''
+    ngym = 0
     bout_out = {}
     used = set()
     for e in ev:
         rows = []
         for b in bouts[e['event_id']]:
+            g1, g2 = gym_of(e['event_id'], b.get('match_no'), b['fighter1']), gym_of(e['event_id'], b.get('match_no'), b['fighter2'])
+            ngym += bool(g1) + bool(g2)
+            b['gym1'], b['gym2'] = g1, g2
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
                          b.get('fighter1_id') or '', b['fighter1'], b.get('fighter2_id') or '', b['fighter2'],
                          WIN.get(b.get('winner') or '', ''), b.get('method') or '', b.get('round') or '',
-                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight')), b.get('tnote') or '', b.get('mat') or ''])
+                         b.get('time') or '', b.get('weight') or '', 1 if (b.get('note') or '') == 'uncertain' else 0, b.get('rule') or '', b.get('video') or '', b.get('title') or title_of(b.get('weight')), b.get('tnote') or '', b.get('mat') or '', g1, g2])
             used.update(x for x in (b.get('fighter1_id'), b.get('fighter2_id')) if x)
         bout_out[e['event_id']] = rows
+    print(f'所属が入った選手（試合ごと）: {ngym}')
     fout = {i: [fighters.get(i, ''), '', 1] for i in used if fighters.get(i)}
     # 歴代王者（タイトルマッチ・王座決定戦の勝者を、団体と階級ごとに古い順にたどる）
     champs = collections.defaultdict(list)
@@ -714,7 +736,9 @@ def main():
             def fl(k):
                 fid = b.get(f'fighter{k}_id')
                 n = html.escape(b[f'fighter{k}'])
-                return f'<a class="u nb" href="../f/{fid}.html">{n}</a>' if fid and fid in fout else f'<span class="nb">{n}</span>'
+                g = b.get(f'gym{k}') or ''
+                gh = f'<br><small class="gy" style="color:var(--fg3);font-size:12px">{html.escape(g)}</small>' if g else ''
+                return (f'<a class="u nb" href="../f/{fid}.html">{n}</a>' if fid and fid in fout else f'<span class="nb">{n}</span>') + gh
             unc = '<span class="unc">未確定</span>' if b.get('note') == 'uncertain' else ''
             rtag = f'<span class="unc">{html.escape(b["rule"])}・戦績に数えない</span>' if b.get('rule') else ''
             if b.get('video'):
@@ -804,6 +828,44 @@ def main():
             opp = f'<a class="u nb" href="{oid}.html">{on}</a>' if oid and oid in fout else f'<span class="nb">{on}</span>'
             rows.append((e['date'], f'<tr><td><span class="rs {ok}">{r}</span></td><td>{opp}</td><td><a class="u" href="../e/{e["event_id"]}.html">{html.escape(e["name"])}</a></td>'
                         f'<td class="num">{html.escape(e["date"])}</td><td>{html.escape(b.get("method") or "")}{rtag}</td><td class="num">{html.escape(rt(b))}</td></tr>'))
+        # 所属の変遷（試合ごとの所属を古い順にたどり、変わったところで区切る）
+        ghist = []
+        for e, b, side in sorted(lst, key=lambda x: x[0]['date']):
+            g = b.get(f'gym{side}') or ''
+            if not g:
+                continue
+            if ghist and ghist[-1][0] == g:
+                ghist[-1][2] = e['date']
+            else:
+                ghist.append([g, e['date'], e['date']])
+        # リングネームの変遷（試合ごとの表記。空白・中黒の違いと、日本語名の選手の英字表記は数えない）
+        # 1試合だけの表記（誤記・表記ゆれのことが多い）は数えず、2試合以上で使われた名前だけでたどる
+        nkey = lambda x: unicodedata.normalize('NFKC', re.sub(r'[\s・･=＝.．"“”\'’]', '', x or '')).lower()
+        jp = re.search(r'[぀-ヿ一-鿿]', name or '')
+        ncnt = collections.Counter(nkey(b.get(f'fighter{side}')) for e, b, side in lst)
+        nhist = []
+        for e, b, side in sorted(lst, key=lambda x: x[0]['date']):
+            n0 = (b.get(f'fighter{side}') or '').strip()
+            if not n0 or (jp and not re.search(r'[぀-ヿ一-鿿]', n0)) or ncnt[nkey(n0)] < 2:
+                continue
+            # 同じ名前は1行にまとめ、最初に使った日と最後に使った日を出す
+            hit = next((x for x in nhist if nkey(x[0]) == nkey(n0)), None)
+            if hit:
+                hit[2] = e['date']
+            else:
+                nhist.append([n0, e['date'], e['date']])
+        if len({nkey(x[0]) for x in nhist}) >= 2:
+            gym_name = ('<h2 class="sec">リングネームの変遷</h2><div class="tbl"><table><thead><tr><th>名前（試合での表記）</th><th class="num">期間（試合の日付）</th></tr></thead><tbody>'
+                        + ''.join(f'<tr><td>{html.escape(n)}</td><td class="num">{a[:7].replace("-", ".")}{"" if a[:7] == z[:7] else "〜" + z[:7].replace("-", ".")}</td></tr>' for n, a, z in reversed(nhist))
+                        + '</tbody></table></div>')
+        else:
+            gym_name = ''
+        gym_html = ''
+        if ghist:
+            gym_html = ('<h2 class="sec">所属</h2><div class="tbl"><table><thead><tr><th>所属</th><th class="num">期間（試合の日付）</th></tr></thead><tbody>'
+                        + ''.join(f'<tr><td>{html.escape(g)}</td><td class="num">{a[:7].replace("-", ".")}{"" if a[:7] == z[:7] else "〜" + z[:7].replace("-", ".")}</td></tr>' for g, a, z in reversed(ghist))
+                        + '</tbody></table></div>')
+        gym_html = gym_name + gym_html + ('<h2 class="sec">全試合</h2>' if (gym_name or gym_html) else '')
         rec = f'{w}勝{l}敗{d}分' + (f'{nc}無効試合' if nc else '')
         note = '※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません'
         if fid in wrec:
@@ -824,7 +886,8 @@ def main():
                   {'@type': 'ListItem', 'position': 2, 'name': name, 'item': base_u + f'f/{fid}.html'}]}]
         page = (head(site, f'{name}の戦績｜日本MMA戦績録', f'{name}（総合格闘技）の戦績 {rec}。全{len(lst)}試合の結果と出典。', f'f/{fid}.html', '../', ld) + static_header('../') +
                 f'<main class="wrap"><p class="crumb"><a class="lnk" href="../index.html">トップ</a>　›　<a class="lnk" href="../index.html#fighters">選手</a></p>'
-                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}</p><p class="sub" style="font-size:13px;color:var(--fg3)">{note}</p></div></div>'
+                f'<div class="ph"><div><h1>{html.escape(name)}</h1><p class="sub">{rec}{"　所属：" + html.escape(ghist[-1][0]) if ghist else ""}</p><p class="sub" style="font-size:13px;color:var(--fg3)">{note}</p></div></div>'
+                + gym_html +
                 f'<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody>{"".join(h for d, h in sorted(rows, key=lambda t: t[0], reverse=True))}</tbody></table></div></main>'
                 + foot(site, len(ev_list), n_b))
         with open(os.path.join(OUT, 'f', f'{fid}.html'), 'w', encoding='utf-8') as fp:

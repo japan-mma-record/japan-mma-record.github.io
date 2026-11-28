@@ -230,7 +230,8 @@ function vEvent(k){
     let A=[b[1],b[2]], B=[b[3],b[4]], r='<span class="rs o">—</span>';
     if(b[5]===2){ [A,B]=[B,A]; }
     if(b[5]===1||b[5]===2) r='<span class="rs w">WIN</span>'; else if(b[5]==='d') r='<span class="rs o">引分</span>'; else if(b[5]==='nc') r='<span class="rs o">無効</span>';
-    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}${rtag(b,e)}</td><td class="num">${esc(rt(b))}</td><td>${ttag(b)}${esc(b[9])}</td></tr>`; }).join('');
+    const gA = b[5]===2 ? b[17] : b[16], gB = b[5]===2 ? b[16] : b[17]; const gy = x => x ? `<br><small style="color:var(--fg3);font-size:12px">${esc(x)}</small>` : '';
+    return `<tr><td class="num">${b[0]||''}</td><td>${r}</td><td>${flink(A[0],A[1])}${gy(gA)}</td><td><span class="def">${(b[5]===1||b[5]===2)?'def.':'vs'}</span> ${flink(B[0],B[1])}${gy(gB)}${b[10]?'<span class="unc">未確定</span>':''}</td><td>${esc(b[6])}${rtag(b,e)}</td><td class="num">${esc(rt(b))}</td><td>${ttag(b)}${esc(b[9])}</td></tr>`; }).join('');
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a>　›　${esc(e[1].slice(0,4))}年</p>
     <div class="ph"><div><a class="badge" href="#${pkey(e[2])}">${esc(pl(e[2]))}</a><h1>${esc(e[3])}</h1><p class="sub">${esc(dlong(e[1]))}${e[4]?'　'+esc(e[4]):''}</p></div>
     <div class="kpis"><div><p class="k">試合</p><p class="v">${mb.length}</p></div><div><p class="k">KO・TKO</p><p class="v r">${ko}</p></div><div><p class="k">一本</p><p class="v">${sub}</p></div><div><p class="k">判定</p><p class="v">${dec}</p></div></div></div>
@@ -245,6 +246,21 @@ function kickBox(id,list){ const {o,s}=kickRows(id,list); if(!o.length&&!s.lengt
   return `<div class="kbox"><p class="kh">キック戦績</p><div class="kpis"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div></div></div>`; }
 function kickTbl(id){ const o=((D.meta.other||{})[id]||[]); if(!o.length) return '';
   return `<h2 class="sec">キックの試合（このサイトの大会以外）</h2><div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th></tr></thead><tbody>${o.map(r=>`<tr><td>${r[3]==='勝'?'<span class="rs w">勝</span>':r[3]==='敗'?'<span class="rs l">負</span>':`<span class="rs o">${esc(r[3])}</span>`}</td><td>${esc(r[2])}</td><td>${r[8]?`<a class="u" href="${esc(r[8])}" target="_blank" rel="noopener">${esc(r[1])}</a>`:esc(r[1])}</td><td class="num">${esc(r[0].replace(/-/g,'.'))}</td><td>${esc(r[4])}${r[5]?` ${esc(r[5])}R`:''}${r[6]?` ${esc(r[6])}`:''}</td></tr>`).join('')}</tbody></table></div><h2 class="sec">全試合</h2>`; }
+/* 所属とリングネームの変遷（試合ごとの記録を古い順にたどり、変わったところで区切る） */
+function fHist(list, nm){
+  const asc = list.slice().sort((a,b)=>a[0][1].localeCompare(b[0][1]));
+  const ym = d => d.slice(0,7).replace('-','.');
+  const span = (a,z) => ym(a) + (ym(a)===ym(z) ? '' : '〜' + ym(z));
+  const walk = (get, key) => { const h=[]; asc.forEach(([e,b,side])=>{ const v=get(b,side); if(!v) return; const L=h[h.length-1]; if(L&&key(L[0])===key(v)) L[2]=e[1]; else h.push([v,e[1],e[1]]); }); return h; };
+  const g = walk((b,side)=>b[side===1?16:17]||'', x=>x);
+  const jp = /[\u3040-\u30ff\u4e00-\u9fff]/.test(nm||''); const nk = x=>x.replace(/[\s・･=＝.．"“”'’]/g,'').normalize('NFKC').toLowerCase();
+  const cnt = {}; list.forEach(([e,b,side])=>{ const k=nk((side===1?b[2]:b[4])||''); cnt[k]=(cnt[k]||0)+1; });
+  const walk1 = (get, key) => { const h=[]; asc.forEach(([e,b,side])=>{ const v=get(b,side); if(!v) return; const L=h.find(r=>key(r[0])===key(v)); if(L) L[2]=e[1]; else h.push([v,e[1],e[1]]); }); return h; };
+  const n = walk1((b,side)=>{ const v=(side===1?b[2]:b[4])||''; return (jp && !/[\u3040-\u30ff\u4e00-\u9fff]/.test(v)) || (cnt[nk(v)]||0) < 2 ? '' : v; }, nk);
+  const tbl = (t,h,c) => `<h2 class="sec">${t}</h2><div class="tbl"><table><thead><tr><th>${c}</th><th class="num">期間（試合の日付）</th></tr></thead><tbody>${h.slice().reverse().map(r=>`<tr><td>${esc(r[0])}</td><td class="num">${span(r[1],r[2])}</td></tr>`).join('')}</tbody></table></div>`;
+  const nOK = new Set(n.map(r=>nk(r[0]))).size >= 2;
+  return { gym: g.length ? g[g.length-1][0] : '', html: (nOK ? tbl('リングネームの変遷', n, '名前（試合での表記）') : '') + (g.length ? tbl('所属', g, '所属') : '') };
+}
 function vFighter(id){
   const f = D.fighters[id]; if(!f) return notFound(); buildIndex();
   const list = (byFighter[id]||[]).slice().sort((a,b)=> b[0][1].localeCompare(a[0][1]) || b[1][0]-a[1][0]);
@@ -262,11 +278,12 @@ function vFighter(id){
   const nonly = /^n/.test(id) ? `<p class="sub" style="font-size:13px;color:var(--fg3)">※このページは、記録に選手番号がない試合を<b>同じ名前</b>でまとめたものです。同じ名前の別の選手の試合が混ざっていることがあります。</p>` : '';
   const span = list.length ? `${list[list.length-1][0][1].slice(0,4)}年〜${list[0][0][1].slice(0,4)}年` : '';
   const st = '';
+  const H = fHist(list, nm), hx = H.html;
   return `<main class="wrap"><p class="crumb"><a class="lnk" href="#top">トップ</a>　›　<a class="lnk" href="#fighters">選手</a></p>
-    <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}</p></div>
+    <div class="ph"><div>${f[0]?`<p class="sub" style="margin:0;letter-spacing:.08em">${esc(f[1])}</p>`:''}<h1>${esc(nm)}</h1><p class="sub">${esc([...pr].map(pl).join('・'))}${H.gym?`　所属：${esc(H.gym)}`:''}</p></div>
     <div class="kboxes">${kickBox(id,list)}<div class="kbox"${(w+l+d+nc===0&&!list.some(([e,b])=>!b[11]&&!(D.meta.amateur||[]).includes(e[2])))?' hidden':''}><p class="kh" id="fkh">MMA戦績</p><div class="kpis" id="fk"><div><p class="k">勝</p><p class="v r">${w}</p></div><div><p class="k">敗</p><p class="v">${l}</p></div><div><p class="k">分</p><p class="v">${d}</p></div>${nc?`<div><p class="k">無効</p><p class="v">${nc}</p></div>`:''}</div></div></div></div>
     <p class="sub" id="fnote" style="font-size:13px;color:var(--fg3)">収録${list.length}試合（${esc(span)}）　${esc(st)}　※日本で開かれた大会・日本の団体の大会と、世界の主要団体（UFC・ONE・PFL・Bellatorなど）での試合の戦績です。そのほかの海外の大会での試合は含みません</p>
-    ${nonly}${tbox}${kickTbl(id)}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
+    ${nonly}${hx}${hx&&!tbox?'<h2 class="sec">全試合</h2>':''}${tbox}${kickTbl(id)}<div class="tbl"><table><thead><tr><th>結果</th><th>対戦相手</th><th>大会</th><th class="num">日付</th><th>決まり手</th><th class="num">R・時間</th></tr></thead><tbody id="fb">${rows}</tbody></table></div></main>`;
 }
 function enhanceFighter(id){
   fetch('w/'+encodeURIComponent(id)+'.json').then(r=>r.ok?r.json():null).then(w=>{
