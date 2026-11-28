@@ -719,6 +719,8 @@ def main():
     # Buffer の許可（OAuth）を出す1回きりのページ（人の手なしで鍵を新しくし続けるための最初の許可）
     if os.path.exists(os.path.join(TPL, 'buffer-oauth.html')):
         shutil.copy(os.path.join(TPL, 'buffer-oauth.html'), os.path.join(OUT, 'buffer-oauth.html'))
+        os.makedirs(os.path.join(OUT, 'data'), exist_ok=True)
+        shutil.copy(os.path.join(DATA, 'buffer_oauth.json'), os.path.join(OUT, 'data', 'buffer_oauth.json'))
     body = open(os.path.join(TPL, 'body.html'), encoding='utf-8').read()
     desc = f'1989年の修斗から最新の大会まで、日本の総合格闘技（MMA）{len(ev_list):,}興行・{n_b:,}試合の記録を出典つきで検索できるデータベース。'
     with open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8') as fp:
