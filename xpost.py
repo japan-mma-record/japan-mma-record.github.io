@@ -157,10 +157,27 @@ def post_bluesky(text):
     return call('com.atproto.repo.createRecord', {'repo': ses['did'], 'collection': 'app.bsky.feed.post', 'record': rec}, ses['accessJwt'])
 
 
+_BUF_TOKEN = []
+
+
+def buffer_auth():
+    """Buffer の鍵。OAuth（人の手なしで新しくし続ける鍵）を先に使い、だめなら個人の鍵（最長1年）を使う"""
+    if not _BUF_TOKEN:
+        t = None
+        try:
+            import buffer_token
+            t = buffer_token.access_token()
+        except Exception as ex:
+            print('OAuth の鍵の準備に失敗:', ex)
+        _BUF_TOKEN.append(t or (os.environ.get('BUFFER_API_KEY') or '').strip())
+        print('Buffer の鍵：' + ('OAuth（自動で新しくなる鍵）' if t else '個人の鍵'))
+    return _BUF_TOKEN[0]
+
+
 def buffer_call(query, variables=None):
     req = urllib.request.Request('https://api.buffer.com', method='POST',
                                  data=json.dumps({'query': query, 'variables': variables or {}}).encode(),
-                                 headers={'Authorization': 'Bearer ' + os.environ['BUFFER_API_KEY'].strip(), 'Content-Type': 'application/json'})
+                                 headers={'Authorization': 'Bearer ' + buffer_auth(), 'Content-Type': 'application/json'})
     with urllib.request.urlopen(req, timeout=60) as r:
         out = json.load(r)
     if out.get('errors'):
@@ -193,6 +210,8 @@ def main():
     day = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.datetime.now(JST).date()
     long_post = os.environ.get('X_LONG_POST', '0') == '1'
     with_url = os.environ.get('X_INCLUDE_URL', '0') == '1'
+    if os.environ.get('BUFFER_PRIVATE_KEY'):
+        buffer_auth()   # 投稿がない日も、Buffer の鍵を毎日新しくしておく（使われない鍵が切れないように）
     text = build_text(day, long_post, with_url)
     if not text:
         print('この日の大会がないので投稿しない')
@@ -205,8 +224,8 @@ def main():
     else:
         print('X の鍵が設定されていないので、X には投稿していない')
     failed = False
-    if os.environ.get('BUFFER_API_KEY'):
-        k = os.environ['BUFFER_API_KEY'].strip()
+    if os.environ.get('BUFFER_API_KEY') or os.environ.get('BUFFER_PRIVATE_KEY'):
+        k = (os.environ.get('BUFFER_API_KEY') or '').strip()
         print(f'Buffer の鍵: {len(k)}文字' + ('（伏せ字の「•」が入っている。コピーし直しが必要）' if '•' in k or '*' in k else ''))
         bt = build_text(day, long_post, True)   # Buffer 経由なら URL を付けても無料
         try:

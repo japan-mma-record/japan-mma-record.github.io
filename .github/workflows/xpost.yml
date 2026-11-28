@@ -4,15 +4,21 @@ on:
     - cron: '31 22 * * *'   # 毎日 日本時間 7:31（GitHub の混み具合で遅れることがある）
   workflow_dispatch: {}
 permissions:
-  contents: read
+  contents: write   # Buffer の更新の鍵（暗号化したもの）をリポジトリに保存し直すため
+concurrency:
+  group: buffer-token   # 鍵の更新が2つ同時に走ると鍵が無効になるので、1つずつ
+  cancel-in-progress: false
 jobs:
   post:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: pip install cryptography
       - name: 投稿（X の鍵が Secrets にないときは投稿文の表示だけ）
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
@@ -22,6 +28,7 @@ jobs:
           X_INCLUDE_URL: ${{ vars.X_INCLUDE_URL }}
           X_LONG_POST: ${{ vars.X_LONG_POST }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_PRIVATE_KEY: ${{ secrets.BUFFER_PRIVATE_KEY }}
           BUFFER_CHANNEL_ID: '6b0a5a4f8541f09ecbcd843a'   # Buffer につないだ X（日本格闘技戦績録）のチャンネル番号（秘密ではない）
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}

@@ -1,0 +1,7 @@
+{
+ "client_id": "OMHHEYMm4gEUkQWRlEe-4yrJq0tpB86mHXCFaRNxck_",
+ "redirect_uri": "https://japan-mma-record.github.io/buffer-oauth.html",
+ "scope": "posts:write posts:read account:read offline_access",
+ "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA5BapJKNtPYPS545x2LJD\nxQqmNaQuny2UvXcRZ8hT3wkW3QgKxJweDbT1/jn8oCRfjsmyiZg2vrQuKWcJMsjT\nu53BZ0BTGunQoemPPjMYPvKIi4pZXnSKAf/Ya7V6mDZGb3YAN2voZ3s+1dlCmt3F\nNcDVIF2M+MR/YB9Rw4SFLtPURM4pPmSQ05r5Z88maBRhWAdTZLrH4f7wzDt12kBF\nwwyGl3PF0J4v1+K5QOxrDadDsShcq0vQ/QMTIf/5/DxoDURAudKlB1zcJYXJNejn\ndpLYjwe2Mqk4cdb50ptYzgHaMx4Iwbmmbq365nErjMIBOQI4NSTGoD0nUe+RyQ9t\nV0IwXiQi4X7vprcdsG7sHmP0hv242jw98PYhpMmu8j+sRoq7i76tR2Qmhb2A8SS9\nhKMQjQPMGpT72pmTnbo6l0XU69SENx7Xp2RZq5V87KMcmVDSfTH43YcAVlYCyVkS\nE/plMXDOmWdka316M2wXpw6M8aUkyd8mQDKEOc2TxXqvAgMBAAE=\n-----END PUBLIC KEY-----\n",
+ "note": "Buffer の OAuth（公開クライアント・PKCE）。秘密の情報は入っていない。秘密鍵は GitHub の Secrets の BUFFER_PRIVATE_KEY"
+}

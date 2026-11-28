@@ -716,6 +716,9 @@ def main():
     # トップ（検索・一覧つきのページ）
     shutil.copy(os.path.join(TPL, 'style.css'), os.path.join(OUT, 'style.css'))
     shutil.copy(os.path.join(TPL, 'app.js'), os.path.join(OUT, 'app.js'))
+    # Buffer の許可（OAuth）を出す1回きりのページ（人の手なしで鍵を新しくし続けるための最初の許可）
+    if os.path.exists(os.path.join(TPL, 'buffer-oauth.html')):
+        shutil.copy(os.path.join(TPL, 'buffer-oauth.html'), os.path.join(OUT, 'buffer-oauth.html'))
     body = open(os.path.join(TPL, 'body.html'), encoding='utf-8').read()
     desc = f'1989年の修斗から最新の大会まで、日本の総合格闘技（MMA）{len(ev_list):,}興行・{n_b:,}試合の記録を出典つきで検索できるデータベース。'
     with open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8') as fp:
