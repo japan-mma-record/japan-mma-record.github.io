@@ -65,16 +65,23 @@ def _save_and_push(path, content, msg):
     """更新の鍵を保存して、すぐに GitHub に送る（ここで失敗すると次から使えなくなるので、何度もやり直す）"""
     with open(path, 'w', encoding='utf-8') as f:
         f.write(content + '\n')
+    # 予備：暗号化した更新の鍵を実行の記録にも残す（暗号化してあるので見られても使えない。保存に失敗したときの手がかり）
+    print('BUFFER_TOKEN_BACKUP ' + content)
     if os.environ.get('GITHUB_ACTIONS') != 'true':
         return True
     g = lambda *a: subprocess.run(['git', '-C', HERE, *a], capture_output=True, text=True)
     g('config', 'user.name', 'github-actions[bot]')
     g('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
-    g('add', '-A', 'data/buffer_token.enc', 'data/buffer_grant.enc')
-    g('commit', '-m', msg)
+    g('add', '-A', '--', *[p for p in ('data/buffer_token.enc', 'data/buffer_grant.enc') if os.path.exists(os.path.join(HERE, p)) or g('ls-files', '--error-unmatch', p).returncode == 0])
+    c = g('commit', '-m', msg)
+    if c.returncode != 0:
+        print('!!! 更新の鍵をコミットできなかった:', (c.stdout + c.stderr)[-300:])
+        return False
     for i in range(8):
         g('pull', '--rebase', '-X', 'theirs', 'origin', 'main')
-        if g('push', 'origin', 'HEAD:main').returncode == 0:
+        if g('push', 'origin', 'HEAD:main').returncode == 0 and g('fetch', 'origin', 'main').returncode == 0 \
+                and g('diff', '--quiet', 'FETCH_HEAD', '--', 'data/buffer_token.enc').returncode == 0:
+            print('更新の鍵を GitHub に保存した')
             return True
         time.sleep(5 + i * 5)
     print('!!! 更新の鍵を GitHub に保存できなかった。次の実行で使えなくなるおそれがある')
