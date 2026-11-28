@@ -149,6 +149,11 @@ def load():
         for b in bouts[k]:
             k0 = (e.get('date'), frozenset((norm(b['fighter1']), norm(b['fighter2']))), norm((b.get('weight') or '').split('・')[0]))
             b['mat'] = mats.get(k0 + (str(b.get('match_no') or ''),)) or mats.get(k0, '')
+    # 大会をまとめる前の大会番号・試合番号を覚えておく（data/gyms.tsv はまとめる前の番号で書かれていることがあるので、所属を探すときにも使う）
+    for k in bouts:
+        for b in bouts[k]:
+            b.setdefault('_oeid', k)
+            b.setdefault('_ono', str(b.get('match_no') or '').strip())
     # 大会の名前・日付・会場の訂正（data/event_fixes.tsv：event_id, field, value, source）
     for r in read_tsv(os.path.join(DATA, 'event_fixes.tsv')):
         e = events.get(r.get('event_id'))
@@ -764,6 +769,9 @@ def main():
                 if nolink(e, b.get(f'fighter{k}')):
                     b[f'fighter{k}_id'] = ''
             g1, g2 = gym_of(e['event_id'], b.get('match_no'), b['fighter1']), gym_of(e['event_id'], b.get('match_no'), b['fighter2'])
+            if b.get('_oeid') and b['_oeid'] != e['event_id']:   # まとめられた大会の試合は、まとめる前の番号でも探す
+                g1 = g1 or gym_of(b['_oeid'], b.get('_ono'), b['fighter1'])
+                g2 = g2 or gym_of(b['_oeid'], b.get('_ono'), b['fighter2'])
             ngym += bool(g1) + bool(g2)
             b['gym1'], b['gym2'] = g1, g2
             rows.append([int(b['match_no']) if str(b.get('match_no') or '').isdigit() else 0,
