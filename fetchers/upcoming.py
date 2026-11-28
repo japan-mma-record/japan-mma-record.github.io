@@ -5,11 +5,12 @@
   2. 各団体の公式サイト（eFight に載っていない大会を補う）
      DEEP / 修斗 / パンクラス / GRACHAN / PFC / ROMAN / WARDOG
 書き方:
-  ・日本で開かれる、MMA の大会だけを載せる（キック・柔術・グラップリングだけの大会、アマチュア大会は載せない）
+  ・日本で開かれる MMA の大会を載せる（キック・グラップリングだけの大会、アマチュア大会は載せない）
+  ・柔術の大会は、BJJ MATCH LOG の大会スケジュール（JBJJF・SJJJF・ASJJF）と IBJJF の大会カレンダー（日本で開く大会）から載せる（g: bjj）
   ・終わった大会は自動で消える
   ・今回読めなかった大会（サイトの不調など）も、前回の内容を残しておく
 """
-import datetime, json, os, re, urllib.parse
+import datetime, json, os, re, urllib.parse, urllib.request
 from common import fetch, text_lines, links, DATA
 
 UP = os.path.join(DATA, 'upcoming.json')
@@ -296,12 +297,67 @@ def from_wardog(now):
     return next_event('https://wardog-cf.jp/', 'WARDOG', r'^WARDOG\.\d+$')
 
 
+# ---------- 柔術（BJJ MATCH LOG の大会スケジュールと IBJJF の大会カレンダー） ----------
+JP_CITY = r'Tokyo|Chiba|Nagoya|Osaka|Takasaki|Yokohama|Kobe|Kyoto|Fukuoka|Sapporo|Saitama|Sendai|Hiroshima|Okinawa|Naha|Kawasaki|Shizuoka|Hamamatsu|Niigata|Kanazawa|Kumamoto|Kagoshima|Gifu|Japan'
+
+
+def bjj_ev(d, n, v, p, src):
+    return {'d': d, 'n': n, 'v': v, 'p': p, 'c': [], 'src': [src] if src else [], 'g': 'bjj'}
+
+
+def from_matchlog(now):
+    import json as _j
+    t = fetch('https://matchlog.bjjhub.biz/schedule')
+    out = []
+    for blk in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, re.S):
+        try:
+            data = _j.loads(blk)
+        except Exception:
+            continue
+        for g in data.get('@graph', [data]):
+            for it in g.get('itemListElement') or []:
+                e = it.get('item') or {}
+                d = (e.get('startDate') or '')[:10]
+                if not re.match(r'\d{4}-\d{2}-\d{2}$', d):
+                    continue
+                n = (e.get('name') or '').strip()
+                org = ((e.get('organizer') or {}).get('name') or '').strip()
+                p = 'IBJJF' if 'IBJJF' in n.upper() else (org or '柔術')
+                v = re.sub(r'\s+', ' ', ((e.get('location') or {}).get('name') or '')).strip()
+                out.append(bjj_ev(d, n, v, p, e.get('url') or ''))
+    return out
+
+
+def from_ibjjf(now):
+    import json as _j
+    req = urllib.request.Request('https://ibjjf.com/api/v1/events/calendar.json',
+                                 headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest'})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        a = _j.load(r).get('infosite_events') or []
+    mon = {m: i for i, m in enumerate(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], 1)}
+    out = []
+    for e in a:
+        if not re.search(JP_CITY, f"{e.get('city') or ''} {e.get('name') or ''}") or 'Indianapolis' in (e.get('name') or ''):
+            continue
+        try:
+            d = f"{int(e['year']):04d}-{mon[e['month']]:02d}-{int(e['startDay']):02d}"
+        except Exception:
+            continue
+        v = ' '.join(x for x in [e.get('local'), e.get('city')] if x)
+        out.append(bjj_ev(d, (e.get('name') or '').strip(), v, 'IBJJF', f"https://ibjjf.com/events/{e.get('id')}" if e.get('id') else ''))
+    return out
+
+
 SOURCES = [('eFight', from_efight), ('DEEP', from_deep), ('修斗', from_shooto), ('パンクラス', from_pancrase),
-           ('GRACHAN', from_grachan), ('PFC', from_pfc), ('ROMAN', from_roman), ('WARDOG', from_wardog)]
+           ('GRACHAN', from_grachan), ('PFC', from_pfc), ('ROMAN', from_roman), ('WARDOG', from_wardog),
+           ('柔術（BJJ MATCH LOG）', from_matchlog), ('IBJJF', from_ibjjf)]
 
 
 def key(e):
-    """同じ大会かどうか：日付と団体が同じで、大会名の番号（例 134、6th）が同じ（番号がなければ同じ日・同じ団体）。"""
+    """同じ大会かどうか：日付と団体が同じで、大会名の番号（例 134、6th）が同じ（番号がなければ同じ日・同じ団体）。
+    柔術の大会は同じ日に別の大会（道着とノーギなど）があるので、大会名で見分ける。"""
+    if e.get('g') == 'bjj':
+        return (e.get('d'), 'bjj', re.sub(r'[^0-9a-z぀-ヿ一-鿿]', '', (e.get('n') or '').lower().replace('–', '-')))
     nums = re.findall(r'\d+', re.sub(r'20\d\d', '', e.get('n') or ''))
     return (e.get('d'), e.get('p'), nums[-1].lstrip('0') if nums else '')
 
@@ -323,7 +379,7 @@ def merge(old, new_lists):
                 o['src'] = list(dict.fromkeys((o.get('src') or []) + (e.get('src') or [])))
             else:
                 # 番号が片方にしかない同じ日・同じ団体の大会は同じ大会とみなす
-                same = [kk for kk in out if kk[0] == k[0] and kk[1] == k[1] and (not kk[2] or not k[2])]
+                same = [] if e.get('g') == 'bjj' else [kk for kk in out if kk[0] == k[0] and kk[1] == k[1] and (not kk[2] or not k[2])]
                 if same:
                     o = out[same[0]]
                     if len(e.get('c') or []) > len(o.get('c') or []):
@@ -352,11 +408,25 @@ def run(dry=False):
         return 0
     merged = [e for e in merge(old, got) if (e.get('d') or '') >= today]
     for e in merged:
+        if e.get('g') == 'bjj':
+            continue
         e['c'] = [c for c in (e.get('c') or []) if len(c) < 3 or mma_card(c)]
         if e.get('m') and e['c'] and not any(c[0] == e['m'].get('f1') for c in e['c']):
             e['m'] = {'f1': e['c'][0][0], 'f2': e['c'][0][1], 'l': e['c'][0][2]}
         if not e.get('m'):
             e.pop('m', None)
+    # 柔術：同じ名前の大会が日付違い（3日以内）で2つあれば1つにする（先に読んだ方を残す）
+    seen = {}
+    keep = []
+    for e in sorted(merged, key=lambda e: e['d']):
+        if e.get('g') == 'bjj':
+            nk = key(e)[2]
+            dd = datetime.date.fromisoformat(e['d'])
+            if any(abs((dd - x).days) <= 3 for x in seen.get(nk, [])):
+                continue
+            seen.setdefault(nk, []).append(dd)
+        keep.append(e)
+    merged = keep
     merged.sort(key=lambda e: (e['d'], e.get('p') or '', e.get('n') or ''))
     if not dry:
         with open(UP, 'w', encoding='utf-8') as fp:

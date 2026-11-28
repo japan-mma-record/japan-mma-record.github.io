@@ -71,7 +71,7 @@ function vTop(){
     return `<span style="left:${L.toFixed(2)}%;transform:translateX(${tx})">${y}</span>`; }).join('');
   const up = D.upcoming.filter(u=>u.d>=today);
   const nf = up.find(u=>u.m);
-  const upc = up.filter(u=>u!==nf).slice(0,4);
+  const upc = up.filter(u=>u!==nf&&u.g!=='bjj').slice(0,4);
   return `
   <section class="hero"><p class="bgnum" aria-hidden="true">1989—${y1}</p><div class="wrap">
     <p class="eyebrow">EVERY FIGHT SINCE 1989</p>
@@ -367,8 +367,8 @@ function vUpcoming(){
   const today = new Date().toISOString().slice(0,10);
   const up = D.upcoming.filter(u=>u.d>=today);
   return `<main class="wrap"><div class="sh"><h1>今後の予定</h1><span class="aside" style="font-weight:500">${up.length}大会　毎日更新</span></div>
-    ${up.map(u=>`<section class="ucard"><div class="h"><span class="d">${esc(u.d.replace(/-/g,'.'))}</span><b>${esc(u.n)}</b><small>${esc(u.v)}</small></div>
-      ${u.c.length?`<ol>${u.c.map(c=>`<li><strong>${esc(c[0])}</strong><span>vs</span><strong>${esc(c[1])}</strong>${c[2]?`<span>${esc(c[2])}</span>`:''}</li>`).join('')}</ol>`:'<p class="note" style="padding:0 18px 14px;margin:12px 0 0">対戦カードは未発表です。</p>'}
+    ${up.map(u=>`<section class="ucard"><div class="h"><span class="d">${esc(u.d.replace(/-/g,'.'))}</span><b>${esc(u.n)}</b><small>${u.g==='bjj'?esc('柔術・'+(u.p||'')+'　'):''}${esc(u.v)}</small></div>
+      ${u.g==='bjj'?'':u.c.length?`<ol>${u.c.map(c=>`<li><strong>${esc(c[0])}</strong><span>vs</span><strong>${esc(c[1])}</strong>${c[2]?`<span>${esc(c[2])}</span>`:''}</li>`).join('')}</ol>`:'<p class="note" style="padding:0 18px 14px;margin:12px 0 0">対戦カードは未発表です。</p>'}
       ${u.src&&u.src.length?`<p class="src" style="margin:0;padding:0 18px 14px">出典：${u.src.slice(0,3).map(s=>`<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\//,'').slice(0,60))}</a>`).join('　')}</p>`:''}</section>`).join('')}</main>`;
 }
 let CH=null;
