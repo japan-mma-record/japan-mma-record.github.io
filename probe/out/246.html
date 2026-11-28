@@ -1,722 +1,636 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117744042-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117744042-1');
-</script>
-<meta charset="utf-8" />
-<title>ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ï¼šPANCRASE Official Site | PANCRASE277</title>
-<meta name="keywords" content="PANCRASE,MMA,ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹,ç·åˆæ ¼é—˜æŠ€,ãƒã‚¤ãƒ–ãƒªãƒƒãƒ‰ãƒ»ãƒ¬ã‚¹ãƒªãƒ³ã‚°,P's LAB,ãƒ”ãƒ¼ã‚ºãƒ»ãƒ©ãƒœ,ä¸–ç•Œæ¨™æº–" />
-<meta name="description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel="stylesheet" href="../../../css/p2020.css" type="text/css" />
-<link rel="shortcut icon" href="../../../images/favicon.ico" />
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<meta property="og:title" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pancrase.co.jp/" />
-<meta property="og:image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
-<meta property="og:site_name" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta property="og:description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ãƒ»ã‚ªãƒ•ã‚£ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒˆ | PANCRASE" />
-<meta name="twitter:description" content="ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã¯ã€1993å¹´ã«ãƒ—ãƒ­ãƒ¬ã‚¹ãƒ©ãƒ¼ã®èˆ¹æœ¨èª å‹ã¨éˆ´æœ¨ã¿ã®ã‚‹ã«ã‚ˆã£ã¦è¨­ç«‹ã€ç·åˆæ ¼é—˜æŠ€ã®ç¤Žã‚’ç¯‰ãã€ç¾ä»£ã§ã‚‚å›½å†…å¤–ã§äººæ°—ã‚’èª‡ã‚‹ã€ä¼çµ±çš„ãªç·åˆæ ¼é—˜æŠ€å›£ä½“ã§ã™ã€‚ã€Œä¸–ç•Œæ¨™æº–ã€ã‚’ã‚¹ãƒ­ãƒ¼ã‚¬ãƒ³ã«æ¬§ç±³ã§ã‚¹ãƒãƒ¼ãƒ„åŒ–ãŒæ€¥é€Ÿã«ç¢ºç«‹ã•ã‚Œã¦ã„ã‚‹MMAãƒ«ãƒ¼ãƒ«ã‚’æŽ¡ç”¨ã—ã‚¹ãƒãƒ¼ãƒ„åŒ–ã‚’å®Ÿæ–½ã—ãŸãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚’é–‹å§‹ã—ã¾ã—ãŸã€‚" />
-<meta name="twitter:image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
-<meta itemprop="image" content="https://www.pancrase.co.jp/images/ogp2020.png" />
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-
-<div class="pancrase_logo">
-<a href="../../../index.html"><img src="../../../images/pancrase.png" alt="PANCRASE -ä¸–ç•Œæ¨™æº–-" /></a>
-</div>
-
-
-<!-- navi -->
-<div class="navi">
-<ul>
-<li><i class="fas fa-times fa-fw rd"></i><a href="../../../index.html">PANCRASEãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸</a></li>
-<li><a href="../../index.html">database</a></li>
-<li><a href="../index.html">è©¦åˆçµæžœ</a></li>
-<li><a href="index.html">2016</a></li>
-</ul>
-</div>
-</div>
-<!-- navi -->
-
-
-<!-- main -->
-<div id="main">
-
-<h1>PANCRASE277</h1>
-<h4>2016.4.24ã€€æ±äº¬ãƒ»ãƒ‡ã‚£ãƒ•ã‚¡æœ‰æ˜Žã€€ä¸»å‚¬è€…ç™ºè¡¨ï¼š2,022äºº(è¶…æº€å“¡æœ­æ­¢ã‚)</h4>
-
-
-<div class="photo">
-<img src="0424/main.jpg" alt="PANCRASE277" class="main-photo" />
-</div>
-
-
-<div id="card">
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ãƒ¡ã‚¤ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆ(ç¬¬12è©¦åˆ)ã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´š æš«å®šK.O.P.T.ã€€5åˆ†5ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°4ä½</div>
-â—‹<a href="../../../data/prfl2/tamuraissei.html">ç”°æ‘ä¸€è–</a>
-<div class="sm">(KRAZY BEE)</div></td>
-<td class="icn"><img src="../../../icn/tamuraissei.jpg" alt="ç”°æ‘ä¸€è–" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/ushiku.jpg" alt="ç‰›ä¹…çµ¢å¤ªéƒŽ" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°5ä½</div>
-<a href="../../../data/prfl2/ushiku.html">ç‰›ä¹…çµ¢å¤ªéƒŽ</a>Ã—
-<div class="sm">(å’Œè¡“æ…§èˆŸæœƒ TLIVE)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 1:52ã€KO/ãƒ‘ãƒ³ãƒ</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ç”°æ‘ä¸€è–(65.7kg)</div>
-<div class="wcube">ç‰›ä¹…çµ¢å¤ªéƒŽ(65.8kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ¢…æœ¨è‰¯å‰‡
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ã‚»ãƒŸãƒ•ã‚¡ã‚¤ãƒŠãƒ«(ç¬¬11è©¦åˆ)ã€€ãƒ©ã‚¤ãƒˆç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ç¬¬6ä»£çŽ‹è€…</div>
-â—‹<a href="../../../data/prfl2/tokudome.html">å¾³ç•™ä¸€æ¨¹</a>
-<div class="sm">(ãƒ‘ãƒ©ã‚¨ã‚¹ãƒˆãƒ©å…«çŽ‹å­)</div></td>
-<td class="icn"><img src="../../../icn/tokudome.jpg" alt="å¾³ç•™ä¸€æ¨¹" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/arreola.jpg" alt="ã‚¢ã‚¯ãƒãƒ«ãƒ»ã‚¢ãƒ¬ã‚ªãƒ©" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl-e/arreola.html">ã‚¢ã‚¯ãƒãƒ«ãƒ»ã‚¢ãƒ¬ã‚ªãƒ©</a>Ã—
-<div class="sm">(ENTRAM GYM)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 4:59ã€TKO(ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ã‚¹ãƒˆãƒƒãƒ—)/ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰ã®ãƒ‘ãƒ³ãƒ</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">å¾³ç•™ä¸€æ¨¹(70.4kg)</div>
-<div class="wcube">ã‚¢ã‚¯ãƒãƒ«ãƒ»ã‚¢ãƒ¬ã‚ªãƒ©(70.2kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šç¦ç”°æ­£äºº
-</td></tr>
-<tr><td colspan="5" class="result">
-<div class="rdcube">å¾³ç•™ä¸€æ¨¹é¸æ‰‹ã«<br />
-ãƒ»çŽ‹è€…ãƒœãƒ¼ãƒŠã‚¹ã€€æº€é¡ã€€&yen;400,000-ã®WINãƒœãƒ¼ãƒŠã‚¹ã‚’æ”¯çµ¦ã—ã¾ã™ã€‚<br />
-ãƒ»å›½éš›æˆ¦ãƒœãƒ¼ãƒŠã‚¹ã€€æº€é¡ã€€&yen;300,000-ã®WINãƒœãƒ¼ãƒŠã‚¹ã‚’æ”¯çµ¦ã—ã¾ã™ã€‚<br />
-åˆè¨ˆæ”¯çµ¦é¡ã€€&yen;700,000-ã®WINãƒœãƒ¼ãƒŠã‚¹ã‚’æ”¯çµ¦ã—ã¾ã™ã€‚<br />
-<a href="../../../rls/2015/bonus.html">KOP&amp;å›½éš›æˆ¦ã®WINãƒœãƒ¼ãƒŠã‚¹</a></div>
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬10è©¦åˆã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°7ä½</div>
-Ã—<a href="../../../data/prfl2/yachiyusuke.html">çŸ¢åœ°ç¥ä»‹</a>
-<div class="sm">(KRAZY BEE)</div></td>
-<td class="icn"><img src="../../../icn/yachiyusuke.jpg" alt="çŸ¢åœ°ç¥ä»‹" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/kleber.jpg" alt="ã‚¯ãƒ¬ãƒ™ãƒ«ãƒ»å°æ± ãƒ»ã‚¨ãƒ«ãƒ™ã‚¹ãƒˆ" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl-e/kleber.html">ã‚¯ãƒ¬ãƒ™ãƒ«ãƒ»å°æ± ãƒ»ã‚¨ãƒ«ãƒ™ã‚¹ãƒˆ</a>â—‹
-<div class="sm">(BONSAI JIU-JITSU /ãƒœãƒ³ã‚µã‚¤æŸ”è¡“)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 0:37ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/ãƒãƒ§ãƒ¼ã‚¯ã‚¹ãƒªãƒ¼ãƒ‘ãƒ¼</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">çŸ¢åœ°ç¥ä»‹(66.05kg)</div>
-<div class="wcube">ã‚¯ãƒ¬ãƒ™ãƒ«ãƒ»å°æ± ãƒ»ã‚¨ãƒ«ãƒ™ã‚¹ãƒˆ(65.65kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šé«˜æœ¬è£•å’Œ
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬9è©¦åˆã€€ãƒ©ã‚¤ãƒˆç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°5ä½</div>
-â—‹<a href="../../../data/prfl2/kume.html">ä¹…ç±³é·¹ä»‹</a>
-<div class="sm">(ALIVE)</div></td>
-<td class="icn"><img src="../../../icn/kume.jpg" alt="ä¹…ç±³é·¹ä»‹" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/ishikawa.jpg" alt="çŸ³å·è‹±å¸" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°9ä½</div>
-<a href="../../../data/prfl2/ishikawa.html">çŸ³å·è‹±å¸</a>Ã—
-<div class="sm">(GRABAKA)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 5:00ã€åˆ¤å®š/2-1</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ä¹…ç±³é·¹ä»‹(70.55kg)</div>
-<div class="wcube">çŸ³å·è‹±å¸(70.6kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ¢…æœ¨è‰¯å‰‡
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬8è©¦åˆã€€ãƒãƒ³ã‚¿ãƒ ç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°2ä½</div>
-â—‹<a href="../../../data/prfl-e/henry.html">ãƒ“ã‚¯ã‚¿ãƒ¼ãƒ»ãƒ˜ãƒ³ãƒªãƒ¼</a>
-<div class="sm">(CSW/HF)</div></td>
-<td class="icn"><img src="../../../icn/henry.jpg" alt="ãƒ“ã‚¯ã‚¿ãƒ¼ãƒ»ãƒ˜ãƒ³ãƒªãƒ¼" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/yamaniha.jpg" alt="ã‚¢ãƒ©ãƒ³â€œãƒ’ãƒ­â€ãƒ¤ãƒžãƒ‹ãƒ" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°4ä½</div>
-<a href="../../../data/prfl-e/yamaniha.html">ã‚¢ãƒ©ãƒ³â€œãƒ’ãƒ­"ãƒ¤ãƒžãƒ‹ãƒ</a>Ã—
-<div class="sm">(TS GYM)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 5:00ã€åˆ¤å®š/3-0</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(29-28)æ¢…æœ¨è‰¯å‰‡(30-27)è’ç‰§æ‹“(30-27)
-<div class="wcube">ãƒ“ã‚¯ã‚¿ãƒ¼ãƒ»ãƒ˜ãƒ³ãƒªãƒ¼(61.45kg)</div>
-<div class="wcube">ã‚¢ãƒ©ãƒ³â€œãƒ’ãƒ­"ãƒ¤ãƒžãƒ‹ãƒ(61.55kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šJeff
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬7è©¦åˆã€€ã‚¹ãƒˆãƒ­ãƒ¼ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-â—‹<a href="../../../data/prfl-a/syuri.html">æœ±é‡Œ</a>
-<div class="sm">(VOS GYM)</div></td>
-<td class="icn"><img src="../../../icn/at/syuri.jpg" alt="æœ±é‡Œ" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/at/asakura.jpg" alt="æµ…å€‰ã‚«ãƒ³ãƒŠ" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl-a/asakura.html">æµ…å€‰ã‚«ãƒ³ãƒŠ</a>Ã—
-<div class="sm">(ãƒ‘ãƒ©ã‚¨ã‚¹ãƒˆãƒ©æ¾æˆ¸)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/3-0</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(29-28)Jeff(29-28)è’ç‰§æ‹“(29-28)
-<div class="wcube">æœ±é‡Œ(52.3kg)</div>
-<div class="wcube">æµ…å€‰ã‚«ãƒ³ãƒŠ(51.7kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šæ¢…æœ¨è‰¯å‰‡
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬6è©¦åˆã€€ãƒŸãƒ‰ãƒ«ç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°2ä½</div>
-Ã—<a href="../../../data/prfl-e/armstrong.html">ãƒœãƒ–ãƒ»ã‚¢ãƒ¼ãƒ ã‚¹ãƒˆãƒ­ãƒ³ã‚°</a>
-<div class="sm">(ALIVE)</div></td>
-<td class="icn"><img src="../../../icn/armstrong.jpg" alt="ãƒœãƒ–ãƒ»ã‚¢ãƒ¼ãƒ ã‚¹ãƒˆãƒ­ãƒ³ã‚°" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/niimura.jpg" alt="æ–°æ‘å„ªè²´" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°5ä½</div>
-<a href="../../../data/prfl2/niimura.html">æ–°æ‘å„ªè²´</a>â—‹
-<div class="sm">(TEAM CLIMB)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 5:00ã€åˆ¤å®š/0-3</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(28-29)æ¢…æœ¨è‰¯å‰‡(27-30)è’ç‰§æ‹“(28-29)
-<div class="wcube">ãƒœãƒ–ãƒ»ã‚¢ãƒ¼ãƒ ã‚¹ãƒˆãƒ­ãƒ³ã‚°(84.15kg)</div>
-<div class="wcube">æ–°æ‘å„ªè²´(84.2kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šJeff
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬5è©¦åˆã€€ãƒ•ãƒ©ã‚¤ç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°4ä½</div>
-Ã—<a href="../../../data/prfl2/senzo.html">ä»™ä¸‰</a>
-<div class="sm">(FREEDOM@OZ)</div></td>
-<td class="icn"><img src="../../../icn/senzo.jpg" alt="ä»™ä¸‰" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/mamoru.jpg" alt="ãƒžãƒ¢ãƒ«" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°10ä½</div>
-<a href="../../../data/prfl2/mamoru.html">ãƒžãƒ¢ãƒ«</a>â—‹
-<div class="sm">(ã‚·ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚¸ãƒ æ¨ªæµœ)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 5:00ã€åˆ¤å®š/1-2</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šJeff(28-29)å¤§è—ªå‰éƒ(28-29)é¶´å’Œå¹¹æµ©(29-28)
-<div class="wcube">ä»™ä¸‰(56.65kg)</div>
-<div class="wcube">ãƒžãƒ¢ãƒ«(56.55kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šèŠ¹æ¾¤å¥å¸‚
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬4è©¦åˆã€€ãƒ•ãƒ©ã‚¤ç´šã€€5åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°6ä½</div>
-Ã—<a href="../../../data/prfl2/ogikubo.html">è»çªªç¥è¼”</a>
-<div class="sm">(K-PLACEåŸ¼çŽ‰æ ¼é—˜æŠ€é“å ´)</div></td>
-<td class="icn"><img src="../../../icn/ogikubo.jpg" alt="è»çªªç¥è¼”" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/yamamotokb.jpg" alt="å±±æœ¬ç¯¤" /></td>
-<td class="crdr">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°9ä½</div>
-<a href="../../../data/prfl2/yamamotokb.html">å±±æœ¬ç¯¤</a>â—‹
-<div class="sm">(ãƒ•ãƒªãƒ¼)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 5:00ã€åˆ¤å®š/0-3</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šJeff(28-29)å¤§è—ªå‰éƒ(28-29)é¶´å’Œå¹¹æµ©(28-29)
-<div class="wcube">è»çªªç¥è¼”(57.05kg)</div>
-<div class="wcube">å±±æœ¬ç¯¤(56.65kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šèŠ¹æ¾¤å¥å¸‚
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬3è©¦åˆã€€ãƒ©ã‚¤ãƒˆç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ãƒ©ãƒ³ã‚­ãƒ³ã‚°8ä½</div>
-â—‹<a href="../../../data/prfl2/yamasakiy.html">å±±ï¨‘æ‚ è¼</a>
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹å¤§é˜ªç¨²åž£çµ„)</div></td>
-<td class="icn"><img src="../../../icn/yamasakiy.jpg" alt="å±±ï¨‘æ‚ è¼" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/suzukipj.jpg" alt="KAZZ" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/suzukipj.html">KAZZ</a>Ã—
-<div class="sm">(GRABAKA)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 0:09ã€TKO(ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ã‚¹ãƒˆãƒƒãƒ—)/ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰ã®ãƒ‘ãƒ³ãƒ</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">å±±ï¨‘æ‚ è¼(70.1kg)</div>
-<div class="wcube">KAZZ(70.55kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šèŠ¹æ¾¤å¥å¸‚
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬2è©¦åˆã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-Ã—<a href="../../../data/prfl2/inaba.html">ç¨²è‘‰è¡</a>
-<div class="sm">(ç§‹æœ¬é“å ´jungle junction)</div></td>
-<td class="icn"><img src="../../../icn/inaba.jpg" alt="ç¨²è‘‰è¡" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/nakahara.jpg" alt="ä¸­åŽŸç”±è²´" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/nakahara.html">ä¸­åŽŸç”±è²´</a>â—‹
-<div class="sm">(ãƒžãƒƒãƒé“å ´)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/0-3</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(27-30)å¤§è—ªå‰éƒ(27-30)é«˜æ©‹é‡æ™º(27-30)
-<div class="wcube">ç¨²è‘‰è¡(65.9kg)</div>
-<div class="wcube">ä¸­åŽŸç”±è²´(65.95kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå°è…è³¢æ¬¡
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬1è©¦åˆã€€ãƒãƒ³ã‚¿ãƒ ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-â—‹<a href="../../../data/prfl2/hulk.html">ãƒãƒ«ã‚¯å¤§åŸŽ</a>
-<div class="sm">(ãƒœã‚¹ã‚¸ãƒ )</div></td>
-<td class="icn"><img src="../../../icn/hulk.jpg" alt="ãƒãƒ«ã‚¯å¤§åŸŽ" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/hasumi.jpg" alt="è“®å¯¦å…‰" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/hasumi.html">è“®å¯¦å…‰</a>Ã—
-<div class="sm">(ãƒ‘ãƒ©ã‚¨ã‚¹ãƒˆãƒ©æ ƒæœ¨)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/2-1</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(28-29)å¤§è—ªå‰éƒ(29-28)é«˜æ©‹é‡æ™º(29-28)
-<div class="wcube">ãƒãƒ«ã‚¯å¤§åŸŽ(61.4kg)</div>
-<div class="wcube">è“®å¯¦å…‰(61.65kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå°è…è³¢æ¬¡
-</td></tr>
-</table>
-
-
-<h2 id="nbt">ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆ</h2>
-<p><a href="../../../data/neoblood/2016.html">ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆè¡¨</a></p>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬19è©¦åˆ(4æœˆ24æ—¥(æ—¥)æœ€çµ‚è©¦åˆ)ã€€ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ã‚¦ã‚§ãƒ«ã‚¿ãƒ¼ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰ã€€ãƒžã‚¹ãƒˆåˆ¤å®š</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-Ã—<a href="../../../data/prfl2/igarashiryosuke.html">äº”ååµæ¶¼äº®</a>
-<div class="sm">(KRAZY BEE)</div></td>
-<td class="icn"><img src="../../../icn/igarashiryosuke.jpg" alt="äº”ååµæ¶¼äº®" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/abedaichi.jpg" alt="é˜¿éƒ¨å¤§æ²»" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/abedaichi.html">é˜¿éƒ¨å¤§æ²»</a>â—‹
-<div class="sm">(HMC)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 0:24ã€TKO(ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ã‚¹ãƒˆãƒƒãƒ—)/ãƒ‘ãƒ³ãƒ</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">äº”ååµæ¶¼äº®(76.7kg)</div>
-<div class="wcube">é˜¿éƒ¨å¤§æ²»(77.15kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šé¶´å’Œå¹¹æµ©
-</td></tr>
-</table>
-
-
-<div id="mitoma"></div>
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬18è©¦åˆã€€ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ãƒ©ã‚¤ãƒˆç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰ã€€ãƒžã‚¹ãƒˆåˆ¤å®š</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-Ã—<a href="../../../data/prfl2/mitoma.html">ä¸‰è‹«â€œking kongâ€äº®äºº</a>
-<div class="sm">(ãƒ‘ãƒ©ã‚¨ã‚¹ãƒˆãƒ©å…«çŽ‹å­)</div></td>
-<td class="icn"><img src="../../../icn/mitoma.jpg" alt="ä¸‰è‹«â€œking kongâ€äº®äºº" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/kobayashiy.jpg" alt="å°æž—è£•" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/kobayashiy.html">å°æž—è£•</a>â—‹
-<div class="sm">(U-FILE CAMP)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">ä¸æˆ¦å‹</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ä¸‰è‹«â€œking kongâ€äº®äºº</div>
-<div class="wcube">å°æž—è£•</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼š
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬17è©¦åˆã€€ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ãƒ©ã‚¤ãƒˆç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰ã€€ãƒžã‚¹ãƒˆåˆ¤å®š</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-â—‹<a href="../../../data/prfl-e/buchan.html">ãƒ™ãƒ³ãƒ»ãƒ–ãƒƒã‚«ãƒ³</a>
-<div class="sm">(ç·åˆæ ¼é—˜æŠ€ æ´¥ç”°æ²¼é“å ´)</div></td>
-<td class="icn"><img src="../../../icn/buchan.jpg" alt="ãƒ™ãƒ³ãƒ»ãƒ–ãƒƒã‚«ãƒ³" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/yamamotoyuki.jpg" alt="å±±æœ¬é›„å¸Œ" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/yamamotoyuki.html">å±±æœ¬é›„å¸Œ</a>Ã—
-<div class="sm">(SHINWA SPORTS)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">1R 0:42ã€ã‚®ãƒ–ã‚¢ãƒƒãƒ—/ãƒ•ãƒ­ãƒ³ãƒˆãƒãƒ§ãƒ¼ã‚¯</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">ãƒ™ãƒ³ãƒ»ãƒ–ãƒƒã‚«ãƒ³(69.7kg)</div>
-<div class="wcube">å±±æœ¬é›„å¸Œ(70.05kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå±±å´Žæ˜Ž
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬16è©¦åˆã€€ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰ã€€ãƒžã‚¹ãƒˆåˆ¤å®š</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-â—‹<a href="../../../data/prfl2/kimurak.html">æœ¨æ‘ä¸€æˆ</a>
-<div class="sm">(è’¼å¤©å¡¾)</div></td>
-<td class="icn"><img src="../../../icn/kimurak.jpg" alt="æœ¨æ‘ä¸€æˆ" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/fujisaki.jpg" alt="è—¤ï¨‘èˆªæ±°" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/fujisaki.html">è—¤ï¨‘èˆªæ±°</a>Ã—
-<div class="sm">(ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹å¤§é˜ªç¨²åž£çµ„)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/3-0</td></tr>
-<tr><td colspan="5" class="result">
-<div class="wcube">æœ¨æ‘ä¸€æˆ(65.95kg)</div>
-<div class="wcube">è—¤ï¨‘èˆªæ±°(65.9kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå¤ªç”°ç´”ä¸€
-</td></tr>
-</table>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬15è©¦åˆã€€ç¬¬22å›žãƒã‚ªãƒ–ãƒ©ãƒƒãƒ‰ãƒ»ãƒˆãƒ¼ãƒŠãƒ¡ãƒ³ãƒˆã€€ãƒ•ã‚§ã‚¶ãƒ¼ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰ã€€ãƒžã‚¹ãƒˆåˆ¤å®š</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-Ã—<a href="../../../data/prfl2/hirayamag.html">å¹³å±±å­¦</a>
-<div class="sm">(ãƒ•ãƒªãƒ¼)</div></td>
-<td class="icn"><img src="../../../icn/hirayamag.jpg" alt="å¹³å±±å­¦" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/suzukitakumi.jpg" alt="éˆ´æœ¨ç¢ä»" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/suzukitakumi.html">éˆ´æœ¨ç¢ä»</a>â—‹
-<div class="sm">(ãƒ–ãƒ«ãƒ†ãƒªã‚¢ãƒ»ãƒœãƒ³ã‚µã‚¤)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/1-2</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¢…æœ¨è‰¯å‰‡(29-28)ç¦ç”°æ­£äºº(28-29)è’ç‰§æ‹“(28-29)
-<div class="wcube">å¹³å±±å­¦(66.05kg)</div>
-<div class="wcube">éˆ´æœ¨ç¢ä»(65.85kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šå¤ªç”°ç´”ä¸€
-</td></tr>
-</table>
-
-
-
-<h2>ãƒ¡ã‚¤ãƒ³çµ‚äº†å¾Œ</h2>
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬14è©¦åˆã€€ãƒãƒ³ã‚¿ãƒ ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-â—‹<a href="../../../data/prfl2/kamikubo.html">ä¸Šä¹…ä¿å‘¨å“‰</a>
-<div class="sm">(ãƒãƒ‹ãƒ¼ãƒˆãƒ©ãƒƒãƒ—)</div></td>
-<td class="icn"><img src="../../../icn/kamikubo.jpg" alt="ä¸Šä¹…ä¿å‘¨å“‰" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/hiraoka.jpg" alt="å¹³å²¡å°†è‹±" /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/hiraoka.html">å¹³å²¡å°†è‹±</a>Ã—
-<div class="sm">(KRAZY BEE)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/3-0</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(30-27)Jeff(30-27)é¶´å’Œå¹¹æµ©(30-27)
-<div class="wcube">ä¸Šä¹…ä¿å‘¨å“‰(61.25kg)</div>
-<div class="wcube">å¹³å²¡å°†è‹±(61.5kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šç¦ç”°æ­£äºº
-</td></tr>
-</table>
-
-
-<table>
-<tr><td colspan="5" class="rdcube">ç¬¬13è©¦åˆã€€ãƒãƒ³ã‚¿ãƒ ç´šã€€3åˆ†3ãƒ©ã‚¦ãƒ³ãƒ‰</td></tr>
-<tr>
-<td class="crdl">
-<div class="sm">ã€€</div>
-Ã—<a href="../../../data/prfl2/maeno.html">å‰é‡Žè¾°ä¸€</a>
-<div class="sm">(ã‚°ãƒ¬ã‚¤ã‚·ãƒ¼ãƒãƒƒãƒæ±äº¬)</div></td>
-<td class="icn"><img src="../../../icn/maeno.jpg" alt="å‰é‡Žè¾°ä¸€" /></td>
-<td class="vs">vs</td>
-<td class="icn"><img src="../../../icn/takahashimakoto.jpg" alt="é«˜æ©‹èª " /></td>
-<td class="crdr">
-<div class="sm">ã€€</div>
-<a href="../../../data/prfl2/takahashimakoto.html">é«˜æ©‹èª </a>â—‹
-<div class="sm">(ãƒ‘ãƒ©ã‚¨ã‚¹ãƒˆãƒ©æ¾æˆ¸)</div>
-</td></tr>
-<tr><td colspan="5" class="result0">3R 3:00ã€åˆ¤å®š/0-3</td></tr>
-<tr><td colspan="5" class="result">
-åˆ¤å®šï¼šæ¾å®®æ™ºç”Ÿ(28-29)Jeff(28-29)é¶´å’Œå¹¹æµ©(28-29)
-<div class="wcube">å‰é‡Žè¾°ä¸€(61.0kg)</div>
-<div class="wcube">é«˜æ©‹èª (60.55kg)</div>
-ãƒ¬ãƒ•ã‚§ãƒªãƒ¼ï¼šç¦ç”°æ­£äºº
-</td></tr>
-</table>
-
-
-<div id="ranking">
-<h2>PANCRASE OFFICIAL RANKING</h2>
-
-
-<div class="rdcube">ç„¡å·®åˆ¥ç´š</div>
-<div class="kop">KING OF PANCRASISTSï¼šã‚¸ãƒ§ã‚·ãƒ¥ãƒ»ãƒãƒ¼ãƒãƒƒãƒˆ</div>
-<ul>
-<li> </li>
-</ul>
-
-<div class="rdcube">ãƒ˜ãƒ“ãƒ¼ç´šï¼š93.0kgã€œ120.2kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šç©ºä½</div>
-<ul>
-<li> </li>
-</ul>
-
-<div class="rdcube">ãƒ©ã‚¤ãƒˆãƒ˜ãƒ“ãƒ¼ç´šï¼š83.9kgã€œ93.0kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šç©ºä½</div>
-<ul>
-<li> </li>
-</ul>
-
-
-<div class="rdcube">ãƒŸãƒ‰ãƒ«ç´šï¼š77.1kgã€œ83.9kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šç©ºä½</div>
-<ol>
-<li>å·æ‘äº®</li>
-<li>ãƒœãƒ–ãƒ»ã‚¢ãƒ¼ãƒ ã‚¹ãƒˆãƒ­ãƒ³ã‚°</li>
-<li>ã‚¸ãƒã‚´ãƒ»ãƒ•ãƒ©ãƒ³ã‚·ã‚¹ã‚³</li>
-<li>ä¸€æ…¶</li>
-<li>æ–°æ‘å„ªè²´</li>
-<li>ã‚»ãƒ«ã‚²ã‚¤ãƒ»ãƒžãƒ«ãƒ†ã‚£ãƒŽãƒ•</li>
-</ol>
-
-
-<div class="rdcube">ã‚¦ã‚§ãƒ«ã‚¿ãƒ¼ç´šï¼š70.3kgã€œ77.1kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šæ‘å±±æšæ´‹</div>
-<ol>
-<li>éˆ´æœ¨æ§™å¾</li>
-<li>ãƒ“ã‚¹ãƒ©ãƒ³ãƒ»ã‚¨ãƒˆãƒ¬ã‚·ã‚§ãƒ•</li>
-<li>é«˜æœ¨å¥å¤ª</li>
-<li>ä½è—¤æ´‹ä¸€éƒŽ</li>
-<li>ãƒ¬ãƒƒãƒ„è±ªå¤ª</li>
-<li>ä½è—¤å¤©</li>
-<li>æœ‰å·±ç©º</li>
-<li>ä¸‰æµ¦åºƒå…‰</li>
-<li>çªªç”°å¹¸ç”Ÿ</li>
-
-</ol>
-
-
-<div class="rdcube">ãƒ©ã‚¤ãƒˆç´šï¼š65.8kgã€œ70.3kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šå¾³ç•™ä¸€æ¨¹</div>
-<ol>
-<li>ã‚¢ã‚­ãƒ©</li>
-<li>åŒ—å²¡æ‚Ÿ</li>
-<li>é•·å²¡å¼˜æ¨¹</li>
-<li>å…å±±ä½³å®</li>
-<li>ä¹…ç±³é·¹ä»‹</li>
-<li>ã‚¯ãƒªã‚¹MAN</li>
-<li>å†¨æ¨«å¥ä¸€éƒŽ</li>
-<li>å±±å´Žæ‚ è¼</li>
-<li>çŸ³å·è‹±å¸</li>
-<li>é«˜æ©‹â€œBancho"è‰¯æ˜Ž</li>
-</ol>
-
-
-<div class="rdcube">ãƒ•ã‚§ã‚¶ãƒ¼ç´šï¼š61.2kgã€œ65.8kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šã‚¢ãƒ³ãƒ‡ã‚£ãƒ»ãƒ¡ã‚¤ãƒ³</div>
-<ol>
-<li> ISAO</li>
-<li>  æ—¥æ²–ç™º</li>
-<li>ãƒŠãƒ ãƒ»ãƒ•ã‚¡ãƒ³</li>
-<li>ç”°æ‘ä¸€è–</li>
-<li>ç‰›ä¹…çµ¢å¤ªéƒŽ</li>
-<li>ã‚¿ã‚¯ãƒŸ</li>
-<li>çŸ¢åœ°ç¥ä»‹</li>
-<li> é«˜è°·è£•ä¹‹</li>
-<li>æœ´å…‰å“²</li>
-<li>ã‚¬ã‚¤ãƒ»ãƒ‡ãƒ«ãƒ¢</li>
-</ol>
-
-
-<div class="rdcube">ãƒãƒ³ã‚¿ãƒ ç´šï¼š56.7kgä»¥ä¸Šã€œ61.2kgæœªæº€</div>
-<div class="kop">KING OF PANCRASISTSï¼šçŸ³æ¸¡ä¼¸å¤ªéƒŽ</div>
-<ol>
-<li>ä¸Šç”°å°†å‹</li>
-<li>ãƒ“ã‚¯ã‚¿ãƒ¼ãƒ»ãƒ˜ãƒ³ãƒªãƒ¼</li>
-<li>ãƒ«ã‚¤ã‚¹â€œãƒ™ã‚¿ã‚ªâ€ãƒŽã‚²ã‚¤ãƒ©</li>
-<li>ã‚¢ãƒ©ãƒ³â€œãƒ’ãƒ­â€ãƒ¤ãƒžãƒ‹ãƒ</li>
-<li>ç¦å³¶ç§€å’Œ</li>
-<li>ãƒãƒ•ã‚¡ã‚¨ãƒ«ãƒ»ã‚·ã‚¦ãƒ</li>
-<li>ä¸­å³¶å¤ªä¸€</li>
-<li>ç€§æ¾¤è¬™å¤ª</li>
-<li>CORO</li>
-<li> åŽŸç”°æƒŸç´˜</li>
-</ol>
-
-
-<div class="rdcube">ãƒ•ãƒ©ã‚¤ç´šï¼š56.7kgä»¥ä¸‹ã€œ54.4kgä»¥ä¸Š</div>
-<div class="kop">KING OF PANCRASISTSï¼šç©ºä½</div>
-<ol>
-<li>å®‰æ°¸æœ‰å¸Œ</li>
-<li>ç¥žé…’é¾ä¸€</li>
-<li>ä»™ä¸‰</li>
-<li>ãƒªãƒ«ãƒ‡ã‚·ãƒ»ãƒªãƒžãƒ»ãƒ‡ã‚£ã‚¢ã‚¹</li>
-<li>å¤è³€é–éš†</li>
-<li>è»çªªç¥è¼”</li>
-<li>ä¸Šç”°å°†ç«œ</li>
-<li>å±±æœ¬ã‚ã¤ã—</li>
-<li>ãƒžãƒ¢ãƒ«</li>
-</ol>
-
+<html>
+<HEAD>
+<TITLE>GBR - ŽŽ‡Œ‹‰Ê - yƒOƒ‰ƒWƒG[ƒ^[zƒ~ƒmƒƒ}ƒ“‚ª80•b‚ÅŸ—˜A200–œ‘ˆ’Dí‚Í–¼ŒÃ‰®‚Ìƒ`[ƒ€‚ª—DŸ</TITLE>
+<META name="description" content="GBR‚Å‚ÍŠi“¬‹Zî•ñƒTƒCƒg‚Æ‚µ‚Äƒjƒ…[ƒX‘¬•ñ‚Í‚à‚¿‚ë‚ñAƒCƒ“ƒ^ƒrƒ…[‚©‚çƒeƒNƒjƒbƒN“®‰æ‚Ü‚Å·‚è‚¾‚­‚³‚ñ‚Å‚¨“Í‚¯‚µ‚Ä‚¢‚Ü‚·B">
+<META name="keywords" content="ƒSƒbƒhƒuƒŒƒXƒUƒŠƒ“ƒO,Ši“¬‹Z,ŽŽ‡Œ‹‰Ê,ƒ€[ƒr[,ƒeƒNƒjƒbƒNuÀ,ƒ‰ƒEƒ“ƒhƒK[ƒ‹">
+
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder Version 6.0.4.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
 <!--
-<div class="rdcube">ãƒ©ã‚¤ãƒˆãƒ•ãƒ©ã‚¤ç´šï¼š54.4kgä»¥ä¸‹ã€œ52.2kgä»¥ä¸Š</div>
-<div class="kop">KING OF PANCRASISTSï¼šç¥žéƒ¨å»ºæ–—</div>
-<ol>
-<li>æ­¦è”µå¹¸å­</li>
-<li>ä¸‹å·é›„ç”Ÿ</li>
-<li>å°å¡šèª å¸</li>
-</ol>
+a {  text-decoration: none}
+a:link {  color: #333333}
+a:hover {  color: #FF3300; text-decoration: underline}
 -->
+<!--
+body {
+scrollbar-arrow-color:#000000;
+scrollbar-face-color:#EAEAEA;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-shadow-color:#CCCCCC;
+scrollbar-3dlight-color:#EAEAEA;
+scrollbar-darkshadow-color:#999999;
+}
+.unnamed1 {  line-height: 15px; font-size: 10px}
+.unnamed2 {  line-height: 18px}
+.hon_cap_white {  font-size: 12px; font-style: normal; line-height: 15px; color: #FFFFFF}
+.hon_cap_black {  font-size: 12px; font-style: normal; line-height: 15px; color: #333333}
+.line19_2 {  font-size: 13px; line-height: 19px}
+.news_midashi {  font-size: 11px; line-height: 15px; letter-spacing: 1px}
+-->
+</style>
+<link rel="stylesheet" href="../c.css" type="text/css">
+<SCRIPT language=javascript 
+src="../../news/images/jscript.js"></SCRIPT>
+<script src="../AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-<div class="rdcube">ã‚¹ãƒˆãƒ­ãƒ¼ç´šï¼š52.2kgä»¥ä¸‹ã€œ49.9kgä»¥ä¸Š</div>
-<div class="kop">KING OF PANCRASISTSï¼šç ‚è¾ºå…‰ä¹…</div>
-<ol>
-<li>ç¥žéƒ¨å»ºæ–—</li>
-<li>åŒ—æ–¹å¤§åœ°</li>
-<li>å®¤ä¼ã‚·ãƒ³ãƒ¤</li>
-<li>é˜¿éƒ¨åšä¹‹</li>
-<li>æ­¦è”µå¹¸å­</li>
-<li>æ±Ÿæ³‰å“å“‰</li>
-<li>å®‡éƒ½æœ¨æ­£å’Œ</li>
-<li>æ½¤éŽ®é­‚æ­Œ</li>
-<li>æ—©å‚å„ªç‘ </li>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-</ol>
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<style type="text/css">
+<!--
 
-<div class="rdcube">ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ã‚¢ãƒ†ãƒŠã€€ãƒãƒ³ã‚¿ãƒ ç´š(61.2kgä»¥ä¸‹ã€œ56.7kgä»¥ä¸Š)</div>
-<div class="kop">KING OF PANCRASISTSï¼šä¸­äº•ã‚Šã‚“</div>
+.news {line-height: 23px; text-decoration: none; font-size: 14px; color: #000000}
+.style6 {color: #333333}
+.news1 {line-height: 23px;
+; font-size: 14px}
+.news1 {line-height: 18px;
+	font-size: 13px;
+}
+.news11 {line-height: 18px;
+	font-size: 13px;
+}
+.news12 {line-height: 23px;
+; font-size: 14px; color: #000000}
+.news12 {line-height: 17px;
+	font-size: 12px;
+}
+.news111 {line-height: 23px;
+; font-size: 14px}
+.news111 {line-height: 18px;
+	font-size: 13px;
+}
+.news112 {line-height: 23px;
+; font-size: 14px}
+.news112 {line-height: 18px;
+	font-size: 13px;
+}
+.news22 {line-height: 23px; text-decoration: none; font-size: 14px; color: #000000}
+.news1111 {line-height: 18px;
+	font-size: 13px;
+}
+.news121 {line-height: 23px;
+; font-size: 14px}
+.news121 {line-height: 18px;
+	font-size: 13px;
+}
+.style7 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.news4 {line-height: 19px;
+; font-size: 13px}
+.style10 {
+	line-height: 19px;
+	font-size: 12px;
+}
 
-</div>
-</div>
+-->
+</style>
 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3510392-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></HEAD>
 
-<div class="back"><a href="../../../index.html">ãƒ‘ãƒ³ã‚¯ãƒ©ã‚¹ toppage</a></div>
-</div>
-<div id="footer-space"></div>
-</div>
-<!-- main -->
+<body bgcolor="#FFFFFF" text="#000000" link="#333333" vlink="#333333" leftmargin="00" topmargin="00" marginwidth="00" marginheight="00" onLoad="MM_preloadImages('../../images/top/top_tokushu_.jpg','../../images/top/top_news_.jpg','../../images/top/top_result_.jpg','../../images/top/top_interview_.jpg','../../images/top/top_column_.jpg','../../images/top/top_movie_.jpg','../../images/top/top_others_.jpg')">
+<a name="top"></a> 
+<table width="1000" border="0" cellspacing="0" cellpadding="0" height="100%"> <tr> 
+    <td bgcolor="#FFFFFF" height="1015"> 
+      <table border="0" cellpadding="0" cellspacing="0" width="900"> 
+<tr> <td align="center" bgcolor="#CC0000" valign="top" height="92"><a href="../../../top.html"><img src="../../../images/top_inside/top_title_gbr.gif" width="180" height="90" alt="GBR`ƒSƒbƒgƒuƒŒƒXƒUƒŠƒ“ƒO`Ši“¬‹Z‘‡î•ñƒEƒFƒuƒ}ƒKƒWƒ“" border="0"></a></td>
+<td align="center" colspan="3" bgcolor="#CC0000" valign="top" height="92"> 
+<img src="../../../images/top_inside/top_title_right.gif" width="720" height="90" usemap="#Map3" border="0" alt="‘¼‚Å‚ÍŒ©‚ê‚È‚¢100–{ˆÈã‚ÌŠi“¬‹ZƒIƒŠƒWƒiƒ‹‰f‘œE‰æ‘œ‚ªGBR‰ïˆõ‚È‚ç‚¢‚Â‚Å‚àŒ©•ú‘èI‚¢‚Ü‚È‚çŒŽ‰ï”ï‰ŒŽ–³—¿‚ÌƒLƒƒƒ“ƒy[ƒ“ŽÀŽ{’†I"></td>
+</tr> 
+<tr> <td width="180" rowspan="2" align="center" valign="top" bgcolor="#CC0000"><br>
+  <a href="../../../chrginfo.html"><img src="../../../images/mryou_touroku.gif" width="150" height="70" border="0"></a><br> 
+    <br> 
+    <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF"> 
+  <tr> <td bgcolor="#3399FF" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../top.html"><font color="#FFFFFF">ƒTƒCƒgƒgƒbƒv</font></a></font></b></td>
+  </tr> 
+    </table>
+    <br> 
+    <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF"> 
+  <tr> <td bordercolor="#b91b00" align="center"><b><font size="2" color="#FFFFFF">–³—¿ƒRƒ“ƒeƒ“ƒc</font></b></td></tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font size="2" color="#FFFFFF">‘¬•ñ</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../news/news.htm">ƒjƒ…[ƒX</a></font></b></td>
+  </tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><span class="style6"><b><font size="2"><a href="../result.htm">ŽŽ‡Œ‹‰Ê</a></font></b></span></td>
+  </tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚»‚Ì‘¼</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../schedule/schedule.htm">ŒŽŠÔƒXƒPƒWƒ…[ƒ‹</a></font></b></td>
+  </tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../link/link.htm">Ši“¬ƒŠƒ“ƒN</a></font></b></td>
+  </tr> 
+    </table>
+    <br> 
+    <br> 
+    <table border="1" cellspacing="1" cellpadding="3" bgcolor="#b91b00" width="150" bordercolor="#FFFFFF"> 
+  <tr> <td bgcolor="#b91b00" bordercolor="#b91b00" align="center"><b><font size="2" color="#FFFFFF">—L—¿ƒRƒ“ƒeƒ“ƒc</font></b></td></tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">“ÁW</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../closeup/closeup.htm">ƒNƒ[ƒYƒAƒbƒvI</a></font></b></td></tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">“®‰æ</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../ringsidemovie/ringsidemovie.htm">ƒŠƒ“ƒOƒTƒCƒhƒ€[ƒr[</a></font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../dreamspar/dreamspar.htm">ƒhƒŠ[ƒ€ƒXƒp[ƒŠƒ“ƒO</a></font></b></td></tr>
+  <tr>
+    <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../technique/technique.htm">ƒeƒNƒjƒbƒNuÀ</a></font></b></td>
+  </tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><strong><font size="2"><a href="../../../aday/aday.htm">ˆê“ú–§’…&amp;ƒrƒfƒI“ú‹L</a></font></strong></td>
+  </tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../interviewmovie/interviewmovie.htm">VTRƒCƒ“ƒ^ƒrƒ…[</a></font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../roundgirl/roundgirl.htm">ƒ‰ƒEƒ“ƒhƒK[ƒ‹</a></font></b></td></tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚æ‚Ý‚à‚Ì</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2" class="hon_cap"><a href="../../../yoshitaka/yoshitaka.htm">‹g‘éO‚Ì‘ÅŒ‚Œ¤‹†Žº</a></font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../interview/interview.htm">ƒCƒ“ƒ^ƒrƒ…[</a></font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../ippitu/ippitu.htm">ƒRƒ‰ƒ€</a></font></b></td>
+  </tr> 
+  <tr> <td bgcolor="#CC3333" bordercolor="#FFCCCC" align="center"><b><font color="#FFFFFF" size="2">‚»‚Ì‘¼</font></b></td></tr> 
+  <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../kabegami/kabegami.htm">•Ç 
+    Ž†</a></font></b></td>
+  </tr> <tr> <td bgcolor="#F0F0F0" bordercolor="#FFFFFF" align="center"><b><font size="2"><a href="../../../playermeikan/playermeikan.htm">Ši“¬‘IŽè–¼ŠÓ</a></font></b></td>
+    </tr> 
+    </table>
+    <font color="#FFEAEA"><br> 
+    </font> 
+    <table width="90%" border="0" cellspacing="0" cellpadding="0"> 
+  <tr> <td align="center"> <p>@</p><table border="1" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" bordercolor="#666666"> 
+  <tr> <td bgcolor="#FFFFFF" bordercolor="#999999" align="center"> <p><font size="1" color="#333333">‚ ‚Ì‘IŽè‚ÌƒCƒ“ƒ^ƒrƒ…[‚ªŒ©‚½‚¢I<br> 
+    ‚±‚ñ‚È‚±‚Æ‘IŽè‚É•·‚¢‚Ä‚Ù‚µ‚¢I<br> ‚±‚ñ‚È“®‰æ‚ªŒ©‚½‚¢I‚È‚Ç‚È‚ÇA<br> GBR‚Å“ÁW‚µ‚Ä‚Ù‚µ‚¢‚±‚ÆA<br> ƒŠƒNƒGƒXƒg‚àíŽžŽó•t’†I<br> «««</font><br> 
+  <a href="mailto:gbr@hajimail.jp"> <img src="../../../images/button_ikenbako.gif" width="150" height="26" alt="‚f‚a‚q‚Ö‚Ì“ŠeE‚²ˆÓŒ©‚Í‚±‚¿‚çI" border="0"></a></p></td></tr> 
+  </table></td></tr> 
+    </table>
+    <p></p>
+    <p>@ </p>
+    <table width="150" border="1" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" bordercolor="#666666"> 
+  <tr> <td bgcolor="#FFFFFF" bordercolor="#666666" align="center"> <font size="1"><img src="../../../images/top_inside/wmp.gif" width="130" height="50"><br> 
+  </font><a href="http://www.microsoft.com/japan/windows/windowsmedia/download/" target="_blank"> 
+  <img src="https://www.microsoft.com/windows/windowsmedia/images/Download_88x31_ani.gif"
+width="88"height="31"border="0" alt="Get Windows Media Player" vspace="7"></a> 
+  </td></tr> 
+    </table>
+<p><br>
+<SCRIPT TYPE="text/javascript" LANGUAGE="javascript">
+<!--
+var ywoc_ad_id="A3p8sxqCXMfMGp1bDnexe.YiaFg-";
+var ywoc_ad_sid="DXQObPSCXMf8mxoYBHAlbA--";
+var ywoc_ad_siteurl="http%3A%2F%2Fgbring.com%2F";
+var ywoc_ad_creativeid="001";
+var ywoc_ad_altad="PB";
+var ywoc_ad_alturl="";
+var ywoc_ad_signature="221c366ccb6c11871952c9154f3df1cb111823c8";
+var ywoc_ad_adserv="http://dcs.yahoo.co.jp/dcs_1_0/";
+var ywoc_adcl_title="0000CC";
+var ywoc_adcl_discription="333333";
+var ywoc_adcl_link="008200";
+var ywoc_adcl_frame="CCCCCC";
+var ywoc_adcl_background="FFFFFF";
+document.write('<SCR'+'IPT TYPE="text/javascript" LANGUAGE="javascript" SRC="'+
+  ywoc_ad_adserv+
+  '?adid='+ywoc_ad_id+
+  '&sid='+ywoc_ad_sid+
+  '&surl='+ywoc_ad_siteurl+
+  '&cid=' +ywoc_ad_creativeid+
+  '&alid='+ywoc_ad_altad+
+  '&aurl='+ywoc_ad_alturl+
+  '&sig=' +ywoc_ad_signature+
+  '&clt=' +ywoc_adcl_title+
+  '&cld=' +ywoc_adcl_discription+
+  '&cll=' +ywoc_adcl_link+
+  '&clf=' +ywoc_adcl_frame+
+  '&clb=' +ywoc_adcl_background+
+  '"> </SCR' + 'IPT>');
+--></SCRIPT>
+<br /></p>    <p>@</p></td>
+          <td height="2" colspan="3" align="center" valign="top" bgcolor="#FFFFFF" style="background:url(https://gbring.com/images/top_inside/corner_head.gif) no-repeat;">
+            <div id="navi_continer">
+              <div id="navi">
+                <div id="before"></div>
+            <ul>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="../../../closeup/closeup.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','../../../images/top/top_tokushu_.jpg',1)"><img src="../../../images/top/top_tokushu.jpg" alt="“ÁW" name="Image17" width="100" height="25" border="0"></a></li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="../../news/news.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','../../../images/top/top_news_.jpg',1)"><img src="../../../images/top/top_news.jpg" alt="ƒjƒ…[ƒX" name="Image18" width="100" height="25" border="0"></a></li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="../result.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','../../../images/top/top_result_.jpg',1)"><img src="../../../images/top/top_result.jpg" alt="ŽŽ‡Œ‹‰Ê" name="Image19" width="100" height="25" border="0"></a></li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="../../../interview/interview.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','../../../images/top/top_interview_.jpg',1)"><img src="../../../images/top/top_interview.jpg" alt="ƒCƒ“ƒ^ƒrƒ…[" name="Image20" width="100" height="25" border="0"></a></li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','../../../images/top/top_column_.jpg',1)"><img src="../../../images/top/top_column.jpg" alt="ƒRƒ‰ƒ€" name="Image21" width="100" height="25" border="0"></a>
+                <ul class="sub">
+                  <li><a href="../../../ippitu/ippitu.htm">T‘Ö‚í‚èƒRƒ‰ƒ€</a></li>
+                    <li><a href="../../../yoshitaka/yoshitaka.htm">‹g‘éO‚Ì‘ÅŒ‚Œ¤‹†Žº</a></li>
+                  </ul>
+              </li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','../../../images/top/top_movie_.jpg',1)"><img src="../../../images/top/top_movie.jpg" alt="“®‰æ" name="Image22" width="100" height="25" border="0"></a>
+                <ul class="sub">
+                  <li><a href="../../../ringsidemovie/ringsidemovie.htm">ŽŽ‡</a></li>
+                    <li><a href="../../../dreamspar/dreamspar.htm">ƒXƒp[ƒŠƒ“ƒO</a></li>
+                    <li><a href="../../../technique/technique.htm">ƒeƒNƒjƒbƒN</a></li>
+                    <li><a href="../../../interviewmovie/interviewmovie.htm">ƒCƒ“ƒ^ƒrƒ…[</a></li>
+                    <li><a href="../../../roundgirl/roundgirl.htm">ƒ‰ƒEƒ“ƒhƒK[ƒ‹</a></li>
+                  </ul>
+              </li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="../../../schedule/schedule.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','../../../images/top/top_event_.jpg',1)"><img src="../../../images/top/top_event.jpg" alt="ƒCƒxƒ“ƒg“ú’ö" name="Image24" width="100" height="25" border="0"></a></li>
+              <li class="navi_menu" onMouseOver="this.className='navi_menu_on'" onMouseOut="this.className='navi_menu'"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','../../../images/top/top_others_.jpg',1)"><img src="../../../images/top/top_others.jpg" alt="‚»‚Ì‘¼" name="Image23" width="100" height="25" border="0"></a>
+                <ul class="sub">
+                    <li><a href="../../../playermeikan/playermeikan.htm">‘IŽè–¼ŠÓ</a></li>
+                    <li><a href="../../../kabegami/kabegami.htm">•ÇŽ†</a></li>
+                    <li><a href="../../../link/link.htm">ƒŠƒ“ƒN</a></li>
+                  </ul>
+              </li>
+            </ul></div>
+            </div>
+            <img src="../../../images/top_inside/spacer_h15.gif" width="20" height="15"><br />
+            <!--/* adfunnel.microad.jp Javascript Tag v */-->
+<script type='text/javascript'><!--//<![CDATA[
+   document.MAX_ct0 ='INSERT_CLICKURL_HERE';
 
+if (location.protocol=='https:') {
+} else {
+   var m3_u = 'https://adf.send.microad.jp/ajs.php';
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=5124");
+   document.write ('&amp;snr=1&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
+       document.write ("&amp;ct0=" + escape(document.MAX_ct0));
+   }
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+}
+//]]>--></script><noscript><a href='https://adf.send.microad.jp/ck.php?n=a5627361&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='https://adf.send.microad.jp/avw.php?zoneid=5124&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a5627361&amp;ct0=INSERT_CLICKURL_HERE&amp;snr=1' border='0' alt='' /></a></noscript>
+      <br><img src="../bar_result_wide.gif" width="817" height="30" style="margin:0.8em 0 0 9px;"></td>
+</tr> 
+<tr> <td align="center" valign="top" bgcolor="#FFFFFF"><table width="500" border="0" cellspacing="10" cellpadding="0">
+  
+  <tr>
+    <td><div align="center">
+      <table border="0" cellpadding="2" cellspacing="1" width="410" bgcolor="#333366" style="margin:0;padding:0;">
+        <tr>
+          <td bgcolor="#FFFFFF" align="center"><table border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" width="404">
+            <tr>
+              <td align="center"><font size="2" color="#000099" class="news_midashi">ƒTƒCƒg“àŒŸõ</font></td>
+              <td><form action="https://gbring.com/search.html" id="cse-search-box" style="margin:0;padding:0;">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-4428471688030472:o57fyyrlzw2" />
+                  <input type="hidden" name="cof" value="FORID:9" />
+                  <input type="hidden" name="ie" value="Shift_JIS" />
+                  <input type="text" name="q" size="52" />
+                  <input type="submit" name="sa" value="&#x691c;&#x7d22;" />
+                </div>
+              </form>
+                      <script type="text/javascript" src="https://www.google.co.jp/cse/brand?form=cse-search-box&amp;lang=ja"></script></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top" align="right" height="190"><TABLE WIDTH="100%" BORDER="0" HEIGHT="72">
+      <tr>
+        <td bgcolor="#FFFF99" class="news22" height="68"><p><a href="../../../closeup/closeup_deep.htm"><img src="../../../images/2011/110731_deep.jpg" width="70" height="60" border="0" align="right"></a><a href="../../../closeup/closeup_deep.htm" class="news112"><strong><font color="#0000FF">GBR‚ÌuDEEPv“ÁW</font></strong><br>
+                  <FONT COLOR="#000000" SIZE="2" class="news_midashi">‹e–ìŽ‹I‚ÌŽO“úŒŽR‚èuÀAÂ–Ø^–çvs¡¬³˜aA–k‰ªŒå‚ÌƒeƒNƒjƒbƒNuÀA’·“ì—ºƒCƒ“ƒ^ƒrƒ…[A²”Œ‘ã•\‚ª“ÇŽÒ‚ÌŽ¿–â‚É“š‚¦‚éAƒAƒbƒJA½ŒåA—…“ª–‚¨‚ÌƒXƒp[ƒŠƒ“ƒO‰f‘œ‚È‚ÇA‚à‚ ‚è</FONT></a></p></td>
+      </tr>
+    </TABLE>
+      <b><a href="../result.htm"><b><font color="#FF0000" size="2">âŽŽ‡Œ‹‰ÊTOP‚É–ß‚é</font></b></a></b>
+      <ul class="sbm"><li class="twi"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="gbr_kakutougi" data-lang="ja">ƒcƒC[ƒg‚·‚é</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js" charset="UTF-8"></script></li><li><a href="javascript:void window.open('http://clip.livedoor.com/clip/add?link='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), '_blank');" title="livedoorƒNƒŠƒbƒv"><img src="https://parts.blog.livedoor.jp/img/cmn/clip_16_16_w.gif" alt="livedoorƒNƒŠƒbƒv" border="0" /></a></li><li><a href="javascript:void window.open('http://bookmarks.yahoo.co.jp/bookmarklet/showpopup?t='+encodeURIComponent(document.title)+'&amp;u='+encodeURIComponent(location.href)+'&amp;ei=UTF-8','_blank','width=550,height=480,left=100,top=50,scrollbars=1,resizable=1',0);"><img src="https://i.yimg.jp/images/sicons/ybm16.gif" alt="Yahoo!ƒuƒbƒNƒ}[ƒN" width="16" height="16" style="border:none;"></a></li></ul><br class="sbm" />
+      <table width="100%" border="0" cellspacing="0" cellpadding="3">
+          <tr>
+            <td width="1%" bgcolor="#000066"></td>
+            <td width="86%" bgcolor="#CDCDCD"><p><font size="2"><b><font color="#000000" class="news">yƒOƒ‰ƒWƒG[ƒ^[zƒ~ƒmƒƒ}ƒ“‚ª80•b‚ÅŸ—˜A200–œ‘ˆ’Dí‚Í–¼ŒÃ‰®‚Ìƒ`[ƒ€‚ª—DŸ<br>
+            </font></b></font></p></td>
+            <td align="right" width="13%" bgcolor="#CCCCCC"><p><font size="2" color="#000000">2011/12/18</font></p></td>
+          </tr>
+          <tr>
+            <td colspan="3" bgcolor="#000066"></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td colspan="3" class="news"><p><span class="style7"><br>
+            </span>@12ŒŽ18“úi“új“Œ‹žEƒfƒBƒtƒ@—L–¾‚ÅŠJÃ‚³‚ê‚½wGLADIATORiƒOƒ‰ƒWƒG[ƒ^[j27x‚ÌƒƒCƒ“ƒCƒxƒ“ƒg‚ÅAƒ~ƒmƒƒ}ƒ“‚ªƒfƒuEƒNƒ}ƒ‹EƒMƒ~ƒŒ‚É•bŽEŸ—˜‚ðü‚Á‚½Bƒ~ƒmƒƒ}ƒ“‚Í12ŒŽ2“úi‹àj“Œ‹žE—¼‘‘‹ZŠÙ‚ÅƒvƒƒŒƒX’c‘ÌIGFŽåÃwƒCƒmƒLEƒ{ƒ“ƒoƒCƒGx‚Éoê‚µ‚½‚Î‚©‚è‚¾‚Á‚½‚ªA–¢’m‚Ì‘Îí‘ŠŽè‚ð‘S‚­–â‘è‚É‚µ‚È‚©‚Á‚½B</p>
+              <p>@´‚ªƒ^ƒCƒgƒ‹‚ð•Ôã‚µ‚½‚½‚ßA”öè‚Æƒgƒˆƒ^‚Å‘ˆ‚í‚ê‚½CMA KPWƒ~ƒhƒ‹‹‰‰¤ÀŒˆ’èí‚ÍA”öè‚ª”»’èŸ‚¿‚ÅV‰¤À‚ÉA‚¢‚½BGLADIATORƒLƒbƒNƒtƒFƒU[‹‰ƒ^ƒCƒgƒ‹ƒ}ƒbƒ`‚Å‚ÍA“¡ˆä‰pl‚ªƒ`ƒƒEƒWƒ‡ƒ“ƒz‚ð”j‚èA‰¤À‚ÉA‚¢‚Ä‚¢‚éB</p>
+              <p>@‚Ü‚½A200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg‚ÍA–¼ŒÃ‰®‚Ìƒ`[ƒ€uGATE KEEPERv‚ª—DŸ‚µ‚½B<br>
+              </p>
+              <p><span class="style7">Ž˜/CMA JAPAN/CMA KOREA<br>
+                u“Œ“ú–{‘åkÐ•œ‹»Žx‰‡ GLADIATOR27v</span><br>
+                2011”N12ŒŽ18“úi“új“Œ‹žEƒfƒBƒtƒ@—L–¾<br>
+                ŠJê12F00@‘æˆê•”ŠJŽn12F30@‘æ“ñ•”ŠJŽn17F00</p>
+              <p><strong>ƒ‘SŽŽ‡Œ‹‰Ê„</strong></p>
+              <p>¤‘æ“ñ•”</p>
+              <p>¥ƒƒCƒ“ƒCƒxƒ“ƒgi‘æ13ŽŽ‡j@MMAƒ‹[ƒ‹@–³·•ÊŒ_–ñ@5•ª2R@<br>
+                ›ƒ~ƒmƒƒ}ƒ“iƒtƒŠ[j<br>
+                ˆê–{@1R1•ª20•b@¦˜r‚Ð‚µ‚¬\ŽšŒÅ‚ß<br>
+                œƒfƒuEƒNƒ}ƒ‹EƒMƒ~ƒŒiŽu‘º“¹êj</p>
+              <p>¥ƒZƒ~ƒtƒ@ƒCƒiƒ‹i‘æ12ŽŽ‡j@CMA KPWƒ~ƒhƒ‹‹‰ƒ^ƒCƒgƒ‹ƒ}ƒbƒ`@MMAƒ‹[ƒ‹@83.9kgŒ_–ñ@5•ª2R@<br>
+                ›”öèL‹Ii˜apŒdM˜ð“Œ‹ž–{•”j<br>
+                ”»’è3-0<br>
+                œƒJƒ‹ƒƒXEƒgƒˆƒ^iƒuƒ‰ƒWƒ‹/HARD COMBATj<br>
+                ¦”öè‚ª‰¤À‚ÉA‚­B</p>
+              <p>¥‘æ11ŽŽ‡@MMAƒ‹[ƒ‹@70kgŒ_–ñ@5•ª2R@<br>
+                ›TOSHIiƒ}ƒbƒn“¹ê/GLADIATORƒ‰ƒCƒg‹‰‰¤ŽÒj<br>
+                TKO@2R4•ª42•b<br>
+                œƒpƒNEƒwƒWƒ“iŠØ‘/CMA KOREAj</p>
+              <p>¥‘æ10ŽŽ‡@MMAƒ‹[ƒ‹@84kgŒ_–ñ@5•ª2R@<br>
+                ›ƒCEƒ`ƒƒƒ“ƒ\ƒviŠØ‘/CMA KOREAj<br>
+                ”»’è3-0<br>
+                œ´iŠò•ŒŽ˜j</p>
+              <p>¥‘æ9ŽŽ‡@GLADIATORƒLƒbƒNƒtƒFƒU[‹‰ƒ^ƒCƒgƒ‹ƒ}ƒbƒ`@ƒLƒbƒNƒ‹[ƒ‹@63kgŒ_–ñ@3•ª3R@<br>
+                ›“¡ˆä‰pliBLUE DOG GYMj<br>
+                ”»’è3-0<br>
+                œƒ`ƒƒEƒWƒ‡ƒ“ƒziŠØ‘/CMA KOREAj<br>
+                ¦“¡ˆä‚ª‰¤À‚ÉA‚­B</p>
+              <p>¥‘æ8ŽŽ‡@MMAƒ‹[ƒ‹@65.8kgŒ_–ñ@5•ª2R<br>
+                ›‚‹´’¼Šóiƒ}ƒbƒn“¹êj<br>
+                ˆê–{@1R1•ª31•b<br>
+                œƒCEƒOƒ@ƒ“ƒˆƒ‹iŠØ‘/CMA KOREAj</p>
+              <p>¥‘æ7ŽŽ‡@MMAƒ‹[ƒ‹@70kgŒ_–ñ@5•ª2R<br>
+                ›¬’rGMiGRABAKAj<br>
+                ”»’è3-0<br>
+                œ“¡“cŽ—˜iCMAíƒWƒ€j</p>
+              <p>¥‘æ6ŽŽ‡@MMAƒ‹[ƒ‹@63kgŒ_–ñ@5•ª2R<br>
+                [“¹’n@½iCORE‰¤Žq–L“‡j@<br>
+                ƒm[ƒRƒ“ƒeƒXƒg@1R1•ª45•b<br>
+                [Œ´“c@‘¾˜Yi“V“¹˜ðj<br>
+                ¦“¹’n‚ªƒAƒNƒVƒfƒ“ƒg‚ÅŽ¨‚ð•‰‚µ‚½‚½‚ß</p>
+              <p>¥‘æ5ŽŽ‡@ƒLƒbƒNƒ‹[ƒ‹@60kgŒ_–ñ@3•ª2R<br>
+                ›‹g•ô@ãÄiTEAM GRACHANj@<br>
+                KO@2R52•b<br>
+                œóˆä‹`OiGATE KEEPERj</p>
+              <p>¥‘æ4ŽŽ‡@ƒLƒbƒNƒ‹[ƒ‹@75kgŒ_–ñ@3•ª2R<br>
+                ›ƒCEƒLƒ…ƒ~ƒ‡ƒ“iŠØ‘/CMA KOREAj<br>
+                ”»’è3-0<br>
+                œƒTƒCƒhiƒCƒ‰ƒ“/ƒyƒ‹ƒVƒAƒ“Zj@</p>
+              <p>¥‘æ3ŽŽ‡@MMAƒ‹[ƒ‹@65.8kgŒ_–ñ@3•ª2R<br>
+                ›‘å–ì—Yˆê˜Yiƒ}ƒbƒn“¹êj@<br>
+                TKO@2R2•ª10•b<br>
+                œ‹à–Ø—Ili“V“¹˜ðj</p>
+              <p>¥‘æ2ŽŽ‡@MMAƒ‹[ƒ‹@70.3kgŒ_–ñ@3•ª2R<br>
+                ›–x–{—S‰îiTHUG LIFEj@<br>
+                ˆê–{@1R1•ª50•b<br>
+                œŠÚ–ìƒRƒ“ƒOiAGj</p>
+              <p>¥‘æ1ŽŽ‡@MMAƒ‹[ƒ‹@65.8kgŒ_–ñ@3•ª2R<br>
+                ›˜@›‰@Œõiƒpƒ‰ƒGƒXƒgƒ‰¼ŒËj@<br>
+                ”»’è3-0<br>
+                œƒXƒeƒB[ƒuEƒuƒ‰ƒEƒ“iƒ`[ƒ€Œj</p>
+              <p>¤‘æˆê•”</p>
+              <p>¥‘æ27ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒgŒˆŸí@‘å«í@MMAƒ‹[ƒ‹@3•ª/1•ª@80kgŒ_–ñ<br>
+                ›ƒPƒ“ƒVƒƒEiGATE KEEPERj<br>
+                ˆê–{@1R2•ª30•b@¦Œ¨ŒÅ‚ß<br>
+                œƒJƒiƒKƒƒqƒfƒgƒ‚iM~D~Sj<br>
+                ¦GATE KEEPER‚ª—DŸB</p>
+              <p>¥‘æ26ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒgŒˆŸí@•›«í@MMAƒ‹[ƒ‹@3•ª/1•ª@75kgŒ_–ñ<br>
+                ›ƒŠƒ‡ƒEƒgiGATE KEEPERj<br>
+                •síŸ<br>
+                œ—Lò@–¾iM~D~Sj</p>
+              <p>¥‘æ25ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒgŒˆŸí@’†Œ˜í@MMAƒ‹[ƒ‹@3•ª/1•ª@70kgŒ_–ñ<br>
+                ›ƒGƒ[ƒbƒLiGATE KEEPERj<br>
+                ˆê–{@1R14•b<br>
+                œÝ–¾³•qiM~D~Sj</p>
+              <p>¥‘æ25ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒgŒˆŸí@ŽŸ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@65kgŒ_–ñ<br>
+                ›¬—Ñ’¼liM~D~Sj<br>
+                ˆê–{@1R2•ª23•b<br>
+                œŽO‹´ƒLƒˆƒJƒYiGATE KEEPERj</p>
+              <p>¥‘æ24ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒgŒˆŸí@ŽŸ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@60kgŒ_–ñ<br>
+                ›–”‹g—T‘åiM~D~Sj<br>
+                TKO@1R28•b<br>
+                œ’r’[ƒLƒ~ƒ„iGATE KEEPERj</p>
+              <p>¥‘æ22ŽŽ‡@MMAƒ‹[ƒ‹@77kgŒ_–ñ@3•ª2R<br>
+                ›ƒWƒ‡ƒ“EƒhƒDƒWƒFiŠØ‘/CMA KOREAj<br>
+                ˆê–{@1R1•ª28•b<br>
+                œˆÀ“¡—EŠóiˆ«“}j@</p>
+              <p>¥‘æ21ŽŽ‡@MMAƒ‹[ƒ‹@70.3kgŒ_–ñ@3•ª2R<br>
+                ›‹ß“à’‰Žjiƒpƒ‰ƒGƒXƒgƒ‰•Ÿ“‡j<br>
+                ”»’è2-1<br>
+                œ‘å“‡Œh‘¾˜Yi÷“¹j@</p>
+              <p>¥‘æ20ŽŽ‡@MMAƒ‹[ƒ‹@58kgŒ_–ñ@3•ª/1•ª<br>
+                ›–x’rBAD MAXiÀ’Ã‚Ð‚à‚Ì“¹êj<br>
+                ”»’è2-1<br>
+                œŒ´“c—Eìi“V“¹˜ðj@</p>
+              <p>¥‘æ19ŽŽ‡@MMAƒ‹[ƒ‹@75kgŒ_–ñ@3•ª/1•ª<br>
+                ›‘åŽ­‚½‚©‚ä‚«iŠò•ŒŽ˜j@<br>
+                KO@1R1•ª19•b<br>
+                œ‰¡ŽR‚½‚­‚âiƒtƒŠ[j</p>
+              <p>¥‘æ18ŽŽ‡@ƒLƒbƒNƒ‹[ƒ‹@70kgŒ_–ñ@2•ª2R<br>
+                ›ƒhƒ‰ƒSƒ“—Tìiƒ`[ƒ€ƒGƒ‹ƒhƒ‰ƒhj@<br>
+                KO@2R25•b<br>
+                œ‚­‚³‚ÌiŠò•ŒŽ˜j</p>
+              <p>¥‘æ17ŽŽ‡@MMAƒ‹[ƒ‹@–³·•Ê@3•ª/1•ª<br>
+                ›ª’ÃŠóiM~D~Sj<br>
+                KO@1R21•b<br>
+                œRYOiƒtƒŠ[j</p>
+              <p>¥‘æ16ŽŽ‡@MMAƒ‹[ƒ‹@70kgŒ_–ñ@3•ª/1•ª<br>
+                ›ƒ†[ƒXƒPEƒTƒ“ƒ_[ƒXJriÀ’Ã‚Ð‚à‚Ì“¹êj<br>
+                TKO@1R1•ª33•b<br>
+                œƒXƒKƒƒ‰ƒ†ƒEƒ„iBLOOD FAIRYj</p>
+              <p>¥‘æ15ŽŽ‡@MMAƒ‹[ƒ‹@60kgŒ_–ñ@3•ª/1•ª<br>
+                ›ƒˆƒEƒXƒPiŠò•ŒŽ˜j<br>
+                TKO@2R20•b<br>
+                œŠâ”öƒAƒLƒ‰iZEN•JYOj</p>
+              <p>¥‘æ14ŽŽ‡@ƒLƒbƒNƒ‹[ƒ‹@72kgŒ_–ñ@2•ª2R<br>
+                ›•½Œ´½ŽuiƒtƒŠ[j@<br>
+                ”»’è3-0@<br>
+                œ‰J‹{LŒ›iM~D~Sj</p>
+              <p>¥‘æ13ŽŽ‡@MMAƒ‹[ƒ‹@75kgŒ_–ñ@3•ª/1•ª<br>
+                ›‚‹´ƒsƒƒLi•xŽm‹{ƒ„ƒLƒ\ƒo“¹êj@<br>
+                TKO@1R2•ª32•b<br>
+                œ‰iŽR•ó—YiAGj</p>
+              <p>¥‘æ12ŽŽ‡@MMAƒ‹[ƒ‹@75kgŒ_–ñ@3•ª/1•ª<br>
+                ›’†’|˜aŽ÷iCMAíƒWƒ€j@<br>
+                ˆê–{@1R1•ª8•b<br>
+                œ²X–Ø«iƒtƒŠ[j</p>
+              <p>¥‘æ11ŽŽ‡@MMAƒ‹[ƒ‹@70kgŒ_–ñ@3•ª/1•ª<br>
+                ›ƒ‚ƒŠƒVƒ}ƒ“ib”ã‘’¹‚à‚ÂŒR’cj<br>
+                TKO@1R48•b<br>
+                œ–ì–{—z‘¾i“V“¹˜ðj</p>
+              <p>¥‘æ10ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@‘å«í@MMAƒ‹[ƒ‹@3•ª/1•ª@80kgˆÈãŒ_–ñ<br>
+                ›ƒJƒiƒKƒƒqƒfƒgƒ‚iM~D~Sj<br>
+                ”»’è<br>
+                œãžŠŒõKi÷“¹j<br>
+                ¦M~D~S‚ªŒˆŸ‚ÖioB</p>
+              <p>¥‘æ9ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@•›«í@MMAƒ‹[ƒ‹@3•ª/1•ª@75kgˆÈãŒ_–ñ<br>
+                ›ˆÉ“Œr•Fi÷“¹j<br>
+                ”»’è2-1<br>
+                œ—Lò@–¾iM~D~Sj</p>
+              <p>¥‘æ8ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@’†Œ˜í@MMAƒ‹[ƒ‹@3•ª/1•ª@70kgˆÈãŒ_–ñ<br>
+                ›Ý–¾³•qiM~D~Sj<br>
+                ”»’è3-0<br>
+                œ‰i‘ò@’‰i÷“¹j</p>
+              <p>¥‘æ7ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@ŽŸ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@65kgˆÈãŒ_–ñ<br>
+                ›¬—Ñ’¼liM~D~Sj<br>
+                TKO@1R36•b<br>
+                œ‰Ô‰ª‚æ‚µ‚Ýi÷“¹j</p>
+              <p>¥‘æ6ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@æ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@60kgˆÈãŒ_–ñ<br>
+                ›–”‹g—T‘åiM~D~Sj<br>
+                ”»’è2-0<br>
+                œ×“c—²Žui÷“¹j</p>
+              <p>¥‘æ5ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@‘å«í@MMAƒ‹[ƒ‹@3•ª/1•ª@80kgˆÈãŒ_–ñ<br>
+                ›ƒPƒ“ƒVƒƒEiGATE KEEPERj<br>
+                ˆê–{@1R43•b<br>
+                œƒWƒ…ƒ“iç—t˜A‡j<br>
+                ¦GATE KEEPER‚ªŒˆŸ‚ÖioB</p>
+              <p>¥‘æ4ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@•›«í@MMAƒ‹[ƒ‹@3•ª/1•ª@75kgˆÈãŒ_–ñ<br>
+                ›ƒŠƒ‡ƒEƒgiGATE KEEPERj<br>
+                TKO@1R27•b<br>
+                œƒ}ƒ“ƒ\ƒEiç—t˜A‡j</p>
+              <p>¥‘æ3ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@’†Œ˜í@MMAƒ‹[ƒ‹@3•ª/1•ª@70kgˆÈãŒ_–ñ<br>
+                ›˜Hliç—t˜A‡j<br>
+                ”»’è3-0<br>
+                œƒGƒ[ƒbƒLiGATE KEEPERj</p>
+              <p>¥‘æ2ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@ŽŸ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@65kgˆÈãŒ_–ñ<br>
+                ›‚µ‚ã‚ñ‚·‚¯iç—t˜A‡j<br>
+                ”»’è2-1<br>
+                œŽO‹´ƒLƒˆƒJƒYiGATE KEEPERj</p>
+              <p>¥‘æ1ŽŽ‡@200–œ‘ˆ’D’c‘Ìíƒg[ƒiƒƒ“ƒg€ŒˆŸ@æ–Ní@MMAƒ‹[ƒ‹@3•ª/1•ª@60kgˆÈãŒ_–ñ<br>
+                ›’r’[ƒLƒ~ƒ„iGATE KEEPERj<br>
+                TKO@1R44•b<br>
+                œƒR[ƒXƒPiç—t˜A‡j<br>
+              </p>
+              <TABLE WIDTH="100%" BORDER="0" HEIGHT="72">
+                <tr>
+                  <td bgcolor="#FFFF99" class="news22" height="68"><p><a href="../../../closeup/closeup_deep.htm"><img src="../../../images/2011/110731_deep.jpg" width="70" height="60" border="0" align="right"></a><a href="../../../closeup/closeup_deep.htm" class="news112"><strong><font color="#0000FF">GBR‚ÌuDEEPv“ÁW</font></strong><br>
+                            <FONT COLOR="#000000" SIZE="2" class="news_midashi">‹e–ìŽ‹I‚ÌŽO“úŒŽR‚èuÀAÂ–Ø^–çvs¡¬³˜aA–k‰ªŒå‚ÌƒeƒNƒjƒbƒNuÀA’·“ì—ºƒCƒ“ƒ^ƒrƒ…[A²”Œ‘ã•\‚ª“ÇŽÒ‚ÌŽ¿–â‚É“š‚¦‚éAƒAƒbƒJA½ŒåA—…“ª–‚¨‚ÌƒXƒp[ƒŠƒ“ƒO‰f‘œ‚È‚ÇA‚à‚ ‚è</FONT></a></p></td>
+                </tr>
+              </TABLE></td>
+          </tr>
+          <tr>
+            <td colspan="3" bgcolor="#F0F0F0"><font size="2" color="#000000"><b>yŠÖ˜AƒŠƒ“ƒNz</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="2" valign="top"><div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4428471688030472";
+/* 336x280_as */
+google_ad_slot = "3376413815";
+google_ad_width = 336;
+google_ad_height = 280;
+//--></script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div><br />
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#666666" height="49">
+      <tr>
+        <td valign="top" bordercolor="#FFFFFF" bgcolor="#003366"><font size="2" color="#FFFFFF">áŠÖ˜Aƒjƒ…[ƒXâ</font></td>
+      </tr>
+      <tr>
+        <td valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF" height="31"><table border="0" cellspacing="0" cellpadding="4" width="100%">
+          <tr class="news12">
+            <td width="13%" height="10" nowrap bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="87%" height="10" bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
 
-<!-- footer -->
-<div id="footer">
-<!-- navi -->
-<div class="navi">
-<ul>
-<li><i class="fas fa-times fa-fw rd"></i><a href="../../../index.html">PANCRASEãƒˆãƒƒãƒ—ãƒšãƒ¼ã‚¸</a></li>
-<li><a href="../../index.html">database</a></li>
-<li><a href="../index.html">è©¦åˆçµæžœ</a></li>
-<li><a href="index.html">2016</a></li>
-</ul>
-</div>
-<!-- navi -->
-</div>
-<!-- footer -->
-
-
-<div id="WATelements"></div> <script id="WAT" src="https://djnbrbrnw10mo.cloudfront.net/_js/wat.js?symbol=WTL&id=27&default_lang=ja"></script>
-</div>
+        </table></td>
+      </tr>
+    </table>
+    <p><font size="2"><b><a href="../result_overall.htm"><font color="#0000CC">â”N“x•ÊEŽŽ‡Œ‹‰Êˆê——</font></a></b></font></p></td>
+  </tr>
+  <tr>
+    <td valign="top" height="12"><div align="right"><font size="2"><a href="#top"><b>£ƒy[ƒWTOP‚Ö–ß‚é</b></a></font></div></td>
+  </tr>
+  <tr>
+    <td align="center" height="16"><div align="center"><a href="#top"><font size="2"><b></b></font></a><br>
+<iframe src="https://rcm-jp.amazon.co.jp/e/cm?t=kakutougi-news-22&o=9&p=15&l=st1&mode=books-jp&search=%E6%A0%BC%E9%97%98%E6%8A%80&fc1=000000&lt1=_blank&lc1=3366FF&bg1=FFFFFF&npa=1&f=ifr" marginwidth="0" marginheight="0" width="468" height="240" border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>
+    </div></td>
+  </tr>
+</table></td><td align="center" valign="top">@</td>              
+          <td align="center" width="300" valign="top"><img src="../../../images/top_inside/spacer_h15.gif" width="20" height="10"><br> 
+              <!--/* adfunnel.microad.jp iFrame Tag v */-->
+<iframe id='a337c72a' name='a337c72a' src='https://adf.send.microad.jp/afr.php?zoneid=4730&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE&amp;snr=1' frameborder='0' scrolling='no' width='300' height='250'><a href='https://adf.send.microad.jp/ck.php?n=a550cb83&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='https://adf.send.microad.jp/avw.php?zoneid=4730&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a550cb83&amp;ct0=INSERT_CLICKURL_HERE&amp;snr=1' border='0' alt='' /></a></iframe>
+<img src="../../../images/top_inside/spacer_h15.gif" width="20" height="20"><br>
+<script type="text/javascript"><!--
+in_uid = '1261';
+in_spotseq = '4';
+in_charset = 'UTF-8';
+in_matchurl = '';
+in_HBgColor = 'FFFFFF';
+in_HBorderColor = 'CCCCCC';
+in_HTitleColor = '0000CC';
+in_HTextColor = '000000';
+in_HUrlColor = '008000';
+frame_width = '300';
+frame_height = '250';
+--></script>
+<script src='http://cache.microad.jp/send_cgm.js'></script>
+<img src="../../../images/top_inside/spacer_h15.gif" width="20" height="20"><br>
+<!-- MB start -->
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--
+var MBLoaded          = false;
+var MBTagVersion      = "1.0";
+var MBSite            = "hs10065460";
+var MBBannerID        = "546506";
+var MBSizes           = "120x600";
+var MBBannerSizeOrder = "listed";
+var MBEncode          = "sjis";
+var MBProtocol        = "http";
+var MBServer          = "cast";
+var MBDomain          = "trustclick.ne.jp";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="https://motu.trustclick.ne.jp/mbjs"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--
+if (MBLoaded) MBBannerRequest();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="https://cast.trustclick.ne.jp/click?site=hs10065460&bid=546506&sizes=120x600" TARGET="_top">
+<IMG BORDER="0" WIDTH="120" HEIGHT="600" SRC="https://cast.trustclick.ne.jp/banner?site=hs10065460&bid=546506&ver=1.0&sizes=120x600&bso=listed&type=std&encode=sjis"></A>
+</NOSCRIPT>
+<!-- MB end --> 
+              </td>
+</tr> <tr> <td align="center" width="180" bgcolor="#CC0000" valign="bottom">@</td><td width="520" align="center" valign="bottom" style="background:url(https://gbring.com/images/top_inside/corner_bottom.gif) no-repeat;">@</td><td align="center" valign="bottom">@</td><td bgcolor="#FFFFFF" width="185" valign="top">@</td></tr> 
+<tr> <td align="center" colspan="4" bgcolor="#CC0000" valign="bottom"> <hr size="1" color="#FFFFFF" width="100%"> 
+</td></tr> <tr> <td align="center" colspan="4" bgcolor="#CC0000" valign="bottom" height="2"><a href="../../../entry/what_gbr.htm"><font color="#FFFFFF"><span class="line19_2">‚f‚a‚q‚Æ‚Í</span></font></a><span class="line19_2"><font color="#FFFFFF">@</font><font color="#FFFFCC"><a href="../../../chrginfo.html"><font color="#FFFFFF">¡‚·‚®–³—¿“o˜^</font></a></font>@<a href="../../../entry/machine.htm"><font color="#FFFFFF">“®ìŠÂ‹«</font></a>@<a href="../../../entry/rules.htm"><font color="#FFFFFF">—˜—p‹K–ñ</font></a>@<a href="../../../entry/privacy.htm"><font color="#FFFFFF">ƒvƒ‰ƒCƒoƒV[‚Ìl‚¦•û</font></a>@<a href="http://yoshikuradesign.com/" target="_blank"><font color="#FFFFFF">‰^‰c‰ïŽÐ</font></a>@<a href="mailto:gbr@hajimail.jp"><font color="#FFFFFF">‚¨–â‡‚¹</font></a><br> 
+<font color="#FFFFCC">(C)YOSHIKURA DESIGN,LTD. 2003-2011. All right reserved.</font> 
+</span><font size="2"><font size="1" color="#666666"> 
+<map name="Map2"> 
+<area shape="rect" coords="90,2,147,17" href="../../entry/what_gbr.htm" alt="GBR‚Æ‚Í" title="GBR‚Æ‚Í"> 
+<area shape="rect" coords="158,2,214,18" href="../../entry/machine.htm"> <area shape="rect" coords="225,2,278,17" href="../../entry/rules.htm"> 
+<area shape="rect" coords="288,3,423,17" href="../../entry/privacy.htm"> <area shape="rect" coords="431,3,509,17" href="https://member1.biglobe.ne.jp/cgi-bin/content_p/contset.pl?url=https://gbring.com/" target="_blank"> 
+<area shape="rect" coords="521,3,603,16" href="mailto:gbr@hajimail.jp"> </map> 
+</font></font></td></tr> </table></td></tr> </table><map name="Map"> <area shape="rect" coords="583,6,709,38" href="../../entry/machine.htm#movie_sample" target="_blank" alt="Ši“¬‹ZƒTƒ“ƒvƒ‹“®‰æ" title="Ši“¬‹ZƒTƒ“ƒvƒ‹“®‰æ"> 
+</map> <map name="Map3"> <area shape="rect" coords="394,50,676,83" href="../../../chrginfo.html"> 
+<area shape="rect" coords="32,56,303,84" href="../../../entry/sample_movies.htm"> 
+</map> <map name="Map4"> <area shape="rect" coords="233,74,391,90" href="../../chrginfo.html"> 
+</map> <map name="Map5"> <area shape="rect" coords="45,169,139,191" href="../present_new/pre_top.htm"> 
+</map> 
+<script type='text/javascript'>
+if(/iPhone OS/.test(navigator.userAgent)){
+	in_tag_id = '676888fb4ad47f9f';
+} else {
+	in_tag_id = 'ca35cf4c01f5b646';
+}
+</script>
+<script type='text/javascript' charset='utf-8' src='http://ssend.microad.jp/js/overlay_load.js'></script>
 </body>
 </html>
