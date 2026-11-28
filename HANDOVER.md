@@ -148,3 +148,5 @@ GitHubの画面でファイルを開き、鉛筆マーク（Edit）で直接直�
 ## 問い合わせ先
 
 サイトの「このサイトについて」と、各ページの一番下に、問い合わせ先として japan.mma.record@gmail.com を載せています（GitHubアカウントのメインのアドレスも同じ）。
+
+- 同じ人の名前の書き方の統一は data/aliases.tsv（name, to, note）に書く。作るときに試合・表彰台・所属・マット番号の名前を「to」にそろえる（例：タナベイゴール・Igor Tanabe → イゴール・タナベ）。グランドインパクト・デラヒーバ杯は主催が JBJJF なので promotion は jbjjf（groundimpact と書いても jbjjf として扱う）。
