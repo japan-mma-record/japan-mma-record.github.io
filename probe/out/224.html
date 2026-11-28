@@ -1,82 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js">
-<head><link rel="alternate" hreflang="en" href="https://www.quintet-fight.com/en/eventinfo/fn3/"><link rel="alternate" hreflang="x-default" href="https://www.quintet-fight.com/eventinfo/fn3/" data-wovn="true"><script src="https://j.wovn.io/1" data-wovnio="key=1ddJez&amp;backend=true&amp;currentLang=ja&amp;defaultLang=ja&amp;urlPattern=path&amp;langCodeAliases=[]&amp;debugMode=false&amp;langParamName=wovn" data-wovnio-info="version=WOVN.wp_1.15.0&amp;supportedLangs=[en]&amp;timeout=1"  async></script>
-<meta charset="UTF-8" >
+<html>
+<head>
+<meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="google-site-verification" content="ChgWWmxyIo8y9lDo_gSry0Naw3VQ1xabzpMVc0bM03w" />
-<title>QUINTET FIGHT NIGHT3 in TOKYO | QUINTET</title>
-<!-- ✅ Bootstrap 4.6.2 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="shortcut icon" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/favicon.ico">
+<link rel="apple-touch-icon" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/touchicon.png">
+
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/style.css?v=251105" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/responsive.css?v240809" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/normalize.css" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/drawer.css" rel="stylesheet">
+<link rel="stylesheet" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/jquery.simpleTicker.css">
 
 
-<!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-
-<link href='https://fonts.googleapis.com/css?family=Roboto:300,700,900' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-<link rel="shortcut icon" href="https://www.quintet-fight.com/wp-content/themes/quintet/favicon.ico" >
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/jquery.inview.min.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery-1.10.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/hover.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/backtop.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/drawer.min.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/tab-fighter.js"></script>
+<script src="https://kit.fontawesome.com/0e1845397c.js" crossorigin="anonymous"></script>
 <script>
-  jQuery(document).ready(function(){
-    jQuery(function() {
-    var topBtn = jQuery('#page-top');    
-    topBtn.hide();
-    //スクロールが100に達したらボタン表示
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        jQuery('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+   $(document).ready(function() {
+  	$('.drawer').drawer();
+		$('.drawer-dropdown-menu a').on('click', function() {
+  		$('.drawer').drawer('close');
+	});
+	});
+</script>
+
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery.matchHeight.js"></script>
+<script>
+$(function(){
+　　$('.matchHeight').matchHeight();
 });
-  });
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117846228-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117846228-1');
-</script>
-<!-- table tr全体がhoverのエリアになる -->
-<script>
-jQuery( function($) {
-    $('tbody tr[data-href]').addClass('clickable').click( function() {
-        window.location = $(this).attr('data-href');
-    }).find('a').hover( function() {
-        $(this).parents('tr').unbind('click');
-    }, function() {
-        $(this).parents('tr').click( function() {
-            window.location = $(this).attr('data-href');
-        });
-    });
+$(function(){
+　　$('li.fighter-box').matchHeight();
 });
 </script>
 
-<meta name='robots' content='max-image-preview:large' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.quintet-fight.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.quintet-fight.com%2Feventinfo%2Ffn3%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.quintet-fight.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.quintet-fight.com%2Feventinfo%2Ffn3%2F&#038;format=xml" />
+<script type="text/javascript" src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery.simpleTicker.js"></script>
+<script>
+$(function() {
+	$.simpleTicker($('#newsticker'),{'effectType':'roll'});
+});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MT9PCML');</script>
+<!-- End Google Tag Manager -->
+
+
+		<!-- All in One SEO 5.0.3 - aioseo.com -->
+		<title>SHOOT BOXING2011ヤングシーザー杯OSAKA -SB165- “ALPINISME vol.1” - SHOOTBOXING｜シュートボクシング</title>
+	<meta name="description" content="今年初となるプロ公式戦『ヤングシーザー杯OSAKA2011』が１月３０日（日）大阪IMPホールで開催された。" />
+	<meta name="robots" content="max-image-preview:large" />
+	<link rel="canonical" href="https://shootboxing.org/result/18669/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 5.0.3" />
+		<meta property="og:locale" content="ja_JP" />
+		<meta property="og:site_name" content="SHOOTBOXING｜シュートボクシング -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="SHOOT BOXING2011ヤングシーザー杯OSAKA -SB165- “ALPINISME vol.1” - SHOOTBOXING｜シュートボクシング" />
+		<meta property="og:description" content="今年初となるプロ公式戦『ヤングシーザー杯OSAKA2011』が１月３０日（日）大阪IMPホールで開催された。" />
+		<meta property="og:url" content="https://shootboxing.org/result/18669/" />
+		<meta property="article:published_time" content="2011-01-30T21:06:26+00:00" />
+		<meta property="article:modified_time" content="2018-07-22T21:06:57+00:00" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="SHOOT BOXING2011ヤングシーザー杯OSAKA -SB165- “ALPINISME vol.1” - SHOOTBOXING｜シュートボクシング" />
+		<meta name="twitter:description" content="今年初となるプロ公式戦『ヤングシーザー杯OSAKA2011』が１月３０日（日）大阪IMPホールで開催された。" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/shootboxing.org\/result\/18669\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/#listItem","position":1,"name":"\u30db\u30fc\u30e0","item":"https:\/\/shootboxing.org\/","nextItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2011\/#listItem","name":"2011"}},{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2011\/#listItem","position":2,"name":"2011","item":"https:\/\/shootboxing.org\/news\/resultyear\/year-2011\/","nextItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/result\/18669\/#listItem","name":"SHOOT BOXING2011\u30e4\u30f3\u30b0\u30b7\u30fc\u30b6\u30fc\u676fOSAKA -SB165- \u201cALPINISME vol.1\u201d"},"previousItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/#listItem","name":"\u30db\u30fc\u30e0"}},{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/result\/18669\/#listItem","position":3,"name":"SHOOT BOXING2011\u30e4\u30f3\u30b0\u30b7\u30fc\u30b6\u30fc\u676fOSAKA -SB165- \u201cALPINISME vol.1\u201d","previousItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2011\/#listItem","name":"2011"}}]},{"@type":"Organization","@id":"https:\/\/shootboxing.org\/#organization","name":"SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","url":"https:\/\/shootboxing.org\/"},{"@type":"WebPage","@id":"https:\/\/shootboxing.org\/result\/18669\/#webpage","url":"https:\/\/shootboxing.org\/result\/18669\/","name":"SHOOT BOXING2011\u30e4\u30f3\u30b0\u30b7\u30fc\u30b6\u30fc\u676fOSAKA -SB165- \u201cALPINISME vol.1\u201d - SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","description":"\u4eca\u5e74\u521d\u3068\u306a\u308b\u30d7\u30ed\u516c\u5f0f\u6226\u300e\u30e4\u30f3\u30b0\u30b7\u30fc\u30b6\u30fc\u676fOSAKA2011\u300f\u304c\uff11\u6708\uff13\uff10\u65e5\uff08\u65e5\uff09\u5927\u962aIMP\u30db\u30fc\u30eb\u3067\u958b\u50ac\u3055\u308c\u305f\u3002","inLanguage":"ja","isPartOf":{"@id":"https:\/\/shootboxing.org\/#website"},"breadcrumb":{"@id":"https:\/\/shootboxing.org\/result\/18669\/#breadcrumblist"},"image":{"@type":"ImageObject","url":"https:\/\/shootboxing.org\/wp\/wp-content\/uploads\/2018\/07\/110107.jpg","@id":"https:\/\/shootboxing.org\/result\/18669\/#mainImage","width":200,"height":281},"primaryImageOfPage":{"@id":"https:\/\/shootboxing.org\/result\/18669\/#mainImage"},"datePublished":"2011-01-31T06:06:26+09:00","dateModified":"2018-07-23T06:06:57+09:00"},{"@type":"WebSite","@id":"https:\/\/shootboxing.org\/#website","url":"https:\/\/shootboxing.org\/","name":"SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","inLanguage":"ja","publisher":{"@id":"https:\/\/shootboxing.org\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="SHOOTBOXING｜シュートボクシング &raquo; フィード" href="https://shootboxing.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SHOOTBOXING｜シュートボクシング &raquo; コメントフィード" href="https://shootboxing.org/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://shootboxing.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshootboxing.org%2Fresult%2F18669%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://shootboxing.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshootboxing.org%2Fresult%2F18669%2F&#038;format=xml" />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
+<link rel='stylesheet' id='sbi-tokens-local-css' href='https://shootboxing.org/wp/wp-content/plugins/instagram-feed/assets/tokens/sb-tokens-local.css?ver=6.14.0' media='all' />
+<link rel='stylesheet' id='sbi_styles-css' href='https://shootboxing.org/wp/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.14.0' media='all' />
 <style id="wp-emoji-styles-inline-css">
 
 	img.wp-smiley, img.emoji {
@@ -93,7 +108,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-emoji-styles-inline-css */
 </style>
 <style id="wp-block-library-inline-css">
-:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
 
 /*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
 </style>
@@ -103,882 +118,733 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=/wp-includes/css/classic-themes.min.css */
 </style>
 
-<link rel='stylesheet' id='mediaelement-css' href='https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' media='all' />
-<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=7.1.5' media='all' />
-<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css' href='https://www.quintet-fight.com/wp-content/plugins/wp-views/public/css/views-frontend.css?ver=3.6.30' media='all' />
-<style id="view_editor_gutenberg_frontend_assets-inline-css">
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
-/*# sourceURL=view_editor_gutenberg_frontend_assets-inline-css */
-</style>
 <style id="global-styles-inline-css">
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 /*# sourceURL=global-styles-inline-css */
 </style>
 
-<link rel='stylesheet' id='contact-form-7-css' href='https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.6' media='all' />
-<link rel='stylesheet' id='quintet-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/style.css?ver=7.1.5' media='all' />
-<link rel='stylesheet' id='quintet-sp-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/css/sp.css?ver=20180209' media='all' />
-<link rel='stylesheet' id='quintet-md-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/css/md.css?ver=20180319' media='all' />
-<link rel='stylesheet' id='menu-cells-front-end-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/resources/css/cell-menu-css.css?ver=2.6.20' media='screen' />
-<link rel='stylesheet' id='toolset-notifications-css-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/res/css/toolset-notifications.css?ver=4.5.3' media='screen' />
-<link rel='stylesheet' id='ddl-front-end-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/resources/css/ddl-front-end.css?ver=2.6.20' media='screen' />
-<link rel='stylesheet' id='toolset-common-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/res/css/toolset-common.css?ver=4.5.3' media='screen' />
-<script id="toolset-common-es-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=178000"></script>
-<script id="jquery-core-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
-<script id="ddl-layouts-frontend-js-extra">
-var DDLayout_fe_settings = {"DDL_JS":{"css_framework":"bootstrap-3","DEBUG":false}};
-//# sourceURL=ddl-layouts-frontend-js-extra
-</script>
-<script id="ddl-layouts-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/layouts/resources/js/ddl-layouts-frontend.js?ver=2.6.20"></script>
-<link rel="https://api.w.org/" href="https://www.quintet-fight.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.quintet-fight.com/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 7.1.5" />
-<link rel="canonical" href="https://www.quintet-fight.com/eventinfo/fn3/" />
-<link rel='shortlink' href='https://www.quintet-fight.com/?p=2070' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=7.0.9' media='screen' />
+<style id="fancybox-inline-css">
+#fancybox-outer{background:#ffffff}#fancybox-content{background:#ffffff;border-color:#ffffff;color:#000000;}#fancybox-title,#fancybox-title-float-main{color:#fff}
+/*# sourceURL=fancybox-inline-css */
+</style>
+<script id="jquery-core-js" src="https://shootboxing.org/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://shootboxing.org/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://shootboxing.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shootboxing.org/wp/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://shootboxing.org/?p=18669' />
+<link rel="icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-270x270.png" />
 
-<meta property="og:title" content="QUINTET FIGHT NIGHT3 in TOKYO">
-<meta property="og:description" content="">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.quintet-fight.com/eventinfo/fn3/">
-<meta property="og:image" content="https://www.quintet-fight.com/wp-content/uploads/2020/08/quintet_logo_sns.jpg">
-<meta property="og:site_name" content="QUINTET">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@QUINTET.PR">
-<meta property="og:locale" content="ja_JP">
- <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,j=d.createElement(s); if(s==='script'){j.src='https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/js/frontend.js?v=1.6.25';}else{ j.rel='stylesheet';j.href='https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css?v=1.6.25';} d.body.appendChild(j); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
-	<noscript>
-		<link rel="stylesheet" href="https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css">
-	</noscript><noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
 </head>
-<body class="wp-singular eventinfo-template-default single single-eventinfo postid-2070 wp-theme-quintet" id="wrap">
-<header>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000;">
-  <div class="container">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="https://www.quintet-fight.com/" rel="home">
-    <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAwAQAAAADbP768AAAAAnRSTlMAAHaTzTgAAAAQSURBVBgZYxgFo2AUDFkAAAPAAAF2pdCRAAAAAElFTkSuQmCC" height="48" width="150" alt="QUINTET" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png" decoding="async" class="lazyload" data-eio-rwidth="150" data-eio-rheight="48"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png" height="48" width="150" alt="QUINTET" data-eio="l"></noscript>
-    
-  </a>
 
+<body class="wp-singular result-template-default single single-result postid-18669 wp-theme-sb-theme drawer drawer--right" id="TOP">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT9PCML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-  <div id="navbarTogglerDemo02" class="collapse navbar-collapse"><ul id="globalnav" class="navbar-nav ml-auto mt-2 mt-md-0"><li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-590"><a href="https://www.quintet-fight.com/">Home</a></li>
-<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="https://www.quintet-fight.com/about-us/">About</a></li>
-<li id="menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-594"><a href="https://www.quintet-fight.com/news/">News</a></li>
-<li id="menu-item-958" class="menu-item menu-item-type-post_type_archive menu-item-object-eventinfo menu-item-958"><a href="https://www.quintet-fight.com/eventinfo/">Events</a></li>
-<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="https://www.quintet-fight.com/results/">Results</a></li>
-<li id="menu-item-595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595"><a href="https://www.quintet-fight.com/profile/">Profile</a></li>
-<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="https://www.quintet-fight.com/rule/">Rule</a></li>
-<li id="menu-item-596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-596"><a target="_blank" href="https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA">Videos</a></li>
-<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="https://www.quintet-fight.com/contact/">Contact</a></li>
-</ul></div>
-</div><!--  // container end  -->
+<header role="banner"><!-- ヘッダー -->
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-menu-item" href="https://shootboxing.org">HOME</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/news">ニュース一覧</a></li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            大会情報 <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fight">大会情報</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/result">試合結果</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            選手情報 <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fighter">ランキング</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/gym">ジム紹介</a></li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            SBとは <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/about">SBとは</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/rule">SBルール</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/s-cup">S-cup</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/history">SBヒストリー</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/human_of_sb/">HUMAN OF SB</a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.stores.jp/" target="_blank">公式グッズ</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/amateur/">アマチュア大会</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/roundgirl/">ラウンドガール</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/company">運営会社</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/">お問い合わせ</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/partner">スポンサー一覧</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/privacy">プライバシーポリシー</a></li>
+        <li><a class="drawer-menu-item" href="https://twitter.com/SHOOT_BOXING" target="_blank">X</a></li>
+        <li><a class="drawer-menu-item" href="https://ja-jp.facebook.com/shootboxing" target="_blank">Facebook</a></li>
+        <li><a class="drawer-menu-item" href="https://www.instagram.com/shootboxing_official/" target="_blank">Instagram</a></li>
+        <li><a class="drawer-menu-item" href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank">youtube</a></li>
+        <li><a class="drawer-menu-item" href="https://www.tiktok.com/@shootboxing_official" target="_blank">TikTok</a></li>
+      </ul>
+    </nav>
+
+<div id="logo"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo.png" alt="シュートボクシング"></a></div>
+<div id="logo-sp"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo-sp.png" alt="シュートボクシング"></a></div>
+
+<nav id="nav" role="navigation">
+<ul class="menu">
+<li class="menu__single">
+<a href="https://shootboxing.org/news">ニュース<br><span>NEWS</span></a>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/fight" class="init-bottom">大会情報<br><span>FIGHT</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/fight">大会情報</a></li>
+<li><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/result">試合結果<br><span>RESULT</span></a>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/fighter" class="init-bottom">選手情報<br><span>FIGHTER</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/fighter">ランキング</a></li>
+<li><a href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/about" class="init-bottom">SBとは<br><span>ABOUT US</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/about">SBとは</a></li>
+<li><a href="https://shootboxing.org/rule">SBルール</a></li>
+<li><a href="https://shootboxing.org/s-cup">S-cup</a></li>
+<li><a href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+<li><a href="https://shootboxing.org/history">SBヒストリー</a></li>
+<li><a href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+<li><a href="https://shootboxing.org/human_of_sb/">HUMAN OF SB</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/gym" class="init-bottom">ジム紹介<br><span>GYM</span></a>
+</li>
+</ul>
 </nav>
-</header>
 
+</header><!-- ヘッダーここまで -->
 
-<div class="qnt_jumbotron_kv_sm">
-  <div class="container qnt_jumbotron_content lead">
-      <h1 class="qnt_newsheadline">QUINTET FIGHT NIGHT3 in TOKYO</h1>
-  <p class="event-sub">Female Open Team Championship 2019&nbsp;|&nbsp;2019年4月7日 [日]</p>
-  
-  </div>
+<div class="head-sub">
+<div class="ghonyaku">
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'de,en,es,fr,ja,ko,th,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
-<div class="qnt_breadcrumb">
-  <div class="container">
-    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-      <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://www.quintet-fight.com" class="home"><span property="name">HOME</span></a><meta property="position" content="1"></span> » <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="イベント情報へ移動" href="https://www.quintet-fight.com/eventinfo/" class="archive post-eventinfo-archive"><span property="name">イベント情報</span></a><meta property="position" content="2"></span> » <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the FIGHT NIGHT Type-of-event archives." href="https://www.quintet-fight.com/type-of-event/fight-night/" class="taxonomy type-of-event"><span property="name">FIGHT NIGHT</span></a><meta property="position" content="3"></span> » <span property="itemListElement" typeof="ListItem"><span property="name">QUINTET FIGHT NIGHT3 in TOKYO</span><meta property="position" content="4"></span>    </div>
-  </div>
+<div class="sns">
+  <a href="https://twitter.com/SHOOT_BOXING" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-x-black.svg" alt="X" width="13" height="13"></a>
+  <a href="https://ja-jp.facebook.com/shootboxing" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-facebook-black.svg" alt="facebook" width="17" height="17"></a>
+  <a href="https://www.instagram.com/shootboxing_official/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-instagram-black.svg" alt="instagram" width="16" height="16"></a>
+  <a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-youtube-black.svg" alt="YouTube" width="18" height="13"></a>
+  <a href="https://www.tiktok.com/@shootboxing_official" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-tiktok-black.svg" alt="tiktok" width="15" height="17"></a>
 </div>
-
-
-                <section class="full-bg qnt_section_bggray event_information py-5"  >
-                <div class="container ">
-                <div class="row">
-                <div class="col-sm-4"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/01/20190407_fn3_poster2.jpg.webp"><img decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAPEAQAAAAB+3mJRAAAAAnRSTlMAAHaTzTgAAAB1SURBVHja7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgbfGMAARTydZYAAAAASUVORK5CYII=" title="20190407_fn3_poster2" class="attachment-full lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/01/20190407_fn3_poster2.jpg" data-eio-rwidth="800" data-eio-rheight="964" /></picture><noscript><img decoding="async" src="https://www.quintet-fight.com/wp-content/uploads/2019/01/20190407_fn3_poster2.jpg" title="20190407_fn3_poster2" class="attachment-full" data-eio="l" /></noscript>
-</div><div class="col-sm-8"><div class="qnt_event_info">
-<h2 class="title">QUINTET FIGHT NIGHT3 in TOKYO</h2>
-<div class="qnt_event_subtitle">Female Open Team Championship 2019</div>
-<table class="qnt_eventinfo_table">
-<tr>
-<th>日時</th>
-<td>2019年4月7日</td>
-</tr>
-<tr>
-<th>開場・開始</th>
-<td>開場 14:00　開始 15:00</td>
-</tr>
-<tr>
-<th>会場</th>
-<td>アリーナ立川立飛</td>
-</tr>
-<tr>
-<th>アクセス</th>
-<td><p>〒190-0015 東京都立川市泉町500-4<br />
-多摩モノレール「立飛駅」から徒歩１分<br />
-立川バス「立飛駅」から徒歩１分</p>
-</td>
-</tr>
-<tr>
-<th>主催</th>
-<td>株式会社ラバーランド</td>
-</tr>
-<tr>
-<th>特別協賛</th>
-<td>
-
-
-<div id="wpv-view-layout-4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-viewnumber="4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-pagination="{&quot;id&quot;:&quot;4784&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/fn3/?wpv_view_count=4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/fn3/?wpv_view_count=4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070">
-
-	
-	
-		<strong>-</strong>
-	
-</div></td>
-</tr>
-<tr>
-<th>企画･運営</th>
-<td>株式会社FighTAO</td>
-</tr>
-<tr>
-<th>後援</th>
-<td>
-
-
-<div id="wpv-view-layout-1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-viewnumber="1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-pagination="{&quot;id&quot;:&quot;1206&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/fn3/?wpv_view_count=1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/fn3/?wpv_view_count=1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070">
-
-	
-	
-		<strong>-</strong>
-	
-</div></td>
-</tr>
-<tr>
-<th>協力</th>
-<td>
-
-
-<div id="wpv-view-layout-893-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-893-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-viewnumber="893-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-pagination="{&quot;id&quot;:&quot;893&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/fn3/?wpv_view_count=893-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/fn3/?wpv_view_count=893-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070">
-
-	
-	
-	
-		<a href="https://www.jbjjf.com/" target="_blank">日本ブラジリアン柔術連盟</a><br>
-	
-		<a href="http://www.dnetjapan.com/" target="_blank">D-NET</a><br>
-	
-		<a href="https://mitsui-shopping-park.com/lalaport/tachikawa/" target="_blank">三井ショッピングパーク ららぽーと立川立飛</a><br>
-	
-	
-	
-	
-</div></td>
-</tr>
-
-<tr>
-<th>協賛</th>
-<td>
-
-
-<div id="wpv-view-layout-900-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-900-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-viewnumber="900-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070" data-pagination="{&quot;id&quot;:&quot;900&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/fn3/?wpv_view_count=900-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/fn3/?wpv_view_count=900-CATTR0bb3481b274178490e68a6077f43f4efTCPID2070">
-
-	
-	
-	
-		<a href="https://www.tachihi.co.jp/" target="_blank">立飛ホールディングス</a><br>
-	
-		<a href="https://www.sunchlorella.co.jp/" target="_blank">株式会社 サン・クロレラ</a><br>
-	
-	
-	
-	
-</div></td>
-</tr>
-<tr>
-<th>メディア</th>
-<td>
-
-
-<div id="wpv-view-layout-902-TCPID2070" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-902-TCPID2070" data-viewnumber="902-TCPID2070" data-pagination="{&quot;id&quot;:&quot;902&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/fn3/?wpv_view_count=902-TCPID2070&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/fn3/?wpv_view_count=902-TCPID2070">
-
-	
-	
-	
-		<a href="https://www.ufc.tv/page/fightpass" target="_blank">UFC FIGHT PASS</a><br />
-	
-	
-	
-	
-</div></td>
-</tr>
-<tr>
-<th>入場料金</th>
-<td><p>VIP席 / 15,000円<br />
-アリーナSS席 / 10,000円<br />
-スタンドA席 / 7,000円<br />
-スタンドB席 / 5,000円</p>
-</td>
-</tr>
-<tr>
-<th>チケット発売</th>
-<td><p><i class="fas fa-caret-square-right" style="margin-right:10px;"></i>チケット発売日/ <br />
-<strong>＜一斉発売＞</strong>2019年3月9日（土）<br />
-<i class="fas fa-caret-square-right" style="margin-right:10px;"></i>チケット発売所/<br />
-・イープラス　<a href="https://eplus.jp/q/" rel="noopener" target="_blank">https://eplus.jp/q/</a>&nbsp;&nbsp;※ファミリーマート店内Famiポート（店頭直接購入）<br />
-・チケットぴあ　<a href="https://t.pia.jp/" rel="noopener" target="_blank">https://t.pia.jp/</a>&nbsp;&nbsp;Pコード：842-348<br />
-・ローソンチケット　<a href="https://l-tike.com/" rel="noopener" target="_blank">https://l-tike.com/</a>&nbsp;&nbsp;Lコード：34937<br />
-<i class="fas fa-caret-square-right" style="margin-right:10px;"></i>チケットに関するお問い合わせ/QUINTETチケット問い合わせ窓口　<a href="mailto:info@quintet.local" rel="noopener" target="_blank">info@quintet.local</a></p>
-</td>
-</tr>
-<tr>
-<th>チケット発売日</th>
-<td>2019年3月9日</td>
-</tr>
-<tr>
-<th>お問合せ</th>
-<td><a href="mailto:info@quintet.local">info@quintet-fight.com</a></td>
-</tr>
-</table>
-</div></div></div></div></section>                <div class="container-fluid ">
-                <div class="ddl-full-width-row row "  >
-                </div></div>
-
-      
-
-<!-- =================* EVENT INFO END *================= -->
-
-  <!-- =================* FIGHTERS START *================= -->
-<section id="fighters" class="qnt_section_bgwh">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">FIGHTERS</h3>
-      <div class="subtitle">チームと選手について</div>
-    </div>
-
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>BJJ KUNOICHI</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/rikako_yuasa/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/01/profile_rikako_yuasa.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="湯浅 麗歌子" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/01/profile_rikako_yuasa.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/01/profile_rikako_yuasa.jpg" alt="湯浅 麗歌子" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">湯浅 麗歌子</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>35</td>
-<td>49.15</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/iori_echigo/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_iori_echigo.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="越後 伊織" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_iori_echigo.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_iori_echigo.jpg" alt="越後 伊織" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">越後 伊織</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>47</td>
-<td>47.5</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/nanami_ichikawa/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_nanami_ichikawa.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="市川 奈々美" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_nanami_ichikawa.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_nanami_ichikawa.jpg" alt="市川 奈々美" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">市川 奈々美</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>38</td>
-<td>59.2</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/yuki_sugiuchi/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yuki_sugiuchi.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="杉内 由紀" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yuki_sugiuchi.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yuki_sugiuchi.jpg" alt="杉内 由紀" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">杉内 由紀</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>46</td>
-<td>51.25</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/akiko_sawada/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_akiko_sawada.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="澤田 明子" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_akiko_sawada.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_akiko_sawada.jpg" alt="澤田 明子" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">澤田 明子</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>47</td>
-<td>53.85</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  261</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
 </div>
 
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>Sun Chlorella</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
+<div id="sidelink">
+<div id="side-ticket"><a href="https://shootboxing.stores.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-ticket.png" alt="公式グッズ"></a></div>
+<div id="side-amateur"><a href="https://shootboxing.org/amateur"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-amateur.png" alt="アマチュア大会"></a></div>
+<div id="side-movie"><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-youtube.png" alt="SB YouTube"></a></div>
+</div>
+<div id="content"><!-- コンテンツ -->
+<div id="page-image"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/pageimage_result.jpg" alt="試合結果"></div>
 
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/miyuu_yamamoto/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_yamamoto.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="山本 美憂" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_yamamoto.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_yamamoto.jpg" alt="山本 美憂" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">山本 美憂</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>52</td>
-<td>54</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/sara_mcmann/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_sara_mcmann.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="サラ・マクマン" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_sara_mcmann.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_sara_mcmann.jpg" alt="サラ・マクマン" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">サラ・マクマン</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>46</td>
-<td>67.75/td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/mika_nagano/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_mika_nagano.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="長野 美香" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_mika_nagano.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_mika_nagano.jpg" alt="長野 美香" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">長野 美香</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>42</td>
-<td>51.2</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/megumi_sugimoto/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_megumi_sugimoto.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="杉本 恵" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_megumi_sugimoto.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_megumi_sugimoto.jpg" alt="杉本 恵" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">杉本 恵</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>36</td>
-<td>52.15</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/miyuu_ikemoto/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_ikemoto.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="池本 美憂" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_ikemoto.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_miyuu_ikemoto.jpg" alt="池本 美憂" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">池本 美憂</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>22</td>
-<td>54</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  279.1</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
+<div class="pankuzu">
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="SHOOTBOXING｜シュートボクシングへ移動" href="https://shootboxing.org" class="home"><span property="name">HOME</span></a><meta property="position" content="1"></span> &raquo; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="試合結果（一覧）へ移動" href="https://shootboxing.org/result/" class="result-root post post-result"><span property="name">試合結果（一覧）</span></a><meta property="position" content="2"></span> &raquo; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 2011 開催年 archives." href="https://shootboxing.org/news/resultyear/year-2011/" class="taxonomy resultyear"><span property="name">2011</span></a><meta property="position" content="3"></span> &raquo; <span property="itemListElement" typeof="ListItem"><span property="name">SHOOT BOXING2011ヤングシーザー杯OSAKA -SB165- “ALPINISME vol.1”</span><meta property="position" content="4"></span></div>
 </div>
 
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>10th Planet</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/lila_smadja-cruz/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_lila_smadja-cruz.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ライラ・スマジャ-クルス" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_lila_smadja-cruz.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_lila_smadja-cruz.jpg" alt="ライラ・スマジャ-クルス" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ライラ・スマジャ-クルス</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>37</td>
-<td>52.15</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/fabiana_jorge/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_fabiana_jorge.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ファビアナ・ジョージ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_fabiana_jorge.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_fabiana_jorge.jpg" alt="ファビアナ・ジョージ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ファビアナ・ジョージ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>34</td>
-<td>53.15</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/liz_carmouche/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_liz_carmouche.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="リズ・カームーシュ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_liz_carmouche.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_liz_carmouche.jpg" alt="リズ・カームーシュ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">リズ・カームーシュ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>42</td>
-<td>63.5</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/grace_gundrum/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_grace_gundrum.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="グレース・ガンドラム" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_grace_gundrum.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_grace_gundrum.jpg" alt="グレース・ガンドラム" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">グレース・ガンドラム</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>24</td>
-<td>43.8</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/elvira_karppinen/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_elvira_karppinen.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="エルヴィラ・カルピネン" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_elvira_karppinen.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_elvira_karppinen.jpg" alt="エルヴィラ・カルピネン" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">エルヴィラ・カルピネン</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/finland.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Finland" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/finland.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/finland.png" alt="Finland" class="country_flag" data-eio="l"></noscript></td>
-<td>38</td>
-<td>64.8</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  277.4</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
+<!-- 大会情報 -->
+<div class="section-fight">
+<div class="inner">
+<div class="box">
+<div class="box">
+<h2 class="title">SHOOT BOXING2011ヤングシーザー杯OSAKA -SB165- “ALPINISME vol.1”</h2>
+<h4 class="fight-data">2011年1月30日（日）大阪IMPホール</h4>
+<div class="mainimage">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/07/no13-3-300x200.jpg">
+</div>
+<p>今年初となるプロ公式戦『ヤングシーザー杯OSAKA2011』が１月３０日（日）大阪IMPホールで開催された。</p>
+<p>毎度激戦が展開され有望な若手選手を続々と輩出している大阪ヤング杯も今回で７回目を迎える。毎回、若獅子たちによる熱気あふれる前半戦とトップランカー同士のハイレベルな後半戦に分けて行われるが、今回のメインイベントには地元大阪のSB日本スーパーフェザー級王者･及川知浩が登場。その他各階級のランキング戦など見どころあるカードが組まれた。</p>
+<p>及川の対戦相手、韓国ムエタイ連盟王者チョイ･キムヒョクは端正な顔立ちをした18歳の若き実力者。序盤からスピードに乗ったパワフルなパンチとミドルキックを放ちポテンシャルの高さをうかがわせる。</p>
+<p>尚も圧力をかけて前進しようとするチョイに対し、冷静に距離を見極めキレのあるローキックを返す及川。攻撃に合わせ的確なローキックを返されるチョイだが、効いてないとばかりに笑顔で自信の太ももを叩き逆にローキックを返し及川を下がらせる。</p>
+<p>続く２ラウンド、同様の展開からパンチを振るうチョイに下がりながらの左ハイキックを放った及川が突然たたらを踏み、立っていられない状態となったところにチョイが走り込んでパンチのラッシュを掛けたところでダウンの宣告。再開するが、間もなくセコンドからタオルが投入され及川のTKO負けとなった。実は試合2週間前に左足の内側靭帯を損傷し歩行すら困難な状況になっており、当日は痛み止めの注射とテーピングを施しこの一戦に臨んでいた。及川は足を引きずりながら「メインイベントを任せていただいたので絶対キッチリ倒したると思ってたのに、情けないですわ…」と悔しい表情。</p>
+<p>一方金星を挙げたチョイは「今日はラッキーな展開で勝ってしまったが、闘っていて手応えはあった。ベルトを獲るには次に誰と対戦すればいいですか？」と継続参戦を希望している。</p>
+<p>現在空位となっているSB日本フェザー級の王座挑戦権をかけて行われた１位ナグランチューン・マーサM16と同級２位の崎村暁東のランキング戦。<br />
+開始のゴングと同時に猛然とマーサに襲い掛かり寄りパンチ、キックを畳みかける崎村。その勢いは打ち気にはやるあまりバッティングで注意を与えられるほど。以前、ファントム進也とSB日本スーパーバンタム級タイトルマッチの経験がある崎村は、徹底的に勝ちに徹した試合運びでペースを掴みにかかる。一瞬面食らったマーサだが、前蹴りや組みつきを利用し追撃は許さない。２ラウンド以降、崎村の前進にカウンターを合わせたいマーサだが、パンチの連打から不規則かつ的確に放たれる崎村の左ミドルと組みの強さで次第にスタミナを奪われていく。マーサも効果的なパンチをヒットはさせるが攻め続ける崎村を下がらせるには至らず、崎村優勢のまま迎えた最終５ラウンド。ポイントでリードしていることは重々承知の崎村だが、これまでのラウンド同様アグレッシブに前進しマーサを仕留めにかかる。再びコーナーに追い込まれたマーサが、首相撲から顔面に起死回生のヒザ蹴りを一閃。これがまともに顎を直撃し腰を落とす崎村に、マーサは残された力を振り絞りパンチの連打でダウンを奪う。フラフラと立ち上がる崎村だがダメージは明らか。マーサの追撃に2度目のダウンを喫したところで崎村のコーナーからタオルが投げ入れられ、マーサの逆転KO勝利となった。</p>
+<p>そしてこの日SB日本ヘビー級の雄・伊賀弘治の引退試合が行われた。対するは元同門のハードパンチャーYABU。<br />
+序盤から両者ともにKOを狙った駆け引きなしのパンチの打ち合いを展開。両者一歩も引かない打撃戦を繰り広げ迎えた最終ラウンド。伊賀が「よっしゃ行くぞ！」と雄叫びをあげるとゴングと同時に両者はさらに激しいド突き合いをスタート。ラウンド中も声を発しながら殴り合い終了のゴングを迎えた。判定でYABUが勝利を収めたが、伊賀は最後まで一歩も引かずに打ち合ってくれた後輩YABUとのド突き合いに満足げな表情で、同じくこの日が引退試合となった木田なっくる将大とともにテンカウント・ゴングを聞いた。</p>
 </div>
 
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>DEEP JEWELS</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
+<div class="box">
+<h5 class="bar">第13試合</h5>
+<h4 class="title"><br>エキスパートクラスルール　3分5R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">及川 知浩<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">キ・ヒュク・チョイ<span></span></h3>
 
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/tomo_maesawa/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tomo_maesawa.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="前澤智" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tomo_maesawa.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tomo_maesawa.jpg" alt="前澤智" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">前澤智</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>38</td>
-<td>49.65</td>
-</tr>
+<h4>TKO 2R</h4>
 
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/emi_tomomatsu/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_emi_tomomatsu.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="富松恵美" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_emi_tomomatsu.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_emi_tomomatsu.jpg" alt="富松恵美" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">富松恵美</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>44</td>
-<td>50.3</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/king_reina/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_king_reina.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="KINGレイナ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_king_reina.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_king_reina.jpg" alt="KINGレイナ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">KINGレイナ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="日本" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="日本" class="country_flag" data-eio="l"></noscript></td>
-<td>30</td>
-<td>68.75</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/yukari-_nabe/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yukari_nabe.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="奈部ゆかり" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yukari_nabe.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_yukari_nabe.jpg" alt="奈部ゆかり" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">奈部ゆかり</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>39</td>
-<td>59.8</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/hikaru_aono/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_hikaru_aono.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="青野ひかる" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_hikaru_aono.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_hikaru_aono.jpg" alt="青野ひかる" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">青野ひかる</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>33</td>
-<td>49.9</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  278.4</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
+<div class="fight-image">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/07/no13-3-300x200.jpg">
 </div>
 
-<!-- single_match の１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="single_match">
-<th colspan="5">Special Single Match</th>
-</tr>
-<tr class="single_table_head">
-<td class="team_table_leftname"></td>
-<td class="team_table_vs"></td>
-<td class="team_table_rightname"></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_tomoshige_sera-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Tomoshige Sera" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_tomoshige_sera-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_tomoshige_sera-2.jpg" alt="Tomoshige Sera" class="team_table_img" data-eio="l"></noscript></td>
-<td> </td>
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_shooto_watanabe.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Shooto Watanabe" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_shooto_watanabe.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_shooto_watanabe.jpg" alt="Shooto Watanabe" class="team_table_img" data-eio="l"></noscript></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><a href="https://www.quintet-fight.com/profile/tomoshige_sera/">世羅 智茂</a></td>
-<td>VS</td>
-<td><a href="https://www.quintet-fight.com/profile/shooto_watanabe/">渡部修斗</a></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-  <td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-  <td></td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
+
+<p></p>
+<hr>
+</div>
+
+<div class="box">
+<h5 class="bar">第12試合</h5>
+<h4 class="title"><br>エキスパートクラスルール　3分5R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">ナグランチューン・マーサM16<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">崎村 暁東<span></span></h3>
+
+<h4>TKO 5R</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/07/no12-2-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第11試合</h5>
+<h4 class="title"><br>エキスパートクラスルール　3分5R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">藤本 昌大<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">尹戸 雅教<span></span></h3>
+
+<h4>延長1R判定2-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第10試合</h5>
+<h4 class="title"><br>エキスパートクラス特別ルール　3分3R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">伊賀 弘治<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">YABU<span></span></h3>
+
+<h4>3R判定2-0</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/07/no10-2-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第9試合</h5>
+<h4 class="title"><br>エキスパートクラス特別ルール　3分3R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">木田“なっくる”将大<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">池上 考二<span></span></h3>
+
+<h4>3R判定2-0</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/07/no9-3-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第8試合</h5>
+<h4 class="title"><br>エキスパートクラス特別ルール　3分3R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">百武 政敏<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">タップロン・フォースジム<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第7試合</h5>
+<h4 class="title"><br>エキスパートクラス特別ルール　3分3R無制限延長R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">津田 達也<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">キム・ミン・フー<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第6試合</h5>
+<h4 class="title"><br>レディースクラスルール　2分3R延長2R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">岡 加奈子<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">リー・ナヒー<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第5試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">平井 慎介<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">久保 広太<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第4試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">ほそえとしひろ<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">岡本 鉄也<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第3試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">泉 元紀<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">大樹<span></span></h3>
+
+<h4>延長1R判定2-1</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第2試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">石塚 勇史<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">山室 良太<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第1試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">秋田 匠<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">二田水 敏幸<span></span></h3>
+
+<h4>3R判定2-1</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">オープニングマッチ第2試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">トオル<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">上神 卓也<span></span></h3>
+
+<h4>延長1R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">オープニングマッチ第1試合</h5>
+<h4 class="title"><br>スターティングクラスルール　2分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">NATSUKA<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">ボー・キュン・ジャン<span></span></h3>
+
+<h4>3R判定3-0</h4>
+
+<div class="fight-image-s">
+<img src="">
+</div>
+
+<div class="fight-text-s">
+<p></p>
+</div>
+<hr>
+</div>
+
+</div>
+</div>
+<hr>
+</div>
+<!-- 大会情報 ここまで -->
+
+<div class="section-fight-gray">
+<div class="inner">
+<div class="title-img"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/title_kaisai.png" alt="大会情報"></div>
+<ul class="fight">
+<li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/37695/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/11/DSC_5360_0_batch0-scaled-e1795413648254.jpg"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/37695/">SHOOT BOXING 2027 act.1</a></h3>
+<p class="fight-data">2027年2月13日（土）<br>東京・後楽園ホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/37695/">大会詳細</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/37694/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/11/S__47038583_0-scaled.jpg"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/37694/">SHOOT BOXING 2026 ヤングシーザー杯</a></h3>
+<p class="fight-data">2026年12月13日（日）<br>東京・ゴールドジムサウス東京アネックス</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/37694/">大会詳細</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://eplus.jp/sf/detail/0047550001" target="_blank">チケット発売日 12月1日（火）</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/36831/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/08/09b71eddc125a29a5f1e12297451623f-scaled.png"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/36831/">SHOOT BOXING 2026 act.6 in AICHI</a></h3>
+<p class="fight-data">2026年11月8日（日）<br>愛知・あいおいホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/36831/">大会詳細</a></p>
+    <p class="link-btn-syousai catalog -mb5"><a href="https://tigmedia.jp/magazine/prediction/?id=1f20b46e828ef93a8c84&amp;guide=true&amp;ta_tag=official" target="_blank">デジタルパンフレット</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://video.unext.jp/livedetail/LIV0000017056" target="_blank">U-NEXT 見逃し配信</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/36654/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/08/SHOOTBOXING-2026-act.5-pic-scaled.png"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/36654/">SHOOT BOXING 2026 act.5</a></h3>
+<p class="fight-data">2026年10月24日（土）<br>東京・後楽園ホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/36654/">大会詳細</a></p>
+    <p class="link-btn-syousai catalog -mb5"><a href="https://tigmedia.jp/magazine/prediction/?id=c418972aa0998f03513e&amp;guide=true&amp;ta_tag=official" target="_blank">デジタルパンフレット</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://video.unext.jp/livedetail/LIV0000016395" target="_blank">U-NEXT 見逃し配信</a></p>
+</li></ul>
+<h5 class="link-btn-top"><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></h5>
+<hr>
+<div class="link-btn-big"><a href="https://shootboxing.org/result">過去の大会 ｜ 試合結果</a></div>
+</div>
+<hr>
+</div>
 
 
-</tr>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>37</td>
-<td>AGE</td>
-<td>27</td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>69.35kg</td>
-<td>WEIGHT</td>
-<td>69.1kg</td>
-</tr>
 
-<tr bgcolor="#B45129" >
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- fighterの１コマ -->   
-<!-- single_match の１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="single_match">
-<th colspan="5">Special Single Match</th>
-</tr>
-<tr class="single_table_head">
-<td class="team_table_leftname"></td>
-<td class="team_table_vs"></td>
-<td class="team_table_rightname"></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_shutaro_debana-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Shutaro Debana" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_shutaro_debana-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_shutaro_debana-1.jpg" alt="Shutaro Debana" class="team_table_img" data-eio="l"></noscript></td>
-<td> </td>
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tanno_robson.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Shooto Watanabe" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tanno_robson.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/03/profile_tanno_robson.jpg" alt="Shooto Watanabe" class="team_table_img" data-eio="l"></noscript></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><a href="https://www.quintet-fight.com/profile/shutaro_debana/">出花 崇太郎</a></td>
-<td>VS</td>
-<td><a href="https://www.quintet-fight.com/profile/robson_tanno/">ホブソン・タンノ</a></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-  <td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-  <td></td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
+</div><!-- コンテンツここまで -->
 
+<div class="section-cont">
+<div class="inner">
+<ul class="cont">
+<li><a href="https://shootboxing.org/about"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_sb.png" alt="シュートボクシングとは"></a></li>
+<li><a href="https://shootboxing.org/rule"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rule.png" alt="SBルール"></a></li>
+<li><a href="https://shootboxing.org/fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_ranking.png" alt="ランキング"></a></li>
+<li><a href="https://shootboxing.org/fighters/list"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_fighter.png" alt="選手一覧"></a></li>
+<li><a href="https://shootboxing.org/s-cup"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_scup.png" alt="S-cup"></a></li>
+<li><a href="https://shootboxing.org/girls-s-cup"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_gscup.png" alt="Girls S-cup"></a></li>
+<li><a href="https://shootboxing.org/gym"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_gym.png" alt="ジム紹介"></a></li>
+<li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_youtube.png" alt="youtube"></a></li>
+</ul>
+<hr>
+</div>
+</div>
 
-</tr>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>41</td>
-<td>AGE</td>
-<td>37</td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>76.7kg</td>
-<td>WEIGHT</td>
-<td>76.15kg</td>
-</tr>
+<div class="section-bnr">
+<ul class="bnr">
+<li><a href="https://rena-official.amebaownd.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rena.png" alt="RENAオフィシャルサイト"></a></li>
+<li><a href="https://shootboxing.org/roundgirl"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rg.png" alt="SBラウンドガール"></a></li>
+<li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_youtube2020.png" alt="Abema TV"></a></li>
+<li><a href="https://shootboxing.org/human_of_sb"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_hos.png" alt="HUMAN OF SB"></a></li>
+</ul>
+<hr>
+</div>
 
-<tr bgcolor="#B45129" >
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- fighterの１コマ -->  
-<div class="qnt_caution">各選手の出場順は前日の会見で決定されます</div>     
-      
-</div><!-- container inner_column END -->
+<div class="section-op">
+<div class="inner">
+<div class="title-img"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/title_op.png" alt="オフィシャルスポンサー"></div>
+<ul class="op">
+<li><a href="http://neoaging.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_01_2022.jpg" alt="neo aging"></a></li>
+<li><a href="http://www.tohshin.co.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_03new.jpg" alt="トーシンパートナーズ"></a></li>
+<li><a href="http://www.beams.co.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_04.jpg" alt="BEAMS"></a></li>
+<li><a href="http://www.lives-group.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_04_2024.jpg" alt="株式会社ライブズ"></a></li>
+<li><a href="http://www.athletegai.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_05_2022.jpg" alt="アスリート街.com"></a></li>
+</ul>
+<hr>
+<div class="link-btn-top"><a href="https://shootboxing.org/partner">パートナー一覧 <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</div>
 
-</section>
-<!-- =================* FIGHTERS END *================= -->
+<div class="section">
+<footer><!-- フッター -->
 
-<!-- =================* TOURNAMENT START *================= --> 
-<section id="bracket1005" class="qnt_section_bggray">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">TOURNAMENT</h3>
-      <div class="subtitle">トーナメント表</div>
-    </div>
-    <div class="row justify-content-md-center">
-    <div class="col col-md-8 col-lg-6">
-<picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/04/bracket20190407_ol_result.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABCAAAALgAQAAAABtrztGAAAAAnRSTlMAAHaTzTgAAAB2SURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAX5vAAH6PDE/AAAAAElFTkSuQmCC" alt="トーナメント結果" class="alignnone size-full wp-image-244 lazyload" width="528" height="368" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/04/bracket20190407_ol_result.png" decoding="async" data-eio-rwidth="1056" data-eio-rheight="736" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/04/bracket20190407_ol_result.png" alt="トーナメント結果" class="alignnone size-full wp-image-244" width="528" height="368" data-eio="l" /></noscript>
-      
-    </div>
-  </div>
-  </div>
-  
-</section>
-<!-- =================* TOURNAMENT END *================= -->
+<div id="footermenu">
+<div class="inner">
 
-<!-- =================* RESULT START *================= -->
-<section id="result0407" class="qnt_section_bgwh">
-    <div class="container inner_column">
-      <div class="qnt_wrapper text-center">
-      <h3 class="title">RESULT</h3>
-      <div class="subtitle qnt_result_jp">各試合の結果</div>
-      </div>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_1stmatch.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAUlAQAAAADZl+YfAAAAAnRSTlMAAHaTzTgAAAFKSURBVHja7cExAQAAAMKg9U9tB2+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA02BEAAVAEAvsAAAAASUVORK5CYII=" alt="1st Match" width="2435" height="1721" class="alignnone size-full lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_1stmatch.png" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1372" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_1stmatch.png" alt="1st Match" width="2435" height="1721" class="alignnone size-full" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_2ndmatch.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAUlAQAAAADZl+YfAAAAAnRSTlMAAHaTzTgAAAFKSURBVHja7cExAQAAAMKg9U9tB2+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA02BEAAVAEAvsAAAAASUVORK5CYII=" alt="2nd Match" width="2435" height="1721" class="alignnone size-full lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_2ndmatch.png" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1372" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/04/1st_2ndmatch.png" alt="2nd Match" width="2435" height="1721" class="alignnone size-full" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/04/male_single.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAUhAQAAAABCBqQJAAAAAnRSTlMAAHaTzTgAAAFJSURBVHja7cExAQAAAMKg9U9tDB+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4GjUTQAB1pvdHwAAAABJRU5ErkJggg==" alt="Special Single Match" width="2435" height="1721" class="alignnone size-full lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/04/male_single.png" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1368" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/04/male_single.png" alt="Special Single Match" width="2435" height="1721" class="alignnone size-full" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2019/04/final.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAUlAQAAAADZl+YfAAAAAnRSTlMAAHaTzTgAAAFKSURBVHja7cExAQAAAMKg9U9tB2+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA02BEAAVAEAvsAAAAASUVORK5CYII=" alt="Final Match" width="2435" height="1721" class="alignnone size-full lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/04/final.png" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1372" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/04/final.png" alt="Final Match" width="2435" height="1721" class="alignnone size-full" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-    </div>
-</section>
-<!-- =================* RESULT END *================= --> 
+<div class="list">
+<ul>
+<li class="main"><a href="https://shootboxing.org">HOME</a></li>
+<li><a href="https://shootboxing.org/news">ニュース一覧</a></li>
+<li><a href="https://shootboxing.org/company">運営会社</a></li>
+<li><a href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+<li><a href="https://shootboxing.org/partner">スポンサー一覧</a></li>
+</ul>
+</div>
 
-<!-- =================* MEDIA START *================= -->
-<section id="media" class="qnt_section_bggray">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">MEDIA</h3>
-      <div class="subtitle">メディア</div>
-    </div>
+<div class="list">
+<ul>
+<li class="main">大会情報</li>
+<li><a href="https://shootboxing.org/fight">大会情報</a></li>
+<li><a href="https://shootboxing.org/result">試合結果</a></li>
+<li><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+<li><a href="https://shootboxing.org/amateur">アマチュア大会</a></li>
+</ul>
+</div>
 
-    <div class="qnt_spnsors_wrapper">
-      <div class="row pt-4 justify-content-sm-center">
+<div class="list">
+<ul>
+<li class="main">選手情報</li>
+<li><a href="https://shootboxing.org/fighter">ランキング</a></li>
+<li><a href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+<li><a href="https://shootboxing.org/fighters/rekidai">歴代チャンピオン</a></li>
+<li><a href="https://shootboxing.org/gym">ジム一覧</a></li>
+</ul>
+</div>
 
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors">
-          <div class="qnt_top_sponsors--corp"><a href="https://www.ufc.tv/page/fightpass" target="_blank"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="UFC" width="160" height="160" class="alignnone size-full wp-image-392 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg" alt="UFC" width="160" height="160" class="alignnone size-full wp-image-392" data-eio="l" /></noscript></a>
-          </div>
-          </div>
-        </div>
-      </div><!--  //row end  -->
-    </div><!--  //wrap end  -->
+<div class="list">
+<ul>
+<li class="main">SBとは</li>
+<li><a href="https://shootboxing.org/about">SBとは</a></li>
+<li><a href="https://shootboxing.org/rule">SBルール</a></li>
+<li><a href="https://shootboxing.org/s-cup">S-cup</a></li>
+<li><a href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+<li><a href="https://shootboxing.org/history">SBヒストリー</a></li>
+<li><a href="https://shootboxing.org/human_of_sb">HUMAN OF SB</a></li>
+</ul>
+</div>
 
-  </div>
-</section>
-<!-- =================* MEDIA END *================= -->
-<!-- =================* SPONSOR START *================= -->
-<section id="sponsor" class="qnt_section_bgwh">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">SPONSORS<!-- SUPPORTERS --></h3>
-      <div class="subtitle">スポンサー企業</div>
-    </div>
-		  
-    <div class="qnt_spnsors_wrapper">
-      <h4 class="qnt_top_subsponsors">Sponsors</h4>
+<div class="list-last">
+<ul>
+<li class="main">etc.</li>
+<li><a href="https://shootboxing.stores.jp/" target="_blank">オフィシャルショップ</a></li>
+<li><a href="https://rena-official.amebaownd.com/" target="_blank">RENAオフィシャル</a></li>
+<li><a href="https://shootboxing.org/roundgirl">ラウンドガール</a></li>
+</ul>
+</div>
+<hr>
 
-      <div class="row pt-4 justify-content-sm-center">
+<div class="list">
+<ul>
+<li class="main"><a href="https://shootboxing.org/sitemap">サイトマップ</a></li>
+<li><a href="https://shootboxing.org/company/contact">お問い合わせ</a></li>
+<li><a href="https://shootboxing.org/privacy">プライバシーポリシー</a></li>
+</ul>
+</div>
+<hr>
+<div id="logo-footer"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo-footer.png" alt="シュートボクシング"></a></div>
 
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors qnt_top_sponsors--kiss"><a href="https://www.tachihi.co.jp/" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="立飛ホールディングス" width="160" height="160" class="alignnone size-full wp-image-352 lazyload" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/12/tachihi.svg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/12/tachihi.svg" alt="立飛ホールディングス" width="160" height="160" class="alignnone size-full wp-image-352" data-eio="l" /></noscript></a>
-          </div>
-        </div>
+</div><!-- インナーここまで -->
 
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors qnt_top_sponsors--kiss"><a href="https://www.sunchlorella.co.jp/" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="株式会社 サン・クロレラ" width="160" height="160" class="alignnone size-full wp-image-352 lazyload" data-src="https://www.quintet-fight.com/wp-content/uploads/2019/01/sunchlorella.svg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2019/01/sunchlorella.svg" alt="株式会社 サン・クロレラ" width="160" height="160" class="alignnone size-full wp-image-352" data-eio="l" /></noscript></a>
-          </div>
-        </div>
-        
-      </div> <!--  //row end  -->
-    </div><!--  //wrap end  -->
-    <div class="qnt_spnsors_wrapper">
-      
-      <div class="row pt-4 justify-content-sm-center">
-        
-        <div class="col-6 col-sm-2 text-center">
-            <span class="qnt_top_org">Organization</span>
-            <div class="qnt_top_sponsors">
-            <div class="qnt_top_sponsors--rabarland"><a href="#" target="_blank" rel="noopener noreferrer"></a><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="rabarLAND" width="160" height="160" class="alignnone size-full wp-image-296 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg" alt="rabarLAND" width="160" height="160" class="alignnone size-full wp-image-296" data-eio="l" /></noscript>
-            </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-sm-2 text-center">
-            <span class="qnt_top_org">Cooperation</span>
-            <div class="qnt_top_sponsors qnt_top_sponsors--polaris"><a href="https://www.jbjjf.com/" target="_blank" rel="noopener noreferrer"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/jbjjf.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="JBJJF" width="160" height="160" class="alignnone size-full wp-image-352 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/jbjjf.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/jbjjf.jpg" alt="JBJJF" width="160" height="160" class="alignnone size-full wp-image-352" data-eio="l" /></noscript></a></div>
-        </div>
-
-        <div class="col-6 col-sm-2 text-center">
-          <span class="qnt_top_org">Cooperation</span>
-          <div class="qnt_top_sponsors qnt_top_sponsors--polaris"><a href="http://www.dnetjapan.com/" target="_blank" rel="noopener noreferrer"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/dnet.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="D Net" width="160" height="160" class="alignnone size-full wp-image-353 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/dnet.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/dnet.jpg" alt="D Net" width="160" height="160" class="alignnone size-full wp-image-353" data-eio="l" /></noscript></a></div>
-        </div>
-
-        <div class="col-6 col-sm-2 text-center">
-          <span class="qnt_top_org">Cooperation</span>
-          <div class="qnt_top_sponsors qnt_top_sponsors--polaris"><a href="https://mitsui-shopping-park.com/lalaport/tachikawa/" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="三井ショッピングパーク ららぽーと立川立飛" width="160" height="160" class="alignnone size-full wp-image-353 lazyload" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/12/lalaport.svg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/12/lalaport.svg" alt="三井ショッピングパーク ららぽーと立川立飛" width="160" height="160" class="alignnone size-full wp-image-353" data-eio="l" /></noscript></a></div>
-        </div>
-        
-        
-        
-      </div> <!--  //row end  -->
-    </div><!--  //wrap end  -->
-  </div>
-</section>
-<!-- =================* SPONSOR END *================= -->
+</div>
 
 
-  
-<!-- ここからボタン -->
-<p id="page-top"><a href="#wrap"><i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i></a></p>
-<!-- ここまでボタン -->
-
-<footer class="qnt_section_bgstronggray">
-  <div class="container">
-  <div class="row qnt_footer_area">
-    <p class="col-12 col-sm-4">&copy; 2018 rabarland INC.</p>
-    <div class="col-12 col-sm-8">
-      <div class="row">
-        <div class="col">
-          <a href="https://www.facebook.com/QUINTET.PR/" target="_blank">
-            <i class="fab fa-facebook-f fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://twitter.com/quintet_pr" target="_blank">
-            <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.instagram.com/quintet_pr/" target="_blank">
-            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA" target="_blank">
-            <i class="fab fa-youtube fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.quintet-fight.com/contact/">
-            <i class="far fa-envelope fa-3x" aria-hidden="true"></i>
-          </a>
-        </div>
-
-      </div><!--  //row end -->
-    </div><!--  //col-sm-8 end  -->
+<div id="foot-sns-icon" class="foot-sns-icon">
+  <div class="inner">
+    <ul class="sns-icon-list">
+      <li><a href="https://twitter.com/SHOOT_BOXING" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-x-black.svg" alt="X" width="20" height="20"></a></li>
+      <li><a href="https://ja-jp.facebook.com/shootboxing" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-facebook-black.svg" alt="facebook" width="23" height="23"></a></li>
+      <li><a href="https://www.instagram.com/shootboxing_official/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-instagram-black.svg" alt="instagram" width="21" height="21"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-youtube-black.svg" alt="YouTube" width="26" height="18"></a></li>
+      <li><a href="https://www.tiktok.com/@shootboxing_official" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-tiktok-black.svg" alt="tiktok" width="21" height="24"></a></li>
+    </ul>
   </div>
 </div>
-</footer>
-
-<!-- ✅ Bootstrap 4.6.2 JS（Popper含む） -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8QmZlV9zzTtmI3xDkhjE7W5y1z6jIW3z4hZ"
-        crossorigin="anonymous"></script>
-
-<!-- Custom JS -->
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/tr-hover.js"></script>
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/to-top.js"></script>
 
 
-<script type="text/javascript">
-const wpvViewHead = document.getElementsByTagName( "head" )[ 0 ];
-const wpvViewExtraCss = document.createElement( "style" );
-wpvViewExtraCss.textContent = '<!--[if IE 7]><style>.wpv-pagination { *zoom: 1; }</style><![endif]-->';
-wpvViewHead.appendChild( wpvViewExtraCss );
-</script>
+<div id="foot-bottom">
+<p class="copy">Copyrighat&#169;SHOOT BOXING, All rights reserved.</p>
+</div>
+
+</footer><!-- フッターここまで -->
+</div>
+
+</div><!-- コンテナここまで -->
+
+<div id="back-top">
+<a href="#TOP"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</div>
+
 <script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/quintet/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/wp/wp-content/uploads/*","/wp/wp-content/*","/wp/wp-content/plugins/*","/wp/wp-content/themes/sb-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script id="eio-lazy-load-js-before">
-const eio_lazy_vars = {"bg_min_dpr":1.1000000000000001,"exactdn_domain":"","safe_paths":["\/wp-content\/plugins","\/wp-content\/themes","\/wp-includes\/"],"safe_domains":["www.quintet-fight.com","quintet-fight.com"],"skip_autoscale":0,"threshold":0,"use_dpr":1};Object.freeze(eio_lazy_vars);
-//# sourceURL=eio-lazy-load-js-before
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://shootboxing.org/wp/wp-admin/admin-ajax.php";
 </script>
-<script async data-wp-strategy="async" id="eio-lazy-load-js" src="https://www.quintet-fight.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=892"></script>
-<script id="wp-hooks-js" src="https://www.quintet-fight.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
-<script id="wp-i18n-js" src="https://www.quintet-fight.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-hooks-js" src="https://shootboxing.org/wp/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://shootboxing.org/wp/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-<script id="swv-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.6"></script>
+<script id="swv-js" src="https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6"></script>
 <script id="contact-form-7-js-translations">
 ( function( domain, translations ) {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "contact-form-7", {"translation-revision-date":"2026-11-23 02:57:54+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+} )( "contact-form-7", {"translation-revision-date":"2025-11-30 08:12:23+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
 //# sourceURL=contact-form-7-js-translations
 </script>
 <script id="contact-form-7-js-before">
 var wpcf7 = {
     "api": {
-        "root": "https:\/\/www.quintet-fight.com\/wp-json\/",
+        "root": "https:\/\/shootboxing.org\/wp-json\/",
         "namespace": "contact-form-7\/v1"
     }
 };
 //# sourceURL=contact-form-7-js-before
 </script>
-<script id="contact-form-7-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.6"></script>
-<script id="ddl-tabs-scripts-js" src="https://www.quintet-fight.com/wp-content/plugins/layouts/resources/js/ddl-tabs-cell-frontend.js?ver=2.6.20"></script>
-<script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6LfFEp0UAAAAAKPLg3tNQ1LGzsUHjfwr9EnazTZZ&#038;ver=3.0"></script>
-<script id="wp-polyfill-js" src="https://www.quintet-fight.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"></script>
-<script id="wpcf7-recaptcha-js-before">
-var wpcf7_recaptcha = {
-    "sitekey": "6LfFEp0UAAAAAKPLg3tNQ1LGzsUHjfwr9EnazTZZ",
-    "actions": {
-        "homepage": "homepage",
-        "contactform": "contactform"
-    }
-};
-//# sourceURL=wpcf7-recaptcha-js-before
+<script id="contact-form-7-js" src="https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6"></script>
+<script id="fancybox-purify-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=7.0.9"></script>
+<script id="jquery-fancybox-js-extra">
+var efb_i18n = {"close":"Close","next":"Next","prev":"Previous","startSlideshow":"Start slideshow","toggleSize":"Toggle size"};
+//# sourceURL=jquery-fancybox-js-extra
 </script>
-<script id="wpcf7-recaptcha-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.2.6"></script>
-<script id="wp_ddl_layout_fe_js-js" src="https://www.quintet-fight.com/wp-content/uploads/ddl-layouts-tmp/b33dadb29e6b2364d044c07d48eb17c0.js?ver=2.6.20"></script>
-<script id="jquery-ui-core-js-before">
-jQuery.uiBackCompat = true;
-//# sourceURL=jquery-ui-core-js-before
+<script id="jquery-fancybox-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=7.0.9"></script>
+<script id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'width':560,'height':340,'margin':20,'pixelRatio':'false','padding':10,'centerOnScroll':false,'enableEscapeButton':true,'speedIn':300,'speedOut':300,'overlayShow':true,'hideOnOverlayClick':true,'overlayColor':'#000','overlayOpacity':0.6,'minViewportWidth':320,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-file__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+						var unlinkedImageBlocks=jQuery(".wp-block-image > img:not(.nofancybox,figure.nofancybox>img)");
+						unlinkedImageBlocks.wrap(function() {
+							var href = jQuery( this ).attr( "src" );
+							return jQuery( "<a></a>" ).attr( "href", href );
+						});
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".webp" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery,.ngg-galleryoverview,.ngg-imagebrowser,.nextgen_pro_blog_gallery,.nextgen_pro_film,.nextgen_pro_horizontal_filmstrip,.ngg-pro-masonry-wrapper,.ngg-pro-mosaic-container,.nextgen_pro_sidescroll,.nextgen_pro_slideshow,.nextgen_pro_thumbnail_grid,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transition':'elastic','transitionIn':'elastic','transitionOut':'elastic','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'mouseWheel':'true','changeSpeed':250,'changeFade':300}))});
+};};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+
+//# sourceURL=jquery-fancybox-js-after
 </script>
-<script id="jquery-ui-core-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-datepicker-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-mouse-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-slider-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.14.2"></script>
-<script id="jquery-touch-punch-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2"></script>
-<script id="mediaelement-core-js-before">
-var mejsL10n = {"language":"ja","strings":{"mejs.download-file":"\u30d5\u30a1\u30a4\u30eb\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9","mejs.install-flash":"\u3054\u5229\u7528\u306e\u30d6\u30e9\u30a6\u30b6\u30fc\u306f Flash Player \u304c\u7121\u52b9\u306b\u306a\u3063\u3066\u3044\u308b\u304b\u3001\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002Flash Player \u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u6709\u52b9\u306b\u3059\u308b\u304b\u3001\u6700\u65b0\u30d0\u30fc\u30b8\u30e7\u30f3\u3092 https://get.adobe.com/jp/flashplayer/ \u304b\u3089\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u304f\u3060\u3055\u3044\u3002","mejs.fullscreen":"\u30d5\u30eb\u30b9\u30af\u30ea\u30fc\u30f3","mejs.play":"\u518d\u751f","mejs.pause":"\u505c\u6b62","mejs.time-slider":"\u30bf\u30a4\u30e0\u30b9\u30e9\u30a4\u30c0\u30fc","mejs.time-help-text":"1\u79d2\u9032\u3080\u306b\u306f\u5de6\u53f3\u77e2\u5370\u30ad\u30fc\u3092\u300110\u79d2\u9032\u3080\u306b\u306f\u4e0a\u4e0b\u77e2\u5370\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u304f\u3060\u3055\u3044\u3002","mejs.live-broadcast":"\u751f\u653e\u9001","mejs.volume-help-text":"\u30dc\u30ea\u30e5\u30fc\u30e0\u8abf\u7bc0\u306b\u306f\u4e0a\u4e0b\u77e2\u5370\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u304f\u3060\u3055\u3044\u3002","mejs.unmute":"\u30df\u30e5\u30fc\u30c8\u89e3\u9664","mejs.mute":"\u30df\u30e5\u30fc\u30c8","mejs.volume-slider":"\u30dc\u30ea\u30e5\u30fc\u30e0\u30b9\u30e9\u30a4\u30c0\u30fc","mejs.video-player":"\u52d5\u753b\u30d7\u30ec\u30fc\u30e4\u30fc","mejs.audio-player":"\u97f3\u58f0\u30d7\u30ec\u30fc\u30e4\u30fc","mejs.captions-subtitles":"\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3/\u5b57\u5e55","mejs.captions-chapters":"\u30c1\u30e3\u30d7\u30bf\u30fc","mejs.none":"\u306a\u3057","mejs.afrikaans":"\u30a2\u30d5\u30ea\u30ab\u30fc\u30f3\u30b9\u8a9e","mejs.albanian":"\u30a2\u30eb\u30d0\u30cb\u30a2\u8a9e","mejs.arabic":"\u30a2\u30e9\u30d3\u30a2\u8a9e","mejs.belarusian":"\u30d9\u30e9\u30eb\u30fc\u30b7\u8a9e","mejs.bulgarian":"\u30d6\u30eb\u30ac\u30ea\u30a2\u8a9e","mejs.catalan":"\u30ab\u30bf\u30ed\u30cb\u30a2\u8a9e","mejs.chinese":"\u4e2d\u56fd\u8a9e","mejs.chinese-simplified":"\u4e2d\u56fd\u8a9e (\u7c21\u4f53\u5b57)","mejs.chinese-traditional":"\u4e2d\u56fd\u8a9e (\u7e41\u4f53\u5b57)","mejs.croatian":"\u30af\u30ed\u30a2\u30c1\u30a2\u8a9e","mejs.czech":"\u30c1\u30a7\u30b3\u8a9e","mejs.danish":"\u30c7\u30f3\u30de\u30fc\u30af\u8a9e","mejs.dutch":"\u30aa\u30e9\u30f3\u30c0\u8a9e","mejs.english":"\u82f1\u8a9e","mejs.estonian":"\u30a8\u30b9\u30c8\u30cb\u30a2\u8a9e","mejs.filipino":"\u30d5\u30a3\u30ea\u30d4\u30f3\u8a9e","mejs.finnish":"\u30d5\u30a3\u30f3\u30e9\u30f3\u30c9\u8a9e","mejs.french":"\u30d5\u30e9\u30f3\u30b9\u8a9e","mejs.galician":"\u30ac\u30ea\u30b7\u30a2\u8a9e","mejs.german":"\u30c9\u30a4\u30c4\u8a9e","mejs.greek":"\u30ae\u30ea\u30b7\u30e3\u8a9e","mejs.haitian-creole":"\u30cf\u30a4\u30c1\u8a9e","mejs.hebrew":"\u30d8\u30d6\u30e9\u30a4\u8a9e","mejs.hindi":"\u30d2\u30f3\u30c7\u30a3\u30fc\u8a9e","mejs.hungarian":"\u30cf\u30f3\u30ac\u30ea\u30fc\u8a9e","mejs.icelandic":"\u30a2\u30a4\u30b9\u30e9\u30f3\u30c9\u8a9e","mejs.indonesian":"\u30a4\u30f3\u30c9\u30cd\u30b7\u30a2\u8a9e","mejs.irish":"\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9\u8a9e","mejs.italian":"\u30a4\u30bf\u30ea\u30a2\u8a9e","mejs.japanese":"\u65e5\u672c\u8a9e","mejs.korean":"\u97d3\u56fd\u8a9e","mejs.latvian":"\u30e9\u30c8\u30d3\u30a2\u8a9e","mejs.lithuanian":"\u30ea\u30c8\u30a2\u30cb\u30a2\u8a9e","mejs.macedonian":"\u30de\u30b1\u30c9\u30cb\u30a2\u8a9e","mejs.malay":"\u30de\u30ec\u30fc\u8a9e","mejs.maltese":"\u30de\u30eb\u30bf\u8a9e","mejs.norwegian":"\u30ce\u30eb\u30a6\u30a7\u30fc\u8a9e","mejs.persian":"\u30da\u30eb\u30b7\u30a2\u8a9e","mejs.polish":"\u30dd\u30fc\u30e9\u30f3\u30c9\u8a9e","mejs.portuguese":"\u30dd\u30eb\u30c8\u30ac\u30eb\u8a9e","mejs.romanian":"\u30eb\u30fc\u30de\u30cb\u30a2\u8a9e","mejs.russian":"\u30ed\u30b7\u30a2\u8a9e","mejs.serbian":"\u30bb\u30eb\u30d3\u30a2\u8a9e","mejs.slovak":"\u30b9\u30ed\u30d0\u30ad\u30a2\u8a9e","mejs.slovenian":"\u30b9\u30ed\u30d9\u30cb\u30a2\u8a9e","mejs.spanish":"\u30b9\u30da\u30a4\u30f3\u8a9e","mejs.swahili":"\u30b9\u30ef\u30d2\u30ea\u8a9e","mejs.swedish":"\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3\u8a9e","mejs.tagalog":"\u30bf\u30ac\u30ed\u30b0\u8a9e","mejs.thai":"\u30bf\u30a4\u8a9e","mejs.turkish":"\u30c8\u30eb\u30b3\u8a9e","mejs.ukrainian":"\u30a6\u30af\u30e9\u30a4\u30ca\u8a9e","mejs.vietnamese":"\u30d9\u30c8\u30ca\u30e0\u8a9e","mejs.welsh":"\u30a6\u30a7\u30fc\u30eb\u30ba\u8a9e","mejs.yiddish":"\u30a4\u30c7\u30a3\u30c3\u30b7\u30e5\u8a9e"}};
-//# sourceURL=mediaelement-core-js-before
-</script>
-<script id="mediaelement-core-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17"></script>
-<script id="mediaelement-migrate-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=7.1.5"></script>
-<script id="mediaelement-js-extra">
-var _wpmejsSettings = {"pluginPath":"/wp-includes/js/mediaelement/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
-//# sourceURL=mediaelement-js-extra
-</script>
-<script id="wp-mediaelement-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=7.1.5"></script>
-<script id="underscore-js" src="https://www.quintet-fight.com/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
-<script id="wp-util-js-extra">
-var _wpUtilSettings = {"ajax":{"url":"/wp-admin/admin-ajax.php"}};
-//# sourceURL=wp-util-js-extra
-</script>
-<script id="wp-util-js" src="https://www.quintet-fight.com/wp-includes/js/wp-util.min.js?ver=7.1.5"></script>
-<script id="backbone-js" src="https://www.quintet-fight.com/wp-includes/js/backbone.min.js?ver=1.6.1"></script>
-<script id="wp-playlist-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-playlist.min.js?ver=7.1.5"></script>
-<script id="views-blocks-frontend-js-extra">
-var wpv_pagination_local = {"front_ajaxurl":"https://www.quintet-fight.com/wp-admin/admin-ajax.php","calendar_image":"https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"datepicker_min_year":"1582","datepicker_max_year":"3000","resize_debounce_tolerance":"100","datepicker_style_url":"https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/toolset-forms/css/wpt-jquery-ui/jquery-ui-1.11.4.custom.css","wpmlLang":""};
-//# sourceURL=views-blocks-frontend-js-extra
-</script>
-<script id="views-blocks-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/wp-views/public/js/views-frontend.js?ver=3.6.30"></script>
+<script id="jquery-easing-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1"></script>
+<script id="jquery-mousewheel-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13"></script>
 <script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.quintet-fight.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.5"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://shootboxing.org/wp/wp-includes/js/wp-emoji-release.min.js?ver=7.0.9"}}
 </script>
 <script type="module">
 /*! This file is auto-generated */
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
-//# sourceURL=https://www.quintet-fight.com/wp-includes/js/wp-emoji-loader.min.js
+//# sourceURL=https://shootboxing.org/wp/wp-includes/js/wp-emoji-loader.min.js
 </script>
+
 </body>
 </html>

@@ -1,993 +1,248 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js">
-<head><link rel="alternate" hreflang="en" href="https://www.quintet-fight.com/en/eventinfo/quintet-3/"><link rel="alternate" hreflang="x-default" href="https://www.quintet-fight.com/eventinfo/quintet-3/" data-wovn="true"><script src="https://j.wovn.io/1" data-wovnio="key=1ddJez&amp;backend=true&amp;currentLang=ja&amp;defaultLang=ja&amp;urlPattern=path&amp;langCodeAliases=[]&amp;debugMode=false&amp;langParamName=wovn" data-wovnio-info="version=WOVN.wp_1.15.0&amp;supportedLangs=[en]&amp;timeout=1"  async></script>
-<meta charset="UTF-8" >
+<html lang="ja">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="google-site-verification" content="ChgWWmxyIo8y9lDo_gSry0Naw3VQ1xabzpMVc0bM03w" />
-<title>QUINTET.3 | QUINTET</title>
-<!-- ✅ Bootstrap 4.6.2 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-607932-84"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    gtag('config', 'UA-607932-84');
+  </script>
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:300,700,900' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-<link rel="shortcut icon" href="https://www.quintet-fight.com/wp-content/themes/quintet/favicon.ico" >
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/jquery.inview.min.js"></script>
-<script>
-  jQuery(document).ready(function(){
-    jQuery(function() {
-    var topBtn = jQuery('#page-top');    
-    topBtn.hide();
-    //スクロールが100に達したらボタン表示
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        jQuery('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-  });
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117846228-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <title>『阿仁鬼 | ANIKI  』 日本修斗協会公認サイト | PRO SHOOTO MMA JAPAN - 修斗 - サステイン </title>
+  <link rel="icon" type="image/png" href="/shooto_logo_master.png" sizes="16x16">
+  <meta name="keywords" content="修斗,SHOOTO,MMA,総合格闘技,阿仁鬼 | ANIKI  ">
+  <meta name="description" content="修斗（SHOOTO）公式サイト 阿仁鬼 | ANIKI  選手情報">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  gtag('config', 'UA-117846228-1');
-</script>
-<!-- table tr全体がhoverのエリアになる -->
-<script>
-jQuery( function($) {
-    $('tbody tr[data-href]').addClass('clickable').click( function() {
-        window.location = $(this).attr('data-href');
-    }).find('a').hover( function() {
-        $(this).parents('tr').unbind('click');
-    }, function() {
-        $(this).parents('tr').click( function() {
-            window.location = $(this).attr('data-href');
-        });
-    });
-});
-</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css.css?version=260714">
+  <link rel="stylesheet" type="text/css" href="/menu.css?version=260202" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="//apis.google.com/js/platform.js"></script>
+  <script src="/jquery.mobile-menu.js"></script>
+  <script src="/pagetop.js"></script>
+  <style>
+    .social-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
 
-<meta name='robots' content='max-image-preview:large' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.quintet-fight.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.quintet-fight.com%2Feventinfo%2Fquintet-3%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.quintet-fight.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.quintet-fight.com%2Feventinfo%2Fquintet-3%2F&#038;format=xml" />
-<style id="wp-img-auto-sizes-contain-inline-css">
-img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
-/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-</style>
-<style id="wp-emoji-styles-inline-css">
+    .insta-link {
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+      background-color: black;
+      padding: 0px 10px;
+      border-radius: 5000px;
+      overflow: visible !important;
+      color: white !important;
+    }
 
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-/*# sourceURL=wp-emoji-styles-inline-css */
-</style>
-<style id="wp-block-library-inline-css">
-:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+    .sms-icon {
+      width: 28px !important;
+      height: 28px !important;
+      color: black;
+      padding: 6px;
+    }
 
-/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
-</style>
-<style id="classic-theme-styles-inline-css">
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-/*# sourceURL=/wp-includes/css/classic-themes.min.css */
-</style>
+    .sms-link {
+      vertical-align: middle;
+      height: 28px !important;
+      width: fit-content;
+      background: white;
+      border-radius: 50%;
+    }
 
-<link rel='stylesheet' id='mediaelement-css' href='https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' media='all' />
-<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=7.1.5' media='all' />
-<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css' href='https://www.quintet-fight.com/wp-content/plugins/wp-views/public/css/views-frontend.css?ver=3.6.30' media='all' />
-<style id="view_editor_gutenberg_frontend_assets-inline-css">
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
-.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
-/*# sourceURL=view_editor_gutenberg_frontend_assets-inline-css */
-</style>
-<style id="global-styles-inline-css">
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-/*# sourceURL=global-styles-inline-css */
-</style>
-
-<link rel='stylesheet' id='contact-form-7-css' href='https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.6' media='all' />
-<link rel='stylesheet' id='quintet-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/style.css?ver=7.1.5' media='all' />
-<link rel='stylesheet' id='quintet-sp-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/css/sp.css?ver=20180209' media='all' />
-<link rel='stylesheet' id='quintet-md-style-css' href='https://www.quintet-fight.com/wp-content/themes/quintet/css/md.css?ver=20180319' media='all' />
-<link rel='stylesheet' id='menu-cells-front-end-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/resources/css/cell-menu-css.css?ver=2.6.20' media='screen' />
-<link rel='stylesheet' id='toolset-notifications-css-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/res/css/toolset-notifications.css?ver=4.5.3' media='screen' />
-<link rel='stylesheet' id='ddl-front-end-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/resources/css/ddl-front-end.css?ver=2.6.20' media='screen' />
-<link rel='stylesheet' id='toolset-common-css' href='https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/res/css/toolset-common.css?ver=4.5.3' media='screen' />
-<script id="toolset-common-es-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=178000"></script>
-<script id="jquery-core-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-<script id="jquery-migrate-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
-<script id="ddl-layouts-frontend-js-extra">
-var DDLayout_fe_settings = {"DDL_JS":{"css_framework":"bootstrap-3","DEBUG":false}};
-//# sourceURL=ddl-layouts-frontend-js-extra
-</script>
-<script id="ddl-layouts-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/layouts/resources/js/ddl-layouts-frontend.js?ver=2.6.20"></script>
-<link rel="https://api.w.org/" href="https://www.quintet-fight.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.quintet-fight.com/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 7.1.5" />
-<link rel="canonical" href="https://www.quintet-fight.com/eventinfo/quintet-3/" />
-<link rel='shortlink' href='https://www.quintet-fight.com/?p=1476' />
-
-<meta property="og:title" content="QUINTET.3">
-<meta property="og:description" content="">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.quintet-fight.com/eventinfo/quintet-3/">
-<meta property="og:image" content="https://www.quintet-fight.com/wp-content/uploads/2020/08/quintet_logo_sns.jpg">
-<meta property="og:site_name" content="QUINTET">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@QUINTET.PR">
-<meta property="og:locale" content="ja_JP">
- <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,j=d.createElement(s); if(s==='script'){j.src='https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/js/frontend.js?v=1.6.25';}else{ j.rel='stylesheet';j.href='https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css?v=1.6.25';} d.body.appendChild(j); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
-	<noscript>
-		<link rel="stylesheet" href="https://www.quintet-fight.com/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css">
-	</noscript><noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
+    .pf-fighter-sms {
+      color: #666;
+      margin-bottom: 0.2em;
+      vertical-align: middle;
+      margin-top: 0.6em;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+  </style>
 </head>
-<body class="wp-singular eventinfo-template-default single single-eventinfo postid-1476 wp-theme-quintet" id="wrap">
-<header>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000;">
-  <div class="container">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="https://www.quintet-fight.com/" rel="home">
-    <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAwAQAAAADbP768AAAAAnRSTlMAAHaTzTgAAAAQSURBVBgZYxgFo2AUDFkAAAPAAAF2pdCRAAAAAElFTkSuQmCC" height="48" width="150" alt="QUINTET" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png" decoding="async" class="lazyload" data-eio-rwidth="150" data-eio-rheight="48"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/themes/quintet/images/logo_wh_h_sm.png" height="48" width="150" alt="QUINTET" data-eio="l"></noscript>
-    
-  </a>
 
+<body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <div id="navbarTogglerDemo02" class="collapse navbar-collapse"><ul id="globalnav" class="navbar-nav ml-auto mt-2 mt-md-0"><li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-590"><a href="https://www.quintet-fight.com/">Home</a></li>
-<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="https://www.quintet-fight.com/about-us/">About</a></li>
-<li id="menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-594"><a href="https://www.quintet-fight.com/news/">News</a></li>
-<li id="menu-item-958" class="menu-item menu-item-type-post_type_archive menu-item-object-eventinfo menu-item-958"><a href="https://www.quintet-fight.com/eventinfo/">Events</a></li>
-<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="https://www.quintet-fight.com/results/">Results</a></li>
-<li id="menu-item-595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595"><a href="https://www.quintet-fight.com/profile/">Profile</a></li>
-<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="https://www.quintet-fight.com/rule/">Rule</a></li>
-<li id="menu-item-596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-596"><a target="_blank" href="https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA">Videos</a></li>
-<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="https://www.quintet-fight.com/contact/">Contact</a></li>
-</ul></div>
-</div><!--  // container end  -->
-</nav>
+  ga('create', 'UA-607932-84', 'auto');
+  ga('send', 'pageview');
+
+</script>  <style>
+    .nextfight {
+      position: absolute;
+      bottom: 5.5em !important;
+      text-align: center;
+      width: 100%;
+      margin-left: -1.5em;
+    }
+
+    .nf {
+      height: 70px;
+      display: block;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 1px #000;
+    }
+
+    .nf strong {
+      color: #DDD;
+    }
+
+    .nf-day {
+      text-align: right;
+      color: #DDD;
+      text-align: center;
+      font-size: 0.5em;
+    }
+
+    .nf-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+    }
+  </style>
+  <div id="main">
+    <div id="contents">
+      <div id="shadow">
+        <div id="gauge">
+
+          
+<script>
+$(function () {
+    var navi = $("#sllide_menu");
+    var open_btn =$("#build-menu-button");
+    var close_btn = $(".menu-close");
+
+	// OPEN
+	open_btn.click(function () {
+		$(navi).toggleClass("active");
+	});
+
+    // CLOSE
+	close_btn.click(function () {
+		$(navi).removeClass("active");
+	});
+});
+</script>
+
+<header id="header">
+<div id="build-menu-button">
+<div id="navi" class="glyphicon glyphicon-menu-hamburger"></div>
+</div>
+<div class="container">
+<h1><a href="https://shooto-mma.com"></a></h1>
+<div class="head-link">
+<a href="/about/" style="width:10em">About Shooto</a>
+<a href="/schedule/">Schedule</a>
+<a href="/fighters/?pg=fighters&weight_class=1">Fighters</a>
+<a href="/ranking/">Ranking</a>
+<a href="/result/">Result</a>
+<!--<a href="/colum/">Colum</a>-->
+<a class="sns_icon" href="https://x.com/xshooto?ref_src=twsrc%5Etfw" target="_blank"><img src="/images/x-twitter.svg" alt="twitter"></a>
+<a class="sns_icon" href="https://www.instagram.com/shooto_sustain/" target="_blank"><img src="/images/instagram.svg" alt="instagram"></a>
+</div>
+</div>
 </header>
 
-
-<div class="qnt_jumbotron_kv_sm">
-  <div class="container qnt_jumbotron_content lead">
-      <h1 class="qnt_newsheadline">QUINTET.3</h1>
-  <p class="event-sub">—Grappling Team Survival Match—&nbsp;|&nbsp;2018年10月5日 [金]</p>
-  
-  </div>
+<div id="sllide_menu">
+<div class="menu-close"><img src="/images/close-icon.svg" alt=""></div>
+<nav>
+<ul>
+<li><a class="menu-item" href="/about">About Shooto<small class="pull-right">修斗とは</small></a></li>
+<li><a class="menu-item" href="/schedule">Schedule<small class="pull-right">開催予定</small></a></li>
+<li><a class="menu-item" href="/fighters/?pg=fighters&weight_class=1">Fighters<small class="pull-right">選手紹介</small></a></li>
+<li><a class="menu-item" href="/ranking">Ranking<small class="pull-right">ランキング</small></a></li>
+<li><a class="menu-item" href="/result">Result<small class="pull-right">大会結果</small></a></li>
+<!--<li><a class="menu-item" href="/ticket">Ticket<small class="pull-right">チケット</small></a></li>-->
+<!--<li><a class="menu-item" href="/colum">Colum<small class="pull-right">コラム</small></a></li>-->
+</ul>
+<div class="sns_block">
+    <a class="sns_icon" href="https://x.com/xshooto?ref_src=twsrc%5Etfw" target="_blank"><img src="/images/x-twitter.svg" alt="twitter"></a>
+    <a class="sns_icon" href="https://www.instagram.com/shooto_sustain/" target="_blank"><img src="/images/instagram.svg" alt="instagram"></a>
 </div>
-<div class="qnt_breadcrumb">
-  <div class="container">
-    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-      <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://www.quintet-fight.com" class="home"><span property="name">HOME</span></a><meta property="position" content="1"></span> » <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="イベント情報へ移動" href="https://www.quintet-fight.com/eventinfo/" class="archive post-eventinfo-archive"><span property="name">イベント情報</span></a><meta property="position" content="2"></span> » <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the ナンバー大会 Type-of-event archives." href="https://www.quintet-fight.com/type-of-event/number-event/" class="taxonomy type-of-event"><span property="name">ナンバー大会</span></a><meta property="position" content="3"></span> » <span property="itemListElement" typeof="ListItem"><span property="name">QUINTET.3</span><meta property="position" content="4"></span>    </div>
-  </div>
-</div>
+</nav>
+</div>          <div id="pagetop"></div>
+          <div class="container">
+            <h2>FIGHTERS<small style="margin-left:1em;"><a href="./?">選手紹介</a></small><small style="margin-left:1em;">阿仁鬼</small></h2>
 
-
-                <section class="full-bg qnt_section_bggray event_information py-5"  >
-                <div class="container ">
-                <div class="row">
-                <div class="col-sm-4"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/09/poster_20181005-1.jpg.webp"><img decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAASwAQAAAAAryhMIAAAAAnRSTlMAAHaTzTgAAACMSURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwbZfwABjcqieQAAAABJRU5ErkJggg==" title="poster_20181005" class="attachment-full lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/09/poster_20181005-1.jpg" data-eio-rwidth="800" data-eio-rheight="1200" /></picture><noscript><img decoding="async" src="https://www.quintet-fight.com/wp-content/uploads/2018/09/poster_20181005-1.jpg" title="poster_20181005" class="attachment-full" data-eio="l" /></noscript>
-</div><div class="col-sm-8"><div class="qnt_event_info">
-<h2 class="title">QUINTET.3</h2>
-<div class="qnt_event_subtitle">—Grappling Team Survival Match—</div>
-<table class="qnt_eventinfo_table">
-<tr>
-<th>日時</th>
-<td>2018年10月5日</td>
-</tr>
-<tr>
-<th>開場・開始</th>
-<td>開場 18:00　開始 19:00</td>
-</tr>
-<tr>
-<th>会場</th>
-<td>Orleans Arena（The Orleans Hotel and Casino）</td>
-</tr>
-<tr>
-<th>アクセス</th>
-<td><p>4500 W. Tropicana Avenue Las Vegas, Nevada 89103</p>
-</td>
-</tr>
-<tr>
-<th>主催</th>
-<td>株式会社ラバーランド / HESSER ENTERTAINMENT</td>
-</tr>
-<tr>
-<th>特別協賛</th>
-<td>
-
-
-<div id="wpv-view-layout-4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-viewnumber="4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-pagination="{&quot;id&quot;:&quot;4784&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/quintet-3/?wpv_view_count=4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/quintet-3/?wpv_view_count=4784-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476">
-
+            <div class="row"><div class="col-xs-12 col-md-4">
+	<div class="fighter-img" style="background:url(/images/6294928b4993d.jpg) no-repeat top;min-height:400px;background-size:contain;">
 	
 	
-		<strong>-</strong>
+	<div class="fighter-score"><span class="total_num"><b>4</b>戦</span><span class="win_num"><b>2</b>勝</span><span class="lose_num"><b>2</b>敗</span><div style=" font-weight: normal; text-shadow: 1px 1px 1px #000;">（プロ修斗公式戦 / プロ戦績）</div></div>
+	</div></div><div class="col-xs-12 col-md-8 fighter-data">
+	<div id="pf-fighter-profile">
+	<div class="pf-fighter-weight-class"><span><a href="./?pg=fighters&weight_class=4">フェザー級<span> [ -65.8 Kg ]</span></a><span></div>
+	<div class="pf-fighter-name">阿仁鬼  </div>
+	<div class="pf-fighter-name-roma"><span>ANIKI  <span></div>
+		<div class="pf-fighter-gym">所属 : <span><a href="./?pg=fighters&gymid=418">マルスジム</a><span></div>
+	<div class="pf-fighter-country">国籍 : <span><a href="./?pg=fighters&home_country=日本">日本</a><span></div>
+	<h4>Personal data</h4>
+	<div class="pf-fighter-pref">出身地 : <span>神奈川県横須賀市</span></div>
+	<div class="pf-fighter-birth">生年月日 : <span>1963 / 8 / 22</span></div>
+	<div class="pf-fighter-height">身長 : <span>170 cm</span></div>
 	
-</div></td>
-</tr>
-<tr>
-<th>企画･運営</th>
-<td>株式会社FighTAO</td>
-</tr>
-<tr>
-<th>後援</th>
-<td>
-
-
-<div id="wpv-view-layout-1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-viewnumber="1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-pagination="{&quot;id&quot;:&quot;1206&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/quintet-3/?wpv_view_count=1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/quintet-3/?wpv_view_count=1206-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476">
-
-	
-	
-		<strong>-</strong>
-	
-</div></td>
-</tr>
-<tr>
-<th>協力</th>
-<td>
-
-
-<div id="wpv-view-layout-893-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-893-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-viewnumber="893-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-pagination="{&quot;id&quot;:&quot;893&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/quintet-3/?wpv_view_count=893-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/quintet-3/?wpv_view_count=893-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476">
-
-	
-	
-		<strong>-</strong>
-	
-</div></td>
-</tr>
-
-<tr>
-<th>協賛</th>
-<td>
-
-
-<div id="wpv-view-layout-900-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-900-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-viewnumber="900-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476" data-pagination="{&quot;id&quot;:&quot;900&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/quintet-3/?wpv_view_count=900-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/quintet-3/?wpv_view_count=900-CATTR0bb3481b274178490e68a6077f43f4efTCPID1476">
-
-	
-	
-	
-		<a href="https://www.bitcoin.com/" target="_blank">Bitcoin.com</a><br>
-	
-	
-	
-	
-</div></td>
-</tr>
-<tr>
-<th>メディア</th>
-<td>
-
-
-<div id="wpv-view-layout-902-TCPID1476" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-902-TCPID1476" data-viewnumber="902-TCPID1476" data-pagination="{&quot;id&quot;:&quot;902&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:&quot;5&quot;,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:&quot;1&quot;,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:0,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/eventinfo/quintet-3/?wpv_view_count=902-TCPID1476&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/eventinfo/quintet-3/?wpv_view_count=902-TCPID1476">
-
-	
-	
-	
-		<a href="https://www.ufc.tv/page/fightpass" target="_blank">UFC FIGHT PASS</a><br />
-	
-		<a href="https://abema.tv/" target="_blank">AbemaTV</a><br />
-	
-	
-	
-	
-</div></td>
-</tr>
-<tr>
-<th>入場料金</th>
-<td><p>VIP席 $168(税別)　スタンドA席 $79(税別)　スタンドB席 $47(税別）</p>
-</td>
-</tr>
-<tr>
-<th>チケット発売</th>
-<td><p>9月4日〜6日 スタンドA席、B席の事前予約<br />
-HESSER ENTERTAINMENT <a href="http://www.HesserEnt.com" rel="noopener" target="_blank">www.HesserEnt.com</a></p>
-<p>９月7日〜一斉発売<br />
-ticketmaster　<a href="https://www1.ticketmaster.com/quintet3-grappling-team-survival-match-las-vegas-nevada-10-05-2018/event/17005523C78A1A46?artistid=2545104&#038;majorcatid=10004&#038;minorcatid=830" rel="noopener" target="_blank">https://www.ticketmaster.com/</a></p>
-</td>
-</tr>
-<tr>
-<th>チケット発売日</th>
-<td>2018年9月4日</td>
-</tr>
-<tr>
-<th>お問合せ</th>
-<td><a href="mailto:info@quintet.local">info@quintet-fight.com</a></td>
-</tr>
-</table>
-</div></div></div></div></section>                <div class="container-fluid ">
-                <div class="ddl-full-width-row row "  >
-                </div></div>
-
-      
-
-<!-- =================* EVENT INFO END *================= -->
-
-  <!-- =================* FIGHTERS START *================= -->
-<section id="fighters" class="qnt_section_bgwh">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">FIGHTERS</h3>
-      <div class="subtitle">チームと選手について</div>
+	</div><!--fighter-profile--><div id="fighter-proresult"></div></div><div class="col-xs-12 col-md-4 social-wrapper" ></div></div><!--row--><div class="container"><div class="row result-list"><h3>プロフェッショナル修斗公式戦</h3><div class="result-block--ttl">▼ プロ戦績</div><div class="result-block"><h5>SHOOTO戦績</h5><table class="table result-list"><tr><td style="white-space:nowrap;width:7em;"><a href="/result/?id=141">2022-06-05</a></td><td style="text-align:center;">×</td><td><a href="/fighters/?id=1369">竹原  魁晟</a><p>1R 00:34 TKO  レフェリーストップ</p></tr><tr><td style="white-space:nowrap;width:7em;">2012-09-16</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=273">大野 虎眼 賢良</a><p>2R  判定 1-2 </p></tr><tr><td style="white-space:nowrap;width:7em;">2012-04-22</td><td style="text-align:center;">×</td><td><a href="/fighters/?id=361">フォアマン  </a><p>2R  判定 3-0 </p></tr><tr><td style="white-space:nowrap;width:7em;">2010-06-27</td><td style="text-align:center;">○</td><td><a href="/fighters/?id=667">小野寺  裕也</a><p>2R 02:04 KO  </p></tr></table></div></div><!--row--></div><!--container-->
+          </div><!--container-->
+          <div style="height:20px;"></div>
+          <p class="pagetop"><a href="#wrap" class="glyphicon glyphicon-chevron-up"></a></p>
+          <footer>
+            <footer>
+<div class="foot-links"><a href="/page/?p=privacy">個人情報保護</a> | <a href="/page/?p=membership">ご利用規約</a> | <a href="/page/?p=contact">お問い合わせ</a> | <a href="/company">会社概要</a></div>
+<p>2016 SUSTAIN  ALL RIGHTS RESERVED.</p>
+</footer>          </footer>
+        </div><!--gauge-->
+      </div><!--shadow-->
     </div>
-
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>SAKURABA</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/kazushi_sakuraba/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_kazushi_sakuraba-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="桜庭和志" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_kazushi_sakuraba-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_kazushi_sakuraba-1.jpg" alt="桜庭和志" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">桜庭和志</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>57</td>
-<td>79.75</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/daisuke_nakamura/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_daisuke_nakamura-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="中村大介" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_daisuke_nakamura-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_daisuke_nakamura-1.jpg" alt="中村大介" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">中村大介</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td>46</td>
-<td>74.6</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/josh_barnett/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_josh_barnett-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ジョシュ・バーネット" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_josh_barnett-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_josh_barnett-1.jpg" alt="ジョシュ・バーネット" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ジョシュ・バーネット</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>49</td>
-<td>109.6</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/marcos_souza/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_marcos_souza.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="マルコス・ソウザ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_marcos_souza.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_marcos_souza.jpg" alt="マルコス・ソウザ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">マルコス・ソウザ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-<td>41</td>
-<td>85.4</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/roberto_satoshi_souza/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_satoshi_souza-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ホベルト・サトシ・ソウザ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_satoshi_souza-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/05/profile_satoshi_souza-1.jpg" alt="ホベルト・サトシ・ソウザ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ホベルト・サトシ・ソウザ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-<td>37</td>
-<td>76.1</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  425.5</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-</div>
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>Alpha Male</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/urijah_faber/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_urijah_faber2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ユライア･フェイバー" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_urijah_faber2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_urijah_faber2.jpg" alt="ユライア･フェイバー" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ユライア･フェイバー</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>47</td>
-<td>70.2</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/antoine-jaoude/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profie_antoine_jaoude2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Antoine Jaoude" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profie_antoine_jaoude2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profie_antoine_jaoude2.jpg" alt="Antoine Jaoude" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">アントワーヌ・ヤウデ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-<td>49</td>
-<td>112.1</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/gordon-ryan/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_gordon_ryan2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Gordon Ryan" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_gordon_ryan2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_gordon_ryan2.jpg" alt="Gordon Ryan" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ゴードン・ライアン</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>31</td>
-<td>96.25</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/mansher-khera/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_mansher_khera2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Mansher (Munch) Khera" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_mansher_khera2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_mansher_khera2.jpg" alt="Mansher (Munch) Khera" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">マンシャー・ケラ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>34</td>
-<td>76.8</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/dustin-baradaran-akbari/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_dustin_akbari2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ダスティン･アクバリ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_dustin_akbari2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_dustin_akbari2.jpg" alt="ダスティン･アクバリ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ダスティン･アクバリ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>39</td>
-<td>72.7</td>
-</tr>
-
-
-
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  428.1</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-</div>
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> TEAM</span>10th Planet</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/pj_barch/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_pj_barch-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="PJバーチ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_pj_barch-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_pj_barch-2.jpg" alt="PJバーチ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">PJバーチ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>37</td>
-<td>78.8</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/amir-allam/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_amir_allam-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="アミール・アラム" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_amir_allam-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_amir_allam-2.jpg" alt="アミール・アラム" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">アミール・アラム</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>42</td>
-<td>98.3</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/geo_martinez/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_geo_martinez-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ジオ・マルティネス" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_geo_martinez-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_geo_martinez-2.jpg" alt="ジオ・マルティネス" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ジオ・マルティネス</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>39</td>
-<td>65.45</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/richie_martinez/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_richie_martinez-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="リッチー・マルティネス" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_richie_martinez-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_richie_martinez-2.jpg" alt="リッチー・マルティネス" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">リッチー・マルティネス</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>42</td>
-<td>84.55</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/adam_sachnoff/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_adam_sachnoff-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="アダム・サックノフ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_adam_sachnoff-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/06/profile_adam_sachnoff-2.jpg" alt="アダム・サックノフ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">アダム・サックノフ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-<td>38</td>
-<td>98.6</td>
-</tr>
-
-<tr bgcolor="#373f57" style="border-bottom: 1px solid #fff;" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  425.7</td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-</div>
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="team_name">
-<th colspan="5"><span> Team</span>Polaris</th>
-</tr>
-<tr class="team_table_head">
-<td class="team_table_portrait">PORTRAIT</td>
-<td class="team_table_name">NAME</td>
-<td class="team_table_country">COUNTRY</td>
-<td class="team_table_age">AGE</td>
-<td class="team_table_weight">WEIGHT[kg]</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/vitor_ribeiro/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_shaolin2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ビトー“シャオリン”ヒベイロ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_shaolin2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_shaolin2.jpg" alt="ビトー“シャオリン”ヒベイロ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ビトー“シャオリン”ヒベイロ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-<td>48</td>
-<td>79.05</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/gregor_gracie/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_gregor_gracie-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="グレゴー･グレイシー" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_gregor_gracie-2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_gregor_gracie-2.jpg" alt="グレゴー･グレイシー" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">グレゴー･グレイシー</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-<td>39</td>
-<td>84.55</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/marcin_held/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/04/profile_marcin_held-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="マーチン･ヘルド" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/04/profile_marcin_held-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/04/profile_marcin_held-1.jpg" alt="マーチン･ヘルド" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">マーチン･ヘルド</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/poland.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Poland" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/poland.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/poland.png" alt="Poland" class="country_flag" data-eio="l"></noscript></td>
-<td>34</td>
-<td>80.3</td>
-</tr>
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/craig_jones/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_craig_jones-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="クレイグ･ジョーンズ" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_craig_jones-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_craig_jones-1.jpg" alt="クレイグ･ジョーンズ" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">クレイグ･ジョーンズ</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/australia.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Australia" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/australia.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/australia.png" alt="Australia" class="country_flag" data-eio="l"></noscript></td>
-<td>35</td>
-<td>88.35</td>
-</tr>
-
-<tr bgcolor="#f7f8f8" data-href="https://www.quintet-fight.com/profile/dan_strauss/" class="team-member-tr text-nowrap">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_dan_strauss-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="ダン･ストラウス" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_dan_strauss-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_dan_strauss-1.jpg" alt="ダン･ストラウス" class="team_table_img" data-eio="l"></noscript></td>
-<td class="fighter_name">ダン･ストラウス</td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/uk.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="UK" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/uk.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/uk.png" alt="UK" class="country_flag" data-eio="l"></noscript></td>
-<td>35</td>
-<td>92.95</td>
-</tr>
-
-<tr bgcolor="#373f57" class="weight-total">
-<td></td>
-<td class="fighter_name"></td>
-<td class="flag"></td>
-<td></td>
-<td style="color:#FFF; padding:3px 10px;">TOTAL  425.2</td>
-</tr>
-</table>
-      <!-- fighterの１コマ -->
-</div>
-
-<div class="table-responsive">
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="single_match">
-<th colspan="5">Special Single Match</th>
-</tr>
-<tr class="single_table_head">
-<td class="team_table_leftname"></td>
-<td class="team_table_vs"></td>
-<td class="team_table_rightname"></td>
-</tr>
-<tr bgcolor="#f7f8f8"">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_hideo_tokoro-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="所英男" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_hideo_tokoro-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_hideo_tokoro-1.jpg" alt="所英男" class="team_table_img" data-eio="l"></noscript></td>
-<td> </td>
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_nicky_ryan2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Nicky Ryan" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_nicky_ryan2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_nicky_ryan2.jpg" alt="Nicky Ryan" class="team_table_img" data-eio="l"></noscript></td>
-</tr>
-<tr bgcolor="#f7f8f8"">
-<td><a href="https://www.quintet-fight.com/profile/hideo_tokoro/">Hideo Tokoro</a></td>
-<td>VS</td>
-<td><a href="https://www.quintet-fight.com/profile/nicky-ryan/">Nicky Ryan</a></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-<td></td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-</tr>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>49</td>
-<td>AGE</td>
-<td>25</td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>66.35kg</td>
-<td>WEIGHT</td>
-<td>68.35kg</td>
-</tr>
-
-<tr bgcolor="#B45129" >
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="single_match">
-<th colspan="5">Special Single Match</th>
-</tr>
-<tr class="single_table_head">
-<td class="team_table_leftname"></td>
-<td class="team_table_vs"></td>
-<td class="team_table_rightname"></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_frank_mir2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Frank Mir" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_frank_mir2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_frank_mir2.jpg" alt="Frank Mir" class="team_table_img" data-eio="l"></noscript></td>
-<td> </td>
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_satoshi_ishii-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Satoshi Ishi" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_satoshi_ishii-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/profile_satoshi_ishii-1.jpg" alt="Satoshi Ishi" class="team_table_img" data-eio="l"></noscript></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><a href="https://www.quintet-fight.com/profile/frank-mir/">Frank Mir</a></td>
-<td>VS</td>
-<td><a href="https://www.quintet-fight.com/profile/satoshi_ishii/">Satoshi Ishii</a></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-  <td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="USA" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/usa.png" alt="USA" class="country_flag" data-eio="l"></noscript></td>
-  <td></td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/japan.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-
-
-</tr>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>47</td>
-<td>AGE</td>
-<td>39</td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>128.8kg</td>
-<td>WEIGHT</td>
-<td>107.5kg</td>
-</tr>
-
-<tr bgcolor="#B45129" >
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-<!-- fighterの１コマ -->
-<table class="qnt_team_table">
-<tr data-href="https://www.quintet-fight.com/" class="single_match">
-<th colspan="5">Special Single Match</th>
-</tr>
-<tr class="single_table_head">
-<td class="team_table_leftname"></td>
-<td class="team_table_vs"></td>
-<td class="team_table_rightname"></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_marcelo_nunes2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Marcelo Nunes" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_marcelo_nunes2.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/profile_marcelo_nunes2.jpg" alt="Marcelo Nunes" class="team_table_img" data-eio="l"></noscript></td>
-<td> </td>
-<td><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/profile_haisam_rida-1.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Haisam Rida" class="team_table_img lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/profile_haisam_rida-1.jpg" decoding="async" data-eio-rwidth="600" data-eio-rheight="600"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/profile_haisam_rida-1.jpg" alt="Haisam Rida" class="team_table_img" data-eio="l"></noscript></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td><a href="https://www.quintet-fight.com/profile/marcelo-nunes/">Marcelo Nunes</a></td>
-<td>VS</td>
-<td><a href="https://www.quintet-fight.com/profile/haisam_rida/">Haisam Rida</a></td>
-</tr>
-<tr bgcolor="#f7f8f8">
-  <td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Brazil" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/brazil.png" alt="Brazil" class="country_flag" data-eio="l"></noscript></td>
-  <td></td>
-<td class="flag"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/07/ghana.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" alt="Japan" class="country_flag lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/07/ghana.png" decoding="async" data-eio-rwidth="80" data-eio-rheight="80"></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/07/ghana.png" alt="Japan" class="country_flag" data-eio="l"></noscript></td>
-
-
-</tr>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>37</td>
-<td>AGE</td>
-<td>33</td>
-</tr>
-<tr bgcolor="#f7f8f8">
-<td>106.2kg</td>
-<td>WEIGHT</td>
-<td>93.1kg</td>
-</tr>
-
-<tr bgcolor="#B45129" >
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<!-- fighterの１コマ -->
-</div>
-       
-      
-      
-    <!-- </div> -->
-<!-- <div class="qnt_caution">各選手の出場順は前日の会見で決定されます</div> -->
-  </div>
-
-</section>
-<!-- =================* FIGHTERS END *================= -->
-
-<!-- =================* TOURNAMENT START *================= --> 
-<section id="bracket1005" class="qnt_section_bggray">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">TOURNAMENT</h3>
-      <div class="subtitle">トーナメント表</div>
-    </div>
-    <div class="row justify-content-md-center">
-    <div class="col col-md-8 col-lg-6">
-<picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/bracket_q3_20181005_result.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhAAAAFwAQAAAADBZ3/jAAAAAnRSTlMAAHaTzTgAAAAvSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACANwNgUAAB7cHxeAAAAABJRU5ErkJggg==" alt="トーナメント表" class="alignnone size-full wp-image-244 lazyload" width="528" height="368" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/bracket_q3_20181005_result.png" decoding="async" data-eio-rwidth="528" data-eio-rheight="368" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/bracket_q3_20181005_result.png" alt="トーナメント表" class="alignnone size-full wp-image-244" width="528" height="368" data-eio="l" /></noscript>
-      
-    </div>
-  </div>
-  </div>
-  
-</section>
-<!-- =================* TOURNAMENT END *================= -->
-
-<!-- =================* RESULT START *================= -->
-<section id="result1005" class="qnt_section_bgwh">
-    <div class="container inner_column">
-      <div class="qnt_wrapper text-center">
-      <h3 class="title">RESULT</h3>
-      <div class="subtitle qnt_result_jp">各試合の結果</div>
-      </div>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_alpha_saku.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAVNAQAAAAA9MGsoAAAAAnRSTlMAAHaTzTgAAAFUSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBLA/25AAHe0lvxAAAAAElFTkSuQmCC" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1773 lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_alpha_saku.jpg" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1414" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_alpha_saku.jpg" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1773" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_10th_polaris.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABfIAAAQ0AQAAAAAdutDxAAAAAnRSTlMAAHaTzTgAAADfSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DSctAAFCVt8VAAAAAElFTkSuQmCC" alt="" width="1522" height="1076" class="alignnone size-full wp-image-1770 lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_10th_polaris.jpg" decoding="async" data-eio-rwidth="1522" data-eio-rheight="1076" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1st_10th_polaris.jpg" alt="" width="1522" height="1076" class="alignnone size-full wp-image-1770" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_final_alpha_polaris.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAVNAQAAAAA9MGsoAAAAAnRSTlMAAHaTzTgAAAFUSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBLA/25AAHe0lvxAAAAAElFTkSuQmCC" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1772 lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_final_alpha_polaris.jpg" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1414" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_final_alpha_polaris.jpg" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1772" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-      <picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1match_3shiai.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAVNAQAAAAA9MGsoAAAAAnRSTlMAAHaTzTgAAAFUSURBVHja7cExAQAAAMKg9U9tDQ+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBLA/25AAHe0lvxAAAAAElFTkSuQmCC" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1771 lazyload" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1match_3shiai.jpg" decoding="async" data-eio-rwidth="2000" data-eio-rheight="1414" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/10/181005_1match_3shiai.jpg" alt="" width="2435" height="1721" class="alignnone size-full wp-image-1771" style="border:1px solid #e5e5e5; margin-bottom: 30px;" data-eio="l" /></noscript>
-    </div>
-</section>
-<!-- =================* RESULT END *================= --> 
-
-<!-- =================* MEDIA START *================= -->
-<section id="media" class="qnt_section_bggray">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title">MEDIA</h3>
-      <div class="subtitle">メディア</div>
-    </div>
-
-    <div class="qnt_spnsors_wrapper">
-      <div class="row pt-4 justify-content-sm-center">
-
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors">
-          <div class="qnt_top_sponsors--corp"><a href="https://www.ufc.tv/page/fightpass" target="_blank"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="UFC" width="160" height="160" class="alignnone size-full wp-image-392 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/04/ufc.jpg" alt="UFC" width="160" height="160" class="alignnone size-full wp-image-392" data-eio="l" /></noscript></a>
-          </div>
-          </div>
-        </div>
-
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors">
-          <div class="qnt_top_sponsors--corp"><a href="https://abema.tv/" target="_blank"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/abema.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="Abema" width="160" height="160" class="alignnone size-full wp-image-355 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/abema.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/abema.jpg" alt="Abema" width="160" height="160" class="alignnone size-full wp-image-355" data-eio="l" /></noscript></a>
-          </div></div>
-        </div>
-        
-      </div><!--  //row end  -->
-    </div><!--  //wrap end  -->
-
-  </div>
-</section>
-<!-- =================* MEDIA END *================= -->
-<!-- =================* SPONSOR START *================= -->
-<section id="sponsor" class="qnt_section_bggray">
-  <div class="container inner_column">
-    <div class="qnt_wrapper text-center">
-      <h3 class="title"><!-- SPONSORS -->SUPPORTERS</h3>
-      <div class="subtitle">サポート企業や団体</div>
-    </div>
-  <div class="qnt_spnsors_wrapper">
-    <h4 class="qnt_top_subsponsors">Sponsors</h4>
-      <div class="row pt-4 justify-content-sm-center">
-
-        <div class="col-6 col-sm-2 text-center">
-          <div class="qnt_top_sponsors">
-          <div class="qnt_top_sponsors--corp"><a href="https://www.bitcoin.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="Bitcoin.com" width="160" height="160" class="alignnone size-full wp-image-819 lazyload" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/09/bitcoin.svg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/09/bitcoin.svg" alt="Bitcoin.com" width="160" height="160" class="alignnone size-full wp-image-819" data-eio="l" /></noscript></a>
-          </div></div>
-        </div>
-
-
-      </div> <!--  //row end -->
-  </div> <!--  //wrap end  -->
-    <div class="qnt_spnsors_wrapper">
-      
-      <div class="row pt-4 justify-content-sm-center">
-        
-        <div class="col-6 col-sm-2 text-center">
-          <span class="qnt_top_org">Organization</span>
-          <div class="qnt_top_sponsors">
-          <div class="qnt_top_sponsors--rabarland"><a href="#" target="_blank"></a><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="rabarLAND" width="160" height="160" class="alignnone size-full wp-image-296 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/03/rabarland.jpg" alt="rabarLAND" width="160" height="160" class="alignnone size-full wp-image-296" data-eio="l" /></noscript>
-          </div>
-        </div>
-      </div>
-
-        <div class="col-6 col-sm-2 text-center">
-          <span class="qnt_top_org">Organization</span>
-          <div class="qnt_top_sponsors qnt_top_sponsors--polaris"><a href="https://www.hesserentertainment.com/" target="_blank"><picture><source  type="image/webp" data-srcset="https://www.quintet-fight.com/wp-content/uploads/2018/09/hesser.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgAQAAAACjtFqAAAAAAnRSTlMAAHaTzTgAAAAZSURBVEjH7cEBDQAAAMKg90/t7AEUAAAANw0gAAFcRBGPAAAAAElFTkSuQmCC" alt="HESSER ENTERTAINMENT" width="160" height="160" class="alignnone size-full wp-image-352 lazyload" data-eio="p" data-src="https://www.quintet-fight.com/wp-content/uploads/2018/09/hesser.jpg" decoding="async" data-eio-rwidth="160" data-eio-rheight="160" /></picture><noscript><img src="https://www.quintet-fight.com/wp-content/uploads/2018/09/hesser.jpg" alt="HESSER ENTERTAINMENT" width="160" height="160" class="alignnone size-full wp-image-352" data-eio="l" /></noscript></a></div>
-        </div>
-
-
-        
-      </div> <!--  //row end  -->
-    </div><!--  //wrap end  -->
-  </div>
-</section>
-<!-- =================* SPONSOR END *================= -->
-
-
-
-<!-- ここからボタン -->
-<p id="page-top"><a href="#wrap"><i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i></a></p>
-<!-- ここまでボタン -->
-
-<footer class="qnt_section_bgstronggray">
-  <div class="container">
-  <div class="row qnt_footer_area">
-    <p class="col-12 col-sm-4">&copy; 2018 rabarland INC.</p>
-    <div class="col-12 col-sm-8">
-      <div class="row">
-        <div class="col">
-          <a href="https://www.facebook.com/QUINTET.PR/" target="_blank">
-            <i class="fab fa-facebook-f fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://twitter.com/quintet_pr" target="_blank">
-            <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.instagram.com/quintet_pr/" target="_blank">
-            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.youtube.com/channel/UCoF38OjmUD42aw8tQGAKymA" target="_blank">
-            <i class="fab fa-youtube fa-3x" aria-hidden="true"></i>
-          </a>
-        </div> 
-        <div class="col">
-          <a href="https://www.quintet-fight.com/contact/">
-            <i class="far fa-envelope fa-3x" aria-hidden="true"></i>
-          </a>
-        </div>
-
-      </div><!--  //row end -->
-    </div><!--  //col-sm-8 end  -->
-  </div>
-</div>
-</footer>
-
-<!-- ✅ Bootstrap 4.6.2 JS（Popper含む） -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8QmZlV9zzTtmI3xDkhjE7W5y1z6jIW3z4hZ"
-        crossorigin="anonymous"></script>
-
-<!-- Custom JS -->
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/tr-hover.js"></script>
-<script src="https://www.quintet-fight.com/wp-content/themes/quintet/js/to-top.js"></script>
-
-
-<script type="text/javascript">
-const wpvViewHead = document.getElementsByTagName( "head" )[ 0 ];
-const wpvViewExtraCss = document.createElement( "style" );
-wpvViewExtraCss.textContent = '<!--[if IE 7]><style>.wpv-pagination { *zoom: 1; }</style><![endif]-->';
-wpvViewHead.appendChild( wpvViewExtraCss );
-</script>
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/quintet/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<script id="eio-lazy-load-js-before">
-const eio_lazy_vars = {"bg_min_dpr":1.1000000000000001,"exactdn_domain":"","safe_paths":["\/wp-content\/plugins","\/wp-content\/themes","\/wp-includes\/"],"safe_domains":["www.quintet-fight.com","quintet-fight.com"],"skip_autoscale":0,"threshold":0,"use_dpr":1};Object.freeze(eio_lazy_vars);
-//# sourceURL=eio-lazy-load-js-before
-</script>
-<script async data-wp-strategy="async" id="eio-lazy-load-js" src="https://www.quintet-fight.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=892"></script>
-<script id="wp-hooks-js" src="https://www.quintet-fight.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
-<script id="wp-i18n-js" src="https://www.quintet-fight.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-</script>
-<script id="swv-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.6"></script>
-<script id="contact-form-7-js-translations">
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "contact-form-7", {"translation-revision-date":"2026-11-23 02:57:54+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
-//# sourceURL=contact-form-7-js-translations
-</script>
-<script id="contact-form-7-js-before">
-var wpcf7 = {
-    "api": {
-        "root": "https:\/\/www.quintet-fight.com\/wp-json\/",
-        "namespace": "contact-form-7\/v1"
-    }
-};
-//# sourceURL=contact-form-7-js-before
-</script>
-<script id="contact-form-7-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.6"></script>
-<script id="ddl-tabs-scripts-js" src="https://www.quintet-fight.com/wp-content/plugins/layouts/resources/js/ddl-tabs-cell-frontend.js?ver=2.6.20"></script>
-<script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6LfFEp0UAAAAAKPLg3tNQ1LGzsUHjfwr9EnazTZZ&#038;ver=3.0"></script>
-<script id="wp-polyfill-js" src="https://www.quintet-fight.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"></script>
-<script id="wpcf7-recaptcha-js-before">
-var wpcf7_recaptcha = {
-    "sitekey": "6LfFEp0UAAAAAKPLg3tNQ1LGzsUHjfwr9EnazTZZ",
-    "actions": {
-        "homepage": "homepage",
-        "contactform": "contactform"
-    }
-};
-//# sourceURL=wpcf7-recaptcha-js-before
-</script>
-<script id="wpcf7-recaptcha-js" src="https://www.quintet-fight.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.2.6"></script>
-<script id="wp_ddl_layout_fe_js-js" src="https://www.quintet-fight.com/wp-content/uploads/ddl-layouts-tmp/b33dadb29e6b2364d044c07d48eb17c0.js?ver=2.6.20"></script>
-<script id="jquery-ui-core-js-before">
-jQuery.uiBackCompat = true;
-//# sourceURL=jquery-ui-core-js-before
-</script>
-<script id="jquery-ui-core-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-datepicker-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-mouse-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.14.2"></script>
-<script id="jquery-ui-slider-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.14.2"></script>
-<script id="jquery-touch-punch-js" src="https://www.quintet-fight.com/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2"></script>
-<script id="mediaelement-core-js-before">
-var mejsL10n = {"language":"ja","strings":{"mejs.download-file":"\u30d5\u30a1\u30a4\u30eb\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9","mejs.install-flash":"\u3054\u5229\u7528\u306e\u30d6\u30e9\u30a6\u30b6\u30fc\u306f Flash Player \u304c\u7121\u52b9\u306b\u306a\u3063\u3066\u3044\u308b\u304b\u3001\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002Flash Player \u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u6709\u52b9\u306b\u3059\u308b\u304b\u3001\u6700\u65b0\u30d0\u30fc\u30b8\u30e7\u30f3\u3092 https://get.adobe.com/jp/flashplayer/ \u304b\u3089\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u304f\u3060\u3055\u3044\u3002","mejs.fullscreen":"\u30d5\u30eb\u30b9\u30af\u30ea\u30fc\u30f3","mejs.play":"\u518d\u751f","mejs.pause":"\u505c\u6b62","mejs.time-slider":"\u30bf\u30a4\u30e0\u30b9\u30e9\u30a4\u30c0\u30fc","mejs.time-help-text":"1\u79d2\u9032\u3080\u306b\u306f\u5de6\u53f3\u77e2\u5370\u30ad\u30fc\u3092\u300110\u79d2\u9032\u3080\u306b\u306f\u4e0a\u4e0b\u77e2\u5370\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u304f\u3060\u3055\u3044\u3002","mejs.live-broadcast":"\u751f\u653e\u9001","mejs.volume-help-text":"\u30dc\u30ea\u30e5\u30fc\u30e0\u8abf\u7bc0\u306b\u306f\u4e0a\u4e0b\u77e2\u5370\u30ad\u30fc\u3092\u4f7f\u3063\u3066\u304f\u3060\u3055\u3044\u3002","mejs.unmute":"\u30df\u30e5\u30fc\u30c8\u89e3\u9664","mejs.mute":"\u30df\u30e5\u30fc\u30c8","mejs.volume-slider":"\u30dc\u30ea\u30e5\u30fc\u30e0\u30b9\u30e9\u30a4\u30c0\u30fc","mejs.video-player":"\u52d5\u753b\u30d7\u30ec\u30fc\u30e4\u30fc","mejs.audio-player":"\u97f3\u58f0\u30d7\u30ec\u30fc\u30e4\u30fc","mejs.captions-subtitles":"\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3/\u5b57\u5e55","mejs.captions-chapters":"\u30c1\u30e3\u30d7\u30bf\u30fc","mejs.none":"\u306a\u3057","mejs.afrikaans":"\u30a2\u30d5\u30ea\u30ab\u30fc\u30f3\u30b9\u8a9e","mejs.albanian":"\u30a2\u30eb\u30d0\u30cb\u30a2\u8a9e","mejs.arabic":"\u30a2\u30e9\u30d3\u30a2\u8a9e","mejs.belarusian":"\u30d9\u30e9\u30eb\u30fc\u30b7\u8a9e","mejs.bulgarian":"\u30d6\u30eb\u30ac\u30ea\u30a2\u8a9e","mejs.catalan":"\u30ab\u30bf\u30ed\u30cb\u30a2\u8a9e","mejs.chinese":"\u4e2d\u56fd\u8a9e","mejs.chinese-simplified":"\u4e2d\u56fd\u8a9e (\u7c21\u4f53\u5b57)","mejs.chinese-traditional":"\u4e2d\u56fd\u8a9e (\u7e41\u4f53\u5b57)","mejs.croatian":"\u30af\u30ed\u30a2\u30c1\u30a2\u8a9e","mejs.czech":"\u30c1\u30a7\u30b3\u8a9e","mejs.danish":"\u30c7\u30f3\u30de\u30fc\u30af\u8a9e","mejs.dutch":"\u30aa\u30e9\u30f3\u30c0\u8a9e","mejs.english":"\u82f1\u8a9e","mejs.estonian":"\u30a8\u30b9\u30c8\u30cb\u30a2\u8a9e","mejs.filipino":"\u30d5\u30a3\u30ea\u30d4\u30f3\u8a9e","mejs.finnish":"\u30d5\u30a3\u30f3\u30e9\u30f3\u30c9\u8a9e","mejs.french":"\u30d5\u30e9\u30f3\u30b9\u8a9e","mejs.galician":"\u30ac\u30ea\u30b7\u30a2\u8a9e","mejs.german":"\u30c9\u30a4\u30c4\u8a9e","mejs.greek":"\u30ae\u30ea\u30b7\u30e3\u8a9e","mejs.haitian-creole":"\u30cf\u30a4\u30c1\u8a9e","mejs.hebrew":"\u30d8\u30d6\u30e9\u30a4\u8a9e","mejs.hindi":"\u30d2\u30f3\u30c7\u30a3\u30fc\u8a9e","mejs.hungarian":"\u30cf\u30f3\u30ac\u30ea\u30fc\u8a9e","mejs.icelandic":"\u30a2\u30a4\u30b9\u30e9\u30f3\u30c9\u8a9e","mejs.indonesian":"\u30a4\u30f3\u30c9\u30cd\u30b7\u30a2\u8a9e","mejs.irish":"\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9\u8a9e","mejs.italian":"\u30a4\u30bf\u30ea\u30a2\u8a9e","mejs.japanese":"\u65e5\u672c\u8a9e","mejs.korean":"\u97d3\u56fd\u8a9e","mejs.latvian":"\u30e9\u30c8\u30d3\u30a2\u8a9e","mejs.lithuanian":"\u30ea\u30c8\u30a2\u30cb\u30a2\u8a9e","mejs.macedonian":"\u30de\u30b1\u30c9\u30cb\u30a2\u8a9e","mejs.malay":"\u30de\u30ec\u30fc\u8a9e","mejs.maltese":"\u30de\u30eb\u30bf\u8a9e","mejs.norwegian":"\u30ce\u30eb\u30a6\u30a7\u30fc\u8a9e","mejs.persian":"\u30da\u30eb\u30b7\u30a2\u8a9e","mejs.polish":"\u30dd\u30fc\u30e9\u30f3\u30c9\u8a9e","mejs.portuguese":"\u30dd\u30eb\u30c8\u30ac\u30eb\u8a9e","mejs.romanian":"\u30eb\u30fc\u30de\u30cb\u30a2\u8a9e","mejs.russian":"\u30ed\u30b7\u30a2\u8a9e","mejs.serbian":"\u30bb\u30eb\u30d3\u30a2\u8a9e","mejs.slovak":"\u30b9\u30ed\u30d0\u30ad\u30a2\u8a9e","mejs.slovenian":"\u30b9\u30ed\u30d9\u30cb\u30a2\u8a9e","mejs.spanish":"\u30b9\u30da\u30a4\u30f3\u8a9e","mejs.swahili":"\u30b9\u30ef\u30d2\u30ea\u8a9e","mejs.swedish":"\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3\u8a9e","mejs.tagalog":"\u30bf\u30ac\u30ed\u30b0\u8a9e","mejs.thai":"\u30bf\u30a4\u8a9e","mejs.turkish":"\u30c8\u30eb\u30b3\u8a9e","mejs.ukrainian":"\u30a6\u30af\u30e9\u30a4\u30ca\u8a9e","mejs.vietnamese":"\u30d9\u30c8\u30ca\u30e0\u8a9e","mejs.welsh":"\u30a6\u30a7\u30fc\u30eb\u30ba\u8a9e","mejs.yiddish":"\u30a4\u30c7\u30a3\u30c3\u30b7\u30e5\u8a9e"}};
-//# sourceURL=mediaelement-core-js-before
-</script>
-<script id="mediaelement-core-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17"></script>
-<script id="mediaelement-migrate-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=7.1.5"></script>
-<script id="mediaelement-js-extra">
-var _wpmejsSettings = {"pluginPath":"/wp-includes/js/mediaelement/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
-//# sourceURL=mediaelement-js-extra
-</script>
-<script id="wp-mediaelement-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=7.1.5"></script>
-<script id="underscore-js" src="https://www.quintet-fight.com/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
-<script id="wp-util-js-extra">
-var _wpUtilSettings = {"ajax":{"url":"/wp-admin/admin-ajax.php"}};
-//# sourceURL=wp-util-js-extra
-</script>
-<script id="wp-util-js" src="https://www.quintet-fight.com/wp-includes/js/wp-util.min.js?ver=7.1.5"></script>
-<script id="backbone-js" src="https://www.quintet-fight.com/wp-includes/js/backbone.min.js?ver=1.6.1"></script>
-<script id="wp-playlist-js" src="https://www.quintet-fight.com/wp-includes/js/mediaelement/wp-playlist.min.js?ver=7.1.5"></script>
-<script id="views-blocks-frontend-js-extra">
-var wpv_pagination_local = {"front_ajaxurl":"https://www.quintet-fight.com/wp-admin/admin-ajax.php","calendar_image":"https://www.quintet-fight.com/wp-content/plugins/wp-views/embedded/res/img/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"datepicker_min_year":"1582","datepicker_max_year":"3000","resize_debounce_tolerance":"100","datepicker_style_url":"https://www.quintet-fight.com/wp-content/plugins/layouts/vendor/toolset/toolset-common/toolset-forms/css/wpt-jquery-ui/jquery-ui-1.11.4.custom.css","wpmlLang":""};
-//# sourceURL=views-blocks-frontend-js-extra
-</script>
-<script id="views-blocks-frontend-js" src="https://www.quintet-fight.com/wp-content/plugins/wp-views/public/js/views-frontend.js?ver=3.6.30"></script>
-<script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.quintet-fight.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.5"}}
-</script>
-<script type="module">
-/*! This file is auto-generated */
-var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
-//# sourceURL=https://www.quintet-fight.com/wp-includes/js/wp-emoji-loader.min.js
-</script>
+  </div><!--main & contents-->
+  <script>
+    var mHeight = 0;
+    $(".fighter-data").each(function() {
+      if ($(this).height() > mHeight) {
+        mHeight = $(this).height();
+      }
+    });
+    $(".fighter-img").height(mHeight);
+    $(".thisheight").height(mHeight);
+    
+//　選手情報モーダル表示
+$(".fighter-mdl").on("click",function(){
+  var id = $(this).data("id");
+  $.ajax({ type:"POST",url:"/lib.php?pg=fighter-mdl&id="+id,dataType:"json"})
+  .done(function(data){
+    $(".fighter-info-mdl").remove();
+    $("#fighter-info").append(data.res);
+    $("#fighter-info-modal").modal("show");
+    console.log(data);
+  });
+});
+  </script>
 </body>
+
 </html>

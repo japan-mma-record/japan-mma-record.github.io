@@ -1,150 +1,807 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <script nonce="X7zLIIFQEmsnvRMFj44WdQ==">
-      (function(){
-          setTimeout(function(){
-              window.location.reload();
-          }, 5000);
-      }())
-  </script>
-  <link rel="icon" href="data:,">
-  <title>少々お待ちください…</title>
-  <style nonce="X7zLIIFQEmsnvRMFj44WdQ==">
-.spinner {
-    -webkit-animation: spin 1s ease-out;
-    animation: spin 1s ease-out;
-}
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-#outer-container {
-    text-align: center;
-}
-#container {
-        display: inline-block;
-        height: 100px;
-    }
-#text {
-    float: left;
-    height: 100px;
-    line-height: 100px;
-    font-size: 3rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0 .4em 0 .2em;
-    letter-spacing: 0.06em;
-    color: rgba(38, 122, 72, 0.86);
-}
-@media (min-height: 180px) {
-    #outer-container {
-        margin-top: 0;
-    }
-}
-@media (min-height: 360px) {
-    #outer-container {
-        margin-top: 5%;
-    }
-}
-@media (min-height: 540px) {
-    #outer-container {
-        margin-top: 10%;
-    }
-}
-@media (min-height: 720px) {
-    #outer-container {
-        margin-top: 20%;
-    }
-}
-@media (min-width: 1450px) {
-    .throbber {
-        width: 90px;
-        height: 90px;
-        float: left;
-        padding: 5px 0 5px 5px;
-        opacity: 0.86;
-    }
-    #container {
-        display: inline-block;
-        border: 3px solid rgb(38, 122, 72, 0.86);
-        border-radius: 51px;
-        height: 100px;
-    }
-}
+<meta charset="UTF-8" />
 
-  </style>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="shortcut icon" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/favicon.ico">
+<link rel="apple-touch-icon" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/touchicon.png">
+
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/style.css?v=251105" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/responsive.css?v240809" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/normalize.css" rel="stylesheet">
+<link href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/drawer.css" rel="stylesheet">
+<link rel="stylesheet" href="https://shootboxing.org/wp/wp-content/themes/sb-theme/css/jquery.simpleTicker.css">
+
+
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery-1.10.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/hover.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/backtop.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/drawer.min.js"></script>
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/tab-fighter.js"></script>
+<script src="https://kit.fontawesome.com/0e1845397c.js" crossorigin="anonymous"></script>
+<script>
+   $(document).ready(function() {
+  	$('.drawer').drawer();
+		$('.drawer-dropdown-menu a').on('click', function() {
+  		$('.drawer').drawer('close');
+	});
+	});
+</script>
+
+<script src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery.matchHeight.js"></script>
+<script>
+$(function(){
+　　$('.matchHeight').matchHeight();
+});
+</script>
+<script>
+$(function(){
+　　$('li.fighter-box').matchHeight();
+});
+</script>
+
+<script type="text/javascript" src="https://shootboxing.org/wp/wp-content/themes/sb-theme/js/jquery.simpleTicker.js"></script>
+<script>
+$(function() {
+	$.simpleTicker($('#newsticker'),{'effectType':'roll'});
+});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MT9PCML');</script>
+<!-- End Google Tag Manager -->
+
+
+		<!-- All in One SEO 5.0.3 - aioseo.com -->
+		<title>Que Sera Japon presents『SHOOT BOXING WORLD TOURNAMENT S-cup 2016』 - SHOOTBOXING｜シュートボクシング</title>
+	<meta name="description" content="RENA、判定勝ちで17連勝！S-cupはザガリアが悲願の初優勝 本大会の様子はシュートボクシングの動画サイト" />
+	<meta name="robots" content="max-image-preview:large" />
+	<link rel="canonical" href="https://shootboxing.org/result/595/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 5.0.3" />
+		<meta property="og:locale" content="ja_JP" />
+		<meta property="og:site_name" content="SHOOTBOXING｜シュートボクシング -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Que Sera Japon presents『SHOOT BOXING WORLD TOURNAMENT S-cup 2016』 - SHOOTBOXING｜シュートボクシング" />
+		<meta property="og:description" content="RENA、判定勝ちで17連勝！S-cupはザガリアが悲願の初優勝 本大会の様子はシュートボクシングの動画サイト" />
+		<meta property="og:url" content="https://shootboxing.org/result/595/" />
+		<meta property="article:published_time" content="2018-05-23T06:19:48+00:00" />
+		<meta property="article:modified_time" content="2018-06-22T13:46:27+00:00" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Que Sera Japon presents『SHOOT BOXING WORLD TOURNAMENT S-cup 2016』 - SHOOTBOXING｜シュートボクシング" />
+		<meta name="twitter:description" content="RENA、判定勝ちで17連勝！S-cupはザガリアが悲願の初優勝 本大会の様子はシュートボクシングの動画サイト" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/shootboxing.org\/result\/595\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/#listItem","position":1,"name":"\u30db\u30fc\u30e0","item":"https:\/\/shootboxing.org\/","nextItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2016\/#listItem","name":"2016"}},{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2016\/#listItem","position":2,"name":"2016","item":"https:\/\/shootboxing.org\/news\/resultyear\/year-2016\/","nextItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/result\/595\/#listItem","name":"Que Sera Japon presents\u300eSHOOT BOXING WORLD TOURNAMENT S-cup 2016\u300f"},"previousItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/#listItem","name":"\u30db\u30fc\u30e0"}},{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/result\/595\/#listItem","position":3,"name":"Que Sera Japon presents\u300eSHOOT BOXING WORLD TOURNAMENT S-cup 2016\u300f","previousItem":{"@type":"ListItem","@id":"https:\/\/shootboxing.org\/news\/resultyear\/year-2016\/#listItem","name":"2016"}}]},{"@type":"Organization","@id":"https:\/\/shootboxing.org\/#organization","name":"SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","url":"https:\/\/shootboxing.org\/"},{"@type":"WebPage","@id":"https:\/\/shootboxing.org\/result\/595\/#webpage","url":"https:\/\/shootboxing.org\/result\/595\/","name":"Que Sera Japon presents\u300eSHOOT BOXING WORLD TOURNAMENT S-cup 2016\u300f - SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","description":"RENA\u3001\u5224\u5b9a\u52dd\u3061\u306717\u9023\u52dd\uff01S-cup\u306f\u30b6\u30ac\u30ea\u30a2\u304c\u60b2\u9858\u306e\u521d\u512a\u52dd \u672c\u5927\u4f1a\u306e\u69d8\u5b50\u306f\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0\u306e\u52d5\u753b\u30b5\u30a4\u30c8","inLanguage":"ja","isPartOf":{"@id":"https:\/\/shootboxing.org\/#website"},"breadcrumb":{"@id":"https:\/\/shootboxing.org\/result\/595\/#breadcrumblist"},"image":{"@type":"ImageObject","url":"https:\/\/shootboxing.org\/wp\/wp-content\/uploads\/2018\/05\/2016g-zero.jpeg","@id":"https:\/\/shootboxing.org\/result\/595\/#mainImage","width":640,"height":427},"primaryImageOfPage":{"@id":"https:\/\/shootboxing.org\/result\/595\/#mainImage"},"datePublished":"2018-05-23T15:19:48+09:00","dateModified":"2018-06-22T22:46:27+09:00"},{"@type":"WebSite","@id":"https:\/\/shootboxing.org\/#website","url":"https:\/\/shootboxing.org\/","name":"SHOOTBOXING\uff5c\u30b7\u30e5\u30fc\u30c8\u30dc\u30af\u30b7\u30f3\u30b0","inLanguage":"ja","publisher":{"@id":"https:\/\/shootboxing.org\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="SHOOTBOXING｜シュートボクシング &raquo; フィード" href="https://shootboxing.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SHOOTBOXING｜シュートボクシング &raquo; コメントフィード" href="https://shootboxing.org/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://shootboxing.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshootboxing.org%2Fresult%2F595%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://shootboxing.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshootboxing.org%2Fresult%2F595%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='sbi-tokens-local-css' href='https://shootboxing.org/wp/wp-content/plugins/instagram-feed/assets/tokens/sb-tokens-local.css?ver=6.14.0' media='all' />
+<link rel='stylesheet' id='sbi_styles-css' href='https://shootboxing.org/wp/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.14.0' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=7.0.9' media='screen' />
+<style id="fancybox-inline-css">
+#fancybox-outer{background:#ffffff}#fancybox-content{background:#ffffff;border-color:#ffffff;color:#000000;}#fancybox-title,#fancybox-title-float-main{color:#fff}
+/*# sourceURL=fancybox-inline-css */
+</style>
+<script id="jquery-core-js" src="https://shootboxing.org/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://shootboxing.org/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://shootboxing.org/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shootboxing.org/wp/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://shootboxing.org/?p=595' />
+<link rel="icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://shootboxing.org/wp/wp-content/uploads/2024/06/cropped-favicon-270x270.png" />
+
 </head>
-<body>
-  <div id="outer-container">
-    <div id="container">
-<div class="throbber">
-    <svg class="spinner" width="90px" height="90px" viewBox="0 0 47 47"
-         version="1.1"
-         xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Loader</title>
-        <defs>
-            <polygon id="path-1"
-                     points="0 0.375484146 0 15.7255695 15.7013244 15.7255695 15.7013244 0.375484146 0 0.375484146"></polygon>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-           fill-rule="evenodd">
-            <g id="Logo" transform="translate(-5.000000, -2.000000)">
-                <g id="Group-2" transform="translate(5.000000, 2.000000)">
-                    <path d="M22.6150244,4.52988293 C23.1538049,3.06256585 23.6031707,1.59582195 24.231939,0.158882927 C25.1902805,2.22459024 25.8190488,4.43989512 26.7768171,6.47579756 C29.1417195,7.40376098 31.7164024,7.7929439 34.1116829,8.69110244 C28.9623171,11.2663585 23.7229634,13.7510537 18.4836098,16.176139 C19.7709512,12.2545049 21.2382683,8.4217122 22.6150244,4.52988293 L22.6150244,4.52988293 Z"
-                          id="Fill-1" fill="#467C45"></path>
-                    <path d="M13.7718598,8.94461585 C16.1424939,7.68077439 18.4500793,6.28968902 20.8207134,5.02527439 C18.9240915,10.8412378 16.7747012,16.5614817 14.8465549,22.3774451 C12.7292622,18.3950549 10.895689,14.2544695 8.9044939,10.2090305 C8.27228659,8.85004268 7.5455061,7.55353049 7.00844512,6.16359146 C9.31545732,6.95342073 11.4648476,8.24935976 13.7718598,8.94461585"
-                          id="Fill-3" fill="#467C45"></path>
-                    <path d="M24.2134256,15.0745049 C29.4602305,12.4969561 34.7379866,9.91940732 40.0157427,7.4031878 C39.1565598,9.61276098 38.1747183,11.7300537 37.2232549,13.9086756 C38.4504134,16.2099561 39.9544134,18.388578 41.0898646,20.7511878 C35.4435598,18.9405415 29.8287793,17.0381878 24.2134256,15.0745049"
-                          id="Fill-5" fill="#467C45"></path>
-                    <g id="Group-9"
-                       transform="translate(0.000000, 11.919659)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="Clip-8"></g>
-                        <path d="M8.34869024,0.375484146 C9.93064146,3.33419146 11.2781659,6.43963049 12.7426171,9.45622805 C13.7387878,11.5362646 14.793422,13.5876427 15.7013244,15.7255695 C10.4579585,13.9091915 5.21401951,12.03435 -0.000114634146,10.0718134 C2.05069024,9.1341061 4.21842195,8.4898622 6.29845854,7.61119146 C6.97193415,5.17980122 7.67521463,2.77706951 8.34869024,0.375484146"
-                              id="Fill-7" fill="#467C45"
-                              mask="url(#mask-2)"></path>
-                    </g>
-                    <path d="M29.1793195,18.0496049 C33.5600634,19.4670561 37.9081366,21.0776659 42.2888805,22.5593122 C43.6742341,23.0745927 45.1558805,23.4609098 46.5085634,24.1372512 C44.2216122,25.039422 41.9025634,25.9100683 39.6477098,26.8110927 C38.8103073,29.4195927 38.2302585,32.1261049 37.3607585,34.7346049 C35.5890878,31.4497634 34.0432463,28.0353854 32.3684415,24.6852024 C31.3052098,22.4945439 30.1456854,20.3044585 29.1793195,18.0496049"
-                          id="Fill-10" fill="#467C45"></path>
-                    <path d="M28.9972232,29.3489207 C29.5789915,27.69475 30.0684793,26.0113476 30.7419549,24.3887012 C31.538089,25.7660305 32.1811866,27.2356402 32.9154183,28.6444939 C34.7220524,32.4709817 36.68115,36.205189 38.4568329,40.0316768 C36.2827963,39.1449817 34.1402841,38.1654329 31.9364427,37.2460671 C29.6403207,38.4709329 27.4662841,39.9405427 25.1094061,41.1035061 C26.3033207,37.1549329 27.7419793,33.2671159 28.9972232,29.3489207"
-                          id="Fill-12" fill="#467C45"></path>
-                    <path d="M4.97133902,25.64555 C9.93385122,27.1873793 14.7737049,29.036428 19.6748878,30.6705378 C20.4148512,30.9170012 21.1542415,31.1944159 21.8328756,31.5337329 C16.5304732,33.9685622 11.3214976,36.6498549 5.95776585,38.99355 C6.82096098,36.8355622 7.89966829,34.7698549 8.7319122,32.581489 C7.68358293,30.1764646 6.11194878,28.01905 4.97133902,25.64555"
-                          id="Fill-14" fill="#467C45"></path>
-                    <path d="M15.4549183,35.8770488 C19.4671134,33.9317073 23.4483573,31.8952317 27.4915037,30.0433171 C26.4110768,33.6542927 25.0222841,37.203939 23.8186256,40.8143415 C23.1090402,42.7275854 22.5530646,44.7033049 21.7511988,46.5855976 C20.7630524,44.4866463 20.0534671,42.2650366 19.1277963,40.1351341 C16.6276256,39.2094634 14.0042232,38.684439 11.4736744,37.9748537 C12.6773329,37.0801341 14.1584061,36.586061 15.4549183,35.8770488"
-                          id="Fill-16" fill="#467C45"></path>
-                </g>
-            </g>
-        </g>
-    </svg>
+
+<body class="wp-singular result-template-default single single-result postid-595 wp-theme-sb-theme drawer drawer--right" id="TOP">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT9PCML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header role="banner"><!-- ヘッダー -->
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-menu-item" href="https://shootboxing.org">HOME</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/news">ニュース一覧</a></li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            大会情報 <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fight">大会情報</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/result">試合結果</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            選手情報 <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fighter">ランキング</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/gym">ジム紹介</a></li>
+        <li class="drawer-dropdown">
+          <a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            SBとは <span class="drawer-caret"></span>
+          </a>
+          <ul class="drawer-dropdown-menu">
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/about">SBとは</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/rule">SBルール</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/s-cup">S-cup</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/history">SBヒストリー</a></li>
+            <li><a class="drawer-dropdown-menu-item" href="https://shootboxing.org/human_of_sb/">HUMAN OF SB</a></li>
+          </ul>
+        </li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.stores.jp/" target="_blank">公式グッズ</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/amateur/">アマチュア大会</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/roundgirl/">ラウンドガール</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/company">運営会社</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/">お問い合わせ</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/partner">スポンサー一覧</a></li>
+        <li><a class="drawer-menu-item" href="https://shootboxing.org/privacy">プライバシーポリシー</a></li>
+        <li><a class="drawer-menu-item" href="https://twitter.com/SHOOT_BOXING" target="_blank">X</a></li>
+        <li><a class="drawer-menu-item" href="https://ja-jp.facebook.com/shootboxing" target="_blank">Facebook</a></li>
+        <li><a class="drawer-menu-item" href="https://www.instagram.com/shootboxing_official/" target="_blank">Instagram</a></li>
+        <li><a class="drawer-menu-item" href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank">youtube</a></li>
+        <li><a class="drawer-menu-item" href="https://www.tiktok.com/@shootboxing_official" target="_blank">TikTok</a></li>
+      </ul>
+    </nav>
+
+<div id="logo"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo.png" alt="シュートボクシング"></a></div>
+<div id="logo-sp"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo-sp.png" alt="シュートボクシング"></a></div>
+
+<nav id="nav" role="navigation">
+<ul class="menu">
+<li class="menu__single">
+<a href="https://shootboxing.org/news">ニュース<br><span>NEWS</span></a>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/fight" class="init-bottom">大会情報<br><span>FIGHT</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/fight">大会情報</a></li>
+<li><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/result">試合結果<br><span>RESULT</span></a>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/fighter" class="init-bottom">選手情報<br><span>FIGHTER</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/fighter">ランキング</a></li>
+<li><a href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/about" class="init-bottom">SBとは<br><span>ABOUT US</span></a>
+<ul class="menu__second-level">
+<li><a href="https://shootboxing.org/about">SBとは</a></li>
+<li><a href="https://shootboxing.org/rule">SBルール</a></li>
+<li><a href="https://shootboxing.org/s-cup">S-cup</a></li>
+<li><a href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+<li><a href="https://shootboxing.org/history">SBヒストリー</a></li>
+<li><a href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+<li><a href="https://shootboxing.org/human_of_sb/">HUMAN OF SB</a></li>
+</ul>
+</li>
+<li class="menu__single">
+<a href="https://shootboxing.org/gym" class="init-bottom">ジム紹介<br><span>GYM</span></a>
+</li>
+</ul>
+</nav>
+
+</header><!-- ヘッダーここまで -->
+
+<div class="head-sub">
+<div class="ghonyaku">
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'de,en,es,fr,ja,ko,th,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
-      <div id="text">
-        リクエストが確認されるまでお待ちください…
-      </div>
-    </div>
+<div class="sns">
+  <a href="https://twitter.com/SHOOT_BOXING" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-x-black.svg" alt="X" width="13" height="13"></a>
+  <a href="https://ja-jp.facebook.com/shootboxing" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-facebook-black.svg" alt="facebook" width="17" height="17"></a>
+  <a href="https://www.instagram.com/shootboxing_official/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-instagram-black.svg" alt="instagram" width="16" height="16"></a>
+  <a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-youtube-black.svg" alt="YouTube" width="18" height="13"></a>
+  <a href="https://www.tiktok.com/@shootboxing_official" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-tiktok-black.svg" alt="tiktok" width="15" height="17"></a>
+</div>
+</div>
+
+<div id="sidelink">
+<div id="side-ticket"><a href="https://shootboxing.stores.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-ticket.png" alt="公式グッズ"></a></div>
+<div id="side-amateur"><a href="https://shootboxing.org/amateur"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-amateur.png" alt="アマチュア大会"></a></div>
+<div id="side-movie"><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/side-youtube.png" alt="SB YouTube"></a></div>
+</div>
+<div id="content"><!-- コンテンツ -->
+<div id="page-image"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/pageimage_result.jpg" alt="試合結果"></div>
+
+<div class="pankuzu">
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="SHOOTBOXING｜シュートボクシングへ移動" href="https://shootboxing.org" class="home"><span property="name">HOME</span></a><meta property="position" content="1"></span> &raquo; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="試合結果（一覧）へ移動" href="https://shootboxing.org/result/" class="result-root post post-result"><span property="name">試合結果（一覧）</span></a><meta property="position" content="2"></span> &raquo; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 2016 開催年 archives." href="https://shootboxing.org/news/resultyear/year-2016/" class="taxonomy resultyear"><span property="name">2016</span></a><meta property="position" content="3"></span> &raquo; <span property="itemListElement" typeof="ListItem"><span property="name">Que Sera Japon presents『SHOOT BOXING WORLD TOURNAMENT S-cup 2016』</span><meta property="position" content="4"></span></div>
+</div>
+
+<!-- 大会情報 -->
+<div class="section-fight">
+<div class="inner">
+<div class="box">
+<div class="box">
+<h2 class="title">Que Sera Japon presents『SHOOT BOXING WORLD TOURNAMENT S-cup 2016』</h2>
+<h4 class="fight-data">2016年11月11日（金）東京・TDCホール</h4>
+<div class="mainimage">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/2016g-zero.jpeg">
+</div>
+<p>RENA、判定勝ちで17連勝！S-cupはザガリアが悲願の初優勝</p>
+<p>本大会の様子はシュートボクシングの動画サイト【SHOOT BOXING MOVIE COMPLEX】にてご覧いただけます！（近日公開）【SHOOT BOXING MOVIE COMPLEX】は、シュートボクシングの31年の歴史、感動の全てを月額777円で動画見放題！！ぜひ、【SHOOT BOXING MOVIE COMPLEX】にご登録ください！<br />
+<a href="https://shootboxing.org/moviecomplex" target="_blank">https://shootboxing.org/moviecomplex</a></p>
+</div>
+
+<div class="box">
+<h5 class="bar">第12試合</h5>
+<h4 class="title">スペシャルマッチ／フライ級＝51.0kg<br>エキスパートクラス特別ルール　3分3R延長無制限R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">RENA<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">キンバリー・ノヴァス<span></span></h3>
+
+<h4>3R判定3−0　※30−28、30−28、30−29</h4>
+
+<div class="fight-image">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_4330.jpg">
+</div>
+
+<ul class="gallery">
+<li>
+<a href="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_4140.jpg" class="lightbox">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_4140-400x267.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_3532.jpg" class="lightbox">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_3532-400x267.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A2616.jpg" class="lightbox">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A2616-400x267.jpg" alt="" />
+</a>
+</li>
+</ul>
+<hr>
+
+<p>1R、飛び込んでフックを打とうとするノヴァスをRENAは前蹴りでストッピング。ノヴァスが組み付いてくるとヒザ蹴りからの首投げを狙ったが、ノヴァスの腰が重く投げることが出来なかった。2Rも同様の展開で、ロー＆パンチから組み付いてくるノヴァスにRENAは戦いにくそう。それでも右ストレート、左フックを当てていく。3R終盤、勝負に出たRENAがボディブローとヒザ蹴りでノヴァスにダメージを与えるが、タフなノヴァスは最後まで耐えた。RENAが判定勝ちで17連勝を飾りメインを締めくくったが、「反省点の多い試合だった」と試合を振り返った。</p>
+<hr>
+</div>
+
+<div class="box">
+<h5 class="bar">第11試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント決勝戦<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">MASAYA<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">ザカリア・ゾウガリー<span></span></h3>
+
+<h4>TKO 2R1分14秒　※3ノックダウン</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_4086-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>決勝戦を争ったのはMASAYAとザカリア。2試合連続KOで波に乗るMASAYAは左右のロー＆ミドルキックで蹴り主体の攻撃。ザカリアはMASAYAのブロックが空いているところをよく見てパンチを入れていき、顔面とボディへ打ち分ける。2Rになるとザカリアがさらにアグレッシブに動き始め、飛びヒザ蹴りも繰り出す。ヒザ蹴り、バックキックでMASAYAのボディを攻めるザカリアは、左右フック連打からのボディ連打でダウンを奪う。2度目のダウンもボディへの連打。MASAYAは根性を見せて立ち上がったが、もはや体に力が入らないのか、ザカリアの飛びヒザ蹴りをまともにはもらわなかったが後方に倒れ、レフェリーがここで試合をストップ。ザカリアが2年前は叶わなかったS-cup制覇を成し遂げた。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第10試合</h5>
+<h4 class="title">スペシャルマッチ／71.0kg契約<br>エキスパートクラス特別ルール　3分3R延長無制限R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">アンディ・サワー<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">宮越 宗一郎<span></span></h3>
+
+<h4>3R判定3−0　※30−28、29−28、29−28</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_3766-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R、スピードに優るアンディがパンチとローキックのコンビネーション、顔面からボディへのコンビネーションと快調に攻めていく。手数の少なかった宮越だが、2Rになると前へ出てジャブや右ストレートをアンディの顔面へ放ち、仰け反らせる場面もある。しかし、アンディはMMAで学んだ遠い間合いから飛び込んでの右フックでダウンを奪うと、一気に連打をまとめる。3Rは宮越が逆転を狙ってパンチ連打で前へ出て行く。アンディは珍しくステップで動き回って宮越の攻撃をかわし、飛び込んでパンチを打つと胴タックルのようにして宮越の動きを止める。宮越のパンチをもらう場面もあったが、ダウンを奪ったアンディが約11カ月ぶりのSBルールで判定勝ちした。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第9試合</h5>
+<h4 class="title">SB日本スーパーバンタム級タイトルマッチ／スーパーバンタム級＝55.0kg<br>エキスパートクラスルール　3分5R延長無制限R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">内藤 大樹<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">植山 征紀<span></span></h3>
+
+<h4>KO 3R2分14秒　※左フック</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_3409-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R、パンチで倒す気満々の植山を蹴りで迎え撃つ内藤。植山の攻撃をかわしての蹴り返しで優勢を保っていたが、植山の右ストレートが徐々に内藤を捉え始める。2Rには蹴ろうとした内藤に植山が左フックを合わせてダウン先取。植山は倒す気が空回りしてか大振りの空振りが目立つ。そして3R、内藤が打ち合いに応じてきたところで植山の左フック。これでグラついた内藤から右フックでダウンを奪う。植山のパンチで追い込まれた内藤だったが、倒しに来た植山に1Rから狙っていた右フックがカウンターで決まり、今度は植山がダウン。植山は立ち上がろうとするも体が言うことを聞かず、内藤が大逆転KO勝ちで王座初防衛に成功した。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第8試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント準決勝戦<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">ザカリア・ゾウガリー<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">タップロン・ハーデスワークアウト<span></span></h3>
+
+<h4>3R判定3−0　※30−27、29−27、30−27</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_2848-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R、左右フックを回転させていくザカリアに、タップロンは左ミドルで対抗。ザカリアのスピードのある連打がタップロンに命中する。2Rになるとザカリアは回転技を次々と繰り出し、クリーンヒットはなかなか奪えなかったが、ラウンド終了間際に首投げでシュートポイントを獲得。3R、接近しては左右フックを連打するザカリアに、タップロンもパンチで対抗。両者が足を止めてのフックの打ち合いで場内が大きく盛り上がる。より多くのパンチを当てていったザカリアが判定勝ちで決勝進出を果たした。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第7試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント準決勝戦<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">Hideki<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">MASAYA<span></span></h3>
+
+<h4>TKO 1R※セコンドからのタオル投入</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/IMG_2705-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>鈴木博昭のドクターストップで、敗者復活で準決勝に駒を進めたのはRISEランカーのHideki。1R、MASAYAは左ローを徹底的に蹴り、左ミドルやパンチで意識を逸らしてまたローを蹴る。鈴木戦ですでに足にダメージを負っていたHidekiは、それでもローを蹴られながら鈴木をドクターストップに追い込んだパンチを放つ。前へ出てパンチを繰り出すHidekiと、それに下がりながらもしっかりとローを蹴るMASAYA。途中、レフェリーがブレイクを命じると、Hidekiはもう立っていることが出来ず、座り込むのと同時にセコンドからタオルが投入された。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第6試合</h5>
+<h4 class="title">SB日本女子ミニマム級王座決定戦／ミニマム級＝48.0kg<br>エキスパートクラスルール　3分5R延長無制限R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">MIO<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">Union朱里<span></span></h3>
+
+<h4>延長-R判定3−0　※三者とも10−9</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A1977-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>4度目の対戦となるMIOと朱里。3戦とも全て敗れている朱里はリベンジを固く誓い、1Rから積極的な攻めを見せ、左ストレート、組んでのヒザ。2Rもヒザ主体の攻めでMIOを追い込む。蹴りで距離を取るMIOは、3Rに首投げでシュートポイント奪取。そして右フックも当てていく。4R、朱里は組んでのヒザでMIOの体力を削り、MIOは苦戦を強いられる。さらに5Rには朱里のフロントチョークがキャッチポイントに。MIOは左右フック連打、右ミドルを当て巻き返し。本戦では決着付かず延長戦へ。MIOはワンツーをヒットさせるなど手数で上回り、判定勝ち。念願の女子ミニマム級初代王者に輝いた。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第5試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント1回戦／スーパーライト級＝65.0kg<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">タップロン・ハーデスワークアウト<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">水落 洋祐<span></span></h3>
+
+<h4>TKO 2R40秒　※右フック→レフェリーストップ</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A1644-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R序盤から右フックをヒットさせるタップロン。接近戦では首相撲からのヒザで主導権を握り、ワンツーで水落からダウンを奪う。そして投げでもシュートポイントを獲得し、水落を追い込む。2R、水落はロー、パンチを上下に散らすと、タップロンはパンチ連打。右フックをクリーンヒットさせて水落を完全KOした。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第4試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント1回戦／スーパーライト級＝65.0kg<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">ザカリア・ゾウガリー<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">山口 裕人<span></span></h3>
+
+<h4>TKO 1R1R 1分27秒　※2ノックダウン</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A1494-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>20勝のうち13KOと高いKO率を誇る山口は1Rからパンチ連打で前に出るとザカリアをコーナーに追い込む。するとザカリアは右フックでダウンを奪う。山口が立ち上がると、打ち合いを誘うザカリアはバックブローでKO勝ち。圧勝でザカリアが準決勝行きを決めた。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第3試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント1回戦／スーパーライト級＝65.0kg<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-ko.svg" width="25px" height="25px">MASAYA<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">チャールズ・“クレイジーホース”・ベネット<span></span></h3>
+
+<h4>TKO 2R2分04秒　※レフェリーストップ</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A1388-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R、ベネットはトリッキーな動きを見せ右フックでダウンを奪う。すぐに立ち上がるMASAYAはガンガン前に出て左ミドルでボディを削る。これで徐々にスタミナを消耗したベネットはタックルを連発しテイクダウン。ローブローが入ると、ベネットはセコンドと話すなどで時間を稼ぐ。MASAYAは左ミドル、左ハイで前に出続けて、パンチ連打。防戦一方のベネットにレフェリーがダウンコール。10カウント以内にベネットがファイティングポーズを取らなかったために、MASAYAのTKO勝ち。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第2試合</h5>
+<h4 class="title">S-cup65kg世界トーナメント1回戦／スーパーライト級＝65.0kg<br>S-cupルール　3分3R延長1R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">鈴木 博昭<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">Hideki<span></span></h3>
+
+<h4>延長-R判定3−0　※三者とも10−9</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A1007-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1R、ガードをガッチリ固める鈴木は左インローをこつこつ当て主導権を握る。攻撃を散らして前に出る鈴木の前に、Hidekiは攻めあぐねたが2Rに右ストレートをヒット。3Rには、Hidekiがパンチラッシュを仕掛けると、鈴木は鼻血を大量に出しドクターチェックが入る。再開後、鈴木は左フック、左ローで反撃し本戦はドロー。延長戦では、鈴木が前蹴りで距離を取り、左のパンチを当て手数を増やす。準決勝行きを決めた鈴木だったが、左目眼窩底骨折の疑いでドクターストップ。トーナメント規定でHidekiが準決勝に進出へ。</p>
+</div>
+<hr>
+</div>
+<div class="box">
+<h5 class="bar">第1試合</h5>
+<h4 class="title">スーパーフェザー級＝60.0kg<br>エキスパートクラス特別ルール　3分3R延長無制限R</h4>
+<h3 class="fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-win.svg" width="25px" height="25px">村田 聖明<span></span></h3>
+<h3 class="fighter">vs</h3>
+<h3 class="fighter" style="margin:0 0 15px;"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/mark-lose.svg" width="25px" height="25px">中神 吉彦<span></span></h3>
+
+<h4>3R判定3−0　※30−25、30−25、30−26</h4>
+
+<div class="fight-image-s">
+<img src="https://shootboxing.org/wp/wp-content/uploads/2018/05/F29A0303-300x200.jpg">
+</div>
+
+<div class="fight-text-s">
+<p>1Rから激しい打ち合いを繰り広げる両者。2Rには乱打戦の中で村田が左フックでダウンを奪う。3Rは村田が右ストレートからの左フック。そして右ボディで中神を追い込む。終盤には左フックで2度目のダウンを奪った村田が大差を付けて判定勝ちした。 　</p>
+</div>
+<hr>
+</div>
+
+</div>
+</div>
+<hr>
+</div>
+<!-- 大会情報 ここまで -->
+
+<div class="section-fight-gray">
+<div class="inner">
+<div class="title-img"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/title_kaisai.png" alt="大会情報"></div>
+<ul class="fight">
+<li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/37695/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/11/DSC_5360_0_batch0-scaled-e1795413648254.jpg"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/37695/">SHOOT BOXING 2027 act.1</a></h3>
+<p class="fight-data">2027年2月13日（土）<br>東京・後楽園ホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/37695/">大会詳細</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/37694/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/11/S__47038583_0-scaled.jpg"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/37694/">SHOOT BOXING 2026 ヤングシーザー杯</a></h3>
+<p class="fight-data">2026年12月13日（日）<br>東京・ゴールドジムサウス東京アネックス</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/37694/">大会詳細</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://eplus.jp/sf/detail/0047550001" target="_blank">チケット発売日 12月1日（火）</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/36831/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/08/09b71eddc125a29a5f1e12297451623f-scaled.png"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/36831/">SHOOT BOXING 2026 act.6 in AICHI</a></h3>
+<p class="fight-data">2026年11月8日（日）<br>愛知・あいおいホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/36831/">大会詳細</a></p>
+    <p class="link-btn-syousai catalog -mb5"><a href="https://tigmedia.jp/magazine/prediction/?id=1f20b46e828ef93a8c84&amp;guide=true&amp;ta_tag=official" target="_blank">デジタルパンフレット</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://video.unext.jp/livedetail/LIV0000017056" target="_blank">U-NEXT 見逃し配信</a></p>
+</li><li class="poster">
+<div class="poster-image">
+<a href="https://shootboxing.org/fight/36654/"><img src="https://shootboxing.org/wp/wp-content/uploads/2026/08/SHOOTBOXING-2026-act.5-pic-scaled.png"></a>
+</div>
+<div class="fight-data matchHeight">
+<h3 class="fight-title"><a href="https://shootboxing.org/fight/36654/">SHOOT BOXING 2026 act.5</a></h3>
+<p class="fight-data">2026年10月24日（土）<br>東京・後楽園ホール</p>
+</div>
+<p class="link-btn-syousai -mb5"><a href="https://shootboxing.org/fight/36654/">大会詳細</a></p>
+    <p class="link-btn-syousai catalog -mb5"><a href="https://tigmedia.jp/magazine/prediction/?id=c418972aa0998f03513e&amp;guide=true&amp;ta_tag=official" target="_blank">デジタルパンフレット</a></p>
+    <p class="link-btn-syousai ticket"><a href="https://video.unext.jp/livedetail/LIV0000016395" target="_blank">U-NEXT 見逃し配信</a></p>
+</li></ul>
+<h5 class="link-btn-top"><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></h5>
+<hr>
+<div class="link-btn-big"><a href="https://shootboxing.org/result">過去の大会 ｜ 試合結果</a></div>
+</div>
+<hr>
+</div>
+
+
+
+</div><!-- コンテンツここまで -->
+
+<div class="section-cont">
+<div class="inner">
+<ul class="cont">
+<li><a href="https://shootboxing.org/about"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_sb.png" alt="シュートボクシングとは"></a></li>
+<li><a href="https://shootboxing.org/rule"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rule.png" alt="SBルール"></a></li>
+<li><a href="https://shootboxing.org/fighter"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_ranking.png" alt="ランキング"></a></li>
+<li><a href="https://shootboxing.org/fighters/list"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_fighter.png" alt="選手一覧"></a></li>
+<li><a href="https://shootboxing.org/s-cup"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_scup.png" alt="S-cup"></a></li>
+<li><a href="https://shootboxing.org/girls-s-cup"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_gscup.png" alt="Girls S-cup"></a></li>
+<li><a href="https://shootboxing.org/gym"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_gym.png" alt="ジム紹介"></a></li>
+<li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_youtube.png" alt="youtube"></a></li>
+</ul>
+<hr>
+</div>
+</div>
+
+<div class="section-bnr">
+<ul class="bnr">
+<li><a href="https://rena-official.amebaownd.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rena.png" alt="RENAオフィシャルサイト"></a></li>
+<li><a href="https://shootboxing.org/roundgirl"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_rg.png" alt="SBラウンドガール"></a></li>
+<li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_youtube2020.png" alt="Abema TV"></a></li>
+<li><a href="https://shootboxing.org/human_of_sb"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/bnr/bnr_hos.png" alt="HUMAN OF SB"></a></li>
+</ul>
+<hr>
+</div>
+
+<div class="section-op">
+<div class="inner">
+<div class="title-img"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/title_op.png" alt="オフィシャルスポンサー"></div>
+<ul class="op">
+<li><a href="http://neoaging.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_01_2022.jpg" alt="neo aging"></a></li>
+<li><a href="http://www.tohshin.co.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_03new.jpg" alt="トーシンパートナーズ"></a></li>
+<li><a href="http://www.beams.co.jp/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_04.jpg" alt="BEAMS"></a></li>
+<li><a href="http://www.lives-group.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_04_2024.jpg" alt="株式会社ライブズ"></a></li>
+<li><a href="http://www.athletegai.com/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/partner/op_05_2022.jpg" alt="アスリート街.com"></a></li>
+</ul>
+<hr>
+<div class="link-btn-top"><a href="https://shootboxing.org/partner">パートナー一覧 <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</div>
+
+<div class="section">
+<footer><!-- フッター -->
+
+<div id="footermenu">
+<div class="inner">
+
+<div class="list">
+<ul>
+<li class="main"><a href="https://shootboxing.org">HOME</a></li>
+<li><a href="https://shootboxing.org/news">ニュース一覧</a></li>
+<li><a href="https://shootboxing.org/company">運営会社</a></li>
+<li><a href="https://shootboxing.org/news/category/cate-csr/">CSR</a></li>
+<li><a href="https://shootboxing.org/partner">スポンサー一覧</a></li>
+</ul>
+</div>
+
+<div class="list">
+<ul>
+<li class="main">大会情報</li>
+<li><a href="https://shootboxing.org/fight">大会情報</a></li>
+<li><a href="https://shootboxing.org/result">試合結果</a></li>
+<li><a href="https://shootboxing.org/fight/schedule">年間スケジュール</a></li>
+<li><a href="https://shootboxing.org/amateur">アマチュア大会</a></li>
+</ul>
+</div>
+
+<div class="list">
+<ul>
+<li class="main">選手情報</li>
+<li><a href="https://shootboxing.org/fighter">ランキング</a></li>
+<li><a href="https://shootboxing.org/fighters/list">選手一覧</a></li>
+<li><a href="https://shootboxing.org/fighters/rekidai">歴代チャンピオン</a></li>
+<li><a href="https://shootboxing.org/gym">ジム一覧</a></li>
+</ul>
+</div>
+
+<div class="list">
+<ul>
+<li class="main">SBとは</li>
+<li><a href="https://shootboxing.org/about">SBとは</a></li>
+<li><a href="https://shootboxing.org/rule">SBルール</a></li>
+<li><a href="https://shootboxing.org/s-cup">S-cup</a></li>
+<li><a href="https://shootboxing.org/girls-s-cup">Girls S-cup</a></li>
+<li><a href="https://shootboxing.org/history">SBヒストリー</a></li>
+<li><a href="https://shootboxing.org/human_of_sb">HUMAN OF SB</a></li>
+</ul>
+</div>
+
+<div class="list-last">
+<ul>
+<li class="main">etc.</li>
+<li><a href="https://shootboxing.stores.jp/" target="_blank">オフィシャルショップ</a></li>
+<li><a href="https://rena-official.amebaownd.com/" target="_blank">RENAオフィシャル</a></li>
+<li><a href="https://shootboxing.org/roundgirl">ラウンドガール</a></li>
+</ul>
+</div>
+<hr>
+
+<div class="list">
+<ul>
+<li class="main"><a href="https://shootboxing.org/sitemap">サイトマップ</a></li>
+<li><a href="https://shootboxing.org/company/contact">お問い合わせ</a></li>
+<li><a href="https://shootboxing.org/privacy">プライバシーポリシー</a></li>
+</ul>
+</div>
+<hr>
+<div id="logo-footer"><a href="https://shootboxing.org"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/sb-logo-footer.png" alt="シュートボクシング"></a></div>
+
+</div><!-- インナーここまで -->
+
+</div>
+
+
+<div id="foot-sns-icon" class="foot-sns-icon">
+  <div class="inner">
+    <ul class="sns-icon-list">
+      <li><a href="https://twitter.com/SHOOT_BOXING" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-x-black.svg" alt="X" width="20" height="20"></a></li>
+      <li><a href="https://ja-jp.facebook.com/shootboxing" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-facebook-black.svg" alt="facebook" width="23" height="23"></a></li>
+      <li><a href="https://www.instagram.com/shootboxing_official/" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-instagram-black.svg" alt="instagram" width="21" height="21"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCjJ3849GExStjdF1M-68lyg" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-youtube-black.svg" alt="YouTube" width="26" height="18"></a></li>
+      <li><a href="https://www.tiktok.com/@shootboxing_official" target="_blank"><img src="https://shootboxing.org/wp/wp-content/themes/sb-theme/image/icon/icon-tiktok-black.svg" alt="tiktok" width="21" height="24"></a></li>
+    </ul>
   </div>
-  <div id="wjx967bway0d"></div>
-  <script nonce="X7zLIIFQEmsnvRMFj44WdQ==">
-function a0d(C,T){var f=a0f();return a0d=function(d,F){d=d-0x8f;var Q=f[d];return Q;},a0d(C,T);}(function(C,T){var a0h={C:0xa8,T:0xac,f:0xbb,d:0x93,F:0x99,Q:0x9b,V:0x98},G=a0d,f=C();while(!![]){try{var d=parseInt(G(0xc0))/0x1*(-parseInt(G(a0h.C))/0x2)+-parseInt(G(a0h.T))/0x3+parseInt(G(a0h.f))/0x4+-parseInt(G(a0h.d))/0x5*(-parseInt(G(a0h.F))/0x6)+-parseInt(G(0xb0))/0x7+-parseInt(G(0xc1))/0x8+parseInt(G(a0h.Q))/0x9*(parseInt(G(a0h.V))/0xa);if(d===T)break;else f['push'](f['shift']());}catch(F){f['push'](f['shift']());}}}(a0f,0xa72cd));var a0F=window['navigator'],a0Q={'webdriverCheck':function(){var a0m={C:0xa1},s=a0d;return s(0xa1)in window||!!a0F[s(a0m.C)];},'userAgentCheck':function(){return/headless|bytespider/i['test'](a0F['userAgent']);},'appVersionCheck':function(){var a0Z={C:0x91},a=a0d;return/headless/i[a(a0Z.C)](a0F['appVersion']);},'pluginArraySpoofing':function(){var a0t={C:0x9f,T:0xbc,f:0xa4},X=a0d;let C=PluginArray[X(a0t.C)]===a0F[X(a0t.T)][X(0xa4)];if(a0F[X(0xbc)][X(0xc3)]>0x0)C&=Plugin[X(0x9f)]===a0F[X(0xbc)][0x0][X(a0t.f)];return!C;},'mimeTypeArraySpoofing':function(){var a0q={C:0x9f,T:0xa0,f:0x9f,d:0xa0},B=a0d;let C=MimeTypeArray[B(a0q.C)]===a0F[B(a0q.T)][B(0xa4)];if(a0F[B(0xa0)]['length']>0x0)C&=MimeType[B(a0q.f)]===a0F[B(a0q.d)][0x0]['__proto__'];return!C;},'noLanguage':function(){var a0M={C:0xb9,T:0xbf,f:0xc3},i=a0d;return!a0F[i(a0M.C)]||a0F[i(a0M.T)][i(a0M.f)]===0x0;},'zeroOuterDimensions':function(){var k=a0d;return window[k(0xaa)+'t']===0x0&&window[k(0x96)]===0x0;}},a0V=function(f,d){var a0b={C:0xad,T:0xc5},a0P={C:0xa2,T:0x90},I=a0d,F=(function(){var V=!![];return function(r,e){var a0l={C:0xa6},x=V?function(){var z=a0d;if(e){var D=e[z(a0l.C)](r,arguments);return e=null,D;}}:function(){};return V=![],x;};}()),Q=F(this,function(){var O=a0d;return Q[O(0x97)]()['search'](O(0x90)+'+$')['toString']()[O(a0P.C)+'r'](Q)['search'](O(a0P.T)+'+$');});Q(),window[I(a0b.C)+I(a0b.T)]?window[I(0xae)]['addEventLi'+I(0xc5)](I(0x9c)+I(0xb8),f,d):window[I(0xae)]['attachEven'+'t']('onreadysta'+I(0x8f),f);};function a0f(){var J=['display:no','990klfiwK','DOMContent','submit','GET','prototype','mimeTypes','webdriver','constructo','value','__proto__','style','apply','input','93370xSZpQW','name','outerHeigh','appendChil','1933173heWxMe','addEventLi','document','d49030b349','5008997TYypqd','createElem','type','hidden','ById','7fa3b767c4','a6105c0a61','ne;','Loaded','language','forEach','960200PhHohI','plugins','action','map','languages','10PkmyoP','7125824silbGY','form','length','append','stener','techange','(((.+)+)+)','test','ent','4965mAIfRy','entries','method','outerWidth','toString','196030gIvxeU','6078rFeIZx'];a0f=function(){return J;};return a0f();}a0V(function(){var a0W={C:0xae,T:0xae,f:0xa7,d:0xb1,F:0x92,Q:0xbe,V:0xc3,r:0xc4,e:0x9e,x:0x97,D:0x95,N:0xbd,v:0xa3,j:0xb3,H:0xa9,L:0xaf,y:0xb2,w:0xb3,E:0xb2,R:0xa3,K:0xab,h:0xab};setTimeout(function(){var c=a0d,C=window[c(0xae)]['getElement'+c(0xb4)]('wjx967bway0d'),T=+((+!+[]+!![]+!![])+(+!+[]+[])+(+!+[]+!![]+!![]+!![]+!![]+!![]+!![])+(+!+[]+[])+(+!+[]+!![]+!![])+(+!+[]+!![]+!![]+!![]+!![]+!![]+!![]+!![]+[])+(+!+[]+!![]+!![]+!![]+!![])),f=window[c(a0W.C)]['createElem'+'ent'](c(0xc2)),d=window[c(a0W.T)][c(0xb1)+'ent'](c(a0W.f)),F=window[c(0xae)][c(a0W.d)+c(a0W.F)]('input'),Q=window[c(0xae)][c(a0W.d)+c(0x92)](c(0xa7)),V=window[c(0xae)][c(0xb1)+c(0x92)]('input'),r=window['document']['createElem'+'ent'](c(0xa7)),e=+((+!+[]+!![]+!![])+(+!+[]+!![]+!![]+!![]+[])+(+!+[]+!![]+!![])+(+!+[]+!![]+!![]+!![]+[])+(+![])+(+!+[]+!![]+!![]+!![]+!![]+!![]+!![]+!![]+[])+(+!+[]+!![]+!![]+!![])),x='wsidchk',D='pdata',N='https%3A%2F%2Fadcombat.com%2Fadcc-events%2Fadcc-submission-fighting-world-championship-2026%2F',v='/z0f76a1d14fd21a8fb5fd0d03e0fdc3d3cedae52f',j='failedChecks',H=Object[c(0x94)](a0Q)[c(a0W.Q)](([E,R])=>{try{return R()?E:null;}catch(K){return null;}})['filter'](E=>E!==null),L=H[c(a0W.V)]>0x0;if(L){var y=new URLSearchParams();y[c(a0W.r)]('id',c(0xb6)+'1b41b08f12'+'0950635027'+'9e'),y['append']('ts','1795843954'),y[c(0xc4)](x,T+e),y[c(a0W.r)](D,N),y['append']('cttl','0'),H[c(0xba)](E=>y[c(0xc4)](j,E));var w=new XMLHttpRequest();w['open'](c(a0W.e),v+'?'+y[c(a0W.x)]()),w['send'](null);}else f['id']='wjx967bway0d',f[c(0xa5)]=c(0x9a)+c(0xb7),f[c(a0W.D)]='GET',f[c(a0W.N)]=v,d['id']='ew1auzf296oo',d[c(0xa9)]=x,d[c(a0W.v)]=T+e,d['type']=c(a0W.j),Q[c(a0W.H)]='id',Q['value']=c(0xb5)+'60b54a2be4'+c(a0W.L)+'c7',Q[c(a0W.y)]=c(a0W.w),V[c(a0W.H)]='ts',V[c(a0W.v)]='1795843954',V[c(0xb2)]=c(a0W.j),F['id']='qxhaus6sps5u',F[c(0xa9)]=D,F[c(0xa3)]=N,F[c(a0W.E)]=c(0xb3),r['name']='cttl',r[c(a0W.R)]='0',r[c(0xb2)]=c(0xb3),f[c(0xab)+'d'](d),f['appendChil'+'d'](F),f[c(a0W.K)+'d'](Q),f['appendChil'+'d'](V),f[c(a0W.K)+'d'](r),C[c(a0W.h)+'d'](f),f[c(0x9d)]();},0x3e8);},![]);
-  </script>
-<script nonce="X7zLIIFQEmsnvRMFj44WdQ==">(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.nonce='X7zLIIFQEmsnvRMFj44WdQ==';d.innerHTML="window.__CF$cv$params={r:'a616fe2ebdbb0625',t:'MTc5NTg0Mzk1NQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a616fe2ebdbb0625',a=document.createElement('script');a.nonce='X7zLIIFQEmsnvRMFj44WdQ==';a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</div>
+
+
+<div id="foot-bottom">
+<p class="copy">Copyrighat&#169;SHOOT BOXING, All rights reserved.</p>
+</div>
+
+</footer><!-- フッターここまで -->
+</div>
+
+</div><!-- コンテナここまで -->
+
+<div id="back-top">
+<a href="#TOP"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/wp/wp-content/uploads/*","/wp/wp-content/*","/wp/wp-content/plugins/*","/wp/wp-content/themes/sb-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://shootboxing.org/wp/wp-admin/admin-ajax.php";
+</script>
+<script id="wp-hooks-js" src="https://shootboxing.org/wp/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://shootboxing.org/wp/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-11-30 08:12:23+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/shootboxing.org\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://shootboxing.org/wp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6"></script>
+<script id="fancybox-purify-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=7.0.9"></script>
+<script id="jquery-fancybox-js-extra">
+var efb_i18n = {"close":"Close","next":"Next","prev":"Previous","startSlideshow":"Start slideshow","toggleSize":"Toggle size"};
+//# sourceURL=jquery-fancybox-js-extra
+</script>
+<script id="jquery-fancybox-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=7.0.9"></script>
+<script id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'width':560,'height':340,'margin':20,'pixelRatio':'false','padding':10,'centerOnScroll':false,'enableEscapeButton':true,'speedIn':300,'speedOut':300,'overlayShow':true,'hideOnOverlayClick':true,'overlayColor':'#000','overlayOpacity':0.6,'minViewportWidth':320,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-file__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+						var unlinkedImageBlocks=jQuery(".wp-block-image > img:not(.nofancybox,figure.nofancybox>img)");
+						unlinkedImageBlocks.wrap(function() {
+							var href = jQuery( this ).attr( "src" );
+							return jQuery( "<a></a>" ).attr( "href", href );
+						});
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".webp" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery,.ngg-galleryoverview,.ngg-imagebrowser,.nextgen_pro_blog_gallery,.nextgen_pro_film,.nextgen_pro_horizontal_filmstrip,.ngg-pro-masonry-wrapper,.ngg-pro-mosaic-container,.nextgen_pro_sidescroll,.nextgen_pro_slideshow,.nextgen_pro_thumbnail_grid,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transition':'elastic','transitionIn':'elastic','transitionOut':'elastic','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'mouseWheel':'true','changeSpeed':250,'changeFade':300}))});
+};};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+
+//# sourceURL=jquery-fancybox-js-after
+</script>
+<script id="jquery-easing-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1"></script>
+<script id="jquery-mousewheel-js" src="https://shootboxing.org/wp/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://shootboxing.org/wp/wp-includes/js/wp-emoji-release.min.js?ver=7.0.9"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://shootboxing.org/wp/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
 </html>
