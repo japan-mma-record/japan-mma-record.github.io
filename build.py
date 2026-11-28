@@ -75,6 +75,8 @@ def load():
     promos = {r['promotion']: r for r in read_tsv(os.path.join(DATA, 'promotions.tsv'))}
     events = {r['event_id']: r for r in read_tsv(os.path.join(DATA, 'core', 'events.tsv'))}
     for r in events.values():
+        if r.get('promotion') == 'groundimpact':
+            r['promotion'] = 'jbjjf'   # グランドインパクト・デラヒーバ杯の主催は JBJJF
         r['name'] = methods.event_name(r.get('name'))
         r['sources'] = methods.clean_sources(r.get('sources'))
     bouts = collections.defaultdict(list)
@@ -96,6 +98,8 @@ def load():
     for r in read_tsv(os.path.join(DATA, 'auto', 'bouts.tsv')):
         auto_b[r['event_id']].append(r)
     for e in auto_ev:
+        if e.get('promotion') == 'groundimpact':
+            e['promotion'] = 'jbjjf'
         if (e['promotion'], e['date']) in have:
             continue
         e['name'] = methods.event_name(e.get('name'))
@@ -360,9 +364,9 @@ def load():
     key2id = {(e['promotion'], e['date'], methods.event_name(e['name'])): k for k, e in events.items()}
     for r in read_tsv(os.path.join(DATA, 'podium.tsv')):
         pr, d, nm = r.get('promotion') or 'jbjjf', r.get('date', ''), methods.event_name(r.get('event_name_ja'))
-        if pr == 'jbjjf' and re.search(r'(?i)Ground\s*Impact|グラウンドインパクト|グランドインパクト|デラヒーバ杯|De\s*La\s*Riva\s*CUP|KBJJA', nm or ''):
-            pr = 'groundimpact'   # IF-PROJECT の大会
-        k = key2id.get((pr, d, nm)) or key2id.get(('groundimpact', d, nm))
+        if pr == 'groundimpact':
+            pr = 'jbjjf'   # グランドインパクト・デラヒーバ杯の主催は JBJJF
+        k = key2id.get((pr, d, nm))
         if not k:
             k = 'j' + hashlib.md5(f'{pr}|{d}|{nm}'.encode()).hexdigest()[:8]
             events[k] = {'event_id': k, 'promotion': pr, 'date': d, 'name': nm, 'venue': r.get('venue', ''), 'sources': ''}
