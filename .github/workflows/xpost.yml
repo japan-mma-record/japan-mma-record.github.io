@@ -1,4 +1,4 @@
-name: 毎日のX投稿（本日の大会・過去のこの日の大会）
+name: 毎日のSNS投稿（本日の大会・過去のこの日の大会）
 on:
   schedule:
     - cron: '31 22 * * *'   # 毎日 日本時間 7:31（GitHub の混み具合で遅れることがある）
@@ -21,4 +21,6 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           X_INCLUDE_URL: ${{ vars.X_INCLUDE_URL }}
           X_LONG_POST: ${{ vars.X_LONG_POST }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: python3 xpost.py

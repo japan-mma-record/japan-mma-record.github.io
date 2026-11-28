@@ -40,7 +40,7 @@ def short_venue(v):
     return v
 
 
-def build_text(day, long_post, with_url):
+def build_text(day, long_post, with_url, limit=None, wfun=None):
     up = get('data/upcoming.json')
     ev = get('data/events.json')
     bouts = get('data/bouts.json')
@@ -81,7 +81,8 @@ def build_text(day, long_post, with_url):
         lines_past.append(s)
 
     tail = f'\n\n日本MMA戦績録 {SITE}' if with_url else '\n\n日本MMA戦績録'
-    limit = 25000 if long_post else 280
+    limit = limit or (25000 if long_post else 280)
+    weight_ = wfun or weight
 
     def compose(nt, np_):
         out = f'{head}'
@@ -97,12 +98,12 @@ def build_text(day, long_post, with_url):
 
     nt, np_ = len(lines_today), len(lines_past)
     text = compose(nt, np_)
-    if weight(text) > limit:
+    if weight_(text) > limit:
         # 長すぎるときは、まずメインの行を外し、それでも長ければ過去の大会→本日の大会の順に減らす
         lines_today[:] = [x.split('\n')[0] for x in lines_today]
         lines_past[:] = [x.split('\n')[0] for x in lines_past]
         text = compose(nt, np_)
-    while weight(text) > limit and (np_ > 1 or nt > 1):
+    while weight_(text) > limit and (np_ > 1 or nt > 1):
         if np_ > 1:
             np_ -= 1
         else:
@@ -133,6 +134,27 @@ def post(text):
         return json.load(r)
 
 
+def post_bluesky(text):
+    """Bluesky（無料・自動投稿できる）。BLUESKY_HANDLE と BLUESKY_APP_PASSWORD（アプリパスワード）を使う"""
+    api = 'https://bsky.social/xrpc/'
+    def call(m, body, tok=None):
+        h = {'Content-Type': 'application/json'}
+        if tok:
+            h['Authorization'] = 'Bearer ' + tok
+        req = urllib.request.Request(api + m, data=json.dumps(body).encode(), headers=h, method='POST')
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    ses = call('com.atproto.server.createSession', {'identifier': os.environ['BLUESKY_HANDLE'], 'password': os.environ['BLUESKY_APP_PASSWORD']})
+    rec = {'$type': 'app.bsky.feed.post', 'text': text, 'langs': ['ja'],
+           'createdAt': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')}
+    # サイトのURLをリンクにする
+    i = text.encode().find(SITE.encode())
+    if i >= 0:
+        rec['facets'] = [{'index': {'byteStart': i, 'byteEnd': i + len(SITE.encode())},
+                          'features': [{'$type': 'app.bsky.richtext.facet#link', 'uri': SITE}]}]
+    return call('com.atproto.repo.createRecord', {'repo': ses['did'], 'collection': 'app.bsky.feed.post', 'record': rec}, ses['accessJwt'])
+
+
 def main():
     day = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.datetime.now(JST).date()
     long_post = os.environ.get('X_LONG_POST', '0') == '1'
@@ -147,7 +169,13 @@ def main():
         r = post(text)
         print('投稿しました:', r.get('data', {}).get('id'))
     else:
-        print('X の鍵が設定されていないので、投稿はしていない（投稿文の表示だけ）')
+        print('X の鍵が設定されていないので、X には投稿していない')
+    if os.environ.get('BLUESKY_HANDLE') and os.environ.get('BLUESKY_APP_PASSWORD'):
+        bt = build_text(day, False, True, limit=300, wfun=len)   # Bluesky は300文字まで。URLを付けても無料
+        r = post_bluesky(bt)
+        print('Bluesky に投稿しました:', r.get('uri'))
+    else:
+        print('Bluesky の設定がないので、Bluesky には投稿していない')
 
 
 if __name__ == '__main__':
